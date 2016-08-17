@@ -1,0 +1,22 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Anand Deopurkar
+email: deopurkar@uga.edu
+description: > # this means to ignore newlines until "baseurl:"
+  I am a mathematician working in algebraic geometry at the University of Georgia. I was previously a Ritt Assistant Professor at Columbia University and a PhD student at Harvard University under the supervision of Joe Harris.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://deopurkar.github.io" # the base hostname & protocol for your site
+github_username: deopurkar
+
+# Build settings
+sass:
+  sass_dir: _sass
+kramdown:
+  input: GFM
+  
