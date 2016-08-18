@@ -1,75 +1,49 @@
---
+---
 layout: default
---
+navigation-weight: 1
+navigation-title: Home
+title: Anand Deopurkar
+---
+
+![Photo of Anand Deopurkar](anandrd_eating.jpg 'Hanoi (2014)')
+
+Assistant Professor (limited term)  
+[Department of Mathematics](http://www.math.uga.edu/)  
+[University of Georgia](http://www.uga.edu/)  
+Office: Boyd 606  
+Email: `deopurkar at uga dot edu`  
+[CV](cv-deopurkar.pdf)  
+
+## Research
+
+For my papers and preprints, see my [research](/research/) page.  
+
+I am an algebraic geometer with broader interests in algebra, geometry, representation theory, and number theory. My focus area is the study of moduli spaces: moduli of curves, branched covers, surfaces, and so on. A lot of my research is about questions of a classical flavor, but the answers often involve modern machinary like deformation theory and stacks.  
+
+Before coming to UGA, I was a Ritt Assistant Professor at [Columbia](http://math.columbia.edu/), and before that I was a graduate student of Joe Harris at [Harvard](http://math.harvard.edu/).  
+
+Just after graduate school, I wrote a [rough non-technical explanation](/interests.html) of my doctoral research, which might interest or amuse you.
+
+## Activities
+
+I am (co)-organizing:
+
+* The FIRST talks (Fairly Informal Research Seminar and Tea) at UGA (Mon 2--3).
+* SWAG (Summer Workshop in Algebraic Geometry) at UGA (Aug 26--29, 2016).
+* AIM workshop on [Stability and moduli spaces](http://aimath.org/workshops/upcoming/stabmoduli/) (Jan 9--13, 2016).  
+
+In addition, I go to the Algebraic Geometry, Algebra, and Number Theory seminars at UGA.  
+
+I recently spoke in the ICERM workshop on [Cycles on moduli spaces, geometric invariant theory, and dynamics](https://icerm.brown.edu/topical_workshops/tw16-4-ms/).  
+
+In the near future, I am speaking in the Algebraic Geometry Seminar at Georgia and at South Carolina.
 
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <title>Anand Deopurkar</title>
-    <?php include("headers.html"); ?>
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-    <style type="text/css">
-      <!--
-          .photo {
-          float: right;
-          clear: both;
-          height:8em;
-	  padding: 0 0 2em 0;
-        }
-       -->
-     </style>
-  </head>
-  
-  <body>
-    <h1>Anand Deopurkar </h1>
-    <div class="navbar">
-	<ul>
-	  <li class="current"><a href="index.html">Home</a></li>
-	  <li><a href="research.html">Research</a></li>
-	  <li><a href="teaching.html">Teaching</a></li>
-	</ul>
-    </div>
-    <p>
-      <img src="anandrd_eating.jpg" class="photo" alt="Photo of Anand Deopurkar" title="Hanoi (2014)"/>
-    </p>
-    <p>
-      J. F. Ritt Assistant Professor<br/>
-      <a href="http://math.columbia.edu">Mathematics Department</a> <br/>
-      <a href="http://www.columbia.edu">Columbia University</a> <br/>
-      Office: Math 413<br/>
-      Email: <code> anandrd at math ... </code><br/>
-      <a href="cv-deopurkar.pdf">CV</a>
-    </p>
+## Teaching
 
-    <h2>Research</h2>
-    <p>
-      My research area is algebraic geometry.
-      I study moduli spaces: the moduli space of algebraic curves, the Hurwitz space of branched covers, the Severi variety of curves on surfaces, the Kontsevich space of maps and so on.
-      I am also interested in representation theory, number theory, and arithmetic geometry.
-    </p>
-    <p>
-      Some time ago, I wrote a <a href="interests.html">rough non-technical explanation</a> of my interests.
-    </p>
-    <p>
-      You can find my papers and preprints on my <a href="research.html">research</a> page.
-    </p>
+This semester, I am teaching Math 2250 (Calculus 1 for scientists and engineers).  
 
-    <h2>Teaching</h2>
-    <p>
-      This semester, I am teaching  <a href="ao/index.html"><em>Analysis and optimization</em></a>.
-    </p>
-    
-    <p>
-      Last semester, I taught the <a href="seminar15/index.html">Undergraduate Seminar in Mathematics.</a>
-      Our topic was <em>Young tableaux in algebra and geometry</em>.
-    </p>
-    <p>Here are the <a href="moduli/index.html">notes from my course on moduli of curves</a> from last year.
-      For other classes taught in the past, see my <a href="teaching.html">teaching</a> page.
-    </p>
-    
+Here are the notes from the course [moduli of curves](/moduli/), which I taught at Columbia.  
 
-    <?php include("footer.html"); ?>
-    
-  </body>
-</html>
+For othr courses taught in the past, see my [teaching](/teaching/) page.
+

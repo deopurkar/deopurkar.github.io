@@ -1,58 +1,64 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <title>Anand Deopurkar</title>
-    <?php include("headers.html"); ?>
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+---
+layout: default
+navigation-weight: 2
+navigation-title: Research
+title: Research
+---
 
-    <script type="text/javascript">
-      <!--
-	  function toggle_visibility(id) {
-	  var e = document.getElementById(id);
-	  if(e.style.display == 'block')
-	  e.style.display = 'none';
-	  else
-   	  e.style.display = 'block';
-	  }
-	  //-->
-    </script>
+<script type="text/javascript">
+<!--
+function toggle_visibility(id) {
+	var e = document.getElementById(id);
+	if(e.style.display == 'none')
+		e.style.display = 'block';
+	else
+		e.style.display = 'none';
+	}
+//-->
+</script>
 
-    <noscript>
-      <style type="text/css">
-	<!-- 
-	     .summary{
-	     display: block;
-	     }
+<noscript>
+<style type="text/css">
+<!-- 
 
-	     .scriptonly{
-	     display: none;
-	     }
-	  -->
-      </style>
-    </noscript>
+.summary{
+	display: block;
+}
+	
+.scriptonly{
+  display: none;
+}
+-->
+</style>
+</noscript>
+	
 
-  </head>
+## Papers and preprints
+
+{% for paper in site.data.papers %}
+* {{ paper.title }}{% if paper.coauthors %} (with {{ paper.coauthors | join: ', ' }}){% endif %}.  
+  {% for format in paper.formats %} [{{ format[0] }}]({{ format[1] }}) {% endfor %}
+  {% if paper.abstract %}[abstract](#){: class="scriptonly" onclick='toggle_visibility(\'{{ paper.id }}\'); return false;'}
+
+  {{ paper.abstract }}
+  {: id="{{ paper.id }}" class="summary"}
+  {% endif %}
+{% endfor %}
+
+
+
+
+* Syzygy divisors on Hurwitz spaces (with [Anand Patel])  
+  [pdf](/papers/HigherMaroni.pdf) [abstract][identifier]{: class="scriptonly" #custom-id onclick="toggle_visibility('highermaroni'); return false;"}  
+  We describe a sequence of effective divisors on the Hurwitz space H(d,g) for d dividing g-1 and compute their cycle classes on a partial compactification. These divisors arise from vector bundles of syzygies canonically associated to a branched cover. We find that the cycle classes are all proportional to each other.
+  {: id
   
-  <body>
-
-
-    <h1>Anand Deopurkar </h1>
-    <div class="navbar">
-      <ul>
-	<li><a href="index.html">Home</a></li>
-	<li class="current"><a href="research.html">Research</a></li>
-	<li><a href="teaching.html">Teaching</a></li>
-      </ul>
-    </div>
-
-    <h2>Papers/preprints</h2>
-    <ul>
 
       <li>Syzygy divisors on Hurwitz spaces (with <a href="https://www2.bc.edu/anand-p-patel/">Anand Patel</a>)<br>
 	<a href="papers/HigherMaroni.pdf">pdf</a>
 	<a href="#" class="scriptonly"  onclick="toggle_visibility('highermaroni'); return false;">abstract</a>
 	<p id="highermaroni" class="summary">
-	  We describe a sequence of effective divisors on the Hurwitz space H(d,g) for d dividing g-1 and compute their cycle classes on a partial compactification. These divisors arise from vector bundles of syzygies canonically associated to a branched cover. We find that the cycle classes are all proportional to each other.
+
 	</p>
       
       <li> Green's canonical syzygy conjecture for ribbons<br>

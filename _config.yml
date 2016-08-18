@@ -1,23 +1,37 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Name of your blog (this will show up at the top of your page and in the RSS feed)
+name: Anand Deopurkar's website
 
-# Site settings
-title: Anand Deopurkar
-email: deopurkar@uga.edu
-description: > # this means to ignore newlines until "baseurl:"
-  I am a mathematician working in algebraic geometry at the University of Georgia. I was previously a Ritt Assistant Professor at Columbia University and a PhD student at Harvard University under the supervision of Joe Harris.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://deopurkar.github.io" # the base hostname & protocol for your site
-github_username: deopurkar
+# Short description (goes below the title; it will also be used in the RSS feed)
+description: 
+
+# Your name, as you want it to appear underneath each post and in the footer
+author: Anand Deopurkar
+
+# Your email if you want it to be linked on the contact page
+author_email: deopurkar@uga.edu
+
+# Uncomment if you are planning to run the blog in a subdirectory
+# Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
+# Example, you must use http://localhost:4000/path/to/blog
+#baseurl: /path/to/blog 
+baseurl: 
+
+# The URL of your actual domain. This will be used to make absolute links in the RSS feed.
+url: http://deopurkar.github.io
+
+#### Under the Hood Stuff #####
+
+markdown: kramdown
+
+# Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
+permalink: pretty
 
 # Build settings
 sass:
   sass_dir: _sass
 kramdown:
   input: GFM
-include: ['_pages']
+
+# Repository
+repository: deopurkar/deopurkar.github.io
 
