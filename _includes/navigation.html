@@ -1,0 +1,14 @@
+<aside>
+  <nav>
+    <ul>
+      <li><a href="{{ site.baseurl }}">Home</a></li>
+      {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+      {% for p in navigation_pages %}
+          {% if p.navigation_weight %}
+              <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+              {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+</aside>
+
