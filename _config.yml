@@ -18,6 +18,7 @@ baseurl:
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
 url: http://deopurkar.github.io
+encoding: UTF-8
 
 #### Under the Hood Stuff #####
 
