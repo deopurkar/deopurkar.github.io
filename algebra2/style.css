@@ -11,7 +11,7 @@
 }
 @media screen and (min-width: 960px) {
   body {
-      max-width: 70%;
+      max-width: 75%;
       font-size: 100%;
   } 
 }
@@ -40,6 +40,10 @@ h1 {
   color: #ffffff;
   font-size: 135%;
   font-weight: normal; }
+
+strong {
+    color: #493e4f;
+}
 
 h2 {
     font-size: 120%;
