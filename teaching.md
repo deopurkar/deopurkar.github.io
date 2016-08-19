@@ -3,23 +3,12 @@ layout: default
 navigation-weight: 3
 navigation-title: Teaching
 title: Teaching
+places: [UGA, Columbia, Harvard]
 ---
 
-## Teaching at UGA
-{% for class in {{ site.data.teaching | where:"where","UGA" %}
-* {% if class.url %}[{{ class.title }}]({{ class.url }}){% else %}{{ class.title }}{% endif %}, {{ class.time }}
-  {% if class.comment %} \\ {{ class.comment }} {% endif %}
+{% for place in page.places %}
+## At {{ place }}
+{% assign here = site.data.teaching | where:"where", place %}
+{% for class in here %}
+* {% if class.url %}[{{ class.what }}]({{ class.url }}){% else %}{{ class.what }}{% endif %}, {{ class.when }}{% if class.comment %}<br>{{ class.comment }}{% endif %}{% endfor %}
 {% endfor %}
-
-## Teaching at Columbia
-{% for class in {{ site.data.teaching | where:"where","Columbia" %}
-* {% if class.url %}[{{ class.title }}]({{ class.url }}){% else %}{{ class.title }}{% endif %}, {{ class.time }}
-  {% if class.comment %} \\ {{ class.comment }} {% endif %}
-{% endfor %}
-
-## Teaching at Harvard
-{% for class in {{ site.data.teaching | where:"where","Harvard" %}
-* {% if class.url %}[{{ class.title }}]({{ class.url }}){% else %}{{ class.title }}{% endif %}, {{ class.time }}
-  {% if class.comment %} \\ {{ class.comment }} {% endif %}
-{% endfor %}
-

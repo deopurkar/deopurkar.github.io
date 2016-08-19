@@ -1,66 +1,70 @@
-- title: Math 2250 (Calculus for Science and Engineering)
+- what: Math 2250 (Calculus for Science and Engineering)
   where: UGA
   when: Fall 2016 
 
-- title: Analysis and optimization
+- what: Analysis and optimization
   where: Columbia
   when: Spring 2016
   url: /ao/
   comment: A course about linear and non-linear optimization methods.
   
-- title: Young tableaux in algebra and geometry
+- what: Young tableaux in algebra and geometry
   where: Columbia
   when: Fall 2015
   url: /seminar15/
-  comment: Undergraduate seminar based on Fulton\'s book *Young Tableaux*
+  comment: Undergraduate seminar based on Fulton\'s book *Young Tableaux*.
 
-- title: Calculus 1
+- what: Calculus 1
   where: Columbia
   when: Spring 2015
   url: /calc1/
 
-- title: Moduli of curves
+- what: Moduli of curves
   where: Columbia
   when: Fall 2014
   url: /moduli/
   comment: Graduate (topics) course in algebraic geometry. The webpage has most of the course notes.
 
-- title: Calculus 1
+- what: Calculus 1
   where: Columbia
   url: /calc1sp14/
+  when: Spring 2014
 
-- title: Modern algebra 2
+- what: Modern algebra 2
   where: Columbia
   url: /algebra2/
   comment: Rings, fields, and Galois theory
+  when: Spring 2014
 
-- title: Modern algebra 1
+- what: Modern algebra 1
   where: Columbia
   url: /algebra1/
   comment: Group theory
+  when: Fall 2013
 
-- title: Calculus 3
+- what: Calculus 3
   where: Columbia
   url: /calc3sp13/
+  when: Spring 2013
 
-- title: Calculus 2
+- what: Calculus 2
   where: Columbia
+  when: Fall 2012
 
-- title: Linear algebra
+- what: Linear algebra
   where: Harvard
   when: 2012
 
   
-- title: Algebraic curves
+- what: Algebraic curves
   where: Harvard
   when: 2011
   comment: Course assistant for Joe Harris.
   
-- title: Calculus 2
+- what: Calculus 2
   where: Harvard
   when: 2010
   
-- title: Calculus 1
+- what: Calculus 1
   where: Harvard
   when: 2009
-  

@@ -2,10 +2,11 @@
 ---
 
 // Colour palette
-$light:  #ffffff;
+$light:     #eeeeee;
 $darkest:   #493e4f;
 $darker:    #6F6375;
 $dark:      #8A858D;
+$white:     #ffffff;
 $yellow:    #b58900;
 $orange:    #cb4b16;
 $red:       #dc322f;
@@ -154,7 +155,10 @@ nav{
   a {
     color: $light;
     text-decoration: none;
-    }
+    &:hover {
+      color: $white;
+    }   
+  }
 }
 
 .current{
