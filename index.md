@@ -28,7 +28,7 @@ Just after graduate school, I wrote a [rough non-technical explanation](/interes
 
 I am (co)-organizing:
 
-1. FIRST (Fairly Informal Research Seminar and Tea) at UGA (Mon 2--3).
+1. FIRST (Fairly Informal Research Seminar and Tea) at UGA (Mon 2:20--3:20).
 2. SWAG (Summer Workshop in Algebraic Geometry) at UGA (Aug 26--29, 2016).
 3. AIM workshop on [Stability and moduli spaces](http://aimath.org/workshops/upcoming/stabmoduli/) (Jan 9--13, 2016).
 
