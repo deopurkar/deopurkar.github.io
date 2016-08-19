@@ -2,10 +2,9 @@
 layout: default
 navigation-weight: 1
 navigation-title: Home
-title: Anand Deopurkar
 ---
 
-<img src="anandrd_eating.jpg" alt="Photo of Anand Deopurkar" title="Hanoi (2014)" id="photo">
+<img src="/anandrd_eating.jpg" alt="Photo of Anand Deopurkar" title="Hanoi (2014)" id="photo">
 
 Assistant Professor (Limited term)  
 [Department of Mathematics](http://www.math.uga.edu/)  
@@ -22,7 +21,7 @@ I am an algebraic geometer with broader interests in algebra, geometry, represen
 
 Before coming to UGA, I was a Ritt Assistant Professor at [Columbia](http://math.columbia.edu/), and before that I was a graduate student of Joe Harris at [Harvard](http://math.harvard.edu/).  
 
-Just after graduate school, I wrote a [rough non-technical explanation](/interests.html) of my doctoral research, which might interest or amuse you.
+Just after graduate school, I wrote a [rough non-technical explanation](/interests/) of my doctoral research, which might interest or amuse you.
 
 ## Activities
 
