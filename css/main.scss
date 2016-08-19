@@ -33,22 +33,12 @@ $link: $darker;
     }
 }
 
-@media screen and (min-width: 960px) {
-    body {
-        max-width:70%;
-    }
-}
-
 body {
   font-family: 'Lato', Helvetica, Arial, Sans-Serif;
   background: $bg;
   color: $fg;
   margin-left:auto;
   margin-right:auto;
-  ::-moz-selection {
-    background: $dark;
-    color: $light;
-    }
   ::selection {
     background: $dark;
     color: $light;
@@ -126,9 +116,6 @@ ol {
   float:right;
   clear:both;
   width: 33%;
-  @media screen and (min-width: 960px) {
-    width: 320px;
-    }
   @media screen and (max-width: 480px) {
     float: none;
     clear: none;
@@ -166,3 +153,39 @@ nav{
   background: $dark;
 }
   
+/* Stabilization as width -> Infinity */
+
+@media screen and (min-width: 1000px) {
+    body {
+        max-width:70%;
+    }
+
+    #photo {
+	width: 320px;
+    }
+
+    .summary {
+	margin: 20px 20px;
+    }
+
+    .footer {
+	margin-top: 10px;
+    }
+
+    h1 {
+	padding: 40px;
+	padding-left: 20px;
+    }
+
+    nav{
+	ul {
+	    padding: 20px;
+	    margin-left: -20px;
+	}
+
+	li {
+	    padding: 20px;
+	}
+    }
+}
+
