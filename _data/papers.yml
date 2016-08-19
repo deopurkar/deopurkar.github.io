@@ -1,3 +1,11 @@
+- title: Vector bundles and finite covers
+  coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
+  journal: Submitted
+  formats:
+    pdf: /papers/ebundle.pdf
+    arXiv: https://arxiv.org/abs/1608.01711v1/
+  abstract: We prove that, up to a twist, every vector bundle on a smooth projective curve arises from the direct image of the structure sheaf of a smooth, connected branched cover.
+
 - title: Syzygy divisors on Hurwitz spaces
   coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
   journal: Submitted
