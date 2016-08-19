@@ -17,7 +17,7 @@ Email: `deopurkar at uga dot edu`
 
 For my papers and preprints, see my [research](/research/) page.  
 
-I am an algebraic geometer with broader interests in algebra, geometry, representation theory, and number theory. My focus area is the study of moduli spaces: moduli of curves, branched covers, surfaces, and so on. A lot of my research is about questions of a classical flavor, but the answers often involve modern machinery like deformation theory and stacks.  
+I am an algebraic geometer with broader interests in algebra, geometry, representation theory, and number theory. I study moduli spaces: moduli of curves, branched covers, surfaces, and so on. A lot of my research is about questions of a classical flavor, but the answers often involve modern machinery like deformation theory and stacks.  
 
 Before coming to UGA, I was a Ritt Assistant Professor at [Columbia](http://math.columbia.edu/), and before that I was a graduate student of Joe Harris at [Harvard](http://math.harvard.edu/).  
 
