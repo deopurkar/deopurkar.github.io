@@ -1,12 +1,16 @@
 <aside>
   <nav>
     <ul>
-      {% assign navigation_pages = site.html_pages | sort: 'navigation-weight' %}
-      {% for p in navigation_pages %}
-      {% if p.navigation-weight %}
-      <li><a href="{{ p.url }}">{{ p.navigation-title }}</a></li>
-      {% endif %}
-      {% endfor %}
+	{% assign navigation_pages = site.html_pages | sort: 'navigation-weight' %}
+	{% for p in navigation_pages %}
+	{% if p.navigation-weight %}
+	{% if p.navigation-title == page.navigation-title %}
+	<li class="current"><a href="{{ p.url }}">{{ p.navigation-title }}</a></li>
+	{% else %}
+	<li><a href="{{ p.url }}">{{ p.navigation-title }}</a></li>
+	{% endif %}
+	{% endif %}
+	{% endfor %}
     </ul>
   </nav>
 </aside>

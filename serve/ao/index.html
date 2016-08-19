@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<HEAD>
+<TITLE>Analysis and Optimization (Spring 2016)
+</TITLE>
+<?php include("headers.html"); ?>
+    
+<LINK REL=STYLESHEET type="text/css" HREF="style.css">
+<style type="text/css">
+  <!--
+      td{
+        vertical-align: top;
+	padding-bottom: 1%;
+      }
+      
+       td{
+       padding: .5em;
+       }
+       
+       table tr:nth-child(odd){
+          background-color: #eeeeee;
+       } 
+
+       table{
+       width: 100%;
+       }
+
+       /* To prevent jump scrolling */
+       .anchor {position: fixed; top: 0px;} 
+
+       /* Optional elements are not displayed */
+       .optional {display: none;}
+       /* But they are displayed when the previous anchor is the target*/
+       .anchor:target + .optional {display: inline;}
+    -->
+</style>
+</HEAD>
+
+<BODY >
+<H1>Analysis and Optimization (Spring 2016)</H1>
+<span id="z" class="anchor"></span>
+
+<table>
+  <tr> <td><strong>Time</strong></td>
+    <td>
+      Mon, Wed 8:40&ndash;9:55am, 10:10&ndash;11:25am      
+    </td>
+
+  </tr>
+  <tr> <td><strong>Place</strong></td>
+    <td>Math 312</td>
+  </tr>
+  <tr><td><strong>Instructor</strong></td> 
+    <td>Anand Deopurkar (<code>anandrd at math</code>)</td>
+  </tr>
+  <tr><td><strong>TAs</strong></td>
+    <td>Sebastian (<code>spm2152</code>), Max (<code>mk3675</code>), Nawaz (<code>njs2155</code>), Peiran (<code>pf2317</code>), Peter (<code>pwl2107</code>), Yih-Jen (<code>yak2110</code>)</td> 
+  </tr>
+  <tr><td><strong>Office hours</strong></td>
+    <td>
+      Monday 12:30pm&ndash;2pm, Tuesday 6pm&ndash;7pm<br>
+      During reading week: Wednesday to Sunday 6pm&ndash;7pm<br>
+    </td>
+  </tr>
+</table>
+
+<h3>Announcements</h3>
+<ul>
+  <li><a href="final_practice.pdf">Final practice problems</a> are up. <a href="final_practice_solutions.pdf">Solutions</a> (in progress).
+  <li><a href="hw9.pdf">Homework 9</a> is up (due Apr 27).
+  <li>I wrote some notes for <a href="CalculusOfVariations.pdf">calculus of variations</a>, which I will update as we progress.
+  <li>Midterm 2 statistics: mean 36, median 37, stdev 8, <a href="Midterm2Graph.png">distribution</a>.
+  <li><a href="hw8.pdf">Homework 8</a> is up (due Apr 20).
+  <li>Here are <a href="midterm2_solutions.pdf">solutions of midterm 2</a>
+  <li><a href="hw7.pdf">Homework 7</a> is up (due Apr 13).
+  <li><a href="midterm2_practice.pdf">Midterm 2 practice problems</a> are up along with <a href="midterm2_practice_solutions.pdf">solutions</a>.
+  <li><a href="hw6.pdf">Homework 6</a> is up (due Mar 23).
+  <li><a href="hw5.pdf">Homework 5</a> is up (due Mar 9).
+  <li>Here are <a href="midterm1_solutions.pdf">solutions of midterm 1</a>. The mean and median were about 40; the standard deviation was about 7.
+  <li><a href="hw4.pdf">Homework 4</a> is up (due Mar 2).
+  <li><a href="hw3.pdf">Homework 3</a> is up (due Feb 24).
+  <li><a href="midterm1_practice.pdf">Midterm 1 practice problems</a> are up along with <a href="midterm1_practice_solutions.pdf">solutions</a>.
+  <li><a href="hw2.pdf">Homework 2</a> is up (due Feb 10). Also fixed some typos.
+  <li><a href="hw1.pdf">Homework 1</a> is up (due Feb 3).
+</ul>
+
+<h3 id="plan">Course plan</h3>
+<p> This is a tentative plan of the course. It will be in flux, with some restructuring as we go along.</p>
+
+<table class="plan">
+  <col width="20%">
+  <col width="40%">
+  <col width="20%">
+  <col width="20%">
+  
+  <tr> 
+    <th><strong>Date</strong></th> 
+    <th><strong>Topic</strong></th>
+    <th><strong>Reading</strong></th>
+    <th><strong>Homework</strong></th>
+  </tr>
+
+  <tr> 
+    <td>Jan 20</td> 
+    <td>Overview and review of optimization in one variable</td>
+    <td>Your favorite Calculus book</td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>Jan 25</td> 
+    <td>Linear inequalities and optimization in 2 variables</td>
+    <td>LEF <a href="http://college.cengage.com/mathematics/larson/elementary_linear/4e/shared/downloads/c09s1.pdf">9.1</a> <a href="http://college.cengage.com/mathematics/larson/elementary_linear/4e/shared/downloads/c09s2.pdf">9.2</a></td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>Jan 27</td> 
+    <td>Review of linear algebra: matrices, linear dependence, rank</td>
+    <td>SHSS 1.1&ndash;1.4</td>
+    <td><a href="hw1.pdf">Homework 1</a> (<a href="hw1sol.pdf">solutions</a>).
+    </td>
+  </tr>
+
+  <tr> 
+    <td>Feb 1</td> 
+    <td>Open, closed, compact sets, maximum theorem</td>
+    <td>SHSS 13.1, 13.2, 13.3</td>
+    <td></td>
+  </tr>
+
+  
+  <tr> 
+    <td>Feb 3</td> 
+    <td>Convex sets</td>
+    <td>SHSS 2.2, 13.5</td>
+    <td><a href="hw2.pdf">Homework 2</a> (<a href="hw2sol.pdf">solutions</a>).</td>
+  </tr>
+
+  <tr> 
+    <td>Feb 8</td> 
+    <td>The simplex method</td>
+    <td>LEF <a href="http://college.cengage.com/mathematics/larson/elementary_linear/4e/shared/downloads/c09s3.pdf">9.3</a></td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>Feb 10</td> 
+    <td>Duality</td>
+    <td>LEF <a href="http://college.cengage.com/mathematics/larson/elementary_linear/4e/shared/downloads/c09s4.pdf">9.4</a></td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>Feb 15</td> 
+    <td>Simplex/duality continued</td>
+    <td>LEF <a href="http://college.cengage.com/mathematics/larson/elementary_linear/4e/shared/downloads/c09s4.pdf">9.4</a>,
+      <a href="LP_TSFergusson.pdf">Chapter 2</a> from Tom Fergusson's notes,
+      Lecture 25 from <a href="http://math.columbia.edu/~pinkham/Optimizationbook.pdf">Pinkham</a>.
+    </td>
+    <td><a href="hw3.pdf">Homework 3</a>(<a href="hw3sol.pdf">solutions</a>)</td>
+  </tr>
+
+  <tr> 
+    <td>Feb 17</td> 
+    <td>Midterm 1</td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>Feb 22</td> 
+    <td>
+      Gradients and stationary points</td>
+    <td>SHSS 2.1, 3.1</td>
+    <td></td>
+  </tr>
+  
+  <tr> 
+    <td>Feb 24</td> 
+    <td>Taylor's theorem</td>
+    <td>SHSS 2.6</td>
+    <td><a href="hw4.pdf">Homework 4</a>(<a href="hw4sol.pdf">solutions</a>)</td>
+  </tr>
+
+  <tr> 
+    <td>Feb 29</td> 
+    <td>Quadratic forms, eigenvalues, spectral theorem</td>
+    <td>SHSS 1.7</td>
+    <td></td>
+  </tr>
+  
+  <tr> 
+    <td>Mar 2</td> 
+    <td>Hessians, second order conditions, local min/max</td>
+    <td>SHSS 3.2</td>
+    <td><a href="hw5.pdf">Homework 5</a>(<a href="hw5sol.pdf">solutions</a>).
+    </td>
+  </tr>
+  
+  <tr> 
+    <td>Mar 7</td> 
+    <td>Convex optimization</td>
+    <td>SHSS 2.2&ndash;2.4</td>
+    <td></td>
+  </tr>
+
+
+  <tr> 
+    <td>Mar 9</td> 
+    <td>Convex optimization continued</td>
+    <td>SHSS 2.2&ndash;2.4</td>
+    <td><a href="hw6.pdf">Homework 6</a>(<a href="hw6sol.pdf">solutions</a>).
+    </td>
+  </tr>
+
+  <tr> 
+    <td>Mar 14</td> 
+    <td>Spring break!</td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>Mar 16</td> 
+    <td>Spring break!</td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>Mar 21</td> 
+    <td>Implicit function theorem</td>
+    <td>SHSS 2.7</td>
+
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>Mar 23</td> 
+    <td>Constrained optimization: Lagrange multipliers</td>
+    <td>SHSS 3.3</td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>Mar 28</td> 
+    <td>Constrained optimization: Second order conditions</td>
+    <td>SHSS 3.4</td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>Mar 30</td> 
+    <td>Midterm 2</td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>April 4</td> 
+    <td>Constrained optimization: Second order conditions continued</td>
+    <td>SHSS 3.4</td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>April 6</td> 
+    <td>Inequality constraints: Kuhn-Tucker conditions</td>
+    <td>SHSS 3.5</td>
+    <td><a href="hw7.pdf">Homework 7</a>(<a href="hw7sol.pdf">solutions</a>)</td>
+  </tr>
+
+  <tr> 
+    <td>April 11</td> 
+    <td>Convex optimization: Sufficient conditions</td>    
+    <td>SHSS 3.6</td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>April 13</td> 
+    <td>Mixed constraints, envelope theorems</td>
+    <td>SHSS 3.8, 3.3</td>
+    <td><a href="hw8.pdf">Homework 8</a>(<a href="hw8sol.pdf">solutions</a>)</td>
+  </tr>
+
+  <tr> 
+    <td>April 18</td> 
+    <td>Calculus of variations</td>
+    <td>SHSS 8.1</td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>April 20</td> 
+    <td>The Euler-Lagrange equation</td>
+    <td>SHSS 8.2&ndash;8.3</td>
+    <td><a href="hw9.pdf">Homework 9</a>(<a href="hw9sol.pdf">solutions</a>)</td>
+  </tr>
+
+  
+  <tr> 
+    <td>April 25</td> 
+    <td>Solving the EL equation</td>
+    <td>TBD</td>
+    <td></td>
+  </tr>
+
+  <tr> 
+    <td>April 27</td> 
+    <td>Constrained variational problems</td>
+    <td>TBD</td>
+    <td></td>
+  </tr>
+
+</table>
+
+
+<h3>Textbook and references</h3>
+<p>
+  Our primary text will be
+</p>
+<ul>
+  <li> Sydsaeter, Hammond, Seierstand, and Strom, <em>Further Mathematics for Economic Analysis, Second Edition</em>.
+</ul>
+
+<p>
+  We will complement it with the following:
+</p>
+<ul>
+  <li>Pinkham, <a href="http://math.columbia.edu/~pinkham/Optimizationbook.pdf"><em>Analysis, Convexity, and Optimization</em></a>, and
+  <li>Larson, Edwards, Falvo, (LEF) <em>Elementary linear algebra</em>.
+</ul>
+<p>
+  The first book is available online for free.
+  The chapters we will use from the second book are also available online for free.
+  I have provided the links to the chapters in the <a href="plan">course plan</a> below.
+</p>
+
+
+<h3>Course outline</h3>
+<p>
+Many times in economics, science, and social science, we need to optimize a function under given constraints.
+That is, we must find the values of the inputs that make the function attain the maximum or the minimum value.
+The course will cover foundational topics from linear algebra, multivariable calculus, and mathematical analysis that are applicable to these questions.
+The techniques we will learn include:
+<ul>
+  <li>Linear programming;
+  <li>implicit function theorem, Lagrange multipliers;
+  <li>convex optimization, Kuhn-Tucker conditions;
+  <li>calculus of variations (if time permits).
+</ul>
+The course will interweave theory and appliations.
+See the <a href="#plan">course plan</a> for details.
+</p>
+
+<h3>Background and prerequisites</h3>
+<p>
+  Calculus III and Linear Algebra are required.
+  While we will spend some time refreshing ideas from these courses, it will not be a substitute for learning them for the first time.
+</p>
+
+<h3>Homework, exams, and grading</h3>
+<p>
+  There will be weekly homework posted on this website.
+  It will be usually due on Wednesday before 5pm in the homework boxes.
+  <strong>Late homework will not be graded.</strong>
+  To compensate for the inflexible late homework policy, I will drop the lowest 2 homework scores, so that you won't be penalized for not turning in homework in those really bad weeks.
+</p>
+
+<p>
+  There will be 2 in-class midterms and a final.
+  The dates for the exams are as follows.
+  <ul>
+    <li><strong>Midterm 1</strong>: February 17,
+    <li><strong>Midterm 2</strong>: March 30,
+    <li><strong>Final</strong>: May 11 for the 8:40 section, May 9 for the 10:10 section (both from 9am to 12pm).
+  </ul>
+  If you have a conflict with the midterms, please write to me as soon as possible.
+</p>
+
+<p>
+  Your final grade will be determined by your performance on the the homework, the midterms, and the final.
+  They will contribute in the following ratio:
+  <ul>
+    <li>Homework: 15%
+    <li>Midterm 1: 20%
+    <li>Midterm 2: 25%
+    <li>Final: 40%
+  </ul>
+</p>
+
+<h3>Collaboration policy</h3>
+<p>
+  It is fine to work with your friends on homework but do spend time thinking about the problems on your own before you start discussing.
+  Also, you <em>must</em> write up the solutions by yourself.
+  Do not, under any circumstance, pass of someone else's work as your own!
+  As a matter of academic honesty, write the names of your collaborators on top of your submission.
+  This will not affect your grade.
+</p>
+
+<!-- <h3>Announcements</h3> -->
+
+
+<?php include("footer.html"); ?>
+
+</BODY>
+</HTML>

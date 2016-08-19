@@ -5,9 +5,9 @@ navigation-title: Home
 title: Anand Deopurkar
 ---
 
-![Photo of Anand Deopurkar](anandrd_eating.jpg 'Hanoi (2014)')
+<img src="anandrd_eating.jpg" alt="Photo of Anand Deopurkar" title="Hanoi (2014)" id="photo">
 
-Assistant Professor (limited term)  
+Assistant Professor (Limited term)  
 [Department of Mathematics](http://www.math.uga.edu/)  
 [University of Georgia](http://www.uga.edu/)  
 Office: Boyd 606  
@@ -28,16 +28,15 @@ Just after graduate school, I wrote a [rough non-technical explanation](/interes
 
 I am (co)-organizing:
 
-* The FIRST talks (Fairly Informal Research Seminar and Tea) at UGA (Mon 2--3).
-* SWAG (Summer Workshop in Algebraic Geometry) at UGA (Aug 26--29, 2016).
-* AIM workshop on [Stability and moduli spaces](http://aimath.org/workshops/upcoming/stabmoduli/) (Jan 9--13, 2016).  
+1. FIRST (Fairly Informal Research Seminar and Tea) at UGA (Mon 2--3).
+2. SWAG (Summer Workshop in Algebraic Geometry) at UGA (Aug 26--29, 2016).
+3. AIM workshop on [Stability and moduli spaces](http://aimath.org/workshops/upcoming/stabmoduli/) (Jan 9--13, 2016).
 
-In addition, I go to the Algebraic Geometry, Algebra, and Number Theory seminars at UGA.  
+In Spring 2016, Johan de Jong and I organized the [Columbia Graduate Student Algebraic Geometry Seminar](/seminar16/) on the decomposition of the diagonal.  
 
-I recently spoke in the ICERM workshop on [Cycles on moduli spaces, geometric invariant theory, and dynamics](https://icerm.brown.edu/topical_workshops/tw16-4-ms/).  
+I go to the Algebraic Geometry, Algebra, and Number Theory seminars at UGA.  
 
-In the near future, I am speaking in the Algebraic Geometry Seminar at Georgia and at South Carolina.
-
+I recently spoke in the ICERM workshop on [Cycles on moduli spaces, geometric invariant theory, and dynamics](https://icerm.brown.edu/topical_workshops/tw16-4-ms/). In the near future, I am speaking in the Algebraic Geometry Seminar at Georgia and at South Carolina.
 
 ## Teaching
 
@@ -45,5 +44,5 @@ This semester, I am teaching Math 2250 (Calculus 1 for scientists and engineers)
 
 Here are the notes from the course [moduli of curves](/moduli/), which I taught at Columbia.  
 
-For othr courses taught in the past, see my [teaching](/teaching/) page.
+For other courses taught in the past, see my [teaching](/teaching/) page.
 

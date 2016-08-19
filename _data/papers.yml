@@ -1,14 +1,88 @@
-- id: highermaroni
-  title: Syzygy divisors on Hurwitz spaces
+- title: Syzygy divisors on Hurwitz spaces
   coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
+  journal: Submitted
   formats:
     pdf: /papers/HigherMaroni.pdf
   abstract: We describe a sequence of effective divisors on the Hurwitz space H(d,g) for d dividing g-1 and compute their cycle classes on a partial compactification. These divisors arise from vector bundles of syzygies canonically associated to a branched cover. We find that the cycle classes are all proportional to each other.
 
-- id: green
-  title: Green\'s canonical syzygy conjecture for ribbons
+- title: Green\'s canonical syzygy conjecture for ribbons
+  journal: Submitted
   formats:
     pdf: /papers/RibbonGreen.pdf
     arXiv: http://arxiv.org/abs/1510.07755/
   abstract: We prove the analogue for ribbons of Green\'s canonical syzygy conjecture, formulated by Bayer and Eisenbud. Our proof uses the results of Voisin and Hirschowitz-Ramanan on Green\'s conjecture for general smooth curves.
-  
+
+- title: GIT for syzygies of genus 7 curves
+  journal: Ongoing
+  formats:
+    webpage: genus7syz/index.html
+
+- title: Covers of stacky curves and limits of plane quintics
+  journal: Submitted
+  formats:
+    pdf: papers/StackyAdmissibleCovers.pdf
+    arXiv: http://arxiv.org/abs/1507.03252/
+  abstract: 	  We construct a well-behaved compactification of the space of finite covers of a stacky curve using admissible cover degenerations. Using our construction, we compactify the space of tetragonal curves on Hirzebruch surfaces. As an application, we explicitly describe the boundary divisors of the closure in \overline{M}_6 of the locus of smooth plane quintic curves.
+
+- title: The Picard rank conjecture for the Hurwitz spaces of degree up to five
+  coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
+  journal: Algebra and Number Theory, 2015
+  formats:
+    pdf: papers/PicH345.pdf
+    arXiv: http://arxiv.org/abs/1401.6101/
+    journal: http://msp.org/ant/2015/9-2/p05.xhtml
+  abstract: We prove that the rational Picard group of the simple Hurwitz space H_{d,g} is trivial for d up to five. We also relate the rational Picard groups of the Hurwitz spaces to the rational Picard groups of the Severi varieties of nodal curves on Hirzebruch surfaces.
+
+- title: Groebner techniques for ribbons
+  coauthors: ["[Maksym Fedorchuk](https://www2.bc.edu/maksym-fedorchuk/)", "[David Swinarski](http://faculty.fordham.edu/dswinarski/)"]
+  journal: Albanian Journal of Mathematics, 2015
+  formats:
+    pdf: papers/groebner.pdf
+    journal: https://sites.google.com/site/albjmath/archives/vol-8/2014-6
+  abstract: We use Groebner basis techniques to study the balanced canonical ribbon in each odd genus g \geq 5. We obtain equations and syzygies of the ribbon, give a Groebner interpretation of part of Alper, Fedorchuk, and Smyth\'s proof of finite Hilbert stability for canonical curves, and discuss the obstacles in using ribbons to give a new proof of Generic Green\'s Conjecture (Voisin\'s Theorem).
+    
+- title: Toward GIT stability of syzygies of canonical curves
+  coauthors: ["[Maksym Fedorchuk](https://www2.bc.edu/maksym-fedorchuk/)", "[David Swinarski](http://faculty.fordham.edu/dswinarski/)"]
+  journal: Algebraic Geometry, 2016
+  formats:
+    arXiv: http://arxiv.org/abs/1401.6101/
+    journal: http://www.algebraicgeometry.nl/2016-1/2016-1-001.pdf
+    
+- title: Class of the Hodge eigenbundle using orbifold Riemann-Roch
+  comment: Appendix to [*Cyclic covering morphisms on \overline M_{0,n}*](https://www2.bc.edu/maksym-fedorchuk/papers/cyclic-coverings-2013.pdf) by "[Maksym Fedorchuk](https://www2.bc.edu/maksym-fedorchuk/)"
+  formats:
+    pdf: papers/CyclicAppendix.pdf
+  abstract:
+    We algebraically compute the class of the Hodge eigenbundles in the cyclic covering construction using Grothendieck-Riemann-Roch for stacks.
+
+- title: Sharp slope bounds for sweeping families of trigonal curves
+  coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
+  journal: Mathematical Research Letters, 2013
+  formats:
+    pdf: papers/TrigonalSlopes.pdf
+    arXiv: http://arxiv.org/abs/1211.2827/
+    journal: http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/
+  abstract: We establish sharp bounds for the slopes of curves in \overline{M}_g that sweep the locus of trigonal curves, proving Stankova-Frenkel\'s conjectured bound of 7+6/g for even g and obtaining the bound 7+20/(3g+1) for odd g. For even g, we find an explicit expression of the so-called Maroni divisor in the Picard group of the space of admissible triple covers. For odd g, we describe the analogous extremal effective divisor and give a similar explicit expression. 
+
+- title: Modular compactifications of the space of marked trigonal curves
+  journal: Advances in Mathematics, 2013  
+  formats:
+    pdf: papers/MarkedTrigonal.pdf
+    arXiv: http://arxiv.org/abs/1206.4503/
+    journal: http://www.sciencedirect.com/science/article/pii/S0001870813002776
+  abstract: We construct a sequence of modular compactifications of the space of marked trigonal curves by allowing the branch points to coincide to a given extent. Beginning with the standard admissible cover compactification, the sequence first proceeds through contractions of the boundary divisors and then through flips of the so-called Maroni strata, culminating in a Fano model for even genera and a Fano fibration for odd genera. While the sequence of divisorial contractions arises from a more general construction, the sequence of flips uses the particular geometry of triple covers. We explicitly describe the Mori chamber decomposition given by this sequence of flips.
+
+- title: Compactifications of Hurwitz spaces
+  journal: International Mathematical Research Notices, 2013  
+  formats:
+    pdf: papers/CompHurwitz.pdf
+    arXiv: "http://arxiv.org/abs/1206.4535"
+    journal: http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract
+  abstract: We construct several modular compactifications of the Hurwitz space H^d_{g/h} of genus g curves expressed as d-sheeted, simply branched covers of genus h curves. These compactifications are obtained by allowing the branch points of the covers to collide to a variable extent. They are very well-behaved if d=2,3, or if relatively few collisions are allowed. We recover as special cases the spaces of twisted admissible covers of Abramovich, Corti and Vistoli and the spaces of hyperelliptic curves of Fedorchuk.
+
+- title: Alternate compactifications of Hurwitz spaces
+  journal: Thesis, Harvard 2012
+  formats:
+    pdf: papers/thesis.pdf
+
+

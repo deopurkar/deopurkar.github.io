@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Graduate student algebraic geometry seminar</title>
+    <?php include("headers.html"); ?>
+    <meta name="robots" content="noindex"/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <style type="text/css">
+      <!--
+	  h1 {
+	  background: inherit;
+	  color: inherit;
+	  padding: 0;
+	  margin-top: 3%;
+	  font-size: 150%;
+	  font-weight: bold;
+	  }
+
+	  li {
+	  margin: 1%;
+	  } .lecture{
+	  margin-top: 2%;
+	  }
+	  
+	  strong{
+	  color: #493e4f;
+	  }
+
+	  table{
+	   width: 95%;
+	   margin: auto;
+	  }
+	  tr:nth-child(odd){
+	  
+          background-color: #eeeeee;
+	  } 
+
+	  td{
+	  padding: 0.5%;
+	  }
+       -->
+     </style>
+  </head>
+
+<body>
+  
+  <h1>Stable rationality and the decomposition of the diagonal, Spring 2016</h1>
+
+  <h3>Organizational:</h3>
+  
+  <ol>
+    <li> Please email Johan if you want to be on the associated mailing list.
+    <li> The talks will be 2x45 minutes with a short break.
+    <li> Time and place: 10:30am&ndash;noon in room 407.
+    <li> First organizational meeting: Jan, 22.
+      If you are a student and interested in actively participating, then take a look at the lectures and the references.
+  </ol>
+  
+  
+  <h3>Dates</h3>
+  
+  <table>
+    <col width="16%">
+    <col width="49%">
+    <col width="35%">
+    
+    <tr>
+      <td>Jan 22
+      <td>Organization and lecture 0
+      <td>Anand Deopurkar
+    </tr>
+    
+    <tr>
+      <td>Jan 29
+      <td>Lecture 1
+      <td>Dmitrii Pirozhkov
+    </tr>
+
+    <tr>
+      <td>Feb 5
+      <td>Lecture 2
+      <td>Carl Lian
+    </tr>
+
+    <tr>
+      <td>Feb 12
+      <td>Lecture 3
+      <td>Shizhang Li
+    </tr>
+
+    <tr>
+      <td>Feb 19
+      <td>Lecture 4
+      <td>Qixiao Ma
+    </tr>
+
+    <tr>
+      <td>Feb 26
+      <td>Lecture 5
+      <td>Ashwin Deopurkar
+    </tr>
+
+    <tr>
+      <td>Mar 4
+      <td>Lecture 6
+      <td>Remy van Dobben de Bruyn
+    </tr>
+
+    <tr>
+      <td>Mar 11
+      <td>Stable rationality and the Grothendieck ring
+      <td>Anand and Johan
+    </tr>
+
+    <tr>
+      <td>Mar 18
+      <td>No lecture (spring break)
+      <td>
+    </tr>
+
+    <tr>
+      <td>Mar 25
+      <td>On the Chow ring of a K3 surface
+      <td>David Stapleton
+    </tr>
+
+    <tr>
+      <td>Apr 1
+      <td>Families of rationally connected varieties
+      <td>Carl Lian
+    </tr>
+
+    <tr>
+      <td>Apr 8
+      <td>No lecture (AGNES)
+      <td>
+    </tr>
+
+    <tr>
+      <td>Apr 15
+      <td>Rational curves on Calabi-Yau threefolds
+      <td>Gabriele di Cerbo
+    </tr>
+
+    <tr>
+      <td>Apr 22
+      <td>Lecture 11
+      <td>Monica Marinescu
+    </tr>
+
+    <tr>
+      <td>Apr 29
+      <td>Lecture 12
+      <td>
+    </tr>
+
+  </table>
+
+  <h3>Lectures</h3>
+  <ol start="0">
+    <li class="lecture"><strong>Introduction to rationality questions</strong>.<br>
+      Outline of the lectures.
+    <li class="lecture"><strong>Introduction to Chow groups</strong>.
+      <ol type="a">
+	<li>Define Chow groups and state their properties: proper pushforward, flat pullback, pullback along morphisms of smooth varieties, intersection product for smooth varieties, projection formula, localization exact sequence, cycle class maps.
+	<li>Recall rational connectedness and show that it implies that Ch<sub>0</sub> is trivial.
+	<li>Show that Ch<sub>0</sub> is a stable birational invariant of smooth projective varieties [1, Lemma 2.11].
+	<li>In all of the above, clearly state the setting and hypotheses (varities over a field, smooth varieties over a field, schemes of finite type etc.)
+      </ol>
+      Reference: [1, Section 2.2] and [2] for general background.
+
+    <li class="lecture">
+      <strong>Decomposition of the diagonal</strong>.
+      <ol type="a">
+	<li>Define Chow and cohomological decomposition of the diagonal (dd).
+	<li>Relate decomposition of the diagonal to Ch<sub>0</sub> (Bloch-Srinivas).
+	<li>Define what it means for Ch<sub>0</sub> to be universally trivial and show that Chow dd is equivalent to the universal triviality of Ch<sub>0</sub>.
+	<li>Prove that having Chow or cohomological dd is a stable birational property.
+      </ol>
+      References: [1, Section 4.1]
+
+    <li class="lecture">
+      <strong>The specialization theorem</strong>.      
+      <ol type="a">
+	<li>Define what it means for a morphism to be universally Ch<sub>0</sub> trivial [4, Definition 1.1]. Characterize this in terms of the fibers [4, Proposition 1.8].
+	<li>Show some examples and non-examples of the above, for example for resolutions of some simple singularities.
+	<li>Prove that (under appropriate hypotheses), the property of having Chow dd specializes from the geometric generic fiber of a family over a DVR to the desingularization of the special fiber [4, Theorem 1.14].
+	<li>Show that in a family of varieties, the property of having a Chow dd holds on a countable union of closed subsets [5, Proposition 1.4].
+      </ol>
+      Reference: [4] (French). This subsumes [5, Theorem 1.1].
+    </li>
+    
+
+    <li class="lecture">
+      <strong>The Artin-Mumford invariant</strong>.
+      <ol type="a">
+	<li>Recall the specialization theorem from last time and highlight that to use it, we must have some examples of non stably rational varieties.
+	<li>Define the Artin-Mumford invariant and show that it is a stable birational invariant.
+	<li>Show that cohomological dd implies that this invariant vanishes.
+	<li>Describe Artin and Mumford's examples of unirational threefolds with nontrivial Artin-Mumford invariant.
+      </ol>
+      References: [1, Section 2.1.3] and [3].
+
+    <li class="lecture">
+      <strong>Quartic double solids</strong>.
+      <ol type="a">
+	<li>Discuss the overall shape of the proof: We want to prove that a very general member of a family is not stably rational. We exhibit a particular X<sub>0</sub> (possibly singular) and show that its desingularization does not have Chow/cohomological dd. For this, we use a classical method like Artin-Mumford. We conclude that a very general member does not have Chow/cohomological dd. Highlight that the classical method might fail for the very general member.
+	<li>Define quartic double solids.
+	<li>Use this method to show that a very general quartic double solid is not stably rational.
+	<li>Amplify the above result to show that a very general quartic double solid with at most 7 nodes is not stably rational. 
+      </ol>
+      References: [5, Section 1].
+
+    <li class="lecture">
+      <strong>Hypersurfaces</strong>.<br>
+      Explain Totaro's paper [6].
+      The main theorem is that a large class of hypersurfaces does not admit Chow dd and hence is not stably rational. The argument goes by degenerating a hypersurface to an inseparable double cover (in characteristic 2). To show that the special member is not stably rational, he uses another classical obstruction, namely the non vanishing of a space of pluri-canonical forms.
+
+    
+<h3>Additional fun topics</h3>
+<ol type="i">
+  <li>Mumford, <a href="https://projecteuclid.org/euclid.kjm/1250523940"><em>Rational equivalence of 0-cycles on surfaces</em></a>.
+  <li>Beauville, Voisin, <a href="http://math1.unice.fr/~beauvill/pubs/bv.pdf"><em>On the Chow ring of a K3 surface</em></a>.
+  <li>Clemens, Griffiths, <a href="http://www.jstor.org/stable/1970801?seq=1#page_scan_tab_contents"><em>The intermediate Jacobian of the cubic threefold</em></a>.
+  <li>Murre, <a href="https://eudml.org/doc/89140"><em>Algebraic equivalence modulo rational equivalence on a cubic threefold</em></a>.
+  <li>Murre, <a href="https://eudml.org/doc/89180"><em>Reduction of the proof of the non-rationality of a non-singular cubic threefold to a result of mumford</em></a>.
+  <li>Iskovskih, <a href="https://projecteuclid.org/euclid.dmj/1077305664"><em>On the rationality problem for conic bundles</em></a> and <a href="http://link.springer.com/chapter/10.1007%2FBFb0086263"><em>Towards the problem of rationality of conic bundles</em></a>.
+  <li>Voisin, <a href="http://link.springer.com/article/10.1007%2Fs00222-014-0551-y"><em>Unirational threefolds with no universal codimension 2 cycle</em></a> (the part about codimension 2 cycles).
+  <li>Serre, <a href="http://jlms.oxfordjournals.org/content/s1-34/4/481.full.pdf"><em>On the fundamental group of a unirational variety</em></a>.
+  <li>Hassett, <a href="http://imperium.lenin.ru/~kaledin/math/hasset.pdf"><em>Some rational cubic fourfolds</em></a>.
+  <li>Beauville, Donagi, <a href="http://math1.unice.fr/~beauvill/pubs/bd.pdf"><em>La variété des droites d'une hypersurface cubique de dimension 4</em></a>.
+  <li>Barth, Van de Ven, <a href="http://link.springer.com/article/10.1007%2FBF01226420"><em>Fano-Varieties of lines on hypersurfaces</em></a>.
+  <li>Galkin, Shinder, <a href="http://arxiv.org/abs/1405.5154"><em>The Fano variety of lines and rationality problem for a cubic hypersurface</em></a>.
+  <li>Larsen, Lunts, <a href="http://arxiv.org/pdf/math/0110255.pdf"><em>Motivic measures and stable birational geometry.</em></a>
+  <li>Something else of your choice.
+</ol>
+
+<h3>References</h3>
+<ol>
+  <li>Voisin, <a href="jdgvoisin.pdf"><em>Stable birational invariants and the Luroth problem</em></a>.
+  <li>Fulton, <em>Intersection theory</em> (book).
+  <li>Artin, Mumford, <a href="artin-mumford.pdf"><em>Some elementary examples of unirational varieties which are not rational</em></a>.
+  <li>Colliot-Thélène, Pirutka <a href="ct-pirutka.pdf"><em>Hypersurfaces quartiques de dimension 3 : non rationalité stable</em></a>.
+  <li>Voisin, <a href="voisin1.pdf"><em>Unirational threefolds with no universal codimension 2 cycle</em></a>.
+  <li>Totaro, <a href="totaro.pdf"><em>Hypersurfaces that are not stably rational</em></a>.
+  <li>Shen <a href="http://arxiv.org/abs/1102.2550"><em>On relations among 1-cycles on cubic hypersurfaces</em></a>
+  <li>Shen <a href="http://arxiv.org/abs/1102.2550"><em>Hyperkahler manifolds of Jacobian type</a></em>
+  <li>de Fernex, Fusi, <a href="df-fusi.pdf"><em>Rationality in families of threefolds</em></a>.
+</ol>
+
+<?php include("footer.html"); ?>
+
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <HEAD>
+    <TITLE>Calculus 1 (Spring 2015)
+    </TITLE>
+    <?php include("headers.html"); ?>
+    <LINK REL=STYLESHEET type="text/css" HREF="style.css">
+    <style type="text/css">
+      <!-- 
+           .picture {
+           float: right;
+           clear: both;
+           height:10em;
+           }
+	   
+	   td.field {
+           font-weight: bold;
+	   padding-right: 1em;
+	   }
+	   
+	   table.plan tr:nth-child(odd){
+           background-color: #eeeeee;
+	   } 
+
+	   table.plan td {
+           padding-left: 5px;
+	   }
+
+	   /* To prevent jump scrolling */
+	   .anchor {position: fixed; top: 0px;} 
+
+	   /* Optional elements are not displayed */
+	   .optional {display: none;}
+	   /* But they are displayed when the previous anchor is the target*/
+	   .anchor:target + .optional {display: inline;}
+	-->
+    </style>
+  </HEAD>
+
+  <BODY >
+    <H1>Calculus 1 (Spring 2015)</H1>
+    <span id="z" class="anchor"></span>
+
+    <p><img class="picture" src="stewart7e.jpg" alt="Picture of the text"></p>
+
+    <table>
+      <tr> <td class="field">Time</td>
+	<td>Section V: Tue, Thu 8:40am&ndash;9:55am<br>
+	  Section VI: Tue, Thu 10am&ndash;11:25am</td> </tr>
+      <tr> <td class="field">
+	  Place</td><td>Room 203, Math building</td></tr>
+      <tr> <td class="field">Instructor</td> 
+	<td>Anand Deopurkar (<code>anandrd at math</code>)</td></tr>
+      <tr><td class="field">TAs</td>
+	<td> Benjamin Caine (<code>bsc2123</code>), Britt Fossum (<code>bef2116</code>), Letian He (<code>lh2609</code>), Anish King (<code>awk2123</code>).
+	</td>
+      </tr>
+      <tr><td class="field">Office hours</td>
+	<td>Tue 12:30&ndash;1:30pm, Wed 5:30&ndash;6:30pm, or by appointment in Math 413.</td>
+      </tr>
+      <tr><td class="field">Textbook</td>
+	<td><em> Calculus: Early Transcendentals (7th ed.)</em> by James Stewart
+	  <br>WebAssign is not required.
+	  <br>Here is some <a href="http://www.math.columbia.edu/programs-math/undergraduate-program/calculus-classes/#textbook">information about acquiring the textbook</a>.
+	</td>
+      </tr>
+    </table>
+    <p>It would be nice if you included "[Calculus 1]" in your email subject (For example: "[Calculus 1] Midterm 2 conflict").</p>
+
+
+    <h2>Announcements</h2>
+
+    <p>The final exams have been graded and the scores are on CourseWorks.
+      If you would like to look at your exam, come to my office today.
+      The average for the final was 69 and the standard deviation was 24.
+    </p>
+    <p><strong>Old announcements</strong> <a href="#announcements">Show</a> / <a href="#z">Hide </a></p>
+    <span id="announcements" class="anchor"></span>
+    <div class="optional">
+    <p>
+      The final exam will be cumulative with a slight bias towards the last third of the course.
+      This means that it will cover Chapters 1, 2, 3, 4, 5, and 6.1, except the sections that we skipped.
+      The skipped sections are 1.4, 2.4, 3.7, 3.8, 3.11, 4.2, 4.5, and 4.6.
+    </p>
+    <p>
+      Here are some resources to help you prepare:
+    <p/>
+      <ul>
+	<li><a href="midterm2_sol.pdf">Midterm 2 solutions</a>
+	<li><a href="review.pdf">Review slides</a> from the class on Thursday, April 30
+	<li><a href="practice_final.pdf">A practice final</a> (<a href="practice_final_sol.pdf">Solutions</a>)
+	<li><a href="practice_final2.pdf">Last year's practice final</a> (<a href="practice_final2_sol.pdf">Solutions</a>)
+	<li><a href="final1.pdf">Last year's final</a> (Skip Problem #8) (<a href="final1_sol.pdf">Solutions</a>)
+	<li><a href="practice_problems_final.pdf">Some more practice problems</a> from last year's course by Maria Cueto. Skip #1, 6, 8, 14 (<a href="practice_problems_final_sol.pdf">Solutions</a>)
+	<li>More <a href="http://tutorial.math.lamar.edu/problems/CalcI/DerivAppsIntro.aspx">practice problems</a> (with solutions) from Professor Paul Dawkins.
+      </ul>
+    <p>
+      I will have the following office hours:
+      </p>
+    <ul>
+      <li>Tuesday (May 5): 12:30&ndash;1:00<br/>
+      <li>      Wednesday (May 6): 5:30&ndash;6:30<br/>
+      <li>      Saturday (May 9): 5:00&ndash;6:00<br/>
+      <li>      Sunday (May 10): 5:00&ndash;6:00<br/>
+      <li>      Monday (May 11): 5:00&ndash;6:00<br/>
+    </ul>
+
+
+    <p>
+      The second midterm is on Thursday, April 9. The exam will cover the following sections from the textbook:
+      </p>
+      <ul>
+	<li> § 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.9, 3.10
+	<li> § 4.1, 4.3, 4.4, 4.5 (No sketching of asymptotes), 4.7, 4.8
+      </ul>
+      <p>
+	Here are some resources for studying:
+      </p>
+      <ul>
+	<li><a href="practice_midterm2.pdf">Practice midterm.</a> (<a href="practice_midterm2_sol.pdf">Solutions</a>)<br>
+	<li><a href="midterm2_last.pdf">Last year's midterm.</a> (<a href="midterm2_last_sol.pdf">Solutions</a>)<br>
+	  In 3(b), the derivative should have x<sup>1/x</sup> and not x<sup>x</sup>.
+	<li><a href="practice_midterm2_last.pdf">Last year's practice midterm</a>(<a href="practice_midterm2_last_sol.pdf">Solutions</a>)
+
+	  
+	<li>More <a href="http://tutorial.math.lamar.edu/problems/CalcI/DerivAppsIntro.aspx">practice problems</a> (with solutions) from Professor Paul Dawkins.
+      </ul>
+    <p>
+      You will get the following <a href="formulas.pdf">formula sheet</a> with the exam.
+    </p>
+    <p>
+      For 3.10: 8 and 10 ignore the part about "Determine the values of x for which ...."
+    </p>
+    <p>
+      Here are the <a href="midterm1_sols.pdf">solutions of midterm 1</a>.
+    </p>
+      <p>
+      We have finished grading the first midterm. You can view your score on CourseWorks.
+      The mean  was 34 with a standard deviation of 9. The median was 35. Here is the distribution.
+      <br>
+      <img width="500" src="Midterm1.png" alt="Bar chart of midterm 1 score distribution"/>
+    </p>
+      <p>
+      Next week's office hours have been moved to Sunday (Feb 15) 5pm to 6pm and Monday (Feb 16) 6pm to 7pm.
+    </p>
+    <p>
+      The first midterm is on Tuesday, Feb 17. 
+      It will cover everything we have done in class so far.
+      This corresponds to Chapter 1 and Chapter 2 from class except Section 1.4, Section 2.4, and Section 2.5.
+    </p>
+    <p>
+      Here is a <a href="practice_midterm1.pdf">practice exam</a> (<a href="practice_midterm1_sols.pdf">Solutions</a>).
+    </p>
+    
+    <p>
+      Here are some practice <a href="practice_limits.pdf"> problems on limits</a> (<a href="practice_limits_ans.pdf">Answers</a>).
+    </p>
+
+    <p>
+      Homework solutions are online. See the links following the homework.
+    </p>
+
+    <p>
+      You can collect your old homework from the black rack in the corner of the south corridor of the 4th floor of the math building (across the hall from the homework deposit boxes).
+    </p>
+    
+    <p>The first homework has been posted.
+      Please write your name and UNI on your submissions.
+      Make sure you staple all the sheets!
+    </p>
+    </div>
+    
+
+    <h2>Homework</h2>
+    <p>
+      The problems are from the textbook unless indicated otherwise.
+      <ol reversed>
+	<li>Due Thursday, Apr 30 (<a href="hw11_solutions.pdf">Solutions</a>)<br>
+	  This is the last homework.<br>
+	  § 5.4: 1, 6, 10, 22, 26, 37, 49<br>
+	  § 5.5: 2, 5, 7, 8, 16, 21, 41, 78, 86<br>
+	  § 5 (Review Exercises): 38, 62, 70
+
+	<li>Due Thursday, Apr 23 (<a href="hw10_solutions.pdf">Solutions</a>)<br>
+	  § 5.1: 3, 13, 18, 22, 24<br>
+	  § 5.2: 17, 30, 33, 40, 51, 53, 71<br>
+	  § 5.3: 4, 8, 13, 16, 19, 20, 33, 34
+
+	<li>Due Thursday, Apr 16 (<a href="hw9_solutions.pdf">Solutions</a>)<br>
+	  § 4.8: 1, 4, 12 (Only do 2 steps and take x<sub>0</sub>=1), 30 (a) <br>
+	  § 4.9: 2, 4, 14, 22 (Remembar arctan), 52, 53, 65, 73.<br>
+	  § 4 Review: 2, 14, 30, 77, 79, 84<br>
+	  Take acceleration due to gravity to be 10 m/s<sup>2</sup>, if it is not given.<br>
+	  
+	<li>Due Thursday, Apr 02 (<a href="hw8_solutions.pdf">Solutions</a>)<br>
+	  § 4.4: 2, 4, 6, 12, 28, 41, 55, 61, 72, 73<br>
+	  § 4.7: 4, 8, 10, 11 (Need not write up part (a)), 23, 34, 40, 49, 70.
+
+	<li>Due Thursday, Mar 26  (<a href="hw7_solutions.pdf">Solutions</a>)<br>
+	  § 3 Review (Page 265): 1, 8, 21, 51, 53, 70, 89 (skip d).<br>
+	  § 4.1: 8, 30, 40, 41, 48, 53.<br>
+	  § 4.3: 6, 8, 10, 15, 64, 68.<br>
+	  
+	<li>Due Thursday, Mar 12 (<a href="hw6_solutions.pdf">Solutions</a>)<br>
+	  § 3.5: 3, 18, 32, 80<br>
+	  § 3.6: 6, 24, 40, 44<br>
+	  § 3.9: 2, 4, 16, 18, 20, 31<br>
+	  § 3.10: 6, 8, 10, 25, 28
+	  
+	<li>Due Thursday, Mar 5 (<a href="hw5_solutions.pdf">Solutions</a>) <br>
+	  § 3.2: 1, 4, 6, 27, 32, 44, 50<br>
+	  § 3.3: 2, 4, 10, 12, 24, 37, 40<br>
+	  § 3.4: 2, 24, 40, 51, 63, 67<br>
+
+	<li>Due Thursday, Feb 26 (<a href="hw4_solutions.pdf">Solutions</a>) <br>
+	  § 2.7: 6, 8, 11, 12, 14, 54<br>
+	  § 2.8: 3, 15, 58<br>
+	  § 3.1: 4, 6, 8, 12, 14, 22, 26, 34, 52, 63, 67
+  
+	<li>Due Thursday, Feb 12 (<a href="hw3_solutions.pdf">Solutions</a>)<br>
+	  § 2.1: 2<br>
+	  § 2.2: 6, 8, 16<br>
+	  § 2.3: 2, 4, 12, 14, 23, 26, 36 (skip the graph), 42, 47<br>
+	  § 2.6: 4, 16, 22, 30, 33, 43
+	<li>Due Thursday, Feb 5 (<a href="hw2_solutions.pdf">Solutions</a>)<br>
+	  § 1.5:  4, 5, 14, 16, 29 (skip the graph)<br>
+	  § 1.6: 5, 6, 10, 14, 22, 24, 26, 40, 64<br>
+	  § 1 Review Exercises (Page 73-74): 2, 6, 20, 22, 26
+	<li> Due Thursday, Jan 29. (<a href="hw1_solutions.pdf">Solutions</a>)<br>
+	  § 1.1: 3, 7, 8, 9, 10, 14, 44, 50, 69 (read about odd and even functions)<br>
+	  § 1.2: 4, 11, 13, 18, <br>
+	  § 1.3: 3, 32, 42, 44, 51, 54, 56<br>
+      </ol>
+    
+    <p>
+      Homework will be announced on the website every Thursday and it will be due by the next Thursday by 5pm in the drop box on the 4th floor of the Math builting.
+      <em>I will not accept any late homework.</em>
+      However, I understand that you may not be able to do some of the homeworks due to extenuating circumstances.
+      As a solution, I will drop the two lowest homework scores.
+    </p>
+    
+    <h3>Collaboration</h3>
+    <p>
+      You may work on the homework in groups, but you must write up the solutions on your own.
+      As a matter of academic honesty, write the names of your collaborators on top of your submitted work.
+      This will not affect your grade. </p>
+
+    <h2>Course Description</h2>
+    <p> We will study differential and a bit of integral calculus with applications. 
+      We will cover the first five chapters (plus a few sections of Chapter 6) in the course textbook.
+    </p>
+    <ul>
+      <li>Functions and Models (Chapter 1)</li>
+      <li>Limits and derivatives (Chapter 2)</li>
+      <li>Differentiation rules (Chapter 3)</li>
+      <li>Applications of Differentiation (Chapter 4)</li>
+      <li>The integral (Chapter 5)</li>
+      <li>Applications of the integral (Chapter 6 &#8212; a few sections)</li>
+    </ul>
+
+    <p>Here is a more detailed <a href="#plan">course plan</a>.</p>
+    <p>For more information, visit the department-wide <a href="http://www.math.columbia.edu/programs-math/undergraduate-program/calculus-classes/calculus-i/">Calculus 1</a> webpage.
+
+      
+    <h2>Grading</h2>
+    <p>
+      The final grade will be based on homework (20%), two in-class midterm exams (20% each), and a final exam (40%).
+      The exams are scheduled as follows:</p>
+    <ul>
+      <li> Midterm 1: February 17
+      <li> Midterm 2: April 9
+      <li> Final (projected): May 12 for the 10:10 section, May 14 for the 8:40 section.
+    </ul>
+
+    <h2>Resources</h2>
+
+    <h3>Help room</h3>
+    <p>
+      The math help room, located at Milbank 333 on the Barnard campus, is an excellent resource to get help and foster collaboration.
+      It will be staffed by TAs in the math department, all eager to help you.
+      Here is the <a href="http://www.math.columbia.edu/general-information/help-rooms/333-milbank/">staffing schedule</a>.</p>
+    <h3>WebAssign</h3>
+    <p>
+      Although WebAssign is not a required part of the course, you can use it for practice problems.
+      If you have WebAssign access, use the class key <code>columbia 7395 4958</code>.</p>
+
+    <h2 id="plan">Course plan</h2>
+    <table class="plan">
+      <tbody>
+	<tr>
+	  <td><strong>Date</strong></td>
+	  <td><strong>Material</strong></td>
+	  <td><strong>Sections</strong></td>
+	</tr>
+	<tr>
+	  <td>01/20</td>
+	  <td>Functions. New functions from old.</td>
+	  <td>§1.1, 1.2, 1.3</td>
+	</tr>
+	<tr>
+	  <td>01/22</td>
+	  <td>Trigonometric functions.</td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td>01/27</td>
+	  <td>Exponential function, inverse functions, logarithms.</td>
+	  <td>§1.5, 1.6</td>
+	</tr>
+	<tr>
+	  <td>01/29</td>
+	  <td>Derivative: motivation. Informal definition of limit.</td>
+	  <td>§2.1, 2.2</td>
+	</tr>
+	<tr>
+	  <td>02/03</td>
+	  <td>Limit laws. Squeeze theorem.</td>
+	  <td>§2.3</td>
+	</tr>
+	<tr>
+	  <td>02/05</td>
+	  <td>Continuity, asymptotes.</td>
+	  <td>§2.5, 2.6</td>
+	</tr>
+	<tr>
+	  <td>02/10</td>
+	  <td>Definition of derivative. Derivative as a function.</td>
+	  <td>§2.7, 2.8</td>
+	</tr>
+	<tr>
+	  <td>02/12</td>
+	  <td>Review.</td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td>02/17</td>
+	  <td>Midterm 1.</td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td>02/19</td>
+	  <td>Derivative of polynomials. Product and quotient rules.</td>
+	  <td>§3.1, 3.2</td>
+	</tr>
+	<tr>
+	  <td>02/24</td>
+	  <td>Derivatives of trig functions.</td>
+	  <td>§3.3</td>
+	</tr>
+	<tr>
+	  <td>02/26</td>
+	  <td>Chain rule, implicit differentiation.</td>
+	  <td>§3.4, 3.5</td>
+	</tr>
+	<tr>
+	  <td>03/03</td>
+	  <td>Derivative of the logarithm. Applications.</td>
+	  <td>§3.6</td>
+	</tr>
+	<tr>
+	  <td>03/05</td>
+	  <td>Related rates, linear approximation.</td>
+	  <td>§3.9, 3.10</td>
+	</tr>
+	<tr>
+	  <td>03/10</td>
+	  <td>Max/min, the derivative and the shape of the graph.</td>
+	  <td>§4.1, 4.3</td>
+	</tr>
+	<tr>
+	  <td>03/12</td>
+	  <td>Second derivative, convexity.</td>
+	  <td>§4.3</td>
+	</tr>
+	<tr>
+	  <td colspan="3">Spring break 03/16 &#8211; 03/20</td>
+	</tr>
+	<tr>
+	  <td>03/24</td>
+	  <td>L&#8217;Hospital&#8217;s rule, more graph sketching.</td>
+	  <td>§4.4, 4.5</td>
+	</tr>
+	<tr>
+	  <td>03/26</td>
+	  <td>Optimization problems.</td>
+	  <td>§4.7</td>
+	</tr>
+	<tr>
+	  <td>03/31</td>
+	  <td>Newton&#8217;s method.</td>
+	  <td>§4.8</td>
+	</tr>
+	<tr>
+	  <td>04/02</td>
+	  <td>Antiderivatives.</td>
+	  <td>§4.9</td>
+	</tr>
+	<tr>
+	  <td>04/07</td>
+	  <td>Review.</td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td>04/09</td>
+	  <td>Midterm 2.</td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td>04/14</td>
+	  <td>Definite integral: definition.</td>
+	  <td>§5.1</td>
+	</tr>
+	<tr>
+	  <td>04/16</td>
+	  <td>The &#8220;area so far&#8221; function.</td>
+	  <td>§5.2</td>
+	</tr>
+	<tr>
+	  <td>04/21</td>
+	  <td>The fundamental theorem of calculus. Evaluating definite integrals via the &#8220;net change theorem&#8221;</td>
+	  <td>§5.3, 5.4</td>
+	</tr>
+	<tr>
+	  <td>04/23</td>
+	  <td>Substitution rule.</td>
+	  <td>§5.5</td>
+	</tr>
+	<tr>
+	  <td>04/28</td>
+	  <td>Areas between curves, average values.</td>
+	  <td>§6.1, 6.5</td>
+	</tr>
+	<tr>
+	  <td>04/30</td>
+	  <td>Review.</td>
+	  <td></td>
+	</tr>
+      </tbody>
+    </table>
+
+    <?php include("footer.html"); ?>
+  </body>
+</html>

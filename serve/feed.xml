@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Liquid error: undefined method `gsub' for nil:NilClass</title>
+    <description>Liquid error: undefined method `gsub' for nil:NilClass</description>
+    <link>http://deopurkar.github.io/</link>
+    <atom:link href="http://deopurkar.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>2016-08-18 21:37:10 -0400</pubDate>
+    <lastBuildDate>2016-08-18 21:37:10 -0400</lastBuildDate>
+    <generator>Jekyll v</generator>
+    
+  </channel>
+</rss>
