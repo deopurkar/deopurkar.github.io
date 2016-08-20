@@ -2,10 +2,14 @@
 ---
 
 // Colour palette
-$light:     #eeeeee;
+$lightest:  #ffffff;
+$lighter:   #eeeeee;
+$light:     #cccccc;   
+
 $darkest:   #493e4f;
 $darker:    #6F6375;
 $dark:      #8A858D;
+
 $white:     #ffffff;
 $yellow:    #b58900;
 $orange:    #cb4b16;
@@ -16,7 +20,7 @@ $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #859900;
 
-$bg: $light;
+$bg: $lighter;
 $fg: $darkest;
 $link: $darker;
 
@@ -41,7 +45,7 @@ body {
   margin-right:auto;
   ::selection {
     background: $dark;
-    color: $light;
+    color: $lighter;
   }
 }
 
@@ -61,7 +65,7 @@ code {
 }
 
 h1 {
-  color: $light;
+  color: $lighter;
   background: $darkest;
   margin: 0;
   font-size: 135%;
@@ -141,10 +145,10 @@ nav{
     }
 
   a {
-    color: $light;
+    color: $lighter;
     text-decoration: none;
     &:hover {
-      color: $white;
+      color: $lightest;
     }   
   }
 }
@@ -155,7 +159,7 @@ nav{
 
 /* By default tables alternate row colors */
 table tr:nth-child(odd){
-    background-color: $white;
+    background-color: $light;
 } 
   
 /* Stabilization as width -> Infinity */
