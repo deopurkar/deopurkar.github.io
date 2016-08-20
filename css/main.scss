@@ -66,8 +66,8 @@ h1 {
   margin: 0;
   font-size: 135%;
   font-weight: normal;
-  padding: 4%;
-  padding-left: 2%;
+  padding: 3%;
+  padding-left: 1.5%;
 }
 
 
@@ -130,13 +130,13 @@ nav{
   ul {
     margin: 0;
     list-style-type: none;
-    padding: 2%;
+    padding: 1%;
     padding-left: 0;
   }
 
   li {
     display: inline;
-    padding: 2%;
+    padding: 1%;
     margin: 0;
     }
 
@@ -155,7 +155,7 @@ nav{
   
 /* Stabilization as width -> Infinity */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
     body {
         max-width:70%;
     }
@@ -165,26 +165,26 @@ nav{
     }
 
     .summary {
-	margin: 20px 20px;
+	margin: 8px 8px;
     }
 
     .footer {
-	margin-top: 10px;
+	margin-top: 6px;
     }
 
     h1 {
-	padding: 40px;
-	padding-left: 20px;
+	padding: 24px;
+	padding-left: 12px;
     }
 
     nav{
 	ul {
-	    padding: 20px;
-	    margin-left: -20px;
+	    padding: 8px;
+	    margin-left: -8px;
 	}
 
 	li {
-	    padding: 20px;
+	    padding: 8px;
 	}
     }
 }
