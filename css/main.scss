@@ -149,9 +149,14 @@ nav{
   }
 }
 
-.current{
-  background: $dark;
+.current{ 
+ background: $dark;
 }
+
+/* By default tables alternate row colors */
+table tr:nth-child(odd){
+    background-color: $white;
+} 
   
 /* Stabilization as width -> Infinity */
 
