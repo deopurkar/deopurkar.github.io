@@ -2,10 +2,14 @@
 ---
 
 // Colour palette
-$light:     #eeeeee;
+$lightest:  #ffffff;
+$lighter:   #eeeeff;
+$light:     #ddddee;   
+
 $darkest:   #493e4f;
 $darker:    #6F6375;
 $dark:      #8A858D;
+
 $white:     #ffffff;
 $yellow:    #b58900;
 $orange:    #cb4b16;
@@ -16,7 +20,7 @@ $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #859900;
 
-$bg: $light;
+$bg: $lighter;
 $fg: $darkest;
 $link: $darker;
 
@@ -41,7 +45,7 @@ body {
   margin-right:auto;
   ::selection {
     background: $dark;
-    color: $light;
+    color: $lighter;
   }
 }
 
@@ -61,13 +65,13 @@ code {
 }
 
 h1 {
-  color: $light;
+  color: $lighter;
   background: $darkest;
   margin: 0;
   font-size: 135%;
   font-weight: normal;
-  padding: 4%;
-  padding-left: 2%;
+  padding: 3%;
+  padding-left: 1.5%;
 }
 
 
@@ -130,32 +134,37 @@ nav{
   ul {
     margin: 0;
     list-style-type: none;
-    padding: 2%;
+    padding: 1%;
     padding-left: 0;
   }
 
   li {
     display: inline;
-    padding: 2%;
+    padding: 1%;
     margin: 0;
     }
 
   a {
-    color: $light;
+    color: $lighter;
     text-decoration: none;
     &:hover {
-      color: $white;
+      color: $lightest;
     }   
   }
 }
 
-.current{
-  background: $dark;
+.current{ 
+ background: $dark;
 }
+
+/* By default tables alternate row colors */
+table tr:nth-child(odd){
+    background-color: $light;
+} 
   
 /* Stabilization as width -> Infinity */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
     body {
         max-width:70%;
     }
@@ -165,26 +174,26 @@ nav{
     }
 
     .summary {
-	margin: 20px 20px;
+	margin: 8px 8px;
     }
 
     .footer {
-	margin-top: 10px;
+	margin-top: 6px;
     }
 
     h1 {
-	padding: 40px;
-	padding-left: 20px;
+	padding: 24px;
+	padding-left: 12px;
     }
 
     nav{
 	ul {
-	    padding: 20px;
-	    margin-left: -20px;
+	    padding: 8px;
+	    margin-left: -8px;
 	}
 
 	li {
-	    padding: 20px;
+	    padding: 8px;
 	}
     }
 }

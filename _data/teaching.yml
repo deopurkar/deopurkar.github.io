@@ -5,46 +5,46 @@
 - what: Analysis and optimization
   where: Columbia
   when: Spring 2016
-  url: /ao/
+  url: ao/
   comment: A course about linear and non-linear optimization methods.
   
 - what: Young tableaux in algebra and geometry
   where: Columbia
   when: Fall 2015
-  url: /seminar15/
+  url: seminar15/
   comment: Undergraduate seminar based on Fulton\'s book *Young Tableaux*.
 
 - what: Calculus 1
   where: Columbia
   when: Spring 2015
-  url: /calc1/
+  url: calc1/
 
 - what: Moduli of curves
   where: Columbia
   when: Fall 2014
-  url: /moduli/
+  url: moduli/
   comment: Graduate (topics) course in algebraic geometry. The webpage has most of the course notes.
 
 - what: Calculus 1
   where: Columbia
-  url: /calc1sp14/
+  url: calc1sp14/
   when: Spring 2014
 
 - what: Modern algebra 2
   where: Columbia
-  url: /algebra2/
+  url: algebra2/
   comment: Rings, fields, and Galois theory
   when: Spring 2014
 
 - what: Modern algebra 1
   where: Columbia
-  url: /algebra1/
+  url: algebra1/
   comment: Group theory
   when: Fall 2013
 
 - what: Calculus 3
   where: Columbia
-  url: /calc3sp13/
+  url: calc3sp13/
   when: Spring 2013
 
 - what: Calculus 2
