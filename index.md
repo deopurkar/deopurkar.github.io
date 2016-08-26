@@ -31,7 +31,7 @@ I am (co)-organizing:
 2. SWAG (Summer Workshop in Algebraic Geometry) at UGA (Aug 26--29, 2016).
 3. AIM workshop on [Stability and moduli spaces](http://aimath.org/workshops/upcoming/stabmoduli/) (Jan 9--13, 2016).
 
-In Spring 2016, Johan de Jong and I organized the [Columbia Graduate Student Algebraic Geometry Seminar](seminar16/) on the decomposition of the diagonal.  
+In Spring 2016, Johan de Jong and I organized the [Columbia Graduate Student Algebraic Geometry Seminar](research/seminar16/) on the decomposition of the diagonal.  
 
 I go to the Algebraic Geometry, Algebra, and Number Theory seminars at UGA.  
 
