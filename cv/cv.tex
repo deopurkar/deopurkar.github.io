@@ -1,0 +1,143 @@
+---
+---
+\documentclass[11pt]{moderncv}
+\usepackage{
+  amsmath,
+  amssymb,
+  url,
+  geometry,
+  multicol
+}
+
+\usepackage[charter]{mathdesign}
+
+\moderncvtheme[blue]{banking}
+
+\renewcommand*{\namefont}{\fontsize{20}{20}\mdseries\upshape}
+\renewcommand*{\titlefont}{\fontsize{20}{20}\mdseries\upshape}
+\definecolor{color2}{RGB}{50,50,50}
+
+\firstname{Anand}
+\familyname{Deopurkar}
+\title{Curriculum Vitae}
+\address{Department of Mathematics, University of Georgia, Athens, GA 30605}
+\email{deopurkar@uga.edu}
+\homepage{deopurkar.github.io}
+
+\begin{document}
+\makecvtitle
+
+\section{Positions}
+
+\cventry{2016--\phantom{2018}}{Assistant Professor (Limited Term)}{University of Georgia}{Athens, GA}{}{}
+
+\cventry{2012--2016}{J. F. Ritt Assistant Professor}{Columbia University}{New York, NY}{}{}
+
+\section{Education}
+
+\cventry{2008--2012}{Ph.D.}{Harvard University}{Cambridge, MA}{Advisor: Joseph Harris}{}{}
+
+\cventry{2004--2008}{S.B.}{Massachusetts Institute of Technology (MIT)}{Cambridge, MA}{Mathematics with Computer Science}{}
+
+\section{Publications}
+
+{% for paper in site.data.papers  %}  {% unless paper.omitcv  %}
+  \cvlistitem[.5em]{
+    {{ paper.title | markdownify | strip_html | strip}}{% if paper.coauthors %} (with {{ paper.coauthors | join: ', ' | markdownify | strip_html | strip }}){% endif %}.\\ {% if paper.journal %} {\itshape {{ paper.journal | strip }}}.{% endif %} {% if paper.comment %} {\itshape {{ paper.comment | markdownify | strip_html | strip}} }{% endif %}
+    }{% endunless %}{% endfor %}
+
+\section{Grants and awards}        
+
+
+{% for award in site.data.awards %}  {% unless award.omitcv  %}
+  \cvlistitem[.5em]{
+    {{ award.what }}{% if award.with %} (with {{ award.with | join: ', ' | markdownify | strip_html | strip }}){% endif %}, {{ award.when }}.{% if award.comment %} {\itshape {{ award.comment | markdownify | strip_html | strip }}}{% endif %}
+    }{% endunless %}{% endfor %}
+
+\section{Teaching}
+
+\subsection{At the University of Georgia}
+{% assign here = site.data.classes | where:"where", "UGA" %}
+{% for class in here %}  {% unless class.omitcv  %}
+  \cvlistitem[.5em]{ {{ class.what | markdownify | strip_html | strip }}, {{ class.when }}.{% if class.comment %} {\itshape {{ class.comment | markdownify | strip_html | strip }} }{% endif %}
+    }{% endunless %}{% endfor %}
+
+      \subsection{At Columbia University}
+{% assign here = site.data.classes | where:"where", "Columbia" %}
+{% for class in here %}  {% unless class.omitcv  %}
+  \cvlistitem[.5em]{
+    {{ class.what | markdownify | strip_html | strip}}, {{ class.when }}.{% if class.comment %} {\itshape {{ class.comment | markdownify | strip_html | strip}} }{% endif %}
+    }{% endunless %}{% endfor %}
+
+      \subsection{At Harvard University}
+{% assign here = site.data.classes | where:"where", "Harvard" %}
+{% for class in here %}  {% unless class.omitcv  %}
+  \cvlistitem[.5em]{
+    {{ class.what | markdownify | strip_html | strip}}, {{ class.when }}.{% if class.comment %} {\itshape {{ class.comment | markdownify | strip_html | strip }}}{% endif %}
+    }{% endunless %}{% endfor %}
+
+\section{Invited Talks and Presentations}
+
+\subsection{In conferences or workshops}
+{% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Conference" or talk.type == "Workshop" %}
+  \cvlistitem[.5em]{
+    {{ talk.where }}. {\itshape {{ talk.what | markdownify | strip_html | strip}}}, {{ talk.when }}.{% if talk.comment %}\\ {{ talk.comment | markdownify | strip_html | strip }}{% endif %}
+    }{% endif %}{% endunless %}{% endfor %}
+
+\subsection{In seminars}
+      {% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Seminar" %}
+        \cvlistitem[.5em]{
+          {{ talk.where }}. {\itshape {{ talk.what | markdownify | strip_html | strip}}}, {{ talk.when }}.{% if talk.comment %}\\ {{ talk.comment | markdownify | strip_html | strip }}{% endif %}
+          }{% endif %}{% endunless %}{% endfor %}
+
+ \section{Service}
+ {% for thing in site.data.service %}  {% unless thing.omitcv  %}
+  \cvlistitem[.5em]{
+    {{ thing.what }}{% if thing.when %} {{ thing.when }}{% endif %}
+    }{% endunless %}{% endfor %}
+            
+\section{References}
+
+\begin{multicols}{2}
+  \cvlistitem[1em]{
+    {\bfseries Joseph Harris}\\
+    Harvard University\\
+    1 Oxford Street\\
+    Cambridge, MA 02139, USA.\\
+    Email: \url{harris@math.harvard.edu}\\
+    Phone: (617) 495-2171.  }
+
+  \cvlistitem[1em]{
+    {\bfseries Brendan Hassett}\\
+    Brown University\\
+    151 Thayer Street\\
+    Providence, RI 02912, USA.\\
+    Email: \url{bhassett@math.brown.edu}\\
+    Phone: (401) 863-7961.  }
+
+  \cvlistitem[1em]{
+    {\bfseries Johan de Jong}\\
+    Columbia University\\
+    2990 Broadway\\
+    New York, NY 10027, USA.\\
+    Email: \url{dejong@math.columbia.edu}\\
+    Phone: (212) 854-2671.  }
+
+  \cvlistitem[1em]{
+    {\bfseries Davesh Maulik}\\
+    Massachusetts Institute of Technology\\
+    77 Massachusetts Avenue\\
+    Cambridge MA 02142, USA.\\
+    Email: \url{dmaulik@math.columbia.edu}\\
+    Phone: (617) 253-1796.  }
+  \subsection{Teaching}
+  \cvlistitem[1em]{
+    {\bfseries Patrick Gallagher}\\
+    Columbia University\\
+    2990 Broadway\\
+    New York, NY 10027, USA. \\
+    Email: \url{pxg@math.columbia.edu}\\
+    Phone: (212) 854-4346.  }
+\end{multicols}
+
+\end{document}
