@@ -6,4 +6,5 @@ _site
 *.aux
 *.log
 *.fls
+*.fdb_latexmk
 **/auto
