@@ -1,4 +1,4 @@
-- what: Math 2250
+- what: Math 2250 (Calculus for Science and Engineering)
   where: UGA
   when: Fall 2016 
 
@@ -12,7 +12,7 @@
   where: Columbia
   when: Fall 2015
   url: seminar15/
-  comment: Undergraduate seminar based on Fulton\'s book ``Young Tableaux''.
+  comment: Undergraduate seminar based on Fulton\'s book *Young Tableaux*.
 
 - what: Calculus 1
   where: Columbia
@@ -39,7 +39,7 @@
 - what: Modern algebra 1
   where: Columbia
   url: algebra1/
-  comment: Group theory HA
+  comment: Group theory.
   when: Fall 2013
 
 - what: Calculus 3
@@ -55,7 +55,6 @@
   where: Harvard
   when: 2012
 
-  
 - what: Algebraic curves
   where: Harvard
   when: 2011

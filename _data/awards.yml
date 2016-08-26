@@ -1,0 +1,29 @@
+- what: AMS-Simons Travel Grant
+  howmuch: \$4000
+  when: 2016--2018
+  type: travel
+
+- what: American Institute of Mathematics Workshop Funding
+  when: 2016
+  type: conference
+  with: [Maksym Fedorchuk, Ian Morrison, Xiaowei Wang]
+  
+- what: Award for excellence in teaching
+  when: 2014
+  comment: Columbia departmental award.
+
+- what: Jon A. Bucsela prize
+  when: 2006
+  comment: MIT departmental award given to the top graduating mathematics major.
+
+- what: Rogers prize
+  when: 2006
+  comment: MIT departmental award for summer research.
+
+- what: William Lowell Putnam competition
+  when: 2004 (Rank 16--25), 2005 (Honorable mention), 2007 (Honorable mention)
+
+- what: International Mathematical Olympiad
+  when: 2004 (Silver), 2003 (Bronze)
+
+

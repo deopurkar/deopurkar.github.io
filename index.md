@@ -11,7 +11,7 @@ Assistant Professor (Limited term)
 [University of Georgia](http://www.uga.edu/)  
 Office: Boyd 606  
 Email: `deopurkar at uga dot edu`  
-[CV](cv-deopurkar.pdf)  
+[CV](cv/cv.pdf)  
 
 ## Research
 
