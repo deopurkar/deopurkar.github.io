@@ -8,3 +8,4 @@ _site
 *.fls
 *.fdb_latexmk
 **/auto
+**/.DS_Store
