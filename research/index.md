@@ -35,8 +35,7 @@ function toggle_visibility(id) {
 
 ## Papers and preprints
 
-Click on "abstract" to view/hide the abstract. \\
-Different versions of the paper may be slightly different.
+Click on "abstract" to view/hide the abstract. Different versions of the paper may be slightly different.
 {: class="scriptonly" }
 
 {% assign id = 1000 %}
