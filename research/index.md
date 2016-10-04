@@ -46,7 +46,7 @@ Click on "abstract" to view/hide the abstract. Different versions of a paper may
 
 ## Posters, slides, et cetera
 
-* Slides from my talk at the SIAM Applied Algebraic Geometry Conference in Daejeon, Korea. [pdf](siam_talk.pdf)
+* Slides from my talk at the SIAM Applied Algebraic Geometry Conference in Daejeon, Korea. [pdf](papers/siam_talk.pdf)
 * Poster on limits of plane quintics. [pdf](papers/quintics_poster.pdf)
 * Poster on slopes of trigonal fibrations. [pdf](papers/slopes_poster.pdf)
 * Poster on modular MMP for trigonal curves. [pdf](papers/trig_poster.pdf)
