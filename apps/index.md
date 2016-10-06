@@ -1,6 +1,7 @@
 ---
-layout: nobots
+layout: default
 title: Application materials
+robots: false
 ---
 
 ## Materials
