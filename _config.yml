@@ -36,3 +36,9 @@ kramdown:
 # Repository
 repository: deopurkar/deopurkar.github.io
 
+defaults:
+  - 
+    scope: 
+      path: ""
+    values:
+      robots: true

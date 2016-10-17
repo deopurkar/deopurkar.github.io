@@ -6,4 +6,6 @@ _site
 *.aux
 *.log
 *.fls
+*.fdb_latexmk
 **/auto
+**/.DS_Store
