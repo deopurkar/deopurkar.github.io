@@ -6,6 +6,4 @@ all:	default
 	cp _site/cv/cv.pdf cv/cv.pdf
 
 deploy: default
-	git add .
-	git commit -a
 	git push
