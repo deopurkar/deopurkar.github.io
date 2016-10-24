@@ -7,3 +7,6 @@ all:	default
 
 deploy: default
 	git push
+
+view:
+	bundle exec jekyll serve
