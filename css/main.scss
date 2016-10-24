@@ -6,22 +6,12 @@ $lightest:  #ffffff;
 $lighter:   #eeeeef;
 $light:     #ddddde;   
 
-$darkest:   #493e4f;
-$darker:    #6F6375;
-$dark:      #8A858D;
-
-$white:     #ffffff;
-$yellow:    #b58900;
-$orange:    #cb4b16;
-$red:       #dc322f;
-$magenta:   #d33682;
-$violet:    #6c71c4;
-$blue:      #268bd2;
-$cyan:      #2aa198;
-$green:     #859900;
+$darkest:   #455A64;
+$darker:    #607D8B;
+$dark:      #CFD8DC;
 
 $bg: $lighter;
-$fg: $darkest;
+$fg: #444444;
 $link: $darker;
 
 @media screen and (max-width: 480px) {
@@ -53,7 +43,7 @@ body {
     color: $link;
     text-decoration: underline;
     &:hover, &:active {
-	color: $dark;
+	color: $darkest;
     }
     &:focus {
         outline: none;
@@ -65,7 +55,7 @@ code {
 }
 
 h1 {
-  color: $lighter;
+  color: $lightest;
   background: $darkest;
   margin: 0;
   font-size: 135%;
@@ -119,11 +109,12 @@ ol {
 #photo {
   float:right;
   clear:both;
-  width: 33%;
+  width: 30%;
+  margin: 1%;
   @media screen and (max-width: 480px) {
     float: none;
     clear: none;
-    margin-left: 0;
+    margin: 0;
     }
 }
 
@@ -154,7 +145,8 @@ nav{
 }
 
 .current{ 
- background: $dark;
+    background: $darker;
+    text-decoration: underline;
 }
 
 /* By default tables alternate row colors */
