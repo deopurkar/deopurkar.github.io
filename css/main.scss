@@ -109,7 +109,7 @@ ol {
 #photo {
   float:right;
   clear:both;
-  width: 30%;
+  width: 25%;
   margin: 1%;
   @media screen and (max-width: 480px) {
     float: none;
@@ -147,6 +147,7 @@ nav{
 .current{ 
     background: $darker;
     text-decoration: underline;
+    text-decoration-color: $light;
 }
 
 /* By default tables alternate row colors */
@@ -162,7 +163,7 @@ table tr:nth-child(odd){
     }
 
     #photo {
-	width: 320px;
+	width: 240px;
     }
 
     .summary {
