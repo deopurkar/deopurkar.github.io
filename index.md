@@ -4,7 +4,7 @@ navigation-weight: 1
 navigation-title: Home
 ---
 
-<img src="/anandrd_board.jpg" alt="Photo of Anand Deopurkar" title="UGA (2016)" id="photo">
+<img src="/anandrd_board.jpg" alt="Photo of Anand Deopurkar" title="At UGA (Athens, GA, 2016)" id="photo">
 
 Assistant Professor (Limited term)  
 [Department of Mathematics](http://www.math.uga.edu/)  
