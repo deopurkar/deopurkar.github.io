@@ -23,7 +23,7 @@ Before coming to UGA, I was a Ritt Assistant Professor at [Columbia](http://math
 
 Just after graduate school, I wrote a [rough non-technical explanation](interests/) of my doctoral research, which might interest or amuse you.
 
-## Activities
+## Activities 
 
 I am (co)-organizing:
 
@@ -35,7 +35,7 @@ In Spring 2016, Johan de Jong and I organized the [Columbia Graduate Student Alg
 
 I go to the Algebraic Geometry, Algebra, and Number Theory seminars at UGA.  
 
-I recently spoke in the ICERM workshop on [Cycles on moduli spaces, geometric invariant theory, and dynamics](https://icerm.brown.edu/topical_workshops/tw16-4-ms/). In the near future, I am speaking in the Algebraic Geometry Seminar at Georgia and at South Carolina.
+I recently spoke in the ICERM workshop on [Cycles on moduli spaces, geometric invariant theory, and dynamics](https://icerm.brown.edu/topical_workshops/tw16-4-ms/) (link goes to the video of the talk).
 
 ## Teaching
 

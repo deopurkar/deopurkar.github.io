@@ -1,0 +1,115 @@
+\documentclass[12pt]{amsart}
+\usepackage[charter]{mathdesign}
+\usepackage{
+  hyperref
+}
+\usepackage[margin=1in]{geometry}
+
+\title{Publications and preprints}
+\author{Anand Deopurkar}
+
+% Colors
+% \definecolor{my-linkcolor}{rgb}{0.75,0,0}
+% \definecolor{my-citecolor}{rgb}{0,0.5,0}
+% \definecolor{my-urlcolor}{rgb}{0,0,0.75}
+% \hypersetup{
+%     colorlinks, 
+%     linkcolor={my-linkcolor},
+%     citecolor={my-citecolor}, 
+%     urlcolor={my-urlcolor}
+% }
+
+\begin{document}
+
+\maketitle
+
+\section{Publications}
+
+\begin{itemize}
+  \setlength{\itemsep}{.5em}
+
+  {% for paper in site.data.papers  %}  {% unless paper.omitcv  %}
+  \item[.5em]{
+    {{ paper.title | markdownify | strip_html | strip}}{% if paper.coauthors %} (with {{ paper.coauthors | join: ', ' | markdownify | strip_html | strip }}){% endif %}.\\ {% if paper.journal %} {\itshape {{ paper.journal | strip }}}.{% endif %} {% if paper.comment %} {\itshape {{ paper.comment | markdownify | strip_html | strip}} }{% endif %}
+    }{% endunless %}{% endfor %}
+  
+\item
+  {\em Compactifications of {Hurwitz} spaces}\\
+  {International Mathematics Research Notices}, 2014(14):3863--3911, 2013.
+
+\item
+  {\em Modular compactifications of the space of marked trigonal curves}\\
+ {Advances in Mathematics}, 248(0):96 -- 154, 2013.
+
+
+\item
+  {\em Sharp slope bounds for sweeping families of trigonal curves}\\
+  Joint with Anand {Patel}\\
+ {Mathematical Research Letters}, 20(3):869--884, 2013
+
+\item
+  {\em The {P}icard rank conjecture for the {H}urwitz spaces of degree up to five}\\
+ Joint with Anand Patel\\
+ {Algebra \& Number Theory}, 9(2):459--492, 2015.
+
+\item
+  {\em Gr\"obner techniques and ribbons}\\
+  Joint with Maksym Fedorchuk and David Swinarski\\
+  {Albanian Journal of Mathematics}, 8(1):55--70, 2014.
+
+\item
+  {\em Toward GIT stability of syzygies of canonical curves}\\
+  Joint with Maksym {Fedorchuk} and David {Swinarski}\\
+  {Algebraic Geometry (Foundation Compositio Mathematica) -- To appear}.
+
+\end{itemize}
+
+
+\section{Preprints}
+
+\begin{itemize}
+    \setlength{\itemsep}{.5em}
+
+\item
+  {\em Green's canonical syzygy conjecture for ribbons}\\
+  {arXiv:1510.07755 [math.AG]}, October 2015.
+  
+\item
+  {\em Covers of stacky curves and limits of plane quintics}\\
+  Submitted\\
+  {arXiv:1507.03252 [math.AG]}, July 2015.
+
+\item
+  {\em Class of the Hodge eigenbundle using orbifold Riemann--Roch}\\
+  {Appendix to {\em Cyclic covering morphisms on $\overline {M}_{0,n}$} by Maksym Fedorchuk}\\
+  \href{http://math.columbia.edu/~anandrd/papers/CyclicAppendix.pdf}{http://math.columbia.edu/\textasciitilde anandrd/papers/CyclicAppendix.pdf}
+
+\end{itemize}
+
+\section{In progress}
+\begin{itemize}
+    \setlength{\itemsep}{.5em}
+
+  \item
+   {\em On the {GIT} of syzygies of canonical genus $7$ curves}\\
+
+\item
+  {\em Anti-canonical embeddings of tropical del Pezzo surfaces}\\
+  Joint with Maria Angelica Cueto
+
+\end{itemize}
+
+
+% \nocite{deo.pat:15}
+% \nocite{deo:15}
+% \nocite{deo:15*1}
+% \nocite{deo.fed.swi:14}
+% \nocite{deo.pat:13}
+% \nocite{deo:13}
+% \nocite{deo:13*1}
+% \nocite{deo.fed.swi:}
+
+% \bibliographystyle{plain}
+% \bibliography{math}
+
+\end{document}
