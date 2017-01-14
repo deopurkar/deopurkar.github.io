@@ -25,23 +25,19 @@ Just after graduate school, I wrote a [rough non-technical explanation](interest
 
 ## Activities 
 
-I am (co)-organizing:
+I am speaking at the algebraic geometry seminars at Emory and Caltech in the near future.
 
-1. FIRST (Fairly Informal Research Seminar and Tea) at UGA (Mon 2:20--3:20).
-2. SWAG (Summer Workshop in Algebraic Geometry) at UGA (Aug 26--29, 2016).
-3. AIM workshop on [Stability and moduli spaces](http://aimath.org/workshops/upcoming/stabmoduli/) (Jan 9--13, 2016).
+I was a co-organizer of the following workshops in the recent past:
 
-In Spring 2016, Johan de Jong and I organized the [Columbia Graduate Student Algebraic Geometry Seminar](research/seminar16/) on the decomposition of the diagonal.  
-
-I go to the Algebraic Geometry, Algebra, and Number Theory seminars at UGA.  
-
-I recently spoke in the ICERM workshop on [Cycles on moduli spaces, geometric invariant theory, and dynamics](https://icerm.brown.edu/topical_workshops/tw16-4-ms/) (link goes to the video of the talk).
+1. AIM workshop on [Stability and moduli spaces](http://aimath.org/workshops/upcoming/stabmoduli/) (January 9--13, 2017).
+2. FIRST (Fairly Informal Research Seminar and Tea) at UGA (Fall 2016).
+3. SWAG (Summer Workshop in Algebraic Geometry) at UGA (Aug 26--29, 2016).
+4. [Columbia Graduate Student Algebraic Geometry Seminar](research/seminar16/) on the decomposition of the diagonal (Spring 2016).
 
 ## Teaching
 
-This semester, I am teaching Math 2250 (Calculus 1 for scientists and engineers).  
+This semester, I am teaching Math 2260 (Calculus 2 for scientists and engineers).  
 
 Here are the notes from the course [moduli of curves](teaching/moduli/), which I taught at Columbia.  
 
 For other courses taught in the past, see my [teaching](teaching/) page.
-
