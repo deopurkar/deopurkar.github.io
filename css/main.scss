@@ -3,23 +3,16 @@
 
 // Colour palette
 $lightest:  #ffffff;
-$lighter:   #eeeeef;
-$light:     #ddddde;   
+$lighter:   #f6f6f6;
+$light:     #e2e4e6;   
 
-$darkest:   #455A64;
-$darker:    #607D8B;
-$dark:      #CFD8DC;
+$darkest:   #4d4d4d;
+$darker:    #0067a3;
+$dark:      #0079bf;
 
-$bg: $lighter;
-$fg: #444444;
-$link: $darker;
-
-@media screen and (max-width: 480px) {
-    body {
-        max-width:95%;
-        font-size:80%;
-    }
-}
+$bg: $lightest;
+$fg: $darkest;
+$link: $dark;
 
 @media screen and (min-width: 480px) {
     body {
@@ -28,14 +21,15 @@ $link: $darker;
 }
 
 body {
-  font-family: 'Lato', Helvetica, Arial, Sans-Serif;
-  background: $bg;
-  color: $fg;
-  margin-left:auto;
-  margin-right:auto;
-  ::selection {
-    background: $dark;
-    color: $lighter;
+    font-family: 'Cabin', Sans;
+    line-height: 130%;
+    background: $bg;
+    color: $fg;
+    margin-left:auto;
+    margin-right:auto;
+    ::selection {
+	background: $dark;
+	color: $lighter;
   }
 }
 
@@ -55,19 +49,20 @@ code {
 }
 
 h1 {
-  color: $lightest;
-  background: $darkest;
+  color: $darker;
   margin: 0;
-  font-size: 135%;
-  font-weight: normal;
+  font-size: 150%;
+  font-family: 'Open Sans';
+  font-weight: bold;
   padding: 3%;
-  padding-left: 1.5%;
+  padding-left: 0%;
 }
 
 
 h2 {
-  font-size: 120%;
-  color: $darkest;
+    font-size: 110%;
+    font-family: 'Open Sans';
+    color: $darker;
 }
   
 h3, h4 {
@@ -86,6 +81,7 @@ ol {
     padding-left: 1em;
     li {
         padding-left: 0.5em;
+	margin: .5em;
         ol li {
             list-style-type: lower-alpha;
         }
@@ -109,24 +105,17 @@ ol {
 #photo {
   float:right;
   clear:both;
-  width: 25%;
-  @media screen and (max-width: 480px) {
-    float: none;
-    clear: none;
-    margin: 0;
-    width: 120px;
-    }
+  width: 35%;
 }
 
 nav{
-  background: $darker;
   margin-top: 0%;
   
   ul {
     margin: 0;
     list-style-type: none;
-    padding: 1%;
-    padding-left: 0;
+    padding: 2%;
+    padding-left: 0%;
   }
 
   li {
@@ -135,11 +124,12 @@ nav{
     }
 
   a {
-    color: $lighter;
+    color: $darker;
     text-decoration: none;
-    padding: 1.1%;
+    padding: 0.5em;
+    padding-left: 0%;
     &:hover {
-      color: $lightest;
+      color: $darkest;
       text-decoration: underline;
     }   
   }
@@ -154,7 +144,22 @@ nav{
 table tr:nth-child(odd){
     background-color: $light;
 } 
-  
+
+/* Stabilization as width -> 0 */
+@media screen and (max-width: 480px) {
+    body {
+	max-width:95%;
+        font-size:80%;
+    }
+
+    photo {
+	float: none;
+	clear: none;
+	margin: 0;
+	width: 150px;
+    }
+}
+
 /* Stabilization as width -> Infinity */
 
 @media screen and (min-width: 800px) {
@@ -176,13 +181,13 @@ table tr:nth-child(odd){
 
     h1 {
 	padding: 24px;
-	padding-left: 12px;
+	padding-left: 0px;
     }
 
     nav{
 	ul {
 	    padding: 8px;
-	    margin-left: -8px;
+	    margin-left: -16px;
 	}
 
 	li {
