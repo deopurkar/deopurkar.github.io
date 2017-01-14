@@ -23,16 +23,21 @@ Before coming to UGA, I was a Ritt Assistant Professor at [Columbia](http://math
 
 Just after graduate school, I wrote a [rough non-technical explanation](interests/) of my doctoral research, which might interest or amuse you.
 
-## Activities 
+## Upcoming activities 
 
-I am speaking at the algebraic geometry seminars at Emory and Caltech in the near future.
+{% capture currenttime %}{{ site.time }}{% endcapture %}
+{% assign activities = site.data.activities | where_exp: "activity", "activity.when > currenttime" | sort: 'date' | reverse %}
+<ul>
+{% for activity in activities %}
+<li>
+{% unless activity.current == true %}
+{% if activity.display-when %}{{ activity.display-when }}{% else %}{{ activity.when | date: "%b %d, %Y" }}{% endif %}: 
+{% endunless %}
+{{ activity.what | markdownify | strip | remove: '<p>' | remove: '</p>'}}{% if activity.where %}, {{ activity.where | remove: '<p>' | remove: '</p>'}}{% endif %}.
+</li>
+{% endfor %}
+</ul>
 
-I was a co-organizer of the following workshops in the recent past:
-
-1. AIM workshop on [Stability and moduli spaces](http://aimath.org/workshops/upcoming/stabmoduli/) (January 9--13, 2017).
-2. FIRST (Fairly Informal Research Seminar and Tea) at UGA (Fall 2016).
-3. SWAG (Summer Workshop in Algebraic Geometry) at UGA (Aug 26--29, 2016).
-4. [Columbia Graduate Student Algebraic Geometry Seminar](research/seminar16/) on the decomposition of the diagonal (Spring 2016).
 
 ## Teaching
 
