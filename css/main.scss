@@ -21,7 +21,7 @@ $link: $dark;
 }
 
 body {
-    font-family: 'Lato', Sans;
+    font-family: 'PT Sans', Sans;
     line-height: 130%;
     background: $bg;
     color: $fg;
@@ -92,7 +92,7 @@ ol {
 .summary{
   display: none;
   background: $lighter;
-  border-radius: 10px
+  border-radius: 10px;
   margin: 2% 2%;
   padding: 2% 2%;
 }

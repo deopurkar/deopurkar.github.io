@@ -23,7 +23,7 @@
 - title: GIT for syzygies of genus 7 curves
   journal: Ongoing
   formats:
-    webpage: /genus7syz/index.html
+    web: /genus7syz/index.html
   omitcv: True
 
 - title: Covers of stacky curves and limits of plane quintics
