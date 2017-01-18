@@ -42,3 +42,9 @@ defaults:
       path: ""
     values:
       robots: true
+
+# Compression
+compress_html:
+    clippings: all
+    blanklines: true
+    
