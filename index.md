@@ -25,15 +25,13 @@ Just after graduate school, I wrote a [rough non-technical explanation](interest
 
 ## Upcoming activities 
 
-{% capture currenttime %}{{ site.time }}{% endcapture %}
-{% assign activities = site.data.activities | where_exp: "activity", "activity.when > currenttime" | sort: 'date' | reverse %}
+{% capture currenttime %}{{ site.time | date: '%F' }}{% endcapture %}
+{% assign activities = site.data.activities | where_exp: 'activity', 'activity.when > currenttime' | sort: 'when' %}
 <ul>
 {% for activity in activities %}
 <li>
 {% unless activity.current == true %}
-{% if activity.display-when %}{{ activity.display-when }}{% else %}{{ activity.when | date: "%b %d, %Y" }}{% endif %}: 
-{% endunless %}
-{{ activity.what | markdownify | strip | remove: '<p>' | remove: '</p>'}}{% if activity.where %}, {{ activity.where | remove: '<p>' | remove: '</p>'}}{% endif %}.
+{% if activity.display-when %}{{ activity.display-when }}{% else %}{{ activity.when | date: "%-d %b %Y" }}{% endif %}: {% endunless %} {{ activity.what | markdownify | strip | remove: '<p>' | remove: '</p>'}}{% if activity.where %}, {{ activity.where | remove: '<p>' | remove: '</p>'}}{% endif %}.
 </li>
 {% endfor %}
 </ul>
