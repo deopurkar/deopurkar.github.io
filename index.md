@@ -36,6 +36,7 @@ Just after graduate school, I wrote a [rough non-technical explanation](interest
 {% endfor %}
 </ul>
 
+Here is my current [calendar](https://calendar.google.com/calendar/embed?src=viq0vfa95723brotsdljksoldo%40group.calendar.google.com&ctz=America/New_York).
 
 ## Teaching
 
