@@ -31,6 +31,7 @@ Just after graduate school, I wrote a [rough non-technical explanation](interest
 {% for activity in activities %}
 <li>
 {% unless activity.current == true %}
+{{ currenttime }} {{ activity.when }}
 {% if activity.display-when %}{{ activity.display-when }}{% else %}{{ activity.when | date: "%-d %b %Y" }}{% endif %}: {% endunless %} {{ activity.what | markdownify | strip | remove: '<p>' | remove: '</p>'}}{% if activity.where %}, {{ activity.where | remove: '<p>' | remove: '</p>'}}{% endif %}.
 </li>
 {% endfor %}
