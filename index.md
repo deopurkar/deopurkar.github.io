@@ -23,7 +23,7 @@ Before coming to UGA, I was a Ritt Assistant Professor at [Columbia](http://math
 
 Just after graduate school, I wrote a [rough non-technical explanation](interests/) of my doctoral research, which might interest or amuse you.
 
-## Upcoming activities 
+## Upcoming and current activities 
 
 {% capture currenttime %}{{ site.time | date: '%s' }}{% endcapture %}
 {% assign activities = site.data.activities | sort: 'when' %}
