@@ -2,7 +2,7 @@
 layout: default
 navigation-weight: 2
 navigation-title: Research
-title: Research
+title: Research | Anand Deopurkar
 ---
 
 <script type="text/javascript">

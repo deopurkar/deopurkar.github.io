@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CV
+title: CV | Anand Deopurkar
 ---
 
 ## Curriculum Vitae ([PDF](cv.pdf))
