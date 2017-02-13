@@ -3,18 +3,19 @@ layout: default
 no-navigation: true
 title: Mixed Hodge Modules Learning Seminar
 ---
-## Calendar
+## Calendar (FIRST + MHM)
 
 <div class="calendar" style="padding-bottom:45%">
 <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=m8mkolro9bjhs8e300v7nmnt84%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="300" frameborder="0" scrolling="no"></iframe>
 </div>
 
-## List of talks and references
+## List of talks and references 
 
-1. Overview of mixed Hodge modules and their applications to birational geometry  
-   References: Introduction of [Popa-Schnell-1].
+Try clicking on the talk title for notes.
 
-1. Classical (pure) Hodge theory  
+1. [Overview of mixed Hodge modules and their applications to geometry](mhm1.pdf) (Ben)  
+
+1. Classical (pure) Hodge theory (Anand)  
    References: Chapter 0 of [Sabbah-Schnell]. 
    
 1. Perverse sheaves and the decomposition theorem  
