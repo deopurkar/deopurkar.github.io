@@ -4,7 +4,7 @@ no-navigation: true
 title: Mixed Hodge Modules Learning Seminar
 ---
 
-* Please volunteer for speaking in FIRST or the MHM seminar.*
+*Please volunteer for speaking in FIRST or the MHM seminar.*
 
 ## Calendar (FIRST + MHM)
 
