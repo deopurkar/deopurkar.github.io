@@ -3,6 +3,9 @@ layout: default
 no-navigation: true
 title: Mixed Hodge Modules Learning Seminar
 ---
+
+* Please volunteer for speaking in FIRST or the MHM seminar.*
+
 ## Calendar (FIRST + MHM)
 
 <div class="calendar" style="padding-bottom:45%">
@@ -27,7 +30,7 @@ Try clicking on the talk title for notes.
 1. Nearby and vanishing cycles  
    References: Section 8 of [Schnell], [Sabbah].
 
-1. Nearby and vanishing cycles and the V-filtration  
+1. Nearby and vanishing cycles and filtered D-modules  
    References: Section 9 of [Schnell], Section 2.4 of [Sabbah-2]
 
 1. Definition of pure Hodge modules  
