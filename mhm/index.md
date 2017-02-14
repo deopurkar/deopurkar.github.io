@@ -36,6 +36,12 @@ Try clicking on the talk title for notes.
 1. Definition of pure Hodge modules  
    References: Section 12 of [Schnell] which uses stuff also from Section 10 and 11.
 
+Applications
+
+1. Generic vanishing theory via mixed Hodge modules
+   References: [Popa-Schnell-1]
+
+
 ## References
 
 
