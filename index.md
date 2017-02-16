@@ -2,6 +2,7 @@
 layout: default
 navigation-weight: 1
 navigation-title: Home
+title: Anand Deopurkar
 ---
 
 <img src="/anandrd_board.jpg" alt="Photo of Anand Deopurkar" title="Near Bonn (2014)" id="photo">
