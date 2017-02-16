@@ -16,7 +16,7 @@ title: Mixed Hodge Modules Learning Seminar
 
 
 1. Overview of mixed Hodge modules and their applications to geometry (Ben)  
-	[Notes] (mhm1.pdf) 
+	[Notes](mhm1.pdf) 
 
 1. Classical (pure) Hodge theory (Anand)  
    References: Chapter 0 of [Sabbah-Schnell].  
