@@ -2,6 +2,7 @@
 layout: default
 title: Application materials
 robots: false
+redirect_from: "/apps.html"
 ---
 
 ## Materials
