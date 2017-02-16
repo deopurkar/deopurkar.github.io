@@ -51,4 +51,4 @@ compress_html:
 # Redirection
 gems:
  - jekyll-redirect-from
- 
+
