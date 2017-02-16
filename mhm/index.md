@@ -14,12 +14,13 @@ title: Mixed Hodge Modules Learning Seminar
 
 ## List of talks and references 
 
-Try clicking on the talk title for notes.
 
-1. [Overview of mixed Hodge modules and their applications to geometry](mhm1.pdf) (Ben)  
+1. Overview of mixed Hodge modules and their applications to geometry (Ben)  
+	[Notes] (mhm1.pdf) 
 
 1. Classical (pure) Hodge theory (Anand)  
-   References: Chapter 0 of [Sabbah-Schnell]. 
+   References: Chapter 0 of [Sabbah-Schnell].  
+   [Notes 1](mhm2-asilata.pdf), [Notes 2](mhm2-anand.pdf)
    
 1. Perverse sheaves and the decomposition theorem  
    References: [Achar], [deCataldo-Migliorini], [deCataldo], Chapter 8 of [Hotta-Takeuchi-Tanisaki].
