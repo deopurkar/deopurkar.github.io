@@ -5,7 +5,7 @@ navigation-title: Home
 title: Anand Deopurkar
 ---
 
-<img src="/anandrd_board.jpg" alt="Photo of Anand Deopurkar" title="Near Bonn (2014)" id="photo">
+<img src="/anandrd_bw.jpg" alt="Photo of Anand Deopurkar" title="Near Bonn (2014)" id="photo">
 
 Assistant Professor (Limited term)  
 [Department of Mathematics](http://www.math.uga.edu/)  
