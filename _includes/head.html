@@ -3,8 +3,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% if page.robots == false %} <meta name="robots" content="noindex"> {% endif %}
 
-<title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans|Open+Sans">
+<link rel="icon" href="http://www.uga.edu/favicon.ico" >
+
+
+
+
 

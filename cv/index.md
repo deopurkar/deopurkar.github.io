@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CV
+title: CV | Anand Deopurkar
 ---
 
 ## Curriculum Vitae ([PDF](cv.pdf))
@@ -19,7 +19,7 @@ title: CV
 
 {% for paper in site.data.papers  %}  {% unless paper.omitcv  %}
 * {{ paper.title }}{% if paper.coauthors %} (with {{ paper.coauthors | join: ', ' }}){% endif %}.  
-{% if paper.journal %} *{{ paper.journal }}*.{% endif %}  {% if paper.comment %} {{ paper.comment }}{% endif %} {% for format in paper.formats %} [\[{{ format[0] }}\]]({{ format[1] }}){% endfor %}
+{% if paper.journal %} *{{ paper.journal }}*.{% endif %}  {% if paper.comment %} {{ paper.comment }}{% endif %} {% for format in paper.formats %} [{{ format[0] }}]({{ format[1] }}){% endfor %}
 {% endunless %}{% endfor %}
 
 ### Grants and awards

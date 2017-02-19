@@ -1,3 +1,7 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html>
 
@@ -8,11 +12,15 @@
 
   <body>
 
+    {% unless page.no-title %}
     <h1>
-      {{ site.title }}
+      {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
     </h1>
+    {% endunless %}
 
+    {% unless page.no-navigation %}
     {% include navigation.html %}
+    {% endunless %}
 
     <main>
       {{ content }}

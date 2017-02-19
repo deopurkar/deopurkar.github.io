@@ -2,7 +2,7 @@
 layout: default
 navigation-weight: 3
 navigation-title: Teaching
-title: Teaching
+title: Teaching | Anand Deopurkar
 places: [UGA, Columbia, Harvard]
 ---
 

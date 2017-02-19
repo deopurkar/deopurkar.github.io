@@ -2,16 +2,17 @@
 layout: default
 navigation-weight: 1
 navigation-title: Home
+title: Anand Deopurkar
 ---
 
-<img src="/anandrd_board.jpg" alt="Photo of Anand Deopurkar" title="At UGA (Athens, GA, 2016)" id="photo">
+<img src="anandrd_bw.jpg" alt="Photo of Anand Deopurkar" title="At UGA (2016)" id="photo">
 
 Assistant Professor (Limited term)  
 [Department of Mathematics](http://www.math.uga.edu/)  
 [University of Georgia](http://www.uga.edu/)  
 Office: Boyd 606  
 Email: `deopurkar at uga dot edu`  
-CV: [[html](cv/index.html)] [[pdf](cv/cv.pdf)]
+CV: [html](cv/index.html) [pdf](cv/cv.pdf)
 
 ## Research
 
@@ -23,25 +24,25 @@ Before coming to UGA, I was a Ritt Assistant Professor at [Columbia](http://math
 
 Just after graduate school, I wrote a [rough non-technical explanation](interests/) of my doctoral research, which might interest or amuse you.
 
-## Activities
+## Upcoming and current activities 
 
-I am (co)-organizing:
+{% capture currenttime %}{{ site.time | date: '%s' }}{% endcapture %}
+{% assign activities = site.data.activities | sort: 'when' %}
+<ul>
+{% for activity in activities %}
+{% capture activitytime %}{{ activity.when | date: '%s' }}{% endcapture %}
+{% if activitytime >= currenttime %}
+<li> {% if activity.display-when %}{{ activity.display-when }}{% else %}{{ activity.when | date: "%-d %b %Y" }}{% endif %}: {{ activity.what | markdownify | strip | remove: '<p>' | remove: '</p>'}}{% if activity.where %}, {{ activity.where | remove: '<p>' | remove: '</p>'}}{% endif %}.</li>
+{% endif %}
+{% endfor %}
+</ul>
 
-1. FIRST (Fairly Informal Research Seminar and Tea) at UGA (Mon 2:20--3:20).
-2. SWAG (Summer Workshop in Algebraic Geometry) at UGA (Aug 26--29, 2016).
-3. AIM workshop on [Stability and moduli spaces](http://aimath.org/workshops/upcoming/stabmoduli/) (Jan 9--13, 2016).
-
-In Spring 2016, Johan de Jong and I organized the [Columbia Graduate Student Algebraic Geometry Seminar](research/seminar16/) on the decomposition of the diagonal.  
-
-I go to the Algebraic Geometry, Algebra, and Number Theory seminars at UGA.  
-
-I recently spoke in the ICERM workshop on [Cycles on moduli spaces, geometric invariant theory, and dynamics](https://icerm.brown.edu/topical_workshops/tw16-4-ms/). In the near future, I am speaking in the Algebraic Geometry Seminar at Georgia and at South Carolina.
+Here is my current [calendar](calendar/).
 
 ## Teaching
 
-This semester, I am teaching Math 2250 (Calculus 1 for scientists and engineers).  
+This semester, I am teaching Math 2260 (Calculus 2 for scientists and engineers).  
 
 Here are the notes from the course [moduli of curves](teaching/moduli/), which I taught at Columbia.  
 
 For other courses taught in the past, see my [teaching](teaching/) page.
-
