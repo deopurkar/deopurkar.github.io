@@ -23,7 +23,8 @@ title: Mixed Hodge Modules Learning Seminar
    [Notes 1](mhm2-asilata.pdf), [Notes 2](mhm2-anand.pdf)
    
 1. Perverse sheaves and the decomposition theorem  
-   References: [Achar], [deCataldo-Migliorini], [deCataldo], Chapter 8 of [Hotta-Takeuchi-Tanisaki].
+   References: [Achar], [deCataldo-Migliorini], [deCataldo], Chapter 8 of [Hotta-Takeuchi-Tanisaki].  
+   [Notes](mhm3.pdf)
 
 1. D-modules and the Riemann--Hilbert correspondence  
    References: [Cavazzani] and the references cited there.
