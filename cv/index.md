@@ -52,13 +52,13 @@ title: CV | Anand Deopurkar
 
 #### In conferences or workshops
 {% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Conference" or talk.type == "Workshop" %}
-* {{ talk.where }}. *{{ talk.what | markdownify | strip_html | strip }}*, {{ talk.when }}.{% if talk.comment %}  
+* {{ talk.where }}, {{ talk.when }}. *{{ talk.what | markdownify | strip_html | strip }}*.{% if talk.comment %}  
   {{ talk.comment | markdownify | strip_html | strip }}{% endif %}
   {% endif %}{% endunless %}{% endfor %}
 
 #### In seminars
 {% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Seminar" %}
-* {{ talk.where }}. *{{ talk.what | markdownify | strip_html | strip }}*, {{ talk.when }}.{% if talk.comment %}  
+* {{ talk.where }}, {{ talk.when }}. *{{ talk.what | markdownify | strip_html | strip }}*.{% if talk.comment %}  
   {{ talk.comment | markdownify | strip_html | strip }}{% endif %}
 {% endif %}{% endunless %}{% endfor %}
 
