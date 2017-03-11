@@ -84,13 +84,13 @@
 \subsection{In conferences or workshops}
 {% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Conference" or talk.type == "Workshop" %}
   \cvlistitem[.5em]{
-    {{ talk.where }}. {\itshape {{ talk.what | markdownify | strip_html | strip}}}, {{ talk.when }}.{% if talk.comment %}\\ {{ talk.comment | markdownify | strip_html | strip }}{% endif %}
+    {{ talk.where }}, {{ talk.when }}. {\itshape {{ talk.what | markdownify | strip_html | strip}}}.{% if talk.comment %}\\ {{ talk.comment | markdownify | strip_html | strip }}{% endif %}
     }{% endif %}{% endunless %}{% endfor %}
 
 \subsection{In seminars}
       {% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Seminar" %}
         \cvlistitem[.5em]{
-          {{ talk.where }}. {\itshape {{ talk.what | markdownify | strip_html | strip}}}, {{ talk.when }}.{% if talk.comment %}\\ {{ talk.comment | markdownify | strip_html | strip }}{% endif %}
+          {{ talk.where }}, {{ talk.when }}. {\itshape {{ talk.what | markdownify | strip_html | strip}}}.{% if talk.comment %}\\ {{ talk.comment | markdownify | strip_html | strip }}{% endif %}
           }{% endif %}{% endunless %}{% endfor %}
 
  \section{Service}
