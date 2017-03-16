@@ -25,12 +25,13 @@ title: Mixed Hodge Modules Learning Seminar
 1. D-modules and the Riemann--Hilbert correspondence  
    References: [Cavazzani] and the references cited there.  
    [Notes](mhm3.pdf)
-   
-1. Perverse sheaves and the decomposition theorem  
-   References: [Achar], [deCataldo-Migliorini], [deCataldo], Chapter 8 of [Hotta-Takeuchi-Tanisaki].  
 
 1. Nearby and vanishing cycles  
-   References: Section 8 of [Schnell], [Sabbah].
+   References: [Sabbah].  
+   [Notes](mhm4.pdf)
+
+1. Perverse sheaves and the decomposition theorem  
+   References: [Achar], [deCataldo-Migliorini], [deCataldo], Chapter 8 of [Hotta-Takeuchi-Tanisaki].  
 
 1. Nearby and vanishing cycles and filtered D-modules  
    References: Section 9 of [Schnell], Section 2.4 of [Sabbah-2]
