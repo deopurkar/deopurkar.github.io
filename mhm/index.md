@@ -22,13 +22,18 @@ title: Mixed Hodge Modules Learning Seminar
    References: Chapter 0 of [Sabbah-Schnell].  
    [Notes 1](mhm2-asilata.pdf), [Notes 2](mhm2-anand.pdf)
    
-1. D-modules and the Riemann--Hilbert correspondence  
+1. D-modules and the Riemann--Hilbert correspondence (Asilata)  
    References: [Cavazzani] and the references cited there.  
    [Notes](mhm3.pdf)
-
-1. Nearby and vanishing cycles  
+   
+1. Perverse sheaves (Nicola)   
+   
+1. Nearby and vanishing cycles (Anand)  
    References: [Sabbah].  
    [Notes](mhm4.pdf)
+
+1. Degenerations of VHS on curves (Ben)__
+   [Notes](mhm5.pdf)
 
 1. Perverse sheaves and the decomposition theorem  
    References: [Achar], [deCataldo-Migliorini], [deCataldo], Chapter 8 of [Hotta-Takeuchi-Tanisaki].  
