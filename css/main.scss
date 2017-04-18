@@ -3,12 +3,12 @@
 
 // Colour palette
 $lightest:  #ffffff;
-$lighter:   #f6f6f6;
-$light:     #e2e4e6;   
+$lighter:   #DDDDAA;
+$light:     #FFFFDD;   
 
 $darkest:   #3d3d3d;
-$darker:    #0067a3;
-$dark:      #0079bf;
+$darker:    #993300;
+$dark:      #771100;
 
 $bg: $lightest;
 $fg: $darkest;
@@ -109,7 +109,7 @@ ol {
 #photo {
   float:right;
   clear:both;
-  width: 25%;
+  width: 30%;
   border-radius:5px;
 }
 
@@ -175,7 +175,7 @@ table tr:nth-child(odd){
 	float: none;
 	clear: none;
 	margin: 0;
-	width: 96px;
+	width: 120px;
     }
 }
 
@@ -187,7 +187,7 @@ table tr:nth-child(odd){
     }
 
     #photo {
-	width: 160px;
+	width: 200px;
     }
 
     .summary {
