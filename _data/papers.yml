@@ -8,7 +8,7 @@
 
 - title: Syzygy divisors on Hurwitz spaces
   coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
-  journal: To appear in Contemporary Mathematics
+  journal: Contemporary Mathematics, to appear
   formats:
     pdf: papers/HigherMaroni.pdf
   abstract: We describe a sequence of effective divisors on the Hurwitz space H(d,g) for d dividing g-1 and compute their cycle classes on a partial compactification. These divisors arise from vector bundles of syzygies canonically associated to a branched cover. We find that the cycle classes are all proportional to each other.
@@ -27,7 +27,7 @@
   omitcv: True
 
 - title: Covers of stacky curves and limits of plane quintics
-  journal: Submitted
+  journal: Transactions of the AMS, to appear
   formats:
     pdf: papers/StackyAdmissibleCovers.pdf
     arXiv: http://arxiv.org/abs/1507.03252/
