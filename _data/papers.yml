@@ -14,7 +14,7 @@
   abstract: We describe a sequence of effective divisors on the Hurwitz space H(d,g) for d dividing g-1 and compute their cycle classes on a partial compactification. These divisors arise from vector bundles of syzygies canonically associated to a branched cover. We find that the cycle classes are all proportional to each other.
 
 - title: Green\'s canonical syzygy conjecture for ribbons
-  journal: Submitted
+  journal: Mathematische Zeitschrift, to appear
   formats:
     pdf: papers/RibbonGreen.pdf
     arXiv: http://arxiv.org/abs/1510.07755/
