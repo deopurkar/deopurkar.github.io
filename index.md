@@ -41,14 +41,6 @@ Here is my current [calendar](calendar/).
 
 ## Teaching
 
-- what: Teaching a [graduate course on algebraic curves](/8820)
-  when: 2017-12-05
-  display-when: Fall 2017
-
-- what: Teaching pre-calculus
-  when: 2017-12-05
-  display-when: Fall 2017
-
 This semester, I am teaching [Math 8820, a graduate course on algebraic curves and Riemann surfaces](8820), and Math 1113, pre-calculus.  
 Here are the notes from the course [moduli of curves](teaching/moduli/), which I taught at Columbia.  
 
