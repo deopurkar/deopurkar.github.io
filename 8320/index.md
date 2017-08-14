@@ -8,6 +8,8 @@ We will use Rick Miranda's book titled "Algebraic curves and Riemann surfaces."
 The calendar below shows the tentative plan of the course.
 As we get to the end of this plan, we can decide upon what to do next based on what strikes our fancy.
 
+Here is the [official course syllabus](syllabus.pdf).
+
 ## Calendar
 
 <div class="calendar" style="padding-bottom:45%">
