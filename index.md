@@ -41,6 +41,6 @@ Here is my current [calendar](calendar/).
 
 ## Teaching
 
-This semester, I am teaching [Math 8320, a graduate course on algebraic curves and Riemann surfaces](8820), and Math 1113, pre-calculus.  
+This semester, I am teaching [Math 8320, a graduate course on algebraic curves and Riemann surfaces](8320), and Math 1113, pre-calculus.  
 Here are the notes from the course [moduli of curves](teaching/moduli/), which I taught at Columbia.  
 For other courses taught in the past, see my [teaching](teaching/) page.
