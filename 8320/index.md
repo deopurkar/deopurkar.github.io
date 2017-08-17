@@ -10,6 +10,12 @@ As we get to the end of this plan, we can decide upon what to do next based on w
 
 Here is the [official course syllabus](syllabus.pdf).
 
+## Notes
+
+I will post the notes that I prepare for the lectures; these may or may not end up being what we discuss in class!
+
+1. [Aug 15, Definitions, basic examples](Aug15.pdf)
+
 ## Calendar
 
 <div class="calendar" style="padding-bottom:45%">
