@@ -29,9 +29,11 @@ I will post the notes that I prepare for the lectures; these may or may not end 
 ## Homework
 
 I encourage you do to do these problems.
-Work them out in enough detail to convince yourself that you understand what is going on, but you need not turn in any write-up.
+Work them out in enough detail to convince yourself that you understand what is going on, but you need not turn in any write-up, unless you require a grade.
+If you require a grade, then you must write up complete solutions to at least 20 problems over the course of the semester.
 
 1. [Homework 1](hw1.pdf)
+1. [Howework 2](hw2.pdf)
 
 ## Calendar
 
