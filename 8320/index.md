@@ -27,6 +27,9 @@ I will post the notes that I prepare for the lectures; these may or may not end 
 1. [Aug 31, Canonical divisors](Aug31.pdf)
 1. [Sep 05, Line bundles and maps to projective space](Sep05.pdf)
 1. [Sep 07, Cech cohomology of sheaves](Sep07.pdf)
+1. [Sep 15, Cech cohomology continued](Sep14.pdf)
+1. [Sep 19, Invertible sheaves](Sep19.pdf)
+1. [Sep 21, Linear systems, embeddings](Sep21.pdf)
 
 ## Homework
 
