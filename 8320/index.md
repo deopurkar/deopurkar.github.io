@@ -30,6 +30,7 @@ I will post the notes that I prepare for the lectures; these may or may not end 
 1. [Sep 15, Cech cohomology continued](Sep14.pdf)
 1. [Sep 19, Invertible sheaves](Sep19.pdf)
 1. [Sep 21, Linear systems, embeddings](Sep21.pdf)
+1. [Sep 23, Linear systems, examples](Sep26.pdf)
 
 ## Homework
 
@@ -39,6 +40,7 @@ If you require a grade, then you must write up complete solutions to at least 20
 
 1. [Homework 1](hw1.pdf)
 1. [Howework 2](hw2.pdf)
+1. [Homework 3](hw3.pdf)
 
 ## Calendar
 
