@@ -30,7 +30,9 @@ I will post the notes that I prepare for the lectures; these may or may not end 
 1. [Sep 15, Cech cohomology continued](Sep14.pdf)
 1. [Sep 19, Invertible sheaves](Sep19.pdf)
 1. [Sep 21, Linear systems, embeddings](Sep21.pdf)
-1. [Sep 23, Linear systems, examples](Sep26.pdf)
+1. [Sep 26, Linear systems, examples](Sep26.pdf)
+1. [Sep 28, Rational normal curves, Riemann--Roch](Sep28.pdf)
+1. [Oct 5,  Low genus curves](Oct05.pdf)
 
 ## Homework
 
