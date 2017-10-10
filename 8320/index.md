@@ -33,6 +33,7 @@ I will post the notes that I prepare for the lectures; these may or may not end 
 1. [Sep 26, Linear systems, examples](Sep26.pdf)
 1. [Sep 28, Rational normal curves, Riemann--Roch](Sep28.pdf)
 1. [Oct 5,  Low genus curves](Oct05.pdf)
+1. [Oct 10, The canonical embedding, geometric Riemann-Roch](Oct10.pdf)
 
 ## Homework
 
