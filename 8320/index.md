@@ -34,6 +34,7 @@ I will post the notes that I prepare for the lectures; these may or may not end 
 1. [Sep 28, Rational normal curves, Riemann--Roch](Sep28.pdf)
 1. [Oct 5,  Low genus curves](Oct05.pdf)
 1. [Oct 10, The canonical embedding, geometric Riemann-Roch](Oct10.pdf)
+1. [Oct 12, Branched coverings and monodromy](Oct12.pdf)
 
 ## Homework
 
@@ -44,6 +45,7 @@ If you require a grade, then you must write up complete solutions to at least 20
 1. [Homework 1](hw1.pdf)
 1. [Howework 2](hw2.pdf)
 1. [Homework 3](hw3.pdf)
+1. [Homework 4](hw4.pdf)
 
 ## Calendar
 
