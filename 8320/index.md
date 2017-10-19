@@ -35,7 +35,7 @@ I will post the notes that I prepare for the lectures; these may or may not end 
 1. [Oct 5,  Low genus curves](Oct05.pdf)
 1. [Oct 10, The canonical embedding, geometric Riemann-Roch](Oct10.pdf)
 1. [Oct 12, Branched coverings and monodromy](Oct12.pdf)
-1. [Oct 19, Serer duality and the proof of Riemann--Roch](RR.pdf)
+1. [Oct 19, Serre duality and the proof of Riemann--Roch](RR.pdf)
 
 ## Homework
 
