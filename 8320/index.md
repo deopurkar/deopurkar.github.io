@@ -35,12 +35,15 @@ I will post the notes that I prepare for the lectures; these may or may not end 
 1. [Oct 5,  Low genus curves](Oct05.pdf)
 1. [Oct 10, The canonical embedding, geometric Riemann-Roch](Oct10.pdf)
 1. [Oct 12, Branched coverings and monodromy](Oct12.pdf)
-1. [Oct 19, Serre duality and the proof of Riemann--Roch](RR.pdf)
+1. [Oct 17, Ample divisors, Serre vanishing](RR.pdf)
+1. [Oct 19, Vanishing, order of growth, field of meromorphic functions](RR.pdf)
+1. [Oct 24, Laurent tails, residue pairing](RR.pdf)
+1. [Oct 26, Serre duality](RR.pdf)
+1. [Oct 31, Inflection, ramification, Weierstrass points](Oct31.pdf)
 
 ## Homework
 
-I encourage you do to do these problems.
-Work them out in enough detail to convince yourself that you understand what is going on, but you need not turn in any write-up, unless you require a grade.
+Work out the problems in enough detail to convince yourself that you understand what is going on, but you need not turn in any write-up, unless you require a grade.
 If you require a grade, then you must write up complete solutions to at least 20 problems over the course of the semester.
 
 1. [Homework 1](hw1.pdf)
