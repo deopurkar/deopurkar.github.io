@@ -50,6 +50,7 @@ If you require a grade, then you must write up complete solutions to at least 20
 1. [Howework 2](hw2.pdf)
 1. [Homework 3](hw3.pdf)
 1. [Homework 4](hw4.pdf)
+1. [Homework 5](hw5.pdf)
 
 ## Calendar
 
