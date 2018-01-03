@@ -1,13 +1,14 @@
 ---
 layout: default
-title: CV | Anand Deopurkar
+title: Anand Deopurkar | CV
 ---
 
 ## Curriculum Vitae ([PDF](cv.pdf))
 
 ### Positions
 
-* 2016--Now, Assistant Professor (Limited Term), University of Georgia, Athens, GA.
+* 2018--now, Lecturer, Australian National University, Canberra, Australia
+* 2016--2017, Assistant Professor (Limited Term), University of Georgia, Athens, GA.
 * 2012--2016, J. F. Ritt Assistant Professor, Columbia University, New York, NY.
 
 ### Education
