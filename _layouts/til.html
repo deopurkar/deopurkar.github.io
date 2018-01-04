@@ -1,0 +1,34 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+  {% include head.html %}
+  </head>
+  
+
+  <body>
+
+    {% unless page.no-title %}
+    <h1>
+      {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+    </h1>
+    {% endunless %}
+
+    {% unless page.no-navigation %}
+    {% include navigation.html %}
+    {% endunless %}
+
+    <main>
+      {{ content }}
+    </main>
+
+    
+    {% include footer.html %}
+
+  </body>
+
+</html>
