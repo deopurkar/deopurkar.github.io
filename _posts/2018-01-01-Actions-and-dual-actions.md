@@ -1,9 +1,8 @@
 ---
-layout: default
-title: Stabilizers of group actions and their dual actions
-date: Thu Jan  4 10:22:23 AEDT 2018
+layout: post
+title: Stabilizers and duals
+date: Thu Jan 4 10:22:23 AEDT 2018
 tags: algebra
-no-navigation: True
 ---
 
 Let $G$ be a group acting on a vector space $V$.
@@ -12,7 +11,7 @@ Knowing this property is important, for example, in calculating basic properties
 Suppose that the action of $G$ on $V$ has trivial generic stabilizers.
 Is the same true for the induced action of $G$ on the dual space $V^*$? No!
 
-Here is a simple example.
+Here is a simple example, thanks to Asilata Bapat.
 Let $G$ be the group of upper triangular $2 \times 2$ matrices of the form 
 \\[\begin{pmatrix} 1 & a \\\ 0  & b \end{pmatrix}\\]
 acting a two dimensional vector space $V$ by multiplication on the left.

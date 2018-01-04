@@ -18,14 +18,14 @@ layout: compress
     </h1>
     {% endunless %}
 
+    <div class="blog">
+
     <aside>
-      <nav class="sidenav">
+      <nav>
 	<ul>
 	{% for post in site.posts %}
 	<li> <a href="{{ post.url }}">{{ post.title}}</a>
 	  {% endfor %}
-	<li> hi
-	<li> bye
 	</ul>
       </nav>
     </aside>
@@ -34,6 +34,7 @@ layout: compress
       {{ content }}
     </main>
 
+    </div>
     
     {% include footer.html %}
 

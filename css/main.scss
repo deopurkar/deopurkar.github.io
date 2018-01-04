@@ -16,25 +16,25 @@ $link: $dark;
 
 
 body {
-  max-width:80%;
-  font-family: 'PT Sans', Sans;
-  line-height: 130%;
-  background: $bg;
-  color: $fg;
-  margin-left:auto;
-  margin-right:auto;
-  ::selection {
-    background: $dark;
-    color: $lighter;
-  }
+    max-width:80%;
+    font-family: 'PT Sans', Sans;
+    line-height: 130%;
+    background: $bg;
+    color: $fg;
+    margin-left:auto;
+    margin-right:auto;
+    ::selection {
+	background: $dark;
+	color: $lighter;
+    }
 }
 
 * a {
     color: $link;
     text-decoration: underline;
     &:hover, &:active {
-        color: $darkest;
-    }
+		 color: $darkest;
+	     }
     &:focus {
         outline: none;
     }
@@ -45,14 +45,18 @@ code {
 }
 
 h1 {
-  color: $darker;
-  margin: 0;
-  font-size: 150%;
-  font-family: 'Open Sans';
-  font-weight: bold;
-  padding: 0.5em;
-  padding-left: 0em;
-  border-bottom: $darker 2px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    color: $darker;
+    margin: 0;
+    font-size: 150%;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    padding: 0.5em;
+    padding-left: 0em;
+    border-bottom: $darker 2px solid;
 }
 
 h2 {
@@ -62,14 +66,14 @@ h2 {
 }
 
 h3, h4 {
-  font-size: 100%;
-  color: $darker;
+    font-size: 100%;
+    color: $darker;
 }
 
 ul {
-  padding-left: 1em;
-  li {
-    margin: 0.5em;
+    padding-left: 1em;
+    li {
+	margin: 0.5em;
     }
 }
 
@@ -85,27 +89,34 @@ ol {
 }
 
 .summary{
-  display: none;
-  background: $lighter;
-  border-radius: 10px;
-  margin: 2% 2%;
-  padding: 2% 2%;
+    display: none;
+    background: $lighter;
+    border-radius: 10px;
+    margin: 2% 2%;
+    padding: 2% 2%;
 }
 
 footer {
-  color: $dark;
-  margin-top: 10%;
-  border-top: $darker 1px dotted;
-  font-size: small;
-  text-align: right;
+    color: $dark;
+    margin-top: 10%;
+    border-top: $darker 1px dotted;
+    font-size: small;
+    text-align: right;
 }
 
 .intro {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: flex-start;
-  }
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.head {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 #photo {
     width: 8em;
@@ -121,38 +132,58 @@ footer {
 }
 
 nav{
-  margin-top: 0%;
+    margin-top: 0%;
 
-  ul {
-    margin: 0;
-    list-style-type: none;
-    padding: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0em;
-    padding-left: 0em;
-  }
-
-  li {
-    display: inline;
-    margin: 0%;
+    ul {
+	margin: 0;
+	list-style-type: none;
+	padding: 0em;
+	padding-top: 0.5em;
+	padding-bottom: 0em;
+	padding-left: 0em;
     }
 
-  a {
-    color: $darker;
-    text-decoration: none;
-    padding: 0.5em;
-    padding-left: 0%;
-    &:hover {
-      color: $darkest;
-      text-decoration: underline;
-    }   
-  }
+    li {
+	display: inline;
+	margin: 0%;
+    }
+
+    a {
+	color: $darker;
+	text-decoration: none;
+	padding-left: 0.5em;
+	&:hover {
+	    color: $darkest;
+	    text-decoration: underline;
+	}
+    }
+    a.current{
+	color: $darkest;
+    }
 }
 
-.current{ 
-    text-decoration: underline;
-    text-decoration-color: $light;
+.blog{
+    display: flex;
+    flex-direction: row;
+    nav {
+	flex: 1 1 15em;
+	ul {
+	    list-style-position: inside;
+	    list-style-type: square;
+	    text-indent: -1em;
+	    padding-left: 1em;
+	    color: $dark;
+	}
+	li{
+	    display: list-item;
+	}
+    }
+
+    main{
+	flex: 1 2 30em;
+    }
 }
+
 
 /* Centering images */
 img[src$="centerme"]{
@@ -167,17 +198,22 @@ table tr:nth-child(odd){
 
 /* Stabilization as width -> 0 */
 @media screen and (max-width: 480px) {
-  body {
-      max-width:95%;
-      font-size:80%;
-  }
-    
-  .intro {
-      flex-direction: column;
-      align-items: center;
-  }
+    body {
+	max-width:95%;
+	font-size:80%;
+    }
 
-  #photo {
+    .intro, .head {
+	flex-direction: column;
+	align-items: center;
+    }
+
+    .blog {
+	flex-direction: column;
+	align-items: flex-start;
+    }
+
+    #photo {
         margin: 0;
         width: 120px;
     }
@@ -207,15 +243,5 @@ table tr:nth-child(odd){
         padding-left: 0px;
     }
 
-    nav{
-        ul {
-            padding: 8px;
-            margin-left: -16px;
-        }
-
-        li {
-            padding: 8px;
-        }
-    }
 }
 

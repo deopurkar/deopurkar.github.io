@@ -5,7 +5,7 @@
 	{% for p in navigation_pages %}
 	{% if p.navigation-weight %}
 	{% if p.navigation-title == page.navigation-title %}
-	<li><a  class="current" href="{{ p.url }}">{{ p.navigation-title }}</a></li>
+	<li><a class="current" href="{{ p.url }}">{{ p.navigation-title }}</a></li>
 	{% else %}
 	<li><a href="{{ p.url }}">{{ p.navigation-title }}</a></li>
 	{% endif %}
