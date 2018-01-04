@@ -5,18 +5,26 @@ navigation-title: Home
 title: Anand Deopurkar
 ---
 
-<img src="anandrd_bw2.jpg" alt="Photo of Anand Deopurkar" title="At UGA (2016)" id="photo">
+<div class="intro">
+
+![Photo of Anand Deopurkar](anandrd_bw2.jpg){:#photo}
+
+<div>
 
 [Mathematical Sciences Institute](http://maths.anu.edu.au)  
 [Australian National university](http://www.anu.edu.au/)  
 `anand.deopurkar@anu.edu.au`  
 CV [html](cv/index.html) [pdf](cv/cv.pdf)
 
+</div>
+
+</div>
+
 ## Research
 
 For my papers and preprints, see my [research](research/) page.
 
-I am an algebraic geometer with broader interests in algebra, geometry, representation theory, and number theory. I study moduli spaces: moduli of curves, branched covers, surfaces, and so on. A lot of my research is about questions of a classical flavor, but the answers often involve modern machinery like deformation theory and stacks.  
+I am an algebraic geometer with broader interests in algebra, geometry, representation theory, and number theory. I study moduli spaces: moduli of curves, branched covers, surfaces, and so on. A lot of my research is about questions of a classical flavor, but the answers often involve modern techniques like deformation theory and stacks.  
 
 Before coming to ANU, I was a post-doc at [UGA](http://math.uga.edu) and [Columbia](http://math.columbia.edu/), and before that I was a graduate student of Joe Harris at [Harvard](http://math.harvard.edu/).  
 

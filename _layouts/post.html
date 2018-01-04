@@ -18,9 +18,17 @@ layout: compress
     </h1>
     {% endunless %}
 
-    {% unless page.no-navigation %}
-    {% include navigation.html %}
-    {% endunless %}
+    <aside>
+      <nav class="sidenav">
+	<ul>
+	{% for post in site.posts %}
+	<li> <a href="{{ post.url }}">{{ post.title}}</a>
+	  {% endfor %}
+	<li> hi
+	<li> bye
+	</ul>
+      </nav>
+    </aside>
 
     <main>
       {{ content }}

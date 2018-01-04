@@ -32,6 +32,7 @@ sass:
   sass_dir: _sass
 kramdown:
   input: GFM
+  parse_block_html: true
 
 # Repository
 repository: deopurkar/deopurkar.github.io
