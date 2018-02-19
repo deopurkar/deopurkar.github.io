@@ -48,7 +48,7 @@ Here is my current [calendar](calendar/).
 
 ## Teaching
 
-I am currently not teaching anything. 
+I am currently supervising a [reading course on Riemann surfaces](3349). 
 Here are the notes of some of the advanced classes I have taught.
 
 * [Math 8320, a graduate course on algebraic curves and Riemann surfaces](8320)
