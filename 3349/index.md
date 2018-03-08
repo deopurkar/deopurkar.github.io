@@ -8,14 +8,14 @@ We will read Rick Miranda's book of the same title.
 
 ## Meetings
 
-Fridays 10am to 11:30am in my office (JD 1165).
+Fridays 10am to 11:30am in the Meeting Room (JD 1117).
 
 ## Reading and homework
 
 Here is a bi-weekly plan of our reading and homework. You should read and understand the assigned parts of the book, and test your understanding by trying the exercises. We will discuss the material and exercises when we meet on Fridays. On the last day of the second week, you must turn in complete solutions to 5 exercises of your choice. 
 
 1. Weeks 1 and 2 (19 Feb to 2 Mar): Chapter I (3 sections)
-   
+1. Weeks 3 and 4 (2 Mar to 16 Mar): I.3, II.1, II.2
 
 ## Prerequisites
 
