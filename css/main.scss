@@ -85,9 +85,12 @@ ul, ol {
 
 .bar{
   position: fixed;
-  padding: 1em 0;
   width: 100vw;
-  left: 0;
+  left:50%;
+  right:50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 1em 0;
   background: $light;
   align-items: center;
   }
@@ -179,6 +182,7 @@ table tr:nth-child(odd){
 
     .bar {
         position: relative;
+
     }
 
     main{

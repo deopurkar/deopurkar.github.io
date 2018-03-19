@@ -43,7 +43,6 @@ Click the title to view/hide the abstract. Different versions of a paper may be 
 * {% if paper.abstract %}[{{ paper.title }}](#){: class="scriptonly" onclick='toggle_visibility(\'{{ id }}\'); return false;' }{% else %}{{ paper.title }}{% endif %}{% if paper.coauthors %} (with {{ paper.coauthors | join: ', ' }}){% endif %}.  
 {% if paper.comment %} {{ paper.comment }}{% endif %}{% if paper.journal %} *{{ paper.journal }}*.{% endif %} {% for format in paper.formats %} [{{ format[0] }}]({{ format[1] }}) {% endfor %}  
 {% if paper.abstract %}<span id="{{ id }}" class="summary">{{ paper.abstract }}</span>{% endif %}{% endfor %}
-</table>
 
 ## Posters, slides, et cetera
 
