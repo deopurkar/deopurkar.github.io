@@ -12,20 +12,21 @@ layout: compress
 
   <body>
 
-    {% unless page.no-title %}
-
     <div class="head">
+      <div class="head-content">
+      {% unless page.no-title %}
       <h1>
 	{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
       </h1>
       {% endunless %}
 
-      {% unless page.no-navigation %}
+    {% unless page.no-navigation %}
     {% include navigation.html %}
-    {% endunless %}
+      {% endunless %}
+      </div>
     </div>
 
-    <main>
+    <main class="main">
       {{ content }}
     </main>
 
