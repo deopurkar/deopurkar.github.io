@@ -1,6 +1,7 @@
 ---
 layout: default
 title: MATH 3349 (2018)
+no-navigation: true
 ---
 
 This is a reading course on Algebraic Curves and Riemann Surfaces.
