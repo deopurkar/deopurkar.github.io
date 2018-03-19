@@ -17,9 +17,9 @@ $link: $dark;
 
 body {
     margin: 0;
-    font-family: 'PT Sans', Sans;
     line-height: 130%;
     background: $bg;
+    font-family: Sans;
     color: $fg;
     ::selection {
         background: $dark;
@@ -50,14 +50,12 @@ h1 {
     color: $darker;
     margin: 0em;
     font-size: 115%;
-    font-family: 'Open Sans';
     font-weight: bold;
     padding: 0em;
 }
 
 h2 {
     font-size: 110%;
-    font-family: 'Open Sans';
     color: $darker;
 }
 
@@ -126,7 +124,7 @@ footer {
   }
 
 .main{
-  padding-top: 4em;
+  padding-top: 6em;
   max-width:80%;
   margin:auto;
 }
@@ -171,7 +169,7 @@ nav{
         }
     }
     a.current{
-        color: $darkest;
+        text-decoration: underline;
     }
 }
 
@@ -197,7 +195,7 @@ table tr:nth-child(odd){
         position: relative;
     }
 
-    .head-content{
+    .intro, .head-content{
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
