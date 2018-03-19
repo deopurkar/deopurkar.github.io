@@ -6,21 +6,18 @@ $lightest:  #ffffff;
 $lighter:   #fffde7;   
 $light:     #ffefd7;   
 
-$darkest:   #444;
-$darker:    #444;
+$darkest:   #222;
+$darker:    #333;
 $dark:      #444;
 
-$bg: $lightest;
-$fg: $darkest;
-$link: $dark;
 
 
 body {
     margin: 0;
     line-height: 130%;
-    background: $bg;
+    background: $lightest;
     font-family: Sans;
-    color: $fg;
+    color: $dark;
     ::selection {
         background: $dark;
         color: $lighter;
@@ -28,11 +25,12 @@ body {
 }
 
 * a {
-    color: $link;
-    text-decoration: underline;
+    color: $dark;
+    text-decoration: dotted underline;
     &:hover, &:active {
-                 color: $darkest;
-             }
+      color: $darkest;
+      text-decoration: underline;
+      }
     &:focus {
         outline: none;
     }
@@ -43,43 +41,27 @@ code {
 }
 
 h1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
     color: $darker;
     margin: 0em;
     font-size: 115%;
-    font-weight: bold;
     padding: 0em;
 }
 
 h2 {
     font-size: 110%;
-    color: $darker;
 }
 
 h3, h4 {
     font-size: 100%;
-    color: $darker;
 }
 
-ul {
+ul, ol {
     padding-left: 1em;
     li {
-        margin: 0.5em;
         margin-bottom: 1em;
         list-style-type: circle;
-    }
-}
-
-ol {
-    padding-left: 1em;
-    li {
-        padding-left: 0.5em;
-        margin: .5em;
         ol li {
-            list-style-type: lower-alpha;
+          list-style-type: lower-alpha;
         }
     }
 }
@@ -92,13 +74,6 @@ ol {
     padding: 2% 2%;
 }
 
-footer {
-    color: $dark;
-    margin-top: 10%;
-    border-top: $darker 1px dotted;
-    font-size: small;
-    text-align: right;
-}
 
 .intro {
     display: flex;
@@ -107,7 +82,7 @@ footer {
     align-items: flex-start;
 }
 
-.head {
+.head{
   position: fixed;
   padding: 1em 0;
   width: 100%;
@@ -115,6 +90,7 @@ footer {
   align-items: center;
   }
 
+    
 .head-content{
   display:flex;
   flex-direction: row;
@@ -122,6 +98,15 @@ footer {
   margin: auto;
   max-width: 80%;
   }
+    
+footer {
+  margin: auto;
+  margin-top: 10%;
+  border-top: $darker 1px dotted;
+  font-size: small;
+  text-align: right;
+  max-width: 80%;
+}
 
 .main{
   padding-top: 6em;
@@ -160,16 +145,11 @@ nav{
     }
 
     a {
-        color: $darker;
         text-decoration: none;
         padding-left: 0.5em;
-        &:hover {
-            color: $darkest;
-            text-decoration: underline;
-        }
     }
     a.current{
-        text-decoration: underline;
+      text-decoration: dotted underline;
     }
 }
 
@@ -191,20 +171,23 @@ table tr:nth-child(odd){
         font-size:80%;
     }
 
+    .main, footer, .head-content {
+      max-width:95%;
+    }
+
     .head {
         position: relative;
     }
+
+    .main{
+      padding-top: 0em;
+      }
 
     .intro, .head-content{
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
     }
-
-    .main{
-      max-width:95%;
-      padding-top: 0em;
-      }
 
     #photo {
         margin: 0;
@@ -215,7 +198,7 @@ table tr:nth-child(odd){
 /* Stabilization as width -> Infinity */
 
 @media screen and (min-width: 800px) {
-    .main {
+    .main, footer, .head-content {
         max-width:800px;
     }
 
@@ -225,14 +208,6 @@ table tr:nth-child(odd){
 
     .summary {
         margin: 8px 8px;
-    }
-
-    .footer {
-        margin-top: 6px;
-    }
-
-    h1 {
-        padding-left: 0px;
     }
 
 }
