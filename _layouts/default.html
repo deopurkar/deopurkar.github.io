@@ -12,8 +12,8 @@ layout: compress
 
   <body>
 
-    <div class="head">
-      <div class="head-content">
+    <div class="bar">
+      <div class="bar-content">
       {% unless page.no-title %}
       <h1>
 	{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
@@ -26,7 +26,7 @@ layout: compress
       </div>
     </div>
 
-    <main class="main">
+    <main>
       {{ content }}
     </main>
 

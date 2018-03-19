@@ -13,14 +13,16 @@ $dark:      #444;
 
 
 body {
-    margin: 0;
-    line-height: 130%;
-    background: $lightest;
-    font-family: Sans;
-    color: $dark;
-    ::selection {
-        background: $dark;
-        color: $lighter;
+  margin: 2em;
+  max-width:80%;
+  margin:auto;
+  line-height: 130%;
+  background: $lightest;
+  font-family: Sans;
+  color: $dark;
+  ::selection {
+    background: $dark;
+    color: $lighter;
     }
 }
 
@@ -41,10 +43,9 @@ code {
 }
 
 h1 {
-    color: $darker;
     margin: 0em;
     font-size: 115%;
-    padding: 0em;
+    padding: 1em 0em;
 }
 
 h2 {
@@ -82,21 +83,24 @@ ul, ol {
     align-items: flex-start;
 }
 
-.head{
+.bar{
   position: fixed;
   padding: 1em 0;
-  width: 100%;
+  width: 100vw;
+  left: 0;
   background: $light;
   align-items: center;
   }
 
-    
-.head-content{
+.bar-content{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
   margin: auto;
   max-width: 80%;
+  h1{
+    padding: 0em;
+    }
   }
     
 footer {
@@ -108,10 +112,8 @@ footer {
   max-width: 80%;
 }
 
-.main{
+main{
   padding-top: 6em;
-  max-width:80%;
-  margin:auto;
 }
 
 #photo {
@@ -162,7 +164,7 @@ img[src$="centerme"]{
 
 /* By default tables alternate row colors */
 table tr:nth-child(odd){
-    background-color: $light;
+    background-color: $lighter;
 } 
 
 /* Stabilization as width -> 0 */
@@ -171,19 +173,19 @@ table tr:nth-child(odd){
         font-size:80%;
     }
 
-    .main, footer, .head-content {
+    body, footer, .bar-content {
       max-width:95%;
     }
 
-    .head {
+    .bar {
         position: relative;
     }
 
-    .main{
+    main{
       padding-top: 0em;
-      }
+    }
 
-    .intro, .head-content{
+    .intro, .bar-content{
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
@@ -198,7 +200,7 @@ table tr:nth-child(odd){
 /* Stabilization as width -> Infinity */
 
 @media screen and (min-width: 800px) {
-    .main, footer, .head-content {
+    body, footer, .bar-content {
         max-width:800px;
     }
 
