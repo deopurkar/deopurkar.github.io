@@ -44,7 +44,7 @@ code {
 
 h1 {
     margin: 0em;
-    font-size: 115%;
+    font-size: 110%;
     padding: 1em 0em;
 }
 
@@ -90,7 +90,7 @@ ul, ol {
   right:50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  padding: 1em 0;
+  padding: 0.5em 0;
   background: $light;
   align-items: center;
   }
@@ -116,7 +116,7 @@ footer {
 }
 
 main{
-  padding-top: 6em;
+  padding-top: 4em;
 }
 
 #photo {
@@ -181,18 +181,24 @@ table tr:nth-child(odd){
     }
 
     .bar {
-        position: relative;
-
+        h1 {
+          display: none;
+          }
     }
 
     main{
-      padding-top: 0em;
+      padding-top: 3em;
     }
 
     .intro, .bar-content{
       flex-direction: column;
       justify-content: space-between;
+    }
+    .intro{
       align-items: center;
+    }
+    .bar-content{
+      align-items: right;
     }
 
     #photo {
