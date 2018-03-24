@@ -8,7 +8,7 @@ $light:     Moccasin;
 
 $darkest:   Black;
 $darker:    DarkSlateGray;
-$dark:      DarkSlateGray;
+$dark:      Gray;
 
 body {
   margin: 2em;
@@ -17,15 +17,15 @@ body {
   line-height: 130%;
   background: $lightest;
   font-family: Sans;
-  color: $dark;
+  color: $darker;
   ::selection {
-    background: $dark;
+    background: $darker;
     color: $lighter;
     }
 }
 
 * a {
-    color: $dark;
+    color: $darker;
     text-decoration: dotted underline;
     &:hover, &:active {
       color: $darkest;
@@ -89,8 +89,12 @@ ul, ol {
   margin-left: -50vw;
   margin-right: -50vw;
   padding: 0.5em 0;
-  background: $light;
+  background: $dark;
+  color: $lightest;
   align-items: center;
+  a{
+    color: $lightest;
+  }
 }	
 
 .bar-content{
