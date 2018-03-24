@@ -12,7 +12,7 @@ title: Anand Deopurkar
 <div>
 
 [Mathematical Sciences Institute](http://maths.anu.edu.au)  
-[Australian National university](http://www.anu.edu.au/)  
+[Australian National University](http://www.anu.edu.au/)  
 `anand.deopurkar@anu.edu.au`  
 CV [html](cv/index.html) [pdf](cv/cv.pdf)
 
