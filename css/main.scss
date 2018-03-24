@@ -169,7 +169,7 @@ table tr:nth-child(odd){
 } 
 
 /* Stabilization as width -> 0 */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 32em) {
     body {
         font-size:80%;
     }
@@ -179,24 +179,17 @@ table tr:nth-child(odd){
     }
 
     .bar {
-        h1 {
-          display: none;
-          }
+      position: relative;
     }
 
     main{
-      padding-top: 3em;
+      padding-top: 1em;
     }
 
     .intro, .bar-content{
+      align-items: center;
       flex-direction: column;
       justify-content: space-between;
-    }
-    .intro{
-      align-items: center;
-    }
-    .bar-content{
-      align-items: right;
     }
 
     #photo {
