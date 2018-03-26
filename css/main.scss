@@ -2,37 +2,27 @@
 ---
 
 // Colour palette
-$lightest:  #ffffff;
-$lighter:   #fffde7;   
-$light:     #ffefd7;   
+$lightest:  FloralWhite;
+$lighter:   BlanchedAlmond;   
+$light:     LightSalmon;   	
 
-$darkest:   #444;
-$darker:    #444;
-$dark:      #444;
-
-$bg: $lightest;
-$fg: $darkest;
-$link: $dark;
-
+$darkest:   Black;
+$darker:    DarkSlateGray;
+$dark:      Gray;
 
 body {
-    margin-top:1.5em;
+    margin: 2em;
     max-width:80%;
-    font-family: 'PT Sans', Sans;
+    margin:auto;
     line-height: 130%;
-    background: $bg;
-    color: $fg;
-    margin-left:auto;
-    margin-right:auto;
-    ::selection {
-        background: $dark;
-        color: $lighter;
-    }
+    background: $lightest;
+    font-family: Sans;
+    color: $darker;
 }
 
 * a {
-    color: $link;
-    text-decoration: underline;
+    text-decoration: dotted underline;
+    color: $darker;
     &:hover, &:active {
                  color: $darkest;
              }
@@ -46,42 +36,24 @@ code {
 }
 
 h1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    color: $darker;
     margin: 0em;
-    font-size: 115%;
-    font-family: 'Open Sans';
-    font-weight: bold;
-    padding: 0em;
-    border-bottom: $darker 2px solid;
+    font-size: 110%;
+    padding: 1em 0em;
 }
 
 h2 {
     font-size: 110%;
-    font-family: 'Open Sans';
-    color: $darker;
 }
 
 h3, h4 {
     font-size: 100%;
-    color: $darker;
 }
 
-ul {
+ul, ol {
     padding-left: 1em;
     li {
-	margin: 0.5em;
-    }
-}
-
-ol {
-    padding-left: 1em;
-    li {
-        padding-left: 0.5em;
-        margin: .5em;
+        margin-bottom: 1em;
+        list-style-type: circle;
         ol li {
             list-style-type: lower-alpha;
         }
@@ -90,19 +62,12 @@ ol {
 
 .summary{
     display: none;
-    background: $light;
+    background: $lighter;
     border-radius: 10px;
     margin: 2% 2%;
     padding: 2% 2%;
 }
 
-footer {
-    color: $dark;
-    margin-top: 10%;
-    border-top: $darker 1px dotted;
-    font-size: small;
-    text-align: right;
-}
 
 .intro {
     display: flex;
@@ -111,11 +76,47 @@ footer {
     align-items: flex-start;
 }
 
-.head {
+.bar{
+    position: fixed;
+    width: 100vw;
+    left:50%;
+    right:50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0.5em 0;
+    background: $dark;
+    color: $lightest;
+    align-items: center;
+
+}	
+
+.bar-content{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    margin: auto;
+    max-width: 80%;
+    h1{
+	padding: 0em;
+    }
+    a{
+	color: $lightest;
+	font-size: 80%;
+	font-weight: bold;
+    }
+}
+
+footer {
+    margin: auto;
+    margin-top: 10%;
+    border-top: $darker 1px dotted;
+    font-size: 50%;
+    text-align: right;
+    max-width: 100%;
+}
+
+main{
+    padding-top: 4em;
 }
 
 #photo {
@@ -149,16 +150,11 @@ nav{
     }
 
     a {
-        color: $darker;
         text-decoration: none;
         padding-left: 0.5em;
-        &:hover {
-            color: $darkest;
-            text-decoration: underline;
-        }
     }
     a.current{
-        color: $darkest;
+	color: $light;
     }
 }
 
@@ -171,24 +167,31 @@ img[src$="centerme"]{
 
 /* By default tables alternate row colors */
 table tr:nth-child(odd){
-    background-color: $light;
+    background-color: $lighter;
 } 
 
 /* Stabilization as width -> 0 */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 32em) {
     body {
+        font-size:80%;
+    }
+
+    body, .bar-content {
 	max-width:95%;
-	font-size:80%;
     }
 
-    .intro, .head {
-	flex-direction: column;
+    .bar {
+	position: relative;
+    }
+
+    main{
+	padding-top: 1em;
+    }
+
+    .intro, .bar-content{
 	align-items: center;
-    }
-
-    .blog {
 	flex-direction: column;
-	align-items: flex-start;
+	justify-content: space-between;
     }
 
     #photo {
@@ -200,7 +203,7 @@ table tr:nth-child(odd){
 /* Stabilization as width -> Infinity */
 
 @media screen and (min-width: 800px) {
-    body {
+    body, .bar-content {
         max-width:800px;
     }
 
@@ -210,14 +213,6 @@ table tr:nth-child(odd){
 
     .summary {
         margin: 8px 8px;
-    }
-
-    .footer {
-        margin-top: 6px;
-    }
-
-    h1 {
-        padding-left: 0px;
     }
 
 }
