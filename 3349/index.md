@@ -18,6 +18,7 @@ Here is a bi-weekly plan of our reading and homework. You should read and unders
 1. Weeks 1 and 2 (19 Feb to 2 Mar): Chapter I (3 sections)
 1. Weeks 3 and 4 (2 Mar to 16 Mar): I.3, II.1, II.2
 1. Weeks 5 and 6 (16 Mar to 30 Mar): End of chapter II
+1. Weeks 7 and 8 (30 Mar to 20 Apr): Finish chapter II, III.1, III.5. 
 
 ## Prerequisites
 
