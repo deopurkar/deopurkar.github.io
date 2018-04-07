@@ -1,0 +1,191 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{geometry}
+\usepackage{stmaryrd}
+\usepackage{hyperref}
+\usepackage{Baskervaldx}
+
+\declaretheorem{theorem}
+\input{macros}
+\DeclareMathOperator{\f}{frac}
+
+\title{Ramification in arithmetic and geometry}
+
+\begin{document}
+\maketitle
+
+It may seem strange that the idea of ramification shows up while studying extensions of number fields and maps between Riemann surfaces.
+Is this a coincidence, overuse of terminology, or is there a connection between the two?
+It turns out that there \emph{is} a connection, and it can be explained by an algebraic structure that is common to number fields and Riemann surfaces.
+The goal of this note is to describe this structure, and to explain how it appears in number theory and geometry.
+
+\section{Discrete Valuation Rings}
+The common algebraic structure goes by the name of discrete valuation rings.
+Here is the definition.
+\begin{definition}
+  A \emph{discrete valuation ring} (DVR) is an integral domain $R$ along with a surjective function $v \from \f R \to \Z \cup \{+\infty\}$, called the \emph{valuation}, which satisfies the following properties.
+  \begin{enumerate}
+  \item $v(a) = +\infty$ if and only if $a = 0$.
+  \item $v(ab) = v(a) + v(b)$.
+  \item $v(a+b) \geq \min(v(a), v(b))$.
+  \item if $v(a) \geq 0$, then $a \in R$.
+  \end{enumerate}
+\end{definition}
+We will shortly see three examples of DVRs---one from arithmetic, one from algebra, and one from geometry.
+
+The valuation $v$ is often omitted from notation.
+This is harmless, because $v$ is often clear from context.
+In fact, it turns out that there can only be one possible valuation function on a DVR.
+
+\subsection{DVRs in arithmetic}
+Let $p$ be a prime number.
+Let $\Z_p \subset \Q$ be the set of rational numbers that can be expressed as $a / b$ where $a$ and $b$ are integers and $p$ does not divide $b$.
+Note that $\Z_p$ is an integral domain.
+It contains $\Z$ as a sub-ring.
+In particular, its fraction field is $\Q$.
+We will shortly see that that $R = \Z_p$ becomes a DVR with an appropriate valuation $v = v_p$.
+To define $v_p$, observe that every non-zero rational number $r$ can be written as
+\[ r = p^n \frac{a}{b},\]
+where $n, a, b \in \Z$ and $p$ does not divide $a$ or $b$.
+Then we set $v_p(r) = n$.
+We also set $v_p(0) = +\infty$, as required.
+We must verify that $v_p$ is a well-defined function on $\Q$.
+That is, we must check that if there are two ways of representing $r$ as above, then both lead to the same value of $v(r)$.
+This is easy to do.
+More interesting is to show the following.
+\begin{proposition}
+  The ring $\Z_p$ along with the valuation $v_p$ is a DVR.
+\end{proposition}
+
+\begin{remark}
+  Let $K$ be a number field (a finite extension of $\Q$), and $O_K \subset K$ the ring of integers.
+  Let $\mathfrak p \subset O_K$ be a prime ideal.
+  We can define $\O_{K, \mathfrak p}$ along with a valuation $v_{\mathfrak p}$, which is a DVR.
+  This generalizes the example above. 
+\end{remark}
+
+\subsection{DVRs in algebra}
+This example strongly resembles the example before.
+Let $a$ be a complex number.
+Let $\C[x]_a \subset \C(x)$ be the set of rational functions
+that can be expressed as $p(x)/q(x)$, where $p(x)$ and $q(x)$ are polynomials and $q(a) \neq 0$.
+Note that $\C[x]_a$ contains the polynomial ring $\C[x]$ as a sub-ring.
+In particular, its fraction field is $\C(x)$.
+Let $f \in \C(x)$ be non-zero.
+Observe that $f$ can be written as
+\[ f = (x-a)^n \frac{p(x)}{q(x)},\]
+where $n \in \Z$, and $p(x), q(x) \in \C[x]$ are such that $p(a) \neq 0$ and $q(a) \neq 0$.
+Set $v(f) = n$.
+Set $v(0) = +\infty$, as required.
+It is easy to verify that $v$ is well-defined.
+\begin{proposition}
+  The ring $\C[x]_a$ along with the valuation $v_a$ is a DVR.
+\end{proposition}
+
+\subsection{DVRs in geometry}
+For our last example, we need some preparation.
+Let $X$ be a topological space and $x \in X$.
+Let $F(X, x)$ be the set of pairs $(U, f)$, where $U \subset X$ is an open subset containing $x$ and $f$ is a function $f \from U \to \C$.
+Define an equivalence relation on $F(X, x)$ by saying $(U_1, f_1) \sim (U_2, f_2)$ if there exists an open set $V$ containing $x$ and contained in $U_1 \cap U_2$ such that and $f_1|_V = f_2|_V$.
+An equivalence class of this relation is called a \emph{germ of a function} on $X$ at $x$.
+Denote by $F_{X,x}$ the set of germs of functions on $X$ at $x$.
+
+Said simply, a germ of a fuction on $X$ at $x$ is a function defined in \emph{some} open set containing $x$, with the understanding that two functions are considered the same if they agree on some open set containing $x$.
+Strictly speaking, a germ is represented by a pair $(U, f)$, but the $U$ is often omitted.
+
+The set of germs of functions on $X$ at $x$ naturally forms a ring---addition and multiplication come from addition and multiplication of functions.
+
+Instead of considering all functions, we may restrict ourselves to continuous functions or smooth functions (if $X$ is a manifold).
+
+Suppose $U \subset X$ is an open set containing $x$.
+It is easy to see that we have an isomorphism
+\begin{equation}\label{eqn:restriction}
+  F_{X, x} \cong F_{U, x}
+\end{equation}
+given by restriction of functions.
+
+Likewise, if $\phi \from X \to Y$ is a homeomorphism and $y = \phi(x)$, then we have an isomorphism
+\begin{equation}\label{eqn:homeomorphism}
+  F_{Y, y} \cong F_{X, x}
+\end{equation}
+given by $f \mapsto f \circ \phi$.
+
+Now let $X$ be a Riemann surface.
+Let $O_{X,x}$ be the be set of germs of holomorphic functions on $X$ at $x$.
+Note that if we take a chart centered at $x$, namely an open set $U \subset X$ containing $X$ and a homeomorphism $\phi \from U \to V$, where $V \subset \C$ is an open subset such that $\phi(x) = 0$, then by combining \autoref{eqn:restriction} and \autoref{eqn:homeomorphism}, we get an isomorphism
+\[ O_{X, x} \cong O_{\C, 0}.\]
+In particular, $O_{X,x}$ does not depend on $X$ or $x$.
+This is not surprising; it is simply a reflection of the fact that locally near $x$, a Riemann surface ``looks just like'' $\C$ does near $0$.
+Note that the isomorphism $O_{X,x} \cong O_{\C,0}$ depends on the choice of a chart at $x$.
+
+The ring $O_{\C, 0}$ is easy to identify.
+Recall that $\C\llbracket z \rrbracket$ denotes the ring of formal power series in a variable $z$.
+Let $\C_{\rm conv}\llbracket z \rrbracket$ be the subset of $\C\llbracket z \rrbracket$ consisting of power series with a positive radius of convergence (positive includes $+\infty$).
+For example, $f(z) = 1 + z + z^2 + \cdots$ lies in $\C_{\rm conv} \llbracket z \rrbracket$, but $0! + 1! z + 2! z^2 + \cdots$ does not.
+Observe that $\C_{\rm conv}\llbracket z \rrbracket \subset \C \\llbracket z \rrbracket$ is a sub-ring.
+\begin{proposition}
+  The ring $O_{\C, 0}$ is isomorphic to $\C_{\rm conv}\llbracket z \rrbracket$.
+\end{proposition}
+
+Let us go back to $O_{X,x}$ and show that $O_{X,x}$ becomes a DVR with an appropriate valuation $v_x$.
+Let $\eta$ be a non-zero germ of a holomorphic function on $X$ at $x$ represented by $(U, f)$.
+Let $n$ be the order of vanishing of $f$ at $x$.
+Set
+\[ v_x(\eta) = n.\]
+As usual, set $v_x(0) = +\infty$.
+\begin{proposition}
+  The ring $O_{X,x}$ along with the valuation $v_x$ is a DVR.
+\end{proposition}
+
+\section{Algebraic properties of DVRs}
+Let $R$ be a DVR with valuation $v$.
+Let $m \subset R$ be the set of elements that have positive valuation (including $+\infty$).
+\begin{proposition}\label{prop:dvrlocal}
+  The set $m$ is a maximal ideal of $R$.
+  Every element in $R \setminus m$ is invertible.
+  Consequently, $m$ is the unique maximal ideal of $R$.
+\end{proposition}
+A ring with a unique maximal ideal is called a \emph{local} ring.
+\autoref{prop:dvrlocal} says that a DVR is a local ring.
+
+\begin{proposition}\label{prop:pid}
+  Let $t \in R$ be an element with valuation $1$.
+  Then $t$ generates $m$ as an ideal.
+  More generally, if $I \subset R$ is any ideal, and $t \in I$ is an element with minimum valuation, then $t$ generates $I$ as an ideal.
+  Finally, if $I \subset R$ is a non-zero ideal, then $I = m^n$ for some $n \geq 0$.
+\end{proposition}
+In particular, \autoref{prop:pid} says that $R$ is a Principal Ideal Domain (PID).
+In fact, it says that the only ideals of $R$ are $t^nR$ where $t \in R$ is an element of valuation $1$.
+
+An element in $R$ with valuation $1$ is called a \emph{uniformizer} or \emph{local parameter}.
+For example, note that $p$ is a uniformizer in $\Z_p$, and $z$ is a uniformizer in $\O_{\C, 0}$.
+
+\section{Ramification}
+Let $R$ and $S$ be DVRs with valuations $v_R$ and $v_S$.
+Let $\phi \from R \to S$ be a ring homomorphism.
+We can now compare the two functions $v_R$ and $v_S \circ \phi$ defined on $R$.
+Observe that $v_S \circ \phi \from R \to \Z_{\geq 0}$ is a function satisfying
+\[ v_S \circ \phi (ab) = v_S\circ \phi (a) + v_S\circ\phi(b).\]
+The following proposition says that such a function must be a scaled version of the valuation function.
+\begin{proposition}
+  Let $R$ be a DVR with valuation $v$.
+  If $v' \from R \to \Z_{\geq 0}$ is any function satisfying
+  \[ v'(ab) = v'(a) + v'(b),\]
+  then there exists a positive integer $d$ such that
+  \[ v'(a) = d \cdot v(a)\]
+  for all $a \in R$.
+\end{proposition}
+As a result, we conclude that there exists a $d$ such that
+\[ v_S\circ\phi(a) = d \cdot v(a)\]
+for all $a \in R$.
+\begin{definition}
+  The integer $d$ such that $v_S \circ \phi = d \cdot v$ is called the \emph{multiplicity} of $\phi \from R \to S$.
+\end{definition}
+
+
+
+\end{document}
