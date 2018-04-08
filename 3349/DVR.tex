@@ -182,10 +182,23 @@ The following proposition says that such a function must be a scaled version of 
 As a result, we conclude that there exists a $d$ such that
 \[ v_S\circ\phi(a) = d \cdot v(a)\]
 for all $a \in R$.
-\begin{definition}
-  The integer $d$ such that $v_S \circ \phi = d \cdot v$ is called the \emph{multiplicity} of $\phi \from R \to S$.
-\end{definition}
+We say that this integer $d$ is the \emph{multiplicity} of $\phi \from R \to S$.
 
+\begin{example}
+  Let $\phi \from X \to Y$ be a non-constant holomorphic map between Riemann surfaces.
+  Let $x \in X$ and set $y = f(x)$.
+  The map $f$ induces a ring homomorphism
+  \[ \phi^{\#} \from O_{Y,y} \to O_{X,x}\]
+  defined by $\phi^\# (f) = f \circ \phi$.
+  Then the multiplicity of $\phi^\#$ is the local multiplicity of $\phi$ at $x$.
+\end{example}
 
+\begin{example}
+  Let $K$ be a number field, $O_K \subset K$ its ring of integers, and $\mathfrak p \subset O_K$ a prime ideal.
+  Let $\Z \cap \mathfrak p = (p)$.
+  Then the inclusion $\Z \to O_K$ induces a map
+  \[ \phi \from \Z_p \to O_{K, \mathfrak P}.\]
+  Then the multiplicity of $\phi$ is the power of $\mathfrak p$ in the factorization of $p$ in terms of prime ideals of $O_K$.
+\end{example}
 
 \end{document}
