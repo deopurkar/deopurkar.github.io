@@ -20,7 +20,7 @@
 
 It may seem strange that the idea of ramification shows up while studying extensions of number fields and maps between Riemann surfaces.
 Is this a coincidence, overuse of terminology, or is there a connection between the two?
-It turns out that there \emph{is} a connection, and it can be explained by an algebraic structure that is common to number fields and Riemann surfaces.
+It turns out that there \emph{is} a connection; it can be explained by a shared algebraic structure.
 The goal of this note is to describe this structure, and to explain how it appears in number theory and geometry.
 
 \section{Discrete Valuation Rings}
@@ -32,20 +32,19 @@ Here is the definition.
   \item $v(a) = +\infty$ if and only if $a = 0$.
   \item $v(ab) = v(a) + v(b)$.
   \item $v(a+b) \geq \min(v(a), v(b))$.
-  \item if $v(a) \geq 0$, then $a \in R$.
+  \item $a \in R$ if and only if $v(a) \geq 0$.
   \end{enumerate}
 \end{definition}
 We will shortly see three examples of DVRs---one from arithmetic, one from algebra, and one from geometry.
 
-The valuation $v$ is often omitted from notation.
+The valuation $v$ is often omitted from the notation.
 This is harmless, because $v$ is often clear from context.
-In fact, it turns out that there can only be one possible valuation function on a DVR.
+In fact, it turns out that there can only be one possible valuation function on a DVR (see \autoref{prop:uniquev}).
 
 \subsection{DVRs in arithmetic}
 Let $p$ be a prime number.
 Let $\Z_p \subset \Q$ be the set of rational numbers that can be expressed as $a / b$ where $a$ and $b$ are integers and $p$ does not divide $b$.
-Note that $\Z_p$ is an integral domain.
-It contains $\Z$ as a sub-ring.
+Note that $\Z_p$ is a ring, and it contains $\Z$ as a sub-ring.
 In particular, its fraction field is $\Q$.
 We will shortly see that that $R = \Z_p$ becomes a DVR with an appropriate valuation $v = v_p$.
 To define $v_p$, observe that every non-zero rational number $r$ can be written as
@@ -56,7 +55,7 @@ We also set $v_p(0) = +\infty$, as required.
 We must verify that $v_p$ is a well-defined function on $\Q$.
 That is, we must check that if there are two ways of representing $r$ as above, then both lead to the same value of $v(r)$.
 This is easy to do.
-More interesting is to show the following.
+More interesting (but still straightforward) is the following.
 \begin{proposition}
   The ring $\Z_p$ along with the valuation $v_p$ is a DVR.
 \end{proposition}
@@ -64,16 +63,14 @@ More interesting is to show the following.
 \begin{remark}
   Let $K$ be a number field (a finite extension of $\Q$), and $O_K \subset K$ the ring of integers.
   Let $\mathfrak p \subset O_K$ be a prime ideal.
-  We can define $\O_{K, \mathfrak p}$ along with a valuation $v_{\mathfrak p}$, which is a DVR.
-  This generalizes the example above. 
+  We can define $O_{K, \mathfrak p} \subset K$ along with a valuation $v_{\mathfrak p}$, which is a DVR, generalizing the example above. 
 \end{remark}
 
 \subsection{DVRs in algebra}
-This example strongly resembles the example before.
 Let $a$ be a complex number.
 Let $\C[x]_a \subset \C(x)$ be the set of rational functions
 that can be expressed as $p(x)/q(x)$, where $p(x)$ and $q(x)$ are polynomials and $q(a) \neq 0$.
-Note that $\C[x]_a$ contains the polynomial ring $\C[x]$ as a sub-ring.
+Note that $\C[x]_a$ is a ring, and contains the polynomial ring $\C[x]$ as a sub-ring.
 In particular, its fraction field is $\C(x)$.
 Let $f \in \C(x)$ be non-zero.
 Observe that $f$ can be written as
@@ -94,7 +91,8 @@ Define an equivalence relation on $F(X, x)$ by saying $(U_1, f_1) \sim (U_2, f_2
 An equivalence class of this relation is called a \emph{germ of a function} on $X$ at $x$.
 Denote by $F_{X,x}$ the set of germs of functions on $X$ at $x$.
 
-Said simply, a germ of a fuction on $X$ at $x$ is a function defined in \emph{some} open set containing $x$, with the understanding that two functions are considered the same if they agree on some open set containing $x$.
+Said simply, a germ of a fuction on $X$ at $x$ is a function defined in \emph{some} open set containing $x$, with the understanding that two functions are considered the same if they agree on some (possibly smaller) open set containing $x$.
+For example, the constant function $1$ on $\R$ and the characteristic function $\chi$ of the interval $[-1,1]$ represent the same germ at $x = 0$.
 Strictly speaking, a germ is represented by a pair $(U, f)$, but the $U$ is often omitted.
 
 The set of germs of functions on $X$ at $x$ naturally forms a ring---addition and multiplication come from addition and multiplication of functions.
@@ -124,11 +122,11 @@ Note that the isomorphism $O_{X,x} \cong O_{\C,0}$ depends on the choice of a ch
 
 The ring $O_{\C, 0}$ is easy to identify.
 Recall that $\C\llbracket z \rrbracket$ denotes the ring of formal power series in a variable $z$.
-Let $\C_{\rm conv}\llbracket z \rrbracket$ be the subset of $\C\llbracket z \rrbracket$ consisting of power series with a positive radius of convergence (positive includes $+\infty$).
-For example, $f(z) = 1 + z + z^2 + \cdots$ lies in $\C_{\rm conv} \llbracket z \rrbracket$, but $0! + 1! z + 2! z^2 + \cdots$ does not.
-Observe that $\C_{\rm conv}\llbracket z \rrbracket \subset \C \\llbracket z \rrbracket$ is a sub-ring.
+Let $\C\llbracket z \rrbracket_{\rm conv}$ be the subset of $\C\llbracket z \rrbracket$ consisting of power series with a positive radius of convergence (positive includes $+\infty$).
+For example, $f(z) = 1 + z + z^2 + \cdots$ lies in $\C\llbracket z \rrbracket_{\rm conv}$, but $0! + 1! z + 2! z^2 + \cdots$ does not.
+Observe that $\C\llbracket z \rrbracket_{\rm conv} \subset \C \llbracket z \rrbracket$ is a sub-ring.
 \begin{proposition}
-  The ring $O_{\C, 0}$ is isomorphic to $\C_{\rm conv}\llbracket z \rrbracket$.
+  The ring $O_{\C, 0}$ is isomorphic to $\C\llbracket z \rrbracket_{\rm conv}$.
 \end{proposition}
 
 Let us go back to $O_{X,x}$ and show that $O_{X,x}$ becomes a DVR with an appropriate valuation $v_x$.
@@ -140,6 +138,15 @@ As usual, set $v_x(0) = +\infty$.
 \begin{proposition}
   The ring $O_{X,x}$ along with the valuation $v_x$ is a DVR.
 \end{proposition}
+
+Let us understand the valuation explicitly on $O_{\C, 0} \cong \C\llbracket z \rrbracket_{\rm conv}$.
+Let $g$ be a power series
+\[ g(z) = \sum_{n \geq 0} a_n z^n.\]
+Then $v(g)$ is the minimum $n$ such that $a_n \neq 0$.
+Using the isomorphism $O_{X,x} \cong \C\llbracket z \rrbracket_{\rm conv}$ given by a chart, we get an explicit description of $v_x$ on $O_{X,x}$.
+If the image of $f \in O_{X,x}$ is the power series
+\[ g(z) = \sum_{n \geq 0} a_n z^n,\]
+then $v(f)$ is the minimum $n$ such that $a_n \neq 0$.
 
 \section{Algebraic properties of DVRs}
 Let $R$ be a DVR with valuation $v$.
@@ -162,14 +169,23 @@ In particular, \autoref{prop:pid} says that $R$ is a Principal Ideal Domain (PID
 In fact, it says that the only ideals of $R$ are $t^nR$ where $t \in R$ is an element of valuation $1$.
 
 An element in $R$ with valuation $1$ is called a \emph{uniformizer} or \emph{local parameter}.
-For example, note that $p$ is a uniformizer in $\Z_p$, and $z$ is a uniformizer in $\O_{\C, 0}$.
+For example, $p$ is a uniformizer in $\Z_p$, and $z$ is a uniformizer in $O_{\C, 0}$.
+
+\begin{proposition}\label{prop:uniquev}
+  Let $t \in R$ be a uniformizer.
+  Every element $x \in R$ is of the form
+  \[ x = ut^n, \]
+  where $u \in R$ is a unit.
+  Consequently, the valuation function $v$ on $\f R$ is unique.
+\end{proposition}
 
 \section{Ramification}
 Let $R$ and $S$ be DVRs with valuations $v_R$ and $v_S$.
 Let $\phi \from R \to S$ be a ring homomorphism.
-We can now compare the two functions $v_R$ and $v_S \circ \phi$ defined on $R$.
-Observe that $v_S \circ \phi \from R \to \Z_{\geq 0}$ is a function satisfying
-\[ v_S \circ \phi (ab) = v_S\circ \phi (a) + v_S\circ\phi(b).\]
+Note that $\phi$ induces a map of fields $\f R \to \f S$, which we also denote by $\phi$.
+
+We can compare the two functions $v_R$ and $v_S \circ \phi$ defined on $R$.
+Observe that $v_S \circ \phi \from \f R \to \Z \cup \{\infty\}$ is a function satisfying all the properties of a valuation, except possibly surjectivity.
 The following proposition says that such a function must be a scaled version of the valuation function.
 \begin{proposition}
   Let $R$ be a DVR with valuation $v$.
@@ -186,8 +202,8 @@ We say that this integer $d$ is the \emph{multiplicity} of $\phi \from R \to S$.
 
 \begin{example}
   Let $\phi \from X \to Y$ be a non-constant holomorphic map between Riemann surfaces.
-  Let $x \in X$ and set $y = f(x)$.
-  The map $f$ induces a ring homomorphism
+  Let $x \in X$ and set $y = \phi(x)$.
+  The map $\phi$ induces a ring homomorphism
   \[ \phi^{\#} \from O_{Y,y} \to O_{X,x}\]
   defined by $\phi^\# (f) = f \circ \phi$.
   Then the multiplicity of $\phi^\#$ is the local multiplicity of $\phi$ at $x$.
@@ -195,10 +211,10 @@ We say that this integer $d$ is the \emph{multiplicity} of $\phi \from R \to S$.
 
 \begin{example}
   Let $K$ be a number field, $O_K \subset K$ its ring of integers, and $\mathfrak p \subset O_K$ a prime ideal.
-  Let $\Z \cap \mathfrak p = (p)$.
-  Then the inclusion $\Z \to O_K$ induces a map
+  Let $\Z \cap \mathfrak p = p\Z$.
+  The inclusion $\Z \to O_K$ induces a map
   \[ \phi \from \Z_p \to O_{K, \mathfrak P}.\]
-  Then the multiplicity of $\phi$ is the power of $\mathfrak p$ in the factorization of $p$ in terms of prime ideals of $O_K$.
+  Then the multiplicity of $\phi$ is the power of $\mathfrak p$ in the factorization of $p$ into prime ideals of $O_K$.
 \end{example}
 
 \end{document}
