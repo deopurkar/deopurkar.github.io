@@ -20,6 +20,8 @@ Here is a bi-weekly plan of our reading and homework. You should read and unders
 1. Weeks 5 and 6 (16 Mar to 30 Mar): End of chapter II
 1. Weeks 7 and 8 (30 Mar to 20 Apr): Finish chapter II, III.1, III.5. 
 
+A short write up on [discrete valuation rings](dvr.pdf), to explain how the idea of ramification appears in extensions of number fields and maps of Riemann surfaces.
+
 ## Prerequisites
 
 * Complex analysis: MATH 3328, or equivalent.
