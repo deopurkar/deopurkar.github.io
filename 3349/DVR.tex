@@ -7,19 +7,25 @@
 \usepackage{geometry}
 \usepackage{stmaryrd}
 \usepackage{hyperref}
+
+\usepackage{microtype}
+\usepackage{kpfonts}
 \usepackage{Baskervaldx}
+
+
 
 \declaretheorem{theorem}
 \input{macros}
 \DeclareMathOperator{\f}{frac}
 
 \title{Ramification in arithmetic and geometry}
+\author{Anand Deopurkar}
 
 \begin{document}
 \maketitle
 
-It may seem strange that the idea of ramification shows up while studying extensions of number fields and maps between Riemann surfaces.
-Is this a coincidence, overuse of terminology, or is there a connection between the two?
+It may seem coincidental that the idea of ramification shows up while studying extensions of number fields and maps between Riemann surfaces.
+Is this just overuse of terminology, or is there a connection between the two?
 It turns out that there \emph{is} a connection; it can be explained by a shared algebraic structure.
 The goal of this note is to describe this structure, and to explain how it appears in number theory and geometry.
 
@@ -31,7 +37,7 @@ Here is the definition.
   \begin{enumerate}
   \item $v(a) = +\infty$ if and only if $a = 0$.
   \item $v(ab) = v(a) + v(b)$.
-  \item $v(a+b) \geq \min(v(a), v(b))$.
+  \item $v(a+b) \geq \min(v(a), v(b))$ with equality if $v(a) \neq v(b)$.
   \item $a \in R$ if and only if $v(a) \geq 0$.
   \end{enumerate}
 \end{definition}
@@ -40,6 +46,7 @@ We will shortly see three examples of DVRs---one from arithmetic, one from algeb
 The valuation $v$ is often omitted from the notation.
 This is harmless, because $v$ is often clear from context.
 In fact, it turns out that there can only be one possible valuation function on a DVR (see \autoref{prop:uniquev}).
+This is only one of the many equivalent definitions of a DVR---wikipedia lists 10!
 
 \subsection{DVRs in arithmetic}
 Let $p$ be a prime number.
@@ -76,9 +83,9 @@ Let $f \in \C(x)$ be non-zero.
 Observe that $f$ can be written as
 \[ f = (x-a)^n \frac{p(x)}{q(x)},\]
 where $n \in \Z$, and $p(x), q(x) \in \C[x]$ are such that $p(a) \neq 0$ and $q(a) \neq 0$.
-Set $v(f) = n$.
-Set $v(0) = +\infty$, as required.
-It is easy to verify that $v$ is well-defined.
+Set $v_a(f) = n$.
+Set $v_a(0) = +\infty$, as required.
+It is easy to verify that $v_a$ is well-defined.
 \begin{proposition}
   The ring $\C[x]_a$ along with the valuation $v_a$ is a DVR.
 \end{proposition}
@@ -146,7 +153,7 @@ Then $v(g)$ is the minimum $n$ such that $a_n \neq 0$.
 Using the isomorphism $O_{X,x} \cong \C\llbracket z \rrbracket_{\rm conv}$ given by a chart, we get an explicit description of $v_x$ on $O_{X,x}$.
 If the image of $f \in O_{X,x}$ is the power series
 \[ g(z) = \sum_{n \geq 0} a_n z^n,\]
-then $v(f)$ is the minimum $n$ such that $a_n \neq 0$.
+then $v_x(f)$ is the minimum $n$ such that $a_n \neq 0$.
 
 \section{Algebraic properties of DVRs}
 Let $R$ be a DVR with valuation $v$.
@@ -215,6 +222,22 @@ We say that this integer $d$ is the \emph{multiplicity} of $\phi \from R \to S$.
   The inclusion $\Z \to O_K$ induces a map
   \[ \phi \from \Z_p \to O_{K, \mathfrak P}.\]
   Then the multiplicity of $\phi$ is the power of $\mathfrak p$ in the factorization of $p$ into prime ideals of $O_K$.
+\end{example}
+
+Suppose $R/m$ is a perfect field.
+We say that $\phi \from R \to S$ is \emph{unramified} if its multiplicity is $1$.
+Otherwise, we say that it is \emph{ramified} and its \emph{ramification index} is $d - 1$.
+
+\begin{example}
+  Let $m$ be a positive integer.
+  The map $\phi \from O_{\C, 0} \to O_{\C, 0}$ induced by $z \mapsto z^m$ has multiplicity $m$.
+  If $m \geq 2$, then the map is ramified and its ramification index is $m-1$.
+\end{example}
+
+\begin{example}
+  Let $K = \Q(i)$, where $i^2 + 1 = 0$, and let $\mathfrak P = (1+i)$.
+  Then the map $\Z_2 \to O_{K, \mathfrak P}$ has multiplicity 2.
+  Therefore, it is ramified and its ramification index is 1.
 \end{example}
 
 \end{document}
