@@ -20,6 +20,9 @@ Here is a bi-weekly plan of our reading and homework. You should read and unders
 1. Weeks 5 and 6 (16 Mar to 30 Mar): End of chapter II
 1. Weeks 7 and 8 (30 Mar to 20 Apr): Finish chapter II, III.1, III.5. 
 1. Week 9 (27 Apr to 5 May): Chapter V.1 
+1. Week 10 (5 May to 12 May): Chapter IV.1, V.2, V.3
+1. Week 11 (12 May to 19 May): V.3, V.4
+1. Week 12 (19 May to 25  May): Read the statement of Riemann-Roch. Understand the meromorphic functions on a complex torus.
 
 A short write up on [discrete valuation rings](DVR.pdf), to explain how the idea of ramification appears in extensions of number fields and maps of Riemann surfaces.
 
