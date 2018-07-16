@@ -1,3 +1,9 @@
+- title: Stable log surfaces, admissible covers, and canonical curves of genus 4
+  coauthors: [Changho Han]
+  formats: 
+    pdf: papers/TrigonalKSBA.pdf
+  abstract: We describe a compactification of the moduli space of pairs (S,C) where S is a smooth quadric surface in 3-space and C is a smooth divisor on S of class (3,3). We show that the compactified moduli space is a smooth Deligne-Mumford stack with 4 boundary components. We relate our compactification with compactifications of the moduli space of genus 4 curves. In particular, we show that our space compactifies the blow-up of the hyperelliptic locus. We also relate our compactification to a compactification of the Hurwitz space of triple coverings of the projective line by genus 4 curves.
+
 - title: Vector bundles and finite covers
   coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
   journal: Submitted
