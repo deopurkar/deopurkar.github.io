@@ -3,7 +3,7 @@ layout: default
 navigation-weight: 3
 navigation-title: Teaching
 title: Anand Deopurkar | Teaching
-places: [UGA, Columbia, Harvard]
+places: [ANU, UGA, Columbia, Harvard]
 ---
 
 {% for place in page.places %}

@@ -47,10 +47,9 @@ Just after graduate school, I wrote a [rough non-technical explanation](interest
 
 ## Teaching
 
-I am currently supervising a [reading course on Riemann surfaces](3349).  
-Here are the notes of some of the advanced classes I have taught.
+I am co-organizing a special topics course on computational commutative algebra with Markus Hegeland. Here are the notes of some of the advanced classes I have taught.
 
-* [Math 8320, a graduate course on algebraic curves and Riemann surfaces](8320)
-* [Moduli of curves at Columbia](teaching/moduli/)
+* [A graduate course on algebraic curves and Riemann surfaces](teaching/8320)
+* [Moduli of curves](teaching/moduli/)
 
 For other courses taught in the past, see my [teaching](teaching/) page.
