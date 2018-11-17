@@ -2,29 +2,29 @@
 ---
 
 // Colour palette
-$lightest:  FloralWhite;
-$lighter:   BlanchedAlmond;   
-$light:     LightSalmon;   	
 
-$darkest:   Black;
-$darker:    DarkSlateGray;
-$dark:      Gray;
+// Two colours
+
+$text: DarkSlateGray;
+
+$dark: #49274a;
+$light: #f8eee7;
 
 body {
     margin: 2em;
     max-width:80%;
     margin:auto;
     line-height: 130%;
-    background: $lightest;
+    background: $light;
     font-family: Sans;
-    color: $darker;
+    color: $text;
 }
 
-* a {
+a {
     text-decoration: dotted underline;
-    color: $darker;
+    color: $dark;
     &:hover, &:active {
-                 color: $darkest;
+                 color: $text;
              }
     &:focus {
         outline: none;
@@ -62,7 +62,7 @@ ul, ol {
 
 .summary{
     display: none;
-    background: $lighter;
+    background: $light;
     border-radius: 10px;
     margin: 2% 2%;
     padding: 2% 2%;
@@ -84,8 +84,8 @@ ul, ol {
     margin-left: -50vw;
     margin-right: -50vw;
     padding: 0.5em 0;
-    background: $dark;
-    color: $lightest;
+    background: $light;
+    color: $dark;
     align-items: center;
 
 }	
@@ -99,20 +99,29 @@ ul, ol {
     h1{
 	padding: 0em;
     }
-    a{
-	color: $lightest;
-	font-size: 80%;
-	font-weight: bold;
-    }
 }
 
 footer {
     margin: auto;
     margin-top: 10%;
-    border-top: $darker 1px dotted;
-    font-size: 50%;
+    margin-bottom:2em;
+    border-top: $dark 1px dotted;
+    font-size: 90%;
     text-align: right;
     max-width: 100%;
+    ul {
+        margin: 0;
+        list-style-type: none;
+        padding: 0em;
+        padding-top: 0.5em;
+        padding-bottom: 0em;
+        padding-left: 0em;
+    }
+    li {
+        display: inline;
+        margin: 0%;
+	padding-left:1em;
+    }
 }
 
 main{
@@ -147,14 +156,7 @@ nav{
     li {
         display: inline;
         margin: 0%;
-    }
-
-    a {
-        text-decoration: none;
-        padding-left: 0.5em;
-    }
-    a.current{
-	color: $light;
+	padding-left:1em;
     }
 }
 
@@ -167,7 +169,7 @@ img[src$="centerme"]{
 
 /* By default tables alternate row colors */
 table tr:nth-child(odd){
-    background-color: $lighter;
+    background-color: $light;
 } 
 
 /* Stabilization as width -> 0 */
