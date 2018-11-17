@@ -13,7 +13,7 @@ title: Anand Deopurkar
 
 [Mathematical Sciences Institute](http://maths.anu.edu.au)  
 [Australian National University](http://www.anu.edu.au/)  
-John Dedman Building 1165   
+Hanna Neumann Building   
 61 2 6125 4628   
 `anand.deopurkar@anu.edu.au`  
 CV [html](cv/index.html) [pdf](cv/cv.pdf)
@@ -24,13 +24,12 @@ CV [html](cv/index.html) [pdf](cv/cv.pdf)
 
 ## Research
 
-I am an algebraic geometer with broader interests in algebra, geometry, representation theory, and number theory. 
-I study moduli spaces of various kinds.
-What this means is that I try to understand how various objects in algebraic geometry deform and degenerate, and I use this information to say something about their properties. 
+I am an algebraic geometer with broader interests in algebra, geometry, representation theory, and number theory. This means that I study algebraic varieties&mdash;spaces of solutions of algebraic equations. Instead of studying one algebraic variety in isolation, I study the collection of all related algebraic varieties at once, using the remarkable feature that such a collection is itself an algebraic variety (often called a "moduli space").
+
+I have worked on moduli spaces of algebraic curves, branched covers of curves, surfaces, vector bundles, and so on. 
 For my papers and preprints, see my [research](research/) page.  
 
 Just after graduate school, I wrote a [rough non-technical explanation](interests/) of my doctoral research, which might interest or amuse you.
-
 
 ## Upcoming and current activities
 
