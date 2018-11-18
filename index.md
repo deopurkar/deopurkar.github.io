@@ -24,7 +24,7 @@ CV [html](cv/index.html) [pdf](cv/cv.pdf)
 
 ## Research
 
-I am an algebraic geometer with broader interests in algebra, geometry, representation theory, and number theory. This means that I study algebraic varieties&mdash;spaces of solutions of algebraic equations. Instead of studying one algebraic variety in isolation, I study the collection of all related algebraic varieties at once, using the remarkable feature that such a collection is itself an algebraic variety (often called a "moduli space").
+I am an algebraic geometer with broader interests in algebra, geometry, representation theory, and number theory. This means that I study algebraic varieties&mdash;spaces of solutions of algebraic equations. Instead of studying one algebraic variety in isolation, I study the collection of all related algebraic varieties at once, using the remarkable feature that such a collection itself forms an algebraic variety (often called a "moduli space").
 
 I have worked on moduli spaces of algebraic curves, branched covers of curves, surfaces, vector bundles, and so on. 
 For my papers and preprints, see my [research](research/) page.  

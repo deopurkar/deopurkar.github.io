@@ -5,10 +5,11 @@
 
 // Two colours
 
-$text: DarkSlateGray;
+$text: #333333;
 
-$dark: #49274a;
-$light: #f8eee7;
+$dark: #c01823;
+$light: #ffffff;
+$light2: #f9eed9;
 
 body {
     margin: 2em;
@@ -22,9 +23,9 @@ body {
 
 a {
     text-decoration: dotted underline;
-    color: $dark;
+    color: $text;
     &:hover, &:active {
-                 color: $text;
+                 color: $dark;
              }
     &:focus {
         outline: none;
@@ -37,16 +38,20 @@ code {
 
 h1 {
     margin: 0em;
-    font-size: 110%;
+    font-size: 120%;
     padding: 1em 0em;
+    color: $dark;
+
 }
 
 h2 {
     font-size: 110%;
+    color: $dark;
 }
 
 h3, h4 {
     font-size: 100%;
+    color: $dark;
 }
 
 ul, ol {
@@ -62,7 +67,7 @@ ul, ol {
 
 .summary{
     display: none;
-    background: $light;
+    background: $light2;
     border-radius: 10px;
     margin: 2% 2%;
     padding: 2% 2%;
@@ -84,10 +89,10 @@ ul, ol {
     margin-left: -50vw;
     margin-right: -50vw;
     padding: 0.5em 0;
-    background: $light;
+    background: $light2;
     color: $dark;
     align-items: center;
-
+    border-bottom: 2px solid $dark;
 }	
 
 .bar-content{
@@ -157,6 +162,15 @@ nav{
         display: inline;
         margin: 0%;
 	padding-left:1em;
+	a {
+	    color: $dark;
+	    &:hover, &:active {
+                 color: $text;
+             }
+	}
+	a.current{
+	    color: $text;
+	}
     }
 }
 
@@ -169,7 +183,7 @@ img[src$="centerme"]{
 
 /* By default tables alternate row colors */
 table tr:nth-child(odd){
-    background-color: $light;
+    background-color: $light2;
 } 
 
 /* Stabilization as width -> 0 */
