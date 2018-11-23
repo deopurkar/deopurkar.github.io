@@ -8,7 +8,7 @@ description:
 author: Anand Deopurkar
 
 # Your email if you want it to be linked on the contact page
-author_email: deopurkar@uga.edu
+author_email: anand.deopurkar@anu.edu.au
 
 # Uncomment if you are planning to run the blog in a subdirectory
 # Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
@@ -50,6 +50,6 @@ compress_html:
     blanklines: true
     
 # Redirection
-gems:
+plugins:
  - jekyll-redirect-from
 
