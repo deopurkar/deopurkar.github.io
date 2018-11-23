@@ -7,7 +7,7 @@ title: Anand Deopurkar
 
 <div class="intro">
 
-![Photo of Anand Deopurkar](anandrd_bw2.jpg){:#photo}
+![Photo of Anand Deopurkar in Banff, Canada](anandrd_banff.jpg){:#photo}
 
 <div>
 
