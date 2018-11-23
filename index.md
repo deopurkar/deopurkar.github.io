@@ -53,3 +53,7 @@ I am co-organizing a special topics course on computational commutative algebra 
 * [Moduli of curves](teaching/moduli/)
 
 For other courses taught in the past, see my [teaching](teaching/) page.
+
+## Fun
+
+I wrote a [mystery hunt style puzzle](puzzle.pdf).
