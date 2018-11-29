@@ -11,8 +11,8 @@ title: Anand Deopurkar
 
 <div>
 
-[Mathematical Sciences Institute](http://maths.anu.edu.au)  
-[Australian National University](http://www.anu.edu.au/)  
+[Mathematical Sciences Institute](https://maths.anu.edu.au)  
+[Australian National University](https://www.anu.edu.au/)  
 Hanna Neumann Building   
 61 2 6125 4628   
 `anand.deopurkar@anu.edu.au`  
