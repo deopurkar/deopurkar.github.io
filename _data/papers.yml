@@ -22,7 +22,7 @@
 
 - title: Syzygy divisors on Hurwitz spaces
   coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
-  journal: Contemporary Mathematics, to appear
+  journal: Contemporary Mathematics, vol. 703, 209--222, 2018
   formats:
     pdf: papers/HigherMaroni.pdf
     arXiv: https://arxiv.org/abs/1805.00648
@@ -42,7 +42,7 @@
   omitcv: True
 
 - title: Covers of stacky curves and limits of plane quintics
-  journal: Transactions of the AMS, to appear
+  journal: Transactions of the AMS, 371, 549--588
   formats:
     pdf: papers/StackyAdmissibleCovers.pdf
     arXiv: http://arxiv.org/abs/1507.03252/
