@@ -1,3 +1,10 @@
+- title: Ramification divisors of general projections
+  coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)", "[Eduard Duryev](https://eduryev.weebly.com/)"]
+  abstract:   We study the ramification divisors of projections of a smooth projective variety onto a linear subspace of the same dimension. We prove that the ramification divisors vary in a maximal dimensional family for a large class of varieties. Going further, we study the map that associates to a linear projection its ramification divisor. We show that this map is dominant for most (but not all!) varieties of minimal degree, using (linked) limit linear series of higher rank. We find the degree of this map in some cases, extending the classical appearance of Catalan numbers in the geometry of rational normal curves, and give a geometric explanation of its fibers in terms of torsion points of naturally occurring elliptic curves in the case of the Veronese surface and the quartic rational surface scroll.
+  formats:
+        pdf: papers/PR.pdf
+        arXiv: http://arxiv.org/abs/1901.01513/
+
 - title: Stable log surfaces, admissible covers, and canonical curves of genus 4
   coauthors: [Changho Han]
   formats: 
@@ -11,7 +18,7 @@
   formats:
     pdf: papers/ebundle.pdf
     arXiv: https://arxiv.org/abs/1608.01711/
-  abstract: We prove that, up to a twist, every vector bundle on a smooth projective curve arises from the direct image of the structure sheaf of a smooth, connected branched cover.
+  abstract:   Motivated by the problem of finding algebraic constructions of finite coverings in commutative algebra, the Steinitz realization problem in number theory, and the study of Hurwitz spaces in algebraic geometry, we investigate the vector bundles underlying the structure sheaf of a finite flat branched covering. We prove that, up to a twist, every vector bundle on a smooth projective curve arises from the direct image of the structure sheaf of a smooth, connected branched cover.
 
 - title: Syzygy divisors on Hurwitz spaces
   coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
