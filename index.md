@@ -45,8 +45,7 @@ Just after graduate school, I wrote a [rough non-technical explanation](interest
 </ul>
 
 ## Teaching
-
-I am co-organizing a special topics course on computational commutative algebra with Markus Hegeland. Here are the notes of some of the advanced classes I have taught.
+This summer (southern hemisphere), I am co-running a reading course on "Elliptic curves and modular forms" by Neil Koblitz with [James Tener](https://tener.cc). Here are the notes of some of the other advanced classes I have taught.
 
 * [A graduate course on algebraic curves and Riemann surfaces](teaching/8320)
 * [Moduli of curves](teaching/moduli/)
