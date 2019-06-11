@@ -14,7 +14,7 @@ Some knowledge of commutative algebra will help, but is not required.
 
 ## References
 
-We will follow *Basic Algebraic Geometry, Part I* by Igor Shafarevich and the [online notes](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf) by Andreas Gathman. 
+We will follow *Basic Algebraic Geometry, Part I* by Igor Shafarevich and the [online notes](https://www.mathematik.uni-kl.de/~gathmannn/class/alggeom-2002/alggeom-2002.pdf) by Andreas Gathmann. 
 
 ## Outline
 
@@ -25,13 +25,13 @@ Here is a preliminary outline of the course, which will undoubtedly change in ti
   Affine space, closed (algebraic) subsets of affine space. 
   Ideals, Hilbert's basis theorem, Zariski topology.
   Examples and non-examples.
-  (Gathman Chapter 0, Shafarevich Section 1.2.1)
+  (Gathmann Chapter 0, Shafarevich Section 1.2.1)
       
 * Week 2:
   The ring of regular functions.
   The ideal associated to a subset of affine space.
   The nullstellensatz and consequences.
-  (Shafarevich 1.2.2, Shafarevich A.9, Gathman 1.2)
+  (Shafarevich 1.2.2, Shafarevich A.9, Gathmann 1.2)
 
 * Week 3:
   Regular maps between affine algebraic sets, isomorphisms.
@@ -41,7 +41,7 @@ Here is a preliminary outline of the course, which will undoubtedly change in ti
 * Week 4:
    Irreducibility, irreducible components.
    Rational functions, domain of definition.
-   (Shafarevich 1.3.1, 1.3.2, Gathman 1.3)
+   (Shafarevich 1.3.1, 1.3.2, Gathmann 1.3)
 
 * Week 5:
    Rational maps, birational maps.
