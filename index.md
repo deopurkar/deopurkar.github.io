@@ -45,8 +45,10 @@ Just after graduate school, I wrote a [rough non-technical explanation](interest
 </ul>
 
 ## Teaching
-This summer (southern hemisphere), I am co-running a reading course on "Elliptic curves and modular forms" by Neil Koblitz with [James Tener](https://tener.cc). Here are the notes of some of the other advanced classes I have taught.
+Next semester (Semester 2 of 2019 at ANU), I will be teaching Algebra 3, whose topic will be Algebraic Geometry.
+A rough outline of the course is on the [course website](teaching/ag).
 
+Here are some courses that I have taught in the past.
 * [A graduate course on algebraic curves and Riemann surfaces](teaching/8320)
 * [Moduli of curves](teaching/moduli/)
 
