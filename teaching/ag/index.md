@@ -4,8 +4,30 @@ title: Algebra 3 (Algebraic geometry)
 no-navigation: true
 ---
 
+<style>
+	#surface {
+		height: 200px;
+		margin-right:3em;
+		border-radius:10px;
+		}
+</style>
+
+<div class="intro">
+<div>
 Welcome to Algebra 3!
+
 This year, algebra 3 will be algebraic geometry.
+
+We will study the geometry of subsets of the affine or projective space defined by the vanishing of polynomial equations, or in other words, (quasi)-projective varieties.
+</div>
+
+{% raw %}
+<script type="text/javascript">
+		var images = ['calypsortp.jpg', 'helixrtp.jpg', 'seepferdchenrtp.jpg', 'calyx-korrektur2000.jpg', 'herzrtp.jpg', 'solitudertp.jpg', 'daisyrtp.jpg', 'himmelhoellertp.jpg', 'tanzrtp.jpg', 'diabolortp.jpg', 'kolibrirtp.jpg', 'taube-korrektur2000.jpg', 'dingdongrtp.jpg', 'kreiselrtp.jpg', 'tuellertp.jpg', 'distelmetallicrtp.jpg', 'limaortp.jpg', 'visavisrtp.jpg', 'dullortp.jpg', 'miaurtp.jpg', 'zeckrtp.jpg', 'eistuetertp.jpg', 'nepalirtp.jpg', 'zitrus_rtp_0.jpg']
+	document.write('<img id="surface" src="images/' + images[Math.floor(Math.random() * images.length)] + '" alt="An algebraic surface">')
+	</script>
+{% endraw %}
+</div>
 
 ## Prerequisites
 
@@ -18,7 +40,7 @@ We will follow *Basic Algebraic Geometry, Part I* by Igor Shafarevich and the [o
 
 ## Outline
 
-We will study the geometry of quasi-projective varieties over an algebraically closed field of characteristic 0.
+
 Here is a preliminary outline of the course, which will undoubtedly change in time.
 
 * Week 1: What is algebraic geometry?, 
@@ -81,3 +103,6 @@ Here is a preliminary outline of the course, which will undoubtedly change in ti
 There will be weekly homework. 
 There may or may not be an exam.
 
+## Picture Credits
+
+The images of the surfaces displayed above were [created by Herwig Hauser using `surfer`](https://imaginary.org/gallery/herwig-hauser-classic).
