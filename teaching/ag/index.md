@@ -14,7 +14,7 @@ Some knowledge of commutative algebra will help, but is not required.
 
 ## References
 
-We will follow *Basic Algebraic Geometry, Part I* by Igor Shafarevich and the [online notes](https://www.mathematik.uni-kl.de/~gathmannn/class/alggeom-2002/alggeom-2002.pdf) by Andreas Gathmann. 
+We will follow *Basic Algebraic Geometry, Part I* by Igor Shafarevich and the [online notes](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf) by Andreas Gathmann. 
 
 ## Outline
 
