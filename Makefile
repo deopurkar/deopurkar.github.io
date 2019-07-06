@@ -9,7 +9,7 @@ git:
 	git add . --all
 	git commit -a
 
-all:	default cv git
+all:	default ceevee git
 
 deploy: default
 	git push
