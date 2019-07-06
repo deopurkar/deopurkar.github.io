@@ -1,7 +1,7 @@
 default:
-	bundle exec jekyll build
+	-bundle exec jekyll build
 
-cv:
+ceevee:
 	cd _site/cv/; latexmk -pdf cv.tex
 	cp _site/cv/cv.pdf cv/cv.pdf
 
