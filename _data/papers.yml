@@ -1,22 +1,22 @@
-- title: "Anticanonical tropical cubic del Pezzos contain exactly 27 lines"
+- title: Anticanonical tropical cubic del Pezzos contain exactly 27 lines
   coauthors: ["[María Angélica Cueto](https://people.math.osu.edu/cueto.5/)"]
   abstract: "The classical statement of Cayley-Salmon that there are 27 lines on every smooth cubic surface in P^3 fails to hold under tropicalization: a tropical cubic surface in TP^3 often contains infinitely many tropical lines. Under mild genericity assumptions, we show that when embedded using the Eckardt triangles in the anticanonical system, tropical cubic del Pezzo surfaces contain exactly 27 tropical lines. In the non-generic case, which we identify explicitly, we find up to 27 extra lines, no multiple of which lifts to a curve on the cubic surface. 
 We realize the moduli space of stable anticanonical tropical cubics as a four-dimensional fan in R^40 with an action of the Weyl group W(E_6). In the absence of Eckardt points, we show the combinatorial types of these tropical surfaces are determined by the boundary arrangement of 27 metric trees corresponding to the tropicalization of the classical 27 lines on the smooth algebraic cubic surfaces. Tropical convexity and the combinatorics of the root system E_6 play a central role in our analysis."
-  journal: Pre-print, "[arXiv:1906.08196](https://arxiv.org/abs/1906.08196)"
+  journal: "Pre-print, [arXiv:1906.08196](https://arxiv.org/abs/1906.08196)"
   formats:
     arXiv: https://arxiv.org/abs/1906.08196
 
 - title: Ramification divisors of general projections
   coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)", "[Eduard Duryev](https://eduryev.weebly.com/)"]
   abstract:   We study the ramification divisors of projections of a smooth projective variety onto a linear subspace of the same dimension. We prove that the ramification divisors vary in a maximal dimensional family for a large class of varieties. Going further, we study the map that associates to a linear projection its ramification divisor. We show that this map is dominant for most (but not all!) varieties of minimal degree, using (linked) limit linear series of higher rank. We find the degree of this map in some cases, extending the classical appearance of Catalan numbers in the geometry of rational normal curves, and give a geometric explanation of its fibers in terms of torsion points of naturally occurring elliptic curves in the case of the Veronese surface and the quartic rational surface scroll.
-  journal: Pre-print, "[arXiv:1901.01513](http://arxiv.org/abs/1901.01513/)"
+  journal: "Pre-print, [arXiv:1901.01513](http://arxiv.org/abs/1901.01513/)"
   formats:
         pdf: papers/PR.pdf
         arXiv: http://arxiv.org/abs/1901.01513/
 
 - title: Stable log surfaces, admissible covers, and canonical curves of genus 4
   coauthors: [Changho Han]
-  journal: Pre-print, "[arXiv:1807.08413](https://arxiv.org/abs/1807.08413/)"
+  journal: "Pre-print, [arXiv:1807.08413](https://arxiv.org/abs/1807.08413/)"
   formats: 
     pdf: papers/TrigonalKSBA.pdf
     arXiv: https://arxiv.org/abs/1807.08413/
@@ -24,7 +24,7 @@ We realize the moduli space of stable anticanonical tropical cubics as a four-di
 
 - title: Vector bundles and finite covers
   coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
-  journal: Pre-print, "[arXiv:1608.01711](https://arxiv.org/abs/1608.01711/)"
+  journal: "Pre-print, [arXiv:1608.01711](https://arxiv.org/abs/1608.01711/)"
   formats:
     pdf: papers/ebundle.pdf
     arXiv: https://arxiv.org/abs/1608.01711/

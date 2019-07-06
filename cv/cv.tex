@@ -48,7 +48,7 @@
 
 {% for paper in site.data.papers  %}  {% unless paper.omitcv  %}
   \cvlistitem[.5em]{
-    {{ paper.title | markdownify | strip_html | strip}}{% if paper.coauthors %} (with {{ paper.coauthors | join: ', ' | markdownify | strip_html | strip }}){% endif %}.\\ {% if paper.journal %} {\itshape {{ paper.journal | strip }}}.{% endif %} {% if paper.comment %} {\itshape {{ paper.comment | markdownify | strip_html | strip}} }{% endif %}
+    {{ paper.title | markdownify | strip_html | strip}}{% if paper.coauthors %} (with {{ paper.coauthors | join: ', ' | markdownify | strip_html | strip }}){% endif %}.\\ {% if paper.journal %} {\itshape {{ paper.journal | markdownify | strip_html | strip}}}.{% endif %} {% if paper.comment %} {\itshape {{ paper.comment | markdownify | strip_html | strip}} }{% endif %}
     }{% endunless %}{% endfor %}
 
 \section{Grants and awards}        
