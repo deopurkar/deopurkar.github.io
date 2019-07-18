@@ -4,6 +4,34 @@ title: Algebra 3 (Algebraic geometry)
 no-navigation: true
 ---
 
+<script type="text/javascript">
+<!--
+function toggle_visibility(id) {
+	var e = document.getElementById(id);
+	if(e.style.display == 'block')
+		e.style.display = 'none';
+	else
+		e.style.display = 'block';
+	}
+//-->
+</script>
+
+<noscript>
+<style type="text/css">
+<!-- 
+
+.summary{
+	display: block;
+}
+	
+.scriptonly{
+  display: none;
+}
+-->
+</style>
+</noscript>
+
+
 <style>
 	#surface {
 		height: 200px;
@@ -29,18 +57,20 @@ We will study the geometry of subsets of the affine or projective space defined 
 {% endraw %}
 </div>
 
-## Prerequisites
+## [Prerequisites](#){: class="scriptonly" onclick='toggle_visibility('prereq'); return false;' }
+<span id=""prereq"">
+	Algebra 1 and algebra 2.
+	Some knowledge of commutative algebra will help, but is not required.
+</span>
 
-Algebra 1 and algebra 2.
-Some knowledge of commutative algebra will help, but is not required.
+## [References](#){: class="scriptonly" onclick='toggle_visibility('ref'); return false;' }
+<span id="ref">
+	We will follow *Basic Algebraic Geometry, Part I* by Igor Shafarevich and the [online notes](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf) by Andreas Gathmann. 
+</span>
 
-## References
+## [Outline](#){: class="scriptonly" onclick='toggle_visibility('outline'); return false;' }
 
-We will follow *Basic Algebraic Geometry, Part I* by Igor Shafarevich and the [online notes](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf) by Andreas Gathmann. 
-
-## Outline
-
-
+<span id="outline">
 Here is a preliminary outline of the course, which will undoubtedly change in time.
 
 * Week 1: What is algebraic geometry?, 
@@ -57,8 +87,8 @@ Here is a preliminary outline of the course, which will undoubtedly change in ti
 
 * Week 3:
   Regular maps between affine algebraic sets, isomorphisms.
-   Category of affine algebraic sets = Category of nilpotent-free, finitely generated algebras.
-   (Shafarevich 1.2.3 )
+  Category of affine algebraic sets = Category of nilpotent-free, finitely generated algebras.
+  (Shafarevich 1.2.3 )
 
 * Week 4:
    Irreducibility, irreducible components.
@@ -97,12 +127,20 @@ Here is a preliminary outline of the course, which will undoubtedly change in ti
 
 * Week 12:
    ???
+</span>
 
-## Homework/Exams
+## [Assessment](#){: class="scriptonly" onclick='toggle_visibility('assessment'); return false;' }
+<span id="assessment">
+	There will be weekly homework assignments (10 in total), a mid-semester exam, and a final exam.
+	The exams will be worth 20% each (total 40%) and the assignments will be worth 6% each (total 60%).
+</span>
 
-There will be weekly homework. 
-There may or may not be an exam.
-
+## [Policies](#){: class="scriptonly" onclick='toggle_visibility('policies'); return false;' }
+<span id="policies">
+### Collaboration
+	
+	
+</span>
 ## Picture Credits
 
 The images of the surfaces displayed above were [created by Herwig Hauser using `surfer`](https://imaginary.org/gallery/herwig-hauser-classic).
