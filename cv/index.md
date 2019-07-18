@@ -16,7 +16,7 @@ title: Anand Deopurkar | CV
 * 2008--2012, Ph.D., Harvard University, Cambridge, MA. Advisor: Joseph Harris.
 * 2004--2008, S.B., Massachusetts Institute of Technology (MIT), Cambridge, MA. (Mathematics with Computer Science).
 
-### Publications
+### Publications and pre-prints
 
 {% for paper in site.data.papers  %}  {% unless paper.omitcv  %}
 * {{ paper.title }}{% if paper.coauthors %} (with {{ paper.coauthors | join: ', ' }}){% endif %}.  
