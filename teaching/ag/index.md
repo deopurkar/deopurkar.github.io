@@ -131,16 +131,18 @@ Here is a preliminary outline of the course, which will undoubtedly change in ti
 
 ## [Assessment](#){: class="scriptonly" onclick='toggle_visibility('assessment'); return false;' }
 <span id="assessment">
-	There will be weekly homework assignments (10 in total), a mid-semester exam, and a final exam.
-	The exams will be worth 20% each (total 40%) and the assignments will be worth 6% each (total 60%).
+	There will be weekly homework assignments (10 in total), a mid-semester exam, and a final exam.	The exams will be worth 20% each (total 40%) and the assignments will be worth 6% each (total 60%). You may submit your assignments by dropping them off in the appropriate box at the Hannah Neumann building reception, or by emailing them to me.
 </span>
 
 ## [Policies](#){: class="scriptonly" onclick='toggle_visibility('policies'); return false;' }
 <span id="policies">
 ### Collaboration
-	
+	You are allowed, even encouraged, to work with others on assignments, but your submitted written work must be your own. In other words, you *may not* copy someone else's write-up. On your submission, you must write the names of your collaborators. This is a matter of academic honesty; it will not affect your marks. 
+
+### Late assignments
 	
 </span>
+
 ## Picture Credits
 
 The images of the surfaces displayed above were [created by Herwig Hauser using `surfer`](https://imaginary.org/gallery/herwig-hauser-classic).
