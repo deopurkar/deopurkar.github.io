@@ -25,8 +25,8 @@ a {
     text-decoration: dotted underline;
     color: $text;
     &:hover, &:active {
-                 color: $dark;
-             }
+        color: $dark;
+    }
     &:focus {
         outline: none;
     }
@@ -41,29 +41,41 @@ h1 {
     font-size: 120%;
     padding: 1em 0em;
     color: $dark;
-
+    a{
+	color: $dark;
+    }
 }
 
 h2 {
     font-size: 110%;
     color: $dark;
+    a{
+	color: $dark;
+    }
 }
 
 h3, h4 {
     font-size: 100%;
     color: $dark;
+    a{
+	color: $dark;
+    }
 }
 
 ul, ol {
-    padding-left: 1em;
+    padding-left: 2em;
     li {
         margin-bottom: 1em;
-        list-style-type: circle;
-        ol li {
-            list-style-type: lower-alpha;
-        }
     }
 }
+
+ul li{
+    list-style-type: circle;
+}
+ol li {
+    list-style-type: decimal;
+}
+
 
 .summary{
     display: none;
