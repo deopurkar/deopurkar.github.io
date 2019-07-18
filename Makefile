@@ -1,11 +1,15 @@
 default:
-	bundle exec jekyll build
+	-bundle exec jekyll build
 
-all:	default
+ceevee:
 	cd _site/cv/; latexmk -pdf cv.tex
 	cp _site/cv/cv.pdf cv/cv.pdf
+
+git:
 	git add . --all
 	git commit -a
+
+all:	default ceevee git
 
 deploy: default
 	git push
