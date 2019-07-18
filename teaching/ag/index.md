@@ -16,61 +16,62 @@ function toggle_visibility(id) {
 //-->
 </script>
 
-<noscript>
 <style type="text/css">
 <!-- 
-
-.summary{
+.collapsible{
 	display: block;
 }
 	
 .scriptonly{
   display: none;
 }
+
+#surface {
+	height: 200px;
+	margin-right:3em;
+	border-radius:10px;
+}
 -->
-</style>
-</noscript>
-
-
-<style>
-	#surface {
-		height: 200px;
-		margin-right:3em;
-		border-radius:10px;
-		}
 </style>
 
 <div class="intro">
-<div>
-Welcome to Algebra 3!
+	<div>
+	Welcome to Algebra 3!
 
-This year, algebra 3 will be algebraic geometry.
+	This year, algebra 3 will be algebraic geometry.
 
-We will study the geometry of subsets of the affine or projective space defined by the vanishing of polynomial equations, or in other words, (quasi)-projective varieties.
-</div>
-
+	We will study the geometry of subsets of the affine or projective space defined by the vanishing of polynomial equations, or in other words, (quasi)-projective varieties.
+	</div>
 {% raw %}
 <script type="text/javascript">
 		var images = ['calypsortp.jpg', 'helixrtp.jpg', 'seepferdchenrtp.jpg', 'calyx-korrektur2000.jpg', 'herzrtp.jpg', 'solitudertp.jpg', 'daisyrtp.jpg', 'himmelhoellertp.jpg', 'tanzrtp.jpg', 'diabolortp.jpg', 'kolibrirtp.jpg', 'taube-korrektur2000.jpg', 'dingdongrtp.jpg', 'kreiselrtp.jpg', 'tuellertp.jpg', 'distelmetallicrtp.jpg', 'limaortp.jpg', 'visavisrtp.jpg', 'dullortp.jpg', 'miaurtp.jpg', 'zeckrtp.jpg', 'eistuetertp.jpg', 'nepalirtp.jpg', 'zitrus_rtp_0.jpg']
 	document.write('<img id="surface" src="images/' + images[Math.floor(Math.random() * images.length)] + '" alt="An algebraic surface">')
-	</script>
+</script>
 {% endraw %}
 </div>
 
 ## [Prerequisites](#){: class="scriptonly" onclick='toggle_visibility('prereq'); return false;' }
-<span id=""prereq"">
+<span class="collapsible" id="prereq">
 	Algebra 1 and algebra 2.
 	Some knowledge of commutative algebra will help, but is not required.
 </span>
 
 ## [References](#){: class="scriptonly" onclick='toggle_visibility('ref'); return false;' }
-<span id="ref">
+<span class="collapsible" id="ref">
 	We will follow *Basic Algebraic Geometry, Part I* by Igor Shafarevich and the [online notes](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf) by Andreas Gathmann. 
+</span>
+
+## [Lectures and workshops](#){: class="scriptonly" onclick='toggle_visibility('lectures'); return false;' }
+<span class="collapsible" id="lectures">
+	1. Lecture on Wednesday, 12:00 to 13:00 in Hancock 2.27
+	1. Lecture on Thursday, 9:00 to 10:00 in Hayden Allen G051
+	1. Lecture on Friday, 12:00 to 13:00 in Hancock 2.27
+	1. Workshop on Monday, 11:00 to 12:00 in Hanna Neumann 1.58 (starting week 2).
 </span>
 
 ## [Outline](#){: class="scriptonly" onclick='toggle_visibility('outline'); return false;' }
 
-<span id="outline">
+<span class="collapsible" id="outline">
 Here is a preliminary outline of the course, which will undoubtedly change in time.
 
 * Week 1: What is algebraic geometry?, 
@@ -130,17 +131,17 @@ Here is a preliminary outline of the course, which will undoubtedly change in ti
 </span>
 
 ## [Assessment](#){: class="scriptonly" onclick='toggle_visibility('assessment'); return false;' }
-<span id="assessment">
-	There will be weekly homework assignments (10 in total), a mid-semester exam, and a final exam.	The exams will be worth 20% each (total 40%) and the assignments will be worth 6% each (total 60%). You may submit your assignments by dropping them off in the appropriate box at the Hannah Neumann building reception, or by emailing them to me.
+<span class="collapsible" id="assessment">
+	There will be weekly homework assignments (10 in total), a mid-semester exam, and a final exam.	The exams will be worth 20% each (total 40%) and the assignments will be worth 6% each (total 60%). You may submit your assignments by dropping them off in the appropriate box at the Hanna Neumann building reception, or by emailing them to me.
 </span>
 
 ## [Policies](#){: class="scriptonly" onclick='toggle_visibility('policies'); return false;' }
-<span id="policies">
+<span class="collapsible" id="policies">
 ### Collaboration
-	You are allowed, even encouraged, to work with others on assignments, but your submitted written work must be your own. In other words, you *may not* copy someone else's write-up. On your submission, you must write the names of your collaborators. This is a matter of academic honesty; it will not affect your marks. 
+	You are allowed, even encouraged, to work with others on assignments, but you must write up your solutions *on your own*. In other words, you *may not* copy someone else's write-up and you *may not* write your solutions side by side with other students. On your submission, you must write the names of your collaborators. This is a matter of academic honesty; it will not affect your marks. 
 
 ### Late assignments
-	
+	I will grant extensions only for medical emergencies with a medical certificate. In accordance with the ANU policy, late assignments will incur a 5% penalty per working day. I will not accept any assignments later than a week.
 </span>
 
 ## Picture Credits
