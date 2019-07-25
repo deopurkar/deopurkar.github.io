@@ -39,6 +39,11 @@ We will study the geometry of subsets of the affine or projective space defined 
 {% endraw %}
 </div>
 
+## [Homework](#){:  onclick="toggle_visibility(hw'); return false;" }
+<div id="hw" style="display: block;" >
+1. [Homework 1. Due Friday, August 2.](hw1.pdf)
+</div>
+
 ## [Prerequisites](#){:  onclick="toggle_visibility('prereq'); return false;" }
 <div id="prereq" style="display: block;" >
 Algebra 1 and algebra 2.
