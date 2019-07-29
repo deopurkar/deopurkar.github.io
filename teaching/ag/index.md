@@ -62,6 +62,8 @@ Some knowledge of commutative algebra will help, but is not required.
 2. Lecture on Thursday, 9:00 to 10:00 in Hayden Allen G051  
 3. Lecture on Friday, 12:00 to 13:00 in Hancock 2.27  
 4. Workshop on Monday, 11:00 to 12:00 in Hanna Neumann 1.58 (starting week 2).
+
+I will have office hours on Wednesday from 1 to 2, on Thusday from 10 to 11, and at other times by appointment.
 </div>
 
 ## [Outline](#){:  onclick="toggle_visibility('out'); return false;" }
