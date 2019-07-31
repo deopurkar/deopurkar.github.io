@@ -39,45 +39,26 @@ We will study the geometry of subsets of the affine or projective space defined 
 {% endraw %}
 </div>
 
-## [Homework](#){:  onclick="toggle_visibility(hw'); return false;" }
+## [Homework &plusmn;](#){:  onclick="toggle_visibility('hw'); return false;" }
 <div id="hw" style="display: block;" >
-1. [Homework 1. Due Friday, August 2.](hw1.pdf)
+1. [Homework 1. Due 5pm, Friday, August 2.](hw01.pdf)
 </div>
 
-## [Prerequisites](#){:  onclick="toggle_visibility('prereq'); return false;" }
-<div id="prereq" style="display: block;" >
-Algebra 1 and algebra 2.
-Some knowledge of commutative algebra will help, but is not required.
-</div>
 
-## [References](#){:  onclick="toggle_visibility('ref'); return false;" }
-<div id="ref" style="display: block;">
-1. *Basic Algebraic Geometry, Part I* by Igor Shafarevich  
-2. The [online notes](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf) by Andreas Gathmann. 
-</div>
-
-## [Lectures and workshops](#){:  onclick="toggle_visibility('lec'); return false;" }
-<div id="lec" style="display: block;">
-1. Lecture on Wednesday, 12:00 to 13:00 in Hancock 2.27  
-2. Lecture on Thursday, 9:00 to 10:00 in Hayden Allen G051  
-3. Lecture on Friday, 12:00 to 13:00 in Hancock 2.27  
-4. Workshop on Monday, 11:00 to 12:00 in Hanna Neumann 1.58 (starting week 2).
-
-I will have office hours on Wednesday from 1 to 2, on Thusday from 10 to 11, and at other times by appointment.
-</div>
-
-## [Outline](#){:  onclick="toggle_visibility('out'); return false;" }
+## [Outline &plusmn;](#){:  onclick="toggle_visibility('out'); return false;" }
 
 <div id="out" style="display: block;">
 Here is a preliminary outline of the course, which will undoubtedly change.
+I will also upload my lecture notes and the workshop handouts here.
 
-* Week 1: What is algebraic geometry?, 
+* Week 1: [Lecture Notes 1](AGWeek01.pdf)  
+  What is algebraic geometry?, 
   Affine space, closed (algebraic) subsets of affine space. 
   Ideals, Hilbert's basis theorem, Zariski topology.
   Examples and non-examples.
   (Gathmann Chapter 0, Shafarevich Section 1.2.1)
       
-* Week 2:
+* Week 2: [Workshop 1](AGWorkshop01.pdf)   
   The ring of regular functions.
   The ideal associated to a subset of affine space.
   The nullstellensatz and consequences.
@@ -127,12 +108,34 @@ Here is a preliminary outline of the course, which will undoubtedly change.
    ???
 </div>
 
-## [Assessment](#){: onclick="toggle_visibility('assess'); return false;" }
+## [Prerequisites &plusmn;](#){:  onclick="toggle_visibility('prereq'); return false;" }
+<div id="prereq" style="display: block;" >
+Algebra 1 and algebra 2.
+Some knowledge of commutative algebra will help, but is not required.
+</div>
+
+## [References &plusmn;](#){:  onclick="toggle_visibility('ref'); return false;" }
+<div id="ref" style="display: block;">
+1. *Basic Algebraic Geometry, Part I* by Igor Shafarevich  
+2. The [online notes](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf) by Andreas Gathmann. 
+</div>
+
+## [Lectures and workshops &plusmn;](#){:  onclick="toggle_visibility('lec'); return false;" }
+<div id="lec" style="display: block;">
+1. Lecture on Wednesday, 12:00 to 13:00 in Hancock 2.27  
+2. Lecture on Thursday, 9:00 to 10:00 in Hayden Allen G051  
+3. Lecture on Friday, 12:00 to 13:00 in Hancock 2.27  
+4. Workshop on Monday, 11:00 to 12:00 in Hanna Neumann 1.58 (starting week 2).
+
+I will have office hours on Wednesday from 1 to 2, on Thusday from 10 to 11, and at other times by appointment.
+</div>
+
+## [Assessment &plusmn;](#){: onclick="toggle_visibility('assess'); return false;" }
 <div id="assess" style="display: block;">
 There will be weekly homework assignments (10 in total), a mid-semester exam, and a final exam.	The exams will be worth 20% each (total 40%) and the assignments will be worth 6% each (total 60%). You may submit your assignments by dropping them off in the appropriate box at the Hanna Neumann building reception, or by emailing them to me.
 </div>
 
-## [Policies](#){: onclick="toggle_visibility('poli'); return false;" }
+## [Policies &plusmn;](#){: onclick="toggle_visibility('poli'); return false;" }
 <div id="poli" style="display: block;">
 ### Collaboration
 
