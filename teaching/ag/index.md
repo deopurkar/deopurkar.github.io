@@ -41,7 +41,8 @@ We will study the geometry of subsets of the affine or projective space defined 
 
 ## [Homework &plusmn;](#){:  onclick="toggle_visibility('hw'); return false;" }
 <div id="hw" style="display: block;" >
-1. [Homework 1. Due 5pm, Friday, August 2.](hw01.pdf)
+- [Homework 2. Due 5pm, Friday, August 9.](hw02.pdf)  
+- [Homework 1. Due 5pm, Friday, August 2.](hw01.pdf)
 </div>
 
 
@@ -58,7 +59,7 @@ I will also upload my lecture notes and the workshop handouts here.
   Examples and non-examples.
   (Gathmann Chapter 0, Shafarevich Section 1.2.1)
       
-* Week 2: [Workshop 1](AGWorkshop01.pdf)   
+* Week 2: [Workshop 1](AGWorkshop01.pdf) [Lecture Notes 2](AGWeek02.pdf)   
   The ring of regular functions.
   The ideal associated to a subset of affine space.
   The nullstellensatz and consequences.
