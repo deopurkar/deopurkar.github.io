@@ -65,7 +65,7 @@ I will also upload my lecture notes and the workshop handouts here.
   The nullstellensatz and consequences.
   (Shafarevich 1.2.2, Shafarevich A.9, Gathmann 1.2)
 
-* Week 3:
+* Week 3:[Workshop 2](AGWorkshop02.pdf)   
   Regular maps between affine algebraic sets, isomorphisms.
   Category of affine algebraic sets = Category of nilpotent-free, finitely generated algebras.
   (Shafarevich 1.2.3 )
