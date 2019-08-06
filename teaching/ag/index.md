@@ -116,8 +116,9 @@ Some knowledge of commutative algebra will help, but is not required.
 
 ## [References &plusmn;](#){:  onclick="toggle_visibility('ref'); return false;" }
 <div id="ref" style="display: block;">
-1. *Basic Algebraic Geometry, Part I* by Igor Shafarevich  
-2. The [online notes](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf) by Andreas Gathmann. 
+1. [*Basic Algebraic Geometry, Part I*](https://link.springer.com/book/10.1007/978-3-642-37956-7) by I. Shafarevich.  
+2. The [online notes](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf) by A. Gathmann.  
+3. [*Algebraic varieties: Basic Notions*](https://link.springer.com/chapter/10.1007/978-3-642-57878-6_6) by V. Danilov. 
 </div>
 
 ## [Lectures and workshops &plusmn;](#){:  onclick="toggle_visibility('lec'); return false;" }
