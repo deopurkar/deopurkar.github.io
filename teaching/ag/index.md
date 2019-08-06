@@ -148,7 +148,7 @@ You are allowed, even encouraged, to work with others on assignments, but you mu
 I will grant extensions only for medical emergencies with a medical certificate. In accordance with the ANU policy, late assignments will incur a 5% penalty per working day. I will not accept any assignments later than a week.
 </div>
 
-## [Wattle links (ANU only) &plusmn;](#){: onclick="toggle_visibility(wat'); return false;" }
+## [Wattle links (ANU only) &plusmn;](#){: onclick="toggle_visibility('wat'); return false;" }
 <div id="wat" style="display: block;">
 * [Echo 360 recordings](https://wattlecourses.anu.edu.au/mod/lti/view.php?id=1735776)
 * [Gradebook](https://wattlecourses.anu.edu.au/grade/report/index.php?id=28539)
