@@ -45,6 +45,12 @@ We will study the geometry of subsets of the affine or projective space defined 
 - [Homework 1. Due 5pm, Friday, August 2.](hw01.pdf)
 </div>
 
+## [Wattle links (ANU only) &plusmn;](#){: onclick="toggle_visibility('wat'); return false;" }
+<div id="wat" style="display: block;">
+* [Echo 360 recordings](https://wattlecourses.anu.edu.au/mod/lti/view.php?id=1738513){:target="_blank"}
+* [Gradebook](https://wattlecourses.anu.edu.au/grade/report/index.php?id=28539){:target="_blank"}
+* [Question and answer forum](https://wattlecourses.anu.edu.au/mod/forum/view.php?id=1738507){:target="_blank"}
+</div>
 
 ## [Outline &plusmn;](#){:  onclick="toggle_visibility('out'); return false;" }
 
@@ -65,7 +71,7 @@ I will also upload my lecture notes and the workshop handouts here.
   The nullstellensatz and consequences.
   (Shafarevich 1.2.2, Shafarevich A.9, Gathmann 1.2)
 
-* Week 3:[Workshop 2](AGWorkshop02.pdf)   
+* Week 3:[Workshop 2](AGWorkshop02.pdf) [Lecture Notes 2](AGWeek03.pdf)   
   Regular maps between affine algebraic sets, isomorphisms.
   Category of affine algebraic sets = Category of nilpotent-free, finitely generated algebras.
   (Shafarevich 1.2.3 )
@@ -146,13 +152,6 @@ You are allowed, even encouraged, to work with others on assignments, but you mu
 ### Late assignments
 
 I will grant extensions only for medical emergencies with a medical certificate. In accordance with the ANU policy, late assignments will incur a 5% penalty per working day. I will not accept any assignments later than a week.
-</div>
-
-## [Wattle links (ANU only) &plusmn;](#){: onclick="toggle_visibility('wat'); return false;" }
-<div id="wat" style="display: block;">
-* [Echo 360 recordings](https://wattlecourses.anu.edu.au/mod/lti/view.php?id=1738513){:target="_blank"}
-* [Gradebook](https://wattlecourses.anu.edu.au/grade/report/index.php?id=28539){:target="_blank"}
-* [Question and answer forum](https://wattlecourses.anu.edu.au/mod/forum/view.php?id=1738507){:target="_blank"}
 </div>
 
 ## Picture Credits
