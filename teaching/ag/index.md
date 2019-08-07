@@ -65,13 +65,13 @@ I will also upload my lecture notes and the workshop handouts here.
   Examples and non-examples.
   (Gathmann Chapter 0, Shafarevich Section 1.2.1)
       
-* Week 2: [Workshop 1](AGWorkshop01.pdf) [Lecture Notes 2](AGWeek02.pdf)   
+* Week 2: [Workshop 1](AGWorkshop01.pdf), [Lecture Notes 2](AGWeek02.pdf)   
   The ring of regular functions.
   The ideal associated to a subset of affine space.
   The nullstellensatz and consequences.
   (Shafarevich 1.2.2, Shafarevich A.9, Gathmann 1.2)
 
-* Week 3:[Workshop 2](AGWorkshop02.pdf) [Lecture Notes 2](AGWeek03.pdf)   
+* Week 3:[Workshop 2](AGWorkshop02.pdf), [Lecture Notes 3](AGWeek03.pdf)   
   Regular maps between affine algebraic sets, isomorphisms.
   Category of affine algebraic sets = Category of nilpotent-free, finitely generated algebras.
   (Shafarevich 1.2.3 )
