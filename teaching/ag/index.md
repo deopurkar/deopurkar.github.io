@@ -41,7 +41,7 @@ We will study the geometry of subsets of the affine or projective space defined 
 
 ## [Homework &plusmn;](#){:  onclick="toggle_visibility('hw'); return false;" }
 <div id="hw" style="display: block;" >
-- [Homework 2. Due 5pm, Friday, August 9.](hw02.pdf)  
+- [Homework 2. Due 5pm, Friday, August 9.](hw02.pdf) ([submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738778))  
 - [Homework 1. Due 5pm, Friday, August 2.](hw01.pdf)
 </div>
 
@@ -140,7 +140,7 @@ I will have office hours on Wednesday from 1 to 2, on Thusday from 10 to 11, and
 
 ## [Assessment &plusmn;](#){: onclick="toggle_visibility('assess'); return false;" }
 <div id="assess" style="display: block;">
-There will be weekly homework assignments (10 in total), a mid-semester exam, and a final exam.	The exams will be worth 20% each (total 40%) and the assignments will be worth 6% each (total 60%). You may submit your assignments by dropping them off in the appropriate box at the Hanna Neumann building reception, or by emailing them to me.
+There will be weekly homework assignments (10 in total), a mid-semester exam, and a final exam.	The exams will be worth 20% each (total 40%) and the assignments will be worth 6% each (total 60%). Submit your assignments through wattle by following the "submit" link as a single pdf file (handwritten and scanned or typed). 
 </div>
 
 ## [Policies &plusmn;](#){: onclick="toggle_visibility('poli'); return false;" }
