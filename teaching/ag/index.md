@@ -41,7 +41,7 @@ We will study the geometry of subsets of the affine or projective space defined 
 
 ## [Homework &plusmn;](#){:  onclick="toggle_visibility('hw'); return false;" }
 <div id="hw" style="display: block;" >
-- [Homework 2. Due 5pm, Friday, August 9.](hw02.pdf) ([submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738778))  
+- [Homework 2. Due 5pm, Friday, August 9](hw02.pdf) ([submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738778)){:target="_blank"}  
 - [Homework 1. Due 5pm, Friday, August 2.](hw01.pdf)
 </div>
 
