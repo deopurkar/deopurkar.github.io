@@ -150,8 +150,9 @@ I will grant extensions only for medical emergencies with a medical certificate.
 
 ## [Wattle links (ANU only) &plusmn;](#){: onclick="toggle_visibility('wat'); return false;" }
 <div id="wat" style="display: block;">
-* [Echo 360 recordings](https://wattlecourses.anu.edu.au/mod/lti/view.php?id=1735776)
+* [Echo 360 recordings](https://wattlecourses.anu.edu.au/mod/lti/view.php?id=1738513)
 * [Gradebook](https://wattlecourses.anu.edu.au/grade/report/index.php?id=28539)
+* [Question and answer forum](https://wattlecourses.anu.edu.au/mod/forum/view.php?id=1738507)
 </div>
 
 ## Picture Credits
