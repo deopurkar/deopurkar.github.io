@@ -75,30 +75,28 @@ I will also upload my lecture notes and the workshop handouts here.
 * Week 3:[Workshop 2](AGWorkshop02.pdf), [Lecture Notes 3](AGWeek03.pdf)   
   Regular maps between affine algebraic sets, isomorphisms.
   Category of affine algebraic sets = Category of nilpotent-free, finitely generated algebras.
+  Quasi-affine varieties.
   (Shafarevich 1.2.3 )
 
 * Week 4:
-   Irreducibility, irreducible components.
-   Rational functions, domain of definition.
-   (Shafarevich 1.3.1, 1.3.2, Gathmann 1.3)
+  Definition of abstract algebraic varieties.
+  Projective and quasi-projective varieties.
+  (Shafarevich 1.4.1, 1.4.2, 1.4.3)
 
 * Week 5:
-   Rational maps, birational maps.
-   (Shafarevich 1.3.2, 1.3.3)
+  Regular functions, regular maps on quasi-projective varieties.
+  Irreducibility, irreducible components.
 
-* Week 6:
-   Projective space, projective varieties.
-   Quasi-projective variety.
-   (Shafarevich 1.4.1)
+* Week 6
+  Rational functions, domain of definition, birational maps.
+  (Shafarevich 1.3.2, 1.3.3)
 
 * Week 7:
-   Regular functions, regular maps, rational maps on quasi-projective varieties.
-   (Shafarevich 1.4.2, 1.4.3)
+  Examples. The Grassmannian.
 
 * Week 8:
-   Projections.
-   Veronese and Segre embedding.
-   (Shafarevich 1.4.4, 1.5.1)
+  Products.  Veronese and Segre embedding.
+  (Shafarevich 1.4.4, 1.5.1)
 
 * Week 9:
    The closed image property.
