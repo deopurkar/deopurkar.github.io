@@ -85,7 +85,7 @@ I will also upload my lecture notes and the workshop handouts here.
 
 * Week 5:
   Regular functions and regular maps on quasi-projective varieties.
-  (Shafarevich 1.4.1, 1.4.2, Danilov 3.1, 3.2, 3.3)
+  (Shafarevich 1.4.1, 1.4.2, [Danilov](Danilov-varieties.pdf))
 
 * Week 6
   Irreducibility, irreducible components.
