@@ -72,31 +72,33 @@ I will also upload my lecture notes and the workshop handouts here.
   The nullstellensatz and consequences.
   (Shafarevich 1.2.2, Shafarevich A.9, Gathmann 1.2)
 
-* Week 3:[Workshop 2](AGWorkshop02.pdf), [Lecture Notes 3](AGWeek03.pdf)   
+* Week 3: [Workshop 2](AGWorkshop02.pdf), [Lecture Notes 3](AGWeek03.pdf)   
   Regular maps between affine algebraic sets, isomorphisms.
   Category of affine algebraic sets = Category of nilpotent-free, finitely generated algebras.
   Quasi-affine varieties.
-  (Shafarevich 1.2.3 )
+  (Shafarevich 1.2.3, [Danilov](Danilov-quasi-affine.pdf))
 
 * Week 4:
   Definition of abstract algebraic varieties.
   Projective and quasi-projective varieties.
-  (Shafarevich 1.4.1, 1.4.2, 1.4.3)
+  (Shafarevich 1.4.1, 1.4.2, [Danilov](Danilov-varieties.pdf))
 
 * Week 5:
-  Regular functions, regular maps on quasi-projective varieties.
-  Irreducibility, irreducible components.
+  Regular functions and regular maps on quasi-projective varieties.
+  (Shafarevich 1.4.1, 1.4.2, Danilov 3.1, 3.2, 3.3)
 
 * Week 6
+  Irreducibility, irreducible components.
   Rational functions, domain of definition, birational maps.
   (Shafarevich 1.3.2, 1.3.3)
 
 * Week 7:
   Examples. The Grassmannian.
+  (Shafarevich 1.4.1, [Harris](Harris-Grassmannian.pdf))
 
 * Week 8:
-  Products.  Veronese and Segre embedding.
-  (Shafarevich 1.4.4, 1.5.1)
+  Products. Veronese and Segre embedding.
+  (Shafarevich 1.4.4, 1.5.1, [Harris](Harris-Veronese_and_Segre.pdf))
 
 * Week 9:
    The closed image property.
