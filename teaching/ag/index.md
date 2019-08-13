@@ -78,7 +78,7 @@ I will also upload my lecture notes and the workshop handouts here.
   Quasi-affine varieties.
   (Shafarevich 1.2.3, [Danilov](Danilov-quasi-affine.pdf))
 
-* Week 4:
+* Week 4: [Workshop 3](AGWorkshop03.pdf), [Lecture Notes 4](AGWeek04.pdf)   
   Definition of abstract algebraic varieties.
   Projective and quasi-projective varieties.
   (Shafarevich 1.4.1, 1.4.2, [Danilov](Danilov-varieties.pdf))
