@@ -94,7 +94,7 @@ I will also upload my lecture notes and the workshop handouts here.
 
 * Week 7:
   Examples. The Grassmannian.
-  (Shafarevich 1.4.1, [Harris](Harris-Grassmannian.pdf))
+  (Shafarevich 1.4.1, [Harris](Harris-Grassmannian.pdf)), [Bullock](Bullock-Grassmannian.pdf)
 
 * Week 8:
   Products. Veronese and Segre embedding.
