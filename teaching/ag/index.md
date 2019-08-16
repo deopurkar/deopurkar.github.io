@@ -83,7 +83,7 @@ I will also upload my lecture notes and the workshop handouts here.
   Projective and quasi-projective varieties.
   (Shafarevich 1.4.1, 1.4.2, [Danilov](Danilov-varieties.pdf))
 
-* Week 5:
+* Week 5 [Workshop 4](AGWorkshop04.pdf):
   Regular functions and regular maps on quasi-projective varieties.
   (Shafarevich 1.4.1, 1.4.2, [Danilov](Danilov-varieties.pdf))
 
