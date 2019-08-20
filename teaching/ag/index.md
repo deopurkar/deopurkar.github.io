@@ -57,7 +57,7 @@ We will study the geometry of subsets of the affine or projective space defined 
 ## [Outline &plusmn;](#){:  onclick="toggle_visibility('out'); return false;" }
 
 <div id="out" style="display: block;">
-Here is a preliminary outline of the course, which will undoubtedly change.
+Here is a preliminary outline of the course. It is undergoing changes as the class progresses, so the later weeks may not be accurate.
 I will also upload my lecture notes and the workshop handouts here.
 
 * Week 1: [Lecture Notes 1](AGWeek01.pdf)  
@@ -84,9 +84,9 @@ I will also upload my lecture notes and the workshop handouts here.
   Projective and quasi-projective varieties.
   (Shafarevich 1.4.1, 1.4.2, [Danilov](Danilov-varieties.pdf))
 
-* Week 5 [Workshop 4](AGWorkshop04.pdf):
-  Regular functions and regular maps on quasi-projective varieties.
-  (Shafarevich 1.4.1, 1.4.2, [Danilov](Danilov-varieties.pdf))
+* Week 5 [Workshop 4](AGWorkshop04.pdf), [Lecture Notes 5](AGWeek05.pdf):
+  Regular functions and regular maps on quasi-projective varieties. Veronese and Segre embeddings.
+  (Shafarevich 1.4.1, 1.4.2, 1.4.4, [Danilov](Danilov-varieties.pdf) [Harris](Harris-Veronese_and_Segre.pdf)))
 
 * Week 6
   Irreducibility, irreducible components.
@@ -99,7 +99,6 @@ I will also upload my lecture notes and the workshop handouts here.
 
 * Week 8:
   Products. Veronese and Segre embedding.
-  (Shafarevich 1.4.4, 1.5.1, [Harris](Harris-Veronese_and_Segre.pdf))
 
 * Week 9:
    The closed image property.
