@@ -62,7 +62,7 @@
 \section{Teaching}
 
 \subsection{At the Australian National University}
-{% assign here = site.data.classes | where:"where", "UGA" %}
+{% assign here = site.data.classes | where:"where", "ANU" %}
 {% for class in here %}  {% unless class.omitcv  %}
   \cvlistitem[.5em]{ {{ class.what | markdownify | strip_html | strip }}, {{ class.when }}.{% if class.comment %} {\itshape {{ class.comment | markdownify | strip_html | strip }} }{% endif %}
     }{% endunless %}{% endfor %}
