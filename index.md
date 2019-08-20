@@ -45,8 +45,8 @@ Just after graduate school, I wrote a [rough non-technical explanation](interest
 </ul>
 
 ## Teaching
-Next semester (Semester 2 of 2019 at ANU), I will be teaching Algebra 3, whose topic will be Algebraic Geometry.
-A rough outline of the course is on the [course website](teaching/ag).
+I am currently teaching Algebraic Geometry (Algebra 3).
+See the [course website](teaching/ag) for more.
 
 Here are some courses that I have taught in the past.
 * [A graduate course on algebraic curves and Riemann surfaces](teaching/8320)
