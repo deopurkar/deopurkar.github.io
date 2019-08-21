@@ -42,7 +42,7 @@ We will study the geometry of subsets of the affine or projective space defined 
 ## [Homework &plusmn;](#){:  onclick="toggle_visibility('hw'); return false;" }
 <div id="hw" style="display: block;" >
 - [Homework 4. Due 5pm, Friday, August 23](hw04.pdf) ([submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738780){:target="_blank"})   
-  *Here is an animated [pencil of conics](pencil.gif)*  
+  *Here is an animated [pencil of conics](pencil.gif).*  
 - [Homework 3. Due 5pm, Friday, August 16](hw03.pdf) ([submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738779){:target="_blank"})   
 - [Homework 2. Due 5pm, Friday, August 9](hw02.pdf) ([submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738778){:target="_blank"})   
 - [Homework 1. Due 5pm, Friday, August 2.](hw01.pdf)
@@ -87,7 +87,7 @@ I will also upload my lecture notes and the workshop handouts here.
 
 * Week 5 [Workshop 4](AGWorkshop04.pdf), [Lecture Notes 5](AGWeek05.pdf)  
   Regular functions and regular maps on quasi-projective varieties. Veronese and Segre embeddings.
-  (Shafarevich 1.4.1, 1.4.2, 1.4.4, [Danilov](Danilov-varieties.pdf) [Harris](Harris-Veronese_and_Segre.pdf)))
+  (Shafarevich 1.4.1, 1.4.2, 1.4.4, [Danilov](Danilov-varieties.pdf) [Harris](Harris-Veronese_and_Segre.pdf))
 
 * Week 6
   Irreducibility, irreducible components.
