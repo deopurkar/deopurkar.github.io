@@ -141,7 +141,7 @@ I will have office hours on Wednesday from 1 to 2, on Thusday from 10 to 11, and
 
 ## [Assessment &plusmn;](#){: onclick="toggle_visibility('assess'); return false;" }
 <div id="assess" style="display: block;">
-There will be weekly homework assignments (10 in total), a mid-semester exam, and a final exam.	The exams will be worth 20% each (total 40%) and the assignments will be worth 6% each (total 60%). Submit your assignments through wattle by following the "submit" link as a single pdf file (handwritten and scanned or typed). 
+There will be weekly homework assignments (11 in total, best 10 count), a mid-semester exam, and a final exam.	The exams will be worth 20% each (total 40%) and the assignments will be worth 6% each (total 60%). Submit your assignments through wattle by following the "submit" link as a single pdf file (handwritten and scanned or typed). Of the 11 assignments, I will drop the lowest score.
 </div>
 
 ## [Policies &plusmn;](#){: onclick="toggle_visibility('poli'); return false;" }
@@ -152,7 +152,7 @@ You are allowed, even encouraged, to work with others on assignments, but you mu
 
 ### Late assignments
 
-I will grant extensions only for medical emergencies with a medical certificate. In accordance with the ANU policy, late assignments will incur a 5% penalty per working day. I will not accept any assignments later than a week.
+I will grant extensions only for medical emergencies with a medical certificate. In accordance with the ANU policy, late assignments will incur a 5% penalty per working day. I will not accept any assignments later than a week. To mitigate the strict late policy, I will drop the lowest assignment score.
 </div>
 
 ## Picture Credits
