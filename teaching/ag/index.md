@@ -85,7 +85,7 @@ I will also upload my lecture notes and the workshop handouts here.
   Projective and quasi-projective varieties.
   (Shafarevich 1.4.1, 1.4.2, [Danilov](Danilov-varieties.pdf))
 
-* Week 5 [Workshop 4](AGWorkshop04.pdf), [Lecture Notes 5](AGWeek05.pdf):
+* Week 5 [Workshop 4](AGWorkshop04.pdf), [Lecture Notes 5](AGWeek05.pdf)  
   Regular functions and regular maps on quasi-projective varieties. Veronese and Segre embeddings.
   (Shafarevich 1.4.1, 1.4.2, 1.4.4, [Danilov](Danilov-varieties.pdf) [Harris](Harris-Veronese_and_Segre.pdf)))
 
