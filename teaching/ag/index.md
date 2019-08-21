@@ -141,7 +141,7 @@ I will have office hours on Wednesday from 1 to 2, on Thusday from 10 to 11, and
 
 ## [Assessment &plusmn;](#){: onclick="toggle_visibility('assess'); return false;" }
 <div id="assess" style="display: block;">
-There will be weekly homework assignments (11 in total, best 10 count), a mid-semester exam, and a final exam.	The exams will be worth 20% each (total 40%) and the assignments will be worth 6% each (total 60%). Submit your assignments through wattle by following the "submit" link as a single pdf file (handwritten and scanned or typed). Of the 11 assignments, I will drop the lowest score.
+There will be weekly homework assignments, a mid-semester exam, and a final exam.	The exams will be worth 20% each (total 40%) and the assignments will be worth 6.66% each (total 60%). Submit your assignments through wattle by following the "submit" link as a single pdf file (handwritten and scanned or typed). Of the 10 assignments, I will drop the lowest score.
 </div>
 
 ## [Policies &plusmn;](#){: onclick="toggle_visibility('poli'); return false;" }
