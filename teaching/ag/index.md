@@ -50,9 +50,9 @@ We will study the geometry of subsets of the affine or projective space defined 
 
 ## [Wattle links (ANU only) &plusmn;](#){: onclick="toggle_visibility('wat'); return false;" }
 <div id="wat" style="display: block;">
-* [Echo 360 recordings](https://wattlecourses.anu.edu.au/mod/lti/view.php?id=1738513){:target="_blank"}
-* [Gradebook](https://wattlecourses.anu.edu.au/grade/report/index.php?id=28539){:target="_blank"}
-* [Question and answer forum](https://wattlecourses.anu.edu.au/mod/forum/view.php?id=1738507){:target="_blank"}
+[Echo 360 recordings](https://wattlecourses.anu.edu.au/mod/lti/view.php?id=1738513){:target="_blank"} |
+[Gradebook](https://wattlecourses.anu.edu.au/grade/report/index.php?id=28539){:target="_blank"} |
+[Question and answer forum](https://wattlecourses.anu.edu.au/mod/forum/view.php?id=1738507){:target="_blank"}
 </div>
 
 ## [Outline &plusmn;](#){:  onclick="toggle_visibility('out'); return false;" }
