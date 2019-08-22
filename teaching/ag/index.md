@@ -87,7 +87,8 @@ I will also upload my lecture notes and the workshop handouts here.
 
 * Week 5 [Workshop 4](AGWorkshop04.pdf), [Lecture Notes 5](AGWeek05.pdf)  
   Regular functions and regular maps on quasi-projective varieties. Veronese and Segre embeddings.
-  (Shafarevich 1.4.1, 1.4.2, 1.4.4, [Danilov](Danilov-varieties.pdf) [Harris](Harris-Veronese_and_Segre.pdf))
+  (Shafarevich 1.4.1, 1.4.2, 1.4.4, [Danilov](Danilov-varieties.pdf) [Harris](Harris-Veronese_and_Segre.pdf)).
+  [Math Stackexchange answer](https://math.stackexchange.com/questions/891109/factoring-homogeneous-polynomials-in-two-variables) explaining how homogeneous polynomials in X, Y of degree d factor into d homogeneous linear factors. As a result, they have at most d zeros on P<sup>1</sup>.
 
 * Week 6
   Irreducibility, irreducible components.
