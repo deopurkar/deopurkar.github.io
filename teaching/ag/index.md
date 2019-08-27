@@ -91,22 +91,20 @@ I will also upload my lecture notes and the workshop handouts here.
   (Shafarevich 1.4.1, 1.4.2, 1.4.4, [Danilov](Danilov-varieties.pdf) [Harris](Harris-Veronese_and_Segre.pdf)).
   [Math Stackexchange answer](https://math.stackexchange.com/questions/891109/factoring-homogeneous-polynomials-in-two-variables) explaining how homogeneous polynomials in X, Y of degree d factor into d homogeneous linear factors. As a result, they have at most d zeros on P<sup>1</sup>.
 
-* Week 6
-  Irreducibility, irreducible components.
-  Rational functions, domain of definition, birational maps.
-  (Shafarevich 1.3.2, 1.3.3)
+* Week 6 [Workshop 5](AGWorkshop05.pdf), [Lecture Notes 6](AGWeek06.pdf)  
+  Continued from last week. Separatedness. Closed image property.
+  (Shafarevich 1.3.2, 1.3.3, 1.5.2)
 
 * Week 7:
-  Examples. The Grassmannian.
-  (Shafarevich 1.4.1, [Harris](Harris-Grassmannian.pdf)), [Bullock](Bullock-Grassmannian.pdf)
+  Rational functions, domain of definition, birational maps.
 
 * Week 8:
-  Products. Veronese and Segre embedding.
-
+  Examples. The Grassmannian.
+  (Shafarevich 1.4.1, [Harris](Harris-Grassmannian.pdf)), [Bullock](Bullock-Grassmannian.pdf)
+  
 * Week 9:
-   The closed image property.
    Finite maps, Noether normalization.
-   (Shafarevich 1.5.2, 1.5.3, 1.5.4)
+   (Shafarevich 1.5.3, 1.5.4)
 
 * Week 10:
    Dimension theory
