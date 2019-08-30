@@ -92,7 +92,7 @@ I will also upload my lecture notes and the workshop handouts here.
   [Math Stackexchange answer](https://math.stackexchange.com/questions/891109/factoring-homogeneous-polynomials-in-two-variables) explaining how homogeneous polynomials in X, Y of degree d factor into d homogeneous linear factors. As a result, they have at most d zeros on P<sup>1</sup>.
 
 * Week 6 [Workshop 5](AGWorkshop05.pdf), [Lecture Notes 6](AGWeek06.pdf)  
-  Continued from last week. Separatedness. Closed image property.
+  Continued from last week. Separatedness. Segre embedding.
   (Shafarevich 1.3.2, 1.3.3, 1.5.2)
 
 * Week 7:
