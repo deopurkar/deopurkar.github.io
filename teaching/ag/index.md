@@ -63,6 +63,8 @@ We will study the geometry of subsets of the affine or projective space defined 
 Here is a preliminary outline of the course. It is undergoing changes as the class progresses, so the later weeks may not be accurate.
 I will also upload my lecture notes and the workshop handouts here.
 
+Here are some [practice questions](AGMidtermPractice.pdf) for the midterm.
+
 * Week 1: [Lecture Notes 1](AGWeek01.pdf)  
   What is algebraic geometry?, 
   Affine space, closed (algebraic) subsets of affine space. 
