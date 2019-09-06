@@ -45,11 +45,11 @@ Here are some [practice questions](AGMidtermPractice.pdf) for the midterm.
 <div id="hw" style="display: block;" >
 - [Homework 5. Due 5pm, Friday, August 30](hw05.pdf) ([submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738781){:target="_blank"})   
   *Here is a real picture of the [conic fibration on the cubic](cubic.gif).*  
-- [Homework 4. Due 5pm, Friday, August 23](hw04.pdf)  (Solutions)[hw04sol.pdf]  
+- [Homework 4. Due 5pm, Friday, August 23](hw04.pdf)  [Solutions](hw04sol.pdf)  
   *Here is an animated [pencil of conics](pencil.gif).*
-- [Homework 3. Due 5pm, Friday, August 16](hw03.pdf) (Solutions)[hw03sol.pdf]
-- [Homework 2. Due 5pm, Friday, August 9](hw02.pdf)  (Solutions)[hw02sol.pdf]
-- [Homework 1. Due 5pm, Friday, August 2.](hw01.pdf) (Solutions)[hw01sol.pdf]
+- [Homework 3. Due 5pm, Friday, August 16](hw03.pdf) [Solutions](hw03sol.pdf)
+- [Homework 2. Due 5pm, Friday, August 9](hw02.pdf)  [Solutions](hw02sol.pdf)
+- [Homework 1. Due 5pm, Friday, August 2.](hw01.pdf) [Solutions](hw01sol.pdf)
 </div>
 
 ## [Wattle links (ANU only) &plusmn;](#){: onclick="toggle_visibility('wat'); return false;" }
