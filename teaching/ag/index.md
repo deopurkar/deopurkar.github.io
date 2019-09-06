@@ -39,6 +39,8 @@ We will study the geometry of subsets of the affine or projective space defined 
 {% endraw %}
 </div>
 
+Here are some [practice questions](AGMidtermPractice.pdf) for the midterm.
+
 ## [Homework &plusmn;](#){:  onclick="toggle_visibility('hw'); return false;" }
 <div id="hw" style="display: block;" >
 - [Homework 5. Due 5pm, Friday, August 30](hw05.pdf) ([submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738781){:target="_blank"})   
@@ -62,8 +64,6 @@ We will study the geometry of subsets of the affine or projective space defined 
 <div id="out" style="display: block;">
 Here is a preliminary outline of the course. It is undergoing changes as the class progresses, so the later weeks may not be accurate.
 I will also upload my lecture notes and the workshop handouts here.
-
-Here are some [practice questions](AGMidtermPractice.pdf) for the midterm.
 
 * Week 1: [Lecture Notes 1](AGWeek01.pdf)  
   What is algebraic geometry?, 
