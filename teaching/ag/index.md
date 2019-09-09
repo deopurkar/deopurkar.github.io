@@ -43,7 +43,7 @@ Here are some [practice questions](AGMidtermPractice.pdf) for the midterm.
 
 ## [Homework &plusmn;](#){:  onclick="toggle_visibility('hw'); return false;" }
 <div id="hw" style="display: block;" >
-- [Homework 5. Due 5pm, Friday, August 30](hw05.pdf) ([submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738781){:target="_blank"})   
+- [Homework 5. Due 5pm, Friday, August 30](hw05.pdf) [Solutions](hw05sol.pdf)  
   *Here is a real picture of the [conic fibration on the cubic](cubic.gif).*  
 - [Homework 4. Due 5pm, Friday, August 23](hw04.pdf)  [Solutions](hw04sol.pdf)  
   *Here is an animated [pencil of conics](pencil.gif).*
