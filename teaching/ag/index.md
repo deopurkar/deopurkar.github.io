@@ -96,15 +96,16 @@ I will also upload my lecture notes and the workshop handouts here.
 
 * Week 6 [Workshop 5](AGWorkshop05.pdf), [Lecture Notes 6](AGWeek06.pdf)  
   Continued from last week. Separatedness. Segre embedding.
-  (Shafarevich 1.3.2, 1.3.3, 1.5.2)
+  (Shafarevich 1.5.1)
 
-* Week 7:
-  Rational functions, domain of definition, birational maps.
+* Week 7 [Lecture notes 7](AGWeek07.pdf)   
+  Closed image property, applications. Grassmannians.
+  (Shafarevich 1.5.2, [Harris](Harris-Grassmannian.pdf)), [Bullock](Bullock-Grassmannian.pdf))
 
 * Week 8:
-  Examples. The Grassmannian.
-  (Shafarevich 1.4.1, [Harris](Harris-Grassmannian.pdf)), [Bullock](Bullock-Grassmannian.pdf)
-  
+  Irreducibility, irreducible components, rational maps.
+  (Shafarevich 1.3.1, 1.3.2, 1.3.3)
+
 * Week 9:
    Finite maps, Noether normalization.
    (Shafarevich 1.5.3, 1.5.4)
