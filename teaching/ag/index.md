@@ -100,7 +100,7 @@ I will also upload my lecture notes and the workshop handouts here.
 
 * Week 7 [Lecture notes 7](AGWeek07.pdf)   
   Closed image property, applications. Grassmannians.
-  (Shafarevich 1.5.2, [Harris](Harris-Grassmannian.pdf)), [Bullock](Bullock-Grassmannian.pdf))
+  (Shafarevich 1.5.2, [Harris](Harris-Grassmannian.pdf), [Bullock](Bullock-Grassmannian.pdf))
 
 * Week 8:
   Irreducibility, irreducible components, rational maps.
