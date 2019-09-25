@@ -100,24 +100,24 @@ I will also upload my lecture notes and the workshop handouts here.
   Continued from last week. Separatedness. Segre embedding.
   (Shafarevich 1.5.1)
 
-* Week 7 [Lecture notes 7](AGWeek07.pdf)   
-  Closed image property, applications. Grassmannians.
-  (Shafarevich 1.5.2, [Harris](Harris-Grassmannian.pdf), [Bullock](Bullock-Grassmannian.pdf))
-
-* Week 8:
+* Week 7 [Workshop 7](AGWorkshop06.pdf), [Lecture notes 7](AGWeek07.pdf)   
+  Closed image property, applications. 
+  (Shafarevich 1.5.2)
+  
+* Week 8: [Lecture notes 8](AGWeek08.pdf)  
   Irreducibility, irreducible components, rational maps.
-  (Shafarevich 1.3.1, 1.3.2, 1.3.3)
+  (Shafarevich 1.3.1, 1.3.2)
 
 * Week 9:
-   Finite maps, Noether normalization.
-   (Shafarevich 1.5.3, 1.5.4)
+  Rational maps continued, Grassmannians.
+  (Shafarevich 1.3.3, [Harris](Harris-Grassmannian.pdf), [Bullock](Bullock-Grassmannian.pdf))
 
 * Week 10:
-   Dimension theory
+  Finite maps, Noether normalization. Dimension theory. 
+  (Shafarevich 1.5.3, 1.5.4)
 
 * Week 11:
-   Local ring at a point.
-   Tangent spaces, singularities.
+   Local ring at a point, tangent spaces, singularities.
 
 * Week 12:
    ???
