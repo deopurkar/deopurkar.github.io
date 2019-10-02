@@ -109,19 +109,19 @@ I will also upload my lecture notes and the workshop handouts here.
   Irreducibility, irreducible components, rational maps.
   (Shafarevich 1.3.1, 1.3.2)
 
-* Week 9:
-  Rational maps continued, Grassmannians.
-  (Shafarevich 1.3.3, [Harris](Harris-Grassmannian.pdf), [Bullock](Bullock-Grassmannian.pdf))
+* Week 9: [Lectures notes 9](AGWeek09.pdf)  
+  Rational maps continued, dimension.
+  (Shafarevich 1.3.3, 1.5.3)
 
 * Week 10:
-  Finite maps, Noether normalization. Dimension theory. 
+  More on dimension. 
   (Shafarevich 1.5.3, 1.5.4)
 
 * Week 11:
-   Local ring at a point, tangent spaces, singularities.
+  Applications. Grassmannian. [Harris](Harris-Grassmannian.pdf), [Bullock](Bullock-Grassmannian.pdf))
 
 * Week 12:
-   ???
+  Local ring at a point, tangent spaces, singularities.
 </div>
 
 ## [Prerequisites &plusmn;](#){:  onclick="toggle_visibility('prereq'); return false;" }
