@@ -39,7 +39,7 @@ We will study the geometry of subsets of the affine or projective space defined 
 {% endraw %}
 </div>
 
-Here are some [practice questions](AGMidtermPractice.pdf) for the midterm.
+Brush up on your field theory by reading these [notes by Alex Wright](TranscDeg.pdf).  
 
 ## [Homework &plusmn;](#){:  onclick="toggle_visibility('hw'); return false;" }
 <div id="hw" style="display: block;" >
@@ -137,6 +137,7 @@ Some knowledge of commutative algebra will help, but is not required.
 2. The [online notes](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf) by A. Gathmann.  
 3. [*Algebraic varieties: Basic Notions*](https://link.springer.com/chapter/10.1007/978-3-642-57878-6_6) by V. Danilov. 
 </div>
+4. Here are some [practice questions](AGMidtermPractice.pdf) for the midterm.
 
 ## [Lectures and workshops &plusmn;](#){:  onclick="toggle_visibility('lec'); return false;" }
 <div id="lec" style="display: block;">
