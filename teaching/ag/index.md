@@ -43,6 +43,7 @@ Here are some [practice questions](AGMidtermPractice.pdf) for the midterm.
 
 ## [Homework &plusmn;](#){:  onclick="toggle_visibility('hw'); return false;" }
 <div id="hw" style="display: block;" >
+- [Homework 8. Due 5pm, Friday, October 11](hw08.pdf)  [Submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738784){:target="_blank"}  
 - [Homework 7. Due 5pm, Friday, October 4](hw07.pdf)  [Submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738783){:target="_blank"}  
 - [Homework 6. Due 5pm, Friday, September 27](hw06.pdf)  [Submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738782){:target="_blank"}  
   *Some students correctly observed that Problem 2 can be done very easily, even without using that Z is a projective variety. Yes! I miscalculated its difficulty.*
