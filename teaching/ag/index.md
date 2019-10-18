@@ -43,6 +43,7 @@ Brush up on your field theory by reading these [notes by Alex Wright](TranscDeg.
 
 ## [Homework &plusmn;](#){:  onclick="toggle_visibility('hw'); return false;" }
 <div id="hw" style="display: block;" >
+- [Homework 9. Due 5pm, Friday, October 18](hw09.pdf)  [Submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738786){:target="_blank"}  
 - [Homework 8. Due 5pm, Friday, October 11](hw08.pdf)  [Submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738784){:target="_blank"}  
 - [Homework 7. Due 5pm, Friday, October 4](hw07.pdf)  [Submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738783){:target="_blank"}  
 - [Homework 6. Due 5pm, Friday, September 27](hw06.pdf)  [Submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738782){:target="_blank"}  
@@ -102,24 +103,24 @@ I will also upload my lecture notes and the workshop handouts here.
   Continued from last week. Separatedness. Segre embedding.
   (Shafarevich 1.5.1)
 
-* Week 7 [Workshop 7](AGWorkshop06.pdf), [Lecture notes 7](AGWeek07.pdf)   
+* Week 7 [Workshop 6](AGWorkshop06.pdf), [Lecture notes 7](AGWeek07.pdf)   
   Closed image property, applications. 
   (Shafarevich 1.5.2)
   
-* Week 8: [Lecture notes 8](AGWeek08.pdf)  
+* Week 8: [Workshop 7](AGWorkshop07.pdf) [Lecture notes 8](AGWeek08.pdf)  
   Irreducibility, irreducible components, rational maps.
   (Shafarevich 1.3.1, 1.3.2)
 
-* Week 9: [Lectures notes 9](AGWeek09.pdf)  
+* Week 9: [Workshop 8](AGWorkshop08.pdf), [Lectures notes 9](AGWeek09.pdf)  
   Rational maps continued, dimension.
   (Shafarevich 1.3.3, 1.5.3)
 
-* Week 10:
+* Week 10: [Lecture notes 10](AGWeek10.pdf)  
   More on dimension. 
   (Shafarevich 1.5.3, 1.5.4)
 
-* Week 11:
-  Applications. Grassmannian. [Harris](Harris-Grassmannian.pdf), [Bullock](Bullock-Grassmannian.pdf))
+* Week 11: [Lecture notes 11](AGWeek11.pdf)  
+  Dimension of fibers. Applications. Grassmannian. [Harris](Harris-Grassmannian.pdf), [Bullock](Bullock-Grassmannian.pdf))
 
 * Week 12:
   Local ring at a point, tangent spaces, singularities.
