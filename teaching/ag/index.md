@@ -56,6 +56,8 @@ Brush up on your field theory by reading these [notes by Alex Wright](TranscDeg.
 - [Homework 2. Due 5pm, Friday, August 9](hw02.pdf)  [Solutions](hw02sol.pdf)
 - [Homework 1. Due 5pm, Friday, August 2.](hw01.pdf) [Solutions](hw01sol.pdf)
 </div>
+I have tried to make sure that the homework solutions are correct, but some errors may have slipped in.
+If you find something that seems off, please let me know.
 
 ## [Wattle links (ANU only) &plusmn;](#){: onclick="toggle_visibility('wat'); return false;" }
 <div id="wat" style="display: block;">
