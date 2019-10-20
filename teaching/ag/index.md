@@ -117,7 +117,7 @@ I will also upload my lecture notes and the workshop handouts here.
   Rational maps continued, dimension.
   (Shafarevich 1.3.3, 1.5.3)
 
-* Week 10: [Lecture notes 10](AGWeek10.pdf)  
+* Week 10: [Workshop 9](AGWorkshop09.pdf), [Lecture notes 10](AGWeek10.pdf)  
   More on dimension. 
   (Shafarevich 1.5.3, 1.5.4)
 
