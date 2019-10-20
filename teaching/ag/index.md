@@ -43,10 +43,10 @@ Brush up on your field theory by reading these [notes by Alex Wright](TranscDeg.
 
 ## [Homework &plusmn;](#){:  onclick="toggle_visibility('hw'); return false;" }
 <div id="hw" style="display: block;" >
-- [Homework 9. Due 5pm, Friday, October 18](hw09.pdf)  [Submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738786){:target="_blank"}  
-- [Homework 8. Due 5pm, Friday, October 11](hw08.pdf)  [Submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738784){:target="_blank"}  
-- [Homework 7. Due 5pm, Friday, October 4](hw07.pdf)  [Submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738783){:target="_blank"}  
-- [Homework 6. Due 5pm, Friday, September 27](hw06.pdf)  [Submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738782){:target="_blank"}  
+- [Homework 9. Due 5pm, Friday, October 18](hw09.pdf) [Solutions](hw09sol.pdf)  
+- [Homework 8. Due 5pm, Friday, October 11](hw08.pdf) [Solutions](hw08sol.pdf)  
+- [Homework 7. Due 5pm, Friday, October 4](hw07.pdf) [Solutions](hw07sol.pdf)  
+- [Homework 6. Due 5pm, Friday, September 27](hw06.pdf) [Solutions](hw06sol.pdf)  
   *Some students correctly observed that Problem 2 can be done very easily, even without using that Z is a projective variety. Yes! I miscalculated its difficulty.*
 - [Homework 5. Due 5pm, Friday, August 30](hw05.pdf) [Solutions](hw05sol.pdf)  
   *Here is a real picture of the [conic fibration on the cubic](cubic.gif).*  
