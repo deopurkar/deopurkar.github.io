@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: Algebra 3 (Algebraic geometry)
@@ -43,7 +44,7 @@ Brush up on your field theory by reading these [notes by Alex Wright](TranscDeg.
 
 ## [Homework &plusmn;](#){:  onclick="toggle_visibility('hw'); return false;" }
 <div id="hw" style="display: block;" >
-- [Homework 10. Due 5pm, Friday, October 25](hw10.pdf)  [Submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738787){:target="_blank"}  
+- [Homework 10. Due 5pm, Friday, October 25](hw10.pdf)  [Submit](https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738795){:target="_blank"}  
 - [Homework 9. Due 5pm, Friday, October 18](hw09.pdf) [Solutions](hw09sol.pdf)  
 - [Homework 8. Due 5pm, Friday, October 11](hw08.pdf) [Solutions](hw08sol.pdf)  
 - [Homework 7. Due 5pm, Friday, October 4](hw07.pdf) [Solutions](hw07sol.pdf)  
