@@ -40,7 +40,7 @@ We will study the geometry of subsets of the affine or projective space defined 
 {% endraw %}
 </div>
 
-Brush up on your field theory by reading these [notes by Alex Wright](TranscDeg.pdf).  
+Some [more practice problems](AGFinalPractice.pdf), in addition to the [previous practice problems](AGMidtermPractice.pdf).
 
 ## [Homework &plusmn;](#){:  onclick="toggle_visibility('hw'); return false;" }
 <div id="hw" style="display: block;" >
@@ -140,9 +140,10 @@ Some knowledge of commutative algebra will help, but is not required.
 <div id="ref" style="display: block;">
 1. [*Basic Algebraic Geometry, Part I*](https://link.springer.com/book/10.1007/978-3-642-37956-7) by I. Shafarevich.  
 2. The [online notes](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf) by A. Gathmann.  
-3. [*Algebraic varieties: Basic Notions*](https://link.springer.com/chapter/10.1007/978-3-642-57878-6_6) by V. Danilov. 
+3. [*Algebraic varieties: Basic Notions*](https://link.springer.com/chapter/10.1007/978-3-642-57878-6_6) by V. Danilov.   
+4. Field theory [notes by Alex Wright](TranscDeg.pdf).  
+5. Some [practice questions](AGMidtermPractice.pdf) for the midterm.
 </div>
-4. Here are some [practice questions](AGMidtermPractice.pdf) for the midterm.
 
 ## [Lectures and workshops &plusmn;](#){:  onclick="toggle_visibility('lec'); return false;" }
 <div id="lec" style="display: block;">
