@@ -126,7 +126,7 @@ I will also upload my lecture notes and the workshop handouts here.
 * Week 11: [Lecture notes 11](AGWeek11.pdf)  
   Dimension of fibers. Applications. Grassmannian. [Harris](Harris-Grassmannian.pdf), [Bullock](Bullock-Grassmannian.pdf))
 
-* Week 12:
+* Week 12: [Lecture notes 12](AGWeek12.pdf)  
   Local ring at a point, tangent spaces, singularities.
 </div>
 
