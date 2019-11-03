@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: Algebra 3 (Algebraic geometry)
@@ -123,7 +122,7 @@ I will also upload my lecture notes and the workshop handouts here.
   More on dimension. 
   (Shafarevich 1.5.3, 1.5.4)
 
-* Week 11: [Lecture notes 11](AGWeek11.pdf)  
+* Week 11: [Workshop 10](AGWorkshop10.pdf), [Lecture notes 11](AGWeek11.pdf)  
   Dimension of fibers. Applications. Grassmannian. [Harris](Harris-Grassmannian.pdf), [Bullock](Bullock-Grassmannian.pdf))
 
 * Week 12:
