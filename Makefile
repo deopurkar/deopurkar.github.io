@@ -2,7 +2,7 @@ default:
 	-bundle exec jekyll build
 
 ceevee:
-	cd _site/cv/; latexmk -pdf cv.tex
+	cd _site/cv/; latexmk -pdf -pdflatex="xelatex" cv.tex 
 	cp _site/cv/cv.pdf cv/cv.pdf
 
 git:

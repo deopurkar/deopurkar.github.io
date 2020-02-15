@@ -1,3 +1,10 @@
+- title: "The Thurston compactification of the space of stability conditions: the $A_2$ case"
+  coauthors: ["[Asilata Bapat](https://asilata.github.io/)", "[Anthony Licata](https://maths-people.anu.edu.au/~licatat/)"]
+  abstract:  "We define a map from the space of Bridgeland stability conditions on a triangulated category C to an infinite projective space.  We conjecture that under some mild assumptions on the triangulated category C this map to be a homeomorphism onto its image and that the closure is a real manifold with boundary.   Thus we obtain a compactification of the space of stability conditions.  Both the definition and expected properties of this compactification are analogous in many respects to Thurston's compactification of the Teichmuller space of a hyperbolic surface. In this paper we study in detail the case when C is the 2-Calabi-Yau category associated to the $A_2$ quiver, and prove our conjectures in that case."
+  journal: In preparation
+  formats:
+     draft: "papers/a2-compactification.pdf"
+
 - title: Anticanonical tropical cubic del Pezzos contain exactly 27 lines
   coauthors: ["[María Angélica Cueto](https://people.math.osu.edu/cueto.5/)"]
   abstract: "The classical statement of Cayley-Salmon that there are 27 lines on every smooth cubic surface in P^3 fails to hold under tropicalization: a tropical cubic surface in TP^3 often contains infinitely many tropical lines. Under mild genericity assumptions, we show that when embedded using the Eckardt triangles in the anticanonical system, tropical cubic del Pezzo surfaces contain exactly 27 tropical lines. In the non-generic case, which we identify explicitly, we find up to 27 extra lines, no multiple of which lifts to a curve on the cubic surface. 

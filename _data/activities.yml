@@ -1,6 +1,10 @@
+- what: Trip to India
+  when: 2020-01-14
+  display-when: Dec 14 to Jan 14, 2020
+
 - what: Workshop in Birational Geometry and Moduli Spaces, Sydney
-  where: 2019-12-11
-  display-when:	Dec 11-13, 2019
+  when: 2019-12-11
+  display-when:	Dec 11 to 13, 2019
 
 - what: Recent progress in moduli theory, MSRI, Berkeley, CA
   when: 2019-05-10
