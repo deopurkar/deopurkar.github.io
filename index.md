@@ -45,10 +45,10 @@ Just after graduate school, I wrote a [rough non-technical explanation](interest
 </ul>
 
 ## Teaching
-I am currently teaching Algebraic Geometry (Algebra 3).
+Last semester, I taught Algebraic Geometry (Algebra 3).
 See the [course website](teaching/ag) for more.
 
-Here are some courses that I have taught in the past.
+Here are some more courses that I have taught in the past.
 * [A graduate course on algebraic curves and Riemann surfaces](teaching/8320)
 * [Moduli of curves](teaching/moduli/)
 
