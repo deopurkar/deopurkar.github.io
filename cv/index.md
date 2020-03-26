@@ -31,6 +31,12 @@ title: Anand Deopurkar | CV
 
 ### Teaching
 
+#### At the Australian National University
+{% assign here = site.data.classes | where:"where", "ANU" %}
+{% for class in here %}  {% unless class.omitcv  %}
+* {{ class.what | markdownify | strip_html | strip }}, {{ class.when }}.{% if class.comment %}*{{ class.comment | markdownify | strip_html | strip }}*{% endif %}
+{% endunless %}{% endfor %}
+
 #### At the University of Georgia
 {% assign here = site.data.classes | where:"where", "UGA" %}
 {% for class in here %}  {% unless class.omitcv  %}
