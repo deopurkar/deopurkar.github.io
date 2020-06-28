@@ -56,9 +56,13 @@
 
 {% for award in site.data.awards %}  {% unless award.omitcv  %}
   \cvlistitem[.5em]{
-    {{ award.what }}{% if award.with %} (with {{ award.with | join: ', ' | markdownify | strip_html | strip }}){% endif %}, {{ award.when }}.{% if award.comment %} {\itshape {{ award.comment | markdownify | strip_html | strip }}}{% endif %}
+    {{ award.what }}, {{ award.when }}{% if award.comment %} ({{ award.comment | markdownify | strip_html | strip }}){% endif %}.
     }{% endunless %}{% endfor %}
 
+\section{Supervision}
+{% for student in site.data.supervision %}  {% unless student.omitcv  %}
+  \cvlistitem[.5em]{ {{ student.who | markdownify | strip_html | strip }}, {\itshape {{ student.what | markdownify | strip_html | strip }}}, {{ student.where | markdownify | strip_html | strip }},  {{ student.when }}{% if student.comment %} ({{ student.comment | markdownify | strip_html | strip }}){% endif %}. } {% endunless %}{% endfor %} 
+      
 \section{Teaching}
 
 \subsection{At the Australian National University}

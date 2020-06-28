@@ -3,7 +3,7 @@
   when: Term 2, 2019
   url: ag/
 
-- what: Reading course on Elliptic curves and modular forms (Koblitz)
+- what: Reading course on *Elliptic curves and modular forms* by Neil Koblitz
   where: ANU
   when: Summer, 2018--2019
 
@@ -11,7 +11,7 @@
   where: ANU
   when: Term 2, 2018
   
-- what: Reading course on Algebaric curves and Riemann surfaces (Miranda)
+- what: Reading course on *Algebaric curves and Riemann surfaces* by Rick Miranda
   where: ANU
   when: Term 1, 2018
   url: 3349
@@ -24,11 +24,11 @@
   where: UGA
   when: Fall 2017
 
-- what: Math 2260 (Calculus 2 for Science and Engineering)
+- what: Math 2260 (Calculus 2)
   where: UGA
   when: Spring 2017
 
-- what: Math 2250 (Calculus 1 for Science and Engineering)
+- what: Math 2250 (Calculus 1)
   where: UGA
   when: Fall 2016 
 
@@ -36,13 +36,11 @@
   where: Columbia
   when: Spring 2016
   url: ao/
-  comment: A course about linear and non-linear optimization methods.
   
 - what: Young tableaux in algebra and geometry
   where: Columbia
   when: Fall 2015
   url: seminar15/
-  comment: Undergraduate seminar based on Fulton\'s book *Young Tableaux*.
 
 - what: Calculus 1
   where: Columbia
@@ -53,7 +51,6 @@
   where: Columbia
   when: Fall 2014
   url: moduli/
-  comment: Graduate (topics) course in algebraic geometry. The webpage has most of the course notes.
 
 - what: Calculus 1
   where: Columbia
@@ -63,13 +60,11 @@
 - what: Modern algebra 2
   where: Columbia
   url: algebra2/
-  comment: Rings, fields, and Galois theory.
   when: Spring 2014
 
 - what: Modern algebra 1
   where: Columbia
   url: algebra1/
-  comment: Group theory.
   when: Fall 2013
 
 - what: Calculus 3
@@ -85,10 +80,9 @@
   where: Harvard
   when: 2012
 
-- what: Algebraic curves
+- what: Algebraic curves (taching assistant)
   where: Harvard
   when: 2011
-  comment: Course assistant for Joe Harris.
   
 - what: Calculus 2
   where: Harvard

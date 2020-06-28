@@ -29,6 +29,10 @@ title: Anand Deopurkar | CV
 * {{ award.what }}{% if award.with %} (with {{ award.with | join: ', ' | markdownify | strip_html | strip }}){% endif %}, {{ award.when }}.{% if award.comment %} *{{ award.comment | markdownify | strip_html | strip }}*{% endif %}
 {% endunless %}{% endfor %}
 
+### Supervision
+{% for student in site.data.supervision %}  {% unless student.omitcv  %}
+* {{ student.who | markdownify | strip_html | strip }}, *{{ student.what | markdownify | strip_html | strip }}*, {{ student.where | markdownify | strip_html | strip }},  {{ student.when }}. {% if student.comment %} ({{ student.comment | markdownify | strip_html | strip }}). {% endif %}{% endunless %}{% endfor %}
+
 ### Teaching
 
 #### At the Australian National University
