@@ -108,7 +108,7 @@
  \section{Service}
  {% for thing in site.data.service %}  {% unless thing.omitcv  %}
   \cvlistitem[.5em]{
-    {{ thing.what }}{% if thing.when %} {{ thing.when }}{% endif %}
+    {{ thing.what | markdownify | strip_html | strip }}{% if thing.when %}, {{ thing.when }}.{% endif %}
     }{% endunless %}{% endfor %}
             
 \section{References}
