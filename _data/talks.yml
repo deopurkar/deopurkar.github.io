@@ -3,10 +3,11 @@
   when: 2020
   type: Seminar
 
-- what: Groups, spherical twists, and stability conditions (with Asilata Bapat and Anthony Licata)
+- what: Groups, spherical twists, and stability conditions
   where: Workshop on triangulated categories in geometry and representation theory, Sydney
   when: 2019
   type: Workshop 	
+  comment: Part of a series with Asilata Bapat and Anthony Licata
 
 - what: Geometry of Hurwitz spaces
   where: Character varieties and topological quantum field theory, Auckland, New Zealand
@@ -14,7 +15,7 @@
   type: Conference
 
 - what: On the geometric Steinitz problem
-  where: Number theory session at AustMS 2018, Adelaide
+  where: Number theory session at the Australian Mathematical Society's annual meeting (AustMS) 2018, Adelaide
   when: 2018
   type: Conference
 
@@ -104,7 +105,7 @@
   type: Seminar
 
 - what: Cycles on Hurwitz spaces
-  where: Workshop on cycles on moduli spaces, geometric invariant theory, and dynamics, ICERM, Brown University
+  where: Workshop on cycles on moduli spaces, geometric invariant theory, and dynamics, Institute for Computational and Experimental Researhc in Mathematics (ICERM), Brown University
   when: 2016
   type: Conference
         

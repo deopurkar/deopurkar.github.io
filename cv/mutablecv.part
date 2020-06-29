@@ -57,7 +57,7 @@
 
 {% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Conference" or talk.type == "Workshop" %}
 * {{ talk.where }}, {{ talk.when }}.  
-  *{{ talk.what }}*.{% if talk.comment %} {{ talk.comment }}{% endif %}
+  *{{ talk.what }}*. {% if talk.comment %} ({{ talk.comment }}.){% endif %}
   {% endif %}{% endunless %}{% endfor %}
 
 ### In seminars
@@ -71,7 +71,7 @@
 ## Service
 
 {% for thing in site.data.service %}  {% unless thing.omitcv  %}
-* {{ thing.what }}{% if thing.when %} {{ thing.when }}{% endif %}.
+* {{ thing.what }}{% if thing.when %}, {{ thing.when }}{% endif %}.
 {% endunless %}{% endfor %}
 
 ## References
