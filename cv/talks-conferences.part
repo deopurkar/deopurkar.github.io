@@ -1,7 +1,0 @@
----
----
-{% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Conference" or talk.type == "Workshop" %}
-* {{ talk.where }}, {{ talk.when }}.  
-  *{{ talk.what }}*.{% if talk.comment %} {{ talk.comment }}{% endif %}
-  {% endif %}{% endunless %}{% endfor %}
-

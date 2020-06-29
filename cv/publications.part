@@ -1,6 +1,0 @@
----
----
-{% for paper in site.data.papers  %}  {% unless paper.omitcv  %}
-* {{ paper.title }}{% if paper.coauthors %} (with {{ paper.coauthors | join: ', ' }}){% endif %}.  
-{% if paper.journal %} *{{ paper.journal }}*.{% endif %}  {% if paper.comment %} {{ paper.comment }}{% endif %} {% if page.linkpapers %}{% for format in paper.formats %} [{{ format[0] }}]({{ format[1] }}){% endfor %}{% endif %}
-{% endunless %}{% endfor %}
