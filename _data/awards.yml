@@ -1,29 +1,30 @@
 - what: Discovery Early Career Researcher Award (DECRA)
   howmuch: \$328,075
   when: 2018--2021
-  comment: funded by the Australian Research Council
+  comment: Funded by the Australian Research Council
 
 - what: AMS-Simons Travel Grant
   howmuch: \$4000
   when: 2016--2018
   type: travel
+  comment: Funded by the American Mathematical Society and the Simons Foundation
 
 - what: American Institute of Mathematics Workshop Funding
   when: 2016
   type: conference
-  comment: with Maksym Fedorchuk, Ian Morrison, Xiaowei Wang
+  comment: Joint with Maksym Fedorchuk, Ian Morrison, Xiaowei Wang
   
 - what: Award for excellence in teaching
   when: 2014
-  comment: departmental award at Columbia University.
+  comment: Departmental award at Columbia University.
 
 - what: Jon A. Bucsela prize
   when: 2006
-  comment: departmental award at MIT for the top graduating mathematics major
+  comment: Departmental award at MIT for the top graduating mathematics major
 
-- what: Rogers prize
+- what: Rogers family prize
   when: 2006
-  comment: Departmental award at MIT for summer research.
+  comment: Departmental award at MIT for summer research
 
 - what: William Lowell Putnam competition
   when: 2004 (Rank 16--25), 2005 (Honorable mention), 2007 (Honorable mention)

@@ -5,18 +5,18 @@
   amsmath,
   amssymb,
   url,
-  multicol
+  multicol,
+  enumitem
 }
 
 \usepackage[margin=1in]{geometry}
 
-\usepackage[charter]{mathdesign}
+%\usepackage[charter]{mathdesign}
 
-\moderncvtheme[blue]{banking}
+\moderncvtheme[black]{banking}
 
 \renewcommand*{\namefont}{\fontsize{20}{20}\mdseries\upshape}
 \renewcommand*{\titlefont}{\fontsize{20}{20}\mdseries\upshape}
-\definecolor{color2}{RGB}{50,50,50}
 
 \firstname{Anand}
 \familyname{Deopurkar}
@@ -26,6 +26,8 @@
 \homepage{https://deopurkar.github.io}
 \renewcommand{\emailsymbol}{Email: }
 \renewcommand{\homepagesymbol}{Web: }
+
+\setlist{topsep=.1em}
 
 \begin{document}
 \makecvtitle
@@ -46,70 +48,47 @@
 
 \section{Publications and pre-prints}
 
-{% for paper in site.data.papers  %}  {% unless paper.omitcv  %}
-  \cvlistitem[.5em]{
-    {{ paper.title | markdownify | strip_html | strip}}{% if paper.coauthors %} (with {{ paper.coauthors | join: ', ' | markdownify | strip_html | strip }}){% endif %}.\\ {% if paper.journal %} {\itshape {{ paper.journal | markdownify | strip_html | strip}}}.{% endif %} {% if paper.comment %} {\itshape {{ paper.comment | markdownify | strip_html | strip}} }{% endif %}
-    }{% endunless %}{% endfor %}
+\input{publications.tex}
 
 \section{Grants and awards}        
 
-
-{% for award in site.data.awards %}  {% unless award.omitcv  %}
-  \cvlistitem[.5em]{
-    {{ award.what }}, {{ award.when }}{% if award.comment %} ({{ award.comment | markdownify | strip_html | strip }}){% endif %}.
-    }{% endunless %}{% endfor %}
+\input{awards.tex}
 
 \section{Supervision}
-{% for student in site.data.supervision %}  {% unless student.omitcv  %}
-  \cvlistitem[.5em]{ {{ student.who | markdownify | strip_html | strip }}, {\itshape {{ student.what | markdownify | strip_html | strip }}}, {{ student.where | markdownify | strip_html | strip }},  {{ student.when }}{% if student.comment %} ({{ student.comment | markdownify | strip_html | strip }}){% endif %}. } {% endunless %}{% endfor %} 
-      
+
+\input{supervision.tex}
+
 \section{Teaching}
 
 \subsection{At the Australian National University}
-{% assign here = site.data.classes | where:"where", "ANU" %}
-{% for class in here %}  {% unless class.omitcv  %}
-  \cvlistitem[.5em]{ {{ class.what | markdownify | strip_html | strip }}, {{ class.when }}.{% if class.comment %} {\itshape {{ class.comment | markdownify | strip_html | strip }} }{% endif %}
-    }{% endunless %}{% endfor %}
+
+\input{teaching-anu.tex}
 
 \subsection{At the University of Georgia}
-{% assign here = site.data.classes | where:"where", "UGA" %}
-{% for class in here %}  {% unless class.omitcv  %}
-  \cvlistitem[.5em]{ {{ class.what | markdownify | strip_html | strip }}, {{ class.when }}.{% if class.comment %} {\itshape {{ class.comment | markdownify | strip_html | strip }} }{% endif %}
-    }{% endunless %}{% endfor %}
 
-      \subsection{At Columbia University}
-{% assign here = site.data.classes | where:"where", "Columbia" %}
-{% for class in here %}  {% unless class.omitcv  %}
-  \cvlistitem[.5em]{
-    {{ class.what | markdownify | strip_html | strip}}, {{ class.when }}.{% if class.comment %} {\itshape {{ class.comment | markdownify | strip_html | strip}} }{% endif %}
-    }{% endunless %}{% endfor %}
+\input{teaching-uga.tex}
+      
+\subsection{At Columbia University}
 
-      \subsection{At Harvard University}
-{% assign here = site.data.classes | where:"where", "Harvard" %}
-{% for class in here %}  {% unless class.omitcv  %}
-  \cvlistitem[.5em]{
-    {{ class.what | markdownify | strip_html | strip}}, {{ class.when }}.{% if class.comment %} {\itshape {{ class.comment | markdownify | strip_html | strip }}}{% endif %}
-    }{% endunless %}{% endfor %}
+\input{teaching-columbia.tex}
+
+\subsection{At Harvard University}
+
+\input{teaching-harvard.tex}
 
 \section{Invited Talks and Presentations}
 
 \subsection{In conferences or workshops}
-{% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Conference" or talk.type == "Workshop" %}
-  \cvlistitem[.5em]{
-    {{ talk.where }}, {{ talk.when }}. {\itshape {{ talk.what | markdownify | strip_html | strip}}}.{% if talk.comment %}\\ {{ talk.comment | markdownify | strip_html | strip }}{% endif %}
-    }{% endif %}{% endunless %}{% endfor %}
+
+\input{talks-conferences.tex}
 
 \subsection{In seminars}
-      {% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Seminar" %}
-        \cvlistitem[.5em]{
-          {{ talk.where }}, {{ talk.when }}. {\itshape {{ talk.what | markdownify | strip_html | strip}}}.{% if talk.comment %}\\ {{ talk.comment | markdownify | strip_html | strip }}{% endif %}
-          }{% endif %}{% endunless %}{% endfor %}
 
- \section{Service}
- {% for thing in site.data.service %}  {% unless thing.omitcv  %}
-  \cvlistitem[.5em]{
-    {{ thing.what | markdownify | strip_html | strip }}{% if thing.when %}, {{ thing.when }}.{% endif %}
-    }{% endunless %}{% endfor %}
+\input{talks-seminars.tex}
+
+\section{Service}
+
+ \input{service.tex}
             
 \section{References}
 

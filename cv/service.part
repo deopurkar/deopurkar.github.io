@@ -1,0 +1,5 @@
+---
+---
+{% for thing in site.data.service %}  {% unless thing.omitcv  %}
+* {{ thing.what }}{% if thing.when %} {{ thing.when }}{% endif %}.
+{% endunless %}{% endfor %}

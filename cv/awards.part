@@ -1,0 +1,6 @@
+---
+---
+{% for award in site.data.awards %}  {% unless award.omitcv  %}
+* {{ award.what }}{% if award.with %} (with {{ award.with | join: ', '  }}){% endif %}, {{ award.when }}.
+  {% if award.comment %}*{{ award.comment  }}.*{% endif %}
+{% endunless %}{% endfor %}

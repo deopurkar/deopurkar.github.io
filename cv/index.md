@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Anand Deopurkar | CV
+linkpapers: 1       
 ---
 
 ## Curriculum Vitae ([PDF](cv.pdf))
@@ -18,65 +19,57 @@ title: Anand Deopurkar | CV
 
 ### Publications and pre-prints
 
-{% for paper in site.data.papers  %}  {% unless paper.omitcv  %}
-* {{ paper.title }}{% if paper.coauthors %} (with {{ paper.coauthors | join: ', ' }}){% endif %}.  
-{% if paper.journal %} *{{ paper.journal }}*.{% endif %}  {% if paper.comment %} {{ paper.comment }}{% endif %} {% for format in paper.formats %} [{{ format[0] }}]({{ format[1] }}){% endfor %}
-{% endunless %}{% endfor %}
+{% capture part %}{% include_relative publications.part %}{% endcapture %}
+{{ part | markdownify }}
 
 ### Grants and awards
 
-{% for award in site.data.awards %}  {% unless award.omitcv  %}
-* {{ award.what }}{% if award.with %} (with {{ award.with | join: ', ' | markdownify | strip_html | strip }}){% endif %}, {{ award.when }}.{% if award.comment %} *{{ award.comment | markdownify | strip_html | strip }}*{% endif %}
-{% endunless %}{% endfor %}
+{% capture part %}{% include_relative awards.part %}{% endcapture %}
+{{ part | markdownify }}
 
 ### Supervision
-{% for student in site.data.supervision %}  {% unless student.omitcv  %}
-* {{ student.who | markdownify | strip_html | strip }}, *{{ student.what | markdownify | strip_html | strip }}*, {{ student.where | markdownify | strip_html | strip }},  {{ student.when }}. {% if student.comment %} ({{ student.comment | markdownify | strip_html | strip }}). {% endif %}{% endunless %}{% endfor %}
+
+{% capture part %}{% include_relative supervision.part %}{% endcapture %}
+{{ part | markdownify }}
 
 ### Teaching
 
 #### At the Australian National University
-{% assign here = site.data.classes | where:"where", "ANU" %}
-{% for class in here %}  {% unless class.omitcv  %}
-* {{ class.what | markdownify | strip_html | strip }}, {{ class.when }}.{% if class.comment %}*{{ class.comment | markdownify | strip_html | strip }}*{% endif %}
-{% endunless %}{% endfor %}
+
+{% capture part %}{% include_relative teaching-anu.part %}{% endcapture %}
+{{ part | markdownify }}
 
 #### At the University of Georgia
-{% assign here = site.data.classes | where:"where", "UGA" %}
-{% for class in here %}  {% unless class.omitcv  %}
-* {{ class.what | markdownify | strip_html | strip }}, {{ class.when }}.{% if class.comment %}*{{ class.comment | markdownify | strip_html | strip }}*{% endif %}
-{% endunless %}{% endfor %}
+
+{% capture part %}{% include_relative teaching-uga.part %}{% endcapture %}
+{{ part | markdownify }}
 
 #### At Columbia University
-{% assign here = site.data.classes | where:"where", "Columbia" %}
-{% for class in here %}  {% unless class.omitcv  %}
-* {{ class.what | markdownify | strip_html | strip}}, {{ class.when }}.{% if class.comment %} *{{ class.comment | markdownify | strip_html | strip }}*{% endif %}
-{% endunless %}{% endfor %}
+
+{% capture part %}{% include_relative teaching-columbia.part %}{% endcapture %}
+{{ part | markdownify }}
 
 #### At Harvard University
-{% assign here = site.data.classes | where:"where", "Harvard" %}
-{% for class in here %}  {% unless class.omitcv  %}
-* {{ class.what | markdownify | strip_html | strip}}, {{ class.when }}.{% if class.comment %} *{{ class.comment | markdownify | strip_html | strip }}*{% endif %}
-{% endunless %}{% endfor %}
+
+{% capture part %}{% include_relative teaching-harvard.part %}{% endcapture %}
+{{ part | markdownify }}
 
 ## Invited Talks and Presentations
 
 #### In conferences or workshops
-{% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Conference" or talk.type == "Workshop" %}
-* {{ talk.where }}, {{ talk.when }}. *{{ talk.what | markdownify | strip_html | strip }}*.{% if talk.comment %}  
-  {{ talk.comment | markdownify | strip_html | strip }}{% endif %}
-  {% endif %}{% endunless %}{% endfor %}
+
+{% capture part %}{% include_relative talks-conferences.part %}{% endcapture %}
+{{ part | markdownify }}
 
 #### In seminars
-{% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Seminar" %}
-* {{ talk.where }}, {{ talk.when }}. *{{ talk.what | markdownify | strip_html | strip }}*.{% if talk.comment %}  
-  {{ talk.comment | markdownify | strip_html | strip }}{% endif %}
-{% endif %}{% endunless %}{% endfor %}
+
+{% capture part %}{% include_relative talks-seminars.part %}{% endcapture %}
+{{ part | markdownify }}
 
 ## Service
-{% for thing in site.data.service %}  {% unless thing.omitcv  %}
-* {{ thing.what }}{% if thing.when %} {{ thing.when }}{% endif %}
-{% endunless %}{% endfor %}
+
+{% capture part %}{% include_relative talks-seminars.part %}{% endcapture %}
+{{ part | markdownify }}
             
 ## References
 

@@ -63,7 +63,7 @@ We realize the moduli space of stable anticanonical tropical cubics as a four-di
   formats:
     pdf: papers/StackyAdmissibleCovers.pdf
     arXiv: http://arxiv.org/abs/1507.03252/
-  abstract: 	  We construct a well-behaved compactification of the space of finite covers of a stacky curve using admissible cover degenerations. Using our construction, we compactify the space of tetragonal curves on Hirzebruch surfaces. As an application, we explicitly describe the boundary divisors of the closure in \overline{M}_6 of the locus of smooth plane quintic curves.
+  abstract: 	  We construct a well-behaved compactification of the space of finite covers of a stacky curve using admissible cover degenerations. Using our construction, we compactify the space of tetragonal curves on Hirzebruch surfaces. As an application, we explicitly describe the boundary divisors of the closure in $\overline{M}_6$ of the locus of smooth plane quintic curves.
 
 - title: The Picard rank conjecture for the Hurwitz spaces of degree up to five
   coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
@@ -103,7 +103,7 @@ We realize the moduli space of stable anticanonical tropical cubics as a four-di
     pdf: papers/TrigonalSlopes.pdf
     arXiv: http://arxiv.org/abs/1211.2827/
     journal: http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/
-  abstract: We establish sharp bounds for the slopes of curves in \overline{M}_g that sweep the locus of trigonal curves, proving Stankova-Frenkel\'s conjectured bound of 7+6/g for even g and obtaining the bound 7+20/(3g+1) for odd g. For even g, we find an explicit expression of the so-called Maroni divisor in the Picard group of the space of admissible triple covers. For odd g, we describe the analogous extremal effective divisor and give a similar explicit expression. 
+  abstract: We establish sharp bounds for the slopes of curves in $\overline{M}_g$ that sweep the locus of trigonal curves, proving Stankova-Frenkel\'s conjectured bound of 7+6/g for even g and obtaining the bound 7+20/(3g+1) for odd g. For even g, we find an explicit expression of the so-called Maroni divisor in the Picard group of the space of admissible triple covers. For odd g, we describe the analogous extremal effective divisor and give a similar explicit expression. 
 
 - title: Modular compactifications of the space of marked trigonal curves
   journal: Advances in Mathematics, 248(0):96--154, 2013  

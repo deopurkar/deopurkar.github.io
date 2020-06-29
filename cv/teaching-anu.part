@@ -1,0 +1,6 @@
+---
+---
+{% assign here = site.data.classes | where:"where", "ANU" %}
+{% for class in here %}  {% unless class.omitcv  %}
+* {{ class.what }}, {{ class.when }}.{% if class.comment %}*{{ class.comment }}*{% endif %}
+{% endunless %}{% endfor %}

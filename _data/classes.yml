@@ -1,80 +1,80 @@
 - what: Algebraic Geometry (Algebra 3)
   where: ANU
-  when: Term 2, 2019
+  when: 2019
   url: ag/
 
 - what: Reading course on *Elliptic curves and modular forms* by Neil Koblitz
   where: ANU
-  when: Summer, 2018--2019
+  when: 2018--2019
 
 - what: Special topics course on Computational Polynomial Algebra (with Markus Hegland)
   where: ANU
-  when: Term 2, 2018
+  when: 2018
   
 - what: Reading course on *Algebaric curves and Riemann surfaces* by Rick Miranda
   where: ANU
-  when: Term 1, 2018
+  when: 2018
   url: 3349
 
 - what: Math 1113 (Precalculus)
   where: UGA
-  when: Fall 2017
+  when: 2017
 
 - what: Math 8320 (Algebraic curves)
   where: UGA
-  when: Fall 2017
+  when: 2017
 
 - what: Math 2260 (Calculus 2)
   where: UGA
-  when: Spring 2017
+  when: 2017
 
 - what: Math 2250 (Calculus 1)
   where: UGA
-  when: Fall 2016 
+  when: 2016 
 
 - what: Analysis and optimization
   where: Columbia
-  when: Spring 2016
+  when:  2016
   url: ao/
   
 - what: Young tableaux in algebra and geometry
   where: Columbia
-  when: Fall 2015
+  when: 2015
   url: seminar15/
 
 - what: Calculus 1
   where: Columbia
-  when: Spring 2015
+  when: 2015
   url: calc1/
 
 - what: Moduli of curves
   where: Columbia
-  when: Fall 2014
+  when: 2014
   url: moduli/
 
 - what: Calculus 1
   where: Columbia
   url: calc1sp14/
-  when: Spring 2014
+  when: 2014
 
 - what: Modern algebra 2
   where: Columbia
   url: algebra2/
-  when: Spring 2014
+  when: 2014
 
 - what: Modern algebra 1
   where: Columbia
   url: algebra1/
-  when: Fall 2013
+  when: 2013
 
 - what: Calculus 3
   where: Columbia
   url: calc3sp13/
-  when: Spring 2013
+  when: 2013
 
 - what: Calculus 2
   where: Columbia
-  when: Fall 2012
+  when: 2012
 
 - what: Linear algebra
   where: Harvard

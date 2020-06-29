@@ -1,0 +1,5 @@
+---
+---
+{% for student in site.data.supervision %}  {% unless student.omitcv  %}
+* {{ student.who  }}, *{{ student.what  }}*, {{ student.where  }},  {{ student.when }}. {% if student.comment %} ({{ student.comment  }}). {% endif %}{% endunless %}
+{% endfor %}
