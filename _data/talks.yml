@@ -4,22 +4,22 @@
   type: Seminar
 
 - what: Groups, spherical twists, and stability conditions (with Asilata Bapat and Anthony Licata)
-  where: Workshop on Triangulated Categories in Geometry and Representation Theory, Sydney
+  where: Workshop on triangulated categories in geometry and representation theory, Sydney
   when: 2019
   type: Workshop 	
 
 - what: Geometry of Hurwitz spaces
-  where: Character Varieties and Topological Quantum Field Theory, Auckland, New Zealand
+  where: Character varieties and topological quantum field theory, Auckland, New Zealand
   when: 2018
   type: Conference
 
 - what: On the geometric Steinitz problem
-  where: Number Theory Session at AustMS 2018, Adelaide
+  where: Number theory session at AustMS 2018, Adelaide
   when: 2018
   type: Conference
 
 - what: The work of Caucher Birkar
-  where: Joint MSI and Student Colloquium, ANU
+  where: Joint MSI and student colloquium, ANU
   when: 2018
   type: Expository
 
@@ -49,12 +49,12 @@
   type: Seminar
 
 - what: Quadrature and algebraic geometry
-  where: Workshop on Algebraic Geometry, Approximation, and Optimization, MATRIX, Creswick, Vic
+  where: Workshop on algebraic geometry, approximation, and optimization, MATRIX, Creswick, Vic
   when: 2018
   type: Workshop
 
 - what: Vector bundles and finite covers
-  where: Workshop on Topics in Algebraic Geometry, University of North Carolina, Chapel Hill, NC
+  where: Workshop on topics in algebraic geometry, University of North Carolina, Chapel Hill, NC
   when: 2017
   type: Workshop
 
@@ -84,7 +84,7 @@
   type: Colloquium
   
 - what: Vector bundles and finite covers
-  where: Conference on Moduli and Birational Geometry, Korea
+  where: Conference on moduli and birational geometry, Korea
   when: 2016
   type: Conference
 
@@ -104,7 +104,7 @@
   type: Seminar
 
 - what: Cycles on Hurwitz spaces
-  where: Workshop on Cycles on moduli spaces, Geometric Invariant Theory, and Dynamics, ICERM, Brown University
+  where: Workshop on cycles on moduli spaces, geometric invariant theory, and dynamics, ICERM, Brown University
   when: 2016
   type: Conference
         
@@ -155,7 +155,7 @@
 
 - when: 2015  
   where: Harvard/MIT, Cambridge, MA
-  what: Syzygies, GIT, and the log MMP for $\overline{M}_g$
+  what: Syzygies, GIT, and the log minimal model program for $\overline{M}_g$
   type: Seminar
 
 - when: 2015
@@ -233,7 +233,7 @@
   type: Poster
 
 - when: 2013
-  where: AGNES, Boston College, Boston, MA
+  where: Algebraic geometry northeastern series (AGNES), Boston College, Boston, MA
   what: Sharp slope bounds for sweeping families of trigonal curves
   type: Poster
 

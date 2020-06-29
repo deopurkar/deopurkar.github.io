@@ -3,8 +3,8 @@ default:
 
 ceevee:
 	cd _site/cv/; latexmk -C cv
-	cd _site/cv/; sed -i 's/##/#/' mutablecv.part
-	cd _site/cv/; pandoc --latex-engine=xelatex -o rest.tex mutablecv.part
+	cd _site/cv/; sed 's/##/#/' mutablecv.part > rest.part
+	cd _site/cv/; pandoc --latex-engine=xelatex -o rest.tex rest.part
 	cd _site/cv/; latexmk -pdf -pdflatex="xelatex" cv.tex 
 	cp _site/cv/cv.pdf cv/cv.pdf
 
