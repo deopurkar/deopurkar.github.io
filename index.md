@@ -29,20 +29,24 @@ I am an algebraic geometer with broader interests in algebra, geometry, represen
 I have worked on moduli spaces of algebraic curves, branched covers of curves, surfaces, vector bundles, and so on. 
 For my papers and preprints, see my [research](research/) page.  
 
-Just after graduate school, I wrote a [rough non-technical explanation](interests/) of my doctoral research, which might interest or amuse you.
+Just after graduate school, I wrote a [rough non-technical explanation](interests/) of my doctoral research, which might interest you.
 
-## Upcoming and current activities
-
-{% capture currenttime %}{{ site.time | date: '%s' }}{% endcapture %}
-{% assign activities = site.data.activities | sort: 'when' %}
-<ul>
+{% assign currentdate = 'now' | date: '%s' | plus:0 %}
+{% assign activities = site.data.activities | sort:'when' %}
+{% assign currentactivities = "" | split: "," %}
 {% for activity in activities %}
-{% capture activitytime %}{{ activity.when | date: '%s' }}{% endcapture %}
-{% if activitytime >= currenttime %}
+{% assign activitydate = activity.when | date: '%s' | plus:0 %}
+{% if activitydate >= currentdate %} {% assign currentactivities = currentactivities | push:activity %} {% endif %}
+{% endfor %}
+{% if currentactivities.size > 0 %}
+## Upcoming and current activities:
+
+<ul>
+{% for activity in currentactivities %}
 <li> {% if activity.display-when %}{{ activity.display-when }}{% else %}{{ activity.when | date: "%-d %b %Y" }}{% endif %}: {{ activity.what | markdownify | strip | remove: '<p>' | remove: '</p>'}}{% if activity.where %}, {{ activity.where | remove: '<p>' | remove: '</p>'}}{% endif %}.</li>
-{% endif %}
 {% endfor %}
 </ul>
+{% endif %}
 
 ## Teaching
 Last semester, I taught Algebraic Geometry (Algebra 3).
