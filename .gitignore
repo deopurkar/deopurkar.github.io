@@ -9,3 +9,5 @@ _site
 *.fdb_latexmk
 **/auto
 **/.DS_Store
+Gemfile.lock
+**/Gemfile.lock
