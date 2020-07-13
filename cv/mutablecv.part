@@ -1,6 +1,3 @@
----
----
-
 ## Publications and pre-prints
 
 {% for paper in site.data.papers  %}  {% unless paper.omitcv  %}
