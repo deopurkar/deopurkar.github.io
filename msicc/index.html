@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MSI Course Graph</title>
+    <script type="text/javascript" src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style type="text/css">
+      html, body {
+      padding: 0;
+      margin: 10;
+      width: 100%;
+      height: 100%;
+      }
+
+      #graph {
+      width: 100%;
+      height: 100%;
+      }
+
+      mark.green {
+      color: green;
+      background: none;
+      }
+      mark.orange {
+      color: orange;
+      background: none;
+      }
+      mark.red {
+      color: red;
+      background: none;
+      }
+      mark.blue {
+      color: blue;
+      background: none;
+      }
+      mark.yellow {
+      color: darkkhaki;
+      background: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="intro">
+      <p>
+	Courses in <mark class="blue">blue</mark> run in semester 1, <mark class="red">red</mark> in semester 2, and in <mark class="yellow">yellow</mark> in both semesters. Prerequisides in <mark class="red">red</mark> require a mark of "HD", <mark class="orange">orange</mark> at least "Credit", and in <mark class="green">green</mark> at least "Pass".
+      </p>
+      <p>
+    Click and hold to focus on a course; click and hold on empty space to go back. Double click to go to the course page in the catalogue.
+      </p>
+
+    </div>
+    <div id="graph">
+    </div>
+    <script type="text/javascript" src="msicc.js"></script>
+  </body>
+</html>
