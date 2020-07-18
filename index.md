@@ -22,14 +22,17 @@ CV [html](cv/index.html) [pdf](cv/cv.pdf)
 
 </div>
 
-## Research
+I am an algebraic geometer with broader interests in algebra, geometry, representation theory, and number theory. This means that I study algebraic varieties&mdash;spaces of solutions of algebraic equations. 
 
-I am an algebraic geometer with broader interests in algebra, geometry, representation theory, and number theory. This means that I study algebraic varieties&mdash;spaces of solutions of algebraic equations. Instead of studying one algebraic variety in isolation, I study the collection of all related algebraic varieties at once, using the remarkable feature that such a collection itself forms an algebraic variety (often called a "moduli space").
+Instead of studying one algebraic variety in isolation, I study the collection of all related algebraic varieties at once, using the remarkable feature that such a collection itself forms an algebraic variety (often called a "moduli space"). I think about moduli spaces of algebraic curves, branched covers of curves, surfaces, vector bundles, among other things.
 
-I have worked on moduli spaces of algebraic curves, branched covers of curves, surfaces, vector bundles, and so on. 
-For my papers and preprints, see my [research](research/) page.  
+
+
+
 
 Just after graduate school, I wrote a [rough non-technical explanation](interests/) of my doctoral research, which might interest you.
+
+
 
 {% assign currentdate = 'now' | date: '%s' | plus:0 %}
 {% assign activities = site.data.activities | sort:'when' %}

@@ -56,7 +56,8 @@ We realize the moduli space of stable anticanonical tropical cubics as a four-di
   journal: Ongoing
   formats:
     web: /research/genus7syz/index.html
-  omitcv: True
+  omitcv: true
+  abstract: We prove the analogue for ribbons of Green\'s canonical syzygy conjecture, formulated by Bayer and Eisenbud. Our proof uses the results of Voisin and Hirschowitz-Ramanan on Green\'s conjecture for general smooth curves.
 
 - title: Covers of stacky curves and limits of plane quintics
   journal: Transactions of the AMS, 371, 549--588
@@ -81,14 +82,15 @@ We realize the moduli space of stable anticanonical tropical cubics as a four-di
     pdf: papers/groebner.pdf
     journal: https://sites.google.com/site/albjmath/archives/vol-8/2014-6
   abstract: We use Groebner basis techniques to study the balanced canonical ribbon in each odd genus g \geq 5. We obtain equations and syzygies of the ribbon, give a Groebner interpretation of part of Alper, Fedorchuk, and Smyth\'s proof of finite Hilbert stability for canonical curves, and discuss the obstacles in using ribbons to give a new proof of Generic Green\'s Conjecture (Voisin\'s Theorem).
-    
+
 - title: Toward GIT stability of syzygies of canonical curves
   coauthors: ["[Maksym Fedorchuk](https://www2.bc.edu/maksym-fedorchuk/)", "[David Swinarski](http://faculty.fordham.edu/dswinarski/)"]
   journal: Algebraic Geometry (Foundation Compositio Mathematica), 3:1--22, 2016
   formats:
     arXiv: http://arxiv.org/abs/1401.6101/
     journal: http://www.algebraicgeometry.nl/2016-1/2016-1-001.pdf
-    
+  abstract: We introduce the problem of GIT stability for syzygy points of canonical curves with a view toward a GIT construction of the canonical model of the moduli space of stable curves. As the first step in this direction, we prove semi-stability of the first syzygy point for a general canonical curve of odd genus. 
+
 - title: Class of the Hodge eigenbundle using orbifold Riemann-Roch
   comment: Appendix to [*Cyclic covering morphisms on $\overline M_{0,n}$*](https://www2.bc.edu/maksym-fedorchuk/papers/cyclic-coverings-2013.pdf) by [Maksym Fedorchuk](https://www2.bc.edu/maksym-fedorchuk/).
   formats:
@@ -125,5 +127,4 @@ We realize the moduli space of stable anticanonical tropical cubics as a four-di
   journal: Thesis, Harvard, 2012
   formats:
     pdf: papers/thesis.pdf
-
 

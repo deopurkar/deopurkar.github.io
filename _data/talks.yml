@@ -133,6 +133,7 @@
   where: SIAM applied algebraic geometry conference, Daejeon, Korea
   what: Syzygies of canonical curves and the geometry of $\overline M_g$
   type: Conference
+  webnotes: /talks/siam_talk.pdf
 
 - when: 2015
   where: Mathematisches Forschungsinstitut Oberwolfach, Germany
@@ -232,14 +233,18 @@
   where: Summer institute in algebraic geometry, Salt Lake City, UT
   what: Limits of plane quintics via covers of stacky curves
   type: Poster
+  webnotes: /talks/quintics_poster.pdf
 
 - when: 2013
   where: Algebraic geometry northeastern series (AGNES), Boston College, Boston, MA
   what: Sharp slope bounds for sweeping families of trigonal curves
   type: Poster
+  webnotes: /talks/slopes_poster.pdf
 
 - when: 2011
   where: A celebration of algebraic geometry (conference for the 60th birthday of Joe Harris), Harvard, Cambridge, MA
   what: Birational geometry of the space of marked trigonal curves
   type: Poster
+  webnotes: /talks/trig_poster.pdf
+
 
