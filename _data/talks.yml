@@ -18,6 +18,7 @@
   where: Number theory session at the Australian Mathematical Society's annual meeting (AustMS) 2018, Adelaide
   when: 2018
   type: Conference
+  webnotes: /talks/AustMS2018.pdf
 
 - what: The work of Caucher Birkar
   where: Joint MSI and student colloquium, ANU
@@ -53,6 +54,7 @@
   where: Workshop on algebraic geometry, approximation, and optimization, MATRIX, Creswick, Vic
   when: 2018
   type: Workshop
+  webnotes: /talks/matrixtalk.pdf
 
 - what: Vector bundles and finite covers
   where: Workshop on topics in algebraic geometry, University of North Carolina, Chapel Hill, NC
@@ -128,6 +130,7 @@
   where: BC-Northeastern algebraic geometry conference, Boston, MA
   what: Limits of plane quintics via covers of stacky curves
   type: Conference
+  webnotes: /talks/AGNUBC-talk.pdf
 
 - when: 2015
   where: SIAM applied algebraic geometry conference, Daejeon, Korea
@@ -144,6 +147,7 @@
   where: Conference on moduli and birational geometry, Postech, Pohang, Korea
   what: Towards GIT stability of syzygies of canonical curves
   type: Conference
+  webnotes: /talks/Syz_Talk.pdf
 
 - when: 2015
   where: Purdue University, West Lafayette, IN
@@ -213,6 +217,7 @@
   where: Harvard/MIT, Cambridge, MA
   what: Compactifications of Hurwitz spaces
   type: Seminar
+  webnotes: /talks/Hdg_Talk.pdf
 
 - when: 2011
   where: Columbia University, New York, NY
