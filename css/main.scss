@@ -38,7 +38,8 @@ code {
 
 h1 {
     margin: 0em;
-    font-size: 120%;
+    font-size: 110%;
+    font-weight: bold;
     padding: 1em 0em;
     color: $foreground;
 }
@@ -93,7 +94,7 @@ ol li {
     right:50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    padding: 0.5em 0;
+    padding: 1em 0 0 0;
     background: $background;
     color: $foreground;
     align-items: center;
@@ -167,6 +168,7 @@ nav{
              }
 	}
 	a.current{
+	    font-weight: bold;
 	    color: $highlight;
 	}
     }
