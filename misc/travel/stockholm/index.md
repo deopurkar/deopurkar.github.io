@@ -5,7 +5,7 @@
   <head>
     <title>Anand Deopurkar</title>
     <?php include("headers.html"); ?>
-    <link rel="stylesheet" href="../style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" />
     <style type="text/css">
       <!--
 	  span{

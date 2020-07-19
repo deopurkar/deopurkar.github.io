@@ -106,7 +106,7 @@ I will also upload my lecture notes and the workshop handouts here.
   Continued from last week. Separatedness. Segre embedding.
   (Shafarevich 1.5.1)
 
-* Week 7 [Workshop 6](AGWorkshop06.pdf), [Lecture notes 7](AGWeek07.pdf)   
+* Week 7 [Lecture notes 7](AGWeek07.pdf)   
   Closed image property, applications. 
   (Shafarevich 1.5.2)
   
