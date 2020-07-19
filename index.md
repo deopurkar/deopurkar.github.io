@@ -1,7 +1,7 @@
 ---
 layout: default
 navigation-weight: 1
-navigation-title: Home
+navigation-title: home
 title: Anand Deopurkar
 ---
 

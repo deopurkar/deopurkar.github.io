@@ -1,8 +1,8 @@
 ---
 layout: default
 navigation-weight: 2
-navigation-title: Research
-title: Anand Deopurkar | Research 
+navigation-title: research
+title: Anand Deopurkar | research 
 ---
 
 <script type="text/javascript">

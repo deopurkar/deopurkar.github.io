@@ -1,8 +1,8 @@
 ---
 layout: default
 navigation-weight: 4
-navigation-title: Misc
-title: Anand Deopurkar | Miscelleneous
+navigation-title: misc
+title: Anand Deopurkar | miscelleneous
 ---
 
 # Odds and ends
