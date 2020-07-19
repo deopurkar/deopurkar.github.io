@@ -1,12 +1,16 @@
-- what: "[A mystery hunt style puzzle](puzzle.pdf)"
+- what: |
+      [An interactive dependency graph of ANU math department's course catalogue](https://deopurkar.github.io/msicg/). 
 
-- what: |-
-    Some mathematical visualisations
+- what: |
+      [A mystery hunt style puzzle](puzzle.pdf).
+
+- what: |
+    Some mathematical visualisations:
       - [The blowup of a planar triple point](blowup-of-a-triple-point.html) ([sage code](blowup-of-a-triple-point.sage))
       - [A conic fibration on a cubic surface](/teaching/ag/cubic.gif) ([sage code](cubic-fibration.sage))
-      - [Primes in the ring of Gaussian integers](/teaching/algebra2/GaussianPrimes.svg)
-      - [Primes in the ring of Eisenstein integers](/teaching/algebra2/EisensteinPrimes.svg)
 
-- what: "[Slides from an expository talk about the work of Claire Voisin](/talks/wimtalk.pdf) on the Women of Mathematics Day at the ANU"
+- what: |
+    [Slides from an expository talk about the work of Claire Voisin](/talks/wimtalk.pdf) on the Women of Mathematics Day at the ANU.
       
-- what: "[A non-technical description of my research interests](interests/) that I wrote just after my PhD."
+- what: |
+    [A non-technical description of my research interests](interests/) that I wrote just after my PhD.
