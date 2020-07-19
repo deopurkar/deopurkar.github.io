@@ -11,7 +11,6 @@ $highlight: #d05a5f;
 $foreground: #333333;
 
 body {
-    margin: 2em;
     max-width:80%;
     margin:auto;
     line-height: 130%;
@@ -40,7 +39,6 @@ h1 {
     margin: 0em;
     font-size: 110%;
     font-weight: bold;
-    padding: 1em 0em;
     color: $foreground;
 }
 
@@ -88,17 +86,17 @@ ol li {
 }
 
 .bar{
-    position: fixed;
-    width: 100vw;
-    left:50%;
-    right:50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    padding: 1em 0 0 0;
-    background: $background;
-    color: $foreground;
-    align-items: center;
-    border-bottom: 2px solid $highlight;
+   position: fixed;
+   width: 100vw;
+   left:50%;
+   right:50%;
+   margin-left: -50vw;
+   margin-right: -50vw;
+   padding: 1em 0 0 0;
+   background: $background2;
+   color: $foreground;
+   align-items: center;
+   border-bottom: 2px solid $highlight;
 }	
 
 .bar-content{
