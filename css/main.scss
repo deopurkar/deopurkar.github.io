@@ -81,7 +81,7 @@ ol li {
 }
 
 .bar{
-    background: $background;
+    background-image: linear-gradient($background, 95%, rgba(255,255,255,0));
     padding: 1em 0 1em 0;
     align-items: center;
     position: -webkit-sticky;
