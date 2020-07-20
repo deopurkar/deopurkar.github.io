@@ -36,7 +36,6 @@ code {
 }
 
 h1 {
-    margin: 0em;
     font-size: 150%;
     font-weight: bold;
 }
@@ -52,9 +51,8 @@ h3, h4 {
 }
 
 ul, ol {
-    padding-left: 2em;
     li {
-        margin-bottom: 0.2em;
+        margin-bottom: 0.5em;
     }
 }
 
@@ -95,29 +93,19 @@ ol li {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: auto;
     max-width: 80%;
 }
 
 footer {
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom:2em;
+    padding: 1em 0 1em 0;
     border-top: $highlight 1px dotted;
-    font-size: 90%;
+    font-size: 80%;
     text-align: right;
-    max-width: 100%;
     ul {
-        margin: 0;
         list-style-type: none;
-        padding: 0em;
-        padding-top: 0.5em;
-        padding-bottom: 0em;
-        padding-left: 0em;
     }
     li {
         display: inline;
-        margin: 0%;
 	padding-left:1em;
     }
 }
@@ -128,15 +116,8 @@ footer {
 }
 
 nav{
-    margin-top: -0.5em;
-
     ul {
-        margin: 0;
         list-style-type: none;
-        padding: 0em;
-        padding-top: 0.5em;
-        padding-bottom: 0em;
-        padding-left: 0em;
     }
 
     li {
