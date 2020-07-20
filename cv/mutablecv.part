@@ -1,63 +1,65 @@
-## Publications and pre-prints
+---
+---
+### Publications and pre-prints
 
 {% for paper in site.data.papers  %}  {% unless paper.omitcv  %}
 * *{{ paper.title }}*{% if paper.coauthors %} (with {{ paper.coauthors | join: ', ' }}){% endif %}.  
 {% if paper.journal %} {{ paper.journal }}.{% endif %}  {% if paper.comment %} {{ paper.comment }}{% endif %} {% if page.linkpapers %}{% for format in paper.formats %} [{{ format[0] }}]({{ format[1] }}){% endfor %}{% endif %}
 {% endunless %}{% endfor %}
 
-## Grants and awards
+### Grants and awards
 
 {% for award in site.data.awards %}  {% unless award.omitcv  %}
 * {{ award.what }}{% if award.with %} (with {{ award.with | join: ', '  }}){% endif %}, {{ award.when }}.  
   {% if award.comment %}*{{ award.comment  }}.*{% endif %}
 {% endunless %}{% endfor %}
 
-## Supervision
+### Supervision
 
 {% for student in site.data.supervision %}  {% unless student.omitcv  %}
 * {{ student.who  }}, *{{ student.what  }}*, {{ student.where  }},  {{ student.when }}. {% if student.comment %} ({{ student.comment  }}). {% endif %}{% endunless %}
 {% endfor %} 
 
-## Teaching
+### Teaching
 
-### At the Australian National University
+#### At the Australian National University
 
 {% assign here = site.data.classes | where:"where", "ANU" %}
 {% for class in here %}  {% unless class.omitcv  %}
 * {{ class.what }}, {{ class.when }}.{% if class.comment %}*{{ class.comment }}*{% endif %}
 {% endunless %}{% endfor %}
 
-### At the University of Georgia
+#### At the University of Georgia
 
 {% assign here = site.data.classes | where:"where", "UGA" %}
 {% for class in here %}  {% unless class.omitcv  %}
 * {{ class.what  }}, {{ class.when }}.{% if class.comment %}*{{ class.comment  }}*{% endif %}
 {% endunless %}{% endfor %}
 
-### At Columbia University
+#### At Columbia University
 
 {% assign here = site.data.classes | where:"where", "Columbia" %}
 {% for class in here %}  {% unless class.omitcv  %}
 * {{ class.what }}, {{ class.when }}.{% if class.comment %} *{{ class.comment }}*{% endif %}
 {% endunless %}{% endfor %}
 
-### At Harvard University
+#### At Harvard University
 
 {% assign here = site.data.classes | where:"where", "Harvard" %}
 {% for class in here %}  {% unless class.omitcv  %}
 * {{ class.what }}, {{ class.when }}.{% if class.comment %} *{{ class.comment }}*{% endif %}
 {% endunless %}{% endfor %}
 
-## Invited Talks and Presentations
+### Invited Talks and Presentations
 
-### In conferences or workshops
+#### In conferences or workshops
 
 {% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Conference" or talk.type == "Workshop" %}
 * {{ talk.where }}, {{ talk.when }}.  
   *{{ talk.what }}*. {% if talk.comment %} ({{ talk.comment }}.){% endif %}
   {% endif %}{% endunless %}{% endfor %}
 
-### In seminars
+#### In seminars
 
 {% for talk in site.data.talks %}  {% unless talk.omitcv  %}{% if talk.type == "Seminar" %}
 * {{ talk.where }}, {{ talk.when }}.  
@@ -65,13 +67,13 @@
   {{ talk.comment }}{% endif %}
 {% endif %}{% endunless %}{% endfor %}
 
-## Service
+### Service
 
 {% for thing in site.data.service %}  {% unless thing.omitcv  %}
 * {{ thing.what }}{% if thing.when %}, {{ thing.when }}{% endif %}.
 {% endunless %}{% endfor %}
 
-## References
+### References
 
 * Joseph Harris, Harvard University.
 
