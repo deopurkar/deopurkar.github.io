@@ -13,7 +13,7 @@ $foreground: #333333;
 body {
     max-width:80%;
     margin:auto;
-    margin-top: 1em;
+    margin-top: 2%;
     line-height: 130%;
     background: $background;
     font-family: Sans;
@@ -37,9 +37,10 @@ code {
 }
 
 h1 {
+    margin-top: 1%;
     font-size: 150%;
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-bottom: 2%;
 }
 
 h2 {
@@ -97,7 +98,7 @@ ol li {
 }
 
 footer {
-    padding: 1em 0 1em 0;
+    padding: 1% 0 1% 0;
     border-top: $highlight 1px dotted;
     font-size: 80%;
     text-align: right;
@@ -106,7 +107,7 @@ footer {
     }
     li {
         display: inline;
-	padding-left:1em;
+	padding-left:1%;
     }
 }
 
@@ -116,14 +117,17 @@ footer {
 }
 
 nav{
+    margin-top: 1%;
     ul {
-        list-style-type: none;
+	margin: 0;
+	padding: 0 0 0 0;
+	list-style-type: none;
     }
 
     li {
         display: inline;
         margin: 0%;
-	padding-left:1em;
+	padding:0.25em;
 	a {
 	    text-decoration: none;
 	    font-weight: bold;
@@ -150,10 +154,18 @@ table tr:nth-child(odd){
     background-color: $background2;
 } 
 
-/* Stabilization as width -> 0 */
+/* Stabilization as width -> zero */
 @media screen and (max-width: 54em) {
     body {
         font-size:80%;
+    }
+
+    h1 {
+	margin: 0%;
+    }
+
+    nav {
+	margin-top: 5%;
     }
 
     body, .bar-content {
@@ -162,10 +174,6 @@ table tr:nth-child(odd){
 
     .bar {
 	position: relative;
-    }
-
-    main{
-	padding-top: 1em;
     }
 
     .intro, .bar-content{
