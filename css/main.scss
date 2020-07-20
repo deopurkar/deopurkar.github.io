@@ -151,7 +151,7 @@ table tr:nth-child(odd){
 } 
 
 /* Stabilization as width -> 0 */
-@media screen and (max-width: 32em) {
+@media screen and (max-width: 54em) {
     body {
         font-size:80%;
     }
