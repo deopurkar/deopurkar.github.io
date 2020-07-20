@@ -13,6 +13,7 @@ $foreground: #333333;
 body {
     max-width:80%;
     margin:auto;
+    margin-top: 1em;
     line-height: 130%;
     background: $background;
     font-family: Sans;
@@ -38,6 +39,7 @@ code {
 h1 {
     font-size: 150%;
     font-weight: bold;
+    margin-bottom: 1em;
 }
 
 h2 {
@@ -81,7 +83,6 @@ ol li {
 
 .bar{
     background-image: linear-gradient($background, 95%, rgba(255,255,255,0));
-    padding: 1em 0 1em 0;
     align-items: center;
     position: -webkit-sticky;
     position: sticky;
