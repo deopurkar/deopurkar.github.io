@@ -13,7 +13,6 @@ $foreground: #333333;
 body {
     max-width:80%;
     margin:auto;
-    margin-top: 2%;
     line-height: 130%;
     background: $background;
     font-family: Sans;
@@ -37,10 +36,8 @@ code {
 }
 
 h1 {
-    margin-top: 1%;
     font-size: 150%;
     font-weight: bold;
-    margin-bottom: 2%;
 }
 
 h2 {
@@ -88,6 +85,10 @@ ol li {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    margin-top: 2%;
+    h1 {
+	margin: 0;
+    }
 }	
 
 .bar-content{
@@ -117,7 +118,6 @@ footer {
 }
 
 nav{
-    margin-top: 1%;
     ul {
 	margin: 0;
 	padding: 0 0 0 0;
@@ -160,20 +160,15 @@ table tr:nth-child(odd){
         font-size:80%;
     }
 
-    h1 {
-	margin: 0%;
-    }
-
-    nav {
-	margin-top: 5%;
-    }
-
     body, .bar-content {
 	max-width:95%;
     }
 
     .bar {
 	position: relative;
+	h1{
+	    margin-bottom: 1%;
+	}
     }
 
     .intro, .bar-content{
