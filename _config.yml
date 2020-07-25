@@ -33,6 +33,7 @@ sass:
 kramdown:
   input: GFM
   parse_block_html: true
+  header_offset: 1
 
 # Repository
 repository: deopurkar/deopurkar.github.io

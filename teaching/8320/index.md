@@ -16,7 +16,7 @@ Possible further topics include:
 
 Here is the [official course syllabus](syllabus.pdf).
 
-## Notes
+# Notes
 
 I will post the notes that I prepare for the lectures; these may or may not end up being what we discuss in class!
 
@@ -42,7 +42,7 @@ I will post the notes that I prepare for the lectures; these may or may not end 
 1. [Oct 26, Serre duality](RR.pdf)
 1. [Oct 31, Inflection, ramification, Weierstrass points](Oct31.pdf)
 
-## Homework
+# Homework
 
 Work out the problems in enough detail to convince yourself that you understand what is going on, but you need not turn in any write-up, unless you require a grade.
 If you require a grade, then you must write up complete solutions to at least 20 problems over the course of the semester.
@@ -53,7 +53,7 @@ If you require a grade, then you must write up complete solutions to at least 20
 1. [Homework 4](hw4.pdf)
 1. [Homework 5](hw5.pdf)
 
-## Calendar
+# Calendar
 
 <div class="calendar" style="padding-bottom:45%">
 <iframe src="https://calendar.google.com/calendar/embed?title=Math%208820%3A%20Algebraic%20curves&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=c49mop3flk075c93a5qpai38f8%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
