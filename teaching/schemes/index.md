@@ -15,16 +15,15 @@ We will hang out at [**schemes2020 on zulip**](https://schemes2020.zulipchat.com
 ## Prerequisites
 
 A solid foundation in topology and algebra (rings, fields, modules), and familiarity with some algebraic geometry or commutative algebra and the language of categories.
-At ANU, this means Analysis 1, Algebra 1, Algebra 2, and either my Algebra 3 on classical algebraic geometry, Jim's Algebra 3 on functorial algebraic geometry, or Amnon's commutative algebra.
-
+This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Special Topics Course about algebraic geometry (Martin/Markus) or commutative algebra (Amnon).
 **If you are taking this course for a grade, you must have these pre-requisites or my explicit permission.** But in the open spirit of Ravi's project, if you want to participate (audit) this course, you are welcome! I will not be a gate-keeper. 
 
 
 ## Assessement
 
 1.  4 written assignments (40%)
-2.  One or two written accounts of our weekly discussions (20%)
-3.  Two oral exams (40%)
+2.  One or two written accounts of our weekly discussions (10%)
+3.  Two oral exams (50%)
 
 
 # Weekly reading, viewing, and doing
