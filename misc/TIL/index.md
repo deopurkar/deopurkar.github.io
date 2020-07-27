@@ -4,7 +4,7 @@ title: Today I Learned
 ---
 
 {% for post in site.posts %}
-## [{{ post.title }}]({{ post.url }}) 
+# [{{ post.title }}]({{ post.url }}) 
 {{ post.excerpt | strip_html }} [more...]({{ post.url }})
 
 Tags: {{ post.tags }}.

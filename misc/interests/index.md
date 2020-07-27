@@ -17,7 +17,7 @@ title: Anand Deopurkar
 	-->
 </style>
 
-## A rough non-technical description of my interests
+# A rough non-technical description of my interests
     
 ![Ellipse](ellipse.png){: class="picture right"}
 I am interested in the geometry of curves defined by polynomial equations. The circle <code>(x<sup>2</sup> + y<sup>2</sup> = 1)</code> or the ellipse <code>(x<sup>2</sup> + 3y<sup>2</sup> = 1)</code> are some simple examples of such geometric curves.
