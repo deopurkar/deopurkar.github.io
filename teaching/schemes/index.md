@@ -34,7 +34,7 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 
 ## Week 1
 
--   Read: Chapter 1 Sections 1.1&#x2013;1.3.4 (localisation).
+-   Read: [Chapter 1 Sections 1.1&#x2013;1.3.4 (localisation)](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf).
 -   Watch: [AGITOC Pseudo-lecture 1](https://www.youtube.com/watch?v=WTEZjR5aNjw).
 -   Do: 1.2.B, 1.3.A, 1.3.D,  1.3.E, 1.3.G, and ponder:
     1.  "A group is a category with 1 object and invertible morphisms." Love it or hate it?
