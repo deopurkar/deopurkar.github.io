@@ -9,7 +9,7 @@ no-navigation: true
 
 We will learn the modern foundations of algebraic geometry: sheaves, schemes, and cohomology from [Ravi Vakil's book-in-progress](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf), online lecture videos, and weekly discussions.
 
-We will hang out at [**schemes2020 on zulip**](https://schemes2020.zulipchat.com).
+We will hang out at [**schemes2020 on zulip**](https://schemes2020.zulipchat.com). Email me for an invitation.
 
 
 ## Prerequisites
