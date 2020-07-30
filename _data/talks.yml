@@ -20,6 +20,11 @@
   type: Conference
   webnotes: /talks/AustMS2018.pdf
 
+- what: The work of Claire Voisin
+  where: Women in mathematics day, ANU
+  when: 2019
+  type: Expository
+
 - what: The work of Caucher Birkar
   where: Joint MSI and student colloquium, ANU
   when: 2018
