@@ -16,7 +16,7 @@ We will hang out at [**schemes2020 on zulip**](https://schemes2020.zulipchat.com
 
 A solid foundation in topology and algebra (rings, fields, modules), and familiarity with some algebraic geometry or commutative algebra and the language of categories.
 This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Special Topics Course about algebraic geometry (Martin/Markus) or commutative algebra (Amnon).
-**If you are taking this course for a grade, you must have these pre-requisites or my explicit permission.** But in the open spirit of Ravi's project, if you want to participate (audit) this course, you are welcome!
+**If you are taking this course for a grade, you must have these pre-requisites or my explicit permission.** But in the open spirit of Ravi's project, if you want to participate (audit) this course, you are welcome! 
 
 
 ## Assessement
@@ -42,6 +42,20 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     3.  You may not have seen localisation before. That's OK. Try to digest as much as you can.
     4.  Show (preferably using the universal property) that the localisation $R\_f$ is isomorphic to $R[y]/(yf-1)$.
     5.  What is the geometric meaning of localisation? Can you use it to construct an example where $R \\neq 0$ but $R\_f = 0$?
+
+
+## Week 2
+
+-   Read: [Chapter 1 Section 1.3.6 (skim), 1.4, 2.1, 2.2](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
+-   Watch/skim: [AGITOC Pseudo-lecture 2.](https://www.youtube.com/watch?v=mqt1f8owKrU)
+-   Do:
+    1.  1.4.B (limits in `Sets`)
+    2.  1.4.C ($\\mathbb Q$ as a colimit)
+    3.  1.4.F (localisation as a colimit)
+    4.  2.1.A (stalk is a local ring)
+    5.  2.2.D (sheaves of functions)
+    6.  2.2.E (constant sheaves)
+    7.  2.2.F (morphisms form a sheaf)
 
 
 # More things to read or watch
