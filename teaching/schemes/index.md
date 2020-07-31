@@ -9,7 +9,7 @@ no-navigation: true
 
 We will learn the modern foundations of algebraic geometry: sheaves, schemes, and cohomology from [Ravi Vakil's book-in-progress](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf), online lecture videos, and weekly discussions.
 
-We will hang out at [**schemes2020 on zulip**](https://schemes2020.zulipchat.com). Email me for an invitation.
+We will hang out at [**schemes2020 on zulip**](https://schemes2020.zulipchat.com).
 
 
 ## Prerequisites
@@ -46,8 +46,9 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 
 ## Week 2
 
--   Read: [Chapter 1 Section 1.3.6 (skim), 1.4, 2.1, 2.2](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
--   Watch/skim: [AGITOC Pseudo-lecture 2.](https://www.youtube.com/watch?v=mqt1f8owKrU)
+-   Read: [Chapter 1 Section 1.4, 2.1, 2.2, 2.3](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
+-   Skim: [Chapter 1 Section 1.3.6, 1.3.7, 1.5, 1.6](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
+-   Watch: [AGITOC Pseudo-lecture 2.](https://www.youtube.com/watch?v=mqt1f8owKrU)
 -   Do:
     1.  1.4.B (limits in `Sets`)
     2.  1.4.C ($\\mathbb Q$ as a colimit)
@@ -56,6 +57,9 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     5.  2.2.D (sheaves of functions)
     6.  2.2.E (constant sheaves)
     7.  2.2.F (morphisms form a sheaf)
+    8.  2.3.C (sheaf hom)
+    9.  2.3.I (kernel of sheaf maps is a sheaf)
+    10. 2.3.J (but the cokernel may not be a sheaf)
 
 
 # More things to read or watch
