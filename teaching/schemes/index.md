@@ -21,9 +21,17 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 
 ## Assessement
 
-1.  4 written assignments (40%)
-2.  One or two written accounts of our weekly discussions (10%)
-3.  Two oral exams (50%)
+1.  5 written assignments (50%)
+2.  Two oral exams (50%)
+
+
+## Written assignments
+
+1.  (Due 14 Aug): 1.3.E, 1.4.E, 2.3.A, 2.3.I, 2.3.J, 2.4.E, 2.4.N, 2.4.O
+2.  (Due 04 Sep)
+3.  (Due 25 Sep)
+4.  (Due 09 Oct)
+5.  (Due 30 Oct)
 
 
 # Weekly reading, viewing, and doing
