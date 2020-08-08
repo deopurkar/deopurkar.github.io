@@ -27,7 +27,7 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 
 ## Written assignments
 
-1.  (Due 14 Aug): 1.3.E, 1.4.E, 2.3.A, 2.3.I, 2.3.J, 2.4.E, 2.4.N, 2.4.O
+1.  (Due 14 Aug): 1.3.E, 1.4.E, 2.3.A, 2.3.I, 2.3.J, 2.4.E, 2.4.N, 2.4.O.
 2.  (Due 04 Sep)
 3.  (Due 25 Sep)
 4.  (Due 09 Oct)
@@ -68,6 +68,16 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     8.  2.3.C (sheaf hom)
     9.  2.3.I (kernel of sheaf maps is a sheaf)
     10. 2.3.J (but the cokernel may not be a sheaf)
+
+
+## Week 3
+
+-   Read: Two independent tracks
+    -   (Sheaves continued): 2.4, 2.5, 2.6
+    -   (Affine schemes): 3.1, 3.2 (up to 3.2.E, and especially Examples 1&#x2013;8).
+-   Watch: [AGITTOC Pseudo-lecture 3](https://youtu.be/0lZFVGsYxj8)
+-   Think:
+    Come to terms with the new way of defining spaces from local models. The old mantra was "set + topology + local models + gluing maps". Now sheaves do the gluing for us, so the new mantra is "set + topology + sheaf of rings + local models".
 
 
 # More things to read or watch
