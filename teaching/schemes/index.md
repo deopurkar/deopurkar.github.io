@@ -102,7 +102,7 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     -   **3.4, 3.5:** Everything is important, but also fairly straightforward, especially if you have seen the Zariski topology.
     -   **3.6.A:** Test your ability to go back and forth between algebra and geometry.
     -   **3.6:** A lot of it should be deja-vu, but watch out for novelties&#x2013;non-closed/generic points (3.6.8, 3.6.10, 3.6.M, 3.6.N)
-    -   **3.6.J/K:** Explain why "classical points" (= maximal ideals) are enough for studying varieties (Hint: mostly because of the Nullstellensatz. Corollary: when we consider all primes, not just the maximals, Nullstellensatz becomes plays a less important role.)
+    -   **3.6.J/K:** Explain why "classical points" (= maximal ideals) are enough for studying varieties (Hint: mostly because of the Nullstellensatz. Corollary: when we consider all primes, not just the maximals, Nullstellensatz plays a less important role.)
 -   Watch: [AGITTOC Pseudo-lecture 4](https://www.youtube.com/watch?v=q473BSN2_qE)
 
 
