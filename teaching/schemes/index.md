@@ -89,7 +89,7 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 ## Week 4
 
 -   Read:
-    -   Chapter 3 up to 3.6.
+    -   [Chapter 3 up to 3.6](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf) (Skip Noetherian-ness for now)
     -   Get comfortable with [2.5 (sheaves on a base)](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf) if you haven't already. We will very often work with a convenient base instead of the full topology.
 
 -   Important points
