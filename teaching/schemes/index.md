@@ -91,19 +91,18 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 -   Read:
     -   [Chapter 3 up to 3.6](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf) (Skip Noetherian-ness for now)
     -   Get comfortable with [2.5 (sheaves on a base)](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf) if you haven't already. We will very often work with a convenient base instead of the full topology.
-
 -   Important points
-    -   3.2.1:: How to "evaluate" a "function" at a "point".
-    -   Examples 1&#x2013;8: Learn to draw!
-    -   3.2.4, 3.2.5 (the Nullstellensatz):: This is a major theorem, whose proof goes beyond just unravelling the definitions. But it is more important to digest the statement and its consequences than to know the proof. It's also good to keep track of where we use this theorem.
-    -   3.2.G, 3.2.Q:: Wrap your head around non-closed fields and other rings that seem "ungeometric."
-    -   3.2.J/K, 3.4.I:: Pictures of quotient and localisation.
-    -   3.2.10:: Induced maps on spectra.
-    -   3.2.11, 3.2.12:: The fault of nilpotents
-    -   3.4, 3.5:: Everything is important, but also fairly straightforward, especially if you have seen the Zariski topology.
-    -   3.6.A:: Test your ability to go back and forth between algebra and geometry.
-    -   3.6:: A lot of it should be deja-vu, but watch out for novelties&#x2013;non-closed/generic points (3.6.8, 3.6.10, 3.6.M, 3.6.N)
-    -   3.6.J/K:: Explain why "classical points" (= maximal ideals) are enough for studying varieties (Hint: mostly because of the Nullstellensatz. Corollary: when we consider all primes, not just the maximals, Nullstellensatz becomes plays a less important role.)
+    -   **3.2.1:** How to "evaluate" a "function" at a "point".
+    -   **Examples 1&#x2013;8:** Learn to draw!
+    -   **3.2.4, 3.2.5 (the Nullstellensatz):** This is a major theorem, whose proof goes beyond just unravelling the definitions. But it is more important to digest the statement and its consequences than to know the proof. It's also good to keep track of where we use this theorem.
+    -   **3.2.G, 3.2.Q:** Wrap your head around non-closed fields and other rings that seem "ungeometric."
+    -   **3.2.J/K, 3.4.I:** Pictures of quotient and localisation.
+    -   **3.2.10:** Induced maps on spectra.
+    -   **3.2.11, 3.2.12:** The fault of nilpotents
+    -   **3.4, 3.5:** Everything is important, but also fairly straightforward, especially if you have seen the Zariski topology.
+    -   **3.6.A:** Test your ability to go back and forth between algebra and geometry.
+    -   **3.6:** A lot of it should be deja-vu, but watch out for novelties&#x2013;non-closed/generic points (3.6.8, 3.6.10, 3.6.M, 3.6.N)
+    -   **3.6.J/K:** Explain why "classical points" (= maximal ideals) are enough for studying varieties (Hint: mostly because of the Nullstellensatz. Corollary: when we consider all primes, not just the maximals, Nullstellensatz becomes plays a less important role.)
 -   Watch: [AGITTOC Pseudo-lecture 4](https://www.youtube.com/watch?v=q473BSN2_qE)
 
 
