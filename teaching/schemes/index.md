@@ -73,8 +73,8 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 ## Week 3
 
 -   Read: Two independent tracks
-    -   (Sheaves continued): 2.4, 2.5, 2.6
-    -   (Affine schemes): 3.1, 3.2 (up to 3.2.E, and especially Examples 1&#x2013;8).
+    -   (Sheaves continued): [2.4, 2.5, 2.6](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
+    -   (Affine schemes): [3.1, 3.2 (up to 3.2.E, and especially Examples 1&#x2013;8)](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf).
 -   Watch: [AGITTOC Pseudo-lecture 3](https://youtu.be/0lZFVGsYxj8)
 -   Think:
     Come to terms with the new way of defining spaces from local models. The old mantra was "set + topology + local models + gluing maps". Now sheaves do the gluing for us, so the new mantra is "set + topology + sheaf of rings + local models".
