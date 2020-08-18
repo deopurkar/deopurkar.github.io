@@ -16,7 +16,7 @@ We realize the moduli space of stable anticanonical tropical cubics as a four-di
 - title: Ramification divisors of general projections
   coauthors: ["[Eduard Duryev](https://eduryev.weebly.com/)", "[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
   abstract:   We study the ramification divisors of projections of a smooth projective variety onto a linear subspace of the same dimension. We prove that the ramification divisors vary in a maximal dimensional family for a large class of varieties. Going further, we study the map that associates to a linear projection its ramification divisor. We show that this map is dominant for most (but not all!) varieties of minimal degree, using (linked) limit linear series of higher rank. We find the degree of this map in some cases, extending the classical appearance of Catalan numbers in the geometry of rational normal curves, and give a geometric explanation of its fibers in terms of torsion points of naturally occurring elliptic curves in the case of the Veronese surface and the quartic rational surface scroll.
-  journal: "Pre-print, [arXiv:1901.01513](http://arxiv.org/abs/1901.01513/)"
+  journal: Documenta Mathematica, to appear
   formats:
         pdf: /research/papers/PR.pdf
         arXiv: http://arxiv.org/abs/1901.01513/
