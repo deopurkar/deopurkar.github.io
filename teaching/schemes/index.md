@@ -75,7 +75,6 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     9.  2.3.I (kernel of sheaf maps is a sheaf)
     10. 2.3.J (but the cokernel may not be a sheaf)
 
-
 ## Week 3
 
 -   Read: Two independent tracks
@@ -125,4 +124,5 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 
 -   [Ravi Vakil's pseudo-course website](https://math216.wordpress.com/agittoc-2020/)
 -   [Richard Borcherd's lectures on schemes](https://www.youtube.com/watch?v=BX3jiLdehA4&list=PL8yHsr3EFj50Un2NpfPySgXctRQK7CLG-)
+
 
