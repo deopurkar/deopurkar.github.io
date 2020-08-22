@@ -27,11 +27,11 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 
 ## Written assignments
 
-1.  (Due 14 Aug): 1.3.E, 1.4.E, 2.3.A, 2.3.I, 2.3.J, 2.4.E, 2.4.N, 2.4.O.
-2.  (Due 04 Sep)
-3.  (Due 25 Sep)
-4.  (Due 09 Oct)
-5.  (Due 30 Oct)
+1.  Due 14 Aug: 1.3.E, 1.4.E, 2.3.A, 2.3.I, 2.3.J, 2.4.E, 2.4.N, 2.4.O.
+2.  Due 04 Sep: 3.2.K, 3.2.M, 3.2.R, 3.2.S, 3.4.I, 3.6.C, 3.6.N, 4.3.F.
+3.  Due 25 Sep
+4.  Due 09 Oct
+5.  Due 30 Oct
 
 
 # More things to read or watch
@@ -74,6 +74,7 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     8.  2.3.C (sheaf hom)
     9.  2.3.I (kernel of sheaf maps is a sheaf)
     10. 2.3.J (but the cokernel may not be a sheaf)
+
 
 ## Week 3
 
@@ -124,5 +125,4 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 
 -   [Ravi Vakil's pseudo-course website](https://math216.wordpress.com/agittoc-2020/)
 -   [Richard Borcherd's lectures on schemes](https://www.youtube.com/watch?v=BX3jiLdehA4&list=PL8yHsr3EFj50Un2NpfPySgXctRQK7CLG-)
-
 
