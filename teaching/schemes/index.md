@@ -27,11 +27,11 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 
 ## Written assignments
 
-1.  (Due 14 Aug): 1.3.E, 1.4.E, 2.3.A, 2.3.I, 2.3.J, 2.4.E, 2.4.N, 2.4.O.
-2.  (Due 04 Sep)
-3.  (Due 25 Sep)
-4.  (Due 09 Oct)
-5.  (Due 30 Oct)
+1.  Due 14 Aug: 1.3.E, 1.4.E, 2.3.A, 2.3.I, 2.3.J, 2.4.E, 2.4.N, 2.4.O.
+2.  Due 04 Sep: 3.2.K, 3.2.M, 3.2.R, 3.2.S, 3.4.I, 3.6.C, 3.6.N, 4.3.F.
+3.  Due 25 Sep
+4.  Due 09 Oct
+5.  Due 30 Oct
 
 
 # More things to read or watch
@@ -75,6 +75,7 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     9.  2.3.I (kernel of sheaf maps is a sheaf)
     10. 2.3.J (but the cokernel may not be a sheaf)
 
+
 ## Week 3
 
 -   Read: Two independent tracks
@@ -88,26 +89,40 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 ## Week 4
 
 -   Read:
-    -   [Chapter 3 up to 3.6](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf) (Skip Noetherian-ness for now)
-    -   Get comfortable with [2.5 (sheaves on a base)](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf) if you haven't already. We will very often work with a convenient base instead of the full topology.
+    -   Get comfortable wit [2.5 (sheaves on a base)](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf) if you haven't already. We will very often work with a convenient base instead of the full topology.
+    -   [1.3.5 (tensor products), 1.3.6 (fiber products)](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf).
+    -   Chapter 3 up to 3.6.
 -   Important points
-    -   **3.2.1:** How to "evaluate" a "function" at a "point".
-    -   **Examples 1&#x2013;8:** Learn to draw!
-    -   **3.2.4, 3.2.5 (the Nullstellensatz):** This is a major theorem, whose proof goes beyond just unravelling the definitions. But it is more important to digest the statement and its consequences than to know the proof. It's also good to keep track of where we use this theorem.
-    -   **3.2.G, 3.2.Q:** Wrap your head around non-closed fields and other rings that seem "ungeometric."
-    -   **3.2.J/K, 3.4.I:** Pictures of quotient and localisation.
-    -   **3.2.10:** Induced maps on spectra.
-    -   **3.2.11, 3.2.12:** The fault of nilpotents
-    -   **3.4, 3.5:** Everything is important, but also fairly straightforward, especially if you have seen the Zariski topology.
-    -   **3.6.A:** Test your ability to go back and forth between algebra and geometry.
-    -   **3.6:** A lot of it should be deja-vu, but watch out for novelties&#x2013;non-closed/generic points (3.6.8, 3.6.10, 3.6.M, 3.6.N)
-    -   **3.6.J/K:** Explain why "classical points" (= maximal ideals) are enough for studying varieties (Hint: mostly because of the Nullstellensatz. Corollary: when we consider all primes, not just the maximals, Nullstellensatz plays a less important role.)
+    -   3.2.1:: How to "evaluate" a "function" at a "point".
+    -   Examples 1&#x2013;8: Learn to draw!
+    -   3.2.4, 3.2.5 (the Nullstellensatz):: This is a major theorem, whose proof goes beyond just unravelling the definitions. But it is more important to digest the statement and its consequences than to know the proof. It's also good to keep track of where we use this theorem.
+    -   3.2.G, 3.2.Q:: Wrap your head around non-closed fields and other rings that seem to have little to do with geometry.
+    -   3.2.J/K, 3.4.I:: Pictures of quotient and localisation.
+    -   3.2.10:: Induced maps on spectra.
+    -   3.2.11, 3.2.12:: The fault of nilpotents
+    -   3.4, 3.5:: Everything is important, but also fairly straightforward, especially if you have seen the Zariski topology.
+    -   3.6.A:: Test your ability to go back and forth between algebra and geometry.
+    -   3.6:: A lot of it should be deja-vu, but watch out for novelties&#x2013;non-closed/generic points (3.6.8, 3.6.10, 3.6.M, 3.6.N)
+    -   3.6.J/K:: Explain why "classical points" (= maximal ideals) are enough for studying varieties (Hint: mostly because of the Nullstellensatz. Corollary: when we consider all primes, not just the maximals, Nullstellensatz becomes plays a less important role.)
 -   Watch: [AGITTOC Pseudo-lecture 4](https://www.youtube.com/watch?v=q473BSN2_qE)
+
+
+## Week 5
+
+-   Read:
+    -   Finish Chapter 3.
+    -   Chapter 4: Up to 4.4
+-   Important points:
+    -   **4.1.2:** You must really understand the proof of this theorem, so I urge you to work out the module case (exercise 4.1.D) to make sure you have.
+    -   **4.2:** The art of visualising nilpotents. This feels like pseudo-mathematics, but it is strangely enlightening.
+    -   **4.3:** Definition of scheme &#x2013; no surprises here.
+    -   **4.4:** Take your time to read these in detail.
+-   Watch: [AGITTOC Pseudolecture 6](https://www.youtube.com/watch?v=qDN_hwEXH0k) and [first half of pseudolecture 7](https://www.youtube.com/watch?v=4KJwmiYHVk4)
+    It is becoming hard to match the pseudo-lectures exactly to our readings. What we did in week 4 gets covered in pseudolecture 4, 5, and the beginning of 6. This is because I am skipping / going fast over things you have already seen in your first algebraic geometry course (like Noetherian topological spaces, irreducibility, Hilbert basis theorem). So feel free to jump/skip around in the lectures.
 
 
 # More things to read or watch
 
 -   [Ravi Vakil's pseudo-course website](https://math216.wordpress.com/agittoc-2020/)
 -   [Richard Borcherd's lectures on schemes](https://www.youtube.com/watch?v=BX3jiLdehA4&list=PL8yHsr3EFj50Un2NpfPySgXctRQK7CLG-)
-
 
