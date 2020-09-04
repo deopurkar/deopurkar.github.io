@@ -2,8 +2,7 @@
 layout: default
 title: Foundations of algebraic geometry, aka schemes 2020
 no-navigation: true
----or
-
+---
 
 # Introduction
 
