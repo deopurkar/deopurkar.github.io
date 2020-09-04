@@ -34,10 +34,9 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 5.  Due 30 Oct
 
 
-# More things to read or watch
+# Midterm exam
 
--   [Ravi Vakil's pseudo-course website](https://math216.wordpress.com/agittoc-2020/)
--   [Richard Borcherd's lectures on schemes](https://www.youtube.com/watch?v=BX3jiLdehA4&list=PL8yHsr3EFj50Un2NpfPySgXctRQK7CLG-)
+The midterm exam will be an oral exam conducted by me and James Borger in the week of September 21. It will be about 45 minutes long. I have prepared [a list of questions for the exam](midterm1.pdf). We will ask questions from this list, small variations on them, and follow up questions based on your responses.
 
 
 # Weekly reading, viewing, and doing
@@ -121,8 +120,56 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     It is becoming hard to match the pseudo-lectures exactly to our readings. What we did in week 4 gets covered in pseudolecture 4, 5, and the beginning of 6. This is because I am skipping / going fast over things you have already seen in your first algebraic geometry course (like Noetherian topological spaces, irreducibility, Hilbert basis theorem). So feel free to jump/skip around in the lectures.
 
 
+## Week 6
+
+-   **Read:** [Section 4.5](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
+-   **Important points:** -   When you learn algebraic geometry, it is easy to see that affine schemes are important&#x2014;they are the building blocks of everything! It is less clear why projective schemes are important.        
+        But projective schemes are everywhere! Almost everything you will see in your life as an algebraic geometer will be (quasi)-projective. Unfortunately, you have to take this statement on faith (right now).
+    -   **4.5.A:** DIY projective scheme. This is worth doing just to convince yourself that you could build a projective scheme yourself by hand.
+        The \\({\\rm Proj}\\) construction is a slick shortcut.
+    -   **4.5.4:** Why should projective schemes have to do anything with graded rings? Ravi talks a bit about this in the pseudo-lectures.
+        -   **One answer:** if you want equations to make sense in projective space, they have to be homogeneous. So the notion of degree comes in fundamentally.
+        -   **A different answer:** A projective scheme is an affine scheme (minus some "irrelevant points") modulo the action of the multiplicative group \\(\\mathbb G\_m\\).
+            A graded ring is the same as a ring along with the action of the multiplicative group \\(\\mathbb G\_m\\) (why is this?).
+            So graded rings naturally come in when we consider affine schemes with a \\(\\mathbb G\_m\\) action ("up to scaling").
+    -   **4.5.7:** This section looks short, but it will take time to digest!
+    -   **4.5.O, 4.5.P:** If you can do these, you have a good understanding of the projective space.
+-   **Watch:** [AGITTOC Pseudolecture 8](https://www.youtube.com/watch?v=JZ01Akw52z8)
+
+
+## Week 7
+
+Morphisms, open embeddings, closed embeddings
+
+
+## Week 8
+
+Fiber products, base change
+
+
+## Week 9
+
+Separated and proper morphisms
+
+
+## Week 10
+
+Quasicoherent and coherent sheaves
+
+
+## Week 11
+
+Line bundles
+
+
+## Week 12
+
+Cech cohomology
+
+
 # More things to read or watch
 
 -   [Ravi Vakil's pseudo-course website](https://math216.wordpress.com/agittoc-2020/)
 -   [Richard Borcherd's lectures on schemes](https://www.youtube.com/watch?v=BX3jiLdehA4&list=PL8yHsr3EFj50Un2NpfPySgXctRQK7CLG-)
+-   [Why are points of a scheme the prime ideals](pointsareprimes.pdf)
 
