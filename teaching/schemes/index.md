@@ -4,7 +4,6 @@ title: Foundations of algebraic geometry, aka schemes 2020
 no-navigation: true
 ---
 
-
 # Introduction
 
 We will learn the modern foundations of algebraic geometry: sheaves, schemes, and cohomology from [Ravi Vakil's book-in-progress](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf), online lecture videos, and weekly discussions.
@@ -34,10 +33,9 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 5.  Due 30 Oct
 
 
-# More things to read or watch
+# Midterm exam
 
--   [Ravi Vakil's pseudo-course website](https://math216.wordpress.com/agittoc-2020/)
--   [Richard Borcherd's lectures on schemes](https://www.youtube.com/watch?v=BX3jiLdehA4&list=PL8yHsr3EFj50Un2NpfPySgXctRQK7CLG-)
+The midterm exam will be an oral exam conducted by me and James Borger in the week of September 21. It will be about 45 minutes long. I have prepared [a list of questions for the exam](midterm1.pdf). We will ask questions from this list, small variations on them, and follow up questions based on your responses.
 
 
 # Weekly reading, viewing, and doing
@@ -136,9 +134,6 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     -   **4.5.7:** This section looks short, but it will take time to digest!
     -   **4.5.O, 4.5.P:** If you can do these, you have a good understanding of the projective space.
 -   **Watch:** [AGITTOC Pseudolecture 8](https://www.youtube.com/watch?v=JZ01Akw52z8)
-
-
-## Midterm break
 
 
 ## Week 7
