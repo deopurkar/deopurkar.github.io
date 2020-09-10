@@ -138,6 +138,39 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 -   **Watch:** [AGITTOC Pseudolecture 8](https://www.youtube.com/watch?v=JZ01Akw52z8)
 
 
+## Midterm break
+
+
+## Week 7
+
+Morphisms, open embeddings, closed embeddings
+
+
+## Week 8
+
+Fiber products, base change
+
+
+## Week 9
+
+Separated and proper morphisms
+
+
+## Week 10
+
+Quasicoherent and coherent sheaves
+
+
+## Week 11
+
+Line bundles
+
+
+## Week 12
+
+Cech cohomology
+
+
 # More things to read or watch
 
 -   [Ravi Vakil's pseudo-course website](https://math216.wordpress.com/agittoc-2020/)
