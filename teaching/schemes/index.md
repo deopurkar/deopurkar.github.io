@@ -4,6 +4,7 @@ title: Foundations of algebraic geometry, aka schemes 2020
 no-navigation: true
 ---
 
+
 # Introduction
 
 We will learn the modern foundations of algebraic geometry: sheaves, schemes, and cohomology from [Ravi Vakil's book-in-progress](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf), online lecture videos, and weekly discussions.
@@ -28,7 +29,7 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 
 1.  Due 14 Aug: 1.3.E, 1.4.E, 2.3.A, 2.3.I, 2.3.J, 2.4.E, 2.4.N, 2.4.O.
 2.  Due 04 Sep: 3.2.K, 3.2.M, 3.2.R, 3.2.S, 3.4.I, 3.6.C, 3.6.N, 4.3.F.
-3.  Due 25 Sep
+3.  Due 02 Oct: 4.3.C, 4.5.I, 5.1.E, 5.1.I, 5.2.F, 6.3.H, 6.3.M, 8.1.J (b,d).
 4.  Due 09 Oct
 5.  Due 30 Oct
 
@@ -138,7 +139,15 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 
 ## Week 7
 
-Morphisms, open embeddings, closed embeddings
+-   **Read:** -   Sections 5.1 and 5.2
+    -   Sections 6.1, 6.2, 6.3,
+    -   Sections 7.1, 8.1
+
+-   **Important points:**
+    -   **5.1, 5.2:** Learn the adjectives: irreducible, Noetherian, reduced, integral. Do 5.2.F (integral = reduced + irreducible).
+    -   **6.1, 6.2, 6.3:** This seems long, but it's mostly discursive, trying to motivate the right definition of a morphism. The upshot is 6.2.2, which is more important than the technical definition in 6.3. Do 6.3.C to nail down your understanding. Highly recommended - 6.3.E, 6.3.F. Go lightly over 6.3.9 and later.
+    -   **7.1 (open embeddings):** These are uncomplicated, so this should be easy.
+    -   **8.1 (closed embeddings):** There is an initial learning curve here (but eventually, they become as easy as open embeddings). Learn about the ideal sheaf. Recommended: 8.1.C, 8.1.D, 8.1.E, 8.1.J.
 
 
 ## Week 8
