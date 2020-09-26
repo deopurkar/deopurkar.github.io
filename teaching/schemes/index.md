@@ -34,10 +34,9 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 5.  Due 30 Oct
 
 
-# More things to read or watch
+# Midterm exam
 
--   [Ravi Vakil's pseudo-course website](https://math216.wordpress.com/agittoc-2020/)
--   [Richard Borcherd's lectures on schemes](https://www.youtube.com/watch?v=BX3jiLdehA4&list=PL8yHsr3EFj50Un2NpfPySgXctRQK7CLG-)
+The midterm exam will be an oral exam conducted by me and James Borger in the week of September 21. It will be about 45 minutes long. I have prepared [a list of questions for the exam](midterm1.pdf). We will ask questions from this list, small variations on them, and follow up questions based on your responses.
 
 
 # Weekly reading, viewing, and doing
@@ -138,25 +137,83 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 -   **Watch:** [AGITTOC Pseudolecture 8](https://www.youtube.com/watch?v=JZ01Akw52z8)
 
 
-## Midterm break
-
-
 ## Week 7
 
 -   **Read:** -   Sections 5.1 and 5.2
     -   Sections 6.1, 6.2, 6.3,
     -   Sections 7.1, 8.1
 
--   **Important points:**
-    -   **5.1, 5.2:** Learn the adjectives: irreducible, Noetherian, reduced, integral. Do 5.2.F (integral = reduced + irreducible).
+-   **Important points:** -   **5.1, 5.2:** Learn the adjectives: irreducible, Noetherian, reduced, integral. Do 5.2.F (integral = reduced + irreducible).
     -   **6.1, 6.2, 6.3:** This seems long, but it's mostly discursive, trying to motivate the right definition of a morphism. The upshot is 6.2.2, which is more important than the technical definition in 6.3. Do 6.3.C to nail down your understanding. Highly recommended - 6.3.E, 6.3.F. Go lightly over 6.3.9 and later.
     -   **7.1 (open embeddings):** These are uncomplicated, so this should be easy.
     -   **8.1 (closed embeddings):** There is an initial learning curve here (but eventually, they become as easy as open embeddings). Learn about the ideal sheaf. Recommended: 8.1.C, 8.1.D, 8.1.E, 8.1.J.
 
 
+### Discussion
+
+1.  Thursday
+
+    1.  6.3.B
+        For affines, morphism of locally ringed spaces = induced by a ring map
+    2.  6.3.A
+        Morphisms glue
+    3.  6.3.C
+        Morphism is locally induced by ring maps
+    4.  6.3.F
+        Morphism to Spec A
+    5.  6.3.I
+        Spec Z is final
+    6.  6.3.H
+        Structure map of Proj
+    7.  6.3.J
+        Map from a point
+    8.  6.3.M
+        (Some) morphisms to projective space
+
+2.  Friday
+
+    A<sup>n</sup> = Spec Z[x<sub>1</sub>,&#x2026;, x<sub>n</sub>]. P<sup>n</sup> = Proj Z[X<sub>0</sub>, &#x2026;, X<sub>n</sub>]
+    
+    1.  A different take on 6.3.M
+        -   Construct a morphism A<sup>n+1</sup> - {0} &rarr; P<sup>n</sup>.
+        -   Show that a morphism X &rarr; A<sup>n+1</sup>-{0} is the same as (n+1) global sections f<sub>0</sub>, &hellip;, f<sub>n</sub> of O<sub>X</sub> that do not have a common zero.
+        -   Conclude that such (f<sub>i</sub>) give a map X &rarr; P<sup>n</sup>.
+        -   You now see why all maps X &rarr; P<sup>n</sup> may not arise in this way.
+    
+    2.  Make sense of the map P<sup>1</sup> &rarr; P<sup>2</sup> "defined by [X<sup>2</sup>:XY:Y<sup>2</sup>]"
+    
+    3.  8.1.D (Use 7.3.4 - being affine is affine local on the target).
+        Closed embeddings = maps which locally Spec(A/I) &rarr; Spec A
+    
+    4.  Let p be a point of X.
+        Show that the natural map Spec k(p) &rarr; X is a closed embedding if and only if p is a closed point.
+    
+    5.  Show that the map in (2) "[X<sup>2</sup>:XY:Y<sup>2</sup>]" is a closed embedding.
+    
+    6.  Generalise (2) for the "rational normal curve": P<sup>1</sup> &rarr; P<sup>n</sup> given by [X<sup>n</sup>:X<sup>n-1</sup>Y:&ctdot;:Y<sup>n</sup>].
+    
+    7.  Describe the sheaf of ideals in (4) if p is a closed point.
+    
+    8.  Read 8.1.H and be convinced that this should work.
+    
+    9.  Let S be a graded ring and I &sub; S a homogeneous ideal.
+        Construct a map Proj(S/I) &rarr; Proj(S) and show that it is a closed embedding.
+    
+    10. Is the map Spec C[t] &rarr; Spec C[x,y] "given by (t<sup>2</sup>,t<sup>3</sup>)" a closed embedding? A homeomorphism onto its image?
+
+
 ## Week 8
 
-Fiber products, base change
+-   **Read**: [Chapter 9](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
+-   **Watch**: [AGITTOC Pseudolecture 11](https://www.youtube.com/watch?v=RuFBNbR1XN0)
+-   **Important points**
+    -   You should spend most of your time on 9.2 and 9.3.
+    -   Do not get bogged down by the proof of the existence of fibered products (Theorem 9.1.1). The important points to understand are:
+        -   Fibered products of affines (9.1.B).
+        -   The general case is by gluing the affine case (first paragraph of the proof of 9.1.1).
+    -   Skip 9.1.6, 9.3.7, 9.4, and 9.5.
+    -   Go lightly over 9.3.6, and read 9.7 only if you have time.
+    -   Most of section 9.6 should feel familiar.
 
 
 ## Week 9
