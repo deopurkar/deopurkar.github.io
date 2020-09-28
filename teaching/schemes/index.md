@@ -242,7 +242,7 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
         What can you say about \\(g\\)? Must it be a power of \\(f\\)?
     2.  4.1.A: Show that \\(A\_f \\to O\_{{\\rm spec}}\\ A}(D(f))\\) is an isomorphism.
     3.  We know that elements of \\(A\\) give functions on ${\\rm spec}\\ A$, and functions form a sheaf.
-        Then why is there work involved in showing that $O\_{{\\rm Spec}\\ A}$ satisfies the sheaf axioms?
+        Then why is there work involved in showing that $O\_{{\\rm Spec}\\ A}}$ satisfies the sheaf axioms?
     4.  Prove the base-gluability of the structure sheaf.
     5.  4.3.F: Stalks of the structure sheaf.
     6.  4.1.D: Work through the construction of $\\widehat M$.
