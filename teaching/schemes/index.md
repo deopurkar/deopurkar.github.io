@@ -36,7 +36,7 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 
 # Midterm exam
 
-The midterm exam will be an oral exam conducted by me in the week of September 21. It will be about 45 minutes long. I have prepared [a list of questions for the exam](midterm1.pdf). We will ask questions from this list, small variations on them, and follow up questions based on your responses.
+The midterm exam will be an oral exam conducted by me and James Borger in the week of September 21. It will be about 45 minutes long. I have prepared [a list of questions for the exam](midterm1.pdf). We will ask questions from this list, small variations on them, and follow up questions based on your responses.
 
 
 # Weekly reading, viewing, and doing
@@ -57,6 +57,56 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     5.  What is the geometric meaning of localisation? Can you use it to construct an example where $R \\neq 0$ but $R\_f = 0$?
 
 
+### Discussion
+
+1.  Thursday
+
+    1.  Points for discussion
+    
+        -   What was easy, hard, confusing?
+        -   &#x2026; insightful?
+        -   Examples!
+        -   1.2.B (automorphism group)
+        -   1.3.A (unique init/final obj)
+        -   What is the universal property for:
+            -   Disjoint union of two sets
+            -   The kernel of A -> B
+            -   The cokernel of A -> B
+            -   The one-point compactification
+            -   The metric completion
+        -   What are the initial/final objects in Top, Vec, Ab, Set? (create a poll?)
+
+2.  Friday
+
+    1.  Pre-class poll
+    
+        Consider the category whose objects are algebraic field extensions of $\\mathbb Q$ (and whose morphisms are maps of fields).
+        
+        /poll The category above has
+        a final object, namely $\\overline{\\mathbb Q}$.
+        no final object.
+    
+    2.  Points for discussion
+    
+        1.  warm-up
+            Let $R = \\mathbb Z$ and $f = 2$.
+            -   Describe the elements of $R\_f$ explicitly.
+            -   Let $K$ be a field of characteristic $59$. Show that there is a unique map $R\_f \\to K$.
+        2.  notation-alert!
+            $R = \\mathbb Z$ and $p = 2$.
+            -   Describe the elements of $R\_(p)$ (horrible notation, I know!)
+            -   What's the analogue of the second part of the previous exercise?
+        3.  instructive
+            Show (preferably using the universal property) that the localisation $R\_f$ is isomorphic to $R[y]/(yf-1)$.
+        4.  Baby 1.3.C: localisation is injective for integral domains.
+        5.  geometry! important!
+            Suppose $R$ is the ring of functions of an affine variety $X$.
+            Then $R\_f$ is the ring of functions of <span class="underline"><span class="underline"><span class="underline">\_</span></span></span>.
+        6.  Having done (5), can you "see" (4)?
+        7.  Can you construct an example where $R \\neq 0$ but $R\_f = 0$?
+        8.  1.3.E ($\\star$)
+
+
 ## Week 2
 
 -   Read: [Chapter 1 Section 1.4, 2.1, 2.2, 2.3](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
@@ -74,6 +124,86 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     9.  2.3.I (kernel of sheaf maps is a sheaf)
     10. 2.3.J (but the cokernel may not be a sheaf)
 
+1.  Discussion
+
+    1.  Thursday
+    
+        1.  Pre-class poll
+        
+            Consider the diagram $\\cdots \\to \\mathbb Z \\to \\mathbb Z \\to \\cdots$ where all maps are multiplication by 2.
+            
+            /poll The limit of this diagram is
+            Zero
+            Z
+            Z<code>[1/2]</code> (integers localised at 2; alternative notation to accommodate the next option)
+            Z<sub>2</sub> (the 2-adic integers)
+            
+            /poll The colimit of this diagram is
+            Zero
+            Z
+            Z<code>[1/2]</code> (integers localised at 2; alternative notation to accommodate the next option)
+            Z<sub>2</sub> (the 2-adic integers)
+            
+            -****\***** Points for discussion
+            
+            1.  In $R$ mod, describe the kernel of $A \\to B$ as a limit and the cokernel as a colimit.
+                Are these filtered?
+            
+            2.  1.4.B (explicit construction of the limit)
+            
+            3.  Generalise example 1.4.6 and describe $S^{-1}M$ as a colimit.
+            
+            4.  1.4.C ($\\mathbb Q$ as a colimit)
+            
+            5.  1.4.D (explicit description of a filtered colimit)
+            
+            6.  Prove that (in $R$ mod) filtered colimits preserve exactness.
+                Corollary: Localisation is exact! (important)
+                Also try to see this directly, using fractions.
+            
+            7.  1.6.G (localisation commutes with hom for fin. pres. mod.)
+            
+            8.  2.1.A (stalk of sheaf of functions is a local ring)
+            
+            9.  Remind each other what is the constant sheaf and what is the skyscraper sheaf.
+                What are the stalks of the constant sheaf?
+                What are the stalks of a skyscraper sheaf?
+            
+            10. Remind each other what adjoint functors are. Give examples!
+    
+    2.  Friday
+    
+        1.  Problems for discussion
+        
+            1.  2.1.A (The ring of germs of diff. functions has only one maximal ideal.)
+                
+                Think of some other sheaves of rings. Are their germs local rings?
+                Examples: cont. functions, diff. fuctions, holomorphic functions, constant sheaf $R$?
+            
+            2.  2.2.F (morphisms form a sheaf)
+                2.2.G (sections form a sheaf)
+            
+            3.  Let $Y \\to X$ be the inclusion of an open set. What is the sheaf of sections?
+            
+            4.  Let $S^1 \\to S^1$ be the squaring map $z \\to z^2$.
+                Understand its sheaf of sections. What are its stalks? What are its global sections?
+            
+            5.  Can you construct a different sheaf whose stalks are the same as in the previous example?
+            
+            6.  **optional**
+                2.2.J (Stalks of $O\_X$ modules)
+            
+            7.  2.3.D (reality check for $Hom$ sheaves)
+            
+            8.  **important** 
+                2.3.I (kernel of a map of sheaves is a sheaf!)
+            
+            9.  **important**
+                2.3.J (but the cokernel need not be!)
+                Play with the pre-sheaf $F$.
+            
+            10. Convince yourself (and your friends) that an algebraic variety (with the Zariski topology) along with the sheaf of regular functions is a locally ringed space.
+
 
 ## Week 3
 
@@ -83,6 +213,73 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 -   Watch: [AGITTOC Pseudo-lecture 3](https://youtu.be/0lZFVGsYxj8)
 -   Think:
     Come to terms with the new way of defining spaces from local models. The old mantra was "set + topology + local models + gluing maps". Now sheaves do the gluing for us, so the new mantra is "set + topology + sheaf of rings + local models".
+
+
+### Discussion
+
+1.  Polls
+
+    Let $X = \\mathbb C^2$. Denote by $O\_X^\*$ the sheaf of maps to $\\mathbb C^\* = \\mathbb C - \\{0\\}$.
+    Let $m\_n \\colon O\_X^\* \\to O\_X^\*$ be the map $f \\mapsto f^n$.
+    
+    /poll The map $m\_n$ above
+    is a surjection of sheaves and also a surjection on all open sets.
+    is a surjection of sheaves but not a surjection on all open sets.
+    not a surjection of sheaves.
+
+2.  Thursday
+
+    1.  Let $f \\colon A \\to B$ be a map of sheaves.
+        Show using universal properties that the sheafification of the pre-sheaf cokernel of $f$ is the cokernel of $f$ in the category of sheaves.
+    2.  2.4.C (for sheaves, compatible germs = section)
+    3.  2.4.G (sheafification is unique up to a unique iso)
+    4.  2.4.I,J,K (verifying the construction of sheafification)
+    5.  2.4.M (sheafification does not change stalks)
+    6.  2.4.P (exponential map)
+    7.  2.5.B, C (sheaves on a base)
+    8.  2.5.D (gluing sheaves)
+    9.  2.6.D (exactness = exactness of stalks)
+    10. 2.6.F (left exactness of global sections)
+    
+    1.  Main takeaways
+    
+        -   Sheaves of Ab groups forms an abelian cat.
+            kernels, cokernels, images exist and behave like you expect.
+        
+        -   How to construct? Construct naively, and sheafify!
+        
+        -   How to detect? On stalks!
+        
+        -   Enough to work on a base.
+        
+        -   Everything holds for $O\_X$ modules.
+
+3.  Friday
+
+    1.  **important** not logically necessary
+        Definition: A differentiable manifold is a ringed space $(X, O\_X)$ "which is locally isomorphic to $(U, O\_U)$ where $U \\subset \\mathbb R^n$ is an open set and $O\_U$ is the sheaf of differentiable real valued functions on $U$".
+        1.  Make this precise (eliminate the " " marks).
+            To do this, you will have to define the notion of an isomorphism of ringed spaces.
+            More generally, try to define a morphism of ringed spaces.
+        
+        2.  Show that this definition is equivalent to the usual definition of a differentiable manifolds (using charts and gluing maps). 
+            You will have to prove the (easy) fact that for $U, V \\subset \\mathbb R^n$, xif $\\phi \\colon U \\to V$ is continuous, then it is differentiable if and only if differentiable functions pull back to differentiable functions.
+    
+    2.  -   Draw $spec k[t]\_(t)$.
+        -   Draw $spec Z\_(p)$.
+        -   Draw $spec \\mathbb Z\_p$ (the $p$-adics)
+        -   Draw $spec k[[[[t]]]]$ (the ring of power series in $t$).
+    
+    3.  Describe $\\mathbb A^1\_{\\mathbb R}$ and $\\mathbb A^1\_{\\mathbb Q}$
+    
+    4.  Draw $spec \\mathbb C[x,y]$.
+    
+    5.  Draw $spec \\mahtbb C[x,y]/xy$.
+    
+    6.  -   Draw $spec \\mathbb C[x]/x^2$
+        -   Draw $spec \\mathbb C[x,y]/(x^2, xy, y^2)$
+    
+    7.  Go back to sheaves and convince yourselves that the category of sheaves is equivalent to the category of sheaves on a base.
 
 
 ## Week 4
@@ -106,6 +303,56 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 -   Watch: [AGITTOC Pseudo-lecture 4](https://www.youtube.com/watch?v=q473BSN2_qE)
 
 
+### Discussion
+
+1.  Thursday
+
+    1.  3.2.H (Points of ${\\mathbb Q}[x,y]$)
+    2.  3.2.J (Points of a quotient)
+    3.  3.2.K (Points of a localisation)
+    4.  3.2.L (Thinking about localisation geometrically)
+    5.  Draw pictures of the maps
+        -   ${\\rm spec}\\ \\mathbb Q \\to {\\rm spec}\\ \\mathbb Z$
+        -   ${\\rm spec}\\ k[t]\_{(t)} \\to {\\rm spec}\\ k[t]$
+        -   ${\\rm spec}\\ \\mathbb C[x] \\to {\\rm spec}\\ \\mathbb R[x]$
+        -   ${\\rm spec}\\ k[t] \\to {\\rm spec}\\ k[x,y]/xy$ induced by $x \\mapsto 0, y \\mapsto t$.
+        -   ${\\rm spec}\\ k[x,y]/xy \\to {\\rm spec}\\ k[t]$ induced by $t \\mapsto x+y$.
+        -   ${\\rm spec}\\ k \\to {\\rm spec}\\ k[t]$ induced by $t \\mapsto a$ for some $a \\in k$.
+        -   ${\\rm spec}\\ \\mathbb C \\to {\\rm spec}\\ \\mathbb Q[t]$ induced by $t \\mapsto \\sqrt{2}$.
+    6.  Let $A$ and $B$ be finitely generated $k$ algebras, and $f \\colon A \\to B$ a map of $k$ algebras.
+        -   Show that $f$ sends a closed point (maximal ideal) of ${\\rm spec}\\ B$ to a closed point of ${\\rm spec}\\ A$.
+        -   Show that $f$ may not send closed points to closed points, in general.
+    7.  Let $X = \\mathbb A^n\_{k}$.
+        What are the residue fields of the closed points (max ideals) of $X$ if $k = \\mathbb C$? If $k = \\mathbb Q$?
+    8.  3.2.R (Nilpotents and spec)
+    9.  3.2.S (Nilradical = intersection of prime ideals).
+        -   When is $R\_f = 0$? (Only when $f$ is a nilpotent.)
+        -   Aside: 
+            For some rings ("Jacobson rings"), nilradical = intersection of all maximal ideals. This means that if $f$ and $g$ take the same value at every closed point, then $f-g$ is nilpotent. Fields are Jacobson (trivially) $\\mathbb Z$ is Jacobson (easy), finitely generated algebras over Jacobson rings are Jacobson. Can you come up with an example of a non-Jacobson ring (hint: its ${\\rm spec}$ must have "few" closed points).
+
+2.  Friday
+
+    1.  **easy** 
+        3.6.I (closed points = maximal ideals)
+        Related: What is the closure of a point $p$?
+    2.  **easy**
+        3.4.I (${\\rm spec}\\ A/I$ is closed in ${\\rm spec}\\ A$, and ${\\rm spec}\\ A\_f$ is open.)
+    3.  **important**
+        3.5.A (distinguished opens form a base)
+    4.  3.5.B/C, 3.6.G (coverings by distinguished opens and (quasi)-compactness)
+    5.  3.2.S (Nilradical = intersection of prime ideals). &#x2013; skip proof at first
+        -   When is $R\_f = 0$? (only when $f$ is a nilpotent.)
+        -   Aside: 
+            For some rings ("Jacobson rings"), nilradical = intersection of all maximal ideals. This means that if $f$ and $g$ take the same value at every closed point, then $f-g$ is nilpotent. Fields are Jacobson (trivially) $\\mathbb Z$ is Jacobson (easy), finitely generated algebras over Jacobson rings are Jacobson. Can you come up with an example of a non-Jacobson ring (hint: its ${\\rm spec}$ must have "few" closed points).
+    6.  3.4.F (radical of I = intersection of primes containing I)
+        -   How do you intepret this statement geometrically?
+    7.  3.4.5 (nilpotents and spec)
+    8.  3.4.J (when does $f$ vanish on $V(I)$?)
+    9.  3.5.E (inclusions among the distinguished opens)
+    10. **I(.) and V(.) are mutual inverses**
+        Prove Theorem 3.7.1
+
+
 ## Week 5
 
 -   Read:
@@ -118,6 +365,63 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     -   **4.4:** Take your time to read these in detail.
 -   Watch: [AGITTOC Pseudolecture 6](https://www.youtube.com/watch?v=qDN_hwEXH0k) and [first half of pseudolecture 7](https://www.youtube.com/watch?v=4KJwmiYHVk4)
     It is becoming hard to match the pseudo-lectures exactly to our readings. What we did in week 4 gets covered in pseudolecture 4, 5, and the beginning of 6. This is because I am skipping / going fast over things you have already seen in your first algebraic geometry course (like Noetherian topological spaces, irreducibility, Hilbert basis theorem). So feel free to jump/skip around in the lectures.
+
+
+### Discussion
+
+1.  Poll
+
+    Let $X = {\\rm Spec}\\ {\\mathbb C} \\sqcup {\\rm Spec}\\ {\\mathbb C} \\sqcup {\\rm Spec}\\ {\\mathbb C} \\sqcup \\cdots$ (infinite disjoint union).
+    Let $R = \\mathbb C \\times \\mathbb C \\times \\mathbb C \\times \\cdots$ (infinite product).
+    
+    /poll 
+    X is an affine scheme; in fact X = Spec R.
+    X is an affine scheme, but it is not Spec R.
+    X is not an affine scheme.
+
+2.  Thursday
+
+    1.  Suppose \\(g \\in A\\) does not vanish on the open set \\({\\rm spec}\\ A\_f\\) contained in ${\\rm spec}\\ A$. 
+        What can you say about \\(g\\)? Must it be a power of \\(f\\)?
+    2.  4.1.A: Show that \\(A\_f \\to O\_{{\\rm spec}\\ A}(D(f))\\) is an isomorphism.
+    3.  We know that elements of \\(A\\) give functions on ${\\rm spec}\\ A$, and functions form a sheaf.
+        Then why is there work involved in showing that $O\_{{\\rm Spec}\\ A}$ satisfies the sheaf axioms?
+    4.  Prove the base-gluability of the structure sheaf.
+    5.  4.3.F: Stalks of the structure sheaf.
+    6.  4.1.D: Work through the construction of $\\widehat M$.
+    7.  4.1.5: Pitfall of a slick definition of $O\_{{\\rm spec}\\ A}(U)$.
+        What is the correct description of $O\_{{\\rm spec}\\ A}(U)$?
+    8.  Draw
+        -   ${\\rm Spec}\\ {\\mathbb C}[t]/t^2$
+        -   ${\\rm Spec}\\ {\\mathbb C}[t]/t^3$
+        -   ${\\rm Spec}\\ {\\mathbb C}[x,y]/(x^2,xy,y^2)$
+        -   ${\\rm Spec}\\ {\\mathbb C}[x,y]/(xy,y^2)$
+        -   ${\\rm Spec}\\ {\\mathbb Z}/(12)$
+
+3.  Friday
+
+    1.  **from yesterday**
+        4.1.5: Pitfall of a slick definition of $O\_{{\\rm spec}\\ A}(U)$.
+        What is the correct description of $O\_{{\\rm spec}\\ A}(U)$?
+    2.  **enlightening** but **confusing**
+        4.3.A: Isomorphisms of affine schemes = isomorphisms of rings
+    3.  **easy**
+        4.3.B: Distinguished open subschemes
+        4.3.C: Open subschemes
+        Think about 4.3.4 &#x2013; closed subschemes
+    4.  **easy**
+        4.3.G: Functions on locally ringed spaces
+    5.  **easy**
+        4.4.A: Gluing schemes
+    6.  4.4.B/C: Lines and planes with doubled origins.
+    7.  **do once in life**
+        4.4.D: Charts of the projective space
+    8.  4.4.F: Closed points of the projective space
+        More generally, let \\(A\\) be a finitely generated \\(k\\)-algebra.
+        What are the closed points of \\(\\mathbb P^n\_A\\)?
+    9.  Example 4.4.12.
+    10. **chinese remainder theorem**
+        Example 4.4.11.
 
 
 ## Week 6
@@ -135,6 +439,9 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     -   **4.5.7:** This section looks short, but it will take time to digest!
     -   **4.5.O, 4.5.P:** If you can do these, you have a good understanding of the projective space.
 -   **Watch:** [AGITTOC Pseudolecture 8](https://www.youtube.com/watch?v=JZ01Akw52z8)
+
+
+### Discussions
 
 
 ## Week 7
@@ -204,16 +511,7 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 
 ## Week 8
 
--   **Read**: [Chapter 9](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
--   **Watch**: [AGITTOC Pseudolecture 11](https://www.youtube.com/watch?v=RuFBNbR1XN0)
--   **Important points**
-    -   You should spend most of your time on 9.2 and 9.3.
-    -   Do not get bogged down by the proof of the existence of fibered products (Theorem 9.1.1). The important points to understand are:
-        -   Fibered products of affines (9.1.B).
-        -   The general case is by gluing the affine case (first paragraph of the proof of 9.1.1).
-    -   Skip 9.1.6, 9.3.7, 9.4, and 9.5.
-    -   Go lightly over 9.3.6, and read 9.7 only if you have time.
-    -   Most of section 9.6 should feel familiar.
+Fiber products, base change
 
 
 ## Week 9
