@@ -240,14 +240,14 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 
     1.  Suppose \\(g \\in A\\) does not vanish on the open set \\({\\rm spec}\\ A\_f\\) contained in ${\\rm spec}\\ A$. 
         What can you say about \\(g\\)? Must it be a power of \\(f\\)?
-    2.  4.1.A: Show that \\(A\_f \\to O\_{{\\rm spec}}\\ A}(D(f))\\) is an isomorphism.
+    2.  4.1.A: Show that \\(A\_f \\to O(D(f))\\) is an isomorphism.
     3.  We know that elements of \\(A\\) give functions on ${\\rm spec}\\ A$, and functions form a sheaf.
-        Then why is there work involved in showing that $O\_{{\\rm Spec}\\ A}}$ satisfies the sheaf axioms?
+        Then why is there work involved in showing that $O$ satisfies the sheaf axioms?
     4.  Prove the base-gluability of the structure sheaf.
     5.  4.3.F: Stalks of the structure sheaf.
     6.  4.1.D: Work through the construction of $\\widehat M$.
-    7.  4.1.5: Pitfall of a slick definition of $O\_{{\\rm spec}\\ A}(U)$.
-        What is the correct description of $O\_{{\\rm spec}\\ A}(U)$?
+    7.  4.1.5: Pitfall of a slick definition of $O(U)$.
+        What is the correct description of $O(U)$?
     8.  Draw
         -   ${\\rm Spec}\\ {\\mathbb C}[t]/t^2$
         -   ${\\rm Spec}\\ {\\mathbb C}[t]/t^3$
@@ -258,8 +258,8 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 3.  Friday
 
     1.  **from yesterday**
-        4.1.5: Pitfall of a slick definition of $O\_{{\\rm spec}\\ A}(U)$.
-        What is the correct description of $O\_{{\\rm spec}\\ A}(U)$?
+        4.1.5: Pitfall of a slick definition of $O(U)$.
+        What is the correct description of $O(U)$?
     2.  **enlightening** but **confusing**
         4.3.A: Isomorphisms of affine schemes = isomorphisms of rings
     3.  **easy**
