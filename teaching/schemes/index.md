@@ -36,7 +36,7 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 
 # Midterm exam
 
-The midterm exam will be an oral exam conducted by me and James Borger in the week of September 21. It will be about 45 minutes long. I have prepared [a list of questions for the exam](midterm1.pdf). We will ask questions from this list, small variations on them, and follow up questions based on your responses.
+The midterm exam will be an oral exam conducted by me in the week of September 21. It will be about 45 minutes long. I have prepared [a list of questions for the exam](midterm1.pdf). We will ask questions from this list, small variations on them, and follow up questions based on your responses.
 
 
 # Weekly reading, viewing, and doing
