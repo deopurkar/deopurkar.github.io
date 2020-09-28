@@ -240,7 +240,7 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 
     1.  Suppose \\(g \\in A\\) does not vanish on the open set \\({\\rm spec}\\ A\_f\\) contained in ${\\rm spec}\\ A$. 
         What can you say about \\(g\\)? Must it be a power of \\(f\\)?
-    2.  4.1.A: Show that \\(A\_f \\to O\_{{\\rm spec}\\ A}(D(f))\\) is an isomorphism.
+    2.  4.1.A: Show that \\(A\_f \\to O\_{{\\rm spec}}\\ A}(D(f))\\) is an isomorphism.
     3.  We know that elements of \\(A\\) give functions on ${\\rm spec}\\ A$, and functions form a sheaf.
         Then why is there work involved in showing that $O\_{{\\rm Spec}\\ A}$ satisfies the sheaf axioms?
     4.  Prove the base-gluability of the structure sheaf.
@@ -421,7 +421,7 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     
     4.  Draw $spec \\mathbb C[x,y]$.
     
-    5.  Draw $spec \\mahtbb C[x,y]/xy$.
+    5.  Draw $spec \\mathbb C[x,y]/xy$.
     
     6.  -   Draw $spec \\mathbb C[x]/x^2$
         -   Draw $spec \\mathbb C[x,y]/(x^2, xy, y^2)$
