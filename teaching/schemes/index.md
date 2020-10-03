@@ -59,6 +59,60 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     -   Most of section 9.6 should feel familiar.
 
 
+### Discussion
+
+1.  Thursday
+
+    1.  9.1.B (Fibered products of affines = tensor product of rings)
+    
+    2.  Consider \\(f \\colon Y = {\\rm Spec}\\ \\mathbb C[y] \\to {\\rm Spec}\\ \\mathbb C[x] = X\\) induced by \\(x \\mapsto y^2\\).
+        Let \\(p \\colon {\\rm Spec}\\ \\mathbb C \\to X\\) be the closed embedding of a point.
+        The (scheme-theoretic) preimage of \\(p\\) is the closed embedding \\(p \\times\_X Y \\to Y\\).
+        Find the preimages of the point \\(x = 0\\) and \\(x = a\\) for \\(a \\neq 0\\).
+        
+        Draw a picture.
+    
+    3.  Consider \\(f \\colon Y = {\\rm Spec}\\ \\mathbb Q[y] \\to {\\rm Spec}\\ \\mathbb Q[x] = X\\) induced by \\(x \\mapsto y^2\\).
+        Find the scheme-theoretic preimages of 
+        
+        1.  \\(p \\colon {\\rm Spec}\\ \\mathbb Q \\to Y\\) given by \\(y \\mapsto 0\\).
+        2.  \\(p \\colon {\\rm Spec}\\ \\mathbb Q \\to Y\\) given by \\(y \\mapsto 1\\).
+        3.  \\(p \\colon {\\rm Spec}\\ \\mathbb Q \\to Y\\) given by \\(y \\mapsto 2\\).
+        
+        Try drawing a picture.
+    
+    4.  Consider \\(f \\colon Y = {\\rm Spec}\\ \\mathbb Z[i] \\to {\\rm Spec}\\ \\mathbb Z = X\\).
+        Find the scheme-theoretic preimages of the points (2), (3), and (5).
+        Try drawing a picture.
+    
+    5.  9.2.C (a) (Intersection as fibered product)
+    
+    6.  A "geometric point" of a scheme \\(X\\) is a map \\({\\rm Spec}\\ k \\to X\\), where \\(k\\) is algebraically closed.
+        Show that the fibers of \\(f \\colon Y = {\\rm Spec}\\ \\mathbb Q[y] \\to {\\rm Spec}\\ \\mathbb Q[x] = X\\) over geometric points are either a pair of distinct points or a non-reduced (double) point.
+
+2.  Friday
+
+    . . . the end of all our exploring
+    Will be to arrive where we started
+    And know the place for the first time.
+    
+    &#x2013; T. S. Eliot, “Little Gidding” (Four Quartets)
+    
+    1.  9.3.F (The blowup, again)
+        Can you reconcile our previous description as \\({\\rm Proj}\\ k[x,y][u,v]/(xv-yu)\\) with Ravi's definition?
+    2.  Show that the following properties are preserved under base change:
+        1.  open embedding
+        2.  closed embedding
+        3.  affine
+        4.  finite (affine + finite as a module)
+    3.  9.6.1 (Check that the Segre embedding is a closed embedding)
+    4.  9.6.B (Equations of the Segre embedding)
+    5.  6.4.A, 6.4.B (Maps of graded rings and Proj)
+        But NOT all maps of Proj are of this form!
+    6.  6.4.D (Veronese)
+    7.  6.4.F
+
+
 ## Week 7
 
 -   **Read:** -   Sections 5.1 and 5.2
