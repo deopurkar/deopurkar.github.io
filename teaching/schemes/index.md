@@ -30,7 +30,7 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 1.  Due 14 Aug: 1.3.E, 1.4.E, 2.3.A, 2.3.I, 2.3.J, 2.4.E, 2.4.N, 2.4.O.
 2.  Due 04 Sep: 3.2.K, 3.2.M, 3.2.R, 3.2.S, 3.4.I, 3.6.C, 3.6.N, 4.3.F.
 3.  Due 02 Oct: 4.3.C, 4.5.I, 5.1.E, 5.1.I, 5.2.F, 6.3.H, 6.3.M, 8.1.J (b,d).
-4.  Due 09 Oct
+4.  Due 16 Oct: 8.2.N, 8.2.P, 9.2.D, 9.2.H, 9.4.B (c,d,f,g), 13.3.F, 13.3.G, 13.4.A
 5.  Due 30 Oct
 
 
