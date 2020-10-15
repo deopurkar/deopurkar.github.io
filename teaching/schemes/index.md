@@ -30,19 +30,66 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 1.  Due 14 Aug: 1.3.E, 1.4.E, 2.3.A, 2.3.I, 2.3.J, 2.4.E, 2.4.N, 2.4.O.
 2.  Due 04 Sep: 3.2.K, 3.2.M, 3.2.R, 3.2.S, 3.4.I, 3.6.C, 3.6.N, 4.3.F.
 3.  Due 02 Oct: 4.3.C, 4.5.I, 5.1.E, 5.1.I, 5.2.F, 6.3.H, 6.3.M, 8.1.J (b,d).
-4.  Due 09 Oct
+4.  Due 16 Oct: 8.2.N, 8.2.P, 9.2.D, 9.2.H, 9.4.B (c,d,f,g), 13.3.F, 13.3.G, 13.4.A
 5.  Due 30 Oct
 
 
 # Midterm exam
 
-The midterm exam will be an oral exam conducted by me and James Borger in the week of September 21. It will be about 45 minutes long. I have prepared [a list of questions for the exam](midterm1.pdf). We will ask questions from this list, small variations on them, and follow up questions based on your responses.
+The midterm exam will be an oral exam in the week of September 21. It will be about 45 minutes long. I have prepared [a list of questions for the exam](midterm1.pdf). We will ask questions from this list, small variations on them, and follow up questions based on your responses.
 
 
 # Weekly reading, viewing, and doing
 
 "Do" does not mean "write up and submit". 
 A general convention in Ravi's book is that ⋆ indicates an advanced section that can be skipped on the first reading.
+
+
+## Week 9
+
+-   ****Read****: Chapter 13
+-   ****Important points****
+    -   The upshot of this chapter is: a quasi-coherent sheaf is to a scheme what a module is to a ring.
+    -   Section 13.1 is for motivation. It talks about locally free sheaves, which are the most important quasi-coherent sheaves. On the first reading, skip the proof of 13.2.1.
+    -   In 13.3, the main theorem (13.3.2) is basically a repeat of the sheaves = sheaves on a base fact.
+    -   Do 13.3.D, 13.3.F, 13.3.G, 13.3.H, 13.4.A.
+    -   Skip all the starred sections.
+-   ****Watch****: I think we are beyond the pseudo-lectures because we skipped some chapters :(
+
+
+### Discussions
+
+1.  Thursday
+
+    Choose your adventure.
+    
+    Let \\(k\\) be an algebraically closed field.
+    
+    1.  Let \\(X = \\mathbb A^1\_k\\) and let \\(p \\in X\\) be any closed point. Let \\(I\_p \\subset O\_X\\) be the ideal sheaf of \\(p\\).
+        1.  Describe explicitly the module \\(I\_p(U)\\) for every open \\(U \\subset X\\).
+        2.  Prove that \\(I\_p\\) is locally free of rank 1.
+        3.  Now take \\(X = \\mathbb P^1\_k\\) and define \\(I\_p\\) as before. What are the global sections of \\(I\_p\\)? That is, find \\(\\Gamma(X, I\_p)\\).
+        4.  What is the cokernel of the map \\(I\_p \\to O\_X\\)?
+        5.  Give examples of 
+            -   a coherent sheaf on \\(X\\) that is not locally free
+            -   a quasi-coherent sheaf on \\(X\\) that is not coherent
+        6.  Let \\(X = {\\rm Spec}\\ k[x,y]/(xy)\\) and \\(p = (0,0)\\). Show that the ideal sheaf \\(I\_p\\) is not locally free. Is it quasi-coherent? Coherent?
+    
+    2.  Let \\(i \\colon U \\to X\\) be the open inclusion \\(\\mathbb A^1 \\to \\mathbb P^1\\).
+        1.  Prove that \\(i\_\* O\_U\\) is a quasi-coherent \\(O\_X\\)-module. (Appealing to a general theorem is OK).
+        2.  Is \\(i\_\* O\_U\\) coherent?
+        3.  Prove the general theorem alluded to above (13.3.F)
+    
+    3.  Let \\(X = {\\rm Proj}\\ k[u,v][X,Y]/(vX-uY) \\subset \\mathbb A^2 \\times \\mathbb P^1\\).
+        Prove that \\(\\pi \\colon X \\to \\mathbb P^1\\) is a line bundle. That is:
+        1.  Construct an open cover \\(U\_i\\) of \\(\\mathbb P^1\\) and isomorphisms \\(\\pi^{-1} U\_i \\cong U\_i \\times \\mathbb A^1\\).
+            (The standard open cover will work.)
+        2.  Find the transition function(s) \\(U\_i \\cap U\_j \\times \\mathbb A^1 \\to U\_i \\cap U\_j \\times \\mathbb A^1\\) and show that they are linear in the \\(\\mathbb A^1\\) coordinate.
+            (The linearity ensures that the fibers of \\(\\pi\\) get a consistent vector space structure.)
+        3.  Let \\(I\\) be the sheaf of sections of \\(\\pi\\). Then \\(I\\) is locally free of rank 1.
+            Find the global sections of \\(I\\).
+        4.  What are the transitions functions of the dual \\(I^\\vee\\)?
+        5.  What are the global sections of \\(I^\\vee\\)?
 
 
 ## Week 8
@@ -104,7 +151,7 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
         1.  open embedding
         2.  closed embedding
         3.  affine
-        4.  finite (affine + finite as a module)
+        4.  finite (affine + finite as a module) (optional)
     3.  9.6.1 (Check that the Segre embedding is a closed embedding)
     4.  9.6.B (Equations of the Segre embedding)
     5.  6.4.A, 6.4.B (Maps of graded rings and Proj)
