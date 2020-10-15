@@ -36,13 +36,29 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 
 # Midterm exam
 
-The midterm exam will be an oral exam conducted by me and James Borger in the week of September 21. It will be about 45 minutes long. I have prepared [a list of questions for the exam](midterm1.pdf). We will ask questions from this list, small variations on them, and follow up questions based on your responses.
+The midterm exam will be an oral exam in the week of September 21. It will be about 45 minutes long. I have prepared [a list of questions for the exam](midterm1.pdf). We will ask questions from this list, small variations on them, and follow up questions based on your responses.
 
 
 # Weekly reading, viewing, and doing
 
 "Do" does not mean "write up and submit". 
 A general convention in Ravi's book is that ⋆ indicates an advanced section that can be skipped on the first reading.
+
+
+## Week 10
+
+-   **Read**: Chapter 14 and chapter 12.5 for background
+-   **Notes**:
+    -   14.1 should be straightforward (and will get your hands dirty).
+    -   14.2 is dense and challenging. But it is extremely important in algebraic geometry (and in algebraic number theory!).
+    -   We have not read all the pre-requisites for this section, but you should attempt to read it anyway, taking on faith some things from previous section. Here are some pointers:
+    -   Restrict to Noetherian integral schemes.
+    -   There is some algebra that is necessary. The main ideas are
+    -   Dimension = Krull dimension = max of the length of a chain of prime ideals. This could be infinite, but assume it is finite.
+    -   Let \\(Y \\subset X\\) be irreducible of codimension \\(r\\). Let \\(p\\) be the generic point of \\(Y\\), then the Krull dimension of \\(O\_{X,p}\\) is \\(r\\). In particular, if \\(r = 1\\), then \\(O\_{X,p}\\) has dimension 1.
+    -   If \\(X\\) is "regular in codimension 1" then \\(O\_{X,p}\\) is regular local of dimension 1, and hence a Discrete Valuation Ring (DVR). See 12.5. DVRs allow us to measure "order of vanishing" of a function, which is essential for divisor theory.
+        Regular in codimension 1 is equivalent to "singular locus of \\(X\\) has codimension 2 or higher". So, not too singular.
+    -   For divisor theory, it is important to work with normal \\(X\\). The normality condition appears to be purely algebraic (integrally closed), but has two important geometric consequences: (1) Normal implies regular in codimension 1 (2) Hartog's lemma holds: if a rational function \\(f\\) has no poles (in codimension 1), then \\(f\\) is regular.
 
 
 ## Week 9
@@ -57,6 +73,66 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 -   ****Watch****: I think we are beyond the pseudo-lectures because we skipped some chapters :(
 
 
+### Discussions
+
+1.  Thursday
+
+    Choose your adventure.
+    
+    Let \\(k\\) be an algebraically closed field.
+    
+    1.  Let \\(X = \\mathbb A^1\_k\\) and let \\(p \\in X\\) be any closed point. Let \\(I\_p \\subset O\_X\\) be the ideal sheaf of \\(p\\).
+        1.  Describe explicitly the module \\(I\_p(U)\\) for every open \\(U \\subset X\\).
+        2.  Prove that \\(I\_p\\) is locally free of rank 1.
+        3.  Now take \\(X = \\mathbb P^1\_k\\) and define \\(I\_p\\) as before. What are the global sections of \\(I\_p\\)? That is, find \\(\\Gamma(X, I\_p)\\).
+        4.  What is the cokernel of the map \\(I\_p \\to O\_X\\)?
+        5.  Give examples of 
+            -   a coherent sheaf on \\(X\\) that is not locally free
+            -   a quasi-coherent sheaf on \\(X\\) that is not coherent
+        6.  Let \\(X = {\\rm Spec}\\ k[x,y]/(xy)\\) and \\(p = (0,0)\\). Show that the ideal sheaf \\(I\_p\\) is not locally free. Is it quasi-coherent? Coherent?
+    
+    2.  Let \\(i \\colon U \\to X\\) be the open inclusion \\(\\mathbb A^1 \\to \\mathbb P^1\\).
+        1.  Prove that \\(i\_\* O\_U\\) is a quasi-coherent \\(O\_X\\)-module. (Appealing to a general theorem is OK).
+        2.  Is \\(i\_\* O\_U\\) coherent?
+        3.  What is the pushfoward look like for \\(f \\colon {\\rm Spec}\\ A \\to {\\rm Spec}\\ B\\)?
+        4.  Prove the general theorem alluded to above (13.3.F)
+    
+    3.  Let \\(X = {\\rm Proj}\\ k[u,v][X,Y]/(vX-uY) \\subset \\mathbb A^2 \\times \\mathbb P^1\\).
+        Prove that \\(\\pi \\colon X \\to \\mathbb P^1\\) is a line bundle. That is:
+        1.  Construct an open cover \\(U\_i\\) of \\(\\mathbb P^1\\) and isomorphisms \\(\\pi^{-1} U\_i \\cong U\_i \\times \\mathbb A^1\\).
+            (The standard open cover will work.)
+        2.  Find the transition function(s) \\(U\_i \\cap U\_j \\times \\mathbb A^1 \\to U\_i \\cap U\_j \\times \\mathbb A^1\\) and show that they are linear in the \\(\\mathbb A^1\\) coordinate.
+            (The linearity ensures that the fibers of \\(\\pi\\) get a consistent vector space structure.)
+        3.  Let \\(I\\) be the sheaf of sections of \\(\\pi\\). Then \\(I\\) is locally free of rank 1.
+            Find the global sections of \\(I\\).
+        4.  What are the transitions functions of the dual \\(I^\\vee\\)?
+        5.  What are the global sections of \\(I^\\vee\\)?
+
+2.  Friday
+
+    Adventure continued. But also:
+    
+    1.  Stalks and fibers
+        
+        Remark: A good (but not perfect) way to think about a sheaf \\(F\\) is as a collection of stalks \\(F\_p\\) (which are modules).
+    
+    If \\(F\\) is (quasi)-coherent, an even simpler (but more imperfect) approximation is as a collection of fibers \\(F|\_p\\) (which are vector spaces).
+    Let \\(F\\) be a coherent sheaf on a locally Noetherian \\(X\\). What can be gleaned from the fibers?
+    
+    1.  Let \\(M = k[t]/(t-1)(t+1)\\) and \\(F = \\widehat M\\) on \\(X = \\mathbb A^1\_k = {\\rm Spec}\\ k[t] \\).
+        What are the stalks of \\(M\\) at every point of \\(X\\)?
+        What are the fibers of \\(M\\) at every point of \\(X\\)? (Including the generic point).
+    
+    2.  If \\(F|\_p = 0\\), then \\(F\_p = 0\\), and there exists an open neighborhood of \\(p\\) on which \\(F = 0\\).
+    3.  \\(F \\to G\\) is surjective on fibers if and only if it is surjective.
+        What can you say about injectivity?
+    4.  If \\(s\_1, &#x2026;, s\_n\\) are are sections of \\(F\\) that generate \\(F|\_p\\), then they generate \\(F|\_q\\) for every \\(q\\) in a neighborhood of \\(p\\).
+    5.  The function \\(p \\mapsto dim(F|\_p)\\) is upper semicontinuous.
+    6.  If \\(X\\) is reduced and connected, then \\(F\\) is locally free if and only if the rank function is constant.
+    7.  Give an example where the above fails for non-reduced \\(X\\).
+    8.  Let \\(X = \\mathbb A^2\\) and \\(I\\) the ideal sheaf of \\((0,0)\\). Compute the rank function for \\(I\\).
+
+
 ## Week 8
 
 -   **Read**: [Chapter 9](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
@@ -69,6 +145,60 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     -   Skip 9.1.6, 9.3.7, 9.4, and 9.5.
     -   Go lightly over 9.3.6, and read 9.7 only if you have time.
     -   Most of section 9.6 should feel familiar.
+
+
+### Discussion
+
+1.  Thursday
+
+    1.  9.1.B (Fibered products of affines = tensor product of rings)
+    
+    2.  Consider \\(f \\colon Y = {\\rm Spec}\\ \\mathbb C[y] \\to {\\rm Spec}\\ \\mathbb C[x] = X\\) induced by \\(x \\mapsto y^2\\).
+        Let \\(p \\colon {\\rm Spec}\\ \\mathbb C \\to X\\) be the closed embedding of a point.
+        The (scheme-theoretic) preimage of \\(p\\) is the closed embedding \\(p \\times\_X Y \\to Y\\).
+        Find the preimages of the point \\(x = 0\\) and \\(x = a\\) for \\(a \\neq 0\\).
+        
+        Draw a picture.
+    
+    3.  Consider \\(f \\colon Y = {\\rm Spec}\\ \\mathbb Q[y] \\to {\\rm Spec}\\ \\mathbb Q[x] = X\\) induced by \\(x \\mapsto y^2\\).
+        Find the scheme-theoretic preimages of 
+        
+        1.  \\(p \\colon {\\rm Spec}\\ \\mathbb Q \\to Y\\) given by \\(y \\mapsto 0\\).
+        2.  \\(p \\colon {\\rm Spec}\\ \\mathbb Q \\to Y\\) given by \\(y \\mapsto 1\\).
+        3.  \\(p \\colon {\\rm Spec}\\ \\mathbb Q \\to Y\\) given by \\(y \\mapsto 2\\).
+        
+        Try drawing a picture.
+    
+    4.  Consider \\(f \\colon Y = {\\rm Spec}\\ \\mathbb Z[i] \\to {\\rm Spec}\\ \\mathbb Z = X\\).
+        Find the scheme-theoretic preimages of the points (2), (3), and (5).
+        Try drawing a picture.
+    
+    5.  9.2.C (a) (Intersection as fibered product)
+    
+    6.  A "geometric point" of a scheme \\(X\\) is a map \\({\\rm Spec}\\ k \\to X\\), where \\(k\\) is algebraically closed.
+        Show that the fibers of \\(f \\colon Y = {\\rm Spec}\\ \\mathbb Q[y] \\to {\\rm Spec}\\ \\mathbb Q[x] = X\\) over geometric points are either a pair of distinct points or a non-reduced (double) point.
+
+2.  Friday
+
+    . . . the end of all our exploring
+    Will be to arrive where we started
+    And know the place for the first time.
+    
+    &#x2013; T. S. Eliot, “Little Gidding” (Four Quartets)
+    
+    1.  9.3.F (The blowup, again)
+        Can you reconcile our previous description as \\({\\rm Proj}\\ k[x,y][u,v]/(xv-yu)\\) with Ravi's definition?
+    2.  Show that the following properties are preserved under base change:
+        1.  open embedding
+        2.  closed embedding
+        3.  affine
+        4.  finite (affine + finite as a module) (optional)
+    3.  9.6.1 (Check that the Segre embedding is a closed embedding)
+    4.  9.6.B (Equations of the Segre embedding)
+    5.  6.4.A, 6.4.B (Maps of graded rings and Proj)
+        But NOT all maps of Proj are of this form!
+    6.  6.4.D (Veronese)
+    7.  6.4.F
 
 
 ## Week 7
