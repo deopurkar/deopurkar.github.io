@@ -31,7 +31,15 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 2.  Due 04 Sep: 3.2.K, 3.2.M, 3.2.R, 3.2.S, 3.4.I, 3.6.C, 3.6.N, 4.3.F.
 3.  Due 02 Oct: 4.3.C, 4.5.I, 5.1.E, 5.1.I, 5.2.F, 6.3.H, 6.3.M, 8.1.J (b,d).
 4.  Due 16 Oct: 8.2.N, 8.2.P, 9.2.D, 9.2.H, 9.4.B (c,d,f,g), 13.3.F, 13.3.G, 13.4.A
-5.  Due 30 Oct
+5.  Due 30 Oct:
+    -   13.7.D + find the support of the module associated to \\(k[x,y]/xy\\) on \\({\\rm Spec}\\ k[x,y]\\).
+    -   13.7.F
+    -   13.7.K
+    -   14.1.D
+    -   14.2.K
+    -   Which line bundles on \\(\\mathbb P^n\_k\\) are globally generated?
+    -   Let \\(f \\colon \\mathbb P^1\_k \\to \\mathbb P^n\_k\\) be a map such that \\(f^\*O(1) = O(d)\\). Suppose \\(d < n\\). Prove that the image of \\(f\\) must lie on a hyperplane.
+    -   Prove that the automorphism group of \\(P^n\_k\\) is the group \\(PGL\_{n+1}(k)\\).
 
 
 # Midterm exam
@@ -43,6 +51,79 @@ The midterm exam will be an oral exam in the week of September 21. It will be ab
 
 "Do" does not mean "write up and submit". 
 A general convention in Ravi's book is that ⋆ indicates an advanced section that can be skipped on the first reading.
+
+
+## Week 11
+
+-   **Read**: 16.1, 16.2, 16.3, 16.4 (which uses bits from 15.3.3), 16.5 (take S = spec k), skim the rest of 16.
+-   **Notes**:
+    -   The main section I want you to understand is 16.4. It describes all maps from an X to a projective space. As a result, it describes all maps from X to a quasi-projective variety Y. Since almost all schemes we care about are quasi-projective, this explains why we care so much about line bundles.
+    -   16.3 (the construction of the pull-back) is long for the same reasons that the section on fibered products was long. Everything is easy over affines, but it takes some space to carry out the gluing. I suggest going over this section lightly, perhaps only focusing on the affine case, and believing that gluing works.
+-   **More**:
+    -   Cech cohomology, for example start skimming Chapter 18.
+        I may add more references or make my own video/notes.
+
+
+## Week 10
+
+-   **Read**: Chapter 14 and chapter 12.5 for background
+-   **Notes**:
+    -   14.1 should be straightforward (and will get your hands dirty).
+    -   14.2 is dense and challenging. But it is extremely important in algebraic geometry (and in algebraic number theory!).
+    -   We have not read all the pre-requisites for this section, but you should attempt to read it anyway, taking on faith some things from previous section. Here are some pointers:
+    -   Restrict to Noetherian integral schemes.
+    -   There is some algebra that is necessary. The main ideas are
+    -   Dimension = Krull dimension = max of the length of a chain of prime ideals. This could be infinite, but assume it is finite.
+    -   Let \\(Y \\subset X\\) be irreducible of codimension \\(r\\). Let \\(p\\) be the generic point of \\(Y\\), then the Krull dimension of \\(O\_{X,p}\\) is \\(r\\). In particular, if \\(r = 1\\), then \\(O\_{X,p}\\) has dimension 1.
+    -   If \\(X\\) is "regular in codimension 1" then \\(O\_{X,p}\\) is regular local of dimension 1, and hence a Discrete Valuation Ring (DVR). See 12.5. DVRs allow us to measure "order of vanishing" of a function, which is essential for divisor theory.
+        Regular in codimension 1 is equivalent to "singular locus of \\(X\\) has codimension 2 or higher". So, not too singular.
+    -   For divisor theory, it is important to work with normal \\(X\\). The normality condition appears to be purely algebraic (integrally closed), but has two important geometric consequences: (1) Normal implies regular in codimension 1 (2) Hartog's lemma holds: if a rational function \\(f\\) has no poles (in codimension 1), then \\(f\\) is regular.
+
+
+### Discussions
+
+1.  Thursday
+
+    1.  (14.1.A)
+        Show that the space of global sections of \\(O(n)\\) on \\(\\mathbb P^1\_k = {\\rm Proj}\\ k[X,Y]\\) is naturally isomorphic to \\(k[X,Y]\_n\\), the degree \\(n\\) graded component of \\(k[X,Y]\\).
+    
+    2.  Let \\(s = X^2Y(X + Y)\\), considered as a global section of \\(O(4)\\) on \\(\\mathbb P^1\_{\\mathbb C}\\). Find \\({\\rm div} (s)\\).
+    
+    3.  Let \\(s = \\frac{101}{100}\\), considered as a rational section of \\(O\\) on \\({\\rm Spec}\\ \\mathbb Z\\).
+        Find \\({\\rm div} (s)\\).
+    
+    4.  Choose one of \\(X = {\\rm Spec}\\ \\mathbb Z\\) or \\(X = {\\rm Spec}\\ \\mathbb A^1\_k\\).
+        Identify the group of \\(\\{(L,s)\\}\\)/isomorphism.
+    
+    5.  Understand the proof of 14.2.1: \\({\\rm div}\\) is injective on normal (Noetherian) \\(X\\).
+    
+    6.  (14.1.D)
+        Sketch a proof of the fact that \\({\\rm Pic} \\mathbb P^1\_k = \\mathbb Z\\).
+        Hint: The only invertible sheaf on \\(\\mathbb A^1\\) is the trivial one.
+    
+    7.  Failure of Hartog's lemma.
+        Let us construct an \\(X\\) that is regular in codimension 1, but not normal. \\(X\\) can't be a curve (why?). So let us try a surface. We take a regular surface and modify it only in codimension 2 and hope to break normality. 
+        
+        Start with \\(Y = \\mathbb A^2\\). Obtain \\(X\\) by gluing two distinct points of \\(X\\), say \\(p = (1,0)\\) and \\(q = (0,1)\\) 
+        
+        -   Can you make this precise? Hint: this is an affine variety, so try to first construct the ring of functions, and then take the spec.
+        -   Take any function \\(f\\) on \\(\\mathbb A^2\\) with distinct values at \\(p\\) and \\(q\\), for example \\(x-y\\). Then \\(f\\) is a rational function on \\(X\\) that has no poles (\\({\\rm div} f = 0\\)) but is not regular.
+
+2.  Friday
+
+    1.  (Example of 14.2.E)
+        Let \\(D = 3[0] - [\\infty]\\) on \\(X = \\mathbb P^1\\). Show that \\(O\_X(D)\\) is an invertible sheaf. Show that it is isomorphic to \\(O(2)\\).
+    2.  (14.2.E)
+        Spend some time on the general result: For \\((L,s)\\), we have \\(O(div s) \\cong L\\).
+    3.  (14.2.7)
+        Digest the diagram in 14.2.7.
+    4.  (14.2.5)
+        Prove that if \\(D\\) is locally principal, then \\(O\_X(D)\\) is invertible.
+    5.  (14.2.I)
+        For a factorial \\(X\\), every divisor is locally principal.
+    6.  Prove (using the divisor class group) that \\({\\rm Pic} \\mathbb P^n\_k = \\mathbb Z\\).
+    7.  Prove (using the divisor class group) that \\({\\rm Pic} \\mathbb P^1\_k \\times \\mathbb P^1\_k = \\mathbb Z \\oplus \\mathbb Z\\).
+    8.  (14.2.K) Pic of the complement of a hypersurface.
 
 
 ## Week 9
@@ -78,7 +159,8 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     2.  Let \\(i \\colon U \\to X\\) be the open inclusion \\(\\mathbb A^1 \\to \\mathbb P^1\\).
         1.  Prove that \\(i\_\* O\_U\\) is a quasi-coherent \\(O\_X\\)-module. (Appealing to a general theorem is OK).
         2.  Is \\(i\_\* O\_U\\) coherent?
-        3.  Prove the general theorem alluded to above (13.3.F)
+        3.  What is the pushfoward look like for \\(f \\colon {\\rm Spec}\\ A \\to {\\rm Spec}\\ B\\)?
+        4.  Prove the general theorem alluded to above (13.3.F)
     
     3.  Let \\(X = {\\rm Proj}\\ k[u,v][X,Y]/(vX-uY) \\subset \\mathbb A^2 \\times \\mathbb P^1\\).
         Prove that \\(\\pi \\colon X \\to \\mathbb P^1\\) is a line bundle. That is:
@@ -90,6 +172,31 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
             Find the global sections of \\(I\\).
         4.  What are the transitions functions of the dual \\(I^\\vee\\)?
         5.  What are the global sections of \\(I^\\vee\\)?
+
+2.  Friday
+
+    Adventure continued. But also:
+    
+    1.  Stalks and fibers
+        
+        Remark: A good (but not perfect) way to think about a sheaf \\(F\\) is as a collection of stalks \\(F\_p\\) (which are modules).
+        
+        If \\(F\\) is (quasi)-coherent, an even simpler (but more imperfect) approximation is as a collection of fibers \\(F|\_p\\) = (F<sub>p</sub> / m<sub>P</sub> F<sub>p</sub>) (which are vector spaces).
+        
+        Let \\(F\\) be a coherent sheaf on a locally Noetherian \\(X\\). What can be gleaned from the fibers?
+        
+        1.  Let \\(M = k[t]/(t-1)(t+1)\\) and  \\(F = \\widetilde M\\) on \\(X = \\mathbb A^1\_k = {\\rm Spec}\\ k[t] \\).
+            What are the stalks of \\(M\\) at every point of \\(X\\)?
+            What are the fibers of \\(M\\) at every point of \\(X\\)? (Including the generic point).
+        
+        2.  If \\(F|\_p = 0\\), then \\(F\_p = 0\\), and there exists an open neighborhood of \\(p\\) on which \\(F = 0\\).
+        3.  \\(F \\to G\\) is surjective on fibers if and only if it is surjective. If F|<sub>p</sub> &rarr; G|<sub>p</sub> is surjective, then F &rarr; G is surjective in a neighborhood of p.
+            What can you say about injectivity?
+        4.  If \\(s\_1, &#x2026;, s\_n\\) are are sections of \\(F\\) that generate \\(F|\_p\\), then they generate \\(F|\_q\\) for every \\(q\\) in a neighborhood of \\(p\\).
+        5.  The function \\(p \\mapsto dim(F|\_p)\\) is upper semicontinuous.
+        6.  If \\(X\\) is reduced and connected, then \\(F\\) is locally free if and only if the rank function is constant.
+        7.  Give an example where the above fails for non-reduced \\(X\\).
+        8.  Let \\(X = \\mathbb A^2\\) and \\(I\\) the ideal sheaf of \\((0,0)\\). Compute the rank function for \\(I\\).
 
 
 ## Week 8
