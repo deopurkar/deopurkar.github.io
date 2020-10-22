@@ -31,7 +31,7 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 2.  Due 04 Sep: 3.2.K, 3.2.M, 3.2.R, 3.2.S, 3.4.I, 3.6.C, 3.6.N, 4.3.F.
 3.  Due 02 Oct: 4.3.C, 4.5.I, 5.1.E, 5.1.I, 5.2.F, 6.3.H, 6.3.M, 8.1.J (b,d).
 4.  Due 16 Oct: 8.2.N, 8.2.P, 9.2.D, 9.2.H, 9.4.B (c,d,f,g), 13.3.F, 13.3.G, 13.4.A
-5.  Due 30 Oct:
+5.  Due 5 Nov:
     -   13.7.D + find the support of the module associated to \\(k[x,y]/xy\\) on \\({\\rm Spec}\\ k[x,y]\\).
     -   13.7.F
     -   13.7.K
@@ -62,6 +62,23 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 -   **More**:
     -   Cech cohomology, for example start skimming Chapter 18.
         I may add more references or make my own video/notes.
+
+
+### Thursday
+
+1.  Prove that pullback of a locally free sheaf is locally free (of the same rank).
+
+2.  (15.3.F) Vitally important construction!
+
+3.  Read 16.4.1 (Important Theorem) and its proof.
+
+4.  Let \\(\\mathbb P^n \\to \\mathbb P^n\\) be the identity map. What is the line bundle and the sections corresponding to this map?
+
+5.  Show that the automorphism group of \\(\\mathbb P^1\_k\\) is \\(PGL\_2(k)\\).
+
+6.  Let \\(p \\in \\mathbb P^2\\) be a point. Recall we have a linear projection \\(\\mathbb P^2 - \\{p\\} \\to \\mathbb P^1\\). Which line bundle and sections give this map?
+
+7.  Find the divisor class group (= Picard group) of the blow-up of \\(\\mathbb A^2\\) at \\((0,0)\\).
 
 
 ## Week 10
