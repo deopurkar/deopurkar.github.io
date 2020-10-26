@@ -53,6 +53,19 @@ The midterm exam will be an oral exam in the week of September 21. It will be ab
 A general convention in Ravi's book is that ⋆ indicates an advanced section that can be skipped on the first reading.
 
 
+## Week 12
+
+-   **Read/skim**: 18.1, 18.2, 18.3, 18.4
+-   **Do**: 
+    -   Exercise 18.3.A
+    -   Exercise 18.4.A
+    -   Exercise 18.4.B/C (maybe)
+-   **Watch**
+    1.  [Sheaf cohomology](<https://vimeo.com/470803503>)
+    2.  [Cohomology of quasicoherent sheaves](<https://vimeo.com/470835362>)
+    3.  [Cech cohomology and the Picard group](<https://vimeo.com/472058119>)
+
+
 ## Week 11
 
 -   **Read**: 16.1, 16.2, 16.3, 16.4 (which uses bits from 15.3.3), 16.5 (take S = spec k), skim the rest of 16.
@@ -79,6 +92,25 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 6.  Let \\(p \\in \\mathbb P^2\\) be a point. Recall we have a linear projection \\(\\mathbb P^2 - \\{p\\} \\to \\mathbb P^1\\). Which line bundle and sections give this map?
 
 7.  Find the divisor class group (= Picard group) of the blow-up of \\(\\mathbb A^2\\) at \\((0,0)\\).
+
+
+### Friday
+
+1.  Show that a map \\(X \\to \\mathbb P^n\\) is the same as a line bundle \\(L\\) on \\(X\\) and a surjective map \\(O\_X^{n+1} \\to L.\\)
+    
+    Suppose for simplicity that we are working over an algebraically closed field \\(k\\). I claim that the above statement is a precise version of: \\(\\mathbb P^n\_k\\) is the space of one-dimensional quotients of \\(k^{n+1}\\). Can you justify this claim?
+    Hint: Take \\(X = {\\rm Spec}\\ k\\) to get a description of closed points of \\(\\mathbb P^n\_k\\).
+
+2.  Read theorem 16.5.1 (take the base S = Spec k, for simplicity) and its proof (16.5.2)
+    As an example, consider the map \\({\\rm Spec}\\ \\mathbb Z \\dashrightarrow \\mathbb P^1\_\\mathbb Z\\) "defined by" \\([6:12]\\). On which open set is this map defined? Extend it to all of \\({\\rm Spec}\\ \\mathbb Z\\).
+
+3.  (15.3.C: Globally generated sheaves. Assume X Noetherian)
+
+4.  Read Serre's theorem A (15.3.8) and its consequence (15.3.1)
+
+5.  Let \\(I\\) be the ideal sheaf of a point in \\(\\mathbb P^2\_k\\). Is \\(I\\) globally generated? Find an \\(n\\) such that \\(I(n)\\) is globally generated.
+
+6.  Read the Hilbert Syzygy Theorem (15.3.2)
 
 
 ## Week 10
