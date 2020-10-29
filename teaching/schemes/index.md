@@ -47,6 +47,48 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 The midterm exam will be an oral exam in the week of September 21. It will be about 45 minutes long. I have prepared [a list of questions for the exam](midterm1.pdf). We will ask questions from this list, small variations on them, and follow up questions based on your responses.
 
 
+# Final exam
+
+
+## Practice questions
+
+1.  Let \\(X\\) be a Noetherian scheme.
+    -   Give the definition of a quasi-coherent sheaf on \\(X\\).
+    -   Give an example of a quasi-coherent sheaf that is not coherent.
+    -   Give an example of a coherent sheaf that is not locally free.
+    -   Is a subsheaf of a locally free sheaf necessarily locally free?
+    -   Suppose \\(F\\) is a coherent sheaf such that the stalks \\(F\_x\\) are free for all (closed) points \\(x\\). Must \\(F\\) be free? Locally free?
+
+2.  Let \\(X = {\\rm Spec}\\ A\\).
+    -   Explain the relationship between closed subschemes of \\(X\\) and ideals of \\(A\\).
+    -   Let \\(Y \\to X\\) and \\(Z \\to X\\) be closed embeddings. Is \\(Y \\times\_X Z \\to X\\) also a closed embedding? What if \\(X\\) is not affine? What about open embeddings?
+
+3.  Let \\(X = {\\rm Proj}\\ \\mathbb Q[X,Y,Z]/(X^2+Y^2+Z^2)\\).
+    -   Is there a map \\({\\rm Spec}\\ \\mathbb Q \\to X\\)?
+    -   Prove that \\(X \\times\_{{\\rm Spec}\\ \\mathbb Q} {\\rm Spec}\\ \\mathbb C\\) is isomorphic to \\(\\mathbb P^1\_{\\mathbb C}\\).
+    -   Is \\(X\\) isomorphic to \\(\\mathbb P^1\_{\\mathbb Q}\\)?
+    -   Describe a closed embedding of \\(X \\times X\\) in \\(\\mathbb P^n\_{\\mathbb Z}\\) for some \\(n\\).
+
+4.  Let \\(X = \\mathbb P^1\_\\mathbb C\\). Let \\(p = [0:1]\\) and \\(q = [1:0]\\).
+    -   Describe the sheaf \\(O(p-q)\\).
+    -   Is this quasi-coherent? Coherent? Locally free?
+    -   What more can you say about it?
+    -   What if I had taken a different linear combination of a different set of points?
+
+5.  Everything in this question is over a field \\(k\\).
+    -   What is the Picard group of \\(\\mathbb P^n\\)?
+    -   What about \\(\\mathbb P^n \\times \\mathbb P^m\\)?
+    -   Let \\(L = \\pi\_1^\* O(a) \\otimes \\pi\_2^\* O(b)\\) on \\(\\mathbb P^1 \\times \\mathbb P^1\\). For which \\(a\\) and \\(b\\) does \\(L\\) have a global section? is globally generated?
+    -   Describe some global sections of \\(L\\) when \\(a = 1\\) and \\(b = 1\\).
+    -   Do the sections you wrote define a map to a projective space?
+    -   What is the nature of this map? (Finite, open embedding, closed embedding, constant)?
+
+6.  Let \\(X = \\mathbb P^2\_k\\).
+    -   What is the Euler characteristic of the structure sheaf of \\(m\\) points?
+    -   What is the Euler characteristic of the ideal sheaf of \\(m\\) points?
+    -   Let \\(I\\) be the ideal sheaf of \\(6\\) points. Using the short exact sequence on cohomology, can you make a guess about the dimension of \\(H^i(I)\\)? What about \\(H^i(I(n))\\)? Should these numbers be the same for all configurations of the points?
+
+
 # Weekly reading, viewing, and doing
 
 "Do" does not mean "write up and submit". 
