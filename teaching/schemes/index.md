@@ -89,6 +89,17 @@ The midterm exam will be an oral exam in the week of September 21. It will be ab
     -   Let \\(I\\) be the ideal sheaf of \\(6\\) points. Using the short exact sequence on cohomology, can you make a guess about the dimension of \\(H^i(I)\\)? What about \\(H^i(I(n))\\)? Should these numbers be the same for all configurations of the points?
 
 
+## Marking
+
+Five major areas. Each out of 10.
+
+1.  Quasi-coherent and coherent sheaves, stalks, fibers, support.
+2.  Local freeness, kernels/cokernels, pull-backs, push-forwards.
+3.  Open and closed embeddings, fiber products.
+4.  Line bundles, divisors, maps to projective space.
+5.  Global sections, cohomology, Euler characteristic.
+
+
 # Weekly reading, viewing, and doing
 
 "Do" does not mean "write up and submit". 
@@ -106,6 +117,33 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
     1.  [Sheaf cohomology](<https://vimeo.com/470803503>)
     2.  [Cohomology of quasicoherent sheaves](<https://vimeo.com/470835362>)
     3.  [Cech cohomology and the Picard group](<https://vimeo.com/472058119>)
+
+
+### Thursday
+
+1.  Let \\(\\pi \\from X \\to Y\\) be an affine morphism and \\(F\\) a quasi-coherent sheaf on \\(X\\).
+    -   Prove that \\(H^i(X, F) = H^i(Y, \\pi\_\* F)\\).
+    -   In particular, if \\(\\pi\\) is a closed embedding, "treating \\(F\\) as a sheaf on \\(Y\\)" does not change the cohomology.
+
+2.  Compute the cohomology group \\(H^1(\\mathbb A^2 - \\{(0,0)\\}, O)\\).
+
+3.  Let \\(X \\subset \\mathbb P^1\_k\\) be a finite set of \\(m\\) points.
+    -   Show that we have an exact sequence \\(0 \\to O(-m) \\to O \\to O\_X \\to 0\\).
+        (Standard abuse of notation: writing \\(O\_X\\) for \\(i\_\* O\_X\\) where \\(i\\) is the closed embedding.)
+    -   Use this and \\(h^1(\\mathbb P^1, O) = 0\\) to find \\(h^1(\\mathbb P^1, \\O(-m))\\).
+
+4.  Let \\(X \\subset \\mathbb P^2\_k\\) be a curve of degree \\(d\\). That is, \\(X = V(F)\\), where \\(F\\) is a section of \\(O(d)\\).
+    -   Show that we have an exact sequence \\(0 \\to O(-d) \\to O \\to O\_X \\to 0.\\) What is the first map in this sequence?
+    -   Find the Euler characteristic of \\(O\_X\\).
+    -   The genus of a curve \\(X\\) is defined to be \\(1 - \\chi(O\_X)\\). Find the genus of a curve of degree \\(d\\) in \\(\\mathbb P^2\_k\\).
+        (For smooth connected curves, this is the same as \\(h^1(O\_X)\\). Over \\(\\mathbb C\\), this agrees with the topological genus.)
+
+5.  Assume the Hilbert Syzygy Theorem: every coherent sheaf \\(F\\) on \\(\\mathbb P^n\\) has a finite resolution whose terms are direct sums of line bundles.
+    
+    -   Prove that \\(n \\mapsto \\chi F (n)\\) is a polynomial function of \\(n\\). This is called the "Hilbert polynomial" of \\(F\\).
+    -   Prove that \\(n \\mapsto h^0(F(n))\\), called the "Hilbert function", agrees with the Hilbert polynomial for all sufficiently large \\(n\\). (Hint: Serre vanishing).
+    
+    (There is a more direct inductive proof of polynomiality using slicing by hyperplanes.)
 
 
 ## Week 11
