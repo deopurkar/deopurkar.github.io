@@ -65,7 +65,7 @@ The midterm exam will be an oral exam in the week of September 21. It will be ab
 
 3.  Let \\(X = {\\rm Proj}\\ \\mathbb Q[X,Y,Z]/(X^2+Y^2+Z^2)\\).
     -   Is there a map \\({\\rm Spec}\\ \\mathbb Q \\to X\\)?
-    -   Prove that \\(X \\times {\\rm Spec}\\ \\mathbb C\\) is isomorphic to \\(\\mathbb P^1\_{\\mathbb C}\\).
+    -   Prove that \\(X \\times\_{{\\rm Spec}\\ \\mathbb Q} {\\rm Spec}\\ \\mathbb C\\) is isomorphic to \\(\\mathbb P^1\_{\\mathbb C}\\).
     -   Is \\(X\\) isomorphic to \\(\\mathbb P^1\_{\\mathbb Q}\\)?
     -   Describe a closed embedding of \\(X \\times X\\) in \\(\\mathbb P^n\_{\\mathbb Z}\\) for some \\(n\\).
 
