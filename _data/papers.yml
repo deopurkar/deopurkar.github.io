@@ -1,9 +1,17 @@
+- title: "Spherical objects and stability conditions on CY2 quiver categories"
+  coathors: ["[Asilata Bapat](https://asilata.github.io/)", "[Anthony Licata](https://maths-people.anu.edu.au/~licatat/)"]
+  abstract: "We devise an algorithm to simplify objects in CY2 triangulated categories using carefully chosen spherical twists."
+  journal: Pre-print
+  formats:
+    draft:  "/research/papers/algorithm.pdf"
+
 - title: "The Thurston compactification of the space of stability conditions: some rank 2 cases"
   coauthors: ["[Asilata Bapat](https://asilata.github.io/)", "[Anthony Licata](https://maths-people.anu.edu.au/~licatat/)"]
   abstract:  "We define a map from the space of Bridgeland stability conditions on a triangulated category C to an infinite projective space.  We conjecture that under some mild assumptions on the triangulated category C this map to be a homeomorphism onto its image and that the closure is a real manifold with boundary.   Thus we obtain a compactification of the space of stability conditions.  Both the definition and expected properties of this compactification are analogous in many respects to Thurston's compactification of the Teichmuller space of a hyperbolic surface. In this paper we study in detail the case when C is the 2-Calabi-Yau category associated to the $A_2$ quiver, and prove our conjectures in that case."
   journal: Pre-print
   formats:
      draft: "/research/papers/a2-compactification.pdf"
+     arxiv: https://arxiv.org/abs/2011.07908
 
 - title: Anticanonical tropical cubic del Pezzos contain exactly 27 lines
   coauthors: ["[María Angélica Cueto](https://people.math.osu.edu/cueto.5/)"]
