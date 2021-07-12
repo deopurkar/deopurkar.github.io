@@ -24,6 +24,10 @@ function toggle_visibility(id) {
 }
 </style>
 
+<div>
+This is the website of the course taught in 2019.
+</div>
+
 <div class="intro">
 <div>
 Welcome to Algebra 3!
