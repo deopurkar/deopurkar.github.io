@@ -1,14 +1,3 @@
-
-# Table of Contents
-
-1.  [References](#orgbaaf434)
-2.  [Pre-requisites](#org23ab0d8)
-3.  [Assessment](#org2bb1432)
-4.  [Policies](#org3363606)
-    1.  [Late submission](#orgf484eec)
-    2.  [Collaboration](#orgce6ab14)
-5.  [Plan](#orgf4efb69)
-
 ---
 layout: default
 title: 'Advanced topics in algebra: Algebraic geometry'
@@ -25,8 +14,6 @@ This year, the course will be on algebraic geometry, the study of algebraic equa
 We will begin with affine varieties&#x2014;solution sets of polynomial equations&#x2014;and use these as building blocks to construct a rich world of geometric objects that include Riemann surfaces, projective spaces, and Grassmannians.
 
 
-<a id="orgbaaf434"></a>
-
 # References
 
 1.  [Basic Algebraic Geometry, Part I by I. Shafarevich](https://link.springer.com/book/10.1007/978-3-642-37956-7) (primary text)
@@ -34,16 +21,12 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 3.  [Algebraic Varieties: Basic Notions by V. Danilov](https://link.springer.com/chapter/10.1007/978-3-642-57878-6_6)
 
 
-<a id="org23ab0d8"></a>
-
 # Pre-requisites
 
 Algebra 1 and Algebra 2.
 
 Algebraic geometry interacts deeply with many other areas of mathematics, so some background in topology, complex analysis, and differential geometry will be helpful, but not required. 
 
-
-<a id="org2bb1432"></a>
 
 # Assessment
 
@@ -56,12 +39,8 @@ The final mark is based on three factors.
 If you are a masters student or taking the course as an ASC/ASE, your assessment will include an additional project component.
 
 
-<a id="org3363606"></a>
-
 # Policies
 
-
-<a id="orgf484eec"></a>
 
 ## Late submission
 
@@ -69,16 +48,12 @@ I will not accept any late submissions, except for medical emergencies with a me
 To compensate for this strict policy, I will drop the lowest homework mark. So, you will have the opportunity to complete 11 homework sets, and the 10 highest will count towards the final mark.
 
 
-<a id="orgce6ab14"></a>
-
 ## Collaboration
 
 You are allowed, even encouraged, to work with others on homework assignments, but you must write up your solutions **on your own**. In other words, you **may not** copy someone else's write-up and you **may not** write your solutions side by side someone else. On your submission, you must write the names of your collaborators. This is a matter of academic honesty; it will not affect your marks. 
 
 There will be no collaboration on the exams.
 
-
-<a id="orgf4efb69"></a>
 
 # Plan
 
