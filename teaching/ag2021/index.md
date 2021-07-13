@@ -17,7 +17,7 @@ no-navigation: true
 </div>
 
 This year, the course will be on algebraic geometry, the study of algebraic equations using geometry and geometric shapes using algebra.
-We will begin with affine varieties&#x2014;solution sets of polynomial equations&#x2014;and use these as building blocks to construct a rich world of geometric objects that include Riemann surfaces, projective spaces, and Grassmannians.
+We will begin with affine varieties&#x2014;solution sets of polynomial equations&#x2014;and use these as building blocks to construct a rich world of geometric objects that include Riemann surfaces, projective spaces, Grassmannians, etc.
 
 
 # References
@@ -56,7 +56,7 @@ To compensate for this strict policy, I will drop the lowest homework mark. So, 
 
 ## Collaboration
 
-You are allowed, even encouraged, to work with others on homework assignments, but you must write up your solutions **on your own**. In other words, you **may not** copy someone else's write-up and you **may not** write your solutions side by side someone else. On your submission, you must write the names of your collaborators. This is a matter of academic honesty; it will not affect your marks. 
+You are allowed, even encouraged, to work with others on homework assignments, but you must write up your solutions **on your own**. In other words, you **may not** copy someone else's write-up and you **may not** write your solutions side by side with someone else. On your submission, you must write the names of your collaborators. This is a matter of academic honesty; it will not affect your marks. 
 
 There will be no collaboration on the exams.
 
