@@ -130,9 +130,9 @@ function hsCollapseAllVisible() {
     });
 }
 
-// Add click events to H3/H4/H5 headers which have contents.
+// Add click events to H2/H3/H4/H5 headers which have contents.
 function hsInit() {
-    for (var i = 3; i <= 5; i++) {
+    for (var i = 2; i <= 5; i++) {
         $('#content .outline-' + i).each(function() {
             var header = $(this).children(':header');
             if (header.siblings().length > 0) {

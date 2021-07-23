@@ -16,32 +16,6 @@
 // URL: https://github.com/fniessen/org-html-themes/
 // Version: 20140515.1841
 
-$(function() {
-    $('p').
-        html(function(index, old) {
-            return old.replace('FIXME',
-                               '<span class="fixme">FIXME</span>');
-    });
-    $('p').
-        html(function(index, old) {
-            return old.replace('XXX',
-                               '<span class="fixme">XXX</span>');
-    });
-});
-
-// Remove leading section number
-$(function() {
-    $('.section-number-2').text("");
-    for (var i = 3; i <= 5; i++) {
-        $('.section-number-' + i).each(function() {
-            $(this).text($(this).text().replace(/^[0-9]+\./g, ""));
-        });
-    }
-});
-
-$(function() {
-    $('<div id="minitoc" class="dontprint"></div>').prependTo('body');
-});
 
 // generate contents of minitoc
 function generateMiniToc(divId) {
@@ -67,7 +41,7 @@ function tabifySections() {
 
     // grab the list of `h2' from the page
     var allSections = [];
-    $('h2')
+    $('h1')
         .each(function() {
             // Remove TODO keywords and tags (contained in spans)
             var tabText = $(this).clone().find('span').remove().end()
@@ -94,13 +68,6 @@ function tabifySections() {
         tabs.append(html);
     }
 
-    // insert tabs menu after title (`h1'), or at the beginning of the content
-    if($('.title').length !== 0) {
-        $('.title').after(tabs);
-    }
-    else {
-        $('#content').prepend(tabs);
-    }
 }
 
 function selectTabAndScroll(href) {
@@ -189,57 +156,6 @@ $(document).ready(function() {
     $('table').stickyTableHeaders();
 });
 
-function copyToClipboard(text)
-{
-    if (window.clipboardData && window.clipboardData.setData) { // Internet Explorer
-        window.clipboardData.setData("Text", text);
-    }
-    else { // Fallback solution
-        window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
-    }
-}
-
-$(document).ready(function() {
-    // Assuming that the ZeroClipboard swf file is in the same folder than bigblow,
-    // get the path to it (it will be relative to the current page location).
-    var bbScriptPath = $('script[src$="bigblow.js"]').attr('src');  // the js file path
-    var bbPathToZeroClipboardSwf = bbScriptPath.replace('bigblow.js', 'ZeroClipboard.swf');
-
-    // Add copy to clipboard snippets
-    $('.org-src-container').prepend('<div class="snippet-copy-to-clipboard"><span class="copy-to-clipboard-button">[copy]</span></div>');
-
-    // Display/hide snippets on source block mouseenter/mouseleave
-    $(document).on('mouseenter', '.org-src-container', function () {
-        $(this).find('.snippet-copy-to-clipboard').show();
-
-        // Need to call zclip here, once the button is visible.
-        // Beacause when the button is not visible, zclip does nothing.
-        if ((window.location.protocol != 'file:') && ($(this).find('.zclip').length == 0)) {
-            $(this).find('.copy-to-clipboard-button').zclip({
-                //path: 'http://www.steamdev.com/zclip/js/ZeroClipboard.swf',
-                //path: 'src/bigblow_theme/js/ZeroClipboard.swf',
-                path: bbPathToZeroClipboardSwf,
-                copy: function() {
-                    return $(this).parent().parent().find('.src').text();
-                }
-            });
-        }
-    }).on('mouseleave', '.org-src-container', function () {
-        $(this).find('.snippet-copy-to-clipboard').hide();
-    });
-
-    // Handle copy to clipboard (here, for a local file only 'file://...'
-    if (window.location.protocol == 'file:') { // if local file use browser-specific code
-        $('.copy-to-clipboard-button').click(function() {
-            // Get the text to be copied
-            var text = $(this).parent().parent().find('.src').text();
-            text = text.replace(/\n/g, "\r\n");
-            // alert(text);
-            copyToClipboard(text);
-        });
-    }
-});
-
 $(function() {
     $('li > code :contains("[X]")')
         .parent()
@@ -284,151 +200,6 @@ $(function() {
     });
 });
 
-function togglePanel(e) {
-    e.preventDefault();
-
-    $("#left-panel-contents").toggleClass('active').toggle(200);
-    $("#right-panel-contents").toggleClass('active').toggle(200);
-
-    var slidePos =
-        $("#left-panel-button").css("left") == "-23px"? '182px': '-23px';
-
-    $("#left-panel-button").
-        animate({"left": slidePos, "opacity": 0.9}, {duration: "200" });
-
-    // if ($("#left-panel-contents").hasClass('active')) {
-    //     hsHideTodoKeyword('done');
-    // } else {
-    //     hsShowTodoKeyword('done');
-    // }
-
-    // return false;
-}
-
-$(function() {
-    $('<div id="left-panel-wrapper" class="dontprint"><div id="left-panel-contents" style="opacity: 0.9"></div><div id="left-panel-button" class="dontprint"><a href="#">Dashboard</a></div></div>')
-        .appendTo('body');
-
-    $('<div id="right-panel-wrapper" class="dontprint"><div id="right-panel-contents" style="opacity: 0.9"></div></div>')
-        .appendTo('body');
-
-    $('#left-panel-button').click(togglePanel);
-});
-
-$(function() {
-    var ul = $('<ul id="listOfTodo"></ul>').appendTo('#left-panel-contents');
-    var countOfTodo = {}, listOfTodo = [], totalOfTodo = 0;
-
-    // assign the counts (avoid double-counting elements from the ToC)
-    $('span.todo').not($('#table-of-contents span.todo')).each(function() {
-        var $thisTodo = $(this).text().trim();
-
-        if ($.inArray($thisTodo, listOfTodo) == -1) {
-            countOfTodo[$thisTodo] = 1;
-            listOfTodo.push($thisTodo);
-        }
-        else
-            countOfTodo[$thisTodo] += 1;
-        totalOfTodo += 1;
-    });
-
-    function scoreTodo(t) {
-        switch (t) {
-            case 'NEW': return 1;
-            case 'TODO': return 2;
-            case 'STRT': return 3;
-            case 'WAIT': return 4;
-            case 'DLGT': return 5;
-            case 'SDAY': return 6;
-            case 'DFRD': return 7;
-            case 'DONE': return 8;
-            case 'CANX': return 9;
-            default: return 0;
-            }
-    }
-
-    function compareTodo(a, b) {
-        if (scoreTodo(a) < scoreTodo(b)) return -1;
-        if (scoreTodo(a) > scoreTodo(b)) return 1;
-        return 0;
-    }
-
-    listOfTodo.sort(compareTodo);
-
-    // display
-    for (i = 0; i < listOfTodo.length; i++) {
-        var $thisTodo = listOfTodo[i];
-        $(ul).append('<li><span class="todo ' + $thisTodo + '">'+ $thisTodo + '</span>'
-                     + ' <small>(' + countOfTodo[$thisTodo] + ')</small></li>');
-    }
-
-    $('#listOfTodo')
-        .before('<b>Next Actions</b> <small>(' + totalOfTodo + ')</small>:<br>');
-});
-
-$(function() {
-    var ul = $('<ul id="listOfDone"></ul>').appendTo('#left-panel-contents');
-    var countOfDone = {}, listOfDone = [], totalOfDone = 0;
-
-    // assign the counts (avoid double-counting elements from the ToC)
-    $('span.done').not($('#table-of-contents span.done')).each(function() {
-        var $thisDone = $(this).text().trim();
-
-        if ($.inArray($thisDone, listOfDone) == -1) {
-            countOfDone[$thisDone] = 1;
-            listOfDone.push($thisDone);
-        }
-        else
-            countOfDone[$thisDone] += 1;
-        totalOfDone += 1;
-    });
-
-    // display
-    for (i = 0; i < listOfDone.length; i++) {
-        var $thisDone = listOfDone[i];
-        $(ul).append('<li><span class="done ' + $thisDone + '">'+ $thisDone + '</span>'
-                     + ' <small>(' + countOfDone[$thisDone] + ')</small></li>');
-    }
-
-    $('#listOfDone')
-        .before('<b>Done Actions</b> <small>(' + totalOfDone + '):</small><br>');
-});
-
-$(function() {
-    var ul = $('<ul id="listOfTags"></ul>').appendTo('#right-panel-contents');
-    var countOfTags = {}, listOfTags = [], totalOfTags = 0;
-
-    // assign the counts (avoid double-counting elements from the ToC)
-    $('span.tag').not($('#table-of-contents span.tag')).each(function() {
-        var $thisTagGroup = $(this).text().trim().split(/\s/);
-                                        // \s matches spaces, tabs, new lines, etc.
-
-        for (tag in $thisTagGroup) {
-            if ($.inArray($thisTagGroup[tag], listOfTags) == -1) {
-                countOfTags[$thisTagGroup[tag]] = 1;
-                listOfTags.push($thisTagGroup[tag]);
-            }
-            else
-                countOfTags[$thisTagGroup[tag]] += 1;
-            totalOfTags += 1;
-        }
-    });
-
-    listOfTags.sort();
-
-    // display
-    for (i = 0; i < listOfTags.length; i++) {
-        var $thisTag = listOfTags[i];
-        // $(ul).append('<li><span class="tag ' + $thisTag + '">'+
-        //                   $thisTag + '</span> <small>(' + countOfTags[$thisTag] + ')</small></li>');
-        $(ul).append('<li><span class="tag"><span class="' + $thisTag + '">' + $thisTag
-                     + '</span></span>'
-                     + ' <small>(' + countOfTags[$thisTag] + ')</small></li>');
-    }
-
-    $('#listOfTags')
-        .before('<b>Contexts</b> <small>(' + totalOfTags + '):</small><br>');
-});
 
 $(function() {
     $('.done').parent(':header').parent().find(':header').addClass('DONEheader');
