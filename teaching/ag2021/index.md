@@ -20,6 +20,12 @@ This year, the course will be on algebraic geometry, the study of algebraic equa
 We will begin with affine varieties&#x2014;solution sets of polynomial equations&#x2014;and use these as building blocks to construct a rich world of geometric objects that include Riemann surfaces, projective spaces, Grassmannians, etc.
 
 
+# Announcements
+
+1.  The first lecture will be on Tuesday, July 27 from 2pm-3pm in COP G021.
+2.  The lectures will be live streamed and recorded (links will be posted on this page).
+
+
 # References
 
 1.  [Basic Algebraic Geometry, Part I by I. Shafarevich](https://link.springer.com/book/10.1007/978-3-642-37956-7) (primary text)
