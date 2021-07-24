@@ -1,22 +1,30 @@
-body
-{
-}
-
 .info:before {
     content: "Infomation. ";
     font-weight: bold;
     font-style: normal;
 }
 
+.example, .proposition, .remark, .theorem, .definition, .skipped {
+    padding: 5px;
+    background-color:  #eeeceb;
+}
+
+.skipped {
+    padding:5px;
+    border: 1px solid;
+    border-color: #d05a5f;
+}
+
 .example:before {
-    content: "Example. ";
+    content: "Example\2014" + attr(id) ". ";
     font-weight: bold;
     font-style: normal;
     text-decoration: underline;
 }
 
+
 .proposition:before {
-    content: "Proposition " attr(btit) ". ";
+    content: "Proposition\2014" attr(id) ". ";
     font-weight: bold;
     font-style: normal;
     text-decoration: underline;
@@ -30,14 +38,14 @@ body
 }
 
 .theorem:before {
-    content: "Theorem "  attr(btit) ". ";
+    content: "Theorem\2014"  attr(id) ". ";
     font-weight: bold;
     font-style: normal;
     text-decoration: underline;
 }
 
 .lemma:before {
-    content: "Lemma " attr(btit) ". ";
+    content: "Lemma \2014" attr(id) ". ";
     font-weight: bold;
     font-style: normal;
 }
@@ -53,7 +61,7 @@ body
 }
 
 .definition:before {
-    content: "Definition.";
+    content: "Definition\2014"  attr(id) ". ";
     font-weight: bold;
     font-style: normal;
 }
