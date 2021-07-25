@@ -1,68 +1,6 @@
-.info:before {
-    content: "Infomation. ";
-    font-weight: bold;
-    font-style: normal;
-}
-
-.example, .proposition, .remark, .theorem, .definition, .skipped {
+.skipped {
     padding: 5px;
     background-color:  #eeeceb;
-}
-
-.skipped {
-    padding:5px;
     border: 1px solid;
     border-color: #d05a5f;
 }
-
-.example:before {
-    content: "Example\2014" + attr(id) ". ";
-    font-weight: bold;
-    font-style: normal;
-    text-decoration: underline;
-}
-
-
-.proposition:before {
-    content: "Proposition\2014" attr(id) ". ";
-    font-weight: bold;
-    font-style: normal;
-    text-decoration: underline;
-}
-
-.remark:before {
-    content: "Remark.";
-    font-weight: bold;
-    font-style: normal;
-    text-decoration: underline;
-}
-
-.theorem:before {
-    content: "Theorem\2014"  attr(id) ". ";
-    font-weight: bold;
-    font-style: normal;
-    text-decoration: underline;
-}
-
-.lemma:before {
-    content: "Lemma \2014" attr(id) ". ";
-    font-weight: bold;
-    font-style: normal;
-}
-
-.proof:before {
-    content: "Proof.";
-    font-style: italic;
-}
-
-.proof:after {
-    content: "\25FC";
-    float:right;
-}
-
-.definition:before {
-    content: "Definition\2014"  attr(id) ". ";
-    font-weight: bold;
-    font-style: normal;
-}
-

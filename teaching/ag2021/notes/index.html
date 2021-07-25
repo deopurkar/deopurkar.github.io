@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-07-24 Sat 23:45 -->
+<!-- 2021-07-25 Sun 11:34 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Algebraic geometry (Notes)</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Anand Deopurkar" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,7 +192,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="src/bigblow_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="src/bigblow_theme/css/hideshow.css"/>
@@ -205,30 +205,6 @@
 <script type="text/javascript" src="src/bigblow_theme/js/hideshow.js"></script>
 <script type="text/javascript" src="src/lib/js/jquery.stickytableheaders.min.js"></script>
 <link rel='stylesheet' type='text/css' href='theorems.css'/>
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.cacheClassElem = elem.className;
-         elem.cacheClassTarget = target.className;
-         target.className = "code-highlighted";
-         elem.className   = "code-highlighted";
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(elem.cacheClassElem)
-         elem.className = elem.cacheClassElem;
-       if(elem.cacheClassTarget)
-         target.className = elem.cacheClassTarget;
-     }
-    /*]]>*///-->
-// @license-end
-</script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         displayAlign: "center",
@@ -249,24 +225,19 @@
              }
 });
 </script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Algebraic geometry (Notes)</h1>
 
-<div id="outline-container-org547220e" class="outline-2">
-<h2 id="org547220e"><span class="section-number-2">1</span> Affine algebraic sets</h2>
+<div id="outline-container-org60bf109" class="outline-2">
+<h2 id="org60bf109"><span class="section-number-2">1.</span> Affine algebraic sets</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org6194c1e" class="outline-3">
-<h3 id="org6194c1e"><span class="section-number-3">1.1</span> Basic definitions</h3>
+<div id="outline-container-org38c24c2" class="outline-3">
+<h3 id="org38c24c2"><span class="section-number-3">1.1.</span> Affine space</h3>
 <div class="outline-text-3" id="text-1-1">
-</div>
-<div id="outline-container-org3526d29" class="outline-4">
-<h4 id="org3526d29"><span class="section-number-4">1.1.1</span> Affine space</h4>
-<div class="outline-text-4" id="text-1-1-1">
 <p>
 The objects of study in algebraic geometry are called algebraic varieties.
 The building blocks for general algebraic varieties are certain subsets of the affine space.
@@ -284,31 +255,32 @@ In particular, the zero tuple does not play a distinguished role.
 </div>
 </div>
 
-<div id="outline-container-orgad15566" class="outline-4">
-<h4 id="orgad15566"><span class="section-number-4">1.1.2</span> Affine algebraic set</h4>
-<div class="outline-text-4" id="text-1-1-2">
+<div id="outline-container-orge830ad9" class="outline-3">
+<h3 id="orge830ad9"><span class="section-number-3">1.2.</span> Affine algebraic set</h3>
+<div class="outline-text-3" id="text-1-2">
 <p>
 Let \(k[x_1,\dots,x_n]\) denote the ring of polynomials in variables \(x_1, \dots, x_n\) and coefficients in \(k\).
 An <i>affine algebraic subset</i> of the affine space \(\mathbb A^n_k\) is the common zero locus of a set of polynomials.
 More precisely, a set \(S \subset \mathbb A^n_k\) is an affine algebraic subset if there exists a set of polysomials \(A \subset k[x_1,\dots,x_n]\) such that
 \[ S = \{a \in \mathbb A^n_k \mid f(a) = 0 \text{ for all } f \in A\}.\]
 </p>
-<div class="definition">
+</div>
+<div id="outline-container-orga58b34b" class="outline-4">
+<h4 id="orga58b34b"><span class="section-number-4">1.2.1.</span> Definition (Vanishing locus)</h4>
+<div class="outline-text-4" id="text-1-2-1">
 <p>
-[Vanishing locus]
 Given \(A \subset k[x_1,\dots,x_n]\), the <i>vanishing locus of \(A\)</i>, denoted by \(V(A)\) is the set 
 \[ V(A) = \{a \in \mathbb A^n_k \mid f(a) = 0 \text{ for all } f \in A\}.\]
 </p>
 
-</div>
 <p>
 Thus, the affine algebraic sets are precisely the sets of the form \(V(A)\) for some \(A\).
 </p>
 </div>
 </div>
-<div id="outline-container-org9d93030" class="outline-4">
-<h4 id="org9d93030"><span class="section-number-4">1.1.3</span> Examples</h4>
-<div class="outline-text-4" id="text-1-1-3">
+<div id="outline-container-orgbb2772d" class="outline-4">
+<h4 id="orgbb2772d"><span class="section-number-4">1.2.2.</span> Examples</h4>
+<div class="outline-text-4" id="text-1-2-2">
 <p>
 The following are affine algebraic sets
 </p>
@@ -317,7 +289,7 @@ The following are affine algebraic sets
 <li>Entire affine space</li>
 <li>Single point</li>
 </ol>
-<div class="skipped">
+<div class="skipped" id="orgc6f3fa0">
 <p>
 Proof.
 </p>
@@ -326,9 +298,9 @@ Proof.
 </div>
 </div>
 
-<div id="outline-container-org1ad5900" class="outline-4">
-<h4 id="org1ad5900"><span class="section-number-4">1.1.4</span> Non examples</h4>
-<div class="outline-text-4" id="text-1-1-4">
+<div id="outline-container-orgcd19d88" class="outline-4">
+<h4 id="orgcd19d88"><span class="section-number-4">1.2.3.</span> Non examples</h4>
+<div class="outline-text-4" id="text-1-2-3">
 <p>
 The following are not affine algebraic sets
 </p>
@@ -336,7 +308,7 @@ The following are not affine algebraic sets
 <li>The unit cube in \(\mathbb A^n_{{\mathbb R}}\)</li>
 <li>Points with rational coordinates in \(\mathbb A^n_{{\mathbb C}}\)</li>
 </ol>
-<div class="skipped">
+<div class="skipped" id="org3c5d3de">
 <p>
 Proof.
 </p>
@@ -344,10 +316,11 @@ Proof.
 </div>
 </div>
 </div>
+</div>
 
-<div id="outline-container-orgb408b19" class="outline-4">
-<h4 id="orgb408b19"><span class="section-number-4">1.1.5</span> Ideals</h4>
-<div class="outline-text-4" id="text-1-1-5">
+<div id="outline-container-org52b96e2" class="outline-3">
+<h3 id="org52b96e2"><span class="section-number-3">1.3.</span> Ideals</h3>
+<div class="outline-text-3" id="text-1-3">
 <p>
 Let \(R\) be a ring.
 Recall that a subset \(I \subset R\) is an <i>ideal</i> if it is closed under addition and multiplication by elements of \(R\).
@@ -356,20 +329,22 @@ This ideal consists of all elements \(r\) of  \(R\) that can be written as a lin
 \[ r = a_1 r_1 + \cdots + a_m r_m,\]
 where \(a_i \in A\) and \(r_i \in R\).
 </p>
+</div>
 
-<div class="proposition">
+<div id="outline-container-org1f5e33e" class="outline-4">
+<h4 id="org1f5e33e"><span class="section-number-4">1.3.1.</span> Proposition</h4>
+<div class="outline-text-4" id="text-1-3-1">
 <p>
 Let \(A \subset k[x_1,\dots,x_n]\). Then we have \(V(A) = V(\langle A \rangle)\).
 </p>
-
-</div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgd415a0a" class="outline-3">
-<h3 id="orgd415a0a"><span class="section-number-3">1.2</span> Noetherian rings and the Hilbert basis theorem</h3>
-<div class="outline-text-3" id="text-1-2">
+
+<div id="outline-container-org317c9dc" class="outline-3">
+<h3 id="org317c9dc"><span class="section-number-3">1.4.</span> Noetherian rings and the Hilbert basis theorem</h3>
+<div class="outline-text-3" id="text-1-4">
 <p>
 In our definition of \(V(A)\), the subset \(A\) may be infinite. 
 But it turns out that we can replace it by a finite one without changing \(V(A)\).
@@ -379,9 +354,13 @@ This is a consequence of the Hilbert basis theorem, which, in turn, has to do wi
 <p>
 We begin with a simple observation.
 </p>
-<div class="proposition" id="icc">
+</div>
+<div id="outline-container-org3cee364" class="outline-4">
+<h4 id="org3cee364"><span class="section-number-4">1.4.1.</span> Proposition</h4>
+<div class="outline-text-4" id="text-1-4-1">
 <p>
-Let \(R\) be a ring. The following are equivalent
+<a id="org0e0454c"></a>
+    Let \(R\) be a ring. The following are equivalent
 </p>
 <ol class="org-ol">
 <li>Every ideal of \(R\) is finitely generated.</li>
@@ -390,20 +369,22 @@ Let \(R\) be a ring. The following are equivalent
 stabilises.</li>
 </ol>
 
-</div>
-<div class="skipped">
+<div class="skipped" id="orge287be6">
 <p>
 Proof.
 </p>
 
 </div>
+</div>
+</div>
 
-<div btit="(Noetherian ring)" class="definition">
+<div id="outline-container-orgdbfa0a9" class="outline-4">
+<h4 id="orgdbfa0a9"><span class="section-number-4">1.4.2.</span> Definition (Noetherian ring)</h4>
+<div class="outline-text-4" id="text-1-4-2">
 <p>
-A ring \(R\) satisfying the equivalent conditions of <a href="#icc">icc</a> is called <i>Noetherian</i>.
+A ring \(R\) satisfying the equivalent conditions of Proposition ref:icc is called <i>Noetherian</i>.
 </p>
 
-</div>
 
 <p>
 The following rings are Noetherian
@@ -412,7 +393,7 @@ The following rings are Noetherian
 <li>\(R = {\mathbb Z}\)</li>
 <li>\(R\) a field.</li>
 </ol>
-<div class="skipped">
+<div class="skipped" id="orgd5b53ac">
 <p>
 Prove this.
 </p>
@@ -422,21 +403,27 @@ Prove this.
 <p>
 The ring of continuous functions on the interval is <i>not</i> Noetherian.
 </p>
-<div class="skipped">
+<div class="skipped" id="org9e0b0e8">
 <p>
 Prove this.
 </p>
 
 </div>
+</div>
+</div>
 
-<div class="theorem">
+<div id="outline-container-org49744cf" class="outline-4">
+<h4 id="org49744cf"><span class="section-number-4">1.4.3.</span> Theorem</h4>
+<div class="outline-text-4" id="text-1-4-3">
 <p>
-[Hilbert basis theorem]
 If \(R\) is Noetherian, then so is \(R[x]\)
 </p>
-
 </div>
-<div class="proof">
+</div>
+
+<div id="outline-container-org4f50256" class="outline-4">
+<h4 id="org4f50256"><span class="section-number-4">1.4.4.</span> Proof</h4>
+<div class="outline-text-4" id="text-1-4-4">
 <p>
 Assume \(R\) is Noetherian, and let \(I \subset R[x]\) be an ideal.
 We must show that \(I\) is finitely generated.
@@ -456,7 +443,7 @@ We make the following claims.
 <li>\(J_m\) is an ideal of \(R\).</li>
 <li>\(J_m \subset J_{m+1}\).</li>
 </ol>
-<div class="skipped">
+<div class="skipped" id="org1ed1ded">
 <p>
 Prove these claims.
 </p>
@@ -467,28 +454,33 @@ Since \(R\) is Noetherian, the chain \(J_1 \subset J_2 \subset \cdots\) stabilis
 Let \(S_i\) be a finite set of generators for \(J_i\), and for \(a \in S_i\), let \(p_a \in I\) be a non-zero element of degree at most \(i\) whose leading coefficient is \(a\).
 We claim that the (finite) set \(p_a \mid a \in S_1 \cup \cdots \cup S_m\) generates \(I\).    
 </p>
-<div class="skipped">
+<div class="skipped" id="orgc2faf7e">
 <p>
 Prove the claim and finish the proof of the theorem.
 </p>
 
 </div>
-
 </div>
-<div class="corollary">
+</div>
+
+<div id="outline-container-org86793a7" class="outline-4">
+<h4 id="org86793a7"><span class="section-number-4">1.4.5.</span> Corollary</h4>
+<div class="outline-text-4" id="text-1-4-5">
 <p>
 [Hilbert basis theorem]
 \(k[x_1,\dots,x_n]\) is Noetherian.
 </p>
-
 </div>
-<div class="corollary">
+</div>
+
+<div id="outline-container-org867fc42" class="outline-4">
+<h4 id="org867fc42"><span class="section-number-4">1.4.6.</span> Corollary</h4>
+<div class="outline-text-4" id="text-1-4-6">
 <p>
 Every affine algebraic subset of \(\mathbb A^n_k\) is the vanishing set of a finite set of polynomials.
 </p>
 
-</div>
-<div class="skipped">
+<div class="skipped" id="org3f8e487">
 <p>
 Proofs of the corollaries from the theorem.
 </p>
@@ -496,10 +488,11 @@ Proofs of the corollaries from the theorem.
 </div>
 </div>
 </div>
+</div>
 
-<div id="outline-container-orgbd36d4c" class="outline-3">
-<h3 id="orgbd36d4c"><span class="section-number-3">1.3</span> The Zariski topology</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-org4327602" class="outline-3">
+<h3 id="org4327602"><span class="section-number-3">1.5.</span> The Zariski topology</h3>
+<div class="outline-text-3" id="text-1-5">
 <p>
 The notion of affine algebraic sets allows us to define a topology on \(\mathbb A^n_k\).
 Recall that we can specify a topology on a set by specifying what the open subsets are, or equivalently, what the closed subsets are.
@@ -517,56 +510,65 @@ Finite unions of closed sets are closed.
 We define the <i>Zariski topology</i> on \(\mathbb A^n_k\) by setting the closed subsets to be the affine algebraic sets, namely, the sets of the form \(V(A)\) for some \(A \subset k[x_1,\dots,x_n]\).
 </p></li>
 </ol>
-<div class="proposition">
+</div>
+<div id="outline-container-org93ce970" class="outline-4">
+<h4 id="org93ce970"><span class="section-number-4">1.5.1.</span> Proposition</h4>
+<div class="outline-text-4" id="text-1-5-1">
 <p>
 The collection of affine algeraic subsets satisfies the three conditions above.
 </p>
 
-</div>
-<div class="skipped">
+<div class="skipped" id="org414d153">
 <p>
 Proof.
 </p>
 
 </div>
+</div>
+</div>
 
-<div class="proposition">
+<div id="outline-container-org3158f64" class="outline-4">
+<h4 id="org3158f64"><span class="section-number-4">1.5.2.</span> Proposition</h4>
+<div class="outline-text-4" id="text-1-5-2">
 <p>
 The Zariski topology on \(\mathbb A^1_k\) is the <i>finite complement topology</i>.
 The only closed sets are the finite sets (or the whole space).
 In other words, the only open sets are the complements of finite sets (or the empty set).
 </p>
 
-</div>
-<div class="skipped">
+<div class="skipped" id="org52b5931">
 <p>
 Proof.
 </p>
 
 </div>
 </div>
+</div>
 
-<div id="outline-container-orge6a4a1b" class="outline-4">
-<h4 id="orge6a4a1b"><span class="section-number-4">1.3.1</span> Comparison between Zariski and Euclidean topology over \(\mathbb C\).</h4>
-<div class="outline-text-4" id="text-1-3-1">
+<div id="outline-container-org5d4fae7" class="outline-4">
+<h4 id="org5d4fae7"><span class="section-number-4">1.5.3.</span> Comparison between Zariski and Euclidean topology over \(\mathbb C\).</h4>
+<div class="outline-text-4" id="text-1-5-3">
 <p>
 Every Zariski closed (open) subset of \(\mathbb A^n_{\mathbb C}\) is also closed (open) in the usual Euclidean topology.
 The converse is not true.
 </p>
-<div class="skipped">
+<div class="skipped" id="org824be1d">
 <p>
 Proof.
 </p>
 
 </div>
+</div>
+</div>
 
-<div class="proposition">
+<div id="outline-container-org5589ad0" class="outline-4">
+<h4 id="org5589ad0"><span class="section-number-4">1.5.4.</span> Proposition</h4>
+<div class="outline-text-4" id="text-1-5-4">
 <p>
 Let \(f\) be a polynomial function on \(\mathbb A^n_k\).
 Then \(f\) is continuous in the Zariski topology.
 </p>
 
-</div>
 
 <p>
 The Zariski topology has very few open sets, and as a result has terrible separation properties.
@@ -578,9 +580,9 @@ For one, it makes sense over every field!
 </div>
 </div>
 
-<div id="outline-container-orge275181" class="outline-3">
-<h3 id="orge275181"><span class="section-number-3">1.4</span> The Nullstellensatz</h3>
-<div class="outline-text-3" id="text-1-4">
+<div id="outline-container-orgaaa27f9" class="outline-3">
+<h3 id="orgaaa27f9"><span class="section-number-3">1.6.</span> The Nullstellensatz</h3>
+<div class="outline-text-3" id="text-1-6">
 <p>
 We associated a set \(V(A)\) to a subset \(A\) of the polynomial ring \(k[x_1,\dots,x_n]\).
 If we think of \(A\) as a system of equations \(\{f = 0 \mid f \in A\}\), then \(V(A)\) is the set of solutions.
@@ -593,26 +595,30 @@ This pleasant fact allows us go back and forth between algebra (equations) and g
 <p>
 We start with a straightforward definition.
 </p>
-<div class="definition">
+</div>
+<div id="outline-container-orgcc2a8f8" class="outline-4">
+<h4 id="orgcc2a8f8"><span class="section-number-4">1.6.1.</span> Definition (Ideal vanishing on a set)</h4>
+<div class="outline-text-4" id="text-1-6-1">
 <p>
-[Ideal vanishing on a set]
 Let \(S \subset \mathbb A^n_k\) be a set.
 The <i>ideal vanishing on \(S\)</i>, denoted by \(I(S)\), is the set
 \[ I(S) = \{f \in k[x_1,\dots,x_n] \mid f(a) = 0 \text{ for all } a \in S\}\]
 </p>
 
-</div>
 
 <p>
 Recall that an ideal \(I \subset k[x_1,\dots,x_n]\) is <i>radical</i> if it has the property that whenever \(f^n \in I\) for some \(n > 1\), then \(f \in I\).
 </p>
-<div class="proposition">
+</div>
+</div>
+<div id="outline-container-org8dd7d6d" class="outline-4">
+<h4 id="org8dd7d6d"><span class="section-number-4">1.6.2.</span> Proposition</h4>
+<div class="outline-text-4" id="text-1-6-2">
 <p>
 The set \(I(S)\) is a radical ideal of \(k[x_1,\dots,x_n]\).
 </p>
 
-</div>
-<div class="skipped">
+<div class="skipped" id="org4d68330">
 <p>
 Proof.
 </p>
@@ -620,114 +626,144 @@ Proof.
 </div>
 
 <p>
-We now state a string of important theorems, all called the ``Nullstellensatz'', starting with the most comprehensive one.
+We now state a string of important theorems, all called the &ldquo;Nullstellensatz&rdquo;, starting with the most comprehensive one.
 </p>
-<div class="theorem" id="thm:null">
+</div>
+</div>
+<div id="outline-container-org718522d" class="outline-4">
+<h4 id="org718522d"><span class="section-number-4">1.6.3.</span> Theorem</h4>
+<div class="outline-text-4" id="text-1-6-3">
 <p>
+<a id="orgea9802f"></a>
 Let \(k\) be an algebraically closed field. Then we have a bijection
 \[ \text{Radical ideals of \(k[x_1, \dots, x_n]\)} \leftrightarrow \text{Zariski closed subsets of \(\mathbb A^n_k\)}\]
 where the map from the left to the right is \(I \mapsto V(I)\) and the map from the right to the left is \(S \mapsto I(S)\).
 </p>
-
 </div>
-<div class="theorem" id="thm:null-max">
+</div>
+
+<div id="outline-container-org1a23885" class="outline-4">
+<h4 id="org1a23885"><span class="section-number-4">1.6.4.</span> Theorem</h4>
+<div class="outline-text-4" id="text-1-6-4">
 <p>
+<a id="org31c9b96"></a>
 Let \(k\) be an algebraically closed field. Then all the maximal ideals of \(k[x_1,\dots,x_n]\) are of the form \((x_1-a_1, \dots, x_2-a_n)\) for some \((a_1, \dots, a_n) \in \mathbb A^n_k\).
 </p>
 
-</div>
-<div class="skipped">
+<div class="skipped" id="org79ac0ff">
 <p>
 Show that the statement is not true if \(k\) is not algebraically closed.
 </p>
 
 </div>
-<div class="theorem" id="thm:null-unit">
+</div>
+</div>
+
+<div id="outline-container-orgfa19305" class="outline-4">
+<h4 id="orgfa19305"><span class="section-number-4">1.6.5.</span> Theorem</h4>
+<div class="outline-text-4" id="text-1-6-5">
 <p>
-Let \(k\) be an algebraically closed field and \(I \subset k[x_1,\dots,x_n]\) an ideal. If \(V(I) = \emptyset\), then \(I = (1)\).
+<a id="org6dc8e93"></a>
+ Let \(k\) be an algebraically closed field and \(I \subset k[x_1,\dots,x_n]\) an ideal. If \(V(I) = \emptyset\), then \(I = (1)\).
 </p>
 
-</div>
-<div class="skipped">
+<div class="skipped" id="orgad1ee55">
 <p>
 Again, show that the statement is not true if \(k\) is not algebraically closed.
 </p>
 
 </div>
 <p>
-<a href="#thm:null-unit">thm:null-unit</a> says that we have a dichotomy: either a system of equations \(f_i = 0\) has a solution, or there exist polynomials \(g_i\) such that
+Theorem ref:thm:null-unit says that we have a dichotomy: either a system of equations \(f_i = 0\) has a solution, or there exist polynomials \(g_i\) such that
  \[ \sum f_i g_i = 1.\]
 </p>
-<div class="theorem" id="thm:null-power">
+</div>
+</div>
+
+<div id="outline-container-org29e0e82" class="outline-4">
+<h4 id="org29e0e82"><span class="section-number-4">1.6.6.</span> Theorem</h4>
+<div class="outline-text-4" id="text-1-6-6">
 <p>
+<a id="org53290f2"></a>
 Let \(k\) be an algebraically closed field and \(I \subset k[x_1,\dots,x_n]\) an ideal. If \(f\) is identically zero on \(V(I)\), then \(f^n \in I\) for some \(n\).
 </p>
 
-</div>
-<div class="skipped">
+<div class="skipped" id="org761a028">
 <p>
-Deduce <a href="#thm:null-max">thm:null-max</a>, <a href="#thm:null-unit">thm:null-unit</a>, <a href="#thm:null-power">thm:null-power</a> from <a href="#thm:null">thm:null</a>.
+Deduce Theorems ref:thm:null-max, ref:thm:null-unit, ref:thm:null-power from Theorem ref:thm:null.
 </p>
 
 </div>
 </div>
+</div>
 
-<div id="outline-container-orgef11cd2" class="outline-4">
-<h4 id="orgef11cd2"><span class="section-number-4">1.4.1</span> Proof of the Nullstellensatz</h4>
-<div class="outline-text-4" id="text-1-4-1">
+<div id="outline-container-org3249c73" class="outline-4">
+<h4 id="org3249c73"><span class="section-number-4">1.6.7.</span> Proof of the Nullstellensatz</h4>
+<div class="outline-text-4" id="text-1-6-7">
 <p>
-The proof of <a href="#thm:null">thm:null</a> goes via the proofs of the subsequent theorems.
+The proof of Theorem ref:thm:null goes via the proofs of the subsequent theorems.
 We use the following result from algebra, whose proof we skip.
 </p>
-<div class="theorem" id="thm:null-alg">
-<p>
-Let \(K\) be any field and let \(L\) be a finitely generated \(K\)-algebra.
-If \(L\) is a field, then it must be a finite extension of \(K\).
-</p>
-
 </div>
-<div class="proof">
+</div>
+
+<div id="outline-container-orgf8b46ea" class="outline-4">
+<h4 id="orgf8b46ea"><span class="section-number-4">1.6.8.</span> Theorem</h4>
+<div class="outline-text-4" id="text-1-6-8">
+<p>
+<a id="org98a499c"></a>
+    Let \(K\) be any field and let \(L\) be a finitely generated \(K\)-algebra.
+    If \(L\) is a field, then it must be a finite extension of \(K\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9f01af6" class="outline-4">
+<h4 id="org9f01af6"><span class="section-number-4">1.6.9.</span> Proof</h4>
+<div class="outline-text-4" id="text-1-6-9">
 <p>
 See <a href="https://web.ma.utexas.edu/users/allcock/expos/nullstellensatz3.pdf">https://web.ma.utexas.edu/users/allcock/expos/nullstellensatz3.pdf</a>
 </p>
-
 </div>
 </div>
 
-<ol class="org-ol">
-<li><a id="org288067c"></a>Proof of <a href="#thm:null-max">thm:null-max</a><br />
-<div class="outline-text-5" id="text-1-4-1-1">
+
+<div id="outline-container-org0f8c466" class="outline-4">
+<h4 id="org0f8c466"><span class="section-number-4">1.6.10.</span> Proof of Theorem ref:thm:null-max</h4>
+<div class="outline-text-4" id="text-1-6-10">
 <p>
 Let \(m \subset k[x_1,\dots,x_n]\) be a maximal ideal.
-Taking \(K = k\) and \(L = k[x_1,\dots,x_n]/m\) in <a href="#thm:null-alg">thm:null-alg</a>, and using that \(k\) is algebraically closed, we get that the natural map \(k \to k[x_1,\dots,x_n]/m\) is an isomorphism.
+Taking \(K = k\) and \(L = k[x_1,\dots,x_n]/m\) in Theorem ref:thm:null-alg, and using that \(k\) is algebraically closed, we get that the natural map \(k \to k[x_1,\dots,x_n]/m\) is an isomorphism.
 Let \(a_i \in k\) be the pre-image of \(x_i\) under this isomorphism. 
 Then we have \(m = (x_1-a_1,\dots,x_n-a_n)\).
 </p>
-<div class="skipped">
+<div class="skipped" id="orgb4858aa">
 <p>
 Prove the last statement.
 </p>
 
 </div>
 </div>
-</li>
+</div>
 
-<li><a id="orge238b0a"></a>Proof of <a href="#thm:null-unit">thm:null-unit</a><br />
-<div class="outline-text-5" id="text-1-4-1-2">
+<div id="outline-container-orgb4f3802" class="outline-4">
+<h4 id="orgb4f3802"><span class="section-number-4">1.6.11.</span> Proof of Theorem ref:thm:null-unit</h4>
+<div class="outline-text-4" id="text-1-6-11">
 <p>
 Suppose \(I\) is not the unit ideal. We show that \(V(I)\) is non-empty.
 To do so, we use that every proper ideal is contained in a maximal ideal.
 </p>
-<div class="skipped">
+<div class="skipped" id="orgf6bd529">
 <p>
 Finish the proof.
 </p>
 
 </div>
 </div>
-</li>
-<li><a id="org108e24d"></a>Proof of <a href="#thm:null-power">thm:null-power</a><br />
-<div class="outline-text-5" id="text-1-4-1-3">
+</div>
+<div id="outline-container-orga202e85" class="outline-4">
+<h4 id="orga202e85"><span class="section-number-4">1.6.12.</span> Proof of Theorem ref:thm:null-power</h4>
+<div class="outline-text-4" id="text-1-6-12">
 <p>
 We consider the system \(g = 0\) for \(g \in I\) and \(f \neq 0\).
 Notice that the last one is not an equation, but there is a trick that allows us to convert it into an equation.
@@ -735,17 +771,18 @@ Let \(y\) be a new variable, and consider the polynomial ring \(k[x_1,\dots,x_n,
 In the bigger ring, consider the system of equations \(g = 0\) for \(g \in I\) and \(yf - 1 = 0\).
 By our assumption, this system of equations has no solutions.
 </p>
-<div class="skipped">
+<div class="skipped" id="orgdafd844">
 <p>
-Finish the proof using <a href="#thm:null-unit">thm:null-unit</a>.
+Finish the proof using Theorem ref:thm:null-unit.
 </p>
 
 </div>
 </div>
-</li>
+</div>
 
-<li><a id="org553618b"></a>Proof of <a href="#thm-null">thm-null</a>.<br />
-<div class="outline-text-5" id="text-1-4-1-4">
+<div id="outline-container-orgf9539b8" class="outline-4">
+<h4 id="orgf9539b8"><span class="section-number-4">1.6.13.</span> Proof of Theorem ref:thm-null.</h4>
+<div class="outline-text-4" id="text-1-6-13">
 <p>
 We show that the maps \(I \to V(I)\) and \(S \to I(S)\) are mutual inverses.
 That is, we show that \(I(V(I)) = I\) if \(I\) is a radical ideal, and \(V(I(S)) = S\) if \(S\) is a Zariski closed subset of \(\mathbb A^n_k\).
@@ -765,7 +802,7 @@ But \(I\) is radical, so \(f \in I\).
 Let us now show that \(V(I(S)) = S\).
 To do so, we observe a slight strengthening of the result we just proved: for any ideal \(I\), not necessarily radical, we have \(I(V(I)) = \sqrt{I}\). 
 </p>
-<div class="skipped">
+<div class="skipped" id="org10bb26b">
 <p>
 Prove this strengthening.
 </p>
@@ -775,82 +812,267 @@ Prove this strengthening.
 Since \(S\) is Zariski closed, we know that \(S = V(J)\) for some ideal \(J\).
 So \(I(S) = I(V(J)) = \sqrt{J}.\)
 But it is easy to check that \(V(J) = V(\sqrt{J})\), and hence \(V(I(S)) = S\).
-The proof of <a href="#thm:null">thm:null</a> is then complete.
+The proof of Theorem ref:thm:null is then complete.
 </p>
-<div class="skipped">
+<div class="skipped" id="org538e43c">
 <p>
-Check the ``easy to check'' fact.
+Check the &ldquo;easy to check&rdquo; fact.
 </p>
 
 </div>
 </div>
-</li>
-</ol>
 </div>
 </div>
 
-<div id="outline-container-orgbe947fa" class="outline-3">
-<h3 id="orgbe947fa"><span class="section-number-3">1.5</span> Affine and quasi-affine varieties</h3>
-<div class="outline-text-3" id="text-1-5">
+<div id="outline-container-org44b4a52" class="outline-3">
+<h3 id="org44b4a52"><span class="section-number-3">1.7.</span> Affine and quasi-affine varieties</h3>
+<div class="outline-text-3" id="text-1-7">
 <p>
-An <i>affine variety</i> is a Zariski closed subset of 
+An <i>affine variety</i> is a subset of the affine space that is closed in the Zariski topology.
+A <i>quasi-affine variety</i> is a subset of the affine space that is locally closed in the Zariski topology.
+(A locally closed subset of a topological space is a set that can be expressed as an intersection of an open set and a closed set).
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org7a52d77" class="outline-2">
-<h2 id="org7a52d77"><span class="section-number-2">2</span> Regular functions and maps</h2>
+
+<div id="outline-container-org9c3c481" class="outline-2">
+<h2 id="org9c3c481"><span class="section-number-2">2.</span> Regular functions and maps</h2>
 <div class="outline-text-2" id="text-2">
+<p>
+Throughout this section, \(k\) is an algebraically closed field.
+</p>
 </div>
-<div id="outline-container-org982ecd3" class="outline-3">
-<h3 id="org982ecd3"><span class="section-number-3">2.1</span> Definition (Regular function)</h3>
+
+<div id="outline-container-orgbdc53a7" class="outline-4">
+<h4 id="orgbdc53a7"><span class="section-number-4">2.0.1.</span> Definition (Regular function)</h4>
+<div class="outline-text-4" id="text-2-0-1">
+<p>
+Let \(S \subset \mathbb A^n\) be a set and let \(f \colon S \to k\) be a function.
+Let \(a\) be a point of \(S\).
+We say that \(f\) is <i>regular</i> (or <i>algebraic</i>) <i>at \(a\)</i> if there exists a Zariski open set \(U \subset \mathbb A^n\) and polynomials \(p, q \in k[x_1,\dots,x_n]\) with \(q(a) \neq 0\) such that
+\[ f \equiv p/q \text{ on } S \cap U.\]
+We say that \(f\) is <i>regular</i> if it is regular at all points of \(S\).
+</p>
+
+<p>
+In other words, \(f\) is regular at a point \(a\) if locally around \(a\) (in the Zariski topology), \(f\) can be expessed as a ratio of two polynomials.
+</p>
+
+<p>
+Although the definition of a regular function makes sense for \(S \subset \mathbb A^n\), we use it only in the context of quasi-affine varieties.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2c25a59" class="outline-4">
+<h4 id="org2c25a59"><span class="section-number-4">2.0.2.</span> Example</h4>
+<div class="outline-text-4" id="text-2-0-2">
+<ol class="org-ol">
+<li>A constant function is regular.</li>
+<li>Every polynomial function is regular.</li>
+</ol>
+
+
+<p>
+The following example shows that a regular function \(f\) may not have a unique global expression as a quotient \(p/q\).
+</p>
+</div>
+</div>
+<div id="outline-container-org1634110" class="outline-4">
+<h4 id="org1634110"><span class="section-number-4">2.0.3.</span> Example</h4>
+<div class="outline-text-4" id="text-2-0-3">
+<p>
+Let \(S_1 \subset \mathbb A^4\) be the locally closed subset defined by
+\[ xv - yu = 0 \text{ and } y \neq 0,\]
+and \(S_2 \subset \mathbb A^4\) the locally closed subset defined by
+\[ xv - yu = 0 \text{ and } v \neq 0.\]
+Set \(S = S_1 \cup S_2\). Then \(S \subset \mathbb A^4\) is also locally closed.
+Consider the functions \(x/y\) on \(S_1\) and \(u/v\) on \(S_2\).
+They agree on the overlap \(S1 \cap S_2\), and hence define a function on \(S\).
+This function is regular on \(S\), but it is not clear whether it has a single expression as a quotient that works on all of \(S\) (in fact, it doesn&rsquo;t).
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org7d88fc0" class="outline-4">
+<h4 id="org7d88fc0"><span class="section-number-4">2.0.4.</span> Proposition</h4>
+<div class="outline-text-4" id="text-2-0-4">
+<p>
+The set of regular functions on \(S\) contains the constant functions, and is closed under addition, negation, and multiplication.
+In other words, it forms a sub-ring of the ring of \(k\)-valued functions on \(S\).
+</p>
+
+<div class="skipped" id="org51e1fef">
+<p>
+Proof.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org95b02c8" class="outline-4">
+<h4 id="org95b02c8"><span class="section-number-4">2.0.5.</span> Definition (Ring of regular functions)</h4>
+<div class="outline-text-4" id="text-2-0-5">
+<p>
+We denote the ring of regular functions on \(S\) by denoted by \(k[S]\).
+</p>
+
+
+<p>
+Recall that a \(k\)-algebra is a ring \(R\) along with a ring homomorphism \(k \to R\).
+The ring \(k[S]\) is naturally a \(k\)-algebra; the homomorphism \(k \to k[S]\) is the one that sends \(c \in k\) to the constant function on \(S\) with value \(c\).
+</p>
+
+<p>
+The following is an easy consequence of the definition.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc16fc98" class="outline-4">
+<h4 id="orgc16fc98"><span class="section-number-4">2.0.6.</span> Proposition</h4>
+<div class="outline-text-4" id="text-2-0-6">
+<p>
+Let \(f\) be a function on \(S\), and let \(\{U_i\}\) be an open cover of \(S\).
+If the restriction of \(f\) to each \(U_i\) is regular, then \(f\) is regular.
+</p>
+
+<div class="skipped" id="org68c2f15">
+<p>
+Proof.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga775f09" class="outline-3">
+<h3 id="orga775f09"><span class="section-number-3">2.1.</span> Regular functions on an affine variety</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Let \(S \subset \mathbb A^n_k\)
+Regular functions on closed subsets of \(\mathbb A^n\) are just the polynomial functions.
+</p>
+</div>
+<div id="outline-container-orgf352643" class="outline-4">
+<h4 id="orgf352643"><span class="section-number-4">2.1.1.</span> Proposition</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+Let \(X \subset \mathbb A^n\) be a Zariski closed subset.
+Let \(f\) be a regular function on \(X\).
+Then there exists a polynomial \(P \in k[x_1,\dots,x_n]\) such that \(P(x) = f(x)\) for all \(x \in X\).
 </p>
 </div>
 </div>
-<div id="outline-container-org31caa86" class="outline-3">
-<h3 id="org31caa86"><span class="section-number-3">2.2</span> Proposition (Regular function on an affine is a polynomial)</h3>
+
+<div id="outline-container-orgbfa919e" class="outline-4">
+<h4 id="orgbfa919e"><span class="section-number-4">2.1.2.</span> Proof</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<p>
+By definition, we know that for every \(x \in X\), there is a Zariski open set \(U \subset X\) and polynomials \(p, q\) such that \(f = p/q\) on \(U\).
+The set \(U\) and the polynomials \(p, q\) may depend on \(x\), so let us denote them by \(U_x\), \(p_x\), and  \(q_x\).
+We need to combine all of these \(p\)&rsquo;s and \(q\)&rsquo;s and construct a single polynomial \(P\) that agrees with \(f\) for all \(x\).
+</p>
+
+<p>
+This is done by a &ldquo;partition of unity&rdquo; argument.
+First, let us do some preparation.
+We know that \(p_x / q_x = f\) on \(U_x\), but we know nothing about \(p_x\) and \(q_x\) on the complement of \(U_x\).
+Our first goal is to do a small trick due to which we may assume that both \(p_x\) and \(q_x\) are identically zero on the complement of \(U_x\).
+</p>
+
+<p>
+Since \(U_x \subset X\) is open, its complement is closed.
+By the definition of the Zariski topology, this means that
+\[X \setminus U_x = X \cap V(A),\]
+for some \(A \subset k[x_1,\dots, x_n]\).
+Since \(x \in U_x\), at least one of the polynomials in \(A\) must be non-zero at \(x\).
+Let \(g\) be such a polynomial, and set \(U'_x = X \cap \{g \neq 0\}\).
+Then we have \(U'_x \subset U_x\).
+</p>
+<div class="skipped" id="org4b42d21">
+<p>
+Explain why.
+</p>
+
+<p>
+Likewise, set \(p'_x = p_x \cdot g\) and \(q'_x = q_x \cdot g\).
+Then, we have \(f = p'_x/q_x\) on \(U'_x\), but we also have \(p'_x \eqiv q'_x \equiv 0 \) on \(X \setminus U'_x\).
+Thus, we may assume from the beginning that both \(p_x\) and \(q_x\) are identically zero on the complement of \(U_x\)..
+</p>
+
+<p>
+Now comes the crux of the argument.
+Suppose \(X = V(I)\).
+Consider the set of &ldquo;denominators&rdquo; \(\{q_x \mid x \in X\}\).
+Note that the system of equations
+\[ g = 0 \text{for all } g \in I \text{ and } q_x = 0 \text{ for all } x \in X\]
+has no solution.
+#+begin<sub>skipped</sub>
+Why?
+</p>
+
 </div>
-<div id="outline-container-orge0143f4" class="outline-3">
-<h3 id="orge0143f4"><span class="section-number-3">2.3</span> Example</h3>
+<p>
+By the Nullstellensatz, this means that the ideal \(I + \langle q_x \mid q \in X \rangle\) is the unit ideal.
+That is, we can write
+\[ 1 = g + r_1q_{x_1} + \dots + r_m q_{x_m}\]
+for some polynomials \(r_1, \dots, r_m\).
+Take \(P = r_1p_{x_1} + \dots + r_m p_{x_m}\).
+Then \(f = P\) on all of \(X\).
+</p>
+<div class="skipped" id="org90b4279">
+<p>
+Why?
+</p>
+
 </div>
-<div id="outline-container-orgd27fffa" class="outline-3">
-<h3 id="orgd27fffa"><span class="section-number-3">2.4</span> Definition (Ring of regular functions)</h3>
+<p>
+#+end<sub>proof</sub>
+</p>
 </div>
-<div id="outline-container-orgd5227ae" class="outline-3">
-<h3 id="orgd5227ae"><span class="section-number-3">2.5</span> Proposition (Ring of regular functions of an affine)</h3>
 </div>
-<div id="outline-container-org185af47" class="outline-3">
-<h3 id="org185af47"><span class="section-number-3">2.6</span> Definition (Regular map)</h3>
 </div>
-<div id="outline-container-org1032966" class="outline-3">
-<h3 id="org1032966"><span class="section-number-3">2.7</span> Proposition (Elementary properties of regular maps)</h3>
-<div class="outline-text-3" id="text-2-7">
+
+<div id="outline-container-orgdc0b321" class="outline-3">
+<h3 id="orgdc0b321"><span class="section-number-3">2.2.</span> Example</h3>
+</div>
+<div id="outline-container-org32950ca" class="outline-3">
+<h3 id="org32950ca"><span class="section-number-3">2.3.</span> Definition (Ring of regular functions)</h3>
+</div>
+<div id="outline-container-orgc83ce74" class="outline-3">
+<h3 id="orgc83ce74"><span class="section-number-3">2.4.</span> Proposition (Ring of regular functions of an affine)</h3>
+</div>
+<div id="outline-container-orgbb48af5" class="outline-3">
+<h3 id="orgbb48af5"><span class="section-number-3">2.5.</span> Definition (Regular map)</h3>
+</div>
+<div id="outline-container-orga1abe6f" class="outline-3">
+<h3 id="orga1abe6f"><span class="section-number-3">2.6.</span> Proposition (Elementary properties of regular maps)</h3>
+<div class="outline-text-3" id="text-2-6">
 <ol class="org-ol">
 <li>The identity map is regular.</li>
 <li>The composition of two regular maps is regular.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org404023d" class="outline-3">
-<h3 id="org404023d"><span class="section-number-3">2.8</span> Proposition (Regular maps preserve regular functions)</h3>
+<div id="outline-container-orgaf49c30" class="outline-3">
+<h3 id="orgaf49c30"><span class="section-number-3">2.7.</span> Proposition (Regular maps preserve regular functions)</h3>
 </div>
-<div id="outline-container-orgfb0c056" class="outline-3">
-<h3 id="orgfb0c056"><span class="section-number-3">2.9</span> Corollary (Isomorphic varieties have isomorphic rings of functions)</h3>
+<div id="outline-container-orgcd9c015" class="outline-3">
+<h3 id="orgcd9c015"><span class="section-number-3">2.8.</span> Corollary (Isomorphic varieties have isomorphic rings of functions)</h3>
 </div>
-<div id="outline-container-orge4a7e40" class="outline-3">
-<h3 id="orge4a7e40"><span class="section-number-3">2.10</span> Proposition (For affines, map between rings induces map between spaces)</h3>
+<div id="outline-container-org0e2ba80" class="outline-3">
+<h3 id="org0e2ba80"><span class="section-number-3">2.9.</span> Proposition (For affines, map between rings induces map between spaces)</h3>
 </div>
-<div id="outline-container-org131b0d7" class="outline-3">
-<h3 id="org131b0d7"><span class="section-number-3">2.11</span> Examples</h3>
+<div id="outline-container-orgbcd178b" class="outline-3">
+<h3 id="orgbcd178b"><span class="section-number-3">2.10.</span> Examples</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Anand Deopurkar</p>
-<p class="date">Created: 2021-07-24 Sat 23:45</p>
+<p class="date">Created: 2021-07-25 Sun 11:34</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
