@@ -22,7 +22,9 @@
 }
 
 .hsButton {
-    padding-right: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 1em;
     .hsButton:hover {
          background: #FBE448;
          color: black;
