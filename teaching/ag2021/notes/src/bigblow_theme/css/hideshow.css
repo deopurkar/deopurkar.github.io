@@ -19,17 +19,10 @@
 .hsExpanded.hsAnchor {background: #EE7700;}
 
 .buttons {
-    padding: 0px 7px 13px 0px;
-    background: #0A3F69;
 }
 
 .hsButton {
-    color: white;
-    float: right;
-    font-size: 70%;
-    margin-left: 10px;
-}
-
+    padding-right: 10px;
     .hsButton:hover {
          background: #FBE448;
          color: black;
