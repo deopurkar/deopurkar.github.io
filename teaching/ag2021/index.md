@@ -19,6 +19,8 @@ no-navigation: true
 This year, the course will be on algebraic geometry, the study of algebraic equations using geometry and geometric shapes using algebra.
 We will begin with affine varieties&#x2014;solution sets of polynomial equations&#x2014;and use these as building blocks to construct a rich world of geometric objects that include Riemann surfaces, projective spaces, Grassmannians, etc.
 
+We have a discussion forum at <https://ag2021.zulipchat.com>.
+
 
 # Announcements
 
