@@ -30,9 +30,9 @@ We have a discussion forum at <https://ag2021.zulipchat.com>.
 
 # References
 
-1.  [Basic Algebraic Geometry, Part I by I. Shafarevich](https://link.springer.com/book/10.1007/978-3-642-37956-7) (primary text)
-2.  [Online notes by A. Gathmann](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf)
-3.  [Algebraic Varieties: Basic Notions by V. Danilov](https://link.springer.com/chapter/10.1007/978-3-642-57878-6_6)
+1.  [Our own online notes](https://deopurkar.github.io/teaching/ag2021/notes/)
+2.  [Basic Algebraic Geometry, Part I by I. Shafarevich](https://link.springer.com/book/10.1007/978-3-642-37956-7)
+3.  [Online notes by A. Gathmann](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf)
 
 
 # Pre-requisites
