@@ -26,52 +26,11 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 -   Zoom lecture: <https://anu.zoom.us/j/87920733031> (you know the password)
 
 
-# Announcements
-
-1.  The first lecture will be on Tuesday, July 27 from 2pm-3pm in COP G021.
-
-
 # References
 
-1.  [Our own online notes](https://deopurkar.github.io/teaching/ag2021/notes/)
+1.  [Our own notes](notes)
 2.  [Basic Algebraic Geometry, Part I by I. Shafarevich](https://link.springer.com/book/10.1007/978-3-642-37956-7)
 3.  [Online notes by A. Gathmann](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf)
-
-
-# Pre-requisites
-
-Algebra 1 and Algebra 2.
-
-Algebraic geometry interacts deeply with many other areas of mathematics, so some background in topology, complex analysis, and differential geometry will be helpful, but not required. 
-
-
-# Assessment
-
-The final mark is based on three factors.
-
-1.  (50%) Homework + classwork
-2.  (25%) A mid-semester exam (take-home, in-person, or Zoom)
-3.  (25%) A final exam (take-home, in-person, or Zoom)
-
-The classwork will consist of presentations and the associated write-up, each equivalent to 1 homework set.
-
-If you are a masters student or taking the course as an ASC/ASE, your assessment will include an additional project component.
-
-
-# Policies
-
-
-## Late submission
-
-I will not accept any late submissions, except for medical emergencies with a medical certificate.
-To compensate for this strict policy, I will drop the lowest homework/classwork mark.
-
-
-## Collaboration
-
-You are allowed, even encouraged, to work with others on homework assignments, but you must write up your solutions **on your own**. In other words, you **may not** copy someone else's write-up and you **may not** write your solutions side by side with someone else. On your submission, you must write the names of your collaborators. This is a matter of academic honesty; it will not affect your marks. 
-
-There will be no collaboration on the exams.
 
 
 # Plan
@@ -100,6 +59,13 @@ This is a tentative outline of the course, subject to change.
 <tr>
 <td class="org-right">1</td>
 <td class="org-left">What is algebraic geometry? The first examples: algebraic subsets of affine space</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Lecture 1: <a href="https://cloudstor.aarnet.edu.au/plus/s/OMzlfgbXFWjlpSs">Video</a>/<a href="notes/2021-07-27.pdf">Board</a>,</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
@@ -181,4 +147,44 @@ This is a tentative outline of the course, subject to change.
 </tr>
 </tbody>
 </table>
+
+
+# Pre-requisites
+
+Algebra 1 and Algebra 2.
+
+Algebraic geometry interacts deeply with many other areas of mathematics, so some background in topology, complex analysis, and differential geometry will be helpful, but not required. 
+
+
+# Assessment
+
+The final mark is based on three factors.
+
+1.  (50%) Homework + classwork
+2.  (25%) A mid-semester exam (take-home, in-person, or Zoom)
+3.  (25%) A final exam (take-home, in-person, or Zoom)
+
+The classwork will consist of presentations and the associated write-up, each equivalent to 1 homework set.
+If you are a masters student or taking the course as an ASC/ASE, your assessment will include an additional project component.
+
+
+## Classwork
+
+The format of our classwork will be as follows. The first meeting of the week (Monday) will be a traditional lecture in which I will explain the key ideas of a topic, but not prove all the details. In the following three meetings (Wednesday, Thursday, Friday), we will work out the details in small groups. Every day, two students (selected at random) will present designated parts of the material, and two students (also selected at random) will write them up. I will add the write-ups to [our notes](notes). You can see what the next few week's plan is ahead of time in the notes.
+
+
+# Policies
+
+
+## Late submission
+
+I will not accept any late submissions, except for medical emergencies with a medical certificate.
+To compensate for this strict policy, I will drop the lowest among the (homework+classwork) marks.
+
+
+## Collaboration
+
+You are allowed, even encouraged, to work with others on homework assignments, but you must write up your solutions **on your own**. In other words, you **may not** copy someone else's write-up and you **may not** write your solutions side by side with someone else. On your submission, you must write the names of your collaborators. This is a matter of academic honesty; it will not affect your marks. 
+
+There will be no collaboration on the exams.
 
