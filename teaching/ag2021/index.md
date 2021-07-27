@@ -106,14 +106,14 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">2</td>
-<td class="org-left">Regular functions and the Nullstellensatz</td>
+<td class="org-left">The Nullstellensatz</td>
 <td class="org-left">Assignment 1</td>
 </tr>
 
 
 <tr>
 <td class="org-right">3</td>
-<td class="org-left">Regular maps</td>
+<td class="org-left">Regular functions and regular maps</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
