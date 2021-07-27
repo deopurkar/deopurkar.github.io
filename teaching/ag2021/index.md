@@ -49,9 +49,11 @@ Algebraic geometry interacts deeply with many other areas of mathematics, so som
 
 The final mark is based on three factors.
 
-1.  (50%) 10 homework sets
+1.  (50%) Homework + classwork
 2.  (25%) A mid-semester exam (take-home, in-person, or Zoom)
 3.  (25%) A final exam (take-home, in-person, or Zoom)
+
+The classwork will consist of presentations and the associated write-up, each equivalent to 1 homework set.
 
 If you are a masters student or taking the course as an ASC/ASE, your assessment will include an additional project component.
 
@@ -62,7 +64,7 @@ If you are a masters student or taking the course as an ASC/ASE, your assessment
 ## Late submission
 
 I will not accept any late submissions, except for medical emergencies with a medical certificate.
-To compensate for this strict policy, I will drop the lowest homework mark. So, you will have the opportunity to complete 11 homework sets, and the 10 highest will count towards the final mark.
+To compensate for this strict policy, I will drop the lowest homework/classwork mark.
 
 
 ## Collaboration
@@ -98,7 +100,7 @@ This is a tentative outline of the course, subject to change.
 <tr>
 <td class="org-right">1</td>
 <td class="org-left">What is algebraic geometry? The first examples: algebraic subsets of affine space</td>
-<td class="org-left">Assignment 0</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 
@@ -112,21 +114,21 @@ This is a tentative outline of the course, subject to change.
 <tr>
 <td class="org-right">3</td>
 <td class="org-left">Regular maps</td>
-<td class="org-left">Assignment 2</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 
 <tr>
 <td class="org-right">4</td>
 <td class="org-left">General algebraic varieties</td>
-<td class="org-left">Assignment 3</td>
+<td class="org-left">Assignment 2</td>
 </tr>
 
 
 <tr>
 <td class="org-right">5</td>
 <td class="org-left">Functions and maps on projective varieties</td>
-<td class="org-left">Assignment 4</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 
@@ -140,42 +142,42 @@ This is a tentative outline of the course, subject to change.
 <tr>
 <td class="org-right">7</td>
 <td class="org-left">Completeness of projective varieties</td>
-<td class="org-left">Assignment 5</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 
 <tr>
 <td class="org-right">8</td>
 <td class="org-left">Irreducibility</td>
-<td class="org-left">Assignment 6</td>
+<td class="org-left">Assignment 3</td>
 </tr>
 
 
 <tr>
 <td class="org-right">9</td>
 <td class="org-left">Rational maps</td>
-<td class="org-left">Assignment 7</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 
 <tr>
 <td class="org-right">10</td>
 <td class="org-left">Dimension</td>
-<td class="org-left">Assignment 8</td>
+<td class="org-left">Assignment 4</td>
 </tr>
 
 
 <tr>
 <td class="org-right">11</td>
 <td class="org-left">Grassmannians</td>
-<td class="org-left">Assignment 9</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 
 <tr>
 <td class="org-right">12</td>
 <td class="org-left">Tangent spaces and singularities</td>
-<td class="org-left">Assignment 10</td>
+<td class="org-left">Assignment 5</td>
 </tr>
 </tbody>
 </table>
