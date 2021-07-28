@@ -60,7 +60,7 @@ This is a tentative outline of the course, subject to change.
 <tbody>
 <tr>
 <td class="org-right">1</td>
-<td class="org-left">What is algebraic geometry? The first examples: algebraic subsets of affine space. Lecture 1: <a href="https://cloudstor.aarnet.edu.au/plus/s/OMzlfgbXFWjlpSs">Video</a>/<a href="notes/2021-07-27.pdf">Board</a></td>
+<td class="org-left">What is algebraic geometry? The first examples: algebraic subsets of affine space. Lecture 1: <a href="https://cloudstor.aarnet.edu.au/plus/s/OMzlfgbXFWjlpSs">Video</a>/<a href="notes/2021-07-27.pdf">Board</a>, Lecture 2: <a href="https://cloudstor.aarnet.edu.au/plus/s/0kfXogCfxg4bQ3S">Video</a>/<a href="notes/2021-07-08.pdf">Board</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
