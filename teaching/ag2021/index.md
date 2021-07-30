@@ -20,6 +20,11 @@ This year, the course will be on algebraic geometry, the study of algebraic equa
 We will begin with affine varieties&#x2014;solution sets of polynomial equations&#x2014;and use these as building blocks to construct a rich world of geometric objects that include Riemann surfaces, projective spaces, Grassmannians, etc.
 
 
+# Announcements
+
+[Homework 1](hw1.pdf) is up, due in two weeks (August 13) on [gradescope](https://www.gradescope.com/courses/280699) (you may have to create an account with your ANU id).
+
+
 # Links
 
 -   Lectures: 1 (Monday 10&#x2013;11, Moran G007), 2 (Wed 10&#x2013;11, Moran G008), 3 (Thu 11&#x2013;12, HN 4.41), 4 (Fri 12&#x2013;13, Moran G007)
@@ -68,28 +73,28 @@ This is a tentative outline of the course, subject to change.
 <tr>
 <td class="org-right">2</td>
 <td class="org-left">The Nullstellensatz</td>
-<td class="org-left">Assignment 1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 
 <tr>
 <td class="org-right">3</td>
 <td class="org-left">Regular functions and regular maps</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Assignment 1</td>
 </tr>
 
 
 <tr>
 <td class="org-right">4</td>
 <td class="org-left">General algebraic varieties</td>
-<td class="org-left">Assignment 2</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 
 <tr>
 <td class="org-right">5</td>
 <td class="org-left">Functions and maps on projective varieties</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Assignment 2</td>
 </tr>
 
 
