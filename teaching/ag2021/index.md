@@ -22,7 +22,7 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 
 # Announcements
 
-[Homework 1](hw1.pdf) is up, due in two weeks (August 13) on [gradescope](https://www.gradescope.com/courses/280699) (you may have to create an account with your ANU id).
+1.  [Homework 1](hw1.pdf) is up, due in two weeks (August 13) on [gradescope](https://www.gradescope.com/courses/280699) (you may have to create an account with your ANU id).
 
 
 # Links
@@ -72,7 +72,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">2</td>
-<td class="org-left">The Nullstellensatz</td>
+<td class="org-left">The Nullstellensatz: Lecture 1: <a href="https://cloudstor.aarnet.edu.au/plus/s/C6mZbCxHbmvj5fg">Video</a>/<a href="notes/2021-08-02.pdf">Board</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
