@@ -73,7 +73,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">2</td>
-<td class="org-left">The Nullstellensatz: Lecture 1: <a href="https://cloudstor.aarnet.edu.au/plus/s/C6mZbCxHbmvj5fg">Video</a>/<a href="notes/2021-08-02.pdf">Board</a></td>
+<td class="org-left"><a href="classwork02.pdf">The Nullstellensatz</a>: Lecture 1: <a href="https://cloudstor.aarnet.edu.au/plus/s/C6mZbCxHbmvj5fg">Video</a>/<a href="notes/2021-08-02.pdf">Board</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
