@@ -66,14 +66,14 @@ This is a tentative outline of the course, subject to change.
 <tbody>
 <tr>
 <td class="org-right">1</td>
-<td class="org-left">What is algebraic geometry? The first examples: algebraic subsets of affine space. Lecture 1: <a href="https://cloudstor.aarnet.edu.au/plus/s/OMzlfgbXFWjlpSs">Video</a>/<a href="notes/2021-07-27.pdf">Board</a>, Lecture 2: <a href="https://cloudstor.aarnet.edu.au/plus/s/0kfXogCfxg4bQ3S">Video</a>/<a href="notes/2021-07-08.pdf">Board</a></td>
+<td class="org-left">What is algebraic geometry? The first examples: algebraic subsets of affine space. Lecture 1: <a href="https://web.microsoftstream.com/video/cf234444-df4b-4b65-8016-a3c1b7539891?channelId=cd4289e5-e630-458c-8ea0-2bd2632faea0">Video</a>/<a href="notes/2021-07-27.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/9baf2139-0fa8-4419-89f2-aabff250de07?channelId=cd4289e5-e630-458c-8ea0-2bd2632faea0">Video</a>/<a href="notes/2021-07-08.pdf">Board</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 
 <tr>
 <td class="org-right">2</td>
-<td class="org-left"><a href="classwork02.pdf">The Nullstellensatz</a>: Lecture 1: <a href="https://cloudstor.aarnet.edu.au/plus/s/C6mZbCxHbmvj5fg">Video</a>/<a href="notes/2021-08-02.pdf">Board</a></td>
+<td class="org-left"><a href="classwork02.pdf">The Nullstellensatz</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/307216ea-46a1-40dd-9389-7bde7ea8b439?channelId=cd4289e5-e630-458c-8ea0-2bd2632faea0">Video</a>/<a href="notes/2021-08-02.pdf">Board</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
