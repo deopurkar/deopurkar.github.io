@@ -30,8 +30,9 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 
 -   Lectures: 1 (Monday 10&#x2013;11, Moran G007), 2 (Wed 10&#x2013;11, Moran G008), 3 (Thu 11&#x2013;12, HN 4.41), 4 (Fri 12&#x2013;13, Moran G007)
 -   Zoom lecture: <https://anu.zoom.us/j/87920733031> (you know the password)
+-   Zoom office hours: Thursday 10&#x2013;11 (same room as the lecture), continuing into Thursday's class.
 -   Discussion forum: <https://ag2021.zulipchat.com>.
--   The assignments will be due on Gradescope (details TBA)
+-   The assignments will be due on Gradescope.
 
 
 # References
