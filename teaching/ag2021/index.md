@@ -74,7 +74,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">2</td>
-<td class="org-left"><a href="classwork02.pdf">The Nullstellensatz</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/307216ea-46a1-40dd-9389-7bde7ea8b439?channelId=cd4289e5-e630-458c-8ea0-2bd2632faea0">Video</a>/<a href="notes/2021-08-02.pdf">Board</a></td>
+<td class="org-left"><a href="classwork02.pdf">The Nullstellensatz</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/307216ea-46a1-40dd-9389-7bde7ea8b439?channelId=cd4289e5-e630-458c-8ea0-2bd2632faea0">Video</a>/<a href="notes/2021-08-02.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/a3127e92-540d-47a2-8c8f-66e8e2411163?list=studio">Video</a>/<a href="notes/2021-08-06.pdf">Board</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
