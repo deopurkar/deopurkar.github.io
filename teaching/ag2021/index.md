@@ -22,7 +22,7 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 
 # Announcements
 
-1.  Here is the [classwork for week 2](classwork02.pdf).
+1.  Friday (August 6)'s lecture will be in Hanna Neumann 2.42.
 2.  [Homework 1](hw1.pdf) is up, due in two weeks (August 13) on [gradescope](https://www.gradescope.com/courses/280699) (you may have to create an account with your ANU id).
 
 
@@ -30,8 +30,9 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 
 -   Lectures: 1 (Monday 10&#x2013;11, Moran G007), 2 (Wed 10&#x2013;11, Moran G008), 3 (Thu 11&#x2013;12, HN 4.41), 4 (Fri 12&#x2013;13, Moran G007)
 -   Zoom lecture: <https://anu.zoom.us/j/87920733031> (you know the password)
+-   Zoom office hours: Thursday 10&#x2013;11 (same room as the lecture), continuing into Thursday's class.
 -   Discussion forum: <https://ag2021.zulipchat.com>.
--   The assignments will be due on Gradescope (details TBA)
+-   The assignments will be due on Gradescope.
 
 
 # References
@@ -73,7 +74,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">2</td>
-<td class="org-left"><a href="classwork02.pdf">The Nullstellensatz</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/307216ea-46a1-40dd-9389-7bde7ea8b439?channelId=cd4289e5-e630-458c-8ea0-2bd2632faea0">Video</a>/<a href="notes/2021-08-02.pdf">Board</a></td>
+<td class="org-left"><a href="classwork02.pdf">The Nullstellensatz</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/307216ea-46a1-40dd-9389-7bde7ea8b439?channelId=cd4289e5-e630-458c-8ea0-2bd2632faea0">Video</a>/<a href="notes/2021-08-02.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/a3127e92-540d-47a2-8c8f-66e8e2411163?list=studio">Video</a>/<a href="notes/2021-08-06.pdf">Board</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
