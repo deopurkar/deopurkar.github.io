@@ -4,25 +4,13 @@ title: 'Advanced topics in algebra: Algebraic geometry'
 no-navigation: true
 ---
 
-<div class="intro">
-
-> Algebra is nothing but written geometry; geometry is nothing but pictured algebra.  
-> &#x2014; Sophie Germain (1776&#x2013;1831)
-
-> No attention should be paid to the fact that algebra and geometry are different in appearance.  
-> &#x2014; Omar Khayyam (1048&#x2013;1131)
-
-![The Kummer quartic](K3.png)
-
-</div>
-
 This year, the course will be on algebraic geometry, the study of algebraic equations using geometry and geometric shapes using algebra.
 We will begin with affine varieties&#x2014;solution sets of polynomial equations&#x2014;and use these as building blocks to construct a rich world of geometric objects that include Riemann surfaces, projective spaces, Grassmannians, etc.
 
 
 # Announcements
 
-1.  Friday (August 6)'s lecture will be in Hanna Neumann 2.42.
+1.  Here is the [classwork for week 3](classwork03.pdf).
 2.  [Homework 1](hw1.pdf) is up, due in two weeks (August 13) on [gradescope](https://www.gradescope.com/courses/280699) (you may have to create an account with your ANU id).
 
 
@@ -189,4 +177,19 @@ To compensate for this strict policy, I will drop the lowest among the (homework
 You are allowed, even encouraged, to work with others on homework assignments, but you must write up your solutions **on your own**. In other words, you **may not** copy someone else's write-up and you **may not** write your solutions side by side with someone else. On your submission, you must write the names of your collaborators. This is a matter of academic honesty; it will not affect your marks. 
 
 There will be no collaboration on the exams.
+
+
+# Miscellenous
+
+<div class="intro">
+
+> Algebra is nothing but written geometry; geometry is nothing but pictured algebra.  
+> &#x2014; Sophie Germain (1776&#x2013;1831)
+
+> No attention should be paid to the fact that algebra and geometry are different in appearance.  
+> &#x2014; Omar Khayyam (1048&#x2013;1131)
+
+![The Kummer quartic](K3.png)
+
+</div>
 
