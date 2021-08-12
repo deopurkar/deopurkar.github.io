@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-08-12 Thu 23:16 -->
+<!-- 2021-08-12 Thu 12:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Algebraic geometry (Notes)</title>
 <meta name="author" content="Anand Deopurkar" />
 <meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,9 +31,8 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -42,21 +41,21 @@
   pre.src {
     position: relative;
     overflow: auto;
+    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    top: -8px;
-    right: 12px;
+    background-color: white;
+    top: -10px;
+    right: 10px;
     padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
+    border: 1px solid black;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -192,6 +191,7 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
+  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="src/bigblow_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="src/bigblow_theme/css/hideshow.css"/>
@@ -205,6 +205,28 @@
 <script type="text/javascript" src="src/bigblow_theme/js/hideshow.js"></script>
 <script type="text/javascript" src="src/lib/js/jquery.stickytableheaders.min.js"></script>
 <link rel='stylesheet' type='text/css' href='theorems.css'/>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         displayAlign: "center",
@@ -225,21 +247,22 @@
              }
 });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
-<div id="content" class="content">
+<div id="content">
 <h1 class="title">Algebraic geometry (Notes)</h1>
-<div id="outline-container-org916f25f" class="outline-2">
-<h2 id="org916f25f"><span class="section-number-2">1.</span> Regular functions and maps 1</h2>
+<div id="outline-container-org7a16eb9" class="outline-2">
+<h2 id="org7a16eb9"><span class="section-number-2">1</span> Regular functions and maps 1</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Throughout this section, \(k\) is an algebraically closed field.
 </p>
 </div>
 
-<div id="outline-container-org3ababc6" class="outline-3">
-<h3 id="org3ababc6"><span class="section-number-3">1.1.</span> Regular functions&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span></span></h3>
+<div id="outline-container-org75fd113" class="outline-3">
+<h3 id="org75fd113"><span class="section-number-3">1.1</span> Regular functions&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span></span></h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Let \(S \subset \mathbb A^n\) be a set and let \(f \colon S \to k\) be a function.
@@ -247,8 +270,8 @@ Let \(a\) be a point of \(S\).
 </p>
 </div>
 
-<div id="outline-container-org88b818a" class="outline-4">
-<h4 id="org88b818a"><span class="section-number-4">1.1.1.</span> Definition (Regular function)</h4>
+<div id="outline-container-org2f23437" class="outline-4">
+<h4 id="org2f23437"><span class="section-number-4">1.1.1</span> Definition (Regular function)</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
 We say that \(f\) is <i>regular</i> (or <i>algebraic</i>) <i>at \(a\)</i> if there exists a Zariski open set \(U \subset \mathbb A^n\) and polynomials \(p, q \in k[x_1,\dots,x_n]\) with \(q(a) \neq 0\) such that
@@ -263,8 +286,8 @@ Although the definition of a regular function makes sense for \(S \subset \mathb
 </div>
 </div>
 
-<div id="outline-container-org9d6ec89" class="outline-4">
-<h4 id="org9d6ec89"><span class="section-number-4">1.1.2.</span> Examples</h4>
+<div id="outline-container-org1b82e65" class="outline-4">
+<h4 id="org1b82e65"><span class="section-number-4">1.1.2</span> Examples</h4>
 <div class="outline-text-4" id="text-1-1-2">
 <ol class="org-ol">
 <li>A constant function is regular.</li>
@@ -275,8 +298,8 @@ This ring contains a copy of \(k\), namely the constant functions.</li>
 </div>
 </div>
 
-<div id="outline-container-orgb1765c4" class="outline-4">
-<h4 id="orgb1765c4"><span class="section-number-4">1.1.3.</span> Definition (Ring of regular functions)</h4>
+<div id="outline-container-org07e71a7" class="outline-4">
+<h4 id="org07e71a7"><span class="section-number-4">1.1.3</span> Definition (Ring of regular functions)</h4>
 <div class="outline-text-4" id="text-1-1-3">
 <p>
 We denote the ring of regular functions on \(S\) by \(k[S]\).
@@ -285,15 +308,15 @@ This ring is a \(k\)-algebra.
 </div>
 </div>
 
-<div id="outline-container-orgcced654" class="outline-4">
-<h4 id="orgcced654"><span class="section-number-4">1.1.4.</span> Proposition (Local nature of regularity)</h4>
+<div id="outline-container-orgb93bb91" class="outline-4">
+<h4 id="orgb93bb91"><span class="section-number-4">1.1.4</span> Proposition (Local nature of regularity)</h4>
 <div class="outline-text-4" id="text-1-1-4">
 <p>
 Let \(f\) be a function on \(S\), and let \(\{U_i\}\) be an open cover of \(S\).
 If the restriction of \(f\) to each \(U_i\) is regular, then \(f\) is regular.
 </p>
 
-<div class="skipped" id="org83e7af7">
+<div class="skipped" id="orgf3c5360">
 <p>
 Proof. &#x2014; (1)
 </p>
@@ -303,25 +326,25 @@ Proof. &#x2014; (1)
 </div>
 </div>
 
-<div id="outline-container-org3acb186" class="outline-3">
-<h3 id="org3acb186"><span class="section-number-3">1.2.</span> Regular functions on an affine variety&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span></span></h3>
+<div id="outline-container-orgc94c9a4" class="outline-3">
+<h3 id="orgc94c9a4"><span class="section-number-3">1.2</span> Regular functions on an affine variety&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span></span></h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 It turns out that regular functions on closed subsets of \(\mathbb A^n\) are just the polynomial functions!
 So, not only is there a global algebraic expression, we don&rsquo;t even need denominators.
 </p>
 </div>
-<div id="outline-container-org698758e" class="outline-4">
-<h4 id="org698758e"><span class="section-number-4">1.2.1.</span> Proposition</h4>
+<div id="outline-container-orgcacbf2d" class="outline-4">
+<h4 id="orgcacbf2d"><span class="section-number-4">1.2.1</span> Proposition</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <p>
-<a id="org73cd299"></a>
+<a id="org0231f23"></a>
 Let \(X \subset \mathbb A^n\) be a Zariski closed subset.
 Let \(f\) be a regular function on \(X\).
 Then there exists a polynomial \(P \in k[x_1,\dots,x_n]\) such that \(P(x) = f(x)\) for all \(x \in X\).
 </p>
 
-<div class="proof" id="orgd220edf">
+<div class="proof" id="orgf28d882">
 <p>
 By definition, we know that for every \(x \in X\), there is a Zariski open set \(U \subset X\) and polynomials \(p, q\) such that \(f = p/q\) on \(U\).
 The set \(U\) and the polynomials \(p, q\) may depend on \(x\), so let us denote them by \(U_x\), \(p_x\), and  \(q_x\).
@@ -356,7 +379,7 @@ Note that the system of equations
 \[ g = 0 \text{ for all } g \in I \text{ and } q_x = 0 \text{ for all } x \in X\]
 has no solution!
 </p>
-<div class="skipped" id="orge5e4ad5">
+<div class="skipped" id="org008c752">
 <p>
 Why is this true? &#x2014; (2)
 </p>
@@ -370,7 +393,7 @@ for some polynomials \(r_1, \dots, r_m\).
 Take \(P = r_1p_{x_1} + \dots + r_m p_{x_m}\).
 Then \(f = P\) on all of \(X\).
 </p>
-<div class="skipped" id="org4e31897">
+<div class="skipped" id="orgf021d47">
 <p>
 Check the last equality. &#x2014; (3)
 </p>
@@ -380,9 +403,9 @@ Check the last equality. &#x2014; (3)
 </div>
 </div>
 </div>
-<div id="outline-container-orga0c050f" class="outline-4">
-<h4 id="orga0c050f">----</h4>
-<div class="outline-text-4" id="text-orga0c050f">
+<div id="outline-container-org1d93900" class="outline-4">
+<h4 id="org1d93900">----</h4>
+<div class="outline-text-4" id="text-org1d93900">
 <p>
 Let \(X \subset \mathbb A^n\) be any subset.
 We have a ring homomorphism
@@ -392,17 +415,17 @@ where a polynomial \(f\) is sent to the regular function it defines on \(X\).
 </div>
 </div>
 
-<div id="outline-container-org6223cd2" class="outline-4">
-<h4 id="org6223cd2"><span class="section-number-4">1.2.2.</span> Proposition (Ring of regular functions of an affine)</h4>
+<div id="outline-container-org090b83c" class="outline-4">
+<h4 id="org090b83c"><span class="section-number-4">1.2.2</span> Proposition (Ring of regular functions of an affine)</h4>
 <div class="outline-text-4" id="text-1-2-2">
 <p>
 Let \(X \subset \mathbb A^n\) be a closed subset.
 Then the ring homomorphism \(\pi \colon k[x_1,\dots,x_n] \to k[X]\) induces an isomorphism
 \[ k[x_1,\dots,x_n]/I(X) \xrightarrow{\sim} k[X].\]
 </p>
-<div class="proof" id="orgff2076b">
+<div class="proof" id="org68932f4">
 <p>
-The map \(\pi\) is surjective by Proposition <a href="#org73cd299">1.2.1</a> and its kernel is \(I(X)\) by definition.
+The map \(\pi\) is surjective by Proposition <a href="#org0231f23">1.2.1</a> and its kernel is \(I(X)\) by definition.
 The result follows by the isomorphism theorems.
 </p>
 
@@ -411,8 +434,8 @@ The result follows by the isomorphism theorems.
 </div>
 </div>
 
-<div id="outline-container-org1399c6e" class="outline-3">
-<h3 id="org1399c6e"><span class="section-number-3">1.3.</span> Regular maps&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span></span></h3>
+<div id="outline-container-org1c7ccee" class="outline-3">
+<h3 id="org1c7ccee"><span class="section-number-3">1.3</span> Regular maps&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span></span></h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 Consider \(X \subset \mathbb A^n\) and \(Y \subset \mathbb A^m\) and a function \(f \colon X \to Y\).
@@ -421,8 +444,8 @@ Write \(f\) in coordinates as
 </p>
 </div>
 
-<div id="outline-container-org2c541f8" class="outline-4">
-<h4 id="org2c541f8"><span class="section-number-4">1.3.1.</span> Definition (Regular map)</h4>
+<div id="outline-container-orga12eebe" class="outline-4">
+<h4 id="orga12eebe"><span class="section-number-4">1.3.1</span> Definition (Regular map)</h4>
 <div class="outline-text-4" id="text-1-3-1">
 <p>
 We say that \(f\) is <i>regular at a point \(a \in X\)</i> if all its  coordinate functions \(f_1, \dots, f_m\) are regular at \(a\).
@@ -431,8 +454,8 @@ If \(f\) is regular at all points of \(X\), then we say that it is <i>regular</i
 </div>
 </div>
 
-<div id="outline-container-org3cac052" class="outline-4">
-<h4 id="org3cac052"><span class="section-number-4">1.3.2.</span> Example (Maps to \(\mathbb A^1\))</h4>
+<div id="outline-container-orgba7d763" class="outline-4">
+<h4 id="orgba7d763"><span class="section-number-4">1.3.2</span> Example (Maps to \(\mathbb A^1\))</h4>
 <div class="outline-text-4" id="text-1-3-2">
 <p>
 A regular map to \(\mathbb A^1\) is the same as a regular function.
@@ -440,8 +463,8 @@ A regular map to \(\mathbb A^1\) is the same as a regular function.
 </div>
 </div>
 
-<div id="outline-container-orgd1add29" class="outline-4">
-<h4 id="orgd1add29"><span class="section-number-4">1.3.3.</span> Example (An isomorphism)</h4>
+<div id="outline-container-org51b649c" class="outline-4">
+<h4 id="org51b649c"><span class="section-number-4">1.3.3</span> Example (An isomorphism)</h4>
 <div class="outline-text-4" id="text-1-3-3">
 <p>
 Let \(U = \mathbb A^1 \setminus \{0\}\) and \(V = V(xy-1) \subset \mathbb A^2\).
@@ -452,19 +475,19 @@ These functions are mutual inverses, and hence we have a (bi-regular) isomorphis
 </div>
 </div>
 </div>
-<div id="outline-container-org5899a4a" class="outline-3">
-<h3 id="org5899a4a"><span class="section-number-3">1.4.</span> Properties of regular maps&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span></span></h3>
+<div id="outline-container-orgc92623f" class="outline-3">
+<h3 id="orgc92623f"><span class="section-number-3">1.4</span> Properties of regular maps&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span></span></h3>
 <div class="outline-text-3" id="text-1-4">
 </div>
-<div id="outline-container-org61054b7" class="outline-4">
-<h4 id="org61054b7"><span class="section-number-4">1.4.1.</span> Proposition (Elementary properties of regular maps)</h4>
+<div id="outline-container-org7aa234f" class="outline-4">
+<h4 id="org7aa234f"><span class="section-number-4">1.4.1</span> Proposition (Elementary properties of regular maps)</h4>
 <div class="outline-text-4" id="text-1-4-1">
 <ol class="org-ol">
 <li>The identity map is regular.</li>
 <li>The composition of two regular maps is regular.</li>
 <li>Regular maps are continuous (in the Zariski topology).</li>
 </ol>
-<div class="proof" id="orgbf7e697">
+<div class="proof" id="org55a679f">
 <p>
 The identity map is given by  \((x_1,\dots,x_n) \mapsto (x_1,\dots,x_n)\); each coordinate is a polynomial, and hence regular.
 The statement for composition is true because the composition of fractions of polynomials is also a fraction of polynomials.
@@ -475,14 +498,14 @@ The third statement is left as homework.
 </div>
 </div>
 
-<div id="outline-container-orgef2f7aa" class="outline-4">
-<h4 id="orgef2f7aa"><span class="section-number-4">1.4.2.</span> Proposition (Regular maps preserve regular functions)</h4>
+<div id="outline-container-orgdf2236e" class="outline-4">
+<h4 id="orgdf2236e"><span class="section-number-4">1.4.2</span> Proposition (Regular maps preserve regular functions)</h4>
 <div class="outline-text-4" id="text-1-4-2">
 <p>
 Let \(\phi \colon X \to Y\) be a regular map.
 If \(f\) is a regular function on \(Y\), then \(f \circ \phi\) is a regular function on \(X\).
 </p>
-<div class="proof" id="org2428771">
+<div class="proof" id="orgafe8429">
 <p>
 View a regular function as a regular map to \(\mathbb A^1\).
 Then this becomes a special case of composition of regular maps.
@@ -492,9 +515,9 @@ Then this becomes a special case of composition of regular maps.
 </div>
 </div>
 
-<div id="outline-container-org7564265" class="outline-4">
-<h4 id="org7564265">---</h4>
-<div class="outline-text-4" id="text-org7564265">
+<div id="outline-container-org9f4fc4e" class="outline-4">
+<h4 id="org9f4fc4e">---</h4>
+<div class="outline-text-4" id="text-org9f4fc4e">
 <p>
 As a result, we get a \(k\)-algebra homomorphism \(k[Y] \to k[X]\), often denoted by \(\phi^*\):
 \[ \phi^* (f) = f \circ \phi.\]
@@ -511,13 +534,13 @@ That is, if we have maps \(\phi \colon X \to Y\) and \(\psi \colon Y \to Z\), an
 </div>
 </div>
 
-<div id="outline-container-orgbbeba86" class="outline-4">
-<h4 id="orgbbeba86"><span class="section-number-4">1.4.3.</span> Corollary (Isomorphic varieties have isomorphic rings of functions)</h4>
+<div id="outline-container-orgf1d2a54" class="outline-4">
+<h4 id="orgf1d2a54"><span class="section-number-4">1.4.3</span> Corollary (Isomorphic varieties have isomorphic rings of functions)</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <p>
 If \(\phi \colon X \to Y\) is an isomorphism of varieties, then \(\phi^* \colon k[Y] \to k[X]\) is an isomorphism of \(k\)-algebras.
 </p>
-<div class="proof" id="orgbed7ca9">
+<div class="proof" id="orgd9e922e">
 <p>
 Let \(\psi \colon Y \to X\) be the inverse of \(\phi\). Then \(\psi^* \colon k[X] \to k[Y]\) is the inverse of \(\phi^*\).
 </p>
@@ -525,14 +548,14 @@ Let \(\psi \colon Y \to X\) be the inverse of \(\phi\). Then \(\psi^* \colon k[X
 </div>
 </div>
 </div>
-<div id="outline-container-org5061af9" class="outline-4">
-<h4 id="org5061af9"><span class="section-number-4">1.4.4.</span> Proposition (For affines, map between rings induces map between spaces)</h4>
+<div id="outline-container-org1824512" class="outline-4">
+<h4 id="org1824512"><span class="section-number-4">1.4.4</span> Proposition (For affines, map between rings induces map between spaces)</h4>
 <div class="outline-text-4" id="text-1-4-4">
 <p>
 Let \(X \subset \mathbb A^n\) and \(Y \subset \mathbb A^m\) be Zariski closed, and let \(f \colon k[Y] \to k[X]\) be a homomorphism of \(k\)-algebras.
 Then there is a unique (regular) map \(\phi \colon X \to Y\) such that \(f = \phi^*\).
 </p>
-<div class="proof" id="org078268f">
+<div class="proof" id="org480c137">
 <p>
 We know that \(k[X] = k[x_1,\dots,x_n]/I(X)\) and \(k[Y] = k[y_1,\dots,y_m]/I(Y)\).
 Let \(\phi_i = f(y_i) \in k[X]\).
@@ -542,7 +565,7 @@ Then \(\phi\) sends \(X\) to \(Y\) and is the unique map satisfying the required
 
 </div>
 
-<div class="skipped" id="org4e83d5e">
+<div class="skipped" id="orge7bf120">
 <p>
 Prove the last statement. &#x2014; (4)
 </p>
@@ -550,15 +573,15 @@ Prove the last statement. &#x2014; (4)
 </div>
 </div>
 </div>
-<div id="outline-container-orga62d218" class="outline-4">
-<h4 id="orga62d218"><span class="section-number-4">1.4.5.</span> Example (Bijection but not an isomorphism)</h4>
+<div id="outline-container-org9024111" class="outline-4">
+<h4 id="org9024111"><span class="section-number-4">1.4.5</span> Example (Bijection but not an isomorphism)</h4>
 <div class="outline-text-4" id="text-1-4-5">
 <p>
 Let \(X = \mathbb A^1_k\) and \(Y = V(y^2-x^3) \subset \mathbb A^2_k\).
 We have a regular map \(f \colon X \to Y\) given by \(f(t) = (t^2, t^3)\).
 It is easy to check that \(f\) is a bijection, but not an isomorphism.
 </p>
-<div class="skipped" id="org5d7ee74">
+<div class="skipped" id="org9763ff2">
 <p>
 Why is this not an isomorphism? &#x2014; (5)
 </p>
@@ -566,14 +589,14 @@ Why is this not an isomorphism? &#x2014; (5)
 </div>
 </div>
 </div>
-<div id="outline-container-org925d4ed" class="outline-4">
-<h4 id="org925d4ed"><span class="section-number-4">1.4.6.</span> Example (Distinguished affine opens)</h4>
+<div id="outline-container-orgffd4cf4" class="outline-4">
+<h4 id="orgffd4cf4"><span class="section-number-4">1.4.6</span> Example (Distinguished affine opens)</h4>
 <div class="outline-text-4" id="text-1-4-6">
 <p>
 Let \(U_f \subset \mathbb A^n\) be the complement of \(V(f)\).
 Then \(U_f\) is isomorphic to an affine variety, namely the variety \(V(yf-1) \subset \mathbb A^{n+1}\), where \(y\) denotes the \((n+1)\)-th coordinate.
 </p>
-<div class="skipped" id="org0e8cedf">
+<div class="skipped" id="org9a80e6c">
 <p>
 Prove this. &#x2014; (6)
 </p>
@@ -581,8 +604,8 @@ Prove this. &#x2014; (6)
 </div>
 </div>
 </div>
-<div id="outline-container-orgfe0f6fa" class="outline-4">
-<h4 id="orgfe0f6fa"><span class="section-number-4">1.4.7.</span> Caution (Not all opens are affine)</h4>
+<div id="outline-container-orgeebfb0e" class="outline-4">
+<h4 id="orgeebfb0e"><span class="section-number-4">1.4.7</span> Caution (Not all opens are affine)</h4>
 <div class="outline-text-4" id="text-1-4-7">
 <p>
 The previous proposition only applies to the complement of \(V(f)\) for a single \(f\)!
@@ -597,7 +620,7 @@ For example, the complement of the origin in \(\mathbb A^2\) is not isomorphic t
 <div id="postamble" class="status">
 <p class="date">Date: \today</p>
 <p class="author">Author: Anand Deopurkar</p>
-<p class="date">Created: 2021-08-12 Thu 23:16</p>
+<p class="date">Created: 2021-08-12 Thu 12:07</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
