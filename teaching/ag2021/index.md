@@ -12,7 +12,7 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 
 1.  Here is the [classwork for week 3](classwork03.pdf). Reports due on [gradescope](https://www.gradescope.com/courses/280699) by Thursday, Aug 12.
 2.  [Homework 1](hw1.pdf) is up, due in two weeks (August 13) on [gradescope](https://www.gradescope.com/courses/280699) (you may have to create an account with your ANU id).
-3.  [Homework 2](hw2.pdf) is up, due in two weeks (August 30) on [gradescope](https://www.gradescope.com/courses/280699).
+3.  [Homework 2](hw2.pdf) is up, due in two weeks (August 27) on [gradescope](https://www.gradescope.com/courses/280699).
 
 
 # Links
