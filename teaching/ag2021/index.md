@@ -4,33 +4,24 @@ title: 'Advanced topics in algebra: Algebraic geometry'
 no-navigation: true
 ---
 
-<div class="intro">
-
-> Algebra is nothing but written geometry; geometry is nothing but pictured algebra.  
-> &#x2014; Sophie Germain (1776&#x2013;1831)
-
-> No attention should be paid to the fact that algebra and geometry are different in appearance.  
-> &#x2014; Omar Khayyam (1048&#x2013;1131)
-
-![The Kummer quartic](K3.png)
-
-</div>
-
 This year, the course will be on algebraic geometry, the study of algebraic equations using geometry and geometric shapes using algebra.
 We will begin with affine varieties&#x2014;solution sets of polynomial equations&#x2014;and use these as building blocks to construct a rich world of geometric objects that include Riemann surfaces, projective spaces, Grassmannians, etc.
 
 
 # Announcements
 
-[Homework 1](hw1.pdf) is up, due in two weeks (August 13) on [gradescope](https://www.gradescope.com/courses/280699) (you may have to create an account with your ANU id).
+1.  Here is the [classwork for week 3](classwork03.pdf). Reports due on [gradescope](https://www.gradescope.com/courses/280699) by Thursday, Aug 12.
+2.  [Homework 1](hw1.pdf) is up, due in two weeks (August 13) on [gradescope](https://www.gradescope.com/courses/280699) (you may have to create an account with your ANU id).
+3.  [Homework 2](hw2.pdf) is up, due in two weeks (August 30) on [gradescope](https://www.gradescope.com/courses/280699).
 
 
 # Links
 
 -   Lectures: 1 (Monday 10&#x2013;11, Moran G007), 2 (Wed 10&#x2013;11, Moran G008), 3 (Thu 11&#x2013;12, HN 4.41), 4 (Fri 12&#x2013;13, Moran G007)
 -   Zoom lecture: <https://anu.zoom.us/j/87920733031> (you know the password)
+-   Zoom office hours: Thursday 10&#x2013;11 (same room as the lecture), continuing into Thursday's class.
 -   Discussion forum: <https://ag2021.zulipchat.com>.
--   The assignments will be due on Gradescope (details TBA)
+-   The assignments will be due on Gradescope.
 
 
 # References
@@ -65,21 +56,21 @@ This is a tentative outline of the course, subject to change.
 <tbody>
 <tr>
 <td class="org-right">1</td>
-<td class="org-left">What is algebraic geometry? The first examples: algebraic subsets of affine space. Lecture 1: <a href="https://cloudstor.aarnet.edu.au/plus/s/OMzlfgbXFWjlpSs">Video</a>/<a href="notes/2021-07-27.pdf">Board</a>, Lecture 2: <a href="https://cloudstor.aarnet.edu.au/plus/s/0kfXogCfxg4bQ3S">Video</a>/<a href="notes/2021-07-08.pdf">Board</a></td>
+<td class="org-left">What is algebraic geometry? The first examples: algebraic subsets of affine space. Lecture 1: <a href="https://web.microsoftstream.com/video/cf234444-df4b-4b65-8016-a3c1b7539891?channelId=cd4289e5-e630-458c-8ea0-2bd2632faea0">Video</a>/<a href="notes/2021-07-27.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/9baf2139-0fa8-4419-89f2-aabff250de07?channelId=cd4289e5-e630-458c-8ea0-2bd2632faea0">Video</a>/<a href="notes/2021-07-08.pdf">Board</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 
 <tr>
 <td class="org-right">2</td>
-<td class="org-left">The Nullstellensatz</td>
+<td class="org-left"><a href="classwork02.pdf">The Nullstellensatz</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/307216ea-46a1-40dd-9389-7bde7ea8b439?channelId=cd4289e5-e630-458c-8ea0-2bd2632faea0">Video</a>/<a href="notes/2021-08-02.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/a3127e92-540d-47a2-8c8f-66e8e2411163?list=studio">Video</a>/<a href="notes/2021-08-06.pdf">Board</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 
 <tr>
 <td class="org-right">3</td>
-<td class="org-left">Regular functions and regular maps</td>
+<td class="org-left"><a href="classwork03.pdf">Regular functions and regular maps</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/ca9210bf-b61b-4b1f-a077-8a78c29b404e">Video</a>/<a href="notes/2021-08-09.pdf">Board</a></td>
 <td class="org-left">Assignment 1</td>
 </tr>
 
@@ -187,4 +178,19 @@ To compensate for this strict policy, I will drop the lowest among the (homework
 You are allowed, even encouraged, to work with others on homework assignments, but you must write up your solutions **on your own**. In other words, you **may not** copy someone else's write-up and you **may not** write your solutions side by side with someone else. On your submission, you must write the names of your collaborators. This is a matter of academic honesty; it will not affect your marks. 
 
 There will be no collaboration on the exams.
+
+
+# Miscellenous
+
+<div class="intro">
+
+> Algebra is nothing but written geometry; geometry is nothing but pictured algebra.  
+> &#x2014; Sophie Germain (1776&#x2013;1831)
+
+> No attention should be paid to the fact that algebra and geometry are different in appearance.  
+> &#x2014; Omar Khayyam (1048&#x2013;1131)
+
+![The Kummer quartic](K3.png)
+
+</div>
 
