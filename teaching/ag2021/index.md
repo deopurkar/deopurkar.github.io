@@ -69,7 +69,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">3</td>
-<td class="org-left"><a href="classwork03.pdf">Regular functions and regular maps</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/ca9210bf-b61b-4b1f-a077-8a78c29b404e">Video</a>/<a href="notes/2021-08-09.pdf">Board</a></td>
+<td class="org-left"><a href="classwork03.pdf">Regular functions and regular maps</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/ca9210bf-b61b-4b1f-a077-8a78c29b404e">Video</a>/<a href="notes/2021-08-09.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/048c9983-30be-400e-9e1b-a6019c369b83">Video</a>/<a href="notes/2021-08-13.pdf">Board</a></td>
 <td class="org-left">Assignment 1</td>
 </tr>
 
