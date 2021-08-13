@@ -12,7 +12,6 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 
 1.  Here is the [classwork for week 3](classwork03.pdf). Reports due on [gradescope](https://www.gradescope.com/courses/280699) by Thursday, Aug 12.
 2.  [Homework 1](hw1.pdf) is up, due in two weeks (August 13) on [gradescope](https://www.gradescope.com/courses/280699) (you may have to create an account with your ANU id).
-3.  [Homework 2](hw2.pdf) is up, due in two weeks (August 27) on [gradescope](https://www.gradescope.com/courses/280699).
 
 
 # Links
@@ -70,7 +69,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">3</td>
-<td class="org-left"><a href="classwork03.pdf">Regular functions and regular maps</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/ca9210bf-b61b-4b1f-a077-8a78c29b404e">Video</a>/<a href="notes/2021-08-09.pdf">Board</a></td>
+<td class="org-left"><a href="classwork03.pdf">Regular functions and regular maps</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/ca9210bf-b61b-4b1f-a077-8a78c29b404e">Video</a>/<a href="notes/2021-08-09.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/048c9983-30be-400e-9e1b-a6019c369b83">Video</a>/<a href="notes/2021-08-13.pdf">Board</a></td>
 <td class="org-left">Assignment 1</td>
 </tr>
 
