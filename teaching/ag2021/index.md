@@ -76,7 +76,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">4</td>
-<td class="org-left"><a href="classwork04.pdf">General algebraic varieties</a></td>
+<td class="org-left"><a href="classwork04.pdf">General algebraic varieties</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/aff3b45e-5fbd-44e7-b655-1e19277560f9">Video</a>/<a href="notes/2021-08-16.pdf">Board</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
