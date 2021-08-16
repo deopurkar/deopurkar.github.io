@@ -5,6 +5,13 @@
     border-color: #d05a5f;
 }
 
+.student {
+    padding: 5px;
+    background-color:  #eeffee;
+    border: 1px solid;
+    border-color: #5fd05a;
+}
+
 
 .example:before {
     content: "Example\2014" + attr(id) ". ";
