@@ -160,7 +160,7 @@ If you are a masters student or taking the course as an ASC/ASE, your assessment
 
 ## Classwork
 
-The format of our classwork will be as follows. The first meeting of the week (Monday) will be a traditional lecture in which I will explain the key ideas of a topic, but not prove all the details. In the following two meetings (Wednesday, Thursday), we will work out the details in small groups. By the end of Thursday, you will write a "progress report" (a 1-2 sentence summary of your progress for each question) and submit it on Gradescope. On Friday, based on the progress reports, I will present the solutions. Two students (selected at random) will write up the solutions and send them to me in a week. I will add the write-ups to [our notes](notes). 
+The format of our classwork will be as follows. The first meeting of the week (Monday) will be a traditional lecture in which I will explain the key ideas of a topic, but not prove all the details. In the following two meetings (Wednesday, Thursday), we will work out the details in small groups. By the end of Thursday, you will write a "progress report" (a 1-2 sentence summary of your progress for each question) and submit it on Gradescope. On Friday, based on the progress reports, I will present the solutions. Students (selected at random) will write up the solutions and send them to me in a week. I will add the write-ups to [our notes](notes). 
 
 
 # Policies
