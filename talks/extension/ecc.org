@@ -1,9 +1,10 @@
-#+REVEAL_THEME: solarized
+#+REVEAL_THEME: moon
 #+TITLE: Error correcting codes
 #+SUBTITLE: How to talk across a noisy room?
 #+AUTHOR: Anand Deopurkar
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
+#+REVEAL_TRANS: fade
 
 * Noisy communication channels
 ** Is this working?
@@ -84,7 +85,14 @@
   [[file:monkeystrategy.svg]]
 
   #+ATTR_REVEAL: :frag t
-  Allows \(k/2\) errors to be corrected!
+  Allows \(\lfloor k/2 \rfloor \) errors to be corrected!
+
+  #+REVEAL: split:t
+  Allows \(\lfloor k/2 \rfloor \) errors to be corrected!
+
+  #+ATTR_HTML: :width 600px
+  #+ATTR_ORG: :width 600
+  [[file:monkeyhamming.svg]]
 
 * How we execute the strategy?
 
@@ -117,7 +125,7 @@
    
 
    #+ATTR_REVEAL: :frag t
-   Multiplicative inverses in \(F_5\).
+   Multiplicative inverses in \(\mathbb F_5\).
    #+ATTR_REVEAL: :frag t
    \begin{align*}
 \overline{1}^{-1} &= \overline 1 \\
@@ -129,7 +137,7 @@
    For any field \(F\), let \(F[x]\) denote the set of polynomials with variable \(x\) and coefficients in \(F\).
 
    #+ATTR_REVEAL: :frag t
-   Example: In \(F_p[x]\), we have elements like
+   Example: In \(\mathbb F_5[x]\), we have elements like
    #+ATTR_REVEAL: :frag t
    \begin{align*}
     \overline 0,\\
@@ -141,7 +149,7 @@
    We add and multiply polynomials as usual, but remembering to always use the given operations for \(F\).
 
    #+ATTR_REVEAL: :frag t
-   For example, in \(\mathbb F_p[x]\), we have
+   For example, in \(\mathbb F_5[x]\), we have
    \[
    (\overline 2 x+ \overline 1) \cdot (\overline 1 x+ \overline 3) = \overline 2 x^2 + \overline 2 x + \overline 3.
    \]
@@ -187,6 +195,7 @@
 
 ** Recap
    Encode: Length-3 string to length-5 string
+   
    Gain: Ability to correct any 1-bit errors.
 
    #+ATTR_REVEAL: :frag t

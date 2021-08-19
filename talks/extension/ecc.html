@@ -9,7 +9,7 @@
 </style>
 <link rel="stylesheet" href="./reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="./reveal.js/dist/theme/solarized.css" id="theme"/>
+<link rel="stylesheet" href="./reveal.js/dist/theme/moon.css" id="theme"/>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
@@ -17,17 +17,17 @@
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide"><h1 class="title">Error correcting codes</h1><p class="subtitle">(How to talk across a noisy room?)</p>
-<h2 class="author">Anand Deopurkar</h2><p class="date">Created: 2021-08-19 Thu 15:00</p>
+<h2 class="author">Anand Deopurkar</h2><p class="date">Created: 2021-08-19 Thu 16:52</p>
 </section>
 
 <section>
-<section id="slide-orga2fc564">
-<h2 id="orga2fc564">Noisy communication channels</h2>
-<div class="outline-text-2" id="text-orga2fc564">
+<section id="slide-orgb97b6cd">
+<h2 id="orgb97b6cd">Noisy communication channels</h2>
+<div class="outline-text-2" id="text-orgb97b6cd">
 </div>
 </section>
-<section id="slide-orgcee6b14">
-<h3 id="orgcee6b14">Is this working?</h3>
+<section id="slide-org133e41e">
+<h3 id="org133e41e">Is this working?</h3>
 
 <div class="figure">
 <p><a href="isthisworking.png" width="600px"><img src="file:///home/anandrd/website/talks/extension/isthisworking.png" alt="isthisworking.png" width="600px" /></a>
@@ -35,16 +35,16 @@
 </div>
 
 </section>
-<section id="slide-orgcac60ba">
-<h3 id="orgcac60ba">Am I muted?</h3>
+<section id="slide-org94cc910">
+<h3 id="org94cc910">Am I muted?</h3>
 
 <div class="figure">
 <p><a href="muted.png" width="600px"><img src="file:///home/anandrd/website/talks/extension/muted.png" alt="muted.png" width="600px" /></a>
 </p>
 </div>
 </section>
-<section id="slide-orgdb81e7b">
-<h3 id="orgdb81e7b">Can you hear me through space?</h3>
+<section id="slide-orgff93706">
+<h3 id="orgff93706">Can you hear me through space?</h3>
 
 <div class="figure">
 <p><a href="rover.jpg" width="600px"><img src="file:///home/anandrd/website/talks/extension/rover.jpg" alt="rover.jpg" width="600px" /></a>
@@ -52,8 +52,8 @@
 </div>
 
 </section>
-<section id="slide-orgb8d6e03">
-<h3 id="orgb8d6e03">Can you hear me through the atmosphere?</h3>
+<section id="slide-orge39531c">
+<h3 id="orge39531c">Can you hear me through the atmosphere?</h3>
 
 <div class="figure">
 <p><a href="satellite.jpg" width="600px"><img src="file:///home/anandrd/website/talks/extension/satellite.jpg" alt="satellite.jpg" width="600px" /></a>
@@ -63,8 +63,8 @@
 </section>
 </section>
 <section>
-<section id="slide-org15944ac">
-<h2 id="org15944ac">Errors are inevitable</h2>
+<section id="slide-orgbdec97f">
+<h2 id="orgbdec97f">Errors are inevitable</h2>
 
 <div class="figure">
 <p><img src="canyouhearme.jpg" alt="canyouhearme.jpg" width="600px" />
@@ -72,7 +72,7 @@
 </div>
 
 </section>
-<section id="slide-org15944ac-split">
+<section id="slide-orgbdec97f-split">
 
 <h2>Errors are inevitable</h2>
 
@@ -83,7 +83,7 @@ Sorry, your browser does not support SVG.</object></a>
 </div>
 
 </section>
-<section id="slide-org15944ac-split">
+<section id="slide-orgbdec97f-split">
 
 <h2>Errors are inevitable</h2>
 
@@ -96,8 +96,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-org975f040">
-<h2 id="org975f040">Correcting errors</h2>
+<section id="slide-org7b4d9ba">
+<h2 id="org7b4d9ba">Correcting errors</h2>
 
 <div class="figure">
 <p><object type="image/svg+xml" data="monkeycorrection.svg" class="org-svg" width="600px">
@@ -108,8 +108,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-org9633ab3">
-<h2 id="org9633ab3">Can we do better?</h2>
+<section id="slide-org2d87b25">
+<h2 id="org2d87b25">Can we do better?</h2>
 <p class="fragment">
 Yes, we can.
 </p>
@@ -121,8 +121,8 @@ Using number theory!
 </section>
 </section>
 <section>
-<section id="slide-orgc3027a8">
-<h2 id="orgc3027a8">The strategy</h2>
+<section id="slide-orgdb55f35">
+<h2 id="orgdb55f35">The strategy</h2>
 <p class="fragment">
 We have a set \(M\) of messages (strings of length \(n\)).
 </p>
@@ -136,8 +136,8 @@ So that \(f(m_1)\) and \(f(m_2)\) are not too close if \(m_1 \neq m_2\).
 </p>
 
 </section>
-<section id="slide-org7fc9f8d">
-<h3 id="org7fc9f8d">What is "too close"?</h3>
+<section id="slide-org9c95568">
+<h3 id="org9c95568">What is "too close"?</h3>
 <p>
 Given two strings \(n_1\) and \(n_2\), define the <i>Hamming distance</i> \(d(n_1,n_2)\)between them to be the number of places in which \(n_1\) and \(n_2\) differ.
 </p>
@@ -147,8 +147,8 @@ Not too close = Hamming distance at least \(k\).
 </p>
 
 </section>
-<section id="slide-org2626ae6">
-<h3 id="org2626ae6">Using the strategy</h3>
+<section id="slide-org8f4c687">
+<h3 id="org8f4c687">Using the strategy</h3>
 
 <div class="figure">
 <p><object type="image/svg+xml" data="monkeystrategy.svg" class="org-svg" width="600px">
@@ -157,14 +157,29 @@ Sorry, your browser does not support SVG.</object>
 </div>
 
 <p class="fragment">
-Allows \(k/2\) errors to be corrected!
+Allows \(\lfloor k/2 \rfloor \) errors to be corrected!
 </p>
+
+</section>
+<section id="slide-org8f4c687-split">
+
+<h3>Using the strategy</h3>
+<p>
+Allows \(\lfloor k/2 \rfloor \) errors to be corrected!
+</p>
+
+
+<div class="figure">
+<p><object type="image/svg+xml" data="monkeyhamming.svg" class="org-svg" width="600px">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
 
 </section>
 </section>
 <section>
-<section id="slide-org36112e1">
-<h2 id="org36112e1">How we execute the strategy?</h2>
+<section id="slide-orgba9477c">
+<h2 id="orgba9477c">How we execute the strategy?</h2>
 <p>
 How do we find an \(f\)?
 </p>
@@ -176,8 +191,8 @@ Using finite fields!
 </section>
 </section>
 <section>
-<section id="slide-orgdcac24c">
-<h2 id="orgdcac24c">What is a field?</h2>
+<section id="slide-orgb19c86a">
+<h2 id="orgb19c86a">What is a field?</h2>
 <p>
 A field \(F\) is a set together with operations \(+\) (addition) and \(\times\) (multiplication) satisfying the familiar rules.
 </p>
@@ -191,8 +206,8 @@ A field \(F\) is a set together with operations \(+\) (addition) and \(\times\) 
 </ol>
 
 </section>
-<section id="slide-orgcf79f66">
-<h3 id="orgcf79f66">Examples</h3>
+<section id="slide-org6e22bf8">
+<h3 id="org6e22bf8">Examples</h3>
 <ol>
 <li class="fragment appear">\(\mathbb Q\) is a field (with the usual \(+, \times\)).</li>
 <li class="fragment appear">\(\mathbb R\) is a field (with the usual \(+, \times\)).</li>
@@ -200,8 +215,8 @@ A field \(F\) is a set together with operations \(+\) (addition) and \(\times\) 
 </ol>
 
 </section>
-<section id="slide-org1d69101">
-<h3 id="org1d69101">Finite fields</h3>
+<section id="slide-org1bc9a1d">
+<h3 id="org1bc9a1d">Finite fields</h3>
 <p>
 Take \(\mathbb F_p = \{0,1,\dots, p-1\}\)<br />
 with \(+\) and \(\times\) done modulo \(p\).
@@ -213,7 +228,7 @@ Theorem: \(\mathbb F_p\) is a field.
 
 
 <p class="fragment">
-Multiplicative inverses in \(F_5\).
+Multiplicative inverses in \(\mathbb F_5\).
 </p>
 <div class="fragment">
    \begin{align*}
@@ -225,14 +240,14 @@ Multiplicative inverses in \(F_5\).
 </div>
 
 </section>
-<section id="slide-org404d053">
-<h3 id="org404d053">Polynomials</h3>
+<section id="slide-orge5244c7">
+<h3 id="orge5244c7">Polynomials</h3>
 <p>
 For any field \(F\), let \(F[x]\) denote the set of polynomials with variable \(x\) and coefficients in \(F\).
 </p>
 
 <p class="fragment">
-Example: In \(F_p[x]\), we have elements like
+Example: In \(\mathbb F_5[x]\), we have elements like
 </p>
 <div class="fragment">
 \begin{align*}
@@ -244,7 +259,7 @@ Example: In \(F_p[x]\), we have elements like
 </div>
 
 </section>
-<section id="slide-org404d053-split">
+<section id="slide-orge5244c7-split">
 
 <h3>Polynomials</h3>
 <p>
@@ -252,15 +267,15 @@ We add and multiply polynomials as usual, but remembering to always use the give
 </p>
 
 <p class="fragment">
-For example, in \(\mathbb F_p[x]\), we have
+For example, in \(\mathbb F_5[x]\), we have
 \[
    (\overline 2 x+ \overline 1) \cdot (\overline 1 x+ \overline 3) = \overline 2 x^2 + \overline 2 x + \overline 3.
    \]
 </p>
 
 </section>
-<section id="slide-org7fcac16">
-<h3 id="org7fcac16">Zeros of polynomials</h3>
+<section id="slide-org1a61b48">
+<h3 id="org1a61b48">Zeros of polynomials</h3>
 <p>
 Most of the usual properties of polynomials continue to hold.
 </p>
@@ -275,8 +290,8 @@ Most of the usual properties of polynomials continue to hold.
 </section>
 </section>
 <section>
-<section id="slide-org4422edb">
-<h2 id="org4422edb">Reed-Solomon codes</h2>
+<section id="slide-org31a7b86">
+<h2 id="org31a7b86">Reed-Solomon codes</h2>
 <p class="fragment">
 Message space: length-3 strings of \(\{0,1,2,3,4\}\).
 </p>
@@ -291,7 +306,7 @@ Encoding \((p_1, p_2, p_3)\)
 </ol>
 
 </section>
-<section id="slide-org4422edb-split">
+<section id="slide-org31a7b86-split">
 
 <h2>Reed-Solomon codes</h2>
 <ol>
@@ -312,8 +327,8 @@ Example:
 </div>
 
 </section>
-<section id="slide-org20454cd">
-<h3 id="org20454cd">What is the hamming distance?</h3>
+<section id="slide-org1b571ed">
+<h3 id="org1b571ed">What is the hamming distance?</h3>
 <p>
 What is the Hamming distance of the encodings of \(p\) and \(q\)?
 </p>
@@ -327,10 +342,13 @@ Two distinct polynomials of degree at most 2 <i>must differ</i> in at least 3 ou
 </p>
 
 </section>
-<section id="slide-org693a132">
-<h3 id="org693a132">Recap</h3>
+<section id="slide-orga770432">
+<h3 id="orga770432">Recap</h3>
 <p>
 Encode: Length-3 string to length-5 string
+</p>
+
+<p>
 Gain: Ability to correct any 1-bit errors.
 </p>
 
@@ -341,14 +359,14 @@ Better than tripling!
 </section>
 </section>
 <section>
-<section id="slide-orgc2f2fa4">
-<h2 id="orgc2f2fa4">Applications</h2>
+<section id="slide-org132957b">
+<h2 id="org132957b">Applications</h2>
 <p>
 Reed-Solomon codes (and their more sophisticated analogues) are used in many places!
 </p>
 
 </section>
-<section id="slide-orgc2f2fa4-split">
+<section id="slide-org132957b-split">
 
 <h2>Applications</h2>
 
@@ -359,7 +377,7 @@ Reed-Solomon codes (and their more sophisticated analogues) are used in many pla
 </div>
 
 </section>
-<section id="slide-orgc2f2fa4-split">
+<section id="slide-org132957b-split">
 
 <h2>Applications</h2>
 
@@ -370,7 +388,7 @@ Reed-Solomon codes (and their more sophisticated analogues) are used in many pla
 </div>
 
 </section>
-<section id="slide-orgc2f2fa4-split">
+<section id="slide-org132957b-split">
 
 <h2>Applications</h2>
 
@@ -380,7 +398,7 @@ Reed-Solomon codes (and their more sophisticated analogues) are used in many pla
 </div>
 
 </section>
-<section id="slide-orgc2f2fa4-split">
+<section id="slide-org132957b-split">
 
 <h2>Applications</h2>
 
@@ -393,8 +411,8 @@ Reed-Solomon codes (and their more sophisticated analogues) are used in many pla
 </section>
 </section>
 <section>
-<section id="slide-org15c5e07">
-<h2 id="org15c5e07">More questions</h2>
+<section id="slide-orgb351a1d">
+<h2 id="orgb351a1d">More questions</h2>
 <ol>
 <li class="fragment appear">Are there other finite fields, besides \(\mathbb F_p\)?</li>
 <li class="fragment appear">Can we do better than Reed-Solomon?</li>
@@ -404,8 +422,8 @@ Reed-Solomon codes (and their more sophisticated analogues) are used in many pla
 </section>
 </section>
 <section>
-<section id="slide-orga45462a">
-<h2 id="orga45462a">Thank you!</h2>
+<section id="slide-orgb6b7458">
+<h2 id="orgb6b7458">Thank you!</h2>
 </section>
 </section>
 </div>
