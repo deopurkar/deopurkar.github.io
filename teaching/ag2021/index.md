@@ -30,6 +30,12 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 3.  [Online notes by A. Gathmann](https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf)
 
 
+## Resources for mathematical writing
+
+1.  [How to write a clear math paper by Igor Pak.](https://www.math.ucla.edu/~pak/papers/how-to-write1.pdf)
+2.  [Mathematical Writing by Donald Knuth et al.](https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf)
+
+
 # Plan
 
 This is a tentative outline of the course, subject to change.
