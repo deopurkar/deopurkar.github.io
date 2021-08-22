@@ -10,7 +10,7 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 
 # Announcements
 
-1.  Here is the [classwork for week 4](classwork04.pdf). Reports due on [gradescope](https://www.gradescope.com/courses/280699) by Thursday, Aug 19.
+1.  Here is the [classwork for week 5](classwork05.pdf). Reports due on [gradescope](https://www.gradescope.com/courses/280699) by Thursday, Aug 26.
 2.  [Homework 2](hw2.pdf) is up, due in two weeks (August 27) on [gradescope](https://www.gradescope.com/courses/280699).
 
 
