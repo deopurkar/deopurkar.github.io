@@ -89,7 +89,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">5</td>
-<td class="org-left"><a href="classwork05.pdf">Functions and maps on algebraic varieties</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/248369c8-6e61-4746-a301-eafc8c7b8853">Video</a>/<a href="notes/2021-08-23.pdf">Board</a></td>
+<td class="org-left"><a href="classwork05.pdf">Functions and maps on algebraic varieties</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/248369c8-6e61-4746-a301-eafc8c7b8853">Video</a>/<a href="notes/2021-08-23.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/8efe045b-4d50-4e82-bb62-2042fa7678c9">Video</a>/<a href="notes/2021-08-27.pdf">Board</a></td>
 <td class="org-left">Assignment 2</td>
 </tr>
 
