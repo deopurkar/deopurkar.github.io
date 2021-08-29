@@ -10,8 +10,12 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 
 # Announcements
 
-1.  Here is the [classwork for week 5](classwork05.pdf). Reports due on [gradescope](https://www.gradescope.com/courses/280699) by Thursday, Aug 26.
-2.  [Homework 2](hw2.pdf) is up, due in two weeks (August 27) on [gradescope](https://www.gradescope.com/courses/280699).
+1.  Here is the [classwork for week 6](classwork06.pdf). Reports due on [gradescope](https://www.gradescope.com/courses/280699) by Thursday, Sep 2.
+2.  The midterm exam will be a take-home exam.
+    It will be available on Gradescope from Monday, September 20, 6am to Tuesday, September 21, 9pm.
+    After you access it, you will have 3 hours to complete it and upload your answers back on Gradescope.
+    I do not expect you to LaTeX your solutions; handwritten is fine.
+    It will cover the material up to week 6.
 
 
 # Links
@@ -97,14 +101,14 @@ This is a tentative outline of the course, subject to change.
 <tr>
 <td class="org-right">6</td>
 <td class="org-left">Products and the Segre embedding</td>
-<td class="org-left">Mid-semester exam</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 
 <tr>
 <td class="org-right">7</td>
 <td class="org-left">Completeness of projective varieties</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Mid-semester exam</td>
 </tr>
 
 
