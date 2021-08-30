@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-08-29 Sun 10:51 -->
+<!-- 2021-08-29 Sun 10:57 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Algebraic geometry (Notes)</title>
+<meta name="generator" content="Org mode" />
 <meta name="author" content="Anand Deopurkar" />
-<meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,9 +31,8 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,22 +40,22 @@
   }
   pre.src {
     position: relative;
-    overflow: auto;
+    overflow: visible;
+    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    top: -8px;
-    right: 12px;
+    background-color: white;
+    top: -10px;
+    right: 10px;
     padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
+    border: 1px solid black;
   }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
+  pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -192,6 +191,7 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
+  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="src/bigblow_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="src/bigblow_theme/css/hideshow.css"/>
@@ -205,6 +205,30 @@
 <script type="text/javascript" src="src/bigblow_theme/js/hideshow.js"></script>
 <script type="text/javascript" src="src/lib/js/jquery.stickytableheaders.min.js"></script>
 <link rel='stylesheet' type='text/css' href='theorems.css'/>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.cacheClassElem = elem.className;
+         elem.cacheClassTarget = target.className;
+         target.className = "code-highlighted";
+         elem.className   = "code-highlighted";
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(elem.cacheClassElem)
+         elem.className = elem.cacheClassElem;
+       if(elem.cacheClassTarget)
+         target.className = elem.cacheClassTarget;
+     }
+    /*]]>*///-->
+// @license-end
+</script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         displayAlign: "center",
@@ -225,17 +249,18 @@
              }
 });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
-<div id="content" class="content">
+<div id="content">
 <h1 class="title">Algebraic geometry (Notes)</h1>
-<div id="outline-container-orgf43d387" class="outline-2">
-<h2 id="orgf43d387"><span class="section-number-2">1.</span> Affine algebraic sets&#xa0;&#xa0;&#xa0;<span class="tag"><span class="done">done</span></span></h2>
+<div id="outline-container-orgb675193" class="outline-2">
+<h2 id="orgb675193"><span class="section-number-2">1</span> Affine algebraic sets&#xa0;&#xa0;&#xa0;<span class="tag"><span class="done">done</span></span></h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org722d07e" class="outline-3">
-<h3 id="org722d07e"><span class="section-number-3">1.1.</span> Affine space&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week1">week1</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-orge293528" class="outline-3">
+<h3 id="orge293528"><span class="section-number-3">1.1</span> Affine space&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week1">week1</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 The objects of study in algebraic geometry are called algebraic varieties.
@@ -254,8 +279,8 @@ In particular, the zero tuple does not play a distinguished role.
 </div>
 </div>
 
-<div id="outline-container-org8ccd8a1" class="outline-3">
-<h3 id="org8ccd8a1"><span class="section-number-3">1.2.</span> Affine algebraic set&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week1">week1</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-org10cc3bc" class="outline-3">
+<h3 id="org10cc3bc"><span class="section-number-3">1.2</span> Affine algebraic set&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week1">week1</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 Let \(k[x_1,\dots,x_n]\) denote the ring of polynomials in variables \(x_1, \dots, x_n\) and coefficients in \(k\).
@@ -264,8 +289,8 @@ More precisely, a set \(S \subset \mathbb A^n_k\) is an affine algebraic subset 
 \[ S = \{a \in \mathbb A^n_k \mid f(a) = 0 \text{ for all } f \in A\}.\]
 </p>
 </div>
-<div id="outline-container-org58f6249" class="outline-4">
-<h4 id="org58f6249"><span class="section-number-4">1.2.1.</span> Definition (Vanishing locus)</h4>
+<div id="outline-container-orgb96cf52" class="outline-4">
+<h4 id="orgb96cf52"><span class="section-number-4">1.2.1</span> Definition (Vanishing locus)</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <p>
 Given \(A \subset k[x_1,\dots,x_n]\), the <i>vanishing locus of \(A\)</i>, denoted by \(V(A)\) is the set 
@@ -274,16 +299,16 @@ Given \(A \subset k[x_1,\dots,x_n]\), the <i>vanishing locus of \(A\)</i>, denot
 </div>
 </div>
 
-<div id="outline-container-org4df7489" class="outline-4">
-<h4 id="org4df7489">---</h4>
-<div class="outline-text-4" id="text-org4df7489">
+<div id="outline-container-org81a0850" class="outline-4">
+<h4 id="org81a0850">---</h4>
+<div class="outline-text-4" id="text-org81a0850">
 <p>
 Thus the affine algebraic sets are precisely the sets of the form \(V(A)\) for some \(A\).
 </p>
 </div>
 </div>
-<div id="outline-container-org0fb870b" class="outline-4">
-<h4 id="org0fb870b"><span class="section-number-4">1.2.2.</span> Examples/non-examples</h4>
+<div id="outline-container-org71fb4b2" class="outline-4">
+<h4 id="org71fb4b2"><span class="section-number-4">1.2.2</span> Examples/non-examples</h4>
 <div class="outline-text-4" id="text-1-2-2">
 <p>
 The following are affine algebraic sets
@@ -293,7 +318,7 @@ The following are affine algebraic sets
 <li>Entire affine space</li>
 <li>Single point</li>
 </ol>
-<div class="proof" id="org4c21098">
+<div class="proof">
 <p>
 Done in class.
 </p>
@@ -307,7 +332,7 @@ The following are not affine algebraic sets
 <li>The unit cube in \(\mathbb A^n_{{\mathbb R}}\)</li>
 <li>Points with rational coordinates in \(\mathbb A^n_{{\mathbb C}}\)</li>
 </ol>
-<div class="proof" id="orgebb52cb">
+<div class="proof">
 <p>
 DIY.
 </p>
@@ -317,8 +342,8 @@ DIY.
 </div>
 </div>
 
-<div id="outline-container-orgce58914" class="outline-3">
-<h3 id="orgce58914"><span class="section-number-3">1.3.</span> Ideals&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week1">week1</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-org36869ae" class="outline-3">
+<h3 id="org36869ae"><span class="section-number-3">1.3</span> Ideals&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week1">week1</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 Let \(R\) be a ring.
@@ -330,13 +355,13 @@ where \(a_i \in A\) and \(r_i \in R\).
 </p>
 </div>
 
-<div id="outline-container-orgc3441e3" class="outline-4">
-<h4 id="orgc3441e3"><span class="section-number-4">1.3.1.</span> Proposition</h4>
+<div id="outline-container-org616be41" class="outline-4">
+<h4 id="org616be41"><span class="section-number-4">1.3.1</span> Proposition</h4>
 <div class="outline-text-4" id="text-1-3-1">
 <p>
 Let \(A \subset k[x_1,\dots,x_n]\). Then we have \(V(A) = V(\langle A \rangle)\).
 </p>
-<div class="proof" id="org9a76b9b">
+<div class="proof">
 <p>
 Done in class.
 </p>
@@ -346,8 +371,8 @@ Done in class.
 </div>
 </div>
 
-<div id="outline-container-org34579d1" class="outline-3">
-<h3 id="org34579d1"><span class="section-number-3">1.4.</span> Noetherian rings and the Hilbert basis theorem&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week1">week1</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-org33b7d6f" class="outline-3">
+<h3 id="org33b7d6f"><span class="section-number-3">1.4</span> Noetherian rings and the Hilbert basis theorem&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week1">week1</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 In our definition of \(V(A)\), the subset \(A\) may be infinite. 
@@ -359,11 +384,11 @@ This is a consequence of the Hilbert basis theorem, which, in turn, has to do wi
 We begin with a simple observation.
 </p>
 </div>
-<div id="outline-container-org1900476" class="outline-4">
-<h4 id="org1900476"><span class="section-number-4">1.4.1.</span> Proposition</h4>
+<div id="outline-container-org6985b68" class="outline-4">
+<h4 id="org6985b68"><span class="section-number-4">1.4.1</span> Proposition</h4>
 <div class="outline-text-4" id="text-1-4-1">
 <p>
-<a id="org412da73"></a>
+<a id="org1fca6d8"></a>
     Let \(R\) be a ring. The following are equivalent
 </p>
 <ol class="org-ol">
@@ -373,7 +398,7 @@ We begin with a simple observation.
 stabilises.</li>
 </ol>
 
-<div class="skipped" id="orgfd5603f">
+<div class="skipped">
 <p>
 Proof. &#x2014; 1
 </p>
@@ -382,17 +407,17 @@ Proof. &#x2014; 1
 </div>
 </div>
 
-<div id="outline-container-org985381b" class="outline-4">
-<h4 id="org985381b"><span class="section-number-4">1.4.2.</span> Definition (Noetherian ring)</h4>
+<div id="outline-container-org06bab7d" class="outline-4">
+<h4 id="org06bab7d"><span class="section-number-4">1.4.2</span> Definition (Noetherian ring)</h4>
 <div class="outline-text-4" id="text-1-4-2">
 <p>
-A ring \(R\) satisfying the equivalent conditions of Proposition <a href="#org412da73">1.4.1</a> is called <i>Noetherian</i>.
+A ring \(R\) satisfying the equivalent conditions of Proposition <a href="#org1fca6d8">1.4.1</a> is called <i>Noetherian</i>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orge41c75b" class="outline-4">
-<h4 id="orge41c75b"><span class="section-number-4">1.4.3.</span> Examples/non-examples</h4>
+<div id="outline-container-org7565fb2" class="outline-4">
+<h4 id="org7565fb2"><span class="section-number-4">1.4.3</span> Examples/non-examples</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <p>
 The following rings are Noetherian
@@ -401,7 +426,7 @@ The following rings are Noetherian
 <li>\(R = {\mathbb Z}\)</li>
 <li>\(R\) a field.</li>
 </ol>
-<div class="proof" id="org2e07827">
+<div class="proof">
 <p>
 All ideals here can be generated by 1 element.
 </p>
@@ -418,13 +443,13 @@ This forms an increasing chain of ideals that does not stabilise.
 </div>
 </div>
 
-<div id="outline-container-orgf155a68" class="outline-4">
-<h4 id="orgf155a68"><span class="section-number-4">1.4.4.</span> Proposition (Quotients of Noetherian rings)</h4>
+<div id="outline-container-org9cb63a9" class="outline-4">
+<h4 id="org9cb63a9"><span class="section-number-4">1.4.4</span> Proposition (Quotients of Noetherian rings)</h4>
 <div class="outline-text-4" id="text-1-4-4">
 <p>
 If \(R\) is Noetherian and \(I \subset R\) is any ideal, then \(R/I\) is Noetherian.
 </p>
-<div class="skipped" id="org3a7404e">
+<div class="skipped">
 <p>
 Proof. &#x2014; 2
 </p>
@@ -433,8 +458,8 @@ Proof. &#x2014; 2
 </div>
 </div>
 
-<div id="outline-container-orgf29c550" class="outline-4">
-<h4 id="orgf29c550"><span class="section-number-4">1.4.5.</span> Theorem</h4>
+<div id="outline-container-org3e5a05d" class="outline-4">
+<h4 id="org3e5a05d"><span class="section-number-4">1.4.5</span> Theorem</h4>
 <div class="outline-text-4" id="text-1-4-5">
 <p>
 If \(R\) is Noetherian, then so is \(R[x]\)
@@ -442,8 +467,8 @@ If \(R\) is Noetherian, then so is \(R[x]\)
 </div>
 
 <ul class="org-ul">
-<li><a id="orgd1a2c05"></a>Proof<br />
-<div class="outline-text-5" id="text-orgd1a2c05">
+<li><a id="orgcf55478"></a>Proof<br />
+<div class="outline-text-5" id="text-orgcf55478">
 <p>
 Assume \(R\) is Noetherian, and let \(I \subset R[x]\) be an ideal.
 We must show that \(I\) is finitely generated.
@@ -463,7 +488,7 @@ We make the following claims.
 <li>\(J_m\) is an ideal of \(R\).</li>
 <li>\(J_m \subset J_{m+1}\).</li>
 </ol>
-<div class="skipped" id="org92b21e8">
+<div class="skipped">
 <p>
 DIY.
 </p>
@@ -474,7 +499,7 @@ Since \(R\) is Noetherian, the chain \(J_1 \subset J_2 \subset \cdots\) stabilis
 Let \(S_i\) be a finite set of generators for \(J_i\), and for \(a \in S_i\), let \(p_a \in I\) be a non-zero element of degree at most \(i\) whose leading coefficient is \(a\).
 We claim that the (finite) set \(\{p_a \mid a \in S_1 \cup \cdots \cup S_m\}\) generates \(I\).    
 </p>
-<div class="proof" id="orged194df">
+<div class="proof">
 <p>
 Let \(G = \{p_a \mid a \in S_1 \cup \cdots \cup S_m\}\). By construction, this is a subset of \(I\), so the ideal it generates is contained in \(I\).
 We remains to prove that every \(f \in I\) is a linear combination of elements of \(G\).
@@ -499,13 +524,13 @@ By inductive hypothesis, \(f-g\) is an \(R[x]\)-linear combination of elements o
 </ul>
 </div>
 
-<div id="outline-container-orgdd80b86" class="outline-4">
-<h4 id="orgdd80b86"><span class="section-number-4">1.4.6.</span> Corollary (Hilbert basis theorem)</h4>
+<div id="outline-container-orgf0e0c28" class="outline-4">
+<h4 id="orgf0e0c28"><span class="section-number-4">1.4.6</span> Corollary (Hilbert basis theorem)</h4>
 <div class="outline-text-4" id="text-1-4-6">
 <p>
 \(k[x_1,\dots,x_n]\) is Noetherian.
 </p>
-<div class="proof" id="orga122593">
+<div class="proof">
 <p>
 Induct on \(n\).
 </p>
@@ -514,13 +539,13 @@ Induct on \(n\).
 </div>
 </div>
 
-<div id="outline-container-org57f571d" class="outline-4">
-<h4 id="org57f571d"><span class="section-number-4">1.4.7.</span> Corollary</h4>
+<div id="outline-container-orgd68aec7" class="outline-4">
+<h4 id="orgd68aec7"><span class="section-number-4">1.4.7</span> Corollary</h4>
 <div class="outline-text-4" id="text-1-4-7">
 <p>
 Every affine algebraic subset of \(\mathbb A^n_k\) is the vanishing set of a finite set of polynomials.
 </p>
-<div class="proof" id="org7afa08b">
+<div class="proof">
 <p>
 Done in class.
 </p>
@@ -530,8 +555,8 @@ Done in class.
 </div>
 </div>
 
-<div id="outline-container-org9a10432" class="outline-3">
-<h3 id="org9a10432"><span class="section-number-3">1.5.</span> The Zariski topology&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week2">week2</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-orgea2e2ff" class="outline-3">
+<h3 id="orgea2e2ff"><span class="section-number-3">1.5</span> The Zariski topology&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week2">week2</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-1-5">
 <p>
 The notion of affine algebraic sets allows us to define a topology on \(\mathbb A^n_k\).
@@ -551,21 +576,21 @@ We define the <i>Zariski topology</i> on \(\mathbb A^n_k\) by setting the closed
 </p></li>
 </ol>
 </div>
-<div id="outline-container-orgd52e712" class="outline-4">
-<h4 id="orgd52e712"><span class="section-number-4">1.5.1.</span> Proposition</h4>
+<div id="outline-container-org3571059" class="outline-4">
+<h4 id="org3571059"><span class="section-number-4">1.5.1</span> Proposition</h4>
 <div class="outline-text-4" id="text-1-5-1">
 <p>
 The collection of affine algebraic subsets satisfies the three conditions above.
 </p>
 
-<div class="student" id="orgbb7001e">
+<div class="student">
 
 </div>
 </div>
 </div>
 
-<div id="outline-container-org00c0be0" class="outline-4">
-<h4 id="org00c0be0"><span class="section-number-4">1.5.2.</span> Proposition</h4>
+<div id="outline-container-orga313daf" class="outline-4">
+<h4 id="orga313daf"><span class="section-number-4">1.5.2</span> Proposition</h4>
 <div class="outline-text-4" id="text-1-5-2">
 <p>
 The Zariski topology on \(\mathbb A^1_k\) is the <i>finite complement topology</i>.
@@ -573,7 +598,7 @@ The only closed sets are the finite sets (or the whole space).
 In other words, the only open sets are the complements of finite sets (or the empty set).
 </p>
 
-<div class="proof" id="org6636f7d">
+<div class="proof">
 <p>
 We saw that the subsets \(V(A) \subset \mathbb A^1_k\) are either the whole \(\mathbb A^1_k\) or finite sets.
 </p>
@@ -582,14 +607,14 @@ We saw that the subsets \(V(A) \subset \mathbb A^1_k\) are either the whole \(\m
 </div>
 </div>
 
-<div id="outline-container-orgfb78543" class="outline-4">
-<h4 id="orgfb78543"><span class="section-number-4">1.5.3.</span> Comparison between Zariski and Euclidean topology over \(\mathbb C\).</h4>
+<div id="outline-container-org2a31b73" class="outline-4">
+<h4 id="org2a31b73"><span class="section-number-4">1.5.3</span> Comparison between Zariski and Euclidean topology over \(\mathbb C\).</h4>
 <div class="outline-text-4" id="text-1-5-3">
 <p>
 Every Zariski closed (open) subset of \(\mathbb A^n_{\mathbb C}\) is also closed (open) in the usual Euclidean topology.
 The converse is not true.
 </p>
-<div class="proof" id="org970c10c">
+<div class="proof">
 <p>
 It suffices to prove that \(V(A)\) is closed in the usual topology. We have \(V(A) = \cap_{f \in A} V(f)\), so it suffices to show that \(V(f)\) is closed. But \(V(f) = f^{-1}(0)\) is closed, because it is the pre-image of a closed set under a continuous function.
 </p>
@@ -598,14 +623,14 @@ It suffices to prove that \(V(A)\) is closed in the usual topology. We have \(V(
 </div>
 </div>
 
-<div id="outline-container-org6b98d3d" class="outline-4">
-<h4 id="org6b98d3d"><span class="section-number-4">1.5.4.</span> Proposition (Polynomials are continuous)</h4>
+<div id="outline-container-orgf207ae2" class="outline-4">
+<h4 id="orgf207ae2"><span class="section-number-4">1.5.4</span> Proposition (Polynomials are continuous)</h4>
 <div class="outline-text-4" id="text-1-5-4">
 <p>
 Let \(f\) be a polynomial function on \(\mathbb A^n_k\), viewed as a map \(f \colon \mathbb A^n_k \to \mathbb A^1_k\).
 Then \(f\) is continuous in the Zariski topology.
 </p>
-<div class="proof" id="orgcffa685">
+<div class="proof">
 <p>
 We check that pre-images of closed sets are closed.
 The only closed sets of \(\mathbb A^1_k\) is the whole space and finite sets.
@@ -618,9 +643,9 @@ But the pre-image of \(a\) under \(f\) is just \(V(f-a)\), which is closed by de
 </div>
 </div>
 
-<div id="outline-container-orgb4c10ba" class="outline-4">
-<h4 id="orgb4c10ba">---</h4>
-<div class="outline-text-4" id="text-orgb4c10ba">
+<div id="outline-container-org09f23d9" class="outline-4">
+<h4 id="org09f23d9">---</h4>
+<div class="outline-text-4" id="text-org09f23d9">
 <p>
 The Zariski topology has very few open sets, and as a result has terrible separation properties.
 It is not even Hausdorff (except in very small examples).
@@ -631,8 +656,8 @@ For one, it makes sense over every field!
 </div>
 </div>
 
-<div id="outline-container-org1f238ac" class="outline-3">
-<h3 id="org1f238ac"><span class="section-number-3">1.6.</span> The Nullstellensatz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week2">week2</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-org41e9d2c" class="outline-3">
+<h3 id="org41e9d2c"><span class="section-number-3">1.6</span> The Nullstellensatz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week2">week2</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-1-6">
 <p>
 We associated a set \(V(A)\) to a subset \(A\) of the polynomial ring \(k[x_1,\dots,x_n]\).
@@ -647,8 +672,8 @@ This pleasant fact allows us go back and forth between algebra (equations) and g
 We start with a straightforward definition.
 </p>
 </div>
-<div id="outline-container-org078a782" class="outline-4">
-<h4 id="org078a782"><span class="section-number-4">1.6.1.</span> Definition (Ideal vanishing on a set)</h4>
+<div id="outline-container-orgb7ce099" class="outline-4">
+<h4 id="orgb7ce099"><span class="section-number-4">1.6.1</span> Definition (Ideal vanishing on a set)</h4>
 <div class="outline-text-4" id="text-1-6-1">
 <p>
 Let \(S \subset \mathbb A^n_k\) be a set.
@@ -658,22 +683,22 @@ The <i>ideal vanishing on \(S\)</i>, denoted by \(I(S)\), is the set
 </div>
 </div>
 
-<div id="outline-container-org354c440" class="outline-4">
-<h4 id="org354c440">---</h4>
-<div class="outline-text-4" id="text-org354c440">
+<div id="outline-container-org86af0b1" class="outline-4">
+<h4 id="org86af0b1">---</h4>
+<div class="outline-text-4" id="text-org86af0b1">
 <p>
 Recall that an ideal \(I \subset k[x_1,\dots,x_n]\) is <i>radical</i> if it has the property that whenever \(f^n \in I\) for some \(n > 1\), then \(f \in I\).
 </p>
 </div>
 </div>
-<div id="outline-container-orgeb63096" class="outline-4">
-<h4 id="orgeb63096"><span class="section-number-4">1.6.2.</span> Proposition</h4>
+<div id="outline-container-org1475704" class="outline-4">
+<h4 id="org1475704"><span class="section-number-4">1.6.2</span> Proposition</h4>
 <div class="outline-text-4" id="text-1-6-2">
 <p>
 The set \(I(S)\) is a radical ideal of \(k[x_1,\dots,x_n]\).
 </p>
 
-<div class="proof" id="org1afbd7c">
+<div class="proof">
 <p>
 We leave it to you to check that \(I(S)\) is an ideal. To see that it is radical, see that if \(f^n\) vanishes on \(S\), then so does \(f\).
 </p>
@@ -681,14 +706,14 @@ We leave it to you to check that \(I(S)\) is an ideal. To see that it is radical
 </div>
 </div>
 </div>
-<div id="outline-container-org3794f7b" class="outline-4">
-<h4 id="org3794f7b"><span class="section-number-4">1.6.3.</span> Proposition (Easy properties of radical ideals)</h4>
+<div id="outline-container-orgc9b3bc0" class="outline-4">
+<h4 id="orgc9b3bc0"><span class="section-number-4">1.6.3</span> Proposition (Easy properties of radical ideals)</h4>
 <div class="outline-text-4" id="text-1-6-3">
 <ol class="org-ol">
 <li>\(I \subset R\) is radical if and only if \(R/I\) has no (non-zero) nilpotents.</li>
 <li>All prime ideals are radical. In particular, all maximal ideals are radical.</li>
 </ol>
-<div class="proof" id="org4167759">
+<div class="proof">
 <p>
 Consider \(f \in R\) and its image \(\overline f \in R/I\). Then \(\overline f\) is a nilpotent of \(R/I\) if and only if \(f^n \in I\) and \(\overline f = 0\) in \(R/I\) if and only if \(f \in I\). From this, the result follows.
 If \(I\) is prime, then \(R/I\) is an integral domain, so it has no nilpotents (it does not even have zero divisors).
@@ -698,16 +723,16 @@ If \(I\) is prime, then \(R/I\) is an integral domain, so it has no nilpotents (
 </div>
 </div>
 
-<div id="outline-container-org3c613c4" class="outline-4">
-<h4 id="org3c613c4"><span class="section-number-4">1.6.4.</span> Proposition (Radical of an ideal)</h4>
+<div id="outline-container-orga327b39" class="outline-4">
+<h4 id="orga327b39"><span class="section-number-4">1.6.4</span> Proposition (Radical of an ideal)</h4>
 <div class="outline-text-4" id="text-1-6-4">
 <p>
 Let \(I\) be an ideal, and set \(\sqrt I = \{f \mid f^n \in I \text{ for some } n > 0\}.\)
 Then \(\sqrt I\) is a radical ideal.
 </p>
 
-<div class="student" id="org24979f1">
-<div class="proof" id="org560a445">
+<div class="student">
+<div class="proof">
 <p>
 (Assume a commutative ring)
 We will first show that \(\sqrt I \subset R\) is an ideal.
@@ -748,8 +773,8 @@ Therefore, by definition, we have \(f \in \sqrt I\).
 </div>
 </div>
 
-<div id="outline-container-orga6bb350" class="outline-4">
-<h4 id="orga6bb350"><span class="section-number-4">1.6.5.</span> Definition (Radical of an ideal)</h4>
+<div id="outline-container-org6bd2edd" class="outline-4">
+<h4 id="org6bd2edd"><span class="section-number-4">1.6.5</span> Definition (Radical of an ideal)</h4>
 <div class="outline-text-4" id="text-1-6-5">
 <p>
 The ideal \(\sqrt I\) is called the radical of \(I\).
@@ -757,14 +782,14 @@ The ideal \(\sqrt I\) is called the radical of \(I\).
 </div>
 </div>
 
-<div id="outline-container-orga16c54c" class="outline-4">
-<h4 id="orga16c54c"><span class="section-number-4">1.6.6.</span> Proposition (V is unchanged by radicals)</h4>
+<div id="outline-container-org931a21c" class="outline-4">
+<h4 id="org931a21c"><span class="section-number-4">1.6.6</span> Proposition (V is unchanged by radicals)</h4>
 <div class="outline-text-4" id="text-1-6-6">
 <p>
 We have \(V(I) = V(\sqrt I)\).
 </p>
 
-<div class="student" id="org32083c6">
+<div class="student">
 
 </div>
 </div>
@@ -772,19 +797,19 @@ We have \(V(I) = V(\sqrt I)\).
 
 
 
-<div id="outline-container-org4f6cc3b" class="outline-4">
-<h4 id="org4f6cc3b">---</h4>
-<div class="outline-text-4" id="text-org4f6cc3b">
+<div id="outline-container-org926bb50" class="outline-4">
+<h4 id="org926bb50">---</h4>
+<div class="outline-text-4" id="text-org926bb50">
 <p>
 We now state a string of important theorems, all called the &ldquo;Nullstellensatz&rdquo;, starting with the most comprehensive one.
 </p>
 </div>
 </div>
-<div id="outline-container-org637e69c" class="outline-4">
-<h4 id="org637e69c"><span class="section-number-4">1.6.7.</span> Theorem</h4>
+<div id="outline-container-org51b8060" class="outline-4">
+<h4 id="org51b8060"><span class="section-number-4">1.6.7</span> Theorem</h4>
 <div class="outline-text-4" id="text-1-6-7">
 <p>
-<a id="orgfe65ba1"></a>
+<a id="orga485813"></a>
 Let \(k\) be an algebraically closed field. Then we have a bijection
 \[ \text{Radical ideals of \(k[x_1, \dots, x_n]\)} \leftrightarrow \text{Zariski closed subsets of \(\mathbb A^n_k\)}\]
 where the map from the left to the right is \(I \mapsto V(I)\) and the map from the right to the left is \(S \mapsto I(S)\).
@@ -793,66 +818,66 @@ The correspondence is inclusion reversing.
 </div>
 </div>
 
-<div id="outline-container-orgeb640f3" class="outline-4">
-<h4 id="orgeb640f3"><span class="section-number-4">1.6.8.</span> Theorem</h4>
+<div id="outline-container-org511057d" class="outline-4">
+<h4 id="org511057d"><span class="section-number-4">1.6.8</span> Theorem</h4>
 <div class="outline-text-4" id="text-1-6-8">
 <p>
-<a id="org87ad0d4"></a>
+<a id="org3053bdc"></a>
  Let \(k\) be an algebraically closed field and \(I \subset k[x_1,\dots,x_n]\) an ideal. If \(V(I) = \emptyset\), then \(I = (1)\).
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgcdd48df" class="outline-4">
-<h4 id="orgcdd48df"><span class="section-number-4">1.6.9.</span> Theorem</h4>
+<div id="outline-container-org7d7bacb" class="outline-4">
+<h4 id="org7d7bacb"><span class="section-number-4">1.6.9</span> Theorem</h4>
 <div class="outline-text-4" id="text-1-6-9">
 <p>
-<a id="org366a206"></a>
+<a id="orged63fc3"></a>
 Let \(k\) be an algebraically closed field. Then all the maximal ideals of \(k[x_1,\dots,x_n]\) are of the form \(\langle x_1-a_1, \dots, x_2-a_n\rangle\) for some \((a_1, \dots, a_n) \in \mathbb A^n_k\).
 </p>
 </div>
 </div>
 
-<div id="outline-container-org797ea29" class="outline-4">
-<h4 id="org797ea29">---</h4>
-<div class="outline-text-4" id="text-org797ea29">
+<div id="outline-container-orgeeb91f6" class="outline-4">
+<h4 id="orgeeb91f6">---</h4>
+<div class="outline-text-4" id="text-orgeeb91f6">
 <p>
-Theorem <a href="#org87ad0d4">1.6.8</a> says that we have a dichotomy: either a system of equations \(f_i = 0\) has a solution, or there exist polynomials \(g_i\) such that
+Theorem <a href="#org3053bdc">1.6.8</a> says that we have a dichotomy: either a system of equations \(f_i = 0\) has a solution, or there exist polynomials \(g_i\) such that
  \[ \sum f_i g_i = 1.\]
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgdd2aef3" class="outline-4">
-<h4 id="orgdd2aef3"><span class="section-number-4">1.6.10.</span> Theorem</h4>
+<div id="outline-container-org3b61174" class="outline-4">
+<h4 id="org3b61174"><span class="section-number-4">1.6.10</span> Theorem</h4>
 <div class="outline-text-4" id="text-1-6-10">
 <p>
-<a id="org51e69fa"></a>
+<a id="orge90192a"></a>
 Let \(k\) be an algebraically closed field and \(I \subset k[x_1,\dots,x_n]\) an ideal. If \(f\) is identically zero on \(V(I)\), then \(f^n \in I\) for some \(n\).
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgdf8731a" class="outline-3">
-<h3 id="orgdf8731a"><span class="section-number-3">1.7.</span> Proof of the Nullstellensatz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week2">week2</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-orgf65116e" class="outline-3">
+<h3 id="orgf65116e"><span class="section-number-3">1.7</span> Proof of the Nullstellensatz&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week2">week2</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-1-7">
 <p>
-The proof of Theorem <a href="#orgfe65ba1">1.6.7</a> actually goes via the proofs of the subsequent theorems.
+The proof of Theorem <a href="#orga485813">1.6.7</a> actually goes via the proofs of the subsequent theorems.
 We use the following result from algebra, whose proof we skip.
 </p>
 </div>
 
-<div id="outline-container-org3158df0" class="outline-4">
-<h4 id="org3158df0"><span class="section-number-4">1.7.1.</span> Theorem</h4>
+<div id="outline-container-orgb695625" class="outline-4">
+<h4 id="orgb695625"><span class="section-number-4">1.7.1</span> Theorem</h4>
 <div class="outline-text-4" id="text-1-7-1">
 <p>
-<a id="orgc25d609"></a>
+<a id="org0db8afb"></a>
     Let \(K\) be any field and let \(L\) be a finitely generated \(K\)-algebra.
     If \(L\) is a field, then it must be a finite extension of \(K\).
 </p>
 
-<div class="proof" id="org0210f11">
+<div class="proof">
 <p>
 See <a href="https://web.ma.utexas.edu/users/allcock/expos/nullstellensatz3.pdf">https://web.ma.utexas.edu/users/allcock/expos/nullstellensatz3.pdf</a>
 </p>
@@ -861,35 +886,35 @@ See <a href="https://web.ma.utexas.edu/users/allcock/expos/nullstellensatz3.pdf"
 </div>
 </div>
 
-<div id="outline-container-org68d6865" class="outline-4">
-<h4 id="org68d6865"><span class="section-number-4">1.7.2.</span> Proof of Theorem <a href="#org366a206">1.6.9</a></h4>
+<div id="outline-container-org0d83385" class="outline-4">
+<h4 id="org0d83385"><span class="section-number-4">1.7.2</span> Proof of Theorem <a href="#orged63fc3">1.6.9</a></h4>
 <div class="outline-text-4" id="text-1-7-2">
 <p>
 Let \(m \subset k[x_1,\dots,x_n]\) be a maximal ideal.
-Taking \(K = k\) and \(L = k[x_1,\dots,x_n]/m\) in Theorem <a href="#orgc25d609">1.7.1</a>, and using that \(k\) is algebraically closed, we get that the natural map \(k \to k[x_1,\dots,x_n]/m\) is an isomorphism.
+Taking \(K = k\) and \(L = k[x_1,\dots,x_n]/m\) in Theorem <a href="#org0db8afb">1.7.1</a>, and using that \(k\) is algebraically closed, we get that the natural map \(k \to k[x_1,\dots,x_n]/m\) is an isomorphism.
 Let \(a_i \in k\) be the pre-image of \(x_i\) under this isomorphism. 
 Then we have \(m = (x_1-a_1,\dots,x_n-a_n)\).
 </p>
-<div class="student" id="org535d9e9">
+<div class="student">
 
 </div>
 </div>
 </div>
 
-<div id="outline-container-org153d35f" class="outline-4">
-<h4 id="org153d35f"><span class="section-number-4">1.7.3.</span> Proof of Theorem <a href="#org87ad0d4">1.6.8</a></h4>
+<div id="outline-container-orge2f1828" class="outline-4">
+<h4 id="orge2f1828"><span class="section-number-4">1.7.3</span> Proof of Theorem <a href="#org3053bdc">1.6.8</a></h4>
 <div class="outline-text-4" id="text-1-7-3">
 <p>
 Suppose \(I\) is not the unit ideal. We show that \(V(I)\) is non-empty.
 To do so, we use that every proper ideal is contained in a maximal ideal.
 </p>
-<div class="student" id="org1a98f42">
+<div class="student">
 
 </div>
 </div>
 </div>
-<div id="outline-container-org5b96357" class="outline-4">
-<h4 id="org5b96357"><span class="section-number-4">1.7.4.</span> Proof of Theorem <a href="#org51e69fa">1.6.10</a></h4>
+<div id="outline-container-org5d9b3b1" class="outline-4">
+<h4 id="org5d9b3b1"><span class="section-number-4">1.7.4</span> Proof of Theorem <a href="#orge90192a">1.6.10</a></h4>
 <div class="outline-text-4" id="text-1-7-4">
 <p>
 We consider the system \(g = 0\) for \(g \in I\) and \(f \neq 0\).
@@ -898,14 +923,14 @@ Let \(y\) be a new variable, and consider the polynomial ring \(k[x_1,\dots,x_n,
 In the bigger ring, consider the system of equations \(g = 0\) for \(g \in I\) and \(yf - 1 = 0\).
 By our assumption, this system of equations has no solutions.
 </p>
-<div class="student" id="org0e20a89">
+<div class="student">
 
 </div>
 </div>
 </div>
 
-<div id="outline-container-org6ecf536" class="outline-4">
-<h4 id="org6ecf536"><span class="section-number-4">1.7.5.</span> Proof of Theorem <a href="#orgfe65ba1">1.6.7</a>.</h4>
+<div id="outline-container-org9cfceaf" class="outline-4">
+<h4 id="org9cfceaf"><span class="section-number-4">1.7.5</span> Proof of Theorem <a href="#orga485813">1.6.7</a>.</h4>
 <div class="outline-text-4" id="text-1-7-5">
 <p>
 We show that the maps \(I \to V(I)\) and \(S \to I(S)\) are mutual inverses.
@@ -919,7 +944,7 @@ But then \(f^n\) is identically zero on \(V(I)\), and hence so is \(f\); that is
 It remains to show that \(I(V(I)) \subset \sqrt I\).
  Let \(f \in I(V(I))\).
  Then \(f\) is identically zero on \(V(I)\).
- By <a href="#org51e69fa">1.6.10</a>, there is some \(n\) such that \(f^n \in I\), and hence \(f \in \sqrt I\).
+ By <a href="#orge90192a">1.6.10</a>, there is some \(n\) such that \(f^n \in I\), and hence \(f \in \sqrt I\).
 </p>
 
 <p>
@@ -927,14 +952,14 @@ Let us now show that \(V(I(S)) = S\).
 Since \(S\) is Zariski closed, we know that \(S = V(J)\) for some ideal \(J\).
 So \(I(S) = I(V(J)) = \sqrt{J}.\)
 But we know that \(V(J) = V(\sqrt{J})\), and hence \(V(I(S)) = S\).
-The proof of Theorem <a href="#orgfe65ba1">1.6.7</a> is then complete.
+The proof of Theorem <a href="#orga485813">1.6.7</a> is then complete.
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orge7a71a0" class="outline-3">
-<h3 id="orge7a71a0"><span class="section-number-3">1.8.</span> Affine and quasi-affine varieties&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week2">week2</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-org27511b6" class="outline-3">
+<h3 id="org27511b6"><span class="section-number-3">1.8</span> Affine and quasi-affine varieties&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week2">week2</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-1-8">
 <p>
 An <i>affine variety</i> is a subset of the affine space that is closed in the Zariski topology.
@@ -945,16 +970,16 @@ A <i>quasi-affine variety</i> is a subset of the affine space that is locally cl
 </div>
 </div>
 
-<div id="outline-container-org0300005" class="outline-2">
-<h2 id="org0300005"><span class="section-number-2">2.</span> Regular functions and maps 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="done">done</span></span></h2>
+<div id="outline-container-org696ac6c" class="outline-2">
+<h2 id="org696ac6c"><span class="section-number-2">2</span> Regular functions and maps 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="done">done</span></span></h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Throughout this section, \(k\) is an algebraically closed field.
 </p>
 </div>
 
-<div id="outline-container-org5ba59d0" class="outline-3">
-<h3 id="org5ba59d0"><span class="section-number-3">2.1.</span> Regular functions&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-org2b68293" class="outline-3">
+<h3 id="org2b68293"><span class="section-number-3">2.1</span> Regular functions&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Let \(S \subset \mathbb A^n\) be a set and let \(f \colon S \to k\) be a function.
@@ -962,8 +987,8 @@ Let \(a\) be a point of \(S\).
 </p>
 </div>
 
-<div id="outline-container-org044e9fc" class="outline-4">
-<h4 id="org044e9fc"><span class="section-number-4">2.1.1.</span> Definition (Regular function)</h4>
+<div id="outline-container-org3c23524" class="outline-4">
+<h4 id="org3c23524"><span class="section-number-4">2.1.1</span> Definition (Regular function)</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
 We say that \(f\) is <i>regular</i> (or <i>algebraic</i>) <i>at \(a\)</i> if there exists a Zariski open set \(U \subset \mathbb A^n\) and polynomials \(p, q \in k[x_1,\dots,x_n]\) with \(q(a) \neq 0\) such that
@@ -978,8 +1003,8 @@ Although the definition of a regular function makes sense for \(S \subset \mathb
 </div>
 </div>
 
-<div id="outline-container-org4dbff51" class="outline-4">
-<h4 id="org4dbff51"><span class="section-number-4">2.1.2.</span> Examples</h4>
+<div id="outline-container-org11d431f" class="outline-4">
+<h4 id="org11d431f"><span class="section-number-4">2.1.2</span> Examples</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <ol class="org-ol">
 <li>A constant function is regular.</li>
@@ -990,8 +1015,8 @@ This ring contains a copy of \(k\), namely the constant functions.</li>
 </div>
 </div>
 
-<div id="outline-container-org074f734" class="outline-4">
-<h4 id="org074f734"><span class="section-number-4">2.1.3.</span> Definition (Ring of regular functions)</h4>
+<div id="outline-container-orgb12e5cc" class="outline-4">
+<h4 id="orgb12e5cc"><span class="section-number-4">2.1.3</span> Definition (Ring of regular functions)</h4>
 <div class="outline-text-4" id="text-2-1-3">
 <p>
 We denote the ring of regular functions on \(S\) by \(k[S]\).
@@ -1000,40 +1025,40 @@ This ring is a \(k\)-algebra.
 </div>
 </div>
 
-<div id="outline-container-org7bbf470" class="outline-4">
-<h4 id="org7bbf470"><span class="section-number-4">2.1.4.</span> Proposition (Local nature of regularity)</h4>
+<div id="outline-container-org0414721" class="outline-4">
+<h4 id="org0414721"><span class="section-number-4">2.1.4</span> Proposition (Local nature of regularity)</h4>
 <div class="outline-text-4" id="text-2-1-4">
 <p>
 Let \(f\) be a function on \(S\), and let \(\{U_i\}\) be an open cover of \(S\).
 If the restriction of \(f\) to each \(U_i\) is regular, then \(f\) is regular.
 </p>
 
-<div class="student" id="orgdf24b67">
+<div class="student">
 
 </div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org2c216ca" class="outline-3">
-<h3 id="org2c216ca"><span class="section-number-3">2.2.</span> Regular functions on an affine variety&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-org99a5117" class="outline-3">
+<h3 id="org99a5117"><span class="section-number-3">2.2</span> Regular functions on an affine variety&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 It turns out that regular functions on closed subsets of \(\mathbb A^n\) are just the polynomial functions!
 So, not only is there a global algebraic expression, we don&rsquo;t even need denominators.
 </p>
 </div>
-<div id="outline-container-orgcc3ecd9" class="outline-4">
-<h4 id="orgcc3ecd9"><span class="section-number-4">2.2.1.</span> Proposition</h4>
+<div id="outline-container-org070d38f" class="outline-4">
+<h4 id="org070d38f"><span class="section-number-4">2.2.1</span> Proposition</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
-<a id="org99d3d9b"></a>
+<a id="org9d88d23"></a>
 Let \(X \subset \mathbb A^n\) be a Zariski closed subset.
 Let \(f\) be a regular function on \(X\).
 Then there exists a polynomial \(P \in k[x_1,\dots,x_n]\) such that \(P(x) = f(x)\) for all \(x \in X\).
 </p>
 
-<div class="proof" id="org03f0b91">
+<div class="proof">
 <p>
 By definition, we know that for every \(x \in X\), there is a Zariski open set \(U \subset X\) and polynomials \(p, q\) such that \(f = p/q\) on \(U\).
 The set \(U\) and the polynomials \(p, q\) may depend on \(x\), so let us denote them by \(U_x\), \(p_x\), and  \(q_x\).
@@ -1068,7 +1093,7 @@ Note that the system of equations
 \[ g = 0 \text{ for all } g \in I \text{ and } q_x = 0 \text{ for all } x \in X\]
 has no solution!
 </p>
-<div class="student" id="orgd590ec9">
+<div class="student">
 
 </div>
 <p>
@@ -1079,16 +1104,16 @@ for some polynomials \(r_1, \dots, r_m\).
 Take \(P = r_1p_{x_1} + \dots + r_m p_{x_m}\).
 Then \(f = P\) on all of \(X\).
 </p>
-<div class="student" id="org357ec58">
+<div class="student">
 
 </div>
 
 </div>
 </div>
 </div>
-<div id="outline-container-orgc2459be" class="outline-4">
-<h4 id="orgc2459be">----</h4>
-<div class="outline-text-4" id="text-orgc2459be">
+<div id="outline-container-orgf4c8e8d" class="outline-4">
+<h4 id="orgf4c8e8d">----</h4>
+<div class="outline-text-4" id="text-orgf4c8e8d">
 <p>
 Let \(X \subset \mathbb A^n\) be any subset.
 We have a ring homomorphism
@@ -1098,17 +1123,17 @@ where a polynomial \(f\) is sent to the regular function it defines on \(X\).
 </div>
 </div>
 
-<div id="outline-container-orgc260e74" class="outline-4">
-<h4 id="orgc260e74"><span class="section-number-4">2.2.2.</span> Proposition (Ring of regular functions of an affine)</h4>
+<div id="outline-container-org06b9ec6" class="outline-4">
+<h4 id="org06b9ec6"><span class="section-number-4">2.2.2</span> Proposition (Ring of regular functions of an affine)</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
 Let \(X \subset \mathbb A^n\) be a closed subset.
 Then the ring homomorphism \(\pi \colon k[x_1,\dots,x_n] \to k[X]\) induces an isomorphism
 \[ k[x_1,\dots,x_n]/I(X) \xrightarrow{\sim} k[X].\]
 </p>
-<div class="proof" id="org43a6cec">
+<div class="proof">
 <p>
-The map \(\pi\) is surjective by Proposition <a href="#org99d3d9b">2.2.1</a> and its kernel is \(I(X)\) by definition.
+The map \(\pi\) is surjective by Proposition <a href="#org9d88d23">2.2.1</a> and its kernel is \(I(X)\) by definition.
 The result follows by the isomorphism theorems.
 </p>
 
@@ -1117,8 +1142,8 @@ The result follows by the isomorphism theorems.
 </div>
 </div>
 
-<div id="outline-container-org6aece33" class="outline-3">
-<h3 id="org6aece33"><span class="section-number-3">2.3.</span> Regular maps&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-org9b70650" class="outline-3">
+<h3 id="org9b70650"><span class="section-number-3">2.3</span> Regular maps&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Consider \(X \subset \mathbb A^n\) and \(Y \subset \mathbb A^m\) and a function \(f \colon X \to Y\).
@@ -1127,8 +1152,8 @@ Write \(f\) in coordinates as
 </p>
 </div>
 
-<div id="outline-container-org350e7ce" class="outline-4">
-<h4 id="org350e7ce"><span class="section-number-4">2.3.1.</span> Definition (Regular map)</h4>
+<div id="outline-container-org43305a2" class="outline-4">
+<h4 id="org43305a2"><span class="section-number-4">2.3.1</span> Definition (Regular map)</h4>
 <div class="outline-text-4" id="text-2-3-1">
 <p>
 We say that \(f\) is <i>regular at a point \(a \in X\)</i> if all its  coordinate functions \(f_1, \dots, f_m\) are regular at \(a\).
@@ -1137,8 +1162,8 @@ If \(f\) is regular at all points of \(X\), then we say that it is <i>regular</i
 </div>
 </div>
 
-<div id="outline-container-orgb0d0521" class="outline-4">
-<h4 id="orgb0d0521"><span class="section-number-4">2.3.2.</span> Example (Maps to \(\mathbb A^1\))</h4>
+<div id="outline-container-orgf434122" class="outline-4">
+<h4 id="orgf434122"><span class="section-number-4">2.3.2</span> Example (Maps to \(\mathbb A^1\))</h4>
 <div class="outline-text-4" id="text-2-3-2">
 <p>
 A regular map to \(\mathbb A^1\) is the same as a regular function.
@@ -1146,8 +1171,8 @@ A regular map to \(\mathbb A^1\) is the same as a regular function.
 </div>
 </div>
 
-<div id="outline-container-org1882e74" class="outline-4">
-<h4 id="org1882e74"><span class="section-number-4">2.3.3.</span> Example (An isomorphism)</h4>
+<div id="outline-container-orgc31788f" class="outline-4">
+<h4 id="orgc31788f"><span class="section-number-4">2.3.3</span> Example (An isomorphism)</h4>
 <div class="outline-text-4" id="text-2-3-3">
 <p>
 Let \(U = \mathbb A^1 \setminus \{0\}\) and \(V = V(xy-1) \subset \mathbb A^2\).
@@ -1158,19 +1183,19 @@ These functions are mutual inverses, and hence we have a (bi-regular) isomorphis
 </div>
 </div>
 </div>
-<div id="outline-container-orgb6f3230" class="outline-3">
-<h3 id="orgb6f3230"><span class="section-number-3">2.4.</span> Properties of regular maps&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-org3dd591e" class="outline-3">
+<h3 id="org3dd591e"><span class="section-number-3">2.4</span> Properties of regular maps&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week3">week3</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-2-4">
 </div>
-<div id="outline-container-org6e72160" class="outline-4">
-<h4 id="org6e72160"><span class="section-number-4">2.4.1.</span> Proposition (Elementary properties of regular maps)</h4>
+<div id="outline-container-org201f9cf" class="outline-4">
+<h4 id="org201f9cf"><span class="section-number-4">2.4.1</span> Proposition (Elementary properties of regular maps)</h4>
 <div class="outline-text-4" id="text-2-4-1">
 <ol class="org-ol">
 <li>The identity map is regular.</li>
 <li>The composition of two regular maps is regular.</li>
 <li>Regular maps are continuous (in the Zariski topology).</li>
 </ol>
-<div class="proof" id="orga5f501e">
+<div class="proof">
 <p>
 The identity map is given by  \((x_1,\dots,x_n) \mapsto (x_1,\dots,x_n)\); each coordinate is a polynomial, and hence regular.
 The statement for composition is true because the composition of fractions of polynomials is also a fraction of polynomials.
@@ -1181,14 +1206,14 @@ The third statement is left as homework.
 </div>
 </div>
 
-<div id="outline-container-org94a3742" class="outline-4">
-<h4 id="org94a3742"><span class="section-number-4">2.4.2.</span> Proposition (Regular maps preserve regular functions)</h4>
+<div id="outline-container-orgdde557e" class="outline-4">
+<h4 id="orgdde557e"><span class="section-number-4">2.4.2</span> Proposition (Regular maps preserve regular functions)</h4>
 <div class="outline-text-4" id="text-2-4-2">
 <p>
 Let \(\phi \colon X \to Y\) be a regular map.
 If \(f\) is a regular function on \(Y\), then \(f \circ \phi\) is a regular function on \(X\).
 </p>
-<div class="proof" id="org47d5bcd">
+<div class="proof">
 <p>
 View a regular function as a regular map to \(\mathbb A^1\).
 Then this becomes a special case of composition of regular maps.
@@ -1198,9 +1223,9 @@ Then this becomes a special case of composition of regular maps.
 </div>
 </div>
 
-<div id="outline-container-orgd1180d3" class="outline-4">
-<h4 id="orgd1180d3">---</h4>
-<div class="outline-text-4" id="text-orgd1180d3">
+<div id="outline-container-org1d88bb1" class="outline-4">
+<h4 id="org1d88bb1">---</h4>
+<div class="outline-text-4" id="text-org1d88bb1">
 <p>
 As a result, we get a \(k\)-algebra homomorphism \(k[Y] \to k[X]\), often denoted by \(\phi^*\):
 \[ \phi^* (f) = f \circ \phi.\]
@@ -1217,13 +1242,13 @@ That is, if we have maps \(\phi \colon X \to Y\) and \(\psi \colon Y \to Z\), an
 </div>
 </div>
 
-<div id="outline-container-orgd7db4fd" class="outline-4">
-<h4 id="orgd7db4fd"><span class="section-number-4">2.4.3.</span> Corollary (Isomorphic varieties have isomorphic rings of functions)</h4>
+<div id="outline-container-org25258b7" class="outline-4">
+<h4 id="org25258b7"><span class="section-number-4">2.4.3</span> Corollary (Isomorphic varieties have isomorphic rings of functions)</h4>
 <div class="outline-text-4" id="text-2-4-3">
 <p>
 If \(\phi \colon X \to Y\) is an isomorphism of varieties, then \(\phi^* \colon k[Y] \to k[X]\) is an isomorphism of \(k\)-algebras.
 </p>
-<div class="proof" id="orgb0ca53d">
+<div class="proof">
 <p>
 Let \(\psi \colon Y \to X\) be the inverse of \(\phi\). Then \(\psi^* \colon k[X] \to k[Y]\) is the inverse of \(\phi^*\).
 </p>
@@ -1231,14 +1256,14 @@ Let \(\psi \colon Y \to X\) be the inverse of \(\phi\). Then \(\psi^* \colon k[X
 </div>
 </div>
 </div>
-<div id="outline-container-org98d0b04" class="outline-4">
-<h4 id="org98d0b04"><span class="section-number-4">2.4.4.</span> Proposition (For affines, map between rings induces map between spaces)</h4>
+<div id="outline-container-orgf7843a7" class="outline-4">
+<h4 id="orgf7843a7"><span class="section-number-4">2.4.4</span> Proposition (For affines, map between rings induces map between spaces)</h4>
 <div class="outline-text-4" id="text-2-4-4">
 <p>
 Let \(X \subset \mathbb A^n\) and \(Y \subset \mathbb A^m\) be Zariski closed, and let \(f \colon k[Y] \to k[X]\) be a homomorphism of \(k\)-algebras.
 Then there is a unique (regular) map \(\phi \colon X \to Y\) such that \(f = \phi^*\).
 </p>
-<div class="proof" id="orgbda1caf">
+<div class="proof">
 <p>
 We know that \(k[X] = k[x_1,\dots,x_n]/I(X)\) and \(k[Y] = k[y_1,\dots,y_m]/I(Y)\).
 Let \(\phi_i = f(y_i) \in k[X]\).
@@ -1248,23 +1273,20 @@ Then \(\phi\) sends \(X\) to \(Y\) and is the unique map satisfying the required
 
 </div>
 
-<div class="skipped" id="orge4c4240">
-<p>
-Prove the last statement. &#x2014; (4)
-</p>
+<div class="student">
 
 </div>
 </div>
 </div>
-<div id="outline-container-org4490d7d" class="outline-4">
-<h4 id="org4490d7d"><span class="section-number-4">2.4.5.</span> Example (Bijection but not an isomorphism)</h4>
+<div id="outline-container-org107f964" class="outline-4">
+<h4 id="org107f964"><span class="section-number-4">2.4.5</span> Example (Bijection but not an isomorphism)</h4>
 <div class="outline-text-4" id="text-2-4-5">
 <p>
 Let \(X = \mathbb A^1_k\) and \(Y = V(y^2-x^3) \subset \mathbb A^2_k\).
 We have a regular map \(f \colon X \to Y\) given by \(f(t) = (t^2, t^3)\).
 It is easy to check that \(f\) is a bijection, but not an isomorphism.
 </p>
-<div class="skipped" id="org69787b5">
+<div class="skipped">
 <p>
 Why is this not an isomorphism? &#x2014; (5)
 </p>
@@ -1272,23 +1294,20 @@ Why is this not an isomorphism? &#x2014; (5)
 </div>
 </div>
 </div>
-<div id="outline-container-org4805810" class="outline-4">
-<h4 id="org4805810"><span class="section-number-4">2.4.6.</span> Example (Distinguished affine opens)</h4>
+<div id="outline-container-org205a2f6" class="outline-4">
+<h4 id="org205a2f6"><span class="section-number-4">2.4.6</span> Example (Distinguished affine opens)</h4>
 <div class="outline-text-4" id="text-2-4-6">
 <p>
 Let \(U_f \subset \mathbb A^n\) be the complement of \(V(f)\).
 Then \(U_f\) is isomorphic to an affine variety, namely the variety \(V(yf-1) \subset \mathbb A^{n+1}\), where \(y\) denotes the \((n+1)\)-th coordinate.
 </p>
-<div class="skipped" id="orgecb0c0d">
-<p>
-Prove this. &#x2014; (6)
-</p>
+<div class="student">
 
 </div>
 </div>
 </div>
-<div id="outline-container-orgf608c12" class="outline-4">
-<h4 id="orgf608c12"><span class="section-number-4">2.4.7.</span> Caution (Not all opens are affine)</h4>
+<div id="outline-container-org398693b" class="outline-4">
+<h4 id="org398693b"><span class="section-number-4">2.4.7</span> Caution (Not all opens are affine)</h4>
 <div class="outline-text-4" id="text-2-4-7">
 <p>
 The previous proposition only applies to the complement of \(V(f)\) for a single \(f\)!
@@ -1300,12 +1319,12 @@ For example, the complement of the origin in \(\mathbb A^2\) is not isomorphic t
 </div>
 </div>
 
-<div id="outline-container-org8fdd78e" class="outline-2">
-<h2 id="org8fdd78e"><span class="section-number-2">3.</span> Algebraic varieties&#xa0;&#xa0;&#xa0;<span class="tag"><span class="done">done</span></span></h2>
+<div id="outline-container-org04c4847" class="outline-2">
+<h2 id="org04c4847"><span class="section-number-2">3</span> Algebraic varieties&#xa0;&#xa0;&#xa0;<span class="tag"><span class="done">done</span></span></h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orgf060977" class="outline-3">
-<h3 id="orgf060977"><span class="section-number-3">3.1.</span> Definition&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week4">week4</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-orgca7b009" class="outline-3">
+<h3 id="orgca7b009"><span class="section-number-3">3.1</span> Definition&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week4">week4</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 The varieties we have seen so far have been sub-sets of the affine space.
@@ -1320,7 +1339,7 @@ Via this isomorphism, we can &ldquo;transport&rdquo; the algebraic structure (fo
 </p>
 
 <p>
-Let \(\phi_1 \colon U_1 \to V_1\) and \(\phi_2 \colon U_2 \to V_2\) be two quasi-affine charts on \(X\) (see Figure <a href="#orgedc1598">1</a>).
+Let \(\phi_1 \colon U_1 \to V_1\) and \(\phi_2 \colon U_2 \to V_2\) be two quasi-affine charts on \(X\) (see Figure <a href="#orgdd9aca3">1</a>).
 Set \(U_{12} = U_1 \cap U_2\).
 Consider the open subsets \(V_{12} = \phi_1 (U_{12}) \subset V_1\) and \(V_{21} = \phi_2(U_{12}) \subset V_2\).
 Being open subsets of quasi-affine varieties, they are themselves quasi-affine varieties.
@@ -1331,7 +1350,7 @@ We say that the two charts are <i>compatible</i> if this map is a (bi-regular) i
 </p>
 
 
-<div id="orgedc1598" class="figure">
+<div id="orgdd9aca3" class="figure">
 <p><img src="Charts.png" alt="Charts.png" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Compatible charts</p>
@@ -1346,16 +1365,16 @@ Compatibility ensures that these two charts are related by a bi-regular isomorph
 A <i>quasi-affine atlas</i> on \(X\) is a collection of compatible charts \(\phi_i \colon U_i \to V_i\) such that the \(U_i\) cover \(X\).
 </p>
 </div>
-<div id="outline-container-org4a04c2b" class="outline-4">
-<h4 id="org4a04c2b"><span class="section-number-4">3.1.1.</span> Definition (Algebraic variety)</h4>
+<div id="outline-container-org0757f81" class="outline-4">
+<h4 id="org0757f81"><span class="section-number-4">3.1.1</span> Definition (Algebraic variety)</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <p>
 An <i>algebraic variety</i> is a topological space with a quasi-affine atlas.
 </p>
 </div>
 </div>
-<div id="outline-container-org33388d5" class="outline-4">
-<h4 id="org33388d5"><span class="section-number-4">3.1.2.</span> Example (Quasi-affine varieties)</h4>
+<div id="outline-container-orgf2b8b91" class="outline-4">
+<h4 id="orgf2b8b91"><span class="section-number-4">3.1.2</span> Example (Quasi-affine varieties)</h4>
 <div class="outline-text-4" id="text-3-1-2">
 <p>
 A quasi-affine variety \(X\) is itself an algebraic variety.
@@ -1364,16 +1383,16 @@ The atlas is the obvious one, consisting of the single chart \({\rm id} \colon X
 </div>
 </div>
 </div>
-<div id="outline-container-org889dc5f" class="outline-3">
-<h3 id="org889dc5f"><span class="section-number-3">3.2.</span> Projective spaces&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week4">week4</span>&#xa0;<span class=""></span></span></h3>
+<div id="outline-container-orgb070cc9" class="outline-3">
+<h3 id="orgb070cc9"><span class="section-number-3">3.2</span> Projective spaces&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week4">week4</span>&#xa0;<span class=""></span></span></h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 A fundamental example of an algebraic variety is the projective space.
 </p>
 </div>
 
-<div id="outline-container-orga2bcc15" class="outline-4">
-<h4 id="orga2bcc15"><span class="section-number-4">3.2.1.</span> Definition (Projective space)</h4>
+<div id="outline-container-org5913e61" class="outline-4">
+<h4 id="org5913e61"><span class="section-number-4">3.2.1</span> Definition (Projective space)</h4>
 <div class="outline-text-4" id="text-3-2-1">
 <p>
 The <i>projective \(n\)-space over a field \(k\)</i>, denoted by \(\mathbb P^n_k\), is the set of one-dimensional subspaces of \(k^{n+1}\).
@@ -1381,8 +1400,8 @@ The <i>projective \(n\)-space over a field \(k\)</i>, denoted by \(\mathbb P^n_k
 </div>
 </div>
 
-<div id="outline-container-org38911d0" class="outline-4">
-<h4 id="org38911d0"><span class="section-number-4">3.2.2.</span> Intuition</h4>
+<div id="outline-container-org4bc4430" class="outline-4">
+<h4 id="org4bc4430"><span class="section-number-4">3.2.2</span> Intuition</h4>
 <div class="outline-text-4" id="text-3-2-2">
 <p>
 Before describing how \(\mathbb P^n_k\) is an algebraic variety, let us build some intuition about projective space.
@@ -1426,8 +1445,8 @@ So we see that \(\mathbb P^2 = P \sqcup \mathbb P^1\).
 </div>
 </div>
 
-<div id="outline-container-orgb857930" class="outline-4">
-<h4 id="orgb857930"><span class="section-number-4">3.2.3.</span> Topology</h4>
+<div id="outline-container-orgbac6e5f" class="outline-4">
+<h4 id="orgbac6e5f"><span class="section-number-4">3.2.3</span> Topology</h4>
 <div class="outline-text-4" id="text-3-2-3">
 <p>
 A one-dimensional subspace of \(k^{n+1}\) is spanned by a non-zero vector \((a_0,\dots,a_n)\).
@@ -1461,14 +1480,14 @@ Thus, we have a bijection \(\phi_0 \colon U_0 \to \mathbb A^n\), and similarly \
 </p>
 </div>
 </div>
-<div id="outline-container-orgae5b125" class="outline-4">
-<h4 id="orgae5b125"><span class="section-number-4">3.2.4.</span> Proposition (Charts of the projective space)</h4>
+<div id="outline-container-org0d0ee5d" class="outline-4">
+<h4 id="org0d0ee5d"><span class="section-number-4">3.2.4</span> Proposition (Charts of the projective space)</h4>
 <div class="outline-text-4" id="text-3-2-4">
 <ol class="org-ol">
 <li>The bijections \(\phi_i \colon U_i \to \mathbb A^n\) defined above are homeomorphisms.</li>
 <li>The charts \(\phi_i \colon U_i \to \mathbb A^n\) are mutually compatible, and hence give an atlas on \(\mathbb P^n\).</li>
 </ol>
-<div class="skipped" id="org8c8db97">
+<div class="skipped">
 <ol class="org-ol">
 <li>This is not obvious, also not hard, but also not very enlightening. Let us skip this.</li>
 <li>Do this! &#x2014; (1)</li>
@@ -1477,8 +1496,8 @@ Thus, we have a bijection \(\phi_0 \colon U_0 \to \mathbb A^n\), and similarly \
 </div>
 </div>
 </div>
-<div id="outline-container-org13230f2" class="outline-4">
-<h4 id="org13230f2"><span class="section-number-4">3.2.5.</span> Open and closed subvarieties</h4>
+<div id="outline-container-orgf5f2f44" class="outline-4">
+<h4 id="orgf5f2f44"><span class="section-number-4">3.2.5</span> Open and closed subvarieties</h4>
 <div class="outline-text-4" id="text-3-2-5">
 <p>
 Let \(X\) be an algebraic variety, and \(Y \subset X\) an open or closed subset.
@@ -1486,7 +1505,7 @@ Then \(Y\) inherits the structure of an algebraic variety.
 To get, the atlas for \(Y\), let \(\phi_i \colon U_i \to V_i\)  be an atlas for \(X\).
 For \(Y\), we just take \(\phi_i \colon U_i \cap Y \to \phi(U_i \cap Y).\)
 </p>
-<div class="skipped" id="org8d7f0a5">
+<div class="skipped">
 <p>
 Explain why this is an atlas for \(Y\) &#x2014; (2)
 </p>
@@ -1494,15 +1513,15 @@ Explain why this is an atlas for \(Y\) &#x2014; (2)
 </div>
 </div>
 </div>
-<div id="outline-container-org4d5aa14" class="outline-4">
-<h4 id="org4d5aa14"><span class="section-number-4">3.2.6.</span> Proposition (Closed subvarieties of projective space 1)</h4>
+<div id="outline-container-org30a8feb" class="outline-4">
+<h4 id="org30a8feb"><span class="section-number-4">3.2.6</span> Proposition (Closed subvarieties of projective space 1)</h4>
 <div class="outline-text-4" id="text-3-2-6">
 <p>
 Let \(F \in k[X_0,\dots,X_n]\) be a homogeneous polynomial.
 Let \(V(F) \subset \mathbb P^n\) be the set of points \(\{[a_0:\dots:a_n] \mid F(a_0,\dots,a_n) = 0\}\).
 Then \(V(F)\) is a closed subset.
 </p>
-<div class="skipped" id="org96eba0d">
+<div class="skipped">
 <p>
 Explain why \(V(F)\) is well-defined (that is, the condition \(F(a_0,\dots,a_n) = 0\) does not depend on the chosen representative of the equivalence class).
 Then explain why \(V(F)\) is closed. &#x2014; (3)
@@ -1511,13 +1530,13 @@ Then explain why \(V(F)\) is closed. &#x2014; (3)
 </div>
 </div>
 </div>
-<div id="outline-container-org6afb234" class="outline-4">
-<h4 id="org6afb234"><span class="section-number-4">3.2.7.</span> Proposition (Closed subvarieties of projective space 2)</h4>
+<div id="outline-container-orgdd480e0" class="outline-4">
+<h4 id="orgdd480e0"><span class="section-number-4">3.2.7</span> Proposition (Closed subvarieties of projective space 2)</h4>
 <div class="outline-text-4" id="text-3-2-7">
 <p>
 Let \(I \subset k[X_0,\dots,X_n]\) be a homogeneous ideal.
 </p>
-<div class="skipped" id="org44d1a4f">
+<div class="skipped">
 <p>
 Define \(V(I) \subset \mathbb P^n\) and show that it is a closed subset. &#x2014; (4)
 </p>
@@ -1525,21 +1544,21 @@ Define \(V(I) \subset \mathbb P^n\) and show that it is a closed subset. &#x2014
 </div>
 </div>
 </div>
-<div id="outline-container-org32d35c2" class="outline-4">
-<h4 id="org32d35c2"><span class="section-number-4">3.2.8.</span> Proposition (Closed subvarieties of projective space 3)</h4>
+<div id="outline-container-org1a8193c" class="outline-4">
+<h4 id="org1a8193c"><span class="section-number-4">3.2.8</span> Proposition (Closed subvarieties of projective space 3)</h4>
 <div class="outline-text-4" id="text-3-2-8">
 <p>
 Conversely, let \(X \subset \mathbb P^n\) be a closed subset.
 Then there exists a homogeneous ideal \(I \subset k[X_0,\dots,X_n]\) such that \(X = V(I)\).
 </p>
-<div class="proof" id="org860f686">
+<div class="proof">
 <p>
 Assume that \(X\) is non-empty.
 Let \(\pi \colon \mathbb A^{n+1} \setminus 0 \to \mathbb P^n\) be the quotient map.
 Let \(C \subset \mathbb A^n\) be the closure of \(\pi^{-1}(X)\).
 </p>
 
-<div class="skipped" id="orgb0cef15">
+<div class="skipped">
 <p>
 Prove that \(C\) is conical, that is, if \(x \in C\) then \(\lambda x \in C\) for every scalar \(\lambda \in k\).
 Conclude using Homework 1 that \(C = V(I)\) for a homogeneous ideal \(I\).
@@ -1551,8 +1570,8 @@ Prove that \(X = V(I)\) in \(\mathbb P^n\). &#x2014; (5)
 </div>
 </div>
 </div>
-<div id="outline-container-org8ebdd10" class="outline-4">
-<h4 id="org8ebdd10"><span class="section-number-4">3.2.9.</span> Example (Linear subspaces)</h4>
+<div id="outline-container-orgf6cafbf" class="outline-4">
+<h4 id="orgf6cafbf"><span class="section-number-4">3.2.9</span> Example (Linear subspaces)</h4>
 <div class="outline-text-4" id="text-3-2-9">
 <p>
 Suppose \(I \subset k[X_0, \dots, X_n]\) is generated by (homogeneous) linear equations.
@@ -1565,16 +1584,16 @@ See that any two distinct lines in \(\mathbb P^2\) intersect at a unique point, 
 </div>
 </div>
 
-<div id="outline-container-orgeb4c1d8" class="outline-2">
-<h2 id="orgeb4c1d8"><span class="section-number-2">4.</span> Regular functions and regular maps 2</h2>
+<div id="outline-container-org55877f3" class="outline-2">
+<h2 id="org55877f3"><span class="section-number-2">4</span> Regular functions and regular maps 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="done">done</span></span></h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org87ed9b1" class="outline-3">
-<h3 id="org87ed9b1"><span class="section-number-3">4.1.</span> Regular  functions and maps&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week5">week5</span></span></h3>
+<div id="outline-container-org15cb30d" class="outline-3">
+<h3 id="org15cb30d"><span class="section-number-3">4.1</span> Regular  functions and maps&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week5">week5</span></span></h3>
 <div class="outline-text-3" id="text-4-1">
 </div>
-<div id="outline-container-orgeb0fcf8" class="outline-4">
-<h4 id="orgeb0fcf8"><span class="section-number-4">4.1.1.</span> Proposition (regularity does not depend on the chart)</h4>
+<div id="outline-container-orge3992e6" class="outline-4">
+<h4 id="orge3992e6"><span class="section-number-4">4.1.1</span> Proposition (regularity does not depend on the chart)</h4>
 <div class="outline-text-4" id="text-4-1-1">
 <p>
 Let \(X\) be an algebraic variety and \(f \colon X \to k\) a function.
@@ -1583,7 +1602,7 @@ Denote the images of \(x\) in the two charts by \(v_1\) and \(v_2\).
 Consider the functions \(f \circ \phi_1^{-1} \colon V_1 \to k\) and \(f \circ \phi_2^{-1} \colon V_2 \to k\).
 Then the first is regular at \(v_1\) if and only if the second is regular at \(v_2\).
 </p>
-<div class="skipped" id="org46c53bf">
+<div class="skipped">
 <p>
 Prove this. &#x2014; (1)
 </p>
@@ -1591,8 +1610,8 @@ Prove this. &#x2014; (1)
 </div>
 </div>
 </div>
-<div id="outline-container-org1bbcfa7" class="outline-4">
-<h4 id="org1bbcfa7"><span class="section-number-4">4.1.2.</span> Definition (regular function on a variety)</h4>
+<div id="outline-container-orgbe1d7dd" class="outline-4">
+<h4 id="orgbe1d7dd"><span class="section-number-4">4.1.2</span> Definition (regular function on a variety)</h4>
 <div class="outline-text-4" id="text-4-1-2">
 <p>
 Let \(f \colon X \to k\) be a continuous function.  We say that \(f\) is regular at \(x\) if for some (equivalently, for every) chart \(\phi \colon U \to V\) with \(x \in U\), the function \(f \circ \phi^{-1} \colon V \to k\) is regular at \(\phi(x)\).
@@ -1600,8 +1619,8 @@ We say that \(f\) is regular on \(X\) if it is regular at all points \(x \in X\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgec158c2" class="outline-4">
-<h4 id="orgec158c2"><span class="section-number-4">4.1.3.</span> Definition (regular map between varieties)</h4>
+<div id="outline-container-org197aad9" class="outline-4">
+<h4 id="org197aad9"><span class="section-number-4">4.1.3</span> Definition (regular map between varieties)</h4>
 <div class="outline-text-4" id="text-4-1-3">
 <p>
 Let \(X\) and \(Y\) be algebraic varieties and \(f \colon X \to Y\) a continuous map. 
@@ -1614,11 +1633,11 @@ But the domain contains \(\phi(x)\), so it makes sense to talk about the regular
 </p>
 
 <p>
-See Figure <a href="#org50f4b25">2</a> for a picture (the bottom arrow should be dashed).
+See Figure <a href="#org930e3e2">2</a> for a picture (the bottom arrow should be dashed).
 </p>
 
 
-<div id="org50f4b25" class="figure">
+<div id="org930e3e2" class="figure">
 <p><img src="regularcharts.png" alt="regularcharts.png" />
 </p>
 <p><span class="figure-number">Figure 2: </span>A map is regular if it is regular with respect to the charts.</p>
@@ -1627,15 +1646,15 @@ See Figure <a href="#org50f4b25">2</a> for a picture (the bottom arrow should be
 </div>
 </div>
 
-<div id="outline-container-org361d3d7" class="outline-3">
-<h3 id="org361d3d7"><span class="section-number-3">4.2.</span> Examples&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week5">week5</span></span></h3>
+<div id="outline-container-org3cc40d6" class="outline-3">
+<h3 id="org3cc40d6"><span class="section-number-3">4.2</span> Examples&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week5">week5</span></span></h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 For quasi-affine varieties, these definitions do not add anything new.
 </p>
 </div>
-<div id="outline-container-org094f87c" class="outline-4">
-<h4 id="org094f87c"><span class="section-number-4">4.2.1.</span> Example</h4>
+<div id="outline-container-orgaad8083" class="outline-4">
+<h4 id="orgaad8083"><span class="section-number-4">4.2.1</span> Example</h4>
 <div class="outline-text-4" id="text-4-2-1">
 <p>
 Let \(X = \mathbb P^1\).
@@ -1645,7 +1664,7 @@ The function
 \[ [X_0:\dots:X_n] \mapsto F(X_0, \dots, X_n)/G(X_0, \dots, X_n)\]
 is regular outside \(V(G)\).
 </p>
-<div class="skipped" id="org7337ea9">
+<div class="skipped">
 <p>
 Prove this. -&#x2014; (2)
 </p>
@@ -1653,8 +1672,8 @@ Prove this. -&#x2014; (2)
 </div>
 </div>
 </div>
-<div id="outline-container-org9a94627" class="outline-4">
-<h4 id="org9a94627"><span class="section-number-4">4.2.2.</span> Example</h4>
+<div id="outline-container-org5f387c0" class="outline-4">
+<h4 id="org5f387c0"><span class="section-number-4">4.2.2</span> Example</h4>
 <div class="outline-text-4" id="text-4-2-2">
 <p>
 Let \(X = \mathbb P^n\) and let \(F_0, \dots, F_m\) be homogeneous polynomials of the same degree.
@@ -1663,7 +1682,7 @@ Then the formula
 \[ [X_0:\dots:X_n] \mapsto [F_0(X_0,\dots, X_n):\dots:F_m(X_0,\dots, X_n)]\]
 defines a regular map from \(X \setminus Z\) to \(\mathbb P^m\).
 </p>
-<div class="skipped" id="org9b385af">
+<div class="skipped">
 <p>
 Prove this. -&#x2014; (3)
 </p>
@@ -1671,8 +1690,8 @@ Prove this. -&#x2014; (3)
 </div>
 </div>
 </div>
-<div id="outline-container-orge279265" class="outline-4">
-<h4 id="orge279265"><span class="section-number-4">4.2.3.</span> Example</h4>
+<div id="outline-container-org326f454" class="outline-4">
+<h4 id="org326f454"><span class="section-number-4">4.2.3</span> Example</h4>
 <div class="outline-text-4" id="text-4-2-3">
 <p>
 The natural map \(\mathbb A^{n+1} - 0 \to \mathbb P^n\) is regular.
@@ -1680,8 +1699,8 @@ The natural map \(\mathbb A^{n+1} - 0 \to \mathbb P^n\) is regular.
 </div>
 </div>
 
-<div id="outline-container-orgfc615c8" class="outline-4">
-<h4 id="orgfc615c8"><span class="section-number-4">4.2.4.</span> Example (Automorphisms of \(\mathbb P^n\))</h4>
+<div id="outline-container-orga7444ec" class="outline-4">
+<h4 id="orga7444ec"><span class="section-number-4">4.2.4</span> Example (Automorphisms of \(\mathbb P^n\))</h4>
 <div class="outline-text-4" id="text-4-2-4">
 <p>
 Consider the \(n+1\)-dimensional \(k\)-vector space \(V\) spanned by \(X_0, \dots, X_n\).
@@ -1707,14 +1726,14 @@ So the action descends to an action of the group \(PGL_n(k) = GL_n(k) / \rm{scal
 </div>
 </div>
 
-<div id="outline-container-org8d1c054" class="outline-4">
-<h4 id="org8d1c054"><span class="section-number-4">4.2.5.</span> Example (regular functions on \(\mathbb P^1\))</h4>
+<div id="outline-container-org007aa41" class="outline-4">
+<h4 id="org007aa41"><span class="section-number-4">4.2.5</span> Example (regular functions on \(\mathbb P^1\))</h4>
 <div class="outline-text-4" id="text-4-2-5">
 <p>
 The previous example gave examples of regular functions on (strict) open subsets of the projective space.
 It turns out that there are <i>no</i> regular functions on \(\mathbb P^n\) other than the constant functions!
 </p>
-<div class="skipped" id="orgf371260">
+<div class="skipped">
 <p>
 Prove this for \(n = 1\).
 Then deduce it for all \(n\) using that through any two distinct points in \(\mathbb P^n\) passes a projective line. &#x2014; (4)
@@ -1725,12 +1744,12 @@ Then deduce it for all \(n\) using that through any two distinct points in \(\ma
 </div>
 </div>
 
-<div id="outline-container-org39bf4e9" class="outline-3">
-<h3 id="org39bf4e9"><span class="section-number-3">4.3.</span> Elementary properties of regular maps&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week5">week5</span></span></h3>
+<div id="outline-container-orgf9b06a8" class="outline-3">
+<h3 id="orgf9b06a8"><span class="section-number-3">4.3</span> Elementary properties of regular maps&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week5">week5</span></span></h3>
 <div class="outline-text-3" id="text-4-3">
 </div>
-<div id="outline-container-org89a9c67" class="outline-4">
-<h4 id="org89a9c67"><span class="section-number-4">4.3.1.</span> Proposition</h4>
+<div id="outline-container-orgbd4a08d" class="outline-4">
+<h4 id="orgbd4a08d"><span class="section-number-4">4.3.1</span> Proposition</h4>
 <div class="outline-text-4" id="text-4-3-1">
 <p>
 The identity map is regular.  The composition of two regular maps is regular.
@@ -1739,8 +1758,8 @@ The identity map is regular.  The composition of two regular maps is regular.
 </div>
 </div>
 
-<div id="outline-container-org342fa40" class="outline-3">
-<h3 id="org342fa40"><span class="section-number-3">4.4.</span> The Veronese embedding&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week5">week5</span></span></h3>
+<div id="outline-container-orgf27985b" class="outline-3">
+<h3 id="orgf27985b"><span class="section-number-3">4.4</span> The Veronese embedding&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week5">week5</span></span></h3>
 <div class="outline-text-3" id="text-4-4">
 <p>
 Let \(n \geq 1\), and consider the \(k\)-vector space of degree \(n\) homogeneous polynomials in \(X, Y\).
@@ -1753,15 +1772,15 @@ v_n \colon \mathbb P^1 &\to \mathbb P^n \\
 [X:Y] &\mapsto [X^n:\cdots:Y^n].
 \end{align*}
 </div>
-<div id="outline-container-orgf28ec55" class="outline-4">
-<h4 id="orgf28ec55"><span class="section-number-4">4.4.1.</span> Proposition (Veronese curves)</h4>
+<div id="outline-container-orgc34decc" class="outline-4">
+<h4 id="orgc34decc"><span class="section-number-4">4.4.1</span> Proposition (Veronese curves)</h4>
 <div class="outline-text-4" id="text-4-4-1">
 <p>
 The image of \(v_n\) is a closed subset of \(C\) of \(\mathbb P^n\).
 If we denote the homogeneous coordinates on \(\mathbb P^n\) by \([U_0:\dots: U_n]\), then \(C\) is cut out by the equations
 \[\{U_iU_j - U_k U_\ell \mid 0 \leq i,j,k,l \leq n \text{ and } i+j = k+\ell.\]
 </p>
-<div class="skipped" id="org6e06fbf">
+<div class="skipped">
 <p>
 Prove this. &#x2014; (5)
 </p>
@@ -1769,13 +1788,13 @@ Prove this. &#x2014; (5)
 </div>
 </div>
 </div>
-<div id="outline-container-org90d310b" class="outline-4">
-<h4 id="org90d310b"><span class="section-number-4">4.4.2.</span> Proposition (Veronese curves continued)</h4>
+<div id="outline-container-org6d20bf2" class="outline-4">
+<h4 id="org6d20bf2"><span class="section-number-4">4.4.2</span> Proposition (Veronese curves continued)</h4>
 <div class="outline-text-4" id="text-4-4-2">
 <p>
 The map \(v_n \colon \mathbb P^1 \to C\) is in fact an isomorphism. 
 </p>
-<div class="skipped" id="orgbfc1bb8">
+<div class="skipped">
 <p>
 Define the inverse map. &#x2014; (6)
 </p>
@@ -1794,8 +1813,8 @@ The equations of \(Z\) and the description of the inverse map are analogous to t
 </div>
 </div>
 
-<div id="outline-container-org38f0dc0" class="outline-3">
-<h3 id="org38f0dc0"><span class="section-number-3">4.5.</span> Example: Conics in \(\mathbb P^2\)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week5">week5</span></span></h3>
+<div id="outline-container-org44f56ab" class="outline-3">
+<h3 id="org44f56ab"><span class="section-number-3">4.5</span> Example: Conics in \(\mathbb P^2\)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week5">week5</span></span></h3>
 <div class="outline-text-3" id="text-4-5">
 <p>
 The \(2\)-nd Veronese embedding maps \(\mathbb P^1\) isomorphically onto the zero-locus of a degree 2 equation in \(\mathbb P^2\).
@@ -1811,8 +1830,8 @@ Now recall a theorem from linear algebra.  You may have proved this only over \(
 </p>
 </div>
 
-<div id="outline-container-org52f5233" class="outline-4">
-<h4 id="org52f5233"><span class="section-number-4">4.5.1.</span> Theorem (quadratic forms)</h4>
+<div id="outline-container-org28dc17c" class="outline-4">
+<h4 id="org28dc17c"><span class="section-number-4">4.5.1</span> Theorem (quadratic forms)</h4>
 <div class="outline-text-4" id="text-4-5-1">
 <p>
 Let \(k\) be an algebraically closed field of characteristic \(\neq 2\) and let \(q\) be a quadratic form on a \(k\)-vector space \(V\).
@@ -1825,14 +1844,14 @@ The form is called non-degenerate if \(\ell = n\).
 </p>
 </div>
 </div>
-<div id="outline-container-org44348d5" class="outline-4">
-<h4 id="org44348d5"><span class="section-number-4">4.5.2.</span> Corollary</h4>
+<div id="outline-container-orgad1f2a1" class="outline-4">
+<h4 id="orgad1f2a1"><span class="section-number-4">4.5.2</span> Corollary</h4>
 <div class="outline-text-4" id="text-4-5-2">
 <p>
 Let \(Q\) be a non-degenate conic in \(\mathbb P^2\). 
 Then \(Q\) is isomorphic to \(\mathbb P^1\).
 </p>
-<div class="proof" id="org9f4aeb8">
+<div class="proof">
 <p>
 All non-degenerate conics are isomorphic to each other, and we know that at least one of them&#x2014;the 2nd Veronese image of \(\mathbb P^1\)&#x2014;is isomorphic to \(\mathbb P^1\).
 </p>
@@ -1840,8 +1859,8 @@ All non-degenerate conics are isomorphic to each other, and we know that at leas
 </div>
 </div>
 </div>
-<div id="outline-container-org934b836" class="outline-4">
-<h4 id="org934b836"><span class="section-number-4">4.5.3.</span> Question</h4>
+<div id="outline-container-org7dffeae" class="outline-4">
+<h4 id="org7dffeae"><span class="section-number-4">4.5.3</span> Question</h4>
 <div class="outline-text-4" id="text-4-5-3">
 <p>
 What do the degenerate conics in \(\mathbb P^2\) look like?
@@ -1850,16 +1869,222 @@ What do the degenerate conics in \(\mathbb P^2\) look like?
 </div>
 </div>
 </div>
-<div id="outline-container-orgf0aceda" class="outline-2">
-<h2 id="orgf0aceda"><a href="notes.pdf">PDF Version</a></h2>
-<div class="outline-text-2" id="text-orgf0aceda">
+<div id="outline-container-org3eb93c2" class="outline-2">
+<h2 id="org3eb93c2"><span class="section-number-2">5</span> Products and the Segre embedding</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org545379f" class="outline-3">
+<h3 id="org545379f"><span class="section-number-3">5.1</span> Definition of the product variety&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week6">week6</span></span></h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+If \(X\) and \(Y\) are algebraic varieties, then their product set \(X \times Y\) is naturally an algebraic variety.  This, in theory, should be completely straightforward (and it is), but you have to be slightly careful because the Zariski topology of \(X \times Y\) is <i>not</i> the product topology.
+</p>
+
+<p>
+First, suppose \(X = \mathbb A^m\) and \(Y = \mathbb A^n\), then \(X \times Y = \mathbb A^{m+n}\) is an algebraic variety.  Observe that the Zariski topology on \(\mathbb A^{m+n}\) is <i>not</i> the product topology.
+</p>
+
+<p>
+Second, if \(X \subset \mathbb A^m\) and \(Y \subset \mathbb A^m\) are both closed (or open), then \(X \times Y \subset \mathbb A^{m+n}\) is closed (or open), so it is naturally an algebraic variety.
+</p>
+<div class="skipped">
+<p>
+Prove that products of closed (or open) are closed (or open). &#x2014; (1)
+</p>
+
+</div>
+
+<p>
+Third, by combining the cases of closed/open and taking intersections, we get that if \(X\) and \(Y\) are locally closed, then \(X \times Y \subset \mathbb A^{m+n}\) is also locally closed, and hence an algebraic variety.  So the case of quasi-affine varieties is done.
+</p>
+
+<p>
+In general, suppose \(X\) has the quasi-affine atlas \(\{\phi_i \colon U_i \to V_i\}\) and \(Y\) has the quasi-affine atlas \(\{\phi'_j \colon U'_j \to V'_j\}\).  Then the product \(X \times Y\) is covered by the sets \(U_i \times U'_j\).  We <i>declare</i> the product map \(U_i \times U'_j \to V_i \times V'_j\) to be a homeomorphism; that is, we give \(U_i \times U'_j\) the Zariski topology of \(V_i \times V'_j\).
+Then, we declare a set \(Z \subset X \times Y\) to be closed (or open) if and only if for all \(i,j\), the intersection \(Z \cap U_i \times U'_j\) is closed (or open) in \(U_i \times U'_j\).
+It is easy to check that this gives \(X \times Y\) a topology under which \(U_i \times U'_j\) is an open cover, and the maps
+\[\phi_i \times \phi'_j \colon U_i \times U'_j \to V_i \times V'_j \]
+are a family of compatible charts.
+</p>
+</div>
+<div id="outline-container-orge57c0a9" class="outline-4">
+<h4 id="orge57c0a9"><span class="section-number-4">5.1.1</span> Proposition</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<p>
+The two projection maps \(X \times Y \to X\) and \(X \times Y \to Y\) are regular.
+A map \(\phi \colon Z \to X \times Y\) is regular if and only if the two component maps \(\phi_1 \colon Z \to X\) and \(\phi_2 \colon Z \to Y\) are regular.
+</p>
+<div class="proof">
+<p>
+Skipped (for being easy).
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb521ded" class="outline-4">
+<h4 id="orgb521ded"><span class="section-number-4">5.1.2</span> Remark</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<p>
+If you have seen some category theory (in particular, Yoneda&rsquo;s lemma), you will see that the above proposition characterises the product &ldquo;uniquely up to a unique isomorphism.&rdquo;
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org741863f" class="outline-3">
+<h3 id="org741863f"><span class="section-number-3">5.2</span> Example&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week6">week6</span></span></h3>
+<div class="outline-text-3" id="text-5-2">
+<div class="skipped">
+<p>
+Write down the charts of \(\mathbb P^1 \times \mathbb P^1\), and the transition function between one pair of charts. &#x2014; (2)
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9f3e7d9" class="outline-3">
+<h3 id="org9f3e7d9"><span class="section-number-3">5.3</span> Closed subsets of \(\mathbb P^n \times \mathbb P^m\)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week6">week6</span></span></h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+Let \(F \subset k[X_0, \dots, X_n, Y_0, \dots, Y_m]\) be a bi-homogeneous polynomial of bi-degree \((a,b)\).
+This means that every term in \(F\) has \(X\)-degree \(a\) and \(Y\)-degree \(b\). 
+Or equivalently, for any \(\lambda, \mu \in k\), we have
+\[ F(\lambda X_0, \dots, \lambda X_n, \mu Y_0, \dots, \mu Y_m) = \lambda^a\mu^b F(X_0, \dots, X_n, Y_0, \dots, Y_m).\]
+Then \(V(F) \subset \mathbb P^n \times \mathbb P^m\)  is well-defined and is a closed subset.
+Same story for bi-homogeneous ideals.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc3573f5" class="outline-3">
+<h3 id="orgc3573f5"><span class="section-number-3">5.4</span> The Segre embedding&#xa0;&#xa0;&#xa0;<span class="tag"><span class="week6">week6</span></span></h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+The Segre embedding is a closed embedding of \(\mathbb P^n \times \mathbb P^m\) in a bigger projective space.
+It is a cool example, but it is also of theoretical importance.
+The most studied and the most well-behaved varieties are projective varieties (varieties isomorphic to closed subsets of projective space) or somewhat more generally quasi-projective varieties (varieties isomorphic to locally closed subsets of projective space).
+The Segre embedding shows that this class of varieties is closed under products.
+</p>
+
+<p>
+Let \(N = (m+1)(n+1)-1.\)
+Consider the Segre map \(\mathbb P^n \times \mathbb P^m \to \mathbb P^{N}\) defined by
+\[ [X_0, \dots, X_n], [Y_0, \dots, Y_m] \mapsto [X_i \cdot Y_j].\]
+It is easy to check that this map is regular.
+</p>
+
+<p>
+A good way to think about this map is as follows.
+Think of elements of \(\mathbb P^n\) as row vectors up to scaling, \(\mathbb P^m\) as column vectors (up to scaling), and \(\mathbb P^n\) as \((n+1) \times (m+1)\)-matrices up to scaling.
+Then the product \(XY\) of \(X \in \mathbb P^n\) and \(Y \in \mathbb P^m\) is an \((n+1) \times (m+1)\) matrix, which taken up to scaling, defines an element of \(\mathbb P^N\).
+Observe that matrix \(XY\) has rank \(1\), and hence the Segre map lands in the subspace \(Z \subset \mathbb P^N\) corresponding to matrices of rank 1.
+</p>
+
+<p>
+Now, a rank 1 matrix can be written as a product \(XY\), and up to scaling, such an expression is unique.
+As a result, the Segre map is a bijection from \(\mathbb P^n \times \mathbb P^m \to Z\).
+But more is true.
+</p>
+</div>
+
+<div id="outline-container-org60b5daf" class="outline-4">
+<h4 id="org60b5daf"><span class="section-number-4">5.4.1</span> Theorem (Segre embedding)</h4>
+<div class="outline-text-4" id="text-5-4-1">
+<p>
+The rank 1 locus \(Z \subset \mathbb P^N\) is closed, and the Segre map \(\mathbb P^n \times \mathbb P^m \to Z\) is a bi-regular isomorphism.
+</p>
+<div class="proof">
+<p>
+Consider an \((n+1) \times (m+1)\) matrix \(M\).
+Then \(M\) has rank 1 if and only if all \(2 \times 2\) minors of \(M\) vanish.
+Hence, \(Z\) is the zero-locus of all \(2 \times 2\)-minors, which are homogeneous polynomials in the entries of the matrix.
+</p>
+
+<p>
+To prove that the Segre map is an isomorphism onto \(Z\), we must construct a regular inverse \(Z \to \mathbb P^n \times \mathbb P^m\).
+</p>
+<div class="skipped">
+<p>
+Do it! &#x2014; (3).
+</p>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc502fd4" class="outline-4">
+<h4 id="orgc502fd4"><span class="section-number-4">5.4.2</span> Definition (Projective and quasi-projective varieties)</h4>
+<div class="outline-text-4" id="text-5-4-2">
+<p>
+A <i>projective variety</i> is a variety isomorphic to a closed subset of projective space.
+A <i>quasi-projective variety</i> is a variety isomorphic to an open subset of a projective variety.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc361ebc" class="outline-4">
+<h4 id="orgc361ebc"><span class="section-number-4">5.4.3</span> Proposition (All quasi-affines are quasi-projective)</h4>
+<div class="outline-text-4" id="text-5-4-3">
+<p>
+Every quasi-affine variety is quasi-projective.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc50771a" class="outline-4">
+<h4 id="orgc50771a"><span class="section-number-4">5.4.4</span> Corollary (of the Segre embedding)</h4>
+<div class="outline-text-4" id="text-5-4-4">
+<p>
+If \(X\) and \(Y\) are (quasi)-projective, then so is \(X \times Y\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4757aae" class="outline-4">
+<h4 id="org4757aae"><span class="section-number-4">5.4.5</span> Exercise (Quadric surfaces)</h4>
+<div class="outline-text-4" id="text-5-4-5">
+<p>
+The Segre embedding of \(\mathbb P^1 \times \mathbb P^1\) lives in \(\mathbb P^3\).
+</p>
+<div class="skipped">
+<p>
+Describe the equations that cut out the image. &#x2014; (4)
+Conclude that every non-degenerate quadric in \(\mathbb P^3\) is isomorphic to \(\mathbb P^1 \times \mathbb P^1\). &#x2014; (5)
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf5bf5ea" class="outline-4">
+<h4 id="orgf5bf5ea"><span class="section-number-4">5.4.6</span> Exercise (\(\mathbb P^1 \times \mathbb P^1\) and \(\mathbb P^2\))</h4>
+<div class="outline-text-4" id="text-5-4-6">
+<div class="skipped">
+<p>
+Are \(\mathbb P^1 \times \mathbb P^1\) and \(\mathbb P^2\) isomorphic?  &#x2014; (6)
+Use whatever tools you have over your favourite field to answer this.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org04659b5" class="outline-2">
+<h2 id="org04659b5"><a href="notes.pdf">PDF Version</a></h2>
+<div class="outline-text-2" id="text-org04659b5">
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: \today</p>
 <p class="author">Author: Anand Deopurkar</p>
-<p class="date">Created: 2021-08-29 Sun 10:51</p>
+<p class="date">Created: 2021-08-29 Sun 10:57</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
