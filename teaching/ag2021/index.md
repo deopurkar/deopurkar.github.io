@@ -16,6 +16,8 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
     After you access it, you will have 3 hours to complete it and upload your answers back on Gradescope.
     I do not expect you to LaTeX your solutions; handwritten is fine.
     It will cover the material up to week 6.
+    You may refer to the textbook or notes, but no other sources (including anything on the internet).
+    Here are some [practice questions](AGMidtermPractice.pdf).
 
 
 # Links
