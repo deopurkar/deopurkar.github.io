@@ -102,15 +102,15 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">6</td>
-<td class="org-left">Products and the Segre embedding</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="classwork06.pdf">Products and the Segre embedding</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/8ce2960f-c731-4001-9772-2bc88f34d8fa">Video</a>/<a href="notes/2021-08-30.pdf">Board</a></td>
+<td class="org-left">Mid-semester exam</td>
 </tr>
 
 
 <tr>
 <td class="org-right">7</td>
 <td class="org-left">Completeness of projective varieties</td>
-<td class="org-left">Mid-semester exam</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 
