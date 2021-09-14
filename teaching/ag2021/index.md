@@ -17,7 +17,7 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
     I do not expect you to LaTeX your solutions; handwritten is fine.
     It will cover the material up to week 6.
     You may refer to the textbook or notes, but no other sources (including anything on the internet).
-    Here are some [practice questions](AGMidtermPractice.pdf).
+    Here are some [practice questions](AGMidtermPractice.pdf) and here is [the midterm exam from 2019.](midterm2019.pdf)
 
 
 # Links
