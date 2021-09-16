@@ -16,7 +16,7 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 1.  The midterm will be a take-home exam.
 2.  The exam will be available on Gradescope from Monday, September 20, 6am to Tuesday, September 21, 9pm.  After you access it, you will have 3 hours to complete it and upload your solutions to Gradescope.
 3.  You may refer to our collective notes, your own notes, or the listed references (Shafarevich and Gathman).  You may not search for the answers on the internet.  You may not contact any other person/entity for help.
-4.  Please do not discuss **anything** about the exam with any of your classmates about the exam until Wednesday morning.  This includes even small exchanges like "The exam was easy", "I think I messed up question 3.", etc. No exam talk!
+4.  Please do not discuss **anything** about the exam with any of your classmates until Wednesday morning.  This includes even small exchanges like "The exam was easy", "I think I messed up question 3.", etc. No exam talk!
 5.  Here are some [practice questions](AGMidtermPractice.pdf) and here is [the midterm exam from 2019.](midterm2019.pdf)
 
 
