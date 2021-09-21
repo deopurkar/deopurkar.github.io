@@ -10,21 +10,22 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 
 # Announcements
 
-1.  Here is the [classwork for week 6](classwork06.pdf). Reports due on [gradescope](https://www.gradescope.com/courses/280699) by Thursday, Sep 2.
-2.  The midterm exam will be a take-home exam.
-    It will be available on Gradescope from Monday, September 20, 6am to Tuesday, September 21, 9pm.
-    After you access it, you will have 3 hours to complete it and upload your answers back on Gradescope.
-    I do not expect you to LaTeX your solutions; handwritten is fine.
-    It will cover the material up to week 6.
-    You may refer to the textbook or notes, but no other sources (including anything on the internet).
-    Here are some [practice questions](AGMidtermPractice.pdf).
+
+## Midterm information
+
+1.  Here is the [instructions page from the exam](midterm-instructions.pdf).
+2.  The midterm will be a take-home exam.
+3.  The exam will be available on Gradescope from Monday, September 20, 6am to Tuesday, September 21, 9pm.  After you access it, you will have 3 hours and 30 minutes to complete it and upload your solutions to Gradescope.
+4.  You may refer to our collective notes, your own notes, or the listed references (Shafarevich and Gathman).  You may not search for the answers on the internet.  You may not contact any other person/entity for help.
+5.  Please do not discuss **anything** about the exam with any of your classmates until Wednesday morning.  This includes even small exchanges like &ldquo;The exam was easy&rdquo;, &ldquo;I think I messed up question 3.&rdquo;, etc. No exam talk!
+6.  Here are some [practice questions](AGMidtermPractice.pdf) and here is [the midterm exam from 2019.](midterm2019.pdf)
 
 
 # Links
 
 -   Lectures: 1 (Monday 10&#x2013;11, Moran G007), 2 (Wed 10&#x2013;11, Moran G008), 3 (Thu 11&#x2013;12, HN 4.41), 4 (Fri 12&#x2013;13, Moran G007)
 -   Zoom lecture: <https://anu.zoom.us/j/87920733031> (you know the password)
--   Zoom office hours: Thursday 10&#x2013;11 (same room as the lecture), continuing into Thursday's class.
+-   Zoom office hours: Thursday 10&#x2013;11 (same room as the lecture), continuing into Thursday&rsquo;s class.
 -   Discussion forum: <https://ag2021.zulipchat.com>.
 -   The assignments will be due on Gradescope.
 
@@ -102,15 +103,15 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">6</td>
-<td class="org-left"><a href="classwork06.pdf">Products and the Segre embedding</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/8ce2960f-c731-4001-9772-2bc88f34d8fa">Video</a>/<a href="notes/2021-08-30.pdf">Board</a></td>
-<td class="org-left">Mid-semester exam</td>
+<td class="org-left"><a href="classwork06.pdf">Products and the Segre embedding</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/8ce2960f-c731-4001-9772-2bc88f34d8fa">Video</a>/<a href="notes/2021-08-30.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/f5f36337-3a49-4adf-84f6-87d0ef80229d">Video</a>/<a href="notes/2021-09-03.pdf">Board</a></td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 
 <tr>
 <td class="org-right">7</td>
 <td class="org-left">Completeness of projective varieties</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Mid-semester exam</td>
 </tr>
 
 
@@ -172,7 +173,7 @@ If you are a masters student or taking the course as an ASC/ASE, your assessment
 
 ## Classwork
 
-The format of our classwork will be as follows. The first meeting of the week (Monday) will be a traditional lecture in which I will explain the key ideas of a topic, but not prove all the details. In the following two meetings (Wednesday, Thursday), we will work out the details in small groups. By the end of Thursday, you will write a "progress report" (a 1-2 sentence summary of your progress for each question) and submit it on Gradescope. On Friday, based on the progress reports, I will present the solutions. Students (selected at random) will write up the solutions and send them to me in a week. I will add the write-ups to [our notes](notes). 
+The format of our classwork will be as follows. The first meeting of the week (Monday) will be a traditional lecture in which I will explain the key ideas of a topic, but not prove all the details. In the following two meetings (Wednesday, Thursday), we will work out the details in small groups. By the end of Thursday, you will write a &ldquo;progress report&rdquo; (a 1-2 sentence summary of your progress for each question) and submit it on Gradescope. On Friday, based on the progress reports, I will present the solutions. Students (selected at random) will write up the solutions and send them to me in a week. I will add the write-ups to [our notes](notes). 
 
 
 # Policies
@@ -186,14 +187,14 @@ To compensate for this strict policy, I will drop the lowest among the (homework
 
 ## Collaboration
 
-You are allowed, even encouraged, to work with others on homework assignments, but you must write up your solutions **on your own**. In other words, you **may not** copy someone else's write-up and you **may not** write your solutions side by side with someone else. On your submission, you must write the names of your collaborators. This is a matter of academic honesty; it will not affect your marks. 
+You are allowed, even encouraged, to work with others on homework assignments, but you must write up your solutions **on your own**. In other words, you **may not** copy someone else&rsquo;s write-up and you **may not** write your solutions side by side with someone else. On your submission, you must write the names of your collaborators. This is a matter of academic honesty; it will not affect your marks. 
 
 There will be no collaboration on the exams.
 
 
 # Miscellenous
 
-<div class="intro">
+<div class=&ldquo;intro&rdquo;>
 
 > Algebra is nothing but written geometry; geometry is nothing but pictured algebra.  
 > &#x2014; Sophie Germain (1776&#x2013;1831)
