@@ -103,7 +103,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">7</td>
-<td class="org-left"><a href="classwork07.pdf">Grassmannians</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/515cea51-64d5-445d-aaaa-6526765b021c?list=studio">Video</a></td>
+<td class="org-left"><a href="classwork07.pdf">Grassmannians</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/515cea51-64d5-445d-aaaa-6526765b021c?list=studio">Video</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/beb6fe34-c764-4c09-92c2-93edd85f7861">Video</a>/<a href="notes/2021-09-24.pdf">Board</a></td>
 <td class="org-left">Mid-semester exam</td>
 </tr>
 
