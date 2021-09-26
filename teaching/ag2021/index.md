@@ -11,7 +11,7 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 # Announcements
 
 1.  Homework 3 is up on Gradescope.
-2.  The [classwork for week 7](classwork07.pdf) is up.
+2.  The [classwork for week 8](classwork08.pdf) is up.
 
 
 # Links
