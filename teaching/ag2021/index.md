@@ -110,35 +110,35 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">8</td>
-<td class="org-left">Irreducibility</td>
+<td class="org-left"><a href="classwork08.pdf">Irreducibility and rational maps</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/5bb2a527-c57a-4ef4-a3dd-0106216db85f">Video</a>/<a href="notes/2021-09-27.pdf">Board</a></td>
 <td class="org-left">Assignment 3</td>
 </tr>
 
 
 <tr>
 <td class="org-right">9</td>
-<td class="org-left">Rational maps</td>
+<td class="org-left">Dimension</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 
 <tr>
 <td class="org-right">10</td>
-<td class="org-left">Dimension</td>
+<td class="org-left">Tangent spaces and smoothness</td>
 <td class="org-left">Assignment 4</td>
 </tr>
 
 
 <tr>
 <td class="org-right">11</td>
-<td class="org-left">Grassmannians</td>
+<td class="org-left">Completeness</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 
 <tr>
 <td class="org-right">12</td>
-<td class="org-left">Tangent spaces and singularities</td>
+<td class="org-left">???</td>
 <td class="org-left">Assignment 5</td>
 </tr>
 </tbody>
