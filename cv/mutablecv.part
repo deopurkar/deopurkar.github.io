@@ -20,36 +20,6 @@
 * {{ student.who  }}, *{{ student.what  }}*, {{ student.where  }},  {{ student.when }}. {% if student.comment %} ({{ student.comment  }}). {% endif %}{% endunless %}
 {% endfor %} 
 
-## Teaching
-
-### At the Australian National University
-
-{% assign here = site.data.classes | where:"where", "ANU" %}
-{% for class in here %}  {% unless class.omitcv  %}
-* {{ class.what }}, {{ class.when }}.{% if class.comment %}*{{ class.comment }}*{% endif %}
-{% endunless %}{% endfor %}
-
-### At the University of Georgia
-
-{% assign here = site.data.classes | where:"where", "UGA" %}
-{% for class in here %}  {% unless class.omitcv  %}
-* {{ class.what  }}, {{ class.when }}.{% if class.comment %}*{{ class.comment  }}*{% endif %}
-{% endunless %}{% endfor %}
-
-### At Columbia University
-
-{% assign here = site.data.classes | where:"where", "Columbia" %}
-{% for class in here %}  {% unless class.omitcv  %}
-* {{ class.what }}, {{ class.when }}.{% if class.comment %} *{{ class.comment }}*{% endif %}
-{% endunless %}{% endfor %}
-
-### At Harvard University
-
-{% assign here = site.data.classes | where:"where", "Harvard" %}
-{% for class in here %}  {% unless class.omitcv  %}
-* {{ class.what }}, {{ class.when }}.{% if class.comment %} *{{ class.comment }}*{% endif %}
-{% endunless %}{% endfor %}
-
 ## Invited Talks and Presentations
 
 ### In conferences or workshops
