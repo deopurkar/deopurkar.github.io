@@ -1,6 +1,12 @@
+- title: "A universal formula for counting cubic surfaces"
+- coauthors: ["[Anand Patel](https://sites.google.com/view/anand-patel)", "[Dennis Tseng](https://sites.google.com/view/dennis-tseng)"]
+- abstract: Using equivariant geometry, we find a universal formula that computes the number of times a general cubic surface arises in a family. As applications, we show that the PGL(4) orbit closure of a generic cubic surface has degree 96120, and that a general cubic surface arises 42120 times as a hyperplane section of a general cubic 3-fold.
+- formats:
+    arxiv: https://arxiv.org/abs/2109.12672
+
 - title: "Spherical objects and stability conditions on CY2 quiver categories"
   coathors: ["[Asilata Bapat](https://asilata.github.io/)", "[Anthony Licata](https://maths-people.anu.edu.au/~licatat/)"]
-  abstract: "We devise an algorithm to simplify objects in CY2 triangulated categories using carefully chosen spherical twists."
+  abstract: "Consider a 2-Calabi--Yau triangulated category with a Bridgeland stability condition. We devise an effective procedure to reduce the phase spread of an object by applying spherical twists. Using this, we give new proofs of the following theorems for 2-Calabi--Yau categories associated to ADE quivers: (1) all spherical objects lie in a single orbit of the braid group, and (2) the space of Bridgeland stability conditions is connected."
   journal: Pre-print
   formats:
     arxiv:  https://arxiv.org/abs/2108.09155
@@ -21,7 +27,7 @@ We realize the moduli space of stable anticanonical tropical cubics as a four-di
     arXiv: https://arxiv.org/abs/1906.08196
 
 - title: Ramification divisors of general projections
-  coauthors: ["[Eduard Duryev](https://eduryev.weebly.com/)", "[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
+  coauthors: ["[Eduard Duryev](https://eduryev.weebly.com/)", "[Anand Patel](https://sites.google.com/view/anand-patel)"]
   abstract:   We study the ramification divisors of projections of a smooth projective variety onto a linear subspace of the same dimension. We prove that the ramification divisors vary in a maximal dimensional family for a large class of varieties. Going further, we study the map that associates to a linear projection its ramification divisor. We show that this map is dominant for most (but not all!) varieties of minimal degree, using (linked) limit linear series of higher rank. We find the degree of this map in some cases, extending the classical appearance of Catalan numbers in the geometry of rational normal curves, and give a geometric explanation of its fibers in terms of torsion points of naturally occurring elliptic curves in the case of the Veronese surface and the quartic rational surface scroll.
   journal: Documenta Mathematica, to appear
   formats:
@@ -37,7 +43,7 @@ We realize the moduli space of stable anticanonical tropical cubics as a four-di
   abstract: We describe a compactification of the moduli space of pairs (S,C) where S is a smooth quadric surface in 3-space and C is a smooth divisor on S of class (3,3). We show that the compactified moduli space is a smooth Deligne-Mumford stack with 4 boundary components. We relate our compactification with compactifications of the moduli space of genus 4 curves. In particular, we show that our space compactifies the blow-up of the hyperelliptic locus. We also relate our compactification to a compactification of the Hurwitz space of triple coverings of the projective line by genus 4 curves.
 
 - title: Vector bundles and finite covers
-  coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
+  coauthors: ["[Anand Patel](https://sites.google.com/view/anand-patel)"]
   journal: "Pre-print, [arXiv:1608.01711](https://arxiv.org/abs/1608.01711/)"
   formats:
     pdf: /research/papers/ebundle.pdf
@@ -45,7 +51,7 @@ We realize the moduli space of stable anticanonical tropical cubics as a four-di
   abstract:   Motivated by the problem of finding algebraic constructions of finite coverings in commutative algebra, the Steinitz realization problem in number theory, and the study of Hurwitz spaces in algebraic geometry, we investigate the vector bundles underlying the structure sheaf of a finite flat branched covering. We prove that, up to a twist, every vector bundle on a smooth projective curve arises from the direct image of the structure sheaf of a smooth, connected branched cover.
 
 - title: Syzygy divisors on Hurwitz spaces
-  coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
+  coauthors: ["[Anand Patel](https://sites.google.com/view/anand-patel)"]
   journal: Contemporary Mathematics, vol. 703, 209--222, 2018
   formats:
     pdf: /research/papers/HigherMaroni.pdf
@@ -106,7 +112,7 @@ We realize the moduli space of stable anticanonical tropical cubics as a four-di
     We algebraically compute the class of the Hodge eigenbundles in the cyclic covering construction using Grothendieck-Riemann-Roch for stacks.
 
 - title: Sharp slope bounds for sweeping families of trigonal curves
-  coauthors: ["[Anand Patel](https://www2.bc.edu/anand-p-patel/)"]
+  coauthors: ["[Anand Patel](https://sites.google.com/view/anand-patel)"]
   journal: Mathematical Research Letters, 20(3):868--884, 2013
   formats:
     pdf: /research/papers/TrigonalSlopes.pdf
