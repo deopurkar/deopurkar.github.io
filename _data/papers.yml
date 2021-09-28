@@ -1,13 +1,14 @@
 - title: "A universal formula for counting cubic surfaces"
-- coauthors: ["[Anand Patel](https://sites.google.com/view/anand-patel)", "[Dennis Tseng](https://sites.google.com/view/dennis-tseng)"]
-- abstract: Using equivariant geometry, we find a universal formula that computes the number of times a general cubic surface arises in a family. As applications, we show that the PGL(4) orbit closure of a generic cubic surface has degree 96120, and that a general cubic surface arises 42120 times as a hyperplane section of a general cubic 3-fold.
-- formats:
+  coauthors: ["[Anand Patel](https://sites.google.com/view/anand-patel)", "[Dennis Tseng](https://sites.google.com/view/dennis-tseng)"]
+  abstract: Using equivariant geometry, we find a universal formula that computes the number of times a general cubic surface arises in a family. As applications, we show that the PGL(4) orbit closure of a generic cubic surface has degree 96120, and that a general cubic surface arises 42120 times as a hyperplane section of a general cubic 3-fold.
+  journal: "Pre-print [arxiv:2018.12672](https://arxiv.org/abs/2109.12672)"
+  formats:
     arxiv: https://arxiv.org/abs/2109.12672
 
 - title: "Spherical objects and stability conditions on CY2 quiver categories"
   coathors: ["[Asilata Bapat](https://asilata.github.io/)", "[Anthony Licata](https://maths-people.anu.edu.au/~licatat/)"]
   abstract: "Consider a 2-Calabi--Yau triangulated category with a Bridgeland stability condition. We devise an effective procedure to reduce the phase spread of an object by applying spherical twists. Using this, we give new proofs of the following theorems for 2-Calabi--Yau categories associated to ADE quivers: (1) all spherical objects lie in a single orbit of the braid group, and (2) the space of Bridgeland stability conditions is connected."
-  journal: Pre-print
+  journal: "Pre-print [arXiv:2018.09155](https://arxiv.org/abs/2108.09155)"
   formats:
     arxiv:  https://arxiv.org/abs/2108.09155
 
