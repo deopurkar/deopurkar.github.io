@@ -110,7 +110,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">8</td>
-<td class="org-left"><a href="classwork08.pdf">Irreducibility and rational maps</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/5bb2a527-c57a-4ef4-a3dd-0106216db85f">Video</a>/<a href="notes/2021-09-27.pdf">Board</a></td>
+<td class="org-left"><a href="classwork08.pdf">Irreducibility and rational maps</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/5bb2a527-c57a-4ef4-a3dd-0106216db85f">Video</a>/<a href="notes/2021-09-27.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/09931dad-b242-415a-b602-f73895fb437e">Video</a>/<a href="notes/2021-10-01.pdf">Board</a></td>
 <td class="org-left">Assignment 3</td>
 </tr>
 
