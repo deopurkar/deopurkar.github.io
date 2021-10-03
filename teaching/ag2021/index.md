@@ -11,7 +11,7 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 # Announcements
 
 1.  Homework 3 is up on Gradescope.
-2.  The [classwork for week 8](classwork08.pdf) is up.
+2.  The [classwork for week 9](classwork09.pdf) is up.
 
 
 # Links
@@ -117,7 +117,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">9</td>
-<td class="org-left">Dimension</td>
+<td class="org-left"><a href="classwork09.pdf">Dimension</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
