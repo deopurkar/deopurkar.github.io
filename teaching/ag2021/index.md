@@ -117,7 +117,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">9</td>
-<td class="org-left"><a href="classwork09.pdf">Dimension</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/bfe908f1-9963-408c-aa61-fcdcf20cd37d">Video</a>/<a href="notes/2021-10-05.pdf">Board</a></td>
+<td class="org-left"><a href="classwork09.pdf">Dimension</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/bfe908f1-9963-408c-aa61-fcdcf20cd37d">Video</a>/<a href="notes/2021-10-05.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/eb4d6065-5028-4f25-9c29-ee0bfecd628a">Video</a>/<a href="notes/2021-10-08.pdf">Board</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
