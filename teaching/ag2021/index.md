@@ -10,8 +10,8 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 
 # Announcements
 
-1.  Homework 3 is up on Gradescope.
-2.  The [classwork for week 9](classwork09.pdf) is up.
+1.  Homework 4 is up on Gradescope.
+2.  The [classwork for week 10](classwork10.pdf) is up.
 
 
 # Links
@@ -124,7 +124,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">10</td>
-<td class="org-left">Tangent spaces and smoothness</td>
+<td class="org-left"><a href="classwork10.pdf">Tangent spaces and smoothness</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/2d902b69-60c8-4dd8-8e6c-0b7a7fc1f3fa">Video</a>/<a href="notes/2021-10-11.pdf">Board</a></td>
 <td class="org-left">Assignment 4</td>
 </tr>
 
