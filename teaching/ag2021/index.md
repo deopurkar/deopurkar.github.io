@@ -124,7 +124,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">10</td>
-<td class="org-left"><a href="classwork10.pdf">Tangent spaces and smoothness</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/2d902b69-60c8-4dd8-8e6c-0b7a7fc1f3fa">Video</a>/<a href="notes/2021-10-11.pdf">Board</a></td>
+<td class="org-left"><a href="classwork10.pdf">Tangent spaces and smoothness</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/2d902b69-60c8-4dd8-8e6c-0b7a7fc1f3fa">Video</a>/<a href="notes/2021-10-11.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/5ee9271f-1dbc-473d-805b-920b68ce2151">Video</a>/<a href="notes/2021-10-15.pdf">Board</a></td>
 <td class="org-left">Assignment 4</td>
 </tr>
 
@@ -198,4 +198,437 @@ There will be no collaboration on the exams.
 ![The Kummer quartic](K3.png)
 
 </div>
+
+
+# Tables
+
+
+## Emails
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">ITEM</th>
+<th scope="col" class="org-left">email</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">Chuang,Xu</td>
+<td class="org-left">u6701787@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Daniel Gesling</td>
+<td class="org-left">u6280960@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Dillon Chen</td>
+<td class="org-left">u6942650@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Emily Bray</td>
+<td class="org-left">u6703464@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Ernest Petherbridge</td>
+<td class="org-left">u7129669@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Fabian Antonio Circelli</td>
+<td class="org-left">u6409647@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Georgiana Lyall</td>
+<td class="org-left">u6431454@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Grover Lancaster-Cole</td>
+<td class="org-left">u6675502@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Jia,Toh</td>
+<td class="org-left">u6563961@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Jiawei Zheng</td>
+<td class="org-left">u6686760@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Leyao Zha</td>
+<td class="org-left">u7110531@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Reef,Kitaeff</td>
+<td class="org-left">u7132412@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Samuel Jolley</td>
+<td class="org-left">u7118146@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Shivang Sachar</td>
+<td class="org-left">u6837607@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Vandit Trivedi</td>
+<td class="org-left">u7124795@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Thomas Burnett</td>
+<td class="org-left">u7116015@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Chuang Xu</td>
+<td class="org-left">u6701787@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Reef Kitaeff</td>
+<td class="org-left">u7132412@anu.edu.au</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Zin Li</td>
+<td class="org-left">u6104400@anu.edu.au</td>
+</tr>
+</tbody>
+</table>
+
+
+## Writeup marks
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">ITEM</th>
+<th scope="col" class="org-right">mark</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">Students</td>
+<td class="org-right">223</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Chuang,Xu</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Daniel Gesling</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Dillon Chen</td>
+<td class="org-right">18</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 2 writeup</td>
+<td class="org-right">9</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 5 writeup</td>
+<td class="org-right">9</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Emily Bray</td>
+<td class="org-right">17</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 3 writeup</td>
+<td class="org-right">8</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 6 writeup</td>
+<td class="org-right">9</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Ernest Petherbridge</td>
+<td class="org-right">9</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 4 writeup</td>
+<td class="org-right">9</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Fabian Antonio Circelli</td>
+<td class="org-right">18</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 2 writeup</td>
+<td class="org-right">9</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 5 writeup</td>
+<td class="org-right">9</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Georgiana Lyall</td>
+<td class="org-right">18</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 2 writeup</td>
+<td class="org-right">8</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 4 writeup</td>
+<td class="org-right">10</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Grover Lancaster-Cole</td>
+<td class="org-right">18</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 3 writeup</td>
+<td class="org-right">8</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 6 writeup</td>
+<td class="org-right">10</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Jia,Toh</td>
+<td class="org-right">17</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 3 writeup</td>
+<td class="org-right">7</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 6 writeup</td>
+<td class="org-right">10</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Jiawei Zheng</td>
+<td class="org-right">17</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 4 writeup</td>
+<td class="org-right">8</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 6 writeup</td>
+<td class="org-right">9</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Leyao Zha</td>
+<td class="org-right">13</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 2 writeup</td>
+<td class="org-right">7</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 5 writeup</td>
+<td class="org-right">6</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Samuel Jolley</td>
+<td class="org-right">9</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 2 writeup</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 5 writeup</td>
+<td class="org-right">9</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Shivang Sachar</td>
+<td class="org-right">20</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 2 writeup</td>
+<td class="org-right">10</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 5 writeup</td>
+<td class="org-right">10</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Vandit Trivedi</td>
+<td class="org-right">8</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 3 writeup</td>
+<td class="org-right">8</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 6 writeup</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Thomas Burnett</td>
+<td class="org-right">19</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 4 writeup</td>
+<td class="org-right">9</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 8 writeup</td>
+<td class="org-right">10</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Chuang Xu</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;Zin Li</td>
+<td class="org-right">22</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 3 writeup</td>
+<td class="org-right">8</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 5 writeup</td>
+<td class="org-right">7</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;Week 8 writeup</td>
+<td class="org-right">7</td>
+</tr>
+</tbody>
+</table>
 
