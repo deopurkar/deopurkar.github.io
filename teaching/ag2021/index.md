@@ -10,8 +10,8 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 
 # Announcements
 
-1.  Homework 4 is up on Gradescope.
-2.  The [classwork for week 10](classwork10.pdf) is up.
+1.  Homework 5 is up on Gradescope.
+2.  The [classwork for week 11](classwork11.pdf) is up.
 
 
 # Links
