@@ -187,8 +187,6 @@ There will be no collaboration on the exams.
 
 # Miscellenous
 
-<div class=&ldquo;intro&rdquo;>
-
 > Algebra is nothing but written geometry; geometry is nothing but pictured algebra.  
 > &#x2014; Sophie Germain (1776&#x2013;1831)
 
@@ -196,6 +194,4 @@ There will be no collaboration on the exams.
 > &#x2014; Omar Khayyam (1048&#x2013;1131)
 
 ![The Kummer quartic](K3.png)
-
-</div>
 
