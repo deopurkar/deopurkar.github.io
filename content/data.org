@@ -1,0 +1,718 @@
+#+title: Data
+#+author: Anand Deopurkar
+#+startup: noptag overview
+
+* Papers                                                              :paper:
+** A universal formula for counting cubic surfaces
+:PROPERTIES:
+:with:     [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]]
+:journal:  Pre-print
+:link:     [[https://arxiv.org/abs/2109.12672][arxiv:2019.12672]]
+:END:
+Using equivariant geometry, we find a universal formula that computes the number of times a general cubic surface arises in a family. As applications, we show that the PGL(4) orbit closure of a generic cubic surface has degree 96120, and that a general cubic surface arises 42120 times as a hyperplane section of a general cubic 3-fold.
+    
+** Spherical objects and stability conditions on CY2 quiver categories
+:PROPERTIES:
+:with:     [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
+:journal:  Pre-print
+:link:     [[https://arxiv.org/abs/2108.09155][arXiv:2018.09155]]
+:END:
+Consider a 2-Calabi--Yau triangulated category with a Bridgeland stability condition. We devise an effective procedure to reduce the phase spread of an object by applying spherical twists. Using this, we give new proofs of the following theorems for 2-Calabi--Yau categories associated to ADE quivers: (1) all spherical objects lie in a single orbit of the braid group, and (2) the space of Bridgeland stability conditions is connected.
+
+** A Thurston compactification of the space of stability conditions
+:PROPERTIES:
+:with:     [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
+:journal:  Pre-print
+:link:     [[https://arxiv.org/abs/2011.07908][arXiv:2011.07908]]
+:END:
+We define a map from the space of Bridgeland stability conditions on a triangulated category C to an infinite projective space.  We conjecture that under some mild assumptions on the triangulated category C this map to be a homeomorphism onto its image and that the closure is a real manifold with boundary.   Thus we obtain a compactification of the space of stability conditions.  Both the definition and expected properties of this compactification are analogous in many respects to Thurston's compactification of the Teichmuller space of a hyperbolic surface. In this paper we study in detail the case when C is the 2-Calabi-Yau category associated to the $A_2$ quiver, and prove our conjectures in that case.
+
+** Anticanonical tropical cubic del Pezzos contain exactly 27 lines
+:PROPERTIES:
+:with:     [[https://people.math.osu.edu/cueto.5/][María Angélica Cueto]]
+:journal:  Pre-print
+:link:     [[https://arxiv.org/abs/1906.08196][arXiv:1906.08196]]
+:END:
+The classical statement of Cayley-Salmon that there are 27 lines on every smooth cubic surface in P^3 fails to hold under tropicalization: a tropical cubic surface in TP^3 often contains infinitely many tropical lines. Under mild genericity assumptions, we show that when embedded using the Eckardt triangles in the anticanonical system, tropical cubic del Pezzo surfaces contain exactly 27 tropical lines. In the non-generic case, which we identify explicitly, we find up to 27 extra lines, no multiple of which lifts to a curve on the cubic surface. We realize the moduli space of stable anticanonical tropical cubics as a four-dimensional fan in R^40 with an action of the Weyl group W(E_6). In the absence of Eckardt points, we show the combinatorial types of these tropical surfaces are determined by the boundary arrangement of 27 metric trees corresponding to the tropicalization of the classical 27 lines on the smooth algebraic cubic surfaces. Tropical convexity and the combinatorics of the root system E_6 play a central role in our analysis.
+
+** Ramification divisors of general projections
+:PROPERTIES:
+:with:     [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]]
+:journal:  Documenta Mathematica, to appear
+:link:     [[file:papers/PR.pdf][pdf]], [[http://arxiv.org/abs/1901.01513/][arxiv:1901.01513]]
+:END:
+We study the ramification divisors of projections of a smooth projective variety onto a linear subspace of the same dimension. We prove that the ramification divisors vary in a maximal dimensional family for a large class of varieties. Going further, we study the map that associates to a linear projection its ramification divisor. We show that this map is dominant for most (but not all!) varieties of minimal degree, using (linked) limit linear series of higher rank. We find the degree of this map in some cases, extending the classical appearance of Catalan numbers in the geometry of rational normal curves, and give a geometric explanation of its fibers in terms of torsion points of naturally occurring elliptic curves in the case of the Veronese surface and the quartic rational surface scroll.
+
+** Stable log surfaces, admissible covers, and canonical curves of genus 4
+:PROPERTIES:
+:with:     Changho Han
+:journal:  Transactions of the AMS, to appear
+:link:     [[file:papers/TrigonalKSBA.pdf][pdf]], [[https://arxiv.org/abs/1807.08413/][arxiv:1807.08413]]
+:END: 
+We describe a compactification of the moduli space of pairs (S,C) where S is a smooth quadric surface in 3-space and C is a smooth divisor on S of class (3,3). We show that the compactified moduli space is a smooth Deligne-Mumford stack with 4 boundary components. We relate our compactification with compactifications of the moduli space of genus 4 curves. In particular, we show that our space compactifies the blow-up of the hyperelliptic locus. We also relate our compactification to a compactification of the Hurwitz space of triple coverings of the projective line by genus 4 curves.
+
+** Vector bundles and finite covers
+:PROPERTIES:
+:with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
+:journal:  Pre-print
+:link:     [[file:papers/ebundle.pdf][pdf]], [[https://arxiv.org/abs/1608.01711/][arXiv:1608.01711]]
+:END:
+Motivated by the problem of finding algebraic constructions of finite coverings in commutative algebra, the Steinitz realization problem in number theory, and the study of Hurwitz spaces in algebraic geometry, we investigate the vector bundles underlying the structure sheaf of a finite flat branched covering. We prove that, up to a twist, every vector bundle on a smooth projective curve arises from the direct image of the structure sheaf of a smooth, connected branched cover.
+
+** Syzygy divisors on Hurwitz spaces
+:PROPERTIES:
+:with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
+:journal:  Contemporary Mathematics, vol. 703, 209--222, 2018
+:link:     [[file:papers/HigherMaroni.pdf][pdf]], [[https://arxiv.org/abs/1805.00648][arxiv:1805.00648]]
+:END:
+We describe a sequence of effective divisors on the Hurwitz space H(d,g) for d dividing g-1 and compute their cycle classes on a partial compactification. These divisors arise from vector bundles of syzygies canonically associated to a branched cover. We find that the cycle classes are all proportional to each other.
+
+** The canonical syzygy conjecture for ribbons
+:PROPERTIES:
+:journal: Mathematische Zeitschrift, 288(3), 1157--1164, 2018
+:link: [[papers/RibbonGreen.pdf][pdf]], [[http://arxiv.org/abs/1510.07755/][arxiv:1510.07755]]
+:END:
+We prove the analogue for ribbons of Green\'s canonical syzygy conjecture, formulated by Bayer and Eisenbud. Our proof uses the results of Voisin and Hirschowitz-Ramanan on Green\'s conjecture for general smooth curves.
+
+** Covers of stacky curves and limits of plane quintics
+:PROPERTIES:
+:journal: Transactions of the AMS, 371, 549--588
+:link: [[papers/StackyAdmissibleCovers.pdf][pdf]], [[http://arxiv.org/abs/1507.03252/][arxiv:1507.03252]]
+:END:
+We construct a well-behaved compactification of the space of finite covers of a stacky curve using admissible cover degenerations. Using our construction, we compactify the space of tetragonal curves on Hirzebruch surfaces. As an application, we explicitly describe the boundary divisors of the closure in $\overline{M}_6$ of the locus of smooth plane quintic curves.
+
+** The Picard rank conjecture for the Hurwitz spaces of degree up to five
+:PROPERTIES:
+:with: [[https://www2.bc.edu/anand-p-patel/][Anand Patel]]
+:journal: Algebra and Number Theory, 9(2):459--492, 2015
+:link: [[papers/PicH345.pdf][pdf]], [[http://arxiv.org/abs/1401.6101/][arxiv:1401.6101]], [[http://msp.org/ant/2015/9-2/p05.xhtml][journal]]
+:END:
+We prove that the rational Picard group of the simple Hurwitz space H_{d,g} is trivial for d up to five. We also relate the rational Picard groups of the Hurwitz spaces to the rational Picard groups of the Severi varieties of nodal curves on Hirzebruch surfaces.
+
+** Groebner techniques for ribbons
+:PROPERTIES:
+:with: [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]]
+:journal: Albanian Journal of Mathematics, 8(1):55--70, 2014
+:link: [[papers/groebner.pdf][pdf]], [[https://sites.google.com/site/albjmath/archives/vol-8/2014-6][journal]]
+:END:
+We use Groebner basis techniques to study the balanced canonical ribbon in each odd genus g \geq 5. We obtain equations and syzygies of the ribbon, give a Groebner interpretation of part of Alper, Fedorchuk, and Smyth\'s proof of finite Hilbert stability for canonical curves, and discuss the obstacles in using ribbons to give a new proof of Generic Green\'s Conjecture (Voisin\'s Theorem).
+
+** Toward GIT stability of syzygies of canonical curves
+:PROPERTIES:
+:with: [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]]
+:journal: Algebraic Geometry (Foundation Compositio Mathematica), 3:1--22, 2016
+:link: [[http://arxiv.org/abs/1401.6101/][arxiv:1401.6101]], [[http://www.algebraicgeometry.nl/2016-1/2016-1-001.pdf][journal]]
+:END:
+We introduce the problem of GIT stability for syzygy points of canonical curves with a view toward a GIT construction of the canonical model of the moduli space of stable curves. As the first step in this direction, we prove semi-stability of the first syzygy point for a general canonical curve of odd genus. 
+
+** Class of the Hodge eigenbundle using orbifold Riemann-Roch
+:PROPERTIES:
+:journal: Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]]
+:link: [[papers/CyclicAppendix.pdf][pdf]]
+:END:
+We algebraically compute the class of the Hodge eigenbundles in the cyclic covering construction using Grothendieck-Riemann-Roch for stacks.
+
+** Sharp slope bounds for sweeping families of trigonal curves
+:PROPERTIES:
+:with: [[https://sites.google.com/view/anand-patel][Anand Patel]]
+:journal: Mathematical Research Letters, 20(3):868--884, 2013
+:link: [[papers/TrigonalSlopes.pdf][pdf]], [[http://arxiv.org/abs/1211.2827/][arxiv:1211.2827]], [[http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/][journal]]
+:END:
+We establish sharp bounds for the slopes of curves in $\overline{M}_g$ that sweep the locus of trigonal curves, proving Stankova-Frenkel\'s conjectured bound of 7+6/g for even g and obtaining the bound 7+20/(3g+1) for odd g. For even g, we find an explicit expression of the so-called Maroni divisor in the Picard group of the space of admissible triple covers. For odd g, we describe the analogous extremal effective divisor and give a similar explicit expression. 
+
+** Modular compactifications of the space of marked trigonal curves
+:PROPERTIES:
+:journal: Advances in Mathematics, 248(0):96--154, 2013  
+:link: [[papers/MarkedTrigonal.pdf][pdf]], [[http://arxiv.org/abs/1206.4503/][arxiv:1206.4503]]
+:END:
+We construct a sequence of modular compactifications of the space of marked trigonal curves by allowing the branch points to coincide to a given extent. Beginning with the standard admissible cover compactification, the sequence first proceeds through contractions of the boundary divisors and then through flips of the so-called Maroni strata, culminating in a Fano model for even genera and a Fano fibration for odd genera. While the sequence of divisorial contractions arises from a more general construction, the sequence of flips uses the particular geometry of triple covers. We explicitly describe the Mori chamber decomposition given by this sequence of flips.
+
+** Compactifications of Hurwitz spaces
+:PROPERTIES:
+:journal: International Mathematical Research Notices, 2014(14):3863--3911, 2013  
+:link: [[papers/CompHurwitz.pdf][pdf]], [[http://arxiv.org/abs/1206.4535/][arxiv:1206.4535]], [[http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract][journal]]
+:END:
+
+** Alternate compactifications of Hurwitz spaces
+:PROPERTIES:
+:journal: Thesis, Harvard, 2012
+:link: [[papers/thesis.pdf][pdf]]
+:END:
+
+** An introduction to intersection homology                     :expository:
+:properties:
+:journal:  Minor thesis, Harvard, 2010 
+:link: [[file:papers/anandrd_minor_thesis.pdf][pdf]]
+:end:
+
+** Normalization of algebraic varieties :expository:
+:properties:
+:comment: MIT Undergruate Journal of Mathematics
+:link: [[file:papers/anandrd_ug_thesis.pdf][pdf]]
+:end:
+
+* Talks                                                                :talk:
+
+* Odds and ends                                                       :other:
+** GIT for syzygies of genus 7 curves                               
+:PROPERTIES:
+:comment: Ongoing project to determine GIT stability for syzygies of genus 7 canonical curves
+:primary-link: [[file:genus7syz/index.html][web]]
+:END:
+
+** Categorical braid group actions
+:properties:
+:with: [[https://asilata.github.io][Asilata Bapat]]
+:comment: ~Sage~ code to compute the braid group action on the triangulated category of complexes of projective modules over the zig-zag algebra of a quiver
+:primary-link: [[https://github.com/asilata/cobracat][github]]
+:end:
+
+
+** MSI course graph
+:PROPERTIES:
+:comment: An interactive dependency graph of ANU math department's course catalogue
+:primary-link:     [[https://deopurkar.github.io/msicg/]]
+:END:
+** A mystery hunt style puzzle
+:properties:
+:primary-link: [[file:misc/puzzle.pdf]]
+:end:
+** Some visualisations
+*** The blow up of a planar triple point
+:properties:
+:primary-link: [[file:misc/blowup-of-a-triple-point.html]]
+:secondary-link: [[misc/blow-up-of-a-triple-point.sage][sage code]]
+:end:
+*** A conic fibration on a cubic surface
+:properties:
+:primary-link: [[file:misc/cubic.gif]]
+:secondary-link: [[file:misc/cubic-fibration.sage][sage code]]
+:end:
+** Seminars
+*** DbCoh (ANU)
+:properties:
+:comment: A reading seminar on Fourier Mukai Transforms in Algebraic Geometry by D. Huybrechts
+:primary-link: [[file:seminars/dbcoh/]]
+:end:
+*** Mixed hodge modules (UGA)
+:properties:
+:primary-link: [[file:seminars/mhm/]]
+:end:
+*** Stable rationality (Columbia)
+:properties:
+:primary-link: [[file:seminars/seminar16/]]
+:end:
+** The work of Claire Voisin
+:properties:
+:comment: Women in mathematics day, ANU
+:primary-link: [[file:talks/wimtalk.pdf]]
+:end:
+
+
+* Activities                                                       :activity:
+** [[https://emacsconf.org/2021/][EmacsConf 2021]]
+SCHEDULED: <2021-11-27 Sat>
+:properties:
+:location: online
+:date: "2021-11-27"
+:category: presentation
+:end:
+
+** [[https://sites.google.com/view/symposium-dits/][Dynamical Systems in Triangulated Categories and Surfaces (DiTS)]]
+SCHEDULED: <2021-06-21 Mon>
+:properties:
+:location: online
+:date: "2021-06-21"
+:category: presentation
+:end:
+
+** AMS special session on geometric and categorical methods in representation theory
+SCHEDULED: <2021-05-01 Sat>
+:properties:
+:location: online
+:date: "2021-05-01"
+:category: presentation
+:end:
+
+** [[https://sites.google.com/view/repnetvirtualseminar/home][RepNet Virtual seminar]]
+SCHEDULED: <2021-01-27 Wed>
+:properties:
+:location: online
+:date: "2021-01-27"
+:category: presentation
+:link: [[https://media.ed.ac.uk/playlist/dedicated/51612401/1_ekm4jzrk/1_k02igrw4][video]]
+:end:
+
+** Algebra Seminar
+SCHEDULED: <2020-11-30 Mon>
+:properties:
+:location: University of Georgia
+:date: "2020-11-30"
+:category: presentation
+:end:
+
+** [[https://sites.google.com/view/mooloolaba2020/home][New Connections in Representation Theory]]
+SCHEDULED: <2020-02-10 Mon>
+:properties:
+:location: Mooloolaba, Queensland
+:date: "2020-02-10"
+:category: presentation
+:link: [[file:slides/bapat-mooloolaba-2020.pdf][slides]]
+:end:
+
+** Triangulated Categories in Geometry and Representation Theory
+SCHEDULED: <2019-06-24 Mon>
+:properties:
+:location: University of Sydney
+:date: "2019-06-24"
+:category: presentation
+:end:
+
+** [[https://genderinstitute.anu.edu.au/women-mathematics-one-day-meeting-anu][Women of Mathematics: a one-day meeting at the ANU]]
+SCHEDULED: <2019-02-27 Wed>
+:properties:
+:location: Australian National University
+:date: "2019-02-27"
+:category: presentation
+:end:
+
+** Pure Mathematics Seminar
+SCHEDULED: <2019-02-01 Fri>
+:properties:
+:location: University of Queensland
+:date: "2019-02-01"
+:category: presentation
+:end:
+
+** Special session in Representation Theory, AustMS 2018
+SCHEDULED: <2018-12-07 Fri>
+:properties:
+:location: University of Adelaide
+:date: "2018-12-07"
+:category: presentation
+:end:
+
+** [[https://ssgrt2018.ist.ac.at/][Summer School on Geometric Representation Theory]]
+SCHEDULED: <2018-07-09 Mon>
+:properties:
+:date: "2018-07-09"
+:display-date: Jul 2018
+:current: false
+:category: other
+:location: IST Austria
+:with: Iordan Ganev, Maitreyee Kulkarni, Jacob Matherne
+:end:
+
+** Mathematics seminar
+SCHEDULED: <2018-07-03 Tue>
+:properties:
+:location: Indian Institute of Science
+:date: "2018-07-03"
+:category: *presentatio:end:
+
+** Pure mathematics seminar
+SCHEDULED: <2018-05-25 Fri>
+:properties:
+:location: University of Melbourne
+:date: "2018-05-25"
+:category: presentation
+:end:
+
+** Future Directions in Representation Theory
+SCHEDULED: <2017-12-04 Mon>
+:properties:
+:location: University of Sydney
+:date: "2017-12-04"
+:category: presentation
+:comment: poster
+:end:
+
+** Algebra Seminar
+SCHEDULED: <2017-12-01 Fri>
+:properties:
+:current: false
+:date: "2017-12-01"
+:display-date: 2016-2017
+:with: Chun-Ju Lai, Paul Sobaje
+:location: University of Georgia
+:category: other
+:end:
+
+** Workshop on Topics in Algebraic Geometry
+SCHEDULED: <2017-11-03 Fri>
+:properties:
+:location: University of North Carolina at Chapel Hill
+:date: "2017-11-03"
+:category: presentation
+:end:
+
+** Canada/USA Mathcamp 2017
+SCHEDULED: <2017-07-31 Mon>
+:properties:
+:location: University of Puget Sound
+:date: "2017-07-31"
+:category: presentation
+:end:
+
+** Geometric representation theory seminar
+SCHEDULED: <2017-03-30 Thu>
+:properties:
+:location: University of Toronto
+:date: "2017-03-30"
+:category: presentation
+:end:
+
+** Algebraic Geometry, Arithmetic Geometry, and Commutative Algebra Seminar
+SCHEDULED: <2017-03-24 Fri>
+:properties:
+:location: University of South Carolina
+:date: "2017-03-24"
+:category: presentation
+:end:
+
+** Special session on Geometric Methods in Representation Theory, AMS Southeastern Spring Sectional Meeting
+SCHEDULED: <2017-03-10 Fri>
+:properties:
+:location: Charleston
+:date: "2017-03-10"
+:category: presentation
+:end:
+
+** Special session on New Developments in Noncommutative Algebra and Representation Theory, AMS Joint Mathematical Meeting
+SCHEDULED: <2017-01-07 Sat>
+:properties:
+:location: Atlanta
+:date: "2017-01-07"
+:category: presentation
+:end:
+
+** Mathematics Seminar
+SCHEDULED: <2016-12-20 Tue>
+:properties:
+:location: Indian Institute of Science Education and Research, Pune
+:date: "2016-12-20"
+:category: presentation
+:end:
+
+** Algebra Seminar
+SCHEDULED: <2016-11-14 Mon>
+:properties:
+:location: University of Georgia
+:date: "2016-11-14"
+:category: presentation
+:end:
+
+** Algebra Seminar
+SCHEDULED: <2016-09-12 Mon>
+:properties:
+:location: University of Georgia
+:date: "2016-09-12"
+:category: presentation
+:end:
+
+** Young Women in Representation Theory
+SCHEDULED: <2016-06-25 Sat>
+:properties:
+:location: University of Bonn
+:date: "2016-06-25"
+:category: presentation
+:end:
+
+** Algebraic Geometry Seminar
+SCHEDULED: <2016-02-09 Tue>
+:properties:
+:location: Ohio State University
+:date: "2016-02-09"
+:category: presentation
+:end:
+
+** Algebra Seminar
+SCHEDULED: <2016-01-25 Mon>
+:properties:
+:location: University of Alberta
+:date: "2016-01-25"
+:category: presentation
+:end:
+
+** AlGeCom 12
+SCHEDULED: <2015-10-24 Sat>
+:properties:
+:location: University of Michigan
+:date: "2015-10-24"
+:category: presentation
+:comment: poster
+:end:
+
+** AMS Central Fall Sectional Meeting
+SCHEDULED: <2015-10-03 Sat>
+:properties:
+:location: Loyola University
+:date: "2015-10-03"
+:category: presentation
+:comment: poster
+:end:
+
+** Algebraic Geometry/Commutative Algebra Seminar
+SCHEDULED: <2015-09-30 Wed>
+:properties:
+:location: University of Notre Dame
+:date: "2015-09-30"
+:category: presentation
+:end:
+
+** Academic coordinator of [[http://mathcamp.org/2015][Canada/USA Mathcamp 2015]]
+SCHEDULED: <2015-07-05 Sun>
+:properties:
+:date: "2015-07-05"
+:display-date: Summer 2015
+:category: other
+:with: Ruthi Hortsch
+:end:
+
+** Oberseminar Representation Theory
+SCHEDULED: <2015-05-11 Mon>
+:properties:
+:location: University of Bonn
+:date: "2015-05-11"
+:category: presentation
+:end:
+
+** Number Theory and Algebraic Geometry Seminar
+SCHEDULED: <2015-05-07 Thu>
+:properties:
+:location: Katholieke Universiteit Leuven
+:date: "2015-05-07"
+:category: presentation
+:end:
+
+** Oberseminar Algebra, Mathematisches Institut
+SCHEDULED: <2015-05-05 Tue>
+:properties:
+:location: University of Cologne
+:date: "2015-05-05"
+:category: presentation
+:end:
+
+** Mathematics Seminar
+SCHEDULED: <2014-07-23 Wed>
+:properties:
+:location: Indian Institute of Science Education and Research, Pune
+:date: "2014-07-23"
+:category: presentation
+:end:
+
+** Summer school on quiver Hecke algebras
+SCHEDULED: <2014-06-19 Thu>
+:properties:
+:location: IESC Cargèse
+:date: "2014-06-19"
+:category: presentation
+:comment: expository
+:end:
+
+** Workshop on Yangians and quantum loop algebras
+SCHEDULED: <2014-05-05 Mon>
+:properties:
+:location: Austin
+:date: "2014-05-05"
+:category: presentation
+:comment: expository
+:end:
+
+** [[file:/seminars/studentreptheory][Student Representation Theory Seminar]]
+SCHEDULED: <2012-09-01 Sat>
+:properties:
+:date: "2012-09-01"
+:display-date: 2012--2014
+:category: other
+:location: University of Chicago
+:end:
+
+** [[https://math.uchicago.edu/~pizzaseminar/][Pizza Seminar]]
+SCHEDULED: <2011-09-01 Thu>
+:properties:
+:date: "2011-09-01"
+:display-date: 2011--2012
+:with: Simion Filip
+:location: University of Chicago
+:category: other
+:end:
+
+* Teaching                                                         :teaching:
+** Games, Graphs, and Machines ([[https://asilata.github.io/ggm/][MATH2301]])
+SCHEDULED: <2021-07-26 Mon>
+:properties:
+:location: Australian National University
+:display-date: 2021 Semester 2
+:end:
+
+** Representation theory (IBL reading course)
+SCHEDULED: <2021-01-04 Mon>
+:properties:
+:location: Australian National University
+:date: "2021-01-04"
+:display-date: 2021 Summer Session
+:end:
+
+** Mathematics and Applications 2 ([[https://programsandcourses.anu.edu.au/course/MATH1014][MATH1014]])
+SCHEDULED: <2020-11-23 Mon>
+:properties:
+:location: Australian National University
+:date: "2020-11-23"
+:display-date: 2020 Spring Semester     
+:end:
+
+** Perverse Sheaves (half of a special topics course on Perverse Sheaves and Deligne--Lusztig theory)
+SCHEDULED: <2020-02-24 Mon>
+:properties:
+:location: Australian National University
+:date: "2020-02-24"
+:display-date: 2020 Semester 1
+:end:
+
+** Games, Graphs, and Machines ([[https://asilata.github.io/ggm/][MATH2301]])
+SCHEDULED: <2020-02-24 Mon>
+:properties:
+:location: Australian National University
+:date: "2020-02-24"
+:display-date: 2020 Semester 2
+:end:
+
+** Advanced Studies Extension for Analysis I (MATH2320).
+SCHEDULED: <2019-02-25 Mon>
+:properties:
+:location: Australian National University
+:date: "2019-02-25"
+:display-date: 2019 Semester 1
+:end:
+
+** Introduction to the theory of Computation (reading course)
+SCHEDULED: <2018-12-01 Sat>
+:properties:
+:location: Australian National University
+:date: "2018-12-01"
+:display-date: 2018–2019 Summer Session
+:end:
+
+** Mathematical Foundations for Actuarial Studies (MATH 1113), Linear Algebra.
+SCHEDULED: <2018-07-23 Mon>
+:properties:
+:location: Australian National University
+:date: "2018-07-23"
+:display-date: 2018 Semester 2
+:end:
+
+** Advanced Studies Extension for Analysis I (MATH2320).
+SCHEDULED: <2018-02-20 Tue>
+:properties:
+:location: Australian National University
+:date: "2018-02-20"
+:display-date: 2018 Semester 1
+:end:
+
+** Precalculus (Math 1113).
+SCHEDULED: <2017-08-14 Mon>
+:properties:
+:location: University of Georgia
+:date: "2017-08-14"
+:display-date: Fall 2017
+:end:
+
+** Graduate Algebra (Math 8000).
+SCHEDULED: <2017-08-14 Mon>
+:properties:
+:location: University of Georgia
+:date: "2017-08-14"
+:display-date: Fall 2017
+:end:
+
+** Calculus II for Science and Engineering (Math 2260).
+SCHEDULED: <2017-01-05 Thu>
+:properties:
+:location: University of Georgia
+:date: "2017-01-05"
+:display-date: Spring 2017
+:end:
+
+** Calculus I for Science and Engineering (Math 2250).
+SCHEDULED: <2016-09-05 Mon>
+:properties:
+:location: University of Georgia
+:date: "2016-09-05"
+:display-date: Fall 2016
+:end:
+
+** IBL Honors Calculus I and II (Math [[http://www.math.uchicago.edu/~mcreek/fall_2015/math_16100/index.html][161]] and [[file:teaching/162win16/][162]]).
+SCHEDULED: <2015-09-01 Tue>
+:properties:
+:location: University of Chicago
+:date: "2015-09-01"
+:display-date: 2015--2016
+:end:
+
+** Academic coordinator and mentor.
+SCHEDULED: <2015-07-05 Sun>
+:properties:
+:location: Canada/USA Mathcamp
+:date: "2015-07-05"
+:display-date: Summer 2015
+:comment: Coordinated the academic schedule, invited visiting speakers, and taught several undergraduate-level courses.
+:end:
+
+** Studies in Mathematics I and II (Math [[file:112aut14/][112]] and [[file:113win15/][113]]).
+SCHEDULED: <2014-09-01 Mon>
+:properties:
+:location: University of Chicago
+:date: "2014-09-01"
+:display-date: 2014--2015
+:end:
+
+** Linear Algebra (Math 196).
+SCHEDULED: <2014-06-01 Sun>
+:properties:
+:location: University of Chicago
+:date: "2014-06-01"
+:display-date: Summer 2014
+:end:
+
+** Calculus I, II, and III (Math [[file:][151]], [[file:][152]], and [[file:][153]]).
+SCHEDULED: <2013-09-01 Sun>
+:properties:
+:location: University of Chicago
+:date: "2013-09-01"
+:display-date: 2013--2014
+:end:
+
+** Mentor.
+SCHEDULED: <2013-07-01 Mon>
+:properties:
+:location: Canada/USA Mathcamp
+:date: "2013-07-01"
+:display-date: Summer 2013
+:comment: Taught several undergraduate-level courses.
+:end:
+
+** Calculus I, II, and III (Math 151, 152, and [[file:][153]]).
+SCHEDULED: <2012-09-01 Sat>
+:properties:
+:location: University of Chicago
+:date: "2012-09-01"
+:display-date: 2012--2013
+:end:
+
+** Mentor.
+SCHEDULED: <2012-07-01 Sun>
+:properties:
+:location: Canada/USA Mathcamp
+:date: "2012-07-01"
+:display-date: Summer 2012
+:comment: Taught several undergraduate-level courses.
+:end:
+
+** College fellow for Honors Algebra I, II, and III (Math 257, 258, and 259).
+SCHEDULED: <2011-09-01 Thu>
+:properties:
+:location: University of Chicago
+:date: "2011-09-01"
+:display-date: 2011--2012
+:end:

@@ -1,0 +1,40 @@
+* Discovery early career researcher award (DECRA)
+:properties:
+:amount:   328,075 AUD
+:year:     2018
+:org:      Australian Research Council
+:end:
+* AMS-Simons travel grant
+:properties:
+:amount:   4000 USD
+:year:     2016
+:org:      American Mathematical Society and Simons Foundation
+:end:
+* American Institute of Mathematics workshop funding
+:properties:
+:year:     2016
+:with:     Maksym Fedorchuk, Ian Morrison, Xiaowei Wang
+:end:
+* Award for excellence in teaching in the mathematics department
+:properties:
+:year:     2014
+:org:      Columbia University
+:end:
+* Jon A. Bucsela prize for the top undergraduate mathematics major
+:properties:
+:year:     2006
+:org:      Massachusetts Institute of Technology
+:end:
+* Rogers family prize for undergraduate summer research
+:properties:
+:year:     2006
+:org:      Massachusetts Institute of Technology
+:end:
+* William Lowell Putnam competition
+:properties:
+:year:     2004 (Rank 16--25), 2005 (Honorable mention), 2007 (Honorable mention)
+:end:
+* International mathematical olympiad
+:properties:
+:year:     2004 (Silver), 2003 (Bronze)
+:end:

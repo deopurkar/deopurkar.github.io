@@ -1,0 +1,218 @@
+#+title: README
+#+author: Anand Deopurkar
+#+property: header-args :results silent
+#+startup: noptag contents
+
+This repository contains code that generates my personal website, https://deopurkar.github.io.
+The code and design of the website is thanks to [[https://asilata.github.io][Asilata Bapat]].
+
+* The content
+The content for the website goes in the ~content/~ directory.
+It is written as a collection of inter-linked org files.
+An internal directory structure is supported.
+
+* Building locally
+We begin by creating an elisp file to build the webpage, as explained in [[https://systemcrafters.net/publishing-websites-with-org-mode/building-the-site/][this post]].
+I will tangle the following snippets of elisp code to a file called ~build.el~.
+
+I will first initialise some libraries and use [[https://orgmode.org/manual/Publishing.html][ox-publish]] to publish the website.
+Right now, the building happens locally, but eventually, the it should happen on github.
+
+#+begin_src emacs-lisp :tangle "build.el"
+  (message (emacs-version))
+  (require 'ox-publish)
+  (require 'subr-x)
+#+end_src
+
+Next I set the options for ~org-publish-project-alist~, as documented [[https://orgmode.org/manual/Configuration.html][here]].
+Currently I have the following projects.
+- ~website~ :: contains all the content generated from org-mode files.
+- ~assets~ :: copies over all the files in the [[file:content/assets/][assets]] directory.
+- ~css~ :: copies over all the files in the [[file:contents/css][css]] directory.
+  
+The various publishing options are documented [[https://orgmode.org/manual/Publishing-options.html][here]].
+#+begin_src emacs-lisp :tangle "build.el"
+  (setq org-publish-project-alist
+        '(("website"
+           :base-directory "./content"
+           :publishing-directory "./public"
+           :recursive t
+           :exclude "data\\|stylesheet"
+           :publishing-function org-html-publish-to-html
+           :with-broken-links t
+           :with-creator t
+           :with-title t
+           :with-toc nil
+           :html-preamble make-header
+           :html-head-include-default-style nil
+           :html-head-include-scripts nil
+           :html-head "<link rel=\"stylesheet\" href=\"css/stylesheet.css\">"
+           :section-numbers nil
+           )
+          ("assets"
+           :base-directory "./content/assets"
+           :base-extension "jpg\\|pdf"
+           :publishing-directory "./public/assets"
+           :recursive t
+           :publishing-function org-publish-attachment)
+          ("css"
+           :base-directory "./content/css"
+           :base-extension "css"
+           :publishing-directory "./public/css"
+           :recursive t
+           :publishing-function org-publish-attachment)
+          ))
+#+end_src
+
+I am setting postamble stuff by hand for now.
+#+begin_src emacs-lisp :tangle "build.el"
+  (setq org-html-postamble t
+        org-html-postamble-format '(("en" "<footer>
+  Page generated using %c. Last modified on %C. Source on <a href=\"https://github.com/deopurkar/deopurkar.github.io\">github</a>.
+  </footer>")))    
+#+end_src
+
+The html preamble is set via a function, called ~make-header~.
+It is defined as follows.
+#+begin_src emacs-lisp :tangle "build.el"
+  (defun make-header (options)
+    (concat "<header>"
+            "<h1>"
+            (plist-get options "TITLE")
+            "</h1>"
+            "<nav>"
+            (make-navbar)
+            "</nav></header>"))  
+#+end_src
+
+The above function calls ~make-navbar~, which we define as follows.
+#+begin_src emacs-lisp :tangle "build.el"
+  (defun make-navbar ()
+    (let ((lst '("Home" "Teaching" "Research" "Activities"))
+          (title (cadar (org-collect-keywords '("TITLE"))))
+          )
+      (concat "<ul>\n"
+              (string-join
+               (mapcar (lambda (x) (make-nav-item-fancy x title)) lst) "\n")
+              "\n</ul>")))
+#+end_src
+In turn, the above function calls ~make-nav-item-fancy~.
+The non-fancy version is a simpler back-up option, which is not currently used.
+#+begin_src emacs-lisp :tangle "build.el"
+  (defun make-nav-item (str)
+    (let ((slug (if (string-equal str "Home") "index" (downcase str))))
+      (format "<li><a href=\"%s.html\">%s</a></li>"
+              slug
+              str)))  
+  (defun make-nav-item-fancy (str title)
+    (let ((slug (if (string-equal str "Home") "index" (downcase str))))
+      (format "<li><a href=\"%s.html\"%s>%s</a></li>"
+              slug
+              (if (string-equal str title) " class=\"active\"" "")
+              str)))
+#+end_src
+Finally, define some pretty-printing functions for the teaching, research, and activity pages.
+First, for courses.
+#+begin_src emacs-lisp :tangle "build.el"
+  (defun pp-course ()
+    "Pretty-print the current course item. This function is called when mapping over entries in the data.org file."
+    (let ((title (org-entry-get nil "ITEM"))
+          (display-date (org-entry-get nil "display-date"))
+          (comment (org-entry-get nil "comment"))
+          )
+      (format "- **%s**: %s %s"
+              display-date
+              title
+              (if (or (not comment) (string-equal comment ""))
+                  ""
+                comment))
+      ))
+#+end_src
+Next, for research outputs (papers, code, etc).
+#+begin_src emacs-lisp :tangle "build.el"
+  (defun pp-research-output ()
+    "Pretty-print the current research output item (e.g. paper, preprint, or code). This function is called when mapping over entries in the data.org file."
+     (let ((title (org-entry-get nil "ITEM"))
+           (with (org-entry-get nil "with"))
+           (comment (org-entry-get nil "comment"))
+           (links (org-entry-get nil "link")))
+       (format "#+begin_papers\n**%s**%s\\\\\n%s\n\n%s\n#+end_papers"
+               title
+               (if (or (not with) (string-equal with ""))
+                   ""
+                 (format " (with %s)" with))
+               comment
+               links
+               ))
+       )
+#+end_src
+Finally, for activities (talks and organisation).
+#+begin_src emacs-lisp :tangle "build.el"
+  (defun pp-activity ()
+    "Pretty-print the current activity item. This function is called when mapping over entries in the data.org file."
+    (let ((title (org-entry-get nil "ITEM"))
+          (scheduled (encode-time (org-parse-time-string (org-entry-get nil "SCHEDULED"))))
+          (display-date (org-entry-get nil "display-date"))
+          (with (org-entry-get nil "with"))
+          (location (org-entry-get nil "location"))
+          (links (org-entry-get nil "link"))
+          (comment (org-entry-get nil "comment")))
+      (format "- **%s**: %s%s%s%s%s"
+              (if display-date display-date
+                (org-format-time-string "%b %Y" scheduled))
+              title
+              (if location (concat ", " location) "")
+              (if with (concat ", with " with) "")
+              (if comment (format " (%s)" comment) "")
+              (if links (concat " " links) ""))))
+#+end_src
+
+Now publish!  
+#+begin_src emacs-lisp :tangle "build.el"
+  (setq org-confirm-babel-evaluate nil)
+  (setq make-backup-files nil)
+  (org-publish-all t)
+  (message "Build complete!")
+#+end_src
+
+We also create a shell script to run the above lisp file.
+#+begin_src shell :tangle "build.sh" :shebang "#!/bin/bash"
+  emacs -Q --script build.el
+#+end_src
+
+* TODO Building on Github
+/This is working, but missing some fringe functionality./
+Once we have set up the tools to build the website locally, we can now use them to build the site automatically on Github.
+Put the following code in ~.github/workflows/build.yml~.
+Inspired by [[https://duncan.codes/posts/2019-09-03-migrating-from-jekyll-to-org/][this post]] and [[https://systemcrafters.net/publishing-websites-with-org-mode/automated-site-publishing/][this post]].
+#+begin_src yaml :tangle ".github/workflows/build.yml" :mkdirp yes
+  name: Build and publish to GitHub Pages
+  on:
+    push:
+      branches:
+      - master
+  
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+  
+      - name: Add emacs ppa
+        run: sudo add-apt-repository ppa:kelleyk/emacs --yes && sudo apt update --yes
+  
+      - name: Install emacs
+        run: sudo apt install emacs27-nox --yes
+  
+      - name: Build website
+        run: ./build.sh
+  
+      - name: Publish to gh-pages branch
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        if: success()
+        with:
+          branch: gh-pages
+          folder: public
+#+end_src
+

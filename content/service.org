@@ -1,0 +1,120 @@
+* Refereed for Journal of the European Mathematical Society, Journal of Differential Geometry, Journal of Algebraic Geometry, Annales Scientifiques de l'École Normale Supérieure, Mathematische Annalen, Algebra and Number Theory, Journal für die reine und angewandte Mathematik, manuscripta mathematica, Advances in Geometry, Mathematical Research Letters, European Journal of Mathematics
+
+* Reviewed for Mathematical Reviews of the American Mathematical Society
+
+* Convener for the Masters program
+:properties:
+:year: 2021--
+:institute: Mathematical Sciences Institute, Australian National University
+:end:
+* Served on the thesis committee of Abhishek Bharadwaj
+:properties:
+:year: 2020
+:institute: Mathematical Sciences Institute, Australian National University
+:end:
+
+*  Served on the selection committee for the /Future research talent fellowship/
+:properties:
+:institute: Mathematical Sciences Institute, Australian National University
+:year: 2019
+:end:
+*  Served on the director search committee
+:properties:
+  :year: 2019
+:institute: Mathematical Sciences Institute, Australian National University
+  :end:
+
+*  Served on the formal liaison committee
+:properties:
+  :year: 2019
+  :institute: Mathematical Sciences Institute, Australian National University
+:end:
+
+*  Served on the award committee for the /BH Neumann prize/ for the best student talk
+:properties:
+  :year: 2018
+  :institute: AustMS meeting
+:end:
+
+*  Co-organised the workshop /Polynomial Algebraic Developments in Optimisation and Computation/
+:properties:
+  :year: 2018
+  :with: Markus Hegland
+:end:
+  
+* Conducted training sessions in algebraic geometry at the /D21 Workshop/
+:properties:
+:institute: Australian Signals Directorate
+:year:     2018
+:end:
+
+*  Co-organised the workshop /Stability and moduli spaces/
+:properties:
+:year: 2017
+:with: Maksym Fedorchuk, Ian Morrison, Xiaowei Wang
+:institute: American Institute of Matheatics, Palo Alto, California
+:end:
+
+*  Co-organised the /Summer workshop in algebraic geometry/
+:properties:
+  :year: 2016
+  :institute: University of Georgia, Athens, Georgia
+  :with: Angela Gibney, Nicola Tarasca
+:end:
+
+*  Organised the /Fairly informal reading seminar and tea (FIRST)/
+:properties:
+  :year: 2016
+  :institute: University of Georgia, Athens, Georgia
+:end:
+
+*  Co-organised the graduate student algebraic geometry seminar
+:properties:
+:institute: Columbia University
+:with: Johan de Jong
+:year:     2016
+:end: 
+
+*  Conducted preparation sessions for the Putnam competition
+:properties:
+:institute: Columbia University
+:year: 2015
+:end:
+
+*  Lectured in the /Workshop on birational geometry and stability of moduli stacks and spaces of curves/
+:properties:
+:institute: Vietnam Institute for Advanced Studies in Mathematics, Hanoi, Vietnam
+:year: 2014
+:end:
+
+*  Served on the thesis committee of Natasha Potashnik
+:properties:
+:year: 2016
+:institue: Columbia University, New York City, New York
+:end:
+
+*  Served on the thesis committee of Zachary Maddock
+:properties:
+:year: 2013
+:institue: Columbia University, New York City, New York
+:end:
+
+*  Served on the thesis committee of Xuanyu Pan
+:properties:
+:year: 2014
+:institue: Columbia University, New York City, New York
+:end:
+
+*  Co-organised the poster session at the /Algebraic geometry north-eastern series (AGNES)/ conference
+:properties:
+:institute: Boston College
+:with: Anand Patel
+:year: 2013
+:end:
+
+*  Organised the student algebraic geometry seminar
+:properties:
+:institute: Harvard/MIT
+:year: 2011, 2010
+:end:
+

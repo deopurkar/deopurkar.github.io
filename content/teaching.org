@@ -1,0 +1,121 @@
+*  Foundations of Algebraic Geometry (Schemes)
+:properties:
+  :institute: Australian National University
+  :year: 2020
+  :link: [[file:teaching/schemes/]]
+:end:
+*  Algebraic Geometry (Algebra 3)
+:properties:
+  :institute: Australian National University
+  :year: 2019
+  :link: [[file:teaching/ag/]]
+:end:
+*  Reading course on *Elliptic curves and modular forms* by Neil Koblitz
+:properties:
+  :institute: Australian National University
+  :year: 2018
+:end:
+*  Special topics course on Computational Polynomial Algebra (with Markus Hegland)
+:properties:
+  :institute: Australian National University
+  :year: 2018
+  :end:
+*  Reading course on *Algebaric curves and Riemann surfaces* by Rick Miranda
+:properties:
+  :institute: Australian National University
+  :year: 2018
+  :link: [[file:teaching/3349]]
+:end:
+*  Precalculus
+:properties:
+  :institute: University of Georgia
+  :year: 2017
+:end:
+*  Algebraic curves
+:properties:
+  :institute: University of Georgia
+  :year: 2017
+:end:
+*  Calculus 2
+:properties:
+  :institute: University of Georgia
+  :year: 2017
+:end:
+*  Calculus 1
+:properties:
+  :institute: University of Georgia
+  :year: 2016 
+:end:
+*  Analysis and optimization
+:properties:
+  :institute: Columbia University
+  :year:  2016
+  :link: [[file:teaching/ao/]]
+  :end:
+*  Young tableaux in algebra and geometry
+:properties:
+  :institute: Columbia University
+  :year: 2015
+  :link: [[file:teaching/seminar15/]]
+:end:
+*  Calculus 1
+:properties:
+  :institute: Columbia University
+  :year: 2015
+  :link: [[file:teaching/calc1/]]
+:end:
+*  Moduli of curves
+:properties:
+  :institute: Columbia University
+  :year: 2014
+  :link: [[file:teaching/moduli/]]
+:end:
+*  Calculus 1
+:properties:
+  :institute: Columbia University
+  :link: [[file:teaching/calc1sp14/]]
+  :year: 2014
+:end:
+*  Modern algebra 2
+:properties:
+  :institute: Columbia University
+  :link: [[file:teaching/algebra2/]]
+  :year: 2014
+:end:
+*  Modern algebra 1
+:properties:
+  :institute: Columbia University
+  :link: [[file:teaching/algebra1/]]
+  :year: 2013
+:end:
+*  Calculus 3
+:properties:
+  :institute: Columbia University
+  :link: [[file:teaching/calc3sp13/]]
+  :year: 2013
+:end:
+*  Calculus 2
+:properties:
+  :institute: Columbia University
+  :year: 2012
+:end:
+*  Linear algebra
+:properties:
+  :institute: Harvard University
+  :year: 2012
+:end:
+*  Algebraic curves (teaching assistant)
+:properties:
+  :institute: Harvard University
+  :year: 2011
+  :end:
+*  Calculus 2
+:properties:
+  :institute: Harvard University
+  :year: 2010
+  :end:
+*  Calculus 1
+:properties:
+  :institute: Harvard University
+  :year: 2009
+:end:

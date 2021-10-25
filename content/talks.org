@@ -1,0 +1,417 @@
+#+filetags: :talk:
+
+*  A Thurston compactification of the space of stability conditions
+:properties:
+:meet:     Workshop on compactifications of stability manifolds (Online)
+:institute: Max Plank institute für Mathematics
+:place:    Bonn, Germany
+:year:     2021
+:type:     Workshop
+:end:
+*  A Thurston compactification of the space of stability conditions
+:properties:
+:institute: Tata Institute of Fundamental Research (Online)
+:place:    Mumbai, India
+:year:     2021
+:type:     Seminar
+:end:
+*  A Thurston compactification of the space of stability conditions
+:properties:
+:institute: Jagiellonian University (Online)
+:place:    Kraków, Poland
+:year:     2021
+:type:     Seminar
+:end:
+*  A Thurston compactification for categories
+:properties:
+:meet: Topology session, AustMS (Online)
+:institute: University of New England
+:place:    Amidale, Australia
+:year:     2020
+:type:     Conference
+:end:
+*  Apparent boundaries of projective varieties
+:properties:
+:meet:     Seminario nacional de geometria algebraica (Online joint seminar of multiple universities in Mexico)
+:place:    Mexico
+:year:     2020
+:type:     Seminar
+:end:
+*  Apparent boundaries of projective varieties
+:properties:
+:institute: University of California (Online)
+:place:    San Diego, California
+:year:     2020
+:type:     Seminar
+:end:  
+
+*  Groups, spherical twists, and stability conditions
+:properties:
+:meet:     Workshop on triangulated categories in geometry and representation theory
+:institute: University of Sydney
+:place:    Sydney, Australia
+:year:     2019
+:comment:  Part of a series with Asilata Bapat and Anthony Licata
+:type:     Workshop
+:end:
+*  Geometry of Hurwitz spaces
+:properties:
+:meet:     Character varieties and topological quantum field theory
+:institute: University of Auckland
+:place:    Auckland, New Zealand
+:year:     2018
+:type:     Conference
+:end:
+*  On the geometric Steinitz problem
+:properties:
+:institute: Number theory session,  AustMS
+:institute: University of South Australia
+:place:    Adelaide, Australia
+:year:     2018
+:link:     [[file:talks/AustMS2018.pdf][slides]]
+:type:     Conference
+:end:
+*  The work of Claire Voisin
+:properties:
+:meet:     Women in mathematics day
+:institute: Australian National University
+:place:    Canberra, Australia
+:year:     2019
+:type:     Expository
+:end:
+*  The work of Caucher Birkar
+:properties:
+:meet:     Colloquium
+:institute: Australian National University
+:place:    Canberra, Australia
+:year:     2018
+:type:     Expository
+:end:
+*  Moduli of almost K3 log surfaces and curves of genus 4
+:properties:
+:meet:     Algebraic surfaces and related topics
+:institute: Xiamen University
+:place:    Xiamen, China
+:year:     2018
+:type:     Conference
+:end:
+*  How to count using (co)homology
+:properties:
+:institute: Tata Institute of Fundamental Research
+:place:    Mumbai, India
+:year:     2018
+:type:     Expository
+:end:
+*  What are ribbons and what do they tell us about Riemann surfaces
+:properties:
+:institute: Indian Institute of Science
+:place:    Bengaluru, India
+:year:     2018
+:type:     Seminar
+:end:
+*  What are ribbons and what do they tell us about Riemann surfaces
+:properties:
+:institute: Monash University
+:place:    Melbourne, Australia
+:year:     2018
+:type:     Seminar
+:end:
+*  On the critical loci of finite maps
+:properties:
+:institute: Australian National University
+:place:    Canberra, Australia
+:year:     2018
+:type:     Seminar
+:end:
+*  Quadrature and algebraic geometry
+:properties:
+:meet:     Workshop on algebraic geometry approximation, and optimization
+:institute: MATRIX
+:place:    Creswick, Victoria, Australia
+:year:     2018
+:link:     [[file:talks/matrixtalk.pdf][slides]]
+:type:     Workshop
+:end:
+*  Vector bundles and finite covers
+:properties:
+:properties:
+:meet:     Workshop on topics in algebraic geometry
+:institute: University of North Carolina
+:place:    Chapel Hill, North Carolina
+:year:     2017
+:type:     Workshop
+:end:
+*  Vector bundles and finite covers
+:properties:
+:institute: University of Georgia
+:place: Athens, Georgia
+:year: 2017
+:type: Seminar
+:end:
+*  How to count using topology
+:properties:
+:institute: Canada/USA Mathcamp
+:place: Tacoma, WA
+:year: 2017
+:type:     Expository
+:end:
+*  Quivers and their representations
+:properties:
+:institute: Indian Institute of Science Education and Research
+:place: Pune, India
+:year: 2017
+:type:     Seminar
+:end:
+*  Vector bundles and finite covers
+:properties:
+:institute: Emory University
+:place: Atlanta, Georgia
+:year: 2017
+:type:     Seminar
+:end:
+*  Geometry of moduli spaces
+:properties:
+:institute: Australian National University
+:place: Canberra, Australia
+:year: 2016
+:type:     Colloquium
+:end:
+*  Vector bundles and finite covers
+:properties:
+:meet: Conference on moduli and birational geometry
+:place: Jeju Island, South Korea
+:year: 2016
+:type:     Conference
+:end:
+*  Vector bundles and finite covers
+:properties:
+:institute: Indian Institute of Science Education and Research
+:place: Pune
+:year: 2016
+:type:     Seminar
+:end:
+*  Ribbons and Green's conjecture
+:properties:
+:institute: University of South Carolina
+:place: Columbia, South Carolina
+:year: 2016
+:type:     Seminar
+:end:
+*  Ribbons and Green's conjecture
+:properties:
+:institute: University of Georgia
+:place: Athens, Georgia
+:year: 2016
+:type:     Seminar
+:end:
+*  Cycles on Hurwitz spaces
+:properties:
+:meet: Workshop on cycles on moduli spaces, geometric invariant theory, and dynamics
+:institute: Institute for Computational and Experimental Research in Mathematics
+:place: Providence, Rhode Island
+:year: 2016
+:type:     Conference
+:end:
+*  The algebra of canonical curves and the geometry of their moduli space
+:properties:
+:institute: University of Georgia
+:place: Athens, Georgia
+:year: 2016
+:type:     Seminar
+:end:
+*  Picard groups of Hurwitz spaces
+:properties:
+:meet:     Higher genus curves and fibrations of higher genus curves in mathematical physics and arithmetic geometry II, AMS joint mathematics meetings
+:place:    Seattle, Washington
+:year:     2016
+:type:     Conference
+:end:
+*  Limits of plane quintics via covers of stacky curves
+:properties:
+:meet:     Moduli spaces in algebraic geometry I, AMS joint mathematics meetings
+:place:    Seattle, Washington
+:year:     2016
+:type:     Conference
+:end:
+* Limits of plane quintics via covers of stacky curves
+:properties:
+:year:     2015
+:meet:     Boston College--Northeastern algebraic geometry conference
+:institute: Northeastern University
+:place:    Boston, Massachusetts
+:link:     [[file:talks/AGNUBC-talk.pdf][notes]]
+:type:     Conference
+:end:
+* Syzygies of canonical curves and the geometry of \(\overline M_g\)
+:properties:
+:year:     2015
+:meet:     SIAM applied algebraic geometry conference
+:place:    Daejeon, South Korea
+:link:     [[file:talks/siam_talk.pdf][slides]]
+:type:     Conference
+:end:
+* GIT stability of syzygies of curves
+:PROPERTIES:
+:type:     Workshop
+:END:
+:properties:
+:year: 2015
+:institute: Mathematisches Forschungsinstitut Oberwolfach
+:place: Oberwolfach, Germany
+:comment: Mini talk  :end:
+* Towards GIT stability of syzygies of canonical curves
+:properties:
+:year:     2013
+:meeting:  Conference on moduli and birational geometry
+:institute: Postech
+:place:    Pohang, Korea
+:link:     [[file:talks/Syz_Talk.pdf][notes]]
+:type:     Conference
+:end:
+* Syzygies, GIT, and the moduli space of curves
+:properties:
+:year: 2015
+:institute: Purdue University
+:place: West Lafayette, Indian
+:type:     Seminar
+:end:
+* Limits of plane curves via stacky branched covers
+:properties:
+:year: 2015
+:institute: Ohio State University
+:place: Columbus, Ohio
+:type:     Seminar
+:end:
+* Syzygies, GIT, and the log minimal model program for \(\overline{M}_g\)
+:properties:
+:year: 2015
+:institute: Harvard University
+:place: Cambridge, Massachusetts
+:type:     Seminar
+:end:
+* Picard groups of Hurwitz spaces
+:properties:
+:year:     2015
+:institute: Courant Institute, New York University
+:place:    New York City, New York
+:type:     Seminar
+:end:
+* The birational geometry of \(\overline M_g\)
+:properties:
+:year: 2015
+:institute: Indian Institute for Science Research and Education
+:place: Pune, India
+:type:     Seminar
+:end:
+* Syzygies of canonical curves and birational geometry of \(\overline M_g\)
+:properties:
+:year: 2015
+:institute: Stony Brook University
+:place: Stony Brook, New York
+:type:     Seminar
+:end:
+* GIT stability of syzygies of canonical curves
+:properties:
+:year:     2014
+:institute: University of Michigan
+:place:    Ann Arbor, Michigan
+:type:     Seminar
+:end:
+* GIT stability of syzygies of canonical curves
+:properties:
+:year: 2014
+:institute: Yale University
+:place: New Haven, Connecticut
+:type:     Seminar
+:end:
+* Toward GIT stability of syzygies of canonical curves
+:properties:
+:year: 2014
+:institute: Boston College
+:place: Boston, Massachusetts
+:type:     Seminar
+:end:
+* Toward GIT stability of syzygies of canonical curves
+:properties:
+:year: 2013
+:meet: Geometry of algebraic varieties, AMS sectional meeting
+:place: Philadelphia, Pennsylvania
+:type:     Seminar
+:end:
+* Alternate compactifications of Hurwitz spaces
+:properties:
+:year: 2013
+:institute: Stanford University
+:place: Palo Alto, California
+:type:     Seminar
+:end:
+* Compactifying spaces of branched covers
+:properties:
+:year: 2013
+:institute: Princeton University
+:place: Princeton, New Jersey
+:type:     Seminar
+:end:
+* Alternate compactifications of Hurwitz spaces
+:properties:
+:year: 2012
+:institute: Rice University
+:place: Houston, Texas
+:type:     Seminar
+:end:
+* Compactifications of Hurwitz spaces
+:properties:
+:year:     2011
+:institute: Massachusetts Institute of Technology
+:place:    Cambridge, Massachusetts
+:link:     [[file:talks/Hdg_Talk.pdf][notes]]
+:type:     Seminar
+:end:
+* Compactifications of Hurwitz spaces
+:properties:
+:year: 2011
+:institute: Columbia University
+:place: New York City, New York
+:type:     Seminar
+:end:
+* Compactifications of Hurwitz spaces
+:properties:
+:year: 2011
+:institute: Stony Brook University
+:place: Stony Brook, New York  
+:type:     Seminar
+:end:
+* Compactifications of Hurwitz spaces
+:properties:
+:year: 2011
+:institute: Brown University
+:place: Providence, Rhode Island
+:type:     Seminar
+:end:
+* Limits of plane quintics via covers of stacky curves
+:properties:
+:year:     2015
+:meet:     Summer institute in algebraic geometry
+:institute: University of Utah
+:place:    Salt Lake City, Utah
+:link:     [[file:talks/quintics_poster.pdf][slides]]
+:type:     Poster
+:end:
+* Sharp slope bounds for sweeping families of trigonal curves
+:properties:
+:year:     2013
+:meet:     Algebraic geometry northeastern series
+:institute: Boston College
+:place:    Boston, Massachusetts
+:link:     [[file:talks/slopes_poster.pdf][poster]]
+:type:     Poster
+:end:
+* Birational geometry of the space of marked trigonal curves
+:properties:
+:year:     2011
+:meet:     A celebration of algebraic geometry (conference for the 60th birthday of Joe Harris)
+:institute: Harvard University
+:place:    Cambridge, Massachusetts
+:link:     [[file:talks/trig_poster.pdf][poster]]
+:type:     Poster
+:end:
