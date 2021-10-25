@@ -4,14 +4,14 @@
    (org-map-entries
     (let ((previous ""))
       (defun pp ()
-        (let ((year (org-entry-get nil "year"))
+          (let ((year (org-entry-get nil "year"))
               (place (org-entry-get nil "place"))
               (meet (org-entry-get nil "meet"))
               (institute (org-entry-get nil "institute"))
               (comment (org-entry-get nil "comment"))
               (title (org-entry-get nil "ITEM")))
           (format "- %s :: %s, /%s/%s "
-                  (if (eq year previous)
+                  (if (equal previous year)
                       "---"
                     (setq previous year))
                   (string-join (remove nil `(,place ,institute)) ", ")
@@ -25,58 +25,58 @@
 #+end_src
 
 #+RESULTS:
-- 2021 :: Bonn, Germany: Max Plank institute für Mathematics, /A Thurston compactification of the space of stability conditions/ 
-- 2021 :: Mumbai, India: Tata Institute of Fundamental Research (Online), /A Thurston compactification of the space of stability conditions/ 
-- 2021 :: Kraków, Poland: Jagiellonian University (Online), /A Thurston compactification of the space of stability conditions/ 
-- 2020 :: Amidale, Australia: University of New England, /A Thurston compactification for categories/ 
-- 2020 :: Mexico, /Apparent boundaries of projective varieties/ 
-- 2020 :: San Diego, California: University of California (Online), /Apparent boundaries of projective varieties/ 
-- 2019 :: Sydney, Australia: University of Sydney, /Groups, spherical twists, and stability conditions/, (Part of a series with Asilata Bapat and Anthony Licata) 
-- 2018 :: Auckland, New Zealand: University of Auckland, /Geometry of Hurwitz spaces/ 
-- 2018 :: Adelaide, Australia: Number theory session,  AustMS, /On the geometric Steinitz problem/ 
-- 2019 :: Canberra, Australia: Australian National University, /The work of Claire Voisin/ 
-- 2018 :: Canberra, Australia: Australian National University, /The work of Caucher Birkar/ 
-- 2018 :: Xiamen, China: Xiamen University, /Moduli of almost K3 log surfaces and curves of genus 4/ 
-- 2018 :: Mumbai, India: Tata Institute of Fundamental Research, /How to count using (co)homology/ 
-- 2018 :: Bengaluru, India: Indian Institute of Science, /What are ribbons and what do they tell us about Riemann surfaces/ 
-- 2018 :: Melbourne, Australia: Monash University, /What are ribbons and what do they tell us about Riemann surfaces/ 
-- 2018 :: Canberra, Australia: Australian National University, /On the critical loci of finite maps/ 
-- 2018 :: Creswick, Victoria, Australia: MATRIX, /Quadrature and algebraic geometry/ 
-- 2017 :: Chapel Hill, North Carolina: University of North Carolina, /Vector bundles and finite covers/ 
-- 2017 :: Athens, Georgia: University of Georgia, /Vector bundles and finite covers/ 
-- 2017 :: Tacoma, WA: Canada/USA Mathcamp, /How to count using topology/ 
-- 2017 :: Pune, India: Indian Institute of Science Education and Research, /Quivers and their representations/ 
-- 2017 :: Atlanta, Georgia: Emory University, /Vector bundles and finite covers/ 
-- 2016 :: Canberra, Australia: Australian National University, /Geometry of moduli spaces/ 
-- 2016 :: Jeju Island, South Korea, /Vector bundles and finite covers/ 
-- 2016 :: Pune: Indian Institute of Science Education and Research, /Vector bundles and finite covers/ 
-- 2016 :: Columbia, South Carolina: University of South Carolina, /Ribbons and Green's conjecture/ 
-- 2016 :: Athens, Georgia: University of Georgia, /Ribbons and Green's conjecture/ 
-- 2016 :: Providence, Rhode Island: Institute for Computational and Experimental Research in Mathematics, /Cycles on Hurwitz spaces/ 
-- 2016 :: Athens, Georgia: University of Georgia, /The algebra of canonical curves and the geometry of their moduli space/ 
-- 2016 :: Seattle, Washington, /Picard groups of Hurwitz spaces/ 
-- 2016 :: Seattle, Washington, /Limits of plane quintics via covers of stacky curves/ 
-- 2015 :: Boston, Massachusetts: Northeastern University, /Limits of plane quintics via covers of stacky curves/ 
-- 2015 :: Daejeon, South Korea, /Syzygies of canonical curves and the geometry of \(\overline M_g\)/ 
-- nil :: , /GIT stability of syzygies of curves/ 
-- 2013 :: Pohang, Korea: Postech, /Towards GIT stability of syzygies of canonical curves/ 
-- 2015 :: West Lafayette, Indian: Purdue University, /Syzygies, GIT, and the moduli space of curves/ 
-- 2015 :: Columbus, Ohio: Ohio State University, /Limits of plane curves via stacky branched covers/ 
-- 2015 :: Cambridge, Massachusetts: Harvard University, /Syzygies, GIT, and the log minimal model program for \(\overline{M}_g\)/ 
-- 2015 :: New York City, New York: Courant Institute, New York University, /Picard groups of Hurwitz spaces/ 
-- 2015 :: Pune, India: Indian Institute for Science Research and Education, /The birational geometry of \(\overline M_g\)/ 
-- 2015 :: Stony Brook, New York: Stony Brook University, /Syzygies of canonical curves and birational geometry of \(\overline M_g\)/ 
-- 2014 :: Ann Arbor, Michigan: University of Michigan, /GIT stability of syzygies of canonical curves/ 
-- 2014 :: New Haven, Connecticut: Yale University, /GIT stability of syzygies of canonical curves/ 
-- 2014 :: Boston, Massachusetts: Boston College, /Toward GIT stability of syzygies of canonical curves/ 
+- 2021 :: Bonn, Germany, Max Plank institute für Mathematics, /A Thurston compactification of the space of stability conditions/ 
+- --- :: Mumbai, India, Tata Institute of Fundamental Research (Online), /A Thurston compactification of the space of stability conditions/ 
+- --- :: Kraków, Poland, Jagiellonian University (Online), /A Thurston compactification of the space of stability conditions/ 
+- 2020 :: Amidale, Australia, University of New England, /A Thurston compactification for categories/ 
+- --- :: Mexico, /Apparent boundaries of projective varieties/ 
+- --- :: San Diego, California, University of California (Online), /Apparent boundaries of projective varieties/ 
+- 2019 :: Sydney, Australia, University of Sydney, /Groups, spherical twists, and stability conditions/, (Part of a series with Asilata Bapat and Anthony Licata) 
+- --- :: Canberra, Australia, Australian National University, /The work of Claire Voisin/ 
+- 2018 :: Auckland, New Zealand, University of Auckland, /Geometry of Hurwitz spaces/ 
+- --- :: Adelaide, Australia, Number theory session,  AustMS, /On the geometric Steinitz problem/ 
+- --- :: Canberra, Australia, Australian National University, /The work of Caucher Birkar/ 
+- --- :: Xiamen, China, Xiamen University, /Moduli of almost K3 log surfaces and curves of genus 4/ 
+- --- :: Mumbai, India, Tata Institute of Fundamental Research, /How to count using (co)homology/ 
+- --- :: Bengaluru, India, Indian Institute of Science, /What are ribbons and what do they tell us about Riemann surfaces/ 
+- --- :: Melbourne, Australia, Monash University, /What are ribbons and what do they tell us about Riemann surfaces/ 
+- --- :: Canberra, Australia, Australian National University, /On the critical loci of finite maps/ 
+- --- :: Creswick, Victoria, Australia, MATRIX, /Quadrature and algebraic geometry/ 
+- 2017 :: Chapel Hill, North Carolina, University of North Carolina, /Vector bundles and finite covers/ 
+- --- :: Athens, Georgia, University of Georgia, /Vector bundles and finite covers/ 
+- --- :: Tacoma, WA, Canada/USA Mathcamp, /How to count using topology/ 
+- --- :: Pune, India, Indian Institute of Science Education and Research, /Quivers and their representations/ 
+- --- :: Atlanta, Georgia, Emory University, /Vector bundles and finite covers/ 
+- 2016 :: Canberra, Australia, Australian National University, /Geometry of moduli spaces/ 
+- --- :: Jeju Island, South Korea, /Vector bundles and finite covers/ 
+- --- :: Pune, Indian Institute of Science Education and Research, /Vector bundles and finite covers/ 
+- --- :: Columbia, South Carolina, University of South Carolina, /Ribbons and Green's conjecture/ 
+- --- :: Athens, Georgia, University of Georgia, /Ribbons and Green's conjecture/ 
+- --- :: Providence, Rhode Island, Institute for Computational and Experimental Research in Mathematics, /Cycles on Hurwitz spaces/ 
+- --- :: Athens, Georgia, University of Georgia, /The algebra of canonical curves and the geometry of their moduli space/ 
+- --- :: Seattle, Washington, /Picard groups of Hurwitz spaces/ 
+- --- :: Seattle, Washington, /Limits of plane quintics via covers of stacky curves/ 
+- 2015 :: Boston, Massachusetts, Northeastern University, /Limits of plane quintics via covers of stacky curves/ 
+- --- :: Daejeon, South Korea, /Syzygies of canonical curves and the geometry of \(\overline M_g\)/ 
+- --- :: Oberwolfach, Germany, Mathematisches Forschungsinstitut Oberwolfach, /GIT stability of syzygies of curves/, (Mini talk) 
+- --- :: West Lafayette, Indian, Purdue University, /Syzygies, GIT, and the moduli space of curves/ 
+- --- :: Columbus, Ohio, Ohio State University, /Limits of plane curves via stacky branched covers/ 
+- --- :: Cambridge, Massachusetts, Harvard University, /Syzygies, GIT, and the log minimal model program for \(\overline{M}_g\)/ 
+- --- :: New York City, New York, Courant Institute, New York University, /Picard groups of Hurwitz spaces/ 
+- --- :: Pune, India, Indian Institute for Science Research and Education, /The birational geometry of \(\overline M_g\)/ 
+- --- :: Stony Brook, New York, Stony Brook University, /Syzygies of canonical curves and birational geometry of \(\overline M_g\)/ 
+- 2014 :: Ann Arbor, Michigan, University of Michigan, /GIT stability of syzygies of canonical curves/ 
+- --- :: New Haven, Connecticut, Yale University, /GIT stability of syzygies of canonical curves/ 
+- 2013 :: Pohang, Korea, Postech, /Towards GIT stability of syzygies of canonical curves/ 
+- 2014 :: Boston, Massachusetts, Boston College, /Toward GIT stability of syzygies of canonical curves/ 
 - 2013 :: Philadelphia, Pennsylvania, /Toward GIT stability of syzygies of canonical curves/ 
-- 2013 :: Palo Alto, California: Stanford University, /Alternate compactifications of Hurwitz spaces/ 
-- 2013 :: Princeton, New Jersey: Princeton University, /Compactifying spaces of branched covers/ 
-- 2012 :: Houston, Texas: Rice University, /Alternate compactifications of Hurwitz spaces/ 
-- 2011 :: Cambridge, Massachusetts: Massachusetts Institute of Technology, /Compactifications of Hurwitz spaces/ 
-- 2011 :: New York City, New York: Columbia University, /Compactifications of Hurwitz spaces/ 
-- 2011 :: Stony Brook, New York: Stony Brook University, /Compactifications of Hurwitz spaces/ 
-- 2011 :: Providence, Rhode Island: Brown University, /Compactifications of Hurwitz spaces/ 
-- 2015 :: Salt Lake City, Utah: University of Utah, /Limits of plane quintics via covers of stacky curves/ 
-- 2013 :: Boston, Massachusetts: Boston College, /Sharp slope bounds for sweeping families of trigonal curves/ 
-- 2011 :: Cambridge, Massachusetts: Harvard University, /Birational geometry of the space of marked trigonal curves/ 
+- --- :: Palo Alto, California, Stanford University, /Alternate compactifications of Hurwitz spaces/ 
+- --- :: Princeton, New Jersey, Princeton University, /Compactifying spaces of branched covers/ 
+- 2012 :: Houston, Texas, Rice University, /Alternate compactifications of Hurwitz spaces/ 
+- 2011 :: Cambridge, Massachusetts, Massachusetts Institute of Technology, /Compactifications of Hurwitz spaces/ 
+- --- :: New York City, New York, Columbia University, /Compactifications of Hurwitz spaces/ 
+- --- :: Stony Brook, New York, Stony Brook University, /Compactifications of Hurwitz spaces/ 
+- --- :: Providence, Rhode Island, Brown University, /Compactifications of Hurwitz spaces/ 
+- 2015 :: Salt Lake City, Utah, University of Utah, /Limits of plane quintics via covers of stacky curves/ 
+- 2013 :: Boston, Massachusetts, Boston College, /Sharp slope bounds for sweeping families of trigonal curves/ 
+- 2011 :: Cambridge, Massachusetts, Harvard University, /Birational geometry of the space of marked trigonal curves/ 

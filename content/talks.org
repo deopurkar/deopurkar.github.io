@@ -54,6 +54,14 @@
 :comment:  Part of a series with Asilata Bapat and Anthony Licata
 :type:     Workshop
 :end:
+*  The work of Claire Voisin
+:properties:
+:meet:     Women in mathematics day
+:institute: Australian National University
+:place:    Canberra, Australia
+:year:     2019
+:type:     Expository
+:end:
 *  Geometry of Hurwitz spaces
 :properties:
 :meet:     Character varieties and topological quantum field theory
@@ -70,14 +78,6 @@
 :year:     2018
 :link:     [[file:talks/AustMS2018.pdf][slides]]
 :type:     Conference
-:end:
-*  The work of Claire Voisin
-:properties:
-:meet:     Women in mathematics day
-:institute: Australian National University
-:place:    Canberra, Australia
-:year:     2019
-:type:     Expository
 :end:
 *  The work of Caucher Birkar
 :properties:
@@ -253,20 +253,11 @@
 * GIT stability of syzygies of curves
 :PROPERTIES:
 :type:     Workshop
-:END:
 :properties:
 :year: 2015
 :institute: Mathematisches Forschungsinstitut Oberwolfach
 :place: Oberwolfach, Germany
-:comment: Mini talk  :end:
-* Towards GIT stability of syzygies of canonical curves
-:properties:
-:year:     2013
-:meeting:  Conference on moduli and birational geometry
-:institute: Postech
-:place:    Pohang, Korea
-:link:     [[file:talks/Syz_Talk.pdf][notes]]
-:type:     Conference
+:comment: Mini talk
 :end:
 * Syzygies, GIT, and the moduli space of curves
 :properties:
@@ -323,6 +314,15 @@
 :institute: Yale University
 :place: New Haven, Connecticut
 :type:     Seminar
+:end:
+* Towards GIT stability of syzygies of canonical curves
+:properties:
+:year:     2013
+:meeting:  Conference on moduli and birational geometry
+:institute: Postech
+:place:    Pohang, Korea
+:link:     [[file:talks/Syz_Talk.pdf][notes]]
+:type:     Conference
 :end:
 * Toward GIT stability of syzygies of canonical curves
 :properties:
