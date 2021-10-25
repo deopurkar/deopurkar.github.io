@@ -1,0 +1,15 @@
+*  Ph.D.
+:properties:
+:institute: Harvard University
+:place: Cambridge, Massachusetts, USA
+:year: 2012
+:comment:  /Alternate compactifications of Hurwitz spaces/, advisor: Joseph Harris
+:end:
+
+* Bachelor of Science (S.B.)
+:properties:
+:institute: Massachusetts Institute of Technology
+:place: Cambridge, Massachusetts, USA
+:year: 2008
+:comment: Mathematics with computer science
+:end:

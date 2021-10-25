@@ -1,6 +1,10 @@
+
 * Refereed for Journal of the European Mathematical Society, Journal of Differential Geometry, Journal of Algebraic Geometry, Annales Scientifiques de l'École Normale Supérieure, Mathematische Annalen, Algebra and Number Theory, Journal für die reine und angewandte Mathematik, manuscripta mathematica, Advances in Geometry, Mathematical Research Letters, European Journal of Mathematics
 
-* Reviewed for Mathematical Reviews of the American Mathematical Society
+* Reviewed for Mathematical Reviews
+:properties:
+:institute: American Mathematical Society
+:end:
 
 * Convener for the Masters program
 :properties:
@@ -64,8 +68,8 @@
 
 *  Organised the /Fairly informal reading seminar and tea (FIRST)/
 :properties:
-  :year: 2016
-  :institute: University of Georgia, Athens, Georgia
+:year:     2016
+:institute: University of Georgia, Athens, Georgia
 :end:
 
 *  Co-organised the graduate student algebraic geometry seminar
@@ -90,19 +94,19 @@
 *  Served on the thesis committee of Natasha Potashnik
 :properties:
 :year: 2016
-:institue: Columbia University, New York City, New York
+:institute: Columbia University, New York City, New York
 :end:
 
 *  Served on the thesis committee of Zachary Maddock
 :properties:
 :year: 2013
-:institue: Columbia University, New York City, New York
+:institute: Columbia University, New York City, New York
 :end:
 
 *  Served on the thesis committee of Xuanyu Pan
 :properties:
 :year: 2014
-:institue: Columbia University, New York City, New York
+:institute: Columbia University, New York City, New York
 :end:
 
 *  Co-organised the poster session at the /Algebraic geometry north-eastern series (AGNES)/ conference

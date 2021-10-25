@@ -10,31 +10,34 @@
 :year:     2016
 :org:      American Mathematical Society and Simons Foundation
 :end:
-* American Institute of Mathematics workshop funding
+* Workshop funding
 :properties:
+:org:      American Institute of Mathematics
 :year:     2016
 :with:     Maksym Fedorchuk, Ian Morrison, Xiaowei Wang
 :end:
-* Award for excellence in teaching in the mathematics department
+* Award for excellence in teaching
 :properties:
 :year:     2014
-:org:      Columbia University
+:org:      Columbia University, Mathematics department
 :end:
-* Jon A. Bucsela prize for the top undergraduate mathematics major
+* Jon A. Bucsela prize for the top undergraduate
 :properties:
 :year:     2006
-:org:      Massachusetts Institute of Technology
+:org:      Massachusetts Institute of Technology, Mathematics department
 :end:
 * Rogers family prize for undergraduate summer research
 :properties:
 :year:     2006
-:org:      Massachusetts Institute of Technology
+:org:      Massachusetts Institute of Technology, Mathematics department
 :end:
-* William Lowell Putnam competition
+* Honorable mention (2004) , honorable mention (2005), rank 16--25 (2004)
 :properties:
-:year:     2004 (Rank 16--25), 2005 (Honorable mention), 2007 (Honorable mention)
+:year: 2007, 2005, 2004
+:org: William Lowell Putnam competition
 :end:
-* International mathematical olympiad
+* Silver medal (2004), bronze medal (2003)
 :properties:
-:year:     2004 (Silver), 2003 (Bronze)
+:year:     2004, 2003
+:org: International mathematical olympiad
 :end:

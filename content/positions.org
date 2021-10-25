@@ -1,0 +1,34 @@
+* Senior lecturer
+:properties:
+:institute: Australian National University
+:place: Canberra, Australia
+:year: 2021--
+:end:
+
+* Lecturer
+:properties:
+:institute: Australian National University
+:place: Canberra, Australia
+:year: 2018--2020
+:end:
+
+* Assistant professor (limited term)
+:properties:
+:institute: University of Georgia
+:place: Athens, Georgia, USA
+:year: 2016--2017
+:end:
+
+* J. F. Ritt assistant professor
+:properties:
+:institute: Columbia University
+:place: New York City, New York, USA
+:year: 2012--2016
+:end:
+
+* Summer intern
+:properties:
+:institute: Microsoft Research
+:place: Bangalore, India
+:year: 2008
+:end:
