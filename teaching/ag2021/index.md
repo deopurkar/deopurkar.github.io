@@ -131,7 +131,7 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">11</td>
-<td class="org-left"><a href="classwork11.pdf">Completeness</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/04fb4851-1a75-43d4-aee4-60cbca7ac945">Video</a>/<a href="notes/2021-10-18.pdf">Board</a></td>
+<td class="org-left"><a href="classwork11.pdf">Completeness</a>: Lecture 1: <a href="https://web.microsoftstream.com/video/04fb4851-1a75-43d4-aee4-60cbca7ac945">Video</a>/<a href="notes/2021-10-18.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/0c668d6a-7199-4e00-9dcc-849fb1c5b1b8">Video</a>/<a href="notes/2021-10-22.pdf">Board</a></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
