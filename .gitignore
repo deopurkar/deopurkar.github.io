@@ -12,3 +12,4 @@ _site
 Gemfile.lock
 **/Gemfile.lock
 /rvm-install
+/content/cv.html

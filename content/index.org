@@ -1,0 +1,59 @@
+#+title: Home
+#+author: Anand Deopurkar
+#+OPTIONS: toc:nil *:t author:nil ':t  num:nil date:nil d:+results
+
+#+begin_intro
+#+attr_html: :id mypicture :alt Anand Deopurkar
+[[file:assets/anandrd_banff.jpg]]
+
+#+begin_nil
+[[http://maths.anu.edu.au/][Mathematical Sciences Institute]]\\
+The Australian National University\\
+Canberra, ACT, 2601, Australia
+
+*Email:* ~anand.deopurkar~ at ~anu~ dot ~edu~ dot ~au~\\
+*Office:* 4.84 [[http://www.anu.edu.au/maps#show=102872][Hanna Neumann Building #156]]\\
+*Phone:* +61 2 6125 7320
+
+CV: [[file:cv.html][html]] [[file:cv.pdf][pdf]]
+#+end_nil
+#+end_intro
+
+I am an algebraic geometer with broad interests.
+Being an algebraic geometer means that I fundamentally study solution spaces of algebraic equations.
+I am interested in classical algebraic geometry, enumerative geometry, deformation theory, algebraic stacks, derived categories, among other things.
+
+#+begin_src elisp :exports results :results value raw drawer
+  (defun pretty-print ()
+    (org-agenda-get-some-entry-text (point-marker) most-positive-fixnum)
+    )
+  (string-join (org-map-entries 'pretty-print "+moar+level=2+FROM<=\"<today>\"+TO>=\"<today>\"") "\n")
+#+end_src
+
+#+RESULTS:
+:results:
+This semester (2021 Semester 2), I am teaching [[file:teaching/ag2021][algebraic geometry]].
+:end:
+
+* Papers/pre-prints
+
+* Timed text                                                  :noexport:moar:
+:PROPERTIES:
+:CUSTOM_ID: moar
+:END:
+** Teaching 2021 S2
+:PROPERTIES:
+:from: [2020-10-27 Tue] 
+:to: [2021-10-27 Wed]
+:END:
+This semester (2021 Semester 2), I am teaching [[file:teaching/ag2021][algebraic geometry]].
+
+
+** Teaching Summer and 2022 S1
+:PROPERTIES:
+:from: <2021-12-01 Wed> 
+:to: <2022-05-15 Sun>
+:END:
+I am currently not teaching anything.
+
+
