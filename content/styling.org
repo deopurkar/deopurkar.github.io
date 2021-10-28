@@ -21,7 +21,7 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
 - ~bg~, ~bg-faded~ :: background colour and faded version,
 - ~fg~, ~fg-faded~ :: foreground text colour and faded version,
 - ~link~, ~link-faded~ :: link colour and faded version,
-- ~titles~ :: colour for titles,
+- ~titles~ :: colour for title underlines,
 - ~code~ :: colour for verbatim text/code snippets
 - ~fg-select~, ~bg-select~ :: foreground and background colour for selected text
 #+begin_src scss
@@ -38,10 +38,12 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
               color: $fg-select;
           }
       }
-      a, a:active, a:visited { color: $link; }
+      a, a:active, a:visited { color: $link;}
+      a:hover { color: $link-faded; }
       code { color: $code; }
       h1, h2, h3, h4, h5, h6 {
-          color: $titles;
+          border-bottom: 0.15em solid $titles;
+          display: inline-block;
           a, a:active, a:visited {
               color: $titles;
           }
@@ -98,12 +100,24 @@ Later on we can just include the one we want.
       @include theme(#fdf6e3, #eee8d5, #657b83, #93a1a1, #268bd2, #2aa198, #cb4b16, #d33682);
   }
   
+  @mixin alifbepe {
+      @include theme(#fffdfc, #fffdfc, #000, #000, #000, #000, #d05a5b, #000);
+  }
+  
   @mixin solarized-dark {
       @include theme(#002b36, #073642, #839496, #586e75, #268bd2, #2aa198, #cb4b16, #859900);
   }
   
   @mixin zenburn {
       @include theme(#3F3F3F, #4F4F4F, #DCDCCC, #656555, #8CD0D3, #7CB8BB, #CC9393, #7F9F7F);
+  }
+  
+  @mixin flatui {
+      @include theme(#ecf0f1, #dfe4ea, #34495e, #7f8c8d, #2492db, #9b59b6, #0a74b9, #8e44ad);
+  }
+  
+  @mixin bespoke-light {
+      @include theme(#fffef9, #eceff1, #282b35, #727d97, #303db4, #30608c, #940b96, #00796b);
   }
   
   @mixin print {
@@ -160,7 +174,7 @@ The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-g
 Style links. Remember that the colours have already been styled via a theme mixin.
 #+begin_src scss
   ,* a {
-      text-decoration: none;
+      text-decoration: underline dotted;
       &:hover {
           text-decoration: underline;
       }
@@ -174,18 +188,16 @@ Style headings, lists, and figures.
   h1, h2, h3, h4 {
       font-family: $title-font, serif;
       font-weight:lighter;
+      margin-bottom: 0em;
   }
   ul, dl {
       padding-left: 1em;
-      margin-top: 0em;
       li {
           padding-bottom: 0.5em;
       }
   }
   ol {
       padding-left: 1em;
-      padding-top: 0em;
-      margin-top: 0em;
       li {
           padding-left: 0.5em;
           ol li {
@@ -259,7 +271,7 @@ Footer style and other miscellany.
 
 Include the colour themes previously defined.  
 #+begin_src scss
-  @include zenburn;
+  @include alifbepe;
 
   // Print stylesheet
   @media print {
@@ -313,11 +325,9 @@ On clicking the Headline, the javascript will toggle the visibility of Content a
   function addCollapsiblility(headline){
       headline.addEventListener("click", toggleVisibilityOfNext);
       headline.nextElementSibling.style.overflow = "hidden";
-      var content = headline.nextElementSibling
-      content.style.maxHeight = "0px";
+      var content = headline.nextElementSibling;
+      content.style.maxHeight = content.scrollHeight + "px";
       content.style.transition = "max-height 0.2s";
-      headline.classList.remove("collapsible");
-      headline.classList.add("collapsed");
   
       function toggleVisibilityOfNext (){
           var content = headline.nextElementSibling;
