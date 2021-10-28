@@ -174,13 +174,10 @@ Style headings, lists, and figures.
   h1, h2, h3, h4 {
       font-family: $title-font, serif;
       font-weight:lighter;
-      margin: 0em;
-      margin-bottom: 0.5em;
-      margin-top: 1em;
   }
   ul, dl {
       padding-left: 1em;
-      margin: 0em;
+      margin-top: 0em;
       li {
           padding-bottom: 0.5em;
       }
@@ -188,7 +185,7 @@ Style headings, lists, and figures.
   ol {
       padding-left: 1em;
       padding-top: 0em;
-      margin: 0em;
+      margin-top: 0em;
       li {
           padding-left: 0.5em;
           ol li {
@@ -306,7 +303,7 @@ On clicking the Headline, the javascript will toggle the visibility of Content a
 
 #+begin_src javascript 
   document.addEventListener("DOMContentLoaded", function () {
-      var headlines = document.getElementsByClassName("collapsible");
+      var headlines = document.querySelectorAll(".collapsible");
       var i;
       for (i = 0; i < headlines.length; i++) {
           addCollapsiblility(headlines[i]);
@@ -317,8 +314,10 @@ On clicking the Headline, the javascript will toggle the visibility of Content a
       headline.addEventListener("click", toggleVisibilityOfNext);
       headline.nextElementSibling.style.overflow = "hidden";
       var content = headline.nextElementSibling
+      content.style.maxHeight = "0px";
       content.style.transition = "max-height 0.2s";
-      content.style.maxHeight = content.scrollHeight + "px";
+      headline.classList.remove("collapsible");
+      headline.classList.add("collapsed");
   
       function toggleVisibilityOfNext (){
           var content = headline.nextElementSibling;
