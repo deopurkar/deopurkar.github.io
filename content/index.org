@@ -3,20 +3,20 @@
 #+OPTIONS: toc:nil *:t author:nil ':t  num:nil date:nil d:+results broken-links:mark html-style:nil
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 #+HTML_HEAD_EXTRA: <script src="js/collapsibility.js"></script>
-
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 
 #+begin_intro
 #+attr_html: :id mypicture :alt Anand Deopurkar
-[[file:assets/anandrd_banff.jpg]]q
+[[file:assets/anandrd_banff.jpg]]
 
 #+begin_nil
 [[http://maths.anu.edu.au/][Mathematical Sciences Institute]]\\
-The Australian National University\\
+[[https://anu.edu.au][The Australian National University]]\\
 Canberra, ACT, 2601, Australia
 
-*Email:* ~anand.deopurkar~ at ~anu~ dot ~edu~ dot ~au~\\
-*Office:* 4.84 [[http://www.anu.edu.au/maps#show=102872][Hanna Neumann Building #156]]\\
-*Phone:* +61 2 6125 7320
+ ~anand.deopurkar~ at ~anu~ dot ~edu~ dot ~au~\\
+4.56 [[http://www.anu.edu.au/maps#show=102872][Hanna Neumann Building #156]]\\
++61 2 6125 4628   
 
 CV: [[file:cv.html][html]] [[file:cv.pdf][pdf]]
 #+end_nil
@@ -35,7 +35,6 @@ I am interested in classical algebraic geometry, enumerative geometry, deformati
 
 #+RESULTS:
 :results:
-This semester (2021 Semester 2), I am teaching [[file:teaching/ag2021][algebraic geometry]].
 :end:
 
 * Papers/pre-prints
@@ -81,8 +80,8 @@ This semester (2021 Semester 2), I am teaching [[file:teaching/ag2021][algebraic
                   (format " (%s)" link)
                 "")
               (if back-refs
-                  (concat (format "\\\\\n  Talk%s: "
-                                  (if (= (length back-refs) 1) "" "s"))
+                  (format "\\\\\n  Talk%s: %s."
+                          (if (= (length back-refs) 1) "" "s")
                           (string-join back-refs ", "))
                 ""
                 )
@@ -101,12 +100,11 @@ Notes and other materials from some of my courses:
   (defun pretty-print ()
       (let ((title (org-entry-get nil "ITEM"))
             (year (org-entry-get nil "year")))
-        (format "- %s, %s"
+        (format "- %s, %s."
                 title
                 year)))
   (string-join (org-map-entries 'pretty-print "+hl" '("teaching.org")) "\n")
 #+end_src
-
 #+RESULTS:
 :results:
 - [[file:teaching/ag2021/][Algebraic Geometry (Algebra 3)]], 2021
@@ -135,7 +133,7 @@ Notes/slides from some talks not already linked above:
                           (institute (org-entry-get nil "institute"))
                           (place (org-entry-get nil "place"))
                           (comment (org-entry-get nil "comment")))
-                      (format "- /%s/%s (%s) \\\\\n  %s"
+                      (format "- /%s/%s (%s) \\\\\n  %s."
                               title
                               (if comment
                                   (format " (%s)" comment)
@@ -146,7 +144,6 @@ Notes/slides from some talks not already linked above:
             '("talks.org")))
    "\n")
 #+end_src
-
 #+RESULTS:
 :results:
 - /Error correcting codes/ (expository) ([[file:assets/talks/ecc2021/ecc.html][slides]]) \\

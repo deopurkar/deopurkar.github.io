@@ -13,3 +13,5 @@ Gemfile.lock
 **/Gemfile.lock
 /rvm-install
 /content/cv.html
+content/css/*
+content/js/*

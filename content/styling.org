@@ -116,8 +116,8 @@ We come to the main part of the CSS code, namely the positioning and layout opti
 First we define the variables for the title font and the body font.
 #+begin_src scss
   // Fonts
-  $title-font: Neuton;
-  $body-font: Neuton;
+  $title-font: Inconsolata;
+  $body-font: Inconsolata;
 #+end_src
 Next we use media queries to set breakpoints for various screen sizes, which then influence the layout of the page.
 The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][CSS flexbox]].
@@ -176,6 +176,7 @@ Style headings, lists, and figures.
       font-weight:lighter;
       margin: 0em;
       margin-bottom: 0.5em;
+      margin-top: 1em;
   }
   ul, dl {
       padding-left: 1em;
@@ -261,7 +262,7 @@ Footer style and other miscellany.
 
 Include the colour themes previously defined.  
 #+begin_src scss
-  @include solarized-light;
+  @include zenburn;
 
   // Print stylesheet
   @media print {
@@ -315,7 +316,9 @@ On clicking the Headline, the javascript will toggle the visibility of Content a
   function addCollapsiblility(headline){
       headline.addEventListener("click", toggleVisibilityOfNext);
       headline.nextElementSibling.style.overflow = "hidden";
-      headline.nextElementSibling.style.transition = "max-height 0.2s ease-out";
+      var content = headline.nextElementSibling
+      content.style.transition = "max-height 0.2s";
+      content.style.maxHeight = content.scrollHeight + "px";
   
       function toggleVisibilityOfNext (){
           var content = headline.nextElementSibling;
