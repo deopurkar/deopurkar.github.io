@@ -3,7 +3,7 @@
 #+OPTIONS: toc:nil *:t author:nil ':t  num:nil date:nil d:+results broken-links:mark html-style:nil
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 #+HTML_HEAD_EXTRA: <script src="js/collapsibility.js"></script>
-#+HTML_HEAD_EXTRA: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
 #+begin_intro
 #+attr_html: :id mypicture :alt Anand Deopurkar
@@ -169,8 +169,8 @@ Notes/slides from some talks not already linked above:
   This is the first genus where canonical syzygies define an interesting GIT quotient, so it would be nice to understand the complete picture.
   One day...
 
-- [[https://github.com/asilata/cobracat][Categorical braid group actions]]\\ [[https://asilata.github.io][
-  Asilata Bapat]] and I wrote ~Sage~ code to make explicit computations in the homotopy category of projective objects.
+- [[https://github.com/asilata/cobracat][Categorical braid group actions]]\\
+  With [[https://asilata.github.io][Asilata Bapat]], I wrote ~Sage~ code to make explicit computations in the homotopy category of projective objects.
   In particular, this code can compute braid actions on complexes of projective modules over the zig-zag algebra of a quiver.
 
 - [[https://deopurkar.github.io/msicg/][MSI course graph]]\\
