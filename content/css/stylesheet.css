@@ -1,0 +1,205 @@
+@media screen and (max-width: 480px) {
+  body {
+    max-width: 95%;
+    font-size: 100%; } }
+@media screen and (min-width: 480px) {
+  body {
+    max-width: 80%; } }
+@media screen and (min-width: 550px) {
+  body {
+    font-size: 110%; }
+    body .intro {
+      flex-direction: row-reverse; } }
+@media screen and (min-width: 1000px) {
+  body {
+    max-width: 1000px; }
+    body header {
+      flex-direction: row; } }
+body {
+  font-family: Neuton, serif;
+  margin-top: 0em;
+  margin-left: auto;
+  margin-right: auto; }
+
+* a {
+  text-decoration: none; }
+  * a:hover {
+    text-decoration: underline; }
+  * a:focus {
+    outline: none; }
+
+h1, h2, h3, h4 {
+  font-family: Neuton, serif;
+  font-weight: lighter;
+  margin: 0em;
+  margin-bottom: 0.5em; }
+
+ul, dl {
+  padding-left: 1em;
+  margin: 0em; }
+  ul li, dl li {
+    padding-bottom: 0.5em; }
+
+ol {
+  padding-left: 1em;
+  padding-top: 0em;
+  margin: 0em; }
+  ol li {
+    padding-left: 0.5em; }
+    ol li ol li {
+      list-style-type: lower-alpha; }
+
+figure {
+  padding: 0em;
+  margin: 0em; }
+
+footer {
+  font-size: 80%; }
+
+header {
+  font-family: Neuton;
+  font-size: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0em;
+  margin-bottom: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.2em; }
+  header h1 {
+    text-align: center;
+    margin: 0em; }
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+footer {
+  border-top: 0.1em dotted;
+  margin-top: 2em;
+  padding-top: 0.3em; }
+
+#mypicture {
+  width: 15em; }
+  @media screen and (min-width: 960px) {
+    #mypicture {
+      width: 20em; } }
+  @media screen and (max-width: 480px) {
+    #mypicture {
+      margin-left: 0; } }
+
+.clearfix {
+  float: none;
+  clear: both; }
+
+* {
+  color: #657b83; }
+
+body {
+  background-color: #fdf6e3; }
+  body ::-moz-selection {
+    background-color: #cb4b16;
+    color: #eee8d5; }
+  body ::-selection {
+    background-color: #cb4b16;
+    color: #eee8d5; }
+
+a, a:active, a:visited {
+  color: #268bd2; }
+
+code {
+  color: #d33682; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #cb4b16; }
+  h1 a, h1 a:active, h1 a:visited, h2 a, h2 a:active, h2 a:visited, h3 a, h3 a:active, h3 a:visited, h4 a, h4 a:active, h4 a:visited, h5 a, h5 a:active, h5 a:visited, h6 a, h6 a:active, h6 a:visited {
+    color: #cb4b16; }
+  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    background-color: #eee8d5;
+    text-decoration: none; }
+
+header a, header a:active, header a:visited {
+  color: #657b83; }
+header a.active {
+  color: #cb4b16; }
+header a:hover {
+  color: #cb4b16;
+  background-color: #fdf6e3;
+  text-decoration: none; }
+
+footer {
+  color: #93a1a1;
+  border-color: #93a1a1; }
+  footer a, footer a:active, footer a:visited {
+    color: #2aa198; }
+
+#mypicture {
+  border-color: #93a1a1; }
+
+@media print {
+  footer, nav {
+    display: none; }
+
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  a:after {
+    content: " '(' attr(href) ') '"; }
+
+  * {
+    color: #000; }
+
+  body {
+    background-color: #fff; }
+    body ::-moz-selection {
+      background-color: #000;
+      color: #fff; }
+    body ::-selection {
+      background-color: #000;
+      color: #fff; }
+
+  a, a:active, a:visited {
+    color: #000; }
+
+  code {
+    color: #000; }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #000; }
+    h1 a, h1 a:active, h1 a:visited, h2 a, h2 a:active, h2 a:visited, h3 a, h3 a:active, h3 a:visited, h4 a, h4 a:active, h4 a:visited, h5 a, h5 a:active, h5 a:visited, h6 a, h6 a:active, h6 a:visited {
+      color: #000; }
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+      background-color: #fff;
+      text-decoration: none; }
+
+  header a, header a:active, header a:visited {
+    color: #000; }
+  header a.active {
+    color: #000; }
+  header a:hover {
+    color: #000;
+    background-color: #fff;
+    text-decoration: none; }
+
+  footer {
+    color: #000;
+    border-color: #000; }
+    footer a, footer a:active, footer a:visited {
+      color: #000; }
+
+  #mypicture {
+    border-color: #000; } }
+.collapsible {
+  cursor: pointer; }
+  .collapsible:before {
+    content: '- '; }
+
+.collapsed {
+  cursor: pointer; }
+  .collapsed:before {
+    content: '+ '; }
+
+/*# sourceMappingURL=stylesheet.css.map */

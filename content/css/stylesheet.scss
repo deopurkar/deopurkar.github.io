@@ -1,0 +1,244 @@
+@mixin alternate-rows($color) {
+    table {
+        tbody > tr:nth-child(odd){
+            background: $color;
+        }
+    }
+}
+
+@mixin theme($bg, $bg-faded, $fg, $fg-faded, $link, $link-faded, $titles, $code, $bg-select: $titles, $fg-select: $bg-faded) {
+    * { color: $fg; }
+    body {
+        background-color: $bg;
+        ::-moz-selection {
+            background-color: $bg-select;
+            color: $fg-select;
+        }
+        ::-selection {
+            background-color: $bg-select;
+            color: $fg-select;
+        }
+    }
+    a, a:active, a:visited { color: $link; }
+    code { color: $code; }
+    h1, h2, h3, h4, h5, h6 {
+        color: $titles;
+        a, a:active, a:visited {
+            color: $titles;
+        }
+        a:hover {
+            background-color: $bg-faded;
+            text-decoration: none; 
+        }
+    }
+    header {
+        a, a:active, a:visited {
+            color: $fg;
+        }
+        a.active {
+            color: $titles;
+        }
+        a:hover {
+            color: $titles;
+            background-color: $bg;
+            text-decoration: none;
+        }
+    }
+    footer {
+        color: $fg-faded;
+        border-color: $fg-faded;
+        a, a:active, a:visited { color: $link-faded; }
+    }
+    #mypicture {
+        border-color: $fg-faded;
+    }
+}
+
+// Palette based on Solarized theme (just as an example)
+// $base03:    #002b36;
+// $base02:    #073642;
+// $base01:    #586e75;
+// $base00:    #657b83;
+// $base0:     #839496;
+// $base1:     #93a1a1;
+// $base2:     #eee8d5;
+// $base3:     #fdf6e3;
+// $yellow:    #b58900;
+// $orange:    #cb4b16;
+// $red:       #dc322f;
+// $magenta:   #d33682;
+// $violet:    #6c71c4;
+// $blue:      #268bd2;
+// $cyan:      #2aa198;
+// $green:     #859900;
+
+@mixin solarized-light {
+    @include theme(#fdf6e3, #eee8d5, #657b83, #93a1a1, #268bd2, #2aa198, #cb4b16, #d33682);
+}
+
+@mixin solarized-dark {
+    @include theme(#002b36, #073642, #839496, #586e75, #268bd2, #2aa198, #cb4b16, #859900);
+}
+
+@mixin zenburn {
+    @include theme(#3F3F3F, #4F4F4F, #DCDCCC, #656555, #8CD0D3, #7CB8BB, #CC9393, #7F9F7F);
+}
+
+@mixin print {
+    @include theme(#fff, #fff, #000, #000, #000, #000, #000, #000);
+}
+
+// Fonts
+$title-font: Neuton;
+$body-font: Neuton;
+
+@media screen and (max-width: 480px) {
+    body {
+        max-width:95%;
+        font-size:100%;
+    }
+}
+@media screen and (min-width: 480px) {
+    body {
+        max-width:80%;
+    }
+}
+@media screen and (min-width: 550px) {
+    body {
+        .intro {
+            flex-direction: row-reverse;
+        }
+        font-size:110%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    body {
+        max-width:1000px;
+
+        header {
+            flex-direction: row;
+        }
+    }
+}
+body {
+    font-family: $body-font, serif;
+    margin-top: 0em;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+* a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+h1, h2, h3, h4 {
+    font-family: $title-font, serif;
+    font-weight:lighter;
+    margin: 0em;
+    margin-bottom: 0.5em;
+}
+ul, dl {
+    padding-left: 1em;
+    margin: 0em;
+    li {
+        padding-bottom: 0.5em;
+    }
+}
+ol {
+    padding-left: 1em;
+    padding-top: 0em;
+    margin: 0em;
+    li {
+        padding-left: 0.5em;
+        ol li {
+            list-style-type: lower-alpha;
+        }
+    }
+}
+figure {
+    padding: 0em;
+    margin: 0em;
+}
+
+%small {
+    font-size: 80%;
+}
+
+header {
+    font-family: $title-font;
+    font-size: 110%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top:0em;
+    margin-bottom: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+    //border-bottom: solid 0.15em;
+
+    h1 {
+        text-align: center;
+        margin: 0em;
+    }
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    @extend %small;
+    border-top: 0.1em dotted;
+    margin-top:2em;
+    padding-top:0.3em;
+}
+#mypicture {
+    width:15em;
+    @media screen and (min-width: 960px) {
+        width: 20em;
+    }
+    @media screen and (max-width: 480px) {
+        margin-left: 0;
+    }
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+@include solarized-light;
+
+// Print stylesheet
+@media print {
+    footer, nav {display:none;}
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    a:after {
+        content: " '(' attr(href) ') '";
+    }
+    @include print;
+}
+
+.collapsible{
+    cursor: pointer;
+    &:before {
+        content: '- ';
+    }
+}
+.collapsed{
+    cursor: pointer;
+    &:before {
+        content: '+ ';
+    }
+}

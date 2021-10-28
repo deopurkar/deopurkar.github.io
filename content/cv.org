@@ -105,7 +105,7 @@
             (coauthors (org-entry-get nil "with"))
             (comment (org-entry-get nil "comment"))
             (link (org-entry-get nil "link")))
-        (format "- %s :: %s.\\\\\n          /%s/%s%s.%s"
+        (format "- %s :: %s.\\\\\n          /%s/%s%s%s."
                 (if (equal previous year)
                     "---"
                   (setq previous year))
@@ -118,70 +118,35 @@
                     (format ", with %s" coauthors)
                   "")
                 (if link
-                    (format "\n    #+begin_export html\n    %s\n    #+end_export" link)
-                  ""
-                  )
-                ))))
+                    (format " (%s)" link)
+                  "")))))
   (string-join (org-map-entries 'pretty-print "-pp-expository-thesis" '("papers.org")) "\n")
 #+end_src
 
 #+RESULTS:
 :results:
 - 2021 :: Transactions of the Americal Mathematical Society 374, No. 1, 589-641 (2021).\\
-          /Stable log surfaces, admissible covers, and canonical curves of genus 4/, with Changho Han.
-    #+begin_export html
-    [[file:papers/TrigonalKSBA.pdf][pdf]], [[https://arxiv.org/abs/1807.08413/][arxiv:1807.08413]]
-    #+end_export
+          /Stable log surfaces, admissible covers, and canonical curves of genus 4/, with Changho Han ([[file:papers/TrigonalKSBA.pdf][pdf]], [[https://arxiv.org/abs/1807.08413/][arxiv:1807.08413]]).
 - 2020 :: Documenta Mathematica 25, 1917--1952 (2020).\\
-          /Ramification divisors of general projections/, with [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]].
-    #+begin_export html
-    [[file:papers/PR.pdf][pdf]], [[http://arxiv.org/abs/1901.01513/][arxiv:1901.01513]]
-    #+end_export
+          /Ramification divisors of general projections/, with [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]] ([[file:papers/PR.pdf][pdf]], [[http://arxiv.org/abs/1901.01513/][arxiv:1901.01513]]).
 - 2019 :: Transactions of the Americal Mathematical Society, 371, 549--588 (2019).\\
-          /Covers of stacky curves and limits of plane quintics/.
-    #+begin_export html
-    [[papers/StackyAdmissibleCovers.pdf][pdf]], [[http://arxiv.org/abs/1507.03252/][arxiv:1507.03252]]
-    #+end_export
+          /Covers of stacky curves and limits of plane quintics/ ([[papers/StackyAdmissibleCovers.pdf][pdf]], [[http://arxiv.org/abs/1507.03252/][arxiv:1507.03252]]).
 - 2018 :: Contemporary Mathematics 703, 209--222 (2018).\\
-          /Syzygy divisors on Hurwitz spaces/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
-    #+begin_export html
-    [[file:papers/HigherMaroni.pdf][pdf]], [[https://arxiv.org/abs/1805.00648][arxiv:1805.00648]]
-    #+end_export
+          /Syzygy divisors on Hurwitz spaces/, with [[https://sites.google.com/view/anand-patel][Anand Patel]] ([[file:papers/HigherMaroni.pdf][pdf]], [[https://arxiv.org/abs/1805.00648][arxiv:1805.00648]]).
 - --- :: Mathematische Zeitschrift 288, No. 3-4, 1157--1164 (2018).\\
-          /The canonical syzygy conjecture for ribbons/.
-    #+begin_export html
-    [[papers/RibbonGreen.pdf][pdf]], [[http://arxiv.org/abs/1510.07755/][arxiv:1510.07755]]
-    #+end_export
+          /The canonical syzygy conjecture for ribbons/ ([[papers/RibbonGreen.pdf][pdf]], [[http://arxiv.org/abs/1510.07755/][arxiv:1510.07755]]).
 - 2016 :: Algebraic Geometry 3, No. 1, 1--22 (2016).\\
-          /Toward GIT stability of syzygies of canonical curves/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]].
-    #+begin_export html
-    [[http://arxiv.org/abs/1401.6101/][arxiv:1401.6101]], [[http://www.algebraicgeometry.nl/2016-1/2016-1-001.pdf][journal]]
-    #+end_export
+          /Toward GIT stability of syzygies of canonical curves/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]] ([[http://arxiv.org/abs/1401.6101/][arxiv:1401.6101]], [[http://www.algebraicgeometry.nl/2016-1/2016-1-001.pdf][journal]]).
 - 2015 :: Algebra & Number Theory 9, No. 2, 459--492 (2015).\\
-          /The Picard rank conjecture for the Hurwitz spaces of degree up to five/, with [[https://www2.bc.edu/anand-p-patel/][Anand Patel]].
-    #+begin_export html
-    [[papers/PicH345.pdf][pdf]], [[http://arxiv.org/abs/1401.6101/][arxiv:1401.6101]], [[http://msp.org/ant/2015/9-2/p05.xhtml][journal]]
-    #+end_export
+          /The Picard rank conjecture for the Hurwitz spaces of degree up to five/, with [[https://www2.bc.edu/anand-p-patel/][Anand Patel]] ([[papers/PicH345.pdf][pdf]], [[http://arxiv.org/abs/1401.6101/][arxiv:1401.6101]], [[http://msp.org/ant/2015/9-2/p05.xhtml][journal]]).
 - 2014 :: Albanian Journal of Mathematics 8, No. 2, 55--70 (2014).\\
-          /Groebner techniques for ribbons/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]].
-    #+begin_export html
-    [[papers/groebner.pdf][pdf]], [[https://sites.google.com/site/albjmath/archives/vol-8/2014-6][journal]]
-    #+end_export
+          /Groebner techniques for ribbons/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]] ([[papers/groebner.pdf][pdf]], [[https://sites.google.com/site/albjmath/archives/vol-8/2014-6][journal]]).
 - --- :: International Mathematics Research Notices 2014, No. 14, 3863--3911 (2014).\\
-          /Compactifications of Hurwitz spaces/.
-    #+begin_export html
-    [[papers/CompHurwitz.pdf][pdf]], [[http://arxiv.org/abs/1206.4535/][arxiv:1206.4535]], [[http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract][journal]]
-    #+end_export
+          /Compactifications of Hurwitz spaces/ ([[papers/CompHurwitz.pdf][pdf]], [[http://arxiv.org/abs/1206.4535/][arxiv:1206.4535]], [[http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract][journal]]).
 - 2013 :: Mathematical Research Letters 20, No. 5, 869--884 (2013).\\
-          /Sharp slope bounds for sweeping families of trigonal curves/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
-    #+begin_export html
-    [[papers/TrigonalSlopes.pdf][pdf]], [[http://arxiv.org/abs/1211.2827/][arxiv:1211.2827]], [[http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/][journal]]
-    #+end_export
+          /Sharp slope bounds for sweeping families of trigonal curves/, with [[https://sites.google.com/view/anand-patel][Anand Patel]] ([[papers/TrigonalSlopes.pdf][pdf]], [[http://arxiv.org/abs/1211.2827/][arxiv:1211.2827]], [[http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/][journal]]).
 - --- :: Advances in Mathematics 248, 96--154 (2013).\\
-          /Modular compactifications of the space of marked trigonal curves/.
-    #+begin_export html
-    [[papers/MarkedTrigonal.pdf][pdf]], [[http://arxiv.org/abs/1206.4503/][arxiv:1206.4503]]
-    #+end_export
+          /Modular compactifications of the space of marked trigonal curves/ ([[papers/MarkedTrigonal.pdf][pdf]], [[http://arxiv.org/abs/1206.4503/][arxiv:1206.4503]]).
 :end:
 ** Pre-prints
 #+begin_src elisp :exports results :results value raw drawer
@@ -270,8 +235,9 @@
             (institute (org-entry-get nil "institute"))
             (comment (org-entry-get nil "comment"))
             (type (org-entry-get nil "type"))
-            (title (org-entry-get nil "ITEM")))
-        (format "- %s :: %s. /%s/%s."
+            (title (org-entry-get nil "ITEM"))
+            (link (org-entry-get nil "link")))
+        (format "- %s :: %s. /%s/%s%s."
                 (if (equal previous year)
                     "---"
                   (setq previous year))
@@ -279,14 +245,16 @@
                 title
                 (if comment
                     (format " (%s)" comment)
+                  "")
+                (if link
+                    (format " (%s)" link)
                   "")))))
-  
   (string-join (org-map-entries 'pretty-print nil '("talks.org")) "\n")
 #+end_src
 
 #+RESULTS:
 :results:
-- 2021 :: Max Planck institute für Mathematics, Bonn, Germany, Workshop on compactifications of stability manifolds (Online). /A Thurston compactification of the space of stability conditions/.
+- --- :: Max Planck institute für Mathematics, Bonn, Germany, Workshop on compactifications of stability manifolds (Online). /A Thurston compactification of the space of stability conditions/.
 - --- :: Tata Institute of Fundamental Research (Online), Mumbai, India. /A Thurston compactification of the space of stability conditions/.
 - --- :: Jagiellonian University (Online), Kraków, Poland. /A Thurston compactification of the space of stability conditions/.
 - 2020 :: University of New England, Amidale, Australia, Topology session, AustMS (Online). /A Thurston compactification for categories/.
