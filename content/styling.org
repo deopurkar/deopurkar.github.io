@@ -44,6 +44,8 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
       h1, h2, h3, h4, h5, h6 {
           border-bottom: 0.15em solid $titles;
           display: inline-block;
+          padding-top: 0.5em;
+          margin: 0em;
           a, a:active, a:visited {
               color: $titles;
           }
@@ -70,8 +72,22 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
           border-color: $fg-faded;
           a, a:active, a:visited { color: $link-faded; }
       }
+  
       #mypicture {
           border-color: $fg-faded;
+      }
+  
+      #table-of-contents {
+          float: left;
+          padding-right: 1em;
+          margin-right: 1em;
+          h2 {
+              display: none;
+          }
+          ul {
+              list-style-type: none;
+              padding: 0em;
+          }
       }
   }
 #+end_src
@@ -101,7 +117,7 @@ Later on we can just include the one we want.
   }
   
   @mixin alifbepe {
-      @include theme(#fffdfc, #fffdfc, #000, #000, #000, #000, #d05a5b, #000);
+      @include theme(#fffdfc, #c7bba8, #000, #000, #000, #d05a5b, #d05a5b, #000);
   }
   
   @mixin solarized-dark {
@@ -130,8 +146,8 @@ We come to the main part of the CSS code, namely the positioning and layout opti
 First we define the variables for the title font and the body font.
 #+begin_src scss
   // Fonts
-  $title-font: Lato;
-  $body-font: Lato;
+  $title-font: Default;
+  $body-font: Default;
 #+end_src
 Next we use media queries to set breakpoints for various screen sizes, which then influence the layout of the page.
 The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][CSS flexbox]].
