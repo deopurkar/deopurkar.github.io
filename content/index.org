@@ -21,11 +21,13 @@ CV: [[file:cv.html][html]] [[file:cv.pdf][pdf]]
 #+end_nil
 #+end_intro
 
+#+begin_container
 #+TOC: headlines:1
 
 I am an algebraic geometer with broad interests.
 Being an algebraic geometer means that I fundamentally study solution spaces of algebraic equations.
 I am interested in classical algebraic geometry, enumerative geometry, deformation theory, algebraic stacks, derived categories, among other things.
+#+end_container
 
 #+begin_src elisp :exports results :results value raw drawer
   (defun pretty-print ()

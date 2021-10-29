@@ -87,7 +87,14 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
           ul {
               list-style-type: none;
               padding: 0em;
+              margin: 0em;
           }
+      }
+  
+      .container::after {
+          content: "";
+          clear: both;
+          display: table;
       }
   }
 #+end_src
@@ -278,10 +285,6 @@ Footer style and other miscellany.
       @media screen and (max-width: 480px) {
           margin-left: 0;
       }
-  }
-  .clearfix{
-      float: none;
-      clear: both;
   }
 #+end_src
 
