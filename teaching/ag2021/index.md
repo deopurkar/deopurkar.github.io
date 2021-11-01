@@ -139,8 +139,15 @@ This is a tentative outline of the course, subject to change.
 
 <tr>
 <td class="org-right">12</td>
-<td class="org-left">???</td>
+<td class="org-left">What is more in algebraic geometry? Lecture 1: <a href="https://web.microsoftstream.com/video/04bf42f9-656a-43b2-81e7-e069d823fe25">Video</a>/<a href="noes/2021-10-25.pdf">Board</a>, Lecture 2: <a href="https://web.microsoftstream.com/video/04bf42f9-656a-43b2-81e7-e069d823fe25">Video</a>/<a href="notes/2021-10-29.pdf">Board</a></td>
 <td class="org-left">Assignment 5</td>
+</tr>
+
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Q&amp;A session 1: <a href="https://web.microsoftstream.com/video/2dc19fb8-ff07-4eca-82cb-3ec8069ed1f4">Video</a>, Q&amp;A session 2 <a href="https://web.microsoftstream.com/video/86ccd471-e823-4267-a44e-a84f1bc09062">Video</a>/<a href="notes/2021-10-28.pdf">Board</a></td>
+<td class="org-left">&#xa0;</td>
 </tr>
 </tbody>
 </table>
