@@ -11,8 +11,7 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 # Announcements
 
 1.  The final exam will be on Nov 17 and 18 (with the same rules as the midterm).
-2.  Homework 5 is up on Gradesocpe.
-3.  The [classwork for week 11](classwork11.pdf) is up.
+2.  Here are some [practice questions](AGFinalPractice.pdf) for the final.
 
 
 # Links
