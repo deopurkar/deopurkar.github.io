@@ -77,24 +77,8 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
           border-color: $fg-faded;
       }
   
-      #table-of-contents {
-          float: left;
-          padding-right: 1em;
-          margin-right: 1em;
-          h2 {
-              display: none;
-          }
-          ul {
-              list-style-type: none;
-              padding: 0em;
-              margin: 0em;
-          }
-      }
-  
-      .container::after {
-          content: "";
-          clear: both;
-          display: table;
+      #postamble {
+          border-top: 0.15em solid $titles;
       }
   }
 #+end_src
@@ -293,6 +277,31 @@ Footer style and other miscellany.
       @media screen and (max-width: 480px) {
           margin-left: 0;
       }
+  }
+  #table-of-contents {
+      float: left;
+      padding-right: 1em;
+      margin-right: 1em;
+      h2 {
+          display: none;
+      }
+      ul {
+          list-style-type: none;
+          padding: 0em;
+          margin: 0em;
+      }
+  }
+  
+  #postamble {
+      @extend %small;
+      margin-top: 1em;
+      text-align: right;
+  }
+  
+  .container::after {
+      content: "";
+      clear: both;
+      display: table;
   }
 #+end_src
 
