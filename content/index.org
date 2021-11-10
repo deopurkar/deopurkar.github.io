@@ -50,16 +50,14 @@ I am interested in classical algebraic geometry, enumerative geometry, deformati
   (defun collect-back-ref (title)
     (remove 'nil
             (org-map-entries
-             (defun map-over-entries ()
+             (defun collect-refs-from-entries ()
                (if (and (org-entry-get nil "ref")
                         (string-match-p (regexp-quote title)
                                         (org-entry-get nil "ref"))
                         (org-entry-get nil "link"))
                    (format "%s (%s)"
                            (car (split-string (org-entry-get nil "place") ","))
-                           (org-entry-get nil "link"))))
-             nil
-             '("talks.org"))))
+                           (org-entry-get nil "link")))))))
   
   ;; Our pretty-printing function
   (defun pretty-print ()
@@ -89,7 +87,7 @@ I am interested in classical algebraic geometry, enumerative geometry, deformati
                 ""
                 )
               )))
-  (string-join (org-map-entries 'pretty-print "-expository" '("papers.org")) "\n")
+  (string-join (org-map-entries 'pretty-print "-expository" '("data/papers.org")) "\n")
 #+end_src
 
 #+RESULTS:
@@ -106,7 +104,7 @@ Notes and other materials from some of my courses:
         (format "- %s, %s."
                 title
                 year)))
-  (string-join (org-map-entries 'pretty-print "+hl" '("teaching.org")) "\n")
+  (string-join (org-map-entries 'pretty-print "+hl" '("data/teaching.org")) "\n")
 #+end_src
 #+RESULTS:
 :results:
@@ -144,7 +142,7 @@ Notes/slides from some talks not already linked above:
                               link
                               (string-join (remove nil `(,meet ,institute ,place)) ", "))))))
             nil
-            '("talks.org")))
+            '("data/talks.org")))
    "\n")
 #+end_src
 #+RESULTS:

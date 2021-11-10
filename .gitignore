@@ -15,3 +15,4 @@ Gemfile.lock
 /content/cv.html
 content/css/*
 content/js/*
+/public/
