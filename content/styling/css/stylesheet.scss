@@ -165,13 +165,7 @@ body {
 }
 
 * a {
-    text-decoration: underline dotted;
-    &:hover {
-        text-decoration: underline;
-    }
-    &:focus {
-        outline: none;
-    }
+    text-decoration: underline;
 }
 
 h1, h2, h3, h4 {
@@ -179,7 +173,7 @@ h1, h2, h3, h4 {
     font-weight:lighter;
     margin-bottom: 0em;
 }
-ul, dl {
+ul {
     padding-left: 1em;
     li {
         padding-bottom: 0.5em;
@@ -194,6 +188,18 @@ ol {
         }
     }
 }
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 10px 0px;
+}
+dt {
+    grid-column-start: 1;
+}
+dd {
+    grid-column-start: 2;
+}
+
 figure {
     padding: 0em;
     margin: 0em;

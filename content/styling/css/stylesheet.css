@@ -22,20 +22,16 @@ body {
   margin-right: auto; }
 
 * a {
-  text-decoration: underline dotted; }
-  * a:hover {
-    text-decoration: underline; }
-  * a:focus {
-    outline: none; }
+  text-decoration: underline; }
 
 h1, h2, h3, h4 {
   font-family: Default, serif;
   font-weight: lighter;
   margin-bottom: 0em; }
 
-ul, dl {
+ul {
   padding-left: 1em; }
-  ul li, dl li {
+  ul li {
     padding-bottom: 0.5em; }
 
 ol {
@@ -44,6 +40,17 @@ ol {
     padding-left: 0.5em; }
     ol li ol li {
       list-style-type: lower-alpha; }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 10px 0px; }
+
+dt {
+  grid-column-start: 1; }
+
+dd {
+  grid-column-start: 2; }
 
 figure {
   padding: 0em;

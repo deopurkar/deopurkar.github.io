@@ -16,3 +16,5 @@ Gemfile.lock
 content/css/*
 content/js/*
 /public/
+/content/cv.pdf
+/content/cv.tex

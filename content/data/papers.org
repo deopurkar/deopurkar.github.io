@@ -125,7 +125,7 @@ We use Groebner basis techniques to study the balanced canonical ribbon in each 
 
 * Class of the Hodge eigenbundle using orbifold Riemann-Roch             :pp:
 :PROPERTIES:
-:journal:  Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclipdfc covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]]
+:journal:  Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]]
 :link:     [[papers/CyclicAppendix.pdf][pdf]]
 :year:     2013
 :END:

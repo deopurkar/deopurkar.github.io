@@ -1,19 +1,21 @@
 #+TITLE: Curriculum Vitae | Anand Deopurkar
-#+SUBTITLE: [[mailto:anand.deopurkar@anu.edu.au][~anand.deopurkar@anu.edu.au~]]
-#+AUTHOR: Anand Deopurkar
-#+OPTIONS: toc:nil *:t author:nil ':t  num:nil date:nil d:+results
+#+AUTHOR: [[mailto:anand.deopurkar@anu.edu.au][~anand.deopurkar@anu.edu.au~]]
+#+options: -:t broken-links:mark num:nil toc:nil date:nil
 #+LATEX_HEADER: \usepackage[margin=3cm]{geometry}
 #+LATEX_HEADER_EXTRA: \hypersetup{colorlinks=true,urlcolor=black}
 #+LATEX_HEADER_EXTRA: \usepackage{Baskervaldx}
+#+HTML_HEAD_EXTRA: <script src="js/collapsibility.js"></script>
 
-#+begin_src elisp :results none
+#+begin_src elisp :results none :exports none
   ;; If we have not been explicitly told to exclude links, we include links.
   (if (not (boundp 'include-links))
       (setq include-links t)
     )
 #+end_src
-
 * Positions
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 #+begin_src elisp :exports results :results value raw drawer
   ;; Our pretty-printing function
   (defun pretty-print ()
@@ -45,6 +47,9 @@
 :end:
 
 * Education
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 #+begin_src elisp :exports results :results value raw drawer
   ;; Our pretty-printing function
   (defun pretty-print ()
@@ -74,6 +79,9 @@
 :end:
 
 * Grants and awards
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 #+begin_src elisp :exports results :results value raw drawer
   ;; Our pretty-printing function
   (defun pretty-print ()
@@ -100,6 +108,9 @@
 :end:
 
 * Publications 
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 #+begin_src elisp :exports results :results value raw drawer :lexical t
   ;; Our pretty-printing function
   (let ((previous ""))
@@ -127,7 +138,6 @@
                   "")))))
   (string-join (org-map-entries 'pretty-print "-pp-expository-thesis" '("data/papers.org")) "\n")
 #+end_src
-
 #+RESULTS:
 :results:
 - 2021 :: Transactions of the Americal Mathematical Society 374, No. 1, 589-641 (2021).\\
@@ -153,7 +163,8 @@
 - --- :: Advances in Mathematics 248, 96--154 (2013).\\
           /Modular compactifications of the space of marked trigonal curves/ ([[papers/MarkedTrigonal.pdf][pdf]], [[http://arxiv.org/abs/1206.4503/][arxiv]]).
 :end:
-** Pre-prints
+
+- Pre-prints ::
 #+begin_src elisp :exports results :results value raw drawer
   (string-join (org-map-entries 'pretty-print "+pp" '("data/papers.org")) "\n")
 #+end_src
@@ -174,7 +185,7 @@
           /Class of the Hodge eigenbundle using orbifold Riemann-Roch/.
 :end:
 
-** Expository
+- Expository ::
 #+begin_src elisp :exports results :results value raw drawer
   (string-join (org-map-entries 'pretty-print "+expository" '("data/papers.org")) "\n")
 #+end_src
@@ -188,6 +199,9 @@
 :end:
 
 * Supervision
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 #+begin_src elisp :exports results :results value raw drawer :lexical t
   ;; Our pretty-printing function
   (let ((previous ""))
@@ -228,6 +242,9 @@
 :end:
 
 * Talks and presentations
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 #+begin_src elisp :exports results :results value raw drawer :lexical t
   ;; Our pretty-printing function
   (let ((previous ""))
@@ -315,6 +332,9 @@
 :end:
 
 * Service
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 #+begin_src elisp :exports results :results value raw drawer :lexical t
   ;; Our pretty-printing function
   (let ((previous ""))

@@ -1,7 +1,6 @@
 #+title: Anand Deopurkar
 #+author: Anand Deopurkar
-#+OPTIONS: toc:nil *:t author:nil ':t  num:nil date:nil d:+results broken-links:mark html-style:nil html-postamble:nil
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+#+OPTIONS: *:t author:nil ':t  d:+results 
 #+HTML_HEAD_EXTRA: <script src="js/collapsibility.js"></script>
 
 #+begin_intro
@@ -38,6 +37,7 @@ I am interested in classical algebraic geometry, enumerative geometry, deformati
 
 #+RESULTS:
 :results:
+This semester (2021 Semester 2), I am teaching [[file:teaching/ag2021][algebraic geometry]].
 :end:
 
 * Papers/pre-prints
@@ -47,7 +47,7 @@ I am interested in classical algebraic geometry, enumerative geometry, deformati
 #+begin_src elisp :exports results :results value raw drawer
   (setq lexical-binding t)
   ;; Gather back-references from talks
-  (defun collect-back-ref (title)
+  (defun collect-back-ref (title files)
     (remove 'nil
             (org-map-entries
              (defun collect-refs-from-entries ()
@@ -57,7 +57,10 @@ I am interested in classical algebraic geometry, enumerative geometry, deformati
                         (org-entry-get nil "link"))
                    (format "%s (%s)"
                            (car (split-string (org-entry-get nil "place") ","))
-                           (org-entry-get nil "link")))))))
+                           (org-entry-get nil "link"))))
+             nil
+             files
+             )))
   
   ;; Our pretty-printing function
   (defun pretty-print ()
@@ -67,7 +70,7 @@ I am interested in classical algebraic geometry, enumerative geometry, deformati
              (coauthors (org-entry-get nil "with"))
              (comment (org-entry-get nil "comment"))
              (link (org-entry-get nil "link"))
-             (back-refs (collect-back-ref title)))
+             (back-refs (collect-back-ref title '("~/website/content/data/talks.org"))))
       (format "- /%s/.\\\\\n  %s%s%s%s.%s"
               title
               journal
@@ -91,6 +94,56 @@ I am interested in classical algebraic geometry, enumerative geometry, deformati
 #+end_src
 
 #+RESULTS:
+:results:
+- /A universal formula for counting cubic surfaces/.\\
+  Pre-print, arxiv:2109.12672, with [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]] ([[https://arxiv.org/abs/2109.12672][arxiv]]).
+- /Spherical objects and stability conditions on CY2 quiver categories/.\\
+  Pre-print, arXiv:2108.09155, with [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]] ([[https://arxiv.org/abs/2108.09155][arxiv]]).\\
+  Talk: Bonn ([[file:assets/talks/Bonn2021.pdf][slides]]).
+- /Stable log surfaces, admissible covers, and canonical curves of genus 4/.\\
+  Transactions of the Americal Mathematical Society 374, No. 1, 589-641 (2021), with Changho Han ([[file:papers/TrigonalKSBA.pdf][pdf]], [[https://arxiv.org/abs/1807.08413/][arxiv]]).\\
+  Talk: Sydney ([[file:assets/talks/K3Sydney2019.pdf][notes]]).
+- /A Thurston compactification of the space of stability conditions/.\\
+  Pre-print, arXiv:2011.07908, with [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]] ([[https://arxiv.org/abs/2011.07908][arxiv]]).\\
+  Talks: Mumbai ([[file:assets/talks/tifr2021.pdf][slides]]), Amidale ([[file:assets/talks/AustMS2020.pdf][slides]]), Sydney ([[file:assets/talks/StabSydney2019.pdf][notes]]).
+- /Ramification divisors of general projections/.\\
+  Documenta Mathematica 25, 1917--1952 (2020), with [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]] ([[file:papers/PR.pdf][pdf]], [[http://arxiv.org/abs/1901.01513/][arxiv]]).\\
+  Talk: San Diego ([[file:assets/talks/PR2020-UCSD.pdf][slides]]).
+- /Anticanonical tropical cubic del Pezzos contain exactly 27 lines/.\\
+  Pre-print, arXiv:1906.08196, with [[https://people.math.osu.edu/cueto.5/][María Angélica Cueto]] ([[https://arxiv.org/abs/1906.08196][arxiv]]).
+- /Covers of stacky curves and limits of plane quintics/.\\
+  Transactions of the Americal Mathematical Society, 371, 549--588 (2019) ([[papers/StackyAdmissibleCovers.pdf][pdf]], [[http://arxiv.org/abs/1507.03252/][arxiv]]).\\
+  Talks: Boston ([[file:assets/talks/AGNUBS2015.pdf][notes]]), Salt Lake City ([[file:assets/talks/quintics_poster.pdf][poster]]).
+- /Syzygy divisors on Hurwitz spaces/.\\
+  Contemporary Mathematics 703, 209--222 (2018), with [[https://sites.google.com/view/anand-patel][Anand Patel]] ([[file:papers/HigherMaroni.pdf][pdf]], [[https://arxiv.org/abs/1805.00648][arxiv]]).
+- /The canonical syzygy conjecture for ribbons/.\\
+  Mathematische Zeitschrift 288, No. 3-4, 1157--1164 (2018) ([[papers/RibbonGreen.pdf][pdf]], [[http://arxiv.org/abs/1510.07755/][arxiv]]).\\
+  Talk: Melbourne ([[file:assets/talks/Monash2018.pdf][notes]]).
+- /Vector bundles and finite covers/.\\
+  Pre-print, arXiv:1608.01711, with [[https://sites.google.com/view/anand-patel][Anand Patel]] ([[file:papers/ebundle.pdf][pdf]], [[https://arxiv.org/abs/1608.01711/][arXiv]]).\\
+  Talks: Adelaide ([[file:assets/talks/AustMS2018.pdf][slides]]), Jeju Island ([[file:assets/talks/Jeju2016.pdf][notes]]).
+- /Toward GIT stability of syzygies of canonical curves/.\\
+  Algebraic Geometry 3, No. 1, 1--22 (2016), with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]] ([[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://www.algebraicgeometry.nl/2016-1/2016-1-001.pdf][journal]]).\\
+  Talks: Daejeon ([[file:assets/talks/SIAM2015.pdf][slides]]), Pohang ([[file:assets/talks/syz2013.pdf][notes]]).
+- /The Picard rank conjecture for the Hurwitz spaces of degree up to five/.\\
+  Algebra & Number Theory 9, No. 2, 459--492 (2015), with [[https://www2.bc.edu/anand-p-patel/][Anand Patel]] ([[papers/PicH345.pdf][pdf]], [[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://msp.org/ant/2015/9-2/p05.xhtml][journal]]).
+- /Groebner techniques for ribbons/.\\
+  Albanian Journal of Mathematics 8, No. 2, 55--70 (2014), with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]] ([[papers/groebner.pdf][pdf]], [[https://sites.google.com/site/albjmath/archives/vol-8/2014-6][journal]]).
+- /Compactifications of Hurwitz spaces/.\\
+  International Mathematics Research Notices 2014, No. 14, 3863--3911 (2014) ([[papers/CompHurwitz.pdf][pdf]], [[http://arxiv.org/abs/1206.4535/][arxiv]], [[http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract][journal]]).\\
+  Talks: Palo Alto ([[file:assets/talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg_Talk.pdf][notes]]).
+- /Class of the Hodge eigenbundle using orbifold Riemann-Roch/.\\
+  Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]] ([[papers/CyclicAppendix.pdf][pdf]]).
+- /Sharp slope bounds for sweeping families of trigonal curves/.\\
+  Mathematical Research Letters 20, No. 5, 869--884 (2013), with [[https://sites.google.com/view/anand-patel][Anand Patel]] ([[papers/TrigonalSlopes.pdf][pdf]], [[http://arxiv.org/abs/1211.2827/][arxiv]], [[http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/][journal]]).\\
+  Talk: Boston ([[file:assets/talks/slopes_poster.pdf][poster]]).
+- /Modular compactifications of the space of marked trigonal curves/.\\
+  Advances in Mathematics 248, 96--154 (2013) ([[papers/MarkedTrigonal.pdf][pdf]], [[http://arxiv.org/abs/1206.4503/][arxiv]]).\\
+  Talk: Cambridge ([[file:assets/talks/trig_poster.pdf][poster]]).
+- /Alternate compactifications of Hurwitz spaces/.\\
+  Thesis, Harvard, 2012 ([[papers/thesis.pdf][pdf]]).\\
+  Talks: Palo Alto ([[file:assets/talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg_Talk.pdf][notes]]).
+:end:
 
 * Teaching
 :PROPERTIES:
@@ -119,7 +172,8 @@ Notes and other materials from some of my courses:
 :PROPERTIES:
 :html_headline_class: collapsible
 :END:
-Notes/slides from some talks not already linked above:
+Notes or slides for many of my talks are linked in the section on [[*Papers/pre-prints][papers/pre-prints]].
+Here are some additional talks:
 #+begin_src elisp :exports results :results value raw drawer
   (string-join 
    (remove 'nil 
@@ -165,8 +219,8 @@ Notes/slides from some talks not already linked above:
 :PROPERTIES:
 :html_headline_class: collapsible
 :END:
-- [[file:talks.org::*A Thurston compactification for categories][GIT for syzygies of genus 7 curves]]\\
-  An ongoing project to determine GIT stability for syzygies of genus 7 canonical curves.
+- [[file:genus7syz/][GIT for syzygies of genus 7 curves]]\\
+  This is an ongoing project to determine GIT stability for syzygies of genus 7 canonical curves.
   This is the first genus where canonical syzygies define an interesting GIT quotient, so it would be nice to understand the complete picture.
   One day...
 
@@ -175,7 +229,7 @@ Notes/slides from some talks not already linked above:
   In particular, this code can compute braid actions on complexes of projective modules over the zig-zag algebra of a quiver.
 
 - [[https://deopurkar.github.io/msicg/][MSI course graph]]\\
-  An interactive dependency graph of ANU math department's course catalogue
+  This is an interactive dependency graph of ANU math department's course catalogue
 
 - [[file:assets/puzzle.pdf][A mystery hunt style puzzle]]
 
@@ -184,9 +238,9 @@ Notes/slides from some talks not already linked above:
   - [[file:assets/cubic.gif][A conic fibration on a cubic surface]] ([[file:assets/cubic-fibration.sage][sage code]])
 
 - Notes from some past seminars
- - [[file:seminars/dbcoh/][DbCoh]]: A reading seminar at ANU on Fourier Mukai Transforms in Algebraic Geometry by D. Huybrechts
- - [[file:seminars/mhm/][Mixed hodge modules]]
- - [[file:seminars/seminar16/][Stable rationality]]
+ - [[file:seminars/dbcoh/][DbCoh]]: ANU, 2021
+ - [[file:seminars/mhm/][Mixed hodge modules]]: UGA, 2017
+ - [[file:seminars/seminar16/][Stable rationality]]: Columbia, 2016
 
 * Timed text                                                  :noexport:moar:
 :PROPERTIES:
@@ -195,7 +249,7 @@ Notes/slides from some talks not already linked above:
 ** Teaching 2021 S2
 :PROPERTIES:
 :from: [2020-10-27 Tue] 
-:to: [2021-10-27 Wed]
+:to: [2021-11-30 Tue]
 :END:
 This semester (2021 Semester 2), I am teaching [[file:teaching/ag2021][algebraic geometry]].
 

@@ -41,12 +41,27 @@ Currently I have the following projects.
            :publishing-function org-html-publish-to-html
            :section-numbers nil
            :with-broken-links mark
-           :with-creator t
-           :with-title t
+           :with-creator nil
            :with-toc nil
+           :with-title t
+           :with-author t
+           :with-special-strings t
+           :with-smart-quotes t
+           :with-emphasize t
+           :with-drawers ("results")
            :html-head-include-default-style nil
            :html-head-include-scripts nil
            :html-head "<link rel=\"stylesheet\" href=\"css/stylesheet.css\">"
+           :html-postamble nil
+           :html-preamble nil
+           )
+          ("pdfcv"
+           :base-directory "./content"
+           :base-extension "org"
+           :exclude ".*"
+           :include ["cv.org"]
+           :publishing-directory "./public"
+           :publishing-function org-latex-publish-to-pdf
            )
           ("assets"
            :base-directory "./content/assets"
@@ -62,6 +77,7 @@ Currently I have the following projects.
            :preparation-function my/execute-files
            :publishing-function org-publish-attachment)
           ))
+  
 #+end_src
 
 The following function executes all the org files from the base directory.

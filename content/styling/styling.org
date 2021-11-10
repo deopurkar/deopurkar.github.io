@@ -42,7 +42,7 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
       a:hover { color: $link-faded; }
       code { color: $code; }
       h1, h2, h3, h4, h5, h6 {
-           border-bottom: 0.15em solid $titles;
+          border-bottom: 0.15em solid $titles;
           display: inline-block;
           padding-top: 0.5em;
           margin: 0em;
@@ -197,14 +197,9 @@ The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-g
 Style links. Remember that the colours have already been styled via a theme mixin.
 #+begin_src scss
   ,* a {
-      text-decoration: underline dotted;
-      &:hover {
-          text-decoration: underline;
-      }
-      &:focus {
-          outline: none;
-      }
+      text-decoration: underline;
   }
+  
 #+end_src
 Style headings, lists, and figures.
 #+begin_src scss
@@ -213,7 +208,7 @@ Style headings, lists, and figures.
       font-weight:lighter;
       margin-bottom: 0em;
   }
-  ul, dl {
+  ul {
       padding-left: 1em;
       li {
           padding-bottom: 0.5em;
@@ -228,10 +223,23 @@ Style headings, lists, and figures.
           }
       }
   }
+  dl {
+      display: grid;
+      grid-template-columns: max-content auto;
+      gap: 10px 0px;
+  }
+  dt {
+      grid-column-start: 1;
+  }
+  dd {
+      grid-column-start: 2;
+  }
+  
   figure {
       padding: 0em;
       margin: 0em;
   }
+  
 #+end_src
 
 We come to the main layout styling for the header and body.
