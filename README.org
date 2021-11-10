@@ -41,7 +41,6 @@ Currently I have the following projects.
            :publishing-function org-html-publish-to-html
            :section-numbers nil
            :with-broken-links mark
-           :with-creator nil
            :with-toc nil
            :with-title t
            :with-author t
@@ -52,8 +51,9 @@ Currently I have the following projects.
            :html-head-include-default-style nil
            :html-head-include-scripts nil
            :html-head "<link rel=\"stylesheet\" href=\"css/stylesheet.css\">"
-           :html-postamble nil
            :html-preamble nil
+           :html-postamble-format (("en" "Created by %c.  Last modified: %C.  <a href=\"https:github.com/deopurkar.github.io\">Source</a> %v"))
+           :html-postamble t
            )
           ("pdfcv"
            :base-directory "./content"
