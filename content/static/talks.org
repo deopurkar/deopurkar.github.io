@@ -17,7 +17,7 @@
 :place:    Bonn, Germany
 :year:     2021
 :type:     Workshop talk
-:link:     [[file:assets/talks/Bonn2021.pdf][slides]]
+:link:     [[file:talks/Bonn2021.pdf][slides]]
 :ref:      [[file:papers.org::*Spherical objects and stability conditions on CY2 quiver categories][Spherical objects and stability conditions on CY2 quiver categories]]
 :end:
 
@@ -27,7 +27,7 @@
 :place:    Mumbai, India
 :year:     2021
 :type:     Seminar talk
-:link:     [[file:assets/talks/tifr2021.pdf][slides]]
+:link:     [[file:talks/tifr2021.pdf][slides]]
 :ref: [[file:papers.org::*A Thurston compactification of the space of stability conditions][A Thurston compactification of the space of stability conditions]]
 :end:
 *  A Thurston compactification of the space of stability conditions
@@ -45,7 +45,7 @@
 :place:    Amidale, Australia
 :year:     2020
 :type:     Conference talk
-:link:     [[file:assets/talks/AustMS2020.pdf][slides]]
+:link:     [[file:talks/AustMS2020.pdf][slides]]
 :ref:      [[file:papers.org::*A Thurston compactification of the space of stability conditions][A Thurston compactification of the space of stability conditions]]
 :end:
 *  Apparent boundaries of projective varieties
@@ -54,7 +54,7 @@
 :place:    Mexico
 :year:     2020
 :type:     Seminar talk
-:link:     [[file:assets/talks/PR2020-Oaxaca.pdf][slides]]
+:link:     [[file:talks/PR2020-Oaxaca.pdf][slides]]
 :ref: 
 :end:
 *  Apparent boundaries of projective varieties
@@ -63,7 +63,7 @@
 :place:    San Diego, California
 :year:     2020
 :type:     Seminar talk
-:link:     [[file:assets/talks/PR2020-UCSD.pdf][slides]]
+:link:     [[file:talks/PR2020-UCSD.pdf][slides]]
 :ref: [[file:papers.org::*Ramification divisors of general projections][Ramification divisors of general projections]]
 :end:  
 
@@ -75,7 +75,7 @@
 :year:     2019
 :comment:  part of a series with Asilata Bapat and Anthony Licata
 :type:     Workshop talk
-:link:     [[file:assets/talks/StabSydney2019.pdf][notes]]
+:link:     [[file:talks/StabSydney2019.pdf][notes]]
 :ref: [[file:papers.org::*A Thurston compactification of the space of stability conditions][A Thurston compactification of the space of stability conditions]]
 :end:
 
@@ -86,7 +86,7 @@
 :place:    Sydney, Australia
 :institute: University of Sydney
 :year:     2019
-:link:     [[file:assets/talks/K3Sydney2019.pdf][notes]]
+:link:     [[file:talks/K3Sydney2019.pdf][notes]]
 :ref: [[file:papers.org::*Stable log surfaces, admissible covers, and canonical curves of genus 4][Stable log surfaces, admissible covers, and canonical curves of genus 4]]
 :end:
 *  The work of Claire Voisin
@@ -97,7 +97,7 @@
 :year:     2019
 :type:     Expository talk
 :comment:  expository
-:link:     [[file:assets/talks/WIM2019.pdf][slides]]
+:link:     [[file:talks/WIM2019.pdf][slides]]
 :end:
 *  Geometry of Hurwitz spaces
 :properties:
@@ -106,7 +106,7 @@
 :place:    Auckland, New Zealand
 :year:     2018
 :type:     Conference talk
-:link:     [[file:assets/talks/NZ2018.pdf][notes]]
+:link:     [[file:talks/NZ2018.pdf][notes]]
 :end:
 *  On the geometric Steinitz problem                                     
 :properties:
@@ -114,7 +114,7 @@
 :institute: University of South Australia
 :place:    Adelaide, Australia
 :year:     2018
-:link:     [[file:assets/talks/AustMS2018.pdf][slides]]
+:link:     [[file:talks/AustMS2018.pdf][slides]]
 :type:     Conference talk
 :ref: [[file:papers.org::*Vector bundles and finite covers][Vector bundles and finite covers]]
 :end:
@@ -126,7 +126,7 @@
 :year:     2018
 :type:     Expository talk
 :comment:  expository
-:link:     [[file:assets/talks/FMColloquium2018.pdf][notes]]
+:link:     [[file:talks/FMColloquium2018.pdf][notes]]
 :end:
 *  Moduli of almost K3 log surfaces and curves of genus 4
 :properties:
@@ -144,7 +144,7 @@
 :year:     2018
 :type:     Expository talk
 :comment:  expository
-:link:     [[file:assets/talks/tifr2018.pdf][notes]]
+:link:     [[file:talks/tifr2018.pdf][notes]]
 :end:
 *  What are ribbons and what do they tell us about Riemann surfaces
 :properties:
@@ -160,7 +160,7 @@
 :place:    Melbourne, Australia
 :year:     2018
 :type:     Seminar talk
-:link:     [[file:assets/talks/Monash2018.pdf][notes]]
+:link:     [[file:talks/Monash2018.pdf][notes]]
 :ref: [[file:papers.org::*The canonical syzygy conjecture for ribbons][The canonical syzygy conjecture for ribbons]]
 :end:
 *  On the critical loci of finite maps
@@ -177,7 +177,7 @@
 :institute: MATRIX
 :place:    Creswick, Victoria, Australia
 :year:     2018
-:link:     [[file:assets/talks/MATRIX2018.pdf][slides]]
+:link:     [[file:talks/MATRIX2018.pdf][slides]]
 :type:     Workshop talk
 :end:
 *  Vector bundles and finite covers
@@ -234,7 +234,7 @@
 :place:    Jeju Island, South Korea
 :year:     2016
 :type:     Conference talk
-:link:     [[file:assets/talks/Jeju2016.pdf][notes]]
+:link:     [[file:talks/Jeju2016.pdf][notes]]
 :ref: [[file:papers.org::*Vector bundles and finite covers][Vector bundles and finite covers]]
 :end:
 *  Vector bundles and finite covers
@@ -298,7 +298,7 @@
 :meet:     Boston College--Northeastern algebraic geometry conference
 :institute: Northeastern University
 :place:    Boston, Massachusetts
-:link:     [[file:assets/talks/AGNUBS2015.pdf][notes]]
+:link:     [[file:talks/AGNUBS2015.pdf][notes]]
 :type:     Conference talk
 :ref:      [[file:papers.org::*Covers of stacky curves and limits of plane quintics][Covers of stacky curves and limits of plane quintics]]
 :end:
@@ -308,7 +308,7 @@
 :meet:     Summer institute in algebraic geometry
 :institute: University of Utah
 :place:    Salt Lake City, Utah
-:link:     [[file:assets/talks/quintics_poster.pdf][poster]]
+:link:     [[file:talks/quintics_poster.pdf][poster]]
 :type:     Poster
 :comment:  poster
 :ref:      [[file:papers.org::*Covers of stacky curves and limits of plane quintics][Covers of stacky curves and limits of plane quintics]]
@@ -318,7 +318,7 @@
 :year:     2015
 :meet:     SIAM applied algebraic geometry conference
 :place:    Daejeon, South Korea
-:link:     [[file:assets/talks/SIAM2015.pdf][slides]]
+:link:     [[file:talks/SIAM2015.pdf][slides]]
 :type:     Conference talk
 :ref: [[file:papers.org::*Toward GIT stability of syzygies of canonical curves][Toward GIT stability of syzygies of canonical curves]]
 :end:
@@ -409,7 +409,7 @@
 :meeting:  Conference on moduli and birational geometry
 :institute: Postech
 :place:    Pohang, Korea
-:link:     [[file:assets/talks/syz2013.pdf][notes]]
+:link:     [[file:talks/syz2013.pdf][notes]]
 :type:     Conference talk
 :ref: [[file:papers.org::*Toward GIT stability of syzygies of canonical curves][Toward GIT stability of syzygies of canonical curves]]
 :end:
@@ -427,7 +427,7 @@
 :meet:     Algebraic geometry northeastern series
 :institute: Boston College
 :place:    Boston, Massachusetts
-:link:     [[file:assets/talks/slopes_poster.pdf][poster]]
+:link:     [[file:talks/slopes_poster.pdf][poster]]
 :type:     Poster
 :comment:  poster
 :ref: [[file:papers.org::*Sharp slope bounds for sweeping families of trigonal curves][Sharp slope bounds for sweeping families of trigonal curves]]
@@ -438,7 +438,7 @@
 :institute: Stanford University
 :place:    Palo Alto, California
 :type:     Seminar talk
-:link:     [[file:assets/talks/Hdg2013.pdf][notes]]
+:link:     [[file:talks/Hdg2013.pdf][notes]]
 :ref: [[file:papers.org::*Alternate compactifications of Hurwitz spaces][Alternate compactifications of Hurwitz spaces]]
 :end:
 * Compactifying spaces of branched covers
@@ -496,7 +496,7 @@
 :meet:     A celebration of algebraic geometry (conference for the 60th birthday of Joe Harris)
 :institute: Harvard University
 :place:    Cambridge, Massachusetts
-:link:     [[file:assets/talks/trig_poster.pdf][poster]]
+:link:     [[file:talks/trig_poster.pdf][poster]]
 :type:     Poster
 :comment:  poster
 :ref: [[file:papers.org::*Modular compactifications of the space of marked trigonal curves][Modular compactifications of the space of marked trigonal curves]]

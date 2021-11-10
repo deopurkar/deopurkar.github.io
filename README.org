@@ -27,8 +27,8 @@ Right now, the building happens locally, but eventually, the it should happen on
 Next I set the options for ~org-publish-project-alist~, as documented [[help:org-publish-project-alist][here]].
 Currently I have the following projects.
 - ~website~ :: contains all the content generated from org-mode files.
-- ~assets~ :: copies over all the files in the [[file:content/assets/][assets]] directory.
-- ~styling~ :: tangles and copies over all the files in the [[file:contents/css][css]] directory.
+- ~static~ :: copies over all the files in the [[file:content/static][static]] directory.
+- ~styling~ :: tangles and copies over all the files in the [[file:contents/styling][styling]] directory.
   
 #+begin_src emacs-lisp :tangle "build.el"
   (setq org-publish-project-alist
@@ -37,7 +37,7 @@ Currently I have the following projects.
            :base-extension "org" ;; Publish only from org files
            :publishing-directory "./public" ;; This is where the published files go
            :recursive t 
-           :exclude "assets\\|data\\|styling"  
+           :exclude "static\\|styling"  
            :publishing-function org-html-publish-to-html
            :section-numbers nil
            :with-broken-links mark
@@ -63,10 +63,10 @@ Currently I have the following projects.
            :publishing-directory "./public"
            :publishing-function org-latex-publish-to-pdf
            )
-          ("assets"
-           :base-directory "./content/assets"
+          ("static"
+           :base-directory "./content/static"
            :base-extension ".*"
-           :publishing-directory "./public/assets"
+           :publishing-directory "./public/"
            :recursive t
            :publishing-function org-publish-attachment)
           ("styling"
