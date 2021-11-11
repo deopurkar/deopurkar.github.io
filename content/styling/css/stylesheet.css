@@ -56,7 +56,7 @@ figure {
   padding: 0em;
   margin: 0em; }
 
-footer {
+footer, #postamble {
   font-size: 80%; }
 
 header {
@@ -93,6 +93,26 @@ footer {
   @media screen and (max-width: 480px) {
     #mypicture {
       margin-left: 0; } }
+
+#table-of-contents {
+  float: left;
+  padding-right: 1em;
+  margin-right: 1em; }
+  #table-of-contents h2 {
+    display: none; }
+  #table-of-contents ul {
+    list-style-type: none;
+    padding: 0em;
+    margin: 0em; }
+
+#postamble {
+  margin-top: 1em;
+  text-align: right; }
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table; }
 
 * {
   color: #000; }
@@ -144,21 +164,8 @@ footer {
 #mypicture {
   border-color: #000; }
 
-#table-of-contents {
-  float: left;
-  padding-right: 1em;
-  margin-right: 1em; }
-  #table-of-contents h2 {
-    display: none; }
-  #table-of-contents ul {
-    list-style-type: none;
-    padding: 0em;
-    margin: 0em; }
-
-.container::after {
-  content: "";
-  clear: both;
-  display: table; }
+#postamble {
+  border-top: 0.15em solid #d05a5b; }
 
 @media print {
   footer, nav {
@@ -220,21 +227,8 @@ footer {
   #mypicture {
     border-color: #000; }
 
-  #table-of-contents {
-    float: left;
-    padding-right: 1em;
-    margin-right: 1em; }
-    #table-of-contents h2 {
-      display: none; }
-    #table-of-contents ul {
-      list-style-type: none;
-      padding: 0em;
-      margin: 0em; }
-
-  .container::after {
-    content: "";
-    clear: both;
-    display: table; } }
+  #postamble {
+    border-top: 0.15em solid #000; } }
 .collapsible {
   cursor: pointer; }
   .collapsible:before {

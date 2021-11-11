@@ -1,6 +1,6 @@
 #+title: Styling
 #+author: Anand Deopurkar
-#+property: header-args:scss :tangle "css/stylesheet.scss" :eval no :mkdirp yes
+#+property: header-args:scss :tangle "css/main.scss" :eval no :mkdirp yes
 #+property: header-args:javascript :tangle "js/collapsibility.js" :eval no :mkdirp yes
 
 The CSS is taken from [[https://github.com/asilata/asilata.github.io/][Asilata Bapat]].

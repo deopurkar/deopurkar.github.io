@@ -29,7 +29,7 @@
               institute
               place
               "")))
-  (string-join (org-map-entries 'pretty-print nil '("data/positions.org")) "\n")
+  (string-join (org-map-entries 'pretty-print nil '("static/positions.org")) "\n")
 #+end_src
 
 #+RESULTS:
@@ -65,7 +65,7 @@
               place
               comment
               "")))
-  (string-join (org-map-entries 'pretty-print nil '("data/education.org")) "\n")
+  (string-join (org-map-entries 'pretty-print nil '("static/education.org")) "\n")
 #+end_src
 
 #+RESULTS:
@@ -92,7 +92,7 @@
               year
               title
               org)))
-  (string-join (org-map-entries 'pretty-print nil '("data/awards.org")) "\n")
+  (string-join (org-map-entries 'pretty-print nil '("static/awards.org")) "\n")
 #+end_src
 
 #+RESULTS:
@@ -136,7 +136,7 @@
                 (if (and link include-links)
                     (format " (%s)" link)
                   "")))))
-  (string-join (org-map-entries 'pretty-print "-pp-expository-thesis" '("data/papers.org")) "\n")
+  (string-join (org-map-entries 'pretty-print "-pp-expository-thesis" '("static/papers.org")) "\n")
 #+end_src
 #+RESULTS:
 :results:
@@ -166,7 +166,7 @@
 
 - Pre-prints ::
 #+begin_src elisp :exports results :results value raw drawer
-  (string-join (org-map-entries 'pretty-print "+pp" '("data/papers.org")) "\n")
+  (string-join (org-map-entries 'pretty-print "+pp" '("static/papers.org")) "\n")
 #+end_src
 
 #+RESULTS:
@@ -187,7 +187,7 @@
 
 - Expository ::
 #+begin_src elisp :exports results :results value raw drawer
-  (string-join (org-map-entries 'pretty-print "+expository" '("data/papers.org")) "\n")
+  (string-join (org-map-entries 'pretty-print "+expository" '("static/papers.org")) "\n")
 #+end_src
 
 #+RESULTS:
@@ -224,7 +224,7 @@
                     (format " (%s)" comment)
                   "")
                 ))))
-  (string-join (org-map-entries 'pretty-print nil '("data/supervision.org")) "\n")
+  (string-join (org-map-entries 'pretty-print nil '("static/supervision.org")) "\n")
 #+end_src
 
 #+RESULTS:
@@ -269,7 +269,7 @@
                 (if (and link include-links)
                     (format " (%s)" link)
                   "")))))
-  (string-join (org-map-entries 'pretty-print nil '("data/talks.org")) "\n")
+  (string-join (org-map-entries 'pretty-print nil '("static/talks.org")) "\n")
 #+end_src
 
 #+RESULTS:
@@ -357,7 +357,7 @@
                     (format ", %s" institute)
                   "")
                 ))))
-  (string-join (org-map-entries 'pretty-print nil '("data/service.org")) "\n")
+  (string-join (org-map-entries 'pretty-print nil '("static/service.org")) "\n")
 #+end_src
 
 #+RESULTS:
