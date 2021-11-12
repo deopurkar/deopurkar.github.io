@@ -42,7 +42,7 @@ This semester (2021 Semester 2), I am teaching [[file:teaching/ag2021][algebraic
 
 * Papers/pre-prints
 :PROPERTIES:
-:html_headline_class: collapsible
+:html_headline_class: collapsed
 :END:
 #+begin_src elisp :exports results :results value raw drawer
   (setq lexical-binding t)

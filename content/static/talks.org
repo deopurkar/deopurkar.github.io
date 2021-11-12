@@ -6,7 +6,7 @@
 :place:    Canberra, Australia
 :year:     2021
 :type:     Expository talk
-:link:     [[file:assets/talks/ecc2021/ecc.html][slides]]
+:link:     [[file:talks/ecc2021/ecc.html][slides]]
 :comment: expository
 :end:
 
@@ -55,7 +55,7 @@
 :year:     2020
 :type:     Seminar talk
 :link:     [[file:talks/PR2020-Oaxaca.pdf][slides]]
-:ref: 
+:ref:      [[file:papers.org::*Ramification divisors of general projections][Ramification divisors of general projections]]
 :end:
 *  Apparent boundaries of projective varieties
 :properties:
@@ -181,7 +181,6 @@
 :type:     Workshop talk
 :end:
 *  Vector bundles and finite covers
-:properties:
 :properties:
 :meet:     Workshop on topics in algebraic geometry
 :institute: University of North Carolina
