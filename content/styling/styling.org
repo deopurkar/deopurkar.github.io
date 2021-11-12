@@ -3,7 +3,7 @@
 #+property: header-args:scss :tangle "css/main.scss" :eval no :mkdirp yes
 #+property: header-args:javascript :tangle "js/collapsibility.js" :eval no :mkdirp yes
 
-The CSS is taken from [[https://github.com/asilata/asilata.github.io/][Asilata Bapat]].
+The CSS is adapted from [[https://github.com/asilata/asilata.github.io/][Asilata Bapat]].
 
 * Colours
 First we define some auxiliary [[https://sass-lang.com/documentation/at-rules/mixin][mixins]] to use later, such as for alternately coloured table rows.
@@ -346,7 +346,7 @@ Headline
 Content
 
 and we wish to fold/unfold Content when headline is clicked.
-Then we simply add the class "collapsible" to Headline.
+Then we simply add the class "collapsible" or "collapsed" to Headline.
 On clicking the Headline, the javascript will toggle the visibility of Content and also toggle the class name of Headline between "collapsible" and "collapsed".
 
 #+begin_src javascript 
@@ -354,16 +354,27 @@ On clicking the Headline, the javascript will toggle the visibility of Content a
       var headlines = document.querySelectorAll(".collapsible");
       var i;
       for (i = 0; i < headlines.length; i++) {
-          addCollapsiblility(headlines[i]);
+          addCollapsiblility(headlines[i], true);
+      }
+  
+      var collapsedHeadlines = document.querySelectorAll(".collapsed");
+      var i;
+      console.log(collapsedHeadlines);
+      for (i = 0; i < collapsedHeadlines.length; i++) {
+          addCollapsiblility(collapsedHeadlines[i], false);
       }
   });
   
-  function addCollapsiblility(headline){
+  function addCollapsiblility(headline, visible){
       headline.addEventListener("click", toggleVisibilityOfNext);
-      headline.nextElementSibling.style.overflow = "hidden";
       var content = headline.nextElementSibling;
-      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.overflow = "hidden";
       content.style.transition = "max-height 0.2s";
+      if (visible) {
+          content.style.maxHeight = content.scrollHeight + "px";
+      } else {
+          content.style.maxHeight = "0px";
+      }
   
       function toggleVisibilityOfNext (){
           var content = headline.nextElementSibling;
@@ -386,5 +397,5 @@ Tangle the code from this file and then compile it to css.
 #+name: tangle-and-compile
 #+begin_src emacs-lisp :results silent :tangle no
   (org-babel-tangle)
-  (shell-command "cd css; sass stylesheet.scss stylesheet.css")
+  (shell-command "cd css; sass main.scss main.css")
 #+end_src

@@ -2,16 +2,27 @@ document.addEventListener("DOMContentLoaded", function () {
     var headlines = document.querySelectorAll(".collapsible");
     var i;
     for (i = 0; i < headlines.length; i++) {
-        addCollapsiblility(headlines[i]);
+        addCollapsiblility(headlines[i], true);
+    }
+
+    var collapsedHeadlines = document.querySelectorAll(".collapsed");
+    var i;
+    console.log(collapsedHeadlines);
+    for (i = 0; i < collapsedHeadlines.length; i++) {
+        addCollapsiblility(collapsedHeadlines[i], false);
     }
 });
 
-function addCollapsiblility(headline){
+function addCollapsiblility(headline, visible){
     headline.addEventListener("click", toggleVisibilityOfNext);
-    headline.nextElementSibling.style.overflow = "hidden";
     var content = headline.nextElementSibling;
-    content.style.maxHeight = content.scrollHeight + "px";
+    content.style.overflow = "hidden";
     content.style.transition = "max-height 0.2s";
+    if (visible) {
+        content.style.maxHeight = content.scrollHeight + "px";
+    } else {
+        content.style.maxHeight = "0px";
+    }
 
     function toggleVisibilityOfNext (){
         var content = headline.nextElementSibling;
