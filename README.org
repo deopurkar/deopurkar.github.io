@@ -26,18 +26,19 @@ Right now, the building happens locally, but eventually, the it should happen on
 
 Next I set the options for ~org-publish-project-alist~, as documented [[help:org-publish-project-alist][here]].
 Currently I have the following projects.
-- ~website~ :: contains all the content generated from org-mode files.
-- ~static~ :: copies over all the files in the [[file:content/static][static]] directory.
+- ~website-org~ :: generates all the content from org-mode files.
+- ~website-static~ :: copies over all other files. 
 - ~styling~ :: tangles and copies over all the files in the [[file:contents/styling][styling]] directory.
+- ~pdfcv~ :: creates a pdf cv
   
 #+begin_src emacs-lisp :tangle "build.el"
   (setq org-publish-project-alist
-        '(("website"
-           :base-directory "./content"  ;; This is where our org files live
+        '(("website-org"
+           :base-directory "./content"  ;; This is where our files live
            :base-extension "org" ;; Publish only from org files
-           :publishing-directory "./public" ;; This is where the published files go
+           :publishing-directory "./docs" ;; This is where the published files go
            :recursive t 
-           :exclude "static\\|styling"  
+           :exclude "\#.*"   ;; Files beginning with \# are not processed.
            :publishing-function org-html-publish-to-html
            :section-numbers nil
            :with-broken-links mark
@@ -57,27 +58,28 @@ Currently I have the following projects.
            )
           ("pdfcv"
            :base-directory "./content"
-           :base-extension "org"
            :exclude ".*"
            :include ["cv.org"]
-           :publishing-directory "./public"
+           :publishing-directory "./docs"
            :publishing-function org-latex-publish-to-pdf
+           :preparation-function (lambda (props) (setq include-links nil))
            )
-          ("static"
-           :base-directory "./content/static"
+          ("website-static"
+           :base-directory "./content"
            :base-extension ".*"
-           :publishing-directory "./public/"
+           :exclude "\#.*"
+           :publishing-directory "./docs"
            :recursive t
            :publishing-function org-publish-attachment)
           ("styling"
-           :base-directory "./content/styling"
+           :base-directory "./content/#styling"
            :base-extension "css\\|js"
-           :publishing-directory "./public/"
+           :publishing-directory "./docs"
            :recursive t
            :preparation-function my/execute-files
            :publishing-function org-publish-attachment)
           ))
-  
+
 #+end_src
 
 The following function executes all the org files from the base directory.

@@ -6,29 +6,44 @@
       '(("website"
          :base-directory "./content"  ;; This is where our org files live
          :base-extension "org" ;; Publish only from org files
-         :publishing-directory "./public" ;; This is where the published files go
+         :publishing-directory "./docs" ;; This is where the published files go
          :recursive t 
-         :exclude "assets\\|data\\|styling"  
+         :exclude "\#.*"   ;; Files beginning with \# are not processed.
          :publishing-function org-html-publish-to-html
          :section-numbers nil
          :with-broken-links mark
-         :with-creator t
-         :with-title t
          :with-toc nil
+         :with-title t
+         :with-author t
+         :with-special-strings t
+         :with-smart-quotes t
+         :with-emphasize t
+         :with-drawers ("results")
          :html-head-include-default-style nil
          :html-head-include-scripts nil
-         :html-head "<link rel=\"stylesheet\" href=\"css/stylesheet.css\">"
+         :html-head "<link rel=\"stylesheet\" href=\"css/main.css\">"
+         :html-preamble nil
+         :html-postamble-format (("en" "Created by %c.  Last modified: %C.  <a href=\"https:github.com/deopurkar.github.io\">Source</a> %v"))
+         :html-postamble t
          )
-        ("assets"
-         :base-directory "./content/assets"
+        ("pdfcv"
+         :base-directory "./content"
+         :exclude ".*"
+         :include ["cv.org"]
+         :publishing-directory "./docs"
+         :publishing-function org-latex-publish-to-pdf
+         )
+        ("static"
+         :base-directory "./content"
          :base-extension ".*"
-         :publishing-directory "./public/assets"
+         :exclude "\#.*"
+         :publishing-directory "./docs"
          :recursive t
          :publishing-function org-publish-attachment)
         ("styling"
-         :base-directory "./content/styling"
+         :base-directory "./content/#styling"
          :base-extension "css\\|js"
-         :publishing-directory "./public/"
+         :publishing-directory "./docs"
          :recursive t
          :preparation-function my/execute-files
          :publishing-function org-publish-attachment)

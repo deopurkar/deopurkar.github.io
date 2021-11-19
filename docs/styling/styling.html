@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-11-19 Fri 15:44 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Styling</title>
+<meta name="author" content="Anand Deopurkar" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Styling</h1>
+<p>
+The CSS is adapted from <a href="https://github.com/asilata/asilata.github.io/">Asilata Bapat</a>.
+</p>
+
+<div id="outline-container-org555eebf" class="outline-2">
+<h2 id="org555eebf">Colours</h2>
+<div class="outline-text-2" id="text-org555eebf">
+<p>
+First we define some auxiliary <a href="https://sass-lang.com/documentation/at-rules/mixin">mixins</a> to use later, such as for alternately coloured table rows.
+</p>
+<div class="org-src-container">
+<pre class="src src-scss">@mixin alternate-rows($color) {
+    table {
+	tbody &gt; tr:nth-child(odd){
+	    background: $color;
+	}
+    }
+}
+</pre>
+</div>
+<p>
+Next we define the colour options for all components of the page.
+We do this via a <a href="https://sass-lang.com/documentation/at-rules/mixin">mixin</a> called <code>theme</code>, which uses the following variables:
+</p>
+<dl class="org-dl">
+<dt><code>bg</code>, <code>bg-faded</code></dt><dd>background colour and faded version,</dd>
+<dt><code>fg</code>, <code>fg-faded</code></dt><dd>foreground text colour and faded version,</dd>
+<dt><code>link</code>, <code>link-faded</code></dt><dd>link colour and faded version,</dd>
+<dt><code>titles</code></dt><dd>colour for title underlines,</dd>
+<dt><code>code</code></dt><dd>colour for verbatim text/code snippets</dd>
+<dt><code>fg-select</code>, <code>bg-select</code></dt><dd>foreground and background colour for selected text</dd>
+</dl>
+<div class="org-src-container">
+<pre class="src src-scss">@mixin theme($bg, $bg-faded, $fg, $fg-faded, $link, $link-faded, $titles, $code, $bg-select: $titles, $fg-select: $bg-faded) {
+    * { color: $fg; }
+    body {
+	background-color: $bg;
+	::-moz-selection {
+	    background-color: $bg-select;
+	    color: $fg-select;
+	}
+	::-selection {
+	    background-color: $bg-select;
+	    color: $fg-select;
+	}
+    }
+    a, a:active, a:visited { color: $link;}
+    a:hover { color: $link-faded; }
+    code { color: $code; }
+    h1, h2, h3, h4, h5, h6 {
+	border-bottom: 0.15em solid $titles;
+	display: inline-block;
+	padding-top: 0.5em;
+	margin: 0em;
+	a, a:active, a:visited {
+	    color: $titles;
+	}
+	a:hover {
+	    background-color: $bg-faded;
+	    text-decoration: none; 
+	}
+    }
+    header {
+	a, a:active, a:visited {
+	    color: $fg;
+	}
+	a.active {
+	    color: $titles;
+	}
+	a:hover {
+	    color: $titles;
+	    background-color: $bg;
+	    text-decoration: none;
+	}
+    }
+    footer {
+	color: $fg-faded;
+	border-color: $fg-faded;
+	a, a:active, a:visited { color: $link-faded; }
+    }
+
+    #mypicture {
+	border-color: $fg-faded;
+    }
+
+    #postamble {
+	border-top: 0.15em solid $titles;
+    }
+}
+</pre>
+</div>
+<p>
+Now we set some predefined palettes.
+Later on we can just include the one we want.
+</p>
+<div class="org-src-container">
+<pre class="src src-scss">// Palette based on Solarized theme (just as an example)
+// $base03:    #002b36;
+// $base02:    #073642;
+// $base01:    #586e75;
+// $base00:    #657b83;
+// $base0:     #839496;
+// $base1:     #93a1a1;
+// $base2:     #eee8d5;
+// $base3:     #fdf6e3;
+// $yellow:    #b58900;
+// $orange:    #cb4b16;
+// $red:       #dc322f;
+// $magenta:   #d33682;
+// $violet:    #6c71c4;
+// $blue:      #268bd2;
+// $cyan:      #2aa198;
+// $green:     #859900;
+
+@mixin solarized-light {
+    @include theme(#fdf6e3, #eee8d5, #657b83, #93a1a1, #268bd2, #2aa198, #cb4b16, #d33682);
+}
+
+@mixin alifbepe {
+    @include theme(#fffdfc, #c7bba8, #000, #000, #000, #d05a5b, #d05a5b, #000);
+}
+
+@mixin solarized-dark {
+    @include theme(#002b36, #073642, #839496, #586e75, #268bd2, #2aa198, #cb4b16, #859900);
+}
+
+@mixin zenburn {
+    @include theme(#3F3F3F, #4F4F4F, #DCDCCC, #656555, #8CD0D3, #7CB8BB, #CC9393, #7F9F7F);
+}
+
+@mixin flatui {
+    @include theme(#ecf0f1, #dfe4ea, #34495e, #7f8c8d, #2492db, #9b59b6, #0a74b9, #8e44ad);
+}
+
+@mixin bespoke-light {
+    @include theme(#fffef9, #eceff1, #282b35, #727d97, #303db4, #30608c, #940b96, #00796b);
+}
+
+@mixin print {
+    @include theme(#fff, #fff, #000, #000, #000, #000, #000, #000);
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org78a66ae" class="outline-2">
+<h2 id="org78a66ae">Main CSS</h2>
+<div class="outline-text-2" id="text-org78a66ae">
+<p>
+We come to the main part of the CSS code, namely the positioning and layout options, as well as the font options.
+First we define the variables for the title font and the body font.
+</p>
+<div class="org-src-container">
+<pre class="src src-scss">// Fonts
+$title-font: Default;
+$body-font: Default;
+</pre>
+</div>
+<p>
+Next we use media queries to set breakpoints for various screen sizes, which then influence the layout of the page.
+The layout changes are mainly made via <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS flexbox</a>.
+</p>
+<div class="org-src-container">
+<pre class="src src-scss">@media screen and (max-width: 480px) {
+    body {
+	max-width:95%;
+	font-size:100%;
+    }
+}
+@media screen and (min-width: 480px) {
+    body {
+	max-width:80%;
+    }
+}
+@media screen and (min-width: 550px) {
+    body {
+	.intro {
+	    flex-direction: row-reverse;
+	}
+	font-size:110%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    body {
+	max-width:1000px;
+
+	header {
+	    flex-direction: row;
+	}
+    }
+}
+body {
+    font-family: $body-font, serif;
+    margin-top: 0em;
+    margin-left:auto;
+    margin-right:auto;
+}
+</pre>
+</div>
+<p>
+Style links. Remember that the colours have already been styled via a theme mixin.
+</p>
+<div class="org-src-container">
+<pre class="src src-scss">* a {
+    text-decoration: underline;
+}
+
+</pre>
+</div>
+<p>
+Style headings, lists, and figures.
+</p>
+<div class="org-src-container">
+<pre class="src src-scss">h1, h2, h3, h4 {
+    font-family: $title-font, serif;
+    font-weight:lighter;
+    margin-bottom: 0em;
+}
+ul {
+    padding-left: 1em;
+    li {
+	padding-bottom: 0.5em;
+    }
+}
+ol {
+    padding-left: 1em;
+    li {
+	padding-left: 0.5em;
+	ol li {
+	    list-style-type: lower-alpha;
+	}
+    }
+}
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 10px 0px;
+}
+dt {
+    grid-column-start: 1;
+}
+dd {
+    grid-column-start: 2;
+}
+
+figure {
+    padding: 0em;
+    margin: 0em;
+}
+
+</pre>
+</div>
+
+<p>
+We come to the main layout styling for the header and body.
+We begin with a <a href="https://sass-lang.com/documentation/style-rules/placeholder-selectors">placeholder selector</a> to decrease font size.
+</p>
+<div class="org-src-container">
+<pre class="src src-scss">%small {
+    font-size: 80%;
+}
+</pre>
+</div>
+<p>
+Now style the header and intro.
+</p>
+<div class="org-src-container">
+<pre class="src src-scss">header {
+    font-family: $title-font;
+    font-size: 110%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top:0em;
+    margin-bottom: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+    //border-bottom: solid 0.15em;
+
+    h1 {
+	text-align: center;
+	margin: 0em;
+    }
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+</pre>
+</div>
+<p>
+Footer style and other miscellany.
+</p>
+<div class="org-src-container">
+<pre class="src src-scss">footer {
+    @extend %small;
+    border-top: 0.1em dotted;
+    margin-top:2em;
+    padding-top:0.3em;
+}
+#mypicture {
+    width:15em;
+    @media screen and (min-width: 960px) {
+	width: 20em;
+    }
+    @media screen and (max-width: 480px) {
+	margin-left: 0;
+    }
+}
+#table-of-contents {
+    float: left;
+    padding-right: 1em;
+    margin-right: 1em;
+    h2 {
+	display: none;
+    }
+    ul {
+	list-style-type: none;
+	padding: 0em;
+	margin: 0em;
+    }
+}
+
+#postamble {
+    @extend %small;
+    margin-top: 1em;
+    text-align: right;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</pre>
+</div>
+
+<p>
+Include the colour themes previously defined.  
+</p>
+<div class="org-src-container">
+<pre class="src src-scss">@include alifbepe;
+
+// Print stylesheet
+@media print {
+    footer, nav {display:none;}
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    a:after {
+	content: " '(' attr(href) ') '";
+    }
+    @include print;
+}
+</pre>
+</div>
+
+<p>
+Finally, we style collapsible and collapsed headlines.
+</p>
+<div class="org-src-container">
+<pre class="src src-scss">.collapsible{
+    cursor: pointer;
+    &amp;:before {
+	content: '- ';
+    }
+}
+.collapsed{
+    cursor: pointer;
+    &amp;:before {
+	content: '+ ';
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb145456" class="outline-2">
+<h2 id="orgb145456">Javascript</h2>
+<div class="outline-text-2" id="text-orgb145456">
+<p>
+The following script adds collapsible elements.
+It works as follows.  Suppose we have a part of the page of the form
+</p>
+
+<p>
+Headline
+Content
+</p>
+
+<p>
+and we wish to fold/unfold Content when headline is clicked.
+Then we simply add the class &ldquo;collapsible&rdquo; or &ldquo;collapsed&rdquo; to Headline.
+On clicking the Headline, the javascript will toggle the visibility of Content and also toggle the class name of Headline between &ldquo;collapsible&rdquo; and &ldquo;collapsed&rdquo;.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-javascript">document.addEventListener("DOMContentLoaded", function () {
+    var headlines = document.querySelectorAll(".collapsible");
+    var i;
+    for (i = 0; i &lt; headlines.length; i++) {
+	addCollapsiblility(headlines[i], true);
+    }
+
+    var collapsedHeadlines = document.querySelectorAll(".collapsed");
+    var i;
+    console.log(collapsedHeadlines);
+    for (i = 0; i &lt; collapsedHeadlines.length; i++) {
+	addCollapsiblility(collapsedHeadlines[i], false);
+    }
+});
+
+function addCollapsiblility(headline, visible){
+    headline.addEventListener("click", toggleVisibilityOfNext);
+    var content = headline.nextElementSibling;
+    content.style.overflow = "hidden";
+    content.style.transition = "max-height 0.2s";
+    if (visible) {
+	content.style.maxHeight = content.scrollHeight + "px";
+    } else {
+	content.style.maxHeight = "0px";
+    }
+
+    function toggleVisibilityOfNext (){
+	var content = headline.nextElementSibling;
+	if (content.style.maxHeight != "0px") {
+	    content.style.maxHeight = "0px";
+	    headline.classList.remove("collapsible");
+	    headline.classList.add("collapsed");
+	} else {
+	    content.style.maxHeight = content.scrollHeight + "px";
+	    headline.classList.remove("collapsed");
+	    headline.classList.add("collapsible");
+	}
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org2d9e085" class="outline-2">
+<h2 id="org2d9e085">Tangling etc</h2>
+<div class="outline-text-2" id="text-org2d9e085">
+<p>
+Tangle the code from this file and then compile it to css.
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp" id="orgec574e6">(org-babel-tangle)
+(shell-command "cd css; sass main.scss main.css")
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+Created by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.2 (<a href="https://orgmode.org">Org</a> mode 9.5).  Last modified: 2021-11-19 Fri 15:12.  <a href="https:github.com/deopurkar.github.io">Source</a> <a href="https://validator.w3.org/check?uri=referer">Validate</a>
+</div>
+</body>
+</html>
