@@ -1,4 +1,0 @@
-AuthUserFile /home/anandrd/html/travel/.htpasswd
-AuthType Basic
-AuthName "Enter the password Anand gave you"
-Require valid-user

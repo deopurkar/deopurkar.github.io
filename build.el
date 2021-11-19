@@ -21,7 +21,7 @@
          :with-drawers ("results")
          :html-head-include-default-style nil
          :html-head-include-scripts nil
-         :html-head "<link rel=\"stylesheet\" href=\"css/main.css\">"
+         :html-head "<link rel=\"stylesheet\" href=\"/css/main.css\">"
          :html-preamble nil
          :html-postamble-format (("en" "Created by %c.  Last modified: %C.  <a href=\"https:github.com/deopurkar.github.io\">Source</a> %v"))
          :html-postamble t
