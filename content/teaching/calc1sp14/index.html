@@ -1,0 +1,390 @@
+---
+---
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<HEAD>
+<TITLE>Calculus I (Spring 2014)
+</TITLE>
+<LINK REL=STYLESHEET type="text/css" HREF="/css/main.css">
+<style type="text/css">
+  <!-- 
+       td.field {
+          font-weight: bold;
+	  padding-right: 1em;
+       }
+       
+       table.plan tr:nth-child(odd){
+          background-color: #eeeeee;
+       } 
+
+       table.plan td {
+          padding-left: 5px;
+       }
+
+       /* To prevent jump scrolling */
+       .anchor {position: fixed; top: 0px;} 
+
+       /* Optional elements are not displayed */
+       .optional {display: none;}
+       /* But they are displayed when the previous anchor is the target*/
+       .anchor:target + .optional {display: inline;}
+    -->
+</style>
+ {% include head.html %}
+</HEAD>
+
+<BODY >
+<H1>Calculus I (Spring 2014)</H1>
+<span id="z" class="anchor"></span>
+
+<table>
+  <tr> <td class="field">Time</td>
+    <td>Tue, Thu 2:40pm&ndash;3:55pm</td> </tr>
+  <tr> <td class="field">
+      Place</td><td>Room 312, Math building</td></tr>
+  <tr> <td class="field">Instructor</td> 
+    <td>Anand Deopurkar (<code>anandrd at math</code>)</td></tr>
+  <tr><td class="field">TAs</td>
+    <td> Mihir Bhaskar (<code>mkb2153</code>), Tanvi Gupta (<code>tg2362</code>), Pak Hin Lee (<code>phlee at math</code>) </td>
+  </tr>
+  <tr><td class="field">Office hours</td>
+    <td>Tue 5:15&ndash;6:15 and Wed 4:30pm&ndash;5:30pm in Math 413<br>
+      + MWF 4:30&ndash;5:30 in Math 413 during reading and exam week.</td>
+  </tr>
+  <tr><td class="field">Textbook</td>
+    <td><em> Calculus: Early Transcendentals (7th ed.)</em> by James Stewart <br>WebAssign is not required.</td></tr>
+</table>
+
+<h2>Announcements</h2>
+<p> The final exams have been graded. The mean was 67 and the median was 73. The score distribution was as follows:<br>
+
+<img src="Final_scores.png" alt="Histogram of final exam scores" width=500><br>
+
+The distribution of the cumulative scores was as follows:<br>
+
+<img src="Cumulative_scores.png" alt="Histogram of cumulative scores" width=500>
+</p>
+
+<span id="announcements" class="anchor"></span>
+<div class="optional">
+<p>
+  Congratulations for (almost) finishing Calculus I! The only remaining component is the final exam, which will be held on <strong>Thursday, May 15, 2014 from 1:10pm to 4:00pm in Math 312</strong>. The final will be cumulative with a slight bias towards the last third of the course on integration. To help you prepare, here are some resources. I will have additional office hours during the reading week and exam week: Monday, Wednesday, Friday from 4:30 to 5:30 in Math 413.
+  <ul>
+    <li> <a href="practice_final.pdf">Practice final</a> (<a href="practice_final_solutions.pdf">Solutions</a>)
+    <li> <a href="practice_questions.pdf">More practice questions</a> (with <a href="practice_questions_sol.pdf">solutions)</a> from <a href="http://www.math.columbia.edu/~rizzardo/calc1.html">Alice Rizzardo's course</a>.
+    <li> <a href="past_final.pdf">Another past final</a> from Wei Ho (without solutions).
+  </ul>
+</p>
+<p>I have made a <a href="formulas.pdf">list of formulas</a> that you must know.</p>
+<p>
+  Professor Paul Dawkins has created an extensive list of practice problems with solutions. Here is the page for <a href="http://tutorial.math.lamar.edu/Problems/CalcI/CalcI.aspx">Calculus I</a>. This page has links to individual topic pages, which contain several problems with solutions. In particular, you can check out:
+  <ul>
+    <li><a href="http://tutorial.math.lamar.edu/Problems/CalcI/DerivativeIntro.aspx">Derivatives</a>
+    <li><a href="http://tutorial.math.lamar.edu/Problems/CalcI/RelatedRates.aspx">Related rates</a> (11 problems with solutions).
+    <li><a href="http://tutorial.math.lamar.edu/Problems/CalcI/Optimization.aspx">Optimization</a> and <a href="http://tutorial.math.lamar.edu/Problems/CalcI/MoreOptimization.aspx">more optimization</a> (15 problems with solutions).
+    <li><a href="http://tutorial.math.lamar.edu/Problems/CalcI/LinearApproximations.aspx">Linear approximation</a> (5 problems with solutions).
+    <li><a href="http://tutorial.math.lamar.edu/Problems/CalcI/IntegralsIntro.aspx">Integrals</a>
+  </ul>
+  <p>I urge you to try the problems <em>without looking at the solutions</em>, read the corresponding section of the text if you are unable to do the problems, and then look at the solution to see what you missed.</p>
+</p>
+<p>The mean for Midterm 2 was 25/50. The score distribution is 
+  <a href=="Midterm2Graph.png">here</a>.
+</p>
+<p>The second midterm will be on Thursday, April 3. It will cover everything that was covered up to Thursday, March 27. More specifically, you are responsible for the following topics:<p>
+<ul>
+  <li>Derivatives of polynomials, exponential functions, trigonometric functions, and logarithms.
+  <li>The sum, product, quotient, and chain rules for derivatives.
+  <li>Logarithmic differentiation
+  <li>Implicit differentiation
+  <li>Linear approximation
+  <li>Related rates
+  <li>Maximum and minimum values (local, absolute), optimization
+  <li>First and second derivatives and the shape of the curve
+  <li>L'Hopital's rule
+</ul>
+<p>These topics correspond to the following sections from the book: &sect;3.1, 3.2 3.3, 3.4, 3.5, 3.6, 3.9, 3.10, 4.1, 4.3, 4.4, 4.7. Exponential growth/decay will <em>not</em> be on the exam.</p>
+
+<ul> 
+  <li><a href="practice_midterm2.pdf">Practice exam</a> (Typos fixed; <a href="practice_midterm2_solutions.pdf">Solutions</a>)
+  <li><a href="past_midterm2.pdf">Past exam</a> (without solutions)
+  <li><a href="another_past_midterm2.pdf">Another past exam</a> (without solutions).
+</ul>
+
+
+
+  <p>We have finished grading the first midterm. You can view your score on <a href="https://courseworks.columbia.edu/portal/site/MATHV1101_003_2014_1?panel=Main">CourseWorks</a>. The mean and the median were around 36 (out of 50) and the standard deviation was about 10. The scores will not be curved. Your final letter grade will be based on a weighted average of the scores from the midterms, the final, and the homework. Typically, the top 1/3 of the class will receive an A (with appropriate modifiers), the next 1/2 a B (with appropriate modifiers), and so on. <a href="Midterm1Grades.png">This graph</a> shows the class performance from which you can guage roughly where you stand. <br>
+</p> 
+  <p><a href="practice_midterm1_solutions.pdf">Here</a> are solutions to the practice midterm.</p>
+
+<p>Here are some past midterms: <a href="Midterm1-Sec8.pdf">one</a>, <a href="Midterm1-Sec9.pdf">two</a>.</p>
+
+<p>Your past graded homeworks are available in North corridor of the fifth floor of the math building. You can pick them up at any time. Your homework grades are available on <a href="https://courseworks.columbia.edu/portal/site/MATHV1101_003_2014_1?panel=Main">CourseWorks</a>.</p>
+
+<p>The first midterm is on Thursday, February 20. You are responsible for everything covered up to Tuesday, February 11 (derivatives of polynomials). The class on Tuesday, February 18 will be a review of the material. </p>
+
+<p> To prepare, make sure you can do all the homework problems, and attempt similar problems from the textbook without looking at the book or your notes. Here is a <a href="practice_midterm1.pdf">practice exam</a>. 
+</p>
+
+  <p>Today's class (February 13) is cancelled due to the winter storm.</p>
+  <p>The solutions to Homework 1 and Homework 2 are up.</p>
+  <p>If you want to use WebAssign, use the class key <code>columbia 8529 7221</code>.</p>
+</div>
+<p><strong>Old announcements</strong> <a href="#announcements">Show</a> / <a href="#z">Hide </a></p>
+
+
+<h2>Course Description</h2>
+<p>We will study differential and a bit of integral calculus with applications. This is a tentative plan of the course </p>
+
+<table class="plan">
+  <tr> 
+    <td><b>Week</b></td> 
+    <td><b>Topic</b></td>
+    <td><b>Reading</b></td>
+    <td><b>Homework</b></td>
+  </tr>
+
+  <tr>
+    <td>Jan 21, 23</td>
+    <td> 
+      Introduction <br>
+      Functions and ways to represent them <br>
+      A catalog of essential functions <br>
+      New functions from old functions <br>
+      Expenential functions
+    </td>
+    <td>1.1, 1.2, 1.3, 1.5</td>
+    <td>
+      <a href="hw1_sol.pdf">Solutions 1</a><br>
+      &sect; 1.1: 3, 7, 8, 9, 10, 44, 50<br>
+      &sect; 1.2: 4, 13, 18<br>
+      &sect; 1.3: 3, 51, 54, 56<br>
+      &sect; 1.5: 4, 5, 21, 29 (a,b,c).
+    </td>
+  </tr>
+
+  <tr>
+    <td>Jan 28, 30</td>
+    <td> 
+      Inverse functions, logarithms<br>
+      Tangents and velocity<br>
+      The limit of a function<br>
+      Limit laws<br>
+    </td>
+    <td>1.6, 2.1, 2.2, 2.3</td>
+    <td>
+      <a href="hw2_sol.pdf">Solutions 2</a><br>
+      &sect; 1.6: 21, 22, 23, 40, 61<br>
+      &sect; 2.1: 2, 5, 8<br>
+      &sect; 2.2: 2, 7, 9, 11<br>
+      &sect; 2.3: 1, 26, 38, 41<br>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 4, 6</td>
+    <td> 
+      Continuity<br>
+      Limits at infinity, horizontal asymptotes<br>
+      Derivatives and rates of change<br>
+      The derivative as a function<br>
+    </td>
+    <td>2.5, 2.6, 2.7, 2.8</td>
+    <td>
+      <a href="hw3_sol.pdf">Solutions 3</a><br>
+      &sect; 2.5: 9, 11, 14, 16, 41, 44, 65<br>
+      &sect; 2.6: 3, 14, 37, 57(a), 62<br>
+      &sect; 2.7: 8, 11, 39, 42, 51<br>
+      &sect; 2.8: 3, 15, 25, 40
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 11, 13</td>
+    <td> 
+      Derivatives of polynomials and exponentials<br>
+      Product and quotient rules<br>
+      Derivatives of trigonometric functions<br>
+    </td>
+    <td>3.1, 3.2, 3.3</td>
+    <td><a href="hw4_sol.pdf">Solutions 4</a><br>
+      &sect; 3.1: 3, 6, 13, 16, 26 <br>
+      &sect; 3.1: 34, 43, 47, 62, 77<br>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Feb 18, 20</td>
+    <td> 
+      Review <br>
+      Midterm 1<br>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> Feb 25</td>
+    <td><em>Last day to drop for most schools</em></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+
+  <tr>
+    <td>Feb 25, 27</td>
+    <td> 
+      Derivatives of trigonometric functions<br>
+      Product rule, quotient rule<br>
+      Chain rule<br>
+    </td>
+    <td>3.2, 3.3, 3.4</td>
+    <td><a href="hw5_sol.pdf">Solutions 5</a><br>
+      &sect; 3.2: 24, 28, 44<br>
+      &sect; 3.3: 5, 14, 21, 30, 39, 44<br>
+      &sect; 3.4: 2, 3, 33, 47, 62, 66
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 4, 6</td>
+    <td> 
+      Derivatives of logarithm<br>
+      Implicit differentiation<br>
+      Related rates<br>
+    </td>
+    <td>3.5, 3.6, 3.8, 3.9</td>
+    <td>
+      <a href="hw6_sol.pdf">Solutions 6</a> <br>
+      &sect; 3.5: 1, 25, 28, 32, 45, 75<br>
+      &sect; 3.6: 4, 15, 29, 42, 48<br>
+      &sect; 3.9: 5, 6, 11, 14, 20, 33, 35<br>
+      
+    </td>
+  </tr>
+
+  <tr>
+    <td>Mar 11, 13</td>
+    <td> 
+      Maximum and minimum values<br>
+      Derivatives and shape of a curve<br>
+      Linear approximation<br>
+    </td>
+    <td>3.10, 4.1, 4.3</td>
+    <td>
+      <a href="hw7_sol.pdf">Solutions 7</a><br>
+      &sect; 3.10: 2, 6 (skip the graph), 24, 27, 44<br>
+      &sect; 4.1: 5, 6, 8, 36, 40, 60<br>
+      &sect; 4.3: 1, 8, 10, 13, 30, 32, 44 <br>
+    </td>
+  </tr>
+  
+  <tr>
+    <td> March 17 &ndash; 21</td>
+    <td><em>Spring break</em></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Mar 25, 27</td>
+    <td> 
+      L'Hospital's rule<br>
+      Optimization <br>
+      Exponential growth/decay <br>
+    </td>
+    <td>4.4, 4.7, 3.8</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>April 1, 3</td>
+    <td> 
+      Review<br>
+      Midterm 2<br>
+    </td>
+    <td></td>
+    <td>No homework</td>
+
+  </tr>
+
+  <tr>
+    <td>April 8, 10</td>
+    <td> 
+      Antiderivatives<br>
+      Areas and distances<br>
+      The definite integral
+    </td>
+    <td>4.9, 5.1, 5.2</td>
+    <td><a href="hw8_sol.pdf">Solutions 8</a><br>
+      &sect; 5.1: 3, 18, 22<br>
+      &sect; 5.2: 17, 18, 34, 48, 50<br>
+      &sect; 5.3: 2, 4, 7, 10, 26, 37, 41, 61, 78
+    </td>
+  </tr>
+
+  <tr>
+    <td>April 15, 17</td>
+    <td> 
+      Indefinite integrals<br>
+      Substitution rule<br>
+    </td>
+    <td>5.4, 5.5</td>
+    <td>
+      <a href="hw9_sol.pdf">Solutions 9</a><br>
+      &sect; 5.4: 5, 6, 12, 17, 18, 42, 49<br>
+      &sect; 5.5: 2, 4, 5, 6, 8, 10, 18<br>
+      &sect; 5.5: 28, 32, 44, 86.
+    </td>
+  </tr>
+
+  <tr>
+    <td>April 22, 24</td>
+    <td> 
+      Areas between curves<br>
+      Volumes <br>
+    </td>
+    <td>6.1, 6.2</td>
+    <td>
+      <a href="hw10_sol.pdf">Solutions 10</a><br>
+      &sect; 5 Review: 10, 12, 43, 46, 70<br>
+      &sect; 6.1: 1, 2, 4, 32, 43, 44<br>
+      &sect; 6.2: 2, 6, 19, 21, 40, 48
+    </td>
+  </tr>
+
+  <tr>
+    <td>April 29, May 1</td>
+    <td> 
+      Special topics<br>
+      Review <br>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+
+<h2>Homework</h2>
+<p>Homework will be an essential component of the course. It will be assigned on Thursday and will be due on the next Thursday in the drop box on the 4th floor of the Math builting. <em>No late homework will be accepted</em>. To compensate, I will drop the two lowest homework scores. </p>
+<h3>Collaboration</h3>
+<p>You may work on the homework in groups, but you must write up the solutions on your own. As a matter of academic honesty, write the names of your collaborators on top of your submitted work. This will not affect your grade. </p>
+
+<h2>Grading</h2>
+<p>The final grade will be based on homework (20%), two in-class midterms (20% each), and a final (40%). The exams are scheduled as follows:</p>
+  <ul>
+    <li> Midterm 1: February 20
+    <li> Midterm 2: April 3
+    <li> Final (projected): May 15
+  </ul>
+
+<h2>Additional Resources</h2>
+<h3>Help room</h3>
+<p>The math help room, located at Milbank 333 on the Barnard campus, is an excellent resource to get help and foster collaboration. It will be staffed by TAs in the math department, all eager to help you learn. The staffing schedule is available <a href="http://math.columbia.edu/department/milbankhelp.shtml">here.</a></p>
+<h3>WebAssign</h3>
+<p>Although WebAssign is not a required part of the course, you may use it for practice problems. If you have WebAssign access, use the class key <code>columbia 8529 7221</code>.</p>
+
+    {% include footer.html %}
+
+
+  </body>
+</html>

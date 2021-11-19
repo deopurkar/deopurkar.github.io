@@ -1,0 +1,209 @@
+---
+---
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Anand Deopurkar</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" />
+    <style type="text/css">
+      <!--
+	  html {
+	  background-image: url("yt.png");
+	  }
+
+	  body {
+	  background-image: none;
+	  padding: 2%;
+	  border: 1px solid;
+	  }
+
+	  table {
+	  margin-right: auto;
+	  margin-left: auto;
+	  }
+
+       -->
+    </style>
+     {% include head.html %}
+  </head>
+  
+  <body>
+    <h1>Seminar: Young tableaux</h1>
+
+    <p>
+      Welcome to the seminar on <em>Young tableaux in algebra and geometry</em>.
+    </p>
+
+    <h2>Basic information</h2>
+    <p>
+      Our main reference will be the book <strong>Young tableaux: with applications to representation theory and geometry</strong> by <strong>William Fulton</strong> published by the Cambridge University Press (ISBN-13: 978-0521567244).
+    </p>
+    <p>
+      We will meet on <strong>Tuesday, 7PM&ndash;9PM</strong> in <strong>room 508</strong> in the math department.
+    </p>
+
+    <h2>Final paper</h2>
+    <p>
+      You will need to write an expository paper on a topic of your choice. It will be short (no more than 5 pages) and written using LaTeX. A first draft will be due by December 1. I will return it with comments within a week and ask you to submit a revised draft by December 14. If you prefer, you can turn in your draft early, in which case I will return it early with comments.
+    </p>
+    <p>
+      The choice of the topic and what you want to write about it is up to you.
+      But please keep it within 5 pages.
+      This will restrict what you can and cannot do.
+      For example, if a theorem has a 10 page long proof, you will have to omit it or only sketch the main idea.
+    </p>
+    
+    <h3>
+      Topic ideas
+    </h3>
+    <p>
+      You can read and summarize one (or part) of the following works.
+    </p>
+      <ul>
+	<li>C. Greene, <em>Some partitions associated with a partially ordered set</em> (Generalizes the notion of largest increasing subsequences to partially ordered sets and relates them to Young tableaux.)
+	<li>R. Stanley, <em>Polygon dissections and standard young tableaux</em> (A short paper showing a bijection between certain dissections of an (n+2)-gon and certain Young tableaux.)
+	<li>R. Stanley <em>On the enumeration of skew Young tableaux</em> (Exact and asymptotic formulas for number of skew tableaux.)
+	<li>C. Krattenthaler <em>Nonintersecting lattice paths and oscillating tableaux</em> (Involves variations of the RSK correspondence for so-called oscillating tableaux.)
+	<li>C. Greene, A. Nijenhuis, and H. Wilf <em>A probabilistic proof of a formula for the number of Young tableaux of a given shape </em> (A short probabilistic proof of the Hook length formula).
+	<li>I. Gessel and G. Viennot <em>Binomial determinants, paths, and hook-length formulae</em> (Gives determinantal formulae for enumerating Young tableaux).
+	<li>R. Stanley <em>A baker's dozen of conjectures concerning plane partitions</em> (Conjectures about enumerating Young tableaux.)
+      </ul>
+    <p>
+      You can discuss the following theorems, formulas, or concepts. 
+    </p>
+      <ul>
+	<li>Hook length formula 
+	<li>Jacobi-Trudi identity
+	<li>MacMohan's master theorem (a combinatorics/linear-algebraic result with lots of applications)
+	<li>Polya enumeration theorem (gives a counting formula using group actions)
+	<li>Schur-Weyl duality (relates representations of the general linear group and the symmetric group)
+	<li>Hall-Littlewood polynomials (a family of symmetric functions generalizing Schur functions)
+      </ul>
+    <p>
+      Alternatively, you may choose to pick a related collection of exercises from Fulton's book and present their solutions. However, they must share a coherent theme and you should write them up as a unified paper rather than a series of separate problems.
+    </p>
+    <p>
+      Alternatively, you are free to choose any result of your choice and write about it.
+    </p>
+
+    <h3>Writing resources </h3>
+    <ul>
+      <li> <a href="https://latex-project.org/ftp.html">Obtaining LaTeX</a>
+      <li>Introduction to LaTeX: <a href="https://latex-project.org/intro.html">minimal</a>, <a href="http://ricardo.ecn.wfu.edu/~cottrell/ecn297/latex_tut.pdf">short</a>, <a href="http://mirror.ctan.org/info/lshort/english/lshort.pdf">not so short</a>.
+      <li>A <a href="template.tex">sample template</a>.
+      <li>Steve Kleiman's excellent advice on <a href="kleiman.pdf">writing mathematics.</a> It is written for an old MIT writing requirement, but is applicable much more widely. 
+    </ul>
+
+    <h2>Background</h2>
+    <p>
+      Later in the semester, we will need working knowledge of groups (specifically the group of permutations <em>S<sub>n</sub></em> and the group of matrices <em>GL<sub>n</sub>(C)</em>.)
+      Here are some resources:
+      <ul>
+	<li><a href="http://www.math.nagoya-u.ac.jp/~richard/teaching/s2015/Group_2.pdf">A crash course in group theory</a> by Prof. Serge Richard of Nagoya University.
+	<li><a href="http://people.reed.edu/~iswanson/abstractalgebra.pdf">Notes on Abstract Algebra</a> by Prof. Irena Swanson of Reed College.
+	  (There is much more here than we will need, but they are a good reference.)
+	<li><a href="https://en.wikipedia.org/wiki/Symmetric_group">Wikipedia!</a>
+      </ul>
+    
+    <h2>Plan</h2>
+    <table class="plan" cellpadding="5%" border="1">
+      <tr>
+	<td><strong>Date</strong>
+	<td><strong>Topic</strong>
+	<td><strong>Speaker</strong>
+      </tr>
+      
+      <tr>
+	<td> Sept 15
+	<td> Calculus of tableaux: bumping, sliding (&sect; 1)
+	<td> Anand
+      </tr>
+
+      <tr>
+	<td >Sept 22
+	<td >Words and Knuth equivalence (&sect; 2.1)
+	<td>Isaac, Mayla
+      </tr>
+
+      <tr>
+	<td rowspan="2">Sept 29
+	<td>Increasing sequences in a word (&sect; 3)
+	<td>Ravi
+      </tr>
+
+      <tr>
+	<td>The RSK correspondence (&sect; 4.1)
+	<td>Tomer
+      </tr>
+
+      <tr>
+	<td rowspan="2" >Oct 6
+	<td>Applications of the RSK correspondence (&sect; 4.3)
+	<td>DJ
+      </tr>
+
+      <tr>
+	<td>Proof of the RSK correspondence (&sect; 4.2)
+	<td>Amarto
+      </tr>
+      
+      <tr>
+	<td >Oct 13
+	<td > The Littlewood-Richardson rule (&sect; 5.1, &sect; 5.2)
+	<td>James, Nathan
+      </tr>
+
+
+      <tr>
+	<td>Oct 20
+	<td>Groups, monoids, rings
+	<td>Dan Gulotta
+      </tr>
+
+
+      <tr>
+	<td rowspan="2">Oct 27
+	<td>Schur polynomials (&sect; 2.2)
+	<td> Adam
+      </tr>
+
+      <tr>
+	<td>Symmetric polynomials (&sect; 6)
+	<td>Antony
+      </tr>
+      
+      <tr>
+	<td>Nov 12 (Thursday!)
+	<td>A whizz through representation theory
+	<td>Anand
+      </tr>
+
+      <tr>
+	<td rowspan="2">Nov 19 (Thursday!)
+	<td>The action of <em>S<sub>n</sub></em> on tableaux (&sect; 7.1)
+	<td>Bryan
+      </tr>
+      <tr>
+	<td>The Specht module (&sect; 7.2)
+	<td>Leon
+      </tr>
+
+      <tr>
+	<td>Nov 24
+	<td>The representation ring and symmetric functions (&sect; 7.3)
+	<td>Dan, Chi
+      </tr>
+      
+      <tr>
+	<td>Dec 1
+	<td>TBA
+	<td>Niranjan
+      </tr>
+    </table>
+
+        {% include footer.html %}
+
+    
+  </body>
+</html>
