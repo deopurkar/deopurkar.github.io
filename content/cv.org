@@ -6,13 +6,10 @@
 #+LATEX_HEADER_EXTRA: \usepackage{Baskervaldx}
 #+HTML_HEAD_EXTRA: <script src="js/collapsibility.js"></script>
 
-#+begin_src elisp :exports none
+#+begin_src elisp :exports none :results none
   (if (not (boundp 'include-links))
       (setq include-links t))
 #+end_src
-
-#+RESULTS:
-: t
 
 * Positions
 :PROPERTIES:

@@ -3,8 +3,8 @@
 (require 'subr-x)
 
 (setq org-publish-project-alist
-      '(("website"
-         :base-directory "./content"  ;; This is where our org files live
+      '(("website-org"
+         :base-directory "./content"  ;; This is where our files live
          :base-extension "org" ;; Publish only from org files
          :publishing-directory "./docs" ;; This is where the published files go
          :recursive t 
@@ -32,8 +32,9 @@
          :include ["cv.org"]
          :publishing-directory "./docs"
          :publishing-function org-latex-publish-to-pdf
+         :preparation-function (lambda (props) (setq include-links nil))
          )
-        ("static"
+        ("website-static"
          :base-directory "./content"
          :base-extension ".*"
          :exclude "\#.*"
