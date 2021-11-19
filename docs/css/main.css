@@ -20,7 +20,7 @@
       flex-direction: row; } }
 
 body {
-  font-family: Default, serif;
+  font-family: Serif Default, serif;
   margin-top: 0em;
   margin-left: auto;
   margin-right: auto; }
@@ -29,7 +29,7 @@ body {
   text-decoration: underline; }
 
 h1, h2, h3, h4 {
-  font-family: Default, serif;
+  font-family: Serif Default, serif;
   font-weight: lighter;
   margin-bottom: 0em; }
 
@@ -64,7 +64,7 @@ figure {
   font-size: 80%; }
 
 header {
-  font-family: Default;
+  font-family: Serif Default;
   font-size: 110%;
   display: flex;
   flex-direction: column;

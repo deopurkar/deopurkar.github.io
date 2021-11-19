@@ -12,7 +12,7 @@
 [[https://anu.edu.au][The Australian National University]]\\
 Canberra, ACT, 2601, Australia
 
- ~anand.deopurkar~ at ~anu~ dot ~edu~ dot ~au~\\
+ ~anand.deopurkar~ at ~anu~ dot ~edu~ dot ~au~ ([[file:ananddeopurkar-pgp.asc][pgp]])\\
 4.56 [[http://www.anu.edu.au/maps#show=102872][Hanna Neumann Building #156]]\\
 +61 2 6125 4628   
 

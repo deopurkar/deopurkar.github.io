@@ -137,8 +137,8 @@ We come to the main part of the CSS code, namely the positioning and layout opti
 First we define the variables for the title font and the body font.
 #+begin_src scss
   // Fonts
-  $title-font: Default;
-  $body-font: Default;
+  $title-font: Serif Default;
+  $body-font: Serif Default;
 #+end_src
 Next we use media queries to set breakpoints for various screen sizes, which then influence the layout of the page.
 The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][CSS flexbox]].
