@@ -32,7 +32,7 @@
          :include ["cv.org"]
          :publishing-directory "./docs"
          :publishing-function org-latex-publish-to-pdf
-         :preparation-function (lambda (props) (setq include-links nil))
+         :preparation-function do-not-include-links
          )
         ("website-static"
          :base-directory "./content"
@@ -49,6 +49,11 @@
          :preparation-function my/execute-files
          :publishing-function org-publish-attachment)
         ))
+
+(defvar cv-include-links t
+  "Should links be included while processing cv.org")
+(defun do-not-include-links (propslist)
+  (setq cv-include-links nil))
 
 (defun my/execute-files (proplist)
   (let ((files

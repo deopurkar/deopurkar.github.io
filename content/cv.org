@@ -6,10 +6,6 @@
 #+LATEX_HEADER_EXTRA: \usepackage{Baskervaldx}
 #+HTML_HEAD_EXTRA: <script src="js/collapsibility.js"></script>
 
-#+begin_src elisp :exports none :results none
-  (if (not (boundp 'include-links))
-      (setq include-links t))
-#+end_src
 
 * Positions
 :PROPERTIES:
@@ -116,7 +112,7 @@
                 (if coauthors
                     (format ", with %s" coauthors)
                   "")
-                (if (and link include-links)
+                (if (and link cv-include-links)
                     (format " (%s)" link)
                   "")))))
   (string-join (org-map-entries 'pretty-print "-pp-expository-thesis" '("#papers.org")) "\n")
@@ -249,7 +245,7 @@
                 (if comment
                     (format " (%s)" comment)
                   "")
-                (if (and link include-links)
+                (if (and link cv-include-links)
                     (format " (%s)" link)
                   "")))))
   (string-join (org-map-entries 'pretty-print nil '("#talks.org")) "\n")

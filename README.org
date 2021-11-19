@@ -62,7 +62,7 @@ Currently I have the following projects.
            :include ["cv.org"]
            :publishing-directory "./docs"
            :publishing-function org-latex-publish-to-pdf
-           :preparation-function (lambda (props) (setq include-links nil))
+           :preparation-function do-not-include-links
            )
           ("website-static"
            :base-directory "./content"
@@ -79,8 +79,15 @@ Currently I have the following projects.
            :preparation-function my/execute-files
            :publishing-function org-publish-attachment)
           ))
-
 #+end_src
+The variable ~cv-include-links~ used above controls whether links should be included in the cv.
+#+begin_src elisp :tangle "build.el"
+  (defvar cv-include-links t
+    "Should links be included while processing cv.org")
+  (defun do-not-include-links (propslist)
+    (setq cv-include-links nil))
+#+end_src
+
 
 The following function executes all the org files from the base directory.
 #+begin_src emacs-lisp :tangle "build.el"
@@ -114,7 +121,7 @@ We also create a shell script to run the above lisp file.
 Once we have set up the tools to build the website locally, we can now use them to build the site automatically on Github.
 Put the following code in ~.github/workflows/build.yml~.
 Inspired by [[https://duncan.codes/posts/2019-09-03-migrating-from-jekyll-to-org/][this post]] and [[https://systemcrafters.net/publishing-websites-with-org-mode/automated-site-publishing/][this post]].
-#+begin_src yaml :tangle ".github/workflows/build.yml" :mkdirp yes
+#+begin_src yaml :tangle ".github/workflows/build.yml" :mkdirp yes :eval no
   name: Build and publish to GitHub Pages
   on:
     push:
@@ -130,7 +137,7 @@ Inspired by [[https://duncan.codes/posts/2019-09-03-migrating-from-jekyll-to-org
   
       - name: Add emacs ppa
         run: sudo add-apt-repository ppa:kelleyk/emacs --yes && sudo apt update --yes
-  
+
       - name: Install emacs
         run: sudo apt install emacs27-nox --yes
   
