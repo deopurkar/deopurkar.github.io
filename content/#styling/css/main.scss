@@ -27,6 +27,7 @@
         display: inline-block;
         padding-top: 0.5em;
         margin: 0em;
+        padding-bottom: 0.5em;
         a, a:active, a:visited {
             color: $titles;
         }
@@ -110,18 +111,20 @@
 }
 
 // Fonts
-$title-font: Serif Default;
-$body-font: Serif Default;
+$title-font: 'Lora';
+$body-font: 'Lora';
 
 @media screen and (max-width: 480px) {
     body {
         max-width:95%;
         font-size:100%;
+        line-height: 1em;
     }
 }
 @media screen and (min-width: 480px) {
     body {
         max-width:80%;
+        line-height: 1.2em;
     }
 }
 @media screen and (min-width: 550px) {
@@ -130,12 +133,13 @@ $body-font: Serif Default;
             flex-direction: row-reverse;
         }
         font-size:110%;
+        line-height: 1.2em;
     }
 }
 @media screen and (min-width: 1000px) {
     body {
         max-width:1000px;
-
+        line-height: 1.5em;
         header {
             flex-direction: row;
         }
@@ -146,6 +150,7 @@ body {
     margin-top: 0em;
     margin-left:auto;
     margin-right:auto;
+    line-height:1.5em;
 }
 
 * a {
@@ -156,21 +161,6 @@ h1, h2, h3, h4 {
     font-family: $title-font, serif;
     font-weight:lighter;
     margin-bottom: 0em;
-}
-ul {
-    padding-left: 1em;
-    li {
-        padding-bottom: 0.5em;
-    }
-}
-ol {
-    padding-left: 1em;
-    li {
-        padding-left: 0.5em;
-        ol li {
-            list-style-type: lower-alpha;
-        }
-    }
 }
 dl {
     display: grid;
@@ -193,24 +183,9 @@ figure {
     font-size: 80%;
 }
 
-header {
+.title {
     font-family: $title-font;
-    font-size: 110%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-top:0em;
-    margin-bottom: 2em;
-    padding-top: 0.5em;
-    padding-bottom: 0.2em;
-    //border-bottom: solid 0.15em;
-
-    h1 {
-        text-align: center;
-        margin: 0em;
-    }
+    line-height: 1.5em;
 }
 .intro {
     display: flex;

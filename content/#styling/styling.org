@@ -46,6 +46,7 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
           display: inline-block;
           padding-top: 0.5em;
           margin: 0em;
+          padding-bottom: 0.5em;
           a, a:active, a:visited {
               color: $titles;
           }
@@ -137,8 +138,8 @@ We come to the main part of the CSS code, namely the positioning and layout opti
 First we define the variables for the title font and the body font.
 #+begin_src scss
   // Fonts
-  $title-font: Serif Default;
-  $body-font: Serif Default;
+  $title-font: 'Lora';
+  $body-font: 'Lora';
 #+end_src
 Next we use media queries to set breakpoints for various screen sizes, which then influence the layout of the page.
 The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][CSS flexbox]].
@@ -147,11 +148,13 @@ The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-g
       body {
           max-width:95%;
           font-size:100%;
+          line-height: 1em;
       }
   }
   @media screen and (min-width: 480px) {
       body {
           max-width:80%;
+          line-height: 1.2em;
       }
   }
   @media screen and (min-width: 550px) {
@@ -160,12 +163,13 @@ The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-g
               flex-direction: row-reverse;
           }
           font-size:110%;
+          line-height: 1.2em;
       }
   }
   @media screen and (min-width: 1000px) {
       body {
           max-width:1000px;
-  
+          line-height: 1.5em;
           header {
               flex-direction: row;
           }
@@ -176,6 +180,7 @@ The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-g
       margin-top: 0em;
       margin-left:auto;
       margin-right:auto;
+      line-height:1.5em;
   }
 #+end_src
 Style links. Remember that the colours have already been styled via a theme mixin.
@@ -191,21 +196,6 @@ Style headings, lists, and figures.
       font-family: $title-font, serif;
       font-weight:lighter;
       margin-bottom: 0em;
-  }
-  ul {
-      padding-left: 1em;
-      li {
-          padding-bottom: 0.5em;
-      }
-  }
-  ol {
-      padding-left: 1em;
-      li {
-          padding-left: 0.5em;
-          ol li {
-              list-style-type: lower-alpha;
-          }
-      }
   }
   dl {
       display: grid;
@@ -233,26 +223,11 @@ We begin with a [[https://sass-lang.com/documentation/style-rules/placeholder-se
       font-size: 80%;
   }
 #+end_src
-Now style the header and intro.
+Now style the title and intro.
 #+begin_src scss
-  header {
+  .title {
       font-family: $title-font;
-      font-size: 110%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-  
-      margin-top:0em;
-      margin-bottom: 2em;
-      padding-top: 0.5em;
-      padding-bottom: 0.2em;
-      //border-bottom: solid 0.15em;
-  
-      h1 {
-          text-align: center;
-          margin: 0em;
-      }
+      line-height: 1.5em;
   }
   .intro {
       display: flex;

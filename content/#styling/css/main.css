@@ -1,49 +1,42 @@
 @media screen and (max-width: 480px) {
   body {
     max-width: 95%;
-    font-size: 100%; } }
+    font-size: 100%;
+    line-height: 1em; } }
 
 @media screen and (min-width: 480px) {
   body {
-    max-width: 80%; } }
+    max-width: 80%;
+    line-height: 1.2em; } }
 
 @media screen and (min-width: 550px) {
   body {
-    font-size: 110%; }
+    font-size: 110%;
+    line-height: 1.2em; }
     body .intro {
       flex-direction: row-reverse; } }
 
 @media screen and (min-width: 1000px) {
   body {
-    max-width: 1000px; }
+    max-width: 1000px;
+    line-height: 1.5em; }
     body header {
       flex-direction: row; } }
 
 body {
-  font-family: Serif Default, serif;
+  font-family: "Lora", serif;
   margin-top: 0em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  line-height: 1.5em; }
 
 * a {
   text-decoration: underline; }
 
 h1, h2, h3, h4 {
-  font-family: Serif Default, serif;
+  font-family: "Lora", serif;
   font-weight: lighter;
   margin-bottom: 0em; }
-
-ul {
-  padding-left: 1em; }
-  ul li {
-    padding-bottom: 0.5em; }
-
-ol {
-  padding-left: 1em; }
-  ol li {
-    padding-left: 0.5em; }
-    ol li ol li {
-      list-style-type: lower-alpha; }
 
 dl {
   display: grid;
@@ -63,20 +56,9 @@ figure {
 #postamble, footer {
   font-size: 80%; }
 
-header {
-  font-family: Serif Default;
-  font-size: 110%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0em;
-  margin-bottom: 2em;
-  padding-top: 0.5em;
-  padding-bottom: 0.2em; }
-  header h1 {
-    text-align: center;
-    margin: 0em; }
+.title {
+  font-family: "Lora";
+  line-height: 1.5em; }
 
 .intro {
   display: flex;
@@ -142,7 +124,8 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 0.15em solid #d05a5b;
   display: inline-block;
   padding-top: 0.5em;
-  margin: 0em; }
+  margin: 0em;
+  padding-bottom: 0.5em; }
   h1 a, h1 a:active, h1 a:visited, h2 a, h2 a:active, h2 a:visited, h3 a, h3 a:active, h3 a:visited, h4 a, h4 a:active, h4 a:visited, h5 a, h5 a:active, h5 a:visited, h6 a, h6 a:active, h6 a:visited {
     color: #d05a5b; }
   h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
@@ -200,7 +183,8 @@ footer {
     border-bottom: 0.15em solid #000;
     display: inline-block;
     padding-top: 0.5em;
-    margin: 0em; }
+    margin: 0em;
+    padding-bottom: 0.5em; }
     h1 a, h1 a:active, h1 a:visited, h2 a, h2 a:active, h2 a:visited, h3 a, h3 a:active, h3 a:visited, h4 a, h4 a:active, h4 a:visited, h5 a, h5 a:active, h5 a:visited, h6 a, h6 a:active, h6 a:visited {
       color: #000; }
     h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
