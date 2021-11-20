@@ -1,0 +1,1424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-11-21 Sun 08:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Foundations of algebraic geometry, aka schemes 2020</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Anand Deopurkar" />
+<link rel="stylesheet" href="/css/main.css"><link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+<script src="/js/collapsibility.js"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Foundations of algebraic geometry, aka schemes 2020</h1>
+
+<div id="outline-container-org23b3a6a" class="outline-2">
+<h2 id="org23b3a6a" class="collapsible">Introduction</h2>
+<div class="outline-text-2" id="text-org23b3a6a">
+<p>
+We will learn the modern foundations of algebraic geometry: sheaves, schemes, and cohomology from <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">Ravi Vakil&rsquo;s book-in-progress</a>, online lecture videos, and weekly discussions.
+</p>
+
+<p>
+We will hang out at <a href="https://schemes2020.zulipchat.com"><b><b>schemes2020 on zulip</b></b></a>.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgfb77a5f" class="outline-2">
+<h2 id="orgfb77a5f" class="collapsible">Prerequisites</h2>
+<div class="outline-text-2" id="text-orgfb77a5f">
+<p>
+A solid foundation in topology and algebra (rings, fields, modules), and familiarity with some algebraic geometry or commutative algebra and the language of categories.
+This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Special Topics Course about algebraic geometry (Martin/Markus) or commutative algebra (Amnon).
+<b><b>If you are taking this course for a grade, you must have these pre-requisites or my explicit permission.</b></b> But in the open spirit of Ravi&rsquo;s project, if you want to participate (audit) this course, you are welcome! 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgb1bcd2d" class="outline-2">
+<h2 id="orgb1bcd2d" class="collapsible">Assessement</h2>
+<div class="outline-text-2" id="text-orgb1bcd2d">
+<ol class="org-ol">
+<li>5 written assignments (50%)</li>
+<li>Two oral exams (50%)</li>
+</ol>
+</div>
+
+
+<div id="outline-container-orgc006f0b" class="outline-3">
+<h3 id="orgc006f0b" class="collapsible">Written assignments</h3>
+<div class="outline-text-3" id="text-orgc006f0b">
+<ol class="org-ol">
+<li>Due 14 Aug: 1.3.E, 1.4.E, 2.3.A, 2.3.I, 2.3.J, 2.4.E, 2.4.N, 2.4.O.</li>
+<li>Due 04 Sep: 3.2.K, 3.2.M, 3.2.R, 3.2.S, 3.4.I, 3.6.C, 3.6.N, 4.3.F.</li>
+<li>Due 02 Oct: 4.3.C, 4.5.I, 5.1.E, 5.1.I, 5.2.F, 6.3.H, 6.3.M, 8.1.J (b,d).</li>
+<li>Due 16 Oct: 8.2.N, 8.2.P, 9.2.D, 9.2.H, 9.4.B (c,d,f,g), 13.3.F, 13.3.G, 13.4.A</li>
+<li>Due 5 Nov:
+<ul class="org-ul">
+<li>13.7.D + find the support of the module associated to \(k[x,y]/xy\) on \({\rm Spec}\ k[x,y]\).</li>
+<li>13.7.F</li>
+<li>13.7.K</li>
+<li>14.1.D</li>
+<li>14.2.K</li>
+<li>Which line bundles on \(\mathbb P^n_k\) are globally generated?</li>
+<li>Let \(f \colon \mathbb P^1_k \to \mathbb P^n_k\) be a map such that \(f^*O(1) = O(d)\). Suppose \(d < n\). Prove that the image of \(f\) must lie on a hyperplane.</li>
+<li>Prove that the automorphism group of \(P^n_k\) is the group \(PGL_{n+1}(k)\).</li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-org7e73e1f" class="outline-3">
+<h3 id="org7e73e1f" class="collapsible">Midterm exam</h3>
+<div class="outline-text-3" id="text-org7e73e1f">
+<p>
+The midterm exam will be an oral exam in the week of September 21. It will be about 45 minutes long. I have prepared <a href="midterm1.pdf">a list of questions for the exam</a>. We will ask questions from this list, small variations on them, and follow up questions based on your responses.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org97271f0" class="outline-3">
+<h3 id="org97271f0" class="collapsible">Final exam</h3>
+<div class="outline-text-3" id="text-org97271f0">
+</div>
+<ul class="org-ul">
+<li><a id="orged4f93a"></a>Practice questions<br />
+<div class="outline-text-5" id="text-orged4f93a">
+<ol class="org-ol">
+<li>Let \(X\) be a Noetherian scheme.
+<ul class="org-ul">
+<li>Give the definition of a quasi-coherent sheaf on \(X\).</li>
+<li>Give an example of a quasi-coherent sheaf that is not coherent.</li>
+<li>Give an example of a coherent sheaf that is not locally free.</li>
+<li>Is a subsheaf of a locally free sheaf necessarily locally free?</li>
+<li>Suppose \(F\) is a coherent sheaf such that the stalks \(F_x\) are free for all (closed) points \(x\). Must \(F\) be free? Locally free?</li>
+</ul></li>
+
+<li>Let \(X = {\rm Spec}\ A\).
+<ul class="org-ul">
+<li>Explain the relationship between closed subschemes of \(X\) and ideals of \(A\).</li>
+<li>Let \(Y \to X\) and \(Z \to X\) be closed embeddings. Is \(Y \times_X Z \to X\) also a closed embedding? What if \(X\) is not affine? What about open embeddings?</li>
+</ul></li>
+
+<li>Let \(X = {\rm Proj}\ \mathbb Q[X,Y,Z]/(X^2+Y^2+Z^2)\).
+<ul class="org-ul">
+<li>Is there a map \({\rm Spec}\ \mathbb Q \to X\)?</li>
+<li>Prove that \(X \times {\rm Spec}\ \mathbb C\) is isomorphic to \(\mathbb P^1_{\mathbb C}\).</li>
+<li>Is \(X\) isomorphic to \(\mathbb P^1_{\mathbb Q}\)?</li>
+<li>Describe a closed embedding of \(X \times X\) in \(\mathbb P^n_{\mathbb Z}\) for some \(n\).</li>
+</ul></li>
+
+<li>Let \(X = \mathbb P^1_\mathbb C\). Let \(p = [0:1]\) and \(q = [1:0]\).
+<ul class="org-ul">
+<li>Describe the sheaf \(O(p-q)\).</li>
+<li>Is this quasi-coherent? Coherent? Locally free?</li>
+<li>What more can you say about it?</li>
+<li>What if I had taken a different linear combination of a different set of points?</li>
+</ul></li>
+
+<li>Everything in this question is over a field \(k\).
+<ul class="org-ul">
+<li>What is the Picard group of \(\mathbb P^n\)?</li>
+<li>What about \(\mathbb P^n \times \mathbb P^m\)?</li>
+<li>Let \(L = \pi_1^* O(a) \otimes \pi_2^* O(b)\) on \(\mathbb P^1 \times \mathbb P^1\). For which \(a\) and \(b\) does \(L\) have a global section? is globally generated?</li>
+<li>Describe some global sections of \(L\) when \(a = 1\) and \(b = 1\).</li>
+<li>Do the sections you wrote define a map to a projective space?</li>
+<li>What is the nature of this map? (Finite, open embedding, closed embedding, constant)?</li>
+</ul></li>
+
+<li>Let \(X = \mathbb P^2_k\).
+<ul class="org-ul">
+<li>What is the Euler characteristic of the structure sheaf of \(m\) points?</li>
+<li>What is the Euler characteristic of the ideal sheaf of \(m\) points?</li>
+<li>Let \(I\) be the ideal sheaf of \(6\) points. Using the short exact sequence on cohomology, can you make a guess about the dimension of \(H^i(I)\)? What about \(H^i(I(n))\)? Should these numbers be the same for all configurations of the points?</li>
+</ul></li>
+</ol>
+</div>
+
+
+<ul class="org-ul">
+<li><a id="orge800b50"></a>Marking<br />
+<div class="outline-text-6" id="text-orge800b50">
+<p>
+Five major areas. Each out of 10.
+</p>
+
+<ol class="org-ol">
+<li>Quasi-coherent and coherent sheaves, stalks, fibers, support.</li>
+<li>Local freeness, kernels/cokernels, pull-backs, push-forwards.</li>
+<li>Open and closed embeddings, fiber products.</li>
+<li>Line bundles, divisors, maps to projective space.</li>
+<li>Global sections, cohomology, Euler characteristic.</li>
+</ol>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org50c4012" class="outline-2">
+<h2 id="org50c4012" class="collapsible">Weekly reading, viewing, and doing</h2>
+<div class="outline-text-2" id="text-org50c4012">
+<p>
+&ldquo;Do&rdquo; does not mean &ldquo;write up and submit&rdquo;. 
+A general convention in Ravi&rsquo;s book is that ⋆ indicates an advanced section that can be skipped on the first reading.
+</p>
+</div>
+
+<div id="outline-container-orgada4276" class="outline-3">
+<h3 id="orgada4276" class="collapsible">Week 12</h3>
+<div class="outline-text-3" id="text-orgada4276">
+<ul class="org-ul">
+<li><b><b>Read/skim</b></b>: 18.1, 18.2, 18.3, 18.4</li>
+<li><b><b>Do</b></b>: 
+<ul class="org-ul">
+<li>Exercise 18.3.A</li>
+<li>Exercise 18.4.A</li>
+<li>Exercise 18.4.B/C (maybe)</li>
+</ul></li>
+<li><b><b>Watch</b></b>
+<ol class="org-ol">
+<li><a href="https://vimeo.com/470803503">Sheaf cohomology</a></li>
+<li><a href="https://vimeo.com/470835362">Cohomology of quasicoherent sheaves</a></li>
+<li><a href="https://vimeo.com/472058119">Cech cohomology and the Picard group</a></li>
+</ol></li>
+</ul>
+</div>
+
+<ul class="org-ul">
+<li><a id="org8df83f9"></a>Thursday<br />
+<div class="outline-text-5" id="text-org8df83f9">
+<ol class="org-ol">
+<li>Let \(\pi \colon X \to Y\) be an affine morphism and \(F\) a quasi-coherent sheaf on \(X\).
+<ul class="org-ul">
+<li>Prove that \(H^i(X, F) = H^i(Y, \pi_* F)\).</li>
+<li>In particular, if \(\pi\) is a closed embedding, &ldquo;treating \(F\) as a sheaf on \(Y\)&rdquo; does not change the cohomology.</li>
+</ul></li>
+
+<li>Compute the cohomology group \(H^1(\mathbb A^2 - \{(0,0)\}, O)\).</li>
+
+<li>Let \(X \subset \mathbb P^1_k\) be a finite set of \(m\) points.
+<ul class="org-ul">
+<li>Show that we have an exact sequence \(0 \to O(-m) \to O \to O_X \to 0\).
+(Standard abuse of notation: writing \(O_X\) for \(i_* O_X\) where \(i\) is the closed embedding.)</li>
+<li>Use this and \(h^1(\mathbb P^1, O) = 0\) to find \(h^1(\mathbb P^1, \O(-m))\).</li>
+</ul></li>
+
+<li>Let \(X \subset \mathbb P^2_k\) be a curve of degree \(d\). That is, \(X = V(F)\), where \(F\) is a section of \(O(d)\).
+<ul class="org-ul">
+<li>Show that we have an exact sequence \(0 \to O(-d) \to O \to O_X \to 0.\) What is the first map in this sequence?</li>
+<li>Find the Euler characteristic of \(O_X\).</li>
+<li>The genus of a curve \(X\) is defined to be \(1 - \chi(O_X)\). Find the genus of a curve of degree \(d\) in \(\mathbb P^2_k\).
+(For smooth connected curves, this is the same as \(h^1(O_X)\). Over \(\mathbb C\), this agrees with the topological genus.)</li>
+</ul></li>
+
+<li>Assume the Hilbert Syzygy Theorem: every coherent sheaf \(F\) on \(\mathbb P^n\) has a finite resolution whose terms are direct sums of line bundles.
+
+<ul class="org-ul">
+<li>Prove that \(n \mapsto \chi F (n)\) is a polynomial function of \(n\). This is called the &ldquo;Hilbert polynomial&rdquo; of \(F\).</li>
+<li><p>
+Prove that \(n \mapsto h^0(F(n))\), called the &ldquo;Hilbert function&rdquo;, agrees with the Hilbert polynomial for all sufficiently large \(n\). (Hint: Serre vanishing).
+</p>
+
+<p>
+(There is a more direct inductive proof of polynomiality using slicing by hyperplanes.)
+</p></li>
+</ul></li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org5bed7a9" class="outline-3">
+<h3 id="org5bed7a9" class="collapsible">Week 11</h3>
+<div class="outline-text-3" id="text-org5bed7a9">
+<ul class="org-ul">
+<li><b><b>Read</b></b>: 16.1, 16.2, 16.3, 16.4 (which uses bits from 15.3.3), 16.5 (take S = spec k), skim the rest of 16.</li>
+<li><b><b>Notes</b></b>:
+<ul class="org-ul">
+<li>The main section I want you to understand is 16.4. It describes all maps from an X to a projective space. As a result, it describes all maps from X to a quasi-projective variety Y. Since almost all schemes we care about are quasi-projective, this explains why we care so much about line bundles.</li>
+<li>16.3 (the construction of the pull-back) is long for the same reasons that the section on fibered products was long. Everything is easy over affines, but it takes some space to carry out the gluing. I suggest going over this section lightly, perhaps only focusing on the affine case, and believing that gluing works.</li>
+</ul></li>
+<li><b><b>More</b></b>:
+<ul class="org-ul">
+<li>Cech cohomology, for example start skimming Chapter 18.
+I may add more references or make my own video/notes.</li>
+</ul></li>
+</ul>
+</div>
+
+
+<div id="outline-container-org381b3ee" class="outline-4">
+<h4 id="org381b3ee">Thursday</h4>
+<div class="outline-text-4" id="text-org381b3ee">
+<ol class="org-ol">
+<li>Prove that pullback of a locally free sheaf is locally free (of the same rank).</li>
+
+<li>(15.3.F) Vitally important construction!</li>
+
+<li>Read 16.4.1 (Important Theorem) and its proof.</li>
+
+<li>Let \(\mathbb P^n \to \mathbb P^n\) be the identity map. What is the line bundle and the sections corresponding to this map?</li>
+
+<li>Show that the automorphism group of \(\mathbb P^1_k\) is \(PGL_2(k)\).</li>
+
+<li>Let \(p \in \mathbb P^2\) be a point. Recall we have a linear projection \(\mathbb P^2 - \{p\} \to \mathbb P^1\). Which line bundle and sections give this map?</li>
+
+<li>Find the divisor class group (= Picard group) of the blow-up of \(\mathbb A^2\) at \((0,0)\).</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-org9e1d3cd" class="outline-4">
+<h4 id="org9e1d3cd">Friday</h4>
+<div class="outline-text-4" id="text-org9e1d3cd">
+<ol class="org-ol">
+<li><p>
+Show that a map \(X \to \mathbb P^n\) is the same as a line bundle \(L\) on \(X\) and a surjective map \(O_X^{n+1} \to L.\)
+</p>
+
+<p>
+Suppose for simplicity that we are working over an algebraically closed field \(k\). I claim that the above statement is a precise version of: \(\mathbb P^n_k\) is the space of one-dimensional quotients of \(k^{n+1}\). Can you justify this claim?
+Hint: Take \(X = {\rm Spec}\ k\) to get a description of closed points of \(\mathbb P^n_k\).
+</p></li>
+
+<li>Read theorem 16.5.1 (take the base S = Spec k, for simplicity) and its proof (16.5.2)
+As an example, consider the map \({\rm Spec}\ \mathbb Z \dashrightarrow \mathbb P^1_\mathbb Z\) &ldquo;defined by&rdquo; \([6:12]\). On which open set is this map defined? Extend it to all of \({\rm Spec}\ \mathbb Z\).</li>
+
+<li>(15.3.C: Globally generated sheaves. Assume X Noetherian)</li>
+
+<li>Read Serre&rsquo;s theorem A (15.3.8) and its consequence (15.3.1)</li>
+
+<li>Let \(I\) be the ideal sheaf of a point in \(\mathbb P^2_k\). Is \(I\) globally generated? Find an \(n\) such that \(I(n)\) is globally generated.</li>
+
+<li>Read the Hilbert Syzygy Theorem (15.3.2)</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org41948e4" class="outline-3">
+<h3 id="org41948e4" class="collapsible">Week 10</h3>
+<div class="outline-text-3" id="text-org41948e4">
+<ul class="org-ul">
+<li><b><b>Read</b></b>: Chapter 14 and chapter 12.5 for background</li>
+<li><b><b>Notes</b></b>:
+<ul class="org-ul">
+<li>14.1 should be straightforward (and will get your hands dirty).</li>
+<li>14.2 is dense and challenging. But it is extremely important in algebraic geometry (and in algebraic number theory!).</li>
+<li>We have not read all the pre-requisites for this section, but you should attempt to read it anyway, taking on faith some things from previous section. Here are some pointers:</li>
+<li>Restrict to Noetherian integral schemes.</li>
+<li>There is some algebra that is necessary. The main ideas are</li>
+<li>Dimension = Krull dimension = max of the length of a chain of prime ideals. This could be infinite, but assume it is finite.</li>
+<li>Let \(Y \subset X\) be irreducible of codimension \(r\). Let \(p\) be the generic point of \(Y\), then the Krull dimension of \(O_{X,p}\) is \(r\). In particular, if \(r = 1\), then \(O_{X,p}\) has dimension 1.</li>
+<li>If \(X\) is &ldquo;regular in codimension 1&rdquo; then \(O_{X,p}\) is regular local of dimension 1, and hence a Discrete Valuation Ring (DVR). See 12.5. DVRs allow us to measure &ldquo;order of vanishing&rdquo; of a function, which is essential for divisor theory.
+Regular in codimension 1 is equivalent to &ldquo;singular locus of \(X\) has codimension 2 or higher&rdquo;. So, not too singular.</li>
+<li>For divisor theory, it is important to work with normal \(X\). The normality condition appears to be purely algebraic (integrally closed), but has two important geometric consequences: (1) Normal implies regular in codimension 1 (2) Hartog&rsquo;s lemma holds: if a rational function \(f\) has no poles (in codimension 1), then \(f\) is regular.</li>
+</ul></li>
+</ul>
+</div>
+
+
+<div id="outline-container-org3e744fa" class="outline-4">
+<h4 id="org3e744fa">Discussions</h4>
+<div class="outline-text-4" id="text-org3e744fa">
+<ol class="org-ol">
+<li>Thursday
+
+<ol class="org-ol">
+<li>(14.1.A)
+Show that the space of global sections of \(O(n)\) on \(\mathbb P^1_k = {\rm Proj}\ k[X,Y]\) is naturally isomorphic to \(k[X,Y]_n\), the degree \(n\) graded component of \(k[X,Y]\).</li>
+
+<li>Let \(s = X^2Y(X + Y)\), considered as a global section of \(O(4)\) on \(\mathbb P^1_{\mathbb C}\). Find \({\rm div} (s)\).</li>
+
+<li>Let \(s = \frac{101}{100}\), considered as a rational section of \(O\) on \({\rm Spec}\ \mathbb Z\).
+Find \({\rm div} (s)\).</li>
+
+<li>Choose one of \(X = {\rm Spec}\ \mathbb Z\) or \(X = {\rm Spec}\ \mathbb A^1_k\).
+Identify the group of \(\{(L,s)\}\)/isomorphism.</li>
+
+<li>Understand the proof of 14.2.1: \({\rm div}\) is injective on normal (Noetherian) \(X\).</li>
+
+<li>(14.1.D)
+Sketch a proof of the fact that \({\rm Pic} \mathbb P^1_k = \mathbb Z\).
+Hint: The only invertible sheaf on \(\mathbb A^1\) is the trivial one.</li>
+
+<li><p>
+Failure of Hartog&rsquo;s lemma.
+Let us construct an \(X\) that is regular in codimension 1, but not normal. \(X\) can&rsquo;t be a curve (why?). So let us try a surface. We take a regular surface and modify it only in codimension 2 and hope to break normality. 
+</p>
+
+<p>
+Start with \(Y = \mathbb A^2\). Obtain \(X\) by gluing two distinct points of \(X\), say \(p = (1,0)\) and \(q = (0,1)\) 
+</p>
+
+<ul class="org-ul">
+<li>Can you make this precise? Hint: this is an affine variety, so try to first construct the ring of functions, and then take the spec.</li>
+<li>Take any function \(f\) on \(\mathbb A^2\) with distinct values at \(p\) and \(q\), for example \(x-y\). Then \(f\) is a rational function on \(X\) that has no poles (\({\rm div} f = 0\)) but is not regular.</li>
+</ul></li>
+</ol></li>
+
+<li>Friday
+
+<ol class="org-ol">
+<li>(Example of 14.2.E)
+Let \(D = 3[0] - [\infty]\) on \(X = \mathbb P^1\). Show that \(O_X(D)\) is an invertible sheaf. Show that it is isomorphic to \(O(2)\).</li>
+<li>(14.2.E)
+Spend some time on the general result: For \((L,s)\), we have \(O(div s) \cong L\).</li>
+<li>(14.2.7)
+Digest the diagram in 14.2.7.</li>
+<li>(14.2.5)
+Prove that if \(D\) is locally principal, then \(O_X(D)\) is invertible.</li>
+<li>(14.2.I)
+For a factorial \(X\), every divisor is locally principal.</li>
+<li>Prove (using the divisor class group) that \({\rm Pic} \mathbb P^n_k = \mathbb Z\).</li>
+<li>Prove (using the divisor class group) that \({\rm Pic} \mathbb P^1_k \times \mathbb P^1_k = \mathbb Z \oplus \mathbb Z\).</li>
+<li>(14.2.K) Pic of the complement of a hypersurface.</li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgca883ab" class="outline-3">
+<h3 id="orgca883ab" class="collapsible">Week 9</h3>
+<div class="outline-text-3" id="text-orgca883ab">
+<ul class="org-ul">
+<li><b><b>Read</b></b>: Chapter 13</li>
+<li><b><b>Important points</b></b>
+<ul class="org-ul">
+<li>The upshot of this chapter is: a quasi-coherent sheaf is to a scheme what a module is to a ring.</li>
+<li>Section 13.1 is for motivation. It talks about locally free sheaves, which are the most important quasi-coherent sheaves. On the first reading, skip the proof of 13.2.1.</li>
+<li>In 13.3, the main theorem (13.3.2) is basically a repeat of the sheaves = sheaves on a base fact.</li>
+<li>Do 13.3.D, 13.3.F, 13.3.G, 13.3.H, 13.4.A.</li>
+<li>Skip all the starred sections.</li>
+</ul></li>
+<li><b><b>Watch</b></b>: I think we are beyond the pseudo-lectures because we skipped some chapters :(</li>
+</ul>
+</div>
+
+
+<div id="outline-container-orgb2e2da6" class="outline-4">
+<h4 id="orgb2e2da6">Discussions</h4>
+<div class="outline-text-4" id="text-orgb2e2da6">
+<ol class="org-ol">
+<li><p>
+Thursday
+</p>
+
+<p>
+Choose your adventure.
+</p>
+
+<p>
+Let \(k\) be an algebraically closed field.
+</p>
+
+<ol class="org-ol">
+<li>Let \(X = \mathbb A^1_k\) and let \(p \in X\) be any closed point. Let \(I_p \subset O_X\) be the ideal sheaf of \(p\).
+<ol class="org-ol">
+<li>Describe explicitly the module \(I_p(U)\) for every open \(U \subset X\).</li>
+<li>Prove that \(I_p\) is locally free of rank 1.</li>
+<li>Now take \(X = \mathbb P^1_k\) and define \(I_p\) as before. What are the global sections of \(I_p\)? That is, find \(\Gamma(X, I_p)\).</li>
+<li>What is the cokernel of the map \(I_p \to O_X\)?</li>
+<li>Give examples of 
+<ul class="org-ul">
+<li>a coherent sheaf on \(X\) that is not locally free</li>
+<li>a quasi-coherent sheaf on \(X\) that is not coherent</li>
+</ul></li>
+<li>Let \(X = {\rm Spec}\ k[x,y]/(xy)\) and \(p = (0,0)\). Show that the ideal sheaf \(I_p\) is not locally free. Is it quasi-coherent? Coherent?</li>
+</ol></li>
+
+<li>Let \(i \colon U \to X\) be the open inclusion \(\mathbb A^1 \to \mathbb P^1\).
+<ol class="org-ol">
+<li>Prove that \(i_* O_U\) is a quasi-coherent \(O_X\)-module. (Appealing to a general theorem is OK).</li>
+<li>Is \(i_* O_U\) coherent?</li>
+<li>What is the pushfoward look like for \(f \colon {\rm Spec}\ A \to {\rm Spec}\ B\)?</li>
+<li>Prove the general theorem alluded to above (13.3.F)</li>
+</ol></li>
+
+<li>Let \(X = {\rm Proj}\ k[u,v][X,Y]/(vX-uY) \subset \mathbb A^2 \times \mathbb P^1\).
+Prove that \(\pi \colon X \to \mathbb P^1\) is a line bundle. That is:
+<ol class="org-ol">
+<li>Construct an open cover \(U_i\) of \(\mathbb P^1\) and isomorphisms \(\pi^{-1} U_i \cong U_i \times \mathbb A^1\).
+(The standard open cover will work.)</li>
+<li>Find the transition function(s) \(U_i \cap U_j \times \mathbb A^1 \to U_i \cap U_j \times \mathbb A^1\) and show that they are linear in the \(\mathbb A^1\) coordinate.
+(The linearity ensures that the fibers of \(\pi\) get a consistent vector space structure.)</li>
+<li>Let \(I\) be the sheaf of sections of \(\pi\). Then \(I\) is locally free of rank 1.
+Find the global sections of \(I\).</li>
+<li>What are the transitions functions of the dual \(I^\vee\)?</li>
+<li>What are the global sections of \(I^\vee\)?</li>
+</ol></li>
+</ol></li>
+
+<li><p>
+Friday
+</p>
+
+<p>
+Adventure continued. But also:
+</p>
+
+<ol class="org-ol">
+<li><p>
+Stalks and fibers
+</p>
+
+<p>
+Remark: A good (but not perfect) way to think about a sheaf \(F\) is as a collection of stalks \(F_p\) (which are modules).
+</p>
+
+<p>
+If \(F\) is (quasi)-coherent, an even simpler (but more imperfect) approximation is as a collection of fibers \(F|_p\) (which are vector spaces).
+</p>
+
+<p>
+Let \(F\) be a coherent sheaf on a locally Noetherian \(X\). What can be gleaned from the fibers?
+</p>
+
+<ol class="org-ol">
+<li>Let \(M = k[t]/(t-1)(t+1)\) and  \(F = \widetilde M\) on \(X = \mathbb A^1_k = {\rm Spec}\ k[t] \).
+What are the stalks of \(M\) at every point of \(X\)?
+What are the fibers of \(M\) at every point of \(X\)? (Including the generic point).</li>
+
+<li>If \(F|_p = 0\), then \(F_p = 0\), and there exists an open neighborhood of \(p\) on which \(F = 0\).</li>
+<li>\(F \to G\) is surjective on fibers if and only if it is surjective. If \(F|_p \to G|_p\) is surjective, then \(F \to G\) is surjective in a neighborhood of \(p\).
+What can you say about injectivity?</li>
+<li>If \(s_1, &#x2026;, s_n\) are are sections of \(F\) that generate \(F|_p\), then they generate \(F|_q\) for every \(q\) in a neighborhood of \(p\).</li>
+<li>The function \(p \mapsto dim(F|_p)\) is upper semicontinuous.</li>
+<li>If \(X\) is reduced and connected, then \(F\) is locally free if and only if the rank function is constant.</li>
+<li>Give an example where the above fails for non-reduced \(X\).</li>
+<li>Let \(X = \mathbb A^2\) and \(I\) the ideal sheaf of \((0,0)\). Compute the rank function for \(I\).</li>
+</ol></li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgb3732e5" class="outline-3">
+<h3 id="orgb3732e5" class="collapsible">Week 8</h3>
+<div class="outline-text-3" id="text-orgb3732e5">
+<ul class="org-ul">
+<li><b><b>Read</b></b>: <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">Chapter 9</a></li>
+<li><b><b>Watch</b></b>: <a href="https://www.youtube.com/watch?v=RuFBNbR1XN0">AGITTOC Pseudolecture 11</a></li>
+<li><b><b>Important points</b></b>
+<ul class="org-ul">
+<li>You should spend most of your time on 9.2 and 9.3.</li>
+<li>Do not get bogged down by the proof of the existence of fibered products (Theorem 9.1.1). The important points to understand are:
+<ul class="org-ul">
+<li>Fibered products of affines (9.1.B).</li>
+<li>The general case is by gluing the affine case (first paragraph of the proof of 9.1.1).</li>
+</ul></li>
+<li>Skip 9.1.6, 9.3.7, 9.4, and 9.5.</li>
+<li>Go lightly over 9.3.6, and read 9.7 only if you have time.</li>
+<li>Most of section 9.6 should feel familiar.</li>
+</ul></li>
+</ul>
+</div>
+
+
+<div id="outline-container-orge62f34b" class="outline-4">
+<h4 id="orge62f34b">Discussion</h4>
+<div class="outline-text-4" id="text-orge62f34b">
+<ol class="org-ol">
+<li>Thursday
+
+<ol class="org-ol">
+<li>9.1.B (Fibered products of affines = tensor product of rings)</li>
+
+<li><p>
+Consider \(f \colon Y = {\rm Spec}\ \mathbb C[y] \to {\rm Spec}\ \mathbb C[x] = X\) induced by \(x \mapsto y^2\).
+Let \(p \colon {\rm Spec}\ \mathbb C \to X\) be the closed embedding of a point.
+The (scheme-theoretic) preimage of \(p\) is the closed embedding \(p \times_X Y \to Y\).
+Find the preimages of the point \(x = 0\) and \(x = a\) for \(a \neq 0\).
+</p>
+
+<p>
+Draw a picture.
+</p></li>
+
+<li>Consider \(f \colon Y = {\rm Spec}\ \mathbb Q[y] \to {\rm Spec}\ \mathbb Q[x] = X\) induced by \(x \mapsto y^2\).
+Find the scheme-theoretic preimages of 
+
+<ol class="org-ol">
+<li>\(p \colon {\rm Spec}\ \mathbb Q \to Y\) given by \(y \mapsto 0\).</li>
+<li>\(p \colon {\rm Spec}\ \mathbb Q \to Y\) given by \(y \mapsto 1\).</li>
+<li><p>
+\(p \colon {\rm Spec}\ \mathbb Q \to Y\) given by \(y \mapsto 2\).
+</p>
+
+<p>
+Try drawing a picture.
+</p></li>
+</ol></li>
+
+<li>Consider \(f \colon Y = {\rm Spec}\ \mathbb Z[i] \to {\rm Spec}\ \mathbb Z = X\).
+Find the scheme-theoretic preimages of the points (2), (3), and (5).
+Try drawing a picture.</li>
+
+<li>9.2.C (a) (Intersection as fibered product)</li>
+
+<li>A &ldquo;geometric point&rdquo; of a scheme \(X\) is a map \({\rm Spec}\ k \to X\), where \(k\) is algebraically closed.
+Show that the fibers of \(f \colon Y = {\rm Spec}\ \mathbb Q[y] \to {\rm Spec}\ \mathbb Q[x] = X\) over geometric points are either a pair of distinct points or a non-reduced (double) point.</li>
+</ol></li>
+
+<li><p>
+Friday
+</p>
+
+<p>
+. . . the end of all our exploring
+Will be to arrive where we started
+And know the place for the first time.
+</p>
+
+<p>
+&amp;#x2013; T. S. Eliot, “Little Gidding” (Four Quartets)
+</p>
+
+<ol class="org-ol">
+<li>9.3.F (The blowup, again)
+Can you reconcile our previous description as \({\rm Proj}\ k[x,y][u,v]/(xv-yu)\) with Ravi&rsquo;s definition?</li>
+<li>Show that the following properties are preserved under base change:
+<ol class="org-ol">
+<li>open embedding</li>
+<li>closed embedding</li>
+<li>affine</li>
+<li>finite (affine + finite as a module) (optional)</li>
+</ol></li>
+<li>9.6.1 (Check that the Segre embedding is a closed embedding)</li>
+<li>9.6.B (Equations of the Segre embedding)</li>
+<li>6.4.A, 6.4.B (Maps of graded rings and Proj)
+But NOT all maps of Proj are of this form!</li>
+<li>6.4.D (Veronese)</li>
+<li>6.4.F</li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org1f71db1" class="outline-3">
+<h3 id="org1f71db1" class="collapsible">Week 7</h3>
+<div class="outline-text-3" id="text-org1f71db1">
+<ul class="org-ul">
+<li><b><b>Read:</b></b> -   Sections 5.1 and 5.2
+<ul class="org-ul">
+<li>Sections 6.1, 6.2, 6.3,</li>
+<li>Sections 7.1, 8.1</li>
+</ul></li>
+
+<li><b><b>Important points:</b></b>
+<ul class="org-ul">
+<li><b><b>5.1, 5.2:</b></b> Learn the adjectives: irreducible, Noetherian, reduced, integral. Do 5.2.F (integral = reduced + irreducible).</li>
+<li><b><b>6.1, 6.2, 6.3:</b></b> This seems long, but it&rsquo;s mostly discursive, trying to motivate the right definition of a morphism. The upshot is 6.2.2, which is more important than the technical definition in 6.3. Do 6.3.C to nail down your understanding. Highly recommended - 6.3.E, 6.3.F. Go lightly over 6.3.9 and later.</li>
+<li><b><b>7.1 (open embeddings):</b></b> These are uncomplicated, so this should be easy.</li>
+<li><b><b>8.1 (closed embeddings):</b></b> There is an initial learning curve here (but eventually, they become as easy as open embeddings). Learn about the ideal sheaf. Recommended: 8.1.C, 8.1.D, 8.1.E, 8.1.J.</li>
+</ul></li>
+</ul>
+</div>
+
+
+<div id="outline-container-orgcd6df4e" class="outline-4">
+<h4 id="orgcd6df4e">Discussion</h4>
+<div class="outline-text-4" id="text-orgcd6df4e">
+<ol class="org-ol">
+<li>Thursday
+
+<ol class="org-ol">
+<li>6.3.B
+For affines, morphism of locally ringed spaces = induced by a ring map</li>
+<li>6.3.A
+Morphisms glue</li>
+<li>6.3.C
+Morphism is locally induced by ring maps</li>
+<li>6.3.F
+Morphism to Spec A</li>
+<li>6.3.I
+Spec Z is final</li>
+<li>6.3.H
+Structure map of Proj</li>
+<li>6.3.J
+Map from a point</li>
+<li>6.3.M
+(Some) morphisms to projective space</li>
+</ol></li>
+
+<li><p>
+Friday
+</p>
+
+<p>
+\({\mathbf A}^{n} = Spec Z[x_{1},\dots, x_{n}]\). \({\mathbf P}^{n} = Proj Z[X_{0}, \dots, X_{n}]\)
+</p>
+
+<ol class="org-ol">
+<li>A different take on 6.3.M
+<ul class="org-ul">
+<li>Construct a morphism \(\mathbf{A}^{{n+1}} - 0 \to \mathbf{P}^{n}\).</li>
+<li>Show that a morphism \(X \to \mathbf{A}^{{n+1}} - 0\) is the same as \(n+1\) global sections \(f_{0}, \dots f_{n}\) of \(O_{X}\) that do not have a common zero.</li>
+<li>Conclude that such \(f_{i}\) give a map \(X \to \mathbf{P}^{n}\).</li>
+<li>You now see why all maps \(X \to \mathbf{P}^{n}\) may not arise in this way.</li>
+</ul></li>
+
+<li>Make sense of the map \(\mathbf{P}^{1} \to \mathbf{P}^{2}\) &ldquo;defined by \([X^{2}:XY:Y^{2}]\)&rdquo;</li>
+
+<li>8.1.D (Use 7.3.4 - being affine is affine local on the target).
+Closed embeddings = maps which locally Spec(A/I) -&gt; Spec A</li>
+
+<li>Let p be a point of X.
+Show that the natural map Spec k(p) -&gt; X is a closed embedding if and only if p is a closed point.</li>
+
+<li>Show that the map in (2) &ldquo;\([X^{2}:XY:Y^{2}]\)&rdquo; is a closed embedding.</li>
+
+<li>Generalise (2) for the &ldquo;rational normal curve&rdquo;: \(\mathbf{P}^{1} \to \mathbf{P}^{n}\) given by \([X^{n}:X^{n-1}Y:\dots:Y^{n}]\).</li>
+
+<li>Describe the sheaf of ideals in (4) if p is a closed point.</li>
+
+<li>Read 8.1.H and be convinced that this should work.</li>
+
+<li>Let S be a graded ring and I &amp;sub; S a homogeneous ideal.
+Construct a map Proj(S/I) -&gt; Proj(S) and show that it is a closed embedding.</li>
+
+<li>Is the map Spec C[t] -&gt; Spec C[x,y] &ldquo;given by \((t^{2},t^{3})\)&rdquo; a closed embedding? A homeomorphism onto its image?</li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org5129b1f" class="outline-3">
+<h3 id="org5129b1f" class="collapsible">Week 6</h3>
+<div class="outline-text-3" id="text-org5129b1f">
+<ul class="org-ul">
+<li><b><b>Read:</b></b> <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">Section 4.5</a></li>
+<li><b><b>Important points:</b></b> -   When you learn algebraic geometry, it is easy to see that affine schemes are important&amp;#x2014;they are the building blocks of everything! It is less clear why projective schemes are important.        
+But projective schemes are everywhere! Almost everything you will see in your life as an algebraic geometer will be (quasi)-projective. Unfortunately, you have to take this statement on faith (right now).
+<ul class="org-ul">
+<li><b><b>4.5.A:</b></b> DIY projective scheme. This is worth doing just to convince yourself that you could build a projective scheme yourself by hand.
+The \({\rm Proj}\) construction is a slick shortcut.</li>
+<li><b><b>4.5.4:</b></b> Why should projective schemes have to do anything with graded rings? Ravi talks a bit about this in the pseudo-lectures.
+<ul class="org-ul">
+<li><b><b>One answer:</b></b> if you want equations to make sense in projective space, they have to be homogeneous. So the notion of degree comes in fundamentally.</li>
+<li><b><b>A different answer:</b></b> A projective scheme is an affine scheme (minus some &ldquo;irrelevant points&rdquo;) modulo the action of the multiplicative group \(\mathbb G_m\).
+A graded ring is the same as a ring along with the action of the multiplicative group \(\mathbb G_m\) (why is this?).
+So graded rings naturally come in when we consider affine schemes with a \(\mathbb G_m\) action (&ldquo;up to scaling&rdquo;).</li>
+</ul></li>
+<li><b><b>4.5.7:</b></b> This section looks short, but it will take time to digest!</li>
+<li><b><b>4.5.O, 4.5.P:</b></b> If you can do these, you have a good understanding of the projective space.</li>
+</ul></li>
+<li><b><b>Watch:</b></b> <a href="https://www.youtube.com/watch?v=JZ01Akw52z8">AGITTOC Pseudolecture 8</a></li>
+</ul>
+</div>
+
+
+<div id="outline-container-org0e0095e" class="outline-4">
+<h4 id="org0e0095e">Discussions</h4>
+<div class="outline-text-4" id="text-org0e0095e">
+<ol class="org-ol">
+<li>Thursday
+
+<ol class="org-ol">
+<li><p>
+The basics
+</p>
+
+<p>
+Let \(A = A_0 \oplus A_1 \oplus A_2 \oplus \cdots \) be a graded ring.
+</p>
+
+<ol class="org-ol">
+<li>What is the set \({\rm Proj}\ A\)?</li>
+<li>Describe a base for the topology on \({\rm Proj}\ A\).</li>
+<li>Describe the structure sheaf of \({\rm Proj}\ A\) by describing its value on the basic open sets.</li>
+<li>Why is this a scheme?</li>
+<li>Write a finite affine cover (under suitable conditions).</li>
+</ol></li>
+
+<li><p>
+Examples
+</p>
+
+<p>
+Let \(k\) be an algebraically closed field.
+</p>
+
+<ol class="org-ol">
+<li>Let \(P = {\rm Proj}\ k[X,Y,Z]\), variables in degree 1.
+<ol class="org-ol">
+<li>What is your affine cover in this case (from (5))?</li>
+<li>What are the closed points of \(P\)? Interpret them as lines in \(k^{\oplus 3}\).</li>
+</ol></li>
+
+<li>Let \(P = {\rm Proj}\ k[t][X,Y,Z]\), where \(t\) has degree 0 and \(X,Y,Z\) have degree 1.
+Repeat (1) and (2). You will have to modify the interpretation in (2).
+<b>Hint: There is a map \(P \to {\rm Spec}\ k[t]\) and it maps closed points to closed points.</b></li>
+
+<li><b><b>Only if you have time</b></b>
+Let \(S = {\rm Proj}\ k[u,v][X,Y]/(Xv-Yu)\), where \(u,v\) have degree 0 and \(X,Y\) have degree 1.
+Repeat (1) and (2). Describe the map \(S \to {\rm Spec}\ k[u,v]\).</li>
+</ol></li>
+</ol></li>
+
+<li>Friday
+
+<ol class="org-ol">
+<li><p>
+Playing with Proj
+</p>
+
+<p>
+Let \(k\) be an algebraically closed field. 
+</p>
+
+<ul class="org-ul">
+<li><b><b>Trivial base ring and no equations:</b></b> Let \(A = k[X_0, \dots, X_n]\).
+Show that closed points of \({\rm Proj}\ A\) = Lines in \(k^{n+1}\) = \((n+1)\)-tuples of homogeneous coordinates \([x_0:\dots:x_n]\) where \(x_i \in k\) are not all zero.</li>
+
+<li><b><b>Equations:</b></b> Let \(A = k[X_0, \dots, X_n]/(F_1, \dots, F_m)\).
+Show that closed points of \({\rm Proj}\ A\) = \((n+1)\)-tuples of homogeneous coordinates satisfying all the equations \(F_i = 0\).</li>
+
+<li><b><b>Non-trivial base rings:</b></b> Let \(A = A_0 \oplus A_1 \oplus \cdots \).
+<ul class="org-ul">
+<li><p>
+Construct a map \(\pi \colon {\rm Proj}\ A \to {\rm Spec}\ A_0\).
+For now, describe the map on points. It can be upgraded to a map of schemes.
+</p>
+
+<p>
+Via \({\pi}\), we can think of \({\rm Proj}\ A\) as fibered over \({\rm Spec}\ A_0\), and try to understand the fibers.
+</p></li>
+
+<li><p>
+Suppose \(A\) is finitely generated over \(A_0\). Then \(\pi\) will turn out to be a proper map. Proper maps send closed sets to closed sets. In particular, they send closed points to closed points. So closed points of \({\rm Proj} A\) are fibered over closed points of \({\rm Spec}\ A_0\).
+</p>
+
+<p>
+Take \(A = k[t][X_0, \dots, X_n]\), where \(t\) has degree 0 and the \(X_i\) have degree 1.
+</p>
+
+<ul class="org-ul">
+<li>Show that the fiber of \({\rm Proj}\ A\) over a closed point of \({\rm Spec}\ k[t]\) is a copy of \({\rm Proj}\ k[X_0, \dots, X_n]\). For now, show this just for the sets of closed points, but it can be upgraded to a statement about schemes.</li>
+</ul></li>
+</ul></li>
+
+<li><b><b>Non-trivial base rings and equations:</b></b> Let \(A = k[s,t][X,Y,Z]/(X^2+sY^2+tZ^2)\), where \(s,t\) have degree 0 and \(X,Y,Z\) have degree 1.
+<ul class="org-ul">
+<li>Recall the map \(\pi \colon {\rm Proj}\ A \to {\rm Spec}\ k[s,t]\). What is its fiber over the point \((s-a, t-b)\)?</li>
+
+<li>We say that the map \(\pi\) describes a family of projective \(k\)-schemes (in this case conics in \(\mathbb P^2_k\)) parametrized by \({\rm Spec}\ k[s,t]\). Do you see what this means?</li>
+
+<li><b><b>Slogan:</b></b> \({\rm Proj\ } A\) is a family of projective schemes parametrized by \({\rm Spec}\ A_0\).</li>
+</ul></li>
+
+<li><b><b>Another non-trivial base ring and equations:</b></b> Let \(A = k[u,v][X,Y]/(Xv-Yu)\).
+<ul class="org-ul">
+<li>Describe the closed points of \({\rm Proj}\ A\) using the map \(\pi\) to \({\rm Spec}\ k[u,v]\) (be careful!)</li>
+<li>Describe the affine charts of \({\rm Proj}\ A\).</li>
+<li>Is \({\rm Proj}\ A\) reducible or irreducible? Is it smooth or singular?</li>
+<li>Try to draw a picture of \(\pi \colon {\rm Proj}\ A \to \mathbb A^2\).</li>
+<li>Can you write the map \({\rm Proj}\ A \to \mathbb A^2\) on the affine charts?</li>
+</ul></li>
+</ul></li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org4e85ac1" class="outline-3">
+<h3 id="org4e85ac1" class="collapsible">Week 5</h3>
+<div class="outline-text-3" id="text-org4e85ac1">
+<ul class="org-ul">
+<li>Read:
+<ul class="org-ul">
+<li>Finish Chapter 3.</li>
+<li>Chapter 4: Up to 4.4</li>
+</ul></li>
+<li>Important points:
+<ul class="org-ul">
+<li><b><b>4.1.2:</b></b> You must really understand the proof of this theorem, so I urge you to work out the module case (exercise 4.1.D) to make sure you have.</li>
+<li><b><b>4.2:</b></b> The art of visualising nilpotents. This feels like pseudo-mathematics, but it is strangely enlightening.</li>
+<li><b><b>4.3:</b></b> Definition of scheme &amp;#x2013; no surprises here.</li>
+<li><b><b>4.4:</b></b> Take your time to read these in detail.</li>
+</ul></li>
+<li>Watch: <a href="https://www.youtube.com/watch?v=qDN_hwEXH0k">AGITTOC Pseudolecture 6</a> and <a href="https://www.youtube.com/watch?v=4KJwmiYHVk4">first half of pseudolecture 7</a>
+It is becoming hard to match the pseudo-lectures exactly to our readings. What we did in week 4 gets covered in pseudolecture 4, 5, and the beginning of 6. This is because I am skipping / going fast over things you have already seen in your first algebraic geometry course (like Noetherian topological spaces, irreducibility, Hilbert basis theorem). So feel free to jump/skip around in the lectures.</li>
+</ul>
+</div>
+
+
+<div id="outline-container-org5522e61" class="outline-4">
+<h4 id="org5522e61">Discussion</h4>
+<div class="outline-text-4" id="text-org5522e61">
+<ol class="org-ol">
+<li><p>
+Poll
+</p>
+
+<p>
+Let \(X = {\rm Spec}\ {\mathbb C} \sqcup {\rm Spec}\ {\mathbb C} \sqcup {\rm Spec}\ {\mathbb C} \sqcup \cdots\) (infinite disjoint union).
+Let \(R = \mathbb C \times \mathbb C \times \mathbb C \times \cdots\) (infinite product).
+</p>
+
+<p>
+/poll 
+</p>
+<ul class="org-ul">
+<li>X is an affine scheme; in fact X = Spec R.</li>
+<li>X is an affine scheme, but it is not Spec R.</li>
+<li>X is not an affine scheme.</li>
+</ul></li>
+
+<li>Thursday
+
+<ol class="org-ol">
+<li>Suppose \(g \in A\) does not vanish on the open set \({\rm spec}\ A_f\) contained in \({\rm spec}\ A\). 
+What can you say about \(g\)? Must it be a power of \(f\)?</li>
+<li>4.1.A: Show that \(A_f \to O(D(f))\) is an isomorphism.</li>
+<li>We know that elements of \(A\) give functions on \({\rm spec}\ A\), and functions form a sheaf.
+Then why is there work involved in showing that \(O\) satisfies the sheaf axioms?</li>
+<li>Prove the base-gluability of the structure sheaf.</li>
+<li>4.3.F: Stalks of the structure sheaf.</li>
+<li>4.1.D: Work through the construction of \(\widehat M\).</li>
+<li>4.1.5: Pitfall of a slick definition of \(O(U)\).
+What is the correct description of \(O(U)\)?</li>
+<li>Draw
+<ul class="org-ul">
+<li>\({\rm Spec}\ {\mathbb C}[t]/t^2\)</li>
+<li>\({\rm Spec}\ {\mathbb C}[t]/t^3\)</li>
+<li>\({\rm Spec}\ {\mathbb C}[x,y]/(x^2,xy,y^2)\)</li>
+<li>\({\rm Spec}\ {\mathbb C}[x,y]/(xy,y^2)\)</li>
+<li>\({\rm Spec}\ {\mathbb Z}/(12)\)</li>
+</ul></li>
+</ol></li>
+
+<li>Friday
+
+<ol class="org-ol">
+<li><b><b>from yesterday</b></b>
+4.1.5: Pitfall of a slick definition of \(O(U)\).
+What is the correct description of \(O(U)\)?</li>
+<li><b><b>enlightening</b></b> but <b><b>confusing</b></b>
+4.3.A: Isomorphisms of affine schemes = isomorphisms of rings</li>
+<li><b><b>easy</b></b>
+4.3.B: Distinguished open subschemes
+4.3.C: Open subschemes
+Think about 4.3.4 &amp;#x2013; closed subschemes</li>
+<li><b><b>easy</b></b>
+4.3.G: Functions on locally ringed spaces</li>
+<li><b><b>easy</b></b>
+4.4.A: Gluing schemes</li>
+<li>4.4.B/C: Lines and planes with doubled origins.</li>
+<li><b><b>do once in life</b></b>
+4.4.D: Charts of the projective space</li>
+<li>4.4.F: Closed points of the projective space
+More generally, let \(A\) be a finitely generated \(k\)-algebra.
+What are the closed points of \(\mathbb P^n_A\)?</li>
+<li>Example 4.4.12.</li>
+<li><b><b>chinese remainder theorem</b></b>
+Example 4.4.11.</li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org5f269f9" class="outline-3">
+<h3 id="org5f269f9" class="collapsible">Week 4</h3>
+<div class="outline-text-3" id="text-org5f269f9">
+<ul class="org-ul">
+<li>Read:
+<ul class="org-ul">
+<li>Get comfortable wit <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">2.5 (sheaves on a base)</a> if you haven&rsquo;t already. We will very often work with a convenient base instead of the full topology.</li>
+<li><a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">1.3.5 (tensor products), 1.3.6 (fiber products)</a>.</li>
+<li>Chapter 3 up to 3.6.</li>
+</ul></li>
+<li>Important points
+<ul class="org-ul">
+<li>3.2.1:: How to &ldquo;evaluate&rdquo; a &ldquo;function&rdquo; at a &ldquo;point&rdquo;.</li>
+<li>Examples 1&amp;#x2013;8: Learn to draw!</li>
+<li>3.2.4, 3.2.5 (the Nullstellensatz):: This is a major theorem, whose proof goes beyond just unravelling the definitions. But it is more important to digest the statement and its consequences than to know the proof. It&rsquo;s also good to keep track of where we use this theorem.</li>
+<li>3.2.G, 3.2.Q:: Wrap your head around non-closed fields and other rings that seem to have little to do with geometry.</li>
+<li>3.2.J/K, 3.4.I:: Pictures of quotient and localisation.</li>
+<li>3.2.10:: Induced maps on spectra.</li>
+<li>3.2.11, 3.2.12:: The fault of nilpotents</li>
+<li>3.4, 3.5:: Everything is important, but also fairly straightforward, especially if you have seen the Zariski topology.</li>
+<li>3.6.A:: Test your ability to go back and forth between algebra and geometry.</li>
+<li>3.6:: A lot of it should be deja-vu, but watch out for novelties&amp;#x2013;non-closed/generic points (3.6.8, 3.6.10, 3.6.M, 3.6.N)</li>
+<li>3.6.J/K:: Explain why &ldquo;classical points&rdquo; (= maximal ideals) are enough for studying varieties (Hint: mostly because of the Nullstellensatz. Corollary: when we consider all primes, not just the maximals, Nullstellensatz becomes plays a less important role.)</li>
+</ul></li>
+<li>Watch: <a href="https://www.youtube.com/watch?v=q473BSN2_qE">AGITTOC Pseudo-lecture 4</a></li>
+</ul>
+</div>
+
+
+<div id="outline-container-org37d7098" class="outline-4">
+<h4 id="org37d7098">Discussion</h4>
+<div class="outline-text-4" id="text-org37d7098">
+<ol class="org-ol">
+<li>Thursday
+
+<ol class="org-ol">
+<li>3.2.H (Points of \({\mathbb Q}[x,y]\))</li>
+<li>3.2.J (Points of a quotient)</li>
+<li>3.2.K (Points of a localisation)</li>
+<li>3.2.L (Thinking about localisation geometrically)</li>
+<li>Draw pictures of the maps
+<ul class="org-ul">
+<li>\({\rm spec}\ \mathbb Q \to {\rm spec}\ \mathbb Z\)</li>
+<li>\({\rm spec}\ k[t]_{(t)} \to {\rm spec}\ k[t]\)</li>
+<li>\({\rm spec}\ \mathbb C[x] \to {\rm spec}\ \mathbb R[x]\)</li>
+<li>\({\rm spec}\ k[t] \to {\rm spec}\ k[x,y]/xy\) induced by \(x \mapsto 0, y \mapsto t\).</li>
+<li>\({\rm spec}\ k[x,y]/xy \to {\rm spec}\ k[t]\) induced by \(t \mapsto x+y\).</li>
+<li>\({\rm spec}\ k \to {\rm spec}\ k[t]\) induced by \(t \mapsto a\) for some \(a \in k\).</li>
+<li>\({\rm spec}\ \mathbb C \to {\rm spec}\ \mathbb Q[t]\) induced by \(t \mapsto \sqrt{2}\).</li>
+</ul></li>
+<li>Let \(A\) and \(B\) be finitely generated \(k\) algebras, and \(f \colon A \to B\) a map of \(k\) algebras.
+<ul class="org-ul">
+<li>Show that \(f\) sends a closed point (maximal ideal) of \({\rm spec}\ B\) to a closed point of \({\rm spec}\ A\).</li>
+<li>Show that \(f\) may not send closed points to closed points, in general.</li>
+</ul></li>
+<li>Let \(X = \mathbb A^n_{k}\).
+What are the residue fields of the closed points (max ideals) of \(X\) if \(k = \mathbb C\)? If \(k = \mathbb Q\)?</li>
+<li>3.2.R (Nilpotents and spec)</li>
+<li>3.2.S (Nilradical = intersection of prime ideals).
+<ul class="org-ul">
+<li>When is \(R_f = 0\)? (Only when \(f\) is a nilpotent.)</li>
+<li>Aside: 
+For some rings (&ldquo;Jacobson rings&rdquo;), nilradical = intersection of all maximal ideals. This means that if \(f\) and \(g\) take the same value at every closed point, then \(f-g\) is nilpotent. Fields are Jacobson (trivially) \(\mathbb Z\) is Jacobson (easy), finitely generated algebras over Jacobson rings are Jacobson. Can you come up with an example of a non-Jacobson ring (hint: its \({\rm spec}\) must have &ldquo;few&rdquo; closed points).</li>
+</ul></li>
+</ol></li>
+
+<li>Friday
+
+<ol class="org-ol">
+<li><b><b>easy</b></b> 
+3.6.I (closed points = maximal ideals)
+Related: What is the closure of a point \(p\)?</li>
+<li><b><b>easy</b></b>
+3.4.I (\({\rm spec}\ A/I\) is closed in \({\rm spec}\ A\), and \({\rm spec}\ A_f\) is open.)</li>
+<li><b><b>important</b></b>
+3.5.A (distinguished opens form a base)</li>
+<li>3.5.B/C, 3.6.G (coverings by distinguished opens and (quasi)-compactness)</li>
+<li>3.2.S (Nilradical = intersection of prime ideals). &amp;#x2013; skip proof at first
+<ul class="org-ul">
+<li>When is \(R_f = 0\)? (only when \(f\) is a nilpotent.)</li>
+<li>Aside: 
+For some rings (&ldquo;Jacobson rings&rdquo;), nilradical = intersection of all maximal ideals. This means that if \(f\) and \(g\) take the same value at every closed point, then \(f-g\) is nilpotent. Fields are Jacobson (trivially) \(\mathbb Z\) is Jacobson (easy), finitely generated algebras over Jacobson rings are Jacobson. Can you come up with an example of a non-Jacobson ring (hint: its \({\rm spec}\) must have &ldquo;few&rdquo; closed points).</li>
+</ul></li>
+<li>3.4.F (radical of I = intersection of primes containing I)
+<ul class="org-ul">
+<li>How do you intepret this statement geometrically?</li>
+</ul></li>
+<li>3.4.5 (nilpotents and spec)</li>
+<li>3.4.J (when does \(f\) vanish on \(V(I)\)?)</li>
+<li>3.5.E (inclusions among the distinguished opens)</li>
+<li><b><b>I(.) and V(.) are mutual inverses</b></b>
+Prove Theorem 3.7.1</li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org8706b75" class="outline-3">
+<h3 id="org8706b75" class="collapsible">Week 3</h3>
+<div class="outline-text-3" id="text-org8706b75">
+<ul class="org-ul">
+<li>Read: Two independent tracks
+<ul class="org-ul">
+<li>(Sheaves continued): <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">2.4, 2.5, 2.6</a></li>
+<li>(Affine schemes): <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">3.1, 3.2 (up to 3.2.E, and especially Examples 1&amp;#x2013;8)</a>.</li>
+</ul></li>
+<li>Watch: <a href="https://youtu.be/0lZFVGsYxj8">AGITTOC Pseudo-lecture 3</a></li>
+<li>Think:
+Come to terms with the new way of defining spaces from local models. The old mantra was &ldquo;set + topology + local models + gluing maps&rdquo;. Now sheaves do the gluing for us, so the new mantra is &ldquo;set + topology + sheaf of rings + local models&rdquo;.</li>
+</ul>
+</div>
+
+
+<div id="outline-container-orgb32f5a4" class="outline-4">
+<h4 id="orgb32f5a4">Discussion</h4>
+<div class="outline-text-4" id="text-orgb32f5a4">
+<ol class="org-ol">
+<li><p>
+Polls
+</p>
+
+<p>
+Let \(X = \mathbb C^2\). Denote by \(O_X^*\) the sheaf of maps to \(\mathbb C^* = \mathbb C - \{0\}\).
+Let \(m_n \colon O_X^* \to O_X^*\) be the map \(f \mapsto f^n\).
+</p>
+
+<p>
+/poll The map \(m_n\) above
+</p>
+<ul class="org-ul">
+<li>is a surjection of sheaves and also a surjection on all open sets.</li>
+<li>is a surjection of sheaves but not a surjection on all open sets.</li>
+<li>not a surjection of sheaves.</li>
+</ul></li>
+
+<li>Thursday
+
+<ol class="org-ol">
+<li>Let \(f \colon A \to B\) be a map of sheaves.
+Show using universal properties that the sheafification of the pre-sheaf cokernel of \(f\) is the cokernel of \(f\) in the category of sheaves.</li>
+<li>2.4.C (for sheaves, compatible germs = section)</li>
+<li>2.4.G (sheafification is unique up to a unique iso)</li>
+<li>2.4.I,J,K (verifying the construction of sheafification)</li>
+<li>2.4.M (sheafification does not change stalks)</li>
+<li>2.4.P (exponential map)</li>
+<li>2.5.B, C (sheaves on a base)</li>
+<li>2.5.D (gluing sheaves)</li>
+<li>2.6.D (exactness = exactness of stalks)</li>
+<li>2.6.F (left exactness of global sections)</li>
+
+<li>Main takeaways
+
+<ul class="org-ul">
+<li>Sheaves of Ab groups forms an abelian cat.
+kernels, cokernels, images exist and behave like you expect.</li>
+
+<li>How to construct? Construct naively, and sheafify!</li>
+
+<li>How to detect? On stalks!</li>
+
+<li>Enough to work on a base.</li>
+
+<li>Everything holds for \(O_X\) modules.</li>
+</ul></li>
+</ol></li>
+
+<li>Friday
+
+<ol class="org-ol">
+<li><b><b>important</b></b> not logically necessary
+Definition: A differentiable manifold is a ringed space \((X, O_X)\) &ldquo;which is locally isomorphic to \((U, O_U)\) where \(U \subset \mathbb R^n\) is an open set and \(O_U\) is the sheaf of differentiable real valued functions on \(U\)&rdquo;.
+<ol class="org-ol">
+<li>Make this precise (eliminate the &ldquo; &rdquo; marks).
+To do this, you will have to define the notion of an isomorphism of ringed spaces.
+More generally, try to define a morphism of ringed spaces.</li>
+
+<li>Show that this definition is equivalent to the usual definition of a differentiable manifolds (using charts and gluing maps). 
+You will have to prove the (easy) fact that for \(U, V \subset \mathbb R^n\), xif \(\phi \colon U \to V\) is continuous, then it is differentiable if and only if differentiable functions pull back to differentiable functions.</li>
+</ol></li>
+
+<li>-   Draw \(spec k[t]_{(t)}\).
+<ul class="org-ul">
+<li>Draw \(spec Z_{(p)}\).</li>
+<li>Draw \(spec \mathbb Z_p\) (the $p$-adics)</li>
+<li>Draw \(spec k[[[[t]]]]\) (the ring of power series in \(t\)).</li>
+</ul></li>
+
+<li>Describe \(\mathbb A^1_{\mathbb R}\) and \(\mathbb A^1_{\mathbb Q}\)</li>
+
+<li>Draw \(spec \mathbb C[x,y]\).</li>
+
+<li>Draw \(spec \mathbb C[x,y]/xy\).</li>
+
+<li>-   Draw \(spec \mathbb C[x]/x^2\)
+<ul class="org-ul">
+<li>Draw \(spec \mathbb C[x,y]/(x^2, xy, y^2)\)</li>
+</ul></li>
+
+<li>Go back to sheaves and convince yourselves that the category of sheaves is equivalent to the category of sheaves on a base.</li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org5ef2154" class="outline-3">
+<h3 id="org5ef2154" class="collapsible">Week 2</h3>
+<div class="outline-text-3" id="text-org5ef2154">
+<ul class="org-ul">
+<li>Read: <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">Chapter 1 Section 1.4, 2.1, 2.2, 2.3</a></li>
+<li>Skim: <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">Chapter 1 Section 1.3.6, 1.3.7, 1.5, 1.6</a></li>
+<li>Watch: <a href="https://www.youtube.com/watch?v=mqt1f8owKrU">AGITOC Pseudo-lecture 2.</a></li>
+<li>Do:
+<ol class="org-ol">
+<li>1.4.B (limits in `Sets`)</li>
+<li>1.4.C (\(\mathbb Q\) as a colimit)</li>
+<li>1.4.F (localisation as a colimit)</li>
+<li>2.1.A (stalk is a local ring)</li>
+<li>2.2.D (sheaves of functions)</li>
+<li>2.2.E (constant sheaves)</li>
+<li>2.2.F (morphisms form a sheaf)</li>
+<li>2.3.C (sheaf hom)</li>
+<li>2.3.I (kernel of sheaf maps is a sheaf)</li>
+<li>2.3.J (but the cokernel may not be a sheaf)</li>
+</ol></li>
+
+<li>Discussion
+
+<ol class="org-ol">
+<li>Thursday
+
+<ol class="org-ol">
+<li><p>
+Pre-class poll
+</p>
+
+<p>
+Consider the diagram \(\cdots \to \mathbb Z \to \mathbb Z \to \cdots\) where all maps are multiplication by 2.
+</p>
+
+<p>
+/poll The limit of this diagram is
+</p>
+<ul class="org-ul">
+<li>Zero</li>
+<li>Z</li>
+<li>Z<code>[1/2]</code> (integers localised at 2; alternative notation to accommodate the next option)</li>
+<li><p>
+Z<sub>2</sub> (the 2-adic integers)
+</p>
+
+<p>
+/poll The colimit of this diagram is
+</p>
+<ul class="org-ul">
+<li>Zero</li>
+<li>Z</li>
+<li>Z<code>[1/2]</code> (integers localised at 2; alternative notation to accommodate the next option)</li>
+<li>Z<sub>2</sub> (the 2-adic integers)</li>
+</ul></li>
+</ul></li>
+
+<li>Points for discussion
+
+<ol class="org-ol">
+<li>In \(R\) mod, describe the kernel of \(A \to B\) as a limit and the cokernel as a colimit.
+Are these filtered?</li>
+
+<li>1.4.B (explicit construction of the limit)</li>
+
+<li>Generalise example 1.4.6 and describe \(S^{-1}M\) as a colimit.</li>
+
+<li>1.4.C (\(\mathbb Q\) as a colimit)</li>
+
+<li>1.4.D (explicit description of a filtered colimit)</li>
+
+<li>Prove that (in \(R\) mod) filtered colimits preserve exactness.
+Corollary: Localisation is exact! (important)
+Also try to see this directly, using fractions.</li>
+
+<li>1.6.G (localisation commutes with hom for fin. pres. mod.)</li>
+
+<li>2.1.A (stalk of sheaf of functions is a local ring)</li>
+
+<li>Remind each other what is the constant sheaf and what is the skyscraper sheaf.
+What are the stalks of the constant sheaf?
+What are the stalks of a skyscraper sheaf?</li>
+
+<li>Remind each other what adjoint functors are. Give examples!</li>
+</ol></li>
+</ol></li>
+
+<li>Friday
+
+<ol class="org-ol">
+<li>Problems for discussion
+
+<ol class="org-ol">
+<li><p>
+2.1.A (The ring of germs of diff. functions has only one maximal ideal.)
+</p>
+
+<p>
+Think of some other sheaves of rings. Are their germs local rings?
+Examples: cont. functions, diff. fuctions, holomorphic functions, constant sheaf \(R\)?
+</p></li>
+
+<li>2.2.F (morphisms form a sheaf)
+2.2.G (sections form a sheaf)</li>
+
+<li>Let \(Y \to X\) be the inclusion of an open set. What is the sheaf of sections?</li>
+
+<li>Let \(S^1 \to S^1\) be the squaring map \(z \to z^2\).
+Understand its sheaf of sections. What are its stalks? What are its global sections?</li>
+
+<li>Can you construct a different sheaf whose stalks are the same as in the previous example?</li>
+
+<li><b><b>optional</b></b>
+2.2.J (Stalks of \(O_X\) modules)</li>
+
+<li>2.3.D (reality check for \(Hom\) sheaves)</li>
+
+<li><b><b>important</b></b> 
+2.3.I (kernel of a map of sheaves is a sheaf!)</li>
+
+<li><b><b>important</b></b>
+2.3.J (but the cokernel need not be!)
+Play with the pre-sheaf \(F\).</li>
+
+<li>Convince yourself (and your friends) that an algebraic variety (with the Zariski topology) along with the sheaf of regular functions is a locally ringed space.</li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2f497ac" class="outline-3">
+<h3 id="org2f497ac" class="collapsible">Week 1</h3>
+<div class="outline-text-3" id="text-org2f497ac">
+<ul class="org-ul">
+<li>Read: <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">Chapter 1 Sections 1.1&amp;#x2013;1.3.4 (localisation)</a>.</li>
+<li>Watch: <a href="https://www.youtube.com/watch?v=WTEZjR5aNjw">AGITOC Pseudo-lecture 1</a>.</li>
+<li>Do: 1.2.B, 1.3.A, 1.3.D,  1.3.E, 1.3.G, and ponder:
+<ol class="org-ol">
+<li>&ldquo;A group is a category with 1 object and invertible morphisms.&rdquo; Love it or hate it?</li>
+<li>Learn the language of universal properties and use it to phrase the constructions you already know. For example: kernels, cokernels, finite/infinite sums and products.</li>
+<li>You may not have seen localisation before. That&rsquo;s OK. Try to digest as much as you can.</li>
+<li>Show (preferably using the universal property) that the localisation \(R_f\) is isomorphic to \(R[y]/(yf-1)\).</li>
+<li>What is the geometric meaning of localisation? Can you use it to construct an example where \(R \neq 0\) but \(R_f = 0\)?</li>
+</ol></li>
+</ul>
+</div>
+
+
+<div id="outline-container-orgc4b300f" class="outline-4">
+<h4 id="orgc4b300f">Discussion</h4>
+<div class="outline-text-4" id="text-orgc4b300f">
+<ol class="org-ol">
+<li>Thursday
+
+<ol class="org-ol">
+<li>Points for discussion
+
+<ul class="org-ul">
+<li>What was easy, hard, confusing?</li>
+<li>&amp;#x2026; insightful?</li>
+<li>Examples!</li>
+<li>1.2.B (automorphism group)</li>
+<li>1.3.A (unique init/final obj)</li>
+<li>What is the universal property for:
+<ul class="org-ul">
+<li>Disjoint union of two sets</li>
+<li>The kernel of A -&gt; B</li>
+<li>The cokernel of A -&gt; B</li>
+<li>The one-point compactification</li>
+<li>The metric completion</li>
+</ul></li>
+<li>What are the initial/final objects in Top, Vec, Ab, Set? (create a poll?)</li>
+</ul></li>
+</ol></li>
+
+<li>Friday
+
+<ol class="org-ol">
+<li><p>
+Pre-class poll
+</p>
+
+<p>
+Consider the category whose objects are algebraic field extensions of \(\mathbb Q\) (and whose morphisms are maps of fields).
+</p>
+
+<p>
+/poll The category above has
+</p>
+<ul class="org-ul">
+<li>a final object, namely \(\overline{\mathbb Q}\).</li>
+<li>no final object.</li>
+</ul></li>
+
+<li>Points for discussion
+
+<ol class="org-ol">
+<li>warm-up
+Let \(R = \mathbb Z\) and \(f = 2\).
+<ul class="org-ul">
+<li>Describe the elements of \(R_f\) explicitly.</li>
+<li>Let \(K\) be a field of characteristic \(59\). Show that there is a unique map \(R_f \to K\).</li>
+</ul></li>
+<li>notation-alert!
+\(R = \mathbb Z\) and \(p = 2\).
+<ul class="org-ul">
+<li>Describe the elements of \(R_{(p)}\) (horrible notation, I know!)</li>
+<li>What&rsquo;s the analogue of the second part of the previous exercise?</li>
+</ul></li>
+<li>instructive
+Show (preferably using the universal property) that the localisation \(R_f\) is isomorphic to \(R[y]/(yf-1)\).</li>
+<li>Baby 1.3.C: localisation is injective for integral domains.</li>
+<li>geometry! important!
+Suppose \(R\) is the ring of functions of an affine variety \(X\).
+Then \(R_f\) is the ring of functions of &lt;span class=&ldquo;underline&rdquo;&gt;&lt;span class=&ldquo;underline&rdquo;&gt;&lt;span class=&ldquo;underline&rdquo;&gt;_&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.</li>
+<li>Having done (5), can you &ldquo;see&rdquo; (4)?</li>
+<li>Can you construct an example where \(R \neq 0\) but \(R_f = 0\)?</li>
+<li>1.3.E (\(\star\))</li>
+</ol></li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org642a734" class="outline-2">
+<h2 id="org642a734" class="collapsible">More things to read or watch</h2>
+<div class="outline-text-2" id="text-org642a734">
+<ul class="org-ul">
+<li><a href="https://math216.wordpress.com/agittoc-2020/">Ravi Vakil&rsquo;s pseudo-course website</a></li>
+<li><a href="https://www.youtube.com/watch?v=BX3jiLdehA4&amp;list=PL8yHsr3EFj50Un2NpfPySgXctRQK7CLG-">Richard Borcherd&rsquo;s lectures on schemes</a></li>
+<li><a href="pointsareprimes.pdf">Why are points of a scheme the prime ideals</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+Created by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="https://orgmode.org">Org</a> mode 9.3).  Last modified: 2021-11-20 Sat 21:57.  <a href="https:github.com/deopurkar.github.io">Source</a> <a href="http://validator.w3.org/check?uri=referer">Validate</a>
+</div>
+</body>
+</html>
