@@ -37,7 +37,7 @@
         ("website-static"
          :base-directory "./content"
          :base-extension ".*"
-         :exclude "\#.*"
+         :exclude "\#.*\\|.*\.org"
          :publishing-directory "./docs"
          :recursive t
          :publishing-function org-publish-attachment)
