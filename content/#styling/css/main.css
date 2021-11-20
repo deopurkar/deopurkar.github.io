@@ -93,6 +93,8 @@ footer {
     list-style-type: none;
     padding: 0em;
     margin: 0em; }
+    #table-of-contents ul li {
+      margin: 0em; }
 
 #postamble {
   margin-top: 1em;

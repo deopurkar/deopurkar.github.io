@@ -268,6 +268,10 @@ Footer style and other miscellany.
           list-style-type: none;
           padding: 0em;
           margin: 0em;
+          li {
+              margin-top: 0em;
+              margin-bottom: 1em;
+          }
       }
   }
   
