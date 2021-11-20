@@ -25,6 +25,7 @@
          :html-preamble nil
          :html-postamble-format (("en" "Created by %c.  Last modified: %C.  <a href=\"https:github.com/deopurkar.github.io\">Source</a> %v"))
          :html-postamble t
+         :auto-sitemap nil
          )
         ("pdfcv"
          :base-directory "./content"
