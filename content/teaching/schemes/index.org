@@ -135,7 +135,6 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
   2.  [[https://vimeo.com/470835362][Cohomology of quasicoherent sheaves]]
   3.  [[https://vimeo.com/472058119][Cech cohomology and the Picard group]]
 
-
 **** Thursday
 
 1.  Let \(\pi \colon X \to Y\) be an affine morphism and \(F\) a quasi-coherent sheaf on \(X\).
@@ -161,7 +160,6 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
    -   Prove that \(n \mapsto h^0(F(n))\), called the "Hilbert function", agrees with the Hilbert polynomial for all sufficiently large \(n\). (Hint: Serre vanishing).
 
      (There is a more direct inductive proof of polynomiality using slicing by hyperplanes.)
-
 
 ** Week 11
 :PROPERTIES:

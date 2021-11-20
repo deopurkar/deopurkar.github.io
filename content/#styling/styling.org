@@ -46,7 +46,7 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
           display: inline-block;
           padding-top: 0.5em;
           margin: 0em;
-          padding-bottom: 0.5em;
+          padding-bottom: 0.25em;
           a, a:active, a:visited {
               color: $titles;
           }
@@ -162,7 +162,6 @@ The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-g
           .intro {
               flex-direction: row-reverse;
           }
-          font-size:110%;
           line-height: 1.2em;
       }
   }
@@ -306,12 +305,14 @@ Finally, we style collapsible and collapsed headlines.
 #+begin_src scss
   .collapsible{
       cursor: pointer;
+      border-bottom-width: 0.15em;
       &:before {
           content: '- ';
       }
   }
   .collapsed{
       cursor: pointer;
+      border-bottom-width: 0em;
       &:before {
           content: '+ ';
       }
@@ -335,37 +336,35 @@ On clicking the Headline, the javascript will toggle the visibility of Content a
       for (var i = 0; i < headlines.length; i++) {
           addCollapsiblility(headlines[i], true);
       }
-
+  
       var collapsedHeadlines = document.querySelectorAll(".collapsed");
       for (var i = 0; i < collapsedHeadlines.length; i++) {
           addCollapsiblility(collapsedHeadlines[i], false);
       }
   });
-
+  
   function addCollapsiblility(headline, visible){
       headline.addEventListener("click", toggleVisibilityOfNext);
       var parentElement = headline.parentElement;
       var childrenElements = parentElement.children;
       var isVisible = visible;
-
+  
       for (var i = 1; i < childrenElements.length; i++) {
           var content = childrenElements[i];
-          content.style.overflow = "hidden";
-          content.style.transition = "max-height 0.2s";
           if (isVisible) {
-              content.style.maxHeight = content.scrollHeight + "px";
+              content.style.display = "block";
           } else {
-              content.style.maxHeight = "0px";
+              content.style.display = "none";
           }
       }
-
+  
       function toggleVisibilityOfNext (){
           if (isVisible){
               headline.classList.remove("collapsible");
               headline.classList.add("collapsed");
               for (var i = 1; i < childrenElements.length; i++) {
                   var content = childrenElements[i];
-                  content.style.maxHeight = "0px";
+                  content.style.display = "none";
               }
               isVisible = false;
           } else {
@@ -373,7 +372,7 @@ On clicking the Headline, the javascript will toggle the visibility of Content a
               headline.classList.add("collapsible");
               for (var i = 1; i < childrenElements.length; i++) {
                   var content = childrenElements[i];
-                  content.style.maxHeight = content.scrollHeight + "px";
+                  content.style.display = "block";
               }
               isVisible = true;
           }

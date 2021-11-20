@@ -30,7 +30,7 @@
 :properties:
 :institute: Australian National University
 :year:     2018
-:link:     [[file:teaching/3349]]
+:link:     [[file:teaching/3349/]]
 :end:
 *  Precalculus
 :properties:
@@ -41,7 +41,7 @@
 :properties:
 :institute: University of Georgia
 :year:     2017
-:link:     [[file:teaching/8320]]
+:link:     [[file:teaching/8320/]]
 :end:
 *  Calculus 2
 :properties:

@@ -12,8 +12,8 @@
 [[https://anu.edu.au][The Australian National University]]\\
 Canberra, ACT, 2601, Australia
 
- ~anand.deopurkar~ at ~anu~ dot ~edu~ dot ~au~ ([[file:ananddeopurkar-pgp.asc][pgp]])\\
-4.56 [[http://www.anu.edu.au/maps#show=102872][Hanna Neumann Building #156]]\\
+~anand.deopurkar~ at ~anu~ dot ~edu~ dot ~au~ ([[file:ananddeopurkar-pgp.asc][pgp]])\\
+4.56 [[http://www.anu.edu.au/maps#show=102872][Hanna Neumann Building]]\\
 +61 2 6125 4628   
 
 CV: [[file:cv.html][html]] [[file:cv.pdf][pdf]]
@@ -224,11 +224,11 @@ Here are some additional talks:
   One day...
 
 - [[https://github.com/asilata/cobracat][Categorical braid group actions]]\\
-  With [[https://asilata.github.io][Asilata Bapat]], I wrote ~Sage~ code to make explicit computations in the homotopy category of projective objects.
+  With [[https://asilata.github.io][Asilata Bapat]], I wrote ~Sage~ code to make explicit computations in the homotopy category of projective modules over a ring.
   In particular, this code can compute braid actions on complexes of projective modules over the zig-zag algebra of a quiver.
 
 - [[https://deopurkar.github.io/msicg/][MSI course graph]]\\
-  This is an interactive dependency graph of ANU math department's course catalogue
+  This is an interactive dependency graph of ANU math department's course catalogue.
 
 - [[file:misc/puzzle.pdf][A mystery hunt style puzzle]]
 

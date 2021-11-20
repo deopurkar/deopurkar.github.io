@@ -18,12 +18,10 @@ function addCollapsiblility(headline, visible){
 
     for (var i = 1; i < childrenElements.length; i++) {
         var content = childrenElements[i];
-        content.style.overflow = "hidden";
-        content.style.transition = "max-height 0.2s";
         if (isVisible) {
-            content.style.maxHeight = content.scrollHeight + "px";
+            content.style.display = "block";
         } else {
-            content.style.maxHeight = "0px";
+            content.style.display = "none";
         }
     }
 
@@ -33,7 +31,7 @@ function addCollapsiblility(headline, visible){
             headline.classList.add("collapsed");
             for (var i = 1; i < childrenElements.length; i++) {
                 var content = childrenElements[i];
-                content.style.maxHeight = "0px";
+                content.style.display = "none";
             }
             isVisible = false;
         } else {
@@ -41,7 +39,7 @@ function addCollapsiblility(headline, visible){
             headline.classList.add("collapsible");
             for (var i = 1; i < childrenElements.length; i++) {
                 var content = childrenElements[i];
-                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.display = "block";
             }
             isVisible = true;
         }

@@ -27,7 +27,7 @@
         display: inline-block;
         padding-top: 0.5em;
         margin: 0em;
-        padding-bottom: 0.5em;
+        padding-bottom: 0.25em;
         a, a:active, a:visited {
             color: $titles;
         }
@@ -132,7 +132,6 @@ $body-font: 'Lora';
         .intro {
             flex-direction: row-reverse;
         }
-        font-size:110%;
         line-height: 1.2em;
     }
 }
@@ -256,12 +255,14 @@ footer {
 
 .collapsible{
     cursor: pointer;
+    border-bottom-width: 0.15em;
     &:before {
         content: '- ';
     }
 }
 .collapsed{
     cursor: pointer;
+    border-bottom-width: 0em;
     &:before {
         content: '+ ';
     }

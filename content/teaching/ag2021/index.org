@@ -1,4 +1,4 @@
-# Created 2021-11-19 Fri 22:09
+# Created 2021-11-20 Sat 22:36
 #+OPTIONS: toc:nil
 #+OPTIONS: tex:t ':t -:t
 #+TITLE: Advanced topics in algebra: Algebraic geometry
@@ -23,7 +23,7 @@ We will begin with affine varieties---solution sets of polynomial equations---an
 - The assignments will be due on Gradescope.
 
 * References
-1. [[file:notes][Our own notes]]
+1. [[file:notes/][Our own notes]]
 2. [[https://link.springer.com/book/10.1007/978-3-642-37956-7][Basic Algebraic Geometry, Part I by I. Shafarevich]]
 3. [[https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf][Online notes by A. Gathmann]]
 ** Resources for mathematical writing
@@ -46,7 +46,7 @@ This is a tentative outline of the course, subject to change.
 |    9 | [[file:classwork09.pdf][Dimension]]: Lecture 1: [[https://web.microsoftstream.com/video/bfe908f1-9963-408c-aa61-fcdcf20cd37d][Video]]/[[file:notes/2021-10-05.pdf][Board]], Lecture 2: [[https://web.microsoftstream.com/video/eb4d6065-5028-4f25-9c29-ee0bfecd628a][Video]]/[[file:notes/2021-10-08.pdf][Board]]                                                                                                                                             |                   |
 |   10 | [[file:classwork10.pdf][Tangent spaces and smoothness]]: Lecture 1: [[https://web.microsoftstream.com/video/2d902b69-60c8-4dd8-8e6c-0b7a7fc1f3fa][Video]]/[[file:notes/2021-10-11.pdf][Board]], Lecture 2: [[https://web.microsoftstream.com/video/5ee9271f-1dbc-473d-805b-920b68ce2151][Video]]/[[file:notes/2021-10-15.pdf][Board]]                                                                                                                         | Assignment 4      |
 |   11 | [[file:classwork11.pdf][Completeness]]: Lecture 1: [[https://web.microsoftstream.com/video/04fb4851-1a75-43d4-aee4-60cbca7ac945][Video]]/[[file:notes/2021-10-18.pdf][Board]], Lecture 2: [[https://web.microsoftstream.com/video/0c668d6a-7199-4e00-9dcc-849fb1c5b1b8][Video]]/[[file:notes/2021-10-22.pdf][Board]]                                                                                                                                          |                   |
-|   12 | What is more in algebraic geometry? Lecture 1: [[https://web.microsoftstream.com/video/04bf42f9-656a-43b2-81e7-e069d823fe25][Video]]/[[file:notes/2021-10-25.pdf][Board]], Lecture 2: [[https://web.microsoftstream.com/video/04bf42f9-656a-43b2-81e7-e069d823fe25][Video]]/[[file:notes/2021-10-29.pdf][Board]]                                                                                                                                              | Assignment 5      |
+|   12 | What is more in algebraic geometry? Lecture 1: [[https://web.microsoftstream.com/video/04bf42f9-656a-43b2-81e7-e069d823fe25][Video]]/[[file:noes/2021-10-25.pdf][Board]], Lecture 2: [[https://web.microsoftstream.com/video/04bf42f9-656a-43b2-81e7-e069d823fe25][Video]]/[[file:notes/2021-10-29.pdf][Board]]                                                                                                                                               | Assignment 5      |
 |      | Q&A session 1: [[https://web.microsoftstream.com/video/2dc19fb8-ff07-4eca-82cb-3ec8069ed1f4][Video]], Q&A session 2 [[https://web.microsoftstream.com/video/86ccd471-e823-4267-a44e-a84f1bc09062][Video]]/[[file:notes/2021-10-28.pdf][Board]]                                                                                                                                                                                                                |                   |
 |------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------|
 
