@@ -130,7 +130,7 @@ This semester (2021 Semester 2), I am teaching [[file:teaching/ag2021][algebraic
   Albanian Journal of Mathematics 8, No. 2, 55--70 (2014), with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]] ([[file:papers/groebner.pdf][pdf]], [[https://sites.google.com/site/albjmath/archives/vol-8/2014-6][journal]]).
 - /Compactifications of Hurwitz spaces/.\\
   International Mathematics Research Notices 2014, No. 14, 3863--3911 (2014) ([[file:papers/CompHurwitz.pdf][pdf]], [[http://arxiv.org/abs/1206.4535/][arxiv]], [[http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract][journal]]).\\
-  Talks: Palo Alto ([[file:talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg_Talk.pdf][notes]]).
+  Talks: Palo Alto ([[file:talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg2013.pdf][notes]]).
 - /Class of the Hodge eigenbundle using orbifold Riemann-Roch/.\\
   Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]] ([[file:papers/CyclicAppendix.pdf][pdf]]).
 - /Sharp slope bounds for sweeping families of trigonal curves/.\\
@@ -141,7 +141,7 @@ This semester (2021 Semester 2), I am teaching [[file:teaching/ag2021][algebraic
   Talk: Cambridge ([[file:talks/trig_poster.pdf][poster]]).
 - /Alternate compactifications of Hurwitz spaces/.\\
   Thesis, Harvard, 2012 ([[file:papers/thesis.pdf][pdf]]).\\
-  Talks: Palo Alto ([[file:talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg_Talk.pdf][notes]]).
+  Talks: Palo Alto ([[file:talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg2013.pdf][notes]]).
 :end:
 
 * Teaching
@@ -230,10 +230,10 @@ Here are some additional talks:
 - [[https://deopurkar.github.io/msicg/][MSI course graph]]\\
   This is an interactive dependency graph of ANU math department's course catalogue
 
-- [[file:puzzle.pdf][A mystery hunt style puzzle]]
+- [[file:misc/puzzle.pdf][A mystery hunt style puzzle]]
 
 - Some visualisations
-  - [[file:misc/blowup-of-a-triple-point.html][The blow up of a planar triple point]] ([[file:misc/blow-up-of-a-triple-point.sage][sage code]])
+  - [[file:misc/blowup-of-a-triple-point.html][The blow up of a planar triple point]] ([[file:misc/blowup-of-a-triple-point.sage][sage code]])
   - [[file:misc/cubic.gif][A conic fibration on a cubic surface]] ([[file:misc/cubic-fibration.sage][sage code]])
 
 - Notes from some past seminars

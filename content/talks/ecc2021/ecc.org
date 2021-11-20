@@ -236,7 +236,7 @@
 * Thank you!
 
 * Plumbing :noexport:
-  #+begin_src elisp :export none :results none
+  #+begin_src elisp :exports none :results none
   (use-package htmlize :straight t)
   (use-package ox-reveal :straight (:type git :host github :repo "yjwen/org-reveal"))
   (require 'ox-reveal)

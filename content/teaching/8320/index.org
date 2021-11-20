@@ -10,44 +10,44 @@ Possible further topics include:
 2. Moduli spaces.
 3. Curves over finite fields and the Weil conjectures.
 
-Here is the [[syllabus.pdf][official course syllabus]].
+Here is the [[file:syllabus.pdf][official course syllabus]].
 
 * Notes
 
 I will post the notes that I prepare for the lectures; these may or may not end up being what we discuss in class!
 
-1. [[Aug15.pdf][Aug 15, Definitions, basic examples]]
-2. [[Aug17.pdf][Aug 17, Affine and projective plane curves, hyperelliptic curves]]
-3. [[Aug22.pdf][Aug 22, Holomorphic functions and maps, Riemann-Hurwitz]]
-4. [[Aug24.pdf][Aug 24, Meromorphic functions]]
-5. [[Aug29.pdf][Aug 29, Divisors and line bundles]]
-6. [[Aug31.pdf][Aug 31, Canonical divisors]]
-7. [[Sep05.pdf][Sep 05, Line bundles and maps to projective space]]
-8. [[Sep07.pdf][Sep 07, Cech cohomology of sheaves]]
-9. [[Sep14.pdf][Sep 15, Cech cohomology continued]]
-10. [[Sep19.pdf][Sep 19, Invertible sheaves]]
-11. [[Sep21.pdf][Sep 21, Linear systems, embeddings]]
-12. [[Sep26.pdf][Sep 26, Linear systems, examples]]
-13. [[Sep28.pdf][Sep 28, Rational normal curves, Riemann--Roch]]
-14. [[Oct05.pdf][Oct 5,  Low genus curves]]
-15. [[Oct10.pdf][Oct 10, The canonical embedding, geometric Riemann-Roch]]
-16. [[Oct12.pdf][Oct 12, Branched coverings and monodromy]]
-17. [[RR.pdf][Oct 17, Ample divisors, Serre vanishing]]
-18. [[RR.pdf][Oct 19, Vanishing, order of growth, field of meromorphic functions]]
-19. [[RR.pdf][Oct 24, Laurent tails, residue pairing]]
-20. [[RR.pdf][Oct 26, Serre duality]]
-21. [[Oct31.pdf][Oct 31, Inflection, ramification, Weierstrass points]]
+1. [[file:Aug15.pdf][Aug 15, Definitions, basic examples]]
+2. [[file:Aug17.pdf][Aug 17, Affine and projective plane curves, hyperelliptic curves]]
+3. [[file:Aug22.pdf][Aug 22, Holomorphic functions and maps, Riemann-Hurwitz]]
+4. [[file:Aug24.pdf][Aug 24, Meromorphic functions]]
+5. [[file:Aug29.pdf][Aug 29, Divisors and line bundles]]
+6. [[file:Aug31.pdf][Aug 31, Canonical divisors]]
+7. [[file:Sep05.pdf][Sep 05, Line bundles and maps to projective space]]
+8. [[file:Sep07.pdf][Sep 07, Cech cohomology of sheaves]]
+9. [[file:Sep14.pdf][Sep 15, Cech cohomology continued]]
+10. [[file:Sep19.pdf][Sep 19, Invertible sheaves]]
+11. [[file:Sep21.pdf][Sep 21, Linear systems, embeddings]]
+12. [[file:Sep26.pdf][Sep 26, Linear systems, examples]]
+13. [[file:Sep28.pdf][Sep 28, Rational normal curves, Riemann--Roch]]
+14. [[file:Oct05.pdf][Oct 5,  Low genus curves]]
+15. [[file:Oct10.pdf][Oct 10, The canonical embedding, geometric Riemann-Roch]]
+16. [[file:Oct12.pdf][Oct 12, Branched coverings and monodromy]]
+17. [[file:RR.pdf][Oct 17, Ample divisors, Serre vanishing]]
+18. [[file:RR.pdf][Oct 19, Vanishing, order of growth, field of meromorphic functions]]
+19. [[file:RR.pdf][Oct 24, Laurent tails, residue pairing]]
+20. [[file:RR.pdf][Oct 26, Serre duality]]
+21. [[file:Oct31.pdf][Oct 31, Inflection, ramification, Weierstrass points]]
 
 * Homework
 
 Work out the problems in enough detail to convince yourself that you understand what is going on, but you need not turn in any write-up, unless you require a grade.
 If you require a grade, then you must write up complete solutions to at least 20 problems over the course of the semester.
 
-1. [[hw1.pdf][Homework 1]]
-2. [[hw2.pdf][Howework 2]]
-3. [[hw3.pdf][Homework 3]]
-4. [[hw4.pdf][Homework 4]]
-5. [[hw5.pdf][Homework 5]]
+1. [[file:hw1.pdf][Homework 1]]
+2. [[file:hw2.pdf][Howework 2]]
+3. [[file:hw3.pdf][Homework 3]]
+4. [[file:hw4.pdf][Homework 4]]
+5. [[file:hw5.pdf][Homework 5]]
 
 * Calendar
 

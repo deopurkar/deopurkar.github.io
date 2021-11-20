@@ -38,6 +38,10 @@ h1, h2, h3, h4 {
   font-weight: lighter;
   margin-bottom: 0em; }
 
+li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+
 dl {
   display: grid;
   grid-template-columns: max-content auto;
@@ -82,7 +86,8 @@ footer {
 #table-of-contents {
   float: left;
   padding-right: 1em;
-  margin-right: 1em; }
+  margin-right: 1em;
+  margin-bottom: 1em; }
   #table-of-contents h2 {
     display: none; }
   #table-of-contents ul {

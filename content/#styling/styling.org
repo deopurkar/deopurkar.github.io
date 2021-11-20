@@ -197,6 +197,10 @@ Style headings, lists, and figures.
       font-weight:lighter;
       margin-bottom: 0em;
   }
+  li {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+  }
   dl {
       display: grid;
       grid-template-columns: max-content auto;
@@ -257,6 +261,7 @@ Footer style and other miscellany.
       float: left;
       padding-right: 1em;
       margin-right: 1em;
+      margin-bottom: 1em;
       h2 {
           display: none;
       }

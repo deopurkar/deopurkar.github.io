@@ -7,22 +7,22 @@ Welcome to Algebra 3!
 This year, algebra 3 will be algebraic geometry.
 We will study the geometry of subsets of the affine or projective space defined by the vanishing of polynomial equations, or in other words, (quasi)-projective varieties.
 
-Some [[AGFinalPractice.pdf][more practice problems]], in addition to the [[AGMidtermPractice.pdf][previous practice problems]].
+Some [[file:AGFinalPractice.pdf][more practice problems]], in addition to the [[file:AGMidtermPractice.pdf][previous practice problems]].
 
 * Homework
-- [[hw10.pdf][Homework 10. Due 5pm, Friday, October 25]]  [[https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738795][Submit]]
-- [[hw09.pdf][Homework 9. Due 5pm, Friday, October 18]] [[hw09sol.pdf][Solutions]]  
-- [[hw08.pdf][Homework 8. Due 5pm, Friday, October 11]] [[hw08sol.pdf][Solutions]]  
-- [[hw07.pdf][Homework 7. Due 5pm, Friday, October 4]] [[hw07sol.pdf][Solutions]]  
-- [[hw06.pdf][Homework 6. Due 5pm, Friday, September 27]] [[hw06sol.pdf][Solutions]]  
+- [[file:hw10.pdf][Homework 10. Due 5pm, Friday, October 25]]  [[https://wattlecourses.anu.edu.au/mod/assign/view.php?id=1738795][Submit]]
+- [[file:hw09.pdf][Homework 9. Due 5pm, Friday, October 18]] 
+- [[file:hw08.pdf][Homework 8. Due 5pm, Friday, October 11]] 
+- [[file:hw07.pdf][Homework 7. Due 5pm, Friday, October 4]] 
+- [[file:hw06.pdf][Homework 6. Due 5pm, Friday, September 27]]
   *Some students correctly observed that Problem 2 can be done very easily, even without using that Z is a projective variety. Yes! I miscalculated its difficulty.*
-- [[hw05.pdf][Homework 5. Due 5pm, Friday, August 30]] [[hw05sol.pdf][Solutions]]  
-  *Here is a real picture of the [[cubic.gif][conic fibration on the cubic]].*  
-- [[hw04.pdf][Homework 4. Due 5pm, Friday, August 23]]  [[hw04sol.pdf][Solutions]]  
-  *Here is an animated [[pencil.gif][pencil of conics]].*
-- [[hw03.pdf][Homework 3. Due 5pm, Friday, August 16]] [[hw03sol.pdf][Solutions]]
-- [[hw02.pdf][Homework 2. Due 5pm, Friday, August 9]]  [[hw02sol.pdf][Solutions]]
-- [[hw01.pdf][Homework 1. Due 5pm, Friday, August 2.]] [[hw01sol.pdf][Solutions]]
+- [[file:hw05.pdf][Homework 5. Due 5pm, Friday, August 30]] 
+  *Here is a real picture of the [[file:cubic.gif][conic fibration on the cubic]].*  
+- [[file:hw04.pdf][Homework 4. Due 5pm, Friday, August 23]] 
+  *Here is an animated [[file:pencil.gif][pencil of conics]].*
+- [[file:hw03.pdf][Homework 3. Due 5pm, Friday, August 16]] 
+- [[file:hw02.pdf][Homework 2. Due 5pm, Friday, August 9]]  
+- [[file:hw01.pdf][Homework 1. Due 5pm, Friday, August 2.]] 
 
 I have tried to make sure that the homework solutions are correct, but some errors may have slipped in.
 If you find something that seems off, please let me know.
@@ -36,59 +36,59 @@ If you find something that seems off, please let me know.
 Here is a preliminary outline of the course. It is undergoing changes as the class progresses, so the later weeks may not be accurate.
 I will also upload my lecture notes and the workshop handouts here.
 
-1. Week 1: [[AGWeek01.pdf][Lecture Notes 1]]  
+1. Week 1: [[file:AGWeek01.pdf][Lecture Notes 1]]  
   What is algebraic geometry?, 
   Affine space, closed (algebraic) subsets of affine space. 
   Ideals, Hilbert's basis theorem, Zariski topology.
   Examples and non-examples.
   (Gathmann Chapter 0, Shafarevich Section 1.2.1)
       
-2. Week 2: [[AGWorkshop01.pdf][Workshop 1]], [[AGWeek02.pdf][Lecture Notes 2]]   
+2. Week 2: [[file:AGWorkshop01.pdf][Workshop 1]], [[file:AGWeek02.pdf][Lecture Notes 2]]   
   The ring of regular functions.
   The ideal associated to a subset of affine space.
   The nullstellensatz and consequences.
   (Shafarevich 1.2.2, Shafarevich A.9, Gathmann 1.2)
 
-3. Week 3: [[AGWorkshop02.pdf][Workshop 2]], [[AGWeek03.pdf][Lecture Notes 3]]   
+3. Week 3: [[file:AGWorkshop02.pdf][Workshop 2]], [[file:AGWeek03.pdf][Lecture Notes 3]]   
   Regular maps between affine algebraic sets, isomorphisms.
   Category of affine algebraic sets = Category of nilpotent-free, finitely generated algebras.
   Quasi-affine varieties.
-  (Shafarevich 1.2.3, [[Danilov-quasi-affine.pdf][Danilov]])
+  (Shafarevich 1.2.3, [[file:Danilov-quasi-affine.pdf][Danilov]])
 
-4. Week 4: [[AGWorkshop03.pdf][Workshop 3]], [[AGWeek04.pdf][Lecture Notes 4]]   
+4. Week 4: [[file:AGWorkshop03.pdf][Workshop 3]], [[file:AGWeek04.pdf][Lecture Notes 4]]   
   Definition of abstract algebraic varieties.
   Projective and quasi-projective varieties.
-  (Shafarevich 1.4.1, 1.4.2, [[Danilov-varieties.pdf][Danilov]])
+  (Shafarevich 1.4.1, 1.4.2, [[file:Danilov-varieties.pdf][Danilov]])
 
-5. Week 5 [[AGWorkshop04.pdf][Workshop 4]], [[AGWeek05.pdf][Lecture Notes 5]]  
+5. Week 5 [[file:AGWorkshop04.pdf][Workshop 4]], [[file:AGWeek05.pdf][Lecture Notes 5]]  
   Regular functions and regular maps on quasi-projective varieties. Veronese and Segre embeddings.
-  (Shafarevich 1.4.1, 1.4.2, 1.4.4, [[Danilov-varieties.pdf][Danilov]] [[Harris-Veronese_and_Segre.pdf][Harris]]).
+  (Shafarevich 1.4.1, 1.4.2, 1.4.4, [[file:Danilov-varieties.pdf][Danilov]] [[file:Harris-Veronese_and_Segre.pdf][Harris]]).
   [[https://math.stackexchange.com/questions/891109/factoring-homogeneous-polynomials-in-two-variables][Math Stackexchange answer]] explaining how homogeneous polynomials in X, Y of degree d factor into d homogeneous linear factors. As a result, they have at most d zeros on P<sup>1</sup>.
 
-6. Week 6 [[AGWorkshop05.pdf][Workshop 5]], [[AGWeek06.pdf][Lecture Notes 6]]  
+6. Week 6 [[file:AGWorkshop05.pdf][Workshop 5]], [[file:AGWeek06.pdf][Lecture Notes 6]]  
   Continued from last week. Separatedness. Segre embedding.
   (Shafarevich 1.5.1)
 
-7. Week 7 [[AGWeek07.pdf][Lecture notes 7]]   
+7. Week 7 [[file:AGWeek07.pdf][Lecture notes 7]]   
   Closed image property, applications. 
   (Shafarevich 1.5.2)
   
-8. Week 8: [[AGWorkshop07.pdf][Workshop 7]] [[AGWeek08.pdf][Lecture notes 8]]  
+8. Week 8: [[file:AGWorkshop07.pdf][Workshop 7]] [[file:AGWeek08.pdf][Lecture notes 8]]  
   Irreducibility, irreducible components, rational maps.
   (Shafarevich 1.3.1, 1.3.2)
 
-9. Week 9: [[AGWorkshop08.pdf][Workshop 8]], [[AGWeek09.pdf][Lectures notes 9]]  
+9. Week 9: [[file:AGWorkshop08.pdf][Workshop 8]], [[file:AGWeek09.pdf][Lectures notes 9]]  
   Rational maps continued, dimension.
   (Shafarevich 1.3.3, 1.5.3)
 
-10. Week 10: [[AGWorkshop09.pdf][Workshop 9]], [[AGWeek10.pdf][Lecture notes 10]]  
+10. Week 10: [[file:AGWorkshop09.pdf][Workshop 9]], [[file:AGWeek10.pdf][Lecture notes 10]]  
    More on dimension. 
    (Shafarevich 1.5.3, 1.5.4)
 
-11. Week 11: [[AGWorkshop10.pdf][Workshop 10]], [[AGWeek11.pdf][Lecture notes 11]]  
-   Dimension of fibers. Applications. Grassmannian. [[Harris-Grassmannian.pdf][Harris]], [[Bullock-Grassmannian.pdf][Bullock]])
+11. Week 11: [[file:AGWorkshop10.pdf][Workshop 10]], [[file:AGWeek11.pdf][Lecture notes 11]]  
+   Dimension of fibers. Applications. Grassmannian. [[file:Harris-Grassmannian.pdf][Harris]], [[file:Bullock-Grassmannian.pdf][Bullock]])
 
-12. Week 12: [[AGWeek12.pdf][Lecture notes 12]]  
+12. Week 12: [[file:AGWeek12.pdf][Lecture notes 12]]  
    Local ring at a point, tangent spaces, singularities.
 
 * Prerequisites
@@ -100,8 +100,8 @@ Some knowledge of commutative algebra will help, but is not required.
 1. [[https://link.springer.com/book/10.1007/978-3-642-37956-7][*Basic Algebraic Geometry, Part I*]] by I. Shafarevich.  
 2. The [[https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf][online notes]] by A. Gathmann.  
 3. [[https://link.springer.com/chapter/10.1007/978-3-642-57878-6_6][*Algebraic varieties: Basic Notions*]] by V. Danilov.   
-4. Field theory [[TranscDeg.pdf][notes by Alex Wright]].  
-5. Some [[AGMidtermPractice.pdf][practice questions]] for the midterm.
+4. Field theory [[file:TranscDeg.pdf][notes by Alex Wright]].  
+5. Some [[file:AGMidtermPractice.pdf][practice questions]] for the midterm.
 
 * Lectures and workshops
 1. Lecture on Wednesday, 12:00 to 13:00 in Hancock 2.27  

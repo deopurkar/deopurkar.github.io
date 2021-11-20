@@ -55,7 +55,7 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 :html_headline_class: collapsible
 :END:
 
-The midterm exam will be an oral exam in the week of September 21. It will be about 45 minutes long. I have prepared [[midterm1.pdf][a list of questions for the exam]]. We will ask questions from this list, small variations on them, and follow up questions based on your responses.
+The midterm exam will be an oral exam in the week of September 21. It will be about 45 minutes long. I have prepared [[file:midterm1.pdf][a list of questions for the exam]]. We will ask questions from this list, small variations on them, and follow up questions based on your responses.
 
 
 ** Final exam
@@ -131,9 +131,9 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
   -   Exercise 18.4.A
   -   Exercise 18.4.B/C (maybe)
 -   **Watch**
-  1.  [[<https://vimeo.com/470803503>][Sheaf cohomology]]
-  2.  [[<https://vimeo.com/470835362>][Cohomology of quasicoherent sheaves]]
-  3.  [[<https://vimeo.com/472058119>][Cech cohomology and the Picard group]]
+  1.  [[https://vimeo.com/470803503][Sheaf cohomology]]
+  2.  [[https://vimeo.com/470835362][Cohomology of quasicoherent sheaves]]
+  3.  [[https://vimeo.com/472058119][Cech cohomology and the Picard group]]
 
 
 **** Thursday
@@ -984,5 +984,5 @@ A general convention in Ravi's book is that ⋆ indicates an advanced section th
 
 -   [[https://math216.wordpress.com/agittoc-2020/][Ravi Vakil's pseudo-course website]]
 -   [[https://www.youtube.com/watch?v=BX3jiLdehA4&list=PL8yHsr3EFj50Un2NpfPySgXctRQK7CLG-][Richard Borcherd's lectures on schemes]]
--   [[pointsareprimes.pdf][Why are points of a scheme the prime ideals]]
+-   [[file:pointsareprimes.pdf][Why are points of a scheme the prime ideals]]
 

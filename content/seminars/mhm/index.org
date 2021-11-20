@@ -11,24 +11,24 @@ Used to be a google calendar; now defunct.
 
 
 1. Overview of mixed Hodge modules and their applications to geometry (Ben)  
-   [[mhm1.pdf][Notes]] 
+   [[file:mhm1.pdf][Notes]] 
 
 2. Classical (pure) Hodge theory (Anand)  
    References: Chapter 0 of [Sabbah-Schnell].  
-   [[mhm2-asilata.pdf][Notes 1]], [[mhm2-anand.pdf][Notes 2]]
+   [[file:mhm2-asilata.pdf][Notes 1]], [[file:mhm2-anand.pdf][Notes 2]]
    
 3. D-modules and the Riemann--Hilbert correspondence (Asilata)  
    References: [Cavazzani] and the references cited there.  
-   [[mhm3.pdf][Notes]]
+   [[file:mhm3.pdf][Notes]]
    
 4. Perverse sheaves (Nicola)   
    
 5. Nearby and vanishing cycles (Anand)  
    References: [Sabbah].  
-   [[mhm4.pdf][Notes]]
+   [[file:mhm4.pdf][Notes]]
 
 6. Degenerations of VHS on curves (Ben)
-   [[mhm5.pdf][Notes]]
+   [[file:mhm5.pdf][Notes]]
 
 7. Perverse sheaves and the decomposition theorem  
    References: [Achar], [deCataldo-Migliorini], [deCataldo], Chapter 8 of [Hotta-Takeuchi-Tanisaki].  
@@ -46,12 +46,12 @@ Used to be a google calendar; now defunct.
 * References
 
 1. [Sabbah-Schnell]: [[http://www.cmls.polytechnique.fr/perso/sabbah/MHMProject/mhm.html][Sabbah, Schnell, *The MHM project*]]
-2. [Achar]: [[psln.pdf][Achar: *Lecture notes on Perverse sheaves*]]
-3. [Popa-Schnell-1]: [[mhmgv.pdf][Popa, Schnell, *Generic vanishing theory via mixed Hodge modules*]]
-4. [deCataldo-Migliorini]: [[dcm.pdf][de Cataldo, Migliorini, *The decomposition theorem, perverse sheaves, and the topology of algebraic maps*]]
-5. [deCataldo]: [[Cataldo.pdf][de Cataldo, *Perverse sheaves in algebraic geometry*]]
-6. [Hotta-Takeuchi-Tanisaki]: [[hottaetal.pdf][Hotta, Takeuchi, Tanisaki *D-modules, perverse sheaves, and representation theory*]]
-7. [Cavazzani]: [[D-modules.pdf][Cavazzani, *The Riemann--Hilbert correspondence*]]
-8. [Schnell]: [[sanya.pdf][Schnell, *An overview of Morihiko Saito's theory of mixed Hodge modules*]]
-9. [Sabbah]: [[sabbah_notredame1305.pdf][Sabbah, *Vanishing cycles and their algebraic computation*]]
-10. [Sabbah-2]: [[sabbah_luminy07.pdf][Sabbah, *Hodge theory, singularities, and D-modules*]]
+2. [Achar]: [[file:psln.pdf][Achar: *Lecture notes on Perverse sheaves*]]
+3. [Popa-Schnell-1]: [[file:mhmgv.pdf][Popa, Schnell, *Generic vanishing theory via mixed Hodge modules*]]
+4. [deCataldo-Migliorini]: [[file:dcm.pdf][de Cataldo, Migliorini, *The decomposition theorem, perverse sheaves, and the topology of algebraic maps*]]
+5. [deCataldo]: [[file:Cataldo.pdf][de Cataldo, *Perverse sheaves in algebraic geometry*]]
+6. [Hotta-Takeuchi-Tanisaki]: [[file:hottaetal.pdf][Hotta, Takeuchi, Tanisaki *D-modules, perverse sheaves, and representation theory*]]
+7. [Cavazzani]: [[file:D-modules.pdf][Cavazzani, *The Riemann--Hilbert correspondence*]]
+8. [Schnell]: [[file:sanya.pdf][Schnell, *An overview of Morihiko Saito's theory of mixed Hodge modules*]]
+9. [Sabbah]: [[file:sabbah_notredame1305.pdf][Sabbah, *Vanishing cycles and their algebraic computation*]]
+10. [Sabbah-2]: [[file:sabbah_luminy07.pdf][Sabbah, *Hodge theory, singularities, and D-modules*]]

@@ -461,7 +461,7 @@
 :year:     2011
 :institute: Massachusetts Institute of Technology
 :place:    Cambridge, Massachusetts
-:link:     [[file:talks/Hdg_Talk.pdf][notes]]
+:link:     [[file:talks/Hdg2013.pdf][notes]]
 :type:     Seminar talk
 :ref: [[file:papers.org::*Alternate compactifications of Hurwitz spaces][Alternate compactifications of Hurwitz spaces]]
 :end:

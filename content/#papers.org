@@ -1,5 +1,3 @@
-#+filetags: paper
-
 * A universal formula for counting cubic surfaces                        :pp:
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]]
