@@ -1,5 +1,17 @@
 #+filetags: :talk:
 
+*  Algebraic curves and Belyi's theorem
+:properties:
+:meet:     Trimester program on triangle groups, Belyi uniformization, and modularity
+:institute: Bhaskaracharya Pratishthana
+:place:    Pune, India
+:year:     2021
+:type:     Expository talk
+:link:     [[file:talks/Belyi2021.pdf][notes]]
+:comment: expository
+:end:
+
+
 *  Error correcting codes
 :properties:
 :meet:     ANU Mathematics Extension Program
