@@ -1,7 +1,7 @@
 #+title: Anand Deopurkar
 #+author: Anand Deopurkar
 #+OPTIONS: *:t author:nil ':t  d:+results 
-#+HTML_HEAD_EXTRA: <script type="text/javascript" src="js/collapsibility.js"></script>
+#+HTML_HEAD_EXTRA: <script src="js/collapsibility.js"></script>
 
 #+begin_intro
 #+attr_html: :id mypicture :alt Anand Deopurkar
@@ -12,8 +12,8 @@
 [[https://anu.edu.au][The Australian National University]]\\
 Canberra, ACT, 2601, Australia
 
-~anand.deopurkar~ at ~anu~ dot ~edu~ dot ~au~ ([[file:ananddeopurkar-pgp.asc][pgp]])\\
-4.56 [[http://www.anu.edu.au/maps#show=102872][Hanna Neumann Building]]\\
+ ~anand.deopurkar~ at ~anu~ dot ~edu~ dot ~au~ ([[file:ananddeopurkar-pgp.asc][pgp]])\\
+4.56 [[http://www.anu.edu.au/maps#show=102872][Hanna Neumann Building #156]]\\
 +61 2 6125 4628   
 
 CV: [[file:cv.html][html]] [[file:cv.pdf][pdf]]
@@ -132,7 +132,7 @@ I will be at the workshop /Quantum curves, integrability, and cluster algebras/ 
   Albanian Journal of Mathematics 8, No. 2, 55--70 (2014), with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]] ([[file:papers/groebner.pdf][pdf]], [[https://sites.google.com/site/albjmath/archives/vol-8/2014-6][journal]]).
 - /Compactifications of Hurwitz spaces/.\\
   International Mathematics Research Notices 2014, No. 14, 3863--3911 (2014) ([[file:papers/CompHurwitz.pdf][pdf]], [[http://arxiv.org/abs/1206.4535/][arxiv]], [[http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract][journal]]).\\
-  Talks: Palo Alto ([[file:talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg2013.pdf][notes]]).
+  Talks: Palo Alto ([[file:talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg_Talk.pdf][notes]]).
 - /Class of the Hodge eigenbundle using orbifold Riemann-Roch/.\\
   Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]] ([[file:papers/CyclicAppendix.pdf][pdf]]).
 - /Sharp slope bounds for sweeping families of trigonal curves/.\\
@@ -143,7 +143,7 @@ I will be at the workshop /Quantum curves, integrability, and cluster algebras/ 
   Talk: Cambridge ([[file:talks/trig_poster.pdf][poster]]).
 - /Alternate compactifications of Hurwitz spaces/.\\
   Thesis, Harvard, 2012 ([[file:papers/thesis.pdf][pdf]]).\\
-  Talks: Palo Alto ([[file:talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg2013.pdf][notes]]).
+  Talks: Palo Alto ([[file:talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg_Talk.pdf][notes]]).
 :end:
 
 * Teaching
@@ -226,16 +226,16 @@ Here are some additional talks:
   One day...
 
 - [[https://github.com/asilata/cobracat][Categorical braid group actions]]\\
-  With [[https://asilata.github.io][Asilata Bapat]], I wrote ~Sage~ code to make explicit computations in the homotopy category of projective modules over a ring.
+  With [[https://asilata.github.io][Asilata Bapat]], I wrote ~Sage~ code to make explicit computations in the homotopy category of projective objects.
   In particular, this code can compute braid actions on complexes of projective modules over the zig-zag algebra of a quiver.
 
 - [[https://deopurkar.github.io/msicg/][MSI course graph]]\\
-  This is an interactive dependency graph of ANU math department's course catalogue.
+  This is an interactive dependency graph of ANU math department's course catalogue
 
-- [[file:misc/puzzle.pdf][A mystery hunt style puzzle]]
+- [[file:puzzle.pdf][A mystery hunt style puzzle]]
 
 - Some visualisations
-  - [[file:misc/blowup-of-a-triple-point.html][The blow up of a planar triple point]] ([[file:misc/blowup-of-a-triple-point.sage][sage code]])
+  - [[file:misc/blowup-of-a-triple-point.html][The blow up of a planar triple point]] ([[file:misc/blow-up-of-a-triple-point.sage][sage code]])
   - [[file:misc/cubic.gif][A conic fibration on a cubic surface]] ([[file:misc/cubic-fibration.sage][sage code]])
 
 - Notes from some past seminars
@@ -264,7 +264,8 @@ I am currently not teaching anything.
 
 ** MATRIX 2021
 :PROPERTIES:
-:from: <2021-11-24 Wed> 
+:from: <2021-11-25 Thu>
 :to: <2021-12-18 Sat>
 :END:
 I will be at the workshop /Quantum curves, integrability, and cluster algebras/ at MATRIX in Creswick, Victoria from 12--18 Dec.
+

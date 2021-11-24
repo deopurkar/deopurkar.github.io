@@ -1,87 +1,34 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<!-- 2021-11-25 Thu 10:54 -->
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>ReadTheOrg style</title>
-<meta name="generator" content="Org mode" />
-<meta name="author" content="Fabrice Niessen" />
-<link rel="stylesheet" href="/css/main.css"></link><link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet"></link>
-</head>
-<body>
-<div id="content">
-<h1 class="title">ReadTheOrg style</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#org013363d">1. Overview</a></li>
-<li><a href="#orgdd47621">2. Typography</a>
-<ul>
-<li><a href="#org60fb6f1">2.1. Headings</a></li>
-<li><a href="#org7525bf1">2.2. Body</a></li>
-<li><a href="#org6704c6e">2.3. Bold</a></li>
-<li><a href="#orgb35eb95">2.4. Blockquotes</a></li>
-<li><a href="#org67cebed">2.5. Lists</a></li>
-</ul>
-</li>
-<li><a href="#org8f5d9e5">3. Media queries</a></li>
-<li><a href="#org5bb3fea">4. Code</a>
-<ul>
-<li><a href="#orgbb8e7e2">4.1. Inline</a></li>
-<li><a href="#org38132ca">4.2. Basic block</a></li>
-<li><a href="#org444bd99">4.3. Sample output</a></li>
-</ul>
-</li>
-<li><a href="#org31b776e">5. Tables</a>
-<ul>
-<li><a href="#org0d13b99">5.1. Basic example</a></li>
-<li><a href="#org4f50bff">5.2. Optional table caption</a></li>
-<li><a href="#org6a4794d">5.3. Striped rows</a></li>
-</ul>
-</li>
-<li><a href="#orgd8a1048">6. Images</a>
-<ul>
-<li><a href="#org94676cb">6.1. Optional image caption</a></li>
-</ul>
-</li>
-<li><a href="#orgfb67827">7. Helper classes</a></li>
-<li><a href="#org7af808c">8. Responsive utilities</a></li>
-<li><a href="#org62b3c27">9. CSS</a></li>
-<li><a href="#orgb643d0e">10. Htmlize</a></li>
-<li><a href="#org4ab25eb">11. JS</a></li>
-</ul>
-</div>
-</div>
+﻿#+TITLE:     ReadTheOrg style
+#+AUTHOR:    Fabrice Niessen
+#+EMAIL:     (concat "fniessen" at-sign "pirilampo.org")
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:4 num:t toc:2
 
-<div id="outline-container-org013363d" class="outline-2">
-<h2 id="org013363d"><span class="section-number-2">1</span> Overview</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-Get the lowdown on the key pieces of ReadTheOrg&rsquo;s infrastructure, including our
+#+SETUPFILE: ~/org/theme-readtheorg.setup
+
+# See http://pandoc.org/README.html for another organization of the sections
+
+* Overview
+
+Get the lowdown on the key pieces of ReadTheOrg's infrastructure, including our
 approach to better HTML export.
-</p>
-</div>
-</div>
 
-<div id="outline-container-orgdd47621" class="outline-2">
-<h2 id="orgdd47621"><span class="section-number-2">2</span> Typography</h2>
-<div class="outline-text-2" id="text-2">
-<div class="org-src-container">
-<pre class="src src-css">@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700");
+* Typography
+  :PROPERTIES:
+  :header-args: :tangle css/readtheorg.css
+  :END:
+
+#+begin_src css
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-</pre>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org60fb6f1" class="outline-3">
-<h3 id="org60fb6f1"><span class="section-number-3">2.1</span> Headings</h3>
-<div class="outline-text-3" id="text-2-1">
-<div class="org-src-container">
-<pre class="src src-css">h1,h2,h3,h4,h5,h6,legend{
+** Headings
+
+#+begin_src css
+h1,h2,h3,h4,h5,h6,legend{
     font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
     font-weight:700;
     margin-top:0;
@@ -121,16 +68,12 @@ h4,h5,h6{
     color:#2980B9;
     font-weight:300;
 }
-</pre>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org7525bf1" class="outline-3">
-<h3 id="org7525bf1"><span class="section-number-3">2.2</span> Body</h3>
-<div class="outline-text-3" id="text-2-2">
-<div class="org-src-container">
-<pre class="src src-css">html{
+** Body
+
+#+begin_src css
+html{
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
     font-size:100%;
@@ -163,27 +106,19 @@ p{
     line-height:24px;
     margin:0px 0px 24px 0px;
 }
-</pre>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org6704c6e" class="outline-3">
-<h3 id="org6704c6e"><span class="section-number-3">2.3</span> Bold</h3>
-<div class="outline-text-3" id="text-2-3">
-<div class="org-src-container">
-<pre class="src src-css">b,strong{
+** Bold
+
+#+begin_src css
+b,strong{
     font-weight:bold}
-</pre>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-orgb35eb95" class="outline-3">
-<h3 id="orgb35eb95"><span class="section-number-3">2.4</span> Blockquotes</h3>
-<div class="outline-text-3" id="text-2-4">
-<div class="org-src-container">
-<pre class="src src-css">blockquote{
+** Blockquotes
+
+#+begin_src css
+blockquote{
     background-color: #F0F0F0;
     border-left:5px solid #CCCCCC;
     font-style:italic;
@@ -192,38 +127,32 @@ p{
     /* margin-left:24px; */
     padding: 6px 20px;
 }
-</pre>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org67cebed" class="outline-3">
-<h3 id="org67cebed"><span class="section-number-3">2.5</span> Lists</h3>
-<div class="outline-text-3" id="text-2-5">
-<div class="org-src-container">
-<pre class="src src-css">ul,ol,dl{
+** Lists
+
+#+begin_src css
+ul,ol,dl{
     line-height:24px;
     list-style-image:none;
     /* list-style:none; */
     margin:0px 0px 24px 0px;
     padding:0;
 }
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">li{
+#+begin_src css
+li{
     margin-left: 24px;
 }
 
 dd{
     margin:0;
 }
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">#content .section ul,#content .toctree-wrapper ul,article ul{
+#+begin_src css
+#content .section ul,#content .toctree-wrapper ul,article ul{
     list-style:disc;
     line-height:24px;
     margin-bottom:24px}
@@ -233,7 +162,7 @@ dd{
     margin-left:24px}
 
 #content .section ul li p:last-child,#content .toctree-wrapper ul li p:last-child,article ul li p:last-child{
-																  margin-bottom:0}
+                                                                                                                                  margin-bottom:0}
 
 #content .section ul li ul,#content .toctree-wrapper ul li ul,article ul li ul{
     margin-bottom:0}
@@ -257,30 +186,23 @@ dd{
     margin-left:24px}
 
 #content .section ol li p:last-child,#content ol li p:last-child,article ol li p:last-child{
-															   margin-bottom:0}
+                                                                                                                           margin-bottom:0}
 
 #content .section ol li ul,#content ol li ul,article ol li ul{
     margin-bottom:0}
 
 #content .section ol li ul li,#content ol li ul li,article ol li ul li{
     list-style:disc}
-</pre>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org86a51e3" class="outline-4">
-<h4 id="org86a51e3"><span class="section-number-4">2.5.1</span> Unordered</h4>
-</div>
+*** Unordered
 
-<div id="outline-container-orgf75f329" class="outline-4">
-<h4 id="orgf75f329"><span class="section-number-4">2.5.2</span> Ordered</h4>
-</div>
+*** Ordered
 
-<div id="outline-container-org08ae2ad" class="outline-4">
-<h4 id="org08ae2ad"><span class="section-number-4">2.5.3</span> Description</h4>
-<div class="outline-text-4" id="text-2-5-3">
-<div class="org-src-container">
-<pre class="src src-css">dl dt{
+*** Description
+
+#+begin_src css
+dl dt{
     font-weight:bold;
 }
 
@@ -291,171 +213,158 @@ dl p,dl table,dl ul,dl ol{
 dl dd{
     margin:0 0 12px 24px;
 }
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org8f5d9e5" class="outline-2">
-<h2 id="org8f5d9e5"><span class="section-number-2">3</span> Media queries</h2>
-<div class="outline-text-2" id="text-3">
-<div class="org-src-container">
-<pre class="src src-css">@media print{
+* Media queries
+  :PROPERTIES:
+  :header-args: :tangle css/readtheorg.css
+  :END:
+
+#+begin_src css
+@media print{
     .codeblock,pre.src{
-	white-space:pre.src-wrap}
+        white-space:pre.src-wrap}
 }
 
 @media print{
     html,body,section{
-	background:none !important}
+        background:none !important}
 
-    *{
-	box-shadow:none !important;
-	text-shadow:none !important;
-	filter:none !important;
-	-ms-filter:none !important}
+    ,*{
+        box-shadow:none !important;
+        text-shadow:none !important;
+        filter:none !important;
+        -ms-filter:none !important}
 
     a,a:visited{
-	  text-decoration:underline}
+          text-decoration:underline}
 
     pre.src,blockquote{
-	page-break-inside:avoid}
+        page-break-inside:avoid}
 
     thead{
-	display:table-header-group}
+        display:table-header-group}
 
     tr,img{
-	page-break-inside:avoid}
+        page-break-inside:avoid}
 
     img{
-	max-width:100% !important}
+        max-width:100% !important}
 
     @page{
-	margin:0.5cm}
+        margin:0.5cm}
 
     p,h2,h3{
-	orphans:3;
-	widows:3}
+        orphans:3;
+        widows:3}
 
     h2,h3{
-	page-break-after:avoid}
+        page-break-after:avoid}
 }
 
 @media print{
     #postamble{
-	display:none}
+        display:none}
 
     #content{
-	margin-left:0}
+        margin-left:0}
 }
 
 @media print{
     #table-of-contents{
-	display:none}
+        display:none}
 
     @page{
-	size: auto;
-	margin: 25mm 25mm 25mm 25mm;}
+        size: auto;
+        margin: 25mm 25mm 25mm 25mm;}
 
     body {
-	margin: 0px;}
+        margin: 0px;}
 }
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">@media screen and (max-width: 768px){
+#+begin_src css
+@media screen and (max-width: 768px){
 }
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">@media only screen and (max-width: 480px){
+#+begin_src css
+@media only screen and (max-width: 480px){
 }
 
 @media screen and (max-width: 768px){
     .tablet-hide{
-	display:none}
+        display:none}
 }
 
 @media screen and (max-width: 480px){
     .mobile-hide{
-	display:none}
+        display:none}
 }
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">@media screen and (max-width: 480px){
+#+begin_src css
+@media screen and (max-width: 480px){
 }
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">@media screen and (max-width: 768px){
+#+begin_src css
+@media screen and (max-width: 768px){
     #content{
-	margin-left:0}
+        margin-left:0}
 
     #content #content{
-	padding:1.618em}
+        padding:1.618em}
 
     #content.shift{
-	position:fixed;
-	min-width:100%;
-	left:85%;
-	top:0;
-	height:100%;
-	overflow:hidden}
+        position:fixed;
+        min-width:100%;
+        left:85%;
+        top:0;
+        height:100%;
+        overflow:hidden}
 }
 
 @media screen and (min-width: 1400px){
     #content{
-	background:rgba(0,0,0,0.05)}
+        background:rgba(0,0,0,0.05)}
 
     #content{
-	background:#fcfcfc}
+        background:#fcfcfc}
 }
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">@media screen and (max-width: 768px){
+#+begin_src css
+@media screen and (max-width: 768px){
     #copyright{
-	width:85%;
-	display:none}
+        width:85%;
+        display:none}
 
     #copyright.shift{
-	display:block}
+        display:block}
 
     img{
-	width:100%;
-	height:auto}
+        width:100%;
+        height:auto}
 }
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">@media screen and (max-width: 480px){
+#+begin_src css
+@media screen and (max-width: 480px){
     #content .sidebar{
-	width:100%}
+        width:100%}
 }
-</pre>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org5bb3fea" class="outline-2">
-<h2 id="org5bb3fea"><span class="section-number-2">4</span> Code</h2>
-<div class="outline-text-2" id="text-4">
-</div>
+* Code
+  :PROPERTIES:
+  :header-args: :tangle css/readtheorg.css
+  :END:
 
-<div id="outline-container-orgbb8e7e2" class="outline-3">
-<h3 id="orgbb8e7e2"><span class="section-number-3">4.1</span> Inline</h3>
-<div class="outline-text-3" id="text-4-1">
-<div class="org-src-container">
-<pre class="src src-css">code{
+** Inline
+
+#+begin_src css
+code{
     background:#fff;
     border:solid 1px #e1e4e5;
     /* color:#000;  for clickable code */
@@ -466,16 +375,12 @@ dl dd{
     padding:0 5px;
     white-space:nowrap;
 }
-</pre>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org38132ca" class="outline-3">
-<h3 id="org38132ca"><span class="section-number-3">4.2</span> Basic block</h3>
-<div class="outline-text-3" id="text-4-2">
-<div class="org-src-container">
-<pre class="src src-css">.codeblock-example{
+** Basic block
+
+#+begin_src css
+.codeblock-example{
     border:1px solid #e1e4e5;
     border-bottom:none;
     padding:24px;
@@ -515,16 +420,12 @@ pre.src{
     padding:12px;
     white-space:pre;
 }
-</pre>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org444bd99" class="outline-3">
-<h3 id="org444bd99"><span class="section-number-3">4.3</span> Sample output</h3>
-<div class="outline-text-3" id="text-4-3">
-<div class="org-src-container">
-<pre class="src src-css">.example{
+** Sample output
+
+#+begin_src css
+.example{
     background:#f3f6f6;
     border:1px solid #e1e4e5;
     color:#404040;
@@ -533,22 +434,17 @@ pre.src{
     margin-bottom:24px;
     padding:12px;
 }
-</pre>
-</div>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org31b776e" class="outline-2">
-<h2 id="org31b776e"><span class="section-number-2">5</span> Tables</h2>
-<div class="outline-text-2" id="text-5">
-</div>
+* Tables
+  :PROPERTIES:
+  :header-args: :tangle css/readtheorg.css
+  :END:
 
-<div id="outline-container-org0d13b99" class="outline-3">
-<h3 id="org0d13b99"><span class="section-number-3">5.1</span> Basic example</h3>
-<div class="outline-text-3" id="text-5-1">
-<div class="org-src-container">
-<pre class="src src-css">table{
+** Basic example
+
+#+begin_src css
+table{
     border-collapse:collapse;
     border-spacing:0;
     empty-cells:show;
@@ -573,67 +469,52 @@ table thead th{
     border-top:3px solid #e1e4e5;
     border-bottom:1px solid #e1e4e5;
 }
-</pre>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org4f50bff" class="outline-3">
-<h3 id="org4f50bff"><span class="section-number-3">5.2</span> Optional table caption</h3>
-<div class="outline-text-3" id="text-5-2">
-<div class="org-src-container">
-<pre class="src src-css">table caption{
+** Optional table caption
+
+#+begin_src css
+table caption{
     color:#000;
     font:italic 85%/1 arial,sans-serif;
     padding:1em 0;
 }
-</pre>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org6a4794d" class="outline-3">
-<h3 id="org6a4794d"><span class="section-number-3">5.3</span> Striped rows</h3>
-<div class="outline-text-3" id="text-5-3">
-<div class="org-src-container">
-<pre class="src src-css">table tr:nth-child(2n-1) td{
+** Striped rows
+
+#+begin_src css
+table tr:nth-child(2n-1) td{
     background-color:#f3f6f6;
 }
 
 table tr:nth-child(2n) td{
     background-color:white;
 }
-</pre>
-</div>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-orgd8a1048" class="outline-2">
-<h2 id="orgd8a1048"><span class="section-number-2">6</span> Images</h2>
-<div class="outline-text-2" id="text-6">
-</div>
+* Images
+  :PROPERTIES:
+  :header-args: :tangle css/readtheorg.css
+  :END:
 
-<div id="outline-container-org94676cb" class="outline-3">
-<h3 id="org94676cb"><span class="section-number-3">6.1</span> Optional image caption</h3>
-<div class="outline-text-3" id="text-6-1">
-<div class="org-src-container">
-<pre class="src src-css">.figure p{
+** Optional image caption
+
+#+begin_src css
+.figure p{
     color:#000;
     font:italic 85%/1 arial,sans-serif;
     padding:1em 0;
 }
-</pre>
-</div>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-orgfb67827" class="outline-2">
-<h2 id="orgfb67827"><span class="section-number-2">7</span> Helper classes</h2>
-<div class="outline-text-2" id="text-7">
-<div class="org-src-container">
-<pre class="src src-css">.rotate-90{
+* Helper classes
+  :PROPERTIES:
+  :header-args: :tangle css/readtheorg.css
+  :END:
+
+#+begin_src css
+.rotate-90{
     -webkit-transform:rotate(90deg);
     -moz-transform:rotate(90deg);
     -ms-transform:rotate(90deg);
@@ -648,64 +529,61 @@ table tr:nth-child(2n) td{
     -o-transform:rotate(270deg);
     transform:rotate(270deg);
 }
-</pre>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org7af808c" class="outline-2">
-<h2 id="org7af808c"><span class="section-number-2">8</span> Responsive utilities</h2>
-<div class="outline-text-2" id="text-8">
-<p>
+* Responsive utilities
+  :PROPERTIES:
+  :header-args: :tangle css/readtheorg.css
+  :END:
+
 Responsive for sidebar:
-</p>
 
-<div class="org-src-container">
-<pre class="src src-css">#toggle-sidebar,
+#+begin_src css
+#toggle-sidebar,
 #table-of-contents .close-sidebar {
     display: none;
 }
 
 @media screen and (max-width: 768px) {
     #table-of-contents {
-	display: none;
-	width: 60%;
+        display: none;
+        width: 60%;
     }
 
     #table-of-contents h2 a {
-	display: block;
+        display: block;
     }
 
     #table-of-contents:target {
-	display: block;
+        display: block;
     }
 
     #copyright, #postamble {
-	display: none;
+        display: none;
     }
 
     #toggle-sidebar {
-	background-color: #2980B9;
-	display: block;
-	margin-bottom: 1.6em;
-	padding: 0.6em;
-	text-align: center;
+        background-color: #2980B9;
+        display: block;
+        margin-bottom: 1.6em;
+        padding: 0.6em;
+        text-align: center;
     }
 
     #toggle-sidebar h2 {
-	background-color:#2980B9;
-	width:100%;
-	height:50px;
-	left:0;
-	top:0;
-	color: white;
-	font-size: 100%;
-	line-height: 50px;
-	position:fixed;
-	margin: 0;
-	padding: 0;
-	opacity:0.7;
-	z-index: 10;
+        background-color:#2980B9;
+        width:100%;
+        height:50px;
+        left:0;
+        top:0;
+        color: white;
+        font-size: 100%;
+        line-height: 50px;
+        position:fixed;
+        margin: 0;
+        padding: 0;
+        opacity:0.7;
+        z-index: 10;
     }
 
     #table-of-contents .close-sidebar {
@@ -715,16 +593,15 @@ Responsive for sidebar:
        padding: 10px;
     }
 }
-</pre>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org62b3c27" class="outline-2">
-<h2 id="org62b3c27"><span class="section-number-2">9</span> CSS</h2>
-<div class="outline-text-2" id="text-9">
-<div class="org-src-container">
-<pre class="src src-css">*{
+* CSS
+  :PROPERTIES:
+  :header-args: :tangle css/readtheorg.css
+  :END:
+
+#+begin_src css
+*{
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
@@ -732,11 +609,10 @@ Responsive for sidebar:
 
 figcaption,figure,footer,header,hgroup,nav{
     display:block}
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">ins{
+#+begin_src css
+ins{
     background:#ff9;
     color:#000;
     text-decoration:none}
@@ -746,11 +622,10 @@ mark{
     color:#000;
     font-style:italic;
     font-weight:bold}
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">small{
+#+begin_src css
+small{
     font-size:85%}
 
 sub,sup{
@@ -764,11 +639,10 @@ sup{
 
 sub{
     bottom:-0.25em}
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">img{
+#+begin_src css
+img{
     -ms-interpolation-mode:bicubic;
     vertical-align:middle;
     max-width:100%}
@@ -787,11 +661,10 @@ legend{
     margin-left:-7px;
     padding:0;
     white-space:normal}
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">.fa:before,#content .admonition-title:before,#content h1 .headerlink:before,#content h2 .headerlink:before,#content h3 .headerlink:before,#content h4 .headerlink:before,#content h5 .headerlink:before,#content h6 .headerlink:before,#content dl dt .headerlink:before,.icon:before,.wy-dropdown .caret:before,.wy-inline-validate.wy-inline-validate-success .wy-input-context:before,.wy-inline-validate.wy-inline-validate-danger .wy-input-context:before,.wy-inline-validate.wy-inline-validate-warning .wy-input-context:before,.wy-inline-validate.wy-inline-validate-info .wy-input-context:before,.wy-alert,#content .note,#content .attention,#content .caution,#content .danger,#content .error,#content .hint,#content .important,#content .tip,#content .warning,#content .seealso,#content .admonitiontodo,.btn,input[type="text"],input[type="password"],input[type="email"],input[type="url"],input[type="date"],input[type="month"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="week"],input[type="number"],input[type="search"],input[type="tel"],input[type="color"],select,textarea,#table-of-contents li.on a,#table-of-contents li.current&gt;a,.wy-side-nav-search&gt;a,.wy-side-nav-search .wy-dropdown&gt;a,.wy-nav-top a{
+#+begin_src css
+.fa:before,#content .admonition-title:before,#content h1 .headerlink:before,#content h2 .headerlink:before,#content h3 .headerlink:before,#content h4 .headerlink:before,#content h5 .headerlink:before,#content h6 .headerlink:before,#content dl dt .headerlink:before,.icon:before,.wy-dropdown .caret:before,.wy-inline-validate.wy-inline-validate-success .wy-input-context:before,.wy-inline-validate.wy-inline-validate-danger .wy-input-context:before,.wy-inline-validate.wy-inline-validate-warning .wy-input-context:before,.wy-inline-validate.wy-inline-validate-info .wy-input-context:before,.wy-alert,#content .note,#content .attention,#content .caution,#content .danger,#content .error,#content .hint,#content .important,#content .tip,#content .warning,#content .seealso,#content .admonitiontodo,.btn,input[type="text"],input[type="password"],input[type="email"],input[type="url"],input[type="date"],input[type="month"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="week"],input[type="number"],input[type="search"],input[type="tel"],input[type="color"],select,textarea,#table-of-contents li.on a,#table-of-contents li.current>a,.wy-side-nav-search>a,.wy-side-nav-search .wy-dropdown>a,.wy-nav-top a{
     -webkit-font-smoothing:antialiased}
 
 /*!
@@ -800,7 +673,7 @@ legend{
  */@font-face{
     font-family:'FontAwesome';
     src:url("../fonts/fontawesome-webfont.eot?v=4.1.0");
-    src:url("../fonts/fontawesome-webfont.eot?#iefix&amp;v=4.1.0") format("embedded-opentype"),url("../fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"),url("../fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"),url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
+    src:url("../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"),url("../fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"),url("../fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"),url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
     font-weight:normal;
     font-style:normal}
 
@@ -818,7 +691,7 @@ legend{
     margin-left:2.14286em;
     list-style-type:none}
 
-.fa-ul&gt;li{
+.fa-ul>li{
     position:relative}
 
 .fa-li{
@@ -910,11 +783,10 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
 #content .admonition-title.error,#content .admonition-title.danger{
     line-height: 1;
     background:#f29f97}
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">legend{
+#+begin_src css
+legend{
     display:block;
     width:100%;
     border:0;
@@ -929,11 +801,10 @@ label{
     margin:0 0 0.3125em 0;
     color:#333;
     font-size:90%}
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">a{
+#+begin_src css
+a{
     color:#2980B9;
     text-decoration:none;
     cursor:pointer}
@@ -948,11 +819,10 @@ a:hover{
 
 a:visited{
     color:#9B59B6}
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">.left{
+#+begin_src css
+.left{
     text-align:left}
 
 .center{
@@ -960,22 +830,20 @@ a:visited{
 
 .right{
     text-align:right}
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">hr{
+#+begin_src css
+hr{
     display:block;
     height:1px;
     border:0;
     border-top:1px solid #e1e4e5;
     margin:24px 0;
     padding:0}
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">#table-of-contents li{
+#+begin_src css
+#table-of-contents li{
     list-style:none;
     margin-left: 0px;
 }
@@ -1022,7 +890,7 @@ a:visited{
     /* border-top:solid 1px #c9c9c9; */
     padding-left:1.618em -4px}
 
-#table-of-contents li.on a:hover,#table-of-contents li.current&gt;a:hover{
+#table-of-contents li.on a:hover,#table-of-contents li.current>a:hover{
     background:#fcfcfc}
 
 #table-of-contents li ul li a{
@@ -1091,11 +959,10 @@ a:visited{
     color:#fcfcfc;
     font-size: 100%;
     margin-bottom:0.809em}
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">ul.nav li ul li {
+#+begin_src css
+ul.nav li ul li {
     display: none;
 }
 
@@ -1149,7 +1016,7 @@ ul.nav li ul li ul li ul li {
     /* display: none; /* as long as nav is on multiple levels of ul *\/ */
 }
 
-ul.nav li.active &gt; a {
+ul.nav li.active > a {
     border-bottom:solid 1px #c9c9c9 !important; /* XXX Restrict it to 2nd level */
     border-right:solid 1px #c9c9c9 !important;
 }
@@ -1161,23 +1028,21 @@ ul.nav li.active a {
     border-right:solid 0px white !important;
 }
 
-ul.nav &gt; li.active &gt; a {
+ul.nav > li.active > a {
     color: black !important;
 }
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">footer{
+#+begin_src css
+footer{
     color:#999}
 
 footer p{
     margin-bottom:12px}
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">#copyright, #postamble{
+#+begin_src css
+#copyright, #postamble{
     position:fixed;
     bottom:0;
     left:0;
@@ -1219,11 +1084,10 @@ footer p{
     cursor:pointer;
     color:#27AE60;
     *zoom:1}
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">#content img{
+#+begin_src css
+#content img{
     max-width:100%;
 }
 
@@ -1233,7 +1097,7 @@ footer p{
 #content div.figure.align-center{
     text-align:center}
 
-#content .section&gt;img,#content .section&gt;a&gt;img{
+#content .section>img,#content .section>a>img{
     margin-bottom:24px}
 
 .verse{
@@ -1300,11 +1164,10 @@ footer p{
 #content .footnote-reference,#content .citation-reference{
     vertical-align:super;
     font-size:90%}
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">span[id*='MathJax-Span']{
+#+begin_src css
+span[id*='MathJax-Span']{
     color:#404040}
 
 .math{
@@ -1344,11 +1207,10 @@ h2.footnotes{
     line-height: 1.25em;
     /* display: inline; */
 }
-</pre>
-</div>
+#+end_src
 
-<div class="org-src-container">
-<pre class="src src-css">.todo{
+#+begin_src css
+.todo{
     background-color: #f29f97;
     padding: 0px 4px;
     color: #fff;
@@ -1394,17 +1256,14 @@ h2.footnotes{
 .nav .timestamp {
     color: inherit;
 }
-</pre>
-</div>
+#+end_src
 
-<p>
 See
-<a href="http://stackoverflow.com/questions/10535432/tmux-man-page-search-highlighting">http://stackoverflow.com/questions/10535432/tmux-man-page-search-highlighting</a>
+http://stackoverflow.com/questions/10535432/tmux-man-page-search-highlighting
 for nice yellow or orange boxes.
-</p>
 
-<div class="org-src-container">
-<pre class="src src-css">.inlinetask {
+#+begin_src css
+.inlinetask {
     background: #FFF9E3;  /* url(dialog-todo.png) no-repeat 10px 8px; */
     border: 3px solid #FFEB8E;
     /* border-right-style: none; */
@@ -1413,16 +1272,15 @@ for nice yellow or orange boxes.
     padding: 9px 12px;
     margin-bottom: 24px;
     font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif}
-</pre>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-orgb643d0e" class="outline-2">
-<h2 id="orgb643d0e"><span class="section-number-2">10</span> Htmlize</h2>
-<div class="outline-text-2" id="text-10">
-<div class="org-src-container">
-<pre class="src src-css">.org-bold { /* bold */ font-weight: bold; }
+* Htmlize
+  :PROPERTIES:
+  :header-args: :tangle css/htmlize.css
+  :END:
+
+#+begin_src css
+.org-bold { /* bold */ font-weight: bold; }
 .org-bold-italic { /* bold-italic */ font-weight: bold; font-style: italic; }
 .org-buffer-menu-buffer { /* buffer-menu-buffer */ font-weight: bold; }
 .org-builtin { /* font-lock-builtin-face */ color: #7a378b; }
@@ -1567,26 +1425,25 @@ for nice yellow or orange boxes.
 .org-widget-field { /* widget-field */ background-color: #d9d9d9; }
 .org-widget-inactive { /* widget-inactive */ color: #7f7f7f; }
 .org-widget-single-line-field { /* widget-single-line-field */ background-color: #d9d9d9; }
-</pre>
-</div>
-</div>
-</div>
+#+end_src
 
-<div id="outline-container-org4ab25eb" class="outline-2">
-<h2 id="org4ab25eb"><span class="section-number-2">11</span> JS</h2>
-<div class="outline-text-2" id="text-11">
-<div class="org-src-container">
-<pre class="src src-js">$(function() {
-    $('.note').before("&lt;p class='admonition-title note'&gt;Note&lt;/p&gt;");
-    $('.seealso').before("&lt;p class='admonition-title seealso'&gt;See also&lt;/p&gt;");
-    $('.warning').before("&lt;p class='admonition-title warning'&gt;Warning&lt;/p&gt;");
-    $('.caution').before("&lt;p class='admonition-title caution'&gt;Caution&lt;/p&gt;");
-    $('.attention').before("&lt;p class='admonition-title attention'&gt;Attention&lt;/p&gt;");
-    $('.tip').before("&lt;p class='admonition-title tip'&gt;Tip&lt;/p&gt;");
-    $('.important').before("&lt;p class='admonition-title important'&gt;Important&lt;/p&gt;");
-    $('.hint').before("&lt;p class='admonition-title hint'&gt;Hint&lt;/p&gt;");
-    $('.error').before("&lt;p class='admonition-title error'&gt;Error&lt;/p&gt;");
-    $('.danger').before("&lt;p class='admonition-title danger'&gt;Danger&lt;/p&gt;");
+* JS
+  :PROPERTIES:
+  :header-args: :tangle js/readtheorg.js
+  :END:
+
+#+begin_src js
+$(function() {
+    $('.note').before("<p class='admonition-title note'>Note</p>");
+    $('.seealso').before("<p class='admonition-title seealso'>See also</p>");
+    $('.warning').before("<p class='admonition-title warning'>Warning</p>");
+    $('.caution').before("<p class='admonition-title caution'>Caution</p>");
+    $('.attention').before("<p class='admonition-title attention'>Attention</p>");
+    $('.tip').before("<p class='admonition-title tip'>Tip</p>");
+    $('.important').before("<p class='admonition-title important'>Important</p>");
+    $('.hint').before("<p class='admonition-title hint'>Hint</p>");
+    $('.error').before("<p class='admonition-title error'>Error</p>");
+    $('.danger').before("<p class='admonition-title danger'>Danger</p>");
 });
 
 $( document ).ready(function() {
@@ -1605,13 +1462,13 @@ $( document ).ready(function() {
       $("[data-toggle='rst-versions']").toggleClass("shift-up");
     });
     // Make tables responsive
-    $("table.docutils:not(.field-list)").wrap("&lt;div class='wy-table-responsive'&gt;&lt;/div&gt;");
+    $("table.docutils:not(.field-list)").wrap("<div class='wy-table-responsive'></div>");
 });
 
 $( document ).ready(function() {
     $('#text-table-of-contents ul').first().addClass('nav');
-					// ScrollSpy also requires that we use
-					// a Bootstrap nav component.
+                                        // ScrollSpy also requires that we use
+                                        // a Bootstrap nav component.
     $('body').scrollspy({target: '#text-table-of-contents'});
 
     // DON'T add sticky table headers (Fix issue #69?)
@@ -1623,51 +1480,42 @@ $( document ).ready(function() {
     $tableOfContents.css({paddingBottom: $postamble.outerHeight()});
 
     // add TOC button
-    var toggleSidebar = $('&lt;div id="toggle-sidebar"&gt;&lt;a href="#table-of-contents"&gt;&lt;h2&gt;Table of Contents&lt;/h2&gt;&lt;/a&gt;&lt;/div&gt;');
+    var toggleSidebar = $('<div id="toggle-sidebar"><a href="#table-of-contents"><h2>Table of Contents</h2></a></div>');
     $('#content').prepend(toggleSidebar);
 
     // add close button when sidebar showed in mobile screen
-    var closeBtn = $('&lt;a class="close-sidebar" href="#"&gt;Close&lt;/a&gt;');
+    var closeBtn = $('<a class="close-sidebar" href="#">Close</a>');
     var tocTitle = $('#table-of-contents').find('h2');
     tocTitle.append(closeBtn);
 });
 
 window.SphinxRtdTheme = (function (jquery) {
     var stickyNav = (function () {
-	var navBar,
-	    win,
-	    stickyNavCssClass = 'stickynav',
-	    applyStickNav = function () {
-		if (navBar.height() &lt;= win.height()) {
-		    navBar.addClass(stickyNavCssClass);
-		} else {
-		    navBar.removeClass(stickyNavCssClass);
-		}
-	    },
-	    enable = function () {
-		applyStickNav();
-		win.on('resize', applyStickNav);
-	    },
-	    init = function () {
-		navBar = jquery('nav.wy-nav-side:first');
-		win    = jquery(window);
-	    };
-	jquery(init);
-	return {
-	    enable : enable
-	};
+        var navBar,
+            win,
+            stickyNavCssClass = 'stickynav',
+            applyStickNav = function () {
+                if (navBar.height() <= win.height()) {
+                    navBar.addClass(stickyNavCssClass);
+                } else {
+                    navBar.removeClass(stickyNavCssClass);
+                }
+            },
+            enable = function () {
+                applyStickNav();
+                win.on('resize', applyStickNav);
+            },
+            init = function () {
+                navBar = jquery('nav.wy-nav-side:first');
+                win    = jquery(window);
+            };
+        jquery(init);
+        return {
+            enable : enable
+        };
     }());
     return {
-	StickyNav : stickyNav
+        StickyNav : stickyNav
     };
 }($));
-</pre>
-</div>
-</div>
-</div>
-</div>
-<div id="postamble" class="status">
-Created by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.2 (<a href="https://orgmode.org">Org</a> mode 9.4.4).  Last modified: 2021-11-19 Fri 15:11.  <a href="https:github.com/deopurkar.github.io">Source</a>
-</div>
-</body>
-</html>
+#+end_src
