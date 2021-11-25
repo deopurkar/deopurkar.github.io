@@ -1,7 +1,0 @@
-#+title: 404. Page not found.
-
-Perhaps visit the [[file:~/website/content][home page]] and go from there?
-
-
-
-
