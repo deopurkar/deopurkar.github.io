@@ -117,6 +117,17 @@ We also create a shell script to run the above lisp file.
   emacs -Q --script build.el
 #+end_src
 
+and a shell script to build and commit.
+#+begin_src elisp :tangle "build-and-commit.sh" :shebang "#!/bin/bash"
+  cd /home/anand/website
+  git checkout main
+  git pull
+  emacs -Q --script build.el
+  git add .
+  git commit -a -m "Auto-build"
+  git push
+#+end_src
+
 * COMMENT Building on Github
 /This is working, but missing some fringe functionality./
 Once we have set up the tools to build the website locally, we can now use them to build the site automatically on Github.
