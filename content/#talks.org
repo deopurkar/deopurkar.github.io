@@ -1,5 +1,17 @@
 #+filetags: :talk:
 
+*  The geometry of Fermat-like equations
+:properties:
+:meet:     Trimester program on triangle groups, Belyi uniformization, and modularity
+:institute: Bhaskaracharya Pratishthana
+:place:    Pune, India
+:year:     2022
+:type:     Expository talk
+:link:     [[file:talks/Fermat2022.pdf][notes]]
+:comment: expository
+:end:
+
+
 *  Algebraic curves and Belyi's theorem
 :properties:
 :meet:     Trimester program on triangle groups, Belyi uniformization, and modularity

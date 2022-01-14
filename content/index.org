@@ -254,7 +254,6 @@ Here are some additional talks:
 :END:
 This semester (2021 Semester 2), I am teaching [[file:teaching/ag2021][algebraic geometry]].
 
-
 ** Teaching Summer and 2022 S1
 :PROPERTIES:
 :from: <2021-12-01 Wed> 
@@ -268,3 +267,10 @@ I am currently not teaching anything.
 :to: <2021-12-18 Sat>
 :END:
 I will be at the workshop /Quantum curves, integrability, and cluster algebras/ at MATRIX in Creswick, Victoria from 12--18 Dec.
+
+** ICERM 2022
+:PROPERTIES:
+:from: <2022-01-01 Wed> 
+:to: <2022-05-21 Sat>
+:END:
+I will be in ICERM, Providence, RI from February 2022 to May 2022 for the semester program [[https://icerm.brown.edu/programs/sp-s22/][Braids]].
