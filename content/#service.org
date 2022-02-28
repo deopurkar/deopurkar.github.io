@@ -11,6 +11,13 @@
 :year: 2021--
 :institute: Mathematical Sciences Institute, Australian National University
 :end:
+
+*  Served on the award committee for the /BH Neumann prize/ for the best student talk
+:properties:
+  :year: 2021
+  :institute: AustMS meeting
+:end:
+
 * Served on the thesis committee of Abhishek Bharadwaj
 :properties:
 :year: 2020

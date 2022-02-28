@@ -181,7 +181,8 @@ Here are some additional talks:
            (org-map-entries
             (lambda ()
               (let ((ref (org-entry-get nil "ref"))
-                    (link (org-entry-get nil "link")))
+                    (link (org-entry-get nil "link"))
+                    (year (org-entry-get nil "year")))
                 (if (and (not ref)
                          link)
                     (let ((title (org-entry-get nil "ITEM"))

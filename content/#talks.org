@@ -1,5 +1,15 @@
 #+filetags: :talk:
 
+*  The geometry and combinatorics of Harder--Narasimhan filtrations
+:properties:
+:meet:     Braids in representation theory and algebraic combinatorics
+:institute: Institute for Computational and Experimental Research in Mathematics
+:place:    Providence, Rhode Island
+:year:     2022
+:link:     [[file:talks/ICERM2022.pdf][slides]]
+:type:     Conference talk
+:end:
+
 *  The geometry of Fermat-like equations
 :properties:
 :meet:     Trimester program on triangle groups, Belyi uniformization, and modularity
@@ -42,7 +52,7 @@
 :year:     2021
 :type:     Workshop talk
 :link:     [[file:talks/Bonn2021.pdf][slides]]
-:ref:      [[file:papers.org::*Spherical objects and stability conditions on CY2 quiver categories][Spherical objects and stability conditions on CY2 quiver categories]]
+:ref: [[file:#papers.org::*A Thurston compactification of the space of stability conditions][A Thurston compactification of the space of stability conditions]]
 :end:
 
 *  A Thurston compactification of the space of stability conditions
