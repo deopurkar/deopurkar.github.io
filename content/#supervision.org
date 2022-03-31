@@ -4,13 +4,6 @@
 :level:    Honours
 :institute: Mathematical Sciences Institute, Australian National University
 :end:
-*  Donghoon Shin
-:properties:
-:year:     2021
-:level:    Honours
-:institute: Mathematical Sciences Institute, Australian National University
-:with:     Danesh Jogia (Australian Signals Directorate)
-:end:
 *  Ben Leedom
 :properties:
 :year:     2020

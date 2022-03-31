@@ -1,4 +1,23 @@
 #+filetags: :talk:
+* How to count using equivariant cohomology?
+:properties:
+:ref:  [[file:#papers.org::*A universal formula for counting cubic surfaces][A universal formula for counting cubic surfaces]]
+:type:     Seminar talk
+:institute: Harvard University
+:place:    Cambridge, Massachusetts
+:year:     2022
+:link: [[file:talks/Harvard2022.pdf][notes]]
+:end:
+
+* Apparent boundaries of projective varieties
+:PROPERTIES:
+:ref:      [[file:papers.org::*Ramification divisors of general projections][Ramification divisors of general projections]]
+:PROPERTIES:
+:type:     Seminar talk
+:institute: Brown University
+:place:    Providence, Rhode Island
+:year:     2022
+:END:
 
 *  The geometry and combinatorics of Harder--Narasimhan filtrations
 :properties:

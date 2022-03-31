@@ -1,3 +1,12 @@
+* Vector bundles and finite covers
+:PROPERTIES:
+:with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
+:journal:  Forum of Mathematics, Sigma (accepted)
+:link:     [[file:papers/ebundle.pdf][pdf]], [[https://arxiv.org/abs/1608.01711/][arXiv]]
+:year:     2022
+:END:
+Motivated by the problem of finding algebraic constructions of finite coverings in commutative algebra, the Steinitz realization problem in number theory, and the study of Hurwitz spaces in algebraic geometry, we investigate the vector bundles underlying the structure sheaf of a finite flat branched covering. We prove that, up to a twist, every vector bundle on a smooth projective curve arises from the direct image of the structure sheaf of a smooth, connected branched cover.
+
 * A universal formula for counting cubic surfaces                        :pp:
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]]
@@ -77,15 +86,6 @@ We describe a sequence of effective divisors on the Hurwitz space H(d,g) for d d
 :year:     2018
 :END:
 We prove the analogue for ribbons of Green\'s canonical syzygy conjecture, formulated by Bayer and Eisenbud. Our proof uses the results of Voisin and Hirschowitz-Ramanan on Green\'s conjecture for general smooth curves.
-
-* Vector bundles and finite covers                                       :pp:
-:PROPERTIES:
-:with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
-:journal:  Pre-print, arXiv:1608.01711
-:link:     [[file:papers/ebundle.pdf][pdf]], [[https://arxiv.org/abs/1608.01711/][arXiv]]
-:year:     2016
-:END:
-Motivated by the problem of finding algebraic constructions of finite coverings in commutative algebra, the Steinitz realization problem in number theory, and the study of Hurwitz spaces in algebraic geometry, we investigate the vector bundles underlying the structure sheaf of a finite flat branched covering. We prove that, up to a twist, every vector bundle on a smooth projective curve arises from the direct image of the structure sheaf of a smooth, connected branched cover.
 
 * Toward GIT stability of syzygies of canonical curves
 :PROPERTIES:
