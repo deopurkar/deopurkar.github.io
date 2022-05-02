@@ -1,4 +1,16 @@
 #+filetags: :talk:
+
+*  Braids and monodromy in algebraic geometry
+:properties:
+:meet:     Braids in Symplectic and Algebraic Geometry
+:institute: ICERM, Brown University
+:place:    Providence, Rhode Island
+:year:     2022
+:type:     Expository talk
+:comment: preparatory talk for the conference
+:end:
+
+
 * How to count using equivariant cohomology?
 :properties:
 :ref:  [[file:#papers.org::*A universal formula for counting cubic surfaces][A universal formula for counting cubic surfaces]]

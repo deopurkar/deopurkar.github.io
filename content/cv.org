@@ -120,6 +120,8 @@
 
 #+RESULTS:
 :results:
+- 2022 :: Forum of Mathematics, Sigma (accepted).\\
+          /Vector bundles and finite covers/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
 - 2021 :: Transactions of the Americal Mathematical Society 374, No. 1, 589-641 (2021).\\
           /Stable log surfaces, admissible covers, and canonical curves of genus 4/, with Changho Han.
 - 2020 :: Documenta Mathematica 25, 1917--1952 (2020).\\
@@ -159,8 +161,6 @@
           /A Thurston compactification of the space of stability conditions/, with [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]].
 - 2019 :: Pre-print, arXiv:1906.08196.\\
           /Anticanonical tropical cubic del Pezzos contain exactly 27 lines/, with [[https://people.math.osu.edu/cueto.5/][María Angélica Cueto]].
-- 2016 :: Pre-print, arXiv:1608.01711.\\
-          /Vector bundles and finite covers/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
 - 2013 :: Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]].\\
           /Class of the Hodge eigenbundle using orbifold Riemann-Roch/.
 :end:
@@ -210,7 +210,6 @@
 #+RESULTS:
 :results:
 - 2021 :: Zongpu Zhang, Honours.
-- --- :: Donghoon Shin, Honours, with Danesh Jogia (Australian Signals Directorate).
 - 2020 :: Ben Leedom, Honours.
 - 2019 :: Diclehan Erdal, Masters.
 - --- :: Adwait Sengar, Masters, with Uri Onn.
@@ -254,8 +253,10 @@
 
 #+RESULTS:
 :results:
-- nil :: . /The geometry and combinatorics of Harder--Narasimhan filtrations/.
-- 2022 :: Bhaskaracharya Pratishthana, Pune, India, Trimester program on triangle groups, Belyi uniformization, and modularity. /The geometry of Fermat-like equations/ (expository).
+- 2022 :: Harvard University, Cambridge, Massachusetts. /How to count using equivariant cohomology?/.
+- --- :: Brown University, Providence, Rhode Island. /Apparent boundaries of projective varieties/.
+- --- :: Institute for Computational and Experimental Research in Mathematics, Providence, Rhode Island, Braids in representation theory and algebraic combinatorics. /The geometry and combinatorics of Harder--Narasimhan filtrations/.
+- --- :: Bhaskaracharya Pratishthana, Pune, India, Trimester program on triangle groups, Belyi uniformization, and modularity. /The geometry of Fermat-like equations/ (expository).
 - 2021 :: Bhaskaracharya Pratishthana, Pune, India, Trimester program on triangle groups, Belyi uniformization, and modularity. /Algebraic curves and Belyi's theorem/ (expository).
 - --- :: Canberra, Australia, ANU Mathematics Extension Program. /Error correcting codes/ (expository).
 - --- :: Max Planck institute für Mathematics, Bonn, Germany, Workshop on compactifications of stability manifolds (Online). /A Thurston compactification of the space of stability conditions/.
