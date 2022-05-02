@@ -1,12 +1,4 @@
-
 * Refereed for Journal of the European Mathematical Society, Journal of Differential Geometry, Journal of Algebraic Geometry, Annales Scientifiques de l'École Normale Supérieure, Mathematische Annalen, Algebra and Number Theory, Journal für die reine und angewandte Mathematik, manuscripta mathematica, Advances in Geometry, Mathematical Research Letters, European Journal of Mathematics
-
-*  Co-organised the workshop /Braids in Symplectic and Algebraic Geometry/
-:properties:
-  :year: 2022
-  :institute: Institute for Computational and Experimental Research in Mathematics (ICERM), Brown University
-  :with: Inanc Baykur, Benson Farb, Anthony Licata, and Ailsa Keating.
-:end:
 
 * Reviewed for Mathematical Reviews
 :properties:
@@ -17,6 +9,13 @@
 :properties:
 :year: 2021--
 :institute: Mathematical Sciences Institute, Australian National University
+:end:
+
+*  Co-organised the workshop /Braids in Symplectic and Algebraic Geometry/
+:properties:
+  :year: 2022
+  :institute: Institute for Computational and Experimental Research in Mathematics (ICERM), Brown University
+  :with: Inanc Baykur, Benson Farb, Anthony Licata, and Ailsa Keating.
 :end:
 
 *  Served on the award committee for the /BH Neumann prize/ for the best student talk

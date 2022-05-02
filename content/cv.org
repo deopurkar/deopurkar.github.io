@@ -351,6 +351,7 @@
 - * :: Refereed for Journal of the European Mathematical Society, Journal of Differential Geometry, Journal of Algebraic Geometry, Annales Scientifiques de l'École Normale Supérieure, Mathematische Annalen, Algebra and Number Theory, Journal für die reine und angewandte Mathematik, manuscripta mathematica, Advances in Geometry, Mathematical Research Letters, European Journal of Mathematics.
 - * :: Reviewed for Mathematical Reviews, American Mathematical Society.
 - 2021-- :: Convener for the Masters program, Mathematical Sciences Institute, Australian National University.
+- 2022 :: Co-organised the workshop /Braids in Symplectic and Algebraic Geometry/ Inanc Baykur, Benson Farb, Anthony Licata, and Ailsa Keating., Institute for Computational and Experimental Research in Mathematics (ICERM), Brown University.
 - 2021 :: Served on the award committee for the /BH Neumann prize/ for the best student talk, AustMS meeting.
 - 2020 :: Served on the thesis committee of Abhishek Bharadwaj, Mathematical Sciences Institute, Australian National University.
 - 2019 :: Served on the selection committee for the /Future research talent fellowship/, Mathematical Sciences Institute, Australian National University.
