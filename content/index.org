@@ -5,7 +5,7 @@
 
 #+begin_intro
 #+attr_html: :id mypicture :alt Anand Deopurkar
-[[file:anandrd_banff.jpg]]
+[[file:anandrd_hnl.jpg]]
 
 #+begin_nil
 [[http://maths.anu.edu.au/][Mathematical Sciences Institute]]\\
@@ -37,9 +37,6 @@ I am interested in classical algebraic geometry, enumerative geometry, deformati
 
 #+RESULTS:
 :results:
-This semester (2021 Semester 2), I am teaching [[file:teaching/ag2021][algebraic geometry]].
-
-I will be at the workshop /Quantum curves, integrability, and cluster algebras/ at MATRIX in Creswick, Victoria from 12--18 Dec.
 :end:
 
 * Papers/pre-prints
@@ -96,17 +93,20 @@ I will be at the workshop /Quantum curves, integrability, and cluster algebras/ 
 
 #+RESULTS:
 :results:
+- /Vector bundles and finite covers/.\\
+  Forum of Mathematics, Sigma (accepted), with [[https://sites.google.com/view/anand-patel][Anand Patel]] ([[file:papers/ebundle.pdf][pdf]], [[https://arxiv.org/abs/1608.01711/][arXiv]]).\\
+  Talks: Adelaide ([[file:talks/AustMS2018.pdf][slides]]), Jeju Island ([[file:talks/Jeju2016.pdf][notes]]).
 - /A universal formula for counting cubic surfaces/.\\
-  Pre-print, arxiv:2109.12672, with [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]] ([[https://arxiv.org/abs/2109.12672][arxiv]]).
+  Pre-print, arxiv:2109.12672, with [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]] ([[https://arxiv.org/abs/2109.12672][arxiv]]).\\
+  Talk: Cambridge ([[file:talks/Harvard2022.pdf][notes]]).
 - /Spherical objects and stability conditions on CY2 quiver categories/.\\
-  Pre-print, arXiv:2108.09155, with [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]] ([[https://arxiv.org/abs/2108.09155][arxiv]]).\\
-  Talk: Bonn ([[file:talks/Bonn2021.pdf][slides]]).
+  Pre-print, arXiv:2108.09155, with [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]] ([[https://arxiv.org/abs/2108.09155][arxiv]]).
 - /Stable log surfaces, admissible covers, and canonical curves of genus 4/.\\
   Transactions of the Americal Mathematical Society 374, No. 1, 589-641 (2021), with Changho Han ([[file:papers/TrigonalKSBA.pdf][pdf]], [[https://arxiv.org/abs/1807.08413/][arxiv]]).\\
   Talk: Sydney ([[file:talks/K3Sydney2019.pdf][notes]]).
 - /A Thurston compactification of the space of stability conditions/.\\
   Pre-print, arXiv:2011.07908, with [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]] ([[https://arxiv.org/abs/2011.07908][arxiv]]).\\
-  Talks: Mumbai ([[file:talks/tifr2021.pdf][slides]]), Amidale ([[file:talks/AustMS2020.pdf][slides]]), Sydney ([[file:talks/StabSydney2019.pdf][notes]]).
+  Talks: Bonn ([[file:talks/Bonn2021.pdf][slides]]), Mumbai ([[file:talks/tifr2021.pdf][slides]]), Amidale ([[file:talks/AustMS2020.pdf][slides]]), Sydney ([[file:talks/StabSydney2019.pdf][notes]]).
 - /Ramification divisors of general projections/.\\
   Documenta Mathematica 25, 1917--1952 (2020), with [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]] ([[file:papers/PR.pdf][pdf]], [[http://arxiv.org/abs/1901.01513/][arxiv]]).\\
   Talks: Mexico ([[file:talks/PR2020-Oaxaca.pdf][slides]]), San Diego ([[file:talks/PR2020-UCSD.pdf][slides]]).
@@ -120,9 +120,6 @@ I will be at the workshop /Quantum curves, integrability, and cluster algebras/ 
 - /The canonical syzygy conjecture for ribbons/.\\
   Mathematische Zeitschrift 288, No. 3-4, 1157--1164 (2018) ([[file:papers/RibbonGreen.pdf][pdf]], [[http://arxiv.org/abs/1510.07755/][arxiv]]).\\
   Talk: Melbourne ([[file:talks/Monash2018.pdf][notes]]).
-- /Vector bundles and finite covers/.\\
-  Pre-print, arXiv:1608.01711, with [[https://sites.google.com/view/anand-patel][Anand Patel]] ([[file:papers/ebundle.pdf][pdf]], [[https://arxiv.org/abs/1608.01711/][arXiv]]).\\
-  Talks: Adelaide ([[file:talks/AustMS2018.pdf][slides]]), Jeju Island ([[file:talks/Jeju2016.pdf][notes]]).
 - /Toward GIT stability of syzygies of canonical curves/.\\
   Algebraic Geometry 3, No. 1, 1--22 (2016), with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]] ([[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://www.algebraicgeometry.nl/2016-1/2016-1-001.pdf][journal]]).\\
   Talks: Daejeon ([[file:talks/SIAM2015.pdf][slides]]), Pohang ([[file:talks/syz2013.pdf][notes]]).
