@@ -2,7 +2,7 @@
 (require 'ox-publish)
 (require 'subr-x)
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
-auto-mode-alist
+(print auto-mode-alist)
 
 
 (setq org-publish-project-alist

@@ -28,7 +28,7 @@ Being an algebraic geometer means that I fundamentally study solution spaces of 
 I am interested in classical algebraic geometry, enumerative geometry, deformation theory, algebraic stacks, derived categories, among other things.
 #+end_container
 
-#+begin_src elisp :exports results :results value raw drawer
+#+begin_src emacs-lisp :exports results :results value raw drawer
   (defun pretty-print ()
     (org-agenda-get-some-entry-text (point-marker) most-positive-fixnum)
     )
@@ -43,7 +43,7 @@ I am interested in classical algebraic geometry, enumerative geometry, deformati
 :PROPERTIES:
 :html_headline_class: collapsible
 :END:
-#+begin_src elisp :exports results :results value raw drawer :lexical t
+#+begin_src emacs-lisp :exports results :results value raw drawer :lexical t
   ;; Gather back-references from talks
   (defun collect-back-ref (title file)
     (remove 'nil
@@ -148,7 +148,7 @@ I am interested in classical algebraic geometry, enumerative geometry, deformati
 :html_headline_class: collapsible
 :END:
 Notes and other materials from some of my courses:
-#+begin_src elisp :exports results :results value raw drawer
+#+begin_src emacs-lisp :exports results :results value raw drawer
   (defun pretty-print ()
       (let ((title (org-entry-get nil "ITEM"))
             (year (org-entry-get nil "year")))
@@ -172,7 +172,7 @@ Notes and other materials from some of my courses:
 :END:
 Notes or slides for many of my talks are linked in the section on [[*Papers/pre-prints][papers/pre-prints]].
 Here are some additional talks:
-#+begin_src elisp :exports results :results value raw drawer
+#+begin_src emacs-lisp :exports results :results value raw drawer
   (string-join 
    (remove 'nil 
            (org-map-entries
