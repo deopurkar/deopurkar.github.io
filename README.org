@@ -16,7 +16,7 @@ We begin by creating an elisp file to build the webpage, as explained in [[https
 I will tangle the following snippets of elisp code to a file called ~build.el~.
 
 I will first initialise some libraries and use [[https://orgmode.org/manual/Publishing.html][ox-publish]] to publish the website.
-Right now, the building happens locally, but eventually, the it should happen on github.
+Right now, the building happens locally, but eventually, it should happen on github.
 
 #+begin_src emacs-lisp :tangle "build.el"
   (message (emacs-version))
