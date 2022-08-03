@@ -29,24 +29,6 @@
 :PROPERTIES:
 :html_headline_class: collapsible
 :END:
-#+begin_src elisp :exports results :results value raw drawer
-  ;; Our pretty-printing function
-  (defun pretty-print ()
-    (let ((degree (org-entry-get nil "ITEM"))
-          (institute (org-entry-get nil "institute"))
-          (place (org-entry-get nil "place"))
-          (year (org-entry-get nil "year"))
-          (comment (org-entry-get nil "comment")))
-      (format "- %s :: %s\\\\\n %s, %s.\\\\\n       %s."
-              year
-              degree
-              institute
-              place
-              comment
-              "")))
-  (string-join (org-map-entries 'pretty-print nil '("#education.org")) "\n")
-#+end_src
-
 #+RESULTS:
 :results:
 - 2012 :: Ph.D.\\

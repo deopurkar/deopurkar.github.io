@@ -245,6 +245,13 @@ Here are some additional talks:
 :PROPERTIES:
 :CUSTOM_ID: moar
 :END:
+** Teaching Summer and 2022 S2
+:PROPERTIES:
+:from: <2022-07-03 Sun>
+:to: <2022-12-31 Sat>
+:END:
+This semester (2022 Semester 2), I am teaching Algebra 1 and a course about mathematical communication called "The language of mathematics".
+
 ** Teaching 2021 S2
 :PROPERTIES:
 :from: [2020-10-27 Tue] 

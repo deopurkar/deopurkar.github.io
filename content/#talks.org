@@ -1,4 +1,21 @@
 #+filetags: :talk:
+* How to count using equivariant cohomology?
+:properties:
+:ref:  [[file:#papers.org::*A universal formula for counting cubic surfaces][A universal formula for counting cubic surfaces]]
+:type:     Seminar talk
+:institute: Australian National University
+:place:    Canberra, Australia
+:year:     2022
+:end:
+
+*  Combinatorics and dynamics of Harder-Narasimhan filtrations
+:properties:
+:institute: Tsinghua University
+:place:    Beijing, China
+:year:     2022
+:type:     Seminar talk
+:end:
+
 
 *  Braids and monodromy in algebraic geometry
 :properties:
