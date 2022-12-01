@@ -1,3 +1,15 @@
+* Algebra 1
+:properties:
+:institute: Australian National University
+:year:     2022
+:end:
+
+* The language of mathematics
+:properties:
+:institute: Australian National University
+:year:     2022
+:end:
+
 * [[file:teaching/ag2021/][Algebraic Geometry (Algebra 3)]]                                         :hl:
 :properties:
 :institute: Australian National University

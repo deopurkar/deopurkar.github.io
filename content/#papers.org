@@ -1,3 +1,21 @@
+* Orbits of linear series on the projective line
+:PROPERTIES:
+:with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
+:journal:  Pre-print, arXiv:2211.16603
+:link:     [[file:papers/erc.pdf][pdf]], [[file:~/Documents/Masters/masters.org::*2022 S2][arxiv]]
+:year:     2022
+:END:
+  We compute the equivariant fundamental class of the orbit closure of a linear series on the projective line.  We also describe the boundary of the orbit closure and how the orbits specialise in one parameter families.
+
+* Spherical objects and stability conditions on CY2 quiver categories    
+:PROPERTIES:
+:with:     [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
+:journal:  Mathematische Zeitschrift (accepted)
+:link:     [[https://arxiv.org/abs/2108.09155][arxiv]]
+:year:     2022
+:END:
+Consider a 2-Calabi--Yau triangulated category with a Bridgeland stability condition. We devise an effective procedure to reduce the phase spread of an object by applying spherical twists. Using this, we give new proofs of the following theorems for 2-Calabi--Yau categories associated to ADE quivers: (1) all spherical objects lie in a single orbit of the braid group, and (2) the space of Bridgeland stability conditions is connected.
+
 * Vector bundles and finite covers
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
@@ -15,15 +33,6 @@ Motivated by the problem of finding algebraic constructions of finite coverings 
 :year:     2021
 :END:
 Using equivariant geometry, we find a universal formula that computes the number of times a general cubic surface arises in a family. As applications, we show that the PGL(4) orbit closure of a generic cubic surface has degree 96120, and that a general cubic surface arises 42120 times as a hyperplane section of a general cubic 3-fold.
-
-* Spherical objects and stability conditions on CY2 quiver categories    :pp:
-:PROPERTIES:
-:with:     [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
-:journal:  Pre-print, arXiv:2108.09155
-:link:     [[https://arxiv.org/abs/2108.09155][arxiv]]
-:year:     2021
-:END:
-Consider a 2-Calabi--Yau triangulated category with a Bridgeland stability condition. We devise an effective procedure to reduce the phase spread of an object by applying spherical twists. Using this, we give new proofs of the following theorems for 2-Calabi--Yau categories associated to ADE quivers: (1) all spherical objects lie in a single orbit of the braid group, and (2) the space of Bridgeland stability conditions is connected.
 
 * Stable log surfaces, admissible covers, and canonical curves of genus 4
 :PROPERTIES:

@@ -1,4 +1,21 @@
 #+filetags: :talk:
+* Carpentry, geometry, and category theory
+:properties:
+:type:    Colloquium
+:institute: Chennai Mathematical Institute
+:place:    Chennai, India
+:year:     2022
+:end:
+
+*  Error correcting codes
+:properties:
+:meet:     ANU Mathematics Extension Program
+:place:    Canberra, Australia
+:year:     2022
+:type:     Expository talk
+:comment:  expository
+:end:
+
 * How to count using equivariant cohomology?
 :properties:
 :ref:  [[file:#papers.org::*A universal formula for counting cubic surfaces][A universal formula for counting cubic surfaces]]
@@ -10,10 +27,10 @@
 
 *  Combinatorics and dynamics of Harder-Narasimhan filtrations
 :properties:
-:institute: Tsinghua University
+:institute: Tsinghua University (Online)
 :place:    Beijing, China
 :year:     2022
-:type:     Seminar talk
+:type:     Seminar talk 
 :end:
 
 

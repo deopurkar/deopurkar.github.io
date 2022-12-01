@@ -1,3 +1,9 @@
+* Oliver Bradley
+:properties:
+:year:     2022
+:level:    Honours
+:institute: Mathematical Sciences Institute, Australian National University
+:end:
 *  Zongpu Zhang
 :properties:
 :year:     2021
