@@ -1,4 +1,4 @@
-* Orbits of linear series on the projective line
+* Orbits of linear series on the projective line :pp:
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
 :journal:  Pre-print, arXiv:2211.16603

@@ -16,7 +16,7 @@
 :comment:  expository
 :end:
 
-* How to count using equivariant cohomology?
+* How to count using equivariant cohomology
 :properties:
 :ref:  [[file:#papers.org::*A universal formula for counting cubic surfaces][A universal formula for counting cubic surfaces]]
 :type:     Seminar talk
@@ -45,7 +45,7 @@
 :end:
 
 
-* How to count using equivariant cohomology?
+* How to count using equivariant cohomology
 :properties:
 :ref:  [[file:#papers.org::*A universal formula for counting cubic surfaces][A universal formula for counting cubic surfaces]]
 :type:     Seminar talk
