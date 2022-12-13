@@ -28,15 +28,11 @@ Being an algebraic geometer means that I fundamentally study solution spaces of 
 I am interested in classical algebraic geometry, enumerative geometry, deformation theory, algebraic stacks, derived categories, among other things.
 #+end_container
 
-#+begin_src emacs-lisp :exports results :results value raw drawer
-  (defun pretty-print ()
-    (org-agenda-get-some-entry-text (point-marker) most-positive-fixnum)
-    )
-  (string-join (org-map-entries 'pretty-print "+moar+level=2+FROM<=\"<today>\"+TO>=\"<today>\"") "\n\n")
-#+end_src
-
 #+RESULTS:
 :results:
+In 2023 Semester 1, I am teaching Algebra 2.
+
+In 2022 Semester 2, I taught Algebra 1 and a course about mathematical communication called "The language of mathematics".
 :end:
 
 * Papers/pre-prints

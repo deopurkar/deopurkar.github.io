@@ -1,0 +1,1105 @@
+# Created 2022-12-13 Tue 14:17
+#+title: Advanced Algebra 1, 2022 Semester 1
+* Course contacts
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+- Lecturer :: Anand Deopurkar <anand.deopurkar@anu.edu.au>
+- Demonstrators :: 
+  - Alexander Lai De Oliveira <Alexander.LaiDeOliveira@anu.edu.au>
+  - Wenqi Zhang <u5829167@anu.edu.au>
+- ASE Lecturer :: Angus McAndrew <Angus.Mcandrew@anu.edu.au>
+* Course information
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+This course is an introduction to the world of abstract algebraic structures such as groups, rings, and fields.  In addition to learning the mathematical content, we will also hone our skills in writing clear and concise proofs.  The assessment will reflect the demonstrated mastery of the content and the skills.
+
+** Textbook
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+1. /Algebra/, by M. Artin (required)
+2. /Abstract Algebra/, by I. Herstein
+3. /Advanced modern algebrae/, by J. Rotman
+
+** Lectures and workshops
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+- Lecture 1 :: Mon 3pm-4pm
+- Lecture 2 :: Wed 10am-11am
+- Lecture 3 :: Thu 10am-11am
+- ASE Lecture :: Wed 3pm-4pm
+In addition, there will be one hour of workshop, starting in week 2.
+The lectures will be recorded and available on ECHO360.
+** Assessment
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+1. Weekly problem sets: 30%
+2. Mid-semester exam: 30%
+3. Final exam: 40%
+
+*** Hurdles
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+The mid-semester and the final exam are hurdles.  A student who fails any of these will receive an NCN.
+
+*** ASE assessment
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+If you are taking the ASE, it will count towards 25% of the marks.  If you are registered under the code MATH6118, the ASE is mandatory.
+
+** Collaboration policy
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+You are encouraged to discuss the course material and the homework with others, but *you must write-up your homework on your own*.  If you work with other students, or get any external help, you *must acknowledge it in your homework* by writing, for example, "I collaborated with ---- and ---- on this problem set" or "I benefited from ---- page from MathOverFlow for problem 3."
+
+** Course plan
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+The following is a tentative plan for the course.
+
+| Week | Topic                                                                      | Reference (Artin 2E) |
+|------+----------------------------------------------------------------------------+----------------------|
+|    1 | Groups, subgroups, cyclic groups                                           |             2.1--2.4 |
+|    2 | Cosets, Lagrange's theorem, homomorphisms, normal subgroups                |             2.5--2.8 |
+|    3 | Product groups, quotient groups, isomorphism/correspondence theorems       |           2.11--2.12 |
+|    4 | Isometries, the orthogonal group, dihedral groups, crystallographic groups |             6.1--6.6 |
+|    5 | Group actions and consequences                                             |            6.7--6.11 |
+|    6 | Class equation, Sylow theorems, generators and relations                   |                    7 |
+|    7 | Generators and relations, introduction to rings                            |           11.1, 11.2 |
+|    8 | Homomorphisms, ideals, quotient rings                                      |           11.3--11.5 |
+|    9 | Fractions, prime and maximal ideals, correspondence theorems               |           11.7, 11.8 |
+|   10 | Modules, linear algebra over a ring                                        |           14.1, 14.2 |
+|   11 | Linear algebra over Z, applications to abelian groups                      |           14.4--14.7 |
+|   12 | TBD                                                                        |                      |
+
+** Fun
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+[[https://eschersket.ch/][An online program to draw wallpaper patterns with a specified symmetry group]].
+
+* Midterm Exam Information
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+The midterm exam will be on *Thursday, 1 September 2022 6:30pm*, location TBD.
+You will have 15 minutes of reading time, followed by 2 hours of writing time.
+It is a closed book exam, with no materials permitted.
+
+If you are unable to be on campus for a documented covid related reason, please email me by *Thursday, 25 August 2022*.
+
+The exam will cover the material up to week 5, which corresponds to chapter 2 and 6 of Artin.
+
+For practice, make sure you can do all previous homework and workshop problems.
+In addition, here are two past midterm exams (caution: their format and content may be slightly different).
+
+- [[file:midterm-1-practice.pdf][Past midterm 1]]
+- [[file:midterm-1-practice2.pdf][Past midterm 2]]
+
+If you want to check your answers, you can consult your friends, ask me, ask any of the demonstrators, or post on the Wattle forum.
+
+Here is the [[file:midterm-msi.pdf][midterm exam paper]].
+
+* Final Exam Information
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+The final exam will be on *Monday, 14 November 2022 2:50pm*, at *Barry Drive 7-11 Level 1*.
+You will have 15 minutes of reading time, followed by 2 hours of writing time.
+It is a closed book exam, with no materials permitted.
+
+If you are unable to be on campus for a documented covid related reason, please email me by *Wednesday, 9 November 2022*.
+
+The exam will cover everything we have covered, but will be focused more on the later half of the course.
+
+For practice, make sure you can do all previous homework and workshop problems.
+In addition, here is the exam from 2020 and some practice problems from 2020 (caution: their format and content may be slightly different).
+
+- Final Exam 2020
+- Practice Problems 2022
+
+If you want to check your answers, you can consult your friends, ask me, ask any of the demonstrators, or post on the Wattle forum.
+I will have zoom office hours every day of next week from 3pm to 4pm at https://anu.zoom.us/my/anandrd (password:cremona).
+
+Here is the [[file:final-msi.pdf][final exam paper]].
+
+* Workshops
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+** Worksheet 1
+:PROPERTIES:
+:EXPORT_FILE_NAME: workshop01-sols.pdf
+:export_latex_header_extra: \input{macros}
+:EXPORT_TITLE: Workshop 1
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_exclude_tags: 
+:EXPORT_OPTIONS: toc:nil tags:nil
+:html_headline_class: collapsible
+:END:
+
+1. Prove that \(a\) and \(bab^{-1}\) have the same order.
+
+2. Find all elements of finite order in \(\operatorname{GL}_2(\mathbf{C})\).\\
+   /Hint: Think about eigenvalues!/
+
+3. If \(a\) has order \(m\) and \(b\) has order \(n\) (both finite), what can you say about the order of \(ab\)?
+   First, do it in an abelian group.
+   Second, find an example where the order of \(ab\) is not even finite. \\
+   /Hint: One example is by taking \(a\) and \(b\) to be suitable reflections in \(\mathbf{R}^{2}\)./
+
+
+** Worksheet 2
+:PROPERTIES:
+:EXPORT_FILE_NAME: workshop02-sols.pdf
+:export_latex_header_extra: \input{macros}
+:EXPORT_TITLE: Workshop 2
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_exclude_tags: 
+:EXPORT_OPTIONS: toc:nil tags:nil
+:html_headline_class: collapsible
+:END:
+
+In this worksheet, we will explore signs of permutations.
+
+1. Let \(p\) consist of a 2-cycle and no other non-trivial cycles.
+   (This kind of permutation is called a transposition).
+   Show that \(\operatorname{sgn}(p) = -1\).
+
+2. Let \(p\) consist of an \(n\)-cycle and no other non-trivial cycles.
+   Express \(p\) as a product of transpositions, and hence find \(\operatorname{sgn}(p)\).
+
+3. Prove that every permutation can be expressed as a product of transpositions.
+   Convince yourself that this expression is not unique, even the number of factors can change.
+   But something about it is unique; what is it?
+
+4. The alternating group \(A_n \subset S_n\) is the subgroup consisting of permutations of sign \(1\).
+   What is the order of \(A_n\)? 
+   Write down the elements of \(A_{3}\) and \(A_4\).
+
+
+** Worksheet 3
+:PROPERTIES:
+:EXPORT_FILE_NAME: workshop03-sols.pdf
+:export_latex_header_extra: \input{macros}
+:EXPORT_TITLE: Workshop 3
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_class: amsart
+:export_exclude_tags: 
+:EXPORT_OPTIONS: toc:nil tags:nil
+:html_headline_class: collapsible
+:END:
+A polyethylene molecule is a long chain of carbon and hydrogen atoms that looks like this:
+
+#+downloaded: screenshot @ 2022-08-11 12:18:09
+[[file:assets/Workshops/2022-08-11_12-18-09_screenshot.png]]
+
+The central spine of carbon atoms (black) forms a zigzag, which we take to extend infinitely in both directions.
+Let us say that the carbon atoms lie in the \(x,y\)-plane; their \(x\)-coordinates are integers; and their \(y\)-coordinates are \(\pm 1\).
+
+Let \(G\) be the group of symmetries (isometries) of the planar carbon spine (ignoring the hydrogens).
+Then \(G\) contains the following kinds of elements, for every \(n \in \mathbf{Z}\):
+- Reflections \(f_{n}\) :: in the vertical line \(x = n\),
+- 180 rotations \(r_{n}\) :: centered at the point \((n + 1/2, 0)\),
+- Glides \(g_{n}\) :: reflection in the \(y\)-axis followed by an \(x\)-translation by \(2n+1\),
+- Translations \(t_{n}\) :: traslations in the \(x\)-axis by \(2n\).
+
+
+1. Write each transformation in the form
+   \[ X \mapsto AX + B\]
+   where \(A\) is a \(2 \times 2\) matrix.\\
+   /Hint: There are only 4 possible \(A\)'s:/
+   \[
+      \begin{pmatrix} \pm 1 & \\ & \pm 1 \end{pmatrix}.
+      \]
+
+2. Using your description (or by pure imagination!), complete the following multiplication table.
+   By convention, the entry in row \(r\) and column \(c\) is the transformation \(r \circ c\).
+   |     | f_n | r_n | g_n | t_n |
+   |-----+-----+-----+-----+-----|
+   | f_m |     |     |     |     |
+   | r_m |     |     |     |     |
+   | g_m |     |     |     |     |
+   | t_m |     |     |     |     |
+
+3. Let \(N \subset G\) be the subgroup consisting of the translations.  
+   Show that it is a normal subgroup.
+   Can you identify \(G/N\)?
+   Its multiplication table is hidden in the table above!
+
+** Worksheet 4
+:PROPERTIES:
+:EXPORT_FILE_NAME: workshop04-sols.pdf
+:export_latex_header_extra: \input{macros}
+:EXPORT_TITLE: Workshop 4
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_class: amsart
+:export_exclude_tags: 
+:EXPORT_OPTIONS: toc:nil tags:nil
+:html_headline_class: collapsible
+:END:
+
+Let \(G\) be a subgroup of the group of symmetries of the plane.
+For a point \(p\) in the plane, the /stabiliser/ of \(p\) is the subset \(G_p \subset G\) defined by
+\[ G_p = \{g \in G \mid g(p) = p\}.\]
+The /orbit/ of \(p\) is the subset \(O_p\) of the plane defined by
+\[ O_p = \{g(p) \mid g \in G\}.\]
+
+*** Problem 1
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Verify that \(G_p \subset G\) is a subgroup.
+
+*** Problem 2
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Let \(G = D_n\), the group of symmetries of a regular \(n\)-gon.
+Find the orbits and stabilisers of various points.
+How many different kinds of stabilisers do you see?
+
+*** Problem 3
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Let \(G\) be the group of isometries of one of the wallpaper patterns on the next page.
+Find the orbits and stabilisers of various points \(p\) in the plane.
+How many different kinds of stabilisers do you see?
+
+*** Problem 4
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Let \(G\) be as before and let \(H\) be the associated point group.
+Prove that the map \(\phi \colon G_p \to H\) is injective.
+Can you always find a point \(p\) for which the map is also surjective?
+
+\newpage
+
+*** Patterns
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+[[file:assets/Lectures/2022-08-18_09-20-47_screenshot.png]]
+\hfill
+[[file:assets/Lectures/2022-08-18_09-30-40_screenshot.png]]
+
+\bigskip
+
+[[file:assets/Lectures/2022-08-18_09-19-05_screenshot.png]]
+\hfill
+[[file:assets/Lectures/2022-08-18_09-21-25_screenshot.png]]
+
+** Worksheet 5
+:PROPERTIES:
+:EXPORT_FILE_NAME: workshop05-sols.pdf
+:export_latex_header_extra: \input{macros}
+:EXPORT_TITLE: Workshop 5
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_class: amsart
+:export_exclude_tags: 
+:EXPORT_OPTIONS: toc:nil tags:nil
+:html_headline_class: collapsible
+:END:
+
+*** Problem 1
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Find the conjugacy classes and hence the class equation for \(D_{5}\) and \(D_{6}\).
+Generalise your results to \(D_{n}\).
+
+*** Problem 2
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+There are 3 ways to partition \(\{1,2,3,4\}\) into 2 subsets of size 2.
+Use this to construct a non-trivial homomorphism \(\phi \colon S_4 \to S_3\).
+What is the kernel of \(\phi\)?
+
+*** Problem 3
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Fix positive integers \(n\) and \(k\) with \(k \leq n\) (for example, \(n = 4\) and \(k = 2\)).
+Let \(\operatorname{Gr}(k,n)\) be the set of \(k\)-dimensional sub-spaces of \(\mathbf{R}^n\).
+The natural action of \(\operatorname{GL}_n(\mathbf{R})\) on \(\mathbf{R}^{n}\) induces an action on \(\operatorname{Gr}(k,n)\).
+
+1. Let \(V\) be the subspace of vectors where the last \(n-k\) co-ordinates are 0.
+   Find the stabiliser of \(V\).
+
+2. Show that the action is transitive.
+
+3. Let \(S\) be the set of all two element subsets of \(\operatorname{Gr}(k,n)\).
+   Is the action of \(\operatorname{GL}_n(\mathbf{R})\) on \(S\) transitive?
+   What are the orbits of the action?
+
+** Worksheet 6
+:PROPERTIES:
+:EXPORT_FILE_NAME: workshop06-sols.pdf
+:export_latex_header_extra: \input{macros}
+:EXPORT_TITLE: Workshop 6
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_class: amsart
+:export_exclude_tags: 
+:EXPORT_OPTIONS: toc:nil tags:nil
+:html_headline_class: collapsible
+:END:
+
+The goal of this workshop is to play with generators and relations.
+
+1. Construct an isomorphism \(\langle a \rangle \to \mathbf{Z}\).
+2. Prove that the free group \(\langle a, b \rangle\) is not abelian. (The same holds for free groups on more than 2 generators.)
+3. Let \(N \subset \langle a, b \rangle\) be the smallest normal subgroup that contains \(a^3, b^2, ab\).
+   Prove that \(N\) is the entire free group, and so \(G/N\) is trivial.
+   That is, we have
+   \[ \langle a, b \mid a^3, b^2, ab \rangle = \{1\}.\]
+4. Let \(N \subset \langle a, b \rangle\) be the smallest normal subgroup that contains \(a^3, b^2\).
+   Prove that there exists a homomorphism
+   \[ G/N \to \operatorname{PSL}_2(\mathbf{Z})\]
+   that sends \(\overline a\) to \(\begin{pmatrix}0 & -1 \\ 1 & 0 \end{pmatrix}\) and \(\overline b\) to \(\begin{pmatrix}1 & -1 \\ 1 & 0 \end{pmatrix}\).
+   1. From this, conclude that \(G/N\) is not trivial.
+   2. Also conclude that \(\overline{ab} \in G/N\)  has infinite order.
+5. In (3), change the relations to \(a^3, b^3, ab\).  Is the resulting group \(G/N\) trivial?
+** Worksheet 7
+:PROPERTIES:
+:EXPORT_FILE_NAME: workshop07.pdf
+:export_latex_header_extra: \input{macros}
+:EXPORT_TITLE: Workshop 7
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_class: amsart
+:export_exclude_tags: solutions
+:EXPORT_OPTIONS: toc:nil tags:nil
+:html_headline_class: collapsible
+:END:
+
+The goal of this workshop is to get comfortable with rings.
+
+1. Let \(R\) be the ring of continuous real valued functions on the interval \([0,1]\).
+   1. Remember the definition of an integral domain.  Is \(R\) an integral domain?
+   2. Remember the definition of a unit.   What are the units in \(R\)?
+   3. Remember the definition of a ring homomorphism.  Show that the map
+      \[ R \to \mathbf{R}\]
+      defined by \(f \mapsto f(0.1)\) is a ring homomorphism.
+
+2. Let \(R = \mathbf{Z}[x]/(x^2 + 1)\).
+   1. Find all ring homomorphisms \(R \to \mathbf{C}\).
+   2. Find all ring homomorphisms \(R \to \mathbf{Z}/ 5 \mathbf{Z}\).
+   3. Prove that there are no ring homomorphisms \(R \to \mathbf{Z} / 3 \mathbf{Z}\).
+   4. Explore: for which numbers \(p\) are there ring homomorphisms \(R \to \mathbf{Z}/ p \mathbf{Z}\)?
+
+
+
+** Worksheet 8
+:PROPERTIES:
+:EXPORT_FILE_NAME: workshop08-sols.pdf
+:export_latex_header_extra: \input{macros}
+:EXPORT_TITLE: Workshop 8
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_class: amsart
+:export_exclude_tags: 
+:EXPORT_OPTIONS: toc:nil tags:nil
+:html_headline_class: collapsible
+:END:
+The goal of this workshop is to get comfortable with quotient rings.
+
+1. Let \(R = \mathbf{Q}[x]/(x^2-2)\).
+   1. Construct a ring homomorphism \(R \to \mathbf{R}\).
+   2. Prove that the ring homomorphism you constructed is injective.
+   3. It turns out that \(R\) is a field.  Find out the multiplicative inverse of: \(x\), \(1+x\), and if you have time/energy, \(a+bx\).
+
+2. Let \(R = \mathbf{Z}[x]/(x^2-2, 3x-1)\).
+   1. Are there any homomorphisms \(R \to \mathbf{Q}\)?
+   2. Is there a prime \(p\) such that there is a homomorphism \(R \to \mathbf{Z}/p \mathbf{Z}\)?
+   3. The ideal \((x^2-2, 3x-1) \mathbf{Z}[x]\) of \(\mathbf{Z}[x]\) contains non-zero integers.  Which ones?
+
+
+** Worksheet 9
+:PROPERTIES:
+:EXPORT_FILE_NAME: workshop09-sol.pdf
+:export_latex_header_extra: \input{macros}
+:EXPORT_TITLE: Workshop 9
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_class: amsart
+:export_exclude_tags: 
+:EXPORT_OPTIONS: toc:nil tags:nil
+:html_headline_class: collapsible
+:END:
+We continue thinking about quotient rings.  
+
+Let \(F\) be a field.
+Recall that all ideals of \(F[x]\) are principal, namely, of the form \(p(x)F[x]\)  for some \(p(x) \in F\).
+(The ideal \((f_1,\dots, f_n)R\) is often denoted by \(\langle f_1,\dots,f_n \rangle\), when the ambient ring \(R\) is clear from the context.)
+Also recall that an ideal \(I\) is called /maximal/ if \(I\) is not the unit ideal, and the only ideals containing \(I\) are \(I\) and the unit ideal.
+
+1. Why are all ideals of \(F[x]\) principal?  Given an ideal \(I \subset F[x]\), how will you find a generator \(p(x)\)?
+2. When is \(I = \langle p(x) \rangle\) a maximal ideal?
+3. What are the maximal ideals of \(\mathbf{C}[x]\)?  Of \(\mathbf{R}[x]\)?
+
+Determine if the following ring is a field or not a field.  
+If it is not a field, find a non-zero element that does not have a multiplicative inverse.
+It may be useful to simplify the given description by taking quotients in stages.
+
+1. \(\mathbf{F}_5[x]/(x^2+1)/\)
+2. \(\mathbf{Z}[x]/(3x-1, x^2+x+1)\)
+3. \(\mathbf{R}[x,y]/(x^2+y^2-1, x-y)\)
+4. \(\mathbf{Q}[x,y]/(x^2+y^2-1, x-y)\)
+
+
+** Worksheet 10
+:PROPERTIES:
+:EXPORT_FILE_NAME: workshop10-sol.pdf
+:export_latex_header_extra: \input{macros}
+:EXPORT_TITLE: Workshop 10
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_class: amsart
+:export_exclude_tags: 
+:EXPORT_OPTIONS: toc:nil tags:nil
+:html_headline_class: collapsible
+:END:
+The goal of this workshop is to explore \(F[t]\)-modules.
+
+Let \(F\) be a field.
+For concreteness, you can take \(F = \mathbf{Q}\)  or \(\mathbf{R}\) or your favourite field.
+
+1. Give an example of a non-zero \(F[t]\)-module.
+2. Convince your friends that an \(F[t]\)-module is automatically an \(F\)-vector space.
+3. Give an example of an \(F[t]\)-module that is 2-dimensional as an \(F\)-vector space.
+   Is your module a free \(F[t]\)-module?
+4. Let \(V\) be an \(F[t]\)-module.
+   Consider the map \(A \colon V \to V\) defined by \(Av = t v\).
+   Prove that \(A\) is an \(F\)-linear map of vector spaces.
+5. Express the map \(A\) in your example as a \(2 \times 2\) matrix.
+6. Conversely, let \(V\) be an \(F\)-vector space and \(A \colon V \to V\) an \(F\)-linear map.
+   Show that there is a unique \(F[t]\)-module structure on \(V\) such that for all \(v \in V\), we have \(A v = t v\).
+
+   **Slogan**: An \(F[t]\)-module is "the same as" an \(F\)-vector space and an endomorphism.
+
+7. What should be the slogan for an \(F[s,t]\)-module? (Caution: It is trickier than you might think.)
+
+
+** Worksheet 11
+:PROPERTIES:
+:EXPORT_FILE_NAME: workshop11.pdf
+:export_latex_header_extra: \input{macros}
+:EXPORT_TITLE: Workshop 10
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_class: amsart
+:export_exclude_tags: 
+:EXPORT_OPTIONS: toc:nil tags:nil
+:html_headline_class: collapsible
+:END:
+The goal of this workshop is to explore generators and relations for modules.
+*** Module \(M\) over \(\mathbf{Z}\)
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+1. Let \(M = \mathbf{Z}/2 \mathbf{Z} \oplus \mathbf{Z}/4 \mathbf{Z}\) considered as a \(\mathbf{Z}\)-module.
+   Let \(g_1 = (1,1), g_2 = (1,2), g_3=(0,1)\).
+   Do \(g_{1}, g_2, g_3\) generate \(M\)?
+2. Consider the map \(\mathbf{Z^3} \to M\).
+   Find a set of generators for its kernel.
+
+*** Module \(N\) over \(\mathbf{Z}\)
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+1. Let \(N\) be the module generatored by \(x, y\) modulo the relations
+   \[ x + 2y = 0, \quad y + 2x = 0.\]
+   Express \(N\) as the cokernel of a matrix.
+2. Does \(z = x+y\) generate \(N\)?
+3. What is the kernel of the map \(\mathbf{Z} \to N\) that sends \(1 \to z\)?
+4. Describe \(N\) up to isomorphism in as simple terms as possible.
+
+*** Module \(P\) over \(\mathbf{C}[x,y]\).
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+
+1. Let \(P = \mathbf{C}\) considered as a \(R = \mathbf{C}[x,y]\)-module where \(x\) and \(y\) act by \(0\).
+   Find a set of generators for \(P\).
+2. Let \(R^n \to P\) be the surjection given by your generators.
+   Find the kernel \(P'\), and a set of generators for \(P'\).
+3. Repeat, until you reach the 0 module.
+
+The process of repeatedly finding generators and relations is called finding a /resolution/.
+For some rings, all finitely generated modules have finite resolutions, but not for all.
+
+* Homework
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+The assignments are due on Gradescope by Friday 11:59pm. No late homework accepted, except if you have permission from me, which you may get if you ask me by email at least 24 hours before the deadline. I will drop the lowest homework score from the final mark.
+** Assignment 1
+:PROPERTIES:
+:EXPORT_FILE_NAME: hw01-solutions.pdf
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:html_headline_class: collapsible
+:END:
+This assignment is due on Gradescope by Friday, 5 August, 11:59pm.
+Be clear, precise, and concise.  All work you submit *must be your own*.  Please acknowledge any help you receive, including names of collaborators.
+
+*** Reading
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+- For review: Artin, Chapter 1, Sections 1.4, 1.5
+- Artin, Chapter 2, Sections 2.1, 2.2, 2.3, 2.4
+*** Problems for submission
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+**** Problem 1
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Which of the following are associative laws of composition?  Which ones define a group?
+   No justification is necessary.
+1. \(\mathbf{Z} \times \mathbf{Z} \to \mathbf{Z}\) given by \((a, b) \mapsto a-b\).
+2. \(M_{n\times n} (\mathbf{R}) \times M_{n \times n}(\mathbf{R}) \to M_{n \times n}(\mathbf{R})\) given by \((A,B) \mapsto AB\).
+3. \(\mathbf{R} \times \mathbf{R} \to \mathbf{R}\) given by \((a,b) \mapsto \exp(a+b)\).
+4. Let \(A\) be a set and let \(F(A)\) be the set of functions \(f \colon A \to A\).
+   The law \(F(A) \times F(A) \to F(A)\) given by \((f,g) \mapsto f \circ g\).
+**** Problem 2
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+(Artin, 2.3) Let \(x,y,z,w\) be elements of a group \(G\).
+1. Solve for \(y\), given that \(xyz^{-1}w = 1\).
+2. Suppose that \(xyz = 1\).  Does it follow that \(yzx = 1\)?  Does it follow that \(yxz = 1\)?
+   Justify your answer with a proof or a counter-example.
+**** Problem 3
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+(Artin, 4.1) Let \(a\) and \(b\) be elements of a group \(G\).
+   Assume that \(a\) has order 7 and that \(a^{3}b = ba^3.\)
+   Prove that \(ab = ba\).
+**** Problem 4
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+(Artin, 4.5) Prove that every subgroup of a cyclic group is cyclic.
+Do this by working with exponents, and use the description of the subgroups of \(\mathbf{Z}^{+}\).
+** Assignment 2
+:PROPERTIES:
+:EXPORT_FILE_NAME: hw02-solutions.pdf
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:html_headline_class: collapsible
+:END:
+This assignment is due on Gradescope by Friday, 12 August, 11:59pm.
+Be clear, precise, and concise.  All work you submit *must be your own*.  Please acknowledge any help you receive, including names of collaborators.
+
+*** Reading
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+- Artin, Chapter 2, Sections 2.5, 2.6, 2.7, 2.8
+*** Problems for submission
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+**** Problem 1
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+(Artin 2.8.11)
+   Let \(G\)  and \(H\) be the following subgroups of \(\operatorname{GL}_2(\mathbf{R})\):
+   \[
+   G = \left\{ \begin{pmatrix} x & y \\ 0 & 1 \end{pmatrix}\right\}, \quad H = \left\{ \begin{pmatrix} x & 0 \\ 0 & 1 \end{pmatrix}\right\},
+   \]
+   with \(x\) and \(y\) real and \(x > 0\).
+   An element of \(G\) can be represented by a point in the right half plane using coordinates \((x,y)\).
+   Make sketches showing the partitions of the half plane into left \(H\)-cosets and right \(H\)-cosets.
+
+
+**** Problem 2
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+(Artin 2.5.1)
+   Let \(\phi \colon G \to H\) be a surjective homomorphism. 
+   Prove that if \(G\) is cyclic, then \(H\) is cyclic, and if \(G\) is abelian, then \(H\) is abelian.
+
+**** Problem 3
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Let \(G\) be the group in Problem 1.
+Find a surjective homomorphism \(\phi \colon G \to \mathbf{R}_{> 0}^{\times}\) and an isomorphism \(\ker \phi \to \mathbf{R}^+\).
+
+***** Solution sketch                                              :Solution:
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Define \(\phi \colon G \to \mathbf{R}_{> 0}^{\times}\) by
+\[ \phi \begin{pmatrix} x & y \\ & 1 \end{pmatrix} \mapsto x.\]
+The kernel consists of matrices with \(x = 1\).
+Define \(\psi \colon \ker \phi \to \mathbf{R}^+\) by
+\[ \psi \begin{pmatrix} 1 & y \\ & 1 \end{pmatrix} \mapsto y.\]
+
+Caution: the map \(\psi\) defined by the \(y\)-entry is not a homomorphism on \(G\).
+It is only a homomorphism on the subgroup \(\ker \phi \subset G\)!
+
+**** Problem 4
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+(Artin 2.8.8)
+Let \(G\) be a group of order 25. 
+Prove that \(G\) has at least one subgroup of order \(5\), and that if \(G\) contains only one subgroup of order 5, then \(G\) is a cyclic group.
+
+** Assignment 3
+:PROPERTIES:
+:EXPORT_FILE_NAME: hw03-solutions.pdf
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:export_exclude_tags: 
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+This assignment is due on Gradescope by Friday, 19 August, 11:59pm.
+Be clear, precise, and concise.  All work you submit *must be your own*.  Please acknowledge any help you receive, including names of collaborators.
+
+*** Problem 1
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+(Artin 11.4, modified)
+ Given subgroups \(H, K \subset G\), we have a map  \( \phi \colon H \times K \to G\)
+ given by \(\phi(h,k) = hk\). Read Proposition 2.11.4 (Artin) for the basic properties of this map.
+ In each of the following cases, determine whether or not \(\phi \colon H \times K \to G\) is an isomorphism
+1. \(G = \mathbf{R}^{\times}\), \(H = \{\pm 1\}\), \(K = \mathbf{R}_{>0}^{\times}\).
+2. \(G = \{\text{invertible upper triangular $2 \times 2$ matrices}\}\), \(H = \{\text{invertible diagonal matrices}\}\),\newline \(K = \{\text{upper triangular matrices with diagonal entries 1}\}\).
+
+*** Problem 2
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+(Artin 12.4, modified)
+   Let \(G = \mathbf{C}^{\times}\) and let \(H \subset G\) be the subgroup consisting of the \(n\)-th roots of unity:
+   \[ H = \{\zeta \in G \mid \zeta^{n} = 1\}.\]
+   For \(n = 4\), describe the cosets of \(H\) in \(G\) explicitly.
+   For any \(n\), construct an isomorphism \(G/H \to G\).
+
+*** Problem 3
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Use the correspondance theorem for subgroups to describe all subgroups of \(\mathbf{Z}/d \mathbf{Z}\).
+Using your description, show that for every positive integer \(e\) dividing \(d\), there is a unique subgroup of \(\mathbf{Z}/d \mathbf{Z}\) of order \(e\).
+
+*** Problem 4
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Let \(N \subset G\) be a normal subgroup.
+Give an example where \(G\) is isomorphic to \(N \times G/N\) and an example where \(G\) is not isomorphic to \(N \times G/N\). 
+   Justify your examples.
+** Assignment 4
+:PROPERTIES:
+:EXPORT_FILE_NAME: hw04-solutions.pdf
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:export_exclude_tags: 
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+This assignment is due on Gradescope by Friday, 26 August, 11:59pm.
+Be clear, precise, and concise.  All work you submit *must be your own*.  Please acknowledge any help you receive, including names of collaborators.
+
+*** Problem 1
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+(Artin, Chapter 6, 4.2a, modified).
+Find all subgroups of the dihedral group \(D_4\) and determine which ones are normal.
+For the normal ones, identify the quotient group up to isomorphism.
+
+/Hint: You may use that any subgroup of index 2 is normal; see (Chapter 2, Problem 8.10)./
+
+
+*** Problem 2
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+(Artin, Chapter 2, M.7, modified).
+Let \(G\) be a subgroup of \(\operatorname{GL}_n(\mathbf{R})\).
+On \(G\), define a relation \(x \sim y\) if there exists a continuous map \(\phi \colon [0,1] \to G\) with \(\phi(0) = x\) and \(\phi(1) = y\).
+Convince yourself (but do not write/submit) that \(\sim\) is an equivalence relation.
+
+Let \(G_0 \subset G\) be the set of elements equivalent to the identity.
+Prove that \(G_0\) is a normal subgroup of \(G\).
+(It is called the connected component of the identity.)
+
+
+*** Problem 3
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Let \(G = O_2\).
+Find \(G_0\) with proof.
+
+*** Problem 4
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Find, with justification, the point group of the following pattern (assumed to extend infinitely).
+For each element of the point group, identify an isometry that maps to it.
+
+#+downloaded: screenshot @ 2022-08-17 12:47:43
+[[file:assets/Homework/2022-08-17_12-47-43_screenshot.png]]
+
+** Assignment 5
+:PROPERTIES:
+:EXPORT_FILE_NAME: hw05-solutions.pdf
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:export_exclude_tags: 
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+*** Problem 1
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+(Artin, Chapter 7, Problem 2.1)
+Determine the centralizer and the order of the conjugacy class of
+1. the matrix \(\begin{pmatrix}1 & 1 \\ & 1 \end{pmatrix}\) in \(\operatorname{GL}_2(\mathbf{F}_3),\)
+2. the matrix \(\begin{pmatrix}1 &  \\ & 2 \end{pmatrix}\) in \(\operatorname{GL}_2(\mathbf{F}_5).\)
+
+*** Problem 2
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+Let \(G\) be a group of order \(2022\).
+Prove that \(G\) cannot be simple; that is, it must have a normal subgroup other than the trivial subgroup and the entire group.
+
+*** Problem 3
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+(Artin, Chapter 7, Problem 7.8, modified)
+Let \(G = \operatorname{GL}_2(\mathbf{F}_p)\).
+Find the order of \(G\).
+Find a Sylow \(p\)-subgroup of \(G\) and determine the number of Sylow \(p\)-subgroups.
+
+*** Problem 4
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+(Artin, Chapter 7, Problem M.1)
+Classify groups that are generated by two elements \(x\) and \(y\) of order 2.\\
+/Hint:/ It will be convenient to make use of the element \(z = xy\).
+
+"Classify" means "find all up to isomorphism".
+
+
+** Assignment 6
+:PROPERTIES:
+:EXPORT_FILE_NAME: hw06-sol.pdf
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:export_exclude_tags: 
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+This assignment is due on Gradescope on Friday, September 30.
+*** Problem 1
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+(Artin, Chapter 11, Problem 1.6, modified)
+Decide (with justification) whether or not \(S\) is a subring of \(R\) where
+1. \(R = \mathbf{Q}\) and \(S \subset R\) is the set of rational numbers \(a/b\) where \(b\) is not divisible by 3.
+2. \(R = \text{the set of real valued functions on $\mathbf{R}$}\), and \(S \subset R\) is the set of bounded functions.
+*** Problem 2
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+Construct a ring homomorphism or argue that no such homomorphism exists:
+1. \(\mathbf{Z}/5 \mathbf{Z} \to \mathbf{Q}\)
+2. \(\mathbf{Q} \to \mathbf{Z}/ 5 \mathbf{Z}\)
+3. \(\mathbf{Z}[x,y]/(x^2+y^2-1) \to \mathbf{Q}\)
+4. \(\mathbf{Z}[x,y]/(x^2+y^2-3) \to \mathbf{Z}\)
+
+*** Problem 3
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+(Artin, Chapter 11, Problem 1.8, modified)
+Determine (with proof) the units in \(\mathbf{Z} / n \mathbf{Z}\).
+
+*** Problem 4
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+Let \(R\) be a ring.
+An \(n \times n\) matrix \(A\) with entries in \(R\) is /invertible over \(R\)/ if there is an \(n \times n\) matrix \(B\) with entries in \(R\) such that \(AB = BA = \operatorname{id}\).
+Prove for yourself (but do not turn in) the following theorem:
+
+**Theorem**: A matrix \(A\) is invertible over \(R\) if and only if \(\det A\) is a unit in \(R\).
+
+1. Prove that a ring homomorphism \(\phi \colon R \to S\) induces a group homomorphism
+   \[ \operatorname{GL}_n(R) \to \operatorname{GL}_n(S),\]
+   obtained by applying \(\phi\) to each entry of the matrix.
+2. Let \(p\) be a prime and let \(\phi \colon \mathbf{Z}/ p^2 \mathbf{Z} \to \mathbf{Z} / p \mathbf{Z}\) be the unique ring homomorphism.
+   Prove that the induced homomorphism
+   \[ \operatorname{GL}_n(\mathbf{Z}/p^2 \mathbf{Z}) \to \operatorname{GL}_n(\mathbf{Z} / p \mathbf{Z})\]
+   is surjective and its kernel is isomorphic to the additive group \((\mathbf{Z} / p \mathbf{Z})^{n^2}\).
+3. (Not to be turned in) Generalise the statement above to \(\operatorname{GL}_n(\mathbf{Z}/p^m \mathbf{Z})\).
+
+** Assignment 7
+:PROPERTIES:
+:EXPORT_FILE_NAME: hw07-solutions.pdf
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:export_exclude_tags: 
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+This assignment is due on Gradescope on Friday, October 7.
+*** Problem 1
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+A /principal ideal domain/ is an integral domain \(R\) in which every ideal is of the form \(fR\) for some \(f \in R\).
+For example, \(\mathbf{Z}\) is a principal ideal domain.
+Prove that \(\mathbf{Z}[x]\) is not a principal ideal domain.
+
+*Remark*: In a principal ideal domain \(R\), we have a reasonable definition of gcd.
+Given \(f, g \in R\), we consider the ideal \((f,g)R\), which must be of the form \(hR\) for some \(h \in R\). This \(h\) is not necessarily unique, but it is unique up to multiplying by a unit, and we call it the gcd of \(f\) and \(g\).
+But if \(R\) is not a principal ideal domain, then there may not be any such \(h\).
+*** Problem 2
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+(Artin, Chapter 11, 3.8)
+Let \(p\) be a prime number and let \(R\) be a ring in which \(p = 0\).
+Prove that the map \(R \to R\) that sends \(x\) to \(x^p\) is a ring homomorphism.
+
+*Remark*:  This homomorphism is called the /Frobenius homomorphism/.  The Frobenius is the identity map for \(R = \mathbf{Z}/p \mathbf{Z}\), but in general, it is different from the identity.  In fact, it may not even be an isomorphism (example: \(R = \mathbf{F}_p[x]\)).
+
+*** Problem 3
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+(Artin, Chapter 11, 4.4, modified)
+Are the rings \(\mathbf{Z}[x]/(x^2+7)\) and \(\mathbf{Z}[x]/(2x^2+7)\) isomorphic?
+Does your answer change if you change \(\mathbf{Z}\) to \(\mathbf{C}\)?
+
+*** Problem 4
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+Find generators for the kernel of the following maps:
+1. \(\mathbf{Z}[x] \to \mathbf{F}_7[t]/(t^2+1)\) that sends \(x \mapsto 2t\).
+2. \(\mathbf{C}[x,y] \to \mathbf{C}[t]\) which is the identity on \(\mathbf{C}\) and sends \(x \to t^2, y \mapsto t^3\).
+
+** Assignment 8
+:PROPERTIES:
+:EXPORT_FILE_NAME: hw08-solutions.pdf
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:export_exclude_tags: 
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+This assignment is due on Gradescope on Friday, October 14.
+*** Problem 1
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+(Artin Chapter 11, 3.9(a), modified)
+
+An element \(x\) of a ring \(R\) is called /nilpotent/ if some power of \(x\) is zero.
+Prove that if \(x\) is nilpotent, then \(1-x\) is a unit.
+
+/Hint: Use the geometric series./
+
+*** Problem 2
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+(An ideal that is not finitely generated)
+
+Let \(A\) be the ring of continuous real-valued functions on \(\mathbf{R}\).
+Let \(I \subset A\) be the set
+\[I = \{f \in A \mid \text{there exists } \epsilon > 0 \text{ such that } f(x) = 0 \text{ for all } x \in [-\epsilon, \epsilon]\}.\]
+1. Prove that \(I \subset A\) is an ideal.
+2. Prove that \(I \neq (f_1,\dots, f_{n})A\) for any \(n\) and any \(f_1, \dots, f_n \in A\).
+
+**Remark**: We say that a ring is /Noetherian/ if all its ideals are finitely generated.  For example, \(\mathbf{Z}\) and all fields are Noetherian.
+Any quotient of a Noetherian ring is Noetherian, and a polynomial ring (in finitely many variables) over a Noetherian ring is Noetherian.
+As a result, many of the rings we encounter in algebra are Noetherian.
+The name is after Emmy Noether, who was a pioneer in modern algebra.
+She was the first to develop the general theory of rings and ideals.
+
+
+*** Problem 3
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+(A generalised Chinese remainder theorem)
+
+Let \(f, g \in R\) be two elements such that \((f,g)R = R\).
+Construct a ring isomorphism
+\[ R/fg \to R/f \times R/g.\]
+
+/Hint: The hypotheses imply that there exist \(a,b \in R\) with \(af+bg = 1\)./
+
+**Remark**: There is an even more general statement with ideals; see Artin, Chapter 11, Exercise 6.8.
+
+
+*** Problem 4
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+Find all maximal ideals of \(\mathbf{Z}[x]/x^{2022}\).
+
+/Hint: First show that every maximal ideal must contain \(x\), and then use the correspondence theorem./
+
+**Remark**:  It is a general fact that if \(x \in R\) is nilpotent, then every maximal ideal of \(R\) contains \(x\).  Your argument for \(R = \mathbf{Z}[x]/x^{2022}\) probably also proves this general statement.
+
+** Assignment 9
+:PROPERTIES:
+:EXPORT_FILE_NAME: hw09-solutions.pdf
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:export_exclude_tags: 
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+This assignment is due on Gradescope on Friday, October 21.
+*** Problem 1
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+Let \(F\) be a field.
+Read the definition of the ring \(F\llbracket t \rrbracket\) of formal power series in \(t\) with coefficients in \(F\) (Artin, Chapter 11, Exercise 2.2).
+Prove that \(p(t) = a_0 + a_1t + \cdots \) is a unit of \(F\llbracket t \rrbracket\) if and only if \(a_0 \neq 0\).
+
+
+
+
+*** Problem 2
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+Find all ideals of \(F\llbracket t \rrbracket\).
+What are the maximal and prime ideals?
+
+**Remark**:
+For \(F = \mathbf{R}\) or \(\mathbf{C}\), we can also consider the ring of convergent power series \(F\{ t \}\).
+This is a sub-ring of \(F \llbracket t \rrbracket\) consisting of power series with a positive radius of convergence.
+All the statements above that you proved for \(F \llbracket t \rrbracket\) remain true for \(F\{ t \}\), probably with the same proof.
+
+*** Problem 3
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+Let \(F\) be a field and let \(S \subset F[t]\) be the set of polynomials \(p(t)\) such that \(p(0)  \neq 0\).
+Prove that the homomorphism \(F[t] \to F\llbracket t \rrbracket\) extends to an injective homomorphism
+\[ S^{-1} F[t] \to F\llbracket t \rrbracket.\]
+
+**Remarks**:
+1. All the statements in Problem 1 and Problem 2 that you proved for \(F \llbracket t \rrbracket\) remain true also for the sub-ring \(S^{-1}F[t]\).
+2. The map \(S^{-1} F[t] \to F \llbracket t \rrbracket\) is far from surjective.
+   Can you write down an element that is not in the image? (Do not turn in).
+3. The ring \(\mathbf{R}[t]\) is the ring of polynomial functions on the line.
+   The rings \(S^{-1} \mathbf{R}[t] \subset \mathbf{R}\{t\} \subset \mathbf{R}\llbracket t \rrbracket\) encode increasingly permissive notions of 'functions defined around 0'.
+
+*** Problem 4
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+Let \(M \subset \mathbf{R}^{n}\) be the set of vectors \(v\) such that
+\[ 2v \in \mathbf{Z}^n \text{ and } \sum_{i = 1}^n v_i \in \mathbf{Z}.\]
+Find an isomorphism of \(\mathbf{Z}\)-modules \(\mathbf{Z}^n \to M\).
+
+** Assignment 10
+:PROPERTIES:
+:EXPORT_FILE_NAME: hw10-sol.pdf
+:EXPORT_AUTHOR: Advanced Algebra 1, 2022 Semester 2
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:export_exclude_tags: 
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+This assignment is due on Gradescope on Friday, October 28.
+*** Problem 1
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+An \(R\)-module is /cyclic/ if it can be generated by one element.
+Prove that every cyclic module is isomorphic to the \(R\)-module \(R/I\) for some ideal \(I \subset R\).
+
+*** Problem 2
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+(Artin, Chapter 14, Exercise 1.4)
+
+A module is /simple/ if it is not zero and it has no proper submodules.
+Prove that every simple \(R\)-module is isomorphic to an \(R\)-module of the form \(R/m\), where \(m \subset R\) is a maximal ideal.
+*** Problem 3
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+Let \(M = \mathbf{Z}[i] = \{a + b i \mid a, b \in \mathbf{Z}\}\).
+Let \(N = (1+2i) M = \{(1+2i)z \mid z \in M\}\).
+Then \(M\) is a \(\mathbf{Z}\)-module and \(N \subset M\) is a sub-module.
+Identify the quotient \(M/N\), up to isomorphism, as a direct sum of cyclic \(\mathbf{Z}\)-modules.
+
+*** Problem 4
+:PROPERTIES:
+:UNNUMBERED: t
+:html_headline_class: collapsible
+:END:
+(Artin, Chapter 14, Exercise 7.5)
+
+Determine the number of isomorphism classes of abelian groups of order 400.
