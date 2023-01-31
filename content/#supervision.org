@@ -1,3 +1,42 @@
+* Charles McIntosh
+:properties:
+:year:     2023
+:level:    Honours
+:institute: Mathematical Sciences Institute, Australian National University
+:end:
+
+* Alex Huang
+:properties:
+:year:     2023
+:level:    Summer Research Scholar
+:institute: Mathematical Sciences Institute, Australian National University
+:with:     Noah White
+:end:
+
+* Charlotte Sherratt
+:properties:
+:year:     2023
+:level:    Summer Research Scholar
+:institute: Mathematical Sciences Institute, Australian National University
+:with:     Noah White
+:end:
+
+* Thomas Whitley
+:properties:
+:year:     2023
+:level:    Summer Research Scholar
+:institute: Mathematical Sciences Institute, Australian National University
+:with:     Noah White
+:end:
+
+* Jia En Toh
+:properties:
+:year:     2023
+:level:    Summer Research Scholar
+:institute: Mathematical Sciences Institute, Australian National University
+:with:     Noah White
+:end:
+
 * Oliver Bradley
 :properties:
 :year:     2022

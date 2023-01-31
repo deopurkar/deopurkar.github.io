@@ -1,13 +1,15 @@
-* Algebra 1
+* [[file:teaching/2022algebra1/][Algebra 1]]                                                              :hl:
 :properties:
 :institute: Australian National University
 :year:     2022
+:link: [[file:teaching/2022algebra1/]]
 :end:
 
-* The language of mathematics
+* [[file:teaching/2022langmath/][The language of mathematics]]                                            :hl:
 :properties:
 :institute: Australian National University
 :year:     2022
+:link: [[file:teaching/2022langmath/]]
 :end:
 
 * [[file:teaching/ag2021/][Algebraic Geometry (Algebra 3)]]                                         :hl:
@@ -28,7 +30,7 @@
 :year:     2019
 :link:     [[file:teaching/ag/]]
 :end:
-*  Reading course on *Elliptic curves and modular forms* by Neil Koblitz
+*  Reading course on /Elliptic curves and modular forms/ by Neil Koblitz
 :properties:
 :institute: Australian National University
 :year:     2018
@@ -38,7 +40,7 @@
 :institute: Australian National University
 :year:     2018
 :end:
-* [[file:teaching/3349][Reading course on *Algebaric curves and Riemann surfaces* by Rick Miranda]]
+* [[file:teaching/3349][Reading course on /Algebaric curves and Riemann surfaces/ by Rick Miranda]] :hl:
 :properties:
 :institute: Australian National University
 :year:     2018
@@ -65,19 +67,19 @@
 :institute: University of Georgia
 :year:     2016
 :end:
-* [[file:teaching/ao/][Analysis and optimizati]]
+* [[file:teaching/ao/][Analysis and optimization]]                       :hl:
 :properties:
 :institute: Columbia University
 :year:     2016
 :link:     [[file:teaching/ao/]]
 :end:
-* [[file:teaching/seminar15/][Young tableaux in algebra and geomet]]
+* [[file:teaching/seminar15/][Young tableaux in algebra and geometry]]                                 :hl:
 :properties:
 :institute: Columbia University
 :year:     2015
 :link:     [[file:teaching/seminar15/]]
 :end:
-* [[file:teaching/calc1/][Calculus]]
+* [[file:teaching/calc1/][Calculus]]                                                               
 :properties:
 :institute: Columbia University
 :year:     2015
@@ -95,13 +97,13 @@
 :link:     [[file:teaching/calc1sp14/]]
 :year:     2014
 :end:
-* [[file:teaching/algebra2/][Modern algebra]]
+* [[file:teaching/algebra2/][Modern algebra 2]]                                                       :hl:
 :properties:
 :institute: Columbia University
 :link:     [[file:teaching/algebra2/]]
 :year:     2014
 :end:
-* [[file:teaching/algebra1/][Modern algebra]]
+* [[file:teaching/algebra1/][Modern algebra 1]]                                                       :hl:
 :properties:
 :institute: Columbia University
 :link:     [[file:teaching/algebra1/]]

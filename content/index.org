@@ -147,9 +147,11 @@ Notes and other materials from some of my courses:
 #+begin_src emacs-lisp :exports results :results value raw drawer
   (defun pretty-print ()
       (let ((title (org-entry-get nil "ITEM"))
+            (place (org-entry-get nil "institute"))
             (year (org-entry-get nil "year")))
-        (format "- %s, %s."
+        (format "- %s, %s, %s."
                 title
+                place
                 year)))
   (string-join (org-map-entries 'pretty-print "+hl" '("#teaching.org")) "\n")
 #+end_src
@@ -248,37 +250,3 @@ Here are some additional talks:
 :END:
 In 2023 Semester 1, I am teaching Algebra 2.
 
-** Teaching Summer and 2022 S2
-:PROPERTIES:
-:from: <2022-07-03 Sun>
-:to: <2022-12-31 Sat>
-:END:
-In 2022 Semester 2, I taught Algebra 1 and a course about mathematical communication called "The language of mathematics".
-
-** Teaching 2021 S2
-:PROPERTIES:
-:from: [2020-10-27 Tue] 
-:to: [2021-11-30 Tue]
-:END:
-This semester (2021 Semester 2), I am teaching [[file:teaching/ag2021][algebraic geometry]].
-
-** Teaching Summer and 2022 S1
-:PROPERTIES:
-:from: <2021-12-01 Wed> 
-:to: <2022-05-15 Sun>
-:END:
-I am currently not teaching anything.
-
-** MATRIX 2021
-:PROPERTIES:
-:from: <2021-11-24 Wed> 
-:to: <2021-12-18 Sat>
-:END:
-I will be at the workshop /Quantum curves, integrability, and cluster algebras/ at MATRIX in Creswick, Victoria from 12--18 Dec.
-
-** ICERM 2022
-:PROPERTIES:
-:from: <2022-01-01 Wed> 
-:to: <2022-05-21 Sat>
-:END:
-I will be in ICERM, Providence, RI from February 2022 to May 2022 for the semester program [[https://icerm.brown.edu/programs/sp-s22/][Braids]].

@@ -1,0 +1,713 @@
+# Created 2023-01-31 Tue 14:06
+#+title: The language of mathematics, 2022 Semester 1
+#+author: Anand Deopurkar
+The aim of this course is to develop written and oral communication skills in mathematics.
+Through weekly readings, discussions, and presentations we will learn
+- how to write mathematics clearly and coherently,
+- how to use symbols and equations within mathematical text,
+- how to structure and present arguments,
+- how to organise long mathematical documents,
+- how to present ideas clearly and effectively.
+
+* Structure of the course
+We will meet twice a week, on Tuesday from 12 to 1:30 and Thursday from 2 to 3:30.
+One meeting will be devoted to writing and one to oral presentation.
+In the meeting about writing, we will review the week's reading, do in-class exercises, and discuss the writing assignment.
+In the meeting about presentation, one or two students will give short talks, and we will discuss various aspects of presentation raised by the talks.
+
+1. Tuesdays 12 to 1:30, MSI Board Room (HN 2.48) - presentation
+2. Thursdays 2 to 3:30, MSI Board Room (HN 2.48) - writing
+
+* Assessment
+The mark will be based on class participation (10%), writing assignments (60%), and in-class presentations (30%).  
+
+* Resources
+- Francesco Vivaldi, /Mathematical Writing for Undergraduate Students/ (Required textbook)
+- Primer, University of Michigan, /Demonstration, Proof beyond the possibility of doubt/ ([[http://www.math.lsa.umich.edu/~smdbackr/MATH/Mathematical_Writing_A_Primer.pdf][Online textbook]])
+
+* Rough plan for the writing component
+1. Weeks 1-3 : Fundamentals
+2. Weeks 4-6 : Writing proofs
+3. Weeks 7-9 : Micro writing (small-scale issues)
+4. Weeks 10-12 : Macro writing (large-scale issues)
+
+* Collaboration and late policy
+You may collaborate with others, but *everything you submit must be your own work*.  That is, you must write your own submissions, and not copy it from anywhere else.  If you get any outside help, you *must acknowledge it* by writing (for example) "I worked with ... and ... for this homework."  Or "I took help from ... website for this homework".  Failing to do this is a form of academic dishonesty.
+
+Late homework will be penalised at 10\% of the grade per day, for a maximum of 3 days, after which it will receive a score of 0.  The exception is if you ask me for an extension *in writing* (email is fine) at least *24 hours before* the deadline.
+
+* Detailed weekly plan
+:PROPERTIES:
+:EXPORT_TITLE: ""
+:EXPORT_OPTIONS: toc:nil
+:END:
+The writing assignments are due on Mondays by 5pm.
+I expect you to be familiar with the reading by the class on Thursday.
+** Week 12
+*** Reading and discussion
+- Igor Pak,  [[https://www.math.ucla.edu/~pak/papers/how-to-write1.pdf][How to write a clear math paper]]
+*** Writing
+- Submit a revised draft of your final paper.
+- Submit the final draft of your final paper (at the end of the exam period).
+*** Presentations
+**** Continued fractions
+***** Kristian                                                     :noexport:
+- Good amount of text on the slides.
+- Very clear slides.
+- Good motivation (approximation of pi).
+- Good: standing in front of the slides, facing the audience.
+- Use \mathbb R or \mathbf R for real numbers.
+- Check spelling/grammar.
+- Very good examples.
+**** The wave equation
+***** Tongjia                                                      :noexport:
+- Give motivation before diving into mathematics.
+  For example, explaining why the wave equation is called the "wave equation" is probably good motivation.
+- Can you draw pictures? Video?
+- Carefully choose which details to present.  You could have skipped the physics behind the derivation of the wave equation.
+- Face the audience, not the screen.
+- What do the initial conditions mean?  Does it have a physical interpretation?
+- Simplify!
+*** Notes on Pak                                                   :noexport:
+:PROPERTIES:
+:EXPORT_OPTIONS: toc:nil ':t author:nil date:nil
+:EXPORT_FILE_NAME: pak-notes.pdf
+:EXPORT_LATEX_HEADER_EXTRA: \usepackage{fullpage}
+:EXPORT_LATEX_CLASS: amsart
+:END:
+**** Be clear!
+- Takes time and a lot of effort.
+- If you do not take the time to be clear:
+  - you lose readers,
+  - you lose a chance to make an impact,
+  - people do not take you seriously,
+  - you disadvantage yourself.
+- Ignore the rules when they make the math unclear.
+**** Where to start
+- Good guide on writing nonfiction.
+**** Macro tips
+***** Title
+- Super important
+- Try different versions on your colleagues
+- First approximation to the contents of your paper
+***** Abstract
+- Easiest section to write.
+- Nothing personal, just dry facts.
+- Rule of thumb: 0.3-0.5 times the number of pages.
+***** Introduction
+- This is the hardest section to write.
+- Main theorem on the first page, or at most the second page.
+- In the last paragraph, outline the structure of the paper in your own words.
+**** Micro tips
+- Basic grammar, syntax, punctuation
+- Don't be pedantic
+- Downshift your style:
+  - Write short sentences
+  - Use commas for pauses
+**** Rewrite
+
+
+
+
+** Week 11
+*** Reading and discussion
+- Paul Halmos, [[file:Halmos.pdf][How to write mathematics]]
+*** Writing
+- Submit a first draft of your final paper.
+*** Presentations
+**** Central limit theorem
+***** Zihan                                                        :noexport:
+- Do not make the readers read the slides.  Talk!
+- Too much text on the slides.
+- Explain the pictures/graph.
+- Choose consistent notation.
+**** RSA crypotgraphy
+***** Chuqiao Xu, RSA                                              :noexport:
+- Good outline
+- Good diagrams
+- Explain everything on the diagrams.  In you case, you did not explain anything about keys.
+- Excellent organisation of the slides.  I liked that you copied the important information from the last slides.
+- Choose consistent notation.  In your case, c was used for the cipher text, and you changed it to the message "c" on the next slide.
+**** Primality testing
+***** Fengyawen Li, Primality testing                              :noexport:
+- Good amount of text on the slides
+- Good organisation
+- Nice attractive slides
+- Good pace
+- Very good examples.
+*** Notes on Berndt                                                :noexport:
+:PROPERTIES:
+:EXPORT_OPTIONS: toc:nil ':t author:nil date:nil
+:EXPORT_FILE_NAME: berndt-notes.pdf
+:END:
+1. *The title* should be informative.
+
+2. *The introduction* is the most important part of the paper.
+
+   - Get to the purpose of your paper as soon as possible.
+
+3. *Mathematical formulas*
+
+   - Display complicated expressions and equations.
+   - Do not use abbreviations.
+
+4. *Language*
+
+   - Be precise.  Sloppy descriptions are not acceptable.
+   - Everything must be written in sentences.
+   - Never begin a sentence with a symbol.
+   - Pay attention to dangling participles.
+   - Omit filler phrases like "We have".
+   - Do not use "get".
+   - Use direct verbs.
+
+5. *Citations*
+   - Give page numbers.
+   - Give references to all results that you quote, except well-known theorems.
+
+6. *List of references*
+   - Be consistent.
+
+** Week 10
+*** Reading and discussion
+- Bruce Berndt, [[file:writingmath.pdf][How to write mathematical papers]]
+*** Writing
+- Sumit a tentative title and outline of your final paper.
+*** Presentations
+**** The RSA cryptosystem
+***** Zhining Wang, The RSA Cryptosystem                           :noexport:
+- Spend more time on the slides
+- Too much text on some slides
+- Good examples with the factorisation
+- What do you achieve by slide/board hybrid?
+
+**** Ordinary differential equations
+***** Han Lin, odes                                                :noexport:
+- Too much text on the slides
+- approx. 20 slides for 10-15 minute talk is too many slides.
+- only include the important proofs.
+- do not spend time doing calculations, or reading calculations
+- You do not have to read everything on the slides.
+- Good summary
+
+**** Jingning Yao                                                  :noexport:
+- Good idea to give the menu
+- Do not have to include all the proofs
+- Motivation?  What problem are you trying to solve?
+- If there is an "obvious" solution or idea to your problem, discuss it.
+- What did you achieve by a board/slide combo?
+
+*** Notes on Halmos                                                :noexport:
+:PROPERTIES:
+:EXPORT_OPTIONS: toc:nil ':t author:nil date:nil
+:EXPORT_LATEX_HEADER_EXTRA: \usepackage{fullpage}
+:END:
+1. *Say something*
+   - Two ways in which writing can be bad: no ideas or too many.
+
+2. *Speak to someone*
+   - Keep a particular reader in mind.
+
+3. *Organize first*
+   - Make an outline
+   - An outline in which every discussion, lemma, theorem, corollary, remark, and proof are mentioned.  And these appear in an order that is logically correct and psychologically digestible.
+
+4. *Think about the alphabet*
+   - Good notation.
+     For example, either \(ax+by\) or \(a_1x_1+a_2x_{2}\) is preferable to \(ax_1+bx_2\).
+
+5. *Write in spirals*
+   - 1; 2, 1, 2; 3, 1, 2, 3; 4, 1, 2, 3, 4 ...
+   - While revising, do not edit but rewrite.
+
+6. *Organize always*
+
+7. *Write good english*
+   - Write in currently and commonly accepted style.
+
+8. *Honesty is the best policy*
+   - If you are using a theorem without proof, say so.
+   - If you are using a mathematical concept without defining it, say so.
+   - Do not hide the status of your statements.  
+     Whenever you tell the reader something, tell where it stands: this has been proved, this hasn't, this will be proved, that won't.
+
+9. *Down with the irrelevant and the trivial*
+   - Don't ramble on and then suddenly announce "Thus we have proved that ..."  State the result first, and then prove it.
+   - Leave chit-chat out of the statement of the theorem.
+
+10. *Do and do not repeat*
+
+11. *The editorial We is not all bad*
+
+12. *Use words correctly*
+    - Correct quantifiers.  Avoid 'any'; use 'each' or 'every'.
+    - Write 'if', 'then', 'for all', 'there exist' rather than logical symbols.
+
+13. *Use technical terms correctly*
+
+14. *Resist symbols*
+
+15. *Use symbols correctly*
+
+
+** Week 9
+*** Reading and discussion
+- Kleiman, [[file:kleiman.pdf][Writing a phase two math paper]]
+*** Writing
+- Submit the final draft of your first paper.
+
+- The final writing assignment.
+
+  Your goal is to write a 5-10 page paper about the topic of your second talk.
+  It should have a title, an abstract, a section called "Introduction", other sections, and a bibliography.
+  There must be more than one mathematical results with proofs.
+  The mark will only be based on the final submission, but there are the intermediate submissions before the final one.
+
+  1. In week 10, a tentative title and an outline of the paper.
+  2. In week 11, a first draft
+  3. In week 12, a revised draft
+  4. In the exam period, the final draft.
+
+*** Presentation
+**** Taylor Series
+***** Buda Wu, Taylor Series                                       :noexport:
+- Good examples
+- Good clean slides
+  - The first slide had too much text
+- Excellent use of software
+- Missing: motivation
+- Prepare all the technology in advance
+- Excellent use of pictures
+- Describe what you are doing before you do it, especially if it is something complicated.
+**** Fermat's Little Theorem
+***** Weihua, Fermat's Little Theorem                              :noexport:
+- Reduce text on slides.  Shorten as much as possible.
+- Good examples
+- Missing: motivation.  Why should the readers care?
+**** The binomial distribution
+***** Yi Zhuang, Binomial distribution                             :noexport:
+- Good amount of text on the slides.
+- Excellent pictures
+- Include: motivation
+
+**** The Poisson distribution
+***** Xiaoxuan, The Poisson distribution                           :noexport:
+- Good graphs
+- Missing motivation at the beginning
+- Good examples!
+- Good amount of text, but you can be even more succinct.
+- Proof (of what?)
+- You don't have to read everything on the slide.
+
+** Week 8
+*** Reading and discussion
+- Watch Jean-Pierre Serre's [[https://youtu.be/ECQyFzzBHlo][How to write mathematics badly]].
+*** Writing
+- A first draft of your first paper.
+*** Presentation
+- No presentations this week
+** Week 7
+*** Reading and discussion
+1. Keith Conrad, [[file:keithconradwriting.pdf][Advice on mathematical writing]]
+
+*** Writing
+This is a longer writing assignment.
+The first draft is due in Week 8, and a revised draft is due in Week 9.  Your mark will be based only on the revised draft.
+
+Write a 1 to 2 page paper about the content of your first talk.
+Include a title and one or two short introductory paragraphs.
+Your write-up must contain at least one definition, one example, and one result with proof.
+See "6. Types of Mathematical Results" and "7. Definitions" in Keith Conrad's document.
+For this assignment, you do not have to include references, and it is OK to not divide your document into sections.
+
+*** Presentations
+**** Explain the intermediate value theorem.
+***** Zihan                                                        :noexport:
+
+1. Good pictures.
+2. I could not understand the motivation.
+3. Good, clear handwriting.
+4. Clear statement of the theorem (both versions).
+5. The later (third) picture was hard to follow.
+6. The proof was hard to follow.
+7. You went over time.
+
+**** Discuss the determinant of a matrix.
+***** Chuqiao                                                      :noexport:
+
+1. If you say something is "important" or "interesting", say why.
+2. Talk as you write.  Speak more than what you write.  (You did this later, which was good!)
+3. Good for alerting that the notation for |A| is not the absolute value.
+4. Your definition did not actually define the determinant, which was confusing.
+5. Good examples.
+6. Clear outline.
+7. It would have been nice to emphasize the signs.
+
+**** Explain the fundamental theorem of algebra.
+***** Tongjia                                                      :noexport:
+
+1. Be careful about your notation.  Is C algebraically closed or C[x]?
+2. Write a theorem as a "Theorem: ...."
+3. If you begin a proof, write "Proof:"
+4. Check your examples: is 1/z really an entire function?  What is the domain?
+5. If the proof is by contradiction, say that at the beginning of the proof.
+6. Be neater in our boardwork.  If you erase something, erase it completely.
+
+** Week 6
+*** Reading and discussion
+1. Primer, Proof techniques: Proof by induction
+2. Vivaldi, Chapter 8
+3. [[file:worksheet06.pdf][In class exercise 6]]
+
+*** Writing
+1. Revise and resubmit one proof from assignment 4.
+   Schedule a meeting to talk about the revision.
+*** Presentations
+**** Convince us that \ (\sqrt 2\) is irrational.
+***** Adam                                                         :noexport:
+- Excellent font size for the title!
+- Speak more loudly.
+- Speak while writing.  Avoid long silences.
+- Good effort to explain the significance of the result!  Historical significance can be a great motivation.  But you could have done a better job at explaining the history.
+- State the result before turning to the proof.
+- Good organisation (lemma/theorem).
+- Keep the notation straight.
+
+**** Explain the binomial coefficients \(n \choose r\).
+***** Lucy                                                         :noexport:
+
+- Good clear speaking.
+- Write more neatly.
+- Good example!
+- It can be confusing to give two definitions of the same concept, especially if it is not obvious why they are equivalent.
+- If you are using a theorem, state that you are using .... theorem.
+- Give more guidelines in the talk: what you are doing, where are you going next, etc.
+
+** Week 5
+*** Reading and discussion
+1. Primer, Proof techniques: Contraposition, Contradiction
+2. Vivaldi, Chapter 7
+3. [[file:worksheet05.pdf][In class exercise 5]]
+*** Writing
+:PROPERTIES:
+:EXPORT_FILE_NAME: writing05.pdf
+:EXPORT_TITLE: Writing Assignment 5
+:EXPORT_AUTHOR: MATH8705 The Language of Mathematics 2022
+:EXPORT_OPTIONS: toc:nil ':t
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:END:
+1. Vivaldi, Chapter 7, Exercise 7.2
+2. Vivaldi, Chapter 7, Exercise 7.3
+3. Vivaldi, Chapter 7, Exercise 7.4 (5 more)
+
+
+
+*** Presentations
+**** Explain eigenvalues and eigenvectors.
+***** Jingning                                                     :noexport:
+- Write coherently on the board.
+- Do not clutter the board.
+- Draw a picture if possible.
+- Write a clear definition: what is being defined?  What kind of object is it?  What are the defining properties?  Pay attention to the quantifiers.
+- Illustrate the definition with examples.
+- Tell the audience what you are doing and why you are doing it.  Provide guides.
+- Write down the important points on the board, not just the calculation.
+
+**** Explain unique factorisation of integers.
+***** Xiaoxuan                                                     :noexport:
+- Good loud voice and nice handwriting.
+- Speak while you write.  Speak more than you write.
+- The statement you wrote did not mention uniqueness.
+- Write the main steps in the proof on the board.
+- In the proof, why do the a and b have only two prime factors?
+- Avoid stating/proving a theorem inside the proof of another theorem.
+- Explain the notation in the proof.  What is A? What is B? What is p?  What is A*?  What is B*?
+
+** Week 4
+*** Reading and discussion
+1. Primer, Proof Techniques: Uniqueness, Casework, Either/Or Max/Min
+2. Vivaldi, Chapter 6
+3. Vivaldi, Sections 7.7, 7.8
+4. [[file:worksheet04.pdf][In class exercise 4]]
+*** Writing
+:PROPERTIES:
+:EXPORT_FILE_NAME: writing04.pdf
+:EXPORT_TITLE: Writing Assignment 4
+:EXPORT_AUTHOR: MATH8705 The Language of Mathematics 2022
+:EXPORT_OPTIONS: toc:nil ':t
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:END:
+1. Vivaldi, Chapter 7, Exercise 7.1 (any 2)
+2. Vivaldi, Chapter 7, Exercise 7.4 (any 5)
+
+*** Presentation
+**** Define the limit of a sequence.
+***** Zhining                                                      :noexport:
+
+- Good informal beginning
+- Humour!
+- Good example.
+- Good: stressing the different parts of the definition.
+- Describe the notation in an example.
+- Draw a picture if possible.
+- Write the definition clearly.
+- Explain the definition with an example, especially if it is a complicated definition.
+- Looked at the audience.  Clear and loud voice.
+- Keep the talk focused.
+
+**** Explain the quadratic formula.
+***** Han                                                          :noexport:
+
+- Good that you connected to a previous talk.
+- Good that you gave an example, but the example was very special!
+- Motivate! Explain in the beginning what you are going to do.  Why should the listeners keep listening to your talk?
+- Look at the audience.  Do not talk to the board.  It was very hard for half the room to read what you were writing on the board.
+- Avoid long silences.
+- Simplify:
+  Strategies:
+  - Explain the easier cases.
+  - Make assumptions that simplify the situation.
+
+
+** Week 3
+*** Reading and discussion
+1. Primer, Functions (part two), negating universal quantifiers, negating existential quantifiers, negating nested quantifiers
+2. Vivaldi, Chapter 4
+3. Vivaldi, Chapter 5
+4. [[file:worksheet03.pdf][In class exercise 3]]
+*** Writing
+:PROPERTIES:
+:EXPORT_FILE_NAME: writing03.pdf
+:EXPORT_TITLE: Writing Assignment 3
+:EXPORT_AUTHOR: MATH8705 The Language of Mathematics 2022
+:EXPORT_OPTIONS: toc:nil ':t
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:END:
+1. Vivaldi, Chapter 4, Exercise 4.3 (any 10)
+2. Vivaldi, Chapter 4, Exercise 4.4 (Only state the negations for any 5)
+3. Vivaldi, Chapter 5, Exercise 5.1
+*** Presentation
+**** Define a polynomial function and give some examples.
+***** Yi Zhuang                                                    :noexport:
+
+- Write a title
+- Speak, don't just write.
+- What are the a_i ?
+- Is n = 0 allowed?
+- Use consistent notation, or make a comment if you change notation.
+- It's good that you explained the notation in an example.
+- Good range of examples: negative, fractional coefficients, non-standard form.
+- Treat edge cases.
+
+**** Define similar triangles.  Define equilateral triangles.  Prove that any two equilateral triangles are similar.
+***** Kristian Zhamy Octavianus)                                   :noexport:
+
+- Wrote the title. Good.
+- Good beginning with informal introduction.
+- Nice big handwriting and pictures.  Clear boardwork!
+- Unclear definition.
+- Repeated "same shape" and "lookalike" many times, but did not give the actual definition.
+- Definition was in terms of the sides, but the explanation also involved angles.
+- What does "similar in the ratio" mean?
+- Pictures on the board unclear.
+- Good that you gave multiple ways, but how do they relate to the definition?
+- A/B = D/E = C/D is confusing.  Are these angles or sides?
+- Do we need to check all three ways?
+
+** Week 2
+*** Reading and discussion
+1. Vivaldi, Chapter 1
+2. Primer, Fundamentals: Existential quantifiers, universal quantifiers, combining quantifiers
+3. [[file:worksheet02.pdf][In class exercise 2]]
+
+*** Writing
+:PROPERTIES:
+:EXPORT_FILE_NAME: writing02.pdf
+:EXPORT_TITLE: Writing Assignment 2
+:EXPORT_AUTHOR: MATH8705 The Language of Mathematics 2022
+:EXPORT_OPTIONS: toc:nil ':t
+:export_latex_header_extra: \input{macros}
+:EXPORT_DATE: 
+:END:
+Vivaldi, Chapter 1, Exercise 1.2.
+*** Presentation
+**** Define an even number and prove that 0 is even.
+**** Define a prime number and prove that 2 is the only even prime number.
+
+** Week 1
+*** Reading and discussion
+1. Primer, Fundamentals: Set Theory, Functions (part one)
+2. Vivaldi, Chapter 2
+3. [[https://people.math.wisc.edu/~ellenber/mntcg/TalkTipSheet.pdf][Tips on giving talks, Jordan Ellenberg]]
+4. [[file:worksheet01.pdf][In class exercise 1]]
+*** Writing
+1. Convert a page of handwritten mathematics into LaTeX.
+*** Resources
+- [[https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes][Learn LaTeX in 30 minutes]]
+- https://www.learnlatex.org/ (especially, lesson 10)
+* Comments on presentations (updating list)
+Many of these comments also apply to clear writing.
+** General
+1. Make eye contact with the audience as much as possible.  Avoid speaking to the board.
+2. Speak so that everyone can hear clearly (not too softly or too fast).
+3. Begin informally, before going into technical details.
+4. Motivate your topic.  Get the readers interested in what you are saying.
+5. Keep the talk focused.  Do not try to do everything.
+   Some strategies to keep focus: making simplifying assumptions, doing special cases, explaining by an example.
+** Board/slides
+1. Write the title.
+2. Write legibly, clearly, in sufficiently big font.
+3. Develop the habit of speaking when you writing, avoiding long silences.
+4. Use the board to write the important points, not as a place for scratch work.
+** Content
+1. Illustrate definitions with examples and non-examples.  Comment on edge cases.
+2. Give precise definitions.  If that is not possible, explicitly indicate what is left vague or undefined.
+3. Mention each non-trivial mathematical result you use.  Indicate if it is easy or difficult.  Give proper attribution.
+4. Take every opportunity to draw a picture.
+5. Take every (reasonable) opportunity to tell a story.
+** Notation
+1. Use consistent notation, and alert the audience if notation changes.
+** Handouts
+1. Keep consistent with the talk.
+2. Comment on everything that is in the handout.
+
+* General comments on the first paper
+** Introduction
+
+The introduction to your paper must answer the following two questions
+1. What is the paper about?
+2. Why should the readers care?
+Number (2) is harder to achieve and takes practice.
+Number (1) is easier.
+To achieve (1), your introduction should explain the main topic and the main results.
+After reading the introduction, the reader should not be surprised by anything that comes later.
+
+** Body
+Use the appropriate LaTeX environments for definitions, theorems etc.  
+For example, put the theorems in \begin{theorem} ... \end{theorem} and the proofs in \begin{proof}...\end{proof}.
+
+The body must be more than just a sequence of definitions and theorems. 
+You must provide guides to the reader, by periodically reminding them what has been done and what comes ahead.
+You can do this by including sentences like:
+- Having defined eigenvectors and eigenvalues, we now see how to compute them.
+- We are now ready to state the main theorem.
+- Before we state the main theorem, we need some notation.
+- We have finished proving the lemma; now we turn to the proof of the theorem.
+
+All major definitions and theorems should come with an introductory sentence.
+
+For example, before you state a theorem in \begin{theorem}...\end{theorem}, include a sentence like:
+- The following is the main theorem of the paper.
+- Having established the notation, we state the main theorem.
+- The following theorem states that solutions exist and are unique.
+
+Before you give a major definition in \begin{definition}...\end{definition}, include a sentence like:
+- We now give the precise definition.
+- The following is the key definition of the paper.
+
+Before an example, include a sentence that explains why you are including the example.
+For example:
+- The following example shows that the solution is not always unique.
+- We now give an example of a continuous function that is not differentiable.
+- Not all matrices admit an eigenvector, as the following example shows.
+
+An introductory sentence is also helpful for minor definitions and theorems, but in those cases, it is more acceptable to skip.
+
+* Topics for second talk and paper
+:PROPERTIES:
+:EXPORT_OPTIONS: toc:nil ':t author:nil date:nil
+:export_latex_header_extra: \input{macros}
+:EXPORT_FILE_NAME: topics.pdf
+:END:
+1. Fermat's little theorem
+2. The chromatic polynomial of a graph
+3. The four colour theorem
+4. Modelling radioactive decay
+5. The mathematics of contagious diseases
+6. Linear differential equations
+7. Euler's method for numerically solving an ODE
+8. The mathematics of carbon dating
+9. The heat equation
+10. The wave equation
+11. Harmonic functions and the maximum principle
+12. Primality testing
+13. The RSA cryptosystem
+14. The conjugate gradient method
+15. The Poisson distribution
+16. The binomial distribution
+17. The central limit theorem
+18. The maximum likelihood method
+19. Primitive roots in modular arithmetic
+20. Planar graphs
+21. Recurrence relations
+22. Exact differential equations
+23. The prime number theorem
+24. Taylor Series
+25. Continued fractions
+26. Any other topic (with my permission)
+
+** Schedule for the second talk                                    :noexport:
+- Week 9 (Tuesday)
+  1. Buda Wu
+  2. Weihua Shan
+  3. Yi Zhuang
+- Week 9 (Thursday)
+  1. Xiaoxuan Wei
+- Week 10 (Tuesday)
+  1. Zhining Wang
+  2. Han Lin
+  3. Jingning Yao
+- Week 11 (Tuesday)
+  1. Zihan Zhao
+  2. Fengyawen Li
+  3. Chuqiao Xu
+- Week 12 (Tuesday)
+  1. Kristan Zhamy Octavianus
+  2. Tongjia Hu
+  3. Adam Goodge
+
+
+* Judgement criteria for the papers
+- *The title*                                                
+  - /is descriptive./
+  - /is concise./
+- *The abstract*                                             
+  - /adequately conveys the main topic./
+  - /is concise./
+- *The introduction*                                         
+  - /motivates the topic./
+  - /summarises all the key results./
+  - /gives an outline of the rest of the paper./
+  - /is not overly technical or overly vague./
+- *The sections*                                             
+  - /are titled informatively./
+  - /are arranged in a logical order./
+  - /are of appropriate length./
+- *Theorems and definitions*                                 
+  - /are in the correct environment./
+  - /are stated precisely./
+  - /are stated concisely./
+  - /are motivated./
+- *Proofs*                                                   
+  - /are in the correct environment./
+  - /are correct./
+  - /are readable (not overly long or short)./
+- *Surrounding discussion*                                   
+  - /guides the reader by periodic recaping and fore-shadowing./
+- *Language and grammar*                                     
+  - /Everything is a part of a complete sentence./
+  - /Spelling, grammar, and punctuation are correct./
+  - /Sentences are not overly long./
+  - /Writing is organised in logical paragraphs./
+- *Mathematical matters*                                     
+  - /Sentences do not start with a mathematical symbol./
+  - /Mathematical expressions are adequately separated./
+  - /Notation is not too cumbersome./
+  - /Notation is consistent./
+  - /Mathematical terms are used precisely./
+- *References*                                               
+  - /Proper citations are given./
+  - /A list of references is included in a consistent format./
