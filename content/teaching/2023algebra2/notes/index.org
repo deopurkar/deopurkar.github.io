@@ -1,0 +1,68 @@
+# Created 2023-02-20 Mon 13:55
+#+title: Algebra 2 (2023) Course Notes
+#+author: Anand Deopurkar
+Disclaimer: These notes may not be complete, accurate, or accurately reflect what happened in class.
+
+* Introduction
+Mathematics is broadly about two things: numbers and shapes.
+Of these, numbers are plainly in the realm of Algebra.
+We can also bring shapes into the realm  of Algebra by considering functions on the shapes.
+Numbers and functions can be added and multiplied.
+More precisely, they form rings.
+In this class, we will study numbers and functions through the language of rings and fields.
+
+** Example: Integers and rational numbers
+The simplest kinds of numbers are whole numbers, or elements of the ring \(\mathbf{Z}\).
+The next simplest are quotients of integers, or elements of the ring \(\mathbf{Q}\).
+Most of our "number rings" will be extensions of these.
+
+** Example: Polynomials and rational functions
+The simplest kinds of functions are polynomial functions, or elements of the ring \(\mathbf{R}[x]\).
+(You can replace \(\mathbf{R}\) by others, like \(\mathbf{C}\) or \(\mathbf{Q}\)).
+The next simplest are the rational functions, or elements of \(\mathbf{R}(x)\).
+Most of our "function rings" will be extensions of these.
+
+** Example: Finite fields
+There are other extremely important rings related to the integers.
+These are the rings \(\mathbf{Z}/n \mathbf{Z}\).
+We will mostly focus on the case of \(n = p\) a prime number, so that the ring above is a field.
+We will meet extensions of these, which are strictly speaking neither "function rings" or "number rings", and not strictly speaking are both. 
+
+** More number rings
+Fix a number \(\alpha \in \mathbf{C}\).
+We denote by \(\mathbf{Z}[\alpha] \subset \mathbf{C}\) the smallest sub-ring of \(\mathbf{C}\) containing \(\mathbf{Z}\) and \(\alpha\).
+In other words, see for yourself that
+\[ \mathbf{Z}[\alpha] = \{a_{0} + a_1 \alpha + \dots + a_{n}\alpha^{n} \mid a_i \in \mathbf{Z}\}.\]
+More generally, given \(\alpha_{1}, \dots, \alpha_{m} \in \mathbf{C}\), we denote by \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}] \subset \mathbf{C}\) the smallest subring of \(\mathbf{C}\) containing \(\mathbf{Z}\) and \(\alpha_1, \dots, \alpha_{m}\).
+We can write elements of \(\mathbf{Z}[\alpha_{1},\dots, \alpha_{m}]\) just as before.
+More precisely, we have the following observation.
+
+*** Proposition
+Let \(\alpha_{1}, \dots, \alpha_{m} \in \mathbf{C}\) be given.
+Then \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}] \subset \mathbf{C}\)  is the image of the homomorphism
+\[ \mathbf{Z}[x_1, \dots, x_m] \to \mathbf{C}\]
+that sends \(x_i \to \alpha_{i}\).
+
+*** Example
+Let us take \(\alpha = i\).
+Then you will see that \(\mathbf{Z}[i]\) can be described more simply by
+\[ \mathbf{Z}[i] = \{a_{0} + a_{1} i \mid a_{0}, a_{1} \in \mathbf{Z}\}.\]
+Higher powers of \(\alpha\) are not necessary!
+
+*** Example
+Take \(\alpha = \sqrt[3]{2}\) and notice that we only need the 0th, 1st, and 2nd power of \(\alpha\).
+
+*** Example
+Take \(\alpha = \pi\).
+Then, it is not clear that we can get away with only finitely many powers!
+
+*** Lesson
+The examples above suggest that sometimes, we can describe \(\mathbf{Z}[\alpha]\) using finitely many powers of \(\alpha\) and sometimes we cannot.
+This is an important distinction that we will formalise later.
+
+** Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)
+Let \(R \subset S\) be a sub-ring.
+Given \(\alpha_{1}, \dots, \alpha_{m}\), we define \(R[\alpha_{1}, \dots, \alpha_{m}]\) as the smallest subring of \(S\) that contains \(R\) and each of \(\alpha_{1}, \dots, \alpha_{m}\).
+As before, it is the image of the homomorphism
+\[ R[x_{1}, \dots, x_{n}] \to S\]
+that sends \(R \to S\) by the given inclusion and sends \(x_{i}\) to \(\alpha_{i}\).

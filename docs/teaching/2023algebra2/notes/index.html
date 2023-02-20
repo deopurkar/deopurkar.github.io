@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-02-20 Mon 23:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Algebra 2 (2023) Course Notes</title>
+<meta name="author" content="Anand Deopurkar" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="/css/main.css"></link><link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet"></link><script src="/js/collapsibility.js"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Algebra 2 (2023) Course Notes</h1>
+<p>
+Disclaimer: These notes may not be complete, accurate, or accurately reflect what happened in class.
+</p>
+
+<div id="outline-container-org89d3865" class="outline-2">
+<h2 id="org89d3865">Introduction</h2>
+<div class="outline-text-2" id="text-org89d3865">
+<p>
+Mathematics is broadly about two things: numbers and shapes.
+Of these, numbers are plainly in the realm of Algebra.
+We can also bring shapes into the realm  of Algebra by considering functions on the shapes.
+Numbers and functions can be added and multiplied.
+More precisely, they form rings.
+In this class, we will study numbers and functions through the language of rings and fields.
+</p>
+</div>
+
+<div id="outline-container-orga1f435c" class="outline-3">
+<h3 id="orga1f435c">Example: Integers and rational numbers</h3>
+<div class="outline-text-3" id="text-orga1f435c">
+<p>
+The simplest kinds of numbers are whole numbers, or elements of the ring \(\mathbf{Z}\).
+The next simplest are quotients of integers, or elements of the ring \(\mathbf{Q}\).
+Most of our &ldquo;number rings&rdquo; will be extensions of these.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga08f187" class="outline-3">
+<h3 id="orga08f187">Example: Polynomials and rational functions</h3>
+<div class="outline-text-3" id="text-orga08f187">
+<p>
+The simplest kinds of functions are polynomial functions, or elements of the ring \(\mathbf{R}[x]\).
+(You can replace \(\mathbf{R}\) by others, like \(\mathbf{C}\) or \(\mathbf{Q}\)).
+The next simplest are the rational functions, or elements of \(\mathbf{R}(x)\).
+Most of our &ldquo;function rings&rdquo; will be extensions of these.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbf7b553" class="outline-3">
+<h3 id="orgbf7b553">Example: Finite fields</h3>
+<div class="outline-text-3" id="text-orgbf7b553">
+<p>
+There are other extremely important rings related to the integers.
+These are the rings \(\mathbf{Z}/n \mathbf{Z}\).
+We will mostly focus on the case of \(n = p\) a prime number, so that the ring above is a field.
+We will meet extensions of these, which are strictly speaking neither &ldquo;function rings&rdquo; or &ldquo;number rings&rdquo;, and not strictly speaking are both. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdf4e1f7" class="outline-3">
+<h3 id="orgdf4e1f7">More number rings</h3>
+<div class="outline-text-3" id="text-orgdf4e1f7">
+<p>
+Fix a number \(\alpha \in \mathbf{C}\).
+We denote by \(\mathbf{Z}[\alpha] \subset \mathbf{C}\) the smallest sub-ring of \(\mathbf{C}\) containing \(\mathbf{Z}\) and \(\alpha\).
+In other words, see for yourself that
+\[ \mathbf{Z}[\alpha] = \{a_{0} + a_1 \alpha + \dots + a_{n}\alpha^{n} \mid a_i \in \mathbf{Z}\}.\]
+More generally, given \(\alpha_{1}, \dots, \alpha_{m} \in \mathbf{C}\), we denote by \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}] \subset \mathbf{C}\) the smallest subring of \(\mathbf{C}\) containing \(\mathbf{Z}\) and \(\alpha_1, \dots, \alpha_{m}\).
+We can write elements of \(\mathbf{Z}[\alpha_{1},\dots, \alpha_{m}]\) just as before.
+More precisely, we have the following observation.
+</p>
+</div>
+
+<div id="outline-container-orgf62129e" class="outline-4">
+<h4 id="orgf62129e">Proposition</h4>
+<div class="outline-text-4" id="text-orgf62129e">
+<p>
+Let \(\alpha_{1}, \dots, \alpha_{m} \in \mathbf{C}\) be given.
+Then \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}] \subset \mathbf{C}\)  is the image of the homomorphism
+\[ \mathbf{Z}[x_1, \dots, x_m] \to \mathbf{C}\]
+that sends \(x_i \to \alpha_{i}\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd8adfc5" class="outline-4">
+<h4 id="orgd8adfc5">Example</h4>
+<div class="outline-text-4" id="text-orgd8adfc5">
+<p>
+Let us take \(\alpha = i\).
+Then you will see that \(\mathbf{Z}[i]\) can be described more simply by
+\[ \mathbf{Z}[i] = \{a_{0} + a_{1} i \mid a_{0}, a_{1} \in \mathbf{Z}\}.\]
+Higher powers of \(\alpha\) are not necessary!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0c36d3d" class="outline-4">
+<h4 id="org0c36d3d">Example</h4>
+<div class="outline-text-4" id="text-org0c36d3d">
+<p>
+Take \(\alpha = \sqrt[3]{2}\) and notice that we only need the 0th, 1st, and 2nd power of \(\alpha\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgee7c5ac" class="outline-4">
+<h4 id="orgee7c5ac">Example</h4>
+<div class="outline-text-4" id="text-orgee7c5ac">
+<p>
+Take \(\alpha = \pi\).
+Then, it is not clear that we can get away with only finitely many powers!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7d7c9f6" class="outline-4">
+<h4 id="org7d7c9f6">Lesson</h4>
+<div class="outline-text-4" id="text-org7d7c9f6">
+<p>
+The examples above suggest that sometimes, we can describe \(\mathbf{Z}[\alpha]\) using finitely many powers of \(\alpha\) and sometimes we cannot.
+This is an important distinction that we will formalise later.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbb4704d" class="outline-3">
+<h3 id="orgbb4704d">Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</h3>
+<div class="outline-text-3" id="text-orgbb4704d">
+<p>
+Let \(R \subset S\) be a sub-ring.
+Given \(\alpha_{1}, \dots, \alpha_{m}\), we define \(R[\alpha_{1}, \dots, \alpha_{m}]\) as the smallest subring of \(S\) that contains \(R\) and each of \(\alpha_{1}, \dots, \alpha_{m}\).
+As before, it is the image of the homomorphism
+\[ R[x_{1}, \dots, x_{n}] \to S\]
+that sends \(R \to S\) by the given inclusion and sends \(x_{i}\) to \(\alpha_{i}\).
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+Created by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.5.5).  Last modified: 2023-02-20 Mon 13:55.  <a href="https://github.com/deopurkar.github.io">Source</a>
+</div>
+</body>
+</html>
