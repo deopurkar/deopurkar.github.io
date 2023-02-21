@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-02-21 Tue 13:37 -->
+<!-- 2023-02-21 Tue 13:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Algebra 2 (2023) Course Notes</title>
@@ -223,28 +223,31 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org57bc029">1. Introduction</a>
+<li><a href="#orgb6dbc12">1. Introduction</a>
 <ul>
-<li><a href="#org46e5719">1.1. Example: Integers and rational numbers</a></li>
-<li><a href="#orgd5d6927">1.2. Example: Polynomials and rational functions</a></li>
-<li><a href="#orga3eed7b">1.3. Example: Finite fields</a></li>
-<li><a href="#org251eeaf">1.4. More number rings</a>
+<li><a href="#orgae4c95f">1.1. Example: Integers and rational numbers</a></li>
+<li><a href="#orgd921367">1.2. Example: Polynomials and rational functions</a></li>
+<li><a href="#org564aff3">1.3. Example: Finite fields</a></li>
+<li><a href="#org1648a56">1.4. More number rings</a>
 <ul>
-<li><a href="#org10e0d10">1.4.1. Proposition</a></li>
-<li><a href="#org8b6cfe8">1.4.2. Example</a></li>
-<li><a href="#org4d983ef">1.4.3. Example</a></li>
-<li><a href="#org67e4ec4">1.4.4. Example</a></li>
-<li><a href="#orgbb192a1">1.4.5. Lesson</a></li>
+<li><a href="#orgc7261ba">1.4.1. Proposition</a></li>
+<li><a href="#org3724c88">1.4.2. Example</a></li>
+<li><a href="#orgb2f4ece">1.4.3. Example</a></li>
+<li><a href="#org4a781d9">1.4.4. Example</a></li>
+<li><a href="#org9f4dc9d">1.4.5. Lesson</a></li>
 </ul>
 </li>
-<li><a href="#org460ee55">1.5. Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</a></li>
+<li><a href="#org8641193">1.5. Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</a></li>
 </ul>
 </li>
-<li><a href="#orgd0bec5a">2. Minimal polynomial</a></li>
-<li><a href="#org1f93f36">3. Examples</a></li>
-<li><a href="#org64212ea">4. Proposition</a></li>
-<li><a href="#orga1f4f7f">5. Question</a></li>
-<li><a href="#org04f08fd">6. Summary</a></li>
+<li><a href="#org085e42a">2. Minimal polynomial</a>
+<ul>
+<li><a href="#org7fe8cc5">2.1. Examples</a></li>
+<li><a href="#org73ace47">2.2. Proposition</a></li>
+<li><a href="#orge3824c6">2.3. Question</a></li>
+<li><a href="#orged0b738">2.4. Summary</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -252,8 +255,8 @@
 Disclaimer: These notes may not be complete, accurate, or accurately reflect what happened in class.
 </p>
 
-<div id="outline-container-org57bc029" class="outline-2">
-<h2 id="org57bc029" class="collapsible"><span class="section-number-2">1.</span> Introduction</h2>
+<div id="outline-container-orgb6dbc12" class="outline-2">
+<h2 id="orgb6dbc12" class="collapsible"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Mathematics is broadly about two things: numbers and shapes.
@@ -265,8 +268,8 @@ In this class, we will study numbers and functions through the language of rings
 </p>
 </div>
 
-<div id="outline-container-org46e5719" class="outline-3">
-<h3 id="org46e5719" class="collapsible"><span class="section-number-3">1.1.</span> Example: Integers and rational numbers</h3>
+<div id="outline-container-orgae4c95f" class="outline-3">
+<h3 id="orgae4c95f" class="collapsible"><span class="section-number-3">1.1.</span> Example: Integers and rational numbers</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 The simplest kinds of numbers are whole numbers, or elements of the ring \(\mathbf{Z}\).
@@ -276,8 +279,8 @@ Most of our &ldquo;number rings&rdquo; will be extensions of these.
 </div>
 </div>
 
-<div id="outline-container-orgd5d6927" class="outline-3">
-<h3 id="orgd5d6927" class="collapsible"><span class="section-number-3">1.2.</span> Example: Polynomials and rational functions</h3>
+<div id="outline-container-orgd921367" class="outline-3">
+<h3 id="orgd921367" class="collapsible"><span class="section-number-3">1.2.</span> Example: Polynomials and rational functions</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 The simplest kinds of functions are polynomial functions, or elements of the ring \(\mathbf{R}[x]\).
@@ -288,8 +291,8 @@ Most of our &ldquo;function rings&rdquo; will be extensions of these.
 </div>
 </div>
 
-<div id="outline-container-orga3eed7b" class="outline-3">
-<h3 id="orga3eed7b" class="collapsible"><span class="section-number-3">1.3.</span> Example: Finite fields</h3>
+<div id="outline-container-org564aff3" class="outline-3">
+<h3 id="org564aff3" class="collapsible"><span class="section-number-3">1.3.</span> Example: Finite fields</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 There are other extremely important rings related to the integers.
@@ -300,8 +303,8 @@ We will meet extensions of these, which are strictly speaking neither &ldquo;fun
 </div>
 </div>
 
-<div id="outline-container-org251eeaf" class="outline-3">
-<h3 id="org251eeaf" class="collapsible"><span class="section-number-3">1.4.</span> More number rings</h3>
+<div id="outline-container-org1648a56" class="outline-3">
+<h3 id="org1648a56" class="collapsible"><span class="section-number-3">1.4.</span> More number rings</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 Fix a number \(\alpha \in \mathbf{C}\).
@@ -314,8 +317,8 @@ More precisely, we have the following observation.
 </p>
 </div>
 
-<div id="outline-container-org10e0d10" class="outline-4">
-<h4 id="org10e0d10" class="collapsible"><span class="section-number-4">1.4.1.</span> Proposition</h4>
+<div id="outline-container-orgc7261ba" class="outline-4">
+<h4 id="orgc7261ba" class="collapsible"><span class="section-number-4">1.4.1.</span> Proposition</h4>
 <div class="outline-text-4" id="text-1-4-1">
 <p>
 Let \(\alpha_{1}, \dots, \alpha_{m} \in \mathbf{C}\) be given.
@@ -326,8 +329,8 @@ that sends \(x_i \to \alpha_{i}\).
 </div>
 </div>
 
-<div id="outline-container-org8b6cfe8" class="outline-4">
-<h4 id="org8b6cfe8" class="collapsible"><span class="section-number-4">1.4.2.</span> Example</h4>
+<div id="outline-container-org3724c88" class="outline-4">
+<h4 id="org3724c88" class="collapsible"><span class="section-number-4">1.4.2.</span> Example</h4>
 <div class="outline-text-4" id="text-1-4-2">
 <p>
 Let us take \(\alpha = i\).
@@ -338,8 +341,8 @@ Higher powers of \(\alpha\) are not necessary!
 </div>
 </div>
 
-<div id="outline-container-org4d983ef" class="outline-4">
-<h4 id="org4d983ef" class="collapsible"><span class="section-number-4">1.4.3.</span> Example</h4>
+<div id="outline-container-orgb2f4ece" class="outline-4">
+<h4 id="orgb2f4ece" class="collapsible"><span class="section-number-4">1.4.3.</span> Example</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <p>
 Take \(\alpha = \sqrt[3]{2}\) and notice that we only need the 0th, 1st, and 2nd power of \(\alpha\).
@@ -347,8 +350,8 @@ Take \(\alpha = \sqrt[3]{2}\) and notice that we only need the 0th, 1st, and 2nd
 </div>
 </div>
 
-<div id="outline-container-org67e4ec4" class="outline-4">
-<h4 id="org67e4ec4" class="collapsible"><span class="section-number-4">1.4.4.</span> Example</h4>
+<div id="outline-container-org4a781d9" class="outline-4">
+<h4 id="org4a781d9" class="collapsible"><span class="section-number-4">1.4.4.</span> Example</h4>
 <div class="outline-text-4" id="text-1-4-4">
 <p>
 Take \(\alpha = \pi\).
@@ -357,8 +360,8 @@ Then, it is not clear that we can get away with only finitely many powers!
 </div>
 </div>
 
-<div id="outline-container-orgbb192a1" class="outline-4">
-<h4 id="orgbb192a1" class="collapsible"><span class="section-number-4">1.4.5.</span> Lesson</h4>
+<div id="outline-container-org9f4dc9d" class="outline-4">
+<h4 id="org9f4dc9d" class="collapsible"><span class="section-number-4">1.4.5.</span> Lesson</h4>
 <div class="outline-text-4" id="text-1-4-5">
 <p>
 The examples above suggest that sometimes, we can describe \(\mathbf{Z}[\alpha]\) using finitely many powers of \(\alpha\) and sometimes we cannot.
@@ -368,8 +371,8 @@ This is an important distinction that we will formalise later.
 </div>
 </div>
 
-<div id="outline-container-org460ee55" class="outline-3">
-<h3 id="org460ee55" class="collapsible"><span class="section-number-3">1.5.</span> Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</h3>
+<div id="outline-container-org8641193" class="outline-3">
+<h3 id="org8641193" class="collapsible"><span class="section-number-3">1.5.</span> Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</h3>
 <div class="outline-text-3" id="text-1-5">
 <p>
 Let \(R \subset S\) be a sub-ring.
@@ -383,8 +386,8 @@ that sends \(R \to S\) by the given inclusion and sends \(x_{i}\) to \(\alpha_{i
 </div>
 
 
-<div id="outline-container-orgd0bec5a" class="outline-2">
-<h2 id="orgd0bec5a" class="collapsible"><span class="section-number-2">2.</span> Minimal polynomial</h2>
+<div id="outline-container-org085e42a" class="outline-2">
+<h2 id="org085e42a" class="collapsible"><span class="section-number-2">2.</span> Minimal polynomial</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Let us look more closely at the rings \(\mathbf{Q}[\alpha] \subset \mathbf{C}\), or more generally, rings \(F[\alpha] \subset K\), where \(F \subset K\) are fields.
@@ -453,36 +456,35 @@ It is a polynomial of the smallest degree that vanishes when you substitute \(x 
 </ol></li>
 </ol>
 </div>
-</div>
 
-<div id="outline-container-org1f93f36" class="outline-2">
-<h2 id="org1f93f36" class="collapsible"><span class="section-number-2">3.</span> Examples</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org7fe8cc5" class="outline-3">
+<h3 id="org7fe8cc5" class="collapsible"><span class="section-number-3">2.1.</span> Examples</h3>
+<div class="outline-text-3" id="text-2-1">
 </div>
 </div>
-<div id="outline-container-org64212ea" class="outline-2">
-<h2 id="org64212ea" class="collapsible"><span class="section-number-2">4.</span> Proposition</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org73ace47" class="outline-3">
+<h3 id="org73ace47" class="collapsible"><span class="section-number-3">2.2.</span> Proposition</h3>
+<div class="outline-text-3" id="text-2-2">
 <p>
-<a id="orge7a949f"></a>
+<a id="orgc481714"></a>
 If \(\alpha\) is algebraic, then \(F[\alpha]\) is a field.
 </p>
 </div>
 </div>
-<div id="outline-container-orga1f4f7f" class="outline-2">
-<h2 id="orga1f4f7f" class="collapsible"><span class="section-number-2">5.</span> Question</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-orge3824c6" class="outline-3">
+<h3 id="orge3824c6" class="collapsible"><span class="section-number-3">2.3.</span> Question</h3>
+<div class="outline-text-3" id="text-2-3">
 <p>
 Take \(\alpha = \sqrt[3]{2}\), for example, which is algebraic over \(\mathbf{Q}\).
-Then Proposition <a href="#orge7a949f">4</a> says that \(\mathbf{Q}[\alpha]\) is a field.
+Then Proposition <a href="#orgc481714">2.2</a> says that \(\mathbf{Q}[\alpha]\) is a field.
 How will you explicitly find the multiplicative inverse of its elements?
 For example, what is the inverse of \(\sqrt[3]{2}\)? Of \(1 + \sqrt[3]{2}\)?
 </p>
 </div>
 </div>
-<div id="outline-container-org04f08fd" class="outline-2">
-<h2 id="org04f08fd" class="collapsible"><span class="section-number-2">6.</span> Summary</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-orged0b738" class="outline-3">
+<h3 id="orged0b738" class="collapsible"><span class="section-number-3">2.4.</span> Summary</h3>
+<div class="outline-text-3" id="text-2-4">
 <p>
 We have the following dichotomy.
 </p>
@@ -525,9 +527,10 @@ We have the following dichotomy.
 </div>
 </div>
 </div>
+</div>
 <div id="postamble" class="status">
 <p class="author">Author: Anand Deopurkar</p>
-<p class="date">Created: 2023-02-21 Tue 13:37</p>
+<p class="date">Created: 2023-02-21 Tue 13:55</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
