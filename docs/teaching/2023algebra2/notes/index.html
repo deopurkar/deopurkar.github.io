@@ -3,197 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-02-21 Tue 13:55 -->
+<!-- 2023-02-21 Tue 23:59 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Algebra 2 (2023) Course Notes</title>
 <meta name="author" content="Anand Deopurkar" />
 <meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: auto;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    top: -8px;
-    right: 12px;
-    padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
-  }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-</style>
-<script src="/js/collapsibility.js"></script>
+<link rel="stylesheet" href="/css/main.css"></link><link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet"></link><script src="/js/collapsibility.js"></script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         displayAlign: "center",
@@ -219,45 +35,13 @@
 <body>
 <div id="content" class="content">
 <h1 class="title">Algebra 2 (2023) Course Notes</h1>
-<div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#orgb6dbc12">1. Introduction</a>
-<ul>
-<li><a href="#orgae4c95f">1.1. Example: Integers and rational numbers</a></li>
-<li><a href="#orgd921367">1.2. Example: Polynomials and rational functions</a></li>
-<li><a href="#org564aff3">1.3. Example: Finite fields</a></li>
-<li><a href="#org1648a56">1.4. More number rings</a>
-<ul>
-<li><a href="#orgc7261ba">1.4.1. Proposition</a></li>
-<li><a href="#org3724c88">1.4.2. Example</a></li>
-<li><a href="#orgb2f4ece">1.4.3. Example</a></li>
-<li><a href="#org4a781d9">1.4.4. Example</a></li>
-<li><a href="#org9f4dc9d">1.4.5. Lesson</a></li>
-</ul>
-</li>
-<li><a href="#org8641193">1.5. Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</a></li>
-</ul>
-</li>
-<li><a href="#org085e42a">2. Minimal polynomial</a>
-<ul>
-<li><a href="#org7fe8cc5">2.1. Examples</a></li>
-<li><a href="#org73ace47">2.2. Proposition</a></li>
-<li><a href="#orge3824c6">2.3. Question</a></li>
-<li><a href="#orged0b738">2.4. Summary</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
 <p>
 Disclaimer: These notes may not be complete, accurate, or accurately reflect what happened in class.
 </p>
 
-<div id="outline-container-orgb6dbc12" class="outline-2">
-<h2 id="orgb6dbc12" class="collapsible"><span class="section-number-2">1.</span> Introduction</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-orgb33b22b" class="outline-2">
+<h2 id="orgb33b22b">Introduction</h2>
+<div class="outline-text-2" id="text-orgb33b22b">
 <p>
 Mathematics is broadly about two things: numbers and shapes.
 Of these, numbers are plainly in the realm of Algebra.
@@ -268,9 +52,9 @@ In this class, we will study numbers and functions through the language of rings
 </p>
 </div>
 
-<div id="outline-container-orgae4c95f" class="outline-3">
-<h3 id="orgae4c95f" class="collapsible"><span class="section-number-3">1.1.</span> Example: Integers and rational numbers</h3>
-<div class="outline-text-3" id="text-1-1">
+<div id="outline-container-org551b7bd" class="outline-3">
+<h3 id="org551b7bd">Example: Integers and rational numbers</h3>
+<div class="outline-text-3" id="text-org551b7bd">
 <p>
 The simplest kinds of numbers are whole numbers, or elements of the ring \(\mathbf{Z}\).
 The next simplest are quotients of integers, or elements of the ring \(\mathbf{Q}\).
@@ -279,9 +63,9 @@ Most of our &ldquo;number rings&rdquo; will be extensions of these.
 </div>
 </div>
 
-<div id="outline-container-orgd921367" class="outline-3">
-<h3 id="orgd921367" class="collapsible"><span class="section-number-3">1.2.</span> Example: Polynomials and rational functions</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-org2105039" class="outline-3">
+<h3 id="org2105039">Example: Polynomials and rational functions</h3>
+<div class="outline-text-3" id="text-org2105039">
 <p>
 The simplest kinds of functions are polynomial functions, or elements of the ring \(\mathbf{R}[x]\).
 (You can replace \(\mathbf{R}\) by others, like \(\mathbf{C}\) or \(\mathbf{Q}\)).
@@ -291,9 +75,9 @@ Most of our &ldquo;function rings&rdquo; will be extensions of these.
 </div>
 </div>
 
-<div id="outline-container-org564aff3" class="outline-3">
-<h3 id="org564aff3" class="collapsible"><span class="section-number-3">1.3.</span> Example: Finite fields</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-orgfcf342f" class="outline-3">
+<h3 id="orgfcf342f">Example: Finite fields</h3>
+<div class="outline-text-3" id="text-orgfcf342f">
 <p>
 There are other extremely important rings related to the integers.
 These are the rings \(\mathbf{Z}/n \mathbf{Z}\).
@@ -303,9 +87,9 @@ We will meet extensions of these, which are strictly speaking neither &ldquo;fun
 </div>
 </div>
 
-<div id="outline-container-org1648a56" class="outline-3">
-<h3 id="org1648a56" class="collapsible"><span class="section-number-3">1.4.</span> More number rings</h3>
-<div class="outline-text-3" id="text-1-4">
+<div id="outline-container-org07b5b4a" class="outline-3">
+<h3 id="org07b5b4a">More number rings</h3>
+<div class="outline-text-3" id="text-org07b5b4a">
 <p>
 Fix a number \(\alpha \in \mathbf{C}\).
 We denote by \(\mathbf{Z}[\alpha] \subset \mathbf{C}\) the smallest sub-ring of \(\mathbf{C}\) containing \(\mathbf{Z}\) and \(\alpha\).
@@ -317,9 +101,9 @@ More precisely, we have the following observation.
 </p>
 </div>
 
-<div id="outline-container-orgc7261ba" class="outline-4">
-<h4 id="orgc7261ba" class="collapsible"><span class="section-number-4">1.4.1.</span> Proposition</h4>
-<div class="outline-text-4" id="text-1-4-1">
+<div id="outline-container-org917c6d9" class="outline-4">
+<h4 id="org917c6d9">Proposition</h4>
+<div class="outline-text-4" id="text-org917c6d9">
 <p>
 Let \(\alpha_{1}, \dots, \alpha_{m} \in \mathbf{C}\) be given.
 Then \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}] \subset \mathbf{C}\)  is the image of the homomorphism
@@ -329,9 +113,9 @@ that sends \(x_i \to \alpha_{i}\).
 </div>
 </div>
 
-<div id="outline-container-org3724c88" class="outline-4">
-<h4 id="org3724c88" class="collapsible"><span class="section-number-4">1.4.2.</span> Example</h4>
-<div class="outline-text-4" id="text-1-4-2">
+<div id="outline-container-org42871b6" class="outline-4">
+<h4 id="org42871b6">Example</h4>
+<div class="outline-text-4" id="text-org42871b6">
 <p>
 Let us take \(\alpha = i\).
 Then you will see that \(\mathbf{Z}[i]\) can be described more simply by
@@ -341,18 +125,18 @@ Higher powers of \(\alpha\) are not necessary!
 </div>
 </div>
 
-<div id="outline-container-orgb2f4ece" class="outline-4">
-<h4 id="orgb2f4ece" class="collapsible"><span class="section-number-4">1.4.3.</span> Example</h4>
-<div class="outline-text-4" id="text-1-4-3">
+<div id="outline-container-org2270f54" class="outline-4">
+<h4 id="org2270f54">Example</h4>
+<div class="outline-text-4" id="text-org2270f54">
 <p>
 Take \(\alpha = \sqrt[3]{2}\) and notice that we only need the 0th, 1st, and 2nd power of \(\alpha\).
 </p>
 </div>
 </div>
 
-<div id="outline-container-org4a781d9" class="outline-4">
-<h4 id="org4a781d9" class="collapsible"><span class="section-number-4">1.4.4.</span> Example</h4>
-<div class="outline-text-4" id="text-1-4-4">
+<div id="outline-container-orgb7df0bd" class="outline-4">
+<h4 id="orgb7df0bd">Example</h4>
+<div class="outline-text-4" id="text-orgb7df0bd">
 <p>
 Take \(\alpha = \pi\).
 Then, it is not clear that we can get away with only finitely many powers!
@@ -360,9 +144,9 @@ Then, it is not clear that we can get away with only finitely many powers!
 </div>
 </div>
 
-<div id="outline-container-org9f4dc9d" class="outline-4">
-<h4 id="org9f4dc9d" class="collapsible"><span class="section-number-4">1.4.5.</span> Lesson</h4>
-<div class="outline-text-4" id="text-1-4-5">
+<div id="outline-container-org0a6a673" class="outline-4">
+<h4 id="org0a6a673">Lesson</h4>
+<div class="outline-text-4" id="text-org0a6a673">
 <p>
 The examples above suggest that sometimes, we can describe \(\mathbf{Z}[\alpha]\) using finitely many powers of \(\alpha\) and sometimes we cannot.
 This is an important distinction that we will formalise later.
@@ -371,9 +155,9 @@ This is an important distinction that we will formalise later.
 </div>
 </div>
 
-<div id="outline-container-org8641193" class="outline-3">
-<h3 id="org8641193" class="collapsible"><span class="section-number-3">1.5.</span> Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</h3>
-<div class="outline-text-3" id="text-1-5">
+<div id="outline-container-org3f7ee07" class="outline-3">
+<h3 id="org3f7ee07">Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</h3>
+<div class="outline-text-3" id="text-org3f7ee07">
 <p>
 Let \(R \subset S\) be a sub-ring.
 Given \(\alpha_{1}, \dots, \alpha_{m}\), we define \(R[\alpha_{1}, \dots, \alpha_{m}]\) as the smallest subring of \(S\) that contains \(R\) and each of \(\alpha_{1}, \dots, \alpha_{m}\).
@@ -384,154 +168,9 @@ that sends \(R \to S\) by the given inclusion and sends \(x_{i}\) to \(\alpha_{i
 </div>
 </div>
 </div>
-
-
-<div id="outline-container-org085e42a" class="outline-2">
-<h2 id="org085e42a" class="collapsible"><span class="section-number-2">2.</span> Minimal polynomial</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-Let us look more closely at the rings \(\mathbf{Q}[\alpha] \subset \mathbf{C}\), or more generally, rings \(F[\alpha] \subset K\), where \(F \subset K\) are fields.
-We will see that it is simpler to study \(\mathbf{Q}[\alpha]\) rather than \(\mathbf{Z}[\alpha]\).
-</p>
-
-<p>
-The key point was that \(F[\alpha] \subset K\) is the image of the ring homomorphism
-\[ \phi \colon F[x] \to K \]
-that sends \(F \to K\) by the given inclusion and sends \(x\) to \(\alpha\).
-Let \(I \subset F[x]\) be the kernel of \(\phi\).
-The first isomorphism theorem gives an isomorphism
-\[ F[x]/I \to F[\alpha].\]
-So, if we want to understand \(F[\alpha]\), it is critical to understand \(I\).
-</p>
-
-<p>
-We know that \(I \subset F[x]\) is an ideal.
-And fortunately, we know a lot about ideals of \(F[x]\).
-Let us recall what we know.
-</p>
-<ol class="org-ol">
-<li>Every ideal of \(F[x]\) is a principal ideal.
-In fact, if \(I \subset F[x]\) is an ideal, and if \(f \in I\) is an element of the smallest degree, then \(I = (f)\).</li>
-<li>The ideal \((f)\) is contained in the ideal \((g)\) if and only if \(g\) divides \(f\).</li>
-<li>The maximal ideals of \(F[x]\) are \((f)\) where \(f\) is an irreducible polynomial.</li>
-<li>The prime ideals of \(F[x]\) are the ideal \((0)\) and the maximal ideals as above.</li>
-</ol>
-
-<p>
-Let us now look at \(I = \mathrm{ker}\phi\).
-The ring \(F[x]/I\) is isomorphic to a sub-ring of \(K\), which is a field.
-Therefore, \(F[x]/I\) is an integral domain.
-So \(I\) is a prime ideal.
-</p>
-
-<p>
-Now there are two possibilities: 
-</p>
-<ol class="org-ol">
-<li>\(I = 0\) :: In this case, there are no polynomials in the kernel of \(\phi\).
-This means that there is no polynomial in \(F[x]\) that vanishes when you substitute \(x = \alpha\).
-In this case, we say that \(\alpha \in K\) is <i>transcendental over \(F\)</i>.</li>
-<li><p>
-\(I = (f)\) where \(f\) is a non-zero irreducible polynomial :: In this case, there is a polynomial in the kernel of \(\phi\).
-That is, there is a polynomial in \(F[x]\) that vanishes when you substitute \(x = \alpha.\)
-In this case, we say that \(\alpha \in K\) is <i>algebraic over \(F\)</i>.
-</p>
-
-<p>
-The <i>minimal polynomial</i> of \(\alpha\) or the <i>irreducible polynomial</i> of \(\alpha\) is characterised by any of the following equivalent conditions:
-</p>
-
-<ol class="org-ol">
-<li>It generates the kernel of \(\phi \colon F[x] \to K\) that sends \(x \to \alpha\).</li>
-
-<li>It is an irreducible polynomial that vanishes when you substitute \(x = \alpha\).</li>
-
-<li><p>
-It is a polynomial of the smallest degree that vanishes when you substitute \(x = \alpha\).
-</p>
-
-<p>
-(Strictly speaking, the conditions determine \(f\) only up to scaling.  To remedy this, we usually take \(f\) to be monic.)
-</p></li>
-</ol></li>
-</ol>
-</div>
-
-<div id="outline-container-org7fe8cc5" class="outline-3">
-<h3 id="org7fe8cc5" class="collapsible"><span class="section-number-3">2.1.</span> Examples</h3>
-<div class="outline-text-3" id="text-2-1">
-</div>
-</div>
-<div id="outline-container-org73ace47" class="outline-3">
-<h3 id="org73ace47" class="collapsible"><span class="section-number-3">2.2.</span> Proposition</h3>
-<div class="outline-text-3" id="text-2-2">
-<p>
-<a id="orgc481714"></a>
-If \(\alpha\) is algebraic, then \(F[\alpha]\) is a field.
-</p>
-</div>
-</div>
-<div id="outline-container-orge3824c6" class="outline-3">
-<h3 id="orge3824c6" class="collapsible"><span class="section-number-3">2.3.</span> Question</h3>
-<div class="outline-text-3" id="text-2-3">
-<p>
-Take \(\alpha = \sqrt[3]{2}\), for example, which is algebraic over \(\mathbf{Q}\).
-Then Proposition <a href="#orgc481714">2.2</a> says that \(\mathbf{Q}[\alpha]\) is a field.
-How will you explicitly find the multiplicative inverse of its elements?
-For example, what is the inverse of \(\sqrt[3]{2}\)? Of \(1 + \sqrt[3]{2}\)?
-</p>
-</div>
-</div>
-<div id="outline-container-orged0b738" class="outline-3">
-<h3 id="orged0b738" class="collapsible"><span class="section-number-3">2.4.</span> Summary</h3>
-<div class="outline-text-3" id="text-2-4">
-<p>
-We have the following dichotomy.
-</p>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">\(\alpha\) algebraic</th>
-<th scope="col" class="org-left">\(\alpha\) transcendental</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">\(F[x] \to K, x \mapsto \alpha\) has a non-zero kernel</td>
-<td class="org-left">\(F[x] \to K, x \mapsto \alpha\) has zero kernel</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\alpha\) satisfies a polynomial equation</td>
-<td class="org-left">\(\alpha\) does not satisfy a polynomial equation</td>
-</tr>
-
-<tr>
-<td class="org-left">\(F[\alpha]\) is a field</td>
-<td class="org-left">\(F[\alpha]\) is not a field (just a domain)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(F[\alpha]\) is a finite dimensional \(F\)-vector space</td>
-<td class="org-left">\(F[\alpha]\) is an infinite dimensional \(F\)-vector space.</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: Anand Deopurkar</p>
-<p class="date">Created: 2023-02-21 Tue 13:55</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+Created by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.5.5).  Last modified: 2023-02-20 Mon 13:55.  <a href="https://github.com/deopurkar.github.io">Source</a>
 </div>
 </body>
 </html>
