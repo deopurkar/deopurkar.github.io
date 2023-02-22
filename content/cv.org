@@ -235,7 +235,12 @@
 
 #+RESULTS:
 :results:
-- 2022 :: Harvard University, Cambridge, Massachusetts. /How to count using equivariant cohomology?/.
+- 2022 :: Chennai Mathematical Institute, Chennai, India. /Carpentry, geometry, and category theory/.
+- --- :: Canberra, Australia, ANU Mathematics Extension Program. /Error correcting codes/ (expository).
+- --- :: Australian National University, Canberra, Australia. /How to count using equivariant cohomology/.
+- --- :: Tsinghua University (Online), Beijing, China. /Combinatorics and dynamics of Harder-Narasimhan filtrations/.
+- --- :: ICERM, Brown University, Providence, Rhode Island, Braids in Symplectic and Algebraic Geometry. /Braids and monodromy in algebraic geometry/ (preparatory talk for the conference).
+- --- :: Harvard University, Cambridge, Massachusetts. /How to count using equivariant cohomology/.
 - --- :: Brown University, Providence, Rhode Island. /Apparent boundaries of projective varieties/.
 - --- :: Institute for Computational and Experimental Research in Mathematics, Providence, Rhode Island, Braids in representation theory and algebraic combinatorics. /The geometry and combinatorics of Harder--Narasimhan filtrations/.
 - --- :: Bhaskaracharya Pratishthana, Pune, India, Trimester program on triangle groups, Belyi uniformization, and modularity. /The geometry of Fermat-like equations/ (expository).
@@ -251,7 +256,7 @@
 - --- :: University of Sydney, Sydney, Australia, Birational geometry and moduli spaces. /Log surfaces of almost K3 type and curves of genus 4/.
 - --- :: Australian National University, Canberra, Australia, Women in mathematics day. /The work of Claire Voisin/ (expository).
 - 2018 :: University of Auckland, Auckland, New Zealand, Character varieties and topological quantum field theory. /Geometry of Hurwitz spaces/.
-- --- :: Number theory session,  AustMS, Adelaide, Australia. /On the geometric Steinitz problem/.
+- --- :: University of South Australia, Adelaide, Australia. /On the geometric Steinitz problem/.
 - --- :: Australian National University, Canberra, Australia, Colloquium. /The work of Caucher Birkar/ (expository).
 - --- :: Xiamen University, Xiamen, China, Algebraic surfaces and related topics. /Moduli of almost K3 log surfaces and curves of genus 4/.
 - --- :: Tata Institute of Fundamental Research, Mumbai, India. /How to count using (co)homology/ (expository).
