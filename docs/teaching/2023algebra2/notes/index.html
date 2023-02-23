@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-02-22 Wed 12:40 -->
+<!-- 2023-02-23 Thu 13:39 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Algebra 2 (2023) Course Notes</title>
@@ -191,30 +191,41 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
+  .org-svg { }
 </style>
-<script src="/js/collapsibility.js"></script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<link rel="stylesheet" href="/css/main.css"></link><script src="/js/collapsibility.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -223,50 +234,47 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org3447105">1. Introduction</a>
+<li><a href="#org8ee6921">1. Introduction</a>
 <ul>
-<li><a href="#org2b8bb66">1.1. Example: Integers and rational numbers</a></li>
-<li><a href="#orgde8ef4b">1.2. Example: Polynomials and rational functions</a></li>
-<li><a href="#org034a945">1.3. Example: Finite fields</a></li>
-<li><a href="#orgd1691e0">1.4. More number rings</a>
+<li><a href="#org45689e8">1.1. Example: Integers and rational numbers</a></li>
+<li><a href="#org1b75297">1.2. Example: Polynomials and rational functions</a></li>
+<li><a href="#org0876a58">1.3. Example: Finite fields</a></li>
+<li><a href="#orgfa212f0">1.4. More number rings</a>
 <ul>
-<li><a href="#orgca787de">1.4.1. Proposition</a></li>
-<li><a href="#org8a7d1e7">1.4.2. Example</a></li>
-<li><a href="#org07e484d">1.4.3. Example</a></li>
-<li><a href="#org7d892b4">1.4.4. Example</a></li>
-<li><a href="#orgab7025c">1.4.5. Lesson</a></li>
+<li><a href="#orgcdedc88">1.4.1. Proposition</a></li>
+<li><a href="#org412b7bb">1.4.2. Example</a></li>
+<li><a href="#org4c2fa74">1.4.3. Example</a></li>
+<li><a href="#org1d5f940">1.4.4. Example</a></li>
+<li><a href="#org19fac5a">1.4.5. Lesson</a></li>
 </ul>
 </li>
-<li><a href="#orgee92452">1.5. Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</a></li>
+<li><a href="#orgac672f5">1.5. Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</a></li>
 </ul>
 </li>
-<li><a href="#orgdfb9155">2. Minimal polynomial</a>
+<li><a href="#orga8bdb3d">2. Minimal polynomial</a>
 <ul>
-<li><a href="#orgfc98056">2.1. Examples</a></li>
-<li><a href="#org3775a0b">2.2. Proposition</a></li>
-<li><a href="#orgef978ba">2.3. Question</a></li>
-<li><a href="#org63d96ce">2.4. Proposition</a>
+<li><a href="#org2d773d0">2.1. Examples</a></li>
+<li><a href="#org263a187">2.2. Proposition</a></li>
+<li><a href="#orgb9ac21b">2.3. Question</a></li>
+<li><a href="#orgff83b35">2.4. Proposition</a>
 <ul>
-<li><a href="#orgbf35bc0">2.4.1. Proof</a></li>
+<li><a href="#org418c5e9">2.4.1. Proof</a></li>
 </ul>
 </li>
-<li><a href="#org81676e8">2.5. Summary</a></li>
+<li><a href="#orgcbe35dd">2.5. Summary</a></li>
 </ul>
 </li>
-<li><a href="#orgcea5951">3. Degree</a>
+<li><a href="#org18d22fb">3. Degree</a></li>
+<li><a href="#org3a0e7ad">4. Example</a></li>
+<li><a href="#orgd07bfb1">5. Multiplicative property of the degree</a></li>
+<li><a href="#org41b618b">6. Application</a>
 <ul>
-<li><a href="#orgca44002">3.1. Example</a></li>
-<li><a href="#org5376f5d">3.2. Multiplicative property of the degree</a></li>
-<li><a href="#org9c92043">3.3. Application</a>
-<ul>
-<li><a href="#org3b85407">3.3.1. Proof</a></li>
+<li><a href="#orga8aa850">6.1. Proof</a></li>
 </ul>
 </li>
-<li><a href="#org2e1f836">3.4. Example</a></li>
-<li><a href="#org562ee37">3.5. Example</a></li>
-<li><a href="#org53c3667">3.6. Corollary</a></li>
-</ul>
-</li>
+<li><a href="#org37463ff">7. Example</a></li>
+<li><a href="#org29110ae">8. Example</a></li>
+<li><a href="#orge4c9b11">9. Corollary</a></li>
 </ul>
 </div>
 </div>
@@ -274,8 +282,8 @@
 Disclaimer: These notes may not be complete, accurate, or accurately reflect what happened in class.
 </p>
 
-<div id="outline-container-org3447105" class="outline-2">
-<h2 id="org3447105" class="collapsible"><span class="section-number-2">1.</span> Introduction</h2>
+<div id="outline-container-org8ee6921" class="outline-2">
+<h2 id="org8ee6921" class="collapsible"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Mathematics is broadly about two things: numbers and shapes.
@@ -287,43 +295,43 @@ In this class, we will study numbers and functions through the language of rings
 </p>
 </div>
 
-<div id="outline-container-org2b8bb66" class="outline-3">
-<h3 id="org2b8bb66" class="collapsible"><span class="section-number-3">1.1.</span> Example: Integers and rational numbers</h3>
+<div id="outline-container-org45689e8" class="outline-3">
+<h3 id="org45689e8" class="collapsible"><span class="section-number-3">1.1.</span> Example: Integers and rational numbers</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 The simplest kinds of numbers are whole numbers, or elements of the ring \(\mathbf{Z}\).
 The next simplest are quotients of integers, or elements of the ring \(\mathbf{Q}\).
-Most of our &ldquo;number rings&rdquo; will be extensions of these.
+Most of our "number rings" will be extensions of these.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgde8ef4b" class="outline-3">
-<h3 id="orgde8ef4b" class="collapsible"><span class="section-number-3">1.2.</span> Example: Polynomials and rational functions</h3>
+<div id="outline-container-org1b75297" class="outline-3">
+<h3 id="org1b75297" class="collapsible"><span class="section-number-3">1.2.</span> Example: Polynomials and rational functions</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 The simplest kinds of functions are polynomial functions, or elements of the ring \(\mathbf{R}[x]\).
 (You can replace \(\mathbf{R}\) by others, like \(\mathbf{C}\) or \(\mathbf{Q}\)).
 The next simplest are the rational functions, or elements of \(\mathbf{R}(x)\).
-Most of our &ldquo;function rings&rdquo; will be extensions of these.
+Most of our "function rings" will be extensions of these.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org034a945" class="outline-3">
-<h3 id="org034a945" class="collapsible"><span class="section-number-3">1.3.</span> Example: Finite fields</h3>
+<div id="outline-container-org0876a58" class="outline-3">
+<h3 id="org0876a58" class="collapsible"><span class="section-number-3">1.3.</span> Example: Finite fields</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 There are other extremely important rings related to the integers.
 These are the rings \(\mathbf{Z}/n \mathbf{Z}\).
 We will mostly focus on the case of \(n = p\) a prime number, so that the ring above is a field.
-We will meet extensions of these, which are strictly speaking neither &ldquo;function rings&rdquo; or &ldquo;number rings&rdquo;, and not strictly speaking are both. 
+We will meet extensions of these, which are strictly speaking neither "function rings" or "number rings", and not strictly speaking are both. 
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgd1691e0" class="outline-3">
-<h3 id="orgd1691e0" class="collapsible"><span class="section-number-3">1.4.</span> More number rings</h3>
+<div id="outline-container-orgfa212f0" class="outline-3">
+<h3 id="orgfa212f0" class="collapsible"><span class="section-number-3">1.4.</span> More number rings</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 Fix a number \(\alpha \in \mathbf{C}\).
@@ -336,8 +344,8 @@ More precisely, we have the following observation.
 </p>
 </div>
 
-<div id="outline-container-orgca787de" class="outline-4">
-<h4 id="orgca787de" class="collapsible"><span class="section-number-4">1.4.1.</span> Proposition</h4>
+<div id="outline-container-orgcdedc88" class="outline-4">
+<h4 id="orgcdedc88" class="collapsible"><span class="section-number-4">1.4.1.</span> Proposition</h4>
 <div class="outline-text-4" id="text-1-4-1">
 <p>
 Let \(\alpha_{1}, \dots, \alpha_{m} \in \mathbf{C}\) be given.
@@ -348,8 +356,8 @@ that sends \(x_i \to \alpha_{i}\).
 </div>
 </div>
 
-<div id="outline-container-org8a7d1e7" class="outline-4">
-<h4 id="org8a7d1e7" class="collapsible"><span class="section-number-4">1.4.2.</span> Example</h4>
+<div id="outline-container-org412b7bb" class="outline-4">
+<h4 id="org412b7bb" class="collapsible"><span class="section-number-4">1.4.2.</span> Example</h4>
 <div class="outline-text-4" id="text-1-4-2">
 <p>
 Let us take \(\alpha = i\).
@@ -360,8 +368,8 @@ Higher powers of \(\alpha\) are not necessary!
 </div>
 </div>
 
-<div id="outline-container-org07e484d" class="outline-4">
-<h4 id="org07e484d" class="collapsible"><span class="section-number-4">1.4.3.</span> Example</h4>
+<div id="outline-container-org4c2fa74" class="outline-4">
+<h4 id="org4c2fa74" class="collapsible"><span class="section-number-4">1.4.3.</span> Example</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <p>
 Take \(\alpha = \sqrt[3]{2}\) and notice that we only need the 0th, 1st, and 2nd power of \(\alpha\).
@@ -369,8 +377,8 @@ Take \(\alpha = \sqrt[3]{2}\) and notice that we only need the 0th, 1st, and 2nd
 </div>
 </div>
 
-<div id="outline-container-org7d892b4" class="outline-4">
-<h4 id="org7d892b4" class="collapsible"><span class="section-number-4">1.4.4.</span> Example</h4>
+<div id="outline-container-org1d5f940" class="outline-4">
+<h4 id="org1d5f940" class="collapsible"><span class="section-number-4">1.4.4.</span> Example</h4>
 <div class="outline-text-4" id="text-1-4-4">
 <p>
 Take \(\alpha = \pi\).
@@ -379,8 +387,8 @@ Then, it is not clear that we can get away with only finitely many powers!
 </div>
 </div>
 
-<div id="outline-container-orgab7025c" class="outline-4">
-<h4 id="orgab7025c" class="collapsible"><span class="section-number-4">1.4.5.</span> Lesson</h4>
+<div id="outline-container-org19fac5a" class="outline-4">
+<h4 id="org19fac5a" class="collapsible"><span class="section-number-4">1.4.5.</span> Lesson</h4>
 <div class="outline-text-4" id="text-1-4-5">
 <p>
 The examples above suggest that sometimes, we can describe \(\mathbf{Z}[\alpha]\) using finitely many powers of \(\alpha\) and sometimes we cannot.
@@ -390,8 +398,8 @@ This is an important distinction that we will formalise later.
 </div>
 </div>
 
-<div id="outline-container-orgee92452" class="outline-3">
-<h3 id="orgee92452" class="collapsible"><span class="section-number-3">1.5.</span> Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</h3>
+<div id="outline-container-orgac672f5" class="outline-3">
+<h3 id="orgac672f5" class="collapsible"><span class="section-number-3">1.5.</span> Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</h3>
 <div class="outline-text-3" id="text-1-5">
 <p>
 Let \(R \subset S\) be a sub-ring.
@@ -405,8 +413,8 @@ that sends \(R \to S\) by the given inclusion and sends \(x_{i}\) to \(\alpha_{i
 </div>
 
 
-<div id="outline-container-orgdfb9155" class="outline-2">
-<h2 id="orgdfb9155" class="collapsible"><span class="section-number-2">2.</span> Minimal polynomial</h2>
+<div id="outline-container-orga8bdb3d" class="outline-2">
+<h2 id="orga8bdb3d" class="collapsible"><span class="section-number-2">2.</span> Minimal polynomial</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Let us look more closely at the rings \(\mathbf{Q}[\alpha] \subset \mathbf{C}\), or more generally, rings \(F[\alpha] \subset K\), where \(F \subset K\) are fields.
@@ -476,41 +484,41 @@ It is a polynomial of the smallest degree that vanishes when you substitute \(x 
 </ol>
 </div>
 
-<div id="outline-container-orgfc98056" class="outline-3">
-<h3 id="orgfc98056" class="collapsible"><span class="section-number-3">2.1.</span> Examples</h3>
+<div id="outline-container-org2d773d0" class="outline-3">
+<h3 id="org2d773d0" class="collapsible"><span class="section-number-3">2.1.</span> Examples</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
 </div>
-<div id="outline-container-org3775a0b" class="outline-3">
-<h3 id="org3775a0b" class="collapsible"><span class="section-number-3">2.2.</span> Proposition</h3>
+<div id="outline-container-org263a187" class="outline-3">
+<h3 id="org263a187" class="collapsible"><span class="section-number-3">2.2.</span> Proposition</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-<a id="orgd5270f1"></a>
+<a id="org5f64057"></a>
 If \(\alpha\) is algebraic, then \(F[\alpha]\) is a field.
 </p>
 </div>
 </div>
-<div id="outline-container-orgef978ba" class="outline-3">
-<h3 id="orgef978ba" class="collapsible"><span class="section-number-3">2.3.</span> Question</h3>
+<div id="outline-container-orgb9ac21b" class="outline-3">
+<h3 id="orgb9ac21b" class="collapsible"><span class="section-number-3">2.3.</span> Question</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Take \(\alpha = \sqrt[3]{2}\), for example, which is algebraic over \(\mathbf{Q}\).
-Then Proposition <a href="#orgd5270f1">2.2</a> says that \(\mathbf{Q}[\alpha]\) is a field.
+Then Proposition <a href="#org5f64057">2.2</a> says that \(\mathbf{Q}[\alpha]\) is a field.
 How will you explicitly find the multiplicative inverse of its elements?
 For example, what is the inverse of \(\sqrt[3]{2}\)? Of \(1 + \sqrt[3]{2}\)?
 </p>
 </div>
 </div>
-<div id="outline-container-org63d96ce" class="outline-3">
-<h3 id="org63d96ce"><span class="section-number-3">2.4.</span> Proposition</h3>
+<div id="outline-container-orgff83b35" class="outline-3">
+<h3 id="orgff83b35"><span class="section-number-3">2.4.</span> Proposition</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Let \(\alpha, \beta \in K\) be algebraic over \(F\).
 There is an isomorphism \(F[\alpha] \to F[\beta]\) extending the identity of \(F\) if and only if \(\alpha\) and \(\beta\) have the same minimal polynomial.
 </p>
 </div>
-<div id="outline-container-orgbf35bc0" class="outline-4">
-<h4 id="orgbf35bc0"><span class="section-number-4">2.4.1.</span> Proof</h4>
+<div id="outline-container-org418c5e9" class="outline-4">
+<h4 id="org418c5e9"><span class="section-number-4">2.4.1.</span> Proof</h4>
 <div class="outline-text-4" id="text-2-4-1">
 <p>
 See 15.2.8 in the book.
@@ -519,8 +527,8 @@ See 15.2.8 in the book.
 </div>
 </div>
 
-<div id="outline-container-org81676e8" class="outline-3">
-<h3 id="org81676e8" class="collapsible"><span class="section-number-3">2.5.</span> Summary</h3>
+<div id="outline-container-orgcbe35dd" class="outline-3">
+<h3 id="orgcbe35dd" class="collapsible"><span class="section-number-3">2.5.</span> Summary</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 We have the following dichotomy.
@@ -564,8 +572,8 @@ We have the following dichotomy.
 </div>
 </div>
 </div>
-<div id="outline-container-orgcea5951" class="outline-2">
-<h2 id="orgcea5951" class="collapsible"><span class="section-number-2">3.</span> Degree</h2>
+<div id="outline-container-org18d22fb" class="outline-2">
+<h2 id="org18d22fb" class="collapsible"><span class="section-number-2">3.</span> Degree</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Let \(\alpha \in K\) be algebraic over \(F\).
@@ -589,10 +597,11 @@ The degree of \(L/F\) is the dimension of \(L\) as an \(F\)-vector space.
 Observe that \(\deg(\alpha/F) = \deg(F[\alpha]/F)\).
 </p>
 </div>
+</div>
 
-<div id="outline-container-orgca44002" class="outline-3">
-<h3 id="orgca44002" class="collapsible"><span class="section-number-3">3.1.</span> Example</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-org3a0e7ad" class="outline-2">
+<h2 id="org3a0e7ad" class="collapsible"><span class="section-number-2">4.</span> Example</h2>
+<div class="outline-text-2" id="text-4">
 <p>
 Let \(L = \mathbf{Q}[i, \sqrt 2]\).
 Then \(\deg (L / \mathbf{Q}) = 4\).
@@ -600,9 +609,9 @@ Then \(\deg (L / \mathbf{Q}) = 4\).
 </div>
 </div>
 
-<div id="outline-container-org5376f5d" class="outline-3">
-<h3 id="org5376f5d" class="collapsible"><span class="section-number-3">3.2.</span> Multiplicative property of the degree</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-orgd07bfb1" class="outline-2">
+<h2 id="orgd07bfb1" class="collapsible"><span class="section-number-2">5.</span> Multiplicative property of the degree</h2>
+<div class="outline-text-2" id="text-5">
 <p>
 Let \(F \subset L\) and \(L \subset K\) be finite extensions.
 Then \(F \subset K\) is also finite and
@@ -611,25 +620,25 @@ Then \(F \subset K\) is also finite and
 </div>
 </div>
 
-<div id="outline-container-org9c92043" class="outline-3">
-<h3 id="org9c92043" class="collapsible"><span class="section-number-3">3.3.</span> Application</h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-org41b618b" class="outline-2">
+<h2 id="org41b618b" class="collapsible"><span class="section-number-2">6.</span> Application</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 If \(\alpha, \beta\) are algebraic over \(F\) then \(\alpha\beta\) and \(\alpha+\beta\) are algebraic over \(F\).
 </p>
 </div>
-<div id="outline-container-org3b85407" class="outline-4">
-<h4 id="org3b85407"><span class="section-number-4">3.3.1.</span> Proof</h4>
-<div class="outline-text-4" id="text-3-3-1">
+<div id="outline-container-orga8aa850" class="outline-3">
+<h3 id="orga8aa850"><span class="section-number-3">6.1.</span> Proof</h3>
+<div class="outline-text-3" id="text-6-1">
 <p>
 Look at \(F \subset F[\alpha] \subset F[\alpha,\beta]\).
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org2e1f836" class="outline-3">
-<h3 id="org2e1f836" class="collapsible"><span class="section-number-3">3.4.</span> Example</h3>
-<div class="outline-text-3" id="text-3-4">
+<div id="outline-container-org37463ff" class="outline-2">
+<h2 id="org37463ff" class="collapsible"><span class="section-number-2">7.</span> Example</h2>
+<div class="outline-text-2" id="text-7">
 <p>
 So we know that \(\sqrt 2 + \sqrt 3\) is algebraic.
 But what is its minimal polynomial?
@@ -639,18 +648,18 @@ One way to find a polynomial is by taking repeated powers and looking for a line
 </div>
 </div>
 
-<div id="outline-container-org562ee37" class="outline-3">
-<h3 id="org562ee37" class="collapsible"><span class="section-number-3">3.5.</span> Example</h3>
-<div class="outline-text-3" id="text-3-5">
+<div id="outline-container-org29110ae" class="outline-2">
+<h2 id="org29110ae" class="collapsible"><span class="section-number-2">8.</span> Example</h2>
+<div class="outline-text-2" id="text-8">
 <p>
 The degree of \(\mathbf{Q}[\sqrt[3]2, i] / \mathbf{Q}\) is 6.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org53c3667" class="outline-3">
-<h3 id="org53c3667" class="collapsible"><span class="section-number-3">3.6.</span> Corollary</h3>
-<div class="outline-text-3" id="text-3-6">
+<div id="outline-container-orge4c9b11" class="outline-2">
+<h2 id="orge4c9b11" class="collapsible"><span class="section-number-2">9.</span> Corollary</h2>
+<div class="outline-text-2" id="text-9">
 <p>
 If \(F \subset L\) is an extension of degree \(M\), then the degree of all sub-extensions must divide \(M\).
 In particular, the degree of every \(\alpha \in L\) must divide \(M\).
@@ -662,10 +671,9 @@ For example, an extension of degree \(2^{n}\) cannot contain an element of degre
 </div>
 </div>
 </div>
-</div>
 <div id="postamble" class="status">
 <p class="author">Author: Anand Deopurkar</p>
-<p class="date">Created: 2023-02-22 Wed 12:40</p>
+<p class="date">Created: 2023-02-23 Thu 13:39</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -599,3 +599,6 @@
 :comment:  poster
 :ref: [[file:papers.org::*Modular compactifications of the space of marked trigonal curves][Modular compactifications of the space of marked trigonal curves]]
 :end:
+
+
+
