@@ -3,13 +3,197 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-03-07 Tue 23:59 -->
+<!-- 2023-03-08 Wed 12:18 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Algebra 2 (2023) Course Notes</title>
 <meta name="author" content="Anand Deopurkar" />
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" href="/css/main.css"></link><link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet"></link><script src="/js/collapsibility.js"></script>
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" href="/css/main.css"></link><script src="/js/collapsibility.js"></script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         displayAlign: "center",
@@ -35,13 +219,31 @@
 <body>
 <div id="content" class="content">
 <h1 class="title">Algebra 2 (2023) Course Notes</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgbefbd2d">1. Introduction</a></li>
+<li><a href="#orgea28f82">2. Minimal polynomial</a></li>
+<li><a href="#org8f3151b">3. Degree</a></li>
+<li><a href="#orgfe17ca4">4. Irreducibility</a></li>
+<li><a href="#org48cab01">5. Ruler and compass constructions</a></li>
+<li><a href="#orgc5f3ebb">6. The fundamental theorem of algebra</a></li>
+<li><a href="#org01fdcb9">7. Adjoining roots</a></li>
+<li><a href="#org7c70f13">8. Adjoining a root</a></li>
+<li><a href="#org04f53f0">9. Adjoining all roots</a></li>
+<li><a href="#orgf5c1836">10. Example</a></li>
+<li><a href="#orgb2e29aa">11. Example</a></li>
+</ul>
+</div>
+</div>
 <p>
 Disclaimer: These notes may not be complete, accurate, or accurately reflect what happened in class.
 </p>
 
-<div id="outline-container-orgfb75615" class="outline-2">
-<h2 id="orgfb75615">Introduction</h2>
-<div class="outline-text-2" id="text-orgfb75615">
+<div id="outline-container-orgbefbd2d" class="outline-2">
+<h2 id="orgbefbd2d" class="collapsible"><span class="section-number-2">1.</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
 <p>
 Mathematics is broadly about two things: numbers and shapes.
 Of these, numbers are plainly in the realm of Algebra.
@@ -52,9 +254,9 @@ In this class, we will study numbers and functions through the language of rings
 </p>
 </div>
 
-<div id="outline-container-org2a66d1a" class="outline-3">
-<h3 id="org2a66d1a">Example: Integers and rational numbers</h3>
-<div class="outline-text-3" id="text-org2a66d1a">
+<div id="outline-container-org536084f" class="outline-3">
+<h3 id="org536084f" class="collapsible"><span class="section-number-3">1.1.</span> Example: Integers and rational numbers</h3>
+<div class="outline-text-3" id="text-1-1">
 <p>
 The simplest kinds of numbers are whole numbers, or elements of the ring \(\mathbf{Z}\).
 The next simplest are quotients of integers, or elements of the ring \(\mathbf{Q}\).
@@ -63,9 +265,9 @@ Most of our &ldquo;number rings&rdquo; will be extensions of these.
 </div>
 </div>
 
-<div id="outline-container-orgf5caf5a" class="outline-3">
-<h3 id="orgf5caf5a">Example: Polynomials and rational functions</h3>
-<div class="outline-text-3" id="text-orgf5caf5a">
+<div id="outline-container-orgfcf340d" class="outline-3">
+<h3 id="orgfcf340d" class="collapsible"><span class="section-number-3">1.2.</span> Example: Polynomials and rational functions</h3>
+<div class="outline-text-3" id="text-1-2">
 <p>
 The simplest kinds of functions are polynomial functions, or elements of the ring \(\mathbf{R}[x]\).
 (You can replace \(\mathbf{R}\) by others, like \(\mathbf{C}\) or \(\mathbf{Q}\)).
@@ -75,9 +277,9 @@ Most of our &ldquo;function rings&rdquo; will be extensions of these.
 </div>
 </div>
 
-<div id="outline-container-org82a4cd6" class="outline-3">
-<h3 id="org82a4cd6">Example: Finite fields</h3>
-<div class="outline-text-3" id="text-org82a4cd6">
+<div id="outline-container-org3fab3a3" class="outline-3">
+<h3 id="org3fab3a3" class="collapsible"><span class="section-number-3">1.3.</span> Example: Finite fields</h3>
+<div class="outline-text-3" id="text-1-3">
 <p>
 There are other extremely important rings related to the integers.
 These are the rings \(\mathbf{Z}/n \mathbf{Z}\).
@@ -87,9 +289,9 @@ We will meet extensions of these, which are strictly speaking neither &ldquo;fun
 </div>
 </div>
 
-<div id="outline-container-org82ec508" class="outline-3">
-<h3 id="org82ec508">More number rings</h3>
-<div class="outline-text-3" id="text-org82ec508">
+<div id="outline-container-orgc36df57" class="outline-3">
+<h3 id="orgc36df57" class="collapsible"><span class="section-number-3">1.4.</span> More number rings</h3>
+<div class="outline-text-3" id="text-1-4">
 <p>
 Fix a number \(\alpha \in \mathbf{C}\).
 We denote by \(\mathbf{Z}[\alpha] \subset \mathbf{C}\) the smallest sub-ring of \(\mathbf{C}\) containing \(\mathbf{Z}\) and \(\alpha\).
@@ -101,9 +303,9 @@ More precisely, we have the following observation.
 </p>
 </div>
 
-<div id="outline-container-org7b6ace1" class="outline-4">
-<h4 id="org7b6ace1">Proposition</h4>
-<div class="outline-text-4" id="text-org7b6ace1">
+<div id="outline-container-orgcfe90fc" class="outline-4">
+<h4 id="orgcfe90fc" class="collapsible"><span class="section-number-4">1.4.1.</span> Proposition</h4>
+<div class="outline-text-4" id="text-1-4-1">
 <p>
 Let \(\alpha_{1}, \dots, \alpha_{m} \in \mathbf{C}\) be given.
 Then \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}] \subset \mathbf{C}\)  is the image of the homomorphism
@@ -113,9 +315,9 @@ that sends \(x_i \to \alpha_{i}\).
 </div>
 </div>
 
-<div id="outline-container-org61c61a3" class="outline-4">
-<h4 id="org61c61a3">Example</h4>
-<div class="outline-text-4" id="text-org61c61a3">
+<div id="outline-container-orgf19d11c" class="outline-4">
+<h4 id="orgf19d11c" class="collapsible"><span class="section-number-4">1.4.2.</span> Example</h4>
+<div class="outline-text-4" id="text-1-4-2">
 <p>
 Let us take \(\alpha = i\).
 Then you will see that \(\mathbf{Z}[i]\) can be described more simply by
@@ -125,18 +327,18 @@ Higher powers of \(\alpha\) are not necessary!
 </div>
 </div>
 
-<div id="outline-container-org0e3bd64" class="outline-4">
-<h4 id="org0e3bd64">Example</h4>
-<div class="outline-text-4" id="text-org0e3bd64">
+<div id="outline-container-orga91b985" class="outline-4">
+<h4 id="orga91b985" class="collapsible"><span class="section-number-4">1.4.3.</span> Example</h4>
+<div class="outline-text-4" id="text-1-4-3">
 <p>
 Take \(\alpha = \sqrt[3]{2}\) and notice that we only need the 0th, 1st, and 2nd power of \(\alpha\).
 </p>
 </div>
 </div>
 
-<div id="outline-container-org54f2e3e" class="outline-4">
-<h4 id="org54f2e3e">Example</h4>
-<div class="outline-text-4" id="text-org54f2e3e">
+<div id="outline-container-org7befe38" class="outline-4">
+<h4 id="org7befe38" class="collapsible"><span class="section-number-4">1.4.4.</span> Example</h4>
+<div class="outline-text-4" id="text-1-4-4">
 <p>
 Take \(\alpha = \pi\).
 Then, it is not clear that we can get away with only finitely many powers!
@@ -144,9 +346,9 @@ Then, it is not clear that we can get away with only finitely many powers!
 </div>
 </div>
 
-<div id="outline-container-orgff659db" class="outline-4">
-<h4 id="orgff659db">Lesson</h4>
-<div class="outline-text-4" id="text-orgff659db">
+<div id="outline-container-org72f7fd2" class="outline-4">
+<h4 id="org72f7fd2" class="collapsible"><span class="section-number-4">1.4.5.</span> Lesson</h4>
+<div class="outline-text-4" id="text-1-4-5">
 <p>
 The examples above suggest that sometimes, we can describe \(\mathbf{Z}[\alpha]\) using finitely many powers of \(\alpha\) and sometimes we cannot.
 This is an important distinction that we will formalise later.
@@ -155,9 +357,9 @@ This is an important distinction that we will formalise later.
 </div>
 </div>
 
-<div id="outline-container-orge147881" class="outline-3">
-<h3 id="orge147881">Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</h3>
-<div class="outline-text-3" id="text-orge147881">
+<div id="outline-container-orgc6b50d3" class="outline-3">
+<h3 id="orgc6b50d3" class="collapsible"><span class="section-number-3">1.5.</span> Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</h3>
+<div class="outline-text-3" id="text-1-5">
 <p>
 Let \(R \subset S\) be a sub-ring.
 Given \(\alpha_{1}, \dots, \alpha_{m}\), we define \(R[\alpha_{1}, \dots, \alpha_{m}]\) as the smallest subring of \(S\) that contains \(R\) and each of \(\alpha_{1}, \dots, \alpha_{m}\).
@@ -168,9 +370,982 @@ that sends \(R \to S\) by the given inclusion and sends \(x_{i}\) to \(\alpha_{i
 </div>
 </div>
 </div>
+
+
+<div id="outline-container-orgea28f82" class="outline-2">
+<h2 id="orgea28f82" class="collapsible"><span class="section-number-2">2.</span> Minimal polynomial</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Let us look more closely at the rings \(\mathbf{Q}[\alpha] \subset \mathbf{C}\), or more generally, rings \(F[\alpha] \subset K\), where \(F \subset K\) are fields.
+We will see that it is simpler to study \(\mathbf{Q}[\alpha]\) rather than \(\mathbf{Z}[\alpha]\).
+</p>
+
+<p>
+The key point was that \(F[\alpha] \subset K\) is the image of the ring homomorphism
+\[ \phi \colon F[x] \to K \]
+that sends \(F \to K\) by the given inclusion and sends \(x\) to \(\alpha\).
+Let \(I \subset F[x]\) be the kernel of \(\phi\).
+The first isomorphism theorem gives an isomorphism
+\[ F[x]/I \to F[\alpha].\]
+So, if we want to understand \(F[\alpha]\), it is critical to understand \(I\).
+</p>
+
+<p>
+We know that \(I \subset F[x]\) is an ideal.
+And fortunately, we know a lot about ideals of \(F[x]\).
+Let us recall what we know.
+</p>
+<ol class="org-ol">
+<li>Every ideal of \(F[x]\) is a principal ideal.
+In fact, if \(I \subset F[x]\) is an ideal, and if \(f \in I\) is an element of the smallest degree, then \(I = (f)\).</li>
+<li>The ideal \((f)\) is contained in the ideal \((g)\) if and only if \(g\) divides \(f\).</li>
+<li>The maximal ideals of \(F[x]\) are \((f)\) where \(f\) is an irreducible polynomial.</li>
+<li>The prime ideals of \(F[x]\) are the ideal \((0)\) and the maximal ideals as above.</li>
+</ol>
+
+<p>
+Let us now look at \(I = \mathrm{ker}\phi\).
+The ring \(F[x]/I\) is isomorphic to a sub-ring of \(K\), which is a field.
+Therefore, \(F[x]/I\) is an integral domain.
+So \(I\) is a prime ideal.
+</p>
+
+<p>
+Now there are two possibilities: 
+</p>
+<ol class="org-ol">
+<li>\(I = 0\) :: In this case, there are no polynomials in the kernel of \(\phi\).
+This means that there is no polynomial in \(F[x]\) that vanishes when you substitute \(x = \alpha\).
+In this case, we say that \(\alpha \in K\) is <i>transcendental over \(F\)</i>.</li>
+<li><p>
+\(I = (f)\) where \(f\) is a non-zero irreducible polynomial :: In this case, there is a polynomial in the kernel of \(\phi\).
+That is, there is a polynomial in \(F[x]\) that vanishes when you substitute \(x = \alpha.\)
+In this case, we say that \(\alpha \in K\) is <i>algebraic over \(F\)</i>.
+</p>
+
+<p>
+The <i>minimal polynomial</i> of \(\alpha\) or the <i>irreducible polynomial</i> of \(\alpha\) is characterised by any of the following equivalent conditions:
+</p>
+
+<ol class="org-ol">
+<li>It generates the kernel of \(\phi \colon F[x] \to K\) that sends \(x \to \alpha\).</li>
+
+<li>It is an irreducible polynomial that vanishes when you substitute \(x = \alpha\).</li>
+
+<li><p>
+It is a polynomial of the smallest degree that vanishes when you substitute \(x = \alpha\).
+</p>
+
+<p>
+(Strictly speaking, the conditions determine \(f\) only up to scaling.  To remedy this, we usually take \(f\) to be monic.)
+</p></li>
+</ol></li>
+</ol>
+</div>
+
+<div id="outline-container-orgaf422f5" class="outline-3">
+<h3 id="orgaf422f5" class="collapsible"><span class="section-number-3">2.1.</span> Examples</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+</div>
+<div id="outline-container-org2cfeac7" class="outline-3">
+<h3 id="org2cfeac7" class="collapsible"><span class="section-number-3">2.2.</span> Proposition</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+<a id="org517c2ff"></a>
+If \(\alpha\) is algebraic, then \(F[\alpha]\) is a field.
+</p>
+</div>
+</div>
+<div id="outline-container-orge590b87" class="outline-3">
+<h3 id="orge590b87" class="collapsible"><span class="section-number-3">2.3.</span> Question</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Take \(\alpha = \sqrt[3]{2}\), for example, which is algebraic over \(\mathbf{Q}\).
+Then Proposition <a href="#org517c2ff">2.2</a> says that \(\mathbf{Q}[\alpha]\) is a field.
+How will you explicitly find the multiplicative inverse of its elements?
+For example, what is the inverse of \(\sqrt[3]{2}\)? Of \(1 + \sqrt[3]{2}\)?
+</p>
+</div>
+</div>
+<div id="outline-container-orgfc2a00e" class="outline-3">
+<h3 id="orgfc2a00e"><span class="section-number-3">2.4.</span> Proposition</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+Let \(\alpha, \beta \in K\) be algebraic over \(F\).
+There is an isomorphism \(F[\alpha] \to F[\beta]\) extending the identity of \(F\) if and only if \(\alpha\) and \(\beta\) have the same minimal polynomial.
+</p>
+</div>
+<div id="outline-container-orgb61c3e6" class="outline-4">
+<h4 id="orgb61c3e6"><span class="section-number-4">2.4.1.</span> Proof</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<p>
+See 15.2.8 in the book.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd92c889" class="outline-3">
+<h3 id="orgd92c889" class="collapsible"><span class="section-number-3">2.5.</span> Summary</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+We have the following dichotomy.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">\(\alpha\) algebraic</th>
+<th scope="col" class="org-left">\(\alpha\) transcendental</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">\(F[x] \to K, x \mapsto \alpha\) has a non-zero kernel</td>
+<td class="org-left">\(F[x] \to K, x \mapsto \alpha\) has zero kernel</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\alpha\) satisfies a polynomial equation</td>
+<td class="org-left">\(\alpha\) does not satisfy a polynomial equation</td>
+</tr>
+
+<tr>
+<td class="org-left">\(F[\alpha]\) is a field</td>
+<td class="org-left">\(F[\alpha]\) is not a field (just a domain)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(F[\alpha]\) is a finite dimensional \(F\)-vector space</td>
+<td class="org-left">\(F[\alpha]\) is an infinite dimensional \(F\)-vector space.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="outline-container-org8f3151b" class="outline-2">
+<h2 id="org8f3151b" class="collapsible"><span class="section-number-2">3.</span> Degree</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Let \(\alpha \in K\) be algebraic over \(F\).
+The <i>degree of \(\alpha\) over \(F\)</i>, denoted by \(\deg(\alpha/F)\) is
+</p>
+<ol class="org-ol">
+<li>the degree of its minimal polynomial,</li>
+<li>the dimension of \(F[\alpha]\) as an \(F\)-vector space.</li>
+</ol>
+<p>
+(The two numbers are equal).
+</p>
+
+<p>
+More generally, let \(F \subset L\) be fields.
+We say that \(L/F\) is a <i>finite extension</i> if \(L\) is a finite dimensional \(F\)-vector space.
+The degree of \(L/F\) is the dimension of \(L\) as an \(F\)-vector space.
+</p>
+
+<p>
+Observe that \(\deg(\alpha/F) = \deg(F[\alpha]/F)\).
+</p>
+</div>
+
+<div id="outline-container-orgf00d4d9" class="outline-3">
+<h3 id="orgf00d4d9" class="collapsible"><span class="section-number-3">3.1.</span> Example</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Let \(L = \mathbf{Q}[i, \sqrt 2]\).
+Then \(\deg (L / \mathbf{Q}) = 4\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7d46aa0" class="outline-3">
+<h3 id="org7d46aa0" class="collapsible"><span class="section-number-3">3.2.</span> Multiplicative property of the degree</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Let \(F \subset L\) and \(L \subset K\) be finite extensions.
+Then \(F \subset K\) is also finite and
+\[ \deg(F/K) = \deg(L/F) \cdot \deg (L/K).\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org797abbe" class="outline-3">
+<h3 id="org797abbe" class="collapsible"><span class="section-number-3">3.3.</span> Application</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+If \(\alpha, \beta\) are algebraic over \(F\) then \(\alpha\beta\) and \(\alpha+\beta\) are algebraic over \(F\).
+</p>
+</div>
+<div id="outline-container-orgfc29798" class="outline-4">
+<h4 id="orgfc29798"><span class="section-number-4">3.3.1.</span> Proof</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<p>
+Look at \(F \subset F[\alpha] \subset F[\alpha,\beta]\).
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orga1336cc" class="outline-3">
+<h3 id="orga1336cc" class="collapsible"><span class="section-number-3">3.4.</span> Example</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+So we know that \(\sqrt 2 + \sqrt 3\) is algebraic.
+But what is its minimal polynomial?
+The method of proof does not really give a way to find out.
+One way to find a polynomial is by taking repeated powers and looking for a linear relation, but we still need tools to prove that the polynomial we found is irreducible.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb4aa46b" class="outline-3">
+<h3 id="orgb4aa46b" class="collapsible"><span class="section-number-3">3.5.</span> Example</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+The degree of \(\mathbf{Q}[\sqrt[3]2, i] / \mathbf{Q}\) is 6.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org65792f5" class="outline-3">
+<h3 id="org65792f5" class="collapsible"><span class="section-number-3">3.6.</span> Corollary</h3>
+<div class="outline-text-3" id="text-3-6">
+<p>
+If \(F \subset L\) is an extension of degree \(M\), then the degree of all sub-extensions must divide \(M\).
+In particular, the degree of every \(\alpha \in L\) must divide \(M\).
+</p>
+
+<p>
+For example, an extension of degree \(2^{n}\) cannot contain an element of degree 3.
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-orgfe17ca4" class="outline-2">
+<h2 id="orgfe17ca4" class="collapsible"><span class="section-number-2">4.</span> Irreducibility</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+We want to develop some tools to prove irreducibility of polynomials.
+Let us study irreducibility and irreducible factorisation in an arbitrary integral domain \(R\).
+</p>
+</div>
+
+<div id="outline-container-orgd47ad16" class="outline-3">
+<h3 id="orgd47ad16" class="collapsible"><span class="section-number-3">4.1.</span> Terminology</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>A <i>non-trivial factorisation of \(p \in R\)</i> is an expression \(p = ab\) where neither \(a\) nor \(b\) is a unit.</li>
+<li>We say that \(p\) is irreducible if it has no non-trivial factorisation.</li>
+<li>In general, a <i>factorisation of \(f\) into irreducibles</i> is a factorisation \(f = p_1 \cdots p_n\) where each \(p_{i}\) is irreducible.</li>
+<li>We say that two factorisations \(f = p_1 \cdots p_{n}\) and \(f = q_1 \cdots q_{m}\) are equivalent if \(m = n\) and after re-numbering, we have for all \(i)\) an equality \(f_i = g_i \times u_i\) where \(u_i\) is a unit.</li>
+<li>We say that \(R\) has <i>unique factorisation</i> or is a <i>Unique Factorisation Domain</i> if every element of \(R\) has a factorisation into irreducibles and this factorisation is unique up to equivalence.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org62b9f46" class="outline-3">
+<h3 id="org62b9f46" class="collapsible"><span class="section-number-3">4.2.</span> Example</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>\(\mathbf{Z}\) is a UFD.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org38bf11a" class="outline-3">
+<h3 id="org38bf11a" class="collapsible"><span class="section-number-3">4.3.</span> Proposition</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+Let \(F\) be a field.  Then \(F[x]\) is a UFD.
+</p>
+</div>
+<div id="outline-container-orgf689081" class="outline-4">
+<h4 id="orgf689081" class="collapsible"><span class="section-number-4">4.3.1.</span> Proof:</h4>
+<div class="outline-text-4" id="text-4-3-1">
+<p>
+It is easy to see that every polynomial \(f\) has a factorisation into irreducibles (keep factoring until you cannot).  The interesting part is uniqueness.
+Suppose
+\[ p_1 \cdots p_{n} = q_{1} \cdots q_{m}.\]
+Consider \(p_{1}\) on the left.
+It suffices to show that there is an \(i\) such that \(q_{i} = p_{1} \cdot u \) for a unit \(u\).
+We then cancel \(p_1\) from both sides and continue.
+In fact, it suffices to show that there is an \(i\) for which \(p_{1}\) divides \(q_i\) (irreducibility of \(q_i\) implies that the other factor must be a unit).
+So the key fact is the following:
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org41bf892"></a>Key fact that makes unique factorisation work<br />
+<div class="outline-text-5" id="text-4-3-1-1">
+<p>
+If \(p\) is irreducible, and \(p\) divides \(q_1q_2\) then \(p\) divides \(q_1\) or \(p\) divides \(q_2\).
+Equivalently, if \(p\) is irreducible then \((p)\) is a prime ideal.
+</p>
+
+<p>
+We know that the key fact holds because if \(p\) is irreducible then \((p)\) is in fact a maximal ideal.
+</p>
+</div>
+</li>
+
+<li><a id="org0940792"></a>Coming back to the proof<br />
+<div class="outline-text-5" id="text-4-3-1-2">
+<p>
+By using the key fact repeatedly, we see that \(p\) divides one of the \(q_{i}\)&rsquo;s.
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgd171a22" class="outline-4">
+<h4 id="orgd171a22" class="collapsible"><span class="section-number-4">4.3.2.</span> Lesson</h4>
+<div class="outline-text-4" id="text-4-3-2">
+<p>
+If \(R\) is a domain in which every irreducible element generates a prime ideal.
+Then any two factorisations of \(f \in R\) must be equivalent.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd35ac71" class="outline-3">
+<h3 id="orgd35ac71" class="collapsible"><span class="section-number-3">4.4.</span> Factorisation over finite fields and integers</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+Let us come back to the main question: how do we show that a given polynomial is irreducible?  
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org243913f"></a>Over finite fields<br />
+<div class="outline-text-5" id="text-4-4-0-1">
+<p>
+Suppose \(R = F[x]\).
+Then we can just list all the irreducible polynomials in \(F[x]\) by making a sieve.
+We make a list of polynomials up to a given degree, ordered by the degree: linears, quadratics, cubics, &#x2026;
+The linears are automatically irreducible.
+We take a linear polynomial and cross out every higher degree one that is divisible.
+We keep going.
+What remains are the irreducible ones.
+</p>
+
+<p>
+This is probably not the most efficient method to test irreducibility, but it works!
+</p>
+</div>
+</li>
+<li><a id="org4dc9cf5"></a>Over the rational numbers<br />
+<div class="outline-text-5" id="text-4-4-0-2">
+<p>
+What if \(R = \mathbf{Q}[x]\)?
+Then we cannot sieve because there are infinitely many polynomials of a given degree.
+There are algorithmic irreducibility tests (read the end of Section 12.4), but they are a bit involved.
+</p>
+
+<p>
+Instead of studying them, we will learn a handful of tools that will be enough for most purposes.
+</p>
+
+<p>
+The key idea is the following.
+We have the diagram
+\[ \mathbf{Z}/p \mathbf{Z} [x] \leftarrow \mathbf{Z}[x] \rightarrow \mathbf{Q}[x].\]
+We understand factorisation on the left.
+It turns out that there is not much difference between irreducibility in \(\mathbf{Z}[x]\) versus \(\mathbf{Q}[x]\).
+And we can make deductions about factorisation in \(\mathbf{Z}[x]\) by reducing modulo \(p\).
+</p>
+
+<p>
+The next two propositions exemplify this idea.
+</p>
+</div>
+</li>
+
+<li><a id="org81be17e"></a>Proposition<br />
+<div class="outline-text-5" id="text-4-4-0-3">
+<p>
+Let \(p \in \mathbf{Z}\) be a prime.
+Suppose \(f(x) = a_{n} x^n + \cdots \in \mathbf{Z}[x]\) is such that \(p\) does not divide \(a_{n}\) and \(\overline f(x) \in \mathbf{Z}/p \mathbf{Z} [x]\) is irreducible.
+Then \(f(x)\) cannot factor as \(f(x) = h(x) g(x)\) in \(\mathbf{Z}[x]\) where \(h\) and \(g\) are non-constant.
+</p>
+</div>
+</li>
+
+<li><a id="org38dda94"></a>Proposition (Eisenstein&rsquo;s criterion)<br />
+<div class="outline-text-5" id="text-4-4-0-4">
+<p>
+Let \(p \in \mathbf{Z}\) be a prime.
+Suppose \(f(x) = a_{n} x^n + \cdots + a_{0} \in \mathbf{Z}[x]\) is such that \(p\) does not divide \(a_{n}\), divides all other \(a_i\) but \(p^2\) does not divide \(a_{0}\).
+Then \(f(x)\) cannot factor as \(f(x) = h(x) g(x)\) in \(\mathbf{Z}[x]\) where \(h\) and \(g\) are non-constant.
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgceb5d48" class="outline-3">
+<h3 id="orgceb5d48" class="collapsible"><span class="section-number-3">4.5.</span> Factorisation over the rational numbers</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+Let us relate factorisation over \(\mathbf{Q}[x]\) and \(\mathbf{Z}[x]\).
+Consider the factorisation
+\[ 3x+3 = 3 \cdot (x+1).\]
+This is a non-trivial factorisation in \(\mathbf{Z}[x]\) but trivial one in \(\mathbf{Q}[x]\).
+This is basically the only difference in the theory.
+</p>
+
+<p>
+To get rid of factorisations as above, we introduce the following notion.
+We say that \(f(x) \in \mathbf{Z}[x]\) is <i>a primitive polynomial</i> if no prime \(p \in \mathbf{Z}\) divides \(f(x)\).
+Equivalently, for every prime \(p\), the image of \(f(x)\) in \(\mathbf{Z}/p \mathbf{Z}[x]\) is non-zero.
+Equivalently, we cannot extract a non-unit constant factor.
+By convention, we also require the leading coefficient of \(f(x)\) to be positive (this is less important; if we don&rsquo;t do this, we have to amend most of the following statements by adding &ldquo;up to sign&rdquo; or &ldquo;up to a unit in \(\mathbf{Z}\)&rdquo;).
+</p>
+
+<p>
+If \(f(x)\in \mathbf{Z}[x]\) is not primitive, we can simply extract out all primes \(p\) that divide it.
+In other words, we can write
+\[ f(x) = c g(x)\]
+where \(c \in \mathbf{Z}\) and \(g(x)\) is primitive.
+</p>
+
+<p>
+More generally, if \(f(x) \in \mathbf{Q}[x]\), then we can take a common denominator of all coefficients and write \(f(x) = 1/N \cdot h(x)\) where \(h(x) \in \mathbf{Z}[x]\).
+We can then extract a constant factor out of \(h(x)\) if any and get
+\[ f(x) = c g(x) \]
+where \(c \in \mathbf{Q}\) and \(g(x) \in \mathbf{Z}[x]\) is primitive.
+It is easy to check that the expression above is <i>unique</i>.
+</p>
+
+<p>
+<b>Slogan</b>: For primitive polynomials, factorisation in \(\mathbf{Q}[x]\) and \(\mathbf{Z}[x]\) behave in the same way.
+</p>
+
+<p>
+We will make this precise.
+First, we need an easy lemma.
+</p>
+</div>
+<div id="outline-container-orge45d644" class="outline-4">
+<h4 id="orge45d644" class="collapsible"><span class="section-number-4">4.5.1.</span> Lemma (Gauss&rsquo;s lemma)</h4>
+<div class="outline-text-4" id="text-4-5-1">
+<p>
+The product of two primitime polynomials is primitive.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org57a6701"></a>Proof<br />
+<div class="outline-text-5" id="text-4-5-1-1">
+<p>
+Let \(f(x)\) and \(g(x)\) be primitive.
+Let \(p\) be any prime.
+Then the images \(\overline f(x)\) and \(\overline g(x)\) in \(\mathbf{Z}/p \mathbf{Z} [x]\) are non-zero.
+But this ring is a domain, so the image \(\overline {f(x)g(x)}\) is also non-zero.
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgfe0ef49" class="outline-4">
+<h4 id="orgfe0ef49" class="collapsible"><span class="section-number-4">4.5.2.</span> Proposition</h4>
+<div class="outline-text-4" id="text-4-5-2">
+<p>
+Let \(f(x)\) be a primitive polynomial and \(g(x) \in \mathbf{Z}[x]\) any polynomial.
+Suppose \(g(x) = f(x) h(x)\) for some \(h(x) \in \mathbf{Q}[x]\).
+Then \(h(x) \in \mathbf{Z}[x]\).
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org78e3742"></a>Proof<br />
+<div class="outline-text-5" id="text-4-5-2-1">
+<p>
+Write \(h(x) = c j(x)\) where \(j(x)\) is primitive and \(c = a/b \in \mathbf{Q}\) (reduced form) and \(g(x) = d i(x)\) where \(d \in \mathbf{Z}\) and \(i(x)\) is primitive.
+Then \(bd i(x) = a f(x) j(x)\).
+But \(i(x)\) and \(f(x)j(x)\) are both primitive, so we must have \(bd = a\) and \(i(x) = f(x)j(x)\).
+In particular, \(a/b = d\) is an integer, and so \(h(x) \in \mathbf{Z}[x]\).
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org54fe365" class="outline-4">
+<h4 id="org54fe365" class="collapsible"><span class="section-number-4">4.5.3.</span> Proposition</h4>
+<div class="outline-text-4" id="text-4-5-3">
+<p>
+Let \(f(x) \in \mathbf{Z}[x]\) be primitive.
+Then \(f(x)\) is irreducible in \(\mathbf{Z}[x]\) if and only if it is irreducible in \(\mathbf{Q}[x]\).
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="orgd7a9254"></a>Proof<br />
+<div class="outline-text-5" id="text-4-5-3-1">
+<p>
+Let us prove the contrapositive.
+Suppose \(f(x) = g(x) h(x)\) in \(\mathbf{Z}[x]\) is a non-trivial factorisation.
+Then neither \(g\) nor \(h\) are constant (because \(f\) is primitive).
+But then this is also a non-trivial factorisation in \(\mathbf{Q}[x]\).
+</p>
+
+<p>
+Conversely, suppose \(f(x) = g(x) h(x)\) in \(\mathbf{Q}[x]\) is a non-trivial factorisation.
+Write \(g(x) = c i(x)\) and \(h(x) = d j(x)\) where \(c,d \in \mathbf{Q}\) and \(i,j\) are primitive.
+Then \(f(x) = cd i(x)j(x)\) implies that \(cd = 1\), so we may as well write
+\(f(x) = i(x) j(x)\).
+This is a non-trivial factorisation in \(\mathbf{Z}[x]\).
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgd2b8343" class="outline-4">
+<h4 id="orgd2b8343"><span class="section-number-4">4.5.4.</span> Corollary</h4>
+<div class="outline-text-4" id="text-4-5-4">
+<p>
+The irreducible elements of \(\mathbf{Z}[x]\) are prime numbers \(p\) and primitive polynomials \(f(x)\) that are irreducible in \(\mathbf{Q}[x]\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6230476" class="outline-4">
+<h4 id="org6230476"><span class="section-number-4">4.5.5.</span> Remark</h4>
+<div class="outline-text-4" id="text-4-5-5">
+<p>
+From this, it is not hard to prove that every irreducible in \(\mathbf{Z}[x]\) generates a prime ideal.
+So \(\mathbf{Z}[x]\) is also a UFD.  
+In general, a similar reasoning using primitive polynomials shows that if \(R\) is UFD then \(R[x]\) is also a UFD.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbb00604" class="outline-4">
+<h4 id="orgbb00604"><span class="section-number-4">4.5.6.</span> Summary</h4>
+<div class="outline-text-4" id="text-4-5-6">
+<p>
+Suppose we are given \(f(x) \in \mathbf{Q}[x]\).
+By multiplying by a constant, we may assume that \(f(x) \in \mathbf{Z}[x]\) is primitive.
+Then irreducibility in \(\mathbf{Q}[x]\) is equivalent to the irreducibility in \(\mathbf{Z}[x]\).
+To prove irreducibility in \(\mathbf{Z}[x]\), we look modulo primes (for example, Eisenstein&rsquo;s criterion).
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org48cab01" class="outline-2">
+<h2 id="org48cab01" class="collapsible"><span class="section-number-2">5.</span> Ruler and compass constructions</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+A fascinating application of the algebra we have done so far is the proof for the impossibility of certain geometric constructions.
+In particular, we will see that there does not exist a geometric construction using only ruler and compass that can trisect a given angle.
+But first, here are the rules of the game.
+</p>
+
+<ol class="org-ol">
+<li>You are given a finite set of points in the plane.  These points are assumed to be constructed.</li>
+<li>The ruler allows you to draw a straight line between any two constructed points.</li>
+<li>The compass allows you to draw a circle centered at a constructed point and passing through a constructed point.</li>
+</ol>
+
+<p>
+You may add the intersection points of the lines and circles you draw to the set of constructed points, and use the ruler and compass any (finite) number of times.
+</p>
+
+<p>
+Lots of cool things can be done.  
+</p>
+</div>
+
+<div id="outline-container-org38e693f" class="outline-3">
+<h3 id="org38e693f" class="collapsible"><span class="section-number-3">5.1.</span> Example</h3>
+<div class="outline-text-3" id="text-5-1">
+<ol class="org-ol">
+<li>Given two points, construct their midpoint.</li>
+<li>Given three points \(A, B, C\), construct the angle bisector.</li>
+<li>Given three points \(A, B, C\), construct the unique circle passing through \(A, B, C\).</li>
+<li>Given two points \(A, B\), divide the segment \(AB\) in 79 equal parts (or any other number).</li>
+<li>&#x2026;</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orga03bc9c" class="outline-3">
+<h3 id="orga03bc9c" class="collapsible"><span class="section-number-3">5.2.</span> Algebraising the construction game</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+To bring algebra into the picture, we introduce coordinates.
+Let a set of constructed points \(S\) be given.
+Suppose \(F \subset \mathbf{R}\) is a field that contains all the coordinates of \(S\).
+The key idea is to explore in what ways \(F\) needs to be enlarged when we construct new points.
+</p>
+</div>
+
+<div id="outline-container-org9880686" class="outline-4">
+<h4 id="org9880686" class="collapsible"><span class="section-number-4">5.2.1.</span> Using the ruler</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<p>
+Suppose we draw a line joining two points of \(S\).
+Observe the following: we can write the equation of the line in the form
+</p>
+<div class="equation" id="orgca1f0b3">
+<p>
+ax + by = c
+</p>
+
+</div>
+<p>
+where \(a,b,c\) are in the field \(F\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd69709c" class="outline-4">
+<h4 id="orgd69709c" class="collapsible"><span class="section-number-4">5.2.2.</span> Using the compass</h4>
+<div class="outline-text-4" id="text-5-2-2">
+<p>
+Suppose we draw a circle centered at a point of \(S\) passing through another point of \(S\).
+Observe the following: we can write the equation of the circle in the form
+</p>
+<div class="equation" id="org61d857c">
+<p>
+(x-a)<sup>2</sup> + (y-b)<sup>2</sup> = c
+</p>
+
+</div>
+<p>
+where \(a,b,c\) are in the field \(F\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgeaca9cf" class="outline-4">
+<h4 id="orgeaca9cf" class="collapsible"><span class="section-number-4">5.2.3.</span> Taking intersections</h4>
+<div class="outline-text-4" id="text-5-2-3">
+<p>
+Now is the most crucial part.  We add new points by intersecting.
+</p>
+<dl class="org-dl">
+<dt>Intersecting two lines</dt><dd>the intersection point of two lines of the form <a href="#orgca1f0b3">1</a> has coordinates in \(F\).  So \(F\) need not be enlarged.</dd>
+<dt>Intersecting a circle and a line</dt><dd>the intersection point(s) of a line <a href="#orgca1f0b3">1</a> and circle <a href="#org61d857c">1</a> have coordinates in \(F[\sqrt a]\) for some \(a \in F\).</dd>
+<dt>Intersecting two circles</dt><dd>the intersection point(s) of two circles <a href="#org61d857c">1</a> have coordinates in \(F[\sqrt a]\) for some \(a \in F\).</dd>
+</dl>
+
+<p>
+In summary, if we start with a set of constructed points whose coordinates lie in \(F\), any new point we add must have its coordinates either in \(F\) or in \(F[\sqrt a]\) for some \(a \in F\).  By repeating our reasoning, we get the following.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org861596e" class="outline-3">
+<h3 id="org861596e" class="collapsible"><span class="section-number-3">5.3.</span> Proposition (Main)</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+Let \(P\) be a point constructed using the ruler and compass from a given set \(S\).
+Assume that the coordinates of \(S\) lie in a field \(F\).
+Then there exist extensions
+\[ F_{0} = F \subset F_1 \subset \dots \subset F_{n}\]
+of the form \(F_{i+1} = F_i[\sqrt a_i]\) for some \(a_i \in F_i\) and such that the coordinates of \(P\) lie in \(F_{n}\).
+</p>
+
+<p>
+In particular, the degree of the extension of \(F\) generated by the coordinates of \(P\) is a power of 2.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4976ddd" class="outline-3">
+<h3 id="org4976ddd" class="collapsible"><span class="section-number-3">5.4.</span> Corollary</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+If the coordinates of \(P\) generate a transcendental extension of \(F\) or an extension whose degree is not a power of 2, then \(P\) cannot be constructed from \(S\) using ruler and compass.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgda66c38" class="outline-3">
+<h3 id="orgda66c38" class="collapsible"><span class="section-number-3">5.5.</span> Proposition</h3>
+<div class="outline-text-3" id="text-5-5">
+<p>
+We start with the points \((0,0)\) and \((0,1)\).
+Then the point \((\cos 20, \sin 20)\) cannot be constructed.
+In particular, the \(60\)-degree angle cannot be trisected, and hence there cannot exist a procedure that trisects a given angle.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org2383249"></a>Proof<br />
+<div class="outline-text-5" id="text-5-5-0-1">
+<p>
+We can take \(F = \mathbf{Q}\).
+Trigonometry gives us the triple angle formula
+\[ \cos(3\theta) = 4 \cos^3(t) - 3 \cos(\theta).\]
+So \(\cos(20)\) satisfies the equation
+\[ 1/2 = 4 x^3 - 3x\]
+or equivalently
+\[ 8x^3-6x-1 = 0.\]
+This is irreducible mod 5 and hence irreducible.
+So \(\cos(20)\) has degree 3 over \(\mathbf{Q}\).
+But that means it is not constructible!
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgc5f3ebb" class="outline-2">
+<h2 id="orgc5f3ebb" class="collapsible"><span class="section-number-2">6.</span> The fundamental theorem of algebra</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+We say that a field \(K\) is algebraically closed if every non-constant \(f(x) \in K[x]\) has a root in \(K\).
+</p>
+
+<p>
+The following are equivalent:
+</p>
+<ol class="org-ol">
+<li>\(K\) is algebraically closed.</li>
+<li>Every \(f(x) \in K[x]\) factorises into linear factors.</li>
+<li>The only irreducible \(f(x) \in K[x]\) are linear.</li>
+<li>There is no non-trivial finite extension of \(K\).</li>
+<li>There is no non-trivial algebraic extension of \(K\).</li>
+</ol>
+</div>
+
+<div id="outline-container-orge809c4a" class="outline-3">
+<h3 id="orge809c4a" class="collapsible"><span class="section-number-3">6.1.</span> Theorem (Fundamental theorem of algebra)</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+The field of complex numbers is algebraically closed.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org29ac22e" class="outline-3">
+<h3 id="org29ac22e" class="collapsible"><span class="section-number-3">6.2.</span> Corollary</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+Let \(\overline Q \subset \mathbf{C}\) be the set of numbers that are algebraic over \(\mathbf{Q}\).
+Then \(\overline Q\) is algebraically closed.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org82c9021" class="outline-3">
+<h3 id="org82c9021" class="collapsible"><span class="section-number-3">6.3.</span> Corollary</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+The only irreducible polynomials over \(\mathbf{R}\) are linear and quadratics with negative discriminant.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdee05d9" class="outline-3">
+<h3 id="orgdee05d9"><span class="section-number-3">6.4.</span> Proof(s) of the FTA</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+Funnily enough, there is no purely algebraic proof of the Fundamental Theorem of Algebra!
+This is somewhat expected because the construction of \(\mathbf{C}\) goes via the construction of \(\mathbf{R}\), which is quite non-algebraic.
+So at some point in the proof, some analysis or topology comes in.
+I consider this is a spectacular example of the unity of mathematics: how different fields of mathematics help each other!
+</p>
+</div>
+
+<div id="outline-container-org391fa5a" class="outline-4">
+<h4 id="org391fa5a" class="collapsible"><span class="section-number-4">6.4.1.</span> Winding number proof</h4>
+<div class="outline-text-4" id="text-6-4-1">
+<p>
+A fascinating proof is topological, and uses the notion of &ldquo;winding number&rdquo;.
+</p>
+
+<p>
+Suppose we have a closed curve in \(\mathbf{C} \setminus 0\), which we encode by a map \(f \colon S^1 \to \mathbf{C} \setminus 0\).
+We can define a number \(W(f)\) that counts how many times \(f\) &ldquo;winds around 0&rdquo;.
+Defining this rigorously takes some effort, but the key feature of the definition is the following.
+</p>
+
+<p>
+<b><b>Proposition</b></b> If \(f\) can be continuously deformed into \(g\) while staying in \(\mathbf{C} \setminus 0\) then \(W(f) = W(g)\) .
+</p>
+
+<p>
+Here, the technical term for &ldquo;continuously deform&rdquo; is &ldquo;homotopy&rdquo;.
+</p>
+
+<p>
+<b><b>Lemma</b></b> (Dog on a leash)
+If \(h(x)\) is such that \(|h(x)| < |f(x)|\), then \(W(f) = W(f+h)\).
+</p>
+
+<p>
+We are now ready to prove the fundamental theorem of algebra.
+</p>
+
+<p>
+Suppose \(f(x) \in \mathbf{C}[x]\) is of degree \(n \geq 1\) and has no zeros.
+We will obtain a contradiction by considering curves of the form \(z \mapsto f(\lambda z)\) where \(\lambda\) is a constant and \(z\) moves on the unit circle.
+First, if \(\lambda\) is small, then dog-on-a-leash gives winding number 0.
+Second, if \(\lambda\) is huge, then dog-on-a-leash gives winding number \(n\).
+But we can continuously move between these by taking \(\lambda\) from a small number to a large number.
+This is a contradiction.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8091b61" class="outline-4">
+<h4 id="org8091b61" class="collapsible"><span class="section-number-4">6.4.2.</span> Complex analysis proof</h4>
+<div class="outline-text-4" id="text-6-4-2">
+<p>
+We have the following theorem in complex analysis.
+</p>
+
+<p>
+<b><b>Theorem</b></b> (Liouville)
+If \(f \colon \mathbf{C} \to \mathbf{C}\) is holomorphic and bounded, then \(f\) is constant.
+</p>
+
+<p>
+Suppose \(p(x) \in \mathbf{C}[x]\) does not have a zero.
+Then \(f(x) = 1/p(x)\) is a bounded holomorphic function.
+By Liouville&rsquo;s theorem, it must be constant.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org01fdcb9" class="outline-2">
+<h2 id="org01fdcb9" class="collapsible"><span class="section-number-2">7.</span> Adjoining roots</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Consider the field \(\mathbf{Q}\).
+We know that it sits in \(\mathbf{C}\), which is algebraically closed.
+So, although solving algebraic equations over \(\mathbf{Q}\) is not always possible, we can always extend our field by adjoining elements of \(\mathbf{C}\).
+We never have to face a &ldquo;lack of solutions&rdquo;&#x2014;they are always there in \(\mathbf{C}\).
+</p>
+
+<p>
+For a field like \(F = F_{5}\), things are more complicated.
+Suppose we want to solve
+\[ x^{2} - 2 = 0.\]
+That is, we want our number system to have a square root of 2.
+What do we do?
+There is nothing like \(\mathbf{C}\) (that we know of) for \(F\).
+</p>
+
+<p>
+That does not stop us, however.
+Consider \(K = F[x]/(x^2-2)\).
+Then \(K\) is a field extension of \(F\).
+Let \(\alpha = [x] \in K\).
+Then \(\alpha^2 - 2 = 0.\)
+So in \(K\), we have a square root of 2.
+We have constructed &ldquo;\(\sqrt{2}\)&rdquo; out of thin air!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7c70f13" class="outline-2">
+<h2 id="org7c70f13" class="collapsible"><span class="section-number-2">8.</span> Adjoining a root</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+<b><b>Proposition</b></b>  Let \(F\) be a field and let \(p(x) \in F[x]\) be a non-constant polynomial.
+Then there exists an extension \(F \subset K\) such that \(p(x)\) has a root in \(K\).
+<b><b>Proof</b></b> Let \(f(x)\) be an irreducible factor of \(p(x)\).
+Take \(K = F[x]/f(x)\).
+Then \(\alpha = [x]\) is a root of \(p(x)\).
+</p>
+
+<p>
+<b><b>Suggestion</b></b>: How do you represent elements of \(K\)?
+If \(f(x)\) has degree \(n\), then the elements can be identified with polynomials in \(F[x]\) of degree up to \(n-1\), with addition and multiplication done modulo \(f(x)\).
+Psychologically, I find it useful to rename \(x\) to a letter from the beginning of the alphabet, like \(a\) or \(\alpha\) so that the elements of \(K\) feel more like numbers than polynomials.
+This makes it less confusing if we have to make further extensions of \(K\), freeing up \(x\) for polynomials.
+</p>
+</div>
+
+<div id="outline-container-org4d7b2b2" class="outline-3">
+<h3 id="org4d7b2b2" class="collapsible"><span class="section-number-3">8.1.</span> Example</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+Let us take \(F = \mathbf{Q}\) and \(p(x) = x^3-2\).
+Then \(K = F[x]/(x^3-2)\).
+Note that \(K\) <i>does not come with an embedding in \(\mathbf{C}\)</i>.
+You should <i>not</i> think of it as a subfield of \(\mathbf{C}\).
+Think of it as just hovering over \(\mathbf{Q}\)&#x2014;spectral, disembodied, incorporeal!
+</p>
+
+<p>
+Of course, we can embedd \(K\) into \(\mathbf{C}\).
+But there are many ways to do so.
+Precisely, three of them, corresponding to \(x \mapsto \sqrt[3]{2}\) or \(x \mapsto \omega\sqrt[3]{2}\) or \(x \mapsto \omega^{2}\sqrt[3]{2}\) where \(\omega = e^{2\pi i/3}\).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org04f53f0" class="outline-2">
+<h2 id="org04f53f0" class="collapsible"><span class="section-number-2">9.</span> Adjoining all roots</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+<b><b>Proposition</b></b> Let \(F\) be a field and let \(p(x) \in F[x]\) be a non-constant polynomial.
+Then there exists an extension \(F \subset K\) such that \(p(x)\) splits into linear factors in \(K[x]\).
+<b><b>Proof</b></b> Adjoin a root.  Factor it out. Adjoin a root of the remaining polynomial.  Rinse, repeat.
+</p>
+
+<p>
+<b><b>Definition</b></b> We say that \(K/F\) is a <i>splitting field of \(p(x)\)</i> if \(p(x)\) splits into linear factors in \(K[x]\) and \(K\) is generated by the roots of \(p\).
+</p>
+
+<p>
+The second condition ensures that \(p(x)\) does not factor completely over a subfield of \(K\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf5c1836" class="outline-2">
+<h2 id="orgf5c1836" class="collapsible"><span class="section-number-2">10.</span> Example</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+The splitting field of \(x^3-2\) over \(\mathbf{Q}\) is \(\mathbf{Q}[\sqrt[3]{2}, \omega]\).
+Note that it has degree 6 over \(\mathbf{Q}\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb2e29aa" class="outline-2">
+<h2 id="orgb2e29aa" class="collapsible"><span class="section-number-2">11.</span> Example</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+Consider \(p(x) = 8x^3-6x-1\).
+Its roots are: \(\cos(20), \cos(80), \cos(140)\).
+Suppose we adjoin one root, say \(\cos(20)\).
+Then we automatically get the other two roots (by the double angle formula for cosine!).
+So the splitting field is only of degree 3.
+</p>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
-Created by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.5.5).  Last modified: 2023-02-20 Mon 13:55.  <a href="https://github.com/deopurkar.github.io">Source</a>
+<p class="author">Author: Anand Deopurkar</p>
+<p class="date">Created: 2023-03-08 Wed 12:18</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
