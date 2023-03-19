@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-03-18 Sat 16:51 -->
+<!-- 2023-03-19 Sun 15:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Algebra 2 (2023) Course Notes</title>
@@ -223,15 +223,15 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgd9f4d0f">1. Introduction</a></li>
-<li><a href="#org423159e">2. Minimal polynomial</a></li>
-<li><a href="#org4786f61">3. Degree</a></li>
-<li><a href="#orgb163908">4. Irreducibility</a></li>
-<li><a href="#org8af9eb8">5. Ruler and compass constructions</a></li>
-<li><a href="#orgc6515bc">6. The fundamental theorem of algebra</a></li>
-<li><a href="#orgbfb6093">7. Adjoining roots</a></li>
-<li><a href="#org2caec57">8. Finite fields</a></li>
-<li><a href="#orgdcca85c">9. Primitive elements</a></li>
+<li><a href="#org546c6ba">1. Introduction</a></li>
+<li><a href="#org1564b25">2. Minimal polynomial</a></li>
+<li><a href="#orgbb40f10">3. Degree</a></li>
+<li><a href="#org2636561">4. Irreducibility</a></li>
+<li><a href="#orga84347d">5. Ruler and compass constructions</a></li>
+<li><a href="#org62880b0">6. The fundamental theorem of algebra</a></li>
+<li><a href="#orgc133ece">7. Adjoining roots</a></li>
+<li><a href="#orgd0b4dc1">8. Finite fields</a></li>
+<li><a href="#orga55b631">9. Primitive elements</a></li>
 </ul>
 </div>
 </div>
@@ -239,8 +239,8 @@
 Disclaimer: These notes may not be complete, accurate, or accurately reflect what happened in class.
 </p>
 
-<div id="outline-container-orgd9f4d0f" class="outline-2">
-<h2 id="orgd9f4d0f" class="collapsible"><span class="section-number-2">1.</span> Introduction</h2>
+<div id="outline-container-org546c6ba" class="outline-2">
+<h2 id="org546c6ba" class="collapsible"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Mathematics is broadly about two things: numbers and shapes.
@@ -252,8 +252,8 @@ In this class, we will study numbers and functions through the language of rings
 </p>
 </div>
 
-<div id="outline-container-org573a083" class="outline-3">
-<h3 id="org573a083" class="collapsible"><span class="section-number-3">1.1.</span> Example: Integers and rational numbers</h3>
+<div id="outline-container-orgd23a850" class="outline-3">
+<h3 id="orgd23a850" class="collapsible"><span class="section-number-3">1.1.</span> Example: Integers and rational numbers</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 The simplest kinds of numbers are whole numbers, or elements of the ring \(\mathbf{Z}\).
@@ -263,8 +263,8 @@ Most of our &ldquo;number rings&rdquo; will be extensions of these.
 </div>
 </div>
 
-<div id="outline-container-org1495290" class="outline-3">
-<h3 id="org1495290" class="collapsible"><span class="section-number-3">1.2.</span> Example: Polynomials and rational functions</h3>
+<div id="outline-container-orgf30f39e" class="outline-3">
+<h3 id="orgf30f39e" class="collapsible"><span class="section-number-3">1.2.</span> Example: Polynomials and rational functions</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 The simplest kinds of functions are polynomial functions, or elements of the ring \(\mathbf{R}[x]\).
@@ -275,8 +275,8 @@ Most of our &ldquo;function rings&rdquo; will be extensions of these.
 </div>
 </div>
 
-<div id="outline-container-org86d020e" class="outline-3">
-<h3 id="org86d020e" class="collapsible"><span class="section-number-3">1.3.</span> Example: Finite fields</h3>
+<div id="outline-container-org3243272" class="outline-3">
+<h3 id="org3243272" class="collapsible"><span class="section-number-3">1.3.</span> Example: Finite fields</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 There are other extremely important rings related to the integers.
@@ -287,8 +287,8 @@ We will meet extensions of these, which are strictly speaking neither &ldquo;fun
 </div>
 </div>
 
-<div id="outline-container-org0986e9c" class="outline-3">
-<h3 id="org0986e9c" class="collapsible"><span class="section-number-3">1.4.</span> More number rings</h3>
+<div id="outline-container-orgdf7b10a" class="outline-3">
+<h3 id="orgdf7b10a" class="collapsible"><span class="section-number-3">1.4.</span> More number rings</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 Fix a number \(\alpha \in \mathbf{C}\).
@@ -301,8 +301,8 @@ More precisely, we have the following observation.
 </p>
 </div>
 
-<div id="outline-container-orgb355bf0" class="outline-4">
-<h4 id="orgb355bf0" class="collapsible"><span class="section-number-4">1.4.1.</span> Proposition</h4>
+<div id="outline-container-org9caefcb" class="outline-4">
+<h4 id="org9caefcb" class="collapsible"><span class="section-number-4">1.4.1.</span> Proposition</h4>
 <div class="outline-text-4" id="text-1-4-1">
 <p>
 Let \(\alpha_{1}, \dots, \alpha_{m} \in \mathbf{C}\) be given.
@@ -313,8 +313,8 @@ that sends \(x_i \to \alpha_{i}\).
 </div>
 </div>
 
-<div id="outline-container-org35ef3a6" class="outline-4">
-<h4 id="org35ef3a6" class="collapsible"><span class="section-number-4">1.4.2.</span> Example</h4>
+<div id="outline-container-org58f9efd" class="outline-4">
+<h4 id="org58f9efd" class="collapsible"><span class="section-number-4">1.4.2.</span> Example</h4>
 <div class="outline-text-4" id="text-1-4-2">
 <p>
 Let us take \(\alpha = i\).
@@ -325,8 +325,8 @@ Higher powers of \(\alpha\) are not necessary!
 </div>
 </div>
 
-<div id="outline-container-org8749364" class="outline-4">
-<h4 id="org8749364" class="collapsible"><span class="section-number-4">1.4.3.</span> Example</h4>
+<div id="outline-container-orgcd13939" class="outline-4">
+<h4 id="orgcd13939" class="collapsible"><span class="section-number-4">1.4.3.</span> Example</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <p>
 Take \(\alpha = \sqrt[3]{2}\) and notice that we only need the 0th, 1st, and 2nd power of \(\alpha\).
@@ -334,8 +334,8 @@ Take \(\alpha = \sqrt[3]{2}\) and notice that we only need the 0th, 1st, and 2nd
 </div>
 </div>
 
-<div id="outline-container-orgc2fcc43" class="outline-4">
-<h4 id="orgc2fcc43" class="collapsible"><span class="section-number-4">1.4.4.</span> Example</h4>
+<div id="outline-container-org6840a3e" class="outline-4">
+<h4 id="org6840a3e" class="collapsible"><span class="section-number-4">1.4.4.</span> Example</h4>
 <div class="outline-text-4" id="text-1-4-4">
 <p>
 Take \(\alpha = \pi\).
@@ -344,8 +344,8 @@ Then, it is not clear that we can get away with only finitely many powers!
 </div>
 </div>
 
-<div id="outline-container-org741f23f" class="outline-4">
-<h4 id="org741f23f" class="collapsible"><span class="section-number-4">1.4.5.</span> Lesson</h4>
+<div id="outline-container-orge8f316b" class="outline-4">
+<h4 id="orge8f316b" class="collapsible"><span class="section-number-4">1.4.5.</span> Lesson</h4>
 <div class="outline-text-4" id="text-1-4-5">
 <p>
 The examples above suggest that sometimes, we can describe \(\mathbf{Z}[\alpha]\) using finitely many powers of \(\alpha\) and sometimes we cannot.
@@ -355,8 +355,8 @@ This is an important distinction that we will formalise later.
 </div>
 </div>
 
-<div id="outline-container-org3a8322e" class="outline-3">
-<h3 id="org3a8322e" class="collapsible"><span class="section-number-3">1.5.</span> Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</h3>
+<div id="outline-container-org9de315d" class="outline-3">
+<h3 id="org9de315d" class="collapsible"><span class="section-number-3">1.5.</span> Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</h3>
 <div class="outline-text-3" id="text-1-5">
 <p>
 Let \(R \subset S\) be a sub-ring.
@@ -370,8 +370,8 @@ that sends \(R \to S\) by the given inclusion and sends \(x_{i}\) to \(\alpha_{i
 </div>
 
 
-<div id="outline-container-org423159e" class="outline-2">
-<h2 id="org423159e" class="collapsible"><span class="section-number-2">2.</span> Minimal polynomial</h2>
+<div id="outline-container-org1564b25" class="outline-2">
+<h2 id="org1564b25" class="collapsible"><span class="section-number-2">2.</span> Minimal polynomial</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Let us look more closely at the rings \(\mathbf{Q}[\alpha] \subset \mathbf{C}\), or more generally, rings \(F[\alpha] \subset K\), where \(F \subset K\) are fields.
@@ -441,41 +441,41 @@ It is a polynomial of the smallest degree that vanishes when you substitute \(x 
 </ol>
 </div>
 
-<div id="outline-container-org798d252" class="outline-3">
-<h3 id="org798d252" class="collapsible"><span class="section-number-3">2.1.</span> Examples</h3>
+<div id="outline-container-org571e4d0" class="outline-3">
+<h3 id="org571e4d0" class="collapsible"><span class="section-number-3">2.1.</span> Examples</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
 </div>
-<div id="outline-container-org8795ca2" class="outline-3">
-<h3 id="org8795ca2" class="collapsible"><span class="section-number-3">2.2.</span> Proposition</h3>
+<div id="outline-container-org46ecfe7" class="outline-3">
+<h3 id="org46ecfe7" class="collapsible"><span class="section-number-3">2.2.</span> Proposition</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-<a id="org9a92e1a"></a>
+<a id="org7b39b5a"></a>
 If \(\alpha\) is algebraic, then \(F[\alpha]\) is a field.
 </p>
 </div>
 </div>
-<div id="outline-container-orgb964585" class="outline-3">
-<h3 id="orgb964585" class="collapsible"><span class="section-number-3">2.3.</span> Question</h3>
+<div id="outline-container-org9c34468" class="outline-3">
+<h3 id="org9c34468" class="collapsible"><span class="section-number-3">2.3.</span> Question</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Take \(\alpha = \sqrt[3]{2}\), for example, which is algebraic over \(\mathbf{Q}\).
-Then Proposition <a href="#org9a92e1a">2.2</a> says that \(\mathbf{Q}[\alpha]\) is a field.
+Then Proposition <a href="#org7b39b5a">2.2</a> says that \(\mathbf{Q}[\alpha]\) is a field.
 How will you explicitly find the multiplicative inverse of its elements?
 For example, what is the inverse of \(\sqrt[3]{2}\)? Of \(1 + \sqrt[3]{2}\)?
 </p>
 </div>
 </div>
-<div id="outline-container-org81e4d73" class="outline-3">
-<h3 id="org81e4d73"><span class="section-number-3">2.4.</span> Proposition</h3>
+<div id="outline-container-orgf5549c8" class="outline-3">
+<h3 id="orgf5549c8"><span class="section-number-3">2.4.</span> Proposition</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Let \(\alpha, \beta \in K\) be algebraic over \(F\).
 There is an isomorphism \(F[\alpha] \to F[\beta]\) extending the identity of \(F\) if and only if \(\alpha\) and \(\beta\) have the same minimal polynomial.
 </p>
 </div>
-<div id="outline-container-orgf58e73f" class="outline-4">
-<h4 id="orgf58e73f"><span class="section-number-4">2.4.1.</span> Proof</h4>
+<div id="outline-container-orgf47bab5" class="outline-4">
+<h4 id="orgf47bab5"><span class="section-number-4">2.4.1.</span> Proof</h4>
 <div class="outline-text-4" id="text-2-4-1">
 <p>
 See 15.2.8 in the book.
@@ -484,8 +484,8 @@ See 15.2.8 in the book.
 </div>
 </div>
 
-<div id="outline-container-org590d50a" class="outline-3">
-<h3 id="org590d50a" class="collapsible"><span class="section-number-3">2.5.</span> Summary</h3>
+<div id="outline-container-orgc472c57" class="outline-3">
+<h3 id="orgc472c57" class="collapsible"><span class="section-number-3">2.5.</span> Summary</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 We have the following dichotomy.
@@ -529,8 +529,8 @@ We have the following dichotomy.
 </div>
 </div>
 </div>
-<div id="outline-container-org4786f61" class="outline-2">
-<h2 id="org4786f61" class="collapsible"><span class="section-number-2">3.</span> Degree</h2>
+<div id="outline-container-orgbb40f10" class="outline-2">
+<h2 id="orgbb40f10" class="collapsible"><span class="section-number-2">3.</span> Degree</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Let \(\alpha \in K\) be algebraic over \(F\).
@@ -555,8 +555,8 @@ Observe that \(\deg(\alpha/F) = \deg(F[\alpha]/F)\).
 </p>
 </div>
 
-<div id="outline-container-orgc3ff464" class="outline-3">
-<h3 id="orgc3ff464" class="collapsible"><span class="section-number-3">3.1.</span> Example</h3>
+<div id="outline-container-org962a033" class="outline-3">
+<h3 id="org962a033" class="collapsible"><span class="section-number-3">3.1.</span> Example</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 Let \(L = \mathbf{Q}[i, \sqrt 2]\).
@@ -565,8 +565,8 @@ Then \(\deg (L / \mathbf{Q}) = 4\).
 </div>
 </div>
 
-<div id="outline-container-org97f621b" class="outline-3">
-<h3 id="org97f621b" class="collapsible"><span class="section-number-3">3.2.</span> Multiplicative property of the degree</h3>
+<div id="outline-container-org07176a5" class="outline-3">
+<h3 id="org07176a5" class="collapsible"><span class="section-number-3">3.2.</span> Multiplicative property of the degree</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 Let \(F \subset L\) and \(L \subset K\) be finite extensions.
@@ -576,15 +576,15 @@ Then \(F \subset K\) is also finite and
 </div>
 </div>
 
-<div id="outline-container-orgc13cac6" class="outline-3">
-<h3 id="orgc13cac6" class="collapsible"><span class="section-number-3">3.3.</span> Application</h3>
+<div id="outline-container-org55c8248" class="outline-3">
+<h3 id="org55c8248" class="collapsible"><span class="section-number-3">3.3.</span> Application</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 If \(\alpha, \beta\) are algebraic over \(F\) then \(\alpha\beta\) and \(\alpha+\beta\) are algebraic over \(F\).
 </p>
 </div>
-<div id="outline-container-orge4368a8" class="outline-4">
-<h4 id="orge4368a8"><span class="section-number-4">3.3.1.</span> Proof</h4>
+<div id="outline-container-orgcf6909b" class="outline-4">
+<h4 id="orgcf6909b"><span class="section-number-4">3.3.1.</span> Proof</h4>
 <div class="outline-text-4" id="text-3-3-1">
 <p>
 Look at \(F \subset F[\alpha] \subset F[\alpha,\beta]\).
@@ -592,8 +592,8 @@ Look at \(F \subset F[\alpha] \subset F[\alpha,\beta]\).
 </div>
 </div>
 </div>
-<div id="outline-container-orgebbe616" class="outline-3">
-<h3 id="orgebbe616" class="collapsible"><span class="section-number-3">3.4.</span> Example</h3>
+<div id="outline-container-org4340a25" class="outline-3">
+<h3 id="org4340a25" class="collapsible"><span class="section-number-3">3.4.</span> Example</h3>
 <div class="outline-text-3" id="text-3-4">
 <p>
 So we know that \(\sqrt 2 + \sqrt 3\) is algebraic.
@@ -604,8 +604,8 @@ One way to find a polynomial is by taking repeated powers and looking for a line
 </div>
 </div>
 
-<div id="outline-container-org4f524ff" class="outline-3">
-<h3 id="org4f524ff" class="collapsible"><span class="section-number-3">3.5.</span> Example</h3>
+<div id="outline-container-org19eccce" class="outline-3">
+<h3 id="org19eccce" class="collapsible"><span class="section-number-3">3.5.</span> Example</h3>
 <div class="outline-text-3" id="text-3-5">
 <p>
 The degree of \(\mathbf{Q}[\sqrt[3]2, i] / \mathbf{Q}\) is 6.
@@ -613,8 +613,8 @@ The degree of \(\mathbf{Q}[\sqrt[3]2, i] / \mathbf{Q}\) is 6.
 </div>
 </div>
 
-<div id="outline-container-org2b531c4" class="outline-3">
-<h3 id="org2b531c4" class="collapsible"><span class="section-number-3">3.6.</span> Corollary</h3>
+<div id="outline-container-org3319493" class="outline-3">
+<h3 id="org3319493" class="collapsible"><span class="section-number-3">3.6.</span> Corollary</h3>
 <div class="outline-text-3" id="text-3-6">
 <p>
 If \(F \subset L\) is an extension of degree \(M\), then the degree of all sub-extensions must divide \(M\).
@@ -632,8 +632,8 @@ For example, an extension of degree \(2^{n}\) cannot contain an element of degre
 
 
 
-<div id="outline-container-orgb163908" class="outline-2">
-<h2 id="orgb163908" class="collapsible"><span class="section-number-2">4.</span> Irreducibility</h2>
+<div id="outline-container-org2636561" class="outline-2">
+<h2 id="org2636561" class="collapsible"><span class="section-number-2">4.</span> Irreducibility</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 We want to develop some tools to prove irreducibility of polynomials.
@@ -641,8 +641,8 @@ Let us study irreducibility and irreducible factorisation in an arbitrary integr
 </p>
 </div>
 
-<div id="outline-container-org99a1340" class="outline-3">
-<h3 id="org99a1340" class="collapsible"><span class="section-number-3">4.1.</span> Terminology</h3>
+<div id="outline-container-org070cc02" class="outline-3">
+<h3 id="org070cc02" class="collapsible"><span class="section-number-3">4.1.</span> Terminology</h3>
 <div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li>A <i>non-trivial factorisation of \(p \in R\)</i> is an expression \(p = ab\) where neither \(a\) nor \(b\) is a unit.</li>
@@ -654,8 +654,8 @@ Let us study irreducibility and irreducible factorisation in an arbitrary integr
 </div>
 </div>
 
-<div id="outline-container-orgee2e07d" class="outline-3">
-<h3 id="orgee2e07d" class="collapsible"><span class="section-number-3">4.2.</span> Example</h3>
+<div id="outline-container-orge3962d7" class="outline-3">
+<h3 id="orge3962d7" class="collapsible"><span class="section-number-3">4.2.</span> Example</h3>
 <div class="outline-text-3" id="text-4-2">
 <ul class="org-ul">
 <li>\(\mathbf{Z}\) is a UFD.</li>
@@ -663,15 +663,15 @@ Let us study irreducibility and irreducible factorisation in an arbitrary integr
 </div>
 </div>
 
-<div id="outline-container-org5bcc9f9" class="outline-3">
-<h3 id="org5bcc9f9" class="collapsible"><span class="section-number-3">4.3.</span> Proposition</h3>
+<div id="outline-container-org37b6b25" class="outline-3">
+<h3 id="org37b6b25" class="collapsible"><span class="section-number-3">4.3.</span> Proposition</h3>
 <div class="outline-text-3" id="text-4-3">
 <p>
 Let \(F\) be a field.  Then \(F[x]\) is a UFD.
 </p>
 </div>
-<div id="outline-container-orgc4204c3" class="outline-4">
-<h4 id="orgc4204c3" class="collapsible"><span class="section-number-4">4.3.1.</span> Proof:</h4>
+<div id="outline-container-orgd6343f2" class="outline-4">
+<h4 id="orgd6343f2" class="collapsible"><span class="section-number-4">4.3.1.</span> Proof:</h4>
 <div class="outline-text-4" id="text-4-3-1">
 <p>
 It is easy to see that every polynomial \(f\) has a factorisation into irreducibles (keep factoring until you cannot).  The interesting part is uniqueness.
@@ -685,7 +685,7 @@ So the key fact is the following:
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orgf88c55b"></a>Key fact that makes unique factorisation work<br />
+<li><a id="org8a2464c"></a>Key fact that makes unique factorisation work<br />
 <div class="outline-text-5" id="text-4-3-1-1">
 <p>
 If \(p\) is irreducible, and \(p\) divides \(q_1q_2\) then \(p\) divides \(q_1\) or \(p\) divides \(q_2\).
@@ -698,7 +698,7 @@ We know that the key fact holds because if \(p\) is irreducible then \((p)\) is 
 </div>
 </li>
 
-<li><a id="orgb4ecc41"></a>Coming back to the proof<br />
+<li><a id="orgf530841"></a>Coming back to the proof<br />
 <div class="outline-text-5" id="text-4-3-1-2">
 <p>
 By using the key fact repeatedly, we see that \(p\) divides one of the \(q_{i}\)&rsquo;s.
@@ -708,8 +708,8 @@ By using the key fact repeatedly, we see that \(p\) divides one of the \(q_{i}\)
 </ol>
 </div>
 
-<div id="outline-container-orga704dce" class="outline-4">
-<h4 id="orga704dce" class="collapsible"><span class="section-number-4">4.3.2.</span> Lesson</h4>
+<div id="outline-container-org107a568" class="outline-4">
+<h4 id="org107a568" class="collapsible"><span class="section-number-4">4.3.2.</span> Lesson</h4>
 <div class="outline-text-4" id="text-4-3-2">
 <p>
 If \(R\) is a domain in which every irreducible element generates a prime ideal.
@@ -719,15 +719,15 @@ Then any two factorisations of \(f \in R\) must be equivalent.
 </div>
 </div>
 
-<div id="outline-container-org2854560" class="outline-3">
-<h3 id="org2854560" class="collapsible"><span class="section-number-3">4.4.</span> Factorisation over finite fields and integers</h3>
+<div id="outline-container-orga3c328c" class="outline-3">
+<h3 id="orga3c328c" class="collapsible"><span class="section-number-3">4.4.</span> Factorisation over finite fields and integers</h3>
 <div class="outline-text-3" id="text-4-4">
 <p>
 Let us come back to the main question: how do we show that a given polynomial is irreducible?  
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org290e284"></a>Over finite fields<br />
+<li><a id="orgcbfca05"></a>Over finite fields<br />
 <div class="outline-text-5" id="text-4-4-0-1">
 <p>
 Suppose \(R = F[x]\).
@@ -744,7 +744,7 @@ This is probably not the most efficient method to test irreducibility, but it wo
 </p>
 </div>
 </li>
-<li><a id="org1404dfb"></a>Over the rational numbers<br />
+<li><a id="orgc1a400b"></a>Over the rational numbers<br />
 <div class="outline-text-5" id="text-4-4-0-2">
 <p>
 What if \(R = \mathbf{Q}[x]\)?
@@ -771,7 +771,7 @@ The next two propositions exemplify this idea.
 </div>
 </li>
 
-<li><a id="org249e6b7"></a>Proposition<br />
+<li><a id="org3d9c01e"></a>Proposition<br />
 <div class="outline-text-5" id="text-4-4-0-3">
 <p>
 Let \(p \in \mathbf{Z}\) be a prime.
@@ -781,7 +781,7 @@ Then \(f(x)\) cannot factor as \(f(x) = h(x) g(x)\) in \(\mathbf{Z}[x]\) where \
 </div>
 </li>
 
-<li><a id="org3e1e1b2"></a>Proposition (Eisenstein&rsquo;s criterion)<br />
+<li><a id="org9131bc4"></a>Proposition (Eisenstein&rsquo;s criterion)<br />
 <div class="outline-text-5" id="text-4-4-0-4">
 <p>
 Let \(p \in \mathbf{Z}\) be a prime.
@@ -793,8 +793,8 @@ Then \(f(x)\) cannot factor as \(f(x) = h(x) g(x)\) in \(\mathbf{Z}[x]\) where \
 </ol>
 </div>
 
-<div id="outline-container-org147801a" class="outline-3">
-<h3 id="org147801a" class="collapsible"><span class="section-number-3">4.5.</span> Factorisation over the rational numbers</h3>
+<div id="outline-container-orgcfe8fff" class="outline-3">
+<h3 id="orgcfe8fff" class="collapsible"><span class="section-number-3">4.5.</span> Factorisation over the rational numbers</h3>
 <div class="outline-text-3" id="text-4-5">
 <p>
 Let us relate factorisation over \(\mathbf{Q}[x]\) and \(\mathbf{Z}[x]\).
@@ -836,15 +836,15 @@ We will make this precise.
 First, we need an easy lemma.
 </p>
 </div>
-<div id="outline-container-org1f8e328" class="outline-4">
-<h4 id="org1f8e328" class="collapsible"><span class="section-number-4">4.5.1.</span> Lemma (Gauss&rsquo;s lemma)</h4>
+<div id="outline-container-orgbb12c43" class="outline-4">
+<h4 id="orgbb12c43" class="collapsible"><span class="section-number-4">4.5.1.</span> Lemma (Gauss&rsquo;s lemma)</h4>
 <div class="outline-text-4" id="text-4-5-1">
 <p>
 The product of two primitime polynomials is primitive.
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orgba271a6"></a>Proof<br />
+<li><a id="org4abac9b"></a>Proof<br />
 <div class="outline-text-5" id="text-4-5-1-1">
 <p>
 Let \(f(x)\) and \(g(x)\) be primitive.
@@ -857,8 +857,8 @@ But this ring is a domain, so the image \(\overline {f(x)g(x)}\) is also non-zer
 </ol>
 </div>
 
-<div id="outline-container-org520c364" class="outline-4">
-<h4 id="org520c364" class="collapsible"><span class="section-number-4">4.5.2.</span> Proposition</h4>
+<div id="outline-container-org53c6178" class="outline-4">
+<h4 id="org53c6178" class="collapsible"><span class="section-number-4">4.5.2.</span> Proposition</h4>
 <div class="outline-text-4" id="text-4-5-2">
 <p>
 Let \(f(x)\) be a primitive polynomial and \(g(x) \in \mathbf{Z}[x]\) any polynomial.
@@ -867,7 +867,7 @@ Then \(h(x) \in \mathbf{Z}[x]\).
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org319d9f0"></a>Proof<br />
+<li><a id="org015c641"></a>Proof<br />
 <div class="outline-text-5" id="text-4-5-2-1">
 <p>
 Write \(h(x) = c j(x)\) where \(j(x)\) is primitive and \(c = a/b \in \mathbf{Q}\) (reduced form) and \(g(x) = d i(x)\) where \(d \in \mathbf{Z}\) and \(i(x)\) is primitive.
@@ -880,8 +880,8 @@ In particular, \(a/b = d\) is an integer, and so \(h(x) \in \mathbf{Z}[x]\).
 </ol>
 </div>
 
-<div id="outline-container-org46643d2" class="outline-4">
-<h4 id="org46643d2" class="collapsible"><span class="section-number-4">4.5.3.</span> Proposition</h4>
+<div id="outline-container-orgd9094e7" class="outline-4">
+<h4 id="orgd9094e7" class="collapsible"><span class="section-number-4">4.5.3.</span> Proposition</h4>
 <div class="outline-text-4" id="text-4-5-3">
 <p>
 Let \(f(x) \in \mathbf{Z}[x]\) be primitive.
@@ -889,7 +889,7 @@ Then \(f(x)\) is irreducible in \(\mathbf{Z}[x]\) if and only if it is irreducib
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org35112b2"></a>Proof<br />
+<li><a id="orgb59b0bb"></a>Proof<br />
 <div class="outline-text-5" id="text-4-5-3-1">
 <p>
 Let us prove the contrapositive.
@@ -910,8 +910,8 @@ This is a non-trivial factorisation in \(\mathbf{Z}[x]\).
 </ol>
 </div>
 
-<div id="outline-container-orgc395cf2" class="outline-4">
-<h4 id="orgc395cf2"><span class="section-number-4">4.5.4.</span> Corollary</h4>
+<div id="outline-container-org1cf2b1c" class="outline-4">
+<h4 id="org1cf2b1c"><span class="section-number-4">4.5.4.</span> Corollary</h4>
 <div class="outline-text-4" id="text-4-5-4">
 <p>
 The irreducible elements of \(\mathbf{Z}[x]\) are prime numbers \(p\) and primitive polynomials \(f(x)\) that are irreducible in \(\mathbf{Q}[x]\).
@@ -919,8 +919,8 @@ The irreducible elements of \(\mathbf{Z}[x]\) are prime numbers \(p\) and primit
 </div>
 </div>
 
-<div id="outline-container-orgb897035" class="outline-4">
-<h4 id="orgb897035"><span class="section-number-4">4.5.5.</span> Remark</h4>
+<div id="outline-container-org4d692f1" class="outline-4">
+<h4 id="org4d692f1"><span class="section-number-4">4.5.5.</span> Remark</h4>
 <div class="outline-text-4" id="text-4-5-5">
 <p>
 From this, it is not hard to prove that every irreducible in \(\mathbf{Z}[x]\) generates a prime ideal.
@@ -930,8 +930,8 @@ In general, a similar reasoning using primitive polynomials shows that if \(R\) 
 </div>
 </div>
 
-<div id="outline-container-org2e59740" class="outline-4">
-<h4 id="org2e59740"><span class="section-number-4">4.5.6.</span> Summary</h4>
+<div id="outline-container-orgc1a7f2e" class="outline-4">
+<h4 id="orgc1a7f2e"><span class="section-number-4">4.5.6.</span> Summary</h4>
 <div class="outline-text-4" id="text-4-5-6">
 <p>
 Suppose we are given \(f(x) \in \mathbf{Q}[x]\).
@@ -945,8 +945,8 @@ To prove irreducibility in \(\mathbf{Z}[x]\), we look modulo primes (for example
 </div>
 
 
-<div id="outline-container-org8af9eb8" class="outline-2">
-<h2 id="org8af9eb8" class="collapsible"><span class="section-number-2">5.</span> Ruler and compass constructions</h2>
+<div id="outline-container-orga84347d" class="outline-2">
+<h2 id="orga84347d" class="collapsible"><span class="section-number-2">5.</span> Ruler and compass constructions</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 A fascinating application of the algebra we have done so far is the proof for the impossibility of certain geometric constructions.
@@ -969,8 +969,8 @@ Lots of cool things can be done.
 </p>
 </div>
 
-<div id="outline-container-orgda3eed4" class="outline-3">
-<h3 id="orgda3eed4" class="collapsible"><span class="section-number-3">5.1.</span> Example</h3>
+<div id="outline-container-org62e1d57" class="outline-3">
+<h3 id="org62e1d57" class="collapsible"><span class="section-number-3">5.1.</span> Example</h3>
 <div class="outline-text-3" id="text-5-1">
 <ol class="org-ol">
 <li>Given two points, construct their midpoint.</li>
@@ -982,8 +982,8 @@ Lots of cool things can be done.
 </div>
 </div>
 
-<div id="outline-container-org76a9528" class="outline-3">
-<h3 id="org76a9528" class="collapsible"><span class="section-number-3">5.2.</span> Algebraising the construction game</h3>
+<div id="outline-container-org96dfd97" class="outline-3">
+<h3 id="org96dfd97" class="collapsible"><span class="section-number-3">5.2.</span> Algebraising the construction game</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 To bring algebra into the picture, we introduce coordinates.
@@ -993,14 +993,14 @@ The key idea is to explore in what ways \(F\) needs to be enlarged when we const
 </p>
 </div>
 
-<div id="outline-container-orge4dca56" class="outline-4">
-<h4 id="orge4dca56" class="collapsible"><span class="section-number-4">5.2.1.</span> Using the ruler</h4>
+<div id="outline-container-orga8a5eea" class="outline-4">
+<h4 id="orga8a5eea" class="collapsible"><span class="section-number-4">5.2.1.</span> Using the ruler</h4>
 <div class="outline-text-4" id="text-5-2-1">
 <p>
 Suppose we draw a line joining two points of \(S\).
 Observe the following: we can write the equation of the line in the form
 </p>
-<div class="equation" id="org495fd28">
+<div class="equation" id="orgfcd22a5">
 <p>
 ax + by = c
 </p>
@@ -1012,14 +1012,14 @@ where \(a,b,c\) are in the field \(F\).
 </div>
 </div>
 
-<div id="outline-container-orgde653d2" class="outline-4">
-<h4 id="orgde653d2" class="collapsible"><span class="section-number-4">5.2.2.</span> Using the compass</h4>
+<div id="outline-container-org9731f0a" class="outline-4">
+<h4 id="org9731f0a" class="collapsible"><span class="section-number-4">5.2.2.</span> Using the compass</h4>
 <div class="outline-text-4" id="text-5-2-2">
 <p>
 Suppose we draw a circle centered at a point of \(S\) passing through another point of \(S\).
 Observe the following: we can write the equation of the circle in the form
 </p>
-<div class="equation" id="orgb03e160">
+<div class="equation" id="org3ae0f13">
 <p>
 (x-a)<sup>2</sup> + (y-b)<sup>2</sup> = c
 </p>
@@ -1031,16 +1031,16 @@ where \(a,b,c\) are in the field \(F\).
 </div>
 </div>
 
-<div id="outline-container-org4fca394" class="outline-4">
-<h4 id="org4fca394" class="collapsible"><span class="section-number-4">5.2.3.</span> Taking intersections</h4>
+<div id="outline-container-orgc50eddb" class="outline-4">
+<h4 id="orgc50eddb" class="collapsible"><span class="section-number-4">5.2.3.</span> Taking intersections</h4>
 <div class="outline-text-4" id="text-5-2-3">
 <p>
 Now is the most crucial part.  We add new points by intersecting.
 </p>
 <dl class="org-dl">
-<dt>Intersecting two lines</dt><dd>the intersection point of two lines of the form <a href="#org495fd28">1</a> has coordinates in \(F\).  So \(F\) need not be enlarged.</dd>
-<dt>Intersecting a circle and a line</dt><dd>the intersection point(s) of a line <a href="#org495fd28">1</a> and circle <a href="#orgb03e160">1</a> have coordinates in \(F[\sqrt a]\) for some \(a \in F\).</dd>
-<dt>Intersecting two circles</dt><dd>the intersection point(s) of two circles <a href="#orgb03e160">1</a> have coordinates in \(F[\sqrt a]\) for some \(a \in F\).</dd>
+<dt>Intersecting two lines</dt><dd>the intersection point of two lines of the form <a href="#orgfcd22a5">1</a> has coordinates in \(F\).  So \(F\) need not be enlarged.</dd>
+<dt>Intersecting a circle and a line</dt><dd>the intersection point(s) of a line <a href="#orgfcd22a5">1</a> and circle <a href="#org3ae0f13">1</a> have coordinates in \(F[\sqrt a]\) for some \(a \in F\).</dd>
+<dt>Intersecting two circles</dt><dd>the intersection point(s) of two circles <a href="#org3ae0f13">1</a> have coordinates in \(F[\sqrt a]\) for some \(a \in F\).</dd>
 </dl>
 
 <p>
@@ -1050,8 +1050,8 @@ In summary, if we start with a set of constructed points whose coordinates lie i
 </div>
 </div>
 
-<div id="outline-container-org46f2383" class="outline-3">
-<h3 id="org46f2383" class="collapsible"><span class="section-number-3">5.3.</span> Proposition (Main)</h3>
+<div id="outline-container-org51cc798" class="outline-3">
+<h3 id="org51cc798" class="collapsible"><span class="section-number-3">5.3.</span> Proposition (Main)</h3>
 <div class="outline-text-3" id="text-5-3">
 <p>
 Let \(P\) be a point constructed using the ruler and compass from a given set \(S\).
@@ -1067,8 +1067,8 @@ In particular, the degree of the extension of \(F\) generated by the coordinates
 </div>
 </div>
 
-<div id="outline-container-orgb2c4274" class="outline-3">
-<h3 id="orgb2c4274" class="collapsible"><span class="section-number-3">5.4.</span> Corollary</h3>
+<div id="outline-container-orgdf86ff4" class="outline-3">
+<h3 id="orgdf86ff4" class="collapsible"><span class="section-number-3">5.4.</span> Corollary</h3>
 <div class="outline-text-3" id="text-5-4">
 <p>
 If the coordinates of \(P\) generate a transcendental extension of \(F\) or an extension whose degree is not a power of 2, then \(P\) cannot be constructed from \(S\) using ruler and compass.
@@ -1076,8 +1076,8 @@ If the coordinates of \(P\) generate a transcendental extension of \(F\) or an e
 </div>
 </div>
 
-<div id="outline-container-orgfca0efc" class="outline-3">
-<h3 id="orgfca0efc" class="collapsible"><span class="section-number-3">5.5.</span> Proposition</h3>
+<div id="outline-container-org3caafa9" class="outline-3">
+<h3 id="org3caafa9" class="collapsible"><span class="section-number-3">5.5.</span> Proposition</h3>
 <div class="outline-text-3" id="text-5-5">
 <p>
 We start with the points \((0,0)\) and \((0,1)\).
@@ -1087,7 +1087,7 @@ In particular, the \(60\)-degree angle cannot be trisected, and hence there cann
 </div>
 
 <ol class="org-ol">
-<li><a id="orgbca3876"></a>Proof<br />
+<li><a id="orgb2e837d"></a>Proof<br />
 <div class="outline-text-5" id="text-5-5-0-1">
 <p>
 We can take \(F = \mathbf{Q}\).
@@ -1107,8 +1107,8 @@ But that means it is not constructible!
 </div>
 </div>
 
-<div id="outline-container-orgc6515bc" class="outline-2">
-<h2 id="orgc6515bc" class="collapsible"><span class="section-number-2">6.</span> The fundamental theorem of algebra</h2>
+<div id="outline-container-org62880b0" class="outline-2">
+<h2 id="org62880b0" class="collapsible"><span class="section-number-2">6.</span> The fundamental theorem of algebra</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 We say that a field \(K\) is algebraically closed if every non-constant \(f(x) \in K[x]\) has a root in \(K\).
@@ -1126,8 +1126,8 @@ The following are equivalent:
 </ol>
 </div>
 
-<div id="outline-container-orgf3afd88" class="outline-3">
-<h3 id="orgf3afd88" class="collapsible"><span class="section-number-3">6.1.</span> Theorem (Fundamental theorem of algebra)</h3>
+<div id="outline-container-org9c2bc31" class="outline-3">
+<h3 id="org9c2bc31" class="collapsible"><span class="section-number-3">6.1.</span> Theorem (Fundamental theorem of algebra)</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 The field of complex numbers is algebraically closed.
@@ -1135,8 +1135,8 @@ The field of complex numbers is algebraically closed.
 </div>
 </div>
 
-<div id="outline-container-orgdadf35f" class="outline-3">
-<h3 id="orgdadf35f" class="collapsible"><span class="section-number-3">6.2.</span> Corollary</h3>
+<div id="outline-container-org87e5392" class="outline-3">
+<h3 id="org87e5392" class="collapsible"><span class="section-number-3">6.2.</span> Corollary</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 Let \(\overline Q \subset \mathbf{C}\) be the set of numbers that are algebraic over \(\mathbf{Q}\).
@@ -1145,8 +1145,8 @@ Then \(\overline Q\) is algebraically closed.
 </div>
 </div>
 
-<div id="outline-container-orgf1ff990" class="outline-3">
-<h3 id="orgf1ff990" class="collapsible"><span class="section-number-3">6.3.</span> Corollary</h3>
+<div id="outline-container-org2c7b7bc" class="outline-3">
+<h3 id="org2c7b7bc" class="collapsible"><span class="section-number-3">6.3.</span> Corollary</h3>
 <div class="outline-text-3" id="text-6-3">
 <p>
 The only irreducible polynomials over \(\mathbf{R}\) are linear and quadratics with negative discriminant.
@@ -1154,8 +1154,8 @@ The only irreducible polynomials over \(\mathbf{R}\) are linear and quadratics w
 </div>
 </div>
 
-<div id="outline-container-org485eaf6" class="outline-3">
-<h3 id="org485eaf6"><span class="section-number-3">6.4.</span> Proof(s) of the FTA</h3>
+<div id="outline-container-orgd48bd28" class="outline-3">
+<h3 id="orgd48bd28"><span class="section-number-3">6.4.</span> Proof(s) of the FTA</h3>
 <div class="outline-text-3" id="text-6-4">
 <p>
 Funnily enough, there is no purely algebraic proof of the Fundamental Theorem of Algebra!
@@ -1165,8 +1165,8 @@ I consider this is a spectacular example of the unity of mathematics: how differ
 </p>
 </div>
 
-<div id="outline-container-orgce50be2" class="outline-4">
-<h4 id="orgce50be2" class="collapsible"><span class="section-number-4">6.4.1.</span> Winding number proof</h4>
+<div id="outline-container-org6d4cc6a" class="outline-4">
+<h4 id="org6d4cc6a" class="collapsible"><span class="section-number-4">6.4.1.</span> Winding number proof</h4>
 <div class="outline-text-4" id="text-6-4-1">
 <p>
 A fascinating proof is topological, and uses the notion of &ldquo;winding number&rdquo;.
@@ -1206,8 +1206,8 @@ This is a contradiction.
 </div>
 </div>
 
-<div id="outline-container-org431e4b6" class="outline-4">
-<h4 id="org431e4b6" class="collapsible"><span class="section-number-4">6.4.2.</span> Complex analysis proof</h4>
+<div id="outline-container-org042ef5a" class="outline-4">
+<h4 id="org042ef5a" class="collapsible"><span class="section-number-4">6.4.2.</span> Complex analysis proof</h4>
 <div class="outline-text-4" id="text-6-4-2">
 <p>
 We have the following theorem in complex analysis.
@@ -1228,8 +1228,8 @@ By Liouville&rsquo;s theorem, it must be constant.
 </div>
 </div>
 
-<div id="outline-container-orgbfb6093" class="outline-2">
-<h2 id="orgbfb6093" class="collapsible"><span class="section-number-2">7.</span> Adjoining roots</h2>
+<div id="outline-container-orgc133ece" class="outline-2">
+<h2 id="orgc133ece" class="collapsible"><span class="section-number-2">7.</span> Adjoining roots</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 Consider the field \(\mathbf{Q}\).
@@ -1258,8 +1258,8 @@ We have constructed &ldquo;\(\sqrt{2}\)&rdquo; out of thin air!
 </p>
 </div>
 
-<div id="outline-container-orgd2e8bff" class="outline-3">
-<h3 id="orgd2e8bff" class="collapsible"><span class="section-number-3">7.1.</span> Adjoining a root</h3>
+<div id="outline-container-orgc322adc" class="outline-3">
+<h3 id="orgc322adc" class="collapsible"><span class="section-number-3">7.1.</span> Adjoining a root</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
 <b><b>Proposition</b></b>  Let \(F\) be a field and let \(p(x) \in F[x]\) be a non-constant polynomial.
@@ -1277,8 +1277,8 @@ This makes it less confusing if we have to make further extensions of \(K\), fre
 </p>
 </div>
 
-<div id="outline-container-org238a7ba" class="outline-4">
-<h4 id="org238a7ba" class="collapsible"><span class="section-number-4">7.1.1.</span> Example</h4>
+<div id="outline-container-org96a8d9f" class="outline-4">
+<h4 id="org96a8d9f" class="collapsible"><span class="section-number-4">7.1.1.</span> Example</h4>
 <div class="outline-text-4" id="text-7-1-1">
 <p>
 Let us take \(F = \mathbf{Q}\) and \(p(x) = x^3-2\).
@@ -1297,8 +1297,8 @@ Precisely, three of them, corresponding to \(x \mapsto \sqrt[3]{2}\) or \(x \map
 </div>
 </div>
 
-<div id="outline-container-org6c562a6" class="outline-3">
-<h3 id="org6c562a6" class="collapsible"><span class="section-number-3">7.2.</span> Adjoining all roots</h3>
+<div id="outline-container-org7535091" class="outline-3">
+<h3 id="org7535091" class="collapsible"><span class="section-number-3">7.2.</span> Adjoining all roots</h3>
 <div class="outline-text-3" id="text-7-2">
 <p>
 <b><b>Proposition</b></b> Let \(F\) be a field and let \(p(x) \in F[x]\) be a non-constant polynomial.
@@ -1315,8 +1315,8 @@ The second condition ensures that \(p(x)\) does not factor completely over a sub
 </p>
 </div>
 
-<div id="outline-container-org060352a" class="outline-4">
-<h4 id="org060352a" class="collapsible"><span class="section-number-4">7.2.1.</span> Example</h4>
+<div id="outline-container-org54cde04" class="outline-4">
+<h4 id="org54cde04" class="collapsible"><span class="section-number-4">7.2.1.</span> Example</h4>
 <div class="outline-text-4" id="text-7-2-1">
 <p>
 The splitting field of \(x^3-2\) over \(\mathbf{Q}\) is \(\mathbf{Q}[\sqrt[3]{2}, \omega]\).
@@ -1325,8 +1325,8 @@ Note that it has degree 6 over \(\mathbf{Q}\).
 </div>
 </div>
 
-<div id="outline-container-org2282e01" class="outline-4">
-<h4 id="org2282e01" class="collapsible"><span class="section-number-4">7.2.2.</span> Example</h4>
+<div id="outline-container-org3529382" class="outline-4">
+<h4 id="org3529382" class="collapsible"><span class="section-number-4">7.2.2.</span> Example</h4>
 <div class="outline-text-4" id="text-7-2-2">
 <p>
 Consider \(p(x) = 8x^3-6x-1\).
@@ -1340,8 +1340,8 @@ So the splitting field is only of degree 3.
 </div>
 </div>
 
-<div id="outline-container-org2caec57" class="outline-2">
-<h2 id="org2caec57" class="collapsible"><span class="section-number-2">8.</span> Finite fields</h2>
+<div id="outline-container-orgd0b4dc1" class="outline-2">
+<h2 id="orgd0b4dc1" class="collapsible"><span class="section-number-2">8.</span> Finite fields</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 We have some finite fields arleady, like \(\mathbf{F}_p = \mathbf{Z} / p \mathbf{Z}\).
@@ -1349,8 +1349,8 @@ We will now see all of them!
 </p>
 </div>
 
-<div id="outline-container-org003588b" class="outline-3">
-<h3 id="org003588b" class="collapsible"><span class="section-number-3">8.1.</span> Finite fields have characteristic \(p\).</h3>
+<div id="outline-container-org2b73501" class="outline-3">
+<h3 id="org2b73501" class="collapsible"><span class="section-number-3">8.1.</span> Finite fields have characteristic \(p\).</h3>
 <div class="outline-text-3" id="text-8-1">
 <p>
 Recall that the characteristic of a ring \(R\) is the smallest integer \(n\) such that \(n = 0\) in \(R\).
@@ -1367,8 +1367,8 @@ Then we have an injection \(\mathbf{F}_p \to F\).
 </div>
 
 
-<div id="outline-container-org21b7a61" class="outline-3">
-<h3 id="org21b7a61" class="collapsible"><span class="section-number-3">8.2.</span> Finite fields have \(p^r\) elements.</h3>
+<div id="outline-container-orge2f3727" class="outline-3">
+<h3 id="orge2f3727" class="collapsible"><span class="section-number-3">8.2.</span> Finite fields have \(p^r\) elements.</h3>
 <div class="outline-text-3" id="text-8-2">
 <p>
 Let \(F\) be a finite field.
@@ -1379,8 +1379,8 @@ In particular, it has \(q = p^r\) elements.
 </div>
 </div>
 
-<div id="outline-container-orge563bd5" class="outline-3">
-<h3 id="orge563bd5" class="collapsible"><span class="section-number-3">8.3.</span> Finite fields have a Frobenius automorphism \(\phi\)</h3>
+<div id="outline-container-orgc77bb1a" class="outline-3">
+<h3 id="orgc77bb1a" class="collapsible"><span class="section-number-3">8.3.</span> Finite fields have a Frobenius automorphism \(\phi\)</h3>
 <div class="outline-text-3" id="text-8-3">
 <p>
 Let \(R\) be a ring of characteristic \(p\).
@@ -1391,8 +1391,8 @@ Since \(F\) is a field, \(\phi\) is injective, and since \(F\) is finite, it is 
 </div>
 </div>
 
-<div id="outline-container-org0e56cef" class="outline-3">
-<h3 id="org0e56cef" class="collapsible"><span class="section-number-3">8.4.</span> Fermat&rsquo;s little theorem: \(x^q = x\)</h3>
+<div id="outline-container-org09061b1" class="outline-3">
+<h3 id="org09061b1" class="collapsible"><span class="section-number-3">8.4.</span> Fermat&rsquo;s little theorem: \(x^q = x\)</h3>
 <div class="outline-text-3" id="text-8-4">
 <p>
 The multiplicative group \(F^{\times}\) has order \(q-1\), so for every \(x \in F\) we have \(x^{q-1} = 1\).
@@ -1403,12 +1403,12 @@ In terms of the Frobenius, the above means that
 </div>
 </div>
 
-<div id="outline-container-org494d922" class="outline-3">
-<h3 id="org494d922" class="collapsible"><span class="section-number-3">8.5.</span> The group \(F^{\times}\) is cyclic</h3>
+<div id="outline-container-org6ebf5d3" class="outline-3">
+<h3 id="org6ebf5d3" class="collapsible"><span class="section-number-3">8.5.</span> The group \(F^{\times}\) is cyclic</h3>
 <div class="outline-text-3" id="text-8-5">
 </div>
-<div id="outline-container-orgb21e7aa" class="outline-4">
-<h4 id="orgb21e7aa" class="collapsible"><span class="section-number-4">8.5.1.</span> Proof</h4>
+<div id="outline-container-org8a8ea32" class="outline-4">
+<h4 id="org8a8ea32" class="collapsible"><span class="section-number-4">8.5.1.</span> Proof</h4>
 <div class="outline-text-4" id="text-8-5-1">
 <p>
 By the structure theorem for abelian groups, it is a product of cyclic groups, say
@@ -1427,8 +1427,8 @@ By the Chinese Remainder Theorem, we see that \(F^{\times}\) is isomorphic to \(
 
 
 
-<div id="outline-container-orgb795bf7" class="outline-3">
-<h3 id="orgb795bf7" class="collapsible"><span class="section-number-3">8.6.</span> \(F \cong \mathbf{F}[x]/f(x)\) for \(f\) irreducible</h3>
+<div id="outline-container-orgc104a4e" class="outline-3">
+<h3 id="orgc104a4e" class="collapsible"><span class="section-number-3">8.6.</span> \(F \cong \mathbf{F}[x]/f(x)\) for \(f\) irreducible</h3>
 <div class="outline-text-3" id="text-8-6">
 <p>
 Indeed, let \(\alpha\) be a generator of \(F^{\times}\).
@@ -1437,8 +1437,8 @@ Then \(F = \mathbf{F}_p[\alpha]\), which is isomorphic to \(\mathbf{F}_p[x]/f(x)
 </div>
 </div>
 
-<div id="outline-container-orga15ed43" class="outline-3">
-<h3 id="orga15ed43" class="collapsible"><span class="section-number-3">8.7.</span> Existence of \(F\) with \(q = p^{r}\) elements</h3>
+<div id="outline-container-org0cbedc2" class="outline-3">
+<h3 id="org0cbedc2" class="collapsible"><span class="section-number-3">8.7.</span> Existence of \(F\) with \(q = p^{r}\) elements</h3>
 <div class="outline-text-3" id="text-8-7">
 <p>
 For every \(q\), does there exist a finite field with \(q\) elements?
@@ -1466,8 +1466,8 @@ To prove this we have to take a slight digression and understand multiple roots.
 </div>
 </div>
 
-<div id="outline-container-orga2edb97" class="outline-3">
-<h3 id="orga2edb97" class="collapsible"><span class="section-number-3">8.8.</span> Digression: derivatives and multiple roots</h3>
+<div id="outline-container-orgd51768b" class="outline-3">
+<h3 id="orgd51768b" class="collapsible"><span class="section-number-3">8.8.</span> Digression: derivatives and multiple roots</h3>
 <div class="outline-text-3" id="text-8-8">
 <p>
 Let \(F\) be any field.
@@ -1483,8 +1483,8 @@ With this definition, the sum/product/chain rules continue to hold!
 </div>
 </div>
 
-<div id="outline-container-org8f588dd" class="outline-3">
-<h3 id="org8f588dd" class="collapsible"><span class="section-number-3">8.9.</span> Back to constructing finite fields</h3>
+<div id="outline-container-orgee8b66f" class="outline-3">
+<h3 id="orgee8b66f" class="collapsible"><span class="section-number-3">8.9.</span> Back to constructing finite fields</h3>
 <div class="outline-text-3" id="text-8-9">
 <p>
 Consider the polynomial \(x^q - x\).
@@ -1502,8 +1502,8 @@ We have now constructed (!) a field with \(q\) elements.
 </p>
 </div>
 
-<div id="outline-container-orgf413ba8" class="outline-4">
-<h4 id="orgf413ba8" class="collapsible"><span class="section-number-4">8.9.1.</span> Proof</h4>
+<div id="outline-container-orgd2dbf08" class="outline-4">
+<h4 id="orgd2dbf08" class="collapsible"><span class="section-number-4">8.9.1.</span> Proof</h4>
 <div class="outline-text-4" id="text-8-9-1">
 <p>
 It is easy to check by hand that this set contains \(0,1\) and is closed under \(+\) and \(*\), from which the statement follows.
@@ -1515,8 +1515,8 @@ The set of fixed points of a field automorphism is a subfield.
 </div>
 </div>
 
-<div id="outline-container-orge9e8777" class="outline-3">
-<h3 id="orge9e8777" class="collapsible"><span class="section-number-3">8.10.</span> But really: how do you construct one in practice?</h3>
+<div id="outline-container-org12cab0f" class="outline-3">
+<h3 id="org12cab0f" class="collapsible"><span class="section-number-3">8.10.</span> But really: how do you construct one in practice?</h3>
 <div class="outline-text-3" id="text-8-10">
 <p>
 Thanks to what we have proved, we <i>know</i> that there exists an irreducible polynomial of every given degree.
@@ -1530,43 +1530,116 @@ But&#x2026; wait for it&#x2026;.
 </div>
 </div>
 
-<div id="outline-container-org793dcb1" class="outline-3">
-<h3 id="org793dcb1" class="collapsible"><span class="section-number-3">8.11.</span> Uniqueness up to isomorphism</h3>
+<div id="outline-container-org16d3f7e" class="outline-3">
+<h3 id="org16d3f7e" class="collapsible"><span class="section-number-3">8.11.</span> Uniqueness up to isomorphism</h3>
 <div class="outline-text-3" id="text-8-11">
 <p>
 Let \(F\) and \(L\) be finite fields of size \(q = p^r\).
 Then there is an isomorphism \(F \cong L\).
+In fact, there are exactly \(r\) isomorphisms.
 </p>
 </div>
 
-<div id="outline-container-org271447d" class="outline-4">
-<h4 id="org271447d" class="collapsible"><span class="section-number-4">8.11.1.</span> Proof</h4>
+<div id="outline-container-orga3f6913" class="outline-4">
+<h4 id="orga3f6913" class="collapsible"><span class="section-number-4">8.11.1.</span> Proof</h4>
 <div class="outline-text-4" id="text-8-11-1">
 <p>
-We have \(F = \mathbf{F}_p[x]/f(x)\) and \(L = \mathbf{F}_p[x]/g(x)\) where \(f, g \in \mathbf{F}_p[x]\) are irreducible of degree \(r\).
+Write \(F = \mathbf{F}_p[x]/f(x)\) where \(f \in \mathbf{F}_p[x]\) is irreducible of degree \(r\).
 It suffices to construct a map (ring hom) \(F \to L\).
-To do so, it suffices to prove that there is an element \(\alpha \in L\) such that \(f(\alpha) = 0\).
+To give such a map, we must send \(x \in F\) to \(\alpha \in L\) which is a root of \(f(x)\).
 </p>
 
 <p>
-Let \(L \subset K\) be an extension where \(x^q-x\) splits completely.
-Then we know that \(L\) is the set of roots of \(x^q-x\).
+We know two things:
 </p>
-
+<ol class="org-ol">
+<li>\(f(x)\) divides \(x^q-x\).</li>
+<li>\(x^q-x\) splits into distinct linear factors over \(L\).</li>
+</ol>
 <p>
-Let \(\beta = [x] \in F\) so that \(F = \mathbf{F}_p[\beta]\).
-Since \(\beta\) satisfies \(x^q-x = 0\) and \(f(x)\) is the minimal polynomial of \(\beta\), we conclude that \(f(x)\) divides \(x^q-x\).
-But \(x^q-x\) splits completely in \(K[x]\).
-Hence, one of the roots \(\alpha\) of \(x^q-x\) is also a root of \(f(x)\).
-But this root belongs to \(L\)!
+It follows that \(f(x)\) also factors into distinct linear factors over \(L\).
+That is, it has \(r\) distinct roots in \(L\).
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org553df2a" class="outline-3">
-<h3 id="org553df2a"><span class="section-number-3">8.12.</span> SAGE computations</h3>
+<div id="outline-container-orgdf58179" class="outline-3">
+<h3 id="orgdf58179" class="collapsible"><span class="section-number-3">8.12.</span> Containments</h3>
 <div class="outline-text-3" id="text-8-12">
+<p>
+Let \(F\) be a field of size \(q = p^{r}\).
+If \(F\) contains a field of size \(p^{s}\) then \(s\) divides \(r\).
+Conversely, if \(s\) divides \(r\), then \(F\) contains a unique subfield of size \(p^{s}\).
+</p>
+</div>
+
+<div id="outline-container-org8eae35f" class="outline-4">
+<h4 id="org8eae35f" class="collapsible"><span class="section-number-4">8.12.1.</span> Proof</h4>
+<div class="outline-text-4" id="text-8-12-1">
+<p>
+Suppose \(F\) contains \(K\) of size \(p^{s}\).
+Then we can view \(F\) as an extension of \(K\).
+If the extension has degree \(m\), then \(|F| = |K|^m\), which implies \(p^r = p^{sm}\), so \(r = sm\).
+</p>
+
+<p>
+Conversely, suppose \(s\) divides \(r\).
+An element of sub-field of size \(p^s\) in \(F\) must satisfy \(x^{p^s}-x = 0\).
+So, the only possible sub-field of this size in \(F\) is the set of roots of the equation \(x^{p^s}-x = 0\).
+This proves uniqueness.
+For the existence, we must prove that this equation does indeed have \(p^s\) distinct roots.
+To do so, observe the following fact (true over any field): \(x^a-1\) divides \(x^{b}-1\) if \(a\) divides \(b\).
+So \(p^{s}-1\) divides \(p^{r}-1\).
+And \(x^{p^s-1}-1\) divides \(x^{p^r-1}-1\).
+So \(x^{p^s}-x\) divides \(x^{p^r1}-x\).
+But the latter splits into distinct linear factors, so the former must as well.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8504ff7" class="outline-4">
+<h4 id="org8504ff7"><span class="section-number-4">8.12.2.</span> Lesson</h4>
+<div class="outline-text-4" id="text-8-12-2">
+<p>
+To find a subfield of size \(p^{s}\) in a finite field of size \(p^r\), we simply take the fixed points of the \(s\))-th power of Frobenius.
+Let us verify it computationally.
+</p>
+<div class="org-src-container">
+<pre class="src src-sage"><span style="color: #e0a500;">F</span> = GF(81,<span style="color: #940b96;">'a'</span>)
+[x <span style="color: #303db4; font-style: italic;">for</span> x <span style="color: #303db4; font-style: italic;">in</span> F]
+</pre>
+</div>
+
+<p>
+In this huge list, we must be able to choose 9 that form a \(GF(9)\).  Here&rsquo;s how:
+</p>
+<div class="org-src-container">
+<pre class="src src-sage"><span style="color: #e0a500;">K</span> = [x <span style="color: #303db4; font-style: italic;">for</span> x <span style="color: #303db4; font-style: italic;">in</span> F <span style="color: #303db4; font-style: italic;">if</span> x^9==x]
+[x <span style="color: #303db4; font-style: italic;">for</span> x <span style="color: #303db4; font-style: italic;">in</span> K]
+</pre>
+</div>
+
+<p>
+As you can see, the choice is not obvious.
+Let us just make sure that it is a subfield.
+</p>
+<div class="org-src-container">
+<pre class="src src-sage"><span style="color: #00796b;">all</span>([a + b <span style="color: #303db4; font-style: italic;">in</span> K <span style="color: #303db4; font-style: italic;">for</span> a <span style="color: #303db4; font-style: italic;">in</span> K <span style="color: #303db4; font-style: italic;">for</span> b <span style="color: #303db4; font-style: italic;">in</span> K])
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-sage"><span style="color: #00796b;">all</span>([a * b <span style="color: #303db4; font-style: italic;">in</span> K <span style="color: #303db4; font-style: italic;">for</span> a <span style="color: #303db4; font-style: italic;">in</span> K <span style="color: #303db4; font-style: italic;">for</span> b <span style="color: #303db4; font-style: italic;">in</span> K])
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org88f2ab8" class="outline-3">
+<h3 id="org88f2ab8"><span class="section-number-3">8.13.</span> SAGE computations</h3>
+<div class="outline-text-3" id="text-8-13">
 <ol class="org-ol">
 <li><p>
 Computer algebra systems like sage have in-built methods to construct finite fields.
@@ -1655,8 +1728,8 @@ F27.modulus()
 </div>
 </div>
 
-<div id="outline-container-orgdcca85c" class="outline-2">
-<h2 id="orgdcca85c" class="collapsible"><span class="section-number-2">9.</span> Primitive elements</h2>
+<div id="outline-container-orga55b631" class="outline-2">
+<h2 id="orga55b631" class="collapsible"><span class="section-number-2">9.</span> Primitive elements</h2>
 <div class="outline-text-2" id="text-9">
 <p>
 Let \(K/F\) be a finite extension.
@@ -1698,8 +1771,8 @@ If \(K = F[\alpha]\), it is less obvious if it can be broken up.
 </p>
 </div>
 
-<div id="outline-container-org3782a91" class="outline-3">
-<h3 id="org3782a91" class="collapsible"><span class="section-number-3">9.1.</span> GCD and derivatives</h3>
+<div id="outline-container-orgf9d02ea" class="outline-3">
+<h3 id="orgf9d02ea" class="collapsible"><span class="section-number-3">9.1.</span> GCD and derivatives</h3>
 <div class="outline-text-3" id="text-9-1">
 <p>
 Before we begin, let us collect a few useful facts that we already know.
@@ -1735,8 +1808,8 @@ So \(\gcd(f,f')\), which lies in \(F[x]\), must be 1.
 </div>
 </div>
 
-<div id="outline-container-org1fe522a" class="outline-3">
-<h3 id="org1fe522a"><span class="section-number-3">9.2.</span> Proof of the primitive element theorem</h3>
+<div id="outline-container-org9495845" class="outline-3">
+<h3 id="org9495845"><span class="section-number-3">9.2.</span> Proof of the primitive element theorem</h3>
 <div class="outline-text-3" id="text-9-2">
 <p>
 To be frank, the statement of the primitive element theorem is more important than the proof.
@@ -1795,7 +1868,7 @@ It follows that \(\deg h = 1\).
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Anand Deopurkar</p>
-<p class="date">Created: 2023-03-18 Sat 16:51</p>
+<p class="date">Created: 2023-03-19 Sun 15:07</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
