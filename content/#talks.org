@@ -1,4 +1,21 @@
 #+filetags: :talk:
+* Stability conditions, metrics, and compactifications (lecture series)
+:properties:
+:meet: Summer school 2023 on algebraic geometry: derived categories, stability conditions, and moduli
+:institute: Technion,
+:place:    Haifa, Israel
+:year:     2023
+:type:     Lecture series
+:end:
+
+* Braids: algebra and geometry
+:properties:
+:type:    Workshop
+:institute: Australian National University
+:place:    Canberra, Australia
+:year:     2023
+:end:
+
 * Carpentry, geometry, and category theory
 :properties:
 :type:    Colloquium
