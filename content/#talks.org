@@ -2,7 +2,7 @@
 * Stability conditions, metrics, and compactifications (lecture series)
 :properties:
 :meet: Summer school 2023 on algebraic geometry: derived categories, stability conditions, and moduli
-:institute: Technion,
+:institute: Technion
 :place:    Haifa, Israel
 :year:     2023
 :type:     Lecture series

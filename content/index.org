@@ -28,12 +28,24 @@ Being an algebraic geometer means that I fundamentally study solution spaces of 
 I am interested in classical algebraic geometry, enumerative geometry, deformation theory, algebraic stacks, derived categories, among other things.
 #+end_container
 
+#+begin_src emacs-lisp :exports results :results value raw drawer
+  (defun pretty-print ()
+    (org-agenda-get-some-entry-text (point-marker) most-positive-fixnum)
+    )
+  (string-join (org-map-entries 'pretty-print "+moar+level=2+FROM<=\"<today>\"+TO>=\"<today>\"") "\n\n")
+#+end_src
+
 #+RESULTS:
 :results:
-In 2023 Semester 1, I am teaching Algebra 2.
+In the second half of 2023, I am on parental leave.
 
-In 2022 Semester 2, I taught Algebra 1 and a course about mathematical communication called "The language of mathematics".
+Upcoming travel:
+
+- 22--26 January 2024 :: Isaac Newton Institute, Cambridge, UK
+- 28 January--2 February 2024 :: Oberwolfach, Germany
 :end:
+
+
 
 * Papers/pre-prints
 :PROPERTIES:
@@ -243,6 +255,22 @@ Here are some additional talks:
 :PROPERTIES:
 :CUSTOM_ID: moar
 :END:
+** Parental leave
+:PROPERTIES:
+:from: <2023-06-01 Thu>
+:to: <2023-12-31 Sun>
+:END:
+In the second half of 2023, I am on parental leave.
+
+** Upcoming travel
+:PROPERTIES:
+:from: <2000-01-01 Sat>
+:to: <2100-12-31 Fri>
+:END:
+Upcoming travel:
+- 22--26 January 2024 :: Isaac Newton Institute, Cambridge, UK
+- 28 January--2 February 2024 :: Oberwolfach, Germany
+
 ** Teaching next semester
 :PROPERTIES:
 :from: <2022-12-01 Thu>
