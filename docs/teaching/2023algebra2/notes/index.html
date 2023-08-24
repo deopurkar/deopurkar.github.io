@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-08-23 Wed 23:59 -->
+<!-- 2023-08-24 Thu 23:59 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Algebra 2 (2023) Course Notes</title>
@@ -39,9 +39,9 @@
 Disclaimer: These notes may not be complete, accurate, or accurately reflect what happened in class.
 </p>
 
-<div id="outline-container-org7aa63ad" class="outline-2">
-<h2 id="org7aa63ad">Introduction</h2>
-<div class="outline-text-2" id="text-org7aa63ad">
+<div id="outline-container-orgcb9a9a5" class="outline-2">
+<h2 id="orgcb9a9a5">Introduction</h2>
+<div class="outline-text-2" id="text-orgcb9a9a5">
 <p>
 Mathematics is broadly about two things: numbers and shapes.
 Of these, numbers are plainly in the realm of Algebra.
@@ -52,9 +52,9 @@ In this class, we will study numbers and functions through the language of rings
 </p>
 </div>
 
-<div id="outline-container-org2aad81f" class="outline-3">
-<h3 id="org2aad81f">Example: Integers and rational numbers</h3>
-<div class="outline-text-3" id="text-org2aad81f">
+<div id="outline-container-orga2381e0" class="outline-3">
+<h3 id="orga2381e0">Example: Integers and rational numbers</h3>
+<div class="outline-text-3" id="text-orga2381e0">
 <p>
 The simplest kinds of numbers are whole numbers, or elements of the ring \(\mathbf{Z}\).
 The next simplest are quotients of integers, or elements of the ring \(\mathbf{Q}\).
@@ -63,9 +63,9 @@ Most of our &ldquo;number rings&rdquo; will be extensions of these.
 </div>
 </div>
 
-<div id="outline-container-org10db84f" class="outline-3">
-<h3 id="org10db84f">Example: Polynomials and rational functions</h3>
-<div class="outline-text-3" id="text-org10db84f">
+<div id="outline-container-org6108e6a" class="outline-3">
+<h3 id="org6108e6a">Example: Polynomials and rational functions</h3>
+<div class="outline-text-3" id="text-org6108e6a">
 <p>
 The simplest kinds of functions are polynomial functions, or elements of the ring \(\mathbf{R}[x]\).
 (You can replace \(\mathbf{R}\) by others, like \(\mathbf{C}\) or \(\mathbf{Q}\)).
@@ -75,9 +75,9 @@ Most of our &ldquo;function rings&rdquo; will be extensions of these.
 </div>
 </div>
 
-<div id="outline-container-orgbd3bb4e" class="outline-3">
-<h3 id="orgbd3bb4e">Example: Finite fields</h3>
-<div class="outline-text-3" id="text-orgbd3bb4e">
+<div id="outline-container-org6f477f2" class="outline-3">
+<h3 id="org6f477f2">Example: Finite fields</h3>
+<div class="outline-text-3" id="text-org6f477f2">
 <p>
 There are other extremely important rings related to the integers.
 These are the rings \(\mathbf{Z}/n \mathbf{Z}\).
@@ -87,9 +87,9 @@ We will meet extensions of these, which are strictly speaking neither &ldquo;fun
 </div>
 </div>
 
-<div id="outline-container-orgc477d79" class="outline-3">
-<h3 id="orgc477d79">More number rings</h3>
-<div class="outline-text-3" id="text-orgc477d79">
+<div id="outline-container-org0966873" class="outline-3">
+<h3 id="org0966873">More number rings</h3>
+<div class="outline-text-3" id="text-org0966873">
 <p>
 Fix a number \(\alpha \in \mathbf{C}\).
 We denote by \(\mathbf{Z}[\alpha] \subset \mathbf{C}\) the smallest sub-ring of \(\mathbf{C}\) containing \(\mathbf{Z}\) and \(\alpha\).
@@ -101,9 +101,9 @@ More precisely, we have the following observation.
 </p>
 </div>
 
-<div id="outline-container-org912f82f" class="outline-4">
-<h4 id="org912f82f">Proposition</h4>
-<div class="outline-text-4" id="text-org912f82f">
+<div id="outline-container-orge482b79" class="outline-4">
+<h4 id="orge482b79">Proposition</h4>
+<div class="outline-text-4" id="text-orge482b79">
 <p>
 Let \(\alpha_{1}, \dots, \alpha_{m} \in \mathbf{C}\) be given.
 Then \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}] \subset \mathbf{C}\)  is the image of the homomorphism
@@ -113,9 +113,9 @@ that sends \(x_i \to \alpha_{i}\).
 </div>
 </div>
 
-<div id="outline-container-org8989475" class="outline-4">
-<h4 id="org8989475">Example</h4>
-<div class="outline-text-4" id="text-org8989475">
+<div id="outline-container-org1fca1ed" class="outline-4">
+<h4 id="org1fca1ed">Example</h4>
+<div class="outline-text-4" id="text-org1fca1ed">
 <p>
 Let us take \(\alpha = i\).
 Then you will see that \(\mathbf{Z}[i]\) can be described more simply by
@@ -125,18 +125,18 @@ Higher powers of \(\alpha\) are not necessary!
 </div>
 </div>
 
-<div id="outline-container-org028c631" class="outline-4">
-<h4 id="org028c631">Example</h4>
-<div class="outline-text-4" id="text-org028c631">
+<div id="outline-container-org323b632" class="outline-4">
+<h4 id="org323b632">Example</h4>
+<div class="outline-text-4" id="text-org323b632">
 <p>
 Take \(\alpha = \sqrt[3]{2}\) and notice that we only need the 0th, 1st, and 2nd power of \(\alpha\).
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgfbc2089" class="outline-4">
-<h4 id="orgfbc2089">Example</h4>
-<div class="outline-text-4" id="text-orgfbc2089">
+<div id="outline-container-org14ebfed" class="outline-4">
+<h4 id="org14ebfed">Example</h4>
+<div class="outline-text-4" id="text-org14ebfed">
 <p>
 Take \(\alpha = \pi\).
 Then, it is not clear that we can get away with only finitely many powers!
@@ -144,9 +144,9 @@ Then, it is not clear that we can get away with only finitely many powers!
 </div>
 </div>
 
-<div id="outline-container-orgcb3a014" class="outline-4">
-<h4 id="orgcb3a014">Lesson</h4>
-<div class="outline-text-4" id="text-orgcb3a014">
+<div id="outline-container-org75bfecc" class="outline-4">
+<h4 id="org75bfecc">Lesson</h4>
+<div class="outline-text-4" id="text-org75bfecc">
 <p>
 The examples above suggest that sometimes, we can describe \(\mathbf{Z}[\alpha]\) using finitely many powers of \(\alpha\) and sometimes we cannot.
 This is an important distinction that we will formalise later.
@@ -155,9 +155,9 @@ This is an important distinction that we will formalise later.
 </div>
 </div>
 
-<div id="outline-container-org80ed2d8" class="outline-3">
-<h3 id="org80ed2d8">Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</h3>
-<div class="outline-text-3" id="text-org80ed2d8">
+<div id="outline-container-org2c5f518" class="outline-3">
+<h3 id="org2c5f518">Generalisation of \(\mathbf{Z}[\alpha_{1}, \dots, \alpha_{m}].\)</h3>
+<div class="outline-text-3" id="text-org2c5f518">
 <p>
 Let \(R \subset S\) be a sub-ring.
 Given \(\alpha_{1}, \dots, \alpha_{m}\), we define \(R[\alpha_{1}, \dots, \alpha_{m}]\) as the smallest subring of \(S\) that contains \(R\) and each of \(\alpha_{1}, \dots, \alpha_{m}\).
