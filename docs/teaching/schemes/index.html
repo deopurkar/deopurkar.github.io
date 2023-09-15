@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-08-23 Wed 12:51 -->
+<!-- 2023-09-05 Tue 11:53 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Foundations of algebraic geometry, aka schemes 2020</title>
@@ -11,46 +11,35 @@
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" href="/css/main.css"></link><link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet"></link><script src="/js/collapsibility.js"></script>
 <script type="text/javascript" src="/js/collapsibility.js"></script>
-<script>
-  window.MathJax = {
-    tex: {
-      ams: {
-        multlineWidth: '85%'
-      },
-      tags: 'ams',
-      tagSide: 'right',
-      tagIndent: '.8em'
-    },
-    chtml: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    svg: {
-      scale: 1.0,
-      displayAlign: 'center',
-      displayIndent: '0em'
-    },
-    output: {
-      font: 'mathjax-modern',
-      displayOverflow: 'overflow'
-    }
-  };
-</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
 
-<script
-  id="MathJax-script"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Foundations of algebraic geometry, aka schemes 2020</h1>
 
-<div id="outline-container-org26468b9" class="outline-2">
-<h2 id="org26468b9" class="collapsible">Introduction</h2>
-<div class="outline-text-2" id="text-org26468b9">
+<div id="outline-container-orge927564" class="outline-2">
+<h2 id="orge927564" class="collapsible">Introduction</h2>
+<div class="outline-text-2" id="text-orge927564">
 <p>
 We will learn the modern foundations of algebraic geometry: sheaves, schemes, and cohomology from <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">Ravi Vakil&rsquo;s book-in-progress</a>, online lecture videos, and weekly discussions.
 </p>
@@ -62,9 +51,9 @@ We will hang out at <a href="https://schemes2020.zulipchat.com"><b><b>schemes202
 </div>
 
 
-<div id="outline-container-orgc5c15ba" class="outline-2">
-<h2 id="orgc5c15ba" class="collapsible">Prerequisites</h2>
-<div class="outline-text-2" id="text-orgc5c15ba">
+<div id="outline-container-org6448a88" class="outline-2">
+<h2 id="org6448a88" class="collapsible">Prerequisites</h2>
+<div class="outline-text-2" id="text-org6448a88">
 <p>
 A solid foundation in topology and algebra (rings, fields, modules), and familiarity with some algebraic geometry or commutative algebra and the language of categories.
 This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Special Topics Course about algebraic geometry (Martin/Markus) or commutative algebra (Amnon).
@@ -74,9 +63,9 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 </div>
 
 
-<div id="outline-container-org291731b" class="outline-2">
-<h2 id="org291731b" class="collapsible">Assessement</h2>
-<div class="outline-text-2" id="text-org291731b">
+<div id="outline-container-org7c123a0" class="outline-2">
+<h2 id="org7c123a0" class="collapsible">Assessement</h2>
+<div class="outline-text-2" id="text-org7c123a0">
 <ol class="org-ol">
 <li>5 written assignments (50%)</li>
 <li>Two oral exams (50%)</li>
@@ -84,9 +73,9 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 </div>
 
 
-<div id="outline-container-orgfe9407b" class="outline-3">
-<h3 id="orgfe9407b" class="collapsible">Written assignments</h3>
-<div class="outline-text-3" id="text-orgfe9407b">
+<div id="outline-container-org029a9e2" class="outline-3">
+<h3 id="org029a9e2" class="collapsible">Written assignments</h3>
+<div class="outline-text-3" id="text-org029a9e2">
 <ol class="org-ol">
 <li>Due 14 Aug: 1.3.E, 1.4.E, 2.3.A, 2.3.I, 2.3.J, 2.4.E, 2.4.N, 2.4.O.</li>
 <li>Due 04 Sep: 3.2.K, 3.2.M, 3.2.R, 3.2.S, 3.4.I, 3.6.C, 3.6.N, 4.3.F.</li>
@@ -108,9 +97,9 @@ This means HD in Analysis 1, Algebra 1, Algebra 2, and either Algebra 3 or a Spe
 </div>
 
 
-<div id="outline-container-org6e2b5f0" class="outline-3">
-<h3 id="org6e2b5f0" class="collapsible">Midterm exam</h3>
-<div class="outline-text-3" id="text-org6e2b5f0">
+<div id="outline-container-org95fc1ea" class="outline-3">
+<h3 id="org95fc1ea" class="collapsible">Midterm exam</h3>
+<div class="outline-text-3" id="text-org95fc1ea">
 <p>
 The midterm exam will be an oral exam in the week of September 21. It will be about 45 minutes long. I have prepared <a href="midterm1.pdf">a list of questions for the exam</a>. We will ask questions from this list, small variations on them, and follow up questions based on your responses.
 </p>
@@ -118,13 +107,13 @@ The midterm exam will be an oral exam in the week of September 21. It will be ab
 </div>
 
 
-<div id="outline-container-org9335837" class="outline-3">
-<h3 id="org9335837" class="collapsible">Final exam</h3>
-<div class="outline-text-3" id="text-org9335837">
+<div id="outline-container-org14c295b" class="outline-3">
+<h3 id="org14c295b" class="collapsible">Final exam</h3>
+<div class="outline-text-3" id="text-org14c295b">
 </div>
 <ul class="org-ul">
-<li><a id="org21c5335"></a>Practice questions<br />
-<div class="outline-text-5" id="text-org21c5335">
+<li><a id="orgfb4d5d2"></a>Practice questions<br />
+<div class="outline-text-5" id="text-orgfb4d5d2">
 <ol class="org-ol">
 <li>Let \(X\) be a Noetherian scheme.
 <ul class="org-ul">
@@ -178,8 +167,8 @@ The midterm exam will be an oral exam in the week of September 21. It will be ab
 
 
 <ul class="org-ul">
-<li><a id="org0b4a095"></a>Marking<br />
-<div class="outline-text-6" id="text-org0b4a095">
+<li><a id="org9386ed9"></a>Marking<br />
+<div class="outline-text-6" id="text-org9386ed9">
 <p>
 Five major areas. Each out of 10.
 </p>
@@ -200,18 +189,18 @@ Five major areas. Each out of 10.
 </div>
 
 
-<div id="outline-container-org34cb72f" class="outline-2">
-<h2 id="org34cb72f" class="collapsible">Weekly reading, viewing, and doing</h2>
-<div class="outline-text-2" id="text-org34cb72f">
+<div id="outline-container-orge59b72f" class="outline-2">
+<h2 id="orge59b72f" class="collapsible">Weekly reading, viewing, and doing</h2>
+<div class="outline-text-2" id="text-orge59b72f">
 <p>
 &ldquo;Do&rdquo; does not mean &ldquo;write up and submit&rdquo;. 
 A general convention in Ravi&rsquo;s book is that ⋆ indicates an advanced section that can be skipped on the first reading.
 </p>
 </div>
 
-<div id="outline-container-orge6ab13e" class="outline-3">
-<h3 id="orge6ab13e" class="collapsible">Week 12</h3>
-<div class="outline-text-3" id="text-orge6ab13e">
+<div id="outline-container-org524d96e" class="outline-3">
+<h3 id="org524d96e" class="collapsible">Week 12</h3>
+<div class="outline-text-3" id="text-org524d96e">
 <ul class="org-ul">
 <li><b><b>Read/skim</b></b>: 18.1, 18.2, 18.3, 18.4</li>
 <li><b><b>Do</b></b>: 
@@ -230,8 +219,8 @@ A general convention in Ravi&rsquo;s book is that ⋆ indicates an advanced sect
 </div>
 
 <ul class="org-ul">
-<li><a id="org75d3990"></a>Thursday<br />
-<div class="outline-text-5" id="text-org75d3990">
+<li><a id="org80e8124"></a>Thursday<br />
+<div class="outline-text-5" id="text-org80e8124">
 <ol class="org-ol">
 <li>Let \(\pi \colon X \to Y\) be an affine morphism and \(F\) a quasi-coherent sheaf on \(X\).
 <ul class="org-ul">
@@ -274,9 +263,9 @@ Prove that \(n \mapsto h^0(F(n))\), called the &ldquo;Hilbert function&rdquo;, a
 </ul>
 </div>
 
-<div id="outline-container-org72cf614" class="outline-3">
-<h3 id="org72cf614" class="collapsible">Week 11</h3>
-<div class="outline-text-3" id="text-org72cf614">
+<div id="outline-container-orgbd22b4d" class="outline-3">
+<h3 id="orgbd22b4d" class="collapsible">Week 11</h3>
+<div class="outline-text-3" id="text-orgbd22b4d">
 <ul class="org-ul">
 <li><b><b>Read</b></b>: 16.1, 16.2, 16.3, 16.4 (which uses bits from 15.3.3), 16.5 (take S = spec k), skim the rest of 16.</li>
 <li><b><b>Notes</b></b>:
@@ -293,9 +282,9 @@ I may add more references or make my own video/notes.</li>
 </div>
 
 
-<div id="outline-container-orgca0e628" class="outline-4">
-<h4 id="orgca0e628">Thursday</h4>
-<div class="outline-text-4" id="text-orgca0e628">
+<div id="outline-container-orga38d04d" class="outline-4">
+<h4 id="orga38d04d">Thursday</h4>
+<div class="outline-text-4" id="text-orga38d04d">
 <ol class="org-ol">
 <li>Prove that pullback of a locally free sheaf is locally free (of the same rank).</li>
 
@@ -315,9 +304,9 @@ I may add more references or make my own video/notes.</li>
 </div>
 
 
-<div id="outline-container-orgbf7cd5c" class="outline-4">
-<h4 id="orgbf7cd5c">Friday</h4>
-<div class="outline-text-4" id="text-orgbf7cd5c">
+<div id="outline-container-org2a6cda3" class="outline-4">
+<h4 id="org2a6cda3">Friday</h4>
+<div class="outline-text-4" id="text-org2a6cda3">
 <ol class="org-ol">
 <li><p>
 Show that a map \(X \to \mathbb P^n\) is the same as a line bundle \(L\) on \(X\) and a surjective map \(O_X^{n+1} \to L.\)
@@ -344,9 +333,9 @@ As an example, consider the map \({\rm Spec}\ \mathbb Z \dashrightarrow \mathbb 
 </div>
 
 
-<div id="outline-container-org3791ed2" class="outline-3">
-<h3 id="org3791ed2" class="collapsible">Week 10</h3>
-<div class="outline-text-3" id="text-org3791ed2">
+<div id="outline-container-org9d8b702" class="outline-3">
+<h3 id="org9d8b702" class="collapsible">Week 10</h3>
+<div class="outline-text-3" id="text-org9d8b702">
 <ul class="org-ul">
 <li><b><b>Read</b></b>: Chapter 14 and chapter 12.5 for background</li>
 <li><b><b>Notes</b></b>:
@@ -366,9 +355,9 @@ Regular in codimension 1 is equivalent to &ldquo;singular locus of \(X\) has cod
 </div>
 
 
-<div id="outline-container-org3deea5a" class="outline-4">
-<h4 id="org3deea5a">Discussions</h4>
-<div class="outline-text-4" id="text-org3deea5a">
+<div id="outline-container-orga519146" class="outline-4">
+<h4 id="orga519146">Discussions</h4>
+<div class="outline-text-4" id="text-orga519146">
 <ol class="org-ol">
 <li>Thursday
 
@@ -428,9 +417,9 @@ For a factorial \(X\), every divisor is locally principal.</li>
 </div>
 
 
-<div id="outline-container-orgdba6732" class="outline-3">
-<h3 id="orgdba6732" class="collapsible">Week 9</h3>
-<div class="outline-text-3" id="text-orgdba6732">
+<div id="outline-container-orga9483e4" class="outline-3">
+<h3 id="orga9483e4" class="collapsible">Week 9</h3>
+<div class="outline-text-3" id="text-orga9483e4">
 <ul class="org-ul">
 <li><b><b>Read</b></b>: Chapter 13</li>
 <li><b><b>Important points</b></b>
@@ -446,9 +435,9 @@ For a factorial \(X\), every divisor is locally principal.</li>
 </div>
 
 
-<div id="outline-container-org2a818b6" class="outline-4">
-<h4 id="org2a818b6">Discussions</h4>
-<div class="outline-text-4" id="text-org2a818b6">
+<div id="outline-container-orgf1d0f63" class="outline-4">
+<h4 id="orgf1d0f63">Discussions</h4>
+<div class="outline-text-4" id="text-orgf1d0f63">
 <ol class="org-ol">
 <li><p>
 Thursday
@@ -545,9 +534,9 @@ What can you say about injectivity?</li>
 </div>
 
 
-<div id="outline-container-org69093c7" class="outline-3">
-<h3 id="org69093c7" class="collapsible">Week 8</h3>
-<div class="outline-text-3" id="text-org69093c7">
+<div id="outline-container-org9e4d34a" class="outline-3">
+<h3 id="org9e4d34a" class="collapsible">Week 8</h3>
+<div class="outline-text-3" id="text-org9e4d34a">
 <ul class="org-ul">
 <li><b><b>Read</b></b>: <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">Chapter 9</a></li>
 <li><b><b>Watch</b></b>: <a href="https://www.youtube.com/watch?v=RuFBNbR1XN0">AGITTOC Pseudolecture 11</a></li>
@@ -567,9 +556,9 @@ What can you say about injectivity?</li>
 </div>
 
 
-<div id="outline-container-org0038da8" class="outline-4">
-<h4 id="org0038da8">Discussion</h4>
-<div class="outline-text-4" id="text-org0038da8">
+<div id="outline-container-org6a7e832" class="outline-4">
+<h4 id="org6a7e832">Discussion</h4>
+<div class="outline-text-4" id="text-org6a7e832">
 <ol class="org-ol">
 <li>Thursday
 
@@ -649,9 +638,9 @@ But NOT all maps of Proj are of this form!</li>
 </div>
 
 
-<div id="outline-container-orgae16f30" class="outline-3">
-<h3 id="orgae16f30" class="collapsible">Week 7</h3>
-<div class="outline-text-3" id="text-orgae16f30">
+<div id="outline-container-org37cf0ef" class="outline-3">
+<h3 id="org37cf0ef" class="collapsible">Week 7</h3>
+<div class="outline-text-3" id="text-org37cf0ef">
 <ul class="org-ul">
 <li><b><b>Read:</b></b> -   Sections 5.1 and 5.2
 <ul class="org-ul">
@@ -670,9 +659,9 @@ But NOT all maps of Proj are of this form!</li>
 </div>
 
 
-<div id="outline-container-org3a9826e" class="outline-4">
-<h4 id="org3a9826e">Discussion</h4>
-<div class="outline-text-4" id="text-org3a9826e">
+<div id="outline-container-orgd454dc0" class="outline-4">
+<h4 id="orgd454dc0">Discussion</h4>
+<div class="outline-text-4" id="text-orgd454dc0">
 <ol class="org-ol">
 <li>Thursday
 
@@ -739,9 +728,9 @@ Construct a map Proj(S/I) -&gt; Proj(S) and show that it is a closed embedding.<
 </div>
 
 
-<div id="outline-container-org5cae41b" class="outline-3">
-<h3 id="org5cae41b" class="collapsible">Week 6</h3>
-<div class="outline-text-3" id="text-org5cae41b">
+<div id="outline-container-orgda4f1c0" class="outline-3">
+<h3 id="orgda4f1c0" class="collapsible">Week 6</h3>
+<div class="outline-text-3" id="text-orgda4f1c0">
 <ul class="org-ul">
 <li><b><b>Read:</b></b> <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">Section 4.5</a></li>
 <li><b><b>Important points:</b></b> -   When you learn algebraic geometry, it is easy to see that affine schemes are important&amp;#x2014;they are the building blocks of everything! It is less clear why projective schemes are important.        
@@ -764,9 +753,9 @@ So graded rings naturally come in when we consider affine schemes with a \(\math
 </div>
 
 
-<div id="outline-container-org425363b" class="outline-4">
-<h4 id="org425363b">Discussions</h4>
-<div class="outline-text-4" id="text-org425363b">
+<div id="outline-container-orge1e25ed" class="outline-4">
+<h4 id="orge1e25ed">Discussions</h4>
+<div class="outline-text-4" id="text-orge1e25ed">
 <ol class="org-ol">
 <li>Thursday
 
@@ -879,9 +868,9 @@ Take \(A = k[t][X_0, \dots, X_n]\), where \(t\) has degree 0 and the \(X_i\) hav
 </div>
 
 
-<div id="outline-container-org3b7082f" class="outline-3">
-<h3 id="org3b7082f" class="collapsible">Week 5</h3>
-<div class="outline-text-3" id="text-org3b7082f">
+<div id="outline-container-org1ad91e4" class="outline-3">
+<h3 id="org1ad91e4" class="collapsible">Week 5</h3>
+<div class="outline-text-3" id="text-org1ad91e4">
 <ul class="org-ul">
 <li>Read:
 <ul class="org-ul">
@@ -901,9 +890,9 @@ It is becoming hard to match the pseudo-lectures exactly to our readings. What w
 </div>
 
 
-<div id="outline-container-org5be333f" class="outline-4">
-<h4 id="org5be333f">Discussion</h4>
-<div class="outline-text-4" id="text-org5be333f">
+<div id="outline-container-org2855ac8" class="outline-4">
+<h4 id="org2855ac8">Discussion</h4>
+<div class="outline-text-4" id="text-org2855ac8">
 <ol class="org-ol">
 <li><p>
 Poll
@@ -978,9 +967,9 @@ Example 4.4.11.</li>
 </div>
 
 
-<div id="outline-container-org70a1ae8" class="outline-3">
-<h3 id="org70a1ae8" class="collapsible">Week 4</h3>
-<div class="outline-text-3" id="text-org70a1ae8">
+<div id="outline-container-org74c46a2" class="outline-3">
+<h3 id="org74c46a2" class="collapsible">Week 4</h3>
+<div class="outline-text-3" id="text-org74c46a2">
 <ul class="org-ul">
 <li>Read:
 <ul class="org-ul">
@@ -1007,9 +996,9 @@ Example 4.4.11.</li>
 </div>
 
 
-<div id="outline-container-org949a518" class="outline-4">
-<h4 id="org949a518">Discussion</h4>
-<div class="outline-text-4" id="text-org949a518">
+<div id="outline-container-org704c2a2" class="outline-4">
+<h4 id="org704c2a2">Discussion</h4>
+<div class="outline-text-4" id="text-org704c2a2">
 <ol class="org-ol">
 <li>Thursday
 
@@ -1077,9 +1066,9 @@ Prove Theorem 3.7.1</li>
 </div>
 
 
-<div id="outline-container-org4de63d4" class="outline-3">
-<h3 id="org4de63d4" class="collapsible">Week 3</h3>
-<div class="outline-text-3" id="text-org4de63d4">
+<div id="outline-container-orgd4a2643" class="outline-3">
+<h3 id="orgd4a2643" class="collapsible">Week 3</h3>
+<div class="outline-text-3" id="text-orgd4a2643">
 <ul class="org-ul">
 <li>Read: Two independent tracks
 <ul class="org-ul">
@@ -1093,9 +1082,9 @@ Come to terms with the new way of defining spaces from local models. The old man
 </div>
 
 
-<div id="outline-container-orgd27176b" class="outline-4">
-<h4 id="orgd27176b">Discussion</h4>
-<div class="outline-text-4" id="text-orgd27176b">
+<div id="outline-container-orge27526b" class="outline-4">
+<h4 id="orge27526b">Discussion</h4>
+<div class="outline-text-4" id="text-orge27526b">
 <ol class="org-ol">
 <li><p>
 Polls
@@ -1186,9 +1175,9 @@ You will have to prove the (easy) fact that for \(U, V \subset \mathbb R^n\), xi
 </div>
 
 
-<div id="outline-container-org8cb1ffd" class="outline-3">
-<h3 id="org8cb1ffd" class="collapsible">Week 2</h3>
-<div class="outline-text-3" id="text-org8cb1ffd">
+<div id="outline-container-org6fea6d1" class="outline-3">
+<h3 id="org6fea6d1" class="collapsible">Week 2</h3>
+<div class="outline-text-3" id="text-org6fea6d1">
 <ul class="org-ul">
 <li>Read: <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">Chapter 1 Section 1.4, 2.1, 2.2, 2.3</a></li>
 <li>Skim: <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">Chapter 1 Section 1.3.6, 1.3.7, 1.5, 1.6</a></li>
@@ -1319,9 +1308,9 @@ Play with the pre-sheaf \(F\).</li>
 </div>
 
 
-<div id="outline-container-org3856da9" class="outline-3">
-<h3 id="org3856da9" class="collapsible">Week 1</h3>
-<div class="outline-text-3" id="text-org3856da9">
+<div id="outline-container-org03bbde1" class="outline-3">
+<h3 id="org03bbde1" class="collapsible">Week 1</h3>
+<div class="outline-text-3" id="text-org03bbde1">
 <ul class="org-ul">
 <li>Read: <a href="http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf">Chapter 1 Sections 1.1&amp;#x2013;1.3.4 (localisation)</a>.</li>
 <li>Watch: <a href="https://www.youtube.com/watch?v=WTEZjR5aNjw">AGITOC Pseudo-lecture 1</a>.</li>
@@ -1337,9 +1326,9 @@ Play with the pre-sheaf \(F\).</li>
 </div>
 
 
-<div id="outline-container-orgc06d504" class="outline-4">
-<h4 id="orgc06d504">Discussion</h4>
-<div class="outline-text-4" id="text-orgc06d504">
+<div id="outline-container-orgc414a6e" class="outline-4">
+<h4 id="orgc414a6e">Discussion</h4>
+<div class="outline-text-4" id="text-orgc414a6e">
 <ol class="org-ol">
 <li>Thursday
 
@@ -1416,9 +1405,9 @@ Then \(R_f\) is the ring of functions of &lt;span class=&ldquo;underline&rdquo;&
 </div>
 
 
-<div id="outline-container-org3012445" class="outline-2">
-<h2 id="org3012445" class="collapsible">More things to read or watch</h2>
-<div class="outline-text-2" id="text-org3012445">
+<div id="outline-container-org944ca8f" class="outline-2">
+<h2 id="org944ca8f" class="collapsible">More things to read or watch</h2>
+<div class="outline-text-2" id="text-org944ca8f">
 <ul class="org-ul">
 <li><a href="https://math216.wordpress.com/agittoc-2020/">Ravi Vakil&rsquo;s pseudo-course website</a></li>
 <li><a href="https://www.youtube.com/watch?v=BX3jiLdehA4&amp;list=PL8yHsr3EFj50Un2NpfPySgXctRQK7CLG-">Richard Borcherd&rsquo;s lectures on schemes</a></li>
@@ -1428,7 +1417,7 @@ Then \(R_f\) is the ring of functions of &lt;span class=&ldquo;underline&rdquo;&
 </div>
 </div>
 <div id="postamble" class="status">
-Created by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.7-pre).  Last modified: 2022-12-14 Wed 13:11.  <a href="https://github.com/deopurkar.github.io">Source</a>
+Created by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.5.5).  Last modified: 2022-05-31 Tue 15:55.  <a href="https://github.com/deopurkar.github.io">Source</a>
 </div>
 </body>
 </html>
