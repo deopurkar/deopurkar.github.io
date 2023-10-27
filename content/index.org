@@ -228,6 +228,9 @@ Here are some additional talks:
 :PROPERTIES:
 :html_headline_class: collapsible
 :END:
+- [[file:papers/compstabk3rank0.pdf][A sketch of the Thurston compactification of the stability manifold for a generic non-algebraic K3 surface]]
+  This is an instance of the construction proposed in the [[file:papers/a2-compactification.pdf][paper with Bapat and Licata]].
+  
 - [[file:genus7syz/][GIT for syzygies of genus 7 curves]]\\
   This is an ongoing project to determine GIT stability for syzygies of genus 7 canonical curves.
   This is the first genus where canonical syzygies define an interesting GIT quotient, so it would be nice to understand the complete picture.

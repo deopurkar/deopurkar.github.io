@@ -51,7 +51,16 @@ We describe a compactification of the moduli space of pairs (S,C) where S is a s
 :year:     2020
 :org-id:   thurstonstab
 :END:
-We define a map from the space of Bridgeland stability conditions on a triangulated category C to an infinite projective space.  We conjecture that under some mild assumptions on the triangulated category C this map to be a homeomorphism onto its image and that the closure is a real manifold with boundary.   Thus we obtain a compactification of the space of stability conditions.  Both the definition and expected properties of this compactification are analogous in many respects to Thurston's compactification of the Teichmuller space of a hyperbolic surface. In this paper we study in detail the case when C is the 2-Calabi-Yau category associated to the \(A_2\) quiver, and prove our conjectures in that case.
+  We propose compactifications of the moduli space of Bridgeland stability conditions of a triangulated category.
+  Our construction arises from a viewing a stability condition as a metric on the underlying category and is inspired by the Thurston compactification of the Teichm\"uller space of hyperbolic metrics on a surface.
+  The key ingredient in the construction are maps from the stability manifold to an infinite projective space.
+  We prove that, under suitable hypotheses, these maps are injective and their image has a compact closure.
+  We identify a family of points in the boundary that are categorical analogous to the intersection functionals in Teichm\"uller theory.
+
+  We study in detail the geometry of the resulting compactification for the 2-Calabi--Yau categories of quivers, and fully work out the cases of the \(A_2\) and \(\widehat{A_1}\) quivers.
+  To do so, we carefully examine the dynamics of Harder--Narasimhan multiplicities under auto-equivalences of the category.
+  We introduce a finite automaton to study this dynamics and employ it in our analysis of the \(A_{2}\) and \(\widehat{A_1}\) categories.
+
 
 * Ramification divisors of general projections
 :PROPERTIES:
