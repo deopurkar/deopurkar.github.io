@@ -47,20 +47,26 @@
   ;; Our pretty-printing function
   (defun pretty-print ()
     (let ((title (org-entry-get nil "ITEM"))
-          (org (org-entry-get nil "org"))
-          (year (org-entry-get nil "year")))
-      (format "- %s :: %s, %s."
-              year
-              title
-              org)))
+	  (org (org-entry-get nil "org"))
+	  (collaborators (org-entry-get nil "with"))
+	  (year (org-entry-get nil "year")))
+      (format "- %s :: %s, %s%s."
+	      year
+	      title
+	      org
+	      (if collaborators
+		  (format ", with %s" collaborators)
+		"")
+	      )))
   (string-join (org-map-entries 'pretty-print nil '("#awards.org")) "\n")
 #+end_src
 
 #+RESULTS:
 :results:
+- 2024 :: Discovery project award (DP), Australian Research Council, with Asilata Bapat, Anthony Licata.
 - 2018 :: Discovery early career researcher award (DECRA), Australian Research Council.
 - 2016 :: AMS-Simons travel grant, American Mathematical Society and Simons Foundation.
-- 2016 :: Workshop funding, American Institute of Mathematics.
+- 2016 :: Workshop funding, American Institute of Mathematics, with Maksym Fedorchuk, Ian Morrison, Xiaowei Wang.
 - 2014 :: Award for excellence in teaching, Columbia University, Mathematics department.
 - 2006 :: Jon A. Bucsela prize for the top undergraduate, Massachusetts Institute of Technology, Mathematics department.
 - 2006 :: Rogers family prize for undergraduate summer research, Massachusetts Institute of Technology, Mathematics department.

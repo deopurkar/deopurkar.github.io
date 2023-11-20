@@ -1,8 +1,16 @@
+* Discovery project award (DP)
+:PROPERTIES:
+:year:     2024
+:org: Australian Research Council
+:with: Asilata Bapat, Anthony Licata
+:END:
+
 * Discovery early career researcher award (DECRA)
 :properties:
 :amount:   328,075 AUD
 :year:     2018
 :org:      Australian Research Council
+:title: Geometry and cohomology of moduli spaces
 :end:
 * AMS-Simons travel grant
 :properties:
