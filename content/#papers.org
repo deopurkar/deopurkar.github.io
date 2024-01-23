@@ -2,7 +2,7 @@
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
 :journal:  Pre-print, arXiv:2211.16603
-:link:     [[file:papers/erc.pdf][pdf]], [[file:~/Documents/Masters/masters.org::*2022 S2][arxiv]]
+:link:     [[file:papers/erc.pdf][pdf]], [[https://arxiv.org/abs/2211.16603][arxiv]]
 :year:     2022
 :END:
   We compute the equivariant fundamental class of the orbit closure of a linear series on the projective line.  We also describe the boundary of the orbit closure and how the orbits specialise in one parameter families.

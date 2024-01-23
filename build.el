@@ -14,7 +14,7 @@
          :exclude "\#.*"   ;; Files beginning with \# are not processed.
          :publishing-function org-html-publish-to-html
          :section-numbers nil
-         :with-broken-links mark
+         :with-broken-links nil
          :with-toc nil
          :with-title t
          :with-author t

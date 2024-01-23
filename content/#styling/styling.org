@@ -6,6 +6,9 @@
 The CSS is adapted from [[https://github.com/asilata/asilata.github.io/][Asilata Bapat]].
 
 * Colours
+:PROPERTIES:
+:ID:       a54a58d4-feec-474f-b872-46f194d0c1ed
+:END:
 First we define some auxiliary [[https://sass-lang.com/documentation/at-rules/mixin][mixins]] to use later, such as for alternately coloured table rows.
 #+begin_src scss
   @mixin alternate-rows($color) {
@@ -134,6 +137,9 @@ Later on we can just include the one we want.
 #+end_src
 
 * Main CSS
+:PROPERTIES:
+:ID:       3d104ae3-dfeb-4666-b672-063ac81e03b7
+:END:
 We come to the main part of the CSS code, namely the positioning and layout options, as well as the font options.
 First we define the variables for the title font and the body font.
 #+begin_src scss
@@ -324,6 +330,9 @@ Finally, we style collapsible and collapsed headlines.
 #+end_src
 
 * Javascript
+:PROPERTIES:
+:ID:       aeacc433-b46d-4f38-bdaf-803e879ce98d
+:END:
 The following script adds collapsible elements.
 It works as follows.  Suppose we have a part of the page of the form
 
