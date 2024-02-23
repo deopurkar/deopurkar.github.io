@@ -1,3 +1,18 @@
+* Benedict Bawagan
+:properties:
+:year:     2023
+:level:    Honours
+:institute: Mathematical Sciences Institute, Australian National University
+:end:
+
+
+* Leyao Zha
+:properties:
+:year:     2023
+:level:    Honours
+:institute: Mathematical Sciences Institute, Australian National University
+:end:
+
 * Charles McIntosh
 :properties:
 :year:     2023

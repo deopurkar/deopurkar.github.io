@@ -1,4 +1,43 @@
 #+filetags: :talk:
+* The geometry of stability conditions
+:properties:
+:institute: Mathematisches Forschungsinstitut Oberwolfach
+:place:    Oberwolfach, Germany
+:year:     2024
+:type:     Workshop
+:meet: Artin groups meet triangulated categories
+:end:
+
+* How to count using equivariant cohomology
+:properties:
+:ref:  [[file:#papers.org::*A universal formula for counting cubic surfaces][A universal formula for counting cubic surfaces]]
+:type:     Workshop
+:meet: Workshop on computational and applied algebraic geometry
+:institute: Isaac Newton Institute
+:place:    Cambridge, UK
+:year:     2024
+:end:
+
+
+* How to count using equivariant cohomology
+:properties:
+:ref:  [[file:#papers.org::*A universal formula for counting cubic surfaces][A universal formula for counting cubic surfaces]]
+:type:     Seminar
+:institute: Imperial College
+:place:    London, UK
+:year:     2024
+:end:
+
+
+* Stability conditions, metrics, and compactifications
+:properties:
+:institute: School of Mathematics
+:place:    Edinburgh, UK
+:year:     2024
+:type:     Seminar
+:end:
+
+
 * Stability conditions, metrics, and compactifications (lecture series)
 :properties:
 :meet: Summer school 2023 on algebraic geometry: derived categories, stability conditions, and moduli
@@ -8,8 +47,9 @@
 :type:     Lecture series
 :end:
 
-* Braids: algebra and geometry
+* Braids, automata, and the PL-sphere
 :properties:
+:meet: Braids: algebra and geometry
 :type:    Workshop
 :institute: Australian National University
 :place:    Canberra, Australia
