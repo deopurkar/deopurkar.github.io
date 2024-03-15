@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ARCHIVE:  %s_archive::
+:END:
 #+title: Anand Deopurkar
 #+author: Anand Deopurkar
 #+OPTIONS: *:t author:nil ':t  d:+results 
@@ -258,26 +261,11 @@ Here are some additional talks:
 :PROPERTIES:
 :CUSTOM_ID: moar
 :END:
-** Parental leave
-:PROPERTIES:
-:from: <2023-06-01 Thu>
-:to: <2023-12-31 Sun>
-:END:
-In the second half of 2023, I am on parental leave.
 
-** Upcoming travel
+** Teaching in 2024 S1
 :PROPERTIES:
-:from: <2000-01-01 Sat>
-:to: <2100-12-31 Fri>
+:from: <2024-01-01 Mon>
+:to: <2024-07-01 Mon>
 :END:
-Upcoming travel:
-- 22--26 January 2024 :: Isaac Newton Institute, Cambridge, UK
-- 28 January--2 February 2024 :: Oberwolfach, Germany
-
-** Teaching next semester
-:PROPERTIES:
-:from: <2022-12-01 Thu>
-:to: <2023-06-01 Thu>
-:END:
-In 2023 Semester 1, I am teaching Algebra 2.
+In the first half of 2024, I am teaching Algebra 2.
 
