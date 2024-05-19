@@ -1,3 +1,11 @@
+* Equivariant classes of orbits in GL(2)-representations :pp:
+:PROPERTIES:
+:journal:  Pre-print, arXiv:2405.09849
+:link:     [[https://raw.githubusercontent.com/deopurkar/equivariant-classes-of-gl2-orbits/main/gl2orbits.pdf][pdf]], [[https://arxiv.org/abs/2405.09849][arxiv]], [[https://github.com/deopurkar/equivariant-classes-of-gl2-orbits/][source/comments]]
+:year:     2024
+:END:
+We compute equivariant fundamental classes of orbits in GL(2)-representations. As applications, we find degrees of the orbit closures corresponding to elliptic fibrations and self-maps of the projective line.
+
 * Orbits of linear series on the projective line :pp:
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
