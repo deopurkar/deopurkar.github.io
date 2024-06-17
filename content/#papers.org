@@ -17,7 +17,7 @@ We compute equivariant fundamental classes of orbits in GL(2)-representations. A
 
 * Spherical objects and stability conditions on CY2 quiver categories    
 :PROPERTIES:
-:with:     [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
+:with:     [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
 :journal:  Mathematische Zeitschrift (accepted)
 :link:     [[https://arxiv.org/abs/2108.09155][arxiv]]
 :year:     2022
@@ -53,7 +53,7 @@ We describe a compactification of the moduli space of pairs (S,C) where S is a s
 
 * A Thurston compactification of the space of stability conditions       :pp:
 :PROPERTIES:
-:with:     [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
+:with:     [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
 :journal:  Pre-print, arXiv:2011.07908
 :link:     [[https://arxiv.org/abs/2011.07908][arxiv]]
 :year:     2020

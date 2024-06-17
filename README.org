@@ -3,8 +3,8 @@
 #+property: header-args :results silent
 #+startup: noptag contents
 
-This repository contains code that generates my personal website, https://deopurkar.github.io.
-The code and design of the website is thanks to [[https://asilata.github.io][Asilata Bapat]].
+This repository contains code that generates my personal website.
+The code and design of the website is thanks to [[https://asilata.org][Asilata Bapat]].
 
 * The content
 The content for the website goes in the ~content/~ directory.

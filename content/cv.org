@@ -1,9 +1,10 @@
 #+TITLE: Curriculum Vitae | Anand Deopurkar
-#+AUTHOR: [[mailto:anand.deopurkar@anu.edu.au][~anand.deopurkar@anu.edu.au~]]
+#+AUTHOR: [[mailto:anand.deopurkar@anu.edu.au][~anand.deopurkar@anu.edu.au~]] \(\quad\) [[https://www.ananddeopurkar.org][~ananddeopurkar.org~]]
 #+options: -:t broken-links:mark num:nil toc:nil date:nil
 #+LATEX_HEADER: \usepackage[margin=3cm]{geometry}
 #+LATEX_HEADER_EXTRA: \hypersetup{colorlinks=true,urlcolor=black}
 #+LATEX_HEADER_EXTRA: \usepackage{Baskervaldx}
+#+LATEX_HEADER_EXTRA: \usepackage{marvosym}
 #+HTML_HEAD_EXTRA: <script src="js/collapsibility.js"></script>
 
 

@@ -111,7 +111,7 @@ Upcoming travel:
   Pre-print, arxiv:2109.12672, with [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]] ([[https://arxiv.org/abs/2109.12672][arxiv]]).\\
   Talk: Cambridge ([[file:talks/Harvard2022.pdf][notes]]).
 - /Spherical objects and stability conditions on CY2 quiver categories/.\\
-  Pre-print, arXiv:2108.09155, with [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]] ([[https://arxiv.org/abs/2108.09155][arxiv]]).
+  Pre-print, arXiv:2108.09155, with [[https://asilata.org][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]] ([[https://arxiv.org/abs/2108.09155][arxiv]]).
 - /Stable log surfaces, admissible covers, and canonical curves of genus 4/.\\
   Transactions of the Americal Mathematical Society 374, No. 1, 589-641 (2021), with Changho Han ([[file:papers/TrigonalKSBA.pdf][pdf]], [[https://arxiv.org/abs/1807.08413/][arxiv]]).\\
   Talk: Sydney ([[file:talks/K3Sydney2019.pdf][notes]]).
