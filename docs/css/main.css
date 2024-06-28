@@ -23,7 +23,7 @@
       flex-direction: row; } }
 
 body {
-  font-family: "Lora", serif;
+  font-family: "Lato", serif;
   margin-top: 0em;
   margin-left: auto;
   margin-right: auto;
@@ -33,7 +33,7 @@ body {
   text-decoration: underline; }
 
 h1, h2, h3, h4 {
-  font-family: "Lora", serif;
+  font-family: "Lato", serif;
   font-weight: lighter;
   margin-bottom: 0em; }
 
@@ -60,7 +60,7 @@ figure {
   font-size: 80%; }
 
 .title {
-  font-family: "Lora";
+  font-family: "Lato";
   line-height: 1.5em; }
 
 .intro {

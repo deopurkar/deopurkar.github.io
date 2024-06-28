@@ -24,7 +24,7 @@
          :with-drawers ("results")
          :html-head-include-default-style nil
          :html-head-include-scripts nil 
-         :html-head "<link rel=\"stylesheet\" href=\"/css/main.css\"></link><link href=\"https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i\" rel=\"stylesheet\"></link><script src=\"/js/collapsibility.js\"></script>"
+         :html-head "<link rel=\"stylesheet\" href=\"/css/main.css\"></link><link href=\"https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i\" rel=\"stylesheet\"></link><script src=\"/js/collapsibility.js\"></script>"
          :html-preamble nil
          :html-postamble-format (("en" "Created by %c.  Last modified: %C.  <a href=\"https://github.com/deopurkar/deopurkar.github.io\">Source</a>"))
          :html-postamble t
