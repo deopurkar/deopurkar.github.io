@@ -36,7 +36,7 @@ Motivated by the problem of finding algebraic constructions of finite coverings 
 * A universal formula for counting cubic surfaces                        :pp:
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]]
-:journal:  Pre-print, arxiv:2109.12672
+:journal:  Pre-print
 :link:     [[https://arxiv.org/abs/2109.12672][arxiv]]
 :year:     2021
 :END:
@@ -45,7 +45,7 @@ Using equivariant geometry, we find a universal formula that computes the number
 * Stable log surfaces, admissible covers, and canonical curves of genus 4
 :PROPERTIES:
 :with:     Changho Han
-:journal:  Transactions of the Americal Mathematical Society 374, No. 1, 589-641 (2021)
+:journal:  Transactions of the Americal Mathematical Society
 :link:     [[file:papers/TrigonalKSBA.pdf][pdf]], [[https://arxiv.org/abs/1807.08413/][arxiv]]
 :year:     2021
 :END: 
@@ -54,7 +54,7 @@ We describe a compactification of the moduli space of pairs (S,C) where S is a s
 * A Thurston compactification of the space of stability conditions       :pp:
 :PROPERTIES:
 :with:     [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
-:journal:  Pre-print, arXiv:2011.07908
+:journal:  Pre-print
 :link:     [[https://arxiv.org/abs/2011.07908][arxiv]]
 :year:     2020
 :org-id:   thurstonstab
@@ -73,7 +73,7 @@ We describe a compactification of the moduli space of pairs (S,C) where S is a s
 * Ramification divisors of general projections
 :PROPERTIES:
 :with:     [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]]
-:journal:  Documenta Mathematica 25, 1917--1952 (2020)
+:journal:  Documenta Mathematica
 :link:     [[file:papers/PR.pdf][pdf]], [[http://arxiv.org/abs/1901.01513/][arxiv]]
 :year:     2020
 :END:
@@ -82,7 +82,7 @@ We study the ramification divisors of projections of a smooth projective variety
 * Anticanonical tropical cubic del Pezzos contain exactly 27 lines       :pp:
 :PROPERTIES:
 :with:     [[https://people.math.osu.edu/cueto.5/][María Angélica Cueto]]
-:journal:  Pre-print, arXiv:1906.08196
+:journal:  Pre-print
 :link:     [[https://arxiv.org/abs/1906.08196][arxiv]]
 :year:     2019
 :END:
@@ -90,7 +90,7 @@ The classical statement of Cayley-Salmon that there are 27 lines on every smooth
 
 * Covers of stacky curves and limits of plane quintics
 :PROPERTIES:
-:journal:  Transactions of the Americal Mathematical Society, 371, 549--588 (2019)
+:journal:  Transactions of the Americal Mathematical Society
 :link:     [[file:papers/StackyAdmissibleCovers.pdf][pdf]], [[http://arxiv.org/abs/1507.03252/][arxiv]]
 :year:     2019
 :END:
@@ -99,7 +99,7 @@ We construct a well-behaved compactification of the space of finite covers of a 
 * Syzygy divisors on Hurwitz spaces
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
-:journal:  Contemporary Mathematics 703, 209--222 (2018)
+:journal:  Contemporary Mathematics
 :link:     [[file:papers/HigherMaroni.pdf][pdf]], [[https://arxiv.org/abs/1805.00648][arxiv]]
 :year:     2018
 :END:
@@ -107,7 +107,7 @@ We describe a sequence of effective divisors on the Hurwitz space H(d,g) for d d
 
 * The canonical syzygy conjecture for ribbons
 :PROPERTIES:
-:journal:  Mathematische Zeitschrift 288, No. 3-4, 1157--1164 (2018)
+:journal:  Mathematische Zeitschrift
 :link:     [[file:papers/RibbonGreen.pdf][pdf]], [[http://arxiv.org/abs/1510.07755/][arxiv]]
 :year:     2018
 :END:
@@ -116,7 +116,7 @@ We prove the analogue for ribbons of Green\'s canonical syzygy conjecture, formu
 * Toward GIT stability of syzygies of canonical curves
 :PROPERTIES:
 :with:     [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]]
-:journal:  Algebraic Geometry 3, No. 1, 1--22 (2016)
+:journal:  Algebraic Geometry
 :link:     [[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://www.algebraicgeometry.nl/2016-1/2016-1-001.pdf][journal]]
 :year:     2016
 :END:
@@ -125,7 +125,7 @@ We introduce the problem of GIT stability for syzygy points of canonical curves 
 * The Picard rank conjecture for the Hurwitz spaces of degree up to five
 :PROPERTIES:
 :with:     [[https://www2.bc.edu/anand-p-patel/][Anand Patel]]
-:journal:  Algebra & Number Theory 9, No. 2, 459--492 (2015)
+:journal:  Algebra & Number Theory
 :link:     [[file:papers/PicH345.pdf][pdf]], [[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://msp.org/ant/2015/9-2/p05.xhtml][journal]]
 :year:     2015
 :END:
@@ -134,7 +134,7 @@ We prove that the rational Picard group of the simple Hurwitz space H_{d,g} is t
 * Groebner techniques for ribbons
 :PROPERTIES:
 :with:     [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]]
-:journal:  Albanian Journal of Mathematics 8, No. 2, 55--70 (2014)
+:journal:  Albanian Journal of Mathematics
 :link:     [[file:papers/groebner.pdf][pdf]], [[https://sites.google.com/site/albjmath/archives/vol-8/2014-6][journal]]
 :year:     2014
 :END:
@@ -142,7 +142,7 @@ We use Groebner basis techniques to study the balanced canonical ribbon in each 
 
 * Compactifications of Hurwitz spaces
 :PROPERTIES:
-:journal:  International Mathematics Research Notices 2014, No. 14, 3863--3911 (2014)
+:journal:  International Mathematics Research Notices
 :link:     [[file:papers/CompHurwitz.pdf][pdf]], [[http://arxiv.org/abs/1206.4535/][arxiv]], [[http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract][journal]]
 :year:     2014
 :END:
@@ -158,7 +158,7 @@ We algebraically compute the class of the Hodge eigenbundles in the cyclic cover
 * Sharp slope bounds for sweeping families of trigonal curves
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
-:journal:  Mathematical Research Letters 20, No. 5, 869--884 (2013)
+:journal:  Mathematical Research Letters
 :link:     [[file:papers/TrigonalSlopes.pdf][pdf]], [[http://arxiv.org/abs/1211.2827/][arxiv]], [[http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/][journal]]
 :year:     2013
 :END:
@@ -166,7 +166,7 @@ We establish sharp bounds for the slopes of curves in \(\overline{M}_g\) that sw
 
 * Modular compactifications of the space of marked trigonal curves
 :PROPERTIES:
-:journal:  Advances in Mathematics 248, 96--154 (2013)
+:journal:  Advances in Mathematics
 :link:     [[file:papers/MarkedTrigonal.pdf][pdf]], [[http://arxiv.org/abs/1206.4503/][arxiv]]
 :year:     2013
 :END:
