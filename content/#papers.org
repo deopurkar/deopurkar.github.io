@@ -18,7 +18,7 @@ We compute equivariant fundamental classes of orbits in GL(2)-representations. A
 * Spherical objects and stability conditions on CY2 quiver categories    
 :PROPERTIES:
 :with:     [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
-:journal:  Mathematische Zeitschrift (accepted)
+:journal:  Mathematische Zeitschrift
 :link:     [[https://arxiv.org/abs/2108.09155][arxiv]]
 :year:     2022
 :END:
@@ -27,7 +27,7 @@ Consider a 2-Calabi--Yau triangulated category with a Bridgeland stability condi
 * Vector bundles and finite covers
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
-:journal:  Forum of Mathematics, Sigma (accepted)
+:journal:  Forum of Mathematics, Sigma
 :link:     [[file:papers/ebundle.pdf][pdf]], [[https://arxiv.org/abs/1608.01711/][arXiv]]
 :year:     2022
 :END:
