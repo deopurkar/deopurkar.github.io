@@ -114,44 +114,44 @@ Upcoming travel:
   /Forum of Mathematics, Sigma/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].\\
   Talks: Adelaide ([[file:talks/AustMS2018.pdf][slides]]), Jeju Island ([[file:talks/Jeju2016.pdf][notes]]).
 - A universal formula for counting cubic surfaces. ([[https://arxiv.org/abs/2109.12672][arxiv]])\\
-  /Pre-print, arxiv:2109.12672/, with [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]].\\
+  /Pre-print/, with [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]].\\
   Talk: Cambridge ([[file:talks/Harvard2022.pdf][notes]]).
 - Stable log surfaces, admissible covers, and canonical curves of genus 4. ([[file:papers/TrigonalKSBA.pdf][pdf]], [[https://arxiv.org/abs/1807.08413/][arxiv]])\\
-  /Transactions of the Americal Mathematical Society 374, No. 1, 589-641 (2021)/, with Changho Han.\\
+  /Transactions of the Americal Mathematical Society/, with Changho Han.\\
   Talk: Sydney ([[file:talks/K3Sydney2019.pdf][notes]]).
 - A Thurston compactification of the space of stability conditions. ([[https://arxiv.org/abs/2011.07908][arxiv]])\\
-  /Pre-print, arXiv:2011.07908/, with [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]].\\
+  /Pre-print/, with [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]].\\
   Talks: Bonn ([[file:talks/Bonn2021.pdf][slides]]), Mumbai ([[file:talks/tifr2021.pdf][slides]]), Amidale ([[file:talks/AustMS2020.pdf][slides]]), Sydney ([[file:talks/StabSydney2019.pdf][notes]]).
 - Ramification divisors of general projections. ([[file:papers/PR.pdf][pdf]], [[http://arxiv.org/abs/1901.01513/][arxiv]])\\
-  /Documenta Mathematica 25, 1917--1952 (2020)/, with [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]].\\
+  /Documenta Mathematica/, with [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]].\\
   Talks: Mexico ([[file:talks/PR2020-Oaxaca.pdf][slides]]), San Diego ([[file:talks/PR2020-UCSD.pdf][slides]]).
 - Anticanonical tropical cubic del Pezzos contain exactly 27 lines. ([[https://arxiv.org/abs/1906.08196][arxiv]])\\
-  /Pre-print, arXiv:1906.08196/, with [[https://people.math.osu.edu/cueto.5/][María Angélica Cueto]].
+  /Pre-print/, with [[https://people.math.osu.edu/cueto.5/][María Angélica Cueto]].
 - Covers of stacky curves and limits of plane quintics. ([[file:papers/StackyAdmissibleCovers.pdf][pdf]], [[http://arxiv.org/abs/1507.03252/][arxiv]])\\
-  /Transactions of the Americal Mathematical Society, 371, 549--588 (2019)/.\\
+  /Transactions of the Americal Mathematical Society/.\\
   Talks: Boston ([[file:talks/AGNUBS2015.pdf][notes]]), Salt Lake City ([[file:talks/quintics_poster.pdf][poster]]).
 - Syzygy divisors on Hurwitz spaces. ([[file:papers/HigherMaroni.pdf][pdf]], [[https://arxiv.org/abs/1805.00648][arxiv]])\\
-  /Contemporary Mathematics 703, 209--222 (2018)/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
+  /Contemporary Mathematics/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
 - The canonical syzygy conjecture for ribbons. ([[file:papers/RibbonGreen.pdf][pdf]], [[http://arxiv.org/abs/1510.07755/][arxiv]])\\
-  /Mathematische Zeitschrift 288, No. 3-4, 1157--1164 (2018)/.\\
+  /Mathematische Zeitschrift/.\\
   Talk: Melbourne ([[file:talks/Monash2018.pdf][notes]]).
 - Toward GIT stability of syzygies of canonical curves. ([[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://www.algebraicgeometry.nl/2016-1/2016-1-001.pdf][journal]])\\
-  /Algebraic Geometry 3, No. 1, 1--22 (2016)/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]].\\
+  /Algebraic Geometry/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]].\\
   Talks: Daejeon ([[file:talks/SIAM2015.pdf][slides]]), Pohang ([[file:talks/syz2013.pdf][notes]]).
 - The Picard rank conjecture for the Hurwitz spaces of degree up to five. ([[file:papers/PicH345.pdf][pdf]], [[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://msp.org/ant/2015/9-2/p05.xhtml][journal]])\\
-  /Algebra & Number Theory 9, No. 2, 459--492 (2015)/, with [[https://www2.bc.edu/anand-p-patel/][Anand Patel]].
+  /Algebra & Number Theory/, with [[https://www2.bc.edu/anand-p-patel/][Anand Patel]].
 - Groebner techniques for ribbons. ([[file:papers/groebner.pdf][pdf]], [[https://sites.google.com/site/albjmath/archives/vol-8/2014-6][journal]])\\
-  /Albanian Journal of Mathematics 8, No. 2, 55--70 (2014)/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]].
+  /Albanian Journal of Mathematics/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]].
 - Compactifications of Hurwitz spaces. ([[file:papers/CompHurwitz.pdf][pdf]], [[http://arxiv.org/abs/1206.4535/][arxiv]], [[http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract][journal]])\\
-  /International Mathematics Research Notices 2014, No. 14, 3863--3911 (2014)/.\\
+  /International Mathematics Research Notices/.\\
   Talks: Palo Alto ([[file:talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg2013.pdf][notes]]).
 - Class of the Hodge eigenbundle using orbifold Riemann-Roch. ([[file:papers/CyclicAppendix.pdf][pdf]])\\
   /Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]]/.
 - Sharp slope bounds for sweeping families of trigonal curves. ([[file:papers/TrigonalSlopes.pdf][pdf]], [[http://arxiv.org/abs/1211.2827/][arxiv]], [[http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/][journal]])\\
-  /Mathematical Research Letters 20, No. 5, 869--884 (2013)/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].\\
+  /Mathematical Research Letters/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].\\
   Talk: Boston ([[file:talks/slopes_poster.pdf][poster]]).
 - Modular compactifications of the space of marked trigonal curves. ([[file:papers/MarkedTrigonal.pdf][pdf]], [[http://arxiv.org/abs/1206.4503/][arxiv]])\\
-  /Advances in Mathematics 248, 96--154 (2013)/.\\
+  /Advances in Mathematics/.\\
   Talk: Cambridge ([[file:talks/trig_poster.pdf][poster]]).
 - Alternate compactifications of Hurwitz spaces. ([[file:papers/thesis.pdf][pdf]])\\
   /Thesis, Harvard, 2012/.\\
@@ -204,7 +204,7 @@ Here are some additional talks:
                           (institute (org-entry-get nil "institute"))
                           (place (org-entry-get nil "place"))
                           (comment (org-entry-get nil "comment")))
-                      (format "- /%s/%s (%s) \\\\\n  %s."
+                      (format "- %s%s. (%s) \\\\\n  %s."
                               title
                               (if comment
                                   (format " (%s)" comment)
@@ -217,17 +217,23 @@ Here are some additional talks:
 #+end_src
 #+RESULTS:
 :results:
-- /Error correcting codes/ (expository) ([[file:talks/ecc2021/ecc.html][slides]]) \\
+- The geometry and combinatorics of Harder--Narasimhan filtrations. ([[file:talks/ICERM2022.pdf][slides]]) \\
+  Braids in representation theory and algebraic combinatorics, Institute for Computational and Experimental Research in Mathematics, Providence, Rhode Island.
+- The geometry of Fermat-like equations (expository). ([[file:talks/Fermat2022.pdf][notes]]) \\
+  Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana, Pune, India.
+- Algebraic curves and Belyi's theorem (expository). ([[file:talks/Belyi2021.pdf][notes]]) \\
+  Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana, Pune, India.
+- Error correcting codes (expository). ([[file:talks/ecc2021/ecc.html][slides]]) \\
   ANU Mathematics Extension Program, Canberra, Australia.
-- /The work of Claire Voisin/ (expository) ([[file:talks/WIM2019.pdf][slides]]) \\
+- The work of Claire Voisin (expository). ([[file:talks/WIM2019.pdf][slides]]) \\
   Women in mathematics day, Australian National University, Canberra, Australia.
-- /Geometry of Hurwitz spaces/ ([[file:talks/NZ2018.pdf][notes]]) \\
+- Geometry of Hurwitz spaces. ([[file:talks/NZ2018.pdf][notes]]) \\
   Character varieties and topological quantum field theory, University of Auckland, Auckland, New Zealand.
-- /The work of Caucher Birkar/ (expository) ([[file:talks/FMColloquium2018.pdf][notes]]) \\
+- The work of Caucher Birkar (expository). ([[file:talks/FMColloquium2018.pdf][notes]]) \\
   Colloquium, Australian National University, Canberra, Australia.
-- /How to count using (co)homology/ (expository) ([[file:talks/tifr2018.pdf][notes]]) \\
+- How to count using (co)homology (expository). ([[file:talks/tifr2018.pdf][notes]]) \\
   Tata Institute of Fundamental Research, Mumbai, India.
-- /Quadrature and algebraic geometry/ ([[file:talks/MATRIX2018.pdf][slides]]) \\
+- Quadrature and algebraic geometry. ([[file:talks/MATRIX2018.pdf][slides]]) \\
   Workshop on algebraic geometry approximation, and optimization, MATRIX, Creswick, Victoria, Australia.
 :end:
 
