@@ -279,3 +279,9 @@ Here are some additional talks:
 :END:
 In the first half of 2024, I am teaching Algebra 2.
 
+** Teaching in 2024 S2
+:PROPERTIES:
+:from: <2024-07-01 Mon>
+:to: <2024-12-31 Tue>
+:END:
+In the second half of 2024, I am teaching /Games, Graphs, and Machines/ and a special topics course based on Bott and Tu's /Differential forms in algebraic topology/.

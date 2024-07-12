@@ -1,4 +1,16 @@
-* [[file:teaching/2022algebra1/][Algebra 1]]                                                              :hl:
+* Algebra 2 (Fields and Galois theory)
+:properties:
+:institute: Australian National University
+:year:     2024
+:end:
+
+* Algebra 2 (Fields and Galois theory)
+:properties:
+:institute: Australian National University
+:year:     2023
+:end:
+
+* [[file:teaching/2022algebra1/][Algebra 1 (Groups and rings)]]                                                             
 :properties:
 :institute: Australian National University
 :year:     2022
@@ -40,7 +52,7 @@
 :institute: Australian National University
 :year:     2018
 :end:
-* [[file:teaching/3349][Reading course on /Algebaric curves and Riemann surfaces/ by Rick Miranda]] :hl:
+* [[file:teaching/3349][Reading course on /Algebaric curves and Riemann surfaces/ by Rick Miranda]] 
 :properties:
 :institute: Australian National University
 :year:     2018
@@ -67,13 +79,13 @@
 :institute: University of Georgia
 :year:     2016
 :end:
-* [[file:teaching/ao/][Analysis and optimization]]                       :hl:
+* [[file:teaching/ao/][Analysis and optimization]]                       
 :properties:
 :institute: Columbia University
 :year:     2016
 :link:     [[file:teaching/ao/]]
 :end:
-* [[file:teaching/seminar15/][Young tableaux in algebra and geometry]]                                 :hl:
+* [[file:teaching/seminar15/][Young tableaux in algebra and geometry]]          
 :properties:
 :institute: Columbia University
 :year:     2015
@@ -97,13 +109,13 @@
 :link:     [[file:teaching/calc1sp14/]]
 :year:     2014
 :end:
-* [[file:teaching/algebra2/][Modern algebra 2]]                                                       :hl:
+* [[file:teaching/algebra2/][Modern algebra 2]]                                                       
 :properties:
 :institute: Columbia University
 :link:     [[file:teaching/algebra2/]]
 :year:     2014
 :end:
-* [[file:teaching/algebra1/][Modern algebra 1]]                                                       :hl:
+* [[file:teaching/algebra1/][Modern algebra 1]]                                                       
 :properties:
 :institute: Columbia University
 :link:     [[file:teaching/algebra1/]]

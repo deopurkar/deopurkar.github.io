@@ -1,6 +1,6 @@
 * Equivariant classes of orbits in GL(2)-representations :pp:
 :PROPERTIES:
-:journal:  Pre-print, arXiv:2405.09849
+:journal:  Pre-print
 :link:     [[https://raw.githubusercontent.com/deopurkar/equivariant-classes-of-gl2-orbits/main/gl2orbits.pdf][pdf]], [[https://arxiv.org/abs/2405.09849][arxiv]], [[https://github.com/deopurkar/equivariant-classes-of-gl2-orbits/][source/comments]]
 :year:     2024
 :END:
@@ -9,7 +9,7 @@ We compute equivariant fundamental classes of orbits in GL(2)-representations. A
 * Orbits of linear series on the projective line :pp:
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
-:journal:  Pre-print, arXiv:2211.16603
+:journal:  Pre-print
 :link:     [[file:papers/erc.pdf][pdf]], [[https://arxiv.org/abs/2211.16603][arxiv]]
 :year:     2022
 :END:
