@@ -26,7 +26,7 @@
 #+begin_nil
 [[http://maths.anu.edu.au/][Mathematical Sciences Institute]]\\
 [[https://anu.edu.au][The Australian National University]]\\
-Canberra, ACT, 2601, Australia
+Canberra, Australia
 
 ~anand.deopurkar~ at ~anu~ dot ~edu~ dot ~au~ ([[file:ananddeopurkar-pgp.asc][pgp]])\\
 4.56 [[http://www.anu.edu.au/maps#show=102872][Hanna Neumann Building]]\\
@@ -39,30 +39,20 @@ CV: [[file:cv.html][html]] [[file:cv.pdf][pdf]]
 #+begin_container
 #+TOC: headlines:1
 
-I am a mathematician working on questions in algebraic geometry and related areas.
-I study the interplay between systems of algeraic equations and the geometric shapes they describe.
+I am a mathematician working in algebraic geometry and related areas.
+I study the interplay between systems of algebraic equations and the geometric shapes they describe.
 #+end_container
 
 This what I have been up to lately.
-#+begin_src emacs-lisp :exports results :results value raw drawer
-  (defun pretty-print ()
-    (org-agenda-get-some-entry-text (point-marker) most-positive-fixnum)
-    )
-  (string-join (org-map-entries 'pretty-print "+moar+level=2+FROM<=\"<today>\"+TO>=\"<today>\"") "\n")
-#+end_src
-
-#+RESULTS:
-:results:
 - With [[jayan][Jayan Mukherjee]], I am trying to understand [[wiki:Linear_relation][syzygies]] of some non-reduced [[wiki:Algebraic_curve][algebraic curves]].
 - With [[valery][Valery Alexeev]] and [[changho][Changho Han]], I am working on describing compact moduli spaces of some classes of [[wiki:K3_surface][K3 surfaces]].
 - With [[asilata][Asilata Bapat]] and [[tony][Tony Licata]], I am studying [[wiki:Bridgeland_stability_condition][Bridgeland stability conditions]] on some triangulated categories.
 - With [[rachel:][Rachel Newton]], [[vaidehee:][Vaidehee Thatte]], and [[rosa:][Rosa Winters]], I am exploring arithmetic ramifications of the geometry of certain [[wiki:Hurwitz_scheme][Hurwitz spaces]].
 - I am teaching a fun course called [[https://github.com/deopurkar/ggm2024][Games, graphs, and machines]], in which we talk about [[wiki:Graph][graphs]], [[wiki:Markov_chain][Markov chains]], [[wiki:Finite-state_machine][automata]], [[wiki:Regular_expression][regular expressions]], and games like [[wiki:Nim][Nim]] and [[wiki:Chomp][chomp]].
 - I am also teaching a reading course based on Bott and Tu's famous book [[https://link.springer.com/book/10.1007/978-1-4757-3951-0][Differential forms in algebraic topology]].
-- I am supervising Charlie Sherrat, who has been exploring the [[wiki:Geometric_invariant_theory][geometry and invariant theory]] of 3x3x4 hypercubes.
+- I am supervising Charlie Sherrat, who has been exploring the moduli space of [[wiki:Cubic_surface][cubic surfaces]] arising from 3x3x4 rubik's cubes.
 - I am supervising Luke Doherty, who is looking into the geometry of [[wiki:Linkage_(mechanical)][linkages]].
 - With [[cobb:][John Cobb]], [[sione:][Sione Ma'u]], and [[hal:][Hal Schenk]], I am organising a special session at the [[https://ms-meet-2024.blogs.auckland.ac.nz/][joint NZMS/AustMS/AMS meeting]] in December 2024.
-:end:
 
 For things I have done, expand the headings below.
 
@@ -286,37 +276,3 @@ Here are some additional talks:
 - I am an advocate of [[wiki:Free_software][free software]] and a user of [[wiki:Emacs][emacs]].
   I occassionally contribute to [[https://list.orgmode.org/?q=deopurkar&r][the development of org mode]].
 
-* Timed text                                                  :noexport:moar:
-:PROPERTIES:
-:CUSTOM_ID: moar
-:END:
-** Current research
-:PROPERTIES:
-:from:     [2024-07-01 Mon]
-:to:       [2025-01-09 Thu]
-:ID:       27c126e1-307b-4acf-9649-e938b0d9fd76
-:END:
-- With [[jayan][Jayan Mukherjee]], I am trying to understand [[wiki:Linear_relation][syzygies]] of some non-reduced [[wiki:Algebraic_curve][algebraic curves]].
-- With [[valery][Valery Alexeev]] and [[changho][Changho Han]], I am working on describing compact moduli spaces of some classes of [[wiki:K3_surface][K3 surfaces]].
-- With [[asilata][Asilata Bapat]] and [[tony][Tony Licata]], I am studying [[wiki:Bridgeland_stability_condition][Bridgeland stability conditions]] on some triangulated categories.
-- With [[rachel:][Rachel Newton]], [[vaidehee:][Vaidehee Thatte]], and [[rosa:][Rosa Winters]], I am exploring arithmetic ramifications of the geometry of certain [[wiki:Hurwitz_scheme][Hurwitz spaces]].
-** Teaching in 2024 S2
-:PROPERTIES:
-:from: [2024-07-01 Mon]
-:to: [2024-12-31 Tue]
-:END:
-- I am teaching a fun course called [[https://github.com/deopurkar/ggm2024][Games, graphs, and machines]], in which we talk about [[wiki:Graph][graphs]], [[wiki:Markov_chain][Markov chains]], [[wiki:Finite-state_machine][automata]], [[wiki:Regular_expression][regular expressions]], and games like [[wiki:Nim][Nim]] and [[wiki:Chomp][chomp]].
-- I am also teaching a reading course based on Bott and Tu's famous book [[https://link.springer.com/book/10.1007/978-1-4757-3951-0][Differential forms in algebraic topology]].
-** Supervision
-:PROPERTIES:
-:from:     [2024-07-01 Mon]
-:to:       [2025-01-09 Thu]
-:END:
-- I am supervising Charlie Sherrat, who has been exploring the [[wiki:Geometric_invariant_theory][geometry and invariant theory]] of 3x3x4 hypercubes.
-- I am supervising Luke Doherty, who is looking into the geometry of [[wiki:Linkage_(mechanical)][linkages]].
-** Organisation
-:PROPERTIES:
-:from:     [2024-07-01 Mon]
-:to:       [2025-01-09 Thu]
-:END:
-- With [[cobb:][John Cobb]], [[sione:][Sione Ma'u]], and [[hal:][Hal Schenk]], I am organising a special session at the [[https://ms-meet-2024.blogs.auckland.ac.nz/][joint NZMS/AustMS/AMS meeting]] in December 2024.
