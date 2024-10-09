@@ -1,3 +1,15 @@
+* [[https://github.com/deopurkar/ggm2024][Games, graphs, and machines]] :hl:
+:PROPERTIES:
+:institute: Australian National University
+:year:     2024
+:END:
+
+* Reading course on /Differential forms in algebraic topology/ by R. Bott and L. Tu
+:PROPERTIES:
+:institute: Australian National University
+:year:     2024
+:END:
+
 * Algebra 2 (Fields and Galois theory)
 :properties:
 :institute: Australian National University

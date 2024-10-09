@@ -111,8 +111,8 @@
 }
 
 // Fonts
-$title-font: 'Lato';
-$body-font: 'Lato';
+$title-font: 'Atkinson Hyperlegible';
+$body-font: 'Atkinson Hyperlegible';
 
 @media screen and (max-width: 480px) {
     body {
@@ -145,7 +145,7 @@ $body-font: 'Lato';
     }
 }
 body {
-    font-family: $body-font, serif;
+    font-family: $body-font, sans-serif;
     margin-top: 0em;
     margin-left:auto;
     margin-right:auto;
@@ -157,7 +157,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: $title-font, serif;
+    font-family: $title-font, sans-serif;
     font-weight:lighter;
     margin-bottom: 0em;
 }

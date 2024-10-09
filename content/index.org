@@ -5,6 +5,19 @@
 #+author: Anand Deopurkar
 #+OPTIONS: *:t author:nil ':t  d:+results 
 #+HTML_HEAD_EXTRA: <script type="text/javascript" src="js/collapsibility.js"></script>
+#+LINK: wiki  https://en.wikipedia.org/wiki/
+#+LINK: asilata https://asilata.org
+#+LINK: tony https://maths-people.anu.edu.au/~licatat/Home.html
+#+LINK: jayan https://sites.google.com/view/mukherjeejayan
+#+LINK: anandpatel https://sites.google.com/view/anand-patel
+#+LINK: rachel https://sites.google.com/view/rachelnewton
+#+LINK: vaidehee https://sites.google.com/view/vaideheethatte
+#+LINK: rosa http://rosa-winter.com/
+#+LINK: changho https://hanchangho.github.io/
+#+LINK: valery https://www.math.uga.edu/directory/people/valery-alexeev
+#+LINK: hal http://webhome.auburn.edu/~hks0015/
+#+LINK: cobb https://johndcobb.github.io/
+#+LINK: sione https://profiles.auckland.ac.nz/s-mau
 
 #+begin_intro
 #+attr_html: :id mypicture :alt Anand Deopurkar
@@ -26,33 +39,36 @@ CV: [[file:cv.html][html]] [[file:cv.pdf][pdf]]
 #+begin_container
 #+TOC: headlines:1
 
-I am an algebraic geometer with broad interests.
-Being an algebraic geometer means that I fundamentally study solution spaces of algebraic equations.
-I am interested in classical algebraic geometry, enumerative geometry, deformation theory, algebraic stacks, derived categories, among other things.
+I am a mathematician working on questions in algebraic geometry and related areas.
+I study the interplay between systems of algeraic equations and the geometric shapes they describe.
 #+end_container
 
+This what I have been up to lately.
 #+begin_src emacs-lisp :exports results :results value raw drawer
   (defun pretty-print ()
     (org-agenda-get-some-entry-text (point-marker) most-positive-fixnum)
     )
-  (string-join (org-map-entries 'pretty-print "+moar+level=2+FROM<=\"<today>\"+TO>=\"<today>\"") "\n\n")
+  (string-join (org-map-entries 'pretty-print "+moar+level=2+FROM<=\"<today>\"+TO>=\"<today>\"") "\n")
 #+end_src
 
 #+RESULTS:
 :results:
-In the second half of 2023, I am on parental leave.
-
-Upcoming travel:
-
-- 22--26 January 2024 :: Isaac Newton Institute, Cambridge, UK
-- 28 January--2 February 2024 :: Oberwolfach, Germany
+- With [[jayan][Jayan Mukherjee]], I am trying to understand [[wiki:Linear_relation][syzygies]] of some non-reduced [[wiki:Algebraic_curve][algebraic curves]].
+- With [[valery][Valery Alexeev]] and [[changho][Changho Han]], I am working on describing compact moduli spaces of some classes of [[wiki:K3_surface][K3 surfaces]].
+- With [[asilata][Asilata Bapat]] and [[tony][Tony Licata]], I am studying [[wiki:Bridgeland_stability_condition][Bridgeland stability conditions]] on some triangulated categories.
+- With [[rachel:][Rachel Newton]], [[vaidehee:][Vaidehee Thatte]], and [[rosa:][Rosa Winters]], I am exploring arithmetic ramifications of the geometry of certain [[wiki:Hurwitz_scheme][Hurwitz spaces]].
+- I am teaching a fun course called [[https://github.com/deopurkar/ggm2024][Games, graphs, and machines]], in which we talk about [[wiki:Graph][graphs]], [[wiki:Markov_chain][Markov chains]], [[wiki:Finite-state_machine][automata]], [[wiki:Regular_expression][regular expressions]], and games like [[wiki:Nim][Nim]] and [[wiki:Chomp][chomp]].
+- I am also teaching a reading course based on Bott and Tu's famous book [[https://link.springer.com/book/10.1007/978-1-4757-3951-0][Differential forms in algebraic topology]].
+- I am supervising Charlie Sherrat, who has been exploring the [[wiki:Geometric_invariant_theory][geometry and invariant theory]] of 3x3x4 hypercubes.
+- I am supervising Luke Doherty, who is looking into the geometry of [[wiki:Linkage_(mechanical)][linkages]].
+- With [[cobb:][John Cobb]], [[sione:][Sione Ma'u]], and [[hal:][Hal Schenk]], I am organising a special session at the [[https://ms-meet-2024.blogs.auckland.ac.nz/][joint NZMS/AustMS/AMS meeting]] in December 2024.
 :end:
 
-
+For things I have done, expand the headings below.
 
 * Papers/pre-prints
 :PROPERTIES:
-:html_headline_class: collapsible
+:html_headline_class: collapsed
 :END:
 #+begin_src emacs-lisp :exports results :results value raw drawer :lexical t
   ;; Gather back-references from talks
@@ -160,7 +176,7 @@ Upcoming travel:
 
 * Teaching
 :PROPERTIES:
-:html_headline_class: collapsible
+:html_headline_class: collapsed
 :END:
 Notes and other materials from some of my courses:
 #+begin_src emacs-lisp :exports results :results value raw drawer
@@ -185,7 +201,7 @@ Notes and other materials from some of my courses:
 
 * Talks
 :PROPERTIES:
-:html_headline_class: collapsible
+:html_headline_class: collapsed
 :END:
 Notes or slides for many of my talks are linked in the section on [[*Papers/pre-prints][papers/pre-prints]].
 Here are some additional talks:
@@ -239,7 +255,7 @@ Here are some additional talks:
 
 * Odds and ends
 :PROPERTIES:
-:html_headline_class: collapsible
+:html_headline_class: collapsed
 :END:
 - [[file:papers/compstabk3rank0.pdf][A sketch of the Thurston compactification of the stability manifold for a generic non-algebraic K3 surface]]
   This is an instance of the construction proposed in the [[file:papers/a2-compactification.pdf][paper with Bapat and Licata]].
@@ -267,21 +283,40 @@ Here are some additional talks:
  - [[file:seminars/mhm/][Mixed hodge modules]]: UGA, 2017
  - [[file:seminars/seminar16/][Stable rationality]]: Columbia, 2016
 
+- I am an advocate of [[wiki:Free_software][free software]] and a user of [[wiki:Emacs][emacs]].
+  I occassionally contribute to [[https://list.orgmode.org/?q=deopurkar&r][the development of org mode]].
+
 * Timed text                                                  :noexport:moar:
 :PROPERTIES:
 :CUSTOM_ID: moar
 :END:
-
-** Teaching in 2024 S1
+** Current research
 :PROPERTIES:
-:from: <2024-01-01 Mon>
-:to: <2024-07-01 Mon>
+:from:     [2024-07-01 Mon]
+:to:       [2025-01-09 Thu]
+:ID:       27c126e1-307b-4acf-9649-e938b0d9fd76
 :END:
-In the first half of 2024, I am teaching Algebra 2.
-
+- With [[jayan][Jayan Mukherjee]], I am trying to understand [[wiki:Linear_relation][syzygies]] of some non-reduced [[wiki:Algebraic_curve][algebraic curves]].
+- With [[valery][Valery Alexeev]] and [[changho][Changho Han]], I am working on describing compact moduli spaces of some classes of [[wiki:K3_surface][K3 surfaces]].
+- With [[asilata][Asilata Bapat]] and [[tony][Tony Licata]], I am studying [[wiki:Bridgeland_stability_condition][Bridgeland stability conditions]] on some triangulated categories.
+- With [[rachel:][Rachel Newton]], [[vaidehee:][Vaidehee Thatte]], and [[rosa:][Rosa Winters]], I am exploring arithmetic ramifications of the geometry of certain [[wiki:Hurwitz_scheme][Hurwitz spaces]].
 ** Teaching in 2024 S2
 :PROPERTIES:
-:from: <2024-07-01 Mon>
-:to: <2024-12-31 Tue>
+:from: [2024-07-01 Mon]
+:to: [2024-12-31 Tue]
 :END:
-In the second half of 2024, I am teaching /Games, Graphs, and Machines/ and a special topics course based on Bott and Tu's /Differential forms in algebraic topology/.
+- I am teaching a fun course called [[https://github.com/deopurkar/ggm2024][Games, graphs, and machines]], in which we talk about [[wiki:Graph][graphs]], [[wiki:Markov_chain][Markov chains]], [[wiki:Finite-state_machine][automata]], [[wiki:Regular_expression][regular expressions]], and games like [[wiki:Nim][Nim]] and [[wiki:Chomp][chomp]].
+- I am also teaching a reading course based on Bott and Tu's famous book [[https://link.springer.com/book/10.1007/978-1-4757-3951-0][Differential forms in algebraic topology]].
+** Supervision
+:PROPERTIES:
+:from:     [2024-07-01 Mon]
+:to:       [2025-01-09 Thu]
+:END:
+- I am supervising Charlie Sherrat, who has been exploring the [[wiki:Geometric_invariant_theory][geometry and invariant theory]] of 3x3x4 hypercubes.
+- I am supervising Luke Doherty, who is looking into the geometry of [[wiki:Linkage_(mechanical)][linkages]].
+** Organisation
+:PROPERTIES:
+:from:     [2024-07-01 Mon]
+:to:       [2025-01-09 Thu]
+:END:
+- With [[cobb:][John Cobb]], [[sione:][Sione Ma'u]], and [[hal:][Hal Schenk]], I am organising a special session at the [[https://ms-meet-2024.blogs.auckland.ac.nz/][joint NZMS/AustMS/AMS meeting]] in December 2024.

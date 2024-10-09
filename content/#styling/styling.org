@@ -144,8 +144,8 @@ We come to the main part of the CSS code, namely the positioning and layout opti
 First we define the variables for the title font and the body font.
 #+begin_src scss
   // Fonts
-  $title-font: 'Lato';
-  $body-font: 'Lato';
+  $title-font: 'Atkinson Hyperlegible';
+  $body-font: 'Atkinson Hyperlegible';
 #+end_src
 Next we use media queries to set breakpoints for various screen sizes, which then influence the layout of the page.
 The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][CSS flexbox]].
@@ -181,7 +181,7 @@ The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-g
       }
   }
   body {
-      font-family: $body-font, serif;
+      font-family: $body-font, sans-serif;
       margin-top: 0em;
       margin-left:auto;
       margin-right:auto;
@@ -198,7 +198,7 @@ Style links. Remember that the colours have already been styled via a theme mixi
 Style headings, lists, and figures.
 #+begin_src scss
   h1, h2, h3, h4 {
-      font-family: $title-font, serif;
+      font-family: $title-font, sans-serif;
       font-weight:lighter;
       margin-bottom: 0em;
   }
