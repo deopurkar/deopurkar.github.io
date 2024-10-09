@@ -160,7 +160,7 @@ footer {
   border-color: #000; }
 
 #postamble {
-  border-top: 0.15em solid #d05a5b; }
+  border-top: 0em; }
 
 @media print {
   footer, nav {
@@ -213,7 +213,7 @@ footer {
   #mypicture {
     border-color: #000; }
   #postamble {
-    border-top: 0.15em solid #000; } }
+    border-top: 0em; } }
 
 .collapsible {
   cursor: pointer;
@@ -223,6 +223,6 @@ footer {
 
 .collapsed {
   cursor: pointer;
-  border-bottom-width: 0em; }
+  border-bottom-width: 0.15em; }
   .collapsed:before {
     content: '+ '; }

@@ -82,7 +82,7 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
       }
   
       #postamble {
-          border-top: 0.15em solid $titles;
+          border-top: 0em;
       }
   }
 #+end_src
@@ -322,7 +322,7 @@ Finally, we style collapsible and collapsed headlines.
   }
   .collapsed{
       cursor: pointer;
-      border-bottom-width: 0em;
+      border-bottom-width: 0.15em;
       &:before {
           content: '+ ';
       }

@@ -60,7 +60,7 @@
     }
 
     #postamble {
-        border-top: 0.15em solid $titles;
+        border-top: 0em;
     }
 }
 
@@ -266,7 +266,7 @@ footer {
 }
 .collapsed{
     cursor: pointer;
-    border-bottom-width: 0em;
+    border-bottom-width: 0.15em;
     &:before {
         content: '+ ';
     }
