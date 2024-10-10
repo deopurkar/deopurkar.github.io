@@ -3,25 +3,360 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-10-10 Thu 11:11 -->
+<!-- 2024-10-10 Thu 21:54 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Reading Seminar on Fourier Mukai Transforms in Algebraic Geometry</title>
 <meta name="author" content="Anand Deopurkar" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" href="/css/main.css"><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=B612:wght@300..700&display=swap" rel="stylesheet"><script src="/js/collapsibility.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">Reading Seminar on Fourier Mukai Transforms in Algebraic Geometry</h1>
+<p>
+We organised our reading and wrote comments on an anonymous collaborative whiteboard (<a href="https://www.mathdown.net/?doc=I7X3CpuNsKa#DbCoh">https://www.mathdown.net/?doc=I7X3CpuNsKa#DbCoh</a>).
+We used a Google Jamboard and zoom when we met in person (and zoom).
+</p>
+
+<p>
+Below is a transcript of the whiteboard.
+</p>
+<div id="outline-container-org8a60e8b" class="outline-2">
+<h2 id="org8a60e8b">Sections 11.1 and 11.2</h2>
+<div class="outline-text-2" id="text-org8a60e8b">
+<dl class="org-dl">
+<dt>11.1</dt><dd>the proof is clumsy. Use \(j_*j^*j_*\cal{F}=j_*\cal{O}\otimes j_*\cal{F}=j_*(j^*j_*\cal{O}\otimes F)\) and then apply (i) to prove the second equality in (ii). And for (iii), use \(Hom(j_*\cal{O},j_*\cal{F})=j_*Hom(j^*j_*\cal{O},\cal{F})\) coupled with (i).</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgb0a428e" class="outline-2">
+<h2 id="orgb0a428e">Section 10.2, 10.3</h2>
+<div class="outline-text-2" id="text-orgb0a428e">
 <ol class="org-ol">
-<li><a href="https://www.mathdown.net/?doc=I7X3CpuNsKa#DbCoh">Whiteboard</a></li>
-<li><a href="https://jamboard.google.com/d/1bO-any67mGvdZ7m3-arMCRbZnAHmB3bksW75PuytJXI/edit?usp=sharing">Jamboard</a></li>
-<li><a href="https://anu.zoom.us/j/81193249846?pwd=U1NaMmJBRlVpRmk4MnpLNnJ0ckpuZz09">Zoom</a></li>
+<li>In Remark 10.8ii, it is mentioned that the corresponding fact for abelian varieties is deeper. What part of the argument of Cor 10.7 breaks down for abelian varieties? Is it integrality of Mukai vectors?</li>
+
+<li>It&rsquo;s a bit odd that 10.3 says nothing about why M is a K3.
+(It&rsquo;s derived equivalent to a K3, hence a K3.)</li>
+
+<li>In the proof of 10.10, why does \(\phi\) induce an isometry on \(H^2\) if \(\phi(0,0,1) = \pm(0,0,1)\)?</li>
+
+<li>Proposition 10.24 seems to say, in particular, that every (?) (-2) Mukai vector is the class of a spherical sheaf.</li>
+
+<li>The proof of Lemma 10.6 went a bit quickly for me so it would be nice to talk briefly about it.</li>
+
+<li>I found the first part of Section 10.3 to be a very readable explanation of coarse and fine moduli spaces. But I got lost in the second part, so I would like to have a discussion about it.</li>
+
+<li>Why is the Kahler cone connected?</li>
 </ol>
 </div>
+</div>
+<div id="outline-container-orgb3ef178" class="outline-2">
+<h2 id="orgb3ef178">Section 10.1</h2>
+<div class="outline-text-2" id="text-orgb3ef178">
+<ol class="org-ol">
+<li>Trivial canonical bundle implies first Chern class is zero?</li>
+
+<li>Can there be an isomorphism of K3 surfaces (as complex manifolds) which is not algebraic?</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org6894918" class="outline-2">
+<h2 id="org6894918">Sections 9.4, 9.5</h2>
+<div class="outline-text-2" id="text-org6894918">
+<ol class="org-ol">
+<li>The digression on page 217 is pretty cool. I&rsquo;d like to discuss it.</li>
+
+<li></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org381f1c7" class="outline-2">
+<h2 id="org381f1c7">Sections 9.1, 9.2, 9.3</h2>
+<div class="outline-text-2" id="text-org381f1c7">
+<ol class="org-ol">
+<li>Proof of 9.19: the paragraph at the top of page 202 is superfluous.</li>
+
+<li>9.20: as stated the closed point \(a\in A\) plays no role. Of course one can reverse the roles of \(A\) and \(\hat A\), tenroing with line bundles on \(\hat A\) and translating by points in \(A\).</li>
+
+<li>9.26: Doesn&rsquo;t seem correct. The commutative square giving the fact that \(f:B\to A\) is a homomorphism isn&rsquo;t cartesian, hence there is no reason to expect that the base-change map \(f^*m_*(\cal{F}\boxtimes\cal{E})\to m_*(f^*\cal{F}\boxtimes f^*\cal{E})\) should be an isomorphism.
+I think it even fails for skypscraper sheaves.</li>
+
+<li><p>
+Proof of 9.30: the only place where 9.26 is used is in this proof, more specidically in the sequence on equation in the middle of page 208. In this application \(f=\varphi_L^{}\) is an isomorphism, in which case there is no problem. The square in 3. is cartesian.
+</p>
+
+<p>
+Also in the proof of 9.30, I was confused for a long time about the proof of commutativity of the square on page 208, but then realised that for an isomorphism, the push-forward is the same as the pull-back by the inverse.
+</p></li>
+
+<li>Don&rsquo;t get both remark 9.5.</li>
+
+<li>Curiosity: what happens to the translation non-invariant line bundles under the FM transform?</li>
+
+<li>Can we look at the SL2 action in the case of an elliptic curve?</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org7f6949d" class="outline-2">
+<h2 id="org7f6949d">Sections 8.4 and 9.1</h2>
+<div class="outline-text-2" id="text-org7f6949d">
+<ol class="org-ol">
+<li>No need to leave out the proof of 8.42, which follows easily from the isomorphism \(Hom_X(i_*\cal{E},i_*\cal{E})\cong Hom_Y(i^*i_*\cal{E},\cal{E})\).</li>
+
+<li>8.45: I did find a proof, but it wasn&rsquo;t quite so trivial. If someone has an easier argument it would be great to see it.</li>
+
+<li>Don&rsquo;t get both remark 9.5.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org71eb583" class="outline-2">
+<h2 id="org71eb583">Sections 8.2 and 8.3</h2>
+<div class="outline-text-2" id="text-org71eb583">
+<ol class="org-ol">
+<li>Proof of lemma 8.21: Why \(p_* (q^* \epsilon^\vee \otimes S^\vee \otimes \omega_X [dim(X)] \cong Hom(p_*(q^* \epsilon \otimes S), \mathcal{O}_X)\)?</li>
+
+<li>I find the following form of 8.28 easier to understand: Every \(F \in D^b(X)\) has a filtration \[ 0 = F_0 \to F_1 \to \cdots \to F_n = F\] whose &ldquo;subquotients&rdquo; are \(R\pi_*(F(r)) \otimes \Omega^{-r}(-r)\). Likewise, \(F\) also admits a filtration whose &ldquo;subquotients&rdquo; are \(R\pi_* (F \otimes \Omega^{-r}(-r)) \otimes \mathcal O(r)\).</li>
+
+<li>What is the entire section 8.3 doing?</li>
+
+<li>8.30: there&rsquo;s definitely something wrong in the statement, after all the exact sequence \(0\to\Omega(1)\to\cal{O}^{n+1}\to\cal{O}(1)\to0\) gives lots of nonzero maps \(\Omega(1)\to\cal{O}\). 
+But no maps from \(\mathcal O \to \Omega(1)\)! So, may be the sequence should be written the other way round?</li>
+
+<li>Esercise 8.5 seems very important; can someone go through or say some words on it?</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga849c12" class="outline-2">
+<h2 id="orga849c12">Week 8: Section 8.1</h2>
+<div class="outline-text-2" id="text-orga849c12">
+<ol class="org-ol">
+<li>Here is an example of Example 8.17: Let \(X\) be a K3 surface. Then \(Y = {\rm Hilb}^n X\) (the Hilbert scheme of \(n\) points on \(X\)) is an algebraic symplectic variety of dimension \(2n\). Suppose we have a \((-2)\) curve \(C \subset X\). Then we have a \(\mathbb P^n \cong  {\rm Hilb^n} C \subset Y\). On \(X\), we have a spherical twist \(D^b(X) \to D^b(X)\) given by \(\mathcal O_C\). On \(Y\), we have a $\mathbb P<sup>n</sup>$-twist \(D^b(Y) \to D^b(Y)\) given by \(\mathcal O_{{\rm Hilb}^n C}\).
+<ol class="org-ol">
+<li>In general, how you obtain this \((-2)\) curve C? 
+In general, there is no such (-2) curve. But some special K3 surfaces may have one. For example, if you move your K3 surface in a family and it acquires a suitable singularity (of type ADE), then its minimal resolution will be a K3 surface that has (-2) curves.</li>
+</ol></li>
+
+<li>Proof of 8.6: The first isomorphism is because $\mathcal{O}<sub>&Delta;</sub>$defines an equivalence?</li>
+
+<li>Lemma 8.12 and its Corollary 8.13 are both interesting. Can anyone give more insight by illustrating a nice example?</li>
+
+<li>I don&rsquo;t understand Remark 8.11. Why isn&rsquo;t the inverse given by the adjoint (whose kernel <b>is</b> easily described)?</li>
+
+<li>I couldn&rsquo;t do Exercise 8.7.</li>
+
+<li>I don&rsquo;t understand 8.10ii and 8.10vi</li>
+
+<li>In 8.17, why is H*(X,O<sub>X</sub>)=H*(P<sup>n</sup>) for an algebraic symplectic variety X?</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgeefb299" class="outline-2">
+<h2 id="orgeefb299">Week 7: Chapter 7</h2>
+<div class="outline-text-2" id="text-orgeefb299">
+<ol class="org-ol">
+<li>Proof of 7.2, step 4: Does not need the spectral sequence, and is in fact better with top/bottom truncations.</li>
+<li>Proof of 7.2, step 5: &ldquo;the map \(f \colon x \mapsto \mathcal Q_x\) is injective&rdquo; and hence &ldquo;\(df\) is injective for \(x \in X\) generic&rdquo;. I get what he&rsquo;s trying to do, but what are the source and target of \(f\)? I think one has to use some kind of Hilbert/Quot scheme here to make sense of the target of \(f\).</li>
+<li>Proof of 7.1, step 3: Why the adjunction morphism delta is not trivial then it is surjective? What does is mean by the kernel of delta is concentrated in k(x)?</li>
+<li>Remark 7.7: Can anyone explain the first isomorphism relating the hom with Fourier-Mikai transform and homw ith the pull-back of the dualizing kernel?</li>
+<li>Proof of 7.10: Why can we assume H(F)=0?</li>
+<li>Why /phi<sub>p</sub> is an equivalence implies /phi<sub>P</sub><sub>R</sub> = /phi<sub>P</sub><sub>L</sub> and then P<sub>R</sub> = P<sub>L</sub>? Don&rsquo;t understand the argument in Corollary 5.21.</li>
+<li>If time permits or Anand is happy to help, is it possible to illusrate the construction on the intro of Section 7.3 with a simple example? At least we have an example to keep in mind why goong through the propositions in the section.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org42125e9" class="outline-2">
+<h2 id="org42125e9">Week 5/6: Sections 5.2, chapter 6</h2>
+<div class="outline-text-2" id="text-org42125e9">
+<ol class="org-ol">
+<li>In 5.2, is the multiplication by \(\sqrt{{\rm td}X}\) just a nice formal trick, or is there a deeper explanation?
+<ol class="org-ol">
+<li>This particular term appears in commuting the isomorphisms in between Hochschild cohomology and ordinary cohomology?</li>
+<li>I don&rsquo;t really understand how the Todd class behaves with respect to push/pull, products, etc. In particular I don&rsquo;t understand the proof of 5.29.</li>
+</ol></li>
+
+<li>I benefited from doing Exercise 5.34.
+<ol class="org-ol">
+<li>Do you mind to share it? :)</li>
+</ol></li>
+
+<li>In Remarks 5.25(ii): why are \(\text{CH}(X)\) and \(K(X)\) isomorphic after tensoring with \(\mathbb Q\)?</li>
+
+<li>Can someone explain why the proof of Proposition 6.1 has to go by way of Fourier-Mukai kernels? Wouldn&rsquo;t it be simpler to argue that the canonical ring R(X) can be expressed as the graded ring of natural transformations \(T^n\to T^{n+k}\), where \(T=S[-n]\) with \(S\) the Serre functor?</li>
+
+<li>If we proceed as in the proof of Proposition 6.1 in the book, what is the composition? How do you compose maps \(i_*{\mathcal{O}}_X\to i_*\omega_X^k\) and \(i_*\mathcal{O}_X\to i_*\omega_X^\ell\)?
+<ol class="org-ol">
+<li>You tensor the second factor by an appropriate power of \(\omega\). In other words, apply an appropriate power + shift of the Serre functor. This gives a composition \(i_*\cal{O_X} \to i_*\omega_X^k \to i_*\omega_X^{k+l}\).</li>
+</ol></li>
+
+<li>The proof of \(\pi_X^* \omega_X = \pi_Y^* \omega_Y\) (without the $r$-exponent) on page 149 is only sketched. It&rsquo;ll be nice to talk about it.</li>
+
+<li>Any updates on Conjecture 6.24?</li>
+
+<li>In Lemma 6.11 and Corollary 6.12 there are some liberties taken. The endomorphism ring is k only if the point is closed, but then the result gets applied to points that decidedly aren&rsquo;t closed.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org33935b2" class="outline-2">
+<h2 id="org33935b2">Week 4: Sections 4.3 (skim) and 5.1</h2>
+<div class="outline-text-2" id="text-org33935b2">
+<ol class="org-ol">
+<li>Main ideas
+<ol class="org-ol">
+<li>Definition of FM transform</li>
+<li>Right/left adjoints</li>
+<li>Composition</li>
+<li>When is a functor a FM transform</li>
+<li>Uniqueness of FM kernel for an equivalence</li>
+</ol></li>
+
+<li><p>
+I don&rsquo;t understand the beginning of the proof of 5.23, specifically &ldquo;Choosing local sections of \(\mathcal P\) shows that there is a morphism \(X \to Y\) inducing \(f\).&rdquo;
+</p>
+
+<p>
+The argument easily shows that, if \(p\) is a closed point of \(X\times Y\) and \(i:p\to X\times Y\) is the close immersion, then \(i^*P\) is either zero or 1 dimemnsional. So the sheaf P is locally generated over \(\mathcal{O}_{X\times Y}\) by one generator. And then by pulling to \(\{x\}\times Y\) one sees that this generates already over \(\mathcal{O}_X\). Flatness over \(X\) proves that, in a neighborhood of \((x,f(x))\), \(P\) is locally free of rank 1 over \(\mathcal{O}_X\subset\mathcal{O}_{X\times Y}\). So locally the picture is \(\mathcal{O}_X\subset\mathcal{O}_{X\times Y}\to\frac{\mathcal{O}_{X\times Y}}{\mathcal{I}}\) with the composite an isomorphism.
+</p></li>
+
+<li>Can someone motivate/explain the rationale of Fourier-Mukai transform by illustrating an interesting example or even few of them? Maybe on K3 surfaces/Calabi-Yau manifold?</li>
+
+<li>What does it mean by a saturated derived categories in the paragraph after the proof of Prop 5.9 in pg 117?</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgb5a20f1" class="outline-2">
+<h2 id="orgb5a20f1">Week 3: Sections 4.1 and 4.2 (and possibly 4.3)</h2>
+<div class="outline-text-2" id="text-orgb5a20f1">
+<ol class="org-ol">
+<li>Main ideas
+Broad main idea: Canonically extract an algebra A from the category so that the category is &ldquo;D<sup>b</sup>(mod A)&rdquo;
+<ol class="org-ol">
+<li>The Serre functor is <b>intrinsic</b> (commutes with every auto-equivalence).</li>
+<li>Categorical characterisation of points.
+<ul class="org-ul">
+<li>Funny how it fails to characterise the points when \(\omega_X = O_X\) (Exercise 4.4).</li>
+</ul></li>
+<li>Categorical characterisation of line bundles (&ldquo;dual&rdquo; to points).</li>
+</ol></li>
+
+<li>Can Anand explain further on the second point in his email on Monday using an example?  In fact, can you give a more intutive understanding of O(1) and why we can often look at a shift of it O(-n) ? (Hartshorne&rsquo;s definition of twisting sheaf O(1) seems hard to grasp) I can foresee that this ample line bundle is going to come out in discussions frequently, so it would be better to pin it down ealier than later.</li>
+
+<li>Proof of Proposition 4.11. By the time one has proved that \(F(k(x))=k(y)\) [middle of page 97], one could also observe that \(F\) preserves the t-structure. After all \(D^b(X)^{\leq0}\) is the subcategory of all \(A\) such that \(Hom(A,k(x)[m])=0\) for all closed points \(x\) and all \(m<0\). It follows that \(F\) also preserves the heart of the t-structure. And now the fact that \(\omega_Y\) is (anti)-ample is just because there exist epimorphisms from direct sums of \(\omega_Y^k\) to arbitrary coherent sheaves \(S\).</li>
+
+<li>I am already stuck on Exercise 4.4. Help! (Edit: I got unstuck.)</li>
+
+<li>Remark 4.7: Is there a characterisation of point-like objects if the canonical bundle is neither ample nor anti-ample? I ask this question even though Huybrechts asks us later to forget about point-like objects beyond this proof, because the remark is tantalising.</li>
+
+<li>Last Friday, Anand talked about Cezh complex. Can someone explain what the the forgetting index do in the coboundary map to make it a chain map?</li>
+
+<li>Why the skyscraper sheaf/residue field k(x) tensor with the canonical bundle/dualizing sheaf w<sub>X</sub> (this is the canonical n-th differential form line bundle?) is isomorphic to k(x)? Side question: skyscraper sheaf k(x) defined on an open set or just a point x.</li>
+
+<li>For lemma 4.5, I can&rsquo;t see where the zero hom condition on negative shifts being used.</li>
+
+<li>A structure sheaf is a kind of line bundle?</li>
+
+<li>I don&rsquo;t understand the last part of the proof of Proposition 4.6 (which aims to show that the cohomology sheaves are supported in dimension 0.)  In particular, I would like to understand why any point-like object in D<sup>b</sup>(X) is of codimension dim(X), as asserted in Remark 4.7</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgba62fa0" class="outline-2">
+<h2 id="orgba62fa0">Week 2: Chapter 3</h2>
+<div class="outline-text-2" id="text-orgba62fa0">
+<ol class="org-ol">
+<li><p>
+Caution about page 75, line 7: If F and E are quasicoherent then the sheaf Hom(F,E) isn&rsquo;t in general quasicoherent. One needs F to be coherent for this to be true. 
+On page 76, the \(R\mathcal Hom\) should go from \(D^-(Coh X)^{\rm op} \times D^+(QCoh X) \to D^+(QCoh X)\). In general, all the \(D^-(Qcoh)\) in this section should be replaced by \(D^-(Coh)\) whenever \(R\mathcal Hom\) appears.
+</p>
+
+<p>
+(i) Can one explain the reason of replacing Qcoh by Coh with some easy examples? These higher functor properties seems hard to digest without examples in mind.
+</p></li>
+
+<li>Page 83, the proof of Lemma 3.31: I don&rsquo;t see why &ldquo;Of course, it suffices to show this for \(\mathfrak{a}=\mathfrak{m}\).&rdquo; And the case \(\mathfrak{a}=\mathfrak{m}\) should be handled more elegantly, just tensor the exact sequence \(0\rightarrow \mathfrak{m}\rightarrow A\rightarrow A/\mathfrak{m}\rightarrow 0\) with the module \(M\). Anyway: it&rsquo;s better to just appeal to the local criterion of flatness.</li>
+
+<li>Proof of 3.17 could be more direct. With the choice of m, we have a map \(F^\bullet \to \mathcal H^m[m]\) compose it with a nonzero map \(\mathcal H^m[m] \to k(x)[m]\).</li>
+
+<li>Is formula (3.18) true (page 85) with \(u^*\) and \(v^*\) replaced by \(Lu^*\) and \(Lv^*\) (for arbitrary \(u\))?</li>
+
+<li>The statement about cohomology and base change needs a flatness hypothesis (\(F\) flat over \(Y\)). Otherwise, it is false.</li>
+
+<li>Why is (3.20) equivalent to (3.19) in the section on Grothendieck-Verdier duality?</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org644ca7b" class="outline-2">
+<h2 id="org644ca7b">Week 1: Section 3.1 + relevant material from Chapter 1 and Chapter 2</h2>
+<div class="outline-text-2" id="text-org644ca7b">
+<ol class="org-ol">
+<li>Food for thought: what&rsquo;s an example of \(A \subset B\) (abelian subcat of an abelian cat) that is <b>not thick</b>?</li>
+
+<li>I believe Proposition 2.42 for \(D^+\), but why does it also work for \(D^b\)? Ah! Truncation.</li>
+
+<li>Remark 1.16 reminded me of Ravi Vakil&rsquo;s mnemonic &rsquo;RAPL&rsquo; (Right Adjoints Preserve Limits). This makes sense because both right adjoints and limits are &ldquo;trying to approximate an object from below.&rdquo;</li>
+
+<li>How do you think about an exact functor \(K(A) \to K(B)\)? In particular, why is the inner Hom functor exact (page 50)?</li>
+
+<li>The \(RHom\) is tricky!</li>
+
+<li>Exercise 2.27 is suspicious: the claimed result does not seem to be true for \(K(\mathcal{A})\) precisely because quasi-isomorphisms need not be invertible.</li>
+
+<li>Why doesn&rsquo;t \(QCoh(X)\) have enough projectives?</li>
+
+<li>Do projective objects restrict to projective objects on open sets? What about injective objects?</li>
+
+<li>At first glance, Corollary 3.15 appears to be saying that the category \(D^b Coh(X)\) is semisimple, but that&rsquo;s of course not true because \(Coh(X)\) is already not semisimple. The catch is that being a direct sum of shifts of cohomology objects is a weaker condition than being a direct sum of simple objects. Apparently the correct word to use for the setting of Corollary 3.15 is &ldquo;formality&rdquo;.</li>
+
+<li>I think the proofs of 3.8, 3.9, 3.10 are good advertisements for the &ldquo;cohomology filtration&rdquo; (and foreshadowing a bit, the Harder-Narasimhan filtration).</li>
+
+<li>In Ex. 2.27, it is stated that short exact sequences in a category A go to distinguished triangles in K(A). But then in the very next line the proof seems to involve the inverse of a quasi - isomorphism which does not make sense in K(A) ?</li>
+
+<li>It is hard for me to grok the universal property of the derived functor. Can someone decipher it for me?</li>
+
+<li><p>
+Does \(Qcoh(\mathbb A^2 - 0)\) have projectives?
+</p>
+
+<p>
+It doesn&rsquo;t have enough projectives; you can see this because products aren&rsquo;t exact. For each \(n>0\) consider on \(\mathbb{A}^2\) the map \(\cal{O}\oplus\cal{O}\rightarrow\cal{O}\) given by the matrix \((x^n,y^n)\). The restriction to \(\mathbb{A}^2-0\) is surjective, but the restriction of the product over \(n\) isn&rsquo;t.
+</p></li>
+</ol>
+</div>
+</div>
+</div>
 <div id="postamble" class="status">
-Created by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8-pre).  Last modified: 2022-05-31 Tue 15:55.  <a href="https://github.com/deopurkar/deopurkar.github.io">Source</a>
+Created by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.8-pre).  Last modified: 2024-10-10 Thu 21:53.  <a href="https://github.com/deopurkar/deopurkar.github.io">Source</a>
 </div>
 </body>
 </html>
