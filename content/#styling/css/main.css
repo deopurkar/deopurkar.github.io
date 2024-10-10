@@ -33,8 +33,8 @@ body {
   text-decoration: underline; }
 
 h1, h2, h3, h4 {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-weight: lighter;
+  font-family: "B612", monospace;
+  font-weight: normal;
   margin-bottom: 0em; }
 
 li {
@@ -96,6 +96,8 @@ footer {
   #table-of-contents li {
     margin-top: 0em;
     margin-bottom: 1em; }
+  #table-of-contents a {
+    text-decoration: none; }
 
 #postamble {
   margin-top: 1em;
@@ -126,6 +128,9 @@ a:hover {
 
 code {
   color: #000; }
+
+#table-of-contents a {
+  border-bottom: 0.15em solid #d05a5b; }
 
 h1, h2, h3, h4, h5, h6 {
   border-bottom: 0.15em solid #d05a5b;
@@ -186,6 +191,8 @@ footer {
     color: #000; }
   code {
     color: #000; }
+  #table-of-contents a {
+    border-bottom: 0.15em solid #000; }
   h1, h2, h3, h4, h5, h6 {
     border-bottom: 0.15em solid #000;
     display: inline-block;

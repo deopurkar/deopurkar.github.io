@@ -22,6 +22,9 @@
     a, a:active, a:visited { color: $link;}
     a:hover { color: $link-faded; }
     code { color: $code; }
+    #table-of-contents a {
+	border-bottom: 0.15em solid $titles;
+    }
     h1, h2, h3, h4, h5, h6 {
         border-bottom: 0.15em solid $titles;
         display: inline-block;
@@ -113,6 +116,7 @@
 // Fonts
 $title-font: 'Atkinson Hyperlegible';
 $body-font: 'Atkinson Hyperlegible';
+$hl-font: 'B612', monospace;
 
 @media screen and (max-width: 480px) {
     body {
@@ -157,8 +161,8 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: $title-font, sans-serif;
-    font-weight:lighter;
+    font-family: $hl-font;
+    font-weight: normal;
     margin-bottom: 0em;
 }
 li {
@@ -228,6 +232,9 @@ footer {
     li {
         margin-top: 0em;
         margin-bottom: 1em;
+    }
+    a {
+	text-decoration: none;
     }
 }
 
