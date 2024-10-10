@@ -44,6 +44,9 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
       a, a:active, a:visited { color: $link;}
       a:hover { color: $link-faded; }
       code { color: $code; }
+      #table-of-contents a {
+  	border-bottom: 0.15em solid $titles;
+      }
       h1, h2, h3, h4, h5, h6 {
           border-bottom: 0.15em solid $titles;
           display: inline-block;
@@ -76,11 +79,11 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
           border-color: $fg-faded;
           a, a:active, a:visited { color: $link-faded; }
       }
-  
+
       #mypicture {
           border-color: $fg-faded;
       }
-  
+
       #postamble {
           border-top: 0em;
       }
@@ -146,6 +149,7 @@ First we define the variables for the title font and the body font.
   // Fonts
   $title-font: 'Atkinson Hyperlegible';
   $body-font: 'Atkinson Hyperlegible';
+  $hl-font: 'B612', monospace; 
 #+end_src
 Next we use media queries to set breakpoints for various screen sizes, which then influence the layout of the page.
 The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][CSS flexbox]].
@@ -198,8 +202,8 @@ Style links. Remember that the colours have already been styled via a theme mixi
 Style headings, lists, and figures.
 #+begin_src scss
   h1, h2, h3, h4 {
-      font-family: $title-font, sans-serif;
-      font-weight:lighter;
+      font-family: $hl-font;
+      font-weight: normal;
       margin-bottom: 0em;
   }
   li {
@@ -279,14 +283,17 @@ Footer style and other miscellany.
           margin-top: 0em;
           margin-bottom: 1em;
       }
+      a {
+  	text-decoration: none;
+      }
   }
-  
+
   #postamble {
       @extend %small;
       margin-top: 1em;
       text-align: right;
   }
-  
+
   .container::after {
       content: "";
       clear: both;
