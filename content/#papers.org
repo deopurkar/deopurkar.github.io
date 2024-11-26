@@ -1,3 +1,10 @@
+* Counting 3-uple Veronese surfaces :pp:
+:PROPERTIES:
+:journal:  Pre-print
+:link: [[https://arxiv.org/abs/2411.14232][arxiv]]
+:year: 2024
+:END:
+
 * Equivariant classes of orbits in GL(2)-representations :pp:
 :PROPERTIES:
 :journal:  Pre-print
@@ -11,7 +18,7 @@ We compute equivariant fundamental classes of orbits in GL(2)-representations. A
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
 :journal:  International Mathematics Research Notices
 :link:     [[file:papers/erc.pdf][pdf]], [[https://arxiv.org/abs/2211.16603][arxiv]], [[https://doi.org/10.1093/imrn/rnae169][journal]]
-:year:     2022
+:year:     2024
 :END:
   We compute the equivariant fundamental class of the orbit closure of a linear series on the projective line.  We also describe the boundary of the orbit closure and how the orbits specialise in one parameter families.
 

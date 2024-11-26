@@ -1,3 +1,17 @@
+* Luke Doherty
+:PROPERTIES:
+:year:     2024
+:level: Honours
+:institute: Mathematical Sciences Institute, Australian National University
+:END:
+
+* Charlotte Sherratt
+:PROPERTIES:
+:year:     2024
+:level: Honours
+:institute: Mathematical Sciences Institute, Australian National University
+:END:
+
 * Benedict Bawagan
 :properties:
 :year:     2023
