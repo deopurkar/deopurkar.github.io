@@ -1,17 +1,35 @@
 #+filetags: :talk:
+* How twisty is that orbit?
+:properties:
+:institute: NZMS-AustMS-AMS
+:place:    Auckland, New Zealand
+:year:     2024
+:type:     workshop
+:meet: Computations and applications of commutative algebra and algebraic geometry
+:end:
+
+* Papercraft
+:properties:
+:meet:     ANU Mathematics Extension Program
+:place:    Canberra, Australia
+:year:     2024
+:type:     expository
+:comment:  expository
+:end:
+
 * The geometry of stability conditions
 :properties:
 :institute: Mathematisches Forschungsinstitut Oberwolfach
 :place:    Oberwolfach, Germany
 :year:     2024
-:type:     Workshop
+:type:     workshop
 :meet: Artin groups meet triangulated categories
 :end:
 
 * How to count using equivariant cohomology
 :properties:
 :ref:  [[file:#papers.org::*A universal formula for counting cubic surfaces][A universal formula for counting cubic surfaces]]
-:type:     Workshop
+:type:     workshop
 :meet: Workshop on computational and applied algebraic geometry
 :institute: Isaac Newton Institute
 :place:    Cambridge, UK
@@ -22,7 +40,7 @@
 * How to count using equivariant cohomology
 :properties:
 :ref:  [[file:#papers.org::*A universal formula for counting cubic surfaces][A universal formula for counting cubic surfaces]]
-:type:     Seminar
+:type:     seminar
 :institute: Imperial College
 :place:    London, UK
 :year:     2024
@@ -34,7 +52,7 @@
 :institute: School of Mathematics
 :place:    Edinburgh, UK
 :year:     2024
-:type:     Seminar
+:type:     seminar
 :end:
 
 
@@ -44,13 +62,13 @@
 :institute: Technion
 :place:    Haifa, Israel
 :year:     2023
-:type:     Lecture series
+:type:     series
 :end:
 
 * Braids, automata, and the PL-sphere
 :properties:
 :meet: Braids: algebra and geometry
-:type:    Workshop
+:type:    workshop
 :institute: Australian National University
 :place:    Canberra, Australia
 :year:     2023
@@ -58,7 +76,7 @@
 
 * Carpentry, geometry, and category theory
 :properties:
-:type:    Colloquium
+:type:    colloquium
 :institute: Chennai Mathematical Institute
 :place:    Chennai, India
 :year:     2022
@@ -69,14 +87,14 @@
 :meet:     ANU Mathematics Extension Program
 :place:    Canberra, Australia
 :year:     2022
-:type:     Expository talk
+:type:     expository
 :comment:  expository
 :end:
 
 * How to count using equivariant cohomology
 :properties:
 :ref:  [[file:#papers.org::*A universal formula for counting cubic surfaces][A universal formula for counting cubic surfaces]]
-:type:     Seminar
+:type:     seminar
 :institute: Australian National University
 :place:    Canberra, Australia
 :year:     2022
@@ -87,7 +105,7 @@
 :institute: Tsinghua University (Online)
 :place:    Beijing, China
 :year:     2022
-:type:     Seminar 
+:type:     seminar 
 :end:
 
 
@@ -97,7 +115,7 @@
 :institute: ICERM, Brown University
 :place:    Providence, Rhode Island
 :year:     2022
-:type:     Expository talk
+:type:     expository
 :comment: preparatory talk for the conference
 :end:
 
@@ -105,7 +123,7 @@
 * How to count using equivariant cohomology
 :properties:
 :ref:  [[file:#papers.org::*A universal formula for counting cubic surfaces][A universal formula for counting cubic surfaces]]
-:type:     Seminar
+:type:     seminar
 :institute: Harvard University
 :place:    Cambridge, Massachusetts
 :year:     2022
@@ -116,7 +134,7 @@
 :PROPERTIES:
 :ref:      [[file:papers.org::*Ramification divisors of general projections][Ramification divisors of general projections]]
 :PROPERTIES:
-:type:     Seminar
+:type:     seminar
 :institute: Brown University
 :place:    Providence, Rhode Island
 :year:     2022
@@ -129,7 +147,7 @@
 :place:    Providence, Rhode Island
 :year:     2022
 :link:     [[file:talks/ICERM2022.pdf][slides]]
-:type:     Conference
+:type:     conference
 :end:
 
 *  The geometry of Fermat-like equations
@@ -138,7 +156,7 @@
 :institute: Bhaskaracharya Pratishthana
 :place:    Pune, India
 :year:     2022
-:type:     Expository talk
+:type:     expository
 :link:     [[file:talks/Fermat2022.pdf][notes]]
 :comment: expository
 :end:
@@ -150,7 +168,7 @@
 :institute: Bhaskaracharya Pratishthana
 :place:    Pune, India
 :year:     2021
-:type:     Expository talk
+:type:     expository
 :link:     [[file:talks/Belyi2021.pdf][notes]]
 :comment: expository
 :end:
@@ -161,7 +179,7 @@
 :meet:     ANU Mathematics Extension Program
 :place:    Canberra, Australia
 :year:     2021
-:type:     Expository talk
+:type:     expository
 :link:     [[file:talks/ecc2021/ecc.html][slides]]
 :comment: expository
 :end:
@@ -172,7 +190,7 @@
 :institute: Max Planck institute für Mathematics
 :place:    Bonn, Germany
 :year:     2021
-:type:     Workshop
+:type:     workshop
 :link:     [[file:talks/Bonn2021.pdf][slides]]
 :ref: [[file:#papers.org::*A Thurston compactification of the space of stability conditions][A Thurston compactification of the space of stability conditions]]
 :end:
@@ -182,7 +200,7 @@
 :institute: Tata Institute of Fundamental Research (Online)
 :place:    Mumbai, India
 :year:     2021
-:type:     Seminar
+:type:     seminar
 :link:     [[file:talks/tifr2021.pdf][slides]]
 :ref: [[file:papers.org::*A Thurston compactification of the space of stability conditions][A Thurston compactification of the space of stability conditions]]
 :end:
@@ -191,7 +209,7 @@
 :institute: Jagiellonian University (Online)
 :place:    Kraków, Poland
 :year:     2021
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*A Thurston compactification of the space of stability conditions][A Thurston compactification of the space of stability conditions]]
 :end:
 *  A Thurston compactification for categories
@@ -200,7 +218,7 @@
 :institute: University of New England
 :place:    Amidale, Australia
 :year:     2020
-:type:     Conference
+:type:     conference
 :link:     [[file:talks/AustMS2020.pdf][slides]]
 :ref:      [[file:papers.org::*A Thurston compactification of the space of stability conditions][A Thurston compactification of the space of stability conditions]]
 :end:
@@ -209,7 +227,7 @@
 :meet:     Seminario nacional de geometria algebraica (Online joint seminar of multiple universities in Mexico)
 :place:    Mexico
 :year:     2020
-:type:     Seminar
+:type:     seminar
 :link:     [[file:talks/PR2020-Oaxaca.pdf][slides]]
 :ref:      [[file:papers.org::*Ramification divisors of general projections][Ramification divisors of general projections]]
 :end:
@@ -218,7 +236,7 @@
 :institute: University of California (Online)
 :place:    San Diego, California
 :year:     2020
-:type:     Seminar
+:type:     seminar
 :link:     [[file:talks/PR2020-UCSD.pdf][slides]]
 :ref: [[file:papers.org::*Ramification divisors of general projections][Ramification divisors of general projections]]
 :end:  
@@ -230,7 +248,7 @@
 :place:    Sydney, Australia
 :year:     2019
 :comment:  part of a series with Asilata Bapat and Anthony Licata
-:type:     Workshop
+:type:     workshop
 :link:     [[file:talks/StabSydney2019.pdf][notes]]
 :ref: [[file:papers.org::*A Thurston compactification of the space of stability conditions][A Thurston compactification of the space of stability conditions]]
 :end:
@@ -238,7 +256,7 @@
 *  Log surfaces of almost K3 type and curves of genus 4
 :properties:
 :meet:     Birational geometry and moduli spaces
-:type:     Conference
+:type:     conference
 :place:    Sydney, Australia
 :institute: University of Sydney
 :year:     2019
@@ -251,7 +269,7 @@
 :institute: Australian National University
 :place:    Canberra, Australia
 :year:     2019
-:type:     Expository talk
+:type:     expository
 :comment:  expository
 :link:     [[file:talks/WIM2019.pdf][slides]]
 :end:
@@ -261,7 +279,7 @@
 :institute: University of Auckland
 :place:    Auckland, New Zealand
 :year:     2018
-:type:     Conference
+:type:     conference
 :link:     [[file:talks/NZ2018.pdf][notes]]
 :end:
 *  On the geometric Steinitz problem                                     
@@ -271,7 +289,7 @@
 :place:    Adelaide, Australia
 :year:     2018
 :link:     [[file:talks/AustMS2018.pdf][slides]]
-:type:     Conference
+:type:     conference
 :ref: [[file:papers.org::*Vector bundles and finite covers][Vector bundles and finite covers]]
 :end:
 *  The work of Caucher Birkar
@@ -280,7 +298,7 @@
 :institute: Australian National University
 :place:    Canberra, Australia
 :year:     2018
-:type:     Expository talk
+:type:     expository
 :comment:  expository
 :link:     [[file:talks/FMColloquium2018.pdf][notes]]
 :end:
@@ -290,7 +308,7 @@
 :institute: Xiamen University
 :place:    Xiamen, China
 :year:     2018
-:type:     Conference
+:type:     conference
 :ref: [[file:papers.org::*Stable log surfaces, admissible covers, and canonical curves of genus 4][Stable log surfaces, admissible covers, and canonical curves of genus 4]]
 :end:
 *  How to count using (co)homology
@@ -298,7 +316,7 @@
 :institute: Tata Institute of Fundamental Research
 :place:    Mumbai, India
 :year:     2018
-:type:     Expository talk
+:type:     expository
 :comment:  expository
 :link:     [[file:talks/tifr2018.pdf][notes]]
 :end:
@@ -307,7 +325,7 @@
 :institute: Indian Institute of Science
 :place:    Bengaluru, India
 :year:     2018
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*The canonical syzygy conjecture for ribbons][The canonical syzygy conjecture for ribbons]]
 :end:
 *  What are ribbons and what do they tell us about Riemann surfaces
@@ -315,7 +333,7 @@
 :institute: Monash University
 :place:    Melbourne, Australia
 :year:     2018
-:type:     Seminar
+:type:     seminar
 :link:     [[file:talks/Monash2018.pdf][notes]]
 :ref: [[file:papers.org::*The canonical syzygy conjecture for ribbons][The canonical syzygy conjecture for ribbons]]
 :end:
@@ -324,7 +342,7 @@
 :institute: Australian National University
 :place:    Canberra, Australia
 :year:     2018
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Ramification divisors of general projections][Ramification divisors of general projections]]
 :end:
 *  Quadrature and algebraic geometry
@@ -334,7 +352,7 @@
 :place:    Creswick, Victoria, Australia
 :year:     2018
 :link:     [[file:talks/MATRIX2018.pdf][slides]]
-:type:     Workshop
+:type:     workshop
 :end:
 *  Vector bundles and finite covers
 :properties:
@@ -342,7 +360,7 @@
 :institute: University of North Carolina
 :place:    Chapel Hill, North Carolina
 :year:     2017
-:type:     Workshop
+:type:     workshop
 :ref: [[file:papers.org::*Vector bundles and finite covers][Vector bundles and finite covers]]
 :end:
 *  Vector bundles and finite covers
@@ -350,7 +368,7 @@
 :institute: University of Georgia
 :place:    Athens, Georgia
 :year:     2017
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Vector bundles and finite covers][Vector bundles and finite covers]]
 :end:
 *  How to count using topology
@@ -358,7 +376,7 @@
 :institute: Canada/USA Mathcamp
 :place:    Tacoma, WA
 :year:     2017
-:type:     Expository talk
+:type:     expository
 :comment:  expository
 :end:
 *  Quivers and their representations
@@ -366,14 +384,14 @@
 :institute: Indian Institute of Science Education and Research
 :place:    Pune, India
 :year:     2017
-:type:     Seminar
+:type:     seminar
 :end:
 *  Vector bundles and finite covers
 :properties:
 :institute: Emory University
 :place:    Atlanta, Georgia
 :year:     2017
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Vector bundles and finite covers][Vector bundles and finite covers]]
 :end:
 *  Geometry of moduli spaces
@@ -381,14 +399,14 @@
 :institute: Australian National University
 :place:    Canberra, Australia
 :year:     2016
-:type:     Colloquium
+:type:     colloquium
 :end:
 *  Vector bundles and finite covers
 :properties:
 :meet:     Conference on moduli and birational geometry
 :place:    Jeju Island, South Korea
 :year:     2016
-:type:     Conference
+:type:     conference
 :link:     [[file:talks/Jeju2016.pdf][notes]]
 :ref: [[file:papers.org::*Vector bundles and finite covers][Vector bundles and finite covers]]
 :end:
@@ -397,7 +415,7 @@
 :institute: Indian Institute of Science Education and Research
 :place:    Pune
 :year:     2016
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Vector bundles and finite covers][Vector bundles and finite covers]]
 :end:
 *  Ribbons and Green's conjecture
@@ -405,7 +423,7 @@
 :institute: University of South Carolina
 :place:    Columbia, South Carolina
 :year:     2016
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*The canonical syzygy conjecture for ribbons][The canonical syzygy conjecture for ribbons]]
 :end:
 *  Ribbons and Green's conjecture
@@ -413,7 +431,7 @@
 :institute: University of Georgia
 :place:    Athens, Georgia
 :year:     2016
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*The canonical syzygy conjecture for ribbons][The canonical syzygy conjecture for ribbons]]
 :end:
 *  Cycles on Hurwitz spaces
@@ -422,21 +440,21 @@
 :institute: Institute for Computational and Experimental Research in Mathematics
 :place:    Providence, Rhode Island
 :year:     2016
-:type:     Conference
+:type:     conference
 :end:
 *  The algebra of canonical curves and the geometry of their moduli space
 :properties:
 :institute: University of Georgia
 :place:    Athens, Georgia
 :year:     2016
-:type:     Seminar
+:type:     seminar
 :end:
 *  Picard groups of Hurwitz spaces
 :properties:
 :meet:     Higher genus curves and fibrations of higher genus curves in mathematical physics and arithmetic geometry II, AMS joint mathematics meetings
 :place:    Seattle, Washington
 :year:     2016
-:type:     Conference
+:type:     conference
 :ref: [[file:papers.org::*The Picard rank conjecture for the Hurwitz spaces of degree up to five][The Picard rank conjecture for the Hurwitz spaces of degree up to five]]
 :end:
 *  Limits of plane quintics via covers of stacky curves
@@ -444,7 +462,7 @@
 :meet:     Moduli spaces in algebraic geometry I, AMS joint mathematics meetings
 :place:    Seattle, Washington
 :year:     2016
-:type:     Conference
+:type:     conference
 :ref: [[file:papers.org::*Covers of stacky curves and limits of plane quintics][Covers of stacky curves and limits of plane quintics]]
 :end:
 * Limits of plane quintics via covers of stacky curves
@@ -454,7 +472,7 @@
 :institute: Northeastern University
 :place:    Boston, Massachusetts
 :link:     [[file:talks/AGNUBS2015.pdf][notes]]
-:type:     Conference
+:type:     conference
 :ref:      [[file:papers.org::*Covers of stacky curves and limits of plane quintics][Covers of stacky curves and limits of plane quintics]]
 :end:
 * Limits of plane quintics via covers of stacky curves 
@@ -464,7 +482,7 @@
 :institute: University of Utah
 :place:    Salt Lake City, Utah
 :link:     [[file:talks/quintics_poster.pdf][poster]]
-:type:     Poster
+:type:     poster
 :comment:  poster
 :ref:      [[file:papers.org::*Covers of stacky curves and limits of plane quintics][Covers of stacky curves and limits of plane quintics]]
 :end:
@@ -474,12 +492,12 @@
 :meet:     SIAM applied algebraic geometry conference
 :place:    Daejeon, South Korea
 :link:     [[file:talks/SIAM2015.pdf][slides]]
-:type:     Conference
+:type:     conference
 :ref: [[file:papers.org::*Toward GIT stability of syzygies of canonical curves][Toward GIT stability of syzygies of canonical curves]]
 :end:
 * GIT stability of syzygies of curves
 :PROPERTIES:
-:type:     Workshop
+:type:     workshop
 :properties:
 :year:     2015
 :institute: Mathematisches Forschungsinstitut Oberwolfach
@@ -492,7 +510,7 @@
 :year:     2015
 :institute: Purdue University
 :place:    West Lafayette, Indiana
-:type:     Seminar
+:type:     seminar
 :ref:      [[file:papers.org::*Toward GIT stability of syzygies of canonical curves][Toward GIT stability of syzygies of canonical curves]]
 :end:
 * Limits of plane curves via stacky branched covers
@@ -500,7 +518,7 @@
 :year:     2015
 :institute: Ohio State University
 :place:    Columbus, Ohio
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Covers of stacky curves and limits of plane quintics][Covers of stacky curves and limits of plane quintics]]
 :end:
 * Syzygies, GIT, and the log minimal model program for \(\overline{M}_g\)
@@ -508,7 +526,7 @@
 :year:     2015
 :institute: Harvard University
 :place:    Cambridge, Massachusetts
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Toward GIT stability of syzygies of canonical curves][Toward GIT stability of syzygies of canonical curves]]
 :end:
 * Picard groups of Hurwitz spaces
@@ -516,7 +534,7 @@
 :year:     2015
 :institute: Courant Institute, New York University
 :place:    New York City, New York
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*The Picard rank conjecture for the Hurwitz spaces of degree up to five][The Picard rank conjecture for the Hurwitz spaces of degree up to five]]
 :end:
 * The birational geometry of \(\overline M_g\)
@@ -524,14 +542,14 @@
 :year:     2015
 :institute: Indian Institute for Science Research and Education
 :place:    Pune, India
-:type:     Seminar
+:type:     seminar
 :end:
 * Syzygies of canonical curves and birational geometry of \(\overline M_g\)
 :properties:
 :year:     2015
 :institute: Stony Brook University
 :place:    Stony Brook, New York
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Toward GIT stability of syzygies of canonical curves][Toward GIT stability of syzygies of canonical curves]]
 :end:
 * GIT stability of syzygies of canonical curves
@@ -539,7 +557,7 @@
 :year:     2014
 :institute: University of Michigan
 :place:    Ann Arbor, Michigan
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Toward GIT stability of syzygies of canonical curves][Toward GIT stability of syzygies of canonical curves]]
 :end:
 * GIT stability of syzygies of canonical curves
@@ -547,7 +565,7 @@
 :year:     2014
 :institute: Yale University
 :place:    New Haven, Connecticut
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Toward GIT stability of syzygies of canonical curves][Toward GIT stability of syzygies of canonical curves]]
 :end:
 * Towards GIT stability of syzygies of canonical curves
@@ -555,7 +573,7 @@
 :year:     2014
 :institute: Boston College
 :place:    Boston, Massachusetts
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Toward GIT stability of syzygies of canonical curves][Toward GIT stability of syzygies of canonical curves]]
 :end:
 * Towards GIT stability of syzygies of canonical curves
@@ -565,7 +583,7 @@
 :institute: Postech
 :place:    Pohang, Korea
 :link:     [[file:talks/syz2013.pdf][notes]]
-:type:     Conference
+:type:     conference
 :ref: [[file:papers.org::*Toward GIT stability of syzygies of canonical curves][Toward GIT stability of syzygies of canonical curves]]
 :end:
 * Towards GIT stability of syzygies of canonical curves
@@ -573,7 +591,7 @@
 :year:     2013
 :meet:     Geometry of algebraic varieties, AMS sectional meeting
 :place:    Philadelphia, Pennsylvania
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Toward GIT stability of syzygies of canonical curves][Toward GIT stability of syzygies of canonical curves]]
 :end:
 * Sharp slope bounds for sweeping families of trigonal curves
@@ -583,7 +601,7 @@
 :institute: Boston College
 :place:    Boston, Massachusetts
 :link:     [[file:talks/slopes_poster.pdf][poster]]
-:type:     Poster
+:type:     poster
 :comment:  poster
 :ref: [[file:papers.org::*Sharp slope bounds for sweeping families of trigonal curves][Sharp slope bounds for sweeping families of trigonal curves]]
 :end:
@@ -592,7 +610,7 @@
 :year:     2013
 :institute: Stanford University
 :place:    Palo Alto, California
-:type:     Seminar
+:type:     seminar
 :link:     [[file:talks/Hdg2013.pdf][notes]]
 :ref: [[file:papers.org::*Alternate compactifications of Hurwitz spaces][Alternate compactifications of Hurwitz spaces]]
 :end:
@@ -601,7 +619,7 @@
 :year:     2013
 :institute: Princeton University
 :place:    Princeton, New Jersey
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Alternate compactifications of Hurwitz spaces][Alternate compactifications of Hurwitz spaces]]
 :end:
 * Alternate compactifications of Hurwitz spaces
@@ -609,7 +627,7 @@
 :year:     2012
 :institute: Rice University
 :place:    Houston, Texas
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Alternate compactifications of Hurwitz spaces][Alternate compactifications of Hurwitz spaces]]
 :end:
 * Compactifications of Hurwitz spaces
@@ -618,7 +636,7 @@
 :institute: Massachusetts Institute of Technology
 :place:    Cambridge, Massachusetts
 :link:     [[file:talks/Hdg2013.pdf][notes]]
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Alternate compactifications of Hurwitz spaces][Alternate compactifications of Hurwitz spaces]]
 :end:
 * Compactifications of Hurwitz spaces
@@ -626,7 +644,7 @@
 :year:     2011
 :institute: Columbia University
 :place:    New York City, New York
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Alternate compactifications of Hurwitz spaces][Alternate compactifications of Hurwitz spaces]]
 :end:
 * Compactifications of Hurwitz spaces
@@ -634,7 +652,7 @@
 :year:     2011
 :institute: Stony Brook University
 :place:    Stony Brook, New York
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Alternate compactifications of Hurwitz spaces][Alternate compactifications of Hurwitz spaces]]
 :end:
 * Compactifications of Hurwitz spaces
@@ -642,7 +660,7 @@
 :year:     2011
 :institute: Brown University
 :place:    Providence, Rhode Island
-:type:     Seminar
+:type:     seminar
 :ref: [[file:papers.org::*Alternate compactifications of Hurwitz spaces][Alternate compactifications of Hurwitz spaces]]
 :end:
 * Birational geometry of the space of marked trigonal curves 
@@ -652,7 +670,7 @@
 :institute: Harvard University
 :place:    Cambridge, Massachusetts
 :link:     [[file:talks/trig_poster.pdf][poster]]
-:type:     Poster
+:type:     poster
 :comment:  poster
 :ref: [[file:papers.org::*Modular compactifications of the space of marked trigonal curves][Modular compactifications of the space of marked trigonal curves]]
 :end:

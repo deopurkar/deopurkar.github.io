@@ -43,19 +43,17 @@ I am a mathematician working in algebraic geometry and related areas.
 I study the interplay between systems of algebraic equations and the geometric shapes they describe.
 #+end_container
 
-This what I have been up to lately.
-- With [[jayan][Jayan Mukherjee]], I am trying to understand [[wiki:Linear_relation][syzygies]] of some non-reduced [[wiki:Algebraic_curve][algebraic curves]].
-- With [[valery][Valery Alexeev]] and [[changho][Changho Han]], I am working on describing compact moduli spaces of some classes of [[wiki:K3_surface][K3 surfaces]].
+* /now
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 - With [[asilata][Asilata Bapat]] and [[tony][Tony Licata]], I am studying [[wiki:Bridgeland_stability_condition][Bridgeland stability conditions]] on some triangulated categories.
 - With [[rachel:][Rachel Newton]], [[vaidehee:][Vaidehee Thatte]], and [[rosa:][Rosa Winters]], I am exploring arithmetic ramifications of the geometry of certain [[wiki:Hurwitz_scheme][Hurwitz spaces]].
 - [[anandpatel:][Anand Patel]] and I threw every tool we knew at a cool enumerative problem ([[https://arxiv.org/abs/2411.14232][counting 3-uple Veronese surfaces]]) whose answer comes out to \(4246\).  We would love a numerical verification, so if you know something about ~bertini~ or homotopy continuation, please write to us.
 - Last semester, I taught a course of about 150 students.  I wanted to check if continuous engagement in the course correlates with higher scores on the final, so I did a bit of data science; [[file:teaching/2024ggm/engagement/][see the results]].
 - Last semester, I taught a reading course based on Bott and Tu's famous book [[https://link.springer.com/book/10.1007/978-1-4757-3951-0][Differential forms in algebraic topology]]; see the [[file:teaching/2024bott_tu/final.pdf][take-home final exam]].
 - I am supervising Charlie Sherrat, who has been exploring the moduli space of [[wiki:Cubic_surface][cubic surfaces]] arising from 3x3x4 rubik's cubes.
-- I am supervising Luke Doherty, who is looking into the geometry of [[wiki:Linkage_(mechanical)][linkages]].
-- With [[cobb:][John Cobb]], [[sione:][Sione Ma'u]], and [[hal:][Hal Schenk]], I am organising a special session at the [[https://ms-meet-2024.blogs.auckland.ac.nz/][joint NZMS/AustMS/AMS meeting]] in December 2024.
-- I am travelling to India (mostly Pune) from mid December to mid January.  If you will be around, please write! 
-  
+
 * Papers/pre-prints
 :PROPERTIES:
 :html_headline_class: collapsible

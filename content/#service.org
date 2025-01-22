@@ -11,6 +11,13 @@
 :institute: Mathematical Sciences Institute, Australian National University
 :end:
 
+* Co-organised the session /Computations and applications of commutative algebra and algebraic geometry/ at the joint /NZMS-AustMS-AMS/ meeting
+:PROPERTIES:
+:year:     2024
+:institute: University of Auckland
+:with:     John Cobb, Sione Ma'u, and Hal Schenk
+:END:
+
 *  Co-organised the workshop /Braids in Symplectic and Algebraic Geometry/
 :properties:
   :year: 2022

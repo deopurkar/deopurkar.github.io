@@ -1,3 +1,18 @@
+* Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism :pp:
+:PROPERTIES:
+:journal:  Pre-print
+:year:     2024
+:link: [[https://arxiv.org/abs/2412.11256][arxiv]]
+:END:
+
+
+* Syzygies of canonical ribbons on higher genus curves :pp:
+:PROPERTIES:
+:journal:  Pre-print
+:year:     2024
+:link: [[https://arxiv.org/abs/2412.05500][arxiv]]
+:END:
+
 * Counting 3-uple Veronese surfaces :pp:
 :PROPERTIES:
 :journal:  Pre-print
