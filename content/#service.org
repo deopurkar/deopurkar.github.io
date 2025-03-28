@@ -1,4 +1,4 @@
-* Refereed for Journal of the European Mathematical Society, Journal of Differential Geometry, Journal of Algebraic Geometry, Annales Scientifiques de l'École Normale Supérieure, Mathematische Annalen, Algebra and Number Theory, Journal für die reine und angewandte Mathematik, manuscripta mathematica, Advances in Geometry, Mathematical Research Letters, European Journal of Mathematics
+* Refereed for Journal of the European Mathematical Society, Journal of Differential Geometry, Journal of Algebraic Geometry, Annales Scientifiques de l'École Normale Supérieure, Mathematische Annalen, Algebra and Number Theory, Journal für die reine und angewandte Mathematik, manuscripta mathematica, Advances in Geometry, Mathematical Research Letters, European Journal of Mathematics, Journal de l'École polytechnique — Mathématiques, Experimental mathematics
 
 * Reviewed for Mathematical Reviews
 :properties:
@@ -9,6 +9,18 @@
 :properties:
 :year: 2021--
 :institute: Mathematical Sciences Institute, Australian National University
+:end:
+
+* Headed the selection committee for the /Future research talent fellowship/
+:propertes:
+:year: 2025
+:institute: Australian National University
+:end:
+
+* Served on the thesis committee of Kabeer Manali Rahul
+:propertes:
+:year: 2025
+:institute: Australian National University
 :end:
 
 * Co-organised the session /Computations and applications of commutative algebra and algebraic geometry/ at the joint /NZMS-AustMS-AMS/ meeting

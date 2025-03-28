@@ -1,4 +1,24 @@
 #+filetags: :talk:
+* A Thurston compactification of the space of stability conditions
+:properties:
+:institute: MATRIX
+:place:    Creswick, Australia
+:year:     2025
+:type:     workshop
+:meet: Teichmuller theory and flat structures
+:end:
+
+
+* The enumerative geometry of orbit closures
+:properties:
+:institute: University of Melbourne
+:place:    Melbourne, Australia
+:year:     2025
+:type:     seminar
+:meet: Pure mathematics seminar
+:end:
+
+
 * How twisty is that orbit?
 :properties:
 :institute: NZMS-AustMS-AMS
@@ -7,6 +27,16 @@
 :type:     workshop
 :meet: Computations and applications of commutative algebra and algebraic geometry
 :end:
+
+* The work of Maryam Mirzakhani
+:properties:
+:institute: Australian National University
+:place:    Canberra, Australian
+:year:     2024
+:type:     expository
+:meet: Women in maths day
+:end:
+
 
 * Papercraft
 :properties:
