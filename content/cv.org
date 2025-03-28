@@ -56,23 +56,22 @@
 	      title
 	      org
 	      (if collaborators
-		  (format ", with %s" collaborators)
+		  (format " (with %s)" collaborators)
 		"")
 	      )))
-  (string-join (org-map-entries 'pretty-print nil '("#awards.org")) "\n")
+  (string-join (org-map-entries 'pretty-print "-nocv" '("#awards.org")) "\n")
 #+end_src
 
 #+RESULTS:
 :results:
-- 2024 :: Discovery project award (DP), Australian Research Council, with Asilata Bapat, Anthony Licata.
+- 2024 :: Discovery project award (DP), Australian Research Council (with Asilata Bapat, Anthony Licata).
 - 2018 :: Discovery early career researcher award (DECRA), Australian Research Council.
 - 2016 :: AMS-Simons travel grant, American Mathematical Society and Simons Foundation.
-- 2016 :: Workshop funding, American Institute of Mathematics, with Maksym Fedorchuk, Ian Morrison, Xiaowei Wang.
+- 2016 :: Workshop funding, American Institute of Mathematics (with Maksym Fedorchuk, Ian Morrison, Xiaowei Wang).
 - 2014 :: Award for excellence in teaching, Columbia University, Mathematics department.
 - 2006 :: Jon A. Bucsela prize for the top undergraduate, Massachusetts Institute of Technology, Mathematics department.
 - 2006 :: Rogers family prize for undergraduate summer research, Massachusetts Institute of Technology, Mathematics department.
 - 2007, 2005, 2004 :: Honorable mention (2004) , honorable mention (2005), rank 16--25 (2004), William Lowell Putnam competition.
-- 2004, 2003 :: Silver medal (2004), bronze medal (2003), International mathematical olympiad.
 :end:
 
 * Publications 
@@ -89,17 +88,17 @@
             (coauthors (org-entry-get nil "with"))
             (comment (org-entry-get nil "comment"))
             (link (org-entry-get nil "link")))
-        (format "- %s :: %s.\\\\\n          /%s/%s%s%s."
+        (format "- %s :: /%s/.\\\\\n          %s%s%s%s."
                 (if (equal previous year)
                     "---"
                   (setq previous year))
-                journal
-                title
+  	      title
+  	      journal
                 (if comment
                     (format " (%s)" comment)
                   "")
                 (if coauthors
-                    (format ", with %s" coauthors)
+                    (format " (with %s)" coauthors)
                   "")
                 (if (and link cv-include-links)
                     (format " (%s)" link)
@@ -109,30 +108,36 @@
 
 #+RESULTS:
 :results:
-- 2022 :: Forum of Mathematics, Sigma (accepted).\\
-          /Vector bundles and finite covers/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
-- 2021 :: Transactions of the Americal Mathematical Society 374, No. 1, 589-641 (2021).\\
-          /Stable log surfaces, admissible covers, and canonical curves of genus 4/, with Changho Han.
-- 2020 :: Documenta Mathematica 25, 1917--1952 (2020).\\
-          /Ramification divisors of general projections/, with [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]].
-- 2019 :: Transactions of the Americal Mathematical Society, 371, 549--588 (2019).\\
-          /Covers of stacky curves and limits of plane quintics/.
-- 2018 :: Contemporary Mathematics 703, 209--222 (2018).\\
-          /Syzygy divisors on Hurwitz spaces/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
-- --- :: Mathematische Zeitschrift 288, No. 3-4, 1157--1164 (2018).\\
-          /The canonical syzygy conjecture for ribbons/.
-- 2016 :: Algebraic Geometry 3, No. 1, 1--22 (2016).\\
-          /Toward GIT stability of syzygies of canonical curves/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]].
-- 2015 :: Algebra & Number Theory 9, No. 2, 459--492 (2015).\\
-          /The Picard rank conjecture for the Hurwitz spaces of degree up to five/, with [[https://www2.bc.edu/anand-p-patel/][Anand Patel]].
-- 2014 :: Albanian Journal of Mathematics 8, No. 2, 55--70 (2014).\\
-          /Groebner techniques for ribbons/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]].
-- --- :: International Mathematics Research Notices 2014, No. 14, 3863--3911 (2014).\\
-          /Compactifications of Hurwitz spaces/.
-- 2013 :: Mathematical Research Letters 20, No. 5, 869--884 (2013).\\
-          /Sharp slope bounds for sweeping families of trigonal curves/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
-- --- :: Advances in Mathematics 248, 96--154 (2013).\\
-          /Modular compactifications of the space of marked trigonal curves/.
+- 2024 :: /Orbits of linear series on the projective line/.\\
+          International Mathematics Research Notices (with [[https://sites.google.com/view/anand-patel][Anand Patel]]).
+- --- :: /A universal formula for counting cubic surfaces/.\\
+          Algebraic Geometry (to appear) (with [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]]).
+- 2022 :: /Spherical objects and stability conditions on CY2 quiver categories/.\\
+          Mathematische Zeitschrift (with [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]).
+- --- :: /Vector bundles and finite covers/.\\
+          Forum of Mathematics, Sigma (with [[https://sites.google.com/view/anand-patel][Anand Patel]]).
+- 2021 :: /Stable log surfaces, admissible covers, and canonical curves of genus 4/.\\
+          Transactions of the Americal Mathematical Society (with Changho Han).
+- 2020 :: /Ramification divisors of general projections/.\\
+          Documenta Mathematica (with [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]]).
+- 2019 :: /Covers of stacky curves and limits of plane quintics/.\\
+          Transactions of the Americal Mathematical Society.
+- 2018 :: /Syzygy divisors on Hurwitz spaces/.\\
+          Contemporary Mathematics (with [[https://sites.google.com/view/anand-patel][Anand Patel]]).
+- --- :: /The canonical syzygy conjecture for ribbons/.\\
+          Mathematische Zeitschrift.
+- 2016 :: /Toward GIT stability of syzygies of canonical curves/.\\
+          Algebraic Geometry (with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]]).
+- 2015 :: /The Picard rank conjecture for the Hurwitz spaces of degree up to five/.\\
+          Algebra & Number Theory (with [[https://www2.bc.edu/anand-p-patel/][Anand Patel]]).
+- 2014 :: /Groebner techniques for ribbons/.\\
+          Albanian Journal of Mathematics (with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]]).
+- --- :: /Compactifications of Hurwitz spaces/.\\
+          International Mathematics Research Notices.
+- 2013 :: /Sharp slope bounds for sweeping families of trigonal curves/.\\
+          Mathematical Research Letters (with [[https://sites.google.com/view/anand-patel][Anand Patel]]).
+- --- :: /Modular compactifications of the space of marked trigonal curves/.\\
+          Advances in Mathematics.
 :end:
 
 - Pre-prints ::
@@ -142,16 +147,20 @@
 
 #+RESULTS:
 :results:
-- 2021 :: Pre-print, arxiv:2109.12672.\\
-          /A universal formula for counting cubic surfaces/, with [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]].
-- --- :: Pre-print, arXiv:2108.09155.\\
-          /Spherical objects and stability conditions on CY2 quiver categories/, with [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]].
-- 2020 :: Pre-print, arXiv:2011.07908.\\
-          /A Thurston compactification of the space of stability conditions/, with [[https://asilata.github.io/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]].
-- 2019 :: Pre-print, arXiv:1906.08196.\\
-          /Anticanonical tropical cubic del Pezzos contain exactly 27 lines/, with [[https://people.math.osu.edu/cueto.5/][María Angélica Cueto]].
-- 2013 :: Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]].\\
-          /Class of the Hodge eigenbundle using orbifold Riemann-Roch/.
+- 2024 :: /Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism/.\\
+          Pre-print.
+- --- :: /Syzygies of canonical ribbons on higher genus curves/.\\
+          Pre-print.
+- --- :: /Counting 3-uple Veronese surfaces/.\\
+          Pre-print.
+- --- :: /Equivariant classes of orbits in GL(2)-representations/.\\
+          Pre-print.
+- 2020 :: /A Thurston compactification of the space of stability conditions/.\\
+          Pre-print (with [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]).
+- 2019 :: /Anticanonical tropical cubic del Pezzos contain exactly 27 lines/.\\
+          Pre-print (with [[https://people.math.osu.edu/cueto.5/][María Angélica Cueto]]).
+- 2013 :: /Class of the Hodge eigenbundle using orbifold Riemann-Roch/.\\
+          Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]].
 :end:
 
 - Expository ::
@@ -187,7 +196,7 @@
                 name
                 level
                 (if coadvisors
-                    (concat ", with " coadvisors)
+                    (concat " (with " coadvisors ")")
                   "")
                 (if comment
                     (format " (%s)" comment)
@@ -198,15 +207,25 @@
 
 #+RESULTS:
 :results:
+- 2024 :: Luke Doherty, Honours.
+- --- :: Charlotte Sherratt, Honours.
+- 2023 :: Benedict Bawagan, Honours.
+- --- :: Leyao Zha, Honours.
+- --- :: Charles McIntosh, Honours.
+- --- :: Alex Huang, Summer Research Scholar (with Noah White).
+- --- :: Charlotte Sherratt, Summer Research Scholar (with Noah White).
+- --- :: Thomas Whitley, Summer Research Scholar (with Noah White).
+- --- :: Jia En Toh, Summer Research Scholar (with Noah White).
+- 2022 :: Oliver Bradley, Honours.
 - 2021 :: Zongpu Zhang, Honours.
 - 2020 :: Ben Leedom, Honours.
 - 2019 :: Diclehan Erdal, Masters.
-- --- :: Adwait Sengar, Masters, with Uri Onn.
+- --- :: Adwait Sengar, Masters (with Uri Onn).
 - --- :: Dhruva Kelkar, Future Research Scholar.
 - --- :: Sridhar Venkatesh, Future Research Scholar.
-- 2018 :: Sean Carroll, Summer Research Scholar, with Asilata Bapat.
-- --- :: Kyle Broder, Honours, with Alex Isaev.
-- --- :: Likun Yao, Honours, with Amnon Neeman.
+- 2018 :: Sean Carroll, Summer Research Scholar (with Asilata Bapat).
+- --- :: Kyle Broder, Honours (with Alex Isaev).
+- --- :: Likun Yao, Honours (with Amnon Neeman).
 :end:
 
 * Talks and presentations
@@ -225,12 +244,12 @@
             (type (org-entry-get nil "type"))
             (title (org-entry-get nil "ITEM"))
             (link (org-entry-get nil "link")))
-        (format "- %s :: %s. /%s/%s%s."
+        (format "- %s :: /%s/. %s%s%s."
                 (if (equal previous year)
                     "---"
                   (setq previous year))
-                (string-join (remove nil `(,institute ,place, meet)) ", ")
                 title
+                (string-join (remove nil `(,meet ,institute ,place)) ", ")
                 (if comment
                     (format " (%s)" comment)
                   "")
@@ -242,73 +261,84 @@
 
 #+RESULTS:
 :results:
-- 2022 :: Chennai Mathematical Institute, Chennai, India. /Carpentry, geometry, and category theory/.
-- --- :: Canberra, Australia, ANU Mathematics Extension Program. /Error correcting codes/ (expository).
-- --- :: Australian National University, Canberra, Australia. /How to count using equivariant cohomology/.
-- --- :: Tsinghua University (Online), Beijing, China. /Combinatorics and dynamics of Harder-Narasimhan filtrations/.
-- --- :: ICERM, Brown University, Providence, Rhode Island, Braids in Symplectic and Algebraic Geometry. /Braids and monodromy in algebraic geometry/ (preparatory talk for the conference).
-- --- :: Harvard University, Cambridge, Massachusetts. /How to count using equivariant cohomology/.
-- --- :: Brown University, Providence, Rhode Island. /Apparent boundaries of projective varieties/.
-- --- :: Institute for Computational and Experimental Research in Mathematics, Providence, Rhode Island, Braids in representation theory and algebraic combinatorics. /The geometry and combinatorics of Harder--Narasimhan filtrations/.
-- --- :: Bhaskaracharya Pratishthana, Pune, India, Trimester program on triangle groups, Belyi uniformization, and modularity. /The geometry of Fermat-like equations/ (expository).
-- 2021 :: Bhaskaracharya Pratishthana, Pune, India, Trimester program on triangle groups, Belyi uniformization, and modularity. /Algebraic curves and Belyi's theorem/ (expository).
-- --- :: Canberra, Australia, ANU Mathematics Extension Program. /Error correcting codes/ (expository).
-- --- :: Max Planck institute für Mathematics, Bonn, Germany, Workshop on compactifications of stability manifolds (Online). /A Thurston compactification of the space of stability conditions/.
-- --- :: Tata Institute of Fundamental Research (Online), Mumbai, India. /A Thurston compactification of the space of stability conditions/.
-- --- :: Jagiellonian University (Online), Kraków, Poland. /A Thurston compactification of the space of stability conditions/.
-- 2020 :: University of New England, Amidale, Australia, Topology session, AustMS (Online). /A Thurston compactification for categories/.
-- --- :: Mexico, Seminario nacional de geometria algebraica (Online joint seminar of multiple universities in Mexico). /Apparent boundaries of projective varieties/.
-- --- :: University of California (Online), San Diego, California. /Apparent boundaries of projective varieties/.
-- 2019 :: University of Sydney, Sydney, Australia, Workshop on triangulated categories in geometry and representation theory. /Groups, spherical twists, and stability conditions/ (part of a series with Asilata Bapat and Anthony Licata).
-- --- :: University of Sydney, Sydney, Australia, Birational geometry and moduli spaces. /Log surfaces of almost K3 type and curves of genus 4/.
-- --- :: Australian National University, Canberra, Australia, Women in mathematics day. /The work of Claire Voisin/ (expository).
-- 2018 :: University of Auckland, Auckland, New Zealand, Character varieties and topological quantum field theory. /Geometry of Hurwitz spaces/.
-- --- :: University of South Australia, Adelaide, Australia. /On the geometric Steinitz problem/.
-- --- :: Australian National University, Canberra, Australia, Colloquium. /The work of Caucher Birkar/ (expository).
-- --- :: Xiamen University, Xiamen, China, Algebraic surfaces and related topics. /Moduli of almost K3 log surfaces and curves of genus 4/.
-- --- :: Tata Institute of Fundamental Research, Mumbai, India. /How to count using (co)homology/ (expository).
-- --- :: Indian Institute of Science, Bengaluru, India. /What are ribbons and what do they tell us about Riemann surfaces/.
-- --- :: Monash University, Melbourne, Australia. /What are ribbons and what do they tell us about Riemann surfaces/.
-- --- :: Australian National University, Canberra, Australia. /On the critical loci of finite maps/.
-- --- :: MATRIX, Creswick, Victoria, Australia, Workshop on algebraic geometry approximation, and optimization. /Quadrature and algebraic geometry/.
-- 2017 :: University of North Carolina, Chapel Hill, North Carolina, Workshop on topics in algebraic geometry. /Vector bundles and finite covers/.
-- --- :: University of Georgia, Athens, Georgia. /Vector bundles and finite covers/.
-- --- :: Canada/USA Mathcamp, Tacoma, WA. /How to count using topology/ (expository).
-- --- :: Indian Institute of Science Education and Research, Pune, India. /Quivers and their representations/.
-- --- :: Emory University, Atlanta, Georgia. /Vector bundles and finite covers/.
-- 2016 :: Australian National University, Canberra, Australia. /Geometry of moduli spaces/.
-- --- :: Jeju Island, South Korea, Conference on moduli and birational geometry. /Vector bundles and finite covers/.
-- --- :: Indian Institute of Science Education and Research, Pune. /Vector bundles and finite covers/.
-- --- :: University of South Carolina, Columbia, South Carolina. /Ribbons and Green's conjecture/.
-- --- :: University of Georgia, Athens, Georgia. /Ribbons and Green's conjecture/.
-- --- :: Institute for Computational and Experimental Research in Mathematics, Providence, Rhode Island, Workshop on cycles on moduli spaces, geometric invariant theory, and dynamics. /Cycles on Hurwitz spaces/.
-- --- :: University of Georgia, Athens, Georgia. /The algebra of canonical curves and the geometry of their moduli space/.
-- --- :: Seattle, Washington, Higher genus curves and fibrations of higher genus curves in mathematical physics and arithmetic geometry II, AMS joint mathematics meetings. /Picard groups of Hurwitz spaces/.
-- --- :: Seattle, Washington, Moduli spaces in algebraic geometry I, AMS joint mathematics meetings. /Limits of plane quintics via covers of stacky curves/.
-- 2015 :: Northeastern University, Boston, Massachusetts, Boston College--Northeastern algebraic geometry conference. /Limits of plane quintics via covers of stacky curves/.
-- --- :: University of Utah, Salt Lake City, Utah, Summer institute in algebraic geometry. /Limits of plane quintics via covers of stacky curves/ (poster).
-- --- :: Daejeon, South Korea, SIAM applied algebraic geometry conference. /Syzygies of canonical curves and the geometry of \(\overline M_g\)/.
-- --- :: Mathematisches Forschungsinstitut Oberwolfach, Oberwolfach, Germany. /GIT stability of syzygies of curves/ (mini talk).
-- --- :: Purdue University, West Lafayette, Indiana. /Syzygies, GIT, and the moduli space of curves/.
-- --- :: Ohio State University, Columbus, Ohio. /Limits of plane curves via stacky branched covers/.
-- --- :: Harvard University, Cambridge, Massachusetts. /Syzygies, GIT, and the log minimal model program for \(\overline{M}_g\)/.
-- --- :: Courant Institute, New York University, New York City, New York. /Picard groups of Hurwitz spaces/.
-- --- :: Indian Institute for Science Research and Education, Pune, India. /The birational geometry of \(\overline M_g\)/.
-- --- :: Stony Brook University, Stony Brook, New York. /Syzygies of canonical curves and birational geometry of \(\overline M_g\)/.
-- 2014 :: University of Michigan, Ann Arbor, Michigan. /GIT stability of syzygies of canonical curves/.
-- --- :: Yale University, New Haven, Connecticut. /GIT stability of syzygies of canonical curves/.
-- --- :: Boston College, Boston, Massachusetts. /Towards GIT stability of syzygies of canonical curves/.
-- 2013 :: Postech, Pohang, Korea. /Towards GIT stability of syzygies of canonical curves/.
-- --- :: Philadelphia, Pennsylvania, Geometry of algebraic varieties, AMS sectional meeting. /Towards GIT stability of syzygies of canonical curves/.
-- --- :: Boston College, Boston, Massachusetts, Algebraic geometry northeastern series. /Sharp slope bounds for sweeping families of trigonal curves/ (poster).
-- --- :: Stanford University, Palo Alto, California. /Alternate compactifications of Hurwitz spaces/.
-- --- :: Princeton University, Princeton, New Jersey. /Compactifying spaces of branched covers/.
-- 2012 :: Rice University, Houston, Texas. /Alternate compactifications of Hurwitz spaces/.
-- 2011 :: Massachusetts Institute of Technology, Cambridge, Massachusetts. /Compactifications of Hurwitz spaces/.
-- --- :: Columbia University, New York City, New York. /Compactifications of Hurwitz spaces/.
-- --- :: Stony Brook University, Stony Brook, New York. /Compactifications of Hurwitz spaces/.
-- --- :: Brown University, Providence, Rhode Island. /Compactifications of Hurwitz spaces/.
-- --- :: Harvard University, Cambridge, Massachusetts, A celebration of algebraic geometry (conference for the 60th birthday of Joe Harris). /Birational geometry of the space of marked trigonal curves/ (poster).
+- 2025 :: /A Thurston compactification of the space of stability conditions/. Teichmuller theory and flat structures, MATRIX, Creswick, Australia.
+- --- :: /The enumerative geometry of orbit closures/. Pure mathematics seminar, University of Melbourne, Melbourne, Australia.
+- 2024 :: /How twisty is that orbit?/. Computations and applications of commutative algebra and algebraic geometry, NZMS-AustMS-AMS, Auckland, New Zealand.
+- --- :: /The work of Maryam Mirzakhani/. Women in maths day, Australian National University, Canberra, Australian.
+- --- :: /Papercraft/. ANU Mathematics Extension Program, Canberra, Australia (expository).
+- --- :: /The geometry of stability conditions/. Artin groups meet triangulated categories, Mathematisches Forschungsinstitut Oberwolfach, Oberwolfach, Germany.
+- --- :: /How to count using equivariant cohomology/. Workshop on computational and applied algebraic geometry, Isaac Newton Institute, Cambridge, UK.
+- --- :: /How to count using equivariant cohomology/. Imperial College, London, UK.
+- --- :: /Stability conditions, metrics, and compactifications/. School of Mathematics, Edinburgh, UK.
+- 2023 :: /Stability conditions, metrics, and compactifications (lecture series)/. Summer school 2023 on algebraic geometry: derived categories, stability conditions, and moduli, Technion, Haifa, Israel.
+- --- :: /Braids, automata, and the PL-sphere/. Braids: algebra and geometry, Australian National University, Canberra, Australia.
+- 2022 :: /Carpentry, geometry, and category theory/. Chennai Mathematical Institute, Chennai, India.
+- --- :: /Error correcting codes/. ANU Mathematics Extension Program, Canberra, Australia (expository).
+- --- :: /How to count using equivariant cohomology/. Australian National University, Canberra, Australia.
+- --- :: /Combinatorics and dynamics of Harder-Narasimhan filtrations/. Tsinghua University (Online), Beijing, China.
+- --- :: /Braids and monodromy in algebraic geometry/. Braids in Symplectic and Algebraic Geometry, ICERM, Brown University, Providence, Rhode Island (preparatory talk for the conference).
+- --- :: /How to count using equivariant cohomology/. Harvard University, Cambridge, Massachusetts.
+- --- :: /Apparent boundaries of projective varieties/. Brown University, Providence, Rhode Island.
+- --- :: /The geometry and combinatorics of Harder--Narasimhan filtrations/. Braids in representation theory and algebraic combinatorics, Institute for Computational and Experimental Research in Mathematics, Providence, Rhode Island.
+- --- :: /The geometry of Fermat-like equations/. Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana, Pune, India (expository).
+- 2021 :: /Algebraic curves and Belyi's theorem/. Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana, Pune, India (expository).
+- --- :: /Error correcting codes/. ANU Mathematics Extension Program, Canberra, Australia (expository).
+- --- :: /A Thurston compactification of the space of stability conditions/. Workshop on compactifications of stability manifolds (Online), Max Planck institute für Mathematics, Bonn, Germany.
+- --- :: /A Thurston compactification of the space of stability conditions/. Tata Institute of Fundamental Research (Online), Mumbai, India.
+- --- :: /A Thurston compactification of the space of stability conditions/. Jagiellonian University (Online), Kraków, Poland.
+- 2020 :: /A Thurston compactification for categories/. Topology session, AustMS (Online), University of New England, Amidale, Australia.
+- --- :: /Apparent boundaries of projective varieties/. Seminario nacional de geometria algebraica (Online joint seminar of multiple universities in Mexico), Mexico.
+- --- :: /Apparent boundaries of projective varieties/. University of California (Online), San Diego, California.
+- 2019 :: /Groups, spherical twists, and stability conditions/. Workshop on triangulated categories in geometry and representation theory, University of Sydney, Sydney, Australia (part of a series with Asilata Bapat and Anthony Licata).
+- --- :: /Log surfaces of almost K3 type and curves of genus 4/. Birational geometry and moduli spaces, University of Sydney, Sydney, Australia.
+- --- :: /The work of Claire Voisin/. Women in mathematics day, Australian National University, Canberra, Australia (expository).
+- 2018 :: /Geometry of Hurwitz spaces/. Character varieties and topological quantum field theory, University of Auckland, Auckland, New Zealand.
+- --- :: /On the geometric Steinitz problem/. University of South Australia, Adelaide, Australia.
+- --- :: /The work of Caucher Birkar/. Colloquium, Australian National University, Canberra, Australia (expository).
+- --- :: /Moduli of almost K3 log surfaces and curves of genus 4/. Algebraic surfaces and related topics, Xiamen University, Xiamen, China.
+- --- :: /How to count using (co)homology/. Tata Institute of Fundamental Research, Mumbai, India (expository).
+- --- :: /What are ribbons and what do they tell us about Riemann surfaces/. Indian Institute of Science, Bengaluru, India.
+- --- :: /What are ribbons and what do they tell us about Riemann surfaces/. Monash University, Melbourne, Australia.
+- --- :: /On the critical loci of finite maps/. Australian National University, Canberra, Australia.
+- --- :: /Quadrature and algebraic geometry/. Workshop on algebraic geometry approximation, and optimization, MATRIX, Creswick, Victoria, Australia.
+- 2017 :: /Vector bundles and finite covers/. Workshop on topics in algebraic geometry, University of North Carolina, Chapel Hill, North Carolina.
+- --- :: /Vector bundles and finite covers/. University of Georgia, Athens, Georgia.
+- --- :: /How to count using topology/. Canada/USA Mathcamp, Tacoma, WA (expository).
+- --- :: /Quivers and their representations/. Indian Institute of Science Education and Research, Pune, India.
+- --- :: /Vector bundles and finite covers/. Emory University, Atlanta, Georgia.
+- 2016 :: /Geometry of moduli spaces/. Australian National University, Canberra, Australia.
+- --- :: /Vector bundles and finite covers/. Conference on moduli and birational geometry, Jeju Island, South Korea.
+- --- :: /Vector bundles and finite covers/. Indian Institute of Science Education and Research, Pune.
+- --- :: /Ribbons and Green's conjecture/. University of South Carolina, Columbia, South Carolina.
+- --- :: /Ribbons and Green's conjecture/. University of Georgia, Athens, Georgia.
+- --- :: /Cycles on Hurwitz spaces/. Workshop on cycles on moduli spaces, geometric invariant theory, and dynamics, Institute for Computational and Experimental Research in Mathematics, Providence, Rhode Island.
+- --- :: /The algebra of canonical curves and the geometry of their moduli space/. University of Georgia, Athens, Georgia.
+- --- :: /Picard groups of Hurwitz spaces/. Higher genus curves and fibrations of higher genus curves in mathematical physics and arithmetic geometry II, AMS joint mathematics meetings, Seattle, Washington.
+- --- :: /Limits of plane quintics via covers of stacky curves/. Moduli spaces in algebraic geometry I, AMS joint mathematics meetings, Seattle, Washington.
+- 2015 :: /Limits of plane quintics via covers of stacky curves/. Boston College--Northeastern algebraic geometry conference, Northeastern University, Boston, Massachusetts.
+- --- :: /Limits of plane quintics via covers of stacky curves/. Summer institute in algebraic geometry, University of Utah, Salt Lake City, Utah (poster).
+- --- :: /Syzygies of canonical curves and the geometry of \(\overline M_g\)/. SIAM applied algebraic geometry conference, Daejeon, South Korea.
+- --- :: /GIT stability of syzygies of curves/. Mathematisches Forschungsinstitut Oberwolfach, Oberwolfach, Germany (mini talk).
+- --- :: /Syzygies, GIT, and the moduli space of curves/. Purdue University, West Lafayette, Indiana.
+- --- :: /Limits of plane curves via stacky branched covers/. Ohio State University, Columbus, Ohio.
+- --- :: /Syzygies, GIT, and the log minimal model program for \(\overline{M}_g\)/. Harvard University, Cambridge, Massachusetts.
+- --- :: /Picard groups of Hurwitz spaces/. Courant Institute, New York University, New York City, New York.
+- --- :: /The birational geometry of \(\overline M_g\)/. Indian Institute for Science Research and Education, Pune, India.
+- --- :: /Syzygies of canonical curves and birational geometry of \(\overline M_g\)/. Stony Brook University, Stony Brook, New York.
+- 2014 :: /GIT stability of syzygies of canonical curves/. University of Michigan, Ann Arbor, Michigan.
+- --- :: /GIT stability of syzygies of canonical curves/. Yale University, New Haven, Connecticut.
+- --- :: /Towards GIT stability of syzygies of canonical curves/. Boston College, Boston, Massachusetts.
+- 2013 :: /Towards GIT stability of syzygies of canonical curves/. Postech, Pohang, Korea.
+- --- :: /Towards GIT stability of syzygies of canonical curves/. Geometry of algebraic varieties, AMS sectional meeting, Philadelphia, Pennsylvania.
+- --- :: /Sharp slope bounds for sweeping families of trigonal curves/. Algebraic geometry northeastern series, Boston College, Boston, Massachusetts (poster).
+- --- :: /Alternate compactifications of Hurwitz spaces/. Stanford University, Palo Alto, California.
+- --- :: /Compactifying spaces of branched covers/. Princeton University, Princeton, New Jersey.
+- 2012 :: /Alternate compactifications of Hurwitz spaces/. Rice University, Houston, Texas.
+- 2011 :: /Compactifications of Hurwitz spaces/. Massachusetts Institute of Technology, Cambridge, Massachusetts.
+- --- :: /Compactifications of Hurwitz spaces/. Columbia University, New York City, New York.
+- --- :: /Compactifications of Hurwitz spaces/. Stony Brook University, Stony Brook, New York.
+- --- :: /Compactifications of Hurwitz spaces/. Brown University, Providence, Rhode Island.
+- --- :: /Birational geometry of the space of marked trigonal curves/. A celebration of algebraic geometry (conference for the 60th birthday of Joe Harris), Harvard University, Cambridge, Massachusetts (poster).
 :end:
 
 * Service
@@ -342,10 +372,13 @@
 
 #+RESULTS:
 :results:
-- * :: Refereed for Journal of the European Mathematical Society, Journal of Differential Geometry, Journal of Algebraic Geometry, Annales Scientifiques de l'École Normale Supérieure, Mathematische Annalen, Algebra and Number Theory, Journal für die reine und angewandte Mathematik, manuscripta mathematica, Advances in Geometry, Mathematical Research Letters, European Journal of Mathematics.
+- * :: Refereed for Journal of the European Mathematical Society, Journal of Differential Geometry, Journal of Algebraic Geometry, Annales Scientifiques de l'École Normale Supérieure, Mathematische Annalen, Algebra and Number Theory, Journal für die reine und angewandte Mathematik, manuscripta mathematica, Advances in Geometry, Mathematical Research Letters, European Journal of Mathematics, Journal de l'École polytechnique — Mathématiques, Experimental mathematics.
 - * :: Reviewed for Mathematical Reviews, American Mathematical Society.
 - 2021-- :: Convener for the Masters program, Mathematical Sciences Institute, Australian National University.
-- 2022 :: Co-organised the workshop /Braids in Symplectic and Algebraic Geometry/ Inanc Baykur, Benson Farb, Anthony Licata, and Ailsa Keating., Institute for Computational and Experimental Research in Mathematics (ICERM), Brown University.
+- * :: Headed the selection committee for the /Future research talent fellowship/.
+- * :: Served on the thesis committee of Kabeer Manali Rahul.
+- 2024 :: Co-organised the session /Computations and applications of commutative algebra and algebraic geometry/ at the joint /NZMS-AustMS-AMS/ meeting John Cobb, Sione Ma'u, and Hal Schenk, University of Auckland.
+- 2022 :: Co-organised the workshop /Braids in Symplectic and Algebraic Geometry/ Inanc Baykur, Benson Farb, Anthony Licata, and Ailsa Keating, Institute for Computational and Experimental Research in Mathematics (ICERM), Brown University.
 - 2021 :: Served on the award committee for the /BH Neumann prize/ for the best student talk, AustMS meeting.
 - 2020 :: Served on the thesis committee of Abhishek Bharadwaj, Mathematical Sciences Institute, Australian National University.
 - 2019 :: Served on the selection committee for the /Future research talent fellowship/, Mathematical Sciences Institute, Australian National University.

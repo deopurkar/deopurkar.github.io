@@ -37,6 +37,15 @@ We compute equivariant fundamental classes of orbits in GL(2)-representations. A
 :END:
   We compute the equivariant fundamental class of the orbit closure of a linear series on the projective line.  We also describe the boundary of the orbit closure and how the orbits specialise in one parameter families.
 
+* A universal formula for counting cubic surfaces
+:PROPERTIES:
+:with:     [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]]
+:journal:  Algebraic Geometry (to appear)
+:link:     [[https://arxiv.org/abs/2109.12672][arxiv]]
+:year:     2024
+:END:
+Using equivariant geometry, we find a universal formula that computes the number of times a general cubic surface arises in a family. As applications, we show that the PGL(4) orbit closure of a generic cubic surface has degree 96120, and that a general cubic surface arises 42120 times as a hyperplane section of a general cubic 3-fold.
+
 * Spherical objects and stability conditions on CY2 quiver categories    
 :PROPERTIES:
 :with:     [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
@@ -54,15 +63,6 @@ Consider a 2-Calabi--Yau triangulated category with a Bridgeland stability condi
 :year:     2022
 :END:
 Motivated by the problem of finding algebraic constructions of finite coverings in commutative algebra, the Steinitz realization problem in number theory, and the study of Hurwitz spaces in algebraic geometry, we investigate the vector bundles underlying the structure sheaf of a finite flat branched covering. We prove that, up to a twist, every vector bundle on a smooth projective curve arises from the direct image of the structure sheaf of a smooth, connected branched cover.
-
-* A universal formula for counting cubic surfaces                        :pp:
-:PROPERTIES:
-:with:     [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]]
-:journal:  Pre-print
-:link:     [[https://arxiv.org/abs/2109.12672][arxiv]]
-:year:     2021
-:END:
-Using equivariant geometry, we find a universal formula that computes the number of times a general cubic surface arises in a family. As applications, we show that the PGL(4) orbit closure of a generic cubic surface has degree 96120, and that a general cubic surface arises 42120 times as a hyperplane section of a general cubic 3-fold.
 
 * Stable log surfaces, admissible covers, and canonical curves of genus 4
 :PROPERTIES:

@@ -12,13 +12,13 @@
 :end:
 
 * Headed the selection committee for the /Future research talent fellowship/
-:propertes:
+:properties:
 :year: 2025
 :institute: Australian National University
 :end:
 
 * Served on the thesis committee of Kabeer Manali Rahul
-:propertes:
+:properties:
 :year: 2025
 :institute: Australian National University
 :end:

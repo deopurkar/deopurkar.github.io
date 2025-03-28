@@ -44,7 +44,7 @@
 :year: 2007, 2005, 2004
 :org: William Lowell Putnam competition
 :end:
-* Silver medal (2004), bronze medal (2003)
+* Silver medal (2004), bronze medal (2003)                             :nocv:
 :properties:
 :year:     2004, 2003
 :org: International mathematical olympiad
