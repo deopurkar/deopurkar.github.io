@@ -1,3 +1,9 @@
+* Algebra 2
+:PROPERTIES:
+:institute: Australian National University
+:year:     2025
+:END:
+
 * [[https://github.com/deopurkar/ggm2024][Games, graphs, and machines]] :hl:
 :PROPERTIES:
 :institute: Australian National University
