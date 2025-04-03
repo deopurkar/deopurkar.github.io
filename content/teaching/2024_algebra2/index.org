@@ -1,7 +1,10 @@
-# Created 2025-04-03 Thu 16:02
-#+options: toc:nil ':t tags:nil broken-links:ignore
+# Created 2025-04-03 Thu 22:13
+#+options: toc:nil ':t tags:nil broken-links:ignore prop:t
 #+title: 2024 Algebra 2
 #+author: Anand Deopurkar
+:PROPERTIES:
+:ID:       c90337d7-7033-4cce-9546-c18524d48edd
+:END:
 #+tags: teaching(t) admin(a)
 #+archive: ::* Finished tasks
 #+filetags: teaching 2024algebra2
@@ -9,33 +12,22 @@
 #+bind: org-export-use-babel nil
 #+export_file_name: ~/website/content/teaching/2024_algebra2/index.org
 #+exclude_tags: solution solutions noexport
+These are the course materials for MATH3345/6205 /Advanced Algebra 2: Fields and Galois Theory/ as taught at the ANU in 2024.
 * Wattle
 :PROPERTIES:
 :html_headline_class: collapsed
 :END:
 ** Course contacts
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 - Lecturer :: Anand Deopurkar <anand.deopurkar@anu.edu.au>
 - Demonstrator :: Alexander Lai De Oliveira <Alexander.LaiDeOliveira@anu.edu.au>
 ** Course information
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 In this course, we will use algebraic structures like groups and rings to study fundamental questions about numbers, functions, and shapes.
 *** Textbook
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 /Algebra/ by Michael Artin (2nd edition)
 *** Lectures, workshops, and office hours
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 - Lecture 1 :: Mon 9am--10am
 - Lecture 2 :: Tue 4pm--5pm
@@ -45,18 +37,12 @@ In this course, we will use algebraic structures like groups and rings to study 
 
 Workshops will start in week 2.
 *** Assessment
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 1. Bi-weekly problem sets: 30%
 2. Bi-weekly in class quizzes: 10%
 3. Midsemester exam: 30%
 4. Final exam: 30%
 **** Quizzes
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 The in-class quizzes will have an individual and a group component.
 You will do a set of questions on your own (15-20 minutes).
@@ -68,21 +54,12 @@ What is the point of the group component?
 Making correct arguments and catching wrong arguments is an essential part of mathematics.
 My hope is that you will spend the group component to convince each other of your answers, and in that process, hone your skills of argumentation. 
 **** Hurdles
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Passing the mid-semester and the final exam (at least 50%) are hurdles to pass the course.
 *** Collaboration policy
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 You are encouraged to discuss the course material and the homework with others, but *you must write-up your homework on your own*.  If you work with other students, or get any external help, you *must acknowledge it in your homework* by writing, for example, "I collaborated with ---- and ---- on this problem set" or "I benefited from ---- page from MathOverFlow for problem 3" or "ChatGPT told me the following answer"  (be very careful, though, as ChatGPT is often confidently wrong about mathematics!)
 *** Course plan
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 #+begin: org
 | Week                 | Topic                                              | Reference        |
@@ -101,13 +78,7 @@ You are encouraged to discuss the course material and the homework with others, 
 | [[Week 12][Week 12]] | Solvability, Constructibility revisited            | 16.12            |
 #+end:
 ** Announcements
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 *** Quiz 1
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 We will have quiz 1 in workshops this week.  The format of the quiz is as follows.  You will have 15-20 minutes to do the quiz individually.  You will then randomly divide into groups of 3 and will do the same quiz in groups for 15-20 minutes.  We will then discuss the quiz together for the rest of the time.
 
@@ -139,21 +110,20 @@ Which of the following rings are fields? (You may assume that \(\pi \in \mathbb{
 :END:
 ** Homework 1
 :PROPERTIES:
-:html_headline_class: collapsed
+:EXPORT_FILE_NAME: 2024algebra2p/homework/hw01.pdf
+:EXPORT_OPTIONS: toc:nil ':t
+:EXPORT_AUTHOR: 
+:export_latex_class: amsart
+:export_exclude_tags: solution
+:EXPORT_DATE: 
 :END:
 This homework is due by Friday, 8 March, 11:59pm on Gradescope.
 *** Problem 1 (15.1.1)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(R\) be an integral domain that contains a field \(F\) as a sub-ring.
 Assume that \(R\) is finite dimensional when viewed as a vector space over \(F\).
 Prove that \(R\) is a field.
 *** Problem 2 (15.2.1)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(\alpha\) be a complex root of the irreducible polynomial \(x^{3}-3x+4\) in \(\mathbf{Q}[x]\).
 Find the inverse of \(\alpha^2+\alpha+1\) in the form \(a + b \alpha + c \alpha^{2}\) with \(a, b, c \in \mathbf{Q}\).
@@ -162,9 +132,6 @@ The particular polynomial and element are not important.
 In fact, it is very likely that your method works in general.
 But you do not have to explain a general method.
 *** Problem 3 (15.2.3)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(\beta = \omega \sqrt[3]{2}\), where \(\omega = e^{2\pi i / 3}\) and let \(K = \mathbf{Q}[\beta] \subset \mathbf{C}\).
 Let \(k\) be a positive integer.
@@ -173,17 +140,15 @@ Prove that the equation
 has no solution with \(x_1, \dots, x_{k} \in K\).
 *** Problem 4 (15.3.5)
 :PROPERTIES:
-:html_headline_class: collapsed
+:ID:       2c9c1c40-eca4-4afe-a94c-6c9fead706fa
 :END:
+
 For a positive integer \(n\), set \(\zeta_{n} = e^{2\pi i / n}\).
 Find all values of \(n\) such that \(\zeta_{n}\) has degree at most 3 over \(\mathbf{Q}\).
 
 You may use (without having to prove it) that for a prime number \(p\), the degree of \(\zeta_p\) over \(\mathbf{Q}\) is \(p-1\), and its minimal polynomial is
 \[x^{p-1}+ x^{p-2} + \cdots + x + 1.\]
 *** Problem 5 (15.3.7)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 1. Is \(i\) in \(\mathbf{Q}[\sqrt[4]{-2}]\)?
 2. Is \(\sqrt[3]5\) in \(\mathbf{Q}[\sqrt[3]2]\)?
@@ -193,20 +158,19 @@ You may assume that \(x^3-5\) and \(x^3-2\) are irreducible over \(\mathbf{Q}\).
 If it helps you, feel free to assume that \(x^n \pm p\) is irreducible over \(\mathbf{Q}\) for any \(n\) and for any prime number \(p\).
 ** Homework 2
 :PROPERTIES:
-:html_headline_class: collapsed
+:EXPORT_FILE_NAME: 2024algebra2p/homework/hw02.pdf
+:EXPORT_OPTIONS: toc:nil ':t
+:EXPORT_AUTHOR: 
+:export_latex_class: amsart
+:export_exclude_tags: solution
+:EXPORT_DATE: 
 :END:
 This homework is due by Friday, 22 March, 11:59pm on Gradescope.
 *** Problem 1 (15.4.1)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(K = \mathbf{Q}(\alpha)\) where \(\alpha\) is a complex root of \(x^3-x-1\).
 Determine the irreducible polynomial for \(\gamma = 1 + \alpha^2\) over \(\mathbf{Q}\).
 *** Problem 2 (15.5.2(a))
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 For this problem, first go through Section 5 (Construction with Ruler and Compass) to understand the proof of the following theorem (converse of what we did in class).
 
@@ -223,9 +187,6 @@ Then \(p\) is constructible by ruler and compass starting with \((0,0)\) and \((
 Prove that a regular 5-gon is constructible by ruler and compass.
 That is, prove that \((\cos (2\pi/5), \sin (2\pi/5))\) is constructible by ruler and compass starting with \((0,0)\) and \((0,1)\).
 *** Problem 3 (15.6.2 modified)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 For this problem, first understand the proof of Proposition 15.3.3.
 
@@ -239,15 +200,9 @@ For this problem, first understand the proof of Proposition 15.3.3.
 Let \(m, n \in \mathbf{Z}\).
 Determine when \(\mathbf{Q}(\sqrt m)\) and \(\mathbf{Q}(\sqrt n)\) are isomorphic.
 *** Problem 4 (15.10.1)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Prove that the subset of \(\mathbf{C}\) consisting of the algebraic numbers is algebraically closed.
 *** Problem 5 (15.7.8)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 The polynomials \(f(x) = x^3 + x + 1\) and \(g(x) = x^3 + x^2 + 1\) are irreducible over \(\mathbf{F}_2\).
 Let \(K = \mathbf{F}_2[x]/(f(x))\) and \(L = \mathbf{F}_2[y]/g(y)\).
@@ -255,19 +210,18 @@ Describe explicitly an isomorphism from \(K \to L\).
 Determine the number of isomorphisms from \(K \to L\).
 ** Homework 3
 :PROPERTIES:
-:html_headline_class: collapsed
+:EXPORT_FILE_NAME: 2024algebra2p/homework/hw03.pdf
+:EXPORT_OPTIONS: toc:nil ':t tags:nil
+:EXPORT_AUTHOR: 
+:export_latex_class: amsart
+:export_exclude_tags: solution
+:EXPORT_DATE: 
 :END:
 This homework is due by Friday, 19 April, 11:59pm on Gradescope.
 *** Problem 1 (15.7.6)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Factor the polynomial \(x^{16}-x\) over a field of size \(4\) and a field of size \(8\).
 *** Problem 2 (Presentations)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(R \subset S\) be an inclusion of rings.
 Suppose we have an isomorphism
@@ -286,9 +240,6 @@ This is because a ring homomorphism \(R[x_1,\dots,x_n] \to A\) extending \(i\) i
 
 2. Do the same for \(\mathbf{Q}[\sqrt 2, \sqrt 3]\) over \(\mathbf{Q}\).
 *** Problem 3 (Automorphisms 1)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(p\) be a prime number and set \(\zeta_p = e^{2\pi i / p}\).
 Let \(F = \mathbf{Q}[\zeta_p]\).
@@ -297,9 +248,6 @@ Find all automorphisms
 Describe the automorphism group \(\operatorname{Aut}(F)\).
 (This is the group consisting of automorphisms \(F \to F\) with composition as the group law.)
 *** Problem 4 (Automorphisms 2)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(F = \mathbf{Q}[\zeta_p]\), as before.
 Let \(K = F[2^{1/p}]\).
@@ -307,45 +255,35 @@ Find all automorphisms \(\phi \colon K \to K\).
 How many are there?
 How many restrict to the identity on \(F\)?
 *** Problem 5
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(K\) be a field of size \(p^n\).
 How many elements of \(K\) are perfect squares?
 Generalise your answer to perfect \(d\)-th powers.
 ** Homework 4
 :PROPERTIES:
-:html_headline_class: collapsed
+:EXPORT_FILE_NAME: 2024algebra2p/homework/hw04.pdf
+:EXPORT_OPTIONS: toc:nil ':t tags:nil
+:EXPORT_AUTHOR: 
+:export_latex_class: amsart
+:export_exclude_tags: solution
+:EXPORT_DATE: 
 :END:
 This homework is due by Friday, 3 May, 11:59pm on Gradescope.
 *** Problem 1  (16.3.2)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Determine the degrees of the splitting fields of the following polynomials over \(\mathbf{Q}\):
 1. \(x^3-2\)
 2. \(x^4-1\)
 3. \(x^4+1\)
 *** Problem 2 (16.6.2)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(K = \mathbf{Q}[\sqrt 2, \sqrt 3, \sqrt 5]\).
 Determine \(\deg K / \mathbf{Q}\), prove that \(K/ \mathbf{Q}\) is a Galois extension, and determine its Galois group.
 *** Problem 3
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(p\) be an odd prime number and \(K = \mathbf{Q}[\zeta_{p}]\).
 Prove that \(K\) contains a unique degree 2 extension of \(\mathbf{Q}\).
 *** Problem 4
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Find quartic polynomials in \(\mathbf{Q}[x]\) whose Galois group is isomorphic to:
 1. The Dihedral group \(D_4\) (of order 8)
@@ -353,16 +291,10 @@ Find quartic polynomials in \(\mathbf{Q}[x]\) whose Galois group is isomorphic t
 
 *Remark*: The general version of the above problem is a longstanding open problem called the /Inverse Galois Problem/: given a finite group \(G\), does there always exist a polynomial in \(\mathbf{Q}[x]\) with Galois group isomorphic to \(G\)?
 *** Problem 5
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(\delta \in \mathbf{Q}\) be such that \(\mathbf{Q}[\sqrt \delta]\) is the unique degree 2 extension of \(\mathbf{Q}\) contained in \(\mathbf{Q}[\zeta_{p}]\).
 For \(p = 7\), find \(\delta\).
 *** Optional (Do not turn in)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 This is a continuation of the last problem.
 You should now know the subfield \(\mathbf{Q}[\sqrt \delta] \subset \mathbf{Q}[\zeta_p]\) for \(p = 3, 5, 7\).
@@ -371,7 +303,13 @@ Based on this data, make a conjecture for an arbitrary odd prime \(p\).
 Then try to prove the conjecture.
 ** Homework 5
 :PROPERTIES:
-:html_headline_class: collapsed
+:EXPORT_FILE_NAME: 2024algebra2p/homework/hw05.pdf
+:EXPORT_OPTIONS: toc:nil ':t tags:nil
+:EXPORT_AUTHOR: 
+:export_latex_class: amsart
+:export_latex_header_extra: \usepackage{fullpage}
+:export_exclude_tags: solution
+:EXPORT_DATE: 
 :END:
 /This homework is due by Friday, May 24, 11:59pm on Gradescope.  This is the last homework set, so I have given 3 weeks./
 \bigskip
@@ -382,9 +320,6 @@ More precisely, \(\alpha \in \mathbf{C}\) is a /nested square root/ if there exi
 such that each \(F_{i+1}/F_{i}\) is a quadratic extension and \(\alpha \in F_{n}\).
 A nested square root is also called a /constructible number/ because these are precisely the complex numbers that can be constructed with a ruler and compass, starting with the two points \(0\) and \(1\).
 *** Problem 1  (16.9.3 modified)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Some nested square roots can be de-coupled to a linear combination of simple square roots.
 For example, we have
@@ -395,9 +330,6 @@ Prove that \(\alpha = \sqrt{1 + \sqrt 3}\) cannot be written as a sum
 
 *Hint*. Compare the Galois group of the minimal polynomial of \(\alpha\) over \(\mathbf{Q}\) and the Galois group of \(\mathbf{Q}[\sqrt{a_1}, \dots, \sqrt{a_n}] / \mathbf{Q}.\)
 *** Problem 2
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(\alpha \in \mathbf{C}\) be a nested square root.
 Let \(G\) be the Galois group of the minimal polynomial of \(\alpha\) over \(\mathbf{Q}\).
@@ -405,9 +337,6 @@ Prove that the order of \(G\) is a power of \(2\).
 
 *Caution*. Make sure that the extension you are considering is Galois!
 *** Problem 3
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Prove the converse to the problem before: if \(\alpha \in \mathbf{C}\) is such that its minimal polynomial over \(\mathbf{Q}\) has Galois group whose order is a power of 2, then \(\alpha\) is a nested square root.
 As an application, show that if \(p\) is a prime number of the form \(2^n+1\), then \(\zeta_p\) is a nested square root.
@@ -418,17 +347,11 @@ With this, we have completed a proof of the following.\\
 In this problem, you may use the following fact from group theory without proof. \\
 *Theorem*. Let \(p\) be a prime and \(G\) a group of order \(p^{n}\) for \(n \geq 1\).  Then \(G\) contains a normal subgroup of index \(p\).
 *** Problem 4
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Determine the Galois group of the polynomial \(x^6+3\) over the base fields
 1. \(F = \mathbf{Q}\)
 2. \(F = \mathbf{Q}[\zeta_3]\).
 *** Problem 5 (16.12.7)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Find a polynomial of degree \(7\) over \(\mathbf{Q}\) whose Galois group is \(S_7\).
 
@@ -439,12 +362,15 @@ Find a polynomial of degree \(7\) over \(\mathbf{Q}\) whose Galois group is \(S_
 :END:
 ** Workshop 1
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_latex_class: amsart
+:EXPORT_AUTHOR: 2024 Algebra 2
+:EXPORT_OPTIONS: toc:nil ':t tags:nil
+:EXPORT_FILE_NAME: 2024algebra2p/workshops/ws01sol.pdf
+:export_latex_class_options: [12pt]
+:export_exclude_tags: 
+:EXPORT_DATE: 
 :END:
 *** Degree of \(\mathbf{Q}(\cos (2\pi/p))\)?
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 \noindent
 Let \(p\) be a prime number.
@@ -457,9 +383,6 @@ What is the degree of \(\mathbf{Q}(\cos (2\pi/p))\) over \(\mathbf{Q}\)?
 
 Use that \(\mathbf{Q}(\cos(2\pi/p) + i \sin(2\pi/p))\) has degree \((p-1)\) over \(\mathbf{Q}\) and it contains \(\mathbf{Q}(\cos(2\pi/p))\).
 *** Most angles cannot be trisected
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 See if you can prove the following theorem.
 
@@ -485,20 +408,20 @@ Using the ideas in class, move through irreducibility in \(\mathbf{Q}(x)[y]\), i
 Finall conclude that over \(\mathbf{Q}(\cos(t), \sin(t))\) also \(\cos(t/3)\) must have degree 3.
 ** Workshop 2
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_latex_class: amsart
+:EXPORT_AUTHOR: 2024 Algebra 2
+:EXPORT_OPTIONS: toc:nil ':t tags:nil
+:EXPORT_FILE_NAME: 2024algebra2p/workshops/ws02sol.pdf
+:export_latex_class_options: [12pt]
+:export_exclude_tags: 
+:EXPORT_DATE: 
 :END:
 *** Factorisation in a finite field
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 The polynomial \(f(x) = x^3+x+1 \in \mathbf{F}_5[x]\) is irreducible.
 Let \(K = \mathbf{F}[t]/(f(t))\).
 Find the irreducible factorisation of \(f(x)\) in \(K[x]\).
 *** Conjugates
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(F \subset K\) be a field extension.
 We say that \(\alpha, \beta \in K\) are /conjugates/ over \(F\) if they have the same minimal polynomial over \(F\).
@@ -511,9 +434,6 @@ Let \(\phi \colon K \to K\) be the Frobenius map.
    Prove that the conjugates of \(a \in L\) over \(K\) are \(a, \phi^n(a), \phi^{2n}(a), \dots\).
 4. What is the analogue of (2) in this situation?
 *** Factorisation, once again
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(f(x) \in \mathbf{F}_p[x]\) be irreducible of degree \(18\).
 Let \(\mathbf{F}_p \subset K\) be an extension of degree \(4\).
@@ -523,8 +443,15 @@ How does \(f(x)\) factorise in \(K[x]\)?
 *Hint*.  Let \(K \subset L\) be an extension of degree 9, so that \(\mathbf{F}_p \subset L\) is of degree 36.  First factorise \(f(x)\) in \(L\) and then "collect the conjugates" over \(K\).
 ** Workshop 3
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_latex_class: amsart
+:EXPORT_AUTHOR: 2024 Algebra 2
+:EXPORT_OPTIONS: toc:nil ':t tags:nil
+:EXPORT_FILE_NAME: 2024algebra2p/workshops/ws03.pdf
+:export_latex_class_options: [12pt]
+:export_exclude_tags: solution
+:EXPORT_DATE: 
 :END:
+
 Consider the extension \(\mathbf{Q} \subset \mathbf{Q}[e^{2\pi/3}, 2^{1/3}] = F\).
 This is a Galois extension, which means that the main theorem of Galois theory applies.
 
@@ -549,8 +476,15 @@ This is not too hard to prove, but you may proceed without proving it.
    \[ F^H = \{x \in F \mid \sigma (x) = x \text{ for all } \sigma \in H\}.\]
 ** Workshop 4
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_latex_class: amsart
+:EXPORT_AUTHOR: 2024 Algebra 2
+:EXPORT_OPTIONS: toc:nil ':t tags:nil
+:EXPORT_FILE_NAME: 2024algebra2p/workshops/ws04sol.pdf
+:export_latex_class_options: [12pt]
+:export_exclude_tags: 
+:EXPORT_DATE: 
 :END:
+
 In this workshop, we explore the theme of roots, coefficients, and symmetry.
 
 1. Let
@@ -583,8 +517,16 @@ In this workshop, we explore the theme of roots, coefficients, and symmetry.
    You may find it helpful to consult Wikipedia for the formula for the discriminant of a cubic.
 ** Workshop 5
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_latex_class: amsart
+:EXPORT_AUTHOR: 2024 Algebra 2
+:EXPORT_OPTIONS: toc:nil ':t tags:nil
+:EXPORT_FILE_NAME: 2024algebra2p/workshops/ws05sol.pdf
+:export_latex_class_options: [12pt]
+:export_latex_header_extra: \usepackage{fullpage}
+:export_exclude_tags: 
+:EXPORT_DATE: 
 :END:
+
 In this workshop, we will learn how to find Galois groups of irreducible quartic polynomials, up to a small ambiguity.
 We fix a base field \(F\) of characteristic 0 and an irreducible \(f(x) \in F[x]\) of degree 4.
 Let \(G\) be the Galois group of \(f(x)\).
@@ -600,9 +542,6 @@ For your convenience, here is a list of transitive subgroups of \(S_{4}\) with t
 | \(V = \{e,(12)(34), (14)(23), (13)(24) \}\) |     4 |
 |---------------------------------------------+-------|
 **** Problem 1
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Say \(f(x)\) is a quartic with roots \(\alpha_1, \dots, \alpha_4\).
 The resolvent cubic \(g(x)\) is the cubic with roots 
@@ -613,15 +552,9 @@ The resolvent cubic \(g(x)\) is the cubic with roots
 \end{align*}
 Check that \(f(x)\) and \(g(x)\) have the same discriminant.
 **** Problem 2
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Prove that the discriminant is a square in \(F\) if and only if \(G \subset A_4\).
 **** Problem 3
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Justify the following table (as much as you can) about the Galois group.
 Use the following observations.
@@ -645,8 +578,15 @@ with kernel \(\operatorname{Aut}(K/L)\).
 :END:
 ** Quiz 1 (version 1)
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_title: Quiz 1
+:export_author: Algebra 2, 2024
+:export_latex_class: amsart
+:EXPORT_OPTIONS: toc:nil ':t
+:EXPORT_FILE_NAME: qz1_1
+:export_latex_class_options: [12pt]
+:EXPORT_DATE: 
 :END:
+
 *Name:*
 
 \vspace{1cm}
@@ -666,8 +606,15 @@ with kernel \(\operatorname{Aut}(K/L)\).
 2. What is the degree of \(\sqrt  2 + i\) over \(\mathbf{Q}[\sqrt 2]\)?
 ** Quiz 1 (version 2)
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_latex_class: amsart
+:export_title: Quiz 1
+:export_author: Algebra 2, 2024
+:EXPORT_OPTIONS: toc:nil ':t
+:EXPORT_FILE_NAME: qz1_2
+:export_latex_class_options: [12pt]
+:EXPORT_DATE: 
 :END:
+
 \noindent
 *Name:*
 
@@ -700,8 +647,16 @@ with kernel \(\operatorname{Aut}(K/L)\).
    \bigskip
 ** Quiz 2 (version 1)
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_title: Quiz 2
+:export_author: Algebra 2, 2024
+:export_latex_class: amsart
+:EXPORT_OPTIONS: toc:nil ':t
+:EXPORT_FILE_NAME: qz2_1
+:export_latex_class_options: [12pt]
+:export_latex_header_extra: \usepackage{fullpage}
+:EXPORT_DATE: 
 :END:
+
 \vspace{1cm}
 
 \noindent
@@ -710,9 +665,6 @@ with kernel \(\operatorname{Aut}(K/L)\).
 
 \vspace{1cm}
 *** Question 1
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Write down an irreducible polynomial of degree 3 in \(\mathbf{Z}/5 \mathbf{Z}[x]\).
 
@@ -721,9 +673,6 @@ Write down an irreducible polynomial of degree 3 in \(\mathbf{Z}/5 \mathbf{Z}[x]
 
 \vspace{1cm}
 *** Question 2
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(f(x) \in \mathbf{Q}[x]\) be irreducible of degree 6.
 Let \(K = \mathbf{Q}[\sqrt 2]\).
@@ -737,8 +686,16 @@ Which of the following are possible irreducible factorisations of \(f(x)\) in \(
 - [ ] Product of six (Degree 1).
 ** Quiz 2 (version 2)
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_title: Quiz 2
+:export_author: Algebra 2, 2024
+:export_latex_class: amsart
+:EXPORT_OPTIONS: toc:nil ':t
+:EXPORT_FILE_NAME: qz2_2
+:export_latex_class_options: [12pt]
+:export_latex_header_extra: \usepackage{fullpage}
+:EXPORT_DATE: 
 :END:
+
 \vspace{1cm}
 
 \noindent
@@ -747,9 +704,6 @@ Which of the following are possible irreducible factorisations of \(f(x)\) in \(
 
 \vspace{1cm}
 *** Question 1
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Which of the following are irreducible in \(\mathbf{F}_5[x]\):\\
 
@@ -758,9 +712,6 @@ Which of the following are irreducible in \(\mathbf{F}_5[x]\):\\
 - [ ] \(x^4+1\)\\
 - [ ] \(x^5+1\)\\
 *** Question 2
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(K = \mathbf{Q}[\sqrt 2]\).
 Write an irreducible polynomial of degree \(11\) in \(K[x]\).
@@ -771,8 +722,15 @@ Write an irreducible polynomial of degree \(11\) in \(K[x]\).
 \vspace{1cm}
 ** Quiz 3 (version 1)
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_title: Quiz 3
+:export_author: Algebra 2, 2024
+:export_latex_class: amsart
+:EXPORT_OPTIONS: toc:nil ':t
+:EXPORT_FILE_NAME: qz3_1
+:export_latex_class_options: [12pt]
+:export_latex_header_extra: \usepackage{fullpage}
 :END:
+
 \vspace{1cm}
 
 \noindent
@@ -781,9 +739,6 @@ Write an irreducible polynomial of degree \(11\) in \(K[x]\).
 
 \vspace{1cm}
 *** Question 1
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(F\) be a field of size \(3^{10} = 59049\).
 How many subfields does \(F\) have?
@@ -793,9 +748,6 @@ How many subfields does \(F\) have?
 
 \vspace{1cm}
 *** Question 2
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 Let \(F = \mathbf{F}_2[a]/(a^2+a+1)\) and \(K = \mathbf{F}_2[b]/(b^4+b+1)\).
 Describe a ring homomorphism \(F \to K\) by writing down where it sends \(a\) in the box below.
 If there is no ring homomorphism \(F \to K\), write "DNE".
@@ -806,8 +758,15 @@ If there is no ring homomorphism \(F \to K\), write "DNE".
 \vspace{3cm}
 ** Quiz 3 (version 2)
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_title: Quiz 3
+:export_author: Algebra 2, 2024
+:export_latex_class: amsart
+:EXPORT_OPTIONS: toc:nil ':t
+:EXPORT_FILE_NAME: qz3_2
+:export_latex_class_options: [12pt]
+:export_latex_header_extra: \usepackage{fullpage}
 :END:
+
 \vspace{1cm}
 
 \noindent
@@ -816,9 +775,6 @@ If there is no ring homomorphism \(F \to K\), write "DNE".
 
 \vspace{1cm}
 *** Question 1
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(F\) be a field of size \(27\).  Consider the two statements:
 1. \(a \in F\) generates the multiplicative group \(F^{\times}\).
@@ -832,9 +788,6 @@ Pick the most accurate option:\\
 
 - [ ] (1) and (2) are equivalent.
 *** Question 2
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(K = \mathbf{F}_2[a]/(a^4+a+1)\).
 Write down an element of \(K\) that has degree 2 over \(\mathbf{F}_2\).
@@ -846,8 +799,15 @@ If no such element exists, write "DNE".
 \vspace{3cm}
 ** Quiz 4 (version 1)
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_title: Quiz 4
+:export_author: Algebra 2, 2024
+:export_latex_class: amsart
+:EXPORT_OPTIONS: toc:nil ':t
+:EXPORT_FILE_NAME: qz4_1
+:export_latex_class_options: [12pt]
+:export_latex_header_extra: \usepackage{fullpage}
 :END:
+
 \vspace{1cm}
 
 \noindent
@@ -856,9 +816,6 @@ If no such element exists, write "DNE".
 
 \vspace{1cm}
 *** Question 1
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 Which of the following extensions are splitting fields?
 
 1. \(\mathbf{Q} \subset \mathbf{Q}[\sqrt n \mid n = 2, \dots, 2024]\)\\
@@ -878,9 +835,6 @@ Which of the following extensions are splitting fields?
 
    \(\square\) Splitting field \qquad \(\square\)   Not a splitting field \\
 *** Question 2
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(\alpha, \beta \in \mathbf{C}\) have minimal polynomials \(p(x)\) and \(q(x)\) over \(\mathbf{Q}\).
 True or false: We always have an isomorphism \(\mathbf{Q}[x,y]/(p(x), q(y)) \cong \mathbf{Q}[\alpha,\beta]\).\\
@@ -888,8 +842,15 @@ True or false: We always have an isomorphism \(\mathbf{Q}[x,y]/(p(x), q(y)) \con
 \(\square\) True \qquad \(\square\)   False \\
 ** Quiz 4 (version 2)
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_title: Quiz 4
+:export_author: Algebra 2, 2024
+:export_latex_class: amsart
+:EXPORT_OPTIONS: toc:nil ':t
+:EXPORT_FILE_NAME: qz4_2
+:export_latex_class_options: [12pt]
+:export_latex_header_extra: \usepackage{fullpage}
 :END:
+
 \vspace{1cm}
 
 \noindent
@@ -898,9 +859,6 @@ True or false: We always have an isomorphism \(\mathbf{Q}[x,y]/(p(x), q(y)) \con
 
 \vspace{1cm}
 *** Question 1
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 Find the degree of the following splitting fields:
 
 1. The splitting field of \(x^4-x^2-x+2\) over \(\mathbf{F}_5\).  (This is an irreducible polynomial.)
@@ -911,9 +869,6 @@ Find the degree of the following splitting fields:
 
    \vspace{3cm}
 *** Question 2
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(\alpha, \beta \in \mathbf{C}\) have minimal polynomials \(p(x)\) and \(q(x)\) over \(\mathbf{Q}\).
 Give an example of \(\alpha\) and \(\beta\) for which the ring homomorphism
@@ -922,8 +877,15 @@ that sends \(x\) to \(\alpha\) and \(y\) to \(\beta\) is \emph{not} an isomorphi
 ("DNE" if there is no such example).
 ** Quiz 5 (version 1)
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_title: Quiz 5
+:export_author: Algebra 2, 2024
+:export_latex_class: amsart
+:EXPORT_OPTIONS: toc:nil ':t
+:EXPORT_FILE_NAME: qz5_1
+:export_latex_class_options: [12pt]
+:export_latex_header_extra: \usepackage{fullpage}
 :END:
+
 \vspace{1cm}
 
 \noindent
@@ -932,9 +894,6 @@ that sends \(x\) to \(\alpha\) and \(y\) to \(\beta\) is \emph{not} an isomorphi
 
 \vspace{1cm}
 *** Question 1
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 1. Does there exist an irreducible polynomial of degree 4 in \(\mathbf{Q}[x]\) whose Galois group is isomorphic to \(C_2 \times C_2\)?\\
 
    \qquad \(\square\) Yes \qquad \(\square\)   No \\
@@ -943,9 +902,6 @@ that sends \(x\) to \(\alpha\) and \(y\) to \(\beta\) is \emph{not} an isomorphi
 
    \qquad \(\square\) Yes \qquad \(\square\)   No \\
 *** Question 2
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 Let \(K \subset \mathbf{C}\) be the splitting field of \(x^6-3\) over \(\mathbf{Q}\).
 What is the Galois group of \(\mathbf{Q} \subset K\)?
 
@@ -955,8 +911,15 @@ What is the Galois group of \(\mathbf{Q} \subset K\)?
 - [ ] \(A_4\)
 ** Quiz 5 (version 2)
 :PROPERTIES:
-:html_headline_class: collapsed
+:export_title: Quiz 5
+:export_author: Algebra 2, 2024
+:export_latex_class: amsart
+:EXPORT_OPTIONS: toc:nil ':t
+:EXPORT_FILE_NAME: qz5_2
+:export_latex_class_options: [12pt]
+:export_latex_header_extra: \usepackage{fullpage}
 :END:
+
 \vspace{1cm}
 
 \noindent
@@ -965,9 +928,6 @@ What is the Galois group of \(\mathbf{Q} \subset K\)?
 
 \vspace{1cm}
 *** Question 1
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 1. Does there exist an irreducible polynomial of degree 4 in \(\mathbf{Q}[x]\) whose Galois group is isomorphic to \(C_2 \times C_2\)?\\
 
    \qquad \(\square\) Yes \qquad \(\square\)   No \\a
@@ -976,32 +936,65 @@ What is the Galois group of \(\mathbf{Q} \subset K\)?
 
    \qquad \(\square\) Yes \qquad \(\square\)   No
 *** Question 2
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 Let \(K \subset \mathbf{C}\) be the splitting field of \((x^3-2)(x^3-5)\) over \(\mathbf{Q}\) and let \(G\) be the its Galois group.  This is a group of order 18. Describe elements of \(G\) of orders 2, 3, and 9, writing "DNE" if there is no such element.
 
 \vfill
-* Course notes from previous years
+* Notes from class
 :PROPERTIES:
 :html_headline_class: collapsed
 :END:
+- [[file:notes/2024-02-19.pdf][2024-02-19.pdf]]
+- [[file:notes/2024-02-20.pdf][2024-02-20.pdf]]
+- [[file:notes/2024-02-21.pdf][2024-02-21.pdf]]
+- [[file:notes/2024-02-26.pdf][2024-02-26.pdf]]
+- [[file:notes/2024-02-27.pdf][2024-02-27.pdf]]
+- [[file:notes/2024-02-28.pdf][2024-02-28.pdf]]
+- [[file:notes/2024-03-04.pdf][2024-03-04.pdf]]
+- [[file:notes/2024-03-05.pdf][2024-03-05.pdf]]
+- [[file:notes/2024-03-06.pdf][2024-03-06.pdf]]
+- [[file:notes/2024-03-12.pdf][2024-03-12.pdf]]
+- [[file:notes/2024-03-13.pdf][2024-03-13.pdf]]
+- [[file:notes/2024-03-18.pdf][2024-03-18.pdf]]
+- [[file:notes/2024-03-19.pdf][2024-03-19.pdf]]
+- [[file:notes/2024-03-20.pdf][2024-03-20.pdf]]
+- [[file:notes/2024-03-25.pdf][2024-03-25.pdf]]
+- [[file:notes/2024-03-26.pdf][2024-03-26.pdf]]
+- [[file:notes/2024-03-27.pdf][2024-03-27.pdf]]
+- [[file:notes/2024-04-15.pdf][2024-04-15.pdf]]
+- [[file:notes/2024-04-16.pdf][2024-04-16.pdf]]
+- [[file:notes/2024-04-22.pdf][2024-04-22.pdf]]
+- [[file:notes/2024-04-23.pdf][2024-04-23.pdf]]
+- [[file:notes/2024-04-24.pdf][2024-04-24.pdf]]
+- [[file:notes/2024-04-29.pdf][2024-04-29.pdf]]
+- [[file:notes/2024-04-30.pdf][2024-04-30.pdf]]
+- [[file:notes/2024-05-01.pdf][2024-05-01.pdf]]
+- [[file:notes/2024-05-06.pdf][2024-05-06.pdf]]
+- [[file:notes/2024-05-07.pdf][2024-05-07.pdf]]
+- [[file:notes/2024-05-08.pdf][2024-05-08.pdf]]
+- [[file:notes/2024-05-13.pdf][2024-05-13.pdf]]
+- [[file:notes/2024-05-14.pdf][2024-05-14.pdf]]
+- [[file:notes/2024-05-15.pdf][2024-05-15.pdf]]
+- [[file:notes/2024-05-20.pdf][2024-05-20.pdf]]
+- [[file:notes/2024-05-21.pdf][2024-05-21.pdf]]
+* Course notes from previous years
+:PROPERTIES:
+:EXPORT_FILE_NAME: ~/website/docs/teaching/2024algebra2/notes/index.html
+:EXPORT_TITLE: Algebra 2 Course Notes
+:export_html_head: <link rel="stylesheet" href="/css/main.css"></link><script src="/js/collapsibility.js"></script>
+:html_headline_class: collapsible
+:EXPORT_OPTIONS: toc:1 ':t
+:END:
+
 Disclaimer: These notes may not be complete, accurate, or accurately reflect what happened in class.
 ** Introduction
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 *** How an algebraist studies the world?
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 - Attach an algebraic structure to an object, and then study the object using the algebraic structure.
 - The most fundamental algebraic structures are groups and rings.
 **** Examples
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 1. Fundamental group
 2. Cohomology ring
@@ -1009,15 +1002,13 @@ Disclaimer: These notes may not be complete, accurate, or accurately reflect wha
 4. Number rings
 5. Symmetry (automorphism) groups.
 *** A deeper look into number rings
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 - The structure of \(\mathbf{Q}[\alpha]\) for \(\alpha\) algebraic and \(\alpha\) transcendental.
 ** Minimal polynomial
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let us look more closely at the rings \(\mathbf{Q}[\alpha] \subset \mathbf{C}\), or more generally, rings \(F[\alpha] \subset K\), where \(F \subset K\) are fields.
 We will see that it is simpler to study \(\mathbf{Q}[\alpha]\) rather than \(\mathbf{Z}[\alpha]\).
 
@@ -1062,39 +1053,36 @@ Now there are two possibilities:
       (Strictly speaking, the conditions determine \(f\) only up to scaling.  To remedy this, we usually take \(f\) to be monic.)
 *** Examples
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 *** Proposition
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 <<Falpha_field>>
 If \(\alpha\) is algebraic, then \(F[\alpha]\) is a field.
 *** Question
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Take \(\alpha = \sqrt[3]{2}\), for example, which is algebraic over \(\mathbf{Q}\).
 Then Proposition [[Falpha_field]] says that \(\mathbf{Q}[\alpha]\) is a field.
 How will you explicitly find the multiplicative inverse of its elements?
 For example, what is the inverse of \(\sqrt[3]{2}\)? Of \(1 + \sqrt[3]{2}\)?
 *** Proposition
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(\alpha, \beta \in K\) be algebraic over \(F\).
 There is an isomorphism \(F[\alpha] \to F[\beta]\) extending the identity of \(F\) that sends \(\alpha \mapsto \beta\) if and only if \(\alpha\) and \(\beta\) have the same minimal polynomial.
 **** Proof
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 See 15.2.8 in the book.
 *** Summary
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 We have the following dichotomy.
 |----------------------------------------------------------+--------------------------------------------------------------|
 | \(\alpha\) algebraic                                     | \(\alpha\) transcendental                                    |
@@ -1106,8 +1094,9 @@ We have the following dichotomy.
 |----------------------------------------------------------+--------------------------------------------------------------|
 ** Degree
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(\alpha \in K\) be algebraic over \(F\).
 The /degree of \(\alpha\) over \(F\)/, denoted by \(\deg(\alpha/F)\) is
 1. the degree of its minimal polynomial,
@@ -1121,59 +1110,64 @@ The degree of \(L/F\) is the dimension of \(L\) as an \(F\)-vector space.
 Observe that \(\deg(\alpha/F) = \deg(F[\alpha]/F)\).
 *** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(L = \mathbf{Q}[i, \sqrt 2]\).
 Then \(\deg (L / \mathbf{Q}) = 4\).
 *** Multiplicative property of the degree
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(F \subset L\) and \(L \subset K\) be finite extensions.
 Then \(F \subset K\) is also finite and
 \[ \deg(F/K) = \deg(L/F) \cdot \deg (L/K).\]
 *** Application
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 If \(\alpha, \beta\) are algebraic over \(F\) then \(\alpha\beta\) and \(\alpha+\beta\) are algebraic over \(F\).
 **** Proof
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Look at \(F \subset F[\alpha] \subset F[\alpha,\beta]\).
 *** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 So we know that \(\sqrt 2 + \sqrt 3\) is algebraic.
 But what is its minimal polynomial?
 The method of proof does not really give a way to find out.
 One way to find a polynomial is by taking repeated powers and looking for a linear relation, but we still need tools to prove that the polynomial we found is irreducible.
 *** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The degree of \(\mathbf{Q}[\sqrt[3]2, i] / \mathbf{Q}\) is 6.
 *** Corollary
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 If \(F \subset L\) is an extension of degree \(M\), then the degree of all sub-extensions must divide \(M\).
 In particular, the degree of every \(\alpha \in L\) must divide \(M\).
 
 For example, an extension of degree \(2^{n}\) cannot contain an element of degree 3.
 ** Irreducibility
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 We want to develop some tools to prove irreducibility of polynomials.
 Let us study irreducibility and irreducible factorisation in an arbitrary integral domain \(R\).
 *** Terminology
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 - A /non-trivial factorisation of \(p \in R\)/ is an expression \(p = ab\) where neither \(a\) nor \(b\) is a unit.
 - We say that \(p\) is irreducible if it has no non-trivial factorisation.
 - In general, a /factorisation of \(f\) into irreducibles/ is a factorisation \(f = p_1 \cdots p_n\) where each \(p_{i}\) is irreducible.
@@ -1181,18 +1175,21 @@ Let us study irreducibility and irreducible factorisation in an arbitrary integr
 - We say that \(R\) has /unique factorisation/ or is a /Unique Factorisation Domain/ if every element of \(R\) has a factorisation into irreducibles and this factorisation is unique up to equivalence.
 *** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 - \(\mathbf{Z}\) is a UFD.
 *** Proposition
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(F\) be a field.  Then \(F[x]\) is a UFD.
 **** Proof:
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 It is easy to see that every polynomial \(f\) has a factorisation into irreducibles (keep factoring until you cannot).  The interesting part is uniqueness.
 Suppose
 \[ p_1 \cdots p_{n} = q_{1} \cdots q_{m}.\]
@@ -1203,33 +1200,34 @@ In fact, it suffices to show that there is an \(i\) for which \(p_{1}\) divides 
 So the key fact is the following:
 ***** Key fact that makes unique factorisation work
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 If \(p\) is irreducible, and \(p\) divides \(q_1q_2\) then \(p\) divides \(q_1\) or \(p\) divides \(q_2\).
 Equivalently, if \(p\) is irreducible then \((p)\) is a prime ideal.
 
 We know that the key fact holds because if \(p\) is irreducible then \((p)\) is in fact a maximal ideal.
 ***** Coming back to the proof
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 By using the key fact repeatedly, we see that \(p\) divides one of the \(q_{i}\)'s.
 **** Lesson
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 If \(R\) is a domain in which every irreducible element generates a prime ideal.
 Then any two factorisations of \(f \in R\) must be equivalent.
 *** Factorisation over finite fields and integers
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let us come back to the main question: how do we show that a given polynomial is irreducible?  
 ***** Over finite fields
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Suppose \(R = F[x]\).
 Then we can just list all the irreducible polynomials in \(F[x]\) by making a sieve.
 We make a list of polynomials up to a given degree, ordered by the degree: linears, quadratics, cubics, ...
@@ -1241,8 +1239,9 @@ What remains are the irreducible ones.
 This is probably not the most efficient method to test irreducibility, but it works!
 ***** Over the rational numbers
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 What if \(R = \mathbf{Q}[x]\)?
 Then we cannot sieve because there are infinitely many polynomials of a given degree.
 There are algorithmic irreducibility tests (read the end of Section 12.4), but they are a bit involved.
@@ -1259,22 +1258,25 @@ And we can make deductions about factorisation in \(\mathbf{Z}[x]\) by reducing 
 The next two propositions exemplify this idea.
 ***** Proposition
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(p \in \mathbf{Z}\) be a prime.
 Suppose \(f(x) = a_{n} x^n + \cdots \in \mathbf{Z}[x]\) is such that \(p\) does not divide \(a_{n}\) and \(\overline f(x) \in \mathbf{Z}/p \mathbf{Z} [x]\) is irreducible.
 Then \(f(x)\) cannot factor as \(f(x) = h(x) g(x)\) in \(\mathbf{Z}[x]\) where \(h\) and \(g\) are non-constant.
 ***** Proposition (Eisenstein's criterion)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(p \in \mathbf{Z}\) be a prime.
 Suppose \(f(x) = a_{n} x^n + \cdots + a_{0} \in \mathbf{Z}[x]\) is such that \(p\) does not divide \(a_{n}\), divides all other \(a_i\) but \(p^2\) does not divide \(a_{0}\).
 Then \(f(x)\) cannot factor as \(f(x) = h(x) g(x)\) in \(\mathbf{Z}[x]\) where \(h\) and \(g\) are non-constant.
 *** Factorisation over the rational numbers
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let us relate factorisation over \(\mathbf{Q}[x]\) and \(\mathbf{Z}[x]\).
 Consider the factorisation
 \[ 3x+3 = 3 \cdot (x+1).\]
@@ -1304,42 +1306,48 @@ We will make this precise.
 First, we need an easy lemma.
 **** Lemma (Gauss's lemma)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The product of two primitime polynomials is primitive.
 ***** Proof
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(f(x)\) and \(g(x)\) be primitive.
 Let \(p\) be any prime.
 Then the images \(\overline f(x)\) and \(\overline g(x)\) in \(\mathbf{Z}/p \mathbf{Z} [x]\) are non-zero.
 But this ring is a domain, so the image \(\overline {f(x)g(x)}\) is also non-zero.
 **** Proposition
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(f(x)\) be a primitive polynomial and \(g(x) \in \mathbf{Z}[x]\) any polynomial.
 Suppose \(g(x) = f(x) h(x)\) for some \(h(x) \in \mathbf{Q}[x]\).
 Then \(h(x) \in \mathbf{Z}[x]\).
 ***** Proof
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Write \(h(x) = c j(x)\) where \(j(x)\) is primitive and \(c = a/b \in \mathbf{Q}\) (reduced form) and \(g(x) = d i(x)\) where \(d \in \mathbf{Z}\) and \(i(x)\) is primitive.
 Then \(bd i(x) = a f(x) j(x)\).
 But \(i(x)\) and \(f(x)j(x)\) are both primitive, so we must have \(bd = a\) and \(i(x) = f(x)j(x)\).
 In particular, \(a/b = d\) is an integer, and so \(h(x) \in \mathbf{Z}[x]\).
 **** Proposition
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(f(x) \in \mathbf{Z}[x]\) be primitive.
 Then \(f(x)\) is irreducible in \(\mathbf{Z}[x]\) if and only if it is irreducible in \(\mathbf{Q}[x]\).
 ***** Proof
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let us prove the contrapositive.
 Suppose \(f(x) = g(x) h(x)\) in \(\mathbf{Z}[x]\) is a non-trivial factorisation.
 Then neither \(g\) nor \(h\) are constant (because \(f\) is primitive).
@@ -1351,23 +1359,14 @@ Then \(f(x) = cd i(x)j(x)\) implies that \(cd = 1\), so we may as well write
 \(f(x) = i(x) j(x)\).
 This is a non-trivial factorisation in \(\mathbf{Z}[x]\).
 **** Corollary
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 The irreducible elements of \(\mathbf{Z}[x]\) are prime numbers \(p\) and primitive polynomials \(f(x)\) that are irreducible in \(\mathbf{Q}[x]\).
 **** Remark
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 From this, it is not hard to prove that every irreducible in \(\mathbf{Z}[x]\) generates a prime ideal.
 So \(\mathbf{Z}[x]\) is also a UFD.  
 In general, a similar reasoning using primitive polynomials shows that if \(R\) is UFD then \(R[x]\) is also a UFD.
 **** Summary
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Suppose we are given \(f(x) \in \mathbf{Q}[x]\).
 By multiplying by a constant, we may assume that \(f(x) \in \mathbf{Z}[x]\) is primitive.
@@ -1375,8 +1374,9 @@ Then irreducibility in \(\mathbf{Q}[x]\) is equivalent to the irreducibility in 
 To prove irreducibility in \(\mathbf{Z}[x]\), we look modulo primes (for example, Eisenstein's criterion).
 ** Ruler and compass constructions
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 A fascinating application of the algebra we have done so far is the proof for the impossibility of certain geometric constructions.
 In particular, we will see that there does not exist a geometric construction using only ruler and compass that can trisect a given angle.
 But first, here are the rules of the game.
@@ -1390,8 +1390,9 @@ You may add the intersection points of the lines and circles you draw to the set
 Lots of cool things can be done.  
 *** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 1. Given two points, construct their midpoint.
 2. Given three points \(A, B, C\), construct the angle bisector.
 3. Given three points \(A, B, C\), construct the unique circle passing through \(A, B, C\).
@@ -1399,16 +1400,18 @@ Lots of cool things can be done.
 5. ...
 *** Algebraising the construction game
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 To bring algebra into the picture, we introduce coordinates.
 Let a set of constructed points \(S\) be given.
 Suppose \(F \subset \mathbf{R}\) is a field that contains all the coordinates of \(S\).
 The key idea is to explore in what ways \(F\) needs to be enlarged when we construct new points.
 **** Using the ruler
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Suppose we draw a line joining two points of \(S\).
 Observe the following: we can write the equation of the line in the form
 #+name: eqline
@@ -1418,8 +1421,9 @@ ax + by = c
 where \(a,b,c\) are in the field \(F\).
 **** Using the compass
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Suppose we draw a circle centered at a point of \(S\) passing through another point of \(S\).
 Observe the following: we can write the equation of the circle in the form
 #+name: eqcircle
@@ -1429,8 +1433,9 @@ Observe the following: we can write the equation of the circle in the form
 where \(a,b,c\) are in the field \(F\).
 **** Taking intersections
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Now is the most crucial part.  We add new points by intersecting.
 - Intersecting two lines :: the intersection point of two lines of the form [[eqline]] has coordinates in \(F\).  So \(F\) need not be enlarged.
 - Intersecting a circle and a line :: the intersection point(s) of a line [[eqline]] and circle [[eqcircle]] have coordinates in \(F[\sqrt a]\) for some \(a \in F\).
@@ -1439,8 +1444,9 @@ Now is the most crucial part.  We add new points by intersecting.
 In summary, if we start with a set of constructed points whose coordinates lie in \(F\), any new point we add must have its coordinates either in \(F\) or in \(F[\sqrt a]\) for some \(a \in F\).  By repeating our reasoning, we get the following.
 *** Proposition (Main)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(P\) be a point constructed using the ruler and compass from a given set \(S\).
 Assume that the coordinates of \(S\) lie in a field \(F\).
 Then there exist extensions
@@ -1450,20 +1456,23 @@ of the form \(F_{i+1} = F_i[\sqrt a_i]\) for some \(a_i \in F_i\) and such that 
 In particular, the degree of the extension of \(F\) generated by the coordinates of \(P\) is a power of 2.
 *** Corollary
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 If the coordinates of \(P\) generate a transcendental extension of \(F\) or an extension whose degree is not a power of 2, then \(P\) cannot be constructed from \(S\) using ruler and compass.
 *** Proposition
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 We start with the points \((0,0)\) and \((0,1)\).
 Then the point \((\cos 20, \sin 20)\) cannot be constructed.
 In particular, the \(60\)-degree angle cannot be trisected, and hence there cannot exist a procedure that trisects a given angle.
 ***** Proof
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 We can take \(F = \mathbf{Q}\).
 Trigonometry gives us the triple angle formula
 \[ \cos(3\theta) = 4 \cos^3(t) - 3 \cos(\theta).\]
@@ -1476,8 +1485,9 @@ So \(\cos(20)\) has degree 3 over \(\mathbf{Q}\).
 But that means it is not constructible!
 ** The fundamental theorem of algebra
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 We say that a field \(K\) is algebraically closed if every non-constant \(f(x) \in K[x]\) has a root in \(K\).
 
 The following are equivalent:
@@ -1488,24 +1498,24 @@ The following are equivalent:
 5. There is no non-trivial algebraic extension of \(K\).
 *** Theorem (Fundamental theorem of algebra)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The field of complex numbers is algebraically closed.
 *** Corollary
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(\overline Q \subset \mathbf{C}\) be the set of numbers that are algebraic over \(\mathbf{Q}\).
 Then \(\overline Q\) is algebraically closed.
 *** Corollary
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The only irreducible polynomials over \(\mathbf{R}\) are linear and quadratics with negative discriminant.
 *** Proof(s) of the FTA
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Funnily enough, there is no purely algebraic proof of the Fundamental Theorem of Algebra!
 This is somewhat expected because the construction of \(\mathbf{C}\) goes via the construction of \(\mathbf{R}\), which is quite non-algebraic.
@@ -1513,8 +1523,9 @@ So at some point in the proof, some analysis or topology comes in.
 I consider this is a spectacular example of the unity of mathematics: how different fields of mathematics help each other!
 **** Winding number proof
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 A fascinating proof is topological, and uses the notion of "winding number".
 
 Suppose we have a closed curve in \(\mathbf{C} \setminus 0\), which we encode by a map \(f \colon S^1 \to \mathbf{C} \setminus 0\).
@@ -1538,8 +1549,9 @@ But we can continuously move between these by taking \(\lambda\) from a small nu
 This is a contradiction.
 **** Complex analysis proof
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 We have the following theorem in complex analysis.
 
 **Theorem** (Liouville)
@@ -1550,8 +1562,9 @@ Then \(f(x) = 1/p(x)\) is a bounded holomorphic function.
 By Liouville's theorem, it must be constant.
 ** Adjoining roots
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Consider the field \(\mathbf{Q}\).
 We know that it sits in \(\mathbf{C}\), which is algebraically closed.
 So, although solving algebraic equations over \(\mathbf{Q}\) is not always possible, we can always extend our field by adjoining elements of \(\mathbf{C}\).
@@ -1573,8 +1586,9 @@ So in \(K\), we have a square root of 2.
 We have constructed "\(\sqrt{2}\)" out of thin air!
 *** Adjoining a root
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 **Proposition**  Let \(F\) be a field and let \(p(x) \in F[x]\) be a non-constant polynomial.
 Then there exists a finite extension \(F \subset K\) such that \(p(x)\) has a root in \(K\).
 **Proof** Let \(f(x)\) be an irreducible factor of \(p(x)\).
@@ -1587,8 +1601,9 @@ Psychologically, I find it useful to rename \(x\) to a letter from the beginning
 This makes it less confusing if we have to make further extensions of \(K\), freeing up \(x\) for polynomials.
 **** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let us take \(F = \mathbf{Q}\) and \(p(x) = x^3-2\).
 Then \(K = F[x]/(x^3-2)\).
 Note that \(K\) /does not come with an embedding in \(\mathbf{C}\)/.
@@ -1600,8 +1615,9 @@ But there are many ways to do so.
 Precisely, three of them, corresponding to \(x \mapsto \sqrt[3]{2}\) or \(x \mapsto \omega\sqrt[3]{2}\) or \(x \mapsto \omega^{2}\sqrt[3]{2}\) where \(\omega = e^{2\pi i/3}\).
 *** Adjoining all roots
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 **Proposition** Let \(F\) be a field and let \(p(x) \in F[x]\) be a non-constant polynomial.
 Then there exists a finite extension \(F \subset K\) such that \(p(x)\) splits into linear factors in \(K[x]\).
 **Proof** Adjoin a root.  Factor it out. Adjoin a root of the remaining polynomial.  Rinse, repeat.
@@ -1611,14 +1627,16 @@ Then there exists a finite extension \(F \subset K\) such that \(p(x)\) splits i
 The second condition ensures that \(p(x)\) does not factor completely over a subfield of \(K\).
 **** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The splitting field of \(x^3-2\) over \(\mathbf{Q}\) is \(\mathbf{Q}[\sqrt[3]{2}, \omega]\).
 Note that it has degree 6 over \(\mathbf{Q}\).
 **** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Consider \(p(x) = 8x^3-6x-1\).
 Its roots are: \(\cos(20), \cos(140), \cos(260)\).
 Suppose we adjoin one root, say \(\cos(20)\).
@@ -1626,14 +1644,16 @@ Then we automatically get the other two roots (cosine of \(n\theta\) is a polyno
 So the splitting field is only of degree 3.
 ** Finite fields
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 We have some finite fields arleady, like \(\mathbf{F}_p = \mathbf{Z} / p \mathbf{Z}\).
 We will now see all of them!
 *** Finite fields have characteristic \(p\).
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Recall that the characteristic of a ring \(R\) is the smallest integer \(n\) such that \(n = 0\) in \(R\).
 Equivalently, it is the generator of the kernel of the map \(\mathbf{Z} \to R\).
 If \(R\) is a domain, then the generator must be a prime number.
@@ -1643,36 +1663,40 @@ Then we have an injection \(\mathbf{F}_p \to F\).
 **Proposition** Every finite field \(F\) admits a unique injection \(\mathbf{F}_p \to F\) where \(p\) is the characteristic of \(F\).
 *** Finite fields have \(p^r\) elements.
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(F\) be a finite field.
 Suppose \(F / \mathbf{F}_p\) is an extension of degree \(r\).
 Then \(F\) is an \(r\)-dimensional \(\mathbf{F}_p\) vector space.
 In particular, it has \(q = p^r\) elements.
 *** Finite fields have a Frobenius automorphism \(\phi\)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(R\) be a ring of characteristic \(p\).
 Then the map \(x \mapsto x^p\) is a ring homomorphism, called the Frobenius map.
 In particular, every finite field admits a Frobenius \(\phi \colon F \to F\).
 Since \(F\) is a field, \(\phi\) is injective, and since \(F\) is finite, it is also surjective.
 *** Fermat's little theorem: \(x^q = x\)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The multiplicative group \(F^{\times}\) has order \(q-1\), so for every \(x \in F\) we have \(x^{q-1} = 1\).
 Multiplying by \(x\), we get \(x^q = x\) for every \(x \in F\).
 In terms of the Frobenius, the above means that 
 \[ \phi^r = \operatorname{id}.\]
 *** The group \(F^{\times}\) is cyclic
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 **** Proof
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 By the structure theorem for abelian groups, it is a product of cyclic groups, say
 \[ F^{\times} = \mathbf{Z}/m_1 \mathbf{Z} \times \dots \times \mathbf{Z}/ m_n \mathbf{Z}.\]
 Let \(m = \operatorname{lcm}(m_1, \dots, m_n)\).
@@ -1684,14 +1708,16 @@ But then the \(m_i\) must be pairwise relatively prime (otherwise, their lcm wil
 By the Chinese Remainder Theorem, we see that \(F^{\times}\) is isomorphic to \(\mathbf{Z} / m_1\cdots m_n \mathbf{Z}\).
 *** \(F \cong \mathbf{F}[x]/f(x)\) for \(f\) irreducible
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Indeed, let \(\alpha\) be a generator of \(F^{\times}\).
 Then \(F = \mathbf{F}_p[\alpha]\), which is isomorphic to \(\mathbf{F}_p[x]/f(x)\) where \(f(x)\) is the minimal polynomial for \(\alpha\).
 *** Existence of \(F\) with \(q = p^{r}\) elements
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 For every \(q\), does there exist a finite field with \(q\) elements?
 Equivalently, for every \(r\), do we have an irreducible polynomial in \(\mathbf{F}_p[x]\) of degree \(r\)?
 
@@ -1707,8 +1733,9 @@ More precisely, we know that there is a finite extension \(K / \mathbf{F}_p\) su
 To prove this we have to take a slight digression and understand multiple roots.
 *** Digression: derivatives and multiple roots
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(F\) be any field.
 We define the derivative of a polynomial formally.
 That is, if \(f(x) = \sum a_i x^{i}\) then \(f'(x) = \sum i a_i x^{i-1}.\)
@@ -1718,8 +1745,9 @@ With this definition, the sum/product/chain rules continue to hold!
 **Corollary** If \(f\) has a multiple root then \(\gcd(f(x), f'(x))\) is non-constant.
 *** Back to constructing finite fields
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Consider the polynomial \(x^q - x\).
 Its derivative is \(1\)!
 So it cannot possible have multiple roots!
@@ -1730,16 +1758,18 @@ As a result, it has \(q\) distinct roots in \(K\).
 We have now constructed (!) a field with \(q\) elements.
 **** Proof
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 It is easy to check by hand that this set contains \(0,1\) and is closed under \(+\) and \(*\), from which the statement follows.
 More conceptually, consider the automorphism \(\phi^r \colon K \to K\).  The set is the set of fixed points of this automorphism.
 The set of fixed points of a field automorphism is a subfield.
 (Another example: conjugation on \(\mathbf{C}\) is an automorphism; it has fixed points \(\mathbf{R}\).)
 *** But really: how do you construct one in practice?
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Thanks to what we have proved, we /know/ that there exists an irreducible polynomial of every given degree.
 We find one and set \(F = \mathbf{F}_p[x]/f(x)\).
 
@@ -1747,15 +1777,17 @@ Note that there are many choices for \(f\) and hence we get many possible \(F\).
 But... wait for it....
 *** Uniqueness up to isomorphism
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(F\) and \(L\) be finite fields of size \(q = p^r\).
 Then there is an isomorphism \(F \cong L\).
 In fact, there are exactly \(r\) isomorphisms.
 **** Proof
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Write \(F = \mathbf{F}_p[x]/f(x)\) where \(f \in \mathbf{F}_p[x]\) is irreducible of degree \(r\).
 It suffices to construct a map (ring hom) \(F \to L\).
 To give such a map, we must send \(x \in F\) to \(\alpha \in L\) which is a root of \(f(x)\).
@@ -1767,15 +1799,17 @@ It follows that \(f(x)\) also factors into distinct linear factors over \(L\).
 That is, it has \(r\) distinct roots in \(L\).
 *** Containments
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(F\) be a field of size \(q = p^{r}\).
 If \(F\) contains a field of size \(p^{s}\) then \(s\) divides \(r\).
 Conversely, if \(s\) divides \(r\), then \(F\) contains a unique subfield of size \(p^{s}\).
 **** Proof
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Suppose \(F\) contains \(K\) of size \(p^{s}\).
 Then we can view \(F\) as an extension of \(K\).
 If the extension has degree \(m\), then \(|F| = |K|^m\), which implies \(p^r = p^{sm}\), so \(r = sm\).
@@ -1791,15 +1825,13 @@ And \(x^{p^s-1}-1\) divides \(x^{p^r-1}-1\).
 So \(x^{p^s}-x\) divides \(x^{p^r1}-x\).
 But the latter splits into distinct linear factors, so the former must as well.
 **** Lesson
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 To find a subfield of size \(p^{s}\) in a finite field of size \(p^r\), we simply take the fixed points of the \(s\))-th power of Frobenius.
 ** Primitive elements
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(K/F\) be a finite extension.
 We say that \(\alpha \in K\) is a primitive element for the extension if
 \[ K = F(\alpha).\]
@@ -1828,8 +1860,9 @@ Because in that case, we can easily break up the extension into smaller sub-exte
 If \(K = F[\alpha]\), it is less obvious if it can be broken up.
 *** GCD and derivatives
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Before we begin, let us collect a few useful facts that we already know.
 Fix fields \(F \subset K\).
 
@@ -1850,9 +1883,6 @@ So \(\gcd(f,f')\), which lies in \(F[x]\), must be 1.
 **Corollary**: If \(f\) is irreducible and \(F\) is of characteristic 0, then \(f\) has no repeated roots in \(K\).
 **Proof**: We may assume \(f\) is non-constant.  Then \(f' != 0\) is automatic in characteristic 0 (but not in characteristic \(p\)!).
 *** Proof of the primitive element theorem
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 To be frank, the statement of the primitive element theorem is more important than the proof.
 Even within the proof, the statement of the claim below is more important than the rest of the details.
@@ -1894,9 +1924,6 @@ which happens only for one \(i\) and \(j\), namely \(i = 1\) and \(j = 1\).
 So \(f(x)\) and \(g((\gamma - x)/c)\) cannot have a common factor of degree > 1 in \(L\).
 It follows that \(\deg h = 1\).
 *** Counterexample in characteristic \(p\)
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Here is an example of a field extension without a primitive element.
 It has to be in characteristic \(p\), and it has to be over an infinite field.
@@ -1913,8 +1940,9 @@ So no element of \(K\) has degree \(p^2\) over \(F\).
 As a result, there is no primitive element.
 ** Function fields
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 For us, a function field means a finite extension of \(\mathbf{C}(t)\).
 We can view the elements of \(\mathbf{C}(t)\) as functions on the complex plane \(\mathbf{C}\) (minus a finite set of points).
 We can view elements of a field extension as function on a different space, which we now construct.
@@ -1934,8 +1962,9 @@ Suppose we have two such extensions \(K_f / \mathbf{C}(t)\) and \(K_g / \mathbf{
 A /map of field extensions/ is a ring homomorphism \(\phi \colon K_f \to K_g\) that commutes with the inclusion of \(\mathbf{C}(t)\).
 *** The associated surface
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 To every irreducible \(f(t,x) \in \mathbf{C}[t,x]\) of positive \(x\)-degree, we can associate a closed subset \(S(f) \subset \mathbf{C}^2\).
 It is defined by
 \[ S(f) = \{(t,x) \in \mathbf{C}^2 \mid f(t,x) = 0\}.\]
@@ -1959,9 +1988,6 @@ The map to \(\mathbf{C}\) is the projection to the horizontal plane (down).
 
 **Project**: Write a computer program to generate these pictures from an \(f\).
 *** The branched covering
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 For most values of \(t\), we expect \(f_t(x)\) to have \(n\) distinct roots.
 This is indeed what happens.
@@ -2011,8 +2037,9 @@ In short, studying field extensions of \(\mathbf{C}(t)\) is equivalent to studyi
 **Remark**: Given a branched cover, it is not at all clear how to find the polynomial \(f\).  Simalarly, given a map of branched covers it is not at all clear why it should be induced by an algebraic map.  This is the hard part in the theorem.
 *** Monodromy
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Covering spaces are characterised by their monodromy.
 This is a simple, beautiful, and ubiquitous geometric concept.th)
 Let \(\pi \colon X \to Y\) be an \(n\)-sheeted covering space (for us \(Y\) will be \(\mathbf{C}^2 - B\)).
@@ -2054,8 +2081,9 @@ The monodromy tells us exactly how to glue these sheets together along the cut e
 (Caution: The result may not be connected.  To ensure it is, we must be able to go from any \(i\) to any \(j\) by a repeated application of \(p_1, \dots, p_{b}\) and their inverses.  But this is a minor point.)
 **** Pictures from class
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The following are pictures from a real life cut-and-glue operation.  Yellow sheet is (1), blue sheet is (2), red sheet is (3).  Come to my office if you want to see the physical thing.
 
 1. Monodromy (12)
@@ -2073,8 +2101,9 @@ The following are pictures from a real life cut-and-glue operation.  Yellow shee
 [[file:assets/Course_notes/2023-03-28_15-29-34_screenshot.png]]
 **** Summary
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The following 3 concepts are equivalent:
 \[
 \text{Extensions of \(\mathbf{C}(t)\)} \leftrightarrow
@@ -2084,8 +2113,9 @@ The following 3 concepts are equivalent:
 Using this dictionary (trictionary?), we can convert a problem about function fields to a problem about permutations.
 **** Looking ahead: Galois theory
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Galois theory provides a link
 \[
 \text{Extensions of any field} \rightarrow
@@ -2096,8 +2126,9 @@ We can thus answer many questions about field extensions using properties of per
 (In general, this is not a dictionary---we cannot necessarily go backwards.  Whether we can go backwards or not is a the subject of a difficult open problem called the inverse Galois problem).
 ** An introduction to Galois theory
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Galois theory arose from our efforts to understand solutions to algebraic equations.
 More precisely, it arose from the following question: suppose we have an equation
 \[ x^{n} + a_{n-1} x^{n-1} + \dots + a_{0} = 0.\]
@@ -2113,8 +2144,9 @@ For quintics, people tried for a long time to find a formula but could not.
 Later, the work of many people culminated in proving that a formula like this cannot exist!
 *** Reformulation using field extensions
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 For simplicity, let us take our coefficients to be in \(\mathbf{Q}\).
 Suppose \(\alpha_1, \dots, \alpha_n\) are the roots.
 Let \(F = \mathbf{Q}[\alpha_1, \dots, \alpha_n] \subset \mathbf{C}\).
@@ -2126,8 +2158,9 @@ In particular, we want to know if we can arrive at this extension by a sequence 
 Galois theory was developed to answer exactly questions of this form.
 *** What is Galois theory?
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Galois theory gives us tools to answer questions of the following kind:
 Given a field extension \(F \subset L\), can we decompose it into smaller extensions of a particular type?
 For example, is there any non-trivial decomposition \(F \subset K \subset L\)?
@@ -2136,8 +2169,9 @@ That is, is there any intermediate field \(K\)?
 The main theorem of Galois theory tells us about all possible intermediate fields!
 *** A preview of the main theorem
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let us consider
 \[ \mathbf{Q} \subset F = \mathbf{Q}[\alpha_1, \dots, \alpha_{n}].\]
 The main insight of Galois theory is that the nature of this extension is controlled by symmetries among the roots \(\alpha_{1}, \dots, \alpha_n\) (to be made precise).
@@ -2164,8 +2198,9 @@ Here, let us explain how to go from a subgroup to a subfield:
 \[ H \leadsto F^H = \{x \in F \mid h(x) = x \text{ for all } h \in H\}.\]
 **** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Consider the polynomial \(x^4-10x^2+1\).
 Its roots are
 \[ \alpha_1 = \sqrt 2 + \sqrt 3, \alpha_2 = \sqrt 2 - \sqrt 3, \alpha_3 = -\sqrt 2 + \sqrt 3, \alpha_4 = -\sqrt 2 - \sqrt 3.\]
@@ -2198,8 +2233,9 @@ The diagram of the corresponding fixed fields is (note the reversed inclusion!):
 [[file:assets/Course_notes/2023-04-18_13-48-27_screenshot.png]]
 **** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Consider the polynomial \(x^3-2\), whose three roots are
 \[ \alpha_1 = 2^{1/3}, \alpha_2 = 2^{1/3} \zeta_{3}, \alpha_3 = 2^{1/3}\zeta_3^{2}.\]
 Then \(F = \mathbf{Q}[2^{1/3}, \zeta_3].\)
@@ -2221,8 +2257,9 @@ The corresponding diagram of intermediate fields is:
 That's it!  There are no more subfields!
 **** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The main theorem is true more generally than for just extensions of \(\mathbf{Q}\).
 Let us take \(F = \mathbf{F}_p\) and \(K / F\) an extension of degree \(n\).
 The main theorem also applies to \(F \subset K\).
@@ -2233,8 +2270,9 @@ We have already seen that the diagram of intermediate fields also corresponds to
 The two are related by Galois theory.
 ** Symmetric polynomials
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Our goal is to understand how to go from coefficients to roots.
 Towards this goal, let us first understand how to go from roots to coefficients.
 This leads to a theorem that is important in itself.
@@ -2264,28 +2302,32 @@ They are called /elementary symmetric polynomials/.
 *Theorem*. Let \(R\) be any ring.  Let \(p(u_{1}, \dots, u_{n}) \in R[u_{1}, \dots, u_{n}]\) be a symmetric polynomial, namely one that is unaffected by permuting the variables.  Then \(p\) can be expressed uniquely as a polynomial in \(s_{1}, \dots, s_{n}\).
 *** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let us take \(n = 2\), and consider \(p = u_{1}^3 + u_{2}^3\).
 Then \(p\) is symmetric, and indeed we have
 \[ p = (u_{1}+u_{2})^3 - 3u_{1}u_{2}(u_{1}+u_{2}) = s_{1}^3-3s_{1}s_{2}.\]
 *** Application
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Any symmetric polynomial expression in the roots can be written as a polynomial expression in the coefficients.
 *** The discriminant
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 A particularly important symmetric expression of the roots is the /discriminant/
 \[ D = \prod_{i<j} (\alpha_{i} - \alpha_{j})^{2}.\]
 By construction, \(D = 0\) if and only if two roots coincide.
 By the symmetric functions theorem, \(D\) can be expressed as a polynomial function of the coefficients.
 **** Examples
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 1. Let us take \(n = 2\), and
    \[ x^2 +bx + c = (x-\alpha_{1})(x-\alpha_{2}).\]
    Then the discriminant is
@@ -2299,9 +2341,6 @@ By the symmetric functions theorem, \(D\) can be expressed as a polynomial funct
    In this case, we have
    \[ D = -4c^3-27d^2.\]
 *** Proof of the theorem
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let us keep a running example, say \(n = 3\) and \(p = u_{1}^3+u_{2}^3+u_{3}^{3}\).
 We will prove existence.  Uniqueness is less important (and follows from the same proof).
@@ -2339,8 +2378,9 @@ As a result, so can \(p\).
 In our case, \(r = 3\), so there's nothing to do.
 ** Splitting fields
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 *Definition* Let \(f(x) \in F[x]\) be a monic polynomial (not necessarily irreducible).
 We say that an extension \(K/F\) is a /splitting field/ of \(f\) if
 1. \(f(x)\) splits into linear factors in \(K[x]\), say
@@ -2349,37 +2389,38 @@ We say that an extension \(K/F\) is a /splitting field/ of \(f\) if
    That is, every element of \(K\) can be expressed as a polynomial in the \(\alpha_{i}\)'s with coefficients in \(F\).
 *** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Take a rational polynomial \(f(x)\).  It splits into linear factors over \(\mathbf{C}\), say
 \[ f(x) = (x-\alpha_{1}) \cdots (x-\alpha_{n}).\]
 Then \(K = \mathbf{Q}[\alpha_1,\dots,\alpha_n]\) is a splitting field of \(f(x)\) over \(\mathbf{Q}\).
 *** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The extension \(\mathbf{F}_{p^{n}}/ \mathbf{F}_p\) is a splitting field of
 - any irreducible polynomial in \(\mathbf{F}_p[x]\) of degree \(n\)
 - the polynomial \(x^{p^n}-x\)
 *** Non-example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Consider \(K = \mathbf{Q}[2^{1/3}] / \mathbf{Q}\).
 It is not a splitting field of \(x^3-2\).
 Is it a splitting field of some other polynomial? (Spoiler: No, see the next theorem.)
 *** Things really split in a splitting field
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 *Theorem* Let \(K/F\) be a splitting field of \(f(x)\).
 Suppose \(g(x) \in F[x]\) is an irreducible polynomial that has a root in \(K\).
 Then \(g(x)\) splits into linear factors in \(K[x]\).
 **** Proof
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let
 \[ f(x) = (x-\alpha_{1}) \cdots (x-\alpha_{n})\]
 in \(K[x]\).
@@ -2410,35 +2451,32 @@ So \(f(x)\) must divide \(G(x)\).
 In \(K[x]\), the polynomial \(G(x)\) splits into linear factors, so \(f(x)\) must also split.
 *** Back to the previous non-example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Consider \(K = \mathbf{Q}[2^{1/3}] / \mathbf{Q}\).
 Then \(x^3-2\) has a root in \(K\) but does not split completely in \(K[x]\).
 So \(K / \mathbf{Q}\) cannot be a splitting field of any polynomial.
 *** Uniqueness of splitting fields
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(K_1/F\) and \(K_2/F\) be splitting fields of \(f(x) \in F[x]\).
 Then there exists an isomorphism
 \[ K_1/F \to K_2/F.\]
 **** Proof
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 By the big tent 
 *** Big tent lemma
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 *Lemma* Let \(K_1/F\) and \(K_2/F\) be finite extensions.
 There exists a finite extension \(K/F\) such that contains isomorphic copies of \(K_1/F\) and \(K_2/F\).
 That is, there exist subfields \(K_{1}' \subset K\) and \(K_2' \subset K\) with isomorphisms \(K_{i}/F \cong K_{i}'/F\).
 **** Proof
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 It suffices to construct a finite extension \(K/F\) together with maps \(K_1/F \to K/F\) and \(K_2/F \to K/F\).  We can take \(K_i'\) to be the images of these maps.
 
@@ -2476,8 +2514,9 @@ So we have the following diagram:
 We now apply the inductive hypothesis to the yellow triangle.
 ** The main theorem of Galois theory
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The [[file:assets/Course_notes/2023-05-02-Note-14-56.pdf][handwritten notes]] are more complete.
 
 We assume that our fields have characteristic 0.
@@ -2494,15 +2533,17 @@ The right-to-left map is
 \[ K^{H} \leftarrow H. \]
 ** Climbing the subfield wall
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The main theorem tells us if we can decompose a big extension into a series of smaller extension.
 (The analogy behind the title is that we want to climb from the base field up to the splitting field.  The intermediate fields provide footholds like those on a climbing wall.)
 If we know enough about the intermediate steps, we can explicitly describe the algebraic structure of elements in the splitting field.
 *** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(K = \mathbf{Q}[\zeta]\) where \(\zeta = e^{2\pi i/5}\) and \(F = \mathbf{Q}\).
 Then \(K/F\) has degree 4 and it is the splitting field of
 \[ x^{5} - 1.\]
@@ -2604,8 +2645,9 @@ So we arrive at an explicit equation for \(\zeta\) using iterated square roots:
 \end{align*}
 ** Some features of the Galois correspondence
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(K/F\) be a finite Galois extension of fields of characteristic zero.
 Let \(G = \operatorname{Aut}(K/F)\) be the Galois group.
 Let \(L\) be an intermediate field and \(H\) the corresponding subgroup.
@@ -2623,8 +2665,9 @@ The next property is new.
 *Proposition* The extension \(L/F\) is Galois if and only if \(H \subset G\) is a normal subgroup.
 *** Example
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(F = \mathbf{Q}\) and \(K = \mathbf{Q}[\zeta_3, 2^{1/3}]\).
 We know that \(K/F\) is Galois of degree 6 and the Galois group \(G\) is isomorphic to \(S_3\) via its action on the three roots of \(x^3-2\).
 
@@ -2638,8 +2681,9 @@ The corresponding \(L\) is \(L = \mathbf{Q}[\zeta_3]\).
 The extension \(L/F\) *is* Galois and indeed the subgroup \(H \subset G\) is normal.
 *** Proof of the proposition
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The key observation is the following.
 *Claim*. Suppose \(L/F\) is Galois and \(g \in \operatorname{Aut}(K/F)\).  Then \(g\) sends all elements of \(L\) to \(L\).
 *Proof*. Take \(\alpha \in L\).  Let \(f(x) \in F[x]\) be the minimal polynomial of \(\alpha\).  Then \(g(\alpha) \in K\) must be a root of \(f(x)\).  Since \(L/F\) is Galois, it is a splitting field, so it contains all roots of \(f(x)\). 
@@ -2673,9 +2717,6 @@ or equivalently
 \[ g^{-1}h g(\alpha) = \alpha.\]
 But note that \(g^{-1}h g \in H\) because \(H \subset G\) is normal, so the last equation holds because all elements of \(H\) fix \(\alpha \in L\).
 *** Galois group of intermediate Galois extension
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(L\) be an intermediate field of \(K/F\) such that \(L/F\) is itself Galois.
 Let \(H = \operatorname{Aut}(K/L)\) be the corresponding (normal) subgroup of \(H\).
@@ -2690,8 +2731,9 @@ Its kernel consists of the automorphisms of \(K\) that fix \(L\), that is, \(\op
 It is not immediately clear why it is surjective, but if we look at the sizes of the three groups, we see that it must be surjective.
 ** Computing the Galois group
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(F\) be a field of characteristic 0 and let \(f(x) \in F[x]\) be a polynomial (may be reducible).
 Let \(K/F\) be a splitting field of \(f(x)\), and let \(G = \operatorname{Aut}(K/F)\) be the Galois group.
 Let \(\alpha_1, \dots, \alpha_n \in K\) be the roots of \(f(x)\).
@@ -2711,8 +2753,9 @@ For simplicity, assume that \(F = \mathbf{Q}\) so that we can take \(\alpha_i \i
 \[ K = \mathbf{Q}[\alpha_1,\dots,\alpha_{n}].\]
 *** A computer knows how to do it
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let us begin by observing that a computer (running sage, for example) knows how to compute \(G\) given \(f(x)\).
 
 #+begin_src sage :exports both
@@ -2747,8 +2790,9 @@ but  the answer is quite different!
 : [(), (1,3)(2,4), (1,4,3,2), (1,2,3,4), (2,4), (1,3), (1,4)(2,3), (1,2)(3,4)]
 **** How might the computer be doing this?
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 I do not know exactly how the computer does it.
 But here is a procedure that works in principle.  
 It is probably not optimal (and I am not going to explain all the details), but whatever.
@@ -2806,8 +2850,9 @@ At the heart of the problem is finding all maps \(K \to K\) (restricting to the 
 In conlusion, with algorithms to handle ring homomorphisms (kernels etc.), a computer can compute Galois groups.
 *** How can we, humans, do it?
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let me emphasise that we (at least, I) can compute Galois groups by hand only for easy polynomials.
 Easy means either low degree or of a special form.
 
@@ -2816,8 +2861,9 @@ The basic principle of how we compute Galois groups by hand is not too far from 
 *The basic principle*. Suppose we have an algebraic relation among the roots, that is, a polynomial in \(F[x_1, \dots, x_n]\) that is satisfied when substitute \(\alpha_{i}\) for \(x_i\).  Then any element of the Galois group must preserve that relation.
 **** Example of a cubic
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let us revisit the cubic in light of the above understanding.
 Take
 \[ f(x) = x^3-3x-1\]
@@ -2838,8 +2884,9 @@ Either way, I have found an algebraic relation among the roots.
 I now conclude that the only allowable permutations are the even permutations, because otherwise the LHS will not be preserved.
 **** Back to the general discussion
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Without knowing the roots, it is difficult to find algebraic relations among them.
 We get around this using the following idea.
 
@@ -2848,9 +2895,6 @@ We get around this using the following idea.
 The discriminant is a great example.
 For the quartic, there is another one called the resolvent cubic.
 *** Galois groups of quartics
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 We start with a general result.
 
@@ -2884,9 +2928,6 @@ The trouble is that it is difficult to compute values of non-symmetric expressio
 But we can compute them indirectly!
 It's best to see this in an example.
 **** Example
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Let \(f(x) = x^3 + 36x + 63\) over the base field \(F = \mathbf{Q}\).
 Let the 4 complex roots be \(\alpha_1, \dots, \alpha_{4}\).
@@ -2936,15 +2977,13 @@ If the resolvent has no roots, that is, is irreducible, that is still good news!
 Note that \(F[\beta_1, \beta_2, \beta_3] \subset K\) is an intermediate field that is the splitting field of the resolvent cubic.
 This splitting field has degree 3 or 6, and its presense in \(K\) tells us that \(G\) must have a normal subgroup of index 3 or 6, as the case may be.
 **** General method
-:PROPERTIES:
-:html_headline_class: collapsed
-:END:
 
 Using the discriminant and the resolvent cubic, we have almost enough information to completely pin down the Galois group of a quartic.  Look at the worksheet (or the book) for the details.
 ** Solvability using radicals
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 The [[file:assets/Course_notes/2023-05-16-Note-13-30.pdf][handwritten notes]] are more complete.
 
 We now turn to the problem that spurred the field of Galois theory.
@@ -2969,8 +3008,9 @@ We know that the answer is yes for polynomials of degree up to 4.
 The theorem is often stated as: there is no "formula" for the roots of quintic polynomials.  We have to understand this to mean "an expression in terms of radicals".  
 ** Kummer theory
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 See the [[file:assets/Course_notes/2023-05-17-Note-13-57.pdf][handwritten notes.]]
 
 At the heart of Kummer's theorem is the following linear algebra fact, which is only sketched in the notes.  Here is the full story.
@@ -3000,8 +3040,9 @@ But then it must have a non-zero kernel.
 A non-zero \(b\) in the kernel satisfies the property we want.
 ** From Kummer to Abel
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(F\) be a field of characteristic 0.
 
 *Theorem*. Let \(f(x) \in F[x]\) be irreducible with splitting field \(K/F\).
@@ -3016,8 +3057,9 @@ The rest is window dressing, on group theory side and on the field theory side.
 Let us dispense with that.
 *** Basic properties of solvable groups
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 *Proposition* Let \(G\) be a solvable group.
 Then every subgroup of \(G\) is solvable and every quotient of \(G\) is solvable.
 
@@ -3027,8 +3069,9 @@ If \(N\) and \(G/N\) are both solvable, then \(G\) is solvable.
 *Corollary*. Products of solvable groups are solvable.  Finite abelian groups are solvable.
 *** Galois groups of composite extensions
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let \(f, g \in F[x]\) and let \(K / F\) be a splitting field of \(fg\).
 Inside \(K\), the ring generated by the roots of \(f\) is a splitting field of \(f\) and similarly for \(g\).
 Call these \(K_f\) and \(K_g\), respectively.
@@ -3044,8 +3087,9 @@ By putting the two together, we have a map
 The proposition says that the Galois group of \(fg\) is a subgroup of the product of the Galois groups of \(f\) and the Galois group of \(g\).
 *** Proof of Abel's theorem
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
+
 Let us recall the theorem again.
 *Theorem*. Let \(f(x) \in F[x]\) be irreducible with splitting field \(K/F\).  The following are equivalent.
 1. A root of \(f(x)\) is a nested radical over \(F\).
