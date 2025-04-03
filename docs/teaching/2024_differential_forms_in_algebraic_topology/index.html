@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-04-03 Thu 16:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Differential forms in algebraic topology</title>
+<meta name="author" content="Anand Deopurkar" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="/css/main.css"><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=B612:wght@300..700&display=swap" rel="stylesheet"><script src="/js/collapsibility.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Differential forms in algebraic topology</h1>
+<div id="outline-container-org43ff62d" class="outline-2">
+<h2 id="org43ff62d" class="collapsed">Assessment</h2>
+<div class="outline-text-2" id="text-org43ff62d">
+<p>
+The final grade in the course will be based on:
+</p>
+
+<ol class="org-ol">
+<li>Three homework sets for 36% total.</li>
+<li>A take home final exam for 34%.</li>
+<li>An expository paper for 20%.</li>
+<li>Contribution to course notes (scribing the presentations): 10%.</li>
+</ol>
+
+<p>
+If you are taking the course as an ASC (or you wish to), you will also give a presentation based on your paper.
+</p>
+</div>
+</div>
+<div id="outline-container-orga49f4cd" class="outline-2">
+<h2 id="orga49f4cd" class="collapsed">Homework</h2>
+<div class="outline-text-2" id="text-orga49f4cd">
+</div>
+<div id="outline-container-org777abe5" class="outline-3">
+<h3 id="org777abe5" class="collapsed">Homework 1</h3>
+<div class="outline-text-3" id="text-org777abe5">
+<p>
+Due by the end of Friday, 16 August by email.
+</p>
+
+<ol class="org-ol">
+<li>In Example 2.9 (the cohomology with compact support of the circle), describe the generators corresponding to each copy of \(\mathbf{R}\) in the Mayer&#x2013;Vietoris sequence and describe their images under the maps in the sequence.</li>
+
+<li>Let \(M = \mathbf{R}^2 - \{P\}\) be the once punctured plane.
+Determine the groups \(H^{*}_c(M)\) and describe all the generators.</li>
+
+<li>Find a diffeomorphism
+\[ \mathbf{R}^2 - \{0\} \cong S^1 \times \mathbf{R}.\]
+Consider the homotopy operator \(K\) given by this diffeomorphism as sketched just before Corollary 4.1.2.
+Describe 
+\[ K \colon \Omega^2(\mathbf{R}^2 - \{0\}) \to \Omega^1(\mathbf{R}^2-\{0\}),\]
+and explain how it leads to the conclusion
+\[ H^2(\mathbf{R}^2 - \{0\}) = 0.\]</li>
+
+<li>Exercise 4.3.1 (Volume form on a sphere).
+Assume that you already know the groups \(H^{*}(S^n)\).</li>
+
+<li>Exercise 4.8 (Cohomology groups of the open Mobius strip).</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc5df148" class="outline-3">
+<h3 id="orgc5df148" class="collapsed">Homework 2</h3>
+<div class="outline-text-3" id="text-orgc5df148">
+<p>
+Due by the end of Friday, 30 August by email.
+</p>
+
+<ol class="org-ol">
+<li><p>
+Let \(M = \mathbf{R}^2 - \{p_1, \dots, p_n\}\) for distinct points \(p_1, \dots, p_n\).
+Let \(R_i\) be a ray coming out of \(p_i\) and going to infinity (without hitting any other points).
+Let \(C_i\) be a small circle centered at \(p_i\).
+</p>
+
+<p>
+Prove that the Poincare duals of \(R_i\) in \(H^1(M, \mathbf{R})\) form a basis.
+Likewise, prove that the Poincare duals of \(C_i\) in \(H^1_c(M, \mathbf{R})\) form a basis.
+</p></li>
+
+<li>Let \(M = \mathbf{R}^n - \{0\}\).
+Determine \(H^*(M, \mathbf{R})\) and \(H^{*}_c(M, \mathbf{R})\).
+Find nice submanifolds whose Poincare duals give bases for these spaces.</li>
+
+<li>Determine \(\operatorname{Vect}_k(S^1)\) (the set of isomorphism classes of vector bundles of rank \(k\) on \(S^1\)).</li>
+
+<li>Let \(\pi \colon E \to \mathbf{C}P^n\) be the tautological rank 1 bundle.
+That is, 
+\[ E = \{(x, z) \in \mathbf{C}^{n+1} \times \mathbf{C}P^n \mid x \in z\}\]
+with \(\pi\) given by the second projection.
+Describe the transition functions of \(E\) in the standard open cover of \(\mathbf{C}P^n\).
+Is \(E\) the trivial bundle?</li>
+
+<li>Replace \(\mathbf{C}\) by \(\mathbf{R}\) in the exercise above.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5e8a598" class="outline-3">
+<h3 id="org5e8a598" class="collapsed">Homework 3</h3>
+<div class="outline-text-3" id="text-org5e8a598">
+<p>
+Due by the end of Friday, 11 Oct by email.
+</p>
+
+<ol class="org-ol">
+<li>Find the cohomology of \(\mathbf{R}P^n\) by following Exercise 6.46.
+(This problem has 4 parts, so it is worth 2 usual problems.)</li>
+
+<li>Find a good cover of \(\mathbf{R}^2\) minus \(2\) points, and use it to find its cohomology.</li>
+
+<li><p>
+This and the next problem have a long setup.
+</p>
+
+<p>
+Let \(\pi \colon X \to Y\) be a covering space of finite degree \(n\).
+Let \(\mathbf{R}_X\) be the constant sheaf with fiber \(\mathbf{R}\) on \(X\).
+By definition, this is the sheaf whose value on \(V \subset X\) is the set of locally constant maps \(V \to \mathbf{R}\).
+Consider the sheaf \(\pi_{*} \mathbf{R}_X\).
+By definition, its value on \(U \subset Y\) is the value of \(\underline{\mathbf{R}_X}\) on \(\pi^{-1}(U)\).
+(This is also the sheaf \(\mathcal H^{0}\) of the fiber bundle \(\pi \colon X \to Y\).)
+</p>
+
+<p>
+Check, but do not turn in, the following:
+</p>
+<ol class="org-ol">
+<li>We have a map of sheaves (called &ldquo;pullback&rdquo;)
+\[ p \colon \mathbf{R}_Y \to \pi_{*}\mathbf{R}_{X}\]
+defined on \(U \subset Y\) by
+\[ g \mapsto g \circ \pi.\]</li>
+<li>We have a map of sheaves (called &ldquo;trace&rdquo;)
+\[ t \colon \pi_{*}\mathbf{R}_{X} \to \mathbf{R}_Y\]
+defined on \(U \subset Y\) by
+\[ f \mapsto (y \mapsto \sum_{x \in \pi^{-1}(y)} f(x)).\]</li>
+<li>The composite \(t \circ p\) is multpilication by \(n\).</li>
+<li>Let \(F\) be the kernel of \(t\).
+By definition, its value on \(U \subset Y\) is the kernel of \(t(U)\).
+Then \(F\) is a locally constant sheaf with fiber \(\mathbf{R}^{n-1}\).</li>
+<li>The map \((\textrm{inculsion}, \textrm{pullback})\) gives an isomorphism
+\[ F \oplus \mathbf{R}_Y \cong \pi_{*}\mathbf{R}_X.\]</li>
+</ol>
+
+<p>
+Take \(X = S^1\) and \(Y = S^1\) and let \(\pi \colon X \to Y\) be the covering space of degree \(n\).
+Using a good cover of \(Y\), find \(H^{*}(Y, F)\).
+</p>
+
+<p>
+You may use that the Cech complex of any good cover computes the cohomology of a locally constant sheaf.
+Check that you have the right answer using
+\[ H^*(X, \mathbf{R}_X) = H^*(Y, \pi_* \mathbf{R}_X),\]
+   which is Exercise 13.6.
+</p></li>
+
+<li>Let \(X = S^1\) and \(Y = S^1\) with \(\pi \colon X \to Y\) the degree \(n\) covering map.
+Define \(F\) as in the previous problem.
+Describe the monodromy
+\[ \pi_1(Y) \to \operatorname{Aut}(\mathbf{R}^n)\]
+of \(\pi_{*}\mathbf{R}_{X}\) and
+\[ \pi_1(Y) \to \operatorname{Aut}(\mathbf{R}^{n-1})\]
+of \(F\).</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc93ea6d" class="outline-2">
+<h2 id="orgc93ea6d" class="collapsed">Paper ideas</h2>
+<div class="outline-text-2" id="text-orgc93ea6d">
+<p>
+The final paper should be about 10 pages long (no less than 5, no more than 15).
+It can be on any topic related to what we have covered in class.
+Topics in Bott and Tu that we did not cover are completely fine.
+</p>
+
+<p>
+Here are some ideas for topics, including some references, or a brief explanation.
+</p>
+
+<ol class="org-ol">
+<li><p>
+The Riemann&#x2013;Hilbert correspondence
+</p>
+
+<p>
+The following three kinds of objects are &ldquo;the same&rdquo;:
+</p>
+<ul class="org-ul">
+<li>A vector bundle with a flat connection,</li>
+
+<li>A locally constant vector bundle,</li>
+
+<li>A representation of the fundamental group.</li>
+</ul></li>
+
+<li>Classification of surfaces
+
+<ul class="org-ul">
+<li>Massey, &ldquo;A basic course in algebraic topology&rdquo;, Chapter 1.</li>
+</ul></li>
+
+<li>The cohomology of complex Grassmannians
+<ul class="org-ul">
+<li>Bott and Tu, Section 23.</li>
+</ul></li>
+
+<li>Complex line bundles on \(\mathbf{C}P^1\)
+<ul class="org-ul">
+<li>The only complex rank 1 vector bundles on \(\mathbf{C}P^1\) are the tensor powers of the tautological bundle.</li>
+</ul></li>
+<li>The cohomology of matrix groups
+<ul class="org-ul">
+<li>Cohomology of \(\operatorname{SO}(n)\) or \(\operatorname{GL}(n)\) or \(\operatorname{U(n)}\).</li>
+</ul></li>
+<li>Chern classes
+<ul class="org-ul">
+<li>Bott and Tu, Section 20</li>
+</ul></li>
+<li>Pontrajin classes
+<ul class="org-ul">
+<li>Bott and Tu, Section 22.</li>
+</ul></li>
+<li>The classifying space of vector bundles
+<ul class="org-ul">
+<li>Bott and Tu, Section 23.</li>
+</ul></li>
+<li>Complex manifolds and Dolbeault cohomology
+<ul class="org-ul">
+<li>Voisin, &ldquo;Hodge theory and complex algebraic geometry&rdquo;, Chapter 2.</li>
+</ul></li>
+<li>Duality in the non-orientable setting
+<ul class="org-ul">
+<li>Bott and Tu, Section 7.</li>
+</ul></li>
+<li>The Leray spectral sequence
+<ul class="org-ul">
+<li>Bott and Tu, end of Section 14</li>
+</ul></li>
+<li>Diffeomorphisms of the 2-sphere
+<ul class="org-ul">
+<li>Smale, &ldquo;Diffeomorphisms of the 2-sphere&rdquo;</li>
+</ul></li>
+<li>Ehresmann&rsquo;s theorem
+<ul class="org-ul">
+<li>Voisin, &ldquo;Hodge theory and complex algebraic geometry&rdquo;, Chapter 9, Section 1.</li>
+</ul></li>
+<li>Mapping class groups and surface bundles
+<ul class="org-ul">
+<li>Morita, &ldquo;The geometry of characteristic classes&rdquo;, Chapter 4.</li>
+</ul></li>
+<li>Lefschetz fixed point formula
+<ul class="org-ul">
+<li>Bott and Tu, Exercise 11.26.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org620b327" class="outline-2">
+<h2 id="org620b327" class="collapsed">Final exam</h2>
+<div class="outline-text-2" id="text-org620b327">
+</div>
+<div id="outline-container-org29a2376" class="outline-3">
+<h3 id="org29a2376" class="collapsed">Instructions</h3>
+<div class="outline-text-3" id="text-org29a2376">
+<ol class="org-ol">
+<li>You may consult <i>Differential forms in algebraic topology</i> by Bott and Tu.
+You may not consult any other source, including any source on the internet.
+You may not contact any other students in the course during the exam.</li>
+
+<li>Some students are taking the exam at a slightly different time, so please do not talk about the exam with anyone until the end of the week.</li>
+
+<li><p>
+You may use any result from the book or the homework.  If you use a result from the book, please cite it by name or number.  If you use a result from the homework, please clearly write the statement that you are using.
+</p>
+
+<p>
+For example, the following are OK:<br />
+</p>
+<ol class="org-ol">
+<li>&ldquo;By the Thom isomorphism theorem &#x2026;&rdquo;</li>
+<li>&ldquo;By Theorem 6.8 from Bott and Tu &#x2026;&rdquo;</li>
+<li>&ldquo;On the homework, we proved that \(\mathbf{R}\mathbf{P}^n\) is orientable if \(n\) is odd.  Therefore, &#x2026;&rdquo;</li>
+</ol>
+
+<p>
+For example, the following are not OK:<br />
+</p>
+<ol class="org-ol">
+<li>&ldquo;By a result from Bott and Tu &#x2026;&rdquo;</li>
+<li>&ldquo;By a homework problem, &#x2026;&rdquo;</li>
+</ol></li>
+
+<li>There are four questions, each worth 10 marks.</li>
+
+<li>Write clearly and legibly on any paper (typing is OK too, but not required).
+Please scan and send me your exam by email by 9pm.</li>
+
+<li>If you have questions, feel free to ask by email.</li>
+</ol>
+
+<p>
+\vfill
+</p>
+
+<p>
+The questions are on the next page.
+</p>
+
+<p>
+\newpage
+</p>
+</div>
+</div>
+<div id="outline-container-org7a113d0" class="outline-3">
+<h3 id="org7a113d0" class="collapsed">Questions</h3>
+<div class="outline-text-3" id="text-org7a113d0">
+<p>
+Please justify your answers unless specifically asked otherwise.  
+</p>
+
+<ol class="org-ol">
+<li>Let \(f \colon \mathbf{R} \to \mathbf{R}\) be the function with the following graph.
+<img src="assets/Final_exam/2024-11-11_10-53-44_w36JZPY8.jpg" alt="2024-11-11_10-53-44_w36JZPY8.jpg" />
+Note that \(f\) is smooth, compactly supported, and \(\int_{\mathbf{R}} f(x) dx = 1\).   
+Let \(x, y\) be the standard coordinates on \(\mathbf{R}^2\).
+Set \(\omega = f(x) f(y) dx \wedge dy\).<br />
+
+<ol class="org-ol">
+<li>Does there exist a \(1\)-form \(\eta\) such that \(\omega = d \eta\)?
+If so, find \(\eta\).
+If not, why not?</li>
+
+<li>Does there exist a compactly supported \(1\)-form \(\eta\) such that \(\omega = d \eta\)?
+If so, find \(\eta\).
+If not, why not?</li>
+</ol></li>
+
+<li>Let \(L \subset \mathbf{R}^3\) be a line and \(p \in \mathbf{R}^3\) a point not on \(L\).
+Set \(M = \mathbf{R}^3 - (L \cup \{p\})\) (the complement of the union of \(L\) and \(p\)).<br />
+
+<ol class="org-ol">
+<li>Find \(H^{*}_c(M, \mathbf{R})\).</li>
+
+<li>Describe closed submanifolds of \(M\) whose Poincare duals form a basis of \(H^{*}_c(M, \mathbf{R})\).
+Justify your answer for \(H^1_c(M, \mathbf{R})\) <b>or</b> \(H^2_c(M, \mathbf{R})\).</li>
+</ol></li>
+
+<li>Let \(E \to S^1\) be a non-trivial real vector bundle of rank 2.
+Which of the following are trivial: \(E^{*}\), \(E \oplus E\), \(E \otimes E\).</li>
+
+<li>Consider the standard open cover \(\{U_0,U_1, U_2\}\) of \(\mathbf{C}\mathbf{P}^2\).
+That is, \[U_i = \{[x_{0}:x_1:x_2] \mid x_i \neq 0\}.\]
+Consider the Cech&#x2013;de-Rham double complex for this open cover with coefficients in \(\mathbf{R}\).<br />
+
+<ol class="org-ol">
+<li>Write the \(E_1\) page of the associated spectral sequence.</li>
+
+<li>Compute the \(E_2\) page.</li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+Created by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 30.1 (<a href="https://orgmode.org">Org</a> mode 9.8-pre).  Last modified: 2025-04-03 Thu 16:59.  <a href="https://github.com/deopurkar/deopurkar.github.io">Source</a>
+</div>
+</body>
+</html>
