@@ -27,6 +27,7 @@
 :institute: Australian National University
 :year:     2022
 :link: [[file:teaching/2022algebra1/]]
+:ID:       758f10f4-87b2-4f06-bf29-4ff996b8ad98
 :end:
 
 * [[file:teaching/2022langmath/][The language of mathematics]]                                            :hl:

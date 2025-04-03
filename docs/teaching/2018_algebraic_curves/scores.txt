@@ -1,0 +1,4 @@
+	Check	Check-minus	Total
+FY 	18	2		20
+AS	11	7		18
+DE	15	12		27
