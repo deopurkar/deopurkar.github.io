@@ -1,12 +1,10 @@
 # Created 2025-04-03 Thu 16:56
-#+options: toc:nil ':t tags:nil broken-links:ignore
 #+title: Differential forms in algebraic topology
 #+author: Anand Deopurkar
-#+filetags: teaching dfat
-#+latex_class: amsart
-#+bind: org-export-use-babel nil
-#+export_file_name: ~/website/content/teaching/2024_differential_forms_in_algebraic_topology/index.org
-#+exclude_tags: solution solutions noexport
+
+These are the course materials for the special topics course /Differential forms in algebraic topology/ at the ANU in 2024.
+This was a reading course on the book by R. Bott and L. Tu by the same title.
+
 * Assessment
 :PROPERTIES:
 :html_headline_class: collapsed

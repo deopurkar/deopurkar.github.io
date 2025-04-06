@@ -34,16 +34,15 @@ Canberra, Australia
 
 CV: [[file:cv.html][html]] [[file:cv.pdf][pdf]]
 #+end_nil
-#+end_intro
-
-#+begin_container
-#+TOC: headlines:1
 
 I am a mathematician working in algebraic geometry and related areas.
 I study the interplay between systems of algebraic equations and the geometric shapes they describe.
-#+end_container
 
-* /now
+#+TOC: headlines:1
+
+#+end_intro
+
+* now
 :PROPERTIES:
 :html_headline_class: collapsible
 :END:
