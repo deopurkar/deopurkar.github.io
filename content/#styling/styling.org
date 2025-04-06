@@ -5,11 +5,8 @@
 
 The CSS is adapted from [[https://github.com/asilata/asilata.github.io/][Asilata Bapat]].
 
-* Colours
-:PROPERTIES:
-:ID:       a54a58d4-feec-474f-b872-46f194d0c1ed
-:END:
-First we define some auxiliary [[https://sass-lang.com/documentation/at-rules/mixin][mixins]] to use later, such as for alternately coloured table rows.
+* Colour theme
+We define some auxiliary [[https://sass-lang.com/documentation/at-rules/mixin][mixins]] to use later, such as for alternately coloured table rows.
 #+begin_src scss
   @mixin alternate-rows($color) {
       table {
@@ -19,6 +16,7 @@ First we define some auxiliary [[https://sass-lang.com/documentation/at-rules/mi
       }
   }
 #+end_src
+
 Next we define the colour options for all components of the page.
 We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] called ~theme~, which uses the following variables:
 - ~bg~, ~bg-faded~ :: background colour and faded version,
@@ -28,66 +26,71 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
 - ~code~ :: colour for verbatim text/code snippets
 - ~fg-select~, ~bg-select~ :: foreground and background colour for selected text
 #+begin_src scss
-  @mixin theme($bg, $bg-faded, $fg, $fg-faded, $link, $link-faded, $titles, $code, $bg-select: $titles, $fg-select: $bg-faded) {
-      ,* { color: $fg; }
-      body {
-          background-color: $bg;
-          ::-moz-selection {
-              background-color: $bg-select;
-              color: $fg-select;
-          }
-          ::-selection {
-              background-color: $bg-select;
-              color: $fg-select;
-          }
-      }
-      a, a:active, a:visited { color: $link;}
-      a:hover { color: $link-faded; }
-      code { color: $code; }
-      #table-of-contents a {
-  	border-bottom: 0.15em solid $titles;
-      }
-      h1, h2, h3, h4, h5, h6 {
-          border-bottom: 0.15em solid $titles;
-          display: inline-block;
-          padding-top: 0.5em;
-          margin: 0em;
-          padding-bottom: 0.25em;
-          a, a:active, a:visited {
-              color: $titles;
-          }
-          a:hover {
-              background-color: $bg-faded;
-              text-decoration: none; 
-          }
-      }
-      header {
-          a, a:active, a:visited {
-              color: $fg;
-          }
-          a.active {
-              color: $titles;
-          }
-          a:hover {
-              color: $titles;
-              background-color: $bg;
-              text-decoration: none;
-          }
-      }
-      footer {
-          color: $fg-faded;
-          border-color: $fg-faded;
-          a, a:active, a:visited { color: $link-faded; }
-      }
+    @mixin theme($bg, $bg-faded, $fg, $fg-faded, $link, $link-faded, $titles, $code, $bg-select: $titles, $fg-select: $bg-faded) {
+        ,* { color: $fg; }
+        body {
+    	column-rule: 1px solid $bg-faded;
+            background-color: $bg;
+            ::-moz-selection {
+                background-color: $bg-select;
+                color: $fg-select;
+            }
+            ::-selection {
+                background-color: $bg-select;
+                color: $fg-select;
+            }
+        }
+        a, a:active, a:visited { color: $link;}
+        a:hover { color: $link-faded; }
+        code { color: $code; }
+        #table-of-contents a {
+    	border-bottom: 0.15em solid $titles;
+        }
+        h1, h2, h3, h4, h5, h6 {
+    	border-top-color: $bg-faded;
+    	text-decoration: underline 0.15em $titles;
+            a, a:active, a:visited {
+                color: $titles;
+            }
+            a:hover {
+                background-color: $bg-faded;
+                text-decoration: none; 
+            }
+        }
+        h2:before {
+  	  position: absolute;
+  	  content:'';
+  	  height: 1px;
+  	  width: 80%;
+  	  background-color: $bg-faded;
+        }
+        header {
+            a, a:active, a:visited {
+                color: $fg;
+            }
+            a.active {
+                color: $titles;
+            }
+            a:hover {
+                color: $titles;
+                background-color: $bg;
+                text-decoration: none;
+            }
+        }
+        footer {
+            color: $fg-faded;
+    	border-top: 1px solid $bg-faded;
+            a, a:active, a:visited { color: $link-faded; }
+        }
 
-      #mypicture {
-          border-color: $fg-faded;
-      }
+        #mypicture {
+            border-color: $fg-faded;
+        }
 
-      #postamble {
-          border-top: 0em;
-      }
-  }
+        #postamble {
+    	border-top: 1px solid $bg-faded;
+        }
+    }
 #+end_src
 Now we set some predefined palettes.
 Later on we can just include the one we want.
@@ -151,45 +154,25 @@ First we define the variables for the title font and the body font.
   $body-font: 'Atkinson Hyperlegible';
   $hl-font: 'B612', monospace; 
 #+end_src
-Next we use media queries to set breakpoints for various screen sizes, which then influence the layout of the page.
-The layout changes are mainly made via [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][CSS flexbox]].
+
+We use media queries to slighlty reduce the line height for small screens.
+Otherwise, we use a multi-column layout width columns.
 #+begin_src scss
   @media screen and (max-width: 480px) {
       body {
-          max-width:95%;
-          font-size:100%;
           line-height: 1em;
-      }
-  }
-  @media screen and (min-width: 480px) {
-      body {
-          max-width:80%;
-          line-height: 1.2em;
-      }
-  }
-  @media screen and (min-width: 550px) {
-      body {
-          .intro {
-              flex-direction: row-reverse;
-          }
-          line-height: 1.2em;
-      }
-  }
-  @media screen and (min-width: 1000px) {
-      body {
-          max-width:1000px;
-          line-height: 1.5em;
-          header {
-              flex-direction: row;
-          }
+  	max-width: 95%;
       }
   }
   body {
       font-family: $body-font, sans-serif;
       margin-top: 0em;
-      margin-left:auto;
-      margin-right:auto;
-      line-height:1.5em;
+      line-height: 1.5em;
+      column-width: 30em;
+      column-gap: 20px;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
   }
 #+end_src
 Style links. Remember that the colours have already been styled via a theme mixin.
@@ -204,8 +187,20 @@ Style headings, lists, and figures.
   h1, h2, h3, h4 {
       font-family: $hl-font;
       font-weight: normal;
-      margin-bottom: 0em;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: block;
   }
+  h1, h2{
+      column-span: all;
+  }
+
+  h2 {
+  	padding-top: 10px;
+  	border-top-width: 1px;
+  	border-top-style: solid;
+      }
+
   li {
       margin-top: 0.5em;
       margin-bottom: 0.5em;
@@ -221,41 +216,41 @@ Style headings, lists, and figures.
   dd {
       grid-column-start: 2;
   }
-  
+
   figure {
       padding: 0em;
       margin: 0em;
   }
-  
+
 #+end_src
 
-We come to the main layout styling for the header and body.
 We begin with a [[https://sass-lang.com/documentation/style-rules/placeholder-selectors][placeholder selector]] to decrease font size.
 #+begin_src scss
   %small {
       font-size: 80%;
   }
 #+end_src
-Now style the title and intro.
+Style the title and intro.
 #+begin_src scss
   .title {
       font-family: $title-font;
       line-height: 1.5em;
   }
   .intro {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+      column-span: all;
+      column-width: 30em;
+      column-gap: 20px;
+      margin-left: auto;
+      margin-right: auto;
   }
 #+end_src
 Footer style and other miscellany.
 #+begin_src scss
   footer {
       @extend %small;
-      border-top: 0.1em dotted;
       margin-top:2em;
       padding-top:0.3em;
+      column-span: all;
   }
   #mypicture {
       width: 10em;
@@ -267,10 +262,10 @@ Footer style and other miscellany.
       }
   }
   #table-of-contents {
-      float: left;
       padding-right: 1em;
       margin-right: 1em;
       margin-bottom: 1em;
+      display: inline-block;
       h2 {
           display: none;
       }
@@ -281,7 +276,7 @@ Footer style and other miscellany.
       }
       li {
           margin-top: 0em;
-          margin-bottom: 1em;
+          margin-bottom: 0.5em;
       }
       a {
   	text-decoration: none;
@@ -322,14 +317,12 @@ Finally, we style collapsible and collapsed headlines.
 #+begin_src scss
   .collapsible{
       cursor: pointer;
-      border-bottom-width: 0.15em;
       &:before {
           content: '- ';
       }
   }
   .collapsed{
       cursor: pointer;
-      border-bottom-width: 0.15em;
       &:before {
           content: '+ ';
       }
