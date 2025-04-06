@@ -23,7 +23,6 @@
 #+attr_html: :id mypicture :alt Anand Deopurkar
 [[file:anandrd_hnl.jpg]]
 
-#+begin_nil
 [[http://maths.anu.edu.au/][Mathematical Sciences Institute]]\\
 [[https://anu.edu.au][The Australian National University]]\\
 Canberra, Australia
@@ -33,17 +32,14 @@ Canberra, Australia
 +61 2 6125 4628   
 
 CV: [[file:cv.html][html]] [[file:cv.pdf][pdf]]
-#+end_nil
-#+end_intro
-
-#+begin_container
-#+TOC: headlines:1
 
 I am a mathematician working in algebraic geometry and related areas.
 I study the interplay between systems of algebraic equations and the geometric shapes they describe.
-#+end_container
 
-* /now
+#+TOC: headlines:1
+
+#+end_intro
+* now
 :PROPERTIES:
 :html_headline_class: collapsible
 :END:
