@@ -39,6 +39,7 @@ I study the interplay between systems of algebraic equations and the geometric s
 #+TOC: headlines:1
 
 #+end_intro
+
 * now
 :PROPERTIES:
 :html_headline_class: collapsible
@@ -49,7 +50,8 @@ I study the interplay between systems of algebraic equations and the geometric s
 - I am supervising Charlie Sherrat, who has been exploring the moduli space of [[wiki:Cubic_surface][cubic surfaces]] arising from 3x3x4 rubik's cubes.
 - I am supervising Luke Doherty, who is looking into the geometry of [[wiki:Linkage_(mechanical)][linkages]].
 - This semester, I am teaching Algebra 2 (Fields and Galois theory).
-- In March, I will be at the [[https://www.matrix-inst.org.au/events/teichmuller-theory-and-flat-structures/][MATRIX workshop /Teichmuller theory and flat structures/]] in Creswick, Victoria.
+
+If you are thinking of doing a PhD with me, please read this [[file:prospective_phd.org][page for prospective PhD students]].
   
 * Papers/pre-prints
 :PROPERTIES:
