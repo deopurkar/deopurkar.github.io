@@ -2,7 +2,7 @@
 :ID:       1a667b02-c72c-4225-acbc-d5064ab2f748
 :END:
 #+title: Anand Deopurkar
-#+subtitle: Thinking of doing a PhD at ANU under my supervision?
+#+subtitle: Thinking of doing a PhD at ANU with me as a supervisor?
 
 Thanks!  I am happy that you find my work interesting.
 
