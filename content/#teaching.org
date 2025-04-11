@@ -23,13 +23,13 @@
 :year:     2024
 :end:
 
-* Algebra 2 (Fields and Galois theory)
+* [[file:teaching/2023_algebra2/][Algebra 2 (Fields and Galois theory)]]
 :properties:
 :institute: Australian National University
 :year:     2023
 :end:
 
-* [[file:teaching/2023_algebra2/][Algebra 1 (Groups and rings)]]                                                             
+* [[file:teaching/2022_algebra1/][Algebra 1 (Groups and rings)]]                                                             
 :properties:
 :institute: Australian National University
 :year:     2022
