@@ -13,7 +13,7 @@
 #+LINK: rachel https://sites.google.com/view/rachelnewton
 #+LINK: vaidehee https://sites.google.com/view/vaideheethatte
 #+LINK: rosa http://rosa-winter.com/
-#+LINK: changho https://hanchangho.github.io/
+#+LINK: changho https://sites.google.com/view/changho-han/
 #+LINK: valery https://www.math.uga.edu/directory/people/valery-alexeev
 #+LINK: hal http://webhome.auburn.edu/~hks0015/
 #+LINK: cobb https://johndcobb.github.io/
