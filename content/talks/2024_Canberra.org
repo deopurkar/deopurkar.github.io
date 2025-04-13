@@ -1,0 +1,56 @@
+# Created 2025-04-13 Sun 11:13
+#+options: broken-links:ignore
+#+title: The work of [[id:f921aaba-8a1c-4b77-8830-65d654847228][Maryam Mirzakhani]]
+#+author: Anand Deopurkar
+#+filetags: talk
+(Notes for the talk at the Women in Math day on 13 May 2024).
+
+I am going to describe Mirzakhani's work on the geometry of surfaces.
+* Classification of surfaces by genus
+* The trichotomy: metric of positive curvature, 0 curvature, negative curvature.
+* Counting simple geodesics
+** Sphere
+Only one simple geodesic, up to homotopy.
+** Torus
+Number of simple geodesics of length at most \(L\) = The number of integral points \((p,q)\) in a circle of radius \(L\) with \(\gcd(p,q) = 1\).
+
+Grows roughly as \(L^2\).
+** Higher genus
+
+**Theorem (Mirzakhani)**  Fix a surface \(S\) of genus \(g\) with a metric of constant negative curvature \(-1\) (hyperbolic metric).  Then the number of simple geodesics of length \(L\) on \(S\) is asympototic to \(L^{6g-6}\).  
+
+**Remark** The limit of the ratio (the asympototic constant) depends on the metric.
+
+**Remark** If you remove the adjective simple, that is, allow crossings, then the counting problem had been solved before.  Then the number is asymptotic to \(e^L/L\).  So, a negligible portion of geodesics are closed geodesics.
+** Ideas in the proof
+
+Mirzakhani's insight is that the counting problem in higher genus is very similar to the counting problem in genus 1, if you interpret it correctly.
+
+To do so, observe that integral points \((p,q)\) with \(\gcd(p,q) = 1\) lie in the \(\operatorname{SL}_2(\mathbf{Z})\) orbit of one such point, say \((1,0)\).
+
+The same is true in higher genus.
+The group \(\operatorname{SL}_2(\mathbf{Z})\) needs to be replaced by the mapping class group \(\operatorname{Mod}(S)\) that, roughly speaking, captures the ways of breaking \(S\) and assembling it back.
+It is known that up to \(\operatorname{Mod}(S)\) action, there are only finitely many geodesics.
+So, we may fix a representative \(\gamma\), and count how many of its \(\operatorname{Mod}(S)\)-translates have length at most \(L\).
+
+Next, for the torus, we interpreted a geodesics as points of \(\mathbf{R}^2\), and ultimately, used the area in \(\mathbf{R}^2\) to estimate their number.
+Similarly, geodesics in \(S\) can be interpreted as points in a space \(\operatorname{LM}(S)\), called the space of measured laminations on \(S\).
+It is a manifold of dimension \(6g-6\), and has a measure.
+It also has an integral structure, so it makes sense to talk about integral points in \(\operatorname{LM}(S)\)
+The problem of counting geodesics of length atmost \(L\) is then equivalent to counting integral points in \(\operatorname{LM}(S)\) in a ball of radius \(L\) , and since \(\operatorname{LM}(S)\) has dimension \(6g-6\), the count is proportional to \(L^{6g-6}\).
+* Connections
+The space \(\operatorname{LM}(S)\) is closely connected to other spaces of fundamental importance.
+In particular, it is closely related to \(M_g\), the moduli space of algebraic curves of genus \(g\), a space that is very dear to me.
+Mirzakhani's work shows that geodesic counting is related to the volumes of the moduli spaces \(M_g\).
+Witten had conjectured that these volumes were conjectured to satisfy complicated recurrence relations.
+Mirzakhani's geodesic counting gives a new proof this conjecture.
+
+Although the volumes of \(M_g\) have a non-algebraic definition, it is equal to a quantities defined in purely algebraic terms using intersection theory in algebraic geometry.
+Mirzakhani's work gives a new perspective on these intersection numbers.
+
+What is extraordinary in her work is how she bridges an array of different fields: topology, dynamics, algebraic and differential geometry, among others.
+* References
+
+- The work of Maryam Mirzakhany by Curtis McMullen
+  https://people.math.harvard.edu/~ctm/papers/home/text/papers/icm14/icm14.pdf
+- Growth of the number of simple closed geodesics on hyperbolic surfaces by Maryam Mirzakhani, Annals of Mathematics, 2008.

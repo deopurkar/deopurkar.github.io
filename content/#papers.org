@@ -28,6 +28,7 @@
 :journal:  Pre-print
 :link:     [[https://raw.githubusercontent.com/deopurkar/equivariant-classes-of-gl2-orbits/main/gl2orbits.pdf][pdf]], [[https://arxiv.org/abs/2405.09849][arxiv]], [[https://github.com/deopurkar/equivariant-classes-of-gl2-orbits/][source/comments]]
 :year:     2024
+:ID:       1e610ea8-2660-4860-ba6b-6656bf65d415
 :END:
 We compute equivariant fundamental classes of orbits in GL(2)-representations. As applications, we find degrees of the orbit closures corresponding to elliptic fibrations and self-maps of the projective line.
 
@@ -83,6 +84,7 @@ We describe a compactification of the moduli space of pairs (S,C) where S is a s
 :link:     [[https://arxiv.org/abs/2011.07908][arxiv]]
 :year:     2020
 :org-id:   thurstonstab
+:ID:       7a1e6681-aa0c-4d97-ab69-a702afa8eb28
 :END:
   We propose compactifications of the moduli space of Bridgeland stability conditions of a triangulated category.
   Our construction arises from a viewing a stability condition as a metric on the underlying category and is inspired by the Thurston compactification of the Teichm\"uller space of hyperbolic metrics on a surface.

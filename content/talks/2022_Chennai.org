@@ -1,0 +1,71 @@
+# Created 2025-04-13 Sun 11:40
+#+title: Carpentry, geometry, and category theory
+#+author: Anand Deopurkar
+#+bibliography: ~/Documents/bibliography/math.bib
+#+latex_header_extra: \usepackage{fullpage}
+
+(Notes for the talk at CMI in 2022).
+* Carpentry
+
+** The carpenter's rule problem
+
+*** Definition of carpenter's rule
+A chain \(C\) with edges of specified length.
+*** The carpenter's rule problem
+Can a planar embedding of \(C\) be deformed to be linear?
+*** Generalisations
+1. Consider embeddings in \(\mathbf{R}^{n}\) for \(n = 2, 3, 4, \dots\).
+2. Consider metric graphs \(G\) other than a chain.
+**** Results
+1. Chains can be straightened in \(\mathbf{R^n}\) for \(n \geq 4\) [cite:@coc.oro:01].
+2. There exist locked graphs in \(\mathbf{R}^2\).
+3. There exist locked chains in \(\mathbf{R}^3\).
+4. Chains can be straightened in \(\mathbf{R}^2\) [cite:@con.dem.rot:03;@str:00]
+** Pointed pseudo-triangulations
+*** Definition
+Given a collection of \(n\) points in general position, a ppt is a maximal collection of edges such that
+1. No two edges cross.
+2. At every vertex, all incident edges lie in a half-plane.
+*** Properties
+1. Each region is a pseudo-triangle.
+2. There are \(2n-3\) edges.
+3. Each edge is uniquely flippable.  The flip graph is connected.
+*** Chains and motions
+1. A ppt is minimally rigid.
+2. A ppt minus an external edge has one direction of freedom.
+   Furthermore, along one of the two rays, the motion is expansive.
+3. A polygonal chain lies on a ppt minus an external edge.
+*** Expansive motions solve the Carpenter's rule problem
+Start with a chain \(C\).
+Complete it to a ppt minus an external edge. 
+Move in the unique expansive direction.  Expansivity guarrantees that the configuration remains non-crossing.
+Eventually the chain unfolds.
+* Geometry
+** The configuration space is a \(K(\pi, 1)\)
+[cite:@fox.neu:62;@bri:73;@del:72] 
+
+New proof that exhibits an explicit contraction of the universal cover.
+
+Consider \(\widetilde {\operatorname{Conf}_n}\), the space of \(n\) ordered points along with an \(n\)-chain up to isotopy.
+Then \(\widetilde {\operatorname{Conf}_n} \to \operatorname{Conf}_{n}\) is a covering map.
+Given a point of \(\widetilde {\operatorname{Conf}_{n}}\), the support of the chain lies on a ppt*.
+Move in an expansive direction.
+Eventually, the chain will unfold, giving a deformation retraction of \(\widetilde {\operatorname{Conf}_{n}}\) to a subspace where the chain is linear.
+It is easy to see directly that the latter is contractible.
+* Category theory
+** The stability manifold
+The space \(\operatorname{Conf}_n\) arises in a seemingly unrelated setting.
+To every triangulated category \(C\), we can associate a manifold \(\operatorname{Stab} C\).
+This manifold is a parameter space for Bridgeland stability conditions on \(C\) [cite:@bri:07].
+For every \(n\), there is a particular category \(C_n\) of interest in algebraic geometry, symplectic geometry, and representation theory such that we have an isomorphism
+\[ \operatorname{Stab} C_n = \widetilde{\operatorname{Conf}}_n.\]
+We deduce that \(\operatorname{Stab} C_n\) is contractible.
+** Categorical representations
+Why do we care about categories like \(C_n\) and their stability manifolds?
+There is a class of groups \(G\) called Artin-Tits Braid groups that are quite poorly understood.
+One of the reasons that they are poorly understood is that we do not know any good linear representations of \(G\).
+In fact, it is unknown whether \(G\) has any faithful finite dimensional representations!
+
+Although it is hard to construct a vector space \(V\) on which \(G\) acts, it is much more natural to construct categories \(C\) on which \(G\) acts.
+Contractibility of \(\operatorname{Stab} C\) implies that this action is faithful.
+As a result, we can deduce many of the consequences of having a faithful linear representation.

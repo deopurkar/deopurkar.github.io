@@ -1,0 +1,541 @@
+# Created 2025-04-13 Sun 11:26
+#+options: ':t
+#+title: Stability conditions, metrics, and compactifications
+#+author: Anand Deopurkar
+#+bibliography: ~/Documents/bibliography/math.bib
+#+latex_header_extra: \input{format}
+#+filetags: research
+* Introduction                                                     :lecture1:
+Let \(\mathcal C\) be a triangulated category.
+We know that associated to \(\mathcal{C}\) is a manifold \(\operatorname{Stab}(\mathcal{C})\) that parametrises the set of Bridgeland stability conditions on \(\mathcal{C}\).
+The main question I want to address is the following.
+#+name: qmain
+#+begin_question
+What is the global geometry of \(\operatorname{Stab}(\mathcal{C})\)?
+#+end_question
+** Motivation
+Question~[[qmain]] has significant implications to many longstanding and well-studied open questions.
+I will now describe two such implications.
+The first concerns \(D^b\operatorname{Coh}X)\), and spefically the case where \(X\) is a K3 surface.
+The second concerns a question in group theory that a priori has nothing to do with derived categories or even triangulated categories.
+
+Both applications have to do with understanding symmetries of a triangulated category \(\mathcal{C}\).
+By a symmetry of \(\mathcal{C}\), I mean an exact auto-equivalence, namely an exact functor 
+\[\phi \colon \mathcal{C} \to \mathcal{C}\]
+which is an equivalence of categories.
+The set of /auto-equivalences of \(\mathcal{C}\)/ modulo natural isomorphisms forms a group under composition, say \(G\).
+The action of \(G\) on \(\mathcal{C}\) induces an action on \(\operatorname{Stab}(\mathcal{C})\).
+The first situation---a group acting on a category---is exotic; the second situation---a group acting on a manifold---is more familiar.
+So we may hope to say something about \(G\) and its action on \(\mathcal{C}\) by studying how it acts on \(\operatorname{Stab}(\mathcal{C})\).
+This is precisely how the applications arise.
+*** First application: auto-equivalences of DbCoh
+Let \(\mathcal{C} = D^{b}(\operatorname{Coh} X)\), where \(X\) is a smooth projective variety over \(\mathbf{C}\).
+This is a \(\mathbf{C}\)-linear triangulated category, and we will only be studying \(\mathbf{C}\)-linear auto-equivalences.
+As before, set \(G = \operatorname{Aut}(\mathcal{C})\).
+What can we say about \(G\)?
+
+We can think of some obvious elements of \(G\):
+1. any automorphism \(\phi colon X \to X\) induces \(\phi_{*} \colon \mathcal{C} \to \mathcal{C}\).
+2. the shift functor,
+3. tensoring by a line bundle,
+
+*Theorem* (Orlov 2002, [cite:@orl:02]) --- If \(\omega_X\) is ample or anti-ample, then the three types of auto-equivalences above generate the full auto-equivalence group \(G\).
+
+For abelian varieties, the auto-equivalence group is larger, but it is completely understood, again due to the work of Orlov [cite:@orl:02].
+
+The case of (true) Calabi--Yau varieties is much more mysterious.
+It is made much more complicated by the presence of spherical objects and spherical twists, which we now explain.
+*** Spherical objects and spherical twists
+Let \(\mathcal{C}\) be the derived category of coherent sheaves on a K3 surface.
+Serre duality implies that \(\mathcal{C}\) is a \(2\)-Calabi--Yau category, that is, we have functorial isomorphisms
+\[ \Hom(x,y) = \Hom(y,x[2])^{*}.\]
+
+
+*Definition* --- We say that \(x \in \mathcal{C}\) is /spherical/ if the graded endomorphism algebra of \(x\) is isomorphic to the cohomology algebra of the 2-sphere, that is,
+\[ \Hom(x,x) \cong k \quad \Hom^2(x,x) \cong k\]
+and all other \(\Hom(x,x[i]) = 0.\)
+
+*Examples* --- In \(D^b(\operatorname{Coh} K3)\), all line bundles are spherical objects.
+
+Every spherical object \(x \in \mathcal{C}\) gives rise to an auto-equivalence
+\[ T_x \colon \mathcal{C} \to \mathcal{C}.\]
+One way to describe it is as a Fourier--Mukai transform.
+In \(D^{b}(X \times X)\), consider the map
+\[ x \boxtimes x^\vee \to O_{\Delta},\]
+and let \(E_{x}\) be the cone:
+\[ x \boxtimes x^\vee \to O_{\Delta} \to E \xrightarrow{+1}.\]
+Then \(T_{x}\) is the Fourier--Mukai transform with kernel \(E_{x}\).
+
+As an aside, note that the definition of \(T_{x}\) makes sense for any object \(x\), not just a spherical object.
+However, when \(x\) is a spherical object, \(T_x\) is an auto-equivalence.
+
+It is instructive to see how \(T_x\) acts on the Grothendieck group.
+Set \(\Lambda = K(\mathbf{C})\).
+This is a free \(\mathbf{Z}\)-module of finite rank, equipped with a symmetric bilinear form
+\[ \langle [x],[y]\rangle = \sum_{i} \dim \Hom(x,y[i]). \]
+Let \(x \in \mathcal{C}\) and set \(v = [x]\).
+Let \(T_{x} \colon \mathcal{C} \to \mathcal{C}\) be the Fourier--Mukai transform in the kernel \(E_{x}\) as defined above.
+Then we have an endomorphism of the lattice \(\Lambda\) defined by
+\[T_{x} \colon w \mapsto w - \langle v,w \rangle v. \]
+If \(x\) is spherical, then \(\langle v, v \rangle = 2\), so the formula above is equal to
+\[ T_x \colon w \mapsto w - 2 \frac{\langle v, w \rangle}{\langle v, v \rangle} v.\]
+If you have recently studied Linear Algebra, then you will recognise that this is the reflection in the hyperplane perperdicular to \(v\).
+So, \(T_{x} \colon \mathcal{C} \to \mathcal{C}\) is a lift of a reflection of \(\Lambda\).
+Unlike a reflection, however, \(T_{x}\) does not have order 2.
+It is easy to check that
+\[ T_x \colon x \mapsto x [-1].\]
+So no power of \(T_{x}\) is the identity.
+In particular, \(T_{x}^{2}\) is a non-trivial auto-equivalence of \(\mathcal{C}\) that is trivial on the Grothendieck group.
+The existence of such transformations is a hurdle in understanding the auto-equivalence group.
+
+Let \(H \subset \operatorname{Aut}(\mathcal{C})\) be the kernel of the map
+\[ \operatorname{Aut}(\mathcal{C}) \to \operatorname{Aut}(K(\mathcal{C})).\]
+Understanding \(H\) is the key step in understanding \(\operatorname{Aut}(\mathcal{C})\).
+The image is a linear algebraic object, and is quite well understood.
+
+*Theorem* (Bayer--Bridgeland) ---  Let \(X\) be an algebraic K3 surface of Picard rank 1, set \(\mathcal{C} = D^{b}(\operatorname{Coh} X)\), and let \(H\) be as above.
+Then \(H\) is a product
+\[ H = \mathbf{Z} \times \text{Free group generated by \(T_{x}^2\) for spherical \(x\)}.\]
+The \(\mathbf{Z}\) factor is generated by the shift \([2]\).
+
+It is conjectured, more generally, that \(H\) is generated by \([2]\) and \(T_x^{2}\) for spherical \(x\).
+
+The new ingredient in the proof is the global geometry of \(\operatorname{Stab}(\mathcal{C})\).
+The theorem follows immediately from known results and the following.
+
+*Theorem* (Bayer--Bridgeland) --- In the above setting, \(\operatorname{Stab}(\mathcal{C})\) is contractible.
+*** Spherical twists and braid groups
+I am now moving to a story that has nothing to do with derived categories.
+In the previous story, the spherical twists were the villains---they complicated the story.
+In this story, they are the heroes---they make things work!
+
+Let \(\Gamma\) be a simple graph.
+The /Artin-Tits braid group/ associated to \(\Gamma\) is the group \(B_{\Gamma}\) genarated by symbols \(\sigma_{v}\) for each vertex \(v \in \Gamma\) and relations
+\[ \sigma_v \sigma_w = \sigma_w \sigma_v \text{ if \(v\) and \(w\) are not connected by an edge},\]
+and
+\[ \sigma_v \sigma_w \sigma_v = \sigma_w \sigma_v \sigma_w \text{ if \(v\) and \(w\) are connected by an edge}.\]
+For example, if \(\Gamma\) is the chain with \(n\)-edges, then \(B_{\Gamma}\) is the usual braid group.
+
+Fundamental questions about the group theory and representation theory of these groups are open.
+
+One of the most important such questions is: does \(B_{\Gamma}\) have a solvable word problem?  That is, is there an algorithm that takes a word in the generators and their inverses as an input and determines whether the word is equal to the identity in the group or not.
+
+Another important question is: does \(B_{\Gamma}\) admits a faithful finite dimensional linear representation?
+
+A positive answer to the second question will give a positive answer to the first question.
+If you can represent the group using matrices, then determining whether a word is trivial or not is trivial.
+You just have to do matrix multiplication.
+But at present we do not know whether a faithful linear representation exists.
+Worse, there are no candidate linear representations that we think should be faithful!
+
+But one does not need a faithful linear representation to solve the word problem.
+/Any/ good (= computable) faithful representation will do.
+Spherical twists provide potential such representations.
+
+The key observation is the following.
+Suppose \(x, y \in \mathcal{C}\) are spherical objects.
+If \(\hom(x,y) = 0\), then
+\[ T_x T_y = T_y T_x.\]
+On the other hand, if \(\hom(x,y) = 1\), then
+\[ T_xT_yT_x = T_yT_{x}T_{y}.\]
+As a result, if we find a configuration of spherical objects whose hom relationships are as in the graph \(\Gamma\), then the map
+\[ \sigma_{x} \mapsto T_x\]
+provides a /categorical/ representation of \(B_{\Gamma}\).
+There are two questions:
+1. How do we find categories that admit a \(\Gamma\)-like collection of spherical objects?
+2. How do we prove that the representation is faithful?
+
+The first question has been solved.
+For every \(\Gamma\), we can write down explicit \(2\)-CY categories \(\mathcal{C}_{\Gamma}\) that have a \(\Gamma\)-collection of spherical objects.
+The construction is contained in a collection of papers by Huerfano, Khovanov, Seidel, Thomas.
+You can read an expository account in one place in my paper with Bapat and Licata. 
+The construction of \(\mathcal{C}_{\Gamma}\) and the action of the braid group \(B_{\Gamma}\) is computable.
+In fact, on my laptop I have code that does the computations.
+
+In some cases, the category has an algebro-geometric description.
+For example, take \(\Gamma\) to be a chain with \(n\) edges.
+Let \(Y\) be the \(A_n\) surface singularity
+\[ y^2 - x^{n+1}. \]
+Let \(f \colon X \to Y\) be minimal resolution.
+The exceptional locus of \(f\) consists of a chain of \(\mathbf{P}^1\)'s, say
+\[E_{1} \cup E_2 \cup \cdots \cup E_n.\]
+Let \(P_i = O_{E_i}(-1)\) and let \(\mathcal{C} \subset D^b(\operatorname{Coh} X)\) be the full triangulated subcategory generated by the \(P_i\).
+Relative Serre duality, together with the fact that \(\omega_f\) is trivial, implies that \(\mathcal{C}\) is a \(2\)-Calabi--Yau category.
+It is also not hard to check that each \(P_i \in \mathcal{C}\) is spherical and for \(i \neq j\) we have
+\[ \hom(P_i, P_j[1]) = 1\]
+if \(|i-j| = 1\).
+All the other hom spaces are zero.
+In other words, \(P_{1}, \dots, P_n\) form a \(\Gamma\)-like collection of spherical objects.
+The resulting action of the Braid group on \(\mathcal{C}\) is known to be faithful.
+
+For dynkin graphs of type \(D\) and \(E\), we can mimic the same construction, using minimal resolutions of singularities of the respective types.
+
+For general graphs, we can do a (non-commutative) algebraic construction.
+Given \(\Gamma\), one can construct an explicit dg-algebra \(Z_{\Gamma}\) such the triangulated category of dg-modules over \(Z_{\Gamma}\) contains a \(\Gamma\)-like collection of spherical objects \(P_i\).
+If we let \(\mathcal{C}_{\Gamma} \subset Z_{\Gamma}-\operatorname{mod}\) be the full triangulated subcategory generated by the \(P_i\), then it is a 2-Calabi--Yau category that admits an action of \(B_{\Gamma}\) by spherical twists.
+The Grothendieck group \(\Lambda\) of \(\mathcal{C}_{\Gamma}\) is the free-abelian group generated by \([P_i]\) and the pairing is given by
+\begin{equation}
+\langle P_i, P_j\rangle =
+ \begin{cases}
+ 2 & \text{ if } i = j \\
+ -1 & \text{ if } i \neq j \text{ are connected by an edge}, \\
+ 0 & \text{ otherwise}.
+ \end{cases}
+\end{equation}
+This is sometimes called the Coxeter lattice associated to \(\Gamma\).
+
+Let us come to the second question.
+How does one prove that the action is faithful?
+The action of \(B_{\Gamma}\) on \(\mathcal{C}_{\Gamma}\) induces an action of \(B_{\Gamma}\) on \(\operatorname{Stab}(\mathcal{C}_{\Gamma})\).
+Remember that we have the central charge map
+\[ Z \colon \operatorname{Stab}(\mathcal{C}_{\Gamma}) \to \Hom(\Lambda, \mathcal{C}).\]
+
+*Theorem* (Ikeda) -- The image of \(Z\) an open set \(U\) with \(\pi_1(U) = B_{\Gamma}\).
+The action of \(B_{\Gamma}\) on \(\operatorname{Stab}(\mathcal{C}_{\Gamma})\) by spherical twists coincides with the action by deck transformations.
+
+(There is a similar theorem for K3 surfaces which is used in the proof of Bayer and Bridgeland.)
+
+Thanks to the theorem, we see that the action of \(B_{\Gamma}\) on \(\operatorname{Stab}(\mathcal{C}_{\Gamma})\) is faithful if and only if \(\operatorname{Stab}(\mathcal{C}_{\Gamma})\) is simply connected.
+If, furthermore, \(\operatorname{Stab}(\mathcal{C}_{\Gamma})\) is contractible, then it will prove another long-standing open question about the Braid groups called the \(K(\pi,1)\)-conjecture.
+** Summary
+I hope that I have convinced you that the question
+#+begin_question
+How do we understand the global geometry of \(\operatorname{Stab}(\mathcal{C})\)?
+#+end_question
+is important if you care about derived categories, and even if you do not.
+* Stability conditions and metrics                                 :lecture2:
+In the last lecture, we discussed the importance of the following question
+#+begin_question
+What is the global geometry of \(\operatorname{Stab}(\mathcal{C})\)?
+#+end_question
+
+The main point of this lecture is to describe "how"?
+We will see an approach to understanding the global geometry of \(\operatorname{Stab}(\mathcal{C})\).
+At the heart of the approach is to do what a geometric group theorist would do.
+#+begin_quote
+Study \(\operatorname{Stab}(\mathcal{C})\) like a geometric group theorist studing the space of metrics on a manifold.
+#+end_quote
+
+To motivate this approach, I will first describe how a stability condition can be thought of as a metric.
+We will then recall extremely fruitful constructions from the study of hyperbolic metrics on a surface, namely Teichmuller theory.
+Finally, we will formulate categorical analogues of such constructions.
+** What is a stability condition
+Let \(\mathcal{C}\) be a triangulated category.
+A stability condition on \(\mathcal{C}\) consists of two pieces of data:
+1. A central charge, namely a homomorphism
+   \[ Z \colon K(\mathcal{C}) \to \mathbf{C}\]
+2. A slicing, namely a collection of abelian subcategories \(P(\phi)\) for every real number \(\alpha \in \mathcal{C}\).
+
+The slicing satisfies the following properties:
+1. \(P(\phi+1) = P(\phi)[1]\)
+2. \(\Hom(P(\phi), P(\psi)) = 0\) if \(\phi > \psi\)
+3. Harder Narasimhan property:
+   For every \(x \in \mathcal{C}\), there exists a filtration
+   \[ 0 = x_0 \to x_1 \to \cdots \to x_n = x \]
+   whose sub-quotients \(a_{i}\) lie in \(P(\phi_i)\) with
+   \[ \phi_0 > \phi_1 > \cdots > \phi_{n}.\]
+
+The slicing and the central charge are compatible in the following sense.
+For every \(0 \neq x \in P(\phi)\), we have
+\[ Z(x) = m_{x} \cdot e^{i\pi\phi}\]
+for some \(m_{x} \in \mathbf{R}_{> 0}.\)
+
+Plus, there is a local finiteness condition that I will not explain.
+
+For \(\mathcal{C}\) arising in algebraic geometry, such as \(\mathcal{C} = D^b(\operatorname{Coh} X)\), we often require that the central charge is numerical.
+That is, the map
+\[ Z \colon K(\mathcal{C}) \to \mathbf{C}\]
+factors through the Chern character
+\[ K(\mathcal{C}) \to H^{*}(X, \mathcal{Z}).\]
+In effect, we replace \(K(\mathcal{C})\) by its image in cohomology called \(K^{\rm num}(\mathcal{C}).\)
+
+The set of stability conditions on \(\mathcal{C}\) has a metric and hence a topology.
+
+*Theorem* (Bridgeland 2007) --- The map
+\[ \operatorname{Stab}(\mathcal{C}) \to \Hom(K(\mathcal{C}), \mathbf{C})\]
+defined by
+\[ (Z, P) \mapsto Z\]
+is a local homeomorphism.
+
+Here, local means "local on the source".
+*** Example
+Let \(X\) be a curve, for example \(X = \mathbf{P}^1\).
+Take \(\mathcal{C} = D^b \operatorname{Coh}X\).
+Let
+\[ Z \colon K(\mathcal{C}) \to \mathbf{C}\]
+be
+\[ Z(E) = -\operatorname{deg} E + i \operatorname{rk} E.\]
+For \(0 \leq \phi < 1\), set
+\[P(\phi) = {\text{Semi-stable sheaves of phase \(\phi\)}}.\]
+Then \((Z,P)\) defines a stability condition on \(\mathcal{C}\).
+
+Check the HN condition.
+** Metrics on triangulated categories
+Let us begin by interpreting a stability condition as a metric.
+Now, for certain triangulated categories, like the Fukaya category of curves on a surface etc, several authors have proved an isomorphism between the stability manifold and the space of appropriate metrics on the surface (Dmitrov, Haiden, Katzarkov, Kontsevich, Bridgeland, Smith).
+This is excellent motivation to say that considering a stability condition as a metric is a good idea.
+The interpretation that I am about to give is for any triangulated category and is more direct.
+
+We first recall the notion of a metric on a category.
+The following definition appears in [Lawvere].
+I learned it from [Neeman].
+
+#+begin_definition
+A /metric/ on a category \(\mathcal{C}\) is a function \(\ell\) from the collection of morphisms of \(\mathcal{C}\) to \(\mathbf{R}_{\geq 0}\) such that
+1. if \(f\) is an isomorphism, then \(\ell(f) = 0,\)
+2. if \(a \xrightarrow{f} b \xrightarrow{g} c \) are composable morphisms, then
+   \[ \ell(gf) \leq \ell(f) + \ell(g).\]
+#+end_definition
+
+You should think of a sequence of composable maps as a path in the category
+\[ x_0 \to x_1 \to \cdots \to x_{n}.\]
+The composition \(x_0 \to x_{n}\) is a "direct path".
+The length of the direct path is no longer than the length of the broken path.
+
+Now let \(\mathbf{C}\) be triangulated.
+In this case, it is useful to consider a special class of metrics.
+#+begin_definition
+We say that a metric \(f\) on \(\mathcal{C}\) is /translation invariant/ of the length of \(f \colon a \to b\) only depends on the isomorphism class of the cone \(\operatorname{Cone}(f)\).
+#+end_definition
+
+In other words, in the diagram
+#+begin_equation
+\begin{tikzcd}
+a \ar{r}{f}\ar{d} &  b \ar{d}\\
+0 & \operatorname{Cone}(f)
+\end{tikzcd}
+#+end_equation
+the top and the bottom arrows have the same length.
+Thus, a translation invariant metric on \(\mathcal{C}\) is determined by the function
+\[ m(a) = \ell(0 \to a).\]
+Conversely, given \(m \colon \operatorname{Ob}(\mathcal{C}) \to \mathbf{R}_{\geq 0}\), we can define \(f \colon \operatorname{Mor}(\mathcal{C}) \to \mathbf{R}_{\geq 0}\) by setting
+\[ \ell(a \to b) = m(\operatorname{Cone}(a \to b)).\]
+Then \(\ell\) is, by construction, translation invariant.
+But when is \(\ell\) a metric?
+First of all, we must have \(m(0) = 0\), so that \(\ell\) vanishes on isomorphisms.
+Secondly, let us investigate when \(\ell\) satisfies the triangle inequality.
+Consider a sequence of morphisms
+\[ a \xrightarrow{f} b \xrightarrow{g} c.\]
+By the octahedral axiom, we have a distinguished triangle
+\[ \operatorname{Cone}(f) \to \operatorname{Cone}(g \circ f) \to \operatorname{Cone}(g) \xrightarrow{+1}. \]
+The condition
+\[ \ell(g \circ f) \leq \ell(f) + \ell(g)\]
+translates into
+\[ m(\operatorname{Cone}(g \circ f)) \leq m(\operatorname{Cone}(f)) + m(\operatorname{Cone}(g)).\]
+Thus, \(\ell\) will satisfy the triangle inequality for composable morphisms if \(m\) satisfies the triangle inequality for distinguished triangles.
+
+As a result, we see that translation invariant metrics on \(\mathcal{C}\) are the same thing as functions \(m \colon \operatorname{Ob}(\mathcal{C}) \to \mathbf{R}_{\geq 0}\) such that in any distinguished triangle
+\[ a \to b \to c \xrightarrow{+1}, \]
+we have
+\[ m(b) \leq m(a) + m(c).\]
+** Metrics from a stability condition
+Let \(\mathbf{\tau}\) be a stability condition on \(\mathcal{C}\).
+Let me show you how \(\tau\) gives rise to a family of translation invariant metrics on \(\mathcal{C}\).
+
+Define the function \(m_{\tau} \colon \operatorname{Ob}(\mathcal{C}) \to \mathbf{R}_{\geq 0}\), called the /mass function/, as follows.
+If \(x \in \mathcal{C}\) is \(\tau\) semi-stable, set
+\[ m_{\tau}(x) = |Z_{\tau}(x)|.\]
+In general, let
+\[ 0 = x_0 \to x_1 \to \dots \to x_n = x \]
+be the Harder-Narasimhan filtration of \(x\) with sub-quotients \(a_{1}, \dots, a_{n}\).
+Set
+\[ m_\tau(x) = \sum |Z_\tau(a_i)|.\]
+
+*Proposition*  -- The mass function \(m_{\tau}\) satisfies the triangle inequality.   That is, if
+\[ x \to y \to z \xrightarrow{+1}\]
+is a distinguished triangle, then
+\[ m_\tau(y) \leq m_\tau(x) + m_\tau(z).\]
+
+As a result, \(m_{\tau}\) defines a translation invariant metric on \(\mathcal{C}\).
+
+In fact, \(m_{\tau}\) is one of a family of metrics we can define using \(\tau\).
+Fix a positive real number \(q\).
+We define the /\(q\)-mass function/ \(m_{\tau,q} \colon \operatorname{Ob}(\mathcal{C}) \to \mathbf{R}_{\geq 0}\) as follows.
+If \(x \in \mathcal{C}\)  is semi-stable of phase \(\phi\), set
+\[ m_{\tau,q}(x) = |Z_\tau(x)| q^\phi.\]
+In general, let
+\[ 0 = x_0 \to x_1 \to \dots \to x_n = x \]
+be the Harder-Narasimhan filtration of \(x\) with sub-quotients \(a_{1}, \dots, a_{n}\) of phases \(\phi_{1}, \dots, \phi_{n}\).
+Set
+\[ m_{\tau,q}(x) = \sum |Z_{\tau}(a_{i})| q^{\phi_{i}}.\]
+
+*Theorem* (Ikeda) --  For any \(q > 0\), the mass function \(m_{\tau,q}\) satisfies the triangle inequality.
+
+As a result, the function \(m_{\tau,q}\) define a family of translation invariant metrics on \(\mathcal{C}\).
+We will mostly be interested in the case \(q = 1\), but it is important to remember the added flexibility provided by varying the \(q\).
+** To what extent can we recover \(\tau\) from \(m_{\tau,q}\)?
+Consider a sequence of maps
+\[ 0 = x_{0} \to x_{1} \to \dots \to x_{n} = x.\]
+Recall that we view this is a path from \(0\) to \(x\).
+If this sequence of maps is the Harder-Narasimhan filtration of \(x\), then, by construction, this path is a /geodesic path/ for the metric given by \(m_{\tau,q}\).
+That is, the length of the arrow \(0 \to x\) is the sum of lengths of the arrows \(x_{i} \to x_{i+1}\).
+This property, however, does not characterise HN filtrations---there can be many other geodesic paths to \(x\). 
+Nevertheless, we have the following.
+
+*Proposition* (BDL) ---  Let \(x\) be \(\tau\)-stable.  For the metric \(m_{\tau, q}\), the path \(0 \to x\) is an indivisible geodesic path (cannot be broken non-trivially).  Also, this indivisibility property characterises the stable objects.
+
+As a result, if \(m_{\tau, q} = m_{\tau',q}\), then \(\tau\) and \(\tau'\) have the same stable objects.
+But we cannot necessarily say that \(\tau = \tau'\).
+There are examples where \(m_{\tau,q} = m_{\tau',q}\) for distinct \(\tau\) and \(\tau'\).
+But here, the flexibility of being able to vary \(q\) comes handy.
+
+*Theorem* (BDL) --- If \(m_{\tau,q} = m_{\tau',q}\) for two (or more) distinct values of \(q\), then \(\tau = \tau'\).
+
+So, although /one/ metric may not recover the stability condition, the family definitely does.
+
+*Aside* --- Which (translation invariant) metrics come from stability conditions?  This is a great question!
+
+In particular situations, stronger results hold.  For example, let \(\mathcal{C} = \mathcal{C}_{\Gamma}\) be the 2-CY category associated to a graph \(\Gamma\).
+Then \(\mathcal{C}\) has a so-called "standard \(t\)-structure", and \(\operatorname{Stab}(\mathcal{C})\) has a distinguished connected component containing stability conditions that induce the standard \(t\)-structure.
+
+*Theorem* (BDL) --- Let \(\tau, \tau'\) be stability conditions in the distinguished component of \(\operatorname{Stab}(\mathcal{C}_{\Gamma})\).  Then \(m_{\tau} = m_{\tau'}\) implies that \(\tau'\) is a shift of \(\tau\).
+* The Thurston compactification                                    :lecture3:
+In what follows, I will work with the single metric given by \(m_{\tau}\) (that is, \(q = 1\)) for simplicity.
+But everything has a \(q\)-analogue.
+** Motivation from Teichmuller theory
+Treating a stability condition as a metric allows us to construct a compactification of the space of stability conditions by emulating a construction in geometric group theory due to Thurston.
+This construction compactifies the Teichmuller space of a surface.
+It has been hugely benefitial in studying the mapping class group, and we can hope to reap similar benefits for auto-equivalence groups of categories.
+
+Let me quickly recall Thurston's construction.
+Fix a closed orientable surface \(M\) of genus \(g \geq 2\).
+The Teichmuller space \(T(M)\) is the space of hyperbolic metrics of constant curvature \(-1\) on \(M\).
+This is a finite dimensional non-compact manifold (turns out to be homeomorphic to \(\mathbf{R}^{6g-6}\)).
+oThurston compactifies \(T(M)\) by first mapping it to an infinite projective space.
+Let \(S\) be the collection of isotopy classes of simple closed curves on \(M\).
+Consider the infinite projective space
+\[ \P^S = (\mathbf{R}^{S} - 0) / \text{Scaling}.\]
+We have a map
+\[ i \colon T(M) \to \P^S\]
+defined as follows.
+Let \(s \in S\) be a curve, up to isotopy.
+Let \(\ell_\mu(s)\) be the length of \(s\) with respect to \(\mu\) (that is, the minimum length of a representative of the isotopy class).
+Set
+\[ i(\mu) = [\ell_\mu].\]
+
+*Theorem* (Thurston) ---
+1. The map \(i\) is injective.  In fact, it is a homeomorphism onto its image.
+2. The closure of the image of \(i\) is compact.
+3. The closure is isomorphic to a closed ball.
+   Its boundary sphere has a modular interpretation as the space of projective measured foliations.
+** Towards a Thurston compactification of PStab
+Using the metrics \(m_{\tau,q}\), we can emulate the same construction as before.
+
+Recall that we have an action of \(\mathbf{C}\) on \(\operatorname{Stab}(\mathcal{C})\).
+The number \(z = a+ib\) acts by scaling the central charge by \(e^{a+ib}\) and shifting the slicing by \(b\).
+Set
+\[ \operatorname{PStab} = \operatorname{Stab} / \mathbf{C}.\]
+The action is properly discontinuous, so the quotient is also a manifold.
+
+Let \(S \subset \mathcal{C}\) be the set of isomorphism classes of objects of \(\mathcal{C}\).
+We have a map
+\[ i \colon \operatorname{PStab}(\mathcal{C}) \to \P^{S}\]
+defined by
+\[ i \colon \tau \mapsto [m_{\tau}].\]
+More generally, we can fix \(q_{1}, \dots, q_{n}\) and consider
+\[ i \colon \operatorname{PStab}(\mathcal{C}) \to \P^{S} \times \dots \times \P^{S},\]
+defined by
+\[ i \colon \tau \mapsto ([m_{\tau,q_1}], \dots, [m_{\tau,q_n}]).\]
+
+*Theorem* (BDL)  ---
+1. Suppose \(S\) contains a (classical) generator of \(\mathcal{C}\).  Then the image of \(i\) is compact.
+2. For \(n \geq 2\), the map \(i\) is injective.
+   For the quiver categories \(\mathcal{C}_{\Gamma}\), the map \(i\) is injective for \(n = 1\).
+
+The remaining task is to understand the geometry of the closure, for example, its boundary.
+For this, it is nice to be able to take a smaller \(S\), one whose masses we understand.
+Fortunately, there is considerable flexibilility in choosing \(S\).
+The theorem remains true if we restrict \(S\) to contain:
+- objects with no negative endomorphisms,
+- objects in the heart of some bounded t-structure,
+- objects that are stable with respect to some stability condition,
+- for \(\mathcal{C}_{\Gamma}\), just the spherical objects.
+* The Thurston compactification                                    :lecture3:
+Recall that last time, we proposed a categorical analogue of Thurston's construction of a compactification of the Teichmuller space.
+** Other approaches to compactifications
+- Barbara Bolognese: (partial) completion of Stab using the metric inherited from the central charge.
+- Broomhead, Pauksztello, Ploog, Woolf: Partial compactification of stability manifolds by massless semistable objects
+** Other discussion of stab as metrics
+- Haiden, Katzarkov, Kontsevich "Flat surfaces and stability structures"
+- Bridgeland, Smith "Quadratic differentials"
+** The Thurston boundary
+We now explore which mass functions appear on the boundary of PStab.
+We first recall the picture from geometry.
+For simplicity, we consider the map \(m_{q}\) for \(q = 1\) and assume that the set \(S\) consists of indecomposable objects that have no endomorphisms of negative degree.
+
+In Teichmuller theory, the following points appear on the boundary.
+Let \(a\) be a simple closed curve (up to isotopy).
+Define a functional on the set of simple closed curves by
+\[ b \mapsto |a \cap b|.\]
+This is an unsigned count of intersections.
+(We have to make sure that we choose isotopy representatives for \(a\) and \(b\) are such that the intersection number is the minimum.)
+
+There is a compelling categorical analogue of the intersection function above.
+Henceforth, we will assume that all objects of our set \(S\) have the property that \(x\) is indecomposable and \(\operatorname{hom}^{i}(x,x) = 0\) for \(i < 0\).
+Given a spherical object \(a\), define the functional \(\overline \operatorname{hom}_a\) as follows.
+\begin{equation}
+\overline \operatorname{hom}_a (x) =
+\begin{cases}
+\sum \dim \operatorname{hom}^{i}(a,x) & \text{if \(x \neq a[n]\) for any \(n\)}\\
+0 & \text{if \(x \cong a[n]\) for some \(n\)}.
+\end{cases}
+\end{equation}
+
+*Theorem* (BDL) --- Let \(\mathcal{C}\) be a (hom-finite, k-linear) triangulated category and \(a \in \mathcal{C}\) a spherical object that is semi-stable in a stability condition.
+Then \(\mathrm{homBar}(a)\) lies on the boundary of \(\operatorname{PStab}(\mathcal{C})\).
+More precisely, if \(a\) is semi-stable for \(\tau\), then
+\[ \lim_{n \to \infty} \sigma_{a}^{n} \tau = [\mathrm{homBar}(a)].\]
+*** A sketch of the proof
+- Recall the proof from geometry: dehn twist in \(a\) increases the length of a curve \(c\) by roughly \((c \cap a) \cdot \ell(a)\):
+
+#+downloaded: screenshot @ 2023-07-13 09:18:22
+[[file:assets/The_Thurston_compactification/2023-07-13_09-18-22_screenshot.png]] 
+
+
+
+- Sketch the proof.
+
+In homological algebra, the proof follows the same idea.
+We have the triangle
+\[ \operatorname{Hom}(a,x) \otimes a \to x \to \sigma_{a}x.\]
+By repeatedly taking twists, we get
+\[ x \to \sigma_a^x \to \cdots \to \sigma^{n}(x)\]
+whose subquotients are twists of \(\operatorname{Hom}(a,x) \otimes a\).
+So, we have
+\[ m(\sigma^{n}(x)) \leq m(x) + n \operatorname{hom}(a,x) m(a).\]
+The key point is that when we divide by \(n\) and take \(n \to \infty\), the inequality approaches an equality.
+So the limit of the LHS (divided by \(n\)) is the hom-functional.
+
+This is true except when \(x\) is a twist of \(a\)! 
+In that case, the filtration above is nowhere close to the HN filtration!
+In fact, \(x\) just remains a shift of \(a\) after twisting, and after dividing by \(n\), the mass goes to 0.
+** The A2 case
+- The A_n category.
+- The standard heart.
+- The braid group action.
+- All spherical objects are in one braid orbit.
+- All stability conditions are in the braid orbit of a standard stability condition.
+- Draw the final picture for the A2 compactification.
+  #+downloaded: screenshot @ 2023-07-13 09:29:29
+  [[file:assets/The_Thurston_compactification/2023-07-13_09-29-29_screenshot.png]]
+
+- Raise the question -- what are the irrational points on the boundary?
+*** What is involved in obtaining this picture?
+- The key issue is to understand HN filtrations.
+- Thanks to the braid group, it suffices to understand how the HN filtration evolves when we apply a braid.
+- The situation is not linear!
+- But the situation is piecewise linear.  Explain the automaton.
+
+#+downloaded: screenshot @ 2023-06-30 10:52:50
+[[file:assets/The_Thurston_compactification/2023-06-30_10-52-50_screenshot.png]]
+\(\gamma = \sigma_2\sigma_1 = \sigma_{X}\sigma_2 = \sigma_1\sigma_{X}\).
+** Summary of the talks
+- Important to understand the global geometry of Stab.
+- Constructing a compactification goes a long way towards understading the global geometry.
+- Good idea to view stability conditions as metrics, and understand their limits as limiting metrics.
+* Further questions and remarks
+** Khovanov--Seidel
+** Pseudo-triangulations and the sphere of sphericals
+** The example of KKR (DbCohP1)
+** What will a Thurston compactification achieve?
+- Nielsen-Thurston classification

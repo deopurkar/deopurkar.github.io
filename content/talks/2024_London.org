@@ -1,0 +1,140 @@
+# Created 2025-04-13 Sun 11:21
+#+options: ':t ":t
+#+title: How to count using equivariant cohomology? (Imperial)
+#+author: Anand Deopurkar
+* Introduction
+- Two counting problems.
+  For both, fix a complex number \(z\).
+
+  1. I pull two homogeneous cubics \(F, G\) in \(\mathbf{C}[x,y,z]\) out of my hat.
+     Among the cubics \(F + \lambda G\), how many have \(j\)-invariant \(z\)?
+
+  2. I pull two quartics \(f, g \in \mathbf{C}[x]\) out of my hat.
+     Among the cubics \(y^2 = f + \lambda g\), how many have \(j\)-invariant \(z\)?
+
+  3. Solution of 1:
+
+     We consider all cubics that define curves of \(j\)-invariant \(z\).
+     Let \(H \in \mathbf{C}[x,y,z]\) be one such cubic.
+     Then all such cubics are obtained from \(H\) by a linear change of coordinates.
+     That is, they are in the \(\operatorname{GL}(3)\) orbit of \(H\).
+
+     \[\text{Picture of all cubics and inside them one orbit}. \]
+
+     Cubics of the form \(F + \lambda G\) define a line in the projective space of all cubics.
+     We want to know how many times this line intersects the orbit.
+     In other words, we want to know the degree of the orbit.
+
+  4. Solution of 2:
+
+     The analysis is similar.
+     The answer is the degree of \(\operatorname{GL}(2)\)-orbit of a homogeneous quartic in \(\mathbf{C}[X,Y]\).
+
+- **Main Question**
+  Let \(F\) be a homogeneous form of degree \(d\) in \(n\)-variables.
+  What is the degree of the (closure of the) \(\operatorname{GL}(n)\)-orbit of \(F\)?
+* Orbit degrees of points in \(\mathbf{P}^1\)
+- **Theorem** (Enriques--Fano, 1897)---
+  The degree of the \(\operatorname{GL}(2)\)-orbit closure of a general \([F]\) in \(\mathbf{P} \operatorname{Sym}^d \mathbf{C}^2\) equals
+  \[ d(d-1)(d-2).\]
+
+- For example, for a quintic, the degree is \(60\).
+** The meaning of general and deviations from it
+- "General" means having distinct zeros.
+- If the zeros occur with multiplicity, then the degree goes down.
+  For example, for a quintic with a double zero, the degree is \(42\).
+- For an \(F\) with zeros of multiplicity \(m_1, \dots, m_s\), the degree is
+  \[ \sum_{i, j,k \text{ distinct}} m_i m_j m_k.\]
+** Adjustment for stabilisers
+- If \([F]\) has a non-trivial stabiliser in \(\operatorname{PGL}(2)\), then the degree of the orbit is the answer above divided by the order of the stabiliser.
+  In other words, the answer above equals the degree of the orbit times the order of the stabiliser ("predegree").
+* Orbit degrees of curves in \(\mathbf{P}^2\)
+- **Theorem** (Aluffi--Faber, 1992)---
+  The degree of the \(\operatorname{GL}(3)\)-orbit closure of a general \([F]\) in \(\mathbf{P} \operatorname{Sym}^d \mathbf{C}^3\) equals
+  \[ d^8 - 1372d^4 + 7992d^3 - 15879d^2 + 10638d.\]
+
+- For example, for a quartic, the degree is 14280.
+** The meaning of general and deviations from it
+- "General" means that the curve defined by \(F\) is smooth and has only simple flexes.
+- The presence of singularities and higher order flexes changes the degree, but the formula is too complicated to write down.
+* Orbit degrees in higher dimensions
+** Statement of the main theorem about cubics (just the degree)
+- **Theorem** (D--Patel--Tseng)---
+  For a general \(F \in \operatorname{Sym}^3 \mathbf{C}^4\), the degree of the \(\operatorname{GL}(4)\)-obit closure of \([F] in \mathbf{P} \operatorname{Syb}^3 \mathbf{C}^4\) equals 96120.
+** One of 27 questions
+- Answers a question of Sturmfels from "27 questions about cubic surfaces".
+- Number previously discovered (but not proven) by Brustenga i Moncusi, Timme, and Weinstein using numerical algebraic geometry software.
+* Equivariant cohomology and equivariant orbit class
+** Statement of the main theorem about cubics (equivariant)
+- Fix a 4-dimensional vector space \(V\).
+  Let \(v_i\) denote the \(i\)-th Chern class of \(V\) in \(A^i_{\operatorname{GL} V}(\bullet)\).
+- **Theorem** (D--Patel--Tseng)---
+  The \(GL(4)\)-equivariant class of a general \([F] \in \mathbf{P} \operatorname{Sym}^d V \otimes \operatorname{det} V^{*}\) equals
+  \[ 1080 (v_1^2 v_2 - v_1v_3 + 9v_4).\]
+** Restatement of the main theorem about cubics in families
+- **Theorem** (D--Patel--Tseng)---
+  Let \(\pi \colon X \to B\) be a good family of cubic surfaces with \(B\) proper.
+  Let \(V = \pi_{*} \omega_{\pi}^{-1}\).
+  Then, the number of times a general cubic surface appears in this family is
+  \[ \int_{B} 1080 (v_1^2 v_2 - v_1v_3 + 9v_4).\]
+- In other words, the expression above gives the degree of the (rational) map to the moduli space of cubic surfaces.
+** Meaning of good
+- A bit technical.
+- If all fibers are semistable or have finite automorphism groups, then good.
+- Definition: There exists a Zariski open set \(U\) of cubic surfaces such that for every \(u \in U\) and \(b \in B\), the fiber \(X_b\) is not in the boundary of the orbit closure of \(u\).
+* Sketch of proof
+- A universal expression exists, and must have the form
+  \[ a v_1^4 + b v_1^2v_2 + c v_1v_3 + d v_2^2 + e v_4. \]
+- We need five families for which we know the degree of the map to moduli.
+- One source of families: vary 6 points on \(\mathbf{P}^2\).
+  - Fix 4 points and vary 2 points freely.
+  - Fix a conic, a point away from the conic, and move 5 points in a 4 dimensional linear series on the conic.
+- Another source of families: cubic surfaces with a \(\mathbf{G}_m\) action.
+  - \(xyz = w^3\)
+- We write down 9 families, and hence find the coefficients.
+- To get the degree, apply the de-equivariantisation map.
+  Equivalently, use the family given by a general \(\mathbf{P}^4 \subset \mathbf{P} \operatorname{Sym}^3 \mathbf{C}^4\).
+  In this case, \(\pi_{*} \omega_{\pi} = O(1)^4\).
+  Computing the Chern classes and evaluating the universal expression yields 96120.
+* More questions
+** Additive relations
+- Recall the quintic example.
+  A general quintic has orbit of degree 60.
+  A quintic with a double zero has an orbit of degree 42.
+  What accounts for the defect?
+
+  Consider a general quintic acquiring a double point.
+  The flat limit of the orbits must contain the orbit of the central fiber.
+
+  But by a change of coordinates (achieved by a blow up/blow down), the same family has a limit which is a quintic with zeros of multiplicity \(1 + 1 + 3\).
+  By the same logic, the flat limit of the orbits must also contain its orbit.
+  Its orbit has degree \(18\).
+  Thus, the limit of the orbit of degree 60 must be the union of the orbit of degree 42 and the orbit of degree 18.
+  In symbols, we get the relation
+  \[ [(1,1,1,1,1)] = [(1,1,1,2)] + [(1, 1, 3)].\]
+
+- The classes of the orbits satisfy a number of such additive relations.
+  We understand them completely for binary forms, but only a little bit for ternary forms, and not at all in higher dimensions.
+** Orbit classes in other representations
+- \(G\) an algebraic group and \(W\) a \(G\)-representation.
+  Given \(w \in W\), what is the equivariant class of the orbit closure of \(w\)?
+
+  This subsumes the case of hypersurfaces I discussed.
+  Even beyond the case of hypersurfaces, this question has rich geometric content.
+  - If \(W = \operatorname{Hom}(E,F)\) and \(G = \operatorname{GL}(E) \times \operatorname{GL}(F)\), then the answer is the Porteous fomula.
+  - If \(W = \operatorname{Sym}^2(E)\) or \(\wedge^2(E)\), and \(G = \operatorname{GL}(E)\) then the answer is the Porteous formula due to Harris and Tu.
+** Announcement of the GL(2) case
+- We (D--Patel, in progress) can settle the question completely for \(G = GL(2)\).
+- The case of ireducible representations is classical.
+  Reducible representations bring up surprising new challenges.
+* References
+- Aluffi and Faber
+  - Degrees of orbits of plane curves
+- Lee, Patel, Tseng
+  - Equivariant classes of orbits of plane curves
+  - ... of orbits of hyperplane arrangements
+- Patel, D:
+  - ... of orbits of cubics
+  - ... of linear series on \(\mathbf{P}^1\)
+- Fehér, Némethi, Rimányi, Weber, ...
+  - Equivariant classes inspired by representation theory and singularity theory

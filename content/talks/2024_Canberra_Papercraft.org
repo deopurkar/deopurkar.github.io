@@ -1,0 +1,15 @@
+# Created 2025-04-13 Sun 11:18
+#+title: Papercraft
+#+author: Anand Deopurkar
+#+filetags: :talk:
+
+Talk at the [[id:f7a96436-e782-4f0c-9200-389534524442][Canberra Maths Enrichment Program]] on [2024-09-25 Wed]  based on [[id:65b2436a-81a5-4846-b342-893e7d410f35][Paul Seidel]]'s [[id:c12e5148-8932-4867-9066-ba336ea738df][Lectures on geometry and topology in the plane]], Lecture 1 on cutting/regluing polygons.  The talk was on Zoom ([[file:2024_Canberra_Papercraft_zoom.pdf][zoom writeup]]).
+
+Title: Papercraft
+
+Abstract: My origami directions call for a square, but I have an
+A4-sized rectangle.  But I also have scissors!  Can I cut the
+rectangle and reglue the pieces to get a square?  More generally, when
+can I cut a shape A and reglue it to make another shape B?  Come to
+the talk and find the answer.  Scissors, tape, and paper optional, but
+recommended!
