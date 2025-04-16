@@ -316,6 +316,9 @@ Finally, we style collapsible and collapsed headlines.
       &:before {
           content: '+ ';
       }
+      &:after {
+  	content: '...';
+      }
   }
 #+end_src
 

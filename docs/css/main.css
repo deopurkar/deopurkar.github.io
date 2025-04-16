@@ -225,3 +225,5 @@ footer {
   cursor: pointer; }
   .collapsed:before {
     content: '+ '; }
+  .collapsed:after {
+    content: '...'; }
