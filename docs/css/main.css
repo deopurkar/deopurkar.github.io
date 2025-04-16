@@ -4,6 +4,9 @@
     line-height: 1em;
     max-width: 95%; } }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "Atkinson Hyperlegible", sans-serif;
   margin-top: 0em;

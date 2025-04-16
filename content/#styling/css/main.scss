@@ -127,6 +127,9 @@ $hl-font: 'B612', monospace;
 	max-width: 95%;
     }
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: $body-font, sans-serif;
     margin-top: 0em;
