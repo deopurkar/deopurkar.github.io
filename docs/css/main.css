@@ -100,65 +100,38 @@ footer {
   display: table; }
 
 * {
-  color: #000; }
+  color: #060000; }
 
 body {
-  column-rule: 1px solid #c7bba8;
-  background-color: #fffdfc; }
+  column-rule: 1px solid #fac591;
+  background-color: #fbf6ee; }
   body ::-moz-selection {
-    background-color: #d05a5b;
-    color: #c7bba8; }
+    background-color: #fac591; }
   body ::-selection {
-    background-color: #d05a5b;
-    color: #c7bba8; }
-
-a, a:active, a:visited {
-  color: #000; }
-
-a:hover {
-  color: #d05a5b; }
-
-code {
-  color: #000; }
+    background-color: #fac591; }
+  body a:hover {
+    color: #f87d5b; }
 
 #table-of-contents a {
-  border-bottom: 0.15em solid #d05a5b; }
+  border-bottom: 0.15em solid #f87d5b; }
 
 h1, h2, h3, h4, h5, h6 {
-  border-top-color: #c7bba8;
-  text-decoration: underline 0.15em #d05a5b; }
-  h1 a, h1 a:active, h1 a:visited, h2 a, h2 a:active, h2 a:visited, h3 a, h3 a:active, h3 a:visited, h4 a, h4 a:active, h4 a:visited, h5 a, h5 a:active, h5 a:visited, h6 a, h6 a:active, h6 a:visited {
-    color: #d05a5b; }
-  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-    background-color: #c7bba8;
-    text-decoration: none; }
+  border-top-color: #fac591;
+  text-decoration: underline 0.15em #f87d5b; }
 
 h2 {
   padding-top: 20px;
-  border-top: 1px solid #c7bba8; }
-
-header a, header a:active, header a:visited {
-  color: #000; }
-
-header a.active {
-  color: #d05a5b; }
-
-header a:hover {
-  color: #d05a5b;
-  background-color: #fffdfc;
-  text-decoration: none; }
+  border-top: 1px solid #fac591; }
 
 footer {
-  color: #000;
-  border-top: 1px solid #c7bba8; }
-  footer a, footer a:active, footer a:visited {
-    color: #d05a5b; }
+  color: #fac591;
+  border-top: 1px solid #fac591; }
 
 #mypicture {
-  border-color: #000; }
+  border-color: #fac591; }
 
 #postamble {
-  border-top: 1px solid #c7bba8; }
+  border-top: 1px solid #fac591; }
 
 @media print {
   footer, nav {
@@ -167,54 +140,7 @@ footer {
   margin: 0px;
   padding: 0px;
   a:after {
-    content: " '(' attr(href) ') '"; }
-  * {
-    color: #000; }
-  body {
-    column-rule: 1px solid #fff;
-    background-color: #fff; }
-    body ::-moz-selection {
-      background-color: #000;
-      color: #fff; }
-    body ::-selection {
-      background-color: #000;
-      color: #fff; }
-  a, a:active, a:visited {
-    color: #000; }
-  a:hover {
-    color: #000; }
-  code {
-    color: #000; }
-  #table-of-contents a {
-    border-bottom: 0.15em solid #000; }
-  h1, h2, h3, h4, h5, h6 {
-    border-top-color: #fff;
-    text-decoration: underline 0.15em #000; }
-    h1 a, h1 a:active, h1 a:visited, h2 a, h2 a:active, h2 a:visited, h3 a, h3 a:active, h3 a:visited, h4 a, h4 a:active, h4 a:visited, h5 a, h5 a:active, h5 a:visited, h6 a, h6 a:active, h6 a:visited {
-      color: #000; }
-    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-      background-color: #fff;
-      text-decoration: none; }
-  h2 {
-    padding-top: 20px;
-    border-top: 1px solid #fff; }
-  header a, header a:active, header a:visited {
-    color: #000; }
-  header a.active {
-    color: #000; }
-  header a:hover {
-    color: #000;
-    background-color: #fff;
-    text-decoration: none; }
-  footer {
-    color: #000;
-    border-top: 1px solid #fff; }
-    footer a, footer a:active, footer a:visited {
-      color: #000; }
-  #mypicture {
-    border-color: #000; }
-  #postamble {
-    border-top: 1px solid #fff; } }
+    content: " '(' attr(href) ') '"; } }
 
 .collapsible {
   cursor: pointer; }

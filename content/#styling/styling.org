@@ -19,73 +19,48 @@ We define some auxiliary [[https://sass-lang.com/documentation/at-rules/mixin][m
 
 Next we define the colour options for all components of the page.
 We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] called ~theme~, which uses the following variables:
-- ~bg~, ~bg-faded~ :: background colour and faded version,
-- ~fg~, ~fg-faded~ :: foreground text colour and faded version,
-- ~link~, ~link-faded~ :: link colour and faded version,
-- ~titles~ :: colour for title underlines,
-- ~code~ :: colour for verbatim text/code snippets
-- ~fg-select~, ~bg-select~ :: foreground and background colour for selected text
+- ~canvas~ :: Background colour
+- ~canvas-pop~ :: Slightly emphasised canvas colour
+- ~writing~ :: Foreground colour
+- ~writing-pop~ :: Colour used for "pop"
 #+begin_src scss
-  @mixin theme($bg, $bg-faded, $fg, $fg-faded, $link, $link-faded, $titles, $code, $bg-select: $titles, $fg-select: $bg-faded) {
-      ,* { color: $fg; }
+  @mixin theme($canvas, $canvas-pop, $writing, $writing-pop){
+      ,* { color: $writing; }
       body {
-  	column-rule: 1px solid $bg-faded;
-          background-color: $bg;
+  	column-rule: 1px solid $canvas-pop;
+          background-color: $canvas;
           ::-moz-selection {
-              background-color: $bg-select;
-              color: $fg-select;
+              background-color: $canvas-pop;
           }
           ::-selection {
-              background-color: $bg-select;
-              color: $fg-select;
+              background-color: $canvas-pop;
           }
+  	a:hover {
+  	    color: $writing-pop;
+  	}
       }
-      a, a:active, a:visited { color: $link;}
-      a:hover { color: $link-faded; }
-      code { color: $code; }
       #table-of-contents a {
-  	border-bottom: 0.15em solid $titles;
+  	border-bottom: 0.15em solid $writing-pop;
       }
       h1, h2, h3, h4, h5, h6 {
-  	border-top-color: $bg-faded;
-  	text-decoration: underline 0.15em $titles;
-          a, a:active, a:visited {
-              color: $titles;
-          }
-          a:hover {
-              background-color: $bg-faded;
-              text-decoration: none; 
-          }
+  	border-top-color: $canvas-pop;
+  	text-decoration: underline 0.15em $writing-pop;
       }
       h2 {
   	padding-top: 20px;
-  	border-top: 1px solid $bg-faded;
-      }
-      header {
-          a, a:active, a:visited {
-              color: $fg;
-          }
-          a.active {
-              color: $titles;
-          }
-          a:hover {
-              color: $titles;
-              background-color: $bg;
-              text-decoration: none;
-          }
+  	border-top: 1px solid $canvas-pop;
       }
       footer {
-          color: $fg-faded;
-  	border-top: 1px solid $bg-faded;
-          a, a:active, a:visited { color: $link-faded; }
+          color: $canvas-pop;
+  	border-top: 1px solid $canvas-pop;
       }
 
       #mypicture {
-          border-color: $fg-faded;
+          border-color: $canvas-pop;
       }
 
       #postamble {
-  	border-top: 1px solid $bg-faded;
+  	border-top: 1px solid $canvas-pop;
       }
   }
 #+end_src
@@ -109,33 +84,13 @@ Later on we can just include the one we want.
   // $blue:      #268bd2;
   // $cyan:      #2aa198;
   // $green:     #859900;
-  
-  @mixin solarized-light {
-      @include theme(#fdf6e3, #eee8d5, #657b83, #93a1a1, #268bd2, #2aa198, #cb4b16, #d33682);
-  }
-  
+
   @mixin alifbepe {
-      @include theme(#fffdfc, #c7bba8, #000, #000, #000, #d05a5b, #d05a5b, #000);
+      @include theme(#fffdfc, #c7bba8, #000, #d05a5b);
   }
-  
-  @mixin solarized-dark {
-      @include theme(#002b36, #073642, #839496, #586e75, #268bd2, #2aa198, #cb4b16, #859900);
-  }
-  
-  @mixin zenburn {
-      @include theme(#3F3F3F, #4F4F4F, #DCDCCC, #656555, #8CD0D3, #7CB8BB, #CC9393, #7F9F7F);
-  }
-  
-  @mixin flatui {
-      @include theme(#ecf0f1, #dfe4ea, #34495e, #7f8c8d, #2492db, #9b59b6, #0a74b9, #8e44ad);
-  }
-  
-  @mixin bespoke-light {
-      @include theme(#fffef9, #eceff1, #282b35, #727d97, #303db4, #30608c, #940b96, #00796b);
-  }
-  
-  @mixin print {
-      @include theme(#fff, #fff, #000, #000, #000, #000, #000, #000);
+
+  @mixin autumn {
+      @include theme(#fbf6ee, #fac591,#060000,#f87d5b); 
   }
 #+end_src
 
@@ -288,7 +243,7 @@ Footer style and other miscellany.
 
 Include the colour themes previously defined.  
 #+begin_src scss
-  @include alifbepe;
+  @include autumn;
 
   // Print stylesheet
   @media print {
@@ -299,7 +254,6 @@ Include the colour themes previously defined.
       a:after {
           content: " '(' attr(href) ') '";
       }
-      @include print;
   }
 #+end_src
 
