@@ -92,6 +92,14 @@ Later on we can just include the one we want.
   @mixin autumn {
       @include theme(#fbf6ee, #fac591,#060000,#f87d5b); 
   }
+
+  @mixin eucalyptus-warm {
+   @include theme(#fbf6ec,#dcad67,#1f0e07,#a69b65); 
+  }
+
+  @mixin eucalyptus-cool {
+   @include theme(#f2f3f7,#c8cad9,#212227,#6a7469)
+  }
 #+end_src
 
 * Main CSS
@@ -243,7 +251,7 @@ Footer style and other miscellany.
 
 Include the colour themes previously defined.  
 #+begin_src scss
-  @include autumn;
+  @include galah;
 
   // Print stylesheet
   @media print {
