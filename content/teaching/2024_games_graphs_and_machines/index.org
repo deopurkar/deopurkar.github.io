@@ -1,22 +1,7 @@
-# Created 2025-04-04 Fri 16:51
-#+options: toc:nil ':t tags:nil broken-links:nil prop:html_headline_class
+# Created 2025-04-05 Sat 13:27
+#+options: toc:nil ':t tags:nil broken-links:nil prop:nil
 #+title: Games, graphs, and machines
 #+subtitle: {{{COURSENUM}}}, {{{SEMESTER}}}
-#+startup: noptag overview
-#+filetags: teaching ggm
-#+latex_class: amsart
-#+latex_header: \usepackage{fullpage} \usepackage[charter, cal=cmcal]{mathdesign} \usepackage{environ} \usepackage{multicol} \usepackage{mathabx}
-#+latex_header: \usepackage{mdframed} \usepackage{svg} \usepackage{tikz}
-#+latex_header: \usepackage{etoolbox} \newtoggle{solutions} \togglefalse{solutions}
-#+latex_header: \usepackage{enumitem} \setenumerate{itemsep=1em}
-#+latex_header: \usepackage{setspace}
-#+latex_header: \NewEnviron{solution}{\iftoggle{solutions}{\vspace{1em}\begin{mdframed}\begin{proof}[Solution]\BODY\end{proof}\end{mdframed}\vspace{1em}}{}}
-#+latex_header: \NewEnviron{workbox}{\iftoggle{solutions}{}{\vspace{1em}\begin{mdframed}\BODY\end{mdframed}\vspace{1em}}}
-#+latex_header: \usepackage{skull}
-#+latex_header: \usetikzlibrary{arrows,automata,positioning}
-#+latex_compiler: pdflatex
-#+bind: org-export-use-babel nil
-#+export_file_name: ~/website/content/teaching/2024_games_graphs_and_machines/index.org
 :COURSE_INFO:
 #+macro: SEMESTER Semester 2, 2024
 #+macro: COURSENUM MATH2301
@@ -145,9 +130,6 @@ You can get started by briefly introducing yourself in the =introductions= topic
 - Please feel very free to post questions, comments, and feedback. I hope we can have lots of interesting discussions on Zulip over the semester.
 * How to study for this course?
 :PROPERTIES:
-:default_export_method: org-md-export-to-markdown
-:EXPORT_FILE_NAME: public/How to study
-:EXPORT_TITLE: How to study?
 :html_headline_class: collapsed
 :END:
 There is no single answer to the question "How to study ___?"---everyone learns differently---but here are some strategies that are generally helpful.
@@ -221,15 +203,10 @@ If the problem talks about a big number, try the same problem for smaller number
 If the problem talks about all graphs, try with some small graphs.
 * Academic integrity policy
 :PROPERTIES:
-:export_file_name: artifacts/integrity-policy
-:ID:       9a805b1b-60f5-4f6c-938b-7832ded546a3
 :html_headline_class: collapsed
 :END:
 Please read the following guidelines carefully. 
 ** Academic integrity policy for assignments
-:PROPERTIES:
-:export_file_name: artifacts/integrity-policy-assignments
-:END:
 While solving your assignments, you will typically work in two phases.
 1. The solving phase: this is when you are actually trying to find the answers to the questions.
    1. First, you should think about the problem on your own.
@@ -298,7 +275,7 @@ However, you will face serious consequences if you fail to follow the academic i
 :END:
 ** Worksheet 1
 :PROPERTIES:
-:export_file_name: artifacts/ws01
+:html_headline_class: collapsed
 :END:
 *** Sets and set notation
 1. Some of the following sets are the same, and some are different. Decide and discuss.
@@ -333,7 +310,7 @@ However, you will face serious consequences if you fail to follow the academic i
    3. Being the I/O relation of a function
 ** Worksheet 2
 :PROPERTIES:
-:export_file_name: artifacts/ws02
+:html_headline_class: collapsed
 :END:
 1. Consider the relation on \(\mathbb{Z}\) described by
    \[\{(a,b) \in \mathbb{Z} \times \mathbb{Z} \mid (a^2 - b^2)\text{ is an integer multiple of }5\}.\]
@@ -355,7 +332,7 @@ However, you will face serious consequences if you fail to follow the academic i
    That is, if \([a] \cdot [b] = [0]\) modulo a prime number \(p\), then \([a] = [0]\) modulo \(p\) or \([b] = [0]\) modulo \(p\).
 ** Worksheet 3
 :PROPERTIES:
-:export_file_name: artifacts/ws03
+:html_headline_class: collapsed
 :END:
 *** Hasse diagram an rank functions
 
@@ -410,7 +387,7 @@ The poset \(S\) admits a rank function if and only if every cycle in the Hasse d
 Is the statement true or false?
 ** Worksheet 4
 :PROPERTIES:
-:export_file_name: artifacts/ws04
+:html_headline_class: collapsed
 :END:
 1. Find a non-zero \(5 \times 5\) matrix whose square is zero.
 
@@ -458,7 +435,7 @@ Is the statement true or false?
    What happens if you change the number of petals?
 ** Worksheet 5
 :PROPERTIES:
-:export_file_name: artifacts/ws05
+:html_headline_class: collapsed
 :END:
 *** Boolean arithmetic with negative numbers
 Let us see what happens with boolean arithmetic if we allow negative numbers.
@@ -525,8 +502,7 @@ Use the \(\{\text{min},+\}\) matrix product to compute the minimum-weight paths 
    Can we still conclude that the min/plus powers stabilise?
 ** Worksheet 6
 :PROPERTIES:
-:export_file_name: artifacts/ws06
-:export_latex_header_extra: \usepackage{verbatim}
+:html_headline_class: collapsed
 :END:
 *** The Perron--Frobenius property
 Let \(G\) denote a Markov chain with transition matrix \(A\).
@@ -589,7 +565,7 @@ Then any \(n > ab\) can be written as a sum of \(a\)'s and \(b\)'s.
    - Can you generalise?
 ** Worksheet 7
 :PROPERTIES:
-:export_file_name: artifacts/ws07
+:html_headline_class: collapsed
 :END:
 In all problems, "binary string" refers to any string or word on the alphabet \(\Sigma = \{0,1\}\).
 Unless otherwise specified, our alphabet is always \(\Sigma = \{0,1\}\).
@@ -653,7 +629,7 @@ Answer the following questions about the DFA shown below.
 6. Can you write down a regular expression that recognises the same language?
 ** Worksheet 8
 :PROPERTIES:
-:export_file_name: artifacts/ws08
+:html_headline_class: collapsed
 :END:
 *** Warm-up
 1. When is an NFA said to /accept/ a string? When is an NFA said to /reject/ a string?
@@ -708,7 +684,7 @@ Some of these problems are hard, and take practice to solve. Don't get discourag
    \[L = \{w \mid w = a_1 b_1 \cdots a_k b_k, \text{ where } a_1, \dots, a_k, b_1, \dots, b_k \in \Sigma^{*} \text{ are such that } a_1 \cdots a_k \in L_1 \text{ and } b_1 \cdots b_k \in L_2\}.\]
 ** Worksheet 9
 :PROPERTIES:
-:export_file_name: artifacts/ws09
+:html_headline_class: collapsed
 :END:
 In all the problems, the alphabet is \(\{0,1\}\).
 
@@ -734,7 +710,7 @@ In all the problems, the alphabet is \(\{0,1\}\).
 3. Choose your favourites among the games we discussed in class (subtraction game, chomp, hackenbush, nim), and play them in your group. Can you find winning strategies for certain cases? Once you have played a couple of rounds, try to draw some small game graphs and label them by N and P. Did you use the best strategy?
 ** Worksheet 10
 :PROPERTIES:
-:export_file_name: artifacts/ws10
+:html_headline_class: collapsed
 :END:
 1. (Warm up) Remember the rules to label states as P or N.
    1. If a state is a sink state (no outgoing arrows), we label it \makebox[3em]{\hrulefill}.
@@ -764,7 +740,7 @@ In all the problems, the alphabet is \(\{0,1\}\).
    Play this game with your group and determine some other non-trivial P and N positions. Do you see a pattern? Bonus/challenge: Can you find a pattern, and who has a winning strategy?
 ** Worksheet 11
 :PROPERTIES:
-:export_file_name: artifacts/ws11_solved
+:html_headline_class: collapsed
 :END:
 The goal of this worksheet is to practice computing Grundy labels and using them to find winning moves.
 
@@ -786,7 +762,7 @@ The goal of this worksheet is to practice computing Grundy labels and using them
 :END:
 ** Academic integrity policy for assignments
 :PROPERTIES:
-:export_file_name: artifacts/integrity-policy-assignments
+:html_headline_class: collapsed
 :END:
 While solving your assignments, you will typically work in two phases.
 1. The solving phase: this is when you are actually trying to find the answers to the questions.
@@ -811,7 +787,7 @@ You will never get into trouble for asking for clarification about what is accep
 However, you will face serious consequences if you fail to follow the academic integrity policy.
 ** Assignment 1 (due on 2 August 2024 at 11:59pm)
 :PROPERTIES:
-:export_file_name: artifacts/hw01
+:html_headline_class: collapsed
 :END:
 *** General remarks
 1. Please read the academic integrity policy for assignments.
@@ -911,8 +887,7 @@ However, you will face serious consequences if you fail to follow the academic i
    2. Describe the equivalence classes in words, and draw sketches in \(\mathbf{R}^{2}\), of the equivalence class of \((1,2)\) and of \((0,0)\).
 ** Assignment 2 (due on 9 August 2024 at 11:59pm)
 :PROPERTIES:
-:export_file_name: artifacts/hw02
-:export_date: 
+:html_headline_class: collapsed
 :END:
 1. Let \(S\) be the set of squares on a standard \(8 \times 8\) chessboard.
    Consider the following relations on \(S\).
@@ -936,8 +911,7 @@ However, you will face serious consequences if you fail to follow the academic i
 4. Take the modulus to be \(d = 7\). Show that if \([3x] = [5]\) modulo \(7\), then \([x] = [4]\).
 ** Assignment 4 (due on 23 August 2024 at 11:59pm)
 :PROPERTIES:
-:export_file_name: artifacts/hw04
-:export_date: 
+:html_headline_class: collapsed
 :END:
 1. Consider a graph whose adjacency matrix is
    \[A = \begin{pmatrix}1&1&1\\0&1&1\\0&0&1\end{pmatrix}.\]
@@ -1008,8 +982,7 @@ However, you will face serious consequences if you fail to follow the academic i
    Otherwise, give an example where no positive power of \(A-I\) is zero.
 ** Assignment 5 (due on 30 August 2024 at 11:59pm)
 :PROPERTIES:
-:export_file_name: artifacts/hw05
-:export_date: 
+:html_headline_class: collapsed
 :END:
 1. A directed graph is called /strongly connected/ if for every \(i\) and \(j\), there is a path from vertex \(i\) to vertex \(j\).
 
@@ -1092,8 +1065,7 @@ However, you will face serious consequences if you fail to follow the academic i
    [[file:pa3-wadj.png]]
 ** Assignment 6 (due on 20 September 2024 at 11:59pm)
 :PROPERTIES:
-:export_file_name: artifacts/hw06
-:export_date: 
+:html_headline_class: collapsed
 :END:
 1. Consider the following Markov chain:
    #+begin_src dot :file 6a.png :exports results :cmd circo
@@ -1214,8 +1186,7 @@ However, you will face serious consequences if you fail to follow the academic i
    #+end_proof
 ** Assignment 7  (due on 27 September 2024 at 11:59pm)
 :PROPERTIES:
-:export_file_name: artifacts/hw07
-:export_date: 
+:html_headline_class: collapsed
 :END:
 1. Let \(\Sigma = \{0,1\}\). For each language \(L\) described below, write down a regular expression \(r\) such that \(L(r) = L\).
    That is, the strings of \(\Sigma^*\) that match \(r\) are exactly the strings of \(L\).
@@ -1250,8 +1221,7 @@ However, you will face serious consequences if you fail to follow the academic i
    3. Now use your method from the first part to draw a DFA for the complement of the language \(L\) above. Justification not required.
 ** Assignment 8  (due on 4 October 2024 at 11:59pm)
 :PROPERTIES:
-:export_file_name: artifacts/hw08_solved
-:export_date: 
+:html_headline_class: collapsed
 :END:
 1. Construct an NFA recognising the following languages. Justifications not required.
    1. \(L = \{w \mid w\text{ ends with }00\}\).
@@ -1291,8 +1261,7 @@ However, you will face serious consequences if you fail to follow the academic i
    So the number \(00011\) is the same as the number \(11\), which is the number three.
 ** Assignment 9  (due on 11 October 2024 at 11:59pm)
 :PROPERTIES:
-:export_file_name: artifacts/hw09_solved
-:export_date: 
+:html_headline_class: collapsed
 :END:
 1. Convert the following DFAs into equivalent regular expressions.
    Show your work, but you need not give full justification.
@@ -1315,8 +1284,7 @@ However, you will face serious consequences if you fail to follow the academic i
    Label the graph with \(N\) and \(P\) labels.
 ** Assignment 10  (due on 18 October 2024 at 11:59pm)
 :PROPERTIES:
-:export_file_name: artifacts/hw10_solved
-:export_date: 
+:html_headline_class: collapsed
 :END:
 1. Grundy's game is defined as follows.
    The starting position is some number of piles of berries.
@@ -1369,8 +1337,7 @@ However, you will face serious consequences if you fail to follow the academic i
       And so is \((4, 0, 11)\), but not \((3,0,11)\).
 ** Assignment 11  (due on 18 October 2024 at 11:59pm)
 :PROPERTIES:
-:export_file_name: artifacts/hw11
-:export_date: 
+:html_headline_class: collapsed
 :END:
 This is a short assignment because it is the final week, and you probably have many other things to do.
 
@@ -1427,4 +1394,4 @@ Find the Grundy value of \(\operatorname{Chomp-the-graph}(G)\) for the following
 :PROPERTIES:
 :html_headline_class: collapsed
 :END:
-See [[file:engagement/index.org]].
+See [[file:engagement/]].

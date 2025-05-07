@@ -1,0 +1,57 @@
+#title: Anand Deopurkar
+#subtitle: Teaching
+
+These are materials from the courses I have taught.
+
+#+begin_src elisp
+  ;; Our pretty-printing function
+  (let ((previous ""))
+    (defun pretty-print ()
+      (letrec ((title (org-entry-get nil "ITEM"))
+               (year (org-entry-get nil "year"))
+               (comment (org-entry-get nil "comment")))
+        (format "- %s %s%s"
+                (if (equal previous year)
+                    "---"
+                  (setq previous year))
+  	      title
+              (if comment
+                  (format " (%s)" comment)
+                "")
+              )))
+    (string-join (org-map-entries 'pretty-print nil '("../#teaching.org")) "\n"))
+#+end_src
+
+#+RESULTS:
+#+begin_example
+- 2025 Algebra 2 (Fields and Galois theory)
+- 2024 [[file:teaching/2024_games_graphs_and_machines/][Games, graphs, and machines]]
+- --- [[file:teaching/2024_differential_forms_in_algebraic_topology/][Differential forms in algebraic topology]] (Reading course based on R. Bott and L. Tu's book)
+- --- [[file:teaching/2024_algebra2/][Algebra 2 (Fields and Galois theory)]]
+- 2023 Algebra 2 (Fields and Galois theory)
+- 2022 [[file:teaching/2023_algebra2/][Algebra 1 (Groups and rings)]]
+- --- [[file:teaching/2022_mathematical_writing/][Mathematical writing]]
+- 2021 [[file:teaching/2021_algebraic_geometry/][Algebraic Geometry (Algebra 3)]]
+- 2020 [[file:teaching/2020_schemes/][Foundations of Algebraic Geometry (Schemes)]]
+- 2019 [[file:teaching/2019_algebraic_geometry/][Algebraic Geometry (Algebra 3)]]
+- 2018 Elliptic curves and modular forms (Reading course based on N. Koblitz's book)
+- --- Special topics course on Computational Polynomial Algebra (with Markus Hegland)
+- --- [[file:teaching/3349][Reading course on /Algebaric curves and Riemann surfaces/ by Rick Miranda]]
+- 2017 Precalculus
+- --- [[file:teaching/8320][Algebraic curves]]
+- --- Calculus 2
+- 2016 Calculus 1
+- --- [[file:teaching/ao/][Analysis and optimization]]
+- 2015 [[file:teaching/seminar15/][Young tableaux in algebra and geometry]]
+- --- [[file:teaching/calc1/][Calculus]]
+- 2014 [[file:teaching/moduli/][Moduli of curves]]
+- --- [[file:teaching/calc1sp14/][Calculus]]
+- --- [[file:teaching/algebra2/][Modern algebra 2]]
+- 2013 [[file:teaching/algebra1/][Modern algebra 1]]
+- --- [[file:teaching/calc3sp13/][Calculus]]
+- 2012 Calculus 2
+- --- Linear algebra
+- 2011 Algebraic curves (teaching assistant)
+- 2010 Calculus 2
+- 2009 Calculus 1
+#+end_example
