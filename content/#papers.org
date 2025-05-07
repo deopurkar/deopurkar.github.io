@@ -1,4 +1,4 @@
-* Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism :pp:
+* [[file:papers/k3z3.pdf][Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism]] :pp:
 :PROPERTIES:
 :with: [[https://www.math.uga.edu/directory/people/valery-alexeev][Valery Alexeev]], [[https://sites.google.com/view/changho-han/][Changho Han]]
 :journal:  Pre-print
@@ -7,7 +7,7 @@
 :END:
 
 
-* Syzygies of canonical ribbons on higher genus curves :pp:
+* [[file:papers/highergenusribbons.pdf][Syzygies of canonical ribbons on higher genus curves]] :pp:
 :PROPERTIES:
 :with: [[https://sites.google.com/view/mukherjeejayan][Jayan Mukherjee]]
 :journal:  Pre-print
@@ -15,7 +15,7 @@
 :link: [[https://arxiv.org/abs/2412.05500][arxiv]]
 :END:
 
-* Counting 3-uple Veronese surfaces :pp:
+* [[file:papers/3veroneseP2.pdf][Counting 3-uple Veronese surfaces]] :pp:
 :PROPERTIES:
 :with: [[https://sites.google.com/view/anand-patel][Anand Patel]]
 :journal:  Pre-print
@@ -23,24 +23,24 @@
 :year: 2024
 :END:
 
-* Equivariant classes of orbits in GL(2)-representations :pp:
+* [[file:papers/gl2orbits.pdf][Equivariant classes of orbits in GL(2)-representations]] :pp:
 :PROPERTIES:
 :journal:  Pre-print
-:link:     [[https://raw.githubusercontent.com/deopurkar/equivariant-classes-of-gl2-orbits/main/gl2orbits.pdf][pdf]], [[https://arxiv.org/abs/2405.09849][arxiv]], [[https://github.com/deopurkar/equivariant-classes-of-gl2-orbits/][source/comments]]
+:link:     [[https://arxiv.org/abs/2405.09849][arxiv]], [[https://github.com/deopurkar/equivariant-classes-of-gl2-orbits/][source/comments]]
 :year:     2024
 :END:
 We compute equivariant fundamental classes of orbits in GL(2)-representations. As applications, we find degrees of the orbit closures corresponding to elliptic fibrations and self-maps of the projective line.
 
-* Orbits of linear series on the projective line 
+* [[file:papers/erc.pdf][Orbits of linear series on the projective line]] 
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
 :journal:  International Mathematics Research Notices
-:link:     [[file:papers/erc.pdf][pdf]], [[https://arxiv.org/abs/2211.16603][arxiv]], [[https://doi.org/10.1093/imrn/rnae169][journal]]
+:link:     [[https://arxiv.org/abs/2211.16603][arxiv]], [[https://doi.org/10.1093/imrn/rnae169][journal]]
 :year:     2024
 :END:
   We compute the equivariant fundamental class of the orbit closure of a linear series on the projective line.  We also describe the boundary of the orbit closure and how the orbits specialise in one parameter families.
 
-* A universal formula for counting cubic surfaces
+* [[file:papers/countingcubics.pdf][A universal formula for counting cubic surfaces]]
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]]
 :journal:  Algebraic Geometry (to appear)
@@ -49,34 +49,34 @@ We compute equivariant fundamental classes of orbits in GL(2)-representations. A
 :END:
 Using equivariant geometry, we find a universal formula that computes the number of times a general cubic surface arises in a family. As applications, we show that the PGL(4) orbit closure of a generic cubic surface has degree 96120, and that a general cubic surface arises 42120 times as a hyperplane section of a general cubic 3-fold.
 
-* Spherical objects and stability conditions on CY2 quiver categories    
+* [[file:papers/2cy-algorithm.pdf][Spherical objects and stability conditions on 2-Calabi--Yau quiver categories]]    
 :PROPERTIES:
 :with:     [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
 :journal:  Mathematische Zeitschrift
-:link:     [[https://arxiv.org/abs/2108.09155][arxiv]]
+:link:     [[https://arxiv.org/abs/2108.09155][arxiv]], [[https://link.springer.com/article/10.1007/s00209-022-03172-8][journal]]
 :year:     2022
 :END:
 Consider a 2-Calabi--Yau triangulated category with a Bridgeland stability condition. We devise an effective procedure to reduce the phase spread of an object by applying spherical twists. Using this, we give new proofs of the following theorems for 2-Calabi--Yau categories associated to ADE quivers: (1) all spherical objects lie in a single orbit of the braid group, and (2) the space of Bridgeland stability conditions is connected.
 
-* Vector bundles and finite covers
+* [[file:papers/ebundle.pdf][Vector bundles and finite covers]]
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
 :journal:  Forum of Mathematics, Sigma
-:link:     [[file:papers/ebundle.pdf][pdf]], [[https://arxiv.org/abs/1608.01711/][arXiv]]
+:link:     [[https://arxiv.org/abs/1608.01711/][arXiv]], [[https://www.cambridge.org/core/services/aop-cambridge-core/content/view/21EB07C62F7A142F5CC39EF3950C2231/S2050509422000196a.pdf/vector_bundles_and_finite_covers.pdf][journal]]
 :year:     2022
 :END:
 Motivated by the problem of finding algebraic constructions of finite coverings in commutative algebra, the Steinitz realization problem in number theory, and the study of Hurwitz spaces in algebraic geometry, we investigate the vector bundles underlying the structure sheaf of a finite flat branched covering. We prove that, up to a twist, every vector bundle on a smooth projective curve arises from the direct image of the structure sheaf of a smooth, connected branched cover.
 
-* Stable log surfaces, admissible covers, and canonical curves of genus 4
+* [[file:papers/TrigonalKSBA.pdf][Stable log surfaces, admissible covers, and canonical curves of genus 4]]
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/changho-han/][Changho Han]]
 :journal:  Transactions of the Americal Mathematical Society
-:link:     [[file:papers/TrigonalKSBA.pdf][pdf]], [[https://arxiv.org/abs/1807.08413/][arxiv]]
+:link:     [[https://arxiv.org/abs/1807.08413/][arxiv]], [[https://www.ams.org/journals/tran/2021-374-01/S0002-9947-2020-08225-7/?active=current][journal]]
 :year:     2021
 :END: 
 We describe a compactification of the moduli space of pairs (S,C) where S is a smooth quadric surface in 3-space and C is a smooth divisor on S of class (3,3). We show that the compactified moduli space is a smooth Deligne-Mumford stack with 4 boundary components. We relate our compactification with compactifications of the moduli space of genus 4 curves. In particular, we show that our space compactifies the blow-up of the hyperelliptic locus. We also relate our compactification to a compactification of the Hurwitz space of triple coverings of the projective line by genus 4 curves.
 
-* A Thurston compactification of the space of stability conditions       :pp:
+* [[file:papers/a2-compactification.pdf][A Thurston compactification of the space of stability conditions]]       :pp:
 :PROPERTIES:
 :with:     [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
 :journal:  Pre-print
@@ -95,11 +95,11 @@ We describe a compactification of the moduli space of pairs (S,C) where S is a s
   We introduce a finite automaton to study this dynamics and employ it in our analysis of the \(A_{2}\) and \(\widehat{A_1}\) categories.
 
 
-* Ramification divisors of general projections
+* [[file:papers/PR.pdf][Ramification divisors of general projections]]
 :PROPERTIES:
 :with:     [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]]
 :journal:  Documenta Mathematica
-:link:     [[file:papers/PR.pdf][pdf]], [[http://arxiv.org/abs/1901.01513/][arxiv]]
+:link:     [[http://arxiv.org/abs/1901.01513/][arxiv]], [[https://ems.press/journals/dm/articles/8965720][journal]]
 :year:     2020
 :END:
 We study the ramification divisors of projections of a smooth projective variety onto a linear subspace of the same dimension. We prove that the ramification divisors vary in a maximal dimensional family for a large class of varieties. Going further, we study the map that associates to a linear projection its ramification divisor. We show that this map is dominant for most (but not all!) varieties of minimal degree, using (linked) limit linear series of higher rank. We find the degree of this map in some cases, extending the classical appearance of Catalan numbers in the geometry of rational normal curves, and give a geometric explanation of its fibers in terms of torsion points of naturally occurring elliptic curves in the case of the Veronese surface and the quartic rational surface scroll.
@@ -113,32 +113,32 @@ We study the ramification divisors of projections of a smooth projective variety
 :END:
 The classical statement of Cayley-Salmon that there are 27 lines on every smooth cubic surface in P^3 fails to hold under tropicalization: a tropical cubic surface in TP^3 often contains infinitely many tropical lines. Under mild genericity assumptions, we show that when embedded using the Eckardt triangles in the anticanonical system, tropical cubic del Pezzo surfaces contain exactly 27 tropical lines. In the non-generic case, which we identify explicitly, we find up to 27 extra lines, no multiple of which lifts to a curve on the cubic surface. We realize the moduli space of stable anticanonical tropical cubics as a four-dimensional fan in R^40 with an action of the Weyl group W(E_6). In the absence of Eckardt points, we show the combinatorial types of these tropical surfaces are determined by the boundary arrangement of 27 metric trees corresponding to the tropicalization of the classical 27 lines on the smooth algebraic cubic surfaces. Tropical convexity and the combinatorics of the root system E_6 play a central role in our analysis.
 
-* Covers of stacky curves and limits of plane quintics
+* [[file:papers/StackyAdmissibleCovers.pdf][Covers of stacky curves and limits of plane quintics]]
 :PROPERTIES:
 :journal:  Transactions of the Americal Mathematical Society
-:link:     [[file:papers/StackyAdmissibleCovers.pdf][pdf]], [[http://arxiv.org/abs/1507.03252/][arxiv]]
+:link:     [[http://arxiv.org/abs/1507.03252/][arxiv]], [[https://www.ams.org/journals/tran/2019-371-01/S0002-9947-2018-07301-9/home.html][journal]]
 :year:     2019
 :END:
 We construct a well-behaved compactification of the space of finite covers of a stacky curve using admissible cover degenerations. Using our construction, we compactify the space of tetragonal curves on Hirzebruch surfaces. As an application, we explicitly describe the boundary divisors of the closure in \(\overline{M}_6\) of the locus of smooth plane quintic curves.
 
-* Syzygy divisors on Hurwitz spaces
+* [[file:papers/HigherMaroni.pdf][Syzygy divisors on Hurwitz spaces]]
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
 :journal:  Contemporary Mathematics
-:link:     [[file:papers/HigherMaroni.pdf][pdf]], [[https://arxiv.org/abs/1805.00648][arxiv]]
+:link:     [[https://arxiv.org/abs/1805.00648][arxiv]], [[https://www.ams.org/books/conm/703/14139][journal]]
 :year:     2018
 :END:
 We describe a sequence of effective divisors on the Hurwitz space H(d,g) for d dividing g-1 and compute their cycle classes on a partial compactification. These divisors arise from vector bundles of syzygies canonically associated to a branched cover. We find that the cycle classes are all proportional to each other.
 
-* The canonical syzygy conjecture for ribbons
+* [[file:papers/RibbonGreen.pdf][The canonical syzygy conjecture for ribbons]]
 :PROPERTIES:
 :journal:  Mathematische Zeitschrift
-:link:     [[file:papers/RibbonGreen.pdf][pdf]], [[http://arxiv.org/abs/1510.07755/][arxiv]]
+:link:     [[http://arxiv.org/abs/1510.07755/][arxiv]]
 :year:     2018
 :END:
 We prove the analogue for ribbons of Green\'s canonical syzygy conjecture, formulated by Bayer and Eisenbud. Our proof uses the results of Voisin and Hirschowitz-Ramanan on Green\'s conjecture for general smooth curves.
 
-* Toward GIT stability of syzygies of canonical curves
+* [[file:papers/gitsyzygy.pdf][Toward GIT stability of syzygies of canonical curves]]
 :PROPERTIES:
 :with:     [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]]
 :journal:  Algebraic Geometry
@@ -147,75 +147,71 @@ We prove the analogue for ribbons of Green\'s canonical syzygy conjecture, formu
 :END:
 We introduce the problem of GIT stability for syzygy points of canonical curves with a view toward a GIT construction of the canonical model of the moduli space of stable curves. As the first step in this direction, we prove semi-stability of the first syzygy point for a general canonical curve of odd genus. 
 
-* The Picard rank conjecture for the Hurwitz spaces of degree up to five
+* [[file:papers/PicH345.pdf][The Picard rank conjecture for the Hurwitz spaces of degree up to five]]
 :PROPERTIES:
 :with:     [[https://www2.bc.edu/anand-p-patel/][Anand Patel]]
 :journal:  Algebra & Number Theory
-:link:     [[file:papers/PicH345.pdf][pdf]], [[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://msp.org/ant/2015/9-2/p05.xhtml][journal]]
+:link:     [[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://msp.org/ant/2015/9-2/p05.xhtml][journal]]
 :year:     2015
 :END:
 We prove that the rational Picard group of the simple Hurwitz space H_{d,g} is trivial for d up to five. We also relate the rational Picard groups of the Hurwitz spaces to the rational Picard groups of the Severi varieties of nodal curves on Hirzebruch surfaces.
 
-* Groebner techniques for ribbons
+* [[file:papers/groebner.pdf][Groebner techniques for ribbons]]
 :PROPERTIES:
 :with:     [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]]
 :journal:  Albanian Journal of Mathematics
-:link:     [[file:papers/groebner.pdf][pdf]], [[https://sites.google.com/site/albjmath/archives/vol-8/2014-6][journal]]
+:link:     [[https://sites.google.com/site/albjmath/archives/vol-8/2014-6][journal]]
 :year:     2014
 :END:
 We use Groebner basis techniques to study the balanced canonical ribbon in each odd genus g \geq 5. We obtain equations and syzygies of the ribbon, give a Groebner interpretation of part of Alper, Fedorchuk, and Smyth\'s proof of finite Hilbert stability for canonical curves, and discuss the obstacles in using ribbons to give a new proof of Generic Green\'s Conjecture (Voisin\'s Theorem).
 
-* Compactifications of Hurwitz spaces
+* [[file:papers/CompHurwitz.pdf][Compactifications of Hurwitz spaces]]
 :PROPERTIES:
 :journal:  International Mathematics Research Notices
-:link:     [[file:papers/CompHurwitz.pdf][pdf]], [[http://arxiv.org/abs/1206.4535/][arxiv]], [[http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract][journal]]
+:link:     [[http://arxiv.org/abs/1206.4535/][arxiv]], [[http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract][journal]]
 :year:     2014
 :END:
 
-* Class of the Hodge eigenbundle using orbifold Riemann-Roch             :pp:
+* [[file:papers/CyclicAppendix.pdf][Class of the Hodge eigenbundle using orbifold Riemann-Roch]]            :pp:
 :PROPERTIES:
 :journal:  Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]]
-:link:     [[file:papers/CyclicAppendix.pdf][pdf]]
 :year:     2013
 :END:
 We algebraically compute the class of the Hodge eigenbundles in the cyclic covering construction using Grothendieck-Riemann-Roch for stacks.
 
-* Sharp slope bounds for sweeping families of trigonal curves
+* [[file:papers/TrigonalSlopes.pdf][Sharp slope bounds for sweeping families of trigonal curves]]
 :PROPERTIES:
 :with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
 :journal:  Mathematical Research Letters
-:link:     [[file:papers/TrigonalSlopes.pdf][pdf]], [[http://arxiv.org/abs/1211.2827/][arxiv]], [[http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/][journal]]
+:link:     [[http://arxiv.org/abs/1211.2827/][arxiv]], [[http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/][journal]]
 :year:     2013
 :END:
 We establish sharp bounds for the slopes of curves in \(\overline{M}_g\) that sweep the locus of trigonal curves, proving Stankova-Frenkel\'s conjectured bound of 7+6/g for even g and obtaining the bound 7+20/(3g+1) for odd g. For even g, we find an explicit expression of the so-called Maroni divisor in the Picard group of the space of admissible triple covers. For odd g, we describe the analogous extremal effective divisor and give a similar explicit expression. 
 
-* Modular compactifications of the space of marked trigonal curves
+* [[file:papers/MarkedTrigonal.pdf][Modular compactifications of the space of marked trigonal curves]]
 :PROPERTIES:
 :journal:  Advances in Mathematics
-:link:     [[file:papers/MarkedTrigonal.pdf][pdf]], [[http://arxiv.org/abs/1206.4503/][arxiv]]
+:link:     [[http://arxiv.org/abs/1206.4503/][arxiv]], [[https://www.sciencedirect.com/science/article/pii/S0001870813002776][journal]]
 :year:     2013
 :END:
 We construct a sequence of modular compactifications of the space of marked trigonal curves by allowing the branch points to coincide to a given extent. Beginning with the standard admissible cover compactification, the sequence first proceeds through contractions of the boundary divisors and then through flips of the so-called Maroni strata, culminating in a Fano model for even genera and a Fano fibration for odd genera. While the sequence of divisorial contractions arises from a more general construction, the sequence of flips uses the particular geometry of triple covers. We explicitly describe the Mori chamber decomposition given by this sequence of flips.
 
-* Alternate compactifications of Hurwitz spaces                      :thesis:
+* [[file:papers/thesis.pdf][Alternate compactifications of Hurwitz spaces]]                      :thesis:
 :PROPERTIES:
 :journal:  Thesis, Harvard, 2012
-:link:     [[file:papers/thesis.pdf][pdf]]
 :year:     2012
 :END:
 
-* An introduction to intersection homology                       :expository:
+* [[file:papers/anandrd_minor_thesis.pdf][An introduction to intersection homology]]                       :expository:
 :properties:
 :journal:  Minor thesis, Harvard, 2010
-:link:     [[file:papers/anandrd_minor_thesis.pdf][pdf]]
 :year:     2010
 :comment:  expository
 :end:
 
-* Normalization of algebraic varieties                           :expository:
+* [[file:papers/anandrd_ug_thesis.pdf][Normalization of algebraic varieties]]                           :expository:
 :properties:
 :journal:  MIT Undergruate Journal of Mathematics
-:link:     [[file:papers/anandrd_ug_thesis.pdf][pdf]]
 :year:     2008
 :comment:  expository
 :end:
