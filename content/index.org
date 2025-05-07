@@ -209,12 +209,11 @@ Here are some additional talks:
                           (institute (org-entry-get nil "institute"))
                           (place (org-entry-get nil "place"))
                           (comment (org-entry-get nil "comment")))
-                      (format "- %s%s. (%s) \\\\\n  %s."
+                      (format "- %s%s. \\\\\n  %s."
                               title
                               (if comment
                                   (format " (%s)" comment)
                                 "")
-                              link
                               (string-join (remove nil `(,meet ,institute ,place)) ", "))))))
             nil
             '("#talks.org")))

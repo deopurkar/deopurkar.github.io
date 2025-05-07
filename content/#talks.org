@@ -150,7 +150,7 @@
 :end:
 
 
-* How to count using equivariant cohomology
+* [[file:talks/Harvard2022.pdf][How to count using equivariant cohomology]]
 :properties:
 :ref:  [[file:#papers.org::*A universal formula for counting cubic surfaces][A universal formula for counting cubic surfaces]]
 :type:     seminar
@@ -170,7 +170,7 @@
 :year:     2022
 :END:
 
-*  The geometry and combinatorics of Harder--Narasimhan filtrations
+* [[file:talks/ICERM2022.pdf][The geometry and combinatorics of Harder--Narasimhan filtrations]]
 :properties:
 :meet:     Braids in representation theory and algebraic combinatorics
 :institute: Institute for Computational and Experimental Research in Mathematics
@@ -180,7 +180,7 @@
 :type:     conference
 :end:
 
-*  The geometry of Fermat-like equations
+* [[file:talks/Fermat2022.pdf][The geometry of Fermat-like equations]]
 :properties:
 :meet:     Trimester program on triangle groups, Belyi uniformization, and modularity
 :institute: Bhaskaracharya Pratishthana
@@ -192,7 +192,7 @@
 :end:
 
 
-*  Algebraic curves and Belyi's theorem
+* [[file:talks/Belyi2021.pdf][Algebraic curves and Belyi's theorem]]
 :properties:
 :meet:     Trimester program on triangle groups, Belyi uniformization, and modularity
 :institute: Bhaskaracharya Pratishthana
@@ -204,7 +204,7 @@
 :end:
 
 
-*  Error correcting codes
+* [[file:talks/ecc2021/ecc.html][Error correcting codes]]
 :properties:
 :meet:     ANU Mathematics Extension Program
 :place:    Canberra, Australia
@@ -214,7 +214,7 @@
 :comment: expository
 :end:
 
-*  A Thurston compactification of the space of stability conditions
+* [[file:talks/Bonn2021.pdf][A Thurston compactification of the space of stability conditions]]
 :properties:
 :meet:     Workshop on compactifications of stability manifolds (Online)
 :institute: Max Planck institute für Mathematics
@@ -225,7 +225,7 @@
 :ref: [[file:#papers.org::*A Thurston compactification of the space of stability conditions][A Thurston compactification of the space of stability conditions]]
 :end:
 
-*  A Thurston compactification of the space of stability conditions
+* [[file:talks/tifr2021.pdf][A Thurston compactification of the space of stability conditions]]
 :properties:
 :institute: Tata Institute of Fundamental Research (Online)
 :place:    Mumbai, India
@@ -242,7 +242,7 @@
 :type:     seminar
 :ref: [[file:papers.org::*A Thurston compactification of the space of stability conditions][A Thurston compactification of the space of stability conditions]]
 :end:
-*  A Thurston compactification for categories
+* [[file:talks/AustMS2020.pdf][A Thurston compactification for categories]]
 :properties:
 :meet:     Topology session, AustMS (Online)
 :institute: University of New England
@@ -252,7 +252,7 @@
 :link:     [[file:talks/AustMS2020.pdf][slides]]
 :ref:      [[file:papers.org::*A Thurston compactification of the space of stability conditions][A Thurston compactification of the space of stability conditions]]
 :end:
-*  Apparent boundaries of projective varieties
+* [[file:talks/PR2020-Oaxaca.pdf][Apparent boundaries of projective varieties]]
 :properties:
 :meet:     Seminario nacional de geometria algebraica (Online joint seminar of multiple universities in Mexico)
 :place:    Mexico
@@ -261,7 +261,7 @@
 :link:     [[file:talks/PR2020-Oaxaca.pdf][slides]]
 :ref:      [[file:papers.org::*Ramification divisors of general projections][Ramification divisors of general projections]]
 :end:
-*  Apparent boundaries of projective varieties
+* [[file:talks/PR2020-UCSD.pdf][Apparent boundaries of projective varieties]]
 :properties:
 :institute: University of California (Online)
 :place:    San Diego, California
@@ -271,7 +271,7 @@
 :ref: [[file:papers.org::*Ramification divisors of general projections][Ramification divisors of general projections]]
 :end:  
 
-*  Groups, spherical twists, and stability conditions
+* [[file:talks/StabSydney2019.pdf][Groups, spherical twists, and stability conditions]]
 :properties:
 :meet:     Workshop on triangulated categories in geometry and representation theory
 :institute: University of Sydney
@@ -283,7 +283,7 @@
 :ref: [[file:papers.org::*A Thurston compactification of the space of stability conditions][A Thurston compactification of the space of stability conditions]]
 :end:
 
-*  Log surfaces of almost K3 type and curves of genus 4
+* [[file:talks/K3Sydney2019.pdf][Log surfaces of almost K3 type and curves of genus 4]]
 :properties:
 :meet:     Birational geometry and moduli spaces
 :type:     conference
@@ -293,7 +293,7 @@
 :link:     [[file:talks/K3Sydney2019.pdf][notes]]
 :ref: [[file:papers.org::*Stable log surfaces, admissible covers, and canonical curves of genus 4][Stable log surfaces, admissible covers, and canonical curves of genus 4]]
 :end:
-*  The work of Claire Voisin
+* [[file:talks/WIM2019.pdf][The work of Claire Voisin]]
 :properties:
 :meet:     Women in mathematics day
 :institute: Australian National University
@@ -303,7 +303,7 @@
 :comment:  expository
 :link:     [[file:talks/WIM2019.pdf][slides]]
 :end:
-*  Geometry of Hurwitz spaces
+* [[file:talks/NZ2018.pdf][Geometry of Hurwitz spaces]]
 :properties:
 :meet:     Character varieties and topological quantum field theory
 :institute: University of Auckland
@@ -312,7 +312,7 @@
 :type:     conference
 :link:     [[file:talks/NZ2018.pdf][notes]]
 :end:
-*  On the geometric Steinitz problem                                     
+* [[file:talks/AustMS2018.pdf][On the geometric Steinitz problem]]
 :properties:
 :institute: Number theory session,  AustMS
 :institute: University of South Australia
@@ -322,7 +322,7 @@
 :type:     conference
 :ref: [[file:papers.org::*Vector bundles and finite covers][Vector bundles and finite covers]]
 :end:
-*  The work of Caucher Birkar
+* [[file:talks/FMColloquium2018.pdf][The work of Caucher Birkar]]
 :properties:
 :meet:     Colloquium
 :institute: Australian National University
@@ -341,7 +341,7 @@
 :type:     conference
 :ref: [[file:papers.org::*Stable log surfaces, admissible covers, and canonical curves of genus 4][Stable log surfaces, admissible covers, and canonical curves of genus 4]]
 :end:
-*  How to count using (co)homology
+* [[file:talks/tifr2018.pdf][How to count using (co)homology]]
 :properties:
 :institute: Tata Institute of Fundamental Research
 :place:    Mumbai, India
@@ -358,7 +358,7 @@
 :type:     seminar
 :ref: [[file:papers.org::*The canonical syzygy conjecture for ribbons][The canonical syzygy conjecture for ribbons]]
 :end:
-*  What are ribbons and what do they tell us about Riemann surfaces
+* [[file:talks/Monash2018.pdf][What are ribbons and what do they tell us about Riemann surfaces]]
 :properties:
 :institute: Monash University
 :place:    Melbourne, Australia
@@ -375,7 +375,7 @@
 :type:     seminar
 :ref: [[file:papers.org::*Ramification divisors of general projections][Ramification divisors of general projections]]
 :end:
-*  Quadrature and algebraic geometry
+* [[file:talks/MATRIX2018.pdf][Quadrature and algebraic geometry]]
 :properties:
 :meet:     Workshop on algebraic geometry approximation, and optimization
 :institute: MATRIX
@@ -431,7 +431,7 @@
 :year:     2016
 :type:     colloquium
 :end:
-*  Vector bundles and finite covers
+* [[file:talks/Jeju2016.pdf][Vector bundles and finite covers]]
 :properties:
 :meet:     Conference on moduli and birational geometry
 :place:    Jeju Island, South Korea
@@ -495,7 +495,7 @@
 :type:     conference
 :ref: [[file:papers.org::*Covers of stacky curves and limits of plane quintics][Covers of stacky curves and limits of plane quintics]]
 :end:
-* Limits of plane quintics via covers of stacky curves
+* [[file:talks/AGNUBS2015.pdf][Limits of plane quintics via covers of stacky curves]]
 :properties:
 :year:     2015
 :meet:     Boston College--Northeastern algebraic geometry conference
@@ -505,7 +505,7 @@
 :type:     conference
 :ref:      [[file:papers.org::*Covers of stacky curves and limits of plane quintics][Covers of stacky curves and limits of plane quintics]]
 :end:
-* Limits of plane quintics via covers of stacky curves 
+* [[file:talks/quintics_poster.pdf][Limits of plane quintics via covers of stacky curves]]
 :properties:
 :year:     2015
 :meet:     Summer institute in algebraic geometry
@@ -516,7 +516,7 @@
 :comment:  poster
 :ref:      [[file:papers.org::*Covers of stacky curves and limits of plane quintics][Covers of stacky curves and limits of plane quintics]]
 :end:
-* Syzygies of canonical curves and the geometry of \(\overline M_g\)
+* [[file:talks/SIAM2015.pdf][Syzygies of canonical curves and the geometry of \(\overline M_g\)]]
 :properties:
 :year:     2015
 :meet:     SIAM applied algebraic geometry conference
@@ -606,7 +606,7 @@
 :type:     seminar
 :ref: [[file:papers.org::*Toward GIT stability of syzygies of canonical curves][Toward GIT stability of syzygies of canonical curves]]
 :end:
-* Towards GIT stability of syzygies of canonical curves
+* [[file:talks/syz2013.pdf][Towards GIT stability of syzygies of canonical curves]]
 :properties:
 :year:     2013
 :meeting:  Conference on moduli and birational geometry
@@ -624,7 +624,7 @@
 :type:     seminar
 :ref: [[file:papers.org::*Toward GIT stability of syzygies of canonical curves][Toward GIT stability of syzygies of canonical curves]]
 :end:
-* Sharp slope bounds for sweeping families of trigonal curves
+* [[file:talks/slopes_poster.pdf][Sharp slope bounds for sweeping families of trigonal curves]]
 :properties:
 :year:     2013
 :meet:     Algebraic geometry northeastern series
@@ -635,7 +635,7 @@
 :comment:  poster
 :ref: [[file:papers.org::*Sharp slope bounds for sweeping families of trigonal curves][Sharp slope bounds for sweeping families of trigonal curves]]
 :end:
-* Alternate compactifications of Hurwitz spaces
+* [[file:talks/Hdg2013.pdf][Alternate compactifications of Hurwitz spaces]]
 :properties:
 :year:     2013
 :institute: Stanford University
@@ -660,7 +660,7 @@
 :type:     seminar
 :ref: [[file:papers.org::*Alternate compactifications of Hurwitz spaces][Alternate compactifications of Hurwitz spaces]]
 :end:
-* Compactifications of Hurwitz spaces
+* [[file:talks/Hdg2013.pdf][Compactifications of Hurwitz spaces]]
 :properties:
 :year:     2011
 :institute: Massachusetts Institute of Technology
@@ -693,7 +693,7 @@
 :type:     seminar
 :ref: [[file:papers.org::*Alternate compactifications of Hurwitz spaces][Alternate compactifications of Hurwitz spaces]]
 :end:
-* Birational geometry of the space of marked trigonal curves 
+* [[file:talks/trig_poster.pdf][Birational geometry of the space of marked trigonal curves]]
 :properties:
 :year:     2011
 :meet:     A celebration of algebraic geometry (conference for the 60th birthday of Joe Harris)

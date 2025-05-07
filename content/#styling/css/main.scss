@@ -72,6 +72,14 @@
     @include theme(#fbf6ee, #fac591,#060000,#f87d5b); 
 }
 
+@mixin eucalyptus-warm {
+ @include theme(#fbf6ec,#dcad67,#1f0e07,#a69b65); 
+}
+
+@mixin eucalyptus-cool {
+ @include theme(#f2f3f7,#c8cad9,#212227,#6a7469)
+}
+
 // Fonts
 $title-font: 'Atkinson Hyperlegible';
 $body-font: 'Atkinson Hyperlegible';
@@ -194,7 +202,7 @@ footer {
     display: table;
 }
 
-@include autumn;
+@include galah;
 
 // Print stylesheet
 @media print {
