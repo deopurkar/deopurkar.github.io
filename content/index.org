@@ -2,6 +2,8 @@
 :ARCHIVE:  %s_archive::
 :END:
 #+title: Anand Deopurkar
+#+description: Personal website of Anand Deopurkar
+#+keywords: Anand Deopurkar 
 #+author: Anand Deopurkar
 #+OPTIONS: *:t author:nil ':t  d:+results 
 #+HTML_HEAD_EXTRA: <script type="text/javascript" src="js/collapsibility.js"></script>

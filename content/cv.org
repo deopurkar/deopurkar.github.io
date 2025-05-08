@@ -1,5 +1,7 @@
 #+TITLE: Curriculum Vitae | Anand Deopurkar
 #+AUTHOR: [[mailto:anand.deopurkar@anu.edu.au][~anand.deopurkar@anu.edu.au~]] \(\quad\) [[https://www.ananddeopurkar.org][~ananddeopurkar.org~]]
+#+DESCRIPTION: Curriculum vitae of Anand Deopurkar
+#+KEYWORDS: Curriculum vitae CV Anand Deopurkar
 #+options: -:t broken-links:mark num:nil toc:nil date:nil
 #+LATEX_HEADER: \usepackage[margin=3cm]{geometry}
 #+LATEX_HEADER_EXTRA: \hypersetup{colorlinks=true,urlcolor=black}

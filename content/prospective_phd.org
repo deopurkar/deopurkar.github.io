@@ -1,8 +1,10 @@
 :PROPERTIES:
 :ID:       1a667b02-c72c-4225-acbc-d5064ab2f748
 :END:
-#+title: Anand Deopurkar
+#+title: For prospective PhD students | Anand Deopurkar
 #+subtitle: Thinking of doing a PhD at ANU with me as a supervisor?
+#+description: Guidelines for prospective PhD students of Anand Deopurkar
+#+keywords: PhD Algebraic Geometry Anand Deopurkar 
 
 Thanks!  I am happy that you find my work interesting.
 
