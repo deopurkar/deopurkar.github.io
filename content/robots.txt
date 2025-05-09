@@ -1,1 +1,2 @@
-Sitemap: http://ananddeopurkar.org/sitemap.html
+Sitemap: http://ananddeopurkar.org/sitemap.txt
+

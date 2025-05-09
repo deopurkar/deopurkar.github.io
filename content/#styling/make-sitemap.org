@@ -1,0 +1,9 @@
+The following shell script creates a simple text sitemap.
+#+begin_src shell :results output file :file sitemap.txt
+  find "../../docs/" | grep -i html$ | sed 's/^..\/..\/docs/https:\/\/ananddeopurkar.org/g' 
+#+end_src
+
+#+RESULTS:
+[[file:sitemap.txt]]
+
+

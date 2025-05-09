@@ -28,9 +28,6 @@
          :html-preamble nil
          :html-postamble-format (("en" "Created by %c.  Last modified: %C.  <a href=\"https://github.com/deopurkar/deopurkar.github.io\">Source</a>"))
          :html-postamble t
-	 :auto-sitemap t
-	 :sitemap-style list
-	 :sitemap-title "Sitemap for ananddeopurkar.org"
          )
         ("pdfcv"
          :base-directory "./content"
@@ -50,7 +47,7 @@
 	 )
         ("styling"
          :base-directory "./content/#styling"
-         :base-extension "css\\|js"
+         :base-extension "css\\|js\\|txt"
          :publishing-directory "./docs"
          :recursive t
          :preparation-function my/execute-files
@@ -75,5 +72,9 @@
 
 (setq org-confirm-babel-evaluate nil)
 (setq make-backup-files nil)
+
+;; Making a sitemap
+
+
 (org-publish-all t)
 (message "Build complete!")
