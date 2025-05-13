@@ -1,3 +1,10 @@
+* [[file:papers/CompStabGenK3.pdf][The Thurston compactification of the stability manifold of a generic analytic K3 surface]] :pp:
+:PROPERTIES:
+:journal:  Pre-print
+:year:     2025
+:link: [[https://github.com/deopurkar/CompStabGenK3][repository]]
+:END:
+
 * [[file:papers/k3z3.pdf][Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism]] :pp:
 :PROPERTIES:
 :with: [[https://www.math.uga.edu/directory/people/valery-alexeev][Valery Alexeev]], [[https://sites.google.com/view/changho-han/][Changho Han]]
@@ -26,7 +33,7 @@
 * [[file:papers/gl2orbits.pdf][Equivariant classes of orbits in GL(2)-representations]] :pp:
 :PROPERTIES:
 :journal:  Pre-print
-:link:     [[https://arxiv.org/abs/2405.09849][arxiv]], [[https://github.com/deopurkar/equivariant-classes-of-gl2-orbits/][source/comments]]
+:link:     [[https://arxiv.org/abs/2405.09849][arxiv]], [[https://github.com/deopurkar/equivariant-classes-of-gl2-orbits/][repository]]
 :year:     2024
 :END:
 We compute equivariant fundamental classes of orbits in GL(2)-representations. As applications, we find degrees of the orbit closures corresponding to elliptic fibrations and self-maps of the projective line.
