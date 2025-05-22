@@ -693,7 +693,8 @@
 :type:     seminar
 :ref: [[file:papers.org::*Alternate compactifications of Hurwitz spaces][Alternate compactifications of Hurwitz spaces]]
 :end:
-* [[file:talks/trig_poster.pdf][Birational geometry of the space of marked trigonal curves]]
+
+* Birational geometry of the space of marked trigonal curves
 :properties:
 :year:     2011
 :meet:     A celebration of algebraic geometry (conference for the 60th birthday of Joe Harris)
