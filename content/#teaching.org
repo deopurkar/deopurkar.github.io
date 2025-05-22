@@ -4,7 +4,7 @@
 :year:     2025
 :END:
 
-* Games, graphs, and machines :hl:
+* Games, graphs, and machines 
 :PROPERTIES:
 :institute: Australian National University
 :year:     2024
@@ -41,28 +41,28 @@
 :link: file:teaching/2022_algebra1/
 :end:
 
-* Mathematical writing                                            :hl:
+* Mathematical writing                                            
 :properties:
 :institute: Australian National University
 :year:     2022
 :link: file:teaching/2022_mathematical_writing/
 :end:
 
-* Algebraic Geometry (Algebra 3)                                         :hl:
+* Algebraic Geometry (Algebra 3)                                         
 :properties:
 :institute: Australian National University
 :year:     2021
 :link: file:teaching/2021_algebraic_geometry/
 :end:
 
-* Foundations of Algebraic Geometry: Schemes                             :hl:
+* Foundations of Algebraic Geometry: Schemes                             
 :properties:
 :institute: Australian National University
 :year:     2020
 :link: file:teaching/2020_schemes/
 :end:
 
-* Algebraic Geometry (Algebra 3)                                         :hl:
+* Algebraic Geometry (Algebra 3)                                         
 :properties:
 :institute: Australian National University
 :year:     2019
@@ -97,82 +97,82 @@
 :year:     2017
 :end:
 
-* Algebraic curves                                                       :hl:
+* Algebraic curves                                                       
 :properties:
 :institute: University of Georgia
 :year:     2017
 :link: file:teaching/2017_algebraic_curves/
 :end:
 
-* Calculus 2
+* Calculus
 :properties:
 :institute: University of Georgia
 :year:     2017
 :end:
 
-* Calculus 1
+* Calculus  
 :properties:
 :institute: University of Georgia
 :year:     2016
 :end:
 
-* Analysis and optimization                       
+* Analysis and optimization
 :properties:
 :institute: Columbia University
 :year:     2016
-:link:     file:teaching/ao/
+:link:     file:teaching/2016_analysis_and_optimization/
 :end:
 
 * Young tableaux in algebra and geometry          
 :properties:
 :institute: Columbia University
 :year:     2015
-:link: file:teaching/seminar15/
+:link: file:teaching/2014_algebra2/
 :end:
 
 * Calculus                                                               
 :properties:
 :institute: Columbia University
 :year:     2015
-:link: file:teaching/calc1/
+:link: file:teaching/2015_calculus1/
 :end:
 
-* Moduli of curves                                                       :hl:
+* Moduli of curves                                                       
 :properties:
 :institute: Columbia University
 :year:     2014
-:link: file:teaching/moduli/
+:link: file:teaching/2014_moduli_of_curves/
 :end:
 
 * Calculus
 :properties:
 :institute: Columbia University
 :year:     2014
-:link: file:teaching/calc1sp14/
+:link: file:teaching/2014_calculus1/
 :end:
 
 * Fields and Galois theory (Algebra 2)
 :properties:
 :institute: Columbia University
 :year:     2014
-:link: file:teaching/algebra2/
+:link: file:teaching/2014_algebra2/
 :end:
 
 * Groups and rings (Algebra 1)                                   
 :properties:
 :institute: Columbia University
 :year:     2013
-:link: file:teaching/algebra1/
+:link: file:teaching/2013_algebra1/
 :end:
 
 * Calculus
 :properties:
 :institute: Columbia University
 :year:     2013
-:link: file:teaching/calc3sp13/
+:link: file:teaching/2013_calculus3/
 :end:
 
-* Calculus 2
+* Calculus 
 :properties:
 :institute: Columbia University
 :year:     2012
@@ -190,13 +190,13 @@
 :year:     2011
 :end:
 
-* Calculus 2
+* Calculus 
 :properties:
 :institute: Harvard University
 :year:     2010
 :end:
 
-* Calculus 1
+* Calculus 
 :properties:
 :institute: Harvard University
 :year:     2009

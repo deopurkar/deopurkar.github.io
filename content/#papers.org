@@ -2,7 +2,7 @@
 :PROPERTIES:
 :journal:  Pre-print
 :year:     2025
-:link: [[https://github.com/deopurkar/CompStabGenK3][repository]]
+:link:    [[https://arxiv.org/abs/2505.14991][arxiv]], [[https://github.com/deopurkar/CompStabGenK3][repository]]
 :END:
 
 * [[file:papers/k3z3.pdf][Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism]] :pp:
@@ -111,7 +111,7 @@ We describe a compactification of the moduli space of pairs (S,C) where S is a s
 :END:
 We study the ramification divisors of projections of a smooth projective variety onto a linear subspace of the same dimension. We prove that the ramification divisors vary in a maximal dimensional family for a large class of varieties. Going further, we study the map that associates to a linear projection its ramification divisor. We show that this map is dominant for most (but not all!) varieties of minimal degree, using (linked) limit linear series of higher rank. We find the degree of this map in some cases, extending the classical appearance of Catalan numbers in the geometry of rational normal curves, and give a geometric explanation of its fibers in terms of torsion points of naturally occurring elliptic curves in the case of the Veronese surface and the quartic rational surface scroll.
 
-* Anticanonical tropical cubic del Pezzos contain exactly 27 lines       :pp:
+* [[file:papers/lines_on_tropical_cubics.pdf][Anticanonical tropical cubic del Pezzos contain exactly 27 lines]]       :pp:
 :PROPERTIES:
 :with:     [[https://people.math.osu.edu/cueto.5/][María Angélica Cueto]]
 :journal:  Pre-print
