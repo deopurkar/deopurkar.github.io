@@ -3,13 +3,228 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-04-06 Sun 14:52 -->
+<!-- 2025-04-12 Sat 12:53 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Advanced topics in algebra: Algebraic geometry</title>
 <meta name="author" content="Anand Deopurkar" />
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" href="/css/main.css"><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=B612:wght@300..700&display=swap" rel="stylesheet"><script src="/js/collapsibility.js"></script>
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -18,18 +233,18 @@
 This year, the course will be on algebraic geometry, the study of algebraic equations using geometry and geometric shapes using algebra.
 We will begin with affine varieties&#x2014;solution sets of polynomial equations&#x2014;and use these as building blocks to construct a rich world of geometric objects that include Riemann surfaces, projective spaces, Grassmannians, etc.
 </p>
-<div id="outline-container-org831ee23" class="outline-2">
-<h2 id="org831ee23">Announcements</h2>
-<div class="outline-text-2" id="text-org831ee23">
+<div id="outline-container-org95e6f36" class="outline-2">
+<h2 id="org95e6f36"><span class="section-number-2">1.</span> Announcements</h2>
+<div class="outline-text-2" id="text-1">
 <ol class="org-ol">
 <li>The final exam will be on Nov 17 and 18 (with the same rules as the midterm).</li>
 <li>Here are some <a href="AGFinalPractice.pdf">practice questions</a> for the final.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org84170e0" class="outline-2">
-<h2 id="org84170e0">Links</h2>
-<div class="outline-text-2" id="text-org84170e0">
+<div id="outline-container-orgc0a7562" class="outline-2">
+<h2 id="orgc0a7562"><span class="section-number-2">2.</span> Links</h2>
+<div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>Lectures: 1 (Monday 10&#x2013;11, Moran G007), 2 (Wed 10&#x2013;11, Moran G008), 3 (Thu 11&#x2013;12, HN 4.41), 4 (Fri 12&#x2013;13, Moran G007)</li>
 <li>Zoom lecture: <a href="https://anu.zoom.us/j/87920733031">https://anu.zoom.us/j/87920733031</a> (you know the password)</li>
@@ -39,18 +254,18 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 </ul>
 </div>
 </div>
-<div id="outline-container-org6e1c52f" class="outline-2">
-<h2 id="org6e1c52f">References</h2>
-<div class="outline-text-2" id="text-org6e1c52f">
+<div id="outline-container-orgc4e97a9" class="outline-2">
+<h2 id="orgc4e97a9"><span class="section-number-2">3.</span> References</h2>
+<div class="outline-text-2" id="text-3">
 <ol class="org-ol">
 <li><a href="notes/">Our own notes</a></li>
 <li><a href="https://link.springer.com/book/10.1007/978-3-642-37956-7">Basic Algebraic Geometry, Part I by I. Shafarevich</a></li>
 <li><a href="https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2002/alggeom-2002.pdf">Online notes by A. Gathmann</a></li>
 </ol>
 </div>
-<div id="outline-container-orgf39ea2c" class="outline-3">
-<h3 id="orgf39ea2c">Resources for mathematical writing</h3>
-<div class="outline-text-3" id="text-orgf39ea2c">
+<div id="outline-container-org530e9fe" class="outline-3">
+<h3 id="org530e9fe"><span class="section-number-3">3.1.</span> Resources for mathematical writing</h3>
+<div class="outline-text-3" id="text-3-1">
 <ol class="org-ol">
 <li><a href="https://www.math.ucla.edu/~pak/papers/how-to-write1.pdf">How to write a clear math paper by Igor Pak.</a></li>
 <li><a href="https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf">Mathematical Writing by Donald Knuth et al.</a></li>
@@ -58,9 +273,9 @@ We will begin with affine varieties&#x2014;solution sets of polynomial equations
 </div>
 </div>
 </div>
-<div id="outline-container-org84b04e4" class="outline-2">
-<h2 id="org84b04e4">Plan</h2>
-<div class="outline-text-2" id="text-org84b04e4">
+<div id="outline-container-org76c427a" class="outline-2">
+<h2 id="org76c427a"><span class="section-number-2">4.</span> Plan</h2>
+<div class="outline-text-2" id="text-4">
 <p>
 This is a tentative outline of the course, subject to change.
 </p>
@@ -163,9 +378,9 @@ This is a tentative outline of the course, subject to change.
 </table>
 </div>
 </div>
-<div id="outline-container-org972e760" class="outline-2">
-<h2 id="org972e760">Pre-requisites</h2>
-<div class="outline-text-2" id="text-org972e760">
+<div id="outline-container-org4465a36" class="outline-2">
+<h2 id="org4465a36"><span class="section-number-2">5.</span> Pre-requisites</h2>
+<div class="outline-text-2" id="text-5">
 <p>
 Algebra 1 and Algebra 2.
 </p>
@@ -175,9 +390,9 @@ Algebraic geometry interacts deeply with many other areas of mathematics, so som
 </p>
 </div>
 </div>
-<div id="outline-container-org625d479" class="outline-2">
-<h2 id="org625d479">Assessment</h2>
-<div class="outline-text-2" id="text-org625d479">
+<div id="outline-container-orgaa84c99" class="outline-2">
+<h2 id="orgaa84c99"><span class="section-number-2">6.</span> Assessment</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 The final mark is based on three factors.
 </p>
@@ -191,31 +406,31 @@ The classwork will consist of progress reports and the associated write-up, each
 If you are a masters student or taking the course as an ASC/ASE, your assessment will include an additional project component.
 </p>
 </div>
-<div id="outline-container-org3cbe0e8" class="outline-3">
-<h3 id="org3cbe0e8">Classwork</h3>
-<div class="outline-text-3" id="text-org3cbe0e8">
+<div id="outline-container-org1265f96" class="outline-3">
+<h3 id="org1265f96"><span class="section-number-3">6.1.</span> Classwork</h3>
+<div class="outline-text-3" id="text-6-1">
 <p>
 The format of our classwork will be as follows. The first meeting of the week (Monday) will be a traditional lecture in which I will explain the key ideas of a topic, but not prove all the details. In the following two meetings (Wednesday, Thursday), we will work out the details in small groups. By the end of Thursday, you will write a &ldquo;progress report&rdquo; (a 1-2 sentence summary of your progress for each question) and submit it on Gradescope. On Friday, based on the progress reports, I will present the solutions. Students (selected at random) will write up the solutions and send them to me in a week. I will add the write-ups to <a href="notes">our notes</a>. 
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orga501c21" class="outline-2">
-<h2 id="orga501c21">Policies</h2>
-<div class="outline-text-2" id="text-orga501c21">
+<div id="outline-container-org274a963" class="outline-2">
+<h2 id="org274a963"><span class="section-number-2">7.</span> Policies</h2>
+<div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-org68927fb" class="outline-3">
-<h3 id="org68927fb">Late submission</h3>
-<div class="outline-text-3" id="text-org68927fb">
+<div id="outline-container-org211546d" class="outline-3">
+<h3 id="org211546d"><span class="section-number-3">7.1.</span> Late submission</h3>
+<div class="outline-text-3" id="text-7-1">
 <p>
 I will not accept any late submissions, except for medical emergencies with a medical certificate.
 To compensate for this strict policy, I will drop the lowest among the (homework+classwork) marks.
 </p>
 </div>
 </div>
-<div id="outline-container-org0b51aee" class="outline-3">
-<h3 id="org0b51aee">Collaboration</h3>
-<div class="outline-text-3" id="text-org0b51aee">
+<div id="outline-container-org5616195" class="outline-3">
+<h3 id="org5616195"><span class="section-number-3">7.2.</span> Collaboration</h3>
+<div class="outline-text-3" id="text-7-2">
 <p>
 You are allowed, even encouraged, to work with others on homework assignments, but you must write up your solutions <b>on your own</b>. In other words, you <b>may not</b> copy someone else&rsquo;s write-up and you <b>may not</b> write your solutions side by side with someone else. On your submission, you must write the names of your collaborators. This is a matter of academic honesty; it will not affect your marks. 
 </p>
@@ -226,9 +441,9 @@ There will be no collaboration on the exams.
 </div>
 </div>
 </div>
-<div id="outline-container-orgcda6471" class="outline-2">
-<h2 id="orgcda6471">Miscellenous</h2>
-<div class="outline-text-2" id="text-orgcda6471">
+<div id="outline-container-orgf9efeb1" class="outline-2">
+<h2 id="orgf9efeb1"><span class="section-number-2">8.</span> Miscellenous</h2>
+<div class="outline-text-2" id="text-8">
 <blockquote>
 <p>
 Algebra is nothing but written geometry; geometry is nothing but pictured algebra.  
@@ -243,9 +458,260 @@ No attention should be paid to the fact that algebra and geometry are different 
 </blockquote>
 </div>
 </div>
+<div id="outline-container-orga65c5b2" class="outline-2">
+<h2 id="orga65c5b2"><span class="section-number-2">9.</span> Homework</h2>
+<div class="outline-text-2" id="text-9">
+</div>
+<div id="outline-container-orgf338d8b" class="outline-3">
+<h3 id="orgf338d8b"><span class="section-number-3">9.1.</span> Homework 1</h3>
+<div class="outline-text-3" id="text-9-1">
+<ol class="org-ol">
+<li><p>
+A <i>homogeneous</i> polynomial in variables \(X_1, \dots, X_n\) is one whose every (non-zero) term has the same total degree.
+For example, \(X_1^2 + X_2X_3\) is homogeneous (of degree 2), whereas \(X_1 + X_2X_3\) is not homogeneous.
+Every polynomial \(p\) can be written uniquely as \(p = p_0 + p_1 + \dots + p_d\), where \(p_i\) is homogeneous of degree \(i\).
+The \(p_i\)&rsquo;s are called the <i>homogeneous components</i> of \(p\).
+</p>
+
+<p>
+Let \(k\) be a field and let \(I \subset k[X_1, \dots, X_n]\) be an ideal.
+Prove that the following are equivalent:
+</p>
+<ol class="org-ol">
+<li>\(I\) is generated by homogeneous polynomials.</li>
+<li>For every \(p\) in \(I\), all the homogeneous components of \(p\) are also in \(I\).</li>
+</ol>
+
+<p>
+Definition: An ideal satisfying the above conditions is called a <i>homogeneous ideal</i>.
+</p></li>
+
+<li>Let \(k\) be an infinite field.
+Let \(X \subset \mathbb A^n_k\) be a Zariski closed subset.
+Prove that the following are equivalent:
+<ol class="org-ol">
+<li>\(I(X)\) is a homogeneous ideal.</li>
+<li>For every \(x\) in \(X\) and \(\lambda\) in \(k\), the scalar multiple \(\lambda \cdot x\) is also in \(X\).</li>
+</ol></li>
+
+<li><p>
+Let \(k\) be an algebraically closed field and let \(X \subset \mathbb A_k^2\) be the subset defined by the (infinite) system of equations
+</p>
+\begin{align*}
+x + y &= 0 \\
+x^2 + y^2 &= 0\\
+x^3 + y^3 &= 0\\
+\cdots 
+\end{align*}
+<p>
+Find out a finite system of polynomial equations that defines \(X\), or prove that such a system does not exist.
+</p>
+
+<p>
+<i>Caution: The answer may depend on the characteristic of \(k\).</i>
+</p></li>
+
+<li><p>
+Let \(P_n\) denote the set of monic polynomials in one variable \(T\) with coefficients in \(\mathbb C\).
+Identify the set \(P_n\) with the affine space \(\mathbb A_{\mathbb C}^n\) by the rule
+\[T^n + a_{n-1}T^{n-1} + \cdots + a_1 T + a_0 \leftrightarrow (a_0, \dots, a_{n-1}).\]
+Prove that the set of polynomials with \(n\) distinct roots is a Zariski open subset of \(\mathbb A^n_{\mathbb C}\).
+Describe the equations that define its complement when \(n = 2\).
+</p>
+
+<p>
+<i>Hint: Remember `the discriminant&rsquo; from Algebra 2</i>.
+</p></li>
+
+<li>Describe all maximal ideals of the following rings
+<ol class="org-ol">
+<li>\(\mathbb C[x,y,z]/(xy, yz, xz)\)</li>
+<li>\(\mathbb R[x,y]\)</li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org59fc1a9" class="outline-3">
+<h3 id="org59fc1a9"><span class="section-number-3">9.2.</span> Homework 2</h3>
+<div class="outline-text-3" id="text-9-2">
+<ol class="org-ol">
+<li>Let \(\phi \colon X \to Y\) be a regular map between quasi-affine varieties.
+Prove that \(\phi\) is continuous in the Zariski topology.</li>
+
+<li>Let \(U \subset V \subset \mathbb A^n\) be two non-empty open sets.
+Show that the map \(k[V] \to k[U]\), obtained by restriction, is injective.
+As a result, show that we have an injective map
+\[ k[V] \to k(x_1,\dots,x_n).\]</li>
+
+<li>Let \(f \in k[x_1,\dots,x_n]\) be non-zero, and let \(U_f\) be the complement in \(\mathbb A^n\) of \(V(f)\).
+Identify the ring \(k[U]\) as a sub-ring of the fraction field \(k(x_1,\dots,x_n)\).</li>
+
+<li>Let \(U = \mathbb A^2 \setminus \{(0,0)\}\).
+Show that the restriction map \(k[x,y] \to k[U]\) is an isomorphism.
+<i>Hint: Observe that \(U\)  is the union \(U_x \cup U_y\).</i></li>
+
+<li>Let \(S \subset \mathbb P^3\) be the Fermat cubic
+\[ S = V(X^3+Y^3+Z^3+W^3). \]
+Let \(L \subset S\) be the line defined by
+\[ L = V(X+Y, Z+W).\]
+Consider the regular map
+\[ \phi \colon S \setminus L \to \mathbb P^1\]
+defined by
+\[ [X:Y:Z:W] \mapsto [X+Y:Z+W].\]
+Prove that \(\phi\) extends to a regular map
+\[ \phi \colon S \to \mathbb P^1.\]</li>
+</ol>
+
+<p>
+<i>Not to be turned in, but highly recommended.</i>
+</p>
+
+<p>
+What are the fibers of the map \(\phi \colon S \to \mathbb P^1\)?
+Can you picture this over the real numbers?
+</p>
+</div>
+</div>
+<div id="outline-container-org363d5bc" class="outline-3">
+<h3 id="org363d5bc"><span class="section-number-3">9.3.</span> Homework 3</h3>
+<div class="outline-text-3" id="text-9-3">
+<ol class="org-ol">
+<li>Given 3 distinct points \(p, q, r \in \mathbb P^1\), prove that there exists a unique element of \(A \in \operatorname{PGL}_2(k)\) such that
+\[ A [0:1] = p, \quad A[1:0] = q, \quad A[1:1] = r.\]
+What is the analogous statement for \(\mathbb P^n\)? Just write the statement, not the proof.</li>
+
+<li>Let \(Y\) be a separated variety, and \(U \subset X\) a dense subset.
+If two regular maps \(f, g \colon X \to Y\) agree on \(U\), then show that they must agree on \(X\).
+In other words, if \(Y\) is separated, then a continuous map \(U \to Y\) has at most one extension \(X \to Y\).</li>
+
+<li>Prove that any rational map \(\mathbb P^1 \dashrightarrow \mathbb P^n\) extends to a regular map.</li>
+
+<li>Consider \(\mathbb A^2\) as an open subset of \(\mathbb P^2\) in the standard way:
+\[ \mathbb A^2 = \{[x:y:1] \mid x, y \in k\}.\]
+For \(f \in k[x,y]\), consider \(C = V(f) \subset \mathbb A^2\).
+The closure of \(C\) in \(\mathbb P^2\) has the form \(V(F)\) for some homogeneous polynomial \(F \in k[X,Y,Z]\).
+Describe how to obtain \(F\) from \(f\) and prove that \(V(F)\) is indeed the closure of \(V(f)\).</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga984d92" class="outline-3">
+<h3 id="orga984d92"><span class="section-number-3">9.4.</span> Homework 4</h3>
+<div class="outline-text-3" id="text-9-4">
+<ol class="org-ol">
+<li><p>
+Consider the \(\mathbb A^n\) of monic polynomials of degree \(n\) in one variable.
+Given \(r \in \{1,\dots,n\}\), let \(X_r \subset \mathbb A^n\) be the set of polynomials that have a root of order at least \(r\).
+It turns out that \(X_r \subset \mathbb A^n\) is a Zariski closed subset.
+Prove that \(X_r\) is irreducible.
+</p>
+
+<p>
+\vspace{1em}
+</p></li>
+
+<li><p>
+Let \(X\) and \(Y\) be two irreducible varieties and \(\phi \colon X \dashrightarrow Y\) a birational isomorphism.
+Prove that there exist non-empty open subsets \(U \subset X\) and \(V \subset Y\) such that the map \(\phi\) induces an isomorphism \(\phi \colon U \to V\).
+Identify such open subsets \(U\) and \(V\) for the Cremona transformation
+\[ \phi \colon \mathbb P^2 \dashrightarrow \mathbb P^2 \]
+defined by
+\[ \phi \colon [X:Y:Z] \mapsto [1/X:1/Y:1/Z].\]
+</p>
+
+<p>
+\vspace{1em}
+</p></li>
+
+<li><p>
+It turns out that every smooth cubic surface \(S \subset \mathbb P^3\) is birational to \(\mathbb P^2\).
+One proof goes as follows.
+First, we prove that \(S\) contains two skew (non-intersecting) lines \(L\) and \(M\).
+We then define a rational map
+\[\phi \colon L \times M \dashrightarrow S\]
+by mapping \((x,y)\) to the unique third point of intersection of the line joining \(x\) and \(y\) with the cubic \(S\).
+</p>
+
+<p>
+Think (but do not turn in): why should \(\phi\) be a birational isomorphism?  What should be the inverse map?
+</p>
+
+<p>
+Consider the specific cubic surface
+\[ S = V(X^3+Y^3+Z^3+W^3) \subset \mathbb P^3.\]
+Find two skew lines on \(S\) and using them write down the map \(\phi\).
+</p>
+
+<p>
+\vspace{1em}
+</p></li>
+
+<li><p>
+Fix a positive integer \(d\) and let \(V\) be the vector space of homogeneous polynomials of degree \(d\) in \(X, Y, Z\).
+Each point of \(\mathbb P V\) represented, say, by an \(F \in V\) defines a plane curve \(V(F) \subset \mathbb P^2\).
+So we can view \(\mathbb P V\) as a parameter space for all plane curves.
+</p>
+
+<p>
+Given \([F] \in \mathbb P V\) and \(p \in \mathbb P^2\), we say that \(F\) has a <i>singularity</i> at the point \(p\) if all three partials \(\frac{\partial F}{\partial X}\), \(\frac{\partial F}{\partial Y}\), \(\frac{\partial F}{\partial Z}\) vanish at \(p\).
+Let \(\Delta \subset \mathbb P V\) be the set of \([F]\) which have a singularity at some point.
+It turns out that \(\Delta\) is Zariski closed and irreducible (we will be able to prove this soon).
+Find the dimension of \(\Delta\).
+</p>
+
+<p>
+<i>Hint: Do a dimension count using \(\{(F,p) \mid F \text{ is singular at } p\} \subset \mathbb P V \times \mathbb P^2\).  You may use without proof that this space is irreducible.</i>
+</p></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org9ebf356" class="outline-3">
+<h3 id="org9ebf356"><span class="section-number-3">9.5.</span> Homework 5</h3>
+<div class="outline-text-3" id="text-9-5">
+<p>
+Look up the definition of an <i>algebraic group</i> or a <i>group variety</i>; examples include \({\rm GL}_n\), \({\rm SL}_n\), \({\rm O}_n\), \({\rm SO}_n\), and so on.
+An <i>algebraic action</i> of an algebraic group \(G\) on an algebraic variety \(X\) is a regular map \(\alpha \colon G \times X \to X\) satisfying the usual properties of a group action.
+We usually denote \(\alpha(g,x)\) by \(g \cdot x\).
+</p>
+
+<p>
+In the following, all varieties are assumed to be separated.
+</p>
+
+<ol class="org-ol">
+<li>Suppose \(\alpha \colon G \times X \to X\) is an action of algebraic group \(G\) on an algebraic variety \(X\).
+Given \(x \in X\), the <i>stabiliser of \(x\)</i> is the subset \(G_x \subset G\) consisting of \(g \in G\) such that \(g \cdot x = x\).
+Prove that \(G_x \subset G\) is Zariski closed.</li>
+
+<li>Let \(O_x \subset X\) be the orbit of \(x\).
+Assume that \(G\) is irreducible and prove that \(O_x \subset X\) is irreducible.</li>
+
+<li>Show by an example that the orbit may not be closed.
+(But they always turn out to be locally closed; you do not have to prove this.)</li>
+
+<li>Assuming \(G\) and \(G_x\) are irreducible, prove the orbit-stabiliser theorem
+\[ {\rm dim}\ O_x + {\rm dim}\ G_x = {\rm dim}\ G.\]</li>
+
+<li><p>
+Compute the tangent space at the identity matrix of the following algebraic groups (all subgroups of \({\rm GL_n}\)):
+</p>
+<ol class="org-ol">
+<li>\({\rm GL}_n\).</li>
+<li>\({\rm SL}_n = \{A \mid \det A = 1\}\).</li>
+<li>\({\rm O}_n = \{A \mid A A^T = {\rm id}\}\).</li>
+</ol>
+
+<p>
+Your answer must be of the form: the tangent space consists of \(n \times n\) matrices \(M\) of the form &#x2026;.
+</p></li>
+</ol>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
-Created by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 30.1 (<a href="https://orgmode.org">Org</a> mode 9.8-pre).  Last modified: 2025-03-28 Fri 11:26.  <a href="https://github.com/deopurkar/deopurkar.github.io">Source</a>
+<p class="author">Author: Anand Deopurkar</p>
+<p class="date">Created: 2025-04-12 Sat 12:53</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
