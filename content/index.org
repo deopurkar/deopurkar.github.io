@@ -68,10 +68,11 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
                (if (and (org-entry-get nil "ref")
                         (string-match-p (regexp-quote title)
                                         (org-entry-get nil "ref"))
-                        (org-entry-get nil "link"))
-                   (format "%s (%s)"
+                        (org-entry-get nil "url"))
+                   (format "[[%s][%s]]"
+  			 (org-entry-get nil "url")
                            (car (split-string (org-entry-get nil "place") ","))
-                           (org-entry-get nil "link"))))
+                           )))
              nil
              `(,file)
              )))
@@ -84,19 +85,14 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
              (coauthors (org-entry-get nil "with"))
              (comment (org-entry-get nil "comment"))
              (url (org-entry-get nil "url"))
+  	   (more (org-entry-get nil "more"))
              (back-refs (collect-back-ref title "~/website/content/#talks.org")))
       (format "- %s.%s\\\\\n  /%s/%s%s.%s"
-              title
-  	    (if url
-                  (format " (%s)" url)
-                "")
+              (format "[[%s][%s]]" url title)
+  	    (if more (format " (%s)" more) "")
               journal
-              (if comment
-                  (format " (%s)" comment)
-                "")
-              (if coauthors
-                  (format ", with %s" coauthors)
-                "")
+              (if comment (format " (%s)" comment)"")
+              (if coauthors (format ", with %s" coauthors) "")
               (if back-refs
                   (format "\\\\\n  Talk%s: %s."
                           (if (= (length back-refs) 1) "" "s")
@@ -109,66 +105,66 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 
 #+RESULTS:
 :results:
-- The Thurston compactification of the stability manifold of a generic analytic K3 surface. (file:papers/CompStabGenK3.pdf)\\
+- [[file:papers/CompStabGenK3.pdf][The Thurston compactification of the stability manifold of a generic analytic K3 surface]]. ([[https://github.com/deopurkar/CompStabGenK3][repository]])\\
   /Pre-print/.
-- Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism. (file:papers/k3z3.pdf)\\
+- [[file:papers/k3z3.pdf][Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism]]. ([[https://arxiv.org/abs/2412.11256][arxiv]])\\
   /Pre-print/, with [[https://www.math.uga.edu/directory/people/valery-alexeev][Valery Alexeev]], [[https://sites.google.com/view/changho-han/][Changho Han]].
-- Syzygies of canonical ribbons on higher genus curves. (file:papers/highergenusribbons.pdf)\\
+- [[file:papers/highergenusribbons.pdf][Syzygies of canonical ribbons on higher genus curves]]. ([[https://arxiv.org/abs/2412.05500][arxiv]])\\
   /Pre-print/, with [[https://sites.google.com/view/mukherjeejayan][Jayan Mukherjee]].
-- Counting 3-uple Veronese surfaces. (file:papers/3veroneseP2.pdf)\\
+- [[file:papers/3veroneseP2.pdf][Counting 3-uple Veronese surfaces]]. ([[https://arxiv.org/abs/2411.14232][arxiv]])\\
   /Pre-print/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
-- Equivariant classes of orbits in GL(2)-representations. (file:papers/gl2orbits.pdf)\\
+- [[file:papers/gl2orbits.pdf][Equivariant classes of orbits in GL(2)-representations]]. ([[https://arxiv.org/abs/2405.09849][arxiv]], [[https://github.com/deopurkar/equivariant-classes-of-gl2-orbits/][repository]])\\
   /Pre-print/.
-- Orbits of linear series on the projective line. (file:papers/erc.pdf)\\
+- [[file:papers/erc.pdf][Orbits of linear series on the projective line]]. ([[https://arxiv.org/abs/2211.16603][arxiv]], [[https://doi.org/10.1093/imrn/rnae169][journal]])\\
   /International Mathematics Research Notices/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
-- A universal formula for counting cubic surfaces. (file:papers/countingcubics.pdf)\\
+- [[file:papers/countingcubics.pdf][A universal formula for counting cubic surfaces]]. ([[https://arxiv.org/abs/2109.12672][arxiv]])\\
   /Algebraic Geometry (to appear)/, with [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]].\\
-  Talk: Cambridge ([[file:talks/Harvard2022.pdf][notes]]).
-- Spherical objects and stability conditions on 2-Calabi--Yau quiver categories. (file:papers/2cy-algorithm.pdf)\\
+  Talk: [[file:talks/Harvard2022.pdf][Cambridge]].
+- [[file:papers/2cy-algorithm.pdf][Spherical objects and stability conditions on 2-Calabi--Yau quiver categories]]. ([[https://arxiv.org/abs/2108.09155][arxiv]], [[https://link.springer.com/article/10.1007/s00209-022-03172-8][journal]])\\
   /Mathematische Zeitschrift/, with [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]].
-- Vector bundles and finite covers. (file:papers/ebundle.pdf)\\
+- [[file:papers/ebundle.pdf][Vector bundles and finite covers]]. ([[https://arxiv.org/abs/1608.01711/][arXiv]], [[https://www.cambridge.org/core/services/aop-cambridge-core/content/view/21EB07C62F7A142F5CC39EF3950C2231/S2050509422000196a.pdf/vector_bundles_and_finite_covers.pdf][journal]])\\
   /Forum of Mathematics, Sigma/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].\\
-  Talks: Adelaide ([[file:talks/AustMS2018.pdf][slides]]), Jeju Island ([[file:talks/Jeju2016.pdf][notes]]).
-- Stable log surfaces, admissible covers, and canonical curves of genus 4. (file:papers/TrigonalKSBA.pdf)\\
+  Talks: [[file:talks/AustMS2018.pdf][Adelaide]], [[file:talks/Jeju2016.pdf][Jeju Island]].
+- [[file:papers/TrigonalKSBA.pdf][Stable log surfaces, admissible covers, and canonical curves of genus 4]]. ([[https://arxiv.org/abs/1807.08413/][arxiv]], [[https://www.ams.org/journals/tran/2021-374-01/S0002-9947-2020-08225-7/?active=current][journal]])\\
   /Transactions of the Americal Mathematical Society/, with [[https://sites.google.com/view/changho-han/][Changho Han]].\\
-  Talk: Sydney ([[file:talks/K3Sydney2019.pdf][notes]]).
-- A Thurston compactification of the space of stability conditions. (file:papers/a2-compactification.pdf)\\
+  Talk: [[file:talks/K3Sydney2019.pdf][Sydney]].
+- [[file:papers/a2-compactification.pdf][A Thurston compactification of the space of stability conditions]]. ([[https://arxiv.org/abs/2011.07908][arxiv]])\\
   /Pre-print/, with [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]].\\
-  Talks: Bonn ([[file:talks/Bonn2021.pdf][slides]]), Mumbai ([[file:talks/tifr2021.pdf][slides]]), Amidale ([[file:talks/AustMS2020.pdf][slides]]), Sydney ([[file:talks/StabSydney2019.pdf][notes]]).
-- Ramification divisors of general projections. (file:papers/PR.pdf)\\
+  Talks: [[file:talks/Bonn2021.pdf][Bonn]], [[file:talks/tifr2021.pdf][Mumbai]], [[file:talks/AustMS2020.pdf][Amidale]], [[file:talks/StabSydney2019.pdf][Sydney]].
+- [[file:papers/PR.pdf][Ramification divisors of general projections]]. ([[http://arxiv.org/abs/1901.01513/][arxiv]], [[https://ems.press/journals/dm/articles/8965720][journal]])\\
   /Documenta Mathematica/, with [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]].\\
-  Talks: Mexico ([[file:talks/PR2020-Oaxaca.pdf][slides]]), San Diego ([[file:talks/PR2020-UCSD.pdf][slides]]).
-- Anticanonical tropical cubic del Pezzos contain exactly 27 lines. (file:papers/lines_on_tropical_cubics.pdf)\\
+  Talks: [[file:talks/PR2020-Oaxaca.pdf][Mexico]], [[file:talks/PR2020-UCSD.pdf][San Diego]].
+- [[file:papers/lines_on_tropical_cubics.pdf][Anticanonical tropical cubic del Pezzos contain exactly 27 lines]]. ([[https://arxiv.org/abs/1906.08196][arxiv]])\\
   /Pre-print/, with [[https://people.math.osu.edu/cueto.5/][María Angélica Cueto]].
-- Covers of stacky curves and limits of plane quintics. (file:papers/StackyAdmissibleCovers.pdf)\\
+- [[file:papers/StackyAdmissibleCovers.pdf][Covers of stacky curves and limits of plane quintics]]. ([[http://arxiv.org/abs/1507.03252/][arxiv]], [[https://www.ams.org/journals/tran/2019-371-01/S0002-9947-2018-07301-9/home.html][journal]])\\
   /Transactions of the Americal Mathematical Society/.\\
-  Talks: Boston ([[file:talks/AGNUBS2015.pdf][notes]]), Salt Lake City ([[file:talks/quintics_poster.pdf][poster]]).
-- Syzygy divisors on Hurwitz spaces. (file:papers/HigherMaroni.pdf)\\
+  Talks: [[file:talks/AGNUBS2015.pdf][Boston]], [[file:talks/quintics_poster.pdf][Salt Lake City]].
+- [[file:papers/HigherMaroni.pdf][Syzygy divisors on Hurwitz spaces]]. ([[https://arxiv.org/abs/1805.00648][arxiv]], [[https://www.ams.org/books/conm/703/14139][journal]])\\
   /Contemporary Mathematics/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
-- The canonical syzygy conjecture for ribbons. (file:papers/RibbonGreen.pdf)\\
+- [[file:papers/RibbonGreen.pdf][The canonical syzygy conjecture for ribbons]]. ([[http://arxiv.org/abs/1510.07755/][arxiv]])\\
   /Mathematische Zeitschrift/.\\
-  Talk: Melbourne ([[file:talks/Monash2018.pdf][notes]]).
-- Toward GIT stability of syzygies of canonical curves. (file:papers/gitsyzygy.pdf)\\
+  Talk: [[file:talks/Monash2018.pdf][Melbourne]].
+- [[file:papers/gitsyzygy.pdf][Toward GIT stability of syzygies of canonical curves]]. ([[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://www.algebraicgeometry.nl/2016-1/2016-1-001.pdf][journal]])\\
   /Algebraic Geometry/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]].\\
-  Talks: Daejeon ([[file:talks/SIAM2015.pdf][slides]]), Pohang ([[file:talks/syz2013.pdf][notes]]).
-- The Picard rank conjecture for the Hurwitz spaces of degree up to five. (file:papers/PicH345.pdf)\\
+  Talks: [[file:talks/SIAM2015.pdf][Daejeon]], [[file:talks/syz2013.pdf][Pohang]].
+- [[file:papers/PicH345.pdf][The Picard rank conjecture for the Hurwitz spaces of degree up to five]]. ([[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://msp.org/ant/2015/9-2/p05.xhtml][journal]])\\
   /Algebra & Number Theory/, with [[https://www2.bc.edu/anand-p-patel/][Anand Patel]].
-- Groebner techniques for ribbons. (file:papers/groebner.pdf)\\
+- [[file:papers/groebner.pdf][Groebner techniques for ribbons]]. ([[https://sites.google.com/site/albjmath/archives/vol-8/2014-6][journal]])\\
   /Albanian Journal of Mathematics/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]].
-- Compactifications of Hurwitz spaces. (file:papers/CompHurwitz.pdf)\\
+- [[file:papers/CompHurwitz.pdf][Compactifications of Hurwitz spaces]]. ([[http://arxiv.org/abs/1206.4535/][arxiv]], [[http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract][journal]])\\
   /International Mathematics Research Notices/.\\
-  Talks: Palo Alto ([[file:talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg2013.pdf][notes]]).
-- Class of the Hodge eigenbundle using orbifold Riemann-Roch. (file:papers/CyclicAppendix.pdf)\\
+  Talks: [[file:talks/Hdg2013.pdf][Palo Alto]], [[file:talks/Hdg2013.pdf][Cambridge]].
+- [[file:papers/CyclicAppendix.pdf][Class of the Hodge eigenbundle using orbifold Riemann-Roch]].\\
   /Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]]/.
-- Sharp slope bounds for sweeping families of trigonal curves. (file:papers/TrigonalSlopes.pdf)\\
+- [[file:papers/TrigonalSlopes.pdf][Sharp slope bounds for sweeping families of trigonal curves]]. ([[http://arxiv.org/abs/1211.2827/][arxiv]], [[http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/][journal]])\\
   /Mathematical Research Letters/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].\\
-  Talk: Boston ([[file:talks/slopes_poster.pdf][poster]]).
-- Modular compactifications of the space of marked trigonal curves. (file:papers/MarkedTrigonal.pdf)\\
+  Talk: [[file:talks/slopes_poster.pdf][Boston]].
+- [[file:papers/MarkedTrigonal.pdf][Modular compactifications of the space of marked trigonal curves]]. ([[http://arxiv.org/abs/1206.4503/][arxiv]], [[https://www.sciencedirect.com/science/article/pii/S0001870813002776][journal]])\\
   /Advances in Mathematics/.\\
-  Talk: Cambridge ([[file:talks/trig_poster.pdf][poster]]).
-- Alternate compactifications of Hurwitz spaces. (file:papers/thesis.pdf)\\
+  Talk: [[file:talks/trig_poster.pdf][Cambridge]].
+- [[file:papers/thesis.pdf][Alternate compactifications of Hurwitz spaces]].\\
   /Thesis, Harvard, 2012/.\\
-  Talks: Palo Alto ([[file:talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg2013.pdf][notes]]).
+  Talks: [[file:talks/Hdg2013.pdf][Palo Alto]], [[file:talks/Hdg2013.pdf][Cambridge]].
 :end:
 
 * Teaching
