@@ -175,7 +175,7 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
   (defun gather ()
     (list 'title (org-entry-get nil "ITEM")
   	'institute (org-entry-get nil "institute")
-  	'link (org-entry-get nil "link")
+  	'url (org-entry-get nil "url")
   	'year (org-entry-get nil "year")))
 
   (defun collate (collated remaining)
@@ -193,17 +193,17 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
   (string-join 
    (mapcar (lambda (course)
   	   (format "- [[%s][%s]] (%s)"
-  		   (plist-get (car (last (cdr course))) 'link)
+  		   (plist-get (car (last (cdr course))) 'url)
   		   (car course)
   		   (string-join 
   		    (mapcar (lambda (year)
-  			      (and (plist-get year 'link)
-  				   (format "[[%s][%s]]" (plist-get year 'link) (plist-get year 'year))))
+  			      (and (plist-get year 'url)
+  				   (format "[[%s][%s]]" (plist-get year 'url) (plist-get year 'year))))
   			    (reverse (cdr course)))
   		    ", ")))
   	 (reverse (collate nil
   			   (seq-remove  (lambda (course)
-  					  (not (plist-get course 'link)))
+  					  (not (plist-get course 'url)))
   					(org-map-entries 'gather nil '("#teaching.org"))))))
    "\n")
 #+end_src

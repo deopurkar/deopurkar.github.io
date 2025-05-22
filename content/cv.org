@@ -91,12 +91,12 @@
             (journal (org-entry-get nil "journal"))
             (coauthors (org-entry-get nil "with"))
             (comment (org-entry-get nil "comment"))
-            (link (org-entry-get nil "link")))
-        (format "- %s :: /%s/.\\\\\n          %s%s%s%s."
+            (url (org-entry-get nil "url")))
+        (format "- %s :: /%s/.\\\\\n          %s%s%s."
                 (if (equal previous year)
                     "---"
                   (setq previous year))
-  	      title
+  	      (format "[[%s][%s]]" url title)
   	      journal
                 (if comment
                     (format " (%s)" comment)
@@ -104,43 +104,41 @@
                 (if coauthors
                     (format " (with %s)" coauthors)
                   "")
-                (if (and link cv-include-links)
-                    (format " (%s)" link)
-                  "")))))
+                ))))
   (string-join (org-map-entries 'pretty-print "-pp-expository-thesis" '("#papers.org")) "\n")
 #+end_src
 
 #+RESULTS:
 :results:
-- 2024 :: /Orbits of linear series on the projective line/.\\
+- 2024 :: /[[file:papers/erc.pdf][Orbits of linear series on the projective line]]/.\\
           International Mathematics Research Notices (with [[https://sites.google.com/view/anand-patel][Anand Patel]]).
-- --- :: /A universal formula for counting cubic surfaces/.\\
+- --- :: /[[file:papers/countingcubics.pdf][A universal formula for counting cubic surfaces]]/.\\
           Algebraic Geometry (to appear) (with [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]]).
-- 2022 :: /Spherical objects and stability conditions on CY2 quiver categories/.\\
+- 2022 :: /[[file:papers/2cy-algorithm.pdf][Spherical objects and stability conditions on 2-Calabi--Yau quiver categories]]/.\\
           Mathematische Zeitschrift (with [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]).
-- --- :: /Vector bundles and finite covers/.\\
+- --- :: /[[file:papers/ebundle.pdf][Vector bundles and finite covers]]/.\\
           Forum of Mathematics, Sigma (with [[https://sites.google.com/view/anand-patel][Anand Patel]]).
-- 2021 :: /Stable log surfaces, admissible covers, and canonical curves of genus 4/.\\
-          Transactions of the Americal Mathematical Society (with Changho Han).
-- 2020 :: /Ramification divisors of general projections/.\\
+- 2021 :: /[[file:papers/TrigonalKSBA.pdf][Stable log surfaces, admissible covers, and canonical curves of genus 4]]/.\\
+          Transactions of the Americal Mathematical Society (with [[https://sites.google.com/view/changho-han/][Changho Han]]).
+- 2020 :: /[[file:papers/PR.pdf][Ramification divisors of general projections]]/.\\
           Documenta Mathematica (with [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]]).
-- 2019 :: /Covers of stacky curves and limits of plane quintics/.\\
+- 2019 :: /[[file:papers/StackyAdmissibleCovers.pdf][Covers of stacky curves and limits of plane quintics]]/.\\
           Transactions of the Americal Mathematical Society.
-- 2018 :: /Syzygy divisors on Hurwitz spaces/.\\
+- 2018 :: /[[file:papers/HigherMaroni.pdf][Syzygy divisors on Hurwitz spaces]]/.\\
           Contemporary Mathematics (with [[https://sites.google.com/view/anand-patel][Anand Patel]]).
-- --- :: /The canonical syzygy conjecture for ribbons/.\\
+- --- :: /[[file:papers/RibbonGreen.pdf][The canonical syzygy conjecture for ribbons]]/.\\
           Mathematische Zeitschrift.
-- 2016 :: /Toward GIT stability of syzygies of canonical curves/.\\
+- 2016 :: /[[file:papers/gitsyzygy.pdf][Toward GIT stability of syzygies of canonical curves]]/.\\
           Algebraic Geometry (with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]]).
-- 2015 :: /The Picard rank conjecture for the Hurwitz spaces of degree up to five/.\\
+- 2015 :: /[[file:papers/PicH345.pdf][The Picard rank conjecture for the Hurwitz spaces of degree up to five]]/.\\
           Algebra & Number Theory (with [[https://www2.bc.edu/anand-p-patel/][Anand Patel]]).
-- 2014 :: /Groebner techniques for ribbons/.\\
+- 2014 :: /[[file:papers/groebner.pdf][Groebner techniques for ribbons]]/.\\
           Albanian Journal of Mathematics (with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]]).
-- --- :: /Compactifications of Hurwitz spaces/.\\
+- --- :: /[[file:papers/CompHurwitz.pdf][Compactifications of Hurwitz spaces]]/.\\
           International Mathematics Research Notices.
-- 2013 :: /Sharp slope bounds for sweeping families of trigonal curves/.\\
+- 2013 :: /[[file:papers/TrigonalSlopes.pdf][Sharp slope bounds for sweeping families of trigonal curves]]/.\\
           Mathematical Research Letters (with [[https://sites.google.com/view/anand-patel][Anand Patel]]).
-- --- :: /Modular compactifications of the space of marked trigonal curves/.\\
+- --- :: /[[file:papers/MarkedTrigonal.pdf][Modular compactifications of the space of marked trigonal curves]]/.\\
           Advances in Mathematics.
 :end:
 
@@ -151,19 +149,21 @@
 
 #+RESULTS:
 :results:
-- 2024 :: /Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism/.\\
+- 2025 :: /[[file:papers/CompStabGenK3.pdf][The Thurston compactification of the stability manifold of a generic analytic K3 surface]]/.\\
           Pre-print.
-- --- :: /Syzygies of canonical ribbons on higher genus curves/.\\
+- 2024 :: /[[file:papers/k3z3.pdf][Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism]]/.\\
+          Pre-print (with [[https://www.math.uga.edu/directory/people/valery-alexeev][Valery Alexeev]], [[https://sites.google.com/view/changho-han/][Changho Han]]).
+- --- :: /[[file:papers/highergenusribbons.pdf][Syzygies of canonical ribbons on higher genus curves]]/.\\
+          Pre-print (with [[https://sites.google.com/view/mukherjeejayan][Jayan Mukherjee]]).
+- --- :: /[[file:papers/3veroneseP2.pdf][Counting 3-uple Veronese surfaces]]/.\\
+          Pre-print (with [[https://sites.google.com/view/anand-patel][Anand Patel]]).
+- --- :: /[[file:papers/gl2orbits.pdf][Equivariant classes of orbits in GL(2)-representations]]/.\\
           Pre-print.
-- --- :: /Counting 3-uple Veronese surfaces/.\\
-          Pre-print.
-- --- :: /Equivariant classes of orbits in GL(2)-representations/.\\
-          Pre-print.
-- 2020 :: /A Thurston compactification of the space of stability conditions/.\\
+- 2020 :: /[[file:papers/a2-compactification.pdf][A Thurston compactification of the space of stability conditions]]/.\\
           Pre-print (with [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]).
-- 2019 :: /Anticanonical tropical cubic del Pezzos contain exactly 27 lines/.\\
+- 2019 :: /[[file:papers/lines_on_tropical_cubics.pdf][Anticanonical tropical cubic del Pezzos contain exactly 27 lines]]/.\\
           Pre-print (with [[https://people.math.osu.edu/cueto.5/][María Angélica Cueto]]).
-- 2013 :: /Class of the Hodge eigenbundle using orbifold Riemann-Roch/.\\
+- 2013 :: /[[file:papers/CyclicAppendix.pdf][Class of the Hodge eigenbundle using orbifold Riemann-Roch]]/.\\
           Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]].
 :end:
 
@@ -174,10 +174,10 @@
 
 #+RESULTS:
 :results:
-- 2010 :: Minor thesis, Harvard, 2010.\\
-          /An introduction to intersection homology/ (expository) ([[file:papers/anandrd_minor_thesis.pdf][pdf]]).
-- 2008 :: MIT Undergruate Journal of Mathematics.\\
-          /Normalization of algebraic varieties/ (expository) ([[file:papers/anandrd_ug_thesis.pdf][pdf]]).
+- 2010 :: /[[file:papers/anandrd_minor_thesis.pdf][An introduction to intersection homology]]/.\\
+          Minor thesis, Harvard, 2010 (expository).
+- 2008 :: /[[file:papers/anandrd_ug_thesis.pdf][Normalization of algebraic varieties]]/.\\
+          MIT Undergruate Journal of Mathematics (expository).
 :end:
 
 * Supervision
