@@ -275,7 +275,7 @@ However, you will face serious consequences if you fail to follow the academic i
 :END:
 ** Worksheet 1
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 *** Sets and set notation
 1. Some of the following sets are the same, and some are different. Decide and discuss.
@@ -310,7 +310,7 @@ However, you will face serious consequences if you fail to follow the academic i
    3. Being the I/O relation of a function
 ** Worksheet 2
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 1. Consider the relation on \(\mathbb{Z}\) described by
    \[\{(a,b) \in \mathbb{Z} \times \mathbb{Z} \mid (a^2 - b^2)\text{ is an integer multiple of }5\}.\]
@@ -332,7 +332,7 @@ However, you will face serious consequences if you fail to follow the academic i
    That is, if \([a] \cdot [b] = [0]\) modulo a prime number \(p\), then \([a] = [0]\) modulo \(p\) or \([b] = [0]\) modulo \(p\).
 ** Worksheet 3
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 *** Hasse diagram an rank functions
 
@@ -387,7 +387,7 @@ The poset \(S\) admits a rank function if and only if every cycle in the Hasse d
 Is the statement true or false?
 ** Worksheet 4
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 1. Find a non-zero \(5 \times 5\) matrix whose square is zero.
 
@@ -435,7 +435,7 @@ Is the statement true or false?
    What happens if you change the number of petals?
 ** Worksheet 5
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 *** Boolean arithmetic with negative numbers
 Let us see what happens with boolean arithmetic if we allow negative numbers.
@@ -502,7 +502,7 @@ Use the \(\{\text{min},+\}\) matrix product to compute the minimum-weight paths 
    Can we still conclude that the min/plus powers stabilise?
 ** Worksheet 6
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 *** The Perron--Frobenius property
 Let \(G\) denote a Markov chain with transition matrix \(A\).
@@ -565,7 +565,7 @@ Then any \(n > ab\) can be written as a sum of \(a\)'s and \(b\)'s.
    - Can you generalise?
 ** Worksheet 7
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 In all problems, "binary string" refers to any string or word on the alphabet \(\Sigma = \{0,1\}\).
 Unless otherwise specified, our alphabet is always \(\Sigma = \{0,1\}\).
@@ -629,7 +629,7 @@ Answer the following questions about the DFA shown below.
 6. Can you write down a regular expression that recognises the same language?
 ** Worksheet 8
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 *** Warm-up
 1. When is an NFA said to /accept/ a string? When is an NFA said to /reject/ a string?

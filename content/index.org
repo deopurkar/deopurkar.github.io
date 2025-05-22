@@ -210,7 +210,7 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 - [[file:teaching/2020_schemes/][Foundations of Algebraic Geometry: Schemes]] ([[file:teaching/2020_schemes/][2020]])
 - [[file:teaching/2018_algebraic_curves/][Algebraic curves]] ([[file:teaching/2018_algebraic_curves/][2018]], [[file:teaching/2017_algebraic_curves/][2017]])
 - [[file:teaching/2016_analysis_and_optimization/][Analysis and optimization]] ([[file:teaching/2016_analysis_and_optimization/][2016]])
-- [[file:teaching/2014_algebra2/][Young tableaux in algebra and geometry]] ([[file:teaching/2014_algebra2/][2015]])
+- [[file:teaching/2015_young_tableaux/][Young tableaux in algebra and geometry]] ([[file:teaching/2015_young_tableaux/][2015]])
 - [[file:teaching/2015_calculus1/][Calculus]] ([[file:teaching/2015_calculus1/][2015]], [[file:teaching/2014_calculus1/][2014]], [[file:teaching/2013_calculus3/][2013]])
 - [[file:teaching/2014_moduli_of_curves/][Moduli of curves]] ([[file:teaching/2014_moduli_of_curves/][2014]])
 :end:

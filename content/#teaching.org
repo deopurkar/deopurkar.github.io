@@ -127,7 +127,7 @@
 :properties:
 :institute: Columbia University
 :year:     2015
-:link: file:teaching/2014_algebra2/
+:link: file:teaching/2015_young_tableaux/
 :end:
 
 * Calculus                                                               
