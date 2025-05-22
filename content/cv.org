@@ -279,37 +279,37 @@
 - --- :: /How to count using equivariant cohomology/. Australian National University, Canberra, Australia.
 - --- :: /Combinatorics and dynamics of Harder-Narasimhan filtrations/. Tsinghua University (Online), Beijing, China.
 - --- :: /Braids and monodromy in algebraic geometry/. Braids in Symplectic and Algebraic Geometry, ICERM, Brown University, Providence, Rhode Island (preparatory talk for the conference).
-- --- :: /[[file:talks/Harvard2022.pdf][[[file:talks/Harvard2022.pdf][How to count using equivariant cohomology]]]]/. Harvard University, Cambridge, Massachusetts.
+- --- :: /[[file:talks/Harvard2022.pdf][How to count using equivariant cohomology]]/. Harvard University, Cambridge, Massachusetts.
 - --- :: /Apparent boundaries of projective varieties/. Brown University, Providence, Rhode Island.
-- --- :: /[[file:talks/ICERM2022.pdf][[[file:talks/ICERM2022.pdf][The geometry and combinatorics of Harder--Narasimhan filtrations]]]]/. Braids in representation theory and algebraic combinatorics, Institute for Computational and Experimental Research in Mathematics, Providence, Rhode Island.
-- --- :: /[[file:talks/Fermat2022.pdf][[[file:talks/Fermat2022.pdf][The geometry of Fermat-like equations]]]]/. Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana, Pune, India (expository).
-- 2021 :: /[[file:talks/Belyi2021.pdf][[[file:talks/Belyi2021.pdf][Algebraic curves and Belyi's theorem]]]]/. Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana, Pune, India (expository).
-- --- :: /[[file:talks/ecc2021/ecc.html][[[file:talks/ecc2021/ecc.html][Error correcting codes]]]]/. ANU Mathematics Extension Program, Canberra, Australia (expository).
-- --- :: /[[file:talks/Bonn2021.pdf][[[file:talks/Bonn2021.pdf][A Thurston compactification of the space of stability conditions]]]]/. Workshop on compactifications of stability manifolds (Online), Max Planck institute für Mathematics, Bonn, Germany.
-- --- :: /[[file:talks/tifr2021.pdf][[[file:talks/tifr2021.pdf][A Thurston compactification of the space of stability conditions]]]]/. Tata Institute of Fundamental Research (Online), Mumbai, India.
+- --- :: /[[file:talks/ICERM2022.pdf][The geometry and combinatorics of Harder--Narasimhan filtrations]]/. Braids in representation theory and algebraic combinatorics, Institute for Computational and Experimental Research in Mathematics, Providence, Rhode Island.
+- --- :: /[[file:talks/Fermat2022.pdf][The geometry of Fermat-like equations]]/. Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana, Pune, India (expository).
+- 2021 :: /[[file:talks/Belyi2021.pdf][Algebraic curves and Belyi's theorem]]/. Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana, Pune, India (expository).
+- --- :: /[[file:talks/ecc2021/ecc.html][Error correcting codes]]/. ANU Mathematics Extension Program, Canberra, Australia (expository).
+- --- :: /[[file:talks/Bonn2021.pdf][A Thurston compactification of the space of stability conditions]]/. Workshop on compactifications of stability manifolds (Online), Max Planck institute für Mathematics, Bonn, Germany.
+- --- :: /[[file:talks/tifr2021.pdf][A Thurston compactification of the space of stability conditions]]/. Tata Institute of Fundamental Research (Online), Mumbai, India.
 - --- :: /A Thurston compactification of the space of stability conditions/. Jagiellonian University (Online), Kraków, Poland.
-- 2020 :: /[[file:talks/AustMS2020.pdf][[[file:talks/AustMS2020.pdf][A Thurston compactification for categories]]]]/. Topology session, AustMS (Online), University of New England, Amidale, Australia.
-- --- :: /[[file:talks/PR2020-Oaxaca.pdf][[[file:talks/PR2020-Oaxaca.pdf][Apparent boundaries of projective varieties]]]]/. Seminario nacional de geometria algebraica (Online joint seminar of multiple universities in Mexico), Mexico.
-- --- :: /[[file:talks/PR2020-UCSD.pdf][[[file:talks/PR2020-UCSD.pdf][Apparent boundaries of projective varieties]]]]/. University of California (Online), San Diego, California.
-- 2019 :: /[[file:talks/StabSydney2019.pdf][[[file:talks/StabSydney2019.pdf][Groups, spherical twists, and stability conditions]]]]/. Workshop on triangulated categories in geometry and representation theory, University of Sydney, Sydney, Australia (part of a series with Asilata Bapat and Anthony Licata).
-- --- :: /[[file:talks/K3Sydney2019.pdf][[[file:talks/K3Sydney2019.pdf][Log surfaces of almost K3 type and curves of genus 4]]]]/. Birational geometry and moduli spaces, University of Sydney, Sydney, Australia.
-- --- :: /[[file:talks/WIM2019.pdf][[[file:talks/WIM2019.pdf][The work of Claire Voisin]]]]/. Women in mathematics day, Australian National University, Canberra, Australia (expository).
-- 2018 :: /[[file:talks/NZ2018.pdf][[[file:talks/NZ2018.pdf][Geometry of Hurwitz spaces]]]]/. Character varieties and topological quantum field theory, University of Auckland, Auckland, New Zealand.
-- --- :: /[[file:talks/AustMS2018.pdf][[[file:talks/AustMS2018.pdf][On the geometric Steinitz problem]]]]/. University of South Australia, Adelaide, Australia.
-- --- :: /[[file:talks/FMColloquium2018.pdf][[[file:talks/FMColloquium2018.pdf][The work of Caucher Birkar]]]]/. Colloquium, Australian National University, Canberra, Australia (expository).
+- 2020 :: /[[file:talks/AustMS2020.pdf][A Thurston compactification for categories]]/. Topology session, AustMS (Online), University of New England, Amidale, Australia.
+- --- :: /[[file:talks/PR2020-Oaxaca.pdf][Apparent boundaries of projective varieties]]/. Seminario nacional de geometria algebraica (Online joint seminar of multiple universities in Mexico), Mexico.
+- --- :: /[[file:talks/PR2020-UCSD.pdf][Apparent boundaries of projective varieties]]/. University of California (Online), San Diego, California.
+- 2019 :: /[[file:talks/StabSydney2019.pdf][Groups, spherical twists, and stability conditions]]/. Workshop on triangulated categories in geometry and representation theory, University of Sydney, Sydney, Australia (part of a series with Asilata Bapat and Anthony Licata).
+- --- :: /[[file:talks/K3Sydney2019.pdf][Log surfaces of almost K3 type and curves of genus 4]]/. Birational geometry and moduli spaces, University of Sydney, Sydney, Australia.
+- --- :: /[[file:talks/WIM2019.pdf][The work of Claire Voisin]]/. Women in mathematics day, Australian National University, Canberra, Australia (expository).
+- 2018 :: /[[file:talks/NZ2018.pdf][Geometry of Hurwitz spaces]]/. Character varieties and topological quantum field theory, University of Auckland, Auckland, New Zealand.
+- --- :: /[[file:talks/AustMS2018.pdf][On the geometric Steinitz problem]]/. University of South Australia, Adelaide, Australia.
+- --- :: /[[file:talks/FMColloquium2018.pdf][The work of Caucher Birkar]]/. Colloquium, Australian National University, Canberra, Australia (expository).
 - --- :: /Moduli of almost K3 log surfaces and curves of genus 4/. Algebraic surfaces and related topics, Xiamen University, Xiamen, China.
-- --- :: /[[file:talks/tifr2018.pdf][[[file:talks/tifr2018.pdf][How to count using (co)homology]]]]/. Tata Institute of Fundamental Research, Mumbai, India (expository).
+- --- :: /[[file:talks/tifr2018.pdf][How to count using (co)homology]]/. Tata Institute of Fundamental Research, Mumbai, India (expository).
 - --- :: /What are ribbons and what do they tell us about Riemann surfaces/. Indian Institute of Science, Bengaluru, India.
-- --- :: /[[file:talks/Monash2018.pdf][[[file:talks/Monash2018.pdf][What are ribbons and what do they tell us about Riemann surfaces]]]]/. Monash University, Melbourne, Australia.
+- --- :: /[[file:talks/Monash2018.pdf][What are ribbons and what do they tell us about Riemann surfaces]]/. Monash University, Melbourne, Australia.
 - --- :: /On the critical loci of finite maps/. Australian National University, Canberra, Australia.
-- --- :: /[[file:talks/MATRIX2018.pdf][[[file:talks/MATRIX2018.pdf][Quadrature and algebraic geometry]]]]/. Workshop on algebraic geometry approximation, and optimization, MATRIX, Creswick, Victoria, Australia.
+- --- :: /[[file:talks/MATRIX2018.pdf][Quadrature and algebraic geometry]]/. Workshop on algebraic geometry approximation, and optimization, MATRIX, Creswick, Victoria, Australia.
 - 2017 :: /Vector bundles and finite covers/. Workshop on topics in algebraic geometry, University of North Carolina, Chapel Hill, North Carolina.
 - --- :: /Vector bundles and finite covers/. University of Georgia, Athens, Georgia.
 - --- :: /How to count using topology/. Canada/USA Mathcamp, Tacoma, WA (expository).
 - --- :: /Quivers and their representations/. Indian Institute of Science Education and Research, Pune, India.
 - --- :: /Vector bundles and finite covers/. Emory University, Atlanta, Georgia.
 - 2016 :: /Geometry of moduli spaces/. Australian National University, Canberra, Australia.
-- --- :: /[[file:talks/Jeju2016.pdf][[[file:talks/Jeju2016.pdf][Vector bundles and finite covers]]]]/. Conference on moduli and birational geometry, Jeju Island, South Korea.
+- --- :: /[[file:talks/Jeju2016.pdf][Vector bundles and finite covers]]/. Conference on moduli and birational geometry, Jeju Island, South Korea.
 - --- :: /Vector bundles and finite covers/. Indian Institute of Science Education and Research, Pune.
 - --- :: /Ribbons and Green's conjecture/. University of South Carolina, Columbia, South Carolina.
 - --- :: /Ribbons and Green's conjecture/. University of Georgia, Athens, Georgia.
@@ -317,9 +317,9 @@
 - --- :: /The algebra of canonical curves and the geometry of their moduli space/. University of Georgia, Athens, Georgia.
 - --- :: /Picard groups of Hurwitz spaces/. Higher genus curves and fibrations of higher genus curves in mathematical physics and arithmetic geometry II, AMS joint mathematics meetings, Seattle, Washington.
 - --- :: /Limits of plane quintics via covers of stacky curves/. Moduli spaces in algebraic geometry I, AMS joint mathematics meetings, Seattle, Washington.
-- 2015 :: /[[file:talks/AGNUBS2015.pdf][[[file:talks/AGNUBS2015.pdf][Limits of plane quintics via covers of stacky curves]]]]/. Boston College--Northeastern algebraic geometry conference, Northeastern University, Boston, Massachusetts.
-- --- :: /[[file:talks/quintics_poster.pdf][[[file:talks/quintics_poster.pdf][Limits of plane quintics via covers of stacky curves]]]]/. Summer institute in algebraic geometry, University of Utah, Salt Lake City, Utah (poster).
-- --- :: /[[file:talks/SIAM2015.pdf][[[file:talks/SIAM2015.pdf][Syzygies of canonical curves and the geometry of \(\overline M_g\)]]]]/. SIAM applied algebraic geometry conference, Daejeon, South Korea.
+- 2015 :: /[[file:talks/AGNUBS2015.pdf][Limits of plane quintics via covers of stacky curves]]/. Boston College--Northeastern algebraic geometry conference, Northeastern University, Boston, Massachusetts.
+- --- :: /[[file:talks/quintics_poster.pdf][Limits of plane quintics via covers of stacky curves]]/. Summer institute in algebraic geometry, University of Utah, Salt Lake City, Utah (poster).
+- --- :: /[[file:talks/SIAM2015.pdf][Syzygies of canonical curves and the geometry of \(\overline M_g\)]]/. SIAM applied algebraic geometry conference, Daejeon, South Korea.
 - --- :: /GIT stability of syzygies of curves/. Mathematisches Forschungsinstitut Oberwolfach, Oberwolfach, Germany (mini talk).
 - --- :: /Syzygies, GIT, and the moduli space of curves/. Purdue University, West Lafayette, Indiana.
 - --- :: /Limits of plane curves via stacky branched covers/. Ohio State University, Columbus, Ohio.
@@ -330,13 +330,13 @@
 - 2014 :: /GIT stability of syzygies of canonical curves/. University of Michigan, Ann Arbor, Michigan.
 - --- :: /GIT stability of syzygies of canonical curves/. Yale University, New Haven, Connecticut.
 - --- :: /Towards GIT stability of syzygies of canonical curves/. Boston College, Boston, Massachusetts.
-- 2013 :: /[[file:talks/syz2013.pdf][[[file:talks/syz2013.pdf][Towards GIT stability of syzygies of canonical curves]]]]/. Postech, Pohang, Korea.
+- 2013 :: /[[file:talks/syz2013.pdf][Towards GIT stability of syzygies of canonical curves]]/. Postech, Pohang, Korea.
 - --- :: /Towards GIT stability of syzygies of canonical curves/. Geometry of algebraic varieties, AMS sectional meeting, Philadelphia, Pennsylvania.
-- --- :: /[[file:talks/slopes_poster.pdf][[[file:talks/slopes_poster.pdf][Sharp slope bounds for sweeping families of trigonal curves]]]]/. Algebraic geometry northeastern series, Boston College, Boston, Massachusetts (poster).
-- --- :: /[[file:talks/Hdg2013.pdf][[[file:talks/Hdg2013.pdf][Alternate compactifications of Hurwitz spaces]]]]/. Stanford University, Palo Alto, California.
+- --- :: /[[file:talks/slopes_poster.pdf][Sharp slope bounds for sweeping families of trigonal curves]]/. Algebraic geometry northeastern series, Boston College, Boston, Massachusetts (poster).
+- --- :: /[[file:talks/Hdg2013.pdf][Alternate compactifications of Hurwitz spaces]]/. Stanford University, Palo Alto, California.
 - --- :: /Compactifying spaces of branched covers/. Princeton University, Princeton, New Jersey.
 - 2012 :: /Alternate compactifications of Hurwitz spaces/. Rice University, Houston, Texas.
-- 2011 :: /[[file:talks/Hdg2013.pdf][[[file:talks/Hdg2013.pdf][Compactifications of Hurwitz spaces]]]]/. Massachusetts Institute of Technology, Cambridge, Massachusetts.
+- 2011 :: /[[file:talks/Hdg2013.pdf][Compactifications of Hurwitz spaces]]/. Massachusetts Institute of Technology, Cambridge, Massachusetts.
 - --- :: /Compactifications of Hurwitz spaces/. Columbia University, New York City, New York.
 - --- :: /Compactifications of Hurwitz spaces/. Stony Brook University, Stony Brook, New York.
 - --- :: /Compactifications of Hurwitz spaces/. Brown University, Providence, Rhode Island.
