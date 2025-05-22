@@ -1,0 +1,1624 @@
+% Created 2025-04-04 Fri 16:35
+% Intended LaTeX compiler: pdflatex
+\documentclass{amsart}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{fullpage} \usepackage[charter, cal=cmcal]{mathdesign} \usepackage{environ} \usepackage{multicol} \usepackage{mathabx}
+\usepackage{mdframed} \usepackage{svg} \usepackage{tikz}
+\usepackage{etoolbox} \newtoggle{solutions} \togglefalse{solutions}
+\usepackage{enumitem} \setenumerate{itemsep=1em}
+\usepackage{setspace}
+\NewEnviron{solution}{\iftoggle{solutions}{\vspace{1em}\begin{mdframed}\begin{proof}[Solution]\BODY\end{proof}\end{mdframed}\vspace{1em}}{}}
+\NewEnviron{workbox}{\iftoggle{solutions}{}{\vspace{1em}\begin{mdframed}\BODY\end{mdframed}\vspace{1em}}}
+\usepackage{skull}
+\usetikzlibrary{arrows,automata,positioning}
+\date{\today}
+\title{Games, graphs, and machines\\\medskip
+\large MATH2301, Semester 2, 2024}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={Games, graphs, and machines},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 30.1 (Org mode 9.8-pre)},
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+These are the course materials for MATH2301 \emph{Games, graphs, and machines} as taught at the ANU in 2024.
+\section{Wattle material}
+\label{sec:org0aedd84}
+\subsection{Class activities}
+\label{sec:org2d79429}
+
+\subsubsection{Videos and reading}
+\label{sec:org47060f4}
+\begin{enumerate}
+\item Week 1
+\begin{description}
+\item[{Videos}] Sets, Functions, Relations
+\item[{Reading}] Some foundations
+\end{description}
+
+\item Week 2
+\begin{description}
+\item[{Videos}] Equivalence relations, Modular arithmetic
+
+\item[{Reading}] Equivalence relations
+\end{description}
+\end{enumerate}
+\subsubsection{Lecture times and locations}
+\label{sec:org9ef888b}
+
+Please remember that class begins 5 minutes after the hour and ends 5 minutes before the hour.
+Regular attendance is strongly encouraged.
+
+\begin{center}
+\begin{tabular}{lll}
+Lecture & Time & Location\\
+\hline
+Lecture A & Tue, 12pm-1pm & LH Theatre, Leonard Huxley Building \#56\\
+Lecture B & Wed, 12pm-1pm & Room G01, Melville Hall, Building \#12\\
+Lecture C & Fri, 10am-11am & LH Theatre, Leonard Huxley Building \#56\\
+\end{tabular}
+\end{center}
+\subsubsection{Pre-Lecture videos}
+\label{sec:org75135d8}
+Every week, I will upload short videos that summarise the basic concepts to be covered in that week.
+It is important that you \textbf{watch these videos before} coming to the lecture.
+The lecture will build on the material presented in the videos.
+\subsubsection{Office hours}
+\label{sec:org2f3f834}
+I will have two in-person office hours per week.
+\subsubsection{Workshops}
+\label{sec:orgafe2bcd}
+Sign up for workshops using \href{https://services.anu.edu.au/information-technology/software-systems/mytimetable}{MyTimetable}.
+The workshops will be one hour long, but the demonstrators will be available for half an hour after the workshop for consultation.
+
+\begin{center}
+\begin{tabular}{lll}
+Worpshop & Time & Location\\
+\hline
+Workshop 1 & Mon, 10:30am-11:30am & Marie Reay 4.02\\
+Workshop 2 & Wed, 9:30am-10:30am & Hanna Neumann 1.58\\
+Workshop 3 & Wed, 3:30pm-4:30pm & Hanna Neumann 1.57\\
+Workshop 4 & Fri, 8am-9am & Hanna Neumann 1.58\\
+\end{tabular}
+\end{center}
+
+Worksheets will be uploaded to Wattle sometime during the week before the workshops. You will get the most out of workshops if you read and attempt the problems in the worksheet independently for at least an hour before each workshop (or until you finish them). 
+\subsubsection{Discussion forum (Zulip)}
+\label{sec:org77887eb}
+The discussion forum for the course will be hosted on Zulip. This will be used for introductions, questions, and informal course discussion.
+You are highly encouraged to join and participate in class discussions on Zulip!
+
+\textbf{\textbf{If you want to ask me a direct question, I am much more likely to respond quickly if you use Zulip rather than my ANU email address.}}
+
+Note that all important announcements will also be posted on Wattle.
+\begin{enumerate}
+\item Signing up
+\label{sec:orga5af384}
+Sign up by clicking on the following link: \url{https://ggm2024.zulipchat.com/join/3np37wclhpfwfzb73e6heqx2/}. \textbf{\textbf{You will only be allowed to sign in via your ANU email address.}}
+\item Using Zulip productively
+\label{sec:orgf27b37c}
+Conversations in Zulip are organised into topics, and each topic belongs to a ``channel''. You can navigate to topics from the left-hand menu, or search from the search bar at the top.
+We will have the following channels.
+
+\begin{description}
+\item[{\texttt{\#maths-questions}}] for any mathematical questions.
+\item[{\texttt{\#admin-questions}}] for any questions about class admin, notes/video uploads, scheduling, etc.
+\item[{\texttt{\#announcements}}] for announcements. Only class staff will be able to post to this channel. Important announcements will always be on Wattle as well. I recommend that you subscribe to email notifications for this channel.
+\item[{\texttt{\#general}}] for everything else.
+\end{description}
+
+Zulip has desktop and mobile apps (see \url{https://zulip.com/apps/}), so you can choose how to interact with it. You can also sign up to receive email notifications to messages, and replying to those emails will also automatically post the replies to Zulip.
+
+You can get started by briefly introducing yourself in the \texttt{introductions} topic under the \texttt{\#general} channel. I have already written an introduction there.
+\item Other notes
+\label{sec:orgf884aaa}
+
+\begin{itemize}
+\item You can type mathematics into Zulip! See \url{https://zulip.com/help/format-your-message-using-markdown\#latex}.
+\item You can also do other fancy stuff. See \url{https://zulip.com/help/format-your-message-using-markdown\#message-formatting}. Ask me if you need help with this.
+\item Ask questions on public channels whenever possible: this lets the most students benefit from the answer to the question.
+\item You can also send me direct messages on Zulip. \textbf{I will check Zulip frequently and will probably get back to you sooner if you ask a question there rather than over email.}
+\item Please feel very free to post questions, comments, and feedback. I hope we can have lots of interesting discussions on Zulip over the semester.
+\end{itemize}
+\end{enumerate}
+\section{How to study for this course?}
+\label{sec:org0e2184b}
+There is no single answer to the question ``How to study \uline{\_}?''---everyone learns differently---but here are some strategies that are generally helpful.
+They are not specific to this course, and should be useful for studying mathematics in general.
+\subsection{Reading}
+\label{sec:org40538c4}
+I am using ``reading'' as a short form form ``absorbing new mathematics''.
+It also applies to watching videos.
+
+Read actively.
+Pause often to think about what you have just read.
+Reading maths is slow.
+It is closer to reading poetry than reading a novel.
+You need to think deeply about every sentence, and it is common for something to take a long time to sink in.
+
+What to think while reading?
+If you have read a definition, pause and try to construct examples yourself.
+Also try to construct non-examples.
+After that, create even more examples and non-examples.
+Once you feel like you have a rich set of examples and non-examples, continue.
+If the text gives some examples and non-examples, read them.
+They will undoubtedly enrich your understanding.
+If you feel like you do not have a rich set of examples, ask me (or someone else).
+
+If you have read a statement (a proposition or a theorem), pause and try to find situations where the statement applies.
+What does the statement say in this situation?
+Does it say anything surprising?
+Try to find other situations.
+Also try to find situations where the statement does not apply.
+Try to play devil's advocate by finding situations where the statement is wrong.
+Assuming the statement is accurate, this will fail, but you will learn a lot from trying.
+
+If you have read an explanation (a proof, for example), pause and try to find the key ideas in the explanation.
+Try to find a concrete example where the explanation applies, and understand it in that example.
+Then repeat with another example.
+\subsection{Testing your understanding}
+\label{sec:org4720a86}
+
+Use the problems you see in lectures, workshops, quizzes, and homework to test your understanding.
+After reading a problem, if
+\begin{enumerate}
+\item you understand what exactly is being asked, and
+\item you can think of ways to get started,
+\end{enumerate}
+then your understanding is good.  
+It is not expected that you immediately see how to solve the problem.
+But if you are stumped, or unable to get started, then your understanding is incomplete.
+In this case, go back to the reading and revisit the related concepts.
+
+Do not look at the solution to \emph{any} problem without having spent sufficient time attempting it on your own.
+If you do so, you are wasting a problem (and problems are valuable!).
+\subsection{Approaching problems}
+\label{sec:orge32ab4e}
+
+It is not uncommon to feel stumped after reading a problem.
+One reason is that you are not familiar with the relevant ideas.
+But even if you are, it can be difficult to get started.
+Here are some strategies to get started.
+
+Your first attempt does not have to lead to a solution.
+So try something and see if it leads anywhere.
+A failed attempt will often generate new ideas.
+
+The problem will often involve new terminology.
+Break it down until you have restated it in terms you are familiar with.
+As you get used to the new terminology, this process will get easier.
+
+Experiment!
+If the problem talks about a number \(n\), experiment by taking small values of \(n\).
+If it talks about a graph, try with a some small examples of graphs.
+If it talks about a function, test with some functions you know.
+This is where it helps to have a handy collection of examples.
+
+Try to find the corresponding simplest problem.
+If the problem talks about a big number, try the same problem for smaller numbers.
+If the problem talks about all graphs, try with some small graphs.
+\section{Academic integrity policy}
+\label{sec:org2c7a732}
+Please read the following guidelines carefully. 
+\subsection{Academic integrity policy for assignments}
+\label{sec:orgc986437}
+While solving your assignments, you will typically work in two phases.
+\begin{enumerate}
+\item The solving phase: this is when you are actually trying to find the answers to the questions.
+\begin{enumerate}
+\item First, you should think about the problem on your own.
+\item Next, you are welcome and encouraged to collaborate with other students while you are in the solving phase. It is often by working productively with peers that you will learn the most. Collaboration means that all of you are thinking about the problem \emph{together} and coming up with a solution \emph{together}.
+You should move on to the next phase once you know more or less how to solve the problem.
+\item You are encouraged to go to office hour and to the MSI drop-in sessions to get clarifications.
+\end{enumerate}
+\item The write-up phase: this consists of writing up your solutions for submission, once you know more or less how to solve the problems.
+\begin{enumerate}
+\item You must do this entirely by yourself. Work alone when you are writing.
+\item If you collaborate with anyone else, copy (parts of) solutions from someone else, copy from pictures taken of the board, or ask someone else to write your solutions, you are violating the academic integrity policy.
+\item If you get stuck while writing, you can go back to the previous phase to collaborate/ask questions to your instructors, but once again when you are back to writing the solution, it must be done independently.
+\end{enumerate}
+\end{enumerate}
+
+
+Additionally, keep in mind the following.
+\begin{enumerate}
+\item When you are writing up your solution, you must write down at the top of your solution sheet a list of your collaborators, as well as any external resources you used.
+It is a violation of the integrity policy if you do not acknowledge the sources from which you received help.
+However, you do not need to cite help received from office hour, demonstrators, or the MSI drop-in session.
+\item Asking someone else to give you the solutions, or paying someone else to give you the solutions, is a violation of the integrity policy. Use of websites such as Chegg, CourseHero, etc for getting assignment solutions is a violation of the integrity policy.
+\end{enumerate}
+
+If you are ever unsure about whether something is or is not allowed, ask the instructor for clarification.
+You will never get into trouble for asking for clarification about what is acceptable.
+However, you will face serious consequences if you fail to follow the academic integrity policy.
+\section{Notes}
+\label{sec:org770aea5}
+\begin{itemize}
+\item \href{./ggm.pdf}{ggm.pdf}
+\end{itemize}
+\section{Annotated lecture slides}
+\label{sec:org5107b91}
+\begin{itemize}
+\item \href{Lecture slides/2024-07-23\_annotated.pdf}{2024-07-23\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-07-24\_annotated.pdf}{2024-07-24\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-07-26\_annotated.pdf}{2024-07-26\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-07-30\_annotated.pdf}{2024-07-30\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-07-31\_annotated.pdf}{2024-07-31\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-08-02\_annotated.pdf}{2024-08-02\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-08-06\_annotated.pdf}{2024-08-06\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-08-07\_annotated.pdf}{2024-08-07\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-08-09\_annotated.pdf}{2024-08-09\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-08-13\_annotated.pdf}{2024-08-13\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-08-14\_annotated.pdf}{2024-08-14\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-08-16\_annotated.pdf}{2024-08-16\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-08-20\_annotated.pdf}{2024-08-20\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-08-21\_annotated.pdf}{2024-08-21\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-08-23\_annotated.pdf}{2024-08-23\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-08-27\_annotated.pdf}{2024-08-27\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-08-28\_annotated.pdf}{2024-08-28\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-08-30\_annotated.pdf}{2024-08-30\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-09-17\_annotated.pdf}{2024-09-17\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-09-18\_annotated.pdf}{2024-09-18\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-09-20\_annotated.pdf}{2024-09-20\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-09-24\_annotated.pdf}{2024-09-24\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-09-25\_annotated.pdf}{2024-09-25\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-09-27\_annotated.pdf}{2024-09-27\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-10-01\_annotated.pdf}{2024-10-01\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-10-02\_annotated.pdf}{2024-10-02\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-10-08\_annotated.pdf}{2024-10-08\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-10-09\_annotated.pdf}{2024-10-09\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-10-11\_annotated.pdf}{2024-10-11\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-10-15\_annotated.pdf}{2024-10-15\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-10-16\_annotated.pdf}{2024-10-16\textsubscript{annotated.pdf}}
+\item \href{Lecture slides/2024-10-18\_annotated.pdf}{2024-10-18\textsubscript{annotated.pdf}}
+\end{itemize}
+\section{Worksheets}
+\label{sec:orgc119ee1}
+\subsection{Worksheet 1}
+\label{sec:orgf83fc48}
+\togglefalse{solutions}
+\subsubsection{Sets and set notation}
+\label{sec:org80c2a5b}
+\begin{enumerate}
+\item Some of the following sets are the same, and some are different. Decide and discuss.
+\begin{enumerate}
+\item \(\emptyset\)
+\item \(\operatorname{Pow}(\emptyset)\)
+\item \(\emptyset \cap \operatorname{Pow}(\emptyset)\)
+\item \(\emptyset \cup \operatorname{Pow}(\emptyset)\)
+\item \(\emptyset \times \operatorname{Pow}(\emptyset)\)
+\item \(\operatorname{Pow}(\emptyset) \times \operatorname{Pow}(\emptyset)\)
+\end{enumerate}
+
+\item The symbol \(\exists\) reads as ``there exists''.
+The symbol \(\forall\) reads as ``for all''.
+The symbols \(\mathbf{N}\), \(\mathbf{Q}\), \(\mathbf{Z}\), and \(\mathbf{R}\) denote the sets of natural numbers (including zero), rational numbers, integers, and reals respectively.
+
+Consider the following set:
+\[\left\{x \in \mathbf{Q}\mid \exists y \in \mathbf{Z} \text{ such that } x = \displaystyle \frac{y}{2} + 1\right\}.\]
+Some of the following sets are the same as the set described above, and some are not. Decide and discuss.
+\begin{enumerate}
+\item \(\displaystyle \left\{x \in \mathbf{Z} \mid \exists y \in \mathbf{Z}\text{ such that } x = \displaystyle \frac{y}{2} + 1\right\}\).
+\item \(\displaystyle \left\{x \in \mathbf{Q} \mid \exists y \in \mathbf{Z}\text{ such that } 2x = y \right\}\).
+\item \(\displaystyle \left\{x \in \mathbf{Z} \mid \forall y \in \mathbf{Q}\text{ we have } x = \displaystyle \frac{y}{2} + 1\right\}\).
+\item \(\displaystyle \left\{x \in \mathbf{R} \mid \exists y \in \mathbf{Z}\text{ such that } x = \displaystyle \frac{y}{2} + 1\right\}\).
+\end{enumerate}
+\end{enumerate}
+\subsubsection{Relations and graphs}
+\label{sec:org3bdcbee}
+\begin{enumerate}
+\item Give an example of a set \(S\) and a binary relation \(R \subset S \times S\) that has the listed properties.
+
+\begin{enumerate}
+\item Symmetric but not reflexive.
+
+\item Transitive but not reflexive.
+\end{enumerate}
+
+\item For each kind of relation mentioned, discuss what special property the graph of the relation must satisfy.
+\begin{enumerate}
+\item Reflexivity
+\item Symmetry
+\item Being the I/O relation of a function
+\end{enumerate}
+\end{enumerate}
+\subsection{Worksheet 2}
+\label{sec:org3805743}
+\togglefalse{solutions}
+
+
+\begin{enumerate}
+\item Consider the relation on \(\mathbb{Z}\) described by
+\[\{(a,b) \in \mathbb{Z} \times \mathbb{Z} \mid (a^2 - b^2)\text{ is an integer multiple of }5\}.\]
+Show that it is an equivalence relation, and find the equivalence classes.
+
+\item Find the smallest non-negative integer \(b\) that satisfies the following equalities, or justify why it does not exist.
+The number \(d\) is the modulus.
+\begin{enumerate}
+\item \([17] + [b] = [2]\) with \(d = 7\).
+
+\item \([3b] = [0]\) with \(d = 6\).
+
+\item \([3b] = [1]\) with \(d = 6\).
+\end{enumerate}
+
+\item Find the last digit of \(3^{101}\) (written in decimal).\\
+\emph{Hint}: In other words, identify \([3^{101}]\) among the classes \([0],[1],\dots,[9]\) modulo 10.
+
+\item In class, we saw that modulo \(d\) it is possible to have \([a] [b] = 0\) but neither \([a] = 0\) nor \([b] = 0\).
+Prove that if \(d\) is a prime number, this does not happen.
+That is, if \([a] \cdot [b] = [0]\) modulo a prime number \(p\), then \([a] = [0]\) modulo \(p\) or \([b] = [0]\) modulo \(p\).
+\end{enumerate}
+\subsection{Worksheet 3}
+\label{sec:orgcca6411}
+\togglefalse{solutions}
+\subsubsection{Hasse diagram an rank functions}
+\label{sec:org6497906}
+
+\begin{enumerate}
+\item Consider the set of the names of the dwarfs from Snow White: \{Bashful, Doc, Dopey, Grumpy, Happy, Sleepy, Sneezy\}.
+Consider a partial order relation on this set, where \(x \preceq y\) if the length of \(x\) is smaller than the length of \(y\), and if \(x\) comes before \(y\) in alphabetical order.
+Draw the Hasse diagram of this partial order relation.
+
+\item Does the poset have maximum or minimum elements?
+Find all minimal and maximal elements.
+
+\item Find a rank function on the poset.
+\end{enumerate}
+\subsubsection{Locally finite posets}
+\label{sec:orgf247e88}
+
+We say that a poset \((S, \preceq)\) is \emph{locally finite} if for every \(x,y \in S\), the set \[\{z \mid x \preceq\ z \text{ and } z \preceq y\} \]
+   is finite.
+
+\begin{enumerate}
+\item Give an example of a poset that is not locally finite.
+
+\item Give an example of a poset that is not finite, but is locally finite.
+\end{enumerate}
+\subsubsection{The subset poset and the hypercube}
+\label{sec:org6173e77}
+Let \(A = \{1,\cdots, n\}\) and let \(A = \operatorname{Pow}(S)\).
+Instead of writing a subset \(T \subset A\) by listing its elements, write it as an \(n\)-tuple of \(0\)'s and \(1\)'s so that the \(i\)-th place is \(1\) if \(i \in T\) and \(0\) if \(i \not \in T\).
+
+For example, if \(n = 3\), then the subset \(\{1,3\} \subset \{1,2,3\}\) is encoded by \((1,0,1)\).
+
+\begin{enumerate}
+\item Describe the subset relation in terms of the corresponding \(n\)-tuples.
+That is, if \(T \subset T'\), what can you say about the \(n\)-tuples that encode \(T\) and \(T'\)?
+
+\item Describe when an \(n\)-tuple is an immediate successor of another \(n\)-tuple under this relation.
+
+\item Take \(n = 3\).
+Draw the Hasse diagram in 3 dimensions by plotting the triples at the corresponding point in \(\mathbf{R}^3\).
+So \((0,0,0)\) is at the origin and \((1,1,1)\) is at the point \((1,1,1)\).
+Draw the arrows representing immediate successors (we can not drop the arrowheads because there is no clear ``up'' or ``down'').
+What shape do you get?
+
+As a warmup, do the exercise with \(n = 2\) or even \(n = 1\).
+
+What shape would you get in higher dimensions?
+\end{enumerate}
+
+\begin{enumerate}
+\item Let \(I = \{0,1\}\) with the order \(\leq\) and let \(S = I^n\), the \(n\)-fold Cartesian product \(I \times \cdots \times I\).
+Describe the product order on \(S\).
+How is it related to the order on \(n\)-tuples coming from the subset relation?
+\end{enumerate}
+\subsubsection{Existence of rank functions}
+\label{sec:orgb3ad547}
+Let \(S\) be a finite poset.
+A \emph{cycle} in the Hasse diagram of \(S\) is a sequence of vertices \(s_0, \dots, s_{n}\)  such that \(s_0 = s_n\) and each successive elements in the sequence are joined by an edge.
+That is, for each \(i\), we have an edge betwen \(s_i\) and \(s_{i+1}\) (this edge could go upward or downward).
+
+Consider the following statement.
+The poset \(S\) admits a rank function if and only if every cycle in the Hasse diagram of \(S\) has the same number of upward edges as downward edges.
+
+Is the statement true or false?
+\subsection{Worksheet 4}
+\label{sec:orgc32850e}
+\togglefalse{solutions}
+
+\begin{enumerate}
+\item Find a non-zero \(5 \times 5\) matrix whose square is zero.
+
+\item Let \(d = 2 \cdot 3 \cdot 5 \cdot 7 \cdot 11\).
+Let \(V\) be the set of positive divisors of \(d\).
+\begin{enumerate}
+\item Put an edge \(v \to w\) if \(v \neq w\) and \(v\) divides \(w\).
+That is, if \(w\) is a successor of \(v\) in the divisor poset, and \(v \neq w\).
+Let \(A\) be the adjacency matrix of the resulting graph.
+What is the smallest \(n\) such that \(A^n = 0\)?
+
+\item Does your answer change if we only put an edge \(v \to w\) when \(w\) is an immediate successor of \(w\)?
+\end{enumerate}
+
+\item Consider the following graph.
+\begin{verbatim}
+digraph {
+    rankdir="LR"
+    a -> a;
+    a -> b;
+    b -> a;
+}
+\end{verbatim}
+\begin{center}
+\includesvg[width=0.2\textwidth]{ws4-f}
+\label{orgff9c32a}
+\end{center}
+Calculate for a few values of \(k\) the number of length \(k\) paths from \(a\) to itself. Can you find (and perhaps prove!) a pattern?
+
+\item Consider the 3-petalled flower graph
+\begin{verbatim}
+digraph {
+    layout="circo"
+    0 -> 1;
+    1 -> 0;
+    0 -> 2;
+    2 -> 0;
+    0 -> 3;
+    3 -> 0;
+}
+\end{verbatim}
+\begin{center}
+\includesvg[width=0.3\textwidth]{ws4-p}
+\label{orgb518dd1}
+\end{center}
+Let \(A\) be the adjacency matrix.
+Describe \(A^{100}\) and \(A^{101}\).
+
+What happens if you change the number of petals?
+\end{enumerate}
+\subsection{Worksheet 5}
+\label{sec:orged9e817}
+\togglefalse{solutions}
+\subsubsection{Boolean arithmetic with negative numbers}
+\label{sec:org4229a40}
+Let us see what happens with boolean arithmetic if we allow negative numbers.
+
+Consider the equivalence relation on \(\mathbf{R}\) defined by \(a \sim b\) if both \(a\) and \(b\) are zero, or both \(a\) and \(b\) are non-zero.
+
+\begin{enumerate}
+\item What are the equivalence classes?
+
+\item Define \(+\) and \(\cdot\) on the equivalence classes by the same rule as before:
+\[ [a] + [b] = [a+b] \text{ and } [a] \cdot [b] = [a \cdot b].\]
+Are these operations well-defined?
+
+\item What if we make 3 equivalence classes, depending on whether the number is positive, negative, or zero?  Can we consistently define \(+\) and \(\cdot\)?
+\end{enumerate}
+\subsubsection{Oscillation versus stabilisation}
+\label{sec:orgcd947ac}
+
+\begin{enumerate}
+\item Construct a boolean matrix whose boolean powers oscillate with a cycle of 3.
+That is, we have \(A^{n} = A^{n+3}\) but \(A^n \neq A^{n+1} \neq A^{n+2}\).
+
+\item Let \(A_1, A_2, A_3, \dots\) be a sequence of boolean matrices.
+Assume that \(A_1 \leq A_2 \leq A_3 \leq \dots\).
+That is, every entry of \(A_1\) is less that or equal to the corresponding entry of \(A_2\), and so on.
+Prove that the sequence is eventually constant.
+That is, there exists an \(N\) such that \(A_N = A_{N+1} = \cdots\).
+
+\item Using the result above, prove that if \(A\) is a boolean matrix, then \(I+A^2+\cdots+A^n + \cdots\) must stabilise.
+
+In fact, if \(A_1,A_2,A_3, \dots\) is any sequence of boolean matrices, then
+\[ A_1 + A_2 + \cdots + A_n\]
+must stabilise.
+
+\item We saw in the lecture that the powers of any boolean matrix \(A\) are eventually periodic.
+What is the period in the following two examples?
+\begin{verbatim}
+digraph{
+	1 -> 2 -> 3 -> 1 -> 4 -> 1;
+	a -> b -> c -> d -> a -> e -> a;
+	}	
+\end{verbatim}
+\begin{center}
+\includesvg[width=0.4\linewidth]{osc}
+\label{org282634f}
+\end{center}
+\end{enumerate}
+\subsubsection{Min/plus powers computation}
+\label{sec:orgad726af}
+Consider the following graph, with edge weights as listed.
+Assume that all loops are present with weight 0 (not shown).
+\begin{verbatim}
+    digraph {
+rankdir="LR";
+        a [label="$a$"]; b [label="$b$"]; c [label="$c$"]; d [label="$d$"];
+        a -> b [label="$5$"]; a -> c [label="$3$"]; a -> d [label="$9$"];
+        b -> a [label="$7$"]; b -> c [label="$9$"]; b -> d [label="$2$"];
+        c -> b [label="$1$"]; c -> d [label="$4$"];
+        d -> c [label="$8$"];
+    }
+\end{verbatim}
+\begin{center}
+\includesvg[width=0.6\linewidth]{w2-weighted}
+\label{orge51beb6}
+\end{center}
+Use the \(\{\text{min},+\}\) matrix product to compute the minimum-weight paths of any length between any two vertices.
+\subsubsection{Min/plus powers stabilisation}
+\label{sec:orgd2315bf}
+\begin{enumerate}
+\item We showed that under some hypotheses, the min/plus powers stabilise.
+Disregarding the hypotheses, find a graph such that the min/plus powers of its weighted adjacency matrix do not stabilise.
+
+Can you find an example with all non-negative weights?
+
+\item Suppose all the loops have weight 0 and there are no directed cycles whose total weight is negative.
+Can we still conclude that the min/plus powers stabilise?
+\end{enumerate}
+\subsection{Worksheet 6}
+\label{sec:orgeed8715}
+\togglefalse{solutions}
+\subsubsection{The Perron--Frobenius property}
+\label{sec:orgce8c08d}
+Let \(G\) denote a Markov chain with transition matrix \(A\).
+
+\begin{enumerate}
+\item When does the Perron--Frobenius theorem (PFT) apply?
+Give your answer in terms of 
+\begin{enumerate}
+\item the existence/non-existence of paths,
+\item powers of \(A\),
+\item powers of the boolean adjacency matrix \(B\).
+\end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
+\item Construct examples of graphs \(G\) (omit the probabilities) where
+\begin{enumerate}
+\item PFT applies,
+\item PFT does not apply,
+\item the graph is strongly connected and yet PFT does not apply.
+\end{enumerate}
+\end{enumerate}
+\subsubsection{The GCD condition}
+\label{sec:org7ca3479}
+Recall that a convenient way to verify that PFT applies is:
+\begin{itemize}
+\item make sure the graph is stongly connected,
+\item find a vertex \(v\) and directed cycles based at \(v\) of length \(a\) and \(b\) with \(\gcd(a,b) = 1\).
+\end{itemize}
+
+
+\begin{enumerate}
+\item Let \(G\) be the Markov chain of snakes and ladders on a \(10 \times 10\) board where we continue from \(0\) if we go beyond 100. (So rolling a 4 at 98 takes us to \(2\)).
+Verify the two conditions above.
+\end{enumerate}
+
+\begin{enumerate}
+\item Does your argument work if we change the size of the board?
+What if we change the \(6\)-sided die to an \(8\)-sided die?
+\end{enumerate}
+\subsubsection{Some Markov chains}
+\label{sec:orgeeb4c38}
+\begin{enumerate}
+\item Let \(A\) be the transition matrix of the following Markov chain.
+Use PFT to find \(\lim_{n \to \infty} A^n\).
+\begin{center}
+\includegraphics[width=.5\linewidth]{assets/Worksheets/2024-09-11_16-39-26_screenshot.png}
+\end{center}
+
+\item Gregor Mendel observed a particular gene in garden peas that exists in two types: \(G\) or \(g\).
+Each pea plant has a pair of genes.
+So a plant could be of type \(GG\), or \(Gg = gG\), or \(gg\).
+We take a plant and fertilise it with a plant of type \(Gg\) to produce an offspring.
+We do the same process starting with the offspring (always mating with a \(Gg\) plant), and continue.
+The offspring inherits one gene from each parent with equal probability.
+So, for example, if we fertilise \(GG\) with \(Gg\), then the offspring will be \(GG\) with probability \(1/2\) and \(Gg\) with probability \(1/2\).
+If we fertilise \(Gg\) with \(Gg\), the offspring will be \(GG\) with probability \(1/4\), \(Gg = gG\) with probability \(1/2\), and \(gg\) with probability \(1/4\).
+
+\begin{enumerate}
+\item Taking \(\{GG, Gg, gg\}\) as the vertex set, describe the Markov chain.
+\item Decide if PFT applies.
+\item Write the transition matrix \(A\) and compute the first few powers.
+Observe the row corresponding to \(Gg\).
+What do you notice?
+Can you interpret your result?
+What about the other two rows?
+\end{enumerate}
+\end{enumerate}
+\subsubsection{Revisiting the GCD condition (if time permits)}
+\label{sec:org5f8a081}
+The reason the GCD condion works is the following theorem.\\
+\textbf{\textbf{Theorem}}:  Let \(a, b\) be positive integers with \(\gcd(a,b) = 1\).
+Then any \(n > ab\) can be written as a sum of \(a\)'s and \(b\)'s.
+
+\begin{enumerate}
+\item Try to prove it for \(a = 3\) and \(b = 4\).
+\item Try with \(a = 3\) and \(b = 5\).
+\item Try with any \(a\) and \(b = a+1\).
+\item For the general case, let \(r\) be the remainder when \(n\) is divided by \(a\).
+\begin{itemize}
+\item If \(r = 0\), we can simply write \(n = a + a + \cdots + a\) (no \(b\)'s needed).
+\item If \(r \equiv b \pmod a\), what would you do?
+\item If \(r \equiv 2b \pmod a\), what would you do?
+\item If \(r \equiv 3b \pmod a\), what would you do?
+\item Can you generalise?
+\end{itemize}
+\end{enumerate}
+\subsection{Worksheet 7}
+\label{sec:org904b36b}
+\togglefalse{solutions}
+
+In all problems, ``binary string'' refers to any string or word on the alphabet \(\Sigma = \{0,1\}\).
+Unless otherwise specified, our alphabet is always \(\Sigma = \{0,1\}\).
+
+\emph{For this worksheet, make sure to discuss actively with your groupmates! Coming up with regexes that match what you want them to match, as well as describing the languages of given regexes, takes a lot of practice. It is a creative process and there is a lot of room for error.
+But you will learn the tricks of the trade quicker if you discuss frequently with others.}
+\subsubsection{Regular expressions}
+\label{sec:orga55d51f}
+
+\begin{enumerate}
+\item If \(r\) is a regular expression, write down another regular expression \(s\) such that
+\[L(s) = \{vwx\mid v, w, x \in L(r)\}.\]
+
+\item Write down a regular expression whose language is
+\[\{w \in \Sigma^*\mid w \text{ is any string except }0\text{ or }1\}.\]
+
+\item Write down a regular expression \(r\) that matches exactly those binary strings which (when thought of as numbers in base 2) are divisible by \(8\).
+(Let us assume that we only consider a binary string to represent a valid number if it either starts with a \(1\), or if the whole string equals \(0\).)
+
+\item Let \(r = 01^*0|10^*1\). Describe \(L(r)\) in words.
+
+\item Write down a regular expression for the language that contains exactly those strings without two consecutive \(1\)s. Discuss and convince each other that you haven't missed anything or have anything extra.
+
+\item Write down a regular expression whose language is
+\[\{w \in \Sigma^* \mid w\text{ has exactly two }0 \text{s and at least two }1\text{s}\}.\]
+Discuss and convince each other that you haven't missed anything or have anything extra.
+
+\item For each of the problems 2, 3, and 4, try to come up with regular expressions that match precisely the strings that do not match the regular expression from the problem. You can either try to do this directly based on the descriptions of the language, or try to do it by manipulating the regular expressions. Can you find a systematic method for this?
+\end{enumerate}
+\subsubsection{DFAs}
+\label{sec:org6815627}
+Answer the following questions about the DFA shown below.
+\begin{center}
+  \begin{tikzpicture}[node distance=2cm, >=latex]
+    \node[state,initial, accepting] (q1) {$q_1$};
+    \node[state, accepting] (q2) [right of=q1]{$q_2$};
+    \node[state, accepting] (q3) [right of=q2]{$q_3$};
+    \node[state] (q4) [right of=q3] {$q_4$};
+    \path[->]
+    (q1) edge[loop above] node {0} ()
+    (q2) edge[loop above] node {0} ()
+    (q3) edge[loop above] node {0} ()
+    (q4) edge[loop above] node {0,1} ()
+    (q1) edge node[above] {1} (q2)
+    (q2) edge node[above] {1} (q3)
+    (q3) edge node[above] {1} (q4);
+  \end{tikzpicture}
+\end{center}
+\begin{enumerate}
+\item What is the set of states?
+\item What is the start state?
+\item What is the set of accept states?
+\item What is the transition function? Fill in the following table.
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\(\delta\) & 0 & 1\\
+\hline
+q\textsubscript{1} &  & \\
+\hline
+q\textsubscript{2} &  & \\
+\hline
+q\textsubscript{3} &  & \\
+\hline
+q\textsubscript{4} &  & \\
+\hline
+\end{tabular}
+\end{center}
+\item Can you figure out a description for the language of this automaton?
+\item Can you write down a regular expression that recognises the same language?
+\end{enumerate}
+\subsection{Worksheet 8}
+\label{sec:org95680b2}
+\togglefalse{solutions}
+\subsubsection{Warm-up}
+\label{sec:org5c2c01a}
+\begin{enumerate}
+\item When is an NFA said to \emph{accept} a string? When is an NFA said to \emph{reject} a string?
+\item Let \(M\) be an NFA. Let \(L = L(M)\) and \(L^{c} = \Sigma^{\ast} - L\). If you take an NFA and switch all the accepting states to non-accepting states and vice-versa, will the language of the resulting machine be \(L^c\)? Why or why not?
+\item What happens in the calculation of an NFA if from a given state, it is not possible to read the letter we are supposed to read?
+\end{enumerate}
+\subsubsection{Problems}
+\label{sec:orgb55cbcc}
+\begin{enumerate}
+\item Consider the NFA shown below. 
+\begin{center}
+  \begin{tikzpicture}[node distance=2cm, >=latex]
+    \node[state,initial, accepting] (q1) {$q_1$};
+    \node[state] (q2) [below left of=q1]{$q_2$};
+    \node[state] (q3) [below right of=q1]{$q_3$};
+    \path[->]
+    (q2) edge[loop left] node {0} ()
+    (q1) edge node[left] {1} (q2)
+    (q1) edge[bend right] node[left] {$\varepsilon$} (q3)
+    (q3) edge[bend right] node[left] {$0$} (q1)
+    (q2) edge node[below] {0,1} (q3);
+  \end{tikzpicture}
+\end{center}
+Find at least one string (ideally more!) that the NFA accepts and at least one that the NFA rejects.
+
+\item Convert the NFA into an equivalent DFA.
+\end{enumerate}
+
+The next problems are about constructing machines that do certain things.
+Carefully convince each other why your solutions work.
+Some of these problems are hard, and take practice to solve. Don't get discouraged if you can't come up with solutions right away!
+
+\begin{enumerate}
+\item Let \(L\) be a language. Consider the following language.
+\[L^{del} = \{xz \mid xyz \in L\text{ where }x,z\in \Sigma^*, y \in \Sigma\}.\]
+Given an NFA that recognises \(L\), construct an NFA that recognises \(L^{del}\).
+
+\emph{Hint: In your NFA, at any point once you've read some portion of the string, you should create the option to ignore one letter and then move on with the calculation.}
+
+\item Let \(L_1\)  and \(L_2\) be languages. Let the \emph{perfect shuffle} of \(L_1\) and \(L_2\) be the language
+\[L = \{w \mid w = a_1 b_1 \cdots a_k b_k, \text{ where } a_1, \dots, a_k, b_1, \dots, b_k \in \Sigma \text{ and } a_1 \cdots a_k \in L_1 \text{ and } b_1 \cdots b_k \in L_2\}.\]
+(The number \(k\) can be arbitrary).
+As a warm up to understand the construction:
+\begin{enumerate}
+\item Take \(L_1 = 0^{*}\) and \(L_2 = 1^{*}\), and describe the perfect shuffle \(L\).
+\item Take \(L_1 = \{0,00,000\}\) and \(L_2= \{1,11,111\}\), describe the perfect shuffle \(L\).
+\end{enumerate}
+
+Now, given automata \(M_1\) and \(M_2\) recognising \(L_1\) and \(L_2\), respectively, construct an automaton \(M\) to recognise \(L\).
+You may assume that \(M_1\) and \(M_2\) are deterministic, and construct a non-deteterministic \(M\).
+
+Here is a series of pointers to help you come to a complete solution of this problem.
+\begin{enumerate}
+\item We'll have to somehow combine the DFAs recognising the two languages into a third one.
+
+\item We'll need to start at the start state of \(M_1\), because we expect the first letter of any valid word to be a letter that's valid at the start of any word in \(L_1\).
+
+\item Once we read a letter from \(L_1\), we have to ``pause'' and read a letter from \(L_2\) in order to be valid. But after that, we'll have to ``resume'' in \(M_1\), which means we have to remember where we came from. Can you simulate this using a product-type construction?
+\end{enumerate}
+\item (\(\ast\), bonus) If you're finished with the remainder of the worksheet, construct an automaton to recognise the \emph{shuffle} of two regular languages \(L_1\) and \(L_2\), defined as follows:
+\[L = \{w \mid w = a_1 b_1 \cdots a_k b_k, \text{ where } a_1, \dots, a_k, b_1, \dots, b_k \in \Sigma^{*} \text{ are such that } a_1 \cdots a_k \in L_1 \text{ and } b_1 \cdots b_k \in L_2\}.\]
+\end{enumerate}
+\subsection{Worksheet 9}
+\label{sec:orgf574d33}
+\togglefalse{solutions}
+In all the problems, the alphabet is \(\{0,1\}\).
+
+\begin{enumerate}
+\item Show that the following languages are not regular by (a) a pumping-lemma argument and (b) using the Myhill-Nerode theorem.
+
+It takes practice to be able to apply either of the two strategies.
+Do not be discouraged if you find it difficult.  It is difficult!
+
+\begin{enumerate}
+\item \(L = \{0^m 1^n \mid m \neq n\}\).
+
+\item \(L = \{0^{n} \mid n \text{ is a power of 2}\}\).
+\end{enumerate}
+
+\item In this problem, we see how the process of going from an NFA to a DFA can produce exponential blow-up in size.
+
+Let \(L\) be the set of strings whose \(10\)-th position is \(1\) (so the string has to be at least 10 letters long).
+\begin{enumerate}
+\item Construct a DFA/NFA for \(L\).  It should have about 10 states.
+\item Using it, construct an NFA for \(L^{\rm rev}\). Describe \(L^{\rm rev}\) in words.
+\item Think about converting the NFA for \(L^{\rm rev}\) to a DFA.
+Convince yourself that the conversion process would produce a DFA with about \(2^{10}\) states.
+\item Prove that a DFA for \(L^{\rm rev}\) cannot have fewer than \(2^{10}\) states.
+To do so, show that all strings of length \(10\) are inequivalent under the Myhill-Nerode equivalence relation \(\sim\).
+\end{enumerate}
+
+\item Choose your favourites among the games we discussed in class (subtraction game, chomp, hackenbush, nim), and play them in your group. Can you find winning strategies for certain cases? Once you have played a couple of rounds, try to draw some small game graphs and label them by N and P. Did you use the best strategy?
+\end{enumerate}
+\subsection{Worksheet 10}
+\label{sec:org6af1cdf}
+\togglefalse{solutions}
+
+\begin{enumerate}
+\item (Warm up) Remember the rules to label states as P or N.
+\begin{enumerate}
+\item If a state is a sink state (no outgoing arrows), we label it \makebox[3em]{\hrulefill}.
+\item If a state has an outgoing arrow to a P state, we label it \makebox[3em]{\hrulefill}.
+\item If all outgoing arrows of a state are N, we label it \makebox[3em]{\hrulefill}.
+\end{enumerate}
+
+\item (Warm up) Can there be an arrow \(N \to N\)? \(P \to P\)? \(P \to N\)? \(N \to P\)?
+
+\item Draw the game graph of \(2 \times 3\) chomp and label it with N and P.
+
+\item Remember what it means to add two games.
+Find two N games \(G_1\) and \(G_2\) such that \(G_1 + \operatorname{Nim}(2,3)\) and \(G_2 + \operatorname{Nim}(2,3)\) have different outcomes (N vs P).
+
+\item The game of Wyt rooks is played as follows.
+We start with two rooks placed on two squares of a chessboard.
+A move consists of moving one of the rooks any positive number of squares downward or leftward (but not both).
+Rooks can occupy the same square and move past each other.
+As usual, the player who cannot make a move loses.
+
+\begin{enumerate}
+\item Play this game with your group and determine some winning and losing positions.
+
+\item Try to convert this game into some form of nim.
+\end{enumerate}
+
+\item (Open-ended) Euclid's game is defined as follows.
+The starting position is a pair of positive integers \((a,b)\). A move consists of subtracting a non-zero multiple of the smaller number from the larger number, ending up again with a pair of \emph{positive} integers. In particular, any position of the form \((n,n)\) is a P position.
+
+Play this game with your group and determine some other non-trivial P and N positions. Do you see a pattern? Bonus/challenge: Can you find a pattern, and who has a winning strategy?
+\end{enumerate}
+\subsection{Worksheet 11}
+\label{sec:org51aaac9}
+\toggletrue{solutions}
+
+The goal of this worksheet is to practice computing Grundy labels and using them to find winning moves.
+
+\begin{enumerate}
+\item Consider the \(1,2\)-subtraction game starting with the initial state \(10\).
+Find the Grundy labels of the game states.
+
+\item Let \(G\) be the \(1,2\)-subtraction game with initial state \(10\).
+\begin{enumerate}
+\item Find the Grundy label of \(G + \operatorname{Nim}(2,4,5)\), using that the Grundy label of \(G+H\) is the (xor) sum of the Grundy labels.
+
+\item Find all winning moves for the first player.  Remember that a winning move puts the opponent in a \(P\)-position, which is a position with Grundy label \(0\).
+\end{enumerate}
+
+\item Repeat (2) for combinations of games of your choice taken from all the games we have seen: nim, Chomp, poset chomp, nimble, Euclid's game, Grundy's game, subtraction game with different parameters, and so on.
+
+For the exam, you are not expected to know the rules of these more esoteric games.
+But you should know the rules of nim, chomp, and poset chomp.
+\end{enumerate}
+\section{Assignments}
+\label{sec:orgfbfcb6a}
+
+\subsection{Academic integrity policy for assignments}
+\label{sec:orgf090a14}
+While solving your assignments, you will typically work in two phases.
+\begin{enumerate}
+\item The solving phase: this is when you are actually trying to find the answers to the questions.
+\begin{enumerate}
+\item First, you should think about the problem on your own.
+\item Next, you are welcome and encouraged to collaborate with other students while you are in the solving phase. It is often by working productively with peers that you will learn the most. Collaboration means that all of you are thinking about the problem \emph{together} and coming up with a solution \emph{together}.
+You should move on to the next phase once you know more or less how to solve the problem.
+\item You are encouraged to go to office hour and to the MSI drop-in sessions to get clarifications.
+\end{enumerate}
+\item The write-up phase: this consists of writing up your solutions for submission, once you know more or less how to solve the problems.
+\begin{enumerate}
+\item You must do this entirely by yourself. Work alone when you are writing.
+\item If you collaborate with anyone else, copy (parts of) solutions from someone else, copy from pictures taken of the board, or ask someone else to write your solutions, you are violating the academic integrity policy.
+\item If you get stuck while writing, you can go back to the previous phase to collaborate/ask questions to your instructors, but once again when you are back to writing the solution, it must be done independently.
+\end{enumerate}
+\end{enumerate}
+
+
+Additionally, keep in mind the following.
+\begin{enumerate}
+\item When you are writing up your solution, you must write down at the top of your solution sheet a list of your collaborators, as well as any external resources you used.
+It is a violation of the integrity policy if you do not acknowledge the sources from which you received help.
+However, you do not need to cite help received from office hour, demonstrators, or the MSI drop-in session.
+\item Asking someone else to give you the solutions, or paying someone else to give you the solutions, is a violation of the integrity policy. Use of websites such as Chegg, CourseHero, etc for getting assignment solutions is a violation of the integrity policy.
+\end{enumerate}
+
+If you are ever unsure about whether something is or is not allowed, ask the instructor for clarification.
+You will never get into trouble for asking for clarification about what is acceptable.
+However, you will face serious consequences if you fail to follow the academic integrity policy.
+\subsection{Assignment 1 (due on 2 August 2024 at 11:59pm)}
+\label{sec:org8de15d7}
+\togglefalse{solutions}
+\subsubsection{General remarks}
+\label{sec:orgeaf2451}
+\begin{enumerate}
+\item Please read the academic integrity policy for assignments.
+
+\item If you want to justify why, for example, a relation satisfies certain property, you must convince the reader that the property holds for \emph{every single} element of the relation.
+More generally, if you want to justify why certain kinds of objects have a certain property, you have to give a \emph{proof}, i.e., a convincing argument why the property holds for all possible such objects.
+
+\item If you want to justify why, for example, a relation does not satisfy a certain property, it is enough to give \emph{one example} that shows that the property fails. Such an example is called a \emph{counterexample}.
+More generally, if you want to justify why a particular object does not satisfy a particular property, it is enough to give a counterexample.
+Note that the counterexample has to be explicit.
+
+\item In mathematical problems, if you are asked to \emph{show} something, that is the same as being asked to \emph{prove} something, which means that you have to give a complete justification. I know that you may not be used to proving things yet, but that's okay. We will learn this as we go. For now, remember that it is your job to convince the reader who is reading your solution, so you have to try your best to explain your answers.
+
+\item \textbf{\textbf{Important:}} If you are having trouble with any of the points mentioned above, come and discuss with me in office hour. It is part of my job to help you understand this stuff, so please use my time!
+\end{enumerate}
+\subsubsection{Problems}
+\label{sec:org170ac4e}
+\begin{enumerate}
+\item Let \(S = \mathbf{R} - \{0\}\).
+Define \(R \subset S \times S\) as
+\[ R = \{(x,y) \mid xy = 3.\}\]
+Then \(R\) is the input/output (I/O) relation of a function \(f\).
+Find \(f(1)\) and \(f(3)\).  Justify your answers.
+
+\item Let \(R\) and \(T\) both be relations on a set \(S\). 
+Decide if the following statements are true or false, and justify your answer.
+
+\begin{enumerate}
+\item If \(R\) and \(T\) are symmetric, then \(R \cup T\) is symmetric.
+
+\item If \(R\) and \(T\) are transitive, then \(R \cup T\) is transitive.
+\end{enumerate}
+
+\item Consider the following graphs. For each one, write down which of the following properties are satisfied by the relation represented by the graph: reflexivity, symmetry, transitivity, being I/O of a function. You do not have to justify your answers, but you should think about the justifications instead of guessing.
+\newpage
+\begin{enumerate}
+\item \mbox{}
+\begin{verbatim}
+digraph {
+    rankdir=LR;
+    0 [label="a"];
+    1 [label="b"];
+    2 [label="c"];
+    3 [label="d"];
+    0 -> 0;
+    0 -> 1;
+    0 -> 2;
+    0 -> 3;
+    1 -> 1;
+    2 -> 2;
+    3 -> 3;
+}
+\end{verbatim}
+
+\item \mbox{}
+\begin{verbatim}
+digraph {
+    rankdir=LR;
+    0 [label="a"];
+    1 [label="b"];
+    2 [label="c"];
+    3 [label="d"];
+    0 -> 2;
+    2 -> 0;
+    0 -> 3;
+    3 -> 0;
+    2 -> 3;
+    3 -> 2;
+    1 -> 1;
+}
+\end{verbatim}
+
+\item \mbox{}
+\begin{verbatim}
+digraph {
+    rankdir=LR;
+    0 [label="a"];
+    1 [label="b"];
+    2 [label="c"];
+    3 [label="d"];
+    0 -> 1;
+    1 -> 2;
+    2 -> 3;
+    3 -> 0;
+}
+\end{verbatim}
+\end{enumerate}
+
+\item Let \(S = \mathbf{R} \times \mathbf{R}\).
+Define a relation \(R\) on \(S\) as follows:
+\[ R = \{((a,b),(c,d)) \mid a + d = b + c\}.\]
+
+\begin{enumerate}
+\item Prove that \(R\) is an equivalence relation.
+
+\item Describe the equivalence classes in words, and draw sketches in \(\mathbf{R}^{2}\), of the equivalence class of \((1,2)\) and of \((0,0)\).
+\end{enumerate}
+\end{enumerate}
+\subsection{Assignment 2 (due on 9 August 2024 at 11:59pm)}
+\label{sec:orgd344ac9}
+\togglefalse{solutions}
+
+\begin{enumerate}
+\item Let \(S\) be the set of squares on a standard \(8 \times 8\) chessboard.
+Consider the following relations on \(S\).
+\begin{enumerate}
+\item \(B = \{(s,t) \in S \times S \mid t \text{ is reachable from }s\text{ by a sequence of zero or more bishop moves.} \}\)
+\item \(R = \{(s,t) \in S \times S \mid t \text{ is reachable from }s\text{ by a sequence of zero or more rook moves.} \}\)
+\item \(K = \{(s,t) \in S \times S \mid t \text{ is reachable from }s\text{ by a sequence of zero or more knight moves.} \}\)
+\end{enumerate}
+It turns out that all of these are equivalence relations (you can check this privately, but you don't have to justify it).
+In each case, determine how many equivalence classes there are.
+
+\item Fix a modulus \(d\).
+Recall that \(\mathbf{Z}/d \mathbf{Z}\) is the set of equivalence classes of integers modulo \(d\).
+Let us try to define the operation of exponentiation on \(\mathbf{Z}/d \mathbf{Z}\) as follows.
+Given  \(A, B \in \mathbf{Z} / d \mathbf{Z}\), we pick an \(a \in A\), a positive \(b \in B\), and declare
+\[ A^B = [a^b].\]
+Is this operation well-defined? Justify your answer.
+
+\item Consider modular arithmetic with the modulus \(d = 10\). For each equivalence class \([x] \in \mathbf{Z}/d \mathbf{Z}\), determine whether or not \([x]\) has a multiplicative inverse, and if yes, find the inverse. 
+That is, figure out whether there is some \([y]\) such that \([x]\cdot[y] = [1]\).\\
+\emph{Bonus (not to be turned in):} Can you find a pattern here? When does \([x]\) have a multiplicative inverse?  Does a number ever have more than one inverse?
+
+\item Take the modulus to be \(d = 7\). Show that if \([3x] = [5]\) modulo \(7\), then \([x] = [4]\).
+\end{enumerate}
+\subsection{Assignment 4 (due on 23 August 2024 at 11:59pm)}
+\label{sec:org94e389f}
+\togglefalse{solutions}
+
+\begin{enumerate}
+\item Consider a graph whose adjacency matrix is
+\[A = \begin{pmatrix}1&1&1\\0&1&1\\0&0&1\end{pmatrix}.\]
+Find the number of paths of length \(4\) from \(1\) to \(3\).
+
+\item \begin{enumerate}
+\item Find (without explicit calculation) an example of a \(4 \times 4\) nonzero adjacency matrix such that all powers of this matrix beyond the 10th power are zero. Justify briefly.
+\item Is it true that the 8th power of \textbf{any} such matrix (not just your example!) must also be zero?
+\item Is it true that the cube of \textbf{any} such matrix (not just your example) must also be zero?
+\end{enumerate}
+
+\item Let \(G\) be the directed pentagon
+\begin{verbatim}
+digraph {
+   rankdir="LR"
+   layout="neato"
+    1 -> 2;
+    2 -> 3;
+    3 -> 4;
+    4 -> 5;
+    5 -> 1;
+}
+\end{verbatim}
+
+Let \(A\) be the adjacency matrix of \(G\).
+Describe all positive powers of \(A\).
+
+\begin{verbatim}
+A = matrix([[0,1,0,0,0],[0,0,1,0,0],[0,0,0,1,0],[0,0,0,0,1],[1,0,0,0,0]])
+latex(A), latex(A^2), latex(A^3), latex(A^4), latex(A^5)
+\end{verbatim}
+
+\item Let \(G\) be the directed snail
+\begin{verbatim}
+digraph {
+    rankdir="LR"
+    1 -> 2;
+    2 -> 2;
+    2 -> 3;
+}
+\end{verbatim}
+
+Let \(A\) be the adjacency matrix of \(G\).
+Describe all positive powers of \(A\).
+
+\begin{verbatim}
+A = matrix([[0,1,0],[0,1,1],[0,0,0]])
+A^3
+\end{verbatim}
+
+\phantomsection
+\label{org15fa846}
+\begin{verbatim}
+[0 1 1]
+[0 1 1]
+[0 0 0]
+\end{verbatim}
+
+\item Let \((S, \preceq)\) be a finite poset.
+Let \(G\) be the directed graph of the relation \(\preceq\) and let \(A\) be the adjacency matrix of \(G\).
+Let \(I\) be the identity matrix of the same size as \(A\) (this is the matrix that has 1s on the diagonal and zeros elsewhere).
+True or false: some positive power of \(A-I\) must be zero.
+If true, justify it.
+Otherwise, give an example where no positive power of \(A-I\) is zero.
+\end{enumerate}
+\subsection{Assignment 5 (due on 30 August 2024 at 11:59pm)}
+\label{sec:org0e6447c}
+\togglefalse{solutions}
+
+\begin{enumerate}
+\item A directed graph is called \emph{strongly connected} if for every \(i\) and \(j\), there is a path from vertex \(i\) to vertex \(j\).
+
+Select true or false.  
+
+\begin{enumerate}
+\item A graph with adjacency matrix \(A\) is strongly connected if and only if for some \(n\), the boolean power \(A^{*n}\) has all entries equal to \(1\).
+\item A graph with adjacency matrix \(A\) is strongly connected if and only if for some \(n\), the boolean sum
+\[A +A^{*2} + \cdots + A^{*n}\]
+ has all entries equal to \(1\).
+
+(Corrected.  Previously, the boolean sum started at \(I\).)
+\end{enumerate}
+
+If the statement is true, you should be able to justify it.
+Otherwise, you should be able to give a counter-example.
+But you need not turn in the justification or counter-examples.
+
+\item Let \(G\) be a graph.
+The \emph{transitive closure} of \(G\) is the graph \(G^+\) with the same vertices as \(G\), but in \(G^{+}\), we have an edge from \(v\) to \(w\) if there is a path in \(G\) from \(v\) to \(w\).
+
+Let \(G\) be the graph of the relation \(R = \{(a,b) \mid 0 \leq b - a \leq 2\}\) on the set \(S = \{1,2,3,4\}\).
+Draw \(G\) and \(G^+\).
+Write down the adjacency matrices of both graphs.
+\begin{verbatim}
+digraph {
+    1 -> 1;
+    1 -> 2;
+    1 -> 3;
+    2 -> 2;
+    2 -> 3;
+    2 -> 4;
+    3 -> 3;
+    3 -> 4;
+    4 -> 4;
+}
+\end{verbatim}
+\begin{verbatim}
+digraph {
+    1 -> 1;
+    1 -> 2;
+    1 -> 3;
+    1 -> 4 [style=dashed];
+    2 -> 2;
+    2 -> 3;
+    2 -> 4;
+    3 -> 3;
+    3 -> 4;
+    4 -> 4;
+}
+\end{verbatim}
+
+\item We say that \(G\) is \emph{transitive} if \(G = G^+\).
+Let \(A\) be the boolean adjacency matrix of \(G\).
+Prove that \(G\) is transitive if and only if \(A = A + A^{*2}\) (boolean addition).
+
+\noindent
+\emph{Caution:} There is no subtraction in boolean arithmetic.  So if \(x+y = x+z\), then you cannot conclude that \(y = z\).
+
+\item Using the criterion in the previous problem, determine if the following adjacency matrices define transitive graphs:
+\begin{enumerate}
+\item \(\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}\)
+\item \(\begin{pmatrix} 1&1&0 \\ 0&1&1 \\ 0&0&1\end{pmatrix}\)
+\item \(\begin{pmatrix} 0&1&1 \\ 0&0&1 \\ 0&0&0\end{pmatrix}\)
+\end{enumerate}
+
+\item Find (using weighted adjacency matrices) the minimum cost of paths between any pair of vertices in the following graph.
+Assume that each vertex has loops of length 0 (not shown).
+\begin{verbatim}
+digraph {
+    1;
+    2;
+    3;
+    4;
+    2 -> 1 [label="5"];
+    1 -> 4 [label="1"];
+    4 -> 1 [label="3"];
+    4 -> 2 [label="2"];
+    1 -> 3 [label="3"];
+    3 -> 4 [label="8"];
+}
+\end{verbatim}
+\begin{center}
+\includegraphics[width=0.3\textwidth]{pa3-wadj.png}
+\label{orge77fbb1}
+\end{center}
+\end{enumerate}
+\subsection{Assignment 6 (due on 20 September 2024 at 11:59pm)}
+\label{sec:org2c1d4a2}
+\togglefalse{solutions}
+\begin{enumerate}
+\item Consider the following Markov chain:
+\begin{verbatim}
+digraph {
+ 1:n -> 1:n [label="0.4"]
+ 1 -> 2 [label="0.6"]
+ 2:n -> 2:n [label="0.5"]
+ 2 -> 1 [label="0.5"]   
+ }
+\end{verbatim}
+\begin{center}
+\includegraphics[width=0.3\textwidth]{6a.png}
+\label{org119eca1}
+\end{center}
+
+\begin{enumerate}
+\item What is the probability of transitioning from \(1\) to \(1\) after 2 steps?
+
+\item Let \(A\) be the transition matrix.
+Find \(\lim_{k \to\infty} A^k\).
+\end{enumerate}
+
+\item Consider the Markov chain
+\begin{center}
+\includegraphics[width=.5 \textwidth]{assets/Assignments/2024-09-03_12-42-11_screenshot.png}
+\end{center}
+
+\begin{enumerate}
+\item Does the Perron-Frobenius theorem apply?
+
+\item Is the graph strongly connected?
+
+\item Define a relation \(\sim\) on the set of vertices by saying \(v \sim w\) if
+\begin{enumerate}
+\item \(v = w\) or
+\item there is a path from \(v\) to \(w\) and a path from \(w\) to \(v\).
+\end{enumerate}
+
+Convince yourself (but do not turn in) that this is an equivalence relation.
+Write down the equivalence classes.
+\end{enumerate}
+
+\item Let \(S = \mathbf{Z}/5 \mathbf{Z} - \{\overline 0\}\).
+On the board, I have written the element \(\overline 1 \in S\).
+At every step, I consider the number \(a\) on the board.
+If \(a\) is a square modulo \(5\), I erase \(a\) and replace it with one of the two square roots (chosen at random with equal probability).
+If \(a\) is not a square modulo \(5\), I erase \(a\) and write \(\overline 2 \cdot a\).
+
+\begin{enumerate}
+\item Draw a weighted directed graph that models the game.
+
+\item Let \(A\) be the transition matrix.
+Use the Perron-Frobenius theorem to find \(\lim_{k \to \infty} A^k\).
+\end{enumerate}
+
+\item Consider the Markov chain of snakes and ladders where the game ends if we jump to the 100th square or beyond.
+There are no ladders or snakes.
+In a computer program of your choice, construct the trasition matrix of this game.
+Use it to answer the following questions.
+\begin{enumerate}
+\item Starting at 0, what is the most likely position after \(20\) moves.
+\item After \(30\) moves, what is the probability that the game has ended?
+\end{enumerate}
+
+If you use \texttt{sage}, you may fill in the following snippet.
+You can copy/paste and evaluate the snippet at \url{https://sagecell.sagemath.org/}.
+\begin{verbatim}
+import numpy
+A = matrix(QQ,100,100)
+for i in range(0,100):
+    for j in range(0,6):
+        jump = i+j+1
+        if (jump < 100):
+            A[i,jump] = 1/6
+
+# We manually fill the entries where jump goes beyond 99.
+A[99,99] = # Fill in
+A[98,99] = # Fill in
+A[97,99] = # Fill in
+A[96,99] = # Fill in
+A[95,99] = # Fill in
+A[94,99] = # Fill in
+
+# Fill in other statements depending on what you want to compute.
+\end{verbatim}
+
+You may find the following helpful.
+\begin{itemize}
+\item \texttt{M = A\textasciicircum{}(10)} Computes the 10th power of \texttt{A} and stores it in \texttt{M}.
+
+\item \texttt{M[i,j]} gives the \((i,j)\) entry of \(M\).
+
+\item \texttt{M[i,j].n(digits=2)} gives the \((i,j)\)th entry in decimal with 2 digits of precision.
+
+\item \texttt{numpy.argmax(M[i])} gives the position of the maximum entry in \texttt{M[i]}.
+\end{itemize}
+
+\begin{proof}
+We fill in the missing entries as follows.
+\begin{verbatim}
+import numpy
+A = matrix(QQ,100,100)
+for i in range(0,100):
+    for j in range(0,6):
+        jump = i+j+1
+        if (jump < 100):
+            A[i,jump] = 1/6
+
+# We manually fill the entries where jump goes beyond 99.
+A[99,99] = 6*1/6
+A[98,99] = 6*1/6
+A[97,99] = 5*1/6
+A[96,99] = 4*1/6
+A[95,99] = 3*1/6
+A[94,99] = 2*1/6
+\end{verbatim}
+
+The most likely position after 20 moves is the largest entry is the first (zeroth) row of \(A^{20}\).
+\begin{verbatim}
+print(numpy.argmax((A^20)[0]))
+\end{verbatim}
+
+\phantomsection
+\label{orga9b413d}
+\begin{verbatim}
+70
+\end{verbatim}
+
+
+The probability that the game has ended after 30 moves is the \((0,99)\) entry of \(A^{30}\).
+\begin{verbatim}
+print((A^(30))[0,99].n(digits=2))
+\end{verbatim}
+
+\phantomsection
+\label{org4216200}
+\begin{verbatim}
+0.76
+\end{verbatim}
+\end{proof}
+\end{enumerate}
+\subsection{Assignment 7  (due on 27 September 2024 at 11:59pm)}
+\label{sec:orgc6e4553}
+\togglefalse{solutions}
+\setenumerate{itemsep=0.5em}
+
+\begin{enumerate}
+\item Let \(\Sigma = \{0,1\}\). For each language \(L\) described below, write down a regular expression \(r\) such that \(L(r) = L\).
+That is, the strings of \(\Sigma^*\) that match \(r\) are exactly the strings of \(L\).
+Be careful to make sure that nothing else matches the regular expression you write down!
+Justification is not required.
+\begin{enumerate}
+\item \(L = \{w \in \Sigma^\ast \mid w \text{ starts with a }1\}\)
+\item \(L = \{w \in \Sigma^* \mid w \text{ all the ones in }w\text{ are next to each other in a single block}\}\)
+\item \(L = \{w \in \Sigma^\ast \mid w \text{ contains an even number of zeroes}\}\)
+\end{enumerate}
+
+\item Let \(\Sigma = \{a,b,c\}\). For each regular expression \(r\) written below, describe in words the language \(L(r)\).
+Justification not required.
+\begin{enumerate}
+\item \(r = (\epsilon|bc|c)(abc)^*(\epsilon|a|ab)\).
+\item \(r = ((b|c|\epsilon)^*a(b|c|\epsilon)^*a(b|c|\epsilon)^*a(b|c|\epsilon)^*)^*\)
+\end{enumerate}
+
+\item Let \(\Sigma = \{0,1\}\) and \(L\) be the language
+\[ L = \{w \mid \text{ the number of occurencess of }01\text{ in } w\text{ is equal to the number of occurencess of } 10.\}\]
+For example, the word \(010\) is in \(L\) because it has one occurences of \(01\) and one of \(10\).
+The word \(01101\) is not in \(L\) because it has 2 occurences of \(01\) but only one of \(10\).
+Does there exist a regular expression \(r\) such that \(L = L(r)\)?
+If yes, find one.
+If not, explain why not.
+
+\item Let \(L \subseteq \Sigma^\ast\) be a language. The \emph{complement of \(L\)}, denoted \(L^c\), is the complement of \(L\) in \(\Sigma^\ast\).
+That is, for every \(w \in \Sigma^\ast\), we have \(w \in L^c\) if and only if \(w \notin L\).
+\begin{enumerate}
+\item Given a DFA \(M\) recognising a language \(L = L(M)\), explain in words how to construct a DFA \(M'\) such that \(L(M') = L^c\).
+
+\item Construct a DFA recognising the following language:
+\[L = \{w \in \Sigma^* \mid \text{every odd position of }w\text{ is }1\}.\]
+(Assume that we start indexing at 1, not 0.)
+Justification not required.
+
+\item Now use your method from the first part to draw a DFA for the complement of the language \(L\) above. Justification not required.
+\end{enumerate}
+\end{enumerate}
+\subsection{Assignment 8  (due on 4 October 2024 at 11:59pm)}
+\label{sec:orga0fc52e}
+\toggletrue{solutions}
+
+\begin{enumerate}
+\item Construct an NFA recognising the following languages. Justifications not required.
+\begin{enumerate}
+\item \(L = \{w \mid w\text{ ends with }00\}\).
+\item The language \(L = L(1^*0^*1^*)\).
+\end{enumerate}
+
+\item Convert the following regular expressions to equivalent NFAs.
+(In each case, break down the given regex into manageable pieces such that you can directly construct a DFA/NFA for each ``piece''.
+Then combine the pieces using the procedures we discussed in class.)
+\begin{enumerate}
+\item \(r = (0|1)^*000(0|1)^*\)
+\item \(r = (((00)^*(11))|01)^*\)
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Convert the following NFA into an equivalent DFA.
+  \begin{center}
+  \begin{tikzpicture}[node distance=2cm]
+	\node[state, initial, accepting] (q0) {$q_0$};
+	\node[state, accepting] (q1) [right of=q0]{$q_1$};
+	\path[->]
+	(q0) edge node[above] {$0,1$} (q1)
+	(q0) edge[loop above] node{$0$} ()
+	(q1) edge[loop above] node{$1$} ()
+	;
+  \end{tikzpicture}
+\end{center}
+
+\item Let \(L\) be the language of the DFA above.
+How many equivalence classes does \(\sim_L\) have?
+Justify your answer.
+\end{enumerate}
+
+\item Let \(L\) be the language
+\[ L = \{w \mid \text{Read in binary, the number } w \text{ is divisible by 3}\}.\]
+Is \(L\) recognised by an automaton?
+If yes, draw an DFA/NFA for \(L\).
+Otherwise, justify why an automaton does not exist.
+
+We make the convention that leading \(0\)s do not affect the number.
+So the number \(00011\) is the same as the number \(11\), which is the number three.
+\end{enumerate}
+\subsection{Assignment 9  (due on 11 October 2024 at 11:59pm)}
+\label{sec:orgeaf6908}
+\toggletrue{solutions}
+
+\begin{enumerate}
+\item Convert the following DFAs into equivalent regular expressions.
+Show your work, but you need not give full justification.
+
+\begin{enumerate}
+\item \mbox{}
+\begin{center}
+        \tikzset{>=latex}
+  \begin{tikzpicture}[node distance=2cm]
+    \node[state, initial] (q1) {$q_1$};
+    \node[state, accepting] (q2) [right of=q1] {$q_2$};
+    \path[->]
+    (q1) edge[loop above] node {$1$} ()
+    (q1) edge[bend left] node[above] {$0$} (q2)
+    (q2) edge[loop above] node {$1$} ()
+    (q2) edge[bend left] node[below] {$0$} (q1)
+    ;
+
+  \end{tikzpicture}
+\end{center}
+\item \mbox{}
+\begin{center}
+\tikzset{>=latex}
+  \begin{tikzpicture}[node distance=2cm]
+    \node[state, initial, accepting] (q1) {$q_1$};
+    \node[state] (q2) [right of=q1] {$q_2$};
+    \node[state, accepting] (q3) [below of=q2] {$q_3$};            
+    \path[->]
+    (q1) edge node[above] {$0$,$1$} (q2)
+    (q2) edge[loop above] node {$1$} ()
+    (q2) edge[bend left] node[right] {$0$} (q3)
+    (q3) edge[bend left] node[right] {$0$} (q2)
+    (q3) edge node[left] {$1$} (q1)                        
+    ;
+  \end{tikzpicture}
+\end{center}
+\end{enumerate}
+
+\item Show that the following languages are not regular using the pumping lemma and the Myhill-Nerode theorem (both).
+For the pumping lemma, assume (for contradiction) that there is a recognising DFA with \(n\) states.
+Clearly state the string you use for pumping.
+For the Myhill-Nerode theorem, clearly describe an infinite set of non-equivalent strings.
+
+\begin{enumerate}
+\item \(L = \{0^k 1^l \mid k < l\}\).
+\item \(L = \{0^{n} \mid n \text{ is a square.}\}\)
+\end{enumerate}
+
+\item Draw the game graph for the following version of the subtraction game.
+We start with \(12\) blueberries and are allowed to eat 1, or 2, or 3 at a time.
+The person to eat the last blueberry wins.
+
+Label the graph with \(N\) and \(P\) labels.
+\end{enumerate}
+\subsection{Assignment 10  (due on 18 October 2024 at 11:59pm)}
+\label{sec:org24ca349}
+\toggletrue{solutions}
+
+\begin{enumerate}
+\item Grundy's game is defined as follows.
+The starting position is some number of piles of berries.
+A move consists of taking \emph{one} pile of berries, and dividing it into two non-empty piles of \emph{unequal sizes}.
+For example, a pile of size \(4\) can only be split into \(1/3\), whereas a pile of size \(5\) can be split either as \(1/4\) or as \(2/3\).
+The person who can't make a move loses: at this point, the game board will only have piles of sizes either 1 or 2.
+
+Draw the game graph starting at the position \(6\), labelling each position as either \(N\) or \(P\).
+Consider the piles to be unordered; that is, a position such as \((1,4)\) is considered to be the same as the position \((4,1)\).
+
+No justification is required.
+
+\item Recall poset chomp.
+We start with a finite poset \(S\).
+A move consists of removing an \(a \in S\) together with all \(b \in S\) with \(a \preceq b\).
+
+Let \(S\) be the divisor poset of \(12\) except the integer \(1\).
+So \(S = \{2,3,4,6,12\}\) and \(a \preceq b\) if \(a\) divides \(b\).
+Using strategic labelling on the game graph, determine if the following positions are N or P:
+
+\begin{enumerate}
+\item \(\{3\}\)
+
+\item \(\{2,4\}\)
+
+\item \(\{2,3,4\}\)
+
+\item \(\{2,3,4,6,12\}\)
+\end{enumerate}
+
+\item Determine if the following nim games are P or N.
+\begin{enumerate}
+\item \(\operatorname{Nim}(3,4,5)\)
+
+\item \(\operatorname{Nim}(m,m,n)\) where \(m, n > 0\).
+
+\item \(\operatorname{Nim}(m,m,m,m)\) where \(m > 0\).
+
+\item \(\operatorname{Nim}(m,n)\) where \(m \neq n\).
+
+\item \(\operatorname{Nim}(m,2m,4m,8m)\) where \(m > 0\).
+\end{enumerate}
+
+\item The game of nimble is played on a line of squares labelled \(0, 1, 2, 3, \ldots\).
+There are \(n\) coins placed on the squares, with perhaps more than one coin on a single square.
+A move consists of taking one of the coins and moving it to any square on the left, possibly moving over some coins, and possibly onto a square already containing one or more coins. The players alternate moves and the games end when all coins are on the square labelled \(0\).
+
+\begin{enumerate}
+\item Convince yourself (but do not turn in) that this game is just nim in disguise.
+\item Suppose the coins are initially placed on the squares \(4, 8, 11\).
+This is an N position.
+Find all possible winning moves.
+Express your answer as a triple \((a,b,c)\) denoting the positions of the coins.
+For example, \((3, 8, 11)\) is a valid move (first coin moved from 4 to 3).
+And so is \((4, 0, 11)\), but not \((3,0,11)\).
+\end{enumerate}
+\end{enumerate}
+\subsection{Assignment 11  (due on 18 October 2024 at 11:59pm)}
+\label{sec:org70a32ad}
+\togglefalse{solutions}
+
+This is a short assignment because it is the final week, and you probably have many other things to do.
+
+In the game \(\operatorname{Chomp-the-graph(G)}\), we start with a finite undirected graph \(G\).
+Two players take turns removing either a vertex or an edge of \(G\).
+When a vertex is removed, all edges adjacent to it are automatically removed.
+When an edge is removed, no other vertices (or edges) are removed.
+As usual, the player who cannot make a move loses.
+
+Find the Grundy value of \(\operatorname{Chomp-the-graph}(G)\) for the following \(G\).
+\begin{enumerate}
+\item \mbox{}\\
+\begin{verbatim}
+graph {
+a -- b
+b -- c
+c -- a
+}
+\end{verbatim}
+\begin{center}
+\includegraphics[width=.2 \textwidth]{hw10-triangle.png}
+\label{org00cca4b}
+\end{center}
+
+\item \mbox{}\\
+\begin{verbatim}
+graph {
+a -- b -- c
+}
+\end{verbatim}
+\begin{center}
+\includegraphics[width=.4 \textwidth]{hw10-chain.png}
+\label{org23586f0}
+\end{center}
+
+\item \mbox{}\\
+\begin{verbatim}
+graph {
+ a -- b
+ b -- c
+ c -- a
+ d -- e
+}
+\end{verbatim}
+\begin{center}
+\includegraphics[width=.4 \textwidth]{hw10-union.png}
+\label{org3285f4e}
+\end{center}
+
+Using the Grundy values, find all the winning moves for the first player.
+
+\item (Food for thouht; not to be turned in)  Can you spot any patterns in \(\operatorname{Chomp-the-graph(G)}\) for various \(G\)?
+For example, if \(G\) is a chain of \(n\) vertices, what is the Grundy value?
+What about other kinds of graphs?
+
+\item (Food for thouht; not to be turned in) Write a computer program that takes a graph \(G\) as input and computes the Grundy value of \(\operatorname{Chomp-the-graph}(G)\).
+\end{enumerate}
+\end{document}

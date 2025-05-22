@@ -109,85 +109,110 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 
 #+RESULTS:
 :results:
-- Counting 3-uple Veronese surfaces. ([[https://arxiv.org/abs/2411.14232][arxiv]])\\
+- [[file:papers/CompStabGenK3.pdf][The Thurston compactification of the stability manifold of a generic analytic K3 surface]]. ([[https://arxiv.org/abs/2505.14991][arxiv]], [[https://github.com/deopurkar/CompStabGenK3][repository]])\\
   /Pre-print/.
-- Equivariant classes of orbits in GL(2)-representations. ([[https://raw.githubusercontent.com/deopurkar/equivariant-classes-of-gl2-orbits/main/gl2orbits.pdf][pdf]], [[https://arxiv.org/abs/2405.09849][arxiv]], [[https://github.com/deopurkar/equivariant-classes-of-gl2-orbits/][source/comments]])\\
+- [[file:papers/k3z3.pdf][Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism]]. ([[https://arxiv.org/abs/2412.11256][arxiv]])\\
+  /Pre-print/, with [[https://www.math.uga.edu/directory/people/valery-alexeev][Valery Alexeev]], [[https://sites.google.com/view/changho-han/][Changho Han]].
+- [[file:papers/highergenusribbons.pdf][Syzygies of canonical ribbons on higher genus curves]]. ([[https://arxiv.org/abs/2412.05500][arxiv]])\\
+  /Pre-print/, with [[https://sites.google.com/view/mukherjeejayan][Jayan Mukherjee]].
+- [[file:papers/3veroneseP2.pdf][Counting 3-uple Veronese surfaces]]. ([[https://arxiv.org/abs/2411.14232][arxiv]])\\
+  /Pre-print/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
+- [[file:papers/gl2orbits.pdf][Equivariant classes of orbits in GL(2)-representations]]. ([[https://arxiv.org/abs/2405.09849][arxiv]], [[https://github.com/deopurkar/equivariant-classes-of-gl2-orbits/][repository]])\\
   /Pre-print/.
-- Orbits of linear series on the projective line. ([[file:papers/erc.pdf][pdf]], [[https://arxiv.org/abs/2211.16603][arxiv]], [[https://doi.org/10.1093/imrn/rnae169][journal]])\\
+- [[file:papers/erc.pdf][Orbits of linear series on the projective line]]. ([[https://arxiv.org/abs/2211.16603][arxiv]], [[https://doi.org/10.1093/imrn/rnae169][journal]])\\
   /International Mathematics Research Notices/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
-- Spherical objects and stability conditions on CY2 quiver categories. ([[https://arxiv.org/abs/2108.09155][arxiv]])\\
+- [[file:papers/countingcubics.pdf][A universal formula for counting cubic surfaces]]. ([[https://arxiv.org/abs/2109.12672][arxiv]])\\
+  /Algebraic Geometry (to appear)/, with [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]].
+- [[file:papers/2cy-algorithm.pdf][Spherical objects and stability conditions on 2-Calabi--Yau quiver categories]]. ([[https://arxiv.org/abs/2108.09155][arxiv]], [[https://link.springer.com/article/10.1007/s00209-022-03172-8][journal]])\\
   /Mathematische Zeitschrift/, with [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]].
-- Vector bundles and finite covers. ([[file:papers/ebundle.pdf][pdf]], [[https://arxiv.org/abs/1608.01711/][arXiv]])\\
-  /Forum of Mathematics, Sigma/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].\\
-  Talks: Adelaide ([[file:talks/AustMS2018.pdf][slides]]), Jeju Island ([[file:talks/Jeju2016.pdf][notes]]).
-- A universal formula for counting cubic surfaces. ([[https://arxiv.org/abs/2109.12672][arxiv]])\\
-  /Pre-print/, with [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]].\\
-  Talk: Cambridge ([[file:talks/Harvard2022.pdf][notes]]).
-- Stable log surfaces, admissible covers, and canonical curves of genus 4. ([[file:papers/TrigonalKSBA.pdf][pdf]], [[https://arxiv.org/abs/1807.08413/][arxiv]])\\
-  /Transactions of the Americal Mathematical Society/, with Changho Han.\\
-  Talk: Sydney ([[file:talks/K3Sydney2019.pdf][notes]]).
-- A Thurston compactification of the space of stability conditions. ([[https://arxiv.org/abs/2011.07908][arxiv]])\\
-  /Pre-print/, with [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]].\\
-  Talks: Bonn ([[file:talks/Bonn2021.pdf][slides]]), Mumbai ([[file:talks/tifr2021.pdf][slides]]), Amidale ([[file:talks/AustMS2020.pdf][slides]]), Sydney ([[file:talks/StabSydney2019.pdf][notes]]).
-- Ramification divisors of general projections. ([[file:papers/PR.pdf][pdf]], [[http://arxiv.org/abs/1901.01513/][arxiv]])\\
-  /Documenta Mathematica/, with [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]].\\
-  Talks: Mexico ([[file:talks/PR2020-Oaxaca.pdf][slides]]), San Diego ([[file:talks/PR2020-UCSD.pdf][slides]]).
+- [[file:papers/ebundle.pdf][Vector bundles and finite covers]]. ([[https://arxiv.org/abs/1608.01711/][arXiv]], [[https://www.cambridge.org/core/services/aop-cambridge-core/content/view/21EB07C62F7A142F5CC39EF3950C2231/S2050509422000196a.pdf/vector_bundles_and_finite_covers.pdf][journal]])\\
+  /Forum of Mathematics, Sigma/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
+- [[file:papers/TrigonalKSBA.pdf][Stable log surfaces, admissible covers, and canonical curves of genus 4]]. ([[https://arxiv.org/abs/1807.08413/][arxiv]], [[https://www.ams.org/journals/tran/2021-374-01/S0002-9947-2020-08225-7/?active=current][journal]])\\
+  /Transactions of the Americal Mathematical Society/, with [[https://sites.google.com/view/changho-han/][Changho Han]].
+- [[file:papers/a2-compactification.pdf][A Thurston compactification of the space of stability conditions]]. ([[https://arxiv.org/abs/2011.07908][arxiv]])\\
+  /Pre-print/, with [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]].
+- [[file:papers/PR.pdf][Ramification divisors of general projections]]. ([[http://arxiv.org/abs/1901.01513/][arxiv]], [[https://ems.press/journals/dm/articles/8965720][journal]])\\
+  /Documenta Mathematica/, with [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]].
 - Anticanonical tropical cubic del Pezzos contain exactly 27 lines. ([[https://arxiv.org/abs/1906.08196][arxiv]])\\
   /Pre-print/, with [[https://people.math.osu.edu/cueto.5/][María Angélica Cueto]].
-- Covers of stacky curves and limits of plane quintics. ([[file:papers/StackyAdmissibleCovers.pdf][pdf]], [[http://arxiv.org/abs/1507.03252/][arxiv]])\\
-  /Transactions of the Americal Mathematical Society/.\\
-  Talks: Boston ([[file:talks/AGNUBS2015.pdf][notes]]), Salt Lake City ([[file:talks/quintics_poster.pdf][poster]]).
-- Syzygy divisors on Hurwitz spaces. ([[file:papers/HigherMaroni.pdf][pdf]], [[https://arxiv.org/abs/1805.00648][arxiv]])\\
+- [[file:papers/StackyAdmissibleCovers.pdf][Covers of stacky curves and limits of plane quintics]]. ([[http://arxiv.org/abs/1507.03252/][arxiv]], [[https://www.ams.org/journals/tran/2019-371-01/S0002-9947-2018-07301-9/home.html][journal]])\\
+  /Transactions of the Americal Mathematical Society/.
+- [[file:papers/HigherMaroni.pdf][Syzygy divisors on Hurwitz spaces]]. ([[https://arxiv.org/abs/1805.00648][arxiv]], [[https://www.ams.org/books/conm/703/14139][journal]])\\
   /Contemporary Mathematics/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
-- The canonical syzygy conjecture for ribbons. ([[file:papers/RibbonGreen.pdf][pdf]], [[http://arxiv.org/abs/1510.07755/][arxiv]])\\
-  /Mathematische Zeitschrift/.\\
-  Talk: Melbourne ([[file:talks/Monash2018.pdf][notes]]).
-- Toward GIT stability of syzygies of canonical curves. ([[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://www.algebraicgeometry.nl/2016-1/2016-1-001.pdf][journal]])\\
-  /Algebraic Geometry/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]].\\
-  Talks: Daejeon ([[file:talks/SIAM2015.pdf][slides]]), Pohang ([[file:talks/syz2013.pdf][notes]]).
-- The Picard rank conjecture for the Hurwitz spaces of degree up to five. ([[file:papers/PicH345.pdf][pdf]], [[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://msp.org/ant/2015/9-2/p05.xhtml][journal]])\\
+- [[file:papers/RibbonGreen.pdf][The canonical syzygy conjecture for ribbons]]. ([[http://arxiv.org/abs/1510.07755/][arxiv]])\\
+  /Mathematische Zeitschrift/.
+- [[file:papers/gitsyzygy.pdf][Toward GIT stability of syzygies of canonical curves]]. ([[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://www.algebraicgeometry.nl/2016-1/2016-1-001.pdf][journal]])\\
+  /Algebraic Geometry/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]].
+- [[file:papers/PicH345.pdf][The Picard rank conjecture for the Hurwitz spaces of degree up to five]]. ([[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://msp.org/ant/2015/9-2/p05.xhtml][journal]])\\
   /Algebra & Number Theory/, with [[https://www2.bc.edu/anand-p-patel/][Anand Patel]].
-- Groebner techniques for ribbons. ([[file:papers/groebner.pdf][pdf]], [[https://sites.google.com/site/albjmath/archives/vol-8/2014-6][journal]])\\
+- [[file:papers/groebner.pdf][Groebner techniques for ribbons]]. ([[https://sites.google.com/site/albjmath/archives/vol-8/2014-6][journal]])\\
   /Albanian Journal of Mathematics/, with [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]].
-- Compactifications of Hurwitz spaces. ([[file:papers/CompHurwitz.pdf][pdf]], [[http://arxiv.org/abs/1206.4535/][arxiv]], [[http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract][journal]])\\
-  /International Mathematics Research Notices/.\\
-  Talks: Palo Alto ([[file:talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg2013.pdf][notes]]).
-- Class of the Hodge eigenbundle using orbifold Riemann-Roch. ([[file:papers/CyclicAppendix.pdf][pdf]])\\
+- [[file:papers/CompHurwitz.pdf][Compactifications of Hurwitz spaces]]. ([[http://arxiv.org/abs/1206.4535/][arxiv]], [[http://imrn.oxfordjournals.org/content/early/2013/04/08/imrn.rnt060.abstract][journal]])\\
+  /International Mathematics Research Notices/.
+- [[file:papers/CyclicAppendix.pdf][Class of the Hodge eigenbundle using orbifold Riemann-Roch]].\\
   /Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]]/.
-- Sharp slope bounds for sweeping families of trigonal curves. ([[file:papers/TrigonalSlopes.pdf][pdf]], [[http://arxiv.org/abs/1211.2827/][arxiv]], [[http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/][journal]])\\
-  /Mathematical Research Letters/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].\\
-  Talk: Boston ([[file:talks/slopes_poster.pdf][poster]]).
-- Modular compactifications of the space of marked trigonal curves. ([[file:papers/MarkedTrigonal.pdf][pdf]], [[http://arxiv.org/abs/1206.4503/][arxiv]])\\
-  /Advances in Mathematics/.\\
-  Talk: Cambridge ([[file:talks/trig_poster.pdf][poster]]).
-- Alternate compactifications of Hurwitz spaces. ([[file:papers/thesis.pdf][pdf]])\\
-  /Thesis, Harvard, 2012/.\\
-  Talks: Palo Alto ([[file:talks/Hdg2013.pdf][notes]]), Cambridge ([[file:talks/Hdg2013.pdf][notes]]).
+- [[file:papers/TrigonalSlopes.pdf][Sharp slope bounds for sweeping families of trigonal curves]]. ([[http://arxiv.org/abs/1211.2827/][arxiv]], [[http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/][journal]])\\
+  /Mathematical Research Letters/, with [[https://sites.google.com/view/anand-patel][Anand Patel]].
+- [[file:papers/MarkedTrigonal.pdf][Modular compactifications of the space of marked trigonal curves]]. ([[http://arxiv.org/abs/1206.4503/][arxiv]], [[https://www.sciencedirect.com/science/article/pii/S0001870813002776][journal]])\\
+  /Advances in Mathematics/.
+- [[file:papers/thesis.pdf][Alternate compactifications of Hurwitz spaces]].\\
+  /Thesis, Harvard, 2012/.
 :end:
 
 * Teaching
 :PROPERTIES:
 :html_headline_class: collapsible
 :END:
-Notes and other materials from some of my courses:
 #+begin_src emacs-lisp :exports results :results value raw drawer
-  (defun pretty-print ()
-      (let ((title (org-entry-get nil "ITEM"))
-            (place (org-entry-get nil "institute"))
-            (year (org-entry-get nil "year")))
-        (format "- %s, %s, %s."
-                title
-                place
-                year)))
-  (string-join (org-map-entries 'pretty-print "+hl" '("#teaching.org")) "\n")
+  (defun gather ()
+    (list 'title (org-entry-get nil "ITEM")
+  	'institute (org-entry-get nil "institute")
+  	'link (org-entry-get nil "link")
+  	'year (org-entry-get nil "year")))
+
+  (defun collate (collated remaining)
+    (if (not remaining) 
+        collated
+      (let* ((title (plist-get (car remaining) 'title))
+  	   (courses (or (assoc title collated)
+  			(let ((new (cons title nil)))
+  			  (push new collated)
+  			  new))))
+        (setcdr courses
+  	      (cons (car remaining) (cdr courses)))
+        (collate collated (cdr remaining)))))
+
+  (string-join 
+   (mapcar (lambda (course)
+  	   (format "- [[%s][%s]] (%s)"
+  		   (plist-get (car (last (cdr course))) 'link)
+  		   (car course)
+  		   (string-join 
+  		    (mapcar (lambda (year)
+  			      (and (plist-get year 'link)
+  				   (format "[[%s][%s]]" (plist-get year 'link) (plist-get year 'year))))
+  			    (reverse (cdr course)))
+  		    ", ")))
+  	 (reverse (collate nil
+  			   (seq-remove  (lambda (course)
+  					  (not (plist-get course 'link)))
+  					(org-map-entries 'gather nil '("#teaching.org"))))))
+   "\n")
 #+end_src
 #+RESULTS:
 :results:
-- [[file:teaching/ag2021/][Algebraic Geometry (Algebra 3)]], 2021
-- [[file:teaching/schemes/][Foundations of Algebraic Geometry (Schemes)]], 2020
-- [[file:teaching/ag/][Algebraic Geometry (Algebra 3)]], 2019
-- [[file:teaching/8320][Algebraic curves]], 2017
-- [[file:teaching/moduli/][Moduli of curves]], 2014
+- [[file:teaching/2024_games_graphs_and_machines/][Games, graphs, and machines]] ([[file:teaching/2024_games_graphs_and_machines/][2024]])
+- [[file:teaching/2024_differential_forms_in_algebraic_topology/][Differential forms in algebraic topology]] ([[file:teaching/2024_differential_forms_in_algebraic_topology/][2024]])
+- [[file:teaching/2024_algebra2/][Fields and Galois theory (Algebra 2)]] ([[file:teaching/2024_algebra2/][2024]], [[file:teaching/2023_algebra2/][2023]], [[file:teaching/2014_algebra2/][2014]])
+- [[file:teaching/2022_algebra1/][Groups and rings (Algebra 1)]] ([[file:teaching/2022_algebra1/][2022]], [[file:teaching/2013_algebra1/][2013]])
+- [[file:teaching/2022_mathematical_writing/][Mathematical writing]] ([[file:teaching/2022_mathematical_writing/][2022]])
+- [[file:teaching/2021_algebraic_geometry/][Algebraic Geometry (Algebra 3)]] ([[file:teaching/2021_algebraic_geometry/][2021]], [[file:teaching/2019_algebraic_geometry/][2019]])
+- [[file:teaching/2020_schemes/][Foundations of Algebraic Geometry: Schemes]] ([[file:teaching/2020_schemes/][2020]])
+- [[file:teaching/2018_algebraic_curves/][Algebraic curves]] ([[file:teaching/2018_algebraic_curves/][2018]], [[file:teaching/2017_algebraic_curves/][2017]])
+- [[file:teaching/2016_analysis_and_optimization/][Analysis and optimization]] ([[file:teaching/2016_analysis_and_optimization/][2016]])
+- [[file:teaching/2015_young_tableaux/][Young tableaux in algebra and geometry]] ([[file:teaching/2015_young_tableaux/][2015]])
+- [[file:teaching/2015_calculus1/][Calculus]] ([[file:teaching/2015_calculus1/][2015]], [[file:teaching/2014_calculus1/][2014]], [[file:teaching/2013_calculus3/][2013]])
+- [[file:teaching/2014_moduli_of_curves/][Moduli of curves]] ([[file:teaching/2014_moduli_of_curves/][2014]])
 :end:
 
 * Talks
@@ -198,7 +223,7 @@ Notes or slides for many of my talks are linked in the section on [[*Papers/pre-
 Here are some additional talks:
 #+begin_src emacs-lisp :exports results :results value raw drawer
   (string-join 
-   (remove 'nil 
+   (remove nil 
            (org-map-entries
             (lambda ()
               (let ((ref (org-entry-get nil "ref"))
