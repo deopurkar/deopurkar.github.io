@@ -1,165 +1,202 @@
-* [[https://github.com/deopurkar/ggm2024][Games, graphs, and machines]] :hl:
+* Fields and Galois theory (Algebra 2)
+:PROPERTIES:
+:institute: Australian National University
+:year:     2025
+:END:
+
+* Games, graphs, and machines :hl:
 :PROPERTIES:
 :institute: Australian National University
 :year:     2024
+:link: file:teaching/2024_games_graphs_and_machines/
 :END:
 
-* Reading course on /Differential forms in algebraic topology/ by R. Bott and L. Tu
+* Differential forms in algebraic topology 
 :PROPERTIES:
 :institute: Australian National University
 :year:     2024
+:comment: Reading course based on R. Bott and L. Tu's book
+:link: file:teaching/2024_differential_forms_in_algebraic_topology/
 :END:
 
-* Algebra 2 (Fields and Galois theory)
+* Fields and Galois theory (Algebra 2)
 :properties:
 :institute: Australian National University
 :year:     2024
+:link: file:teaching/2024_algebra2/
 :end:
 
-* Algebra 2 (Fields and Galois theory)
+* Fields and Galois theory (Algebra 2)
 :properties:
 :institute: Australian National University
 :year:     2023
+:link: file:teaching/2023_algebra2/
 :end:
 
-* [[file:teaching/2022algebra1/][Algebra 1 (Groups and rings)]]                                                             
+* Groups and rings (Algebra 1)                                                             
 :properties:
 :institute: Australian National University
 :year:     2022
-:link: [[file:teaching/2022algebra1/]]
+:ID:       758f10f4-87b2-4f06-bf29-4ff996b8ad98
+:link: file:teaching/2022_algebra1/
 :end:
 
-* [[file:teaching/2022langmath/][The language of mathematics]]                                            :hl:
+* Mathematical writing                                            :hl:
 :properties:
 :institute: Australian National University
 :year:     2022
-:link: [[file:teaching/2022langmath/]]
+:link: file:teaching/2022_mathematical_writing/
 :end:
 
-* [[file:teaching/ag2021/][Algebraic Geometry (Algebra 3)]]                                         :hl:
+* Algebraic Geometry (Algebra 3)                                         :hl:
 :properties:
 :institute: Australian National University
 :year:     2021
-:link:     [[file:teaching/ag2021/]]
+:link: file:teaching/2021_algebraic_geometry/
 :end:
-* [[file:teaching/schemes/][Foundations of Algebraic Geometry (Schemes)]]                            :hl:
+
+* Foundations of Algebraic Geometry: Schemes                             :hl:
 :properties:
 :institute: Australian National University
 :year:     2020
-:link:     [[file:teaching/schemes/]]
+:link: file:teaching/2020_schemes/
 :end:
-* [[file:teaching/ag/][Algebraic Geometry (Algebra 3)]]                                         :hl:
+
+* Algebraic Geometry (Algebra 3)                                         :hl:
 :properties:
 :institute: Australian National University
 :year:     2019
-:link:     [[file:teaching/ag/]]
+:link: file:teaching/2019_algebraic_geometry/
 :end:
-*  Reading course on /Elliptic curves and modular forms/ by Neil Koblitz
+
+* Elliptic curves and modular forms
 :properties:
 :institute: Australian National University
 :year:     2018
+:comment: Reading course based on N. Koblitz's book
 :end:
-*  Special topics course on Computational Polynomial Algebra (with Markus Hegland)
+
+* Computational Polynomial Algebra
 :properties:
 :institute: Australian National University
 :year:     2018
+:comment: with Markus Hegland
 :end:
-* [[file:teaching/3349][Reading course on /Algebaric curves and Riemann surfaces/ by Rick Miranda]] 
+
+* Algebraic curves 
 :properties:
 :institute: Australian National University
 :year:     2018
-:link:     [[file:teaching/3349/]]
+:comment: Reading course based on R. Miranda's book
+:link: file:teaching/2018_algebraic_curves/
 :end:
-*  Precalculus
+
+* Precalculus
 :properties:
 :institute: University of Georgia
 :year:     2017
 :end:
-* [[file:teaching/8320][Algebraic curves]]                                                       :hl:
+
+* Algebraic curves                                                       :hl:
 :properties:
 :institute: University of Georgia
 :year:     2017
-:link:     [[file:teaching/8320/]]
+:link: file:teaching/2017_algebraic_curves/
 :end:
-*  Calculus 2
+
+* Calculus 2
 :properties:
 :institute: University of Georgia
 :year:     2017
 :end:
-*  Calculus 1
+
+* Calculus 1
 :properties:
 :institute: University of Georgia
 :year:     2016
 :end:
-* [[file:teaching/ao/][Analysis and optimization]]                       
+
+* Analysis and optimization                       
 :properties:
 :institute: Columbia University
 :year:     2016
-:link:     [[file:teaching/ao/]]
+:link:     file:teaching/ao/
 :end:
-* [[file:teaching/seminar15/][Young tableaux in algebra and geometry]]          
+
+* Young tableaux in algebra and geometry          
 :properties:
 :institute: Columbia University
 :year:     2015
-:link:     [[file:teaching/seminar15/]]
+:link: file:teaching/seminar15/
 :end:
-* [[file:teaching/calc1/][Calculus]]                                                               
+
+* Calculus                                                               
 :properties:
 :institute: Columbia University
 :year:     2015
-:link:     [[file:teaching/calc1/]]
+:link: file:teaching/calc1/
 :end:
-* [[file:teaching/moduli/][Moduli of curves]]                                                       :hl:
+
+* Moduli of curves                                                       :hl:
 :properties:
 :institute: Columbia University
 :year:     2014
-:link:     [[file:teaching/moduli/]]
+:link: file:teaching/moduli/
 :end:
-* [[file:teaching/calc1sp14/][Calculus]]
+
+* Calculus
 :properties:
 :institute: Columbia University
-:link:     [[file:teaching/calc1sp14/]]
 :year:     2014
+:link: file:teaching/calc1sp14/
 :end:
-* [[file:teaching/algebra2/][Modern algebra 2]]                                                       
+
+* Fields and Galois theory (Algebra 2)
 :properties:
 :institute: Columbia University
-:link:     [[file:teaching/algebra2/]]
 :year:     2014
+:link: file:teaching/algebra2/
 :end:
-* [[file:teaching/algebra1/][Modern algebra 1]]                                                       
+
+* Groups and rings (Algebra 1)                                   
 :properties:
 :institute: Columbia University
-:link:     [[file:teaching/algebra1/]]
 :year:     2013
+:link: file:teaching/algebra1/
 :end:
-* [[file:teaching/calc3sp13/][Calculus]]
+
+* Calculus
 :properties:
 :institute: Columbia University
-:link:     [[file:teaching/calc3sp13/]]
 :year:     2013
+:link: file:teaching/calc3sp13/
 :end:
-*  Calculus 2
+
+* Calculus 2
 :properties:
 :institute: Columbia University
 :year:     2012
 :end:
-*  Linear algebra
+
+* Linear algebra
 :properties:
 :institute: Harvard University
 :year:     2012
 :end:
-*  Algebraic curves (teaching assistant)
+
+* Algebraic curves (teaching assistant)
 :properties:
 :institute: Harvard University
 :year:     2011
 :end:
-*  Calculus 2
+
+* Calculus 2
 :properties:
 :institute: Harvard University
 :year:     2010
 :end:
-*  Calculus 1
+
+* Calculus 1
 :properties:
 :institute: Harvard University
 :year:     2009
