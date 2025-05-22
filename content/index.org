@@ -189,7 +189,8 @@ I study the interplay between systems of algebraic equations and the geometric s
 
   (string-join 
    (mapcar (lambda (course)
-  	   (format "- %s (%s)"
+  	   (format "- [[%s][%s]] (%s)"
+  		   (plist-get (car (last (cdr course))) 'link)
   		   (car course)
   		   (string-join 
   		    (mapcar (lambda (year)
@@ -205,18 +206,18 @@ I study the interplay between systems of algebraic equations and the geometric s
 #+end_src
 #+RESULTS:
 :results:
-- Games, graphs, and machines ([[file:teaching/2024_games_graphs_and_machines/][2024]])
-- Differential forms in algebraic topology ([[file:teaching/2024_differential_forms_in_algebraic_topology/][2024]])
-- Fields and Galois theory (Algebra 2) ([[file:teaching/2024_algebra2/][2024]], [[file:teaching/2023_algebra2/][2023]], [[file:teaching/algebra2/][2014]])
-- Groups and rings (Algebra 1) ([[file:teaching/2022_algebra1/][2022]], [[file:teaching/algebra1/][2013]])
-- Mathematical writing ([[file:teaching/2022_mathematical_writing/][2022]])
-- Algebraic Geometry (Algebra 3) ([[file:teaching/2021_algebraic_geometry/][2021]], [[file:teaching/2019_algebraic_geometry/][2019]])
-- Foundations of Algebraic Geometry: Schemes ([[file:teaching/2020_schemes/][2020]])
-- Algebraic curves ([[file:teaching/2018_algebraic_curves/][2018]], [[file:teaching/2017_algebraic_curves/][2017]])
-- Analysis and optimization ([[file:teaching/ao/][2016]])
-- Young tableaux in algebra and geometry ([[file:teaching/seminar15/][2015]])
-- Calculus ([[file:teaching/calc1/][2015]], [[file:teaching/calc1sp14/][2014]], [[file:teaching/calc3sp13/][2013]])
-- Moduli of curves ([[file:teaching/moduli/][2014]])
+- [[file:teaching/2024_games_graphs_and_machines/][Games, graphs, and machines]] ([[file:teaching/2024_games_graphs_and_machines/][2024]])
+- [[file:teaching/2024_differential_forms_in_algebraic_topology/][Differential forms in algebraic topology]] ([[file:teaching/2024_differential_forms_in_algebraic_topology/][2024]])
+- [[file:teaching/2024_algebra2/][Fields and Galois theory (Algebra 2)]] ([[file:teaching/2024_algebra2/][2024]], [[file:teaching/2023_algebra2/][2023]], [[file:teaching/algebra2/][2014]])
+- [[file:teaching/2022_algebra1/][Groups and rings (Algebra 1)]] ([[file:teaching/2022_algebra1/][2022]], [[file:teaching/algebra1/][2013]])
+- [[file:teaching/2022_mathematical_writing/][Mathematical writing]] ([[file:teaching/2022_mathematical_writing/][2022]])
+- [[file:teaching/2021_algebraic_geometry/][Algebraic Geometry (Algebra 3)]] ([[file:teaching/2021_algebraic_geometry/][2021]], [[file:teaching/2019_algebraic_geometry/][2019]])
+- [[file:teaching/2020_schemes/][Foundations of Algebraic Geometry: Schemes]] ([[file:teaching/2020_schemes/][2020]])
+- [[file:teaching/2018_algebraic_curves/][Algebraic curves]] ([[file:teaching/2018_algebraic_curves/][2018]], [[file:teaching/2017_algebraic_curves/][2017]])
+- [[file:teaching/ao/][Analysis and optimization]] ([[file:teaching/ao/][2016]])
+- [[file:teaching/seminar15/][Young tableaux in algebra and geometry]] ([[file:teaching/seminar15/][2015]])
+- [[file:teaching/calc1/][Calculus]] ([[file:teaching/calc1/][2015]], [[file:teaching/calc1sp14/][2014]], [[file:teaching/calc3sp13/][2013]])
+- [[file:teaching/moduli/][Moduli of curves]] ([[file:teaching/moduli/][2014]])
 :end:
 
 * Talks
