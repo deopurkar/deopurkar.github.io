@@ -8,7 +8,7 @@
 :PROPERTIES:
 :institute: Australian National University
 :year:     2024
-:link: file:teaching/2024_games_graphs_and_machines/
+:url: file:teaching/2024_games_graphs_and_machines/
 :END:
 
 * Differential forms in algebraic topology 
@@ -16,21 +16,21 @@
 :institute: Australian National University
 :year:     2024
 :comment: Reading course based on R. Bott and L. Tu's book
-:link: file:teaching/2024_differential_forms_in_algebraic_topology/
+:url: file:teaching/2024_differential_forms_in_algebraic_topology/
 :END:
 
 * Fields and Galois theory (Algebra 2)
 :properties:
 :institute: Australian National University
 :year:     2024
-:link: file:teaching/2024_algebra2/
+:url: file:teaching/2024_algebra2/
 :end:
 
 * Fields and Galois theory (Algebra 2)
 :properties:
 :institute: Australian National University
 :year:     2023
-:link: file:teaching/2023_algebra2/
+:url: file:teaching/2023_algebra2/
 :end:
 
 * Groups and rings (Algebra 1)                                                             
@@ -38,35 +38,35 @@
 :institute: Australian National University
 :year:     2022
 :ID:       758f10f4-87b2-4f06-bf29-4ff996b8ad98
-:link: file:teaching/2022_algebra1/
+:url: file:teaching/2022_algebra1/
 :end:
 
 * Mathematical writing                                            
 :properties:
 :institute: Australian National University
 :year:     2022
-:link: file:teaching/2022_mathematical_writing/
+:url: file:teaching/2022_mathematical_writing/
 :end:
 
 * Algebraic Geometry (Algebra 3)                                         
 :properties:
 :institute: Australian National University
 :year:     2021
-:link: file:teaching/2021_algebraic_geometry/
+:url: file:teaching/2021_algebraic_geometry/
 :end:
 
 * Foundations of Algebraic Geometry: Schemes                             
 :properties:
 :institute: Australian National University
 :year:     2020
-:link: file:teaching/2020_schemes/
+:url: file:teaching/2020_schemes/
 :end:
 
 * Algebraic Geometry (Algebra 3)                                         
 :properties:
 :institute: Australian National University
 :year:     2019
-:link: file:teaching/2019_algebraic_geometry/
+:url: file:teaching/2019_algebraic_geometry/
 :end:
 
 * Elliptic curves and modular forms
@@ -88,7 +88,7 @@
 :institute: Australian National University
 :year:     2018
 :comment: Reading course based on R. Miranda's book
-:link: file:teaching/2018_algebraic_curves/
+:url: file:teaching/2018_algebraic_curves/
 :end:
 
 * Precalculus
@@ -101,7 +101,7 @@
 :properties:
 :institute: University of Georgia
 :year:     2017
-:link: file:teaching/2017_algebraic_curves/
+:url: file:teaching/2017_algebraic_curves/
 :end:
 
 * Calculus
@@ -120,56 +120,56 @@
 :properties:
 :institute: Columbia University
 :year:     2016
-:link:     file:teaching/2016_analysis_and_optimization/
+:url:     file:teaching/2016_analysis_and_optimization/
 :end:
 
 * Young tableaux in algebra and geometry          
 :properties:
 :institute: Columbia University
 :year:     2015
-:link: file:teaching/2015_young_tableaux/
+:url: file:teaching/2015_young_tableaux/
 :end:
 
 * Calculus                                                               
 :properties:
 :institute: Columbia University
 :year:     2015
-:link: file:teaching/2015_calculus1/
+:url: file:teaching/2015_calculus1/
 :end:
 
 * Moduli of curves                                                       
 :properties:
 :institute: Columbia University
 :year:     2014
-:link: file:teaching/2014_moduli_of_curves/
+:url: file:teaching/2014_moduli_of_curves/
 :end:
 
 * Calculus
 :properties:
 :institute: Columbia University
 :year:     2014
-:link: file:teaching/2014_calculus1/
+:url: file:teaching/2014_calculus1/
 :end:
 
 * Fields and Galois theory (Algebra 2)
 :properties:
 :institute: Columbia University
 :year:     2014
-:link: file:teaching/2014_algebra2/
+:url: file:teaching/2014_algebra2/
 :end:
 
 * Groups and rings (Algebra 1)                                   
 :properties:
 :institute: Columbia University
 :year:     2013
-:link: file:teaching/2013_algebra1/
+:url: file:teaching/2013_algebra1/
 :end:
 
 * Calculus
 :properties:
 :institute: Columbia University
 :year:     2013
-:link: file:teaching/2013_calculus3/
+:url: file:teaching/2013_calculus3/
 :end:
 
 * Calculus 
