@@ -3,6 +3,7 @@
 #+OPTIONS: tex:t ':t -:t
 #+TITLE: Advanced topics in algebra: Algebraic geometry
 #+AUTHOR: Anand Deopurkar
+#+DESCRIPTION: Course in algebraic geometry by Anand Deopurkar
 #+export_file_name: ~/website/content/teaching/ag2021/index.org
 #+setupfile: setup.org
 #+filetags: :teaching:ag:

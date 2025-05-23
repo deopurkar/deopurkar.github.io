@@ -2,6 +2,7 @@
 #+options: toc:nil ':t tags:nil broken-links:nil prop:nil
 #+title: 2023 Algebra 2
 #+author: Anand Deopurkar
+#+DESCRIPTION: Course in fields and Galois theory by Anand Deopurkar
 * Course contacts
 :PROPERTIES:
 :html_headline_class: collapsed
