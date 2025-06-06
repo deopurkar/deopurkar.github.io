@@ -1,3 +1,10 @@
+* The arithmetic and geometry of branched coverings: theorems of Belyi and Darmon--Granville :expository:
+:PROPERTIES:
+:journal: pre-print
+:year:     2025
+:url: file:papers/arithmetic_covers.pdf
+:END:
+
 * The Thurston compactification of the stability manifold of a generic analytic K3 surface :pp:
 :PROPERTIES:
 :journal:  Pre-print
