@@ -31,7 +31,7 @@ Canberra, Australia
 
 ~anand.deopurkar~ at ~anu~ dot ~edu~ dot ~au~ ([[file:ananddeopurkar-pgp.asc][pgp]])\\
 4.56 [[http://www.anu.edu.au/maps#show=102872][Hanna Neumann Building]]\\
-+61 2 6125 4628   
++61 2 6125 8398   
 
 CV: [[file:cv.html][html]] [[file:cv.pdf][pdf]]
 
@@ -167,6 +167,24 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
   Talks: [[file:talks/Hdg2013.pdf][Palo Alto]], [[file:talks/Hdg2013.pdf][Cambridge]].
 :end:
 
+* Expository 
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
+#+begin_src emacs-lisp :exports results :results value raw drawer
+  (string-join (org-map-entries 'pretty-print "+expository" '("#papers.org")) "\n")
+#+end_src
+
+#+RESULTS:
+:results:
+- [[file:papers/arithmetic_covers.pdf][The arithmetic and geometry of branched coverings: theorems of Belyi and Darmon--Granville]].\\
+  /Pre-print/ (expository).
+- [[file:papers/anandrd_minor_thesis.pdf][An introduction to intersection homology]].\\
+  /Minor thesis, Harvard, 2010/ (expository).
+- [[file:papers/anandrd_ug_thesis.pdf][Normalization of algebraic varieties]].\\
+  /MIT Undergruate Journal of Mathematics/ (expository).
+:end:
+
 * Teaching
 :PROPERTIES:
 :html_headline_class: collapsible
@@ -235,17 +253,18 @@ Here are some additional talks:
            (org-map-entries
             (lambda ()
               (let ((ref (org-entry-get nil "ref"))
-                    (link (org-entry-get nil "link"))
+                    (url (org-entry-get nil "url"))
                     (year (org-entry-get nil "year")))
                 (if (and (not ref)
-                         link)
+                         url)
                     (let ((title (org-entry-get nil "ITEM"))
                           (meet (org-entry-get nil "meet"))
                           (institute (org-entry-get nil "institute"))
                           (place (org-entry-get nil "place"))
                           (comment (org-entry-get nil "comment")))
-                      (format "- %s%s. \\\\\n  %s."
-                              title
+                      (format "- [[%s][%s]]%s. \\\\\n  %s."
+  			    url
+  			    title
                               (if comment
                                   (format " (%s)" comment)
                                 "")
@@ -256,23 +275,23 @@ Here are some additional talks:
 #+end_src
 #+RESULTS:
 :results:
-- The geometry and combinatorics of Harder--Narasimhan filtrations. ([[file:talks/ICERM2022.pdf][slides]]) \\
+- [[file:talks/ICERM2022.pdf][The geometry and combinatorics of Harder--Narasimhan filtrations]]. \\
   Braids in representation theory and algebraic combinatorics, Institute for Computational and Experimental Research in Mathematics, Providence, Rhode Island.
-- The geometry of Fermat-like equations (expository). ([[file:talks/Fermat2022.pdf][notes]]) \\
+- [[file:talks/Fermat2022.pdf][The geometry of Fermat-like equations]] (expository). \\
   Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana, Pune, India.
-- Algebraic curves and Belyi's theorem (expository). ([[file:talks/Belyi2021.pdf][notes]]) \\
+- [[file:talks/Belyi2021.pdf][Algebraic curves and Belyi's theorem]] (expository). \\
   Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana, Pune, India.
-- Error correcting codes (expository). ([[file:talks/ecc2021/ecc.html][slides]]) \\
+- [[file:talks/ecc2021/ecc.html][Error correcting codes]] (expository). \\
   ANU Mathematics Extension Program, Canberra, Australia.
-- The work of Claire Voisin (expository). ([[file:talks/WIM2019.pdf][slides]]) \\
+- [[file:talks/WIM2019.pdf][The work of Claire Voisin]] (expository). \\
   Women in mathematics day, Australian National University, Canberra, Australia.
-- Geometry of Hurwitz spaces. ([[file:talks/NZ2018.pdf][notes]]) \\
+- [[file:talks/NZ2018.pdf][Geometry of Hurwitz spaces]]. \\
   Character varieties and topological quantum field theory, University of Auckland, Auckland, New Zealand.
-- The work of Caucher Birkar (expository). ([[file:talks/FMColloquium2018.pdf][notes]]) \\
+- [[file:talks/FMColloquium2018.pdf][The work of Caucher Birkar]] (expository). \\
   Colloquium, Australian National University, Canberra, Australia.
-- How to count using (co)homology (expository). ([[file:talks/tifr2018.pdf][notes]]) \\
+- [[file:talks/tifr2018.pdf][How to count using (co)homology]] (expository). \\
   Tata Institute of Fundamental Research, Mumbai, India.
-- Quadrature and algebraic geometry. ([[file:talks/MATRIX2018.pdf][slides]]) \\
+- [[file:talks/MATRIX2018.pdf][Quadrature and algebraic geometry]]. \\
   Workshop on algebraic geometry approximation, and optimization, MATRIX, Creswick, Victoria, Australia.
 :end:
 

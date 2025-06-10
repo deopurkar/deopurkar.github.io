@@ -251,7 +251,7 @@ Footer style and other miscellany.
 
 Include the colour themes previously defined.  
 #+begin_src scss
-  @include galah;
+  @include eucalyptus-warm;
 
   // Print stylesheet
   @media print {

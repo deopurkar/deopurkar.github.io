@@ -174,10 +174,12 @@
 
 #+RESULTS:
 :results:
-- 2010 :: /[[file:papers/anandrd_minor_thesis.pdf][An introduction to intersection homology]]/.\\
-          Minor thesis, Harvard, 2010 (expository).
-- 2008 :: /[[file:papers/anandrd_ug_thesis.pdf][Normalization of algebraic varieties]]/.\\
-          MIT Undergruate Journal of Mathematics (expository).
+- [[file:papers/arithmetic_covers.pdf][The arithmetic and geometry of branched coverings: theorems of Belyi and Darmon--Granville]].\\
+  /Pre-print/.
+- [[file:papers/anandrd_minor_thesis.pdf][An introduction to intersection homology]].\\
+  /Minor thesis, Harvard, 2010/.
+- [[file:papers/anandrd_ug_thesis.pdf][Normalization of algebraic varieties]].\\
+  /MIT Undergruate Journal of Mathematics/.
 :end:
 
 * Supervision

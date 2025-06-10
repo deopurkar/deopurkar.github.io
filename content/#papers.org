@@ -1,6 +1,6 @@
 * The arithmetic and geometry of branched coverings: theorems of Belyi and Darmon--Granville :expository:
 :PROPERTIES:
-:journal: pre-print
+:journal: Pre-print
 :year:     2025
 :url: file:papers/arithmetic_covers.pdf
 :END:
@@ -244,7 +244,6 @@ We construct a sequence of modular compactifications of the space of marked trig
 :properties:
 :journal:  Minor thesis, Harvard, 2010
 :year:     2010
-:comment:  expository
 :url: file:papers/anandrd_minor_thesis.pdf
 :end:
 
@@ -252,7 +251,6 @@ We construct a sequence of modular compactifications of the space of marked trig
 :properties:
 :journal:  MIT Undergruate Journal of Mathematics
 :year:     2008
-:comment:  expository
 :url: file:papers/anandrd_ug_thesis.pdf
 :end:
 

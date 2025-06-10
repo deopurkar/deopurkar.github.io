@@ -71,24 +71,28 @@
 :level:    Honours
 :institute: Mathematical Sciences Institute, Australian National University
 :end:
+
 *  Zongpu Zhang
 :properties:
 :year:     2021
 :level:    Honours
 :institute: Mathematical Sciences Institute, Australian National University
 :end:
+
 *  Ben Leedom
 :properties:
 :year:     2020
 :level:    Honours
 :institute: Mathematical Sciences Institute, Australian National University
 :end:
+
 *  Diclehan Erdal
 :properties:
 :year:     2019
 :level:    Masters
 :institute: Mathematical Sciences Institute, Australian National University
 :end:
+
 *  Adwait Sengar
 :properties:
 :year:     2019
@@ -96,18 +100,21 @@
 :with:     Uri Onn
 :institute: Mathematical Sciences Institute, Australian National University
 :end:
+
 *  Dhruva Kelkar
 :properties:
 :year:     2019
 :level:    Future Research Scholar
 :institute: Mathematical Sciences Institute, Australian National University
 :end:
+
 *  Sridhar Venkatesh
 :properties:
 :year:     2019
 :level:    Future Research Scholar
 :institute: Mathematical Sciences Institute, Australian National University
 :end:
+
 *  Sean Carroll
 :properties:
 :year:     2018
@@ -115,6 +122,7 @@
 :institute: Mathematical Sciences Institute, Australian National University
 :with:     Asilata Bapat
 :end:
+
 *  Kyle Broder
 :properties:
 :year:     2018
@@ -122,6 +130,7 @@
 :institute: Mathematical Sciences Institute, Australian National University
 :with:     Alex Isaev
 :end:
+
 *  Likun Yao
 :properties:
 :year:     2018
