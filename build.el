@@ -13,7 +13,7 @@
          :recursive t 
          :exclude "\#.*"   ;; Files beginning with \# are not processed.
          :publishing-function org-html-publish-to-html
-         :section-numbers nil
+         :section-numbers nilc
          :with-broken-links nil
          :with-toc nil
          :with-title t

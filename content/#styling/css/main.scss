@@ -77,7 +77,23 @@
 }
 
 @mixin eucalyptus-cool {
- @include theme(#f2f3f7,#c8cad9,#212227,#6a7469)
+ @include theme(#f2f3f7,#c8cad9,#212227,#6a7469);
+}
+
+@mixin winter {
+    @include theme(#fcfaf5,#758aa5,#303821,#266888);
+}
+
+@mixin spring {
+    @include theme(#fcfaf5,#a39f44,#303821,#2a7c4e);
+}
+
+@mixin summer {
+    @include theme(#fcfaf5,#e2c170,#303821,#d4490e);
+}
+
+@mixin autumn {
+    @include theme(#fcfaf5,#bc6c6f,#303821,#912326);
 }
 
 // Fonts
@@ -202,7 +218,7 @@ footer {
     display: table;
 }
 
-@include eucalyptus-warm;
+@include winter;
 
 // Print stylesheet
 @media print {
