@@ -46,6 +46,7 @@ I study the interplay between systems of algebraic equations and the geometric s
 :PROPERTIES:
 :html_headline_class: collapsible
 :ARCHIVE: past.org::datetree/
+:UNNUMBERED: t
 :END:
 If you are thinking of doing a PhD with me, please read this [[file:prospective_phd.org][page for prospective PhD students]].
 ** With [[asilata][Asilata Bapat]] and [[tony][Tony Licata]], I am studying [[wiki:Bridgeland_stability_condition][Bridgeland stability conditions]] on some triangulated categories.
@@ -58,6 +59,7 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 * Papers/pre-prints
 :PROPERTIES:
 :html_headline_class: collapsible
+:UNNUMBERED: t
 :END:
 #+begin_src emacs-lisp :exports results :results value raw drawer :lexical t
   ;; Gather back-references from talks
@@ -170,6 +172,7 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 * Expository 
 :PROPERTIES:
 :html_headline_class: collapsible
+:UNNUMBERED: t
 :END:
 #+begin_src emacs-lisp :exports results :results value raw drawer
   (string-join (org-map-entries 'pretty-print "+expository" '("#papers.org")) "\n")
@@ -188,6 +191,7 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 * Teaching
 :PROPERTIES:
 :html_headline_class: collapsible
+:UNNUMBERED: t
 :END:
 #+begin_src emacs-lisp :exports results :results value raw drawer
   (defun gather ()
@@ -244,6 +248,7 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 * Talks
 :PROPERTIES:
 :html_headline_class: collapsible
+:UNNUMBERED: t
 :END:
 Notes or slides for many of my talks are linked in the section on [[*Papers/pre-prints][papers/pre-prints]].
 Here are some additional talks:
@@ -298,6 +303,7 @@ Here are some additional talks:
 * Odds and ends
 :PROPERTIES:
 :html_headline_class: collapsible
+:UNNUMBERED: t
 :END:
 - [[file:genus7syz/][GIT for syzygies of genus 7 curves]]\\
   This is an ongoing project to determine GIT stability for syzygies of genus 7 canonical curves.

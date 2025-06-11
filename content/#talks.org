@@ -255,7 +255,7 @@
 * Apparent boundaries of projective varieties
 :properties:
 :meet:     Seminario nacional de geometria algebraica (Online joint seminar of multiple universities in Mexico)
-:place:    Mexico
+:place:    Oaxaca
 :year:     2020
 :type:     seminar
 :url:      file:talks/PR2020-Oaxaca.pdf

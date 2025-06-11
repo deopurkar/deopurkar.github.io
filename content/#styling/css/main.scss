@@ -81,19 +81,19 @@
 }
 
 @mixin winter {
-    @include theme(#fcfaf5,#758aa5,#303821,#266888);
+    @include theme(#fcfaf5,#6badb5,#303821,#6badb5);
 }
 
 @mixin spring {
-    @include theme(#fcfaf5,#a39f44,#303821,#2a7c4e);
+    @include theme(#fcfaf5,#88b56b,#303821,#88b56b);
 }
 
 @mixin summer {
-    @include theme(#fcfaf5,#e2c170,#303821,#d4490e);
+    @include theme(#fcfaf5,#986bb5,#303821,#986bb5);
 }
 
 @mixin autumn {
-    @include theme(#fcfaf5,#bc6c6f,#303821,#912326);
+    @include theme(#fcfaf5,#b5736b,#303821,#b5736b);
 }
 
 // Fonts
