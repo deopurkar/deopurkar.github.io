@@ -10,7 +10,9 @@ Thanks!  I am happy that you find my work interesting.
 
 Before you write to me, please do the following.
 
-1. Read this page and mention in your email that you have done so (important!).
+1. (Important)
+   Read this page and mention in your email that you have done so.
+   Make the subject of your email "[Prospective PhD] ...".
 
 2. Explain your background in algebraic geometry and commutative algebra.
 

@@ -235,14 +235,14 @@ We construct a sequence of modular compactifications of the space of marked trig
 
 * Alternate compactifications of Hurwitz spaces                      :thesis:
 :PROPERTIES:
-:journal:  Thesis, Harvard, 2012
+:journal:  PhD Thesis (Harvard)
 :year:     2012
 :url: file:papers/thesis.pdf
 :END:
 
 * An introduction to intersection homology                       :expository:
 :properties:
-:journal:  Minor thesis, Harvard, 2010
+:journal:  Minor thesis (Harvard)
 :year:     2010
 :url: file:papers/anandrd_minor_thesis.pdf
 :end:
