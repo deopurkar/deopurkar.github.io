@@ -587,7 +587,7 @@ After reading the introduction, the reader should not be surprised by anything t
 
 ** Body
 Use the appropriate LaTeX environments for definitions, theorems etc.  
-For example, put the theorems in \begin{theorem} ... \end{theorem} and the proofs in \begin{proof}...\end{proof}.
+For example, put the theorems in =\begin{theorem} ... \end{theorem}= and the proofs in =\begin{proof}...\end{proof}=.
 
 The body must be more than just a sequence of definitions and theorems. 
 You must provide guides to the reader, by periodically reminding them what has been done and what comes ahead.
@@ -599,12 +599,12 @@ You can do this by including sentences like:
 
 All major definitions and theorems should come with an introductory sentence.
 
-For example, before you state a theorem in \begin{theorem}...\end{theorem}, include a sentence like:
+For example, before you state a theorem in =\begin{theorem}...\end{theorem}=, include a sentence like:
 - The following is the main theorem of the paper.
 - Having established the notation, we state the main theorem.
 - The following theorem states that solutions exist and are unique.
 
-Before you give a major definition in \begin{definition}...\end{definition}, include a sentence like:
+Before you give a major definition in =\begin{definition}...\end{definition}=, include a sentence like:
 - We now give the precise definition.
 - The following is the key definition of the paper.
 
