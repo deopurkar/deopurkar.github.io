@@ -2,6 +2,7 @@
 :PROPERTIES:
 :institute: Australian National University
 :year:     2025
+:url: file:teaching/2025_algebra2/
 :END:
 
 * Games, graphs, and machines 
