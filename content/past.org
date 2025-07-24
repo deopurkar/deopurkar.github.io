@@ -1,6 +1,7 @@
 #+title: Anand Deopurkar: Archived "now" items
 #+description: Archived now items from Anand Deopurkar's webpage
-#+LINK: wiki  https://en.wikipedia.org/wiki/
+#+setupfile: #setup.org
+#+options: num:nil
 
 * 2025
 ** 2025-06 June
@@ -28,7 +29,7 @@
 :END:
 ** 2025-07 July
 *** 2025-07-25 Friday
-**** I recently finished writing down [[file:papers/CompStabGenK3.pdf][the Thurston compactification of the stability manifold of a generic K3 surface]] using our ideas.
+**** I recently finished writing down [[file:papers/CompStabGenK3.pdf][the Thurston compactification of the stability manifold of a generic K3 surface]].
 :PROPERTIES:
 :ARCHIVE_TIME: 2025-07-25 Fri 09:31
 :ARCHIVE_FILE: ~/website/content/index.org

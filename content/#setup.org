@@ -1,0 +1,16 @@
+#+HTML_HEAD_EXTRA: <script type="text/javascript" src="js/collapsibility.js"></script>
+#+LINK: wiki  https://en.wikipedia.org/wiki/
+#+LINK: asilata https://asilata.org
+#+LINK: tony https://maths-people.anu.edu.au/~licatat/Home.html
+#+LINK: jayan https://sites.google.com/view/mukherjeejayan
+#+LINK: anandpatel https://sites.google.com/view/anand-patel
+#+LINK: rachel https://sites.google.com/view/rachelnewton
+#+LINK: vaidehee https://sites.google.com/view/vaideheethatte
+#+LINK: rosa http://rosa-winter.com/
+#+LINK: changho https://sites.google.com/view/changho-han/
+#+LINK: valery https://www.math.uga.edu/directory/people/valery-alexeev
+#+LINK: hal http://webhome.auburn.edu/~hks0015/
+#+LINK: cobb https://johndcobb.github.io/
+#+LINK: sione https://profiles.auckland.ac.nz/s-mau
+#+LINK: karnataki https://adityakarnataki.github.io/
+#+LINK: timduff https://timduff35.github.io/timduff35/

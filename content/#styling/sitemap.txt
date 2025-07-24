@@ -11,6 +11,7 @@ https://ananddeopurkar.org/teaching/calc1/index.html
 https://ananddeopurkar.org/teaching/2021_algebraic_geometry/index.html
 https://ananddeopurkar.org/teaching/2021_algebraic_geometry/notes/index.html
 https://ananddeopurkar.org/teaching/2021_algebraic_geometry/notes/src/readtheorg_theme/readtheorg.html
+https://ananddeopurkar.org/teaching/2025_algebra2/index.html
 https://ananddeopurkar.org/teaching/2020_schemes/index.html
 https://ananddeopurkar.org/teaching/2024_algebra2/index.html
 https://ananddeopurkar.org/teaching/2024_algebra2/notes/README.html

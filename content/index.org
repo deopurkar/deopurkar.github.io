@@ -6,22 +6,7 @@
 #+keywords: Anand Deopurkar 
 #+author: Anand Deopurkar
 #+OPTIONS: *:t author:nil ':t  d:+results H:1
-#+HTML_HEAD_EXTRA: <script type="text/javascript" src="js/collapsibility.js"></script>
-#+LINK: wiki  https://en.wikipedia.org/wiki/
-#+LINK: asilata https://asilata.org
-#+LINK: tony https://maths-people.anu.edu.au/~licatat/Home.html
-#+LINK: jayan https://sites.google.com/view/mukherjeejayan
-#+LINK: anandpatel https://sites.google.com/view/anand-patel
-#+LINK: rachel https://sites.google.com/view/rachelnewton
-#+LINK: vaidehee https://sites.google.com/view/vaideheethatte
-#+LINK: rosa http://rosa-winter.com/
-#+LINK: changho https://sites.google.com/view/changho-han/
-#+LINK: valery https://www.math.uga.edu/directory/people/valery-alexeev
-#+LINK: hal http://webhome.auburn.edu/~hks0015/
-#+LINK: cobb https://johndcobb.github.io/
-#+LINK: sione https://profiles.auckland.ac.nz/s-mau
-#+LINK: karnataki https://adityakarnataki.github.io/
-#+LINK: timduff https://timduff35.github.io/timduff35/
+#+setupfile: #setup.org
 
 #+begin_intro
 #+attr_html: :id mypicture :alt Anand Deopurkar
@@ -55,6 +40,7 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 ** With [[rachel:][Rachel Newton]], [[vaidehee:][Vaidehee Thatte]], and [[rosa:][Rosa Winters]], I am exploring arithmetic ramifications of the geometry of certain [[wiki:Hurwitz_scheme][Hurwitz spaces]].
 ** [[anandpatel:][Anand Patel]] and I threw every tool we knew at a cool enumerative problem ([[https://arxiv.org/abs/2411.14232][counting 3-uple Veronese surfaces]]) whose answer comes out to \(4246\).  *UPDATE* [[timduff:][Timothy Duff]] successfully verified this numerically!  
 ** [[karnataki:][Aditya Karnataki]] is visiting me for a couple of weeks.
+** This semester, I am teaching a course called /Games, graphs, and machines/.
 ** ... [[file:past.org][more "now" items from the past.]]
 * Papers/pre-prints
 :PROPERTIES:
@@ -231,9 +217,9 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 #+end_src
 #+RESULTS:
 :results:
+- [[file:teaching/2025_algebra2/][Fields and Galois theory (Algebra 2)]] ([[file:teaching/2025_algebra2/][2025]], [[file:teaching/2024_algebra2/][2024]], [[file:teaching/2023_algebra2/][2023]], [[file:teaching/2014_algebra2/][2014]])
 - [[file:teaching/2024_games_graphs_and_machines/][Games, graphs, and machines]] ([[file:teaching/2024_games_graphs_and_machines/][2024]])
 - [[file:teaching/2024_differential_forms_in_algebraic_topology/][Differential forms in algebraic topology]] ([[file:teaching/2024_differential_forms_in_algebraic_topology/][2024]])
-- [[file:teaching/2024_algebra2/][Fields and Galois theory (Algebra 2)]] ([[file:teaching/2024_algebra2/][2024]], [[file:teaching/2023_algebra2/][2023]], [[file:teaching/2014_algebra2/][2014]])
 - [[file:teaching/2022_algebra1/][Groups and rings (Algebra 1)]] ([[file:teaching/2022_algebra1/][2022]], [[file:teaching/2013_algebra1/][2013]])
 - [[file:teaching/2022_mathematical_writing/][Mathematical writing]] ([[file:teaching/2022_mathematical_writing/][2022]])
 - [[file:teaching/2021_algebraic_geometry/][Algebraic Geometry (Algebra 3)]] ([[file:teaching/2021_algebraic_geometry/][2021]], [[file:teaching/2019_algebraic_geometry/][2019]])
