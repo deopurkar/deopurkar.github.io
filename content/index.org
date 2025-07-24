@@ -20,6 +20,8 @@
 #+LINK: hal http://webhome.auburn.edu/~hks0015/
 #+LINK: cobb https://johndcobb.github.io/
 #+LINK: sione https://profiles.auckland.ac.nz/s-mau
+#+LINK: karnataki https://adityakarnataki.github.io/
+#+LINK: timduff https://timduff35.github.io/timduff35/
 
 #+begin_intro
 #+attr_html: :id mypicture :alt Anand Deopurkar
@@ -50,11 +52,9 @@ I study the interplay between systems of algebraic equations and the geometric s
 :END:
 If you are thinking of doing a PhD with me, please read this [[file:prospective_phd.org][page for prospective PhD students]].
 ** With [[asilata][Asilata Bapat]] and [[tony][Tony Licata]], I am studying [[wiki:Bridgeland_stability_condition][Bridgeland stability conditions]] on some triangulated categories.
-*** I recently finished writing down [[file:papers/CompStabGenK3.pdf][the Thurston compactification of the stability manifold of a generic K3 surface]] using our ideas.
 ** With [[rachel:][Rachel Newton]], [[vaidehee:][Vaidehee Thatte]], and [[rosa:][Rosa Winters]], I am exploring arithmetic ramifications of the geometry of certain [[wiki:Hurwitz_scheme][Hurwitz spaces]].
-** [[anandpatel:][Anand Patel]] and I threw every tool we knew at a cool enumerative problem ([[https://arxiv.org/abs/2411.14232][counting 3-uple Veronese surfaces]]) whose answer comes out to \(4246\).  We would love a numerical verification, so if you know something about ~bertini~ or homotopy continuation, please write to us.
-** Shriyaa Srivastava is doing a winter project with me about the geometric Chebotarev density theorem.
-** Roshini Santhanaraman is doing a winter project with me and [[asilata:][Asilata Bapat]] about Nielsen classes and the lifting invariant.
+** [[anandpatel:][Anand Patel]] and I threw every tool we knew at a cool enumerative problem ([[https://arxiv.org/abs/2411.14232][counting 3-uple Veronese surfaces]]) whose answer comes out to \(4246\).  *UPDATE* [[timduff:][Timothy Duff]] successfully verified this numerically!  
+** [[karnataki:][Aditya Karnataki]] is visiting me for a couple of weeks.
 ** ... [[file:past.org][more "now" items from the past.]]
 * Papers/pre-prints
 :PROPERTIES:

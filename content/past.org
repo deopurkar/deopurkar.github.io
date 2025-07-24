@@ -26,4 +26,26 @@
 :ARCHIVE_OLPATH: now
 :ARCHIVE_CATEGORY: index
 :END:
-  
+** 2025-07 July
+*** 2025-07-25 Friday
+**** I recently finished writing down [[file:papers/CompStabGenK3.pdf][the Thurston compactification of the stability manifold of a generic K3 surface]] using our ideas.
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-07-25 Fri 09:31
+:ARCHIVE_FILE: ~/website/content/index.org
+:ARCHIVE_OLPATH: now/With Asilata Bapat and Tony Licata, I am studying Bridgeland stability conditions on some triangulated categories.
+:ARCHIVE_CATEGORY: index
+:END:
+**** Shriyaa Srivastava is doing a winter project with me about the geometric Chebotarev density theorem.
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-07-25 Fri 09:33
+:ARCHIVE_FILE: ~/website/content/index.org
+:ARCHIVE_OLPATH: now
+:ARCHIVE_CATEGORY: index
+:END:
+**** Roshini Santhanaraman is doing a winter project with me and [[asilata:][Asilata Bapat]] about Nielsen classes and the lifting invariant.
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-07-25 Fri 09:33
+:ARCHIVE_FILE: ~/website/content/index.org
+:ARCHIVE_OLPATH: now
+:ARCHIVE_CATEGORY: index
+:END:
