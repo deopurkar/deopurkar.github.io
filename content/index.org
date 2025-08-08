@@ -36,10 +36,14 @@ I study the interplay between systems of algebraic equations and the geometric s
 :UNNUMBERED: t
 :END:
 If you are thinking of doing a PhD with me, please read this [[file:prospective_phd.org][page for prospective PhD students]].
+
+** Upcoming travel:
+*** December 2025: Kioloa
+*** January 2026: Chennai ([[https://www.birs.ca/events/2026/5-day-workshops/26w5536][BIRS workshop in conformal field theory)]]
+*** February 2026: Sydney (workshop in algebraic geometry at SMRI) 
 ** With [[asilata][Asilata Bapat]] and [[tony][Tony Licata]], I am studying [[wiki:Bridgeland_stability_condition][Bridgeland stability conditions]] on some triangulated categories.
 ** With [[rachel:][Rachel Newton]], [[vaidehee:][Vaidehee Thatte]], and [[rosa:][Rosa Winters]], I am exploring arithmetic ramifications of the geometry of certain [[wiki:Hurwitz_scheme][Hurwitz spaces]].
 ** [[anandpatel:][Anand Patel]] and I threw every tool we knew at a cool enumerative problem ([[https://arxiv.org/abs/2411.14232][counting 3-uple Veronese surfaces]]) whose answer comes out to \(4246\).  *UPDATE* [[timduff:][Timothy Duff]] successfully verified this numerically!  
-** [[karnataki:][Aditya Karnataki]] is visiting me for a couple of weeks.
 ** This semester, I am teaching a course called /Games, graphs, and machines/.
 ** ... [[file:past.org][more "now" items from the past.]]
 * Papers/pre-prints

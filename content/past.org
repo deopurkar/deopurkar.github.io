@@ -50,3 +50,12 @@
 :ARCHIVE_OLPATH: now
 :ARCHIVE_CATEGORY: index
 :END:
+** 2025-08 August
+*** 2025-08-08 Friday
+**** [[karnataki:][Aditya Karnataki]] is visiting me for a couple of weeks.
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-08-08 Fri 13:43
+:ARCHIVE_FILE: ~/website/content/index.org
+:ARCHIVE_OLPATH: now
+:ARCHIVE_CATEGORY: index
+:END:
