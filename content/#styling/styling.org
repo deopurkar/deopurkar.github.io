@@ -268,7 +268,7 @@ Footer style and other miscellany.
 
 Include the colour themes previously defined.  
 #+begin_src scss
-  @include winter;
+  @include spring;
 
   // Print stylesheet
   @media print {
