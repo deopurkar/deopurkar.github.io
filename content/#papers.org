@@ -1,6 +1,7 @@
 * A sphere of spherical objects :pp:
 :PROPERTIES:
 :journal:  Pre-print
+:with:  [[https://asilata.org/][Asilata Bapat]], [[https://maths-people.anu.edu.au/~licatat/][Anthony Licata]]
 :year:     2025
 :more: [[https://arxiv.org/abs/2509.13912][arxiv]]
 :url: file:papers/spherical-sphere.pdf 
