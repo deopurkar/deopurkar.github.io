@@ -1,3 +1,11 @@
+* A sphere of spherical objects :pp:
+:PROPERTIES:
+:journal:  Pre-print
+:year:     2025
+:more: [[https://arxiv.org/abs/2509.13912][arxiv]]
+:url: file:papers/spherical-sphere.pdf 
+:END:
+
 * The arithmetic and geometry of branched coverings: theorems of Belyi and Darmon--Granville :expository:
 :PROPERTIES:
 :journal: Pre-print
