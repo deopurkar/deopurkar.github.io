@@ -44,7 +44,7 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 ** With [[asilata][Asilata Bapat]] and [[tony][Tony Licata]], I am studying [[wiki:Bridgeland_stability_condition][Bridgeland stability conditions]] on some triangulated categories.
 ** With [[rachel:][Rachel Newton]], [[vaidehee:][Vaidehee Thatte]], and [[rosa:][Rosa Winters]], I am exploring arithmetic ramifications of the geometry of certain [[wiki:Hurwitz_scheme][Hurwitz spaces]].
 ** [[anandpatel:][Anand Patel]] and I threw every tool we knew at a cool enumerative problem ([[https://arxiv.org/abs/2411.14232][counting 3-uple Veronese surfaces]]) whose answer comes out to \(4246\).  *UPDATE* [[timduff:][Timothy Duff]] successfully verified this numerically!  
-** I just finished teaching a course called /Games, graphs, and machines/.
+** I just finished teaching a course called /Games, graphs, and machines/.  I will upload the course materials soon.
 ** Next semester, I will teach Algebra 2 (Fields and Galois Theory).  Given the proliferation of synthetic text generators, I will have to re-think written assignments.  Happy to hear any thoughts! 
 ** This semester, I organised a working seminar on /Bridgeland stability conditions/ and am going to a working seminar on /Hochschild homology/ organised by [[sveta:][Sveta Makarova]].  
 ** ... [[file:past.org][more "now" items from the past.]]
