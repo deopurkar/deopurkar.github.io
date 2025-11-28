@@ -59,3 +59,12 @@
 :ARCHIVE_OLPATH: now
 :ARCHIVE_CATEGORY: index
 :END:
+** 2025-11 November
+*** 2025-11-28 Friday
+**** In 2025 Semester 2, I organised a working seminar on /Bridgeland stability conditions/ and am going to a working seminar on /Hochschild homology/ organised by [[sveta:][Sveta Makarova]].  
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-11-28 Fri 16:53
+:ARCHIVE_FILE: ~/website/content/index.org
+:ARCHIVE_OLPATH: now
+:ARCHIVE_CATEGORY: index
+:END:
