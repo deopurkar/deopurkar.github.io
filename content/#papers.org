@@ -67,7 +67,7 @@ We compute equivariant fundamental classes of orbits in GL(2)-representations. A
 :year:     2024
 :url: file:papers/erc.pdf
 :END:
-  We compute the equivariant fundamental class of the orbit closure of a linear series on the projective line.  We also describe the boundary of the orbit closure and how the orbits specialise in one parameter families.
+We compute the equivariant fundamental class of the orbit closure of a linear series on the projective line.  We also describe the boundary of the orbit closure and how the orbits specialise in one parameter families.
 
 * A universal formula for counting cubic surfaces
 :PROPERTIES:

@@ -1,3 +1,10 @@
+* Jialu Wang
+:PROPERTIES:
+:year:     2025
+:level: Masters
+:institute: Mathematical Sciences Institute, Australian National University
+:END:
+
 * Luke Doherty
 :PROPERTIES:
 :year:     2024
