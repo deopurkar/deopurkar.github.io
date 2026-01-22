@@ -68,3 +68,20 @@
 :ARCHIVE_OLPATH: now
 :ARCHIVE_CATEGORY: index
 :END:
+* 2026
+** 2026-01 January
+*** 2026-01-22 Thursday
+**** December 2025: Went to Kioloa for a workshop
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-01-22 Thu 15:38
+:ARCHIVE_FILE: ~/website/content/index.org
+:ARCHIVE_OLPATH: now/Upcoming travel:
+:ARCHIVE_CATEGORY: index
+:END:
+**** January 2026: Went to Chennai for [[https://www.birs.ca/events/2026/5-day-workshops/26w5536][BIRS workshop in conformal field theory]]
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-01-22 Thu 15:38
+:ARCHIVE_FILE: ~/website/content/index.org
+:ARCHIVE_OLPATH: now/Upcoming travel:
+:ARCHIVE_CATEGORY: index
+:END:

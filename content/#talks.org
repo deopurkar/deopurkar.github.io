@@ -1,4 +1,13 @@
 #+filetags: :talk:
+* How to count using equivariant cohomology
+:properties:
+:institute: Banff International Research Institute/Chennai Mathematical Institute
+:place:    Chennai, India
+:year:     2026
+:type:     Workshop
+:meet: Geometric and category-theoretic approaches to conformal field theory
+:end:
+
 * A Thurston compactification of the space of stability conditions
 :properties:
 :institute: MATRIX
