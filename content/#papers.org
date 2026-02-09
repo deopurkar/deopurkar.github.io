@@ -14,10 +14,10 @@
 :url: file:papers/arithmetic_covers.pdf
 :END:
 
-* The Thurston compactification of the stability manifold of a generic analytic K3 surface :pp:
+* The Thurston compactification of the stability manifold of a generic analytic K3 surface 
 :PROPERTIES:
-:journal:  Pre-print
-:year:     2025
+:journal:  Mathematical Research Letters (accepted)
+:year:     2026
 :more: [[https://github.com/deopurkar/CompStabGenK3][repository]]
 :url: file:papers/CompStabGenK3.pdf
 :END:
@@ -50,11 +50,11 @@
 :url: file:papers/3veroneseP2.pdf
 :END:
 
-* Equivariant classes of orbits in GL(2)-representations :pp:
+* Equivariant classes of orbits in GL(2)-representations 
 :PROPERTIES:
-:journal:  Pre-print
+:journal:  Selecta Mathematica (accepted)
 :more:     [[https://arxiv.org/abs/2405.09849][arxiv]], [[https://github.com/deopurkar/equivariant-classes-of-gl2-orbits/][repository]]
-:year:     2024
+:year:     2026
 :url: file:papers/gl2orbits.pdf
 :END:
 We compute equivariant fundamental classes of orbits in GL(2)-representations. As applications, we find degrees of the orbit closures corresponding to elliptic fibrations and self-maps of the projective line.
