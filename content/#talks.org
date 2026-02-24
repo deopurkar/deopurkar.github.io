@@ -13,7 +13,7 @@
 :institute: MATRIX
 :place:    Creswick, Australia
 :year:     2025
-:type:     workshop
+:type:     Workshop
 :meet: Teichmuller theory and flat structures
 :end:
 
