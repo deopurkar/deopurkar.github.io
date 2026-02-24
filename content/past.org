@@ -85,3 +85,26 @@
 :ARCHIVE_OLPATH: now/Upcoming travel:
 :ARCHIVE_CATEGORY: index
 :END:
+** 2026-02 February
+*** 2026-02-24 Tuesday
+**** February 2026: Sydney (Workshop in algebraic geometry at SMRI) 
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-02-24 Tue 14:48
+:ARCHIVE_FILE: ~/website/content/index.org
+:ARCHIVE_OLPATH: now/Upcoming travel:
+:ARCHIVE_CATEGORY: index
+:END:
+**** In 2025 S2, I taught a course called /Games, graphs, and machines/.  
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-02-24 Tue 14:48
+:ARCHIVE_FILE: ~/website/content/index.org
+:ARCHIVE_OLPATH: now
+:ARCHIVE_CATEGORY: index
+:END:
+**** In 2026 S1, I will teach Algebra 2 (Fields and Galois Theory).  Given the proliferation of synthetic text generators, I will have to re-think written assignments.  Happy to hear any thoughts! 
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-02-24 Tue 14:49
+:ARCHIVE_FILE: ~/website/content/index.org
+:ARCHIVE_OLPATH: now
+:ARCHIVE_CATEGORY: index
+:END:

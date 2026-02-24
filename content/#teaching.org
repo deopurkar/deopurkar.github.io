@@ -1,3 +1,10 @@
+* Games, graphs, and machines 
+:PROPERTIES:
+:institute: Australian National University
+:year:     2025
+:url: file:teaching/2025_games_graphs_and_machines/
+:END:
+
 * Fields and Galois theory (Algebra 2)
 :PROPERTIES:
 :institute: Australian National University
