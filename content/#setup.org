@@ -15,3 +15,6 @@
 #+LINK: karnataki https://adityakarnataki.github.io/
 #+LINK: timduff https://timduff35.github.io/timduff35/
 #+link: sveta https://sites.google.com/view/murmuno/
+#+link: oliver https://sites.google.com/view/oliver-li/
+#+link: maksym https://sites.google.com/bc.edu/maksym-fedorchuk/
+#+link: davidswinarski https://faculty.fordham.edu/dswinarski/

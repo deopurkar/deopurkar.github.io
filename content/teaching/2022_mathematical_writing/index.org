@@ -23,7 +23,7 @@ The mark will be based on class participation (10%), writing assignments (60%), 
 
 * Resources
 - Francesco Vivaldi, /Mathematical Writing for Undergraduate Students/ (Required textbook)
-- Primer, University of Michigan, /Demonstration, Proof beyond the possibility of doubt/ ([[http://www.math.lsa.umich.edu/~smdbackr/MATH/Mathematical_Writing_A_Primer.pdf][Online textbook]])
+- Primer, University of Michigan, /Demonstration, Proof beyond the possibility of doubt/ ([[file:Mathematical_Writing_A_Primer.pdf][Online textbook]])
 
 * Rough plan for the writing component
 1. Weeks 1-3 : Fundamentals
