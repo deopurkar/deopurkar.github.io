@@ -94,7 +94,7 @@
 :ARCHIVE_OLPATH: now/Upcoming travel:
 :ARCHIVE_CATEGORY: index
 :END:
-**** In 2025 S2, I taught a course called /Games, graphs, and machines/.  
+**** In 2025 S2, I taught a course called [[file:teaching/2025_games_graphs_and_machines/][/Games, graphs, and machines/]].  
 :PROPERTIES:
 :ARCHIVE_TIME: 2026-02-24 Tue 14:48
 :ARCHIVE_FILE: ~/website/content/index.org

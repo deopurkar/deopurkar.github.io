@@ -18,3 +18,5 @@
 #+link: oliver https://sites.google.com/view/oliver-li/
 #+link: maksym https://sites.google.com/bc.edu/maksym-fedorchuk/
 #+link: davidswinarski https://faculty.fordham.edu/dswinarski/
+#+link: norbury https://researchers.ms.unimelb.edu.au/~norbury@unimelb/
+#+link: jackhall https://blogs.unimelb.edu.au/jack-hall/
