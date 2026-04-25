@@ -14,6 +14,9 @@ jobs:
 
    - name: Install Emacs
      run: sudo apt install emacs-nox --yes
+     
+   - name: Install latex
+     run: sudo apt install texlive --yes
 
    - name: Build the site
      run: ./build.sh
