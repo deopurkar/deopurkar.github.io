@@ -55,6 +55,7 @@
 
 (defvar cv-include-links t
   "Should links be included while processing cv.org")
+
 (defun do-not-include-links (propslist)
   (setq cv-include-links nil))
 
@@ -69,6 +70,9 @@
                 ))
             files)))
 
-(setq org-confirm-babel-evaluate nil)
-(setq make-backup-files nil)
+(let ((org-confirm-babel-evaluate nil)
+      (make-backup-files nil)
+      (noninteractive t))
+  (message org-agenda-files)
+  (org-publish-all))
 
