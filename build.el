@@ -3,6 +3,9 @@
 (require 'subr-x)
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (print auto-mode-alist)
+
+(setq find-file-visit-truename t)
+(setq revert-without-query '(".*"))
 (setq org-agenda-files nil)
 
 (setq org-publish-project-alist
