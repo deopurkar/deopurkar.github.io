@@ -18,7 +18,7 @@ jobs:
    - name: Build the site
      run: ./build.sh
 
-    - name: Publish generated content to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-          branch: gh-pages
+   - name: Publish generated content to GitHub Pages
+     uses: JamesIves/github-pages-deploy-action@v4
+     with:
+         branch: gh-pages
