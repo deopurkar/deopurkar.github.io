@@ -73,6 +73,9 @@
       (make-backup-files nil)
       (noninteractive t))
   (message "Starting now")
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((shell . t)))
   (message (emacs-version))
   (message org-agenda-files)
   (org-publish-all)
