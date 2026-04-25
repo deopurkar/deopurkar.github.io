@@ -4,9 +4,8 @@
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (print auto-mode-alist)
 
-(setq find-file-visit-truename t)
-(setq revert-without-query '(".*"))
 (setq org-agenda-files nil)
+(setq org-agenda-skip-unavailable-files t)
 
 (setq org-publish-project-alist
       '(("website-org"
@@ -16,7 +15,7 @@
          :recursive t 
          :exclude "\#.*"   ;; Files beginning with \# are not processed.
          :publishing-function org-html-publish-to-html
-         :section-numbers nilc
+         :section-numbers nil
          :with-broken-links nil
          :with-toc nil
          :with-title t
