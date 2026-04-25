@@ -1,4 +1,3 @@
-(message (emacs-version))
 (require 'ox-publish)
 (require 'subr-x)
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
@@ -73,6 +72,9 @@
 (let ((org-confirm-babel-evaluate nil)
       (make-backup-files nil)
       (noninteractive t))
+  (message "Starting now")
+  (message (emacs-version))
   (message org-agenda-files)
-  (org-publish-all))
+  (org-publish-all)
+  (message "Done!"))
 
