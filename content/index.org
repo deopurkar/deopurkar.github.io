@@ -77,7 +77,7 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
              (comment (org-entry-get nil "comment"))
              (url (org-entry-get nil "url"))
   	   (more (org-entry-get nil "more"))
-             (back-refs (collect-back-ref title "~/website/content/#talks.org")))
+             (back-refs (collect-back-ref title "content/#talks.org")))
       (format "- %s.%s\\\\\n  /%s/%s%s.%s"
               (format "[[%s][%s]]" url title)
   	    (if more (format " (%s)" more) "")
