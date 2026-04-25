@@ -43,7 +43,7 @@
 
 * Counting 3-uple Veronese surfaces :pp:
 :PROPERTIES:
-:with: [[https://sites.google.com/view/anand-patel][Anand Patel]]
+:with: [[anandpatel:][Anand Patel]]
 :journal:  Pre-print
 :more: [[https://arxiv.org/abs/2411.14232][arxiv]]
 :year: 2024
@@ -61,7 +61,7 @@ We compute equivariant fundamental classes of orbits in GL(2)-representations. A
 
 * Orbits of linear series on the projective line 
 :PROPERTIES:
-:with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
+:with:     [[anandpatel:][Anand Patel]]
 :journal:  International Mathematics Research Notices
 :more:     [[https://arxiv.org/abs/2211.16603][arxiv]], [[https://doi.org/10.1093/imrn/rnae169][journal]]
 :year:     2024
@@ -71,7 +71,7 @@ We compute the equivariant fundamental class of the orbit closure of a linear se
 
 * A universal formula for counting cubic surfaces
 :PROPERTIES:
-:with:     [[https://sites.google.com/view/anand-patel][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]]
+:with:     [[anandpatel:][Anand Patel]], [[https://sites.google.com/view/dennis-tseng][Dennis Tseng]]
 :journal:  Algebraic Geometry (to appear)
 :more:     [[https://arxiv.org/abs/2109.12672][arxiv]]
 :year:     2024
@@ -91,7 +91,7 @@ Consider a 2-Calabi--Yau triangulated category with a Bridgeland stability condi
 
 * Vector bundles and finite covers
 :PROPERTIES:
-:with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
+:with:     [[anandpatel:][Anand Patel]]
 :journal:  Forum of Mathematics, Sigma
 :more:     [[https://arxiv.org/abs/1608.01711/][arXiv]], [[https://www.cambridge.org/core/services/aop-cambridge-core/content/view/21EB07C62F7A142F5CC39EF3950C2231/S2050509422000196a.pdf/vector_bundles_and_finite_covers.pdf][journal]]
 :year:     2022
@@ -131,7 +131,7 @@ We describe a compactification of the moduli space of pairs (S,C) where S is a s
 
 * Ramification divisors of general projections
 :PROPERTIES:
-:with:     [[https://eduryev.weebly.com/][Eduard Duryev]], [[https://sites.google.com/view/anand-patel][Anand Patel]]
+:with:     [[https://eduryev.weebly.com/][Eduard Duryev]], [[anandpatel:][Anand Patel]]
 :journal:  Documenta Mathematica
 :more:     [[http://arxiv.org/abs/1901.01513/][arxiv]], [[https://ems.press/journals/dm/articles/8965720][journal]]
 :year:     2020
@@ -160,7 +160,7 @@ We construct a well-behaved compactification of the space of finite covers of a 
 
 * Syzygy divisors on Hurwitz spaces
 :PROPERTIES:
-:with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
+:with:     [[anandpatel:][Anand Patel]]
 :journal:  Contemporary Mathematics
 :more:     [[https://arxiv.org/abs/1805.00648][arxiv]], [[https://www.ams.org/books/conm/703/14139][journal]]
 :year:     2018
@@ -179,7 +179,7 @@ We prove the analogue for ribbons of Green\'s canonical syzygy conjecture, formu
 
 * Toward GIT stability of syzygies of canonical curves
 :PROPERTIES:
-:with:     [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]], [[http://faculty.fordham.edu/dswinarski/][David Swinarski]]
+:with:     [[maksym:][Maksym Fedorchuk]], [[davidswinarski:][David Swinarski]]
 :journal:  Algebraic Geometry
 :more:     [[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://www.algebraicgeometry.nl/2016-1/2016-1-001.pdf][journal]]
 :year:     2016
@@ -189,7 +189,7 @@ We introduce the problem of GIT stability for syzygy points of canonical curves 
 
 * The Picard rank conjecture for the Hurwitz spaces of degree up to five
 :PROPERTIES:
-:with:     [[https://www2.bc.edu/anand-p-patel/][Anand Patel]]
+:with:     [[anandpatel:][Anand Patel]]
 :journal:  Algebra & Number Theory
 :more:     [[http://arxiv.org/abs/1401.6101/][arxiv]], [[http://msp.org/ant/2015/9-2/p05.xhtml][journal]]
 :year:     2015
@@ -225,7 +225,7 @@ We algebraically compute the class of the Hodge eigenbundles in the cyclic cover
 
 * Sharp slope bounds for sweeping families of trigonal curves
 :PROPERTIES:
-:with:     [[https://sites.google.com/view/anand-patel][Anand Patel]]
+:with:     [[anandpatel:][Anand Patel]]
 :journal:  Mathematical Research Letters
 :more:     [[http://arxiv.org/abs/1211.2827/][arxiv]], [[http://www.intlpress.com/site/pub/pages/journals/items/mrl/content/vols/0020/0005/a005/][journal]]
 :year:     2013

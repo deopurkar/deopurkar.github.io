@@ -1,3 +1,25 @@
+* Liam Murray
+:PROPERTIES:
+:year:     2026
+:level: Honours
+:institute: Mathematical Sciences Institute, Australian National University
+:with: [[sveta:][Sveta Makarova]]
+:END:
+
+* Frey Boulton
+:PROPERTIES:
+:year:     2026
+:level: Honours
+:institute: Mathematical Sciences Institute, Australian National University
+:END:
+
+* James Porteous
+:PROPERTIES:
+:year:     2026
+:level: Masters
+:institute: Mathematical Sciences Institute, Australian National University
+:END:
+
 * Jialu Wang
 :PROPERTIES:
 :year:     2025
