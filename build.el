@@ -72,8 +72,3 @@
 (setq org-confirm-babel-evaluate nil)
 (setq make-backup-files nil)
 
-(setq org-id-track-globally nil)
-(org-publish-all t)
-(setq org-id-track-globally t)
-
-(message "Build complete!")
