@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-04-25 Sat 12:28 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Games, graphs, and machines</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="/css/main.css"><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=B612:wght@300..700&display=swap" rel="stylesheet"><script src="/js/collapsibility.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Games, graphs, and machines
+<br />
+<span class="subtitle">MATH2301, Semester 2, 2025</span>
+</h1>
+<p>
+These are the course materials for MATH2301 <i>Games, graphs, and machines</i> as taught at the ANU in 2025.
+</p>
+<div id="outline-container-org72e351e" class="outline-2">
+<h2 id="org72e351e">Course information</h2>
+<div class="outline-text-2" id="text-org72e351e">
+</div>
+<div id="outline-container-orge230af9" class="outline-4">
+<h4 id="orge230af9">What is the course about?</h4>
+<div class="outline-text-4" id="text-orge230af9">
+<p>
+The goal of the course is to get hands-on experience in mathematical thinking.
+The course consists of four parts, of roughly equal duration:
+</p>
+
+<ol class="org-ol">
+<li>Foundations:  The basic vocabulary of modern mathematics (sets, functions, and relations).</li>
+<li>Graph theory: Graphs as a tool to model relations; graphs and matrices; applications to path finding.</li>
+<li>Regular expressions and automata: Finite state machines; pattern recognition; regular expressions; limits of mechanical pattern recogntion.</li>
+<li>Combinatorial games: Using graphs to model and analyse adversarial interactions; winning strategies.</li>
+</ol>
+
+<p>
+Our main reference will be <a href="https://canvas.anu.edu.au/files/715877/">course notes written by me and my colleague Asilata Bapat</a>.
+In these notes are references to other supplementary materials.
+</p>
+</div>
+</div>
+<div id="outline-container-orge794656" class="outline-3">
+<h3 id="orge794656">What will we do each week?</h3>
+<div class="outline-text-3" id="text-orge794656">
+<p>
+Each week, we will have the following activities:
+</p>
+
+<ol class="org-ol">
+<li>Pre-lecture videos and reading (to be done before the Monday lecture)</li>
+<li>Lectures (Monday 12pm-1pm, Tuesday 1pm-2pm, and Wed 3pm-4pm)</li>
+<li>Workshop (Thursday or Friday)</li>
+<li>Homework (due by the end of Friday)</li>
+<li>Reflective check-in (due by the end of Friday)</li>
+</ol>
+</div>
+<ul class="org-ul">
+<li><a id="orgd720a29"></a>What are pre-lecture videos?<br />
+<div class="outline-text-5" id="text-orgd720a29">
+<p>
+Can you follow mathematical definitions and theorems in real time?  I certainly cannot.  I need to digest them at my own pace.  Having recognised this, I will make short videos (5-10 min) about the key concepts every week.  I will assume that you have watched these videos when you come to lectures, and have had some time to mull them over.  I will also post the reading from the book well in advance, so that you have time to give it a quick read before coming to lectures.  
+</p>
+
+<p>
+If you have basic familiarity with the material before coming to lecture, it allows us to go into trickier details and examples and more lively discussions in class.  
+</p>
+</div>
+</li>
+<li><a id="orgbebe36d"></a>What are reflective check-ins?<br />
+<div class="outline-text-5" id="text-orgbebe36d">
+<p>
+Every week, I will ask you to provide short feedback about the material of the week (&lt; 2 min).  It will help me adjust the pace and level.  It will also give you a chance to reflect on your learning.  There are no right or wrong answers here.  As long as you complete the feedback, you get full points.
+</p>
+</div>
+</li>
+<li><a id="orgc5376af"></a>Do we have to come to lectures?<br />
+<div class="outline-text-5" id="text-orgc5376af">
+<p>
+You should!\(\tiny{\textrm{Although, technically you do not have to}}\).  Lectures are a great place to work through the key ideas, ask questions, and meet other students.  Also, remember that on Wednesdays, we have an in-class quiz.
+</p>
+</div>
+</li>
+<li><a id="org7493c5c"></a>Do we have to go to workshops?<br />
+<div class="outline-text-5" id="text-org7493c5c">
+<p>
+Yes.  Remember&#x2014;mathematics is not a spectator sport.  You can&rsquo;t learn if you don&rsquo;t do it yourself.  And workshops are the place where you do the maths.  Also, active engagement in the workshops is worth points.
+</p>
+
+<p>
+Sign up for workshops using <a href="https://services.anu.edu.au/information-technology/software-systems/mytimetable">MyTimetable</a>.
+The workshops will be one hour long, but the demonstrators will be available for half an hour after the workshop for consultation.
+</p>
+</div>
+</li>
+</ul>
+<div id="outline-container-orgceef609" class="outline-4">
+<h4 id="orgceef609">What is the assessment?</h4>
+<div class="outline-text-4" id="text-orgceef609">
+<p>
+The final mark in the course will be based on:
+</p>
+
+<ol class="org-ol">
+<li>Reflective check-ins (5%)</li>
+<li>Workshop engagement (5%)</li>
+<li>Quizzes (0 to 20%)</li>
+<li>Homework (30%)</li>
+<li>Final exam (40 to 60%)</li>
+</ol>
+
+<p>
+The quizzes will be in class on Wednesday.
+If you do not take them, their weight for the overall mark will be absorbed in the final exam.
+Precisely, if you take \(n\%\) of the quizzes, your quiz scores will weigh \((n/5)\%\) and your final exam will weigh \((60-n/5)\%\).
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org709fcec" class="outline-2">
+<h2 id="org709fcec">Home page</h2>
+<div class="outline-text-2" id="text-org709fcec">
+<p>
+Welcome to <i>Games, Graphs, and Machines</i>, where we use maths to analyse patterns, bots, and games.
+Visit the <a href="https://canvas.anu.edu.au/courses/2640/pages/course-information">course information page</a> for an overview of the course.
+</p>
+</div>
+<div id="outline-container-orgb7cb123" class="outline-3">
+<h3 id="orgb7cb123">Week by week</h3>
+<div class="outline-text-3" id="text-orgb7cb123">
+<ul class="org-ul">
+<li>Week 1
+<ul class="org-ul">
+<li>Watch: <a href="https://canvas.anu.edu.au/files/704425">Sets</a>, <a href="https://canvas.anu.edu.au/files/704426">Functions</a>, <a href="https://canvas.anu.edu.au/files/704427">Relations</a></li>
+<li>Read: <i>Some foundations</i> from <a href="https://canvas.anu.edu.au/files/715877/">the book</a>.</li>
+<li>Review: Lecture slides <a href="https://canvas.anu.edu.au/files/706185/download?download_frd=1&amp;verifier=oH0NrvZ7LbdvqBTLCREnQieT56jtJVyT0qgmxrxc">Monday</a> (<a href="https://canvas.anu.edu.au/files/706185/download?download_frd=1&amp;verifier=oH0NrvZ7LbdvqBTLCREnQieT56jtJVyT0qgmxrxc">annotated</a>), <a href="https://canvas.anu.edu.au/files/707643/download?download_frd=1&amp;verifier=Ccbb9TJyYV7iqgvDuWwHJLkjmU8ES6gfsvGGjNpA">Tuesday</a> (<a href="https://canvas.anu.edu.au/files/709624/download?download_frd=1&amp;verifier=ilS5t91IGkqJTyF0PJ24H2Tw11Aor8vFwpWSUJwM">annotated</a>), <a href="https://canvas.anu.edu.au/files/709623/download?download_frd=1&amp;verifier=FLp3XgnYWV6lZ5Kn1qCY0FJ7CC34czJ5J8yjlO5V">Wednesday</a> (<a href="https://canvas.anu.edu.au/files/709622/download?download_frd=1&amp;verifier=86i1plXUX4ANR6PiOZZelkUEvMXaoY16NBLPTwLT">annotated</a>)</li>
+</ul></li>
+<li>Week 2
+<ul class="org-ul">
+<li>Watch: <a href="https://canvas.anu.edu.au/files/706765">Equivalence relations</a>, <a href="https://canvas.anu.edu.au/files/706767">Modular arithmetic</a></li>
+<li>Read: <i>Equivalence relations</i> from <a href="https://canvas.anu.edu.au/files/715877/">the book</a>.</li>
+<li>Solve: <a href="https://canvas.anu.edu.au/files/709890/download?download_frd=1&amp;verifier=RmLFJ3uhBGI4m8RlXGPr2BhC8ejjpGmaz3ZypFZx">Assignment 1 (due 1 Aug)</a> (<a href="https://canvas.anu.edu.au/files/733279/download?download_frd=1&amp;verifier=oqhBYwaOkWepdASEvBKakyzbq7Aw7Sgglbf7JZK6">solutions</a>), <a href="https://canvas.anu.edu.au/files/715135/download?download_frd=1&amp;verifier=qZXMO7vBnxUkyQ70jQuHX7l3bPelONzvtQ8YBjHt">Worksheet 1</a> (<a href="https://canvas.anu.edu.au/files/733257/download?download_frd=1&amp;verifier=TkxTB474Whc3QcrPZw0SjxbGRauTW1tTwORZKUZT">solutions</a>), <a href="https://canvas.anu.edu.au/files/722147/download?download_frd=1&amp;verifier=Mc76QZ7klU5HTpW5UO7QvdOn1eRHnQnNnnF59jUx">Quiz 1</a></li>
+<li>Review: Lecture slides <a href="https://canvas.anu.edu.au/files/714010/download?download_frd=1&amp;verifier=0WY1jaaGyOqsOWxJ3hcg6soQFGxwdmUIlnbJTN0y">Monday</a> (<a href="https://canvas.anu.edu.au/files/714356/download?download_frd=1&amp;verifier=U2t8WWc8FGTK5Met5YLij1vTFTIGawpd7SD5IBYc">annotated</a>), <a href="https://canvas.anu.edu.au/files/716040/download?download_frd=1&amp;verifier=OPLsHOtvQCsLVbx3I5drnUDqtLSfO8Ckku6lMmaS">Tuesday</a> (<a href="https://canvas.anu.edu.au/files/716417/download?download_frd=1&amp;verifier=3NzroizrXy9zukJslGlMvCdbXHWL0VLeFqpl4LF2">annotated</a>), <a href="https://canvas.anu.edu.au/files/717637/download?download_frd=1&amp;verifier=pB12NNkHDf69ATESH3GauZkWUjbfHfeBVuOl9cGS">Wednesday</a> (<a href="https://canvas.anu.edu.au/files/718982/download?download_frd=1&amp;verifier=8gztB3x343SEQYnjk2fY7IvLYCI7h186WJG4RmNe">annotated</a>)</li>
+</ul></li>
+<li>Week 3
+<ul class="org-ul">
+<li>Watch: <a href="https://canvas.anu.edu.au/files/718976/">Partial orders 1</a>, <a href="https://canvas.anu.edu.au/files/718978/">Partial orders 2</a></li>
+<li>Read: <i>Partial orders</i> from <a href="https://canvas.anu.edu.au/files/715877/">the book</a>.</li>
+<li>Solve: <a href="https://canvas.anu.edu.au/files/718708/download?download_frd=1&amp;verifier=JeNveCoSBY6ztZLjQGgjaNK46uhhilohTM9MpozY">Assignment 2 (due 8 Aug)</a> (<a href="https://canvas.anu.edu.au/files/744924/download?download_frd=1&amp;verifier=rYYaIEtdfo4AveQUNF5b9ns6tPAxDV1YUtnt9Ss0">solutions</a>), <a href="https://canvas.anu.edu.au/files/725876/download?download_frd=1&amp;verifier=F9bBqZbuIucG20baWB5Z337sZiAJbqGTaayBUX1d">Worksheet 2</a> (<a href="https://canvas.anu.edu.au/files/738776/download?download_frd=1&amp;verifier=eA2jRWwJZqkeQRrJPpBiTsyrJaN6EAAhwCT4lJZj">solutions</a>), <a href="https://canvas.anu.edu.au/files/738771/download?download_frd=1&amp;verifier=Saz6eNl3kgVVzGr7SNM8uVwv5w5fYzpVkO7qsIse">Quiz 2</a></li>
+<li>Review: Lecture slides <a href="https://canvas.anu.edu.au/files/725255/download?download_frd=1&amp;verifier=YE9JHHoVeftWsD0gX1pWAbCcnTrpryrlMPzjMlFw">Monday</a> (<a href="https://canvas.anu.edu.au/files/725880/download?download_frd=1&amp;verifier=Dpns8Ku8uLUa3Q4VYGX4FzfMVpauTOxAB4bj7AjA">annotated</a>), <a href="https://canvas.anu.edu.au/files/727029/download?download_frd=1&amp;verifier=0yYSm021GYCdzlQnvqLIi6dtA4xfSrpo8662ca44">Tuesday</a> (<a href="https://canvas.anu.edu.au/files/727605/download?download_frd=1&amp;verifier=5Rp5zFE3UVk3A6nILOrJ6d1OKywH66DXeLVtCLI2">annotated</a>), <a href="https://canvas.anu.edu.au/files/729550/download?download_frd=1&amp;verifier=4O7ovTF6wKKqfIvS0D0XED45EANmjFs5o2DdsuqU">Wednesday</a> (<a href="https://canvas.anu.edu.au/files/730392/download?download_frd=1&amp;verifier=B5YLkwrbhpf5GYzuvkXG6UKoXa8kIwrUxngiyRcw">annotated</a>)</li>
+</ul></li>
+<li>Week 4
+<ul class="org-ul">
+<li>Watch: <a href="https://canvas.anu.edu.au/files/725257/">Graphs and adjacency matrices</a>, <a href="https://canvas.anu.edu.au/files/725259/">matrices</a></li>
+<li>Read: <i>Graphs</i> from  <a href="https://canvas.anu.edu.au/files/715877/">the book</a> (up to <i>Counting paths using the adjacency matrix</i>)</li>
+<li>Solve: <a href="https://canvas.anu.edu.au/files/729999/download?download_frd=1&amp;verifier=cW8gGsD5kfHF3oSH7eJqXL2vMCC3xyCR32xW89ht">Assignment 3 (due 15 Aug)</a> (<a href="https://canvas.anu.edu.au/files/764458/download?download_frd=1&amp;verifier=BgWBMUmAb5ztfyE5zo8uz858MeXsYyPuAMqIzidm">solutions</a>), <a href="https://canvas.anu.edu.au/files/741497/download?download_frd=1&amp;verifier=NNABH8I4s7UNE1LPuf8YteHPFmwTGhZOuEO76dib">Worksheet 3</a> (<a href="https://canvas.anu.edu.au/files/757549/download?download_frd=1&amp;verifier=nmQVYDUpzcXuuWTWaUWdwIoZQ4P9P4I62wKUurY3">solutions</a>), <a href="https://canvas.anu.edu.au/files/761355/download?download_frd=1&amp;verifier=Xi0SYGFQQ8TwRCcsC3McYRFCtzsFHtl5SmYHq0Xm">Quiz 3</a></li>
+<li>Review: Lecture slides <a href="https://canvas.anu.edu.au/files/738826/download?download_frd=1&amp;verifier=O0a5JS1uWpqjlSMcf2WEdw7AHzqiqs1YM7EMSAse">Monday</a> (<a href="https://canvas.anu.edu.au/files/741827/download?download_frd=1&amp;verifier=yFhizS6oN2fyvk5sDL31luTQzKUYfmBvVa1bwROA">annotated</a>), <a href="https://canvas.anu.edu.au/files/741822/download?download_frd=1&amp;verifier=W6AmpTIhyvP8bRe7qKqSaW74IONby8c7MRH4WNBX">Tuesday</a> (<a href="https://canvas.anu.edu.au/files/744155/download?download_frd=1&amp;verifier=YJdMAbY8MPYtVxF0FU3SUwbS8BaEqSloaX60sgQ5">annotated</a>), <a href="https://canvas.anu.edu.au/files/744163/download?download_frd=1&amp;verifier=psr6ionkJZrCXuwjSZnY2d93QrgezAxanh7hCwuI">Wednesday</a> (<a href="https://canvas.anu.edu.au/files/752099/download?download_frd=1&amp;verifier=Ni3txTpLB9rnJgfmSC5KHSfsVqw3UE31l77LfbP5">annotated</a>)</li>
+</ul></li>
+<li>Week 5
+<ul class="org-ul">
+<li>Watch: <a href="https://canvas.anu.edu.au/files/738751/">Paths (counting and existence)</a>, <a href="https://canvas.anu.edu.au/files/738753/">Shortest paths</a></li>
+<li>Read: <i>Graphs</i> from <a href="https://canvas.anu.edu.au/files/715877/">the book</a> (up to <i>Shortest paths using min-plus arithmetic</i>).</li>
+<li>Solve: <a href="https://canvas.anu.edu.au/files/745075/download?download_frd=1&amp;verifier=RGvc4NJGOQv5JgYcvHk2vQL4gBt475FgvOPC1T86">Assignment 4 (due 22 Aug)</a> (<a href="https://canvas.anu.edu.au/files/791417/download?download_frd=1&amp;verifier=48I1gzK1PZ7G2uqtnL4tpv3JqCcQiB0R7grdJVOq">solutions</a>), <a href="https://canvas.anu.edu.au/files/759184/download?download_frd=1&amp;verifier=NDB68ZlBP5WXOG0JFYSiO9PKjub9wfUZnuoyLyW2">Worksheet 4</a> (<a href="https://canvas.anu.edu.au/files/778182/download?download_frd=1&amp;verifier=gAQIyeF4ImaGOlTf5HxuVyOjouENuKUpviqqhWgu">solutions</a>), <a href="https://canvas.anu.edu.au/files/778198/download?download_frd=1&amp;verifier=PjQZH2EaKKdTPrpcGrN2tmFhQM5F4oqHyVoYWLk3">Quiz 4</a></li>
+<li>Review: Lecture slides <a href="https://canvas.anu.edu.au/files/757619/download?download_frd=1&amp;verifier=P9AIty2E3JQRDKOzuM5ZsD6kNrtNeVX2dr8J4Bi1">Monday</a> (<a href="https://canvas.anu.edu.au/files/761361/download?download_frd=1&amp;verifier=SZIIghUM1yr93sh54AtYfzv5D2EDUrSEKYJWP4Bb">annotated</a>), <a href="https://canvas.anu.edu.au/files/761403/download?download_frd=1&amp;verifier=iA6E7Hn6xRWg5sxBSPzlympFV4pYq8JCpEO6yns5">Tuesday</a> (<a href="https://canvas.anu.edu.au/files/764145/download?download_frd=1&amp;verifier=BJopiMBcsTppeSCQtTBXSz2dwZjdIKcL6JI8Ecjj">annotated</a>), <a href="https://canvas.anu.edu.au/files/764149/download?download_frd=1&amp;verifier=crBzYASBlMeoFkmsvfICW0QZxCfYMhaMwZ759lgV">Wednesday</a> (<a href="https://canvas.anu.edu.au/files/766553/download?download_frd=1&amp;verifier=wU7U8fiVgLOZPaCJLnmM1oXBJ8FkMx0V5u2ycmiE">annotated</a>)</li>
+</ul></li>
+<li>Week 6
+<ul class="org-ul">
+<li>Watch: <a href="https://canvas.anu.edu.au/files/757565/">Markov chains</a>, <a href="https://canvas.anu.edu.au/files/757569/">Computing large powers</a></li>
+<li>Read: <i>Graphs</i> from <a href="https://canvas.anu.edu.au/files/715877/">the book</a> (Markov chains, Computing large powers)</li>
+<li>Solve: <a href="https://canvas.anu.edu.au/files/766550/download?download_frd=1&amp;verifier=hIrzRPTCuNXvHSfwvI9Pyqb769uPvMQN6TPHyyed">Assignment 5 (due 29 Aug)</a> (<a href="https://canvas.anu.edu.au/files/831136/download?download_frd=1&amp;verifier=3OFCtsBt88g1sijZ97fUic7wl55HLXVyKEG9KiNb">solutions</a>), <a href="https://canvas.anu.edu.au/files/779144/download?download_frd=1&amp;verifier=3548NOHUS1N7zmv2BYsn0H8SxILPzhvTMALide17">Worksheet 5</a> (<a href="https://canvas.anu.edu.au/files/847725/download?download_frd=1&amp;verifier=KveqL5tvm1iBWGr0a6FPmpvg0QG04NCuKhjevWqw">solutions</a>), <a href="https://canvas.anu.edu.au/files/847946/download?download_frd=1&amp;verifier=wfv6aQrbvmhQAz4zlucmJqQqWL3xN7YycBYkmxVv">Quiz 5</a></li>
+<li>Review: Lecture slides <a href="https://canvas.anu.edu.au/files/778295/download?download_frd=1&amp;verifier=nUjl6E1VwIPzjWArDBzpbDM23HQv7hCSxg4KiM42">Monday</a> (<a href="https://canvas.anu.edu.au/files/781990/download?download_frd=1&amp;verifier=AOIEwlDaSAv4ZXNC3e4YOXdPXJyijwuZWzpBYbM8">annotated</a>), <a href="https://canvas.anu.edu.au/files/781989/download?download_frd=1&amp;verifier=OhPbe8UsP9Bk9IedJLmWMPgpkOCGfafEkPQvyvZt">Tuesday</a> (<a href="https://canvas.anu.edu.au/files/784988/download?download_frd=1&amp;verifier=DrYvbJJzG86ijjbd571ADgR2lce4WpMVjz9LZXu2">annotated</a>), <a href="https://canvas.anu.edu.au/files/784984/download?download_frd=1&amp;verifier=L6GKxF4dW2BgCL1BF5A7I3UJFm8ivSEYjs8P4oOc">Wednesday</a> (<a href="https://canvas.anu.edu.au/files/791422/download?download_frd=1&amp;verifier=OSqK4uZ1GXVRrVQMFL2agNF8kUUwMdjU5XOL0DQU">annotated</a>)</li>
+</ul></li>
+<li>Week 7
+<ul class="org-ul">
+<li>Watch: <a href="https://canvas.anu.edu.au/files/812083/">Alphabets, strings, languages</a>; <a href="https://canvas.anu.edu.au/files/812084/">regular expressions</a>; <a href="https://canvas.anu.edu.au/files/812086/">deterministic finite automata</a></li>
+<li>Read: <i>Regular expressions and finite automata</i> (up to deterministic finite automata) from <a href="https://canvas.anu.edu.au/files/715877/">the book</a>.</li>
+<li>Solve: <a href="https://canvas.anu.edu.au/files/816336/download?download_frd=1&amp;verifier=zzO377BXRRhK7pRZ1ryBWSLsvrt6pyxFieDq0Fei">Assignment 6 (due 19 Sep)</a> (<a href="https://canvas.anu.edu.au/files/857925/download?download_frd=1&amp;verifier=pS5pqwHGJ8bEWXihZQFLBbNR6dWOvHxymFtUu8Ef">solutions</a>), <a href="https://canvas.anu.edu.au/files/828520/download?download_frd=1&amp;verifier=OgBkNdBBIjIjoKKZ8pzl1lCAsxtiVj64YrXlKABV">Worksheet 6</a> (<a href="https://canvas.anu.edu.au/files/847728/download?download_frd=1&amp;verifier=zxR4bgdnFKv3pZDB5qYfTjd31lbpyul1lQ3mGzEO">solutions</a>), <a href="https://canvas.anu.edu.au/files/866126/download?download_frd=1&amp;verifier=svQh2A2xUQdOmC9ns5pl5yDZObJIB6VPDdAK4J5G">Quiz 6</a></li>
+<li>Review: Lecture slides <a href="https://canvas.anu.edu.au/files/824398/download?download_frd=1&amp;verifier=COgDTbvk3yYSKYbrHti95qIMZfc7kTBMU0XU9cLQ">Monday</a> (<a href="https://canvas.anu.edu.au/files/829746/download?download_frd=1&amp;verifier=72GxVeJ8GoeM3rhwl34EanFpiH5ZHVOsB4R9NKQb">annotated</a>), <a href="https://canvas.anu.edu.au/files/829740/download?download_frd=1&amp;verifier=7lRHEGl9V1CM3rdp0rgIueU2YXMqOTiHBcitLSjQ">Tuesday</a> (<a href="https://canvas.anu.edu.au/files/832320/download?download_frd=1&amp;verifier=3q1uUlFN6LbDOYRUc9aGvteJXSTmqhu7nARS8qmV">annotated</a>), <a href="https://canvas.anu.edu.au/files/832317/download?download_frd=1&amp;verifier=AiXNPnLnfWMCocCfR4LESOnBwd7NNGGKLa4EGe2i">Wednesday</a> (<a href="https://canvas.anu.edu.au/files/834040/download?download_frd=1&amp;verifier=q44wA30BpEZ8or2mE80Phwe8UZci0rTL2ZF1G1Qx">annotated</a>)</li>
+</ul></li>
+<li>Week 8
+<ul class="org-ul">
+<li>Watch: <a href="https://canvas.anu.edu.au/files/824324/">Non-determinisic finite automata</a>, <a href="https://canvas.anu.edu.au/files/824353/">NFA-to-DFA</a>, <a href="https://canvas.anu.edu.au/files/824365/">NFA-to-regex</a></li>
+<li>Read: <i>Nondeterministic finite automata, NFA to DFA, Regular expressions to finite automata</i> from <a href="https://canvas.anu.edu.au/files/715877/">the book</a>.</li>
+<li>Solve: <a href="https://canvas.anu.edu.au/files/834038/download?download_frd=1&amp;verifier=JcJGFhWwQc4AQNBk6Jbx5TWzMAwycfvJ73hlBjf1">Assignment 7 (due 26 Sep)</a> (<a href="https://canvas.anu.edu.au/files/873289/download?download_frd=1&amp;verifier=CiRDUJ25oOKKYlATOalkFwXfUlvsz7FdF1KvA0TY">solutions</a>), <a href="https://canvas.anu.edu.au/files/844087/download?download_frd=1&amp;verifier=EkBQbjevX17L6q1Q0mF2wCbE779GIP7ytJG2ojUv">Worksheet 7</a> (<a href="https://canvas.anu.edu.au/files/857941/download?download_frd=1&amp;verifier=BuSP6xHFqNTxcT1FM1B9t5hFApsNGIKaGDDUDFpw">solutions</a>), <a href="https://canvas.anu.edu.au/files/866148/download?download_frd=1&amp;verifier=yEVyjyFHeBSCDBgUOidjIOuafYIYOQTqZeT5K6LT">Quiz 7</a></li>
+<li>Review: Lecture slides <a href="https://canvas.anu.edu.au/files/842948/download?download_frd=1&amp;verifier=wtXOpD6esx9JhlpS3nn8NCNcfFM1RJzWIktm6Xi0">Monday</a> (<a href="https://canvas.anu.edu.au/files/845743/download?download_frd=1&amp;verifier=vI8l1pLegYpYOa2gzdnOC0rfS2wWQxu4qCuuIdte">annotated</a>), <a href="https://canvas.anu.edu.au/files/845349/download?download_frd=1&amp;verifier=Kpxpe26IUOgkPif5ujA5KwoCLamRmTjH97igAYe1">Tuesday</a> (<a href="https://canvas.anu.edu.au/files/847721/download?download_frd=1&amp;verifier=Sk95EWhgHaQkJIfa1Wq681BbWqQk2bYHxzFZAPPO">annotated</a>), <a href="https://canvas.anu.edu.au/files/847716/download?download_frd=1&amp;verifier=fG4cAh5n8Jcn6OWrD6D62MNf26Uk1OXF1j6UMPyE">Wednesday</a> (<a href="https://canvas.anu.edu.au/files/857883/download?download_frd=1&amp;verifier=WIbiddnh3JLmUPM0K8LIgaDfg2cs65fnfKdPDRhk">annotated</a>)</li>
+</ul></li>
+<li>Week 9
+<ul class="org-ul">
+<li>Watch: <a href="https://canvas.anu.edu.au/files/842902/">Regex to NFA</a>, <a href="https://canvas.anu.edu.au/files/842904/">Pumping lemma</a></li>
+<li>Read: <i>Converting finite automata to regular expressions, Non-regular languages</i> from <a href="https://canvas.anu.edu.au/files/715877/">the book</a>.</li>
+<li>Solve: <a href="https://canvas.anu.edu.au/files/848684/download?download_frd=1&amp;verifier=mymSd69dVwC8VI9x0UjiFBuxZkzTjXq6VHIRLYwS">Assignment 8</a> (<a href="https://canvas.anu.edu.au/files/1253165/download?download_frd=1&amp;verifier=yXDhEeO2kLNoAPavhKYi1JAERQ4nWDYoi4iNuEj2">solutions</a>), <a href="https://canvas.anu.edu.au/files/859051/download?download_frd=1&amp;verifier=8Q8G0uUTuIF3HHy8S6aYTrjkWbSbugHUKRey340i">Worksheet 8</a> (<a href="https://canvas.anu.edu.au/files/1193041/download?download_frd=1&amp;verifier=BDAQUW58Ri7F3lXnvxmt2S6AnqKRf8GvtQPhGyCW">solutions</a>), <a href="https://canvas.anu.edu.au/files/1193063/download?download_frd=1&amp;verifier=2jjBzNfXRx1mDfFXAq0PmNgeE1S7kWX5d5pb2ZqB">Quiz 8</a></li>
+<li>Review: Lecture notes <a href="https://canvas.anu.edu.au/files/857878/download?download_frd=1&amp;verifier=paUjAn8uRVPyExe5TbAlmKaJIlHbqP2atCLcvBok">Monday</a> (<a href="https://canvas.anu.edu.au/files/860481/download?download_frd=1&amp;verifier=FfcGbZs3CBxzO2PGEttmG3PqM41XSNOZqMzLphOx">annotated</a>), <a href="https://canvas.anu.edu.au/files/860478/download?download_frd=1&amp;verifier=nBjuw1zQXI4atcQ2LPX4Eve60LasTYmEp13kxIUj">Tuesday</a> (<a href="https://canvas.anu.edu.au/files/865816/download?download_frd=1&amp;verifier=q422a8O2faXx1vEpqTxzQ69Vf125YqTn3N7GZy5W">annotated</a>), <a href="https://canvas.anu.edu.au/files/865815/download?download_frd=1&amp;verifier=sZRztvFdKOyBZc6oAkdzTR9xzl8uBskcF1AKrgxI">Wednesday</a> (<a href="https://canvas.anu.edu.au/files/1197705/download?download_frd=1&amp;verifier=DKGrbU2tOhqP9lIcMRh4IFkGq1ujs95SyGJ8f6EG">annotated</a>)</li>
+</ul></li>
+<li>Week 10
+<ul class="org-ul">
+<li>Watch: <a href="https://canvas.anu.edu.au/files/857795/">Games</a>, <a href="https://canvas.anu.edu.au/files/857804/">Winning strategies</a></li>
+<li>Read: <i>Combinatorial games</i> (introduction, strategic labelling, beginning of Nim) from <a href="https://canvas.anu.edu.au/files/715877/">the book</a>.</li>
+<li>Solve: <a href="https://canvas.anu.edu.au/files/870410/download?download_frd=1&amp;verifier=GbVIq9ttu8I6i7tUyfvcuyJvgOsr7i43v3XtT0QR">Assignment 9 (due 10 Oct)</a> (<a href="https://canvas.anu.edu.au/files/1253166/download?download_frd=1&amp;verifier=78p4RQterGdWob2erusOquWO2sYDrGj1w5AZIWEh">solutions</a>), <a href="https://canvas.anu.edu.au/files/1193018/download?download_frd=1&amp;verifier=Fre2KybJXDQwHG7xRSxbI4dhdej5vE1xCFQZEtQU">Worksheet 9</a> (<a href="https://canvas.anu.edu.au/files/1237040/download?download_frd=1&amp;verifier=d5tQtEhqHdUZk1xBLoq5UQDI04e13KJgnvnGKMKS">solutions</a>), <a href="https://canvas.anu.edu.au/files/1253158/download?download_frd=1&amp;verifier=I6LPYJw2WrmoqU9P39jcQQk6cELBQUpKoEI9zv4W">Quiz 9</a></li>
+<li>Review: Lecture notes <a href="https://canvas.anu.edu.au/files/1197681/download?download_frd=1&amp;verifier=wPNRjoYWfQ90yzlwCwAGwHePa3WWVbjtqqvL1CKu">Tuesday</a> (<a href="https://canvas.anu.edu.au/files/1234687/download?download_frd=1&amp;verifier=Ks5NPExszg7ncAJf9ewq87x46kH2JqWqoHsg2NiL">annotated</a>), <a href="https://canvas.anu.edu.au/files/1203429/download?download_frd=1&amp;verifier=DW2UglMEQL6sO0Bs4F3eODeNW5fsaLS9Q2Xn1nb0">Wednesday</a> (<a href="https://canvas.anu.edu.au/files/1234690/download?download_frd=1&amp;verifier=HVVj3nsXtPaQCGEVrxp7UMyNGMh86GgpZx6UQ293">annotated</a>)</li>
+</ul></li>
+<li>Week 11
+<ul class="org-ul">
+<li>Watch: <a href="https://canvas.anu.edu.au/files/1192864/">Nim</a>, <a href="https://canvas.anu.edu.au/files/1192874/">Stable equivalence</a></li>
+<li>Read: <i>Nim, Game sum, Stable equivalence</i> from <a href="https://canvas.anu.edu.au/files/715877/">the book</a>.</li>
+<li>Solve: <a href="https://canvas.anu.edu.au/files/1234680/download?download_frd=1&amp;verifier=hKdi5heHolUL8ojRUeeI0KvHddX4Kc022QeE9qns">Assignment 10 (due 17 Oct)</a> (<a href="https://canvas.anu.edu.au/files/1285505/download?download_frd=1&amp;verifier=O9uwD0E7kIpYQ7bsqn4zgetOD72FsvOnTQQJopHT">solutions</a>),  <a href="https://canvas.anu.edu.au/files/1237035/download?download_frd=1&amp;verifier=U7pZ7aIdDkAmqEpAyV1nb0EIK4P9stSaiRVIAhVP">Worksheet 10</a> (<a href="https://canvas.anu.edu.au/files/1253160/download?download_frd=1&amp;verifier=KAEIUuu29GLKGm09hRoWStdoSa88qcGgftvfeZds">solutions</a>), <a href="https://canvas.anu.edu.au/files/1285498/download?download_frd=1&amp;verifier=qdedF6OxMmOunNfrZk2WOHZpeXjqxFKuydcUDEov">Quiz 10</a></li>
+<li>Review: Lecture slides <a href="https://canvas.anu.edu.au/files/1234714/download?download_frd=1&amp;verifier=jkRkqQknmEyL2PEkgXFH3FXbR981pCerSasaBB94">Monday</a> (<a href="https://canvas.anu.edu.au/files/1240324/download?download_frd=1&amp;verifier=wraKuB4iCL6vwLq6WtcowhwZw8vui7CBnVAXqoQk">annotated</a>), <a href="https://canvas.anu.edu.au/files/1238150/download?download_frd=1&amp;verifier=2jOaZTXS7trxziz9VeKxNJZodWXOsxp3Esbip4C1">Tuesday</a> (<a href="https://canvas.anu.edu.au/files/1240323/download?download_frd=1&amp;verifier=KAiWED3lVHMkcLDN4z2XmbSQmnbAucrKA4N8Szll">annotated</a>), <a href="https://canvas.anu.edu.au/files/1240321/download?download_frd=1&amp;verifier=q88GGCxbn2R29Z1TMh6T9mJWD3yDHZTqduojZT8t">Wednesday</a> (<a href="https://canvas.anu.edu.au/files/1249504/download?download_frd=1&amp;verifier=G0cdK4KdzposoO0NfVnO0tj1B3ndPRWAVq5ZUrjX">annotated</a>)</li>
+</ul></li>
+<li>Week 12
+<ul class="org-ul">
+<li>Watch: <a href="https://canvas.anu.edu.au/files/1234702/">Grundy labeling: what?</a>, <a href="https://canvas.anu.edu.au/files/1234703/">Grundy labeling: why?</a></li>
+<li>Read: <i>Grundy labeling</i> from <a href="https://canvas.anu.edu.au/files/715877/">the book</a>.</li>
+<li>Solve: <a href="https://canvas.anu.edu.au/files/1242935/download?download_frd=1&amp;verifier=Ipf81ETJH7KLDTXvtOwAGUQ97ziSgx8r6cMutZM8">Assignment 11 (due 24 Oct)</a>, <a href="https://canvas.anu.edu.au/files/1275923/download?download_frd=1&amp;verifier=rrx48Ktcal3nY1xxioKjgRGhHONugIgrRtREjAfH">Worksheet 11</a> (<a href="https://canvas.anu.edu.au/files/1317954/download?download_frd=1&amp;verifier=bydsW41CpSYPc047AAgkrt16kXBTflxSqV9FEVDV">solutions</a>)</li>
+<li>Review: Lecture slides <a href="https://canvas.anu.edu.au/files/1251544/download?download_frd=1&amp;verifier=6UHcbjMN0TpaZAaYXc8h7Kn5PiRZk3hBQnOQw6GJ">Monday</a>, <a href="https://canvas.anu.edu.au/files/1254914/download?download_frd=1&amp;verifier=qwWhEbbHIgn4U7ZFUN4jthzS11VLQAQg3BiCKrRz">Tuesday</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb007d74" class="outline-2">
+<h2 id="orgb007d74">Academic integrity policy</h2>
+<div class="outline-text-2" id="text-orgb007d74">
+<p>
+If you are ever unsure about whether something is or is not allowed, ask me for clarification.
+</p>
+</div>
+<div id="outline-container-org5769a3d" class="outline-3">
+<h3 id="org5769a3d">Collaboration</h3>
+<div class="outline-text-3" id="text-org5769a3d">
+<p>
+You are welcome to collaborate with other students, but the submitted work should be your own.
+</p>
+
+<p>
+What this means is the following.
+You will typically work in two phases on assignments.
+</p>
+
+<dl class="org-dl">
+<dt>The solving phase</dt><dd><p>
+trying to find the answers to the questions.
+In this phase, you should first think about the problem on your own.  After an honest effort, you are welcome&#x2014;and encouraged&#x2014;to work with other students.  Having thought about the problem on their own, everyone in a collaboration will have something to contribute.  Once you know how to solve the problem, move on to the next phase.
+</p>
+
+<p>
+On your solution, you must acknowledge the sources of your collaboration. 
+Not doing so is a violation of the academic integrity policy.
+For example, write &ldquo;On this assignment, I collaborated with X, Y, and Z.&rdquo;
+You need not cite me, any of the demonstrators, or the staff from MSI drop-in sessions.
+</p></dd>
+
+<dt>The write-up phase</dt><dd>writing up your solutions for submission.
+You must do this entirely by yourself.  Work alone when you are writing.  If you copy parts of someone else&rsquo;s solutions, you are violating the academic integrity policy.  If you get stuck while writing, you are welcome to go back to the solving phase, get help, and return to writing (by yourself).</dd>
+</dl>
+
+<p>
+In addition to your peers, you have many other sources for help in the solving phase:
+</p>
+<ol class="org-ol">
+<li>Office hours</li>
+<li>Demonstrator consultaion hours</li>
+<li><a href="https://maths.anu.edu.au/current-students/student-support">MSI drop-in sessions</a></li>
+</ol>
+
+<p>
+Submitting solutions that are not your own (for example, written by a friend or sourced from a solutions provider like <code>CourseHero</code> or <code>Chegg</code>) is a violation of the academic integrity policy.
+</p>
+</div>
+</div>
+<div id="outline-container-org7a52a2e" class="outline-3">
+<h3 id="org7a52a2e">Use of computer generated content</h3>
+<div class="outline-text-3" id="text-org7a52a2e">
+<p>
+If any part of your submission is computer generated:
+</p>
+<ol class="org-ol">
+<li>you must clearly mark it; and</li>
+<li>it must have been generated by code that you wrote on your own.
+(I may ask you to provide and explain the code).</li>
+</ol>
+
+<p>
+Submitting content generated by automatic text generators (<code>ChatGPT</code>, <code>DeepSeek</code>, or similar) is a violation of the academic integrity policy.
+</p>
+
+<p>
+The goal of the assignments is to develop and test your understanding of the material.
+Using pre-fabricated code does not help in this.
+</p>
+</div>
+</div>
+<div id="outline-container-orga47346c" class="outline-3">
+<h3 id="orga47346c">Late submission</h3>
+<div class="outline-text-3" id="text-orga47346c">
+<p>
+No late submissions are allowed unless you ask for an extension in writing (email) at least 24 hours before the due date.  I will release answers to assignments 2 to 3 working days after the due date.  The maximum extension I can give is until answers are released.  For extensions beyond this period, please use the <a href="https://www.anu.edu.au/students/program-administration/assessments-exams/extenuating-circumstances-application">Extentuating Circumstances Application</a>.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+Created by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.3 (<a href="https://orgmode.org">Org</a> mode 9.6.15).  Last modified: 2026-04-25 Sat 12:26.  <a href="https://github.com/deopurkar/deopurkar.github.io">Source</a>
+</div>
+</body>
+</html>
