@@ -1,2 +1,2 @@
 #!/bin/bash
-emacs -Q --batch build.el
+emacs -Q --script build.el
