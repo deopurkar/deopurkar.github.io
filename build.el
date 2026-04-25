@@ -6,6 +6,7 @@
 
 (setq org-agenda-files nil)
 (setq org-agenda-skip-unavailable-files t)
+(defun org-check-agenda-file (file) t)
 
 (setq org-publish-project-alist
       '(("website-org"
