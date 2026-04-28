@@ -1,0 +1,29 @@
+name: Publish
+
+on:
+ push:
+  branches:
+   - main
+
+jobs:
+ publish:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Check out
+     uses: actions/checkout@v6
+
+   - name: Install Emacs
+     run: sudo apt install emacs-nox --yes
+     
+   - name: Install latex
+     run: sudo apt install texlive texlive-latex-extra texlive-plain-generic texlive-fonts-extra texlive-fonts-recommended --yes
+
+   - name: Build the site
+     run: ./build.sh
+
+   - name: Publish generated content to GitHub Pages
+     uses: JamesIves/github-pages-deploy-action@v4
+     with:
+      branch: gh-pages
+      folder: docs
+        

@@ -1,9 +1,7 @@
-(message (emacs-version))
 (require 'ox-publish)
 (require 'subr-x)
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (print auto-mode-alist)
-
 
 (setq org-publish-project-alist
       '(("website-org"
@@ -13,7 +11,7 @@
          :recursive t 
          :exclude "\#.*"   ;; Files beginning with \# are not processed.
          :publishing-function org-html-publish-to-html
-         :section-numbers nilc
+         :section-numbers nil
          :with-broken-links nil
          :with-toc nil
          :with-title t
@@ -56,6 +54,7 @@
 
 (defvar cv-include-links t
   "Should links be included while processing cv.org")
+
 (defun do-not-include-links (propslist)
   (setq cv-include-links nil))
 
@@ -70,11 +69,15 @@
                 ))
             files)))
 
-(setq org-confirm-babel-evaluate nil)
-(setq make-backup-files nil)
+(let ((org-confirm-babel-evaluate nil)
+      (make-backup-files nil)
+      (noninteractive t))
+  (message "Starting now")
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((shell . t)))
+  (message (emacs-version))
+  (message org-agenda-files)
+  (org-publish-all)
+  (message "Done!"))
 
-;; Making a sitemap
-
-
-(org-publish-all t)
-(message "Build complete!")
