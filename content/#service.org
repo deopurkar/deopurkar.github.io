@@ -11,13 +11,39 @@
 :institute: Mathematical Sciences Institute, Australian National University
 :end:
 
+* Served on the PhD thesis committee of Snehinh Sen 
+:properties:
+:year: 2025
+:institute: Mathematical Sciences Institute, Australian National University
+:end:
+
+* Served on the PhD thesis committee of Alexander Lai De Oliveira 
+:properties:
+:year: 2025
+:institute: Mathematical Sciences Institute, Australian National University
+:end:
+
+
+* Served on the PhD thesis committee of Seethalakshmi Kayanattath 
+:properties:
+:year: 2025
+:institute: Mathematical Sciences Institute, Australian National University
+:end:
+
+
+* Served on the PhD thesis committee of Lucas Allen
+:properties:
+:year: 2025
+:institute: Mathematical Sciences Institute, Australian National University
+:end:
+
 * Headed the selection committee for the /Future research talent fellowship/
 :properties:
 :year: 2025
 :institute: Australian National University
 :end:
 
-* Served on the thesis committee of Kabeer Manali Rahul
+* Served on the PhD thesis committee of Kabeer Manali Rahul
 :properties:
 :year: 2025
 :institute: Australian National University
@@ -43,7 +69,13 @@
   :institute: AustMS meeting
 :end:
 
-* Served on the thesis committee of Abhishek Bharadwaj
+* Served on the PhD thesis committee of Abhishek Bharadwaj
+:properties:
+:year: 2020
+:institute: Mathematical Sciences Institute, Australian National University
+:end:
+
+* Served on the MPhil thesis committee of Ivan Zelich
 :properties:
 :year: 2020
 :institute: Mathematical Sciences Institute, Australian National University
@@ -65,6 +97,13 @@
   :year: 2019
   :institute: Mathematical Sciences Institute, Australian National University
 :end:
+
+* Served on the PhD thesis committee of Edmund Heng
+:properties:
+:year: 2018
+:institute: Mathematical Sciences Institute, Australian National University
+:end:
+
 
 *  Served on the award committee for the /BH Neumann prize/ for the best student talk
 :properties:
@@ -123,19 +162,19 @@
 :year: 2014
 :end:
 
-*  Served on the thesis committee of Natasha Potashnik
+*  Served on the PhD thesis committee of Natasha Potashnik
 :properties:
 :year: 2016
 :institute: Columbia University, New York City, New York
 :end:
 
-*  Served on the thesis committee of Zachary Maddock
+*  Served on the PhD thesis committee of Zachary Maddock
 :properties:
 :year: 2013
 :institute: Columbia University, New York City, New York
 :end:
 
-*  Served on the thesis committee of Xuanyu Pan
+*  Served on the PhD thesis committee of Xuanyu Pan
 :properties:
 :year: 2014
 :institute: Columbia University, New York City, New York
