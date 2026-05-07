@@ -44,7 +44,7 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 ** This semester (2026 S1), I am teaching /Algebra 2 (Fields and Galois Theory)/.  
 ** Upcoming travel
  - Sydney (June 2026) for a seminar at UNSW.
- - Melbourne (July 2026) for a Workshop on Algebraic Geometry that I am organising with [[jackhall:][Jack Hall]] and [[norbury:][Paul Norbury]].
+ - Melbourne (July 2026) for a the workshop [[https://algemel.github.io/][Algebraic Geometry in Melbourne]] that I am organising with [[jackhall:][Jack Hall]] and [[norbury:][Paul Norbury]].
  - Sydney (February 2027) for the Forum on Artin and Coxeter groups: Examples and Theory
 ** ... [[file:past.org][more "now" items from the past.]]
 * Papers/pre-prints
