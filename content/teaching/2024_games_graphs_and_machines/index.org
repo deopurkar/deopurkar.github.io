@@ -2,6 +2,7 @@
 #+options: toc:nil ':t tags:nil broken-links:nil prop:nil
 #+title: Games, graphs, and machines
 #+subtitle: {{{COURSENUM}}}, {{{SEMESTER}}}
+#+PROPERTY: header-arg :eval never-export
 :COURSE_INFO:
 #+macro: SEMESTER Semester 2, 2024
 #+macro: COURSENUM MATH2301
