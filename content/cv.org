@@ -8,6 +8,7 @@
 #+LATEX_HEADER_EXTRA: \usepackage{Baskervaldx}
 #+LATEX_HEADER_EXTRA: \usepackage{marvosym}
 #+HTML_HEAD_EXTRA: <script src="js/collapsibility.js"></script>
+#+setupfile: #setup.org
 
 * Positions
 :PROPERTIES:
