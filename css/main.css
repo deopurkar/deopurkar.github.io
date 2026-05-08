@@ -33,17 +33,6 @@ li {
   margin-top: 0.5em;
   margin-bottom: 0.5em; }
 
-dl {
-  display: grid;
-  grid-template-columns: max-content auto;
-  gap: 10px 0px; }
-
-dt {
-  grid-column-start: 1; }
-
-dd {
-  grid-column-start: 2; }
-
 figure {
   padding: 0em;
   margin: 0em; }
