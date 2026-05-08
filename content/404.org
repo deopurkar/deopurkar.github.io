@@ -1,5 +1,5 @@
 #+title: 404. Page not found.
-#+description: Page not found on Anand Deopurkar's website
+#+description: Page not found on the website of Anand Deopurkar, a mathematician specialising in algebraic geometry at the Australian National University.
 
 Perhaps visit the [[file:/][home page]] and go from there?
 
