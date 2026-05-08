@@ -135,7 +135,7 @@ First we define the variables for the title font and the body font.
 We use media queries to slighlty reduce the line height for small screens.
 Otherwise, we use a multi-column layout width columns.
 #+begin_src scss
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 720px) {
       body {
   	font-size: 90%;
           line-height: 1em;
@@ -149,9 +149,8 @@ Otherwise, we use a multi-column layout width columns.
       font-family: $body-font, sans-serif;
       margin-top: 0em;
       line-height: 1.5em;
-      column-width: 30em;
-      column-gap: 20px;
-      max-width: 90%;
+      width: 90%;
+      max-width: 1080px;
       margin-left: auto;
       margin-right: auto;
   }

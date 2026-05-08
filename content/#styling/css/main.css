@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   body {
     font-size: 90%;
     line-height: 1em;
@@ -11,9 +11,8 @@ body {
   font-family: "Atkinson Hyperlegible", sans-serif;
   margin-top: 0em;
   line-height: 1.5em;
-  column-width: 30em;
-  column-gap: 20px;
-  max-width: 90%;
+  width: 90%;
+  max-width: 1080px;
   margin-left: auto;
   margin-right: auto; }
 

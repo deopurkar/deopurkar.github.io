@@ -2,7 +2,6 @@
 (require 'subr-x)
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (print auto-mode-alist)
-(setq org-export-babel-evaluate nil)
 
 (setq org-publish-project-alist
       '(("website-org"
