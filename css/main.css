@@ -1,14 +1,8 @@
-@media screen and (max-width: 720px) {
-  body {
-    font-size: 90%;
-    line-height: 1em;
-    max-width: 95%; } }
-
 html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: sans-serif;
   margin-top: 0em;
   line-height: 1.5em;
   width: 90%;
@@ -20,10 +14,7 @@ body {
   text-decoration: underline; }
 
 h1, h2, h3, h4 {
-  font-family: "B612", monospace;
   font-weight: normal;
-  margin-top: 20px;
-  margin-bottom: 20px;
   display: block; }
 
 h1, h2 {
@@ -37,11 +28,7 @@ figure {
   padding: 0em;
   margin: 0em; }
 
-#postamble, footer {
-  font-size: 80%; }
-
 .title {
-  font-family: "Atkinson Hyperlegible";
   line-height: 1.5em; }
 
 .intro {
@@ -52,6 +39,7 @@ figure {
   margin-right: auto; }
 
 footer {
+  font-size: 80%;
   margin-top: 2em;
   padding-top: 0.3em; }
 
@@ -78,6 +66,7 @@ footer {
     text-decoration: none; }
 
 #postamble {
+  font-size: 80%;
   margin-top: 1em;
   text-align: right;
   column-span: all; }
