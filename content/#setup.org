@@ -20,3 +20,6 @@
 #+link: davidswinarski https://faculty.fordham.edu/dswinarski/
 #+link: norbury https://researchers.ms.unimelb.edu.au/~norbury@unimelb/
 #+link: jackhall https://blogs.unimelb.edu.au/jack-hall/
+#+link: dennistseng https://sites.google.com/view/dennis-tseng
+#+link: eduardduryev https://eduryev.weebly.com/
+#+link: mariacueto https://people.math.osu.edu/cueto.5/
