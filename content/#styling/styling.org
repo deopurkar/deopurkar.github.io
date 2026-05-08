@@ -124,29 +124,12 @@ Later on we can just include the one we want.
 :ID:       3d104ae3-dfeb-4666-b672-063ac81e03b7
 :END:
 We come to the main part of the CSS code, namely the positioning and layout options, as well as the font options.
-First we define the variables for the title font and the body font.
 #+begin_src scss
-  // Fonts
-  $title-font: 'Atkinson Hyperlegible';
-  $body-font: 'Atkinson Hyperlegible';
-  $hl-font: 'B612', monospace; 
-#+end_src
-
-We use media queries to slighlty reduce the line height for small screens.
-Otherwise, we use a multi-column layout width columns.
-#+begin_src scss
-  @media screen and (max-width: 720px) {
-      body {
-  	font-size: 90%;
-          line-height: 1em;
-  	max-width: 95%;
-      }
-  }
   html {
       scroll-behavior: smooth;
   }
   body {
-      font-family: $body-font, sans-serif;
+      font-family: sans-serif;
       margin-top: 0em;
       line-height: 1.5em;
       width: 90%;
@@ -165,10 +148,7 @@ Style links. Remember that the colours have already been styled via a theme mixi
 Style headings, lists, and figures.
 #+begin_src scss
   h1, h2, h3, h4 {
-      font-family: $hl-font;
       font-weight: normal;
-      margin-top: 20px;
-      margin-bottom: 20px;
       display: block;
   }
   h1, h2{
@@ -186,16 +166,9 @@ Style headings, lists, and figures.
 
 #+end_src
 
-We begin with a [[https://sass-lang.com/documentation/style-rules/placeholder-selectors][placeholder selector]] to decrease font size.
-#+begin_src scss
-  %small {
-      font-size: 80%;
-  }
-#+end_src
 Style the title and intro.
 #+begin_src scss
   .title {
-      font-family: $title-font;
       line-height: 1.5em;
   }
   .intro {
@@ -209,7 +182,7 @@ Style the title and intro.
 Footer style and other miscellany.
 #+begin_src scss
   footer {
-      @extend %small;
+      font-size: 80%;
       margin-top:2em;
       padding-top:0.3em;
   }
@@ -241,7 +214,7 @@ Footer style and other miscellany.
   }
 
   #postamble {
-      @extend %small;
+      font-size: 80%;
       margin-top: 1em;
       text-align: right;
       column-span: all;

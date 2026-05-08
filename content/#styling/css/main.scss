@@ -96,23 +96,11 @@
     @include theme(#fcfaf5,#b5736b,#303821,#b5736b);
 }
 
-// Fonts
-$title-font: 'Atkinson Hyperlegible';
-$body-font: 'Atkinson Hyperlegible';
-$hl-font: 'B612', monospace;
-
-@media screen and (max-width: 720px) {
-    body {
-	font-size: 90%;
-        line-height: 1em;
-	max-width: 95%;
-    }
-}
 html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: $body-font, sans-serif;
+    font-family: sans-serif;
     margin-top: 0em;
     line-height: 1.5em;
     width: 90%;
@@ -126,10 +114,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: $hl-font;
     font-weight: normal;
-    margin-top: 20px;
-    margin-bottom: 20px;
     display: block;
 }
 h1, h2{
@@ -145,12 +130,7 @@ figure {
     margin: 0em;
 }
 
-%small {
-    font-size: 80%;
-}
-
 .title {
-    font-family: $title-font;
     line-height: 1.5em;
 }
 .intro {
@@ -162,7 +142,7 @@ figure {
 }
 
 footer {
-    @extend %small;
+    font-size: 80%;
     margin-top:2em;
     padding-top:0.3em;
 }
@@ -194,7 +174,7 @@ footer {
 }
 
 #postamble {
-    @extend %small;
+    font-size: 80%;
     margin-top: 1em;
     text-align: right;
     column-span: all;
