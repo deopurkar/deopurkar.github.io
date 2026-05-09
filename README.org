@@ -11,7 +11,7 @@ The content for the website goes in the ~content/~ directory.
 It is written as a collection of inter-linked org files.
 An internal directory structure is supported.
 
-* Building locally
+* Building 
 We begin by creating an elisp file to build the webpage, as explained in [[https://systemcrafters.net/publishing-websites-with-org-mode/building-the-site/][this post]].
 I will tangle the following snippets of elisp code to a file called ~build.el~.
 
@@ -128,39 +128,39 @@ and a shell script to build and commit.
   git push
 #+end_src
 
-* COMMENT Building on Github
+* Building on Github
 /This is working, but missing some fringe functionality./
 Once we have set up the tools to build the website locally, we can now use them to build the site automatically on Github.
 Put the following code in ~.github/workflows/build.yml~.
 Inspired by [[https://duncan.codes/posts/2019-09-03-migrating-from-jekyll-to-org/][this post]] and [[https://systemcrafters.net/publishing-websites-with-org-mode/automated-site-publishing/][this post]].
-#+begin_src yaml :tangle ".github/workflows/build.yml" :mkdirp yes :eval no
-  name: Build and publish to GitHub Pages
-  on:
-    push:
-      branches:
-      - master
-  
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-      - name: Check out repository
-        uses: actions/checkout@v2
-  
-      - name: Add emacs ppa
-        run: sudo add-apt-repository ppa:kelleyk/emacs --yes && sudo apt update --yes
+#+begin_src yaml :tangle ".github/workflows/publish.yml" :mkdirp yes :eval no
+name: Publish
 
-      - name: Install emacs
-        run: sudo apt install emacs27-nox --yes
-  
-      - name: Build website
-        run: ./build.sh
-  
-      - name: Publish to gh-pages branch
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        if: success()
-        with:
-          branch: gh-pages
-          folder: public
+on:
+ push:
+  branches:
+   - main
+
+jobs:
+ publish:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Check out
+     uses: actions/checkout@v6
+
+   - name: Install Emacs
+     run: sudo apt install emacs-nox --yes
+     
+   - name: Install latex
+     run: sudo apt install texlive texlive-latex-extra texlive-plain-generic texlive-fonts-extra texlive-fonts-recommended --yes
+
+   - name: Build the site
+     run: ./build.sh
+
+   - name: Publish generated content to GitHub Pages
+     uses: JamesIves/github-pages-deploy-action@v4
+     with:
+      branch: gh-pages
+      folder: docs
 #+end_src
 
