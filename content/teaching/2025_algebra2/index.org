@@ -1,7 +1,8 @@
 # Created 2025-07-23 Wed 21:59
-#+options: broken-links:nil toc:nil ':t ":t prop:nil
+#+options: broken-links:nil toc:1 ':t ":t prop:nil
 #+title: 2025 Algebra 2
 #+author: Anand Deopurkar
+#+description: Read the course materials for Algebra 2 (fields and Galois theory) taught by Anand Deopurkar at the Australian National University in 2025.
 #+filetags: teaching
 #+property: header-args:sage :eval no-export
 #+bind: org-html-postamble nil
@@ -9,6 +10,9 @@
 #+export_file_name: ~/website/content/teaching/2025_algebra2/index.org
 #+exclude_tags: solution solutions noexport
 * Course information
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 Welcome to algebra 2!  In this course, we will learn use the machinary of abstract algebra to understand numbers, equations, and functions.
 
 - Textbook :: Algebra (2nd edition) by Michael Artin (Chapters 12, 15, 16).
@@ -29,7 +33,13 @@ A mini-project will be like an extended homework that goes deeper into some aspe
 
 *Use of computers* :: Using computational algebra software is acceptable as long as you can independently justify the answers, and unless explicitly forbidden.  I recommend against consulting large language models (ChatGPT etc) for mathematical questions.  But if you do, you must (a) explicitly acknowledge its use, like listing your collaborator and (b) provide a transcript of the conversation.
 * Week-by-week
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 ** Week 1
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 - Reading for week 1 :: 12.1, 12.2 (up to 12.2.8)
 - Questions to think about :: 
   1. [Section 12.1] Prove Theorem 12.1.2.
@@ -84,6 +94,9 @@ A mini-project will be like an extended homework that goes deeper into some aspe
 2. Exercise 12.2.4.
 3. Exercise 12.2.9.
 ** Week 2
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 - Reading for week 2 :: 12.2 (continued), 12.3, 12.4
 - Questions to think about :: 
   1. [Proposition 12.2.9] In view of this proposition, what are the maximal ideals of \(\mathbf{Z}\)? \(\mathbf{Q}[x]\)?
@@ -161,6 +174,9 @@ Spend your time on 1--6.  Do 7 and 8 only if you have time.
 1. Exercise 12.3.4.
 2. Exercise 12.4.4.
 ** Week 3
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 - Reading for week 3 :: 12.5, 15.1, 15.2
 - Questions to think about :: 
   1. [Theorem 12.5.2]
@@ -235,6 +251,9 @@ By following the same logic as for \(\mathbf{Z}[i]\) in class, we can describe t
    (Caution: \(\mathbf{R}[x,y]\) is not a principal ideal domain.)
 2. Exercise 15.2.3.
 ** Week 4
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 - Reading for week 4 :: 15.3, 15.4, 15.5
 - Questions to think about :: 
   1. [Definition of degree]
@@ -284,6 +303,9 @@ By following the same logic as for \(\mathbf{Z}[i]\) in class, we can describe t
 1. Exercise 15.3.5
 2. Exercise 15.3.7
 ** Week 5
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 - Reading for week 5 :: 15.6, 15.7
 - Questions to think about :: 
   1. Suppose we abstractly adjoin the cube root of \(2\) to \(\mathbf{Q}\).
@@ -342,6 +364,9 @@ Let \(\phi \colon F \to F\) be the Frobenius automorphism.
 
 4. Prove the above proposition (in general, not just for the given field).
 ** Week 6
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 - Reading for week 6 :: 15.8, 15.10
 - Questions to think about :: 
   1. [Proof of 15.8.1]
@@ -457,6 +482,9 @@ This problem asks whether given a finite group \(G\), we can find a finite Galoi
      is_galois_group_full(x^3+3*x+1) #true
    #+end_src
 ** Week 7
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 - Week 7 :: 
      No reading this week because of the midterm.
      On Friday, I will give an overview of the main theorem of Galois theory.
@@ -515,6 +543,9 @@ Let \(K = \mathbf{Q}[\alpha_1, \dots, \alpha_4] \subset \mathbf{C}\).
    Describe them by how they act on \(i\) and \(2^{1/4}\).
    Use this description to pin down the 8 permutations of \(\alpha_1, \dots, \alpha_{4}\) arising from \(\operatorname{Aut} K\).
 ** Week 8
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 - Reading for week 8 :: 16.1, 16.2, 16.3
 - Questions to think about :: 
   1. [Definition of symmetric polynomials]
@@ -589,6 +620,9 @@ Let \(K = \mathbf{Q}[\alpha_1, \dots, \alpha_4] \subset \mathbf{C}\).
 
       You don't have to use ~sage~.  Feel free to use whatever method (including computation by hand).  And, of course, I do not expect you to do this kind of heavy computation on an exam.
 ** Week 9
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 - Reading for week 9 :: 16.4, 16.5
 - Questions to think about :: 
   1. Give examples and non-examples of Galois extensions of \(\mathbf{Q}\).
@@ -635,6 +669,9 @@ The main theorem of Galois theory says that these are all the fields containing 
 
    Find the fixed field \(\mathbf{C}(t)^{D_n}\).
 ** Week 10
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 - Reading for week 10 :: 16.6, 16.7
 - Tips for reading :: 
      This section contains the statements of the major theorems of Galois theory.
@@ -703,6 +740,9 @@ Let \(G\) be the Galois group.
 1. Here is a fact from group theory: a group of order \(2^m\) has a subgroup of order \(2^{m-1}\).  Use it to produce a chain of subgroups of size \(1,2,\cdots, 2^m\).
 2. Apply the main theorem of Galois theory.
 ** Week 11
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 - Reading for week 11 :: 16.8, 16.9, 16.10
 - Tips for reading :: 
      There are no major results from now on.
@@ -762,6 +802,9 @@ What is the relationship between \(G_1\), \(G_2\), and \(H\)?
 In particular, describe an injective homomorphism from \(G_2\) to \(G_1\).
 Under what conditions is it also surjective?
 ** Week 12
+:PROPERTIES:
+:html_headline_class: collapsible
+:END:
 - Reading for week 12 :: 16.11, 16.12
 - Tips for reading :: 
   1. [Theorem 16.11.1] Artin says the proof is "nice" (which is true), but it is also subtle.
