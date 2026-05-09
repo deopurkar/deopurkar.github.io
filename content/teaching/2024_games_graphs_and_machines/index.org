@@ -1,7 +1,9 @@
 # Created 2025-04-05 Sat 13:27
-#+options: toc:nil ':t tags:nil broken-links:nil prop:nil
+#+options: toc:1 ':t tags:nil broken-links:nil prop:nil
 #+title: Games, graphs, and machines
 #+subtitle: {{{COURSENUM}}}, {{{SEMESTER}}}
+#+description: Course material for Games, Graphs, and Machines taught at the Australian National University by Anand Deopurkar in 2024.  Read the course outline, week-by-week rundown, assignments, and other materials.
+#+author: Anand Deopurkar 
 #+PROPERTY: header-arg :eval never-export
 :COURSE_INFO:
 #+macro: SEMESTER Semester 2, 2024
@@ -11,7 +13,7 @@
 These are the course materials for MATH2301 /Games, graphs, and machines/ as taught at the ANU in 2024.
 * Wattle material
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 ** Class activities
 
@@ -131,7 +133,7 @@ You can get started by briefly introducing yourself in the =introductions= topic
 - Please feel very free to post questions, comments, and feedback. I hope we can have lots of interesting discussions on Zulip over the semester.
 * How to study for this course?
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 There is no single answer to the question "How to study ___?"---everyone learns differently---but here are some strategies that are generally helpful.
 They are not specific to this course, and should be useful for studying mathematics in general.
@@ -204,7 +206,7 @@ If the problem talks about a big number, try the same problem for smaller number
 If the problem talks about all graphs, try with some small graphs.
 * Academic integrity policy
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 Please read the following guidelines carefully. 
 ** Academic integrity policy for assignments
@@ -231,12 +233,12 @@ You will never get into trouble for asking for clarification about what is accep
 However, you will face serious consequences if you fail to follow the academic integrity policy.
 * Notes
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 - [[./ggm.pdf][ggm.pdf]]
 * Annotated lecture slides
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 - [[file:Lecture slides/2024-07-23_annotated.pdf][2024-07-23_annotated.pdf]]
 - [[file:Lecture slides/2024-07-24_annotated.pdf][2024-07-24_annotated.pdf]]
@@ -272,7 +274,7 @@ However, you will face serious consequences if you fail to follow the academic i
 - [[file:Lecture slides/2024-10-18_annotated.pdf][2024-10-18_annotated.pdf]]
 * Worksheets
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 ** Worksheet 1
 :PROPERTIES:
@@ -685,7 +687,7 @@ Some of these problems are hard, and take practice to solve. Don't get discourag
    \[L = \{w \mid w = a_1 b_1 \cdots a_k b_k, \text{ where } a_1, \dots, a_k, b_1, \dots, b_k \in \Sigma^{*} \text{ are such that } a_1 \cdots a_k \in L_1 \text{ and } b_1 \cdots b_k \in L_2\}.\]
 ** Worksheet 9
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 In all the problems, the alphabet is \(\{0,1\}\).
 
@@ -711,7 +713,7 @@ In all the problems, the alphabet is \(\{0,1\}\).
 3. Choose your favourites among the games we discussed in class (subtraction game, chomp, hackenbush, nim), and play them in your group. Can you find winning strategies for certain cases? Once you have played a couple of rounds, try to draw some small game graphs and label them by N and P. Did you use the best strategy?
 ** Worksheet 10
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 1. (Warm up) Remember the rules to label states as P or N.
    1. If a state is a sink state (no outgoing arrows), we label it \makebox[3em]{\hrulefill}.
@@ -741,7 +743,7 @@ In all the problems, the alphabet is \(\{0,1\}\).
    Play this game with your group and determine some other non-trivial P and N positions. Do you see a pattern? Bonus/challenge: Can you find a pattern, and who has a winning strategy?
 ** Worksheet 11
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 The goal of this worksheet is to practice computing Grundy labels and using them to find winning moves.
 
@@ -759,11 +761,11 @@ The goal of this worksheet is to practice computing Grundy labels and using them
    But you should know the rules of nim, chomp, and poset chomp.
 * Assignments
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 ** Academic integrity policy for assignments
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 While solving your assignments, you will typically work in two phases.
 1. The solving phase: this is when you are actually trying to find the answers to the questions.
@@ -788,7 +790,7 @@ You will never get into trouble for asking for clarification about what is accep
 However, you will face serious consequences if you fail to follow the academic integrity policy.
 ** Assignment 1 (due on 2 August 2024 at 11:59pm)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 *** General remarks
 1. Please read the academic integrity policy for assignments.
@@ -888,7 +890,7 @@ However, you will face serious consequences if you fail to follow the academic i
    2. Describe the equivalence classes in words, and draw sketches in \(\mathbf{R}^{2}\), of the equivalence class of \((1,2)\) and of \((0,0)\).
 ** Assignment 2 (due on 9 August 2024 at 11:59pm)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 1. Let \(S\) be the set of squares on a standard \(8 \times 8\) chessboard.
    Consider the following relations on \(S\).
@@ -912,7 +914,7 @@ However, you will face serious consequences if you fail to follow the academic i
 4. Take the modulus to be \(d = 7\). Show that if \([3x] = [5]\) modulo \(7\), then \([x] = [4]\).
 ** Assignment 4 (due on 23 August 2024 at 11:59pm)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 1. Consider a graph whose adjacency matrix is
    \[A = \begin{pmatrix}1&1&1\\0&1&1\\0&0&1\end{pmatrix}.\]
@@ -983,7 +985,7 @@ However, you will face serious consequences if you fail to follow the academic i
    Otherwise, give an example where no positive power of \(A-I\) is zero.
 ** Assignment 5 (due on 30 August 2024 at 11:59pm)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 1. A directed graph is called /strongly connected/ if for every \(i\) and \(j\), there is a path from vertex \(i\) to vertex \(j\).
 
@@ -1066,7 +1068,7 @@ However, you will face serious consequences if you fail to follow the academic i
    [[file:pa3-wadj.png]]
 ** Assignment 6 (due on 20 September 2024 at 11:59pm)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 1. Consider the following Markov chain:
    #+begin_src dot :file 6a.png :exports results :cmd circo
@@ -1187,7 +1189,7 @@ However, you will face serious consequences if you fail to follow the academic i
    #+end_proof
 ** Assignment 7  (due on 27 September 2024 at 11:59pm)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 1. Let \(\Sigma = \{0,1\}\). For each language \(L\) described below, write down a regular expression \(r\) such that \(L(r) = L\).
    That is, the strings of \(\Sigma^*\) that match \(r\) are exactly the strings of \(L\).
@@ -1222,7 +1224,7 @@ However, you will face serious consequences if you fail to follow the academic i
    3. Now use your method from the first part to draw a DFA for the complement of the language \(L\) above. Justification not required.
 ** Assignment 8  (due on 4 October 2024 at 11:59pm)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 1. Construct an NFA recognising the following languages. Justifications not required.
    1. \(L = \{w \mid w\text{ ends with }00\}\).
@@ -1262,7 +1264,7 @@ However, you will face serious consequences if you fail to follow the academic i
    So the number \(00011\) is the same as the number \(11\), which is the number three.
 ** Assignment 9  (due on 11 October 2024 at 11:59pm)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 1. Convert the following DFAs into equivalent regular expressions.
    Show your work, but you need not give full justification.
@@ -1285,7 +1287,7 @@ However, you will face serious consequences if you fail to follow the academic i
    Label the graph with \(N\) and \(P\) labels.
 ** Assignment 10  (due on 18 October 2024 at 11:59pm)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 1. Grundy's game is defined as follows.
    The starting position is some number of piles of berries.
@@ -1338,7 +1340,7 @@ However, you will face serious consequences if you fail to follow the academic i
       And so is \((4, 0, 11)\), but not \((3,0,11)\).
 ** Assignment 11  (due on 18 October 2024 at 11:59pm)
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 This is a short assignment because it is the final week, and you probably have many other things to do.
 
@@ -1393,6 +1395,6 @@ Find the Grundy value of \(\operatorname{Chomp-the-graph}(G)\) for the following
 5. (Food for thouht; not to be turned in) Write a computer program that takes a graph \(G\) as input and computes the Grundy value of \(\operatorname{Chomp-the-graph}(G)\).
 * Data for final scores versus engagement
 :PROPERTIES:
-:html_headline_class: collapsed
+:html_headline_class: collapsible
 :END:
 See [[file:engagement/]].
