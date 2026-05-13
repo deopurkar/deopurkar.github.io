@@ -65,6 +65,9 @@ footer {
   #table-of-contents a {
     text-decoration: none; }
 
+#preamble a {
+  text-decoration: none; }
+
 #postamble {
   font-size: 80%;
   margin-top: 1em;
@@ -106,6 +109,9 @@ footer {
 
 #mypicture {
   border-color: #b5736b; }
+
+#preamble a {
+  border-bottom: 0.15em solid #b5736b; }
 
 #postamble {
   border-top: 1px solid #b5736b; }
