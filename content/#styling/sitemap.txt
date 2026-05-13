@@ -35,6 +35,7 @@ https://ananddeopurkar.org/404.html
 https://ananddeopurkar.org/past.html
 https://ananddeopurkar.org/misc/blowup-of-a-triple-point.html
 https://ananddeopurkar.org/genus7syz/index.html
+https://ananddeopurkar.org/test.html
 https://ananddeopurkar.org/google4cf6fbd911b6a90e.html
 https://ananddeopurkar.org/talks/ecc2021/ecc.html
 https://ananddeopurkar.org/talks/ecc2021/reveal.js/plugin/notes/speaker-view.html

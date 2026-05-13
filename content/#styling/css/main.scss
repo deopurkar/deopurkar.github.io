@@ -40,7 +40,9 @@
     #mypicture {
         border-color: $canvas-pop;
     }
-
+    #preamble a{
+	border-bottom: 0.15em solid $writing-pop;  	      
+    }
     #postamble {
 	border-top: 1px solid $canvas-pop;
     }
@@ -168,6 +170,12 @@ footer {
         margin-top: 0em;
         margin-bottom: 0.5em;
     }
+    a {
+	text-decoration: none;
+    }
+}
+
+#preamble {
     a {
 	text-decoration: none;
     }

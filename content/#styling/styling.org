@@ -58,7 +58,9 @@ We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] c
       #mypicture {
           border-color: $canvas-pop;
       }
-
+      #preamble a{
+  	border-bottom: 0.15em solid $writing-pop;  	      
+      }
       #postamble {
   	border-top: 1px solid $canvas-pop;
       }
@@ -208,6 +210,12 @@ Footer style and other miscellany.
           margin-top: 0em;
           margin-bottom: 0.5em;
       }
+      a {
+  	text-decoration: none;
+      }
+  }
+
+  #preamble {
       a {
   	text-decoration: none;
       }

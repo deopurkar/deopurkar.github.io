@@ -5,7 +5,7 @@
 #+description: Personal website of Anand Deopurkar
 #+keywords: Anand Deopurkar 
 #+author: Anand Deopurkar
-#+OPTIONS: *:t author:nil ':t  d:+results H:1
+#+OPTIONS: *:t author:nil ':t  d:+results H:1 html-preamble:nil
 #+setupfile: #setup.org
 
 #+begin_intro
