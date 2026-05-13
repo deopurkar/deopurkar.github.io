@@ -65,8 +65,10 @@ footer {
   #table-of-contents a {
     text-decoration: none; }
 
-#preamble a {
-  text-decoration: none; }
+#preamble {
+  margin-top: 1em; }
+  #preamble a {
+    text-decoration: none; }
 
 #postamble {
   font-size: 80%;
