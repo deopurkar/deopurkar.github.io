@@ -1,10 +1,11 @@
 :PROPERTIES:
 :ID:       1a667b02-c72c-4225-acbc-d5064ab2f748
 :END:
-#+title: For prospective PhD students | Anand Deopurkar
-#+subtitle: Thinking of doing a PhD at ANU with me as a supervisor?
-#+description: Guidelines for prospective PhD students of Anand Deopurkar
-#+keywords: PhD Algebraic Geometry Anand Deopurkar 
+#+title: Anand Deopurkar | Prospective PhD students
+#+description: Read this page if you are interested in doing a PhD with Anand Deopurkar, a mathematician specialising in algebraic geometry at the Australian National University.
+#+keywords: PhD, Algebraic Geometry, Anand Deopurkar, ANU, MSI 
+
+* Thinking of doing a PhD at ANU with me as a supervisor?
 
 Thanks!  I am happy that you find my work interesting.
 
@@ -28,7 +29,7 @@ Before you write to me, please do the following.
 6. List at least two people whom I can contact for a reference.
 
 The duration of a PhD at ANU is short: about 3 to 3.5 years.  
-So it is improtant that candidates come in with sufficient background.
+So it is important that candidates come in with sufficient background.
 I may not be able to accept you if I think you do not meet this criterion.
 Please do not take it as a judgement of your mathematical ability, readiness to do a PhD in some other area, or at another institution.
 

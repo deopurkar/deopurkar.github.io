@@ -2,10 +2,9 @@
 :ARCHIVE:  %s_archive::
 :END:
 #+title: Anand Deopurkar
-#+description: Personal website of Anand Deopurkar
-#+keywords: Anand Deopurkar 
-#+author: Anand Deopurkar
-#+OPTIONS: *:t author:nil ':t  d:+results H:1 html-preamble:nil
+#+description: Website of Anand Deopurkar, a mathematician specialising in algebraic geometry at the Australian National University.  Browse my papers, courses, and projects.  Get in touch with comments, thoughts, or ideas.
+#+keywords: Anand Deopurkar, mathematics, ANU, algebraic geometry, MSI 
+#+OPTIONS: H:1 html-preamble:nil
 #+setupfile: #setup.org
 
 #+begin_intro

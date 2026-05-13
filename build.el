@@ -3,6 +3,8 @@
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (setq org-publish-project-alist
       '(("website-org"
+	 :author "Anand Deopurkar"
+	 :email "anand.deopurkar@anu.edu.au"
          :base-directory "./content"  ;; This is where our files live
          :base-extension "org" ;; Publish only from org files
          :publishing-directory "./docs" ;; This is where the published files go
@@ -17,14 +19,15 @@
          :with-special-strings t
          :with-smart-quotes t
          :with-emphasize t
+	 :with-email 
          :with-drawers ("results")
          :html-head-include-default-style nil
          :html-head-include-scripts nil 
-         :html-head "<link rel=\"stylesheet\" href=\"/css/main.css\"><link href=\"https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=B612:wght@300..700&display=swap\" rel=\"stylesheet\"><script src=\"/js/collapsibility.js\"></script>"
-         :html-postamble-format (("en" "By <a href=\"/\">%a</a> using %c.  Last modified: %C.  <a href=\"https://github.com/deopurkar/deopurkar.github.io\">Source</a> <a href=\"mailto:%a\">Contact</a>"))
-	 :html-preamble-format (("en" "<a href=\"/\">Home</a>"))
+         :html-head "<link rel=\"stylesheet\" href=\"/css/main.css\"><script src=\"/js/collapsibility.js\"></script>"
          :html-postamble t
 	 :html-preamble t
+	 :html-postamble-format (("en" "Created by <a href=\"/\">%a</a> using %c.  Last modified: %C.  <a href=\"https://github.com/deopurkar/deopurkar.github.io\">Source</a> <a href=\"mailto:%a\">Contact</a>"))
+	 :html-preamble-format (("en" "<a href=\"/\">Home</a>"))
          )
         ("pdfcv"
          :base-directory "./content"

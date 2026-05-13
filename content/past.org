@@ -1,5 +1,6 @@
 #+title: Archived "now" items
-#+description: Archived now items from Anand Deopurkar's webpage
+#+description: Archived now items from the website of Anand Deopurkar, a mathematician specialising in algebraic geometry at the Australian National University.  Read about what I was doing in the past.
+#+keywords: Anand Deopurkar, mathematics, ANU, algebraic geometry, MSI, nowpage
 #+setupfile: #setup.org
 #+options: num:nil
 
