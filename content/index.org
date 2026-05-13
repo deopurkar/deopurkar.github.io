@@ -15,8 +15,8 @@
 [[https://anu.edu.au][The Australian National University]]\\
 Canberra, Australia
 
-~anand.deopurkar~ at ~anu~ dot ~edu~ dot ~au~ ([[file:ananddeopurkar-pgp.asc][pgp]])\\
-4.56 [[http://www.anu.edu.au/maps#show=102872][Hanna Neumann Building]]\\
+[[mailto:anand.deopurkar@anu.edu.au][anand.deopurkar at anu dot edu dot au]] ([[file:ananddeopurkar-pgp.asc][pgp]])\\
+[[http://www.anu.edu.au/maps#show=102872][Hanna Neumann Building]] 4.56\\
 +61 2 6125 8398   
 
 CV: [[file:cv.html][html]] [[file:cv.pdf][pdf]]
