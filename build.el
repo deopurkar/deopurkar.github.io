@@ -19,14 +19,14 @@
          :with-special-strings t
          :with-smart-quotes t
          :with-emphasize t
-	 :with-email 
+	 :with-email t 
          :with-drawers ("results")
          :html-head-include-default-style nil
          :html-head-include-scripts nil 
          :html-head "<link rel=\"stylesheet\" href=\"/css/main.css\"><script src=\"/js/collapsibility.js\"></script>"
          :html-postamble t
 	 :html-preamble t
-	 :html-postamble-format (("en" "Created by <a href=\"/\">%a</a> using %c.  Last modified: %C.  <a href=\"https://github.com/deopurkar/deopurkar.github.io\">Source</a> <a href=\"mailto:%a\">Contact</a>"))
+	 :html-postamble-format (("en" "Created by <a href=\"mailto:anand.deopurkar@anu.edu.au\">%a</a> using %c.  <a href=\"https://github.com/deopurkar/deopurkar.github.io\">Last modified</a>: %C."))
 	 :html-preamble-format (("en" "<a href=\"/\">Home</a>"))
          )
         ("pdfcv"
