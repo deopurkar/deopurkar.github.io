@@ -20,6 +20,9 @@ h1, h2, h3, h4 {
 h1, h2 {
   column-span: all; }
 
+ul, ol {
+  padding-left: 1em; }
+
 li {
   margin-top: 0.5em;
   margin-bottom: 0.5em; }
@@ -32,9 +35,8 @@ figure {
   line-height: 1.5em; }
 
 .intro {
-  column-span: all;
   column-width: 18em;
-  column-gap: 20px;
+  column-gap: 1em;
   margin-left: auto;
   margin-right: auto; }
 
@@ -117,6 +119,11 @@ footer {
 
 #postamble {
   border-top: 1px solid #b5736b; }
+
+@media (max-width: 720px) {
+  body {
+    font-size: 90%;
+    width: 95%; } }
 
 @media print {
   footer, nav {
