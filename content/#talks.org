@@ -1,4 +1,13 @@
 #+filetags: :talk:
+* Be wise, equivariantise!
+:properties:
+:institute: University of Sydney
+:place:    Sydney, Australia
+:year:     2026
+:type:     Workshop
+:meet: Workshop in algebraic geometry
+:end:
+
 * How to count using equivariant cohomology
 :properties:
 :institute: Banff International Research Institute/Chennai Mathematical Institute
