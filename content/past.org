@@ -6,7 +6,7 @@
 
 * 2026
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: collapsible
+:HTML_HEADLINE_CLASS: collapsible
 :END:
 ** 2026-01 January
 *** 2026-01-22 Thursday
@@ -49,7 +49,7 @@
 :END:
 * 2025
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: collapsible
+:HTML_HEADLINE_CLASS: collapsible
 :END:
 ** 2025-06 June
 *** 2025-06-06 Friday
