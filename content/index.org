@@ -45,7 +45,10 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
  - Sydney (June 2026) for a seminar at UNSW.
  - Melbourne (July 2026) for a the workshop [[https://algemel.github.io/][Algebraic Geometry in Melbourne]] that I am organising with [[jackhall:][Jack Hall]] and [[norbury:][Paul Norbury]].
  - Sydney (February 2027) for the Forum on Artin and Coxeter groups: Examples and Theory
-** ... [[file:past.org][more "now" items from the past.]]
+** ... [[id:6580b2b4-26bc-4483-a674-3fd5385bb1ad][more "now" items from the past]].
+:PROPERTIES:
+:ID:       72e5d903-a7af-4a53-81d8-7860af8ca2bf
+:END:
 * Papers/pre-prints
 :PROPERTIES:
 :html_headline_class: collapsible

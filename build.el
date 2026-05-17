@@ -1,6 +1,50 @@
 (require 'ox-publish)
 (require 'subr-x)
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+
+;; The following function is a general function iterator over org
+;; headlines that is more attuned to our needs.  here match can be a
+;; function with no arguments that returns nil or non-nil on a
+;; subtree.  If it is non-nil, pp will be called on the subtree.
+;; Otherwise, the subtree will be skipped.
+(defun my/select-and-collect (pp &optional scope match)
+  (let ((scope (or scope (directory-files-recursively default-directory ".*org$"))))
+    (if (functionp match)
+	(org-map-entries
+	 (lambda ()
+	   (or (and (match) (pp)) ""))
+	 nil scope)
+      (org-map-entries
+       pp
+       match scope))))
+
+;; The following filter checks if id is linked from anywhere in the entry.
+(defun my/has-link-to-id (id)
+  (let ((max (save-excursion
+	      (outline-next-heading)
+	      (point))))
+    (save-excursion
+      (re-search-forward (format "\\[id:%s\\]" id) max t))))
+
+;; The following is a general purpose pretty printer.
+(defun my/default-pp ()
+  (let ((local-title (or (org-entry-get (point) "nav-title")
+			 (org-entry-get (point) "ITEM")))
+	(local-id (org-entry-get (point) "id" :inherit))
+	(page-title (let ((p (or (org-collect-keywords "nav-title")
+				 (org-collect-keywords "title"))))
+		      (and p (cdr p))))
+	(page-id (org-entry-get (point-min) "id")))
+    (cond ((and local-id (equal page-id local-id))
+	   (format "[[%s][id:%s]]" (or page-title local-title) local-id))
+	  ((and local-id page-id)
+	   (format "[[%s/%s][id:%s]]" page-title local-title local-id))
+	  (local-id
+	   (format "[[%s/%s][id:%s]]" page-title local-title local-id))
+	  (page-id
+	   (format "[[%s][id:%s]]" page-title page-id))
+	  (t ""))))
+  
 (setq org-publish-project-alist
       '(("website-org"
 	 :author "Anand Deopurkar"
