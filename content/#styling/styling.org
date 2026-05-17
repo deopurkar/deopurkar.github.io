@@ -299,23 +299,40 @@ On clicking the Headline, the javascript will toggle the visibility of Content a
 
 #+begin_src javascript 
   document.addEventListener("DOMContentLoaded", function () {
+      
+      // We make all h2 and h3 collapsible/collapsed by default.
+
+      defcollapse = "collapsible"
+      if (document.documentElement.clientWidth < 720){
+  	defcollapse = "collapsed";
+      }
+      
+      var headlines = document.querySelectorAll(".outline-2 h2, .outline-2 h3");
+      for (var i = 0; i < headlines.length; i++){
+  	if (!(headlines[i].classList.contains("collapsed") ||
+  	     headlines[i].classList.contains("collapsible"))){
+  	    headlines[i].classList.add(defcollapse);
+  	}
+      }
+
       var headlines = document.querySelectorAll(".collapsible");
       for (var i = 0; i < headlines.length; i++) {
           addCollapsiblility(headlines[i], true);
       }
-  
+
+      
       var collapsedHeadlines = document.querySelectorAll(".collapsed");
       for (var i = 0; i < collapsedHeadlines.length; i++) {
           addCollapsiblility(collapsedHeadlines[i], false);
       }
   });
-  
+
   function addCollapsiblility(headline, visible){
       headline.addEventListener("click", toggleVisibilityOfNext);
       var parentElement = headline.parentElement;
       var childrenElements = parentElement.children;
       var isVisible = visible;
-  
+
       for (var i = 1; i < childrenElements.length; i++) {
           var content = childrenElements[i];
           if (isVisible) {
@@ -324,7 +341,7 @@ On clicking the Headline, the javascript will toggle the visibility of Content a
               content.style.display = "none";
           }
       }
-  
+
       function toggleVisibilityOfNext (){
           if (isVisible){
               headline.classList.remove("collapsible");
