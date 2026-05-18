@@ -7,16 +7,18 @@
 ;; function with no arguments that returns nil or non-nil on a
 ;; subtree.  If it is non-nil, pp will be called on the subtree.
 ;; Otherwise, the subtree will be skipped.
-(defun my/select-and-collect (pp &optional scope match)
+(defun my/select-and-collect (&optional scope match)
   (let ((scope (or scope (directory-files-recursively default-directory ".*org$"))))
-    (if (functionp match)
-	(org-map-entries
-	 (lambda ()
-	   (or (and (match) (pp)) ""))
-	 nil scope)
-      (org-map-entries
-       pp
-       match scope))))
+    (remove nil
+	    (if (functionp match)
+		(org-map-entries
+		 (lambda ()
+		   (and (match) (org-entry-properties (point))))
+		 nil scope)
+	      (org-map-entries
+	       (lambda ()
+		 (org-entry-properties (point)))
+	       match scope)))))
 
 ;; The following filter checks if id is linked from anywhere in the entry.
 (defun my/has-link-to-id (id)
