@@ -13,12 +13,16 @@
 	    (if (functionp match)
 		(org-map-entries
 		 (lambda ()
-		   (and (match) (org-entry-properties (point))))
+		   (and (match) (append (org-collect-keywords '("title" "nav-title"))
+					(org-entry-properties (point)))))
 		 nil scope)
 	      (org-map-entries
 	       (lambda ()
-		 (org-entry-properties (point)))
+		 (append (org-collect-keywords '("title" "nav-title"))
+			 (org-entry-properties (point))))
 	       match scope)))))
+
+(car (my/select-and-collect))
 
 ;; The following filter checks if id is linked from anywhere in the entry.
 (defun my/has-link-to-id (id)
