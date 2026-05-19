@@ -22,7 +22,7 @@
 			 (org-entry-properties (point))))
 	       match scope)))))
 
-(car (my/select-and-collect))
+(alist-get "TITLE" (car (my/select-and-collect)) nil nil '#equal?)
 
 ;; The following filter checks if id is linked from anywhere in the entry.
 (defun my/has-link-to-id (id)
@@ -33,23 +33,39 @@
       (re-search-forward (format "\\[id:%s\\]" id) max t))))
 
 ;; The following is a general purpose pretty printer.
-(defun my/default-pp ()
-  (let ((local-title (or (org-entry-get (point) "nav-title")
-			 (org-entry-get (point) "ITEM")))
-	(local-id (org-entry-get (point) "id" :inherit))
-	(page-title (let ((p (or (org-collect-keywords "nav-title")
-				 (org-collect-keywords "title"))))
-		      (and p (cdr p))))
-	(page-id (org-entry-get (point-min) "id")))
-    (cond ((and local-id (equal page-id local-id))
-	   (format "[[%s][id:%s]]" (or page-title local-title) local-id))
-	  ((and local-id page-id)
-	   (format "[[%s/%s][id:%s]]" page-title local-title local-id))
-	  (local-id
-	   (format "[[%s/%s][id:%s]]" page-title local-title local-id))
-	  (page-id
-	   (format "[[%s][id:%s]]" page-title page-id))
-	  (t ""))))
+(defun my/default-pp (alist &optional nolink)
+  (let ((id (alist-get "ID" alist))
+	(tags (alist-get "TAGS" alist))
+	(title (or (alist-get "NAV-ITEM" alist)
+		   (alist-get "ITEM" alist)
+		   (alist-get "NAV-TITLE" alist)
+		   (alist-get "TITLE" alist))))
+    (print title)
+    (let ((text
+	   (cond ((memq "talk" tags)
+		  (format "/%s/, talk at %s, %s."
+			  title
+			  (alist-get "WHERE" alist)
+			  (alist-get "WHEN" alist))
+		  )
+		 ((or (memq "paper" tags)
+		      (memq "preprint" tags))
+		  (format "/%s/ (%s)."
+			  title
+			  (cond ((memq "expository" tags) "expository paper")
+				((memq "preprint" tags) "preprint")
+				(t "paper"))))
+		 ((memq "course" tags)
+		  (format "%s, course at %s, %s."
+			  title
+			  (alist-get "WHERE" alist)
+			  (alist-get "WHEN" alist)))
+		 (t (format "%s" title)))))
+      (if (or nolink (not id))
+	  text
+	(format "[[%s][id:%s]]" text id)))))
+	  
+	  
   
 (setq org-publish-project-alist
       '(("website-org"
