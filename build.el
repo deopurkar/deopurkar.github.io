@@ -2,6 +2,10 @@
 (require 'subr-x)
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 
+;; Properties that should be exported and collected
+(defvar my/properties '("ID" "ITEM" "NAV-ITEM" "WHEN" "WHERE" "WITH" "COMMENTS" "LINKS" "TITLE" "NAV-TITLE"))
+(defvar my/inherited-properties '("ID"))
+
 ;; The following function is a general function iterator over org
 ;; headlines that is more attuned to our needs.  here match can be a
 ;; function with no arguments that returns nil or non-nil on a
@@ -13,16 +17,20 @@
 	    (if (functionp match)
 		(org-map-entries
 		 (lambda ()
-		   (and (match) (append (org-collect-keywords '("title" "nav-title"))
-					(org-entry-properties (point)))))
+		   (and (match) (append (org-collect-keywords my/properties)
+					(mapcar (lambda (p)
+						  (list p
+							(org-entry-get (point) p (memq p my/inherited-properties))))
+						my/properties))))
 		 nil scope)
 	      (org-map-entries
 	       (lambda ()
-		 (append (org-collect-keywords '("title" "nav-title"))
-			 (org-entry-properties (point))))
+		 (append (org-collect-keywords my/properties)
+			 (mapcar (lambda (p)
+				   (list p
+					 (org-entry-get (point) p (memq p my/inherited-properties))))
+				 my/properties)))
 	       match scope)))))
-
-(alist-get "TITLE" (car (my/select-and-collect)) nil nil '#equal?)
 
 ;; The following filter checks if id is linked from anywhere in the entry.
 (defun my/has-link-to-id (id)
