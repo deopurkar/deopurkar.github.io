@@ -3,7 +3,9 @@
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 
 ;; Properties that should be exported and collected
-(defvar my/properties '("ID" "ITEM" "NAV-ITEM" "WHEN" "WHERE" "WITH" "COMMENTS" "LINKS" "TITLE" "NAV-TITLE"))
+(defvar my/keywords '("TITLE" "NAV-TITLE"))
+(defvar my/properties '("ID" "ITEM" "NAV-ITEM" "WHEN" "WHERE" "WITH" "COMMENTS" "LINKS" "TAGS"))
+(defvar my/export-properties '("WHEN" "WHERE" "WITH" "COMMENTS" "LINKS"))
 (defvar my/inherited-properties '("ID"))
 
 ;; The following function is a general function iterator over org
@@ -17,7 +19,7 @@
 	    (if (functionp match)
 		(org-map-entries
 		 (lambda ()
-		   (and (match) (append (org-collect-keywords my/properties)
+		   (and (match) (append (org-collect-keywords my/keywords)
 					(mapcar (lambda (p)
 						  (list p
 							(org-entry-get (point) p (memq p my/inherited-properties))))
@@ -25,7 +27,7 @@
 		 nil scope)
 	      (org-map-entries
 	       (lambda ()
-		 (append (org-collect-keywords my/properties)
+		 (append (org-collect-keywords my/keywords)
 			 (mapcar (lambda (p)
 				   (list p
 					 (org-entry-get (point) p (memq p my/inherited-properties))))
@@ -40,39 +42,41 @@
     (save-excursion
       (re-search-forward (format "\\[id:%s\\]" id) max t))))
 
+;; Alist-get with equal and only return car
+(defun my/alist-get (key alist)
+  (car (alist-get key alist nil nil #'equal)))
+
 ;; The following is a general purpose pretty printer.
 (defun my/default-pp (alist &optional nolink)
-  (let ((id (alist-get "ID" alist))
-	(tags (alist-get "TAGS" alist))
-	(title (or (alist-get "NAV-ITEM" alist)
-		   (alist-get "ITEM" alist)
-		   (alist-get "NAV-TITLE" alist)
-		   (alist-get "TITLE" alist))))
-    (print title)
+  (let ((id (my/alist-get "ID" alist))
+	(tags (split-string (my/alist-get "TAGS" alist) ":"))
+	(title (or (my/alist-get "NAV-ITEM" alist)
+		   (my/alist-get "ITEM" alist)
+		   (my/alist-get "NAV-TITLE" alist)
+		   (my/alist-get "TITLE" alist nil))))
     (let ((text
-	   (cond ((memq "talk" tags)
+	   (cond ((member "talk" tags)
 		  (format "/%s/, talk at %s, %s."
 			  title
-			  (alist-get "WHERE" alist)
-			  (alist-get "WHEN" alist))
+			  (my/alist-get "WHERE" alist)
+			  (my/alist-get "WHEN" alist))
 		  )
-		 ((or (memq "paper" tags)
-		      (memq "preprint" tags))
+		 ((or (member "paper" tags)
+		      (member "preprint" tags))
 		  (format "/%s/ (%s)."
 			  title
-			  (cond ((memq "expository" tags) "expository paper")
-				((memq "preprint" tags) "preprint")
+			  (cond ((member "expository" tags) "expository paper")
+				((member "preprint" tags) "preprint")
 				(t "paper"))))
-		 ((memq "course" tags)
+		 ((member "course" tags)
 		  (format "%s, course at %s, %s."
 			  title
-			  (alist-get "WHERE" alist)
-			  (alist-get "WHEN" alist)))
+			  (my/alist-get "WHERE" alist)
+			  (my/alist-get "WHEN" alist)))
 		 (t (format "%s" title)))))
       (if (or nolink (not id))
 	  text
 	(format "[[%s][id:%s]]" text id)))))
-	  
 	  
   
 (setq org-publish-project-alist

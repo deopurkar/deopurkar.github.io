@@ -121,9 +121,10 @@ Later on we can just include the one we want.
 
 #+end_src
 
-* Main CSS
+* Main CSS :talk:
 :PROPERTIES:
 :ID:       3d104ae3-dfeb-4666-b672-063ac81e03b7
+:where:    Sydney
 :END:
 We come to the main part of the CSS code, namely the positioning and layout options, as well as the font options.
 #+begin_src scss
