@@ -4,7 +4,7 @@
 #+title: Anand Deopurkar
 #+description: Website of Anand Deopurkar, a mathematician specialising in algebraic geometry at the Australian National University.  Browse my papers, courses, and projects.  Get in touch with comments, thoughts, or ideas.
 #+keywords: Anand Deopurkar, mathematics, ANU, algebraic geometry, MSI 
-#+OPTIONS: H:1 html-preamble:nil
+#+OPTIONS: H:1 html-preamble:nil num:0
 #+setupfile: #setup.org
 
 #+begin_intro
@@ -30,9 +30,9 @@ I study the interplay between systems of algebraic equations and the geometric s
 
 * now
 :PROPERTIES:
-:html_headline_class: collapsible
 :ARCHIVE: past.org::datetree/
-:UNNUMBERED: t
+:ID:       ff50a2c9-29c8-4fe0-9e00-26820338218b
+:nav-item: Home>now
 :END:
 If you are thinking of doing a PhD with me, please read this [[file:prospective_phd.org][page for prospective PhD students]].
 ** With [[asilata][Asilata Bapat]] and [[tony][Tony Licata]], I am studying [[wiki:Bridgeland_stability_condition][Bridgeland stability conditions]] on some triangulated categories.
@@ -51,50 +51,12 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 :END:
 * Papers/pre-prints
 :PROPERTIES:
-:html_headline_class: collapsible
-:UNNUMBERED: t
+:ID:       872ca503-15b1-4e42-abf9-fd5e27b7392d
 :END:
 #+begin_src emacs-lisp :exports results :results value raw drawer :lexical t
   ;; Gather back-references from talks
-  (defun collect-back-ref (title file)
-    (remove 'nil
-            (org-map-entries
-             (defun collect-refs-from-entries ()
-               (if (and (org-entry-get nil "ref")
-                        (string-match-p (regexp-quote title)
-                                        (org-entry-get nil "ref"))
-                        (org-entry-get nil "url"))
-                   (format "[[%s][%s]]"
-  			 (org-entry-get nil "url")
-                           (car (split-string (org-entry-get nil "place") ","))
-                           )))
-             nil
-             `(,file)
-             )))
+  
 
-  ;; Our pretty-printing function
-  (defun pretty-print ()
-    (letrec ((title (org-entry-get nil "ITEM"))
-             (year (org-entry-get nil "year"))
-             (journal (org-entry-get nil "journal"))
-             (coauthors (org-entry-get nil "with"))
-             (comment (org-entry-get nil "comment"))
-             (url (org-entry-get nil "url"))
-  	   (more (org-entry-get nil "more"))
-             (back-refs (collect-back-ref title "#talks.org")))
-      (format "- %s.%s\\\\\n  /%s/%s%s.%s"
-              (format "[[%s][%s]]" url title)
-  	    (if more (format " (%s)" more) "")
-              journal
-              (if comment (format " (%s)" comment)"")
-              (if coauthors (format ", with %s" coauthors) "")
-              (if back-refs
-                  (format "\\\\\n  Talk%s: %s."
-                          (if (= (length back-refs) 1) "" "s")
-                          (string-join back-refs ", "))
-                ""
-                )
-              )))
   (string-join (org-map-entries 'pretty-print "-expository" '("#papers.org")) "\n")
 #+end_src
 
