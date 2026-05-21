@@ -10,24 +10,39 @@
 ;; subtree.  If it is non-nil, pp will be called on the subtree.
 ;; Otherwise, the subtree will be skipped.
 (defun my/select-and-collect (&optional match scope)
-  (let ((scope (or scope (directory-files-recursively default-directory ".*org$"))))
-    (remove nil
-	    (if (functionp match)
-		(org-map-entries
-		 (lambda ()
-		   (and (match) (append (org-collect-keywords my/keywords)
-					(mapcar (lambda (p)
-						  (list p
-							(org-entry-get (point) p (memq p my/inherited-properties))))
-						my/properties))))
-		 nil scope)
-	      (org-map-entries
+  (let ((scope (or
+		scope
+		(directory-files-recursively
+		 default-directory
+		 ".*org$"))))
+    (remove
+     nil
+     (if (functionp match)
+	 (org-map-entries
+	  (lambda ()
+	    (and (#'match)
+		 (append
+		  (org-collect-keywords my/keywords)
+		  (mapcar (lambda (p)
+			    (list p
+				  (org-entry-get
+				   (point)
+				   p
+				   (member p my/inherited-properties))))
+			  my/properties))))
+	  nil
+	  scope)
+       (org-map-entries
 	       (lambda ()
 		 (append (org-collect-keywords my/keywords)
-			 (mapcar (lambda (p)
-				   (list p
-					 (org-entry-get (point) p (memq p my/inherited-properties))))
-				 my/properties)))
+			 (mapcar
+			  (lambda (p)
+			    (list p
+				  (org-entry-get
+				   (point)
+				   p
+				   (member p my/inherited-properties))))
+			  my/properties)))
 	       match scope)))))
 
 ;; The following filter checks if id is linked from anywhere in the entry.
@@ -73,3 +88,44 @@
       (if (or nolink (not id))
 	  text
 	(format "[[%s][id:%s]]" text id)))))
+
+;; Move past the metadata
+(defun my/org-goto-after-metadata ()
+  "Move point past top-level keywords and property drawers."
+  (interactive)
+  (goto-char (point-min))
+  (while (memq (org-element-type (org-element-at-point)) 
+               '(keyword comment property-drawer))
+    (org-forward-element)))
+
+;; The following prints properties nicely.
+(defun my/write-properties (&optional prop)
+  (let* ((items (seq-keep 
+		 (lambda (p)
+		   (and (org-entry-get (point) p)
+			(format "- %s :: %s"
+				p
+				(org-entry-get (point) p))))
+		 (or prop
+		     my/export-properties))))
+    (if (not items)
+	""
+      (format "#+begin_properties\n%s\n#+end_properties"
+	      (string-join items "\n"))))) 
+
+(defun my/write-backlinks ()
+  (when-let ((id (org-entry-get (point) "ID"))
+	     (backlinks (my/select-and-collect
+			 (lambda ()
+			   (my/has-link-to-id id)))))
+    (string-join (mapcar (lambda (b)
+			   (format "- %s" (my/default-pp b)))
+			 backlinks)
+		 "\n")))
+    
+    
+	
+    
+;; Add properties and backlinks
+
+		
