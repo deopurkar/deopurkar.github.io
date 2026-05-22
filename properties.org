@@ -1,0 +1,33 @@
+Format property blocks nicely.
+
+We will export these properties.
+#+begin_src elisp
+  (defvar properties-to-pp '("WHEN" "WHERE" "WITH" "COMMENTS" "LINKS"))
+#+end_src
+
+#+RESULTS:
+: properties-to-pp
+
+Code to move to the next available line.
+#+begin_src elisp
+  (defun pp-properties ()
+    (let ((case-fold-search t))
+      (while (search-forward ":PROPERTIES:" nil t)
+        (search-forward ":END:")
+        (insert "\n")
+        (insert "#+begin_properties\n")
+        (mapcar
+         (lambda (p)
+  	 (and (org-entry-get (point) p)
+  	      (insert
+  	       (format
+  		"- %s :: %s\n"
+  		p
+  		(org-entry-get (point) p)))))
+         properties-to-pp)
+        (insert "#+end_properties\n")
+        )))
+#+end_src
+
+#+RESULTS:
+: pp-properties
