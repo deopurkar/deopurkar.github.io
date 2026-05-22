@@ -8,21 +8,18 @@ Hello!
 
 This is a test.
 
-** Test 2 :paper:expository:
-:PROPERTIES:
-:where: Sydney
-:when:     1020
-:ID:       bc87cda3-8482-4c67-8b6b-615d493a2c27
-:END:
-[[id:6d6c4b2b-4cfd-4023-aab7-597beadc3720][link]]
-
 ** Hello
 :PROPERTIES:
 :where:    there
 :ID:       163b52bd-23f7-40be-9281-8df2d58943a6
 :END:
-[[id:6d6c4b2b-4cfd-4023-aab7-597beadc3720][Test]]
 
-** What links here?
-- [[id:bc87cda3-8482-4c67-8b6b-615d493a2c27][/Test 2/ (expository paper).]]
+** Test 2                                                  :paper:expository:
+:PROPERTIES:
+:where: Sydney
+:when:     1020
+:ID:       bc87cda3-8482-4c67-8b6b-615d493a2c27
+:END:
+- [[id:6d6c4b2b-4cfd-4023-aab7-597beadc3720][Test]]
 - [[id:163b52bd-23f7-40be-9281-8df2d58943a6][Hello]]
+

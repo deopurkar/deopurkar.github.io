@@ -1,8 +1,9 @@
 Scan a file for an id and return a list of back references.
 #+begin_src elisp
   (defun scan-file-for-id (id file)
-    (with-current-buffer 
-        (find-file file)
+    (with-temp-buffer 
+      (org-mode)
+      (insert-file-contents file)
       (setq links nil)
       (save-excursion
   	(while
@@ -64,11 +65,21 @@ Add backlinks from the directory as a new heading at the end of the buffer.
   		   (scan-file-for-id id file))
   		 (directory-files-recursively
   		  directory
-  		  "\.org$")))))
+  		  (rx string-start
+  		      (not ".")
+  		      (zero-or-more anything)
+  		      ".org"
+  		      string-end)))))
+         (level (or (org-current-level) 0)))
       (save-excursion
-        (goto-char (point-max))
-        (org-insert-heading)
-        (insert "What links here?")
+        (let ((original (point)))
+  	(org-forward-heading-same-level 1)
+  	(if (equal (point) original)
+  	    (goto-char (point-max))))
+        (insert "\n")
+        (previous-line)
+        (insert (make-string (+ 1 level) ?\*)) 
+        (insert " What links here?")
         (insert "\n")
         (insert "- ")
         (insert (string-join backlinks "\n- ")))))
@@ -76,3 +87,16 @@ Add backlinks from the directory as a new heading at the end of the buffer.
 
 #+RESULTS:
 : add-backlinks-from
+
+#+begin_src elisp
+  (defun add-backlinks-everywhere-from (directory)
+    (add-backlinks-from directory)
+    (org-map-entries
+     (lambda ()
+       (add-backlinks-from directory))
+     t
+     'file))
+#+end_src
+
+#+RESULTS:
+: add-backlinks-everywhere-from
