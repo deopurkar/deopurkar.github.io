@@ -1,18 +1,20 @@
+#+property: header-args :tangle backlinks.el
 Scan a file for an id and return a list of back references.
 #+begin_src elisp
   (defun scan-file-for-id (id file)
     (with-temp-buffer 
       (org-mode)
       (insert-file-contents file)
-      (setq links nil)
-      (save-excursion
+      (unless (org-entry-get (point) "no-nav")
+        (setq links nil)
+        (save-excursion
   	(while
   	    (search-forward
   	     (format "[[id:%s" id)
   	 nil
   	 t)
   	  (cl-pushnew (pretty-print-backlink (point)) links)))
-      (reverse links)))
+        (reverse links))))
 #+end_src
 
 #+RESULTS:
@@ -90,13 +92,19 @@ Add backlinks from the directory as a new heading at the end of the buffer.
 
 #+begin_src elisp
   (defun add-backlinks-everywhere-from (directory)
+    (goto-char (point-min))
     (add-backlinks-from directory)
-    (org-map-entries
-     (lambda ()
-       (add-backlinks-from directory))
-     t
-     'file))
+    (while (outline-next-heading)
+      (add-backlinks-from directory)))
 #+end_src
 
 #+RESULTS:
 : add-backlinks-everywhere-from
+
+#+begin_src elisp
+  (defun my/add-backlinks-hook (backend)
+    (add-backlinks-everywhere-from "."))
+#+end_src
+
+#+RESULTS:
+: my/add-backlinks-hook

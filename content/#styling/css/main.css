@@ -83,6 +83,12 @@ footer {
   clear: both;
   display: table; }
 
+.properties dt {
+  float: left;
+  clear: left;
+  font-weight: bold;
+  width: 7em; }
+
 * {
   color: #303821; }
 
@@ -136,12 +142,8 @@ footer {
 
 .collapsible {
   cursor: pointer; }
-  .collapsible:before {
-    content: '- '; }
 
 .collapsed {
   cursor: pointer; }
-  .collapsed:before {
-    content: '+ '; }
   .collapsed:after {
     content: '...'; }

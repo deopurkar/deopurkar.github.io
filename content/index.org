@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ARCHIVE:  %s_archive::
+:nav-title: Home
 :END:
 #+title: Anand Deopurkar
 #+description: Website of Anand Deopurkar, a mathematician specialising in algebraic geometry at the Australian National University.  Browse my papers, courses, and projects.  Get in touch with comments, thoughts, or ideas.
@@ -32,7 +33,7 @@ I study the interplay between systems of algebraic equations and the geometric s
 :PROPERTIES:
 :ARCHIVE: past.org::datetree/
 :ID:       ff50a2c9-29c8-4fe0-9e00-26820338218b
-:nav-item: Home>now
+:nav-title: Home/now
 :END:
 If you are thinking of doing a PhD with me, please read this [[file:prospective_phd.org][page for prospective PhD students]].
 ** With [[asilata][Asilata Bapat]] and [[tony][Tony Licata]], I am studying [[wiki:Bridgeland_stability_condition][Bridgeland stability conditions]] on some triangulated categories.
@@ -52,22 +53,26 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 * Papers/pre-prints
 :PROPERTIES:
 :ID:       872ca503-15b1-4e42-abf9-fd5e27b7392d
+:nav-title: Home/papers
 :END:
 #+begin_src emacs-lisp :exports results :results value raw drawer :lexical t
-  (defun my/paper-pp (alist)
-     (let* ((id (my/alist-get "ID" alist))
-  	  (title (my/alist-get "ITEM" alist))
-  	  (journal (my/alist-get "WHERE" alist))
-  	  (coauthors (my/alist-get "WITH" alist))
+  (defun my/paper-pp (pom)
+     (let* ((id (org-entry-get pom "ID"))
+  	  (title (org-entry-get pom "ITEM"))
+  	  (journal (org-entry-get pom "WHERE"))
+  	  (coauthors (org-entry-get pom "WITH"))
   	  (with (if coauthors
   		    (format ", with %s" coauthors)
   		  ""))
-  	  (links (my/alist-get "LINKS" alist)))
+  	  (links (org-entry-get pom "LINKS")))
        (format "- [[id:%s][%s]], /%s/%s (%s)." id title journal with links)))
   (string-join
-   (mapcar
-    #'my/paper-pp
-    (my/select-and-collect "+paper-expository|+preprint-expository"))
+   (org-map-entries 
+    (lambda ()
+      (my/paper-pp (point)))
+    "+paper-expository|+preprint-expository"
+    '("papers.org")
+    )
    "\n")
 #+end_src
 
@@ -101,11 +106,18 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 
 * Expository 
 :PROPERTIES:
-:html_headline_class: collapsible
-:UNNUMBERED: t
+:ID:       4f43819a-90f1-4894-a385-8b1bfcdc7b9a
+:nav-title: Home/expository
 :END:
+
 #+begin_src emacs-lisp :exports results :results value raw drawer
-  (string-join (mapcar 'my/paper-pp (my/select-and-collect "+expository")) "\n")
+    (string-join
+     (org-map-entries
+      (lambda ()
+        (my/paper-pp (point)))
+      "+expository"
+      '("papers.org"))
+     "\n")
 #+end_src
 
 #+RESULTS:
@@ -117,9 +129,10 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 
 * Teaching
 :PROPERTIES:
-:html_headline_class: collapsible
-:UNNUMBERED: t
+:ID:       eb2814b6-dc5e-4a8c-b690-4f33edc5c6a1
+:nav-title: Home/teaching
 :END:
+
 #+begin_src emacs-lisp :exports results :results value raw drawer
   (defun gather ()
     (list 'title (org-entry-get nil "ITEM")
@@ -174,9 +187,10 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 
 * Talks
 :PROPERTIES:
-:html_headline_class: collapsible
-:UNNUMBERED: t
+:ID:       668964e9-222c-4171-a46a-b41a76533394
+:nav-title: Home/talks
 :END:
+
 Notes or slides for many of my talks are linked in the section on [[*Papers/pre-prints][papers/pre-prints]].
 Here are some additional talks:
 #+begin_src emacs-lisp :exports results :results value raw drawer
@@ -229,9 +243,10 @@ Here are some additional talks:
 
 * Odds and ends
 :PROPERTIES:
-:html_headline_class: collapsible
-:UNNUMBERED: t
+:ID:       3bd7b886-83bc-456b-a763-a7244de0579e
+:nav-title: Home/odds and ends
 :END:
+
 - [[file:genus7syz/][GIT for syzygies of genus 7 curves]]\\
   This is an ongoing project to determine GIT stability for syzygies of genus 7 canonical curves.
   This is the first genus where canonical syzygies define an interesting GIT quotient, so it would be nice to understand the complete picture.

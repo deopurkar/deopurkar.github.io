@@ -239,6 +239,19 @@ Footer style and other miscellany.
   }
 #+end_src
 
+Style properties.
+#+begin_src scss
+  .properties{
+      dt{
+  	float: left;
+  	clear: left;
+  	font-weight: bold;
+  	width: 7em;
+      }
+  }
+#+end_src
+
+
 Include the colour themes previously defined.  
 #+begin_src scss
   @include autumn;
@@ -269,15 +282,9 @@ Finally, we style collapsible and collapsed headlines.
 #+begin_src scss
   .collapsible{
       cursor: pointer;
-      &:before {
-          content: '- ';
-      }
   }
   .collapsed{
       cursor: pointer;
-      &:before {
-          content: '+ ';
-      }
       &:after {
   	content: '...';
       }

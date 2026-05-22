@@ -197,6 +197,15 @@ footer {
     display: table;
 }
 
+.properties{
+    dt{
+	float: left;
+	clear: left;
+	font-weight: bold;
+	width: 7em;
+    }
+}
+
 @include autumn;
 
 @media (max-width: 720px){
@@ -219,15 +228,9 @@ footer {
 
 .collapsible{
     cursor: pointer;
-    &:before {
-        content: '- ';
-    }
 }
 .collapsed{
     cursor: pointer;
-    &:before {
-        content: '+ ';
-    }
     &:after {
 	content: '...';
     }

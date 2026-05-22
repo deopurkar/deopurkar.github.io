@@ -1,7 +1,10 @@
 (require 'ox-publish)
 (require 'subr-x)
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
-(load-file "prep.el")
+(load-file "properties.el")
+(load-file "backlinks.el")
+
+(setq org-export-before-parsing-functions '(my/pp-properties-hook my/add-backlinks-hook))
   
 (setq org-publish-project-alist
       '(("website-org"
@@ -14,8 +17,9 @@
          :exclude "\#.*"   ;; Files beginning with \# are not processed.
          :publishing-function org-html-publish-to-html
          :section-numbers nil
-         :with-broken-links nil
+         :with-broken-links mark
          :with-toc nil
+	 :with-tags nil
          :with-title t
          :with-author t
          :with-special-strings t
@@ -27,9 +31,8 @@
          :html-head-include-scripts nil 
          :html-head "<link rel=\"stylesheet\" href=\"/css/main.css\"><script src=\"/js/collapsibility.js\"></script>"
          :html-postamble t
-	 :html-preamble t
+	 :html-preamble nil
 	 :html-postamble-format (("en" "Created by <a href=\"mailto:anand.deopurkar@anu.edu.au\">%a</a> using %c.  <a href=\"https://github.com/deopurkar/deopurkar.github.io\">Last modified</a>: %C."))
-	 :html-preamble-format (("en" "<a href=\"/\">Home</a>"))
          )
         ("pdfcv"
          :base-directory "./content"
@@ -52,7 +55,6 @@
          :base-extension "css\\|js\\|txt"
          :publishing-directory "./docs"
          :recursive t
-         :preparation-function my/execute-files
          :publishing-function org-publish-attachment)
         ))
 
@@ -62,17 +64,6 @@
 (defun do-not-include-links (propslist)
   (setq cv-include-links nil))
 
-(defun my/execute-files (proplist)
-  (let ((files
-         (directory-files-recursively
-          (plist-get proplist ':base-directory)
-          ".*org$")))  
-    (mapcar (lambda (file)
-              (with-current-buffer (find-file file)
-                (org-babel-execute-buffer)
-                ))
-            files)))
-
 (let ((org-confirm-babel-evaluate nil)
       (make-backup-files nil)
       (noninteractive t))
@@ -81,7 +72,6 @@
    'org-babel-load-languages
    '((shell . t)))
   (message (emacs-version))
-  (message org-agenda-files)
-  (org-publish-all)
+  (org-publish-all 'force)
   (message "Done!"))
 

@@ -1,8 +1,9 @@
+#+property: header-args :tangle properties.el
 Format property blocks nicely.
 
 We will export these properties.
 #+begin_src elisp
-  (defvar properties-to-pp '("WHEN" "WHERE" "WITH" "COMMENTS" "LINKS"))
+  (defvar properties-to-pp '("when" "where" "with" "comments" "links"))
 #+end_src
 
 #+RESULTS:
@@ -11,6 +12,7 @@ We will export these properties.
 Code to move to the next available line.
 #+begin_src elisp
   (defun pp-properties ()
+    (goto-char (point-min))
     (let ((case-fold-search t))
       (while (search-forward ":PROPERTIES:" nil t)
         (search-forward ":END:")
@@ -31,3 +33,11 @@ Code to move to the next available line.
 
 #+RESULTS:
 : pp-properties
+
+#+begin_src elisp
+  (defun my/pp-properties-hook (backend)
+    (pp-properties))
+#+end_src
+
+#+RESULTS:
+: my/pp-properties-hook
