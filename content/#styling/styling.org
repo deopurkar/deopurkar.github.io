@@ -5,133 +5,102 @@
 
 The CSS is adapted from [[https://github.com/asilata/asilata.github.io/][Asilata Bapat]].
 
-* Colour theme
-We define some auxiliary [[https://sass-lang.com/documentation/at-rules/mixin][mixins]] to use later, such as for alternately coloured table rows.
-#+begin_src scss
-  @mixin alternate-rows($color) {
-      table {
-          tbody > tr:nth-child(odd){
-              background: $color;
-          }
-      }
-  }
-#+end_src
-
-Next we define the colour options for all components of the page.
-We do this via a [[https://sass-lang.com/documentation/at-rules/mixin][mixin]] called ~theme~, which uses the following variables:
+* Colours
+We define the colour options for all components of the page.
+We use four colours.
 - ~canvas~ :: Background colour
 - ~canvas-pop~ :: Slightly emphasised canvas colour
 - ~writing~ :: Foreground colour
 - ~writing-pop~ :: Colour used for "pop"
-#+begin_src scss
-  @mixin theme($canvas, $canvas-pop, $writing, $writing-pop){
-      ,* { color: $writing; }
-      body {
-  	column-rule: 1px solid $canvas-pop;
-          background-color: $canvas;
-          ::-moz-selection {
-              background-color: $canvas-pop;
-          }
-          ::-selection {
-              background-color: $canvas-pop;
-          }
-  	a:hover {
-  	    color: $writing-pop;
-  	}
-      }
-      #table-of-contents a {
-  	border-bottom: 0.15em solid $writing-pop;
-      }
-      h1, h2, h3, h4, h5, h6 {
-  	border-top-color: $canvas-pop;
-  	text-decoration: underline 0.15em $writing-pop;
-      }
-      h2 {
-  	padding-top: 20px;
-  	border-top: 1px solid $canvas-pop;
-      }
-      footer {
-          color: $canvas-pop;
-  	border-top: 1px solid $canvas-pop;
-      }
+These are variables.
 
-      #mypicture {
-          border-color: $canvas-pop;
-      }
-      #preamble a{
-  	border-bottom: 0.15em solid $writing-pop;  	      
-      }
-      #postamble {
-  	border-top: 1px solid $canvas-pop;
-      }
-  }
-#+end_src
 Now we set some predefined palettes.
 Later on we can just include the one we want.
-#+begin_src scss
-  // Palette based on Solarized theme (just as an example)
-  // $base03:    #002b36;
-  // $base02:    #073642;
-  // $base01:    #586e75;
-  // $base00:    #657b83;
-  // $base0:     #839496;
-  // $base1:     #93a1a1;
-  // $base2:     #eee8d5;
-  // $base3:     #fdf6e3;
-  // $yellow:    #b58900;
-  // $orange:    #cb4b16;
-  // $red:       #dc322f;
-  // $magenta:   #d33682;
-  // $violet:    #6c71c4;
-  // $blue:      #268bd2;
-  // $cyan:      #2aa198;
-  // $green:     #859900;
-
-  @mixin alifbepe {
-      @include theme(#fffdfc, #c7bba8, #000, #d05a5b);
-  }
-
-  @mixin autumn {
-      @include theme(#fbf6ee, #fac591,#060000,#f87d5b); 
-  }
-
-  @mixin eucalyptus-warm {
-   @include theme(#fbf6ec,#dcad67,#1f0e07,#a69b65); 
-  }
-
-  @mixin eucalyptus-cool {
-   @include theme(#f2f3f7,#c8cad9,#212227,#6a7469);
-  }
-
-  @mixin winter {
-      @include theme(#fcfaf5,#6badb5,#303821,#6badb5);
-  }
-
-  @mixin spring {
-      @include theme(#fcfaf5,#88b56b,#303821,#88b56b);
-  }
-
-  @mixin summer {
-      @include theme(#fcfaf5,#986bb5,#303821,#986bb5);
-  }
-
-  @mixin autumn {
-      @include theme(#fcfaf5,#b5736b,#303821,#b5736b);
-  }
-
+#+begin_src scss :tangle no
+  //alifbepe 
+  $canvas: #fffdfc;
+  $canvas-pop: #c7bba8;
+  $writing: #000;
+  $writing-pop: #d05a5b;
 #+end_src
 
-* Main CSS :talk:
-:PROPERTIES:
-:ID:       3d104ae3-dfeb-4666-b672-063ac81e03b7
-:where:    Sydney
-:END:
+#+begin_src scss :tangle no
+  //autumn 
+  $canvas: #fbf6ee;
+  $canvas-pop: #fac591;
+  $writing: #060000;
+  $writing-pop: #f87d5b; 
+#+end_src
+
+#+begin_src scss :tangle no
+  //eucalyptus-warm 
+  $canvas: #fbf6ec;
+  $canvas-pop: #dcad67;
+  $writing: #1f0e07;
+  $writing-pop: #a69b65; 
+#+end_src
+
+#+begin_src scss :tangle no
+  //eucalyptus-cool 
+  $canvas: #f2f3f7;
+  $canvas-pop: #c8cad9;
+  $writing: #212227;
+  $writing-pop: #6a7469;
+#+end_src
+
+#+begin_src scss :tangle no
+  //winter 
+  $canvas: #fcfaf5;
+  $canvas-pop: #6badb5;
+  $writing: #303821;
+  $writing-pop: #6badb5;
+#+end_src
+
+#+begin_src scss :tangle no
+  //spring 
+  $canvas: #fcfaf5;
+  $canvas-pop: #88b56b;
+  $writing: #303821;
+  $writing-pop: #88b56b;
+#+end_src
+
+#+begin_src scss :tangle no
+  //summer 
+  $canvas: #fcfaf5;
+  $canvas-pop: #986bb5;
+  $writing: #303821;
+  $writing-pop: #986bb5;
+#+end_src
+
+#+begin_src scss 
+  //autumn 
+  $canvas: #fcfaf5;
+  $canvas-pop: #b5736b;
+  $writing: #303821;
+  $writing-pop: #b5736b;
+#+end_src
+
+* Main CSS
 We come to the main part of the CSS code, namely the positioning and layout options, as well as the font options.
+** Body
 #+begin_src scss
+  ,* { color: $writing; }
+
   html {
       scroll-behavior: smooth;
   }
   body {
+      column-rule: 1px solid $canvas-pop;
+      background-color: $canvas;
+      ::-moz-selection {
+          background-color: $canvas-pop;
+      }
+      ::-selection {
+          background-color: $canvas-pop;
+      }
+      a:hover {
+  	color: $writing-pop;
+      }
       font-family: sans-serif;
       margin-top: 0em;
       line-height: 1.5em;
@@ -141,22 +110,43 @@ We come to the main part of the CSS code, namely the positioning and layout opti
       margin-right: auto;
   }
 #+end_src
-Style links. Remember that the colours have already been styled via a theme mixin.
+** Links
 #+begin_src scss
   ,* a {
       text-decoration: underline;
   }
   
 #+end_src
-Style headings, lists, and figures.
+** Headings
+Headlines
 #+begin_src scss
   h1, h2, h3, h4 {
       font-weight: normal;
-      display: block;
+      display: inline-block;
+      line-height: 1.5em;
   }
   h1, h2{
-      column-span: all;
+      border-bottom: 0.15em solid $writing-pop;
   }
+#+end_src
+
+Collapsible and collapsed headlines.
+#+begin_src scss
+  .collapsible{
+      cursor: pointer;
+  }
+  .collapsed{
+      cursor: pointer;
+      &:after {
+  	content: '...';
+      }
+  }
+#+end_src
+
+
+** Lists
+#+begin_src scss
+
   ul, ol{
       padding-left: 1em;
   }
@@ -164,15 +154,26 @@ Style headings, lists, and figures.
       margin-top: 0.5em;
       margin-bottom: 0.5em;
   }
+#+end_src
 
+
+** Figures and pictures
+#+begin_src scss
   figure {
       padding: 0em;
       margin: 0em;
   }
-
+  #mypicture {
+      border-color: $canvas-pop;
+      width: 18em;
+      margin-left: auto;
+      margin-right: auto;
+  }
 #+end_src
 
-Style the title and intro.
+
+** Various div classes
+Title and intro
 #+begin_src scss
   .title {
       line-height: 1.5em;
@@ -184,18 +185,34 @@ Style the title and intro.
       margin-right: auto;
   }
 #+end_src
-Footer style and other miscellany.
+
+Properties
 #+begin_src scss
-  footer {
-      font-size: 80%;
-      margin-top:2em;
-      padding-top:0.3em;
+  .properties{
+      dt{
+  	float: left;
+  	clear: left;
+  	font-weight: bold;
+  	width: 7em;
+      }
   }
-  #mypicture {
-      width: 18em;
-      margin-left: auto;
-      margin-right: auto;
+#+end_src
+
+Abstract and quotes
+#+begin_src scss
+  .abstract {
+      border-left: 0.5em solid $canvas-pop;;
+      padding-left:0.5em;
+      p::before{
+  	content: "Abstract.";
+  	font-weight: bold;
+      }
   }
+#+end_src
+
+
+** Table of contents
+#+begin_src scss
   #table-of-contents {
       padding-right: 1em;
       margin-right: 1em;
@@ -214,49 +231,62 @@ Footer style and other miscellany.
           margin-bottom: 0.5em;
       }
       a {
+  	border-bottom: 0.15em solid $writing-pop;
   	text-decoration: none;
       }
+  }
+#+end_src
+
+** Footer, preamble, and postamble
+#+begin_src scss
+  footer {
+      color: $canvas-pop;
+      border-top: 1px solid $canvas-pop;
+      font-size: 80%;
+      margin-top:2em;
+      padding-top:0.3em;
   }
 
   #preamble {
       margin-top: 1em;
       a {
+  	border-bottom: 0.15em solid $writing-pop;
   	text-decoration: none;
       }
   }
 
   #postamble {
+      border-top: 1px solid $canvas-pop;
       font-size: 80%;
       margin-top: 1em;
       text-align: right;
       column-span: all;
   }
+#+end_src
 
+** Mystery
+Not sure what this does
+#+begin_src scss
   .container::after {
       content: "";
       clear: both;
       display: table;
   }
+
 #+end_src
 
-Style properties.
+This styles tables, I guess.
 #+begin_src scss
-  .properties{
-      dt{
-  	float: left;
-  	clear: left;
-  	font-weight: bold;
-  	width: 7em;
+  @mixin alternate-rows($color) {
+      table {
+          tbody > tr:nth-child(odd){
+              background: $color;
+          }
       }
   }
 #+end_src
 
-
-Include the colour themes previously defined.  
-#+begin_src scss
-  @include autumn;
-#+end_src
-
+** Media queries
 Changes for smaller screens and print. 
 #+begin_src scss
   @media (max-width: 720px){
@@ -278,18 +308,6 @@ Changes for smaller screens and print.
   }
 #+end_src
 
-Finally, we style collapsible and collapsed headlines.
-#+begin_src scss
-  .collapsible{
-      cursor: pointer;
-  }
-  .collapsed{
-      cursor: pointer;
-      &:after {
-  	content: '...';
-      }
-  }
-#+end_src
 
 * Javascript
 :PROPERTIES:
@@ -371,7 +389,6 @@ On clicking the Headline, the javascript will toggle the visibility of Content a
       }
   }
 #+end_src
-
 
 * Tangling etc
 Tangle the code from this file and then compile it to css.

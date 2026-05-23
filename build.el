@@ -4,7 +4,9 @@
 (load-file "properties.el")
 (load-file "backlinks.el")
 
-(setq org-export-before-parsing-functions '(my/pp-properties-hook my/add-backlinks-hook))
+
+(defvar links-in-cv t
+  "Should links be included while processing cv.org")
   
 (setq org-publish-project-alist
       '(("website-org"
@@ -17,7 +19,7 @@
          :exclude "\#.*"   ;; Files beginning with \# are not processed.
          :publishing-function org-html-publish-to-html
          :section-numbers nil
-         :with-broken-links mark
+         :with-broken-links nil
          :with-toc nil
 	 :with-tags nil
          :with-title t
@@ -27,20 +29,29 @@
          :with-emphasize t
 	 :with-email t 
          :with-drawers ("results")
+	 :html-prefer-user-labels t
          :html-head-include-default-style nil
          :html-head-include-scripts nil 
          :html-head "<link rel=\"stylesheet\" href=\"/css/main.css\"><script src=\"/js/collapsibility.js\"></script>"
          :html-postamble t
 	 :html-preamble nil
-	 :html-postamble-format (("en" "Created by <a href=\"mailto:anand.deopurkar@anu.edu.au\">%a</a> using %c.  <a href=\"https://github.com/deopurkar/deopurkar.github.io\">Last modified</a>: %C."))
-         )
+	 :html-postamble-format
+	 (("en" "Created by <a href=\"mailto:anand.deopurkar@anu.edu.au\">%a</a> using %c.  <a href=\"https://github.com/deopurkar/deopurkar.github.io\">Last modified</a>: %C."))
+	 :preparation-function (lambda ()
+				 (setq org-export-before-parsing-functions
+				       '(my/pp-properties-hook my/add-backlinks-hook)
+				       links-in-cv
+				       t))
+	:completion-function (lambda ()
+			       (setq org-export-before-parsing-functions
+				     nil)))
         ("pdfcv"
          :base-directory "./content"
          :exclude ".*"
          :include ["cv.org"]
          :publishing-directory "./docs"
          :publishing-function org-latex-publish-to-pdf
-         :preparation-function do-not-include-links
+	 :preparation-function (lambda () (setq links-in-cv nil))
          )
         ("website-static"
          :base-directory "./content"
@@ -57,12 +68,6 @@
          :recursive t
          :publishing-function org-publish-attachment)
         ))
-
-(defvar cv-include-links t
-  "Should links be included while processing cv.org")
-
-(defun do-not-include-links (propslist)
-  (setq cv-include-links nil))
 
 (let ((org-confirm-babel-evaluate nil)
       (make-backup-files nil)

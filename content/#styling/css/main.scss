@@ -1,107 +1,26 @@
-@mixin alternate-rows($color) {
-    table {
-        tbody > tr:nth-child(odd){
-            background: $color;
-        }
-    }
-}
+//autumn 
+$canvas: #fcfaf5;
+$canvas-pop: #b5736b;
+$writing: #303821;
+$writing-pop: #b5736b;
 
-@mixin theme($canvas, $canvas-pop, $writing, $writing-pop){
-    * { color: $writing; }
-    body {
-	column-rule: 1px solid $canvas-pop;
-        background-color: $canvas;
-        ::-moz-selection {
-            background-color: $canvas-pop;
-        }
-        ::-selection {
-            background-color: $canvas-pop;
-        }
-	a:hover {
-	    color: $writing-pop;
-	}
-    }
-    #table-of-contents a {
-	border-bottom: 0.15em solid $writing-pop;
-    }
-    h1, h2, h3, h4, h5, h6 {
-	border-top-color: $canvas-pop;
-	text-decoration: underline 0.15em $writing-pop;
-    }
-    h2 {
-	padding-top: 20px;
-	border-top: 1px solid $canvas-pop;
-    }
-    footer {
-        color: $canvas-pop;
-	border-top: 1px solid $canvas-pop;
-    }
-
-    #mypicture {
-        border-color: $canvas-pop;
-    }
-    #preamble a{
-	border-bottom: 0.15em solid $writing-pop;  	      
-    }
-    #postamble {
-	border-top: 1px solid $canvas-pop;
-    }
-}
-
-// Palette based on Solarized theme (just as an example)
-// $base03:    #002b36;
-// $base02:    #073642;
-// $base01:    #586e75;
-// $base00:    #657b83;
-// $base0:     #839496;
-// $base1:     #93a1a1;
-// $base2:     #eee8d5;
-// $base3:     #fdf6e3;
-// $yellow:    #b58900;
-// $orange:    #cb4b16;
-// $red:       #dc322f;
-// $magenta:   #d33682;
-// $violet:    #6c71c4;
-// $blue:      #268bd2;
-// $cyan:      #2aa198;
-// $green:     #859900;
-
-@mixin alifbepe {
-    @include theme(#fffdfc, #c7bba8, #000, #d05a5b);
-}
-
-@mixin autumn {
-    @include theme(#fbf6ee, #fac591,#060000,#f87d5b); 
-}
-
-@mixin eucalyptus-warm {
- @include theme(#fbf6ec,#dcad67,#1f0e07,#a69b65); 
-}
-
-@mixin eucalyptus-cool {
- @include theme(#f2f3f7,#c8cad9,#212227,#6a7469);
-}
-
-@mixin winter {
-    @include theme(#fcfaf5,#6badb5,#303821,#6badb5);
-}
-
-@mixin spring {
-    @include theme(#fcfaf5,#88b56b,#303821,#88b56b);
-}
-
-@mixin summer {
-    @include theme(#fcfaf5,#986bb5,#303821,#986bb5);
-}
-
-@mixin autumn {
-    @include theme(#fcfaf5,#b5736b,#303821,#b5736b);
-}
+* { color: $writing; }
 
 html {
     scroll-behavior: smooth;
 }
 body {
+    column-rule: 1px solid $canvas-pop;
+    background-color: $canvas;
+    ::-moz-selection {
+        background-color: $canvas-pop;
+    }
+    ::-selection {
+        background-color: $canvas-pop;
+    }
+    a:hover {
+	color: $writing-pop;
+    }
     font-family: sans-serif;
     margin-top: 0em;
     line-height: 1.5em;
@@ -117,11 +36,23 @@ body {
 
 h1, h2, h3, h4 {
     font-weight: normal;
-    display: block;
+    display: inline-block;
+    line-height: 1.5em;
 }
 h1, h2{
-    column-span: all;
+    border-bottom: 0.15em solid $writing-pop;
 }
+
+.collapsible{
+    cursor: pointer;
+}
+.collapsed{
+    cursor: pointer;
+    &:after {
+	content: '...';
+    }
+}
+
 ul, ol{
     padding-left: 1em;
 }
@@ -134,6 +65,12 @@ figure {
     padding: 0em;
     margin: 0em;
 }
+#mypicture {
+    border-color: $canvas-pop;
+    width: 18em;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .title {
     line-height: 1.5em;
@@ -145,16 +82,24 @@ figure {
     margin-right: auto;
 }
 
-footer {
-    font-size: 80%;
-    margin-top:2em;
-    padding-top:0.3em;
+.properties{
+    dt{
+	float: left;
+	clear: left;
+	font-weight: bold;
+	width: 7em;
+    }
 }
-#mypicture {
-    width: 18em;
-    margin-left: auto;
-    margin-right: auto;
+
+.abstract {
+    border-left: 0.5em solid $canvas-pop;;
+    padding-left:0.5em;
+    p::before{
+	content: "Abstract.";
+	font-weight: bold;
+    }
 }
+
 #table-of-contents {
     padding-right: 1em;
     margin-right: 1em;
@@ -173,18 +118,29 @@ footer {
         margin-bottom: 0.5em;
     }
     a {
+	border-bottom: 0.15em solid $writing-pop;
 	text-decoration: none;
     }
+}
+
+footer {
+    color: $canvas-pop;
+    border-top: 1px solid $canvas-pop;
+    font-size: 80%;
+    margin-top:2em;
+    padding-top:0.3em;
 }
 
 #preamble {
     margin-top: 1em;
     a {
+	border-bottom: 0.15em solid $writing-pop;
 	text-decoration: none;
     }
 }
 
 #postamble {
+    border-top: 1px solid $canvas-pop;
     font-size: 80%;
     margin-top: 1em;
     text-align: right;
@@ -197,16 +153,13 @@ footer {
     display: table;
 }
 
-.properties{
-    dt{
-	float: left;
-	clear: left;
-	font-weight: bold;
-	width: 7em;
+@mixin alternate-rows($color) {
+    table {
+        tbody > tr:nth-child(odd){
+            background: $color;
+        }
     }
 }
-
-@include autumn;
 
 @media (max-width: 720px){
     body {
@@ -223,15 +176,5 @@ footer {
     padding: 0px;
     a:after {
         content: " '(' attr(href) ') '";
-    }
-}
-
-.collapsible{
-    cursor: pointer;
-}
-.collapsed{
-    cursor: pointer;
-    &:after {
-	content: '...';
     }
 }

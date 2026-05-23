@@ -5,7 +5,7 @@ Scan a file for an id and return a list of back references.
     (with-temp-buffer 
       (org-mode)
       (insert-file-contents file)
-      (unless (org-entry-get (point) "no-nav")
+      (unless (org-entry-get (point) "skip-in-backlinks")
         (setq links nil)
         (save-excursion
   	(while
@@ -59,7 +59,8 @@ Add backlinks from the directory as a new heading at the end of the buffer.
 #+begin_src elisp
   (defun add-backlinks-from (directory)
     (when-let*
-        ((id (org-entry-get (point) "ID"))
+        ((no-skip (not (org-entry-get (point) "skip-backlinks")))
+         (id (org-entry-get (point) "ID"))
          (backlinks 
   	(apply
   	 #'append 
