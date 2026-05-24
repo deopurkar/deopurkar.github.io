@@ -13,30 +13,6 @@
 #+HTML_HEAD_EXTRA: <script src="js/collapsibility.js"></script>
 #+setupfile: #setup.org
 
-
-# A function to sort and collate
-#+begin_src elisp :exports none 
-  (defun collate (string-pairs)
-    (let ((previous nil))
-      (mapcar
-       (lambda (pair)
-         (format
-  	"- %s :: %s"
-  	(if (equal previous (car pair))
-  	    "----"
-  	  (setq previous (car pair)))
-  	(cdr pair)))
-       string-pairs)))
-
-  (defun strip-links (string)
-    (or (and links-in-cv
-  	   string)
-        (org-link-display-format string)))
-#+end_src
-
-#+RESULTS:
-: strip-links
-
 * Positions
 #+RESULTS:
 :results:
@@ -82,9 +58,9 @@
     	  (format " (with %s)" collaborators)
     	"")
           ))))
-  (strip-links
+  (strip-links-from-string
    (string-join
-    (collate
+    (collate-from-string-pairs
      (org-map-entries 'pretty-print-grant "-nocv" '("#awards.org"))) "\n"))
 #+end_src
 
@@ -93,11 +69,13 @@
 - 2024 :: Discovery project award (DP), Australian Research Council (with Asilata Bapat, Anthony Licata).
 - 2018 :: Discovery early career researcher award (DECRA), Australian Research Council.
 - 2016 :: AMS-Simons travel grant, American Mathematical Society and Simons Foundation.
-- ---- :: Workshop funding, American Institute of Mathematics (with Maksym Fedorchuk, Ian Morrison, Xiaowei Wang).
+
+          Workshop funding, American Institute of Mathematics (with Maksym Fedorchuk, Ian Morrison, Xiaowei Wang).
 - 2014 :: Award for excellence in teaching, Columbia University, Mathematics department.
-- 2007, 2005, 2004 :: Honorable mention (2004) , honorable mention (2005), rank 16--25 (2004), William Lowell Putnam competition.
 - 2006 :: Jon A. Bucsela prize for the top undergraduate, Massachusetts Institute of Technology, Mathematics department.
-- ---- :: Rogers family prize for undergraduate summer research, Massachusetts Institute of Technology, Mathematics department.
+
+          Rogers family prize for undergraduate summer research, Massachusetts Institute of Technology, Mathematics department.
+- 2007, 2005, 2004 :: Honorable mention (2004) , honorable mention (2005), rank 16--25 (2004), William Lowell Putnam competition.
 :end:
 
 * Publications 
@@ -105,7 +83,7 @@
 #+begin_src elisp :exports results :results value raw drawer :lexical t
   ;; Our pretty-printing function
     (defun pretty-print-paper ()
-      (let ((id (org-entry-get nil "ID"))
+      (let ((id (org-id-get-create))
   	  (title (org-entry-get nil "ITEM"))
             (year
   	   (format-time-string
@@ -128,10 +106,10 @@
               (format " (with %s)" coauthors)
             "")
           ))))
-  (strip-links
+  (strip-links-from-string
    (string-join
-    (collate
-     (org-map-entries 'pretty-print-paper "-pp-expository-thesis" '("papers.org")))
+    (collate-from-string-pairs
+     (org-map-entries 'pretty-print-paper "-preprint-expository-thesis" '("papers/index.org")))
     "\n"))
 #+end_src
 
@@ -139,88 +117,82 @@
 
 #+RESULTS:
 :results:
-- 2026 :: /[[id:991da63b-3869-43c6-ae34-3cfb65a88e1e][The Thurston compactification of the stability manifold of a generic analytic K3 surface]]/.\\
+- 2026 :: /The Thurston compactification of the stability manifold of a generic analytic K3 surface/.\\
           Mathematical Research Letters (accepted).
-- ---- :: /[[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant classes of orbits in GL(2)-representations]]/.\\
+
+          /Equivariant classes of orbits in GL(2)-representations/.\\
           Selecta Mathematica (accepted).
-- 2025 :: /[[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sphere of spherical objects]]/.\\
-          Pre-print (with [[asilata:][Asilata Bapat]], [[tony:][Anthony Licata]]).
-- 2024 :: /[[id:fe485808-abd5-47a3-8989-33302bddd1f1][Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism]]/.\\
-          Pre-print (with [[valery:][Valery Alexeev]], [[changho:][Changho Han]]).
-- ---- :: /[[id:c6c78ad7-7a03-4b03-95d8-ab4cd5450fb8][Syzygies of canonical ribbons on higher genus curves]]/.\\
-          Pre-print (with [[jayan:][Jayan Mukherjee]]).
-- ---- :: /[[id:83eab6f9-e798-499b-bff5-cdea76b092c8][Counting 3-uple Veronese surfaces]]/.\\
-          Pre-print (with [[anandpatel:][Anand Patel]]).
-- ---- :: /[[id:e4f6d1ab-1a2b-4def-bbbd-092960a347f1][Orbits of linear series on the projective line]]/.\\
-          International Mathematics Research Notices (with [[anandpatel:][Anand Patel]]).
-- ---- :: /[[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]]/.\\
-          Algebraic Geometry (to appear) (with [[anandpatel:][Anand Patel]], [[dennistseng:][Dennis Tseng]]).
-- 2022 :: /[[id:8c1b044d-82a9-4cbc-986e-a07f93dc93d1][Spherical objects and stability conditions on 2-Calabi--Yau quiver categories]]/.\\
-          Mathematische Zeitschrift (with [[asilata:][Asilata Bapat]], [[tony:][Anthony Licata]]).
-- ---- :: /[[id:4b773769-0ca6-42a8-a8e6-309dd23ffa5c][Vector bundles and finite covers]]/.\\
-          Forum of Mathematics, Sigma (with [[anandpatel:][Anand Patel]]).
-- 2021 :: /[[id:f7400180-00b7-4b54-a902-8941b3bd3823][Stable log surfaces, admissible covers, and canonical curves of genus 4]]/.\\
-          Transactions of the Americal Mathematical Society (with [[changho:][Changho Han]]).
-- 2020 :: /[[id:7ee039fe-461d-41bb-8a73-116bc7f196e0][A Thurston compactification of the space of stability conditions]]/.\\
-          Pre-print (with [[asilata:][Asilata Bapat]], [[tony:][Anthony Licata]]).
-- ---- :: /[[id:82e9302f-6674-41b8-97cd-6733ac7edf89][Ramification divisors of general projections]]/.\\
-          Documenta Mathematica (with [[eduardduryev:][Eduard Duryev]], [[anandpatel:][Anand Patel]]).
-- 2019 :: /[[id:931c8753-71af-4498-89fe-5823ae74d1e9][Anticanonical tropical cubic del Pezzos contain exactly 27 lines]]/.\\
-          Pre-print (with [[mariacueto:][María Angélica Cueto]]).
-- ---- :: /[[id:1d0dda32-8233-4fd8-8303-a6d7e16dc0cc][Covers of stacky curves and limits of plane quintics]]/.\\
+- 2024 :: /Orbits of linear series on the projective line/.\\
+          International Mathematics Research Notices (with Anand Patel).
+
+          /A universal formula for counting cubic surfaces/.\\
+          Algebraic Geometry (to appear) (with Anand Patel, Dennis Tseng).
+- 2022 :: /Spherical objects and stability conditions on 2-Calabi--Yau quiver categories/.\\
+          Mathematische Zeitschrift (with Asilata Bapat, Anthony Licata).
+
+          /Vector bundles and finite covers/.\\
+          Forum of Mathematics, Sigma (with Anand Patel).
+- 2021 :: /Stable log surfaces, admissible covers, and canonical curves of genus 4/.\\
+          Transactions of the Americal Mathematical Society (with Changho Han).
+- 2020 :: /Ramification divisors of general projections/.\\
+          Documenta Mathematica (with Eduard Duryev, Anand Patel).
+- 2019 :: /Covers of stacky curves and limits of plane quintics/.\\
           Transactions of the Americal Mathematical Society.
-- 2018 :: /[[id:e4a32e17-c28b-45a2-bfb1-8622e151af99][Syzygy divisors on Hurwitz spaces]]/.\\
-          Contemporary Mathematics (with [[anandpatel:][Anand Patel]]).
-- ---- :: /[[id:c399a596-99cb-41bc-945b-a2846c40757e][The canonical syzygy conjecture for ribbons]]/.\\
+- 2018 :: /Syzygy divisors on Hurwitz spaces/.\\
+          Contemporary Mathematics (with Anand Patel).
+
+          /The canonical syzygy conjecture for ribbons/.\\
           Mathematische Zeitschrift.
-- 2016 :: /[[id:800287ce-183c-42d7-ad07-0f73202dc7c3][Toward GIT stability of syzygies of canonical curves]]/.\\
-          Algebraic Geometry (with [[maksym:][Maksym Fedorchuk]], [[davidswinarski:][David Swinarski]]).
-- 2015 :: /[[id:e0e0aebf-32c6-4041-95d5-16574e6c0513][The Picard rank conjecture for the Hurwitz spaces of degree up to five]]/.\\
-          Algebra & Number Theory (with [[anandpatel:][Anand Patel]]).
-- 2014 :: /[[id:b355cfa4-8d4b-4110-93f7-f85699fe3e36][Groebner techniques for ribbons]]/.\\
-          Albanian Journal of Mathematics (with [[maksym:][Maksym Fedorchuk]], [[davidswinarski:][David Swinarski]]).
-- ---- :: /[[id:504645b5-633e-42dd-9727-2c83fd1bb8d3][Compactifications of Hurwitz spaces]]/.\\
+- 2016 :: /Toward GIT stability of syzygies of canonical curves/.\\
+          Algebraic Geometry (with Maksym Fedorchuk, David Swinarski).
+- 2015 :: /The Picard rank conjecture for the Hurwitz spaces of degree up to five/.\\
+          Algebra & Number Theory (with Anand Patel).
+- 2014 :: /Groebner techniques for ribbons/.\\
+          Albanian Journal of Mathematics (with Maksym Fedorchuk, David Swinarski).
+
+          /Compactifications of Hurwitz spaces/.\\
           International Mathematics Research Notices.
-- 2013 :: /[[id:3b6a466e-3eef-4ba3-9515-07dcf2a34e83][Class of the Hodge eigenbundle using orbifold Riemann-Roch]]/.\\
-          Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]].
-- ---- :: /[[id:75d3ebc0-1174-40e1-9ec5-a949bad877de][Sharp slope bounds for sweeping families of trigonal curves]]/.\\
-          Mathematical Research Letters (with [[anandpatel:][Anand Patel]]).
-- ---- :: /[[id:833f39b4-0d38-4903-8356-aac9fc2b16d0][Modular compactifications of the space of marked trigonal curves]]/.\\
+- 2013 :: /Sharp slope bounds for sweeping families of trigonal curves/.\\
+          Mathematical Research Letters (with Anand Patel).
+
+          /Modular compactifications of the space of marked trigonal curves/.\\
           Advances in Mathematics.
 :end:
 
-- Pre-prints ::
+** Pre-prints
 #+begin_src elisp :exports results :results value raw drawer
-  (strip-links
+  (strip-links-from-string
    (string-join
-    (collate
-     (org-map-entries 'pretty-print-paper "+preprint" '("papers.org"))) "\n"))
+    (collate-from-string-pairs
+     (org-map-entries 'pretty-print-paper "+preprint" '("papers/index.org"))) "\n"))
 #+end_src
 
 #+RESULTS:
 :results:
-- 2025 :: /[[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sphere of spherical objects]]/.\\
-          Pre-print (with [[asilata:][Asilata Bapat]], [[tony:][Anthony Licata]]).
-- 2024 :: /[[id:fe485808-abd5-47a3-8989-33302bddd1f1][Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism]]/.\\
-          Pre-print (with [[valery:][Valery Alexeev]], [[changho:][Changho Han]]).
-- ---- :: /[[id:c6c78ad7-7a03-4b03-95d8-ab4cd5450fb8][Syzygies of canonical ribbons on higher genus curves]]/.\\
-          Pre-print (with [[jayan:][Jayan Mukherjee]]).
-- ---- :: /[[id:83eab6f9-e798-499b-bff5-cdea76b092c8][Counting 3-uple Veronese surfaces]]/.\\
-          Pre-print (with [[anandpatel:][Anand Patel]]).
-- 2020 :: /[[id:7ee039fe-461d-41bb-8a73-116bc7f196e0][A Thurston compactification of the space of stability conditions]]/.\\
-          Pre-print (with [[asilata:][Asilata Bapat]], [[tony:][Anthony Licata]]).
-- 2019 :: /[[id:931c8753-71af-4498-89fe-5823ae74d1e9][Anticanonical tropical cubic del Pezzos contain exactly 27 lines]]/.\\
-          Pre-print (with [[mariacueto:][María Angélica Cueto]]).
-- 2013 :: /[[id:3b6a466e-3eef-4ba3-9515-07dcf2a34e83][Class of the Hodge eigenbundle using orbifold Riemann-Roch]]/.\\
-          Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]].
+- 2025 :: /A sphere of spherical objects/.\\
+          Pre-print (with Asilata Bapat, Anthony Licata).
+- 2024 :: /Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism/.\\
+          Pre-print (with Valery Alexeev, Changho Han).
+
+          /Syzygies of canonical ribbons on higher genus curves/.\\
+          Pre-print (with Jayan Mukherjee).
+
+          /Counting 3-uple Veronese surfaces/.\\
+          Pre-print (with Anand Patel).
+- 2020 :: /A Thurston compactification of the space of stability conditions/.\\
+          Pre-print (with Asilata Bapat, Anthony Licata).
+- 2019 :: /Anticanonical tropical cubic del Pezzos contain exactly 27 lines/.\\
+          Pre-print (with María Angélica Cueto).
+- 2013 :: /Class of the Hodge eigenbundle using orbifold Riemann-Roch/.\\
+          Pre-print, appendix to /Cyclic covering morphisms on \(\overline M_{0,n}\)/ by Maksym Fedorchuk.
 :end:
 
-- Expository ::
+** Expository
 #+begin_src elisp :exports results :results value raw drawer
-  (strip-links
+  (strip-links-from-string
    (string-join
-    (collate
-     (org-map-entries 'pretty-print-paper "+paper+expository" '("papers.org"))) "\n"))
+    (collate-from-string-pairs
+     (org-map-entries 'pretty-print-paper "+paper+expository" '("papers/index.org"))) "\n"))
 #+end_src
 
 #+RESULTS:
@@ -258,9 +230,9 @@
                    (format " (%s)" comment)
                  "")))))
 
-  (strip-links
+  (strip-links-from-string
    (string-join
-    (collate
+    (collate-from-string-pairs
      (org-map-entries 'pretty-print-student t '("#supervision.org"))) "\n"))
 #+end_src
 
@@ -296,7 +268,7 @@
 #+begin_src elisp :exports results :results value raw drawer :lexical t
      ;; Our pretty-printing function
        (defun pretty-print-talk ()
-         (let ((id (org-entry-get nil "ID"))
+         (let ((id (org-id-get-create))
      	     (year
      	      (format-time-string
      	       "%Y"
@@ -310,14 +282,14 @@
      	       (format "/[[id:%s][%s]]/.\n          %s, %s%s."
      		       id
      		       title
- 		       venue
+  		       venue
      		       where
      		       (if comment
      			   (format " (%s)" comment)
                            "")))))
-  (strip-links
+  (strip-links-from-string
    (string-join
-    (collate
+    (collate-from-string-pairs
      (org-map-entries 'pretty-print-talk nil '("#talks.org")))
     "\n"))
 #+end_src
@@ -506,9 +478,9 @@
            (format ", %s" where)
          "")
        ))))
-  (strip-links
+  (strip-links-from-string
    (string-join
-    (collate
+    (collate-from-string-pairs
      (org-map-entries 'pretty-print-service nil '("#service.org")))
     "\n"))
 #+end_src
@@ -516,30 +488,44 @@
 #+RESULTS:
 :results:
 - Ongoing :: Refereed for Journal of the European Mathematical Society, Journal of Differential Geometry, Journal of Algebraic Geometry, Annales Scientifiques de l'École Normale Supérieure, Mathematische Annalen, Algebra and Number Theory, Journal für die reine und angewandte Mathematik, manuscripta mathematica, Advances in Geometry, Mathematical Research Letters, European Journal of Mathematics, Journal de l'École polytechnique — Mathématiques, Experimental mathematics
-- ---- :: Reviewed for Mathematical Reviews, American Mathematical Society
+
+             Reviewed for Mathematical Reviews, American Mathematical Society
 - 2021 onwards :: Convener for the Masters program, Mathematical Sciences Institute, Australian National University
 - 2025 :: Served on the PhD thesis committee of Snehinh Sen, Mathematical Sciences Institute, Australian National University
-- ---- :: Served on the PhD thesis committee of Alexander Lai De Oliveira, Mathematical Sciences Institute, Australian National University
-- ---- :: Served on the PhD thesis committee of Seethalakshmi Kayanattath, Mathematical Sciences Institute, Australian National University
-- ---- :: Served on the PhD thesis committee of Lucas Allen, Mathematical Sciences Institute, Australian National University
-- ---- :: Headed the selection committee for the /Future research talent fellowship/, Australian National University
-- ---- :: Served on the PhD thesis committee of Kabeer Manali Rahul, Australian National University
+
+          Served on the PhD thesis committee of Alexander Lai De Oliveira, Mathematical Sciences Institute, Australian National University
+
+          Served on the PhD thesis committee of Seethalakshmi Kayanattath, Mathematical Sciences Institute, Australian National University
+
+          Served on the PhD thesis committee of Lucas Allen, Mathematical Sciences Institute, Australian National University
+
+          Headed the selection committee for the /Future research talent fellowship/, Australian National University
+
+          Served on the PhD thesis committee of Kabeer Manali Rahul, Australian National University
 - 2024 :: Co-organised the session /Computations and applications of commutative algebra and algebraic geometry/ at the joint /NZMS-AustMS-AMS/ meeting John Cobb, Sione Ma'u, and Hal Schenk, University of Auckland
 - 2022 :: Co-organised the workshop /Braids in Symplectic and Algebraic Geometry/ Inanc Baykur, Benson Farb, Anthony Licata, and Ailsa Keating, Institute for Computational and Experimental Research in Mathematics (ICERM), Brown University
 - 2021 :: Served on the award committee for the /BH Neumann prize/ for the best student talk, AustMS meeting
 - 2020 :: Served on the PhD thesis committee of Abhishek Bharadwaj, Mathematical Sciences Institute, Australian National University
-- ---- :: Served on the MPhil thesis committee of Ivan Zelich, Mathematical Sciences Institute, Australian National University
+
+          Served on the MPhil thesis committee of Ivan Zelich, Mathematical Sciences Institute, Australian National University
 - 2019 :: Served on the selection committee for the /Future research talent fellowship/, Mathematical Sciences Institute, Australian National University
-- ---- :: Served on the director search committee, Mathematical Sciences Institute, Australian National University
-- ---- :: Served on the formal liaison committee, Mathematical Sciences Institute, Australian National University
+
+          Served on the director search committee, Mathematical Sciences Institute, Australian National University
+
+          Served on the formal liaison committee, Mathematical Sciences Institute, Australian National University
 - 2018 :: Served on the PhD thesis committee of Edmund Heng, Mathematical Sciences Institute, Australian National University
-- ---- :: Served on the award committee for the /BH Neumann prize/ for the best student talk, AustMS meeting
-- ---- :: Co-organised the workshop /Polynomial Algebraic Developments in Optimisation and Computation/ Markus Hegland
-- ---- :: Conducted training sessions in algebraic geometry at the /D21 Workshop/, Australian Signals Directorate
+
+          Served on the award committee for the /BH Neumann prize/ for the best student talk, AustMS meeting
+
+          Co-organised the workshop /Polynomial Algebraic Developments in Optimisation and Computation/ Markus Hegland
+
+          Conducted training sessions in algebraic geometry at the /D21 Workshop/, Australian Signals Directorate
 - 2017 :: Co-organised the workshop /Stability and moduli spaces/ Maksym Fedorchuk, Ian Morrison, Xiaowei Wang, American Institute of Matheatics, Palo Alto, California
 - 2016 :: Co-organised the /Summer workshop in algebraic geometry/ Angela Gibney, Nicola Tarasca, University of Georgia, Athens, Georgia
-- ---- :: Organised the /Fairly informal reading seminar and tea (FIRST)/, University of Georgia, Athens, Georgia
-- ---- :: Co-organised the graduate student algebraic geometry seminar Johan de Jong, Columbia University
+
+          Organised the /Fairly informal reading seminar and tea (FIRST)/, University of Georgia, Athens, Georgia
+
+          Co-organised the graduate student algebraic geometry seminar Johan de Jong, Columbia University
 - 2015 :: Conducted preparation sessions for the Putnam competition, Columbia University
 - 2014 :: Lectured in the /Workshop on birational geometry and stability of moduli stacks and spaces of curves/, Vietnam Institute for Advanced Studies in Mathematics, Hanoi, Vietnam
 - 2016 :: Served on the PhD thesis committee of Natasha Potashnik, Columbia University, New York City, New York

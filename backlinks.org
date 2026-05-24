@@ -1,3 +1,4 @@
+#+title: Backlinks code
 #+property: header-args :tangle backlinks.el
 Scan a file for an id and return a list of back references.
 #+begin_src elisp
@@ -13,8 +14,12 @@ Scan a file for an id and return a list of back references.
   	     (format "[[id:%s" id)
   	 nil
   	 t)
-  	  (cl-pushnew (pretty-print-backlink (point)) links)))
-        (reverse links))))
+  	  (cl-pushnew 
+  	   (pretty-print-backlink (point))
+  	   links
+  	   :test 'equal
+  	   )))
+        links)))
 #+end_src
 
 #+RESULTS:
@@ -23,33 +28,18 @@ Scan a file for an id and return a list of back references.
 A pretty printer.
 #+begin_src elisp
   (defun pretty-print-backlink (pom &optional nolink)
-    (let* ((id (org-entry-get pom "ID" 'inherit)) 
-  	 (tagstring (org-entry-get pom "TAGS"))
-  	 (tags (and tagstring (split-string tagstring ":")))
-  	 (title (or (org-entry-get pom "NAV-TITLE")
-  		    (org-entry-get pom "ITEM"))))
-      (let ((text
-  	   (cond ((member "talk" tags)
-  		  (format "/%s/ (talk at %s, %s)."
-  			  title
-  			  (org-entry-get pom "WHERE")
-  			  (org-entry-get pom "WHEN")))
-  		 ((or (member "paper" tags)
-  		      (member "preprint" tags))
-  		  (format "/%s/ (%s)."
-  			  title
-  			  (cond ((member "expository" tags) "expository paper")
-  				((member "preprint" tags) "preprint")
-  				(t "paper"))))
-  		 ((member "course" tags)
-  		  (format "/%s/, (course at %s, %s)."
-  			  title
-  			  (org-entry-get pom "WHERE")
-  			  (org-entry-get pom "WHEN")))
-  		 (t (format "%s" title)))))
-        (if (or nolink (not id))
-  	  text
-  	(format "[[id:%s][%s]]" id text)))))
+    (when-let* ((id (org-entry-get pom "ID" 'inherit))
+  	      (newpom (org-id-find id 'marker))
+  	      (title (or (org-entry-get newpom "nav-title")
+  			 (org-entry-get newpom "item")
+  			 (cadar (org-collect-keywords "title")))))
+      (format "[[id:%s][%s]]%s"
+  	    id
+  	    title
+  	    (if-let* 
+  		((tags (org-get-tags newpom)))
+  		(format " (%s)" (string-join tags ","))
+  	      ""))))
 #+end_src
 
 #+RESULTS:
@@ -104,8 +94,38 @@ Add backlinks from the directory as a new heading at the end of the buffer.
 
 #+begin_src elisp
   (defun my/add-backlinks-hook (backend)
-    (add-backlinks-everywhere-from "."))
+    (add-backlinks-everywhere-from project-root-directory))
 #+end_src
 
 #+RESULTS:
 : my/add-backlinks-hook
+
+# A function to sort and collate
+#+begin_src elisp
+  (defun collate-from-string-pairs (string-pairs)
+    (let ((previous nil))
+      (mapcar
+       (lambda (pair)
+         (if (equal previous (car pair))
+  	   (format "\n %s %s"
+  		   (make-string (+ 4 (length previous)) ?\s)
+  		   (cdr pair))
+  	 (format "- %s :: %s"
+  		 (setq previous (car pair))
+  		 (cdr pair))))
+       string-pairs)))
+#+end_src
+
+#+RESULTS:
+: collate-from-string-pairs
+
+Remove links
+#+begin_src elisp
+  (defun strip-links-from-string (string)
+    (or (and links-in-cv
+  	   string)
+        (org-link-display-format string)))
+#+end_src
+
+#+RESULTS:
+: strip-links-from-string

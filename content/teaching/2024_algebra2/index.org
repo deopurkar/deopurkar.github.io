@@ -1,6 +1,6 @@
 # Created 2025-04-05 Sat 13:19
 #+options: toc:nil ':t tags:nil broken-links:nil prop:nil
-#+PROPERTY: header-arg :eval never-export
+#+PROPERTY: header-args :eval never-export
 #+title: 2024 Algebra 2
 #+author: Anand Deopurkar
 #+DESCRIPTION: Course in fields and Galois theory by Anand Deopurkar

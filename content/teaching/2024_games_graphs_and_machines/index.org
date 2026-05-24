@@ -4,7 +4,7 @@
 #+subtitle: {{{COURSENUM}}}, {{{SEMESTER}}}
 #+description: Course material for Games, Graphs, and Machines taught at the Australian National University by Anand Deopurkar in 2024.  Read the course outline, week-by-week rundown, assignments, and other materials.
 #+author: Anand Deopurkar 
-#+PROPERTY: header-arg :eval never-export
+#+PROPERTY: header-args :eval never-export
 :COURSE_INFO:
 #+macro: SEMESTER Semester 2, 2024
 #+macro: COURSENUM MATH2301

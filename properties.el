@@ -12,7 +12,7 @@
 	 (and (org-entry-get (point) p)
 	      (insert
 	       (format
-		"- %s :: %s\n"
+		"| *%s* | %s |\n"
 		p
 		(org-entry-get (point) p)))))
        properties-to-pp)

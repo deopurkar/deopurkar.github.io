@@ -2,7 +2,7 @@
   (with-temp-buffer 
     (org-mode)
     (insert-file-contents file)
-    (unless (org-entry-get (point) "no-nav")
+    (unless (org-entry-get (point) "skip-in-backlinks")
       (setq links nil)
       (save-excursion
 	(while
@@ -10,41 +10,31 @@
 	     (format "[[id:%s" id)
 	 nil
 	 t)
-	  (cl-pushnew (pretty-print-backlink (point)) links)))
-      (reverse links))))
+	  (cl-pushnew 
+	   (pretty-print-backlink (point))
+	   links
+	   :test 'equal
+	   )))
+      links)))
 
 (defun pretty-print-backlink (pom &optional nolink)
-  (let* ((id (org-entry-get pom "ID" 'inherit)) 
-	 (tagstring (org-entry-get pom "TAGS"))
-	 (tags (and tagstring (split-string tagstring ":")))
-	 (title (or (org-entry-get pom "NAV-TITLE")
-		    (org-entry-get pom "ITEM"))))
-    (let ((text
-	   (cond ((member "talk" tags)
-		  (format "/%s/ (talk at %s, %s)."
-			  title
-			  (org-entry-get pom "WHERE")
-			  (org-entry-get pom "WHEN")))
-		 ((or (member "paper" tags)
-		      (member "preprint" tags))
-		  (format "/%s/ (%s)."
-			  title
-			  (cond ((member "expository" tags) "expository paper")
-				((member "preprint" tags) "preprint")
-				(t "paper"))))
-		 ((member "course" tags)
-		  (format "/%s/, (course at %s, %s)."
-			  title
-			  (org-entry-get pom "WHERE")
-			  (org-entry-get pom "WHEN")))
-		 (t (format "%s" title)))))
-      (if (or nolink (not id))
-	  text
-	(format "[[id:%s][%s]]" id text)))))
+  (when-let* ((id (org-entry-get pom "ID" 'inherit))
+	      (newpom (org-id-find id 'marker))
+	      (title (or (org-entry-get newpom "nav-title")
+			 (org-entry-get newpom "item")
+			 (cadar (org-collect-keywords "title")))))
+    (format "[[id:%s][%s]]%s"
+	    id
+	    title
+	    (if-let* 
+		((tags (org-get-tags newpom)))
+		(format " (%s)" (string-join tags ","))
+	      ""))))
 
 (defun add-backlinks-from (directory)
   (when-let*
-      ((id (org-entry-get (point) "ID"))
+      ((no-skip (not (org-entry-get (point) "skip-backlinks")))
+       (id (org-entry-get (point) "ID"))
        (backlinks 
 	(apply
 	 #'append 
@@ -78,4 +68,22 @@
     (add-backlinks-from directory)))
 
 (defun my/add-backlinks-hook (backend)
-  (add-backlinks-everywhere-from "."))
+  (add-backlinks-everywhere-from project-root-directory))
+
+(defun collate-from-string-pairs (string-pairs)
+  (let ((previous nil))
+    (mapcar
+     (lambda (pair)
+       (if (equal previous (car pair))
+	   (format "\n %s %s"
+		   (make-string (+ 4 (length previous)) ?\s)
+		   (cdr pair))
+	 (format "- %s :: %s"
+		 (setq previous (car pair))
+		 (cdr pair))))
+     string-pairs)))
+
+(defun strip-links-from-string (string)
+  (or (and links-in-cv
+	   string)
+      (org-link-display-format string)))

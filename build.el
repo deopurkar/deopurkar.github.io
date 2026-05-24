@@ -7,7 +7,9 @@
 
 (defvar links-in-cv t
   "Should links be included while processing cv.org")
-  
+
+(defvar project-root-directory (expand-file-name "./content/"))  
+
 (setq org-publish-project-alist
       '(("website-org"
 	 :author "Anand Deopurkar"
@@ -37,12 +39,12 @@
 	 :html-preamble nil
 	 :html-postamble-format
 	 (("en" "Created by <a href=\"mailto:anand.deopurkar@anu.edu.au\">%a</a> using %c.  <a href=\"https://github.com/deopurkar/deopurkar.github.io\">Last modified</a>: %C."))
-	 :preparation-function (lambda ()
+	 :preparation-function (lambda (b)
 				 (setq org-export-before-parsing-functions
 				       '(my/pp-properties-hook my/add-backlinks-hook)
 				       links-in-cv
 				       t))
-	:completion-function (lambda ()
+	:completion-function (lambda (b)
 			       (setq org-export-before-parsing-functions
 				     nil)))
         ("pdfcv"
@@ -51,7 +53,7 @@
          :include ["cv.org"]
          :publishing-directory "./docs"
          :publishing-function org-latex-publish-to-pdf
-	 :preparation-function (lambda () (setq links-in-cv nil))
+	 :preparation-function (lambda (b) (setq links-in-cv nil))
          )
         ("website-static"
          :base-directory "./content"

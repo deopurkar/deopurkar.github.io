@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ARCHIVE:  %s_archive::
 :nav-title: Home
+:skip-backlinks: t
+:ID:       d990bcc9-227c-4e82-9e93-512139e14f45
 :END:
 #+title: Anand Deopurkar
 #+description: Website of Anand Deopurkar, a mathematician specialising in algebraic geometry at the Australian National University.  Browse my papers, courses, and projects.  Get in touch with comments, thoughts, or ideas.
@@ -29,11 +31,9 @@ I study the interplay between systems of algebraic equations and the geometric s
 
 #+end_intro
 
-* now
+* now 
 :PROPERTIES:
 :ARCHIVE: past.org::datetree/
-:ID:       ff50a2c9-29c8-4fe0-9e00-26820338218b
-:nav-title: Home/now
 :END:
 If you are thinking of doing a PhD with me, please read this [[file:prospective_phd.org][page for prospective PhD students]].
 ** With [[asilata][Asilata Bapat]] and [[tony][Tony Licata]], I am studying [[wiki:Bridgeland_stability_condition][Bridgeland stability conditions]] on some triangulated categories.
@@ -47,31 +47,24 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
  - Melbourne (July 2026) for a the workshop [[https://algemel.github.io/][Algebraic Geometry in Melbourne]] that I am organising with [[jackhall:][Jack Hall]] and [[norbury:][Paul Norbury]].
  - Sydney (February 2027) for the Forum on Artin and Coxeter groups: Examples and Theory
 ** ... [[id:6580b2b4-26bc-4483-a674-3fd5385bb1ad][more "now" items from the past]].
-:PROPERTIES:
-:ID:       72e5d903-a7af-4a53-81d8-7860af8ca2bf
-:END:
+
 * Papers/pre-prints
-:PROPERTIES:
-:ID:       872ca503-15b1-4e42-abf9-fd5e27b7392d
-:nav-title: Home/papers
-:END:
 #+begin_src emacs-lisp :exports results :results value raw drawer :lexical t
-  (defun my/paper-pp (pom)
-     (let* ((id (org-entry-get pom "ID"))
-  	  (title (org-entry-get pom "ITEM"))
-  	  (journal (org-entry-get pom "WHERE"))
-  	  (coauthors (org-entry-get pom "WITH"))
+  (defun my/paper-pp ()
+     (let* ((id (org-id-get-create))
+  	  (title (org-entry-get nil "ITEM"))
+  	  (journal (org-entry-get nil "WHERE"))
+  	  (coauthors (org-entry-get nil "WITH"))
   	  (with (if coauthors
   		    (format ", with %s" coauthors)
   		  ""))
-  	  (links (org-entry-get pom "LINKS")))
+  	  (links (org-entry-get nil "LINKS")))
        (format "- [[id:%s][%s]], /%s/%s (%s)." id title journal with links)))
   (string-join
    (org-map-entries 
-    (lambda ()
-      (my/paper-pp (point)))
+    'my/paper-pp
     "+paper-expository|+preprint-expository"
-    '("papers.org")
+    '("papers/index.org")
     )
    "\n")
 #+end_src
@@ -105,19 +98,13 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 :end:
 
 * Expository 
-:PROPERTIES:
-:ID:       4f43819a-90f1-4894-a385-8b1bfcdc7b9a
-:nav-title: Home/expository
-:END:
-
 #+begin_src emacs-lisp :exports results :results value raw drawer
-    (string-join
-     (org-map-entries
-      (lambda ()
-        (my/paper-pp (point)))
-      "+expository"
-      '("papers.org"))
-     "\n")
+  (string-join
+   (org-map-entries
+    'my/paper-pp
+    "+expository"
+    '("papers/index.org"))
+   "\n")
 #+end_src
 
 #+RESULTS:
@@ -128,10 +115,6 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 :end:
 
 * Teaching
-:PROPERTIES:
-:ID:       eb2814b6-dc5e-4a8c-b690-4f33edc5c6a1
-:nav-title: Home/teaching
-:END:
 
 #+begin_src emacs-lisp :exports results :results value raw drawer
   (defun gather ()
@@ -140,7 +123,7 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
   	'url (org-entry-get nil "url")
   	'year (org-entry-get nil "year")))
 
-  (defun collate (collated remaining)
+  (defun collate-courses (collated remaining)
     (if (not remaining) 
         collated
       (let* ((title (plist-get (car remaining) 'title))
@@ -150,7 +133,7 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
   			  new))))
         (setcdr courses
   	      (cons (car remaining) (cdr courses)))
-        (collate collated (cdr remaining)))))
+        (collate-courses collated (cdr remaining)))))
 
   (string-join 
    (mapcar (lambda (course)
@@ -163,7 +146,7 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
   				   (format "[[%s][%s]]" (plist-get year 'url) (plist-get year 'year))))
   			    (reverse (cdr course)))
   		    ", ")))
-  	 (reverse (collate nil
+  	 (reverse (collate-courses nil
   			   (seq-remove  (lambda (course)
   					  (not (plist-get course 'url)))
   					(org-map-entries 'gather nil '("#teaching.org"))))))
@@ -171,8 +154,8 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 #+end_src
 #+RESULTS:
 :results:
+- [[file:teaching/2025_games_graphs_and_machines/][Games, graphs, and machines]] ([[file:teaching/2025_games_graphs_and_machines/][2025]], [[file:teaching/2024_games_graphs_and_machines/][2024]])
 - [[file:teaching/2025_algebra2/][Fields and Galois theory (Algebra 2)]] ([[file:teaching/2025_algebra2/][2025]], [[file:teaching/2024_algebra2/][2024]], [[file:teaching/2023_algebra2/][2023]], [[file:teaching/2014_algebra2/][2014]])
-- [[file:teaching/2024_games_graphs_and_machines/][Games, graphs, and machines]] ([[file:teaching/2024_games_graphs_and_machines/][2024]])
 - [[file:teaching/2024_differential_forms_in_algebraic_topology/][Differential forms in algebraic topology]] ([[file:teaching/2024_differential_forms_in_algebraic_topology/][2024]])
 - [[file:teaching/2022_algebra1/][Groups and rings (Algebra 1)]] ([[file:teaching/2022_algebra1/][2022]], [[file:teaching/2013_algebra1/][2013]])
 - [[file:teaching/2022_mathematical_writing/][Mathematical writing]] ([[file:teaching/2022_mathematical_writing/][2022]])
@@ -186,11 +169,6 @@ If you are thinking of doing a PhD with me, please read this [[file:prospective_
 :end:
 
 * Talks
-:PROPERTIES:
-:ID:       668964e9-222c-4171-a46a-b41a76533394
-:nav-title: Home/talks
-:END:
-
 Notes or slides for many of my talks are linked in the section on [[*Papers/pre-prints][papers/pre-prints]].
 Here are some additional talks:
 #+begin_src emacs-lisp :exports results :results value raw drawer
@@ -222,30 +200,26 @@ Here are some additional talks:
 #+RESULTS:
 :results:
 - [[file:talks/ICERM2022.pdf][The geometry and combinatorics of Harder--Narasimhan filtrations]]. \\
-  Braids in representation theory and algebraic combinatorics, Institute for Computational and Experimental Research in Mathematics, Providence, Rhode Island.
+  .
 - [[file:talks/Fermat2022.pdf][The geometry of Fermat-like equations]] (expository). \\
-  Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana, Pune, India.
+  .
 - [[file:talks/Belyi2021.pdf][Algebraic curves and Belyi's theorem]] (expository). \\
-  Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana, Pune, India.
+  .
 - [[file:talks/ecc2021/ecc.html][Error correcting codes]] (expository). \\
-  ANU Mathematics Extension Program, Canberra, Australia.
+  .
 - [[file:talks/WIM2019.pdf][The work of Claire Voisin]] (expository). \\
-  Women in mathematics day, Australian National University, Canberra, Australia.
+  .
 - [[file:talks/NZ2018.pdf][Geometry of Hurwitz spaces]]. \\
-  Character varieties and topological quantum field theory, University of Auckland, Auckland, New Zealand.
+  .
 - [[file:talks/FMColloquium2018.pdf][The work of Caucher Birkar]] (expository). \\
-  Colloquium, Australian National University, Canberra, Australia.
-- [[file:talks/tifr2018.pdf][How to count using (co)homology]] (expository). \\
-  Tata Institute of Fundamental Research, Mumbai, India.
+  .
+- [[file:talks/tifr2018.pdf][How to count using (co)homology]]. \\
+  .
 - [[file:talks/MATRIX2018.pdf][Quadrature and algebraic geometry]]. \\
-  Workshop on algebraic geometry approximation, and optimization, MATRIX, Creswick, Victoria, Australia.
+  .
 :end:
 
 * Odds and ends
-:PROPERTIES:
-:ID:       3bd7b886-83bc-456b-a763-a7244de0579e
-:nav-title: Home/odds and ends
-:END:
 
 - [[file:genus7syz/][GIT for syzygies of genus 7 curves]]\\
   This is an ongoing project to determine GIT stability for syzygies of genus 7 canonical curves.

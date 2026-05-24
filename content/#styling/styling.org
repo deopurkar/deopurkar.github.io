@@ -146,13 +146,26 @@ Collapsible and collapsed headlines.
 
 ** Lists
 #+begin_src scss
-
   ul, ol{
-      padding-left: 1em;
+        padding-left: 1em;
+    }
+    li {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+  dd {
+      p {
+  	margin-top: 0em;
+      }
   }
-  li {
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
+
+  table, tr, th, td, colgroup, tbody {
+      border: none;
+      border-collapse: collapse;
+  }
+  td {
+      padding: 0.0em 0.5em;
   }
 #+end_src
 
@@ -183,18 +196,6 @@ Title and intro
       column-gap: 1em;
       margin-left: auto;
       margin-right: auto;
-  }
-#+end_src
-
-Properties
-#+begin_src scss
-  .properties{
-      dt{
-  	float: left;
-  	clear: left;
-  	font-weight: bold;
-  	width: 7em;
-      }
   }
 #+end_src
 
