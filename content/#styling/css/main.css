@@ -84,9 +84,10 @@ figure {
 .abstract {
   border-left: 0.5em solid #b5736b;
   padding-left: 0.5em; }
-  .abstract p::before {
-    content: "Abstract.";
-    font-weight: bold; }
+
+.abstract > p:first-of-type::before {
+  content: "Abstract.";
+  font-weight: bold; }
 
 #table-of-contents {
   padding-right: 1em;
