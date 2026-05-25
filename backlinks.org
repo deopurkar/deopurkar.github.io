@@ -31,14 +31,18 @@ A pretty printer.
     (when-let* ((id (org-entry-get pom "ID" 'inherit))
   	      (newpom (org-id-find id 'marker))
   	      (title (or (org-entry-get newpom "nav-title")
-  			 (org-entry-get newpom "item")
-  			 (cadar (org-collect-keywords "title")))))
+  			 (org-entry-get newpom "ITEM")
+  			 (cadar (org-collect-keywords '("title"))))))
       (format "[[id:%s][%s]]%s"
   	    id
   	    title
   	    (if-let* 
   		((tags (org-get-tags newpom)))
-  		(format " (%s)" (string-join tags ","))
+  		(if (member "talk" tags)
+  		    (format " (talk, %s)"
+  			    (or (org-entry-get newpom "venue")
+  				(org-entry-get newpom "where"))) 
+  		  (format " (%s)" (string-join tags ",")))
   	      ""))))
 #+end_src
 
