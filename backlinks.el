@@ -36,7 +36,7 @@
 	      id
 	      title
 	      (if (> (length context) 0)
-		  (format " -- %s" context)
+		  (format " (%s)" context)
 		"")
 	      (if-let*
 		  ((links (org-entry-get newpom "links")))

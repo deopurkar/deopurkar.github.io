@@ -206,13 +206,15 @@ There aren't many cases where we can completely described a KSBA compactificatio
   We prove that, under suitable hypotheses, these maps are injective and their image has a compact closure.
   We identify a family of points in the boundary that are categorical analogous to the intersection functionals in Teichm\"uller theory.
   
-We study in detail the geometry of the resulting compactification for the 2-Calabi--Yau categories of quivers, and fully work out the cases of the \(A_2\) and \(\widehat{A_1}\) quivers.
+  We study in detail the geometry of the resulting compactification for the 2-Calabi--Yau categories of quivers, and fully work out the cases of the \(A_2\) and \(\widehat{A_1}\) quivers.
   To do so, we carefully examine the dynamics of Harder--Narasimhan multiplicities under auto-equivalences of the category.
   We introduce a finite automaton to study this dynamics and employ it in our analysis of the \(A_{2}\) and \(\widehat{A_1}\) categories.
   #+end_abstract
 
 We take seriously the idea that the stability manifold is like the Teichmüller space.
 This suggests fascinating new ways to study stability conditions.  The Thurston compactification is one of them!
+
+This paper contains many results beyond the headlines.  We have an appendix that discusses when an arbitrary filtration of an object can be straightened out to the HN filtration.  We also have some technology (automata) to encode the "piecewise-linear" nature of categorical group actions.  This piecewise linearity also features prominently in [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6]["A sphere of spherical objects]]".
 
 * Ramification divisors of general projections                        :paper:
 :PROPERTIES:
@@ -225,6 +227,8 @@ This suggests fascinating new ways to study stability conditions.  The Thurston 
 #+begin_abstract
 We study the ramification divisors of projections of a smooth projective variety onto a linear subspace of the same dimension. We prove that the ramification divisors vary in a maximal dimensional family for a large class of varieties. Going further, we study the map that associates to a linear projection its ramification divisor. We show that this map is dominant for most (but not all!) varieties of minimal degree, using (linked) limit linear series of higher rank. We find the degree of this map in some cases, extending the classical appearance of Catalan numbers in the geometry of rational normal curves, and give a geometric explanation of its fibers in terms of torsion points of naturally occurring elliptic curves in the case of the Veronese surface and the quartic rational surface scroll.
 #+end_abstract
+
+The most intriguing part of this project is what lies beyond!  We discover a delightful array of enumerative questions.  The answers to the first line in this array are the famous Catalan numbers.  This is the dimension one case.  There is a whole world of higher dimensions whose answers are completely unknown (barring a handful of exceptions).  In small cases, we can find the answers using a computer.  Curiously, various slices of the answer array uniquely match certain known combinatorial sequences on [[https://oeis.org/][OEIS]].  We hope there is an overarching pattern that connects all of them!  
 
 * Anticanonical tropical cubic del Pezzos contain exactly 27 lines       :preprint:
 :PROPERTIES:
