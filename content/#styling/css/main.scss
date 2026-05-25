@@ -99,10 +99,11 @@ figure {
 .abstract {
     border-left: 0.5em solid $canvas-pop;;
     padding-left:0.5em;
-    p::before{
-	content: "Abstract.";
-	font-weight: bold;
-    }
+}
+
+.abstract > p:first-of-type::before {
+    content: "Abstract.";
+    font-weight: bold;
 }
 
 #table-of-contents {
