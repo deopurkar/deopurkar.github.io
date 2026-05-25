@@ -184,7 +184,7 @@
 :venue: Harvard University
 :where:    Cambridge, Massachusetts
 :when:     2022
-:links: file:talks/Harvard2022.pdf
+:links: [[file:Harvard2022.pdf]]
 :ID:       33b0c188-4659-48cd-b0c6-bdb652c4a1c8
 :end:
 
@@ -209,7 +209,7 @@
 :venue:      Braids in representation theory and algebraic combinatorics, Institute for Computational and Experimental Research in Mathematics
 :where:    Providence, Rhode Island
 :when:     2022
-:links:      file:talks/ICERM2022.pdf
+:links:      file:ICERM2022.pdf
 :type:     conference
 :ID:       79f50459-44a2-48d5-b78d-b1a35ef9a728
 :end:
@@ -220,7 +220,7 @@
 :where:    Pune, India
 :when:     2022
 :type:     expository
-:links:      file:talks/Fermat2022.pdf
+:links:      file:Fermat2022.pdf
 :comment: expository
 :ID:       aa9aba31-dd50-4cda-9859-d3623b6f163f
 :end:
@@ -232,7 +232,7 @@
 :where:    Pune, India
 :when:     2021
 :type:     expository
-:links:      file:talks/Belyi2021.pdf
+:links:      file:Belyi2021.pdf
 :comment: expository
 :ID:       e19269e4-2c30-4e4d-8671-3e7f0b7cb3e8
 :end:
@@ -244,7 +244,7 @@
 :where:    Canberra, Australia
 :when:     2021
 :type:     expository
-:links:      file:talks/ecc2021/ecc.html
+:links:      file:ecc2021/ecc.html
 :comment: expository
 :ID:       0ae10d06-c9f2-4972-a24e-f4e71f093f5f
 :end:
@@ -255,7 +255,7 @@
 :where:    Bonn, Germany
 :when:     2021
 :type:     workshop
-:links:      file:talks/Bonn2021.pdf
+:links:      file:Bonn2021.pdf
 :ID:       2f305ce3-232e-4ccc-aee8-aecaed79621c
 :end:
 
@@ -268,7 +268,7 @@
 :where:    Mumbai, India
 :when:     2021
 :type:     seminar
-:links:      file:talks/tifr2021.pdf
+:links:      file:tifr2021.pdf
 :ID:       4bd1a492-852f-4962-ad17-ba41aacea050
 :end:
 
@@ -295,7 +295,7 @@
 :where:    Amidale, Australia
 :when:     2020
 :type:     conference
-:links:      file:talks/AustMS2020.pdf
+:links:      file:AustMS2020.pdf
 :ID:       73a2523c-5c37-43e9-9778-68572c792234
 :end:
 
@@ -308,7 +308,7 @@
 :where:    Oaxaca
 :when:     2020
 :type:     seminar
-:links:      file:talks/PR2020-Oaxaca.pdf
+:links:      file:PR2020-Oaxaca.pdf
 :ID:       b9fdd29a-11b3-4759-a75d-f1ba1a9e1ee2
 :end:
 
@@ -321,7 +321,7 @@
 :where:    San Diego, California
 :when:     2020
 :type:     seminar
-:links:      file:talks/PR2020-UCSD.pdf
+:links:      file:PR2020-UCSD.pdf
 :ID:       ff76958c-4092-442e-9ced-4f2afd85ed80
 :end:
 
@@ -335,7 +335,7 @@
 :when:     2019
 :comment:  part of a series with Asilata Bapat and Anthony Licata
 :type:     workshop
-:links:      file:talks/StabSydney2019.pdf
+:links:      file:StabSydney2019.pdf
 :ID:       3d28850f-c692-4d5f-9019-4c4bb705d293
 :end:
 
@@ -348,7 +348,7 @@
 :where:    Sydney, Australia
 :venue:      Birational geometry and moduli spaces, University of Sydney
 :when:     2019
-:links:      file:talks/K3Sydney2019.pdf
+:links:      file:K3Sydney2019.pdf
 :ID:       1895b4d5-1e33-4459-89ce-0e68477e758c
 :end:
 
@@ -362,7 +362,7 @@
 :when:     2019
 :type:     expository
 :comment:  expository
-:links:      file:talks/WIM2019.pdf
+:links:      file:WIM2019.pdf
 :ID:       e4669741-7262-4984-8a4b-23d33483bcc6
 :end:
 
@@ -372,7 +372,7 @@
 :where:    Auckland, New Zealand
 :when:     2018
 :type:     conference
-:links:      file:talks/NZ2018.pdf
+:links:      file:NZ2018.pdf
 :ID:       3be1cdc8-5fb9-40cb-9e1c-31eb68000972
 :end:
 
@@ -381,7 +381,7 @@
 :venue:  Number theory session,  AustMS, University of South Australia
 :where:    Adelaide, Australia
 :when:     2018
-:links:      file:talks/AustMS2018.pdf
+:links:      file:AustMS2018.pdf
 :type:     conference
 :ID:       1f1299c5-5a88-4688-b5cb-c5ab19da4d91
 :end:
@@ -396,7 +396,7 @@
 :when:     2018
 :type:     expository
 :comment:  expository
-:links:      file:talks/FMColloquium2018.pdf
+:links:      file:FMColloquium2018.pdf
 :ID:       c66380b2-8eca-4313-8360-16b28533e3fe
 :end:
 
@@ -418,7 +418,7 @@
 :where:    Mumbai, India
 :when:     2018
 :type:     expository
-:links:      file:talks/tifr2018.pdf
+:links:      file:tifr2018.pdf
 :ID:       5b14bbaa-5b4d-4170-81d8-46ffc0b65716
 :end:
 *  What are ribbons and what do they tell us about Riemann surfaces    :talk:
@@ -439,7 +439,7 @@
 :where:    Melbourne, Australia
 :when:     2018
 :type:     seminar
-:links:      file:talks/Monash2018.pdf
+:links:      file:Monash2018.pdf
 :ID:       1e04c7ae-c3c7-41d5-a0c6-063cecd571a4
 :end:
 
@@ -464,7 +464,7 @@
 :venue:      Workshop on algebraic geometry approximation, and optimization, MATRIX
 :where:    Creswick, Victoria, Australia
 :when:     2018
-:links:      file:talks/MATRIX2018.pdf
+:links:      file:MATRIX2018.pdf
 :type:     workshop
 :ID:       8e426746-ffde-4cce-8a49-6efbfc51657b
 :end:
@@ -540,7 +540,7 @@
 :where:    Jeju Island, South Korea
 :when:     2016
 :type:     conference
-:links:      file:talks/Jeju2016.pdf
+:links:      file:Jeju2016.pdf
 :ID:       ae81d0d0-68bd-46c7-97b7-dfe6dc0f563c
 :end:
 
@@ -633,7 +633,7 @@
 :when:     2015
 :venue:      Boston College--Northeastern algebraic geometry conference, Northeastern University
 :where:    Boston, Massachusetts
-:links:      file:talks/AGNUBS2015.pdf
+:links:      file:AGNUBS2015.pdf
 :type:     conference
 :ID:       21223271-0bdc-4ea4-b4ea-847a80c25d1f
 :end:
@@ -647,7 +647,7 @@
 :when:     2015
 :venue:      Summer institute in algebraic geometry, University of Utah
 :where:    Salt Lake City, Utah
-:links:      file:talks/quintics_poster.pdf
+:links:      file:quintics_poster.pdf
 :type:     poster
 :ID:       1e3e4c86-a76c-47a3-8bee-d399fd674094
 :end:
@@ -661,7 +661,7 @@
 :when:     2015
 :venue:     SIAM applied algebraic geometry conference
 :where:    Daejeon, South Korea
-:links:      file:talks/SIAM2015.pdf
+:links:      file:SIAM2015.pdf
 :type:     conference
 :ID:       7e9ab8f9-9f54-46e1-9ea3-36d1e74a938b
 :end:
@@ -773,7 +773,7 @@
 :meeting:  Conference on moduli and birational geometry
 :venue: Postech
 :where:    Pohang, Korea
-:links:      file:talks/syz2013.pdf
+:links:      file:syz2013.pdf
 :type:     conference
 :ID:       ffe31f04-6a99-4bf0-af76-adfcc1bff1e8
 :end:
@@ -794,7 +794,7 @@
 :when:     2013
 :venue:      Algebraic geometry northeastern series, Boston College
 :where:    Boston, Massachusetts
-:links:      file:talks/slopes_poster.pdf
+:links:      file:slopes_poster.pdf
 :type:     poster
 :ID:       d745108a-e515-4fd9-9c3a-69a3e5e08dac
 :end:
@@ -806,7 +806,7 @@
 :venue: Stanford University
 :where:    Palo Alto, California
 :type:     seminar
-:links:      file:talks/Hdg2013.pdf
+:links:      file:Hdg2013.pdf
 :ID:       9745e31a-f267-419d-80f8-879bf8e7a0fa
 :end:
 ** References                                                          
@@ -836,7 +836,7 @@
 :when:     2011
 :venue: Massachusetts Institute of Technology
 :where:    Cambridge, Massachusetts
-:links:      file:talks/Hdg2013.pdf
+:links:      file:Hdg2013.pdf
 :type:     seminar
 :ID:       cc43991f-7ef8-4c7a-be97-0b72e6d8e906
 :end:
@@ -878,7 +878,7 @@
 :when:     2011
 :venue:   A celebration of algebraic geometry: a conference for the 60th birthday of Joe Harris, Harvard University
 :where:    Cambridge, Massachusetts
-:links:      file:talks/trig_poster.pdf
+:links:      file:trig_poster.pdf
 :type:     poster
 :ID:       cbd5ffe1-42d5-41b3-8ba8-f031147b337d
 :end:

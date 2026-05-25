@@ -17,23 +17,31 @@
 	   )))
       links)))
 
-(defun pretty-print-backlink (pom &optional nolink)
+(defun pretty-print-backlink (pom)
   (when-let* ((id (org-entry-get pom "ID" 'inherit))
 	      (newpom (org-id-find id 'marker))
 	      (title (or (org-entry-get newpom "nav-title")
 			 (org-entry-get newpom "ITEM")
 			 (cadar (org-collect-keywords '("title"))))))
-    (format "[[id:%s][%s]]%s"
-	    id
-	    title
-	    (if-let* 
-		((tags (org-get-tags newpom)))
-		(if (member "talk" tags)
-		    (format " (talk, %s)"
-			    (or (org-entry-get newpom "venue")
-				(org-entry-get newpom "where"))) 
-		  (format " (%s)" (string-join tags ",")))
-	      ""))))
+    (let* ((tags (org-get-tags newpom)) 
+	   (context (string-join tags ", ")))
+    
+      (when (member "talk" tags)
+	(setq context
+	      (concat context ", "
+		      (or (org-entry-get newpom "venue")
+			  (org-entry-get newpom "where")))))
+
+      (format "[[id:%s][%s%s]]%s"
+	      id
+	      title
+	      (if (> (length context) 0)
+		  (format " -- %s" context)
+		"")
+	      (if-let*
+		  ((links (org-entry-get newpom "links")))
+		  (format " (%s)" links)
+		"")))))
 
 (defun add-backlinks-from (directory)
   (when-let*
