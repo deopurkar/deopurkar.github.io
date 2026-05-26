@@ -7,6 +7,15 @@
 :ID:       5630e24b-c38d-4ee2-95d0-f053d3aca22b
 :end:
 
+#+begin_abstract
+  In a pencil of plane cubics, how many times do we see a
+given j invariant?  Among the hyperplane slices of a cubic threefold,
+how many times does a given cubic surface appear?  These counting
+problems, and many others, admit beautiful solutions using equivariant
+geometry. I will explain this method and the plethora of other
+questions that it opens up.
+#+end_abstract
+
 * How to count using equivariant cohomology                            :talk:
 :properties:
 :venue:  Geometric and category-theoretic approaches to conformal field theory, Banff International Research Institute/Chennai Mathematical Institute
@@ -15,6 +24,22 @@
 :type:     Workshop
 :ID:       916e3090-c8e6-4747-8b07-6d1434a7babd
 :end:
+
+#+begin_abstract
+In a pencil of cubic curves, how many times do we see a
+given j-invariant?  Among the slices of a plane quintic curve, how
+many times do we see a given isomorphism class of 5-points on the
+line?  These enumerative questions go under the name of "fixed moduli
+Gromov--Witten theory".  They involve counting objects of a given
+moduli (isomorphism class) satisfying certain conditions.  While we
+have an array of tools to answer such questions for curves, we know
+embarrassingly little for surfaces and beyond. I will explain an
+approach to think about fixed moduli Gromov--Witten theory using
+equivariant geometry.  As an application, I will give a universal
+solution to fixed moduli Gromov--Witten theory of generic cubic
+surfaces.  This is based on joint work with Anand Patel, Dennis Tseng,
+and Oliver Li.
+#+end_abstract
 
 * A Thurston compactification of the space of stability conditions     :talk:
 :properties:
@@ -25,6 +50,17 @@
 :ID:       d42b079c-e0b1-466e-b128-c51e5addabdb
 :end:
 
+#+begin_abstract
+There is a close connection between metric geometry of a
+surface and homological algebra, which suggests that techniques from
+one domain should have counterparts in the other domain. Exploring
+this theme, we compactify the space of Bridgeland stability conditions
+using a construction similar to Thurston's compactification of the
+Teichmuller space.  I will describe this compactification and its
+boundary in a few examples with the hope to generate speculation about
+the general case.  Based on joint work with Asilata Bapat and Tony
+Licata.
+#+end_abstract
 
 * The enumerative geometry of orbit closures                           :talk:
 :properties:
@@ -34,7 +70,15 @@
 :type:     seminar
 :ID:       c178e46e-b836-4f09-97a4-42cd0c9cafa7
 :end:
-
+#+begin_abstract
+Take a degree d form in n variables.  What can we say about
+its GL(n) orbit?  In particular, what is its degree?  For n = 1 and 2,
+the answers were known by the year 1900.  For n = 3, Carel Faber and
+Paolo Aluffi found the answers around the year 2000.  I will discuss
+recent progress in higher dimensions on this and related questions,
+and the intricate geometry that seems to govern the answers.  Based on
+joint work with Anand Patel and Dennis Tseng.
+#+end_abstract
 
 * How twisty is that orbit?                                            :talk:
 :properties:
@@ -44,6 +88,9 @@
 :type:     workshop
 :ID:       a3913140-9313-4e54-ad0d-eaeab6cdc8ab
 :end:
+#+begin_abstract
+Fix a polynomial $P$. How complicated is the set of all polynomials obtained from $P$ by changes of coordinates? This question, and many others, generalise as follows: given a representation an algebraic group, how complicated is the orbit of a given element? I will describe some answers, featuring toric varieties, Newton polyhedra, and stacks. 
+#+end_abstract
 
 * The work of Maryam Mirzakhani                                        :talk:
 :properties:
