@@ -128,6 +128,10 @@ Headlines
   h1, h2{
       border-bottom: 0.15em solid $writing-pop;
   }
+  h3, h4{
+      margin-bottom: 0em;
+  }
+
 #+end_src
 
 Collapsible and collapsed headlines.
@@ -148,6 +152,8 @@ Collapsible and collapsed headlines.
 #+begin_src scss
   ul, ol{
         padding-left: 1em;
+        margin-top: 0em;
+        margin-bottom: 0em;
     }
     li {
         margin-top: 0.5em;

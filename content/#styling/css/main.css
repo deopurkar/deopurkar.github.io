@@ -32,6 +32,9 @@ h1, h2, h3, h4 {
 h1, h2 {
   border-bottom: 0.15em solid #b5736b; }
 
+h3, h4 {
+  margin-bottom: 0em; }
+
 .collapsible {
   cursor: pointer; }
 
@@ -41,7 +44,9 @@ h1, h2 {
     content: '...'; }
 
 ul, ol {
-  padding-left: 1em; }
+  padding-left: 1em;
+  margin-top: 0em;
+  margin-bottom: 0em; }
 
 li {
   margin-top: 0.5em;

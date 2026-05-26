@@ -206,13 +206,15 @@ There aren't many cases where we can completely described a KSBA compactificatio
   We prove that, under suitable hypotheses, these maps are injective and their image has a compact closure.
   We identify a family of points in the boundary that are categorical analogous to the intersection functionals in Teichm\"uller theory.
   
-We study in detail the geometry of the resulting compactification for the 2-Calabi--Yau categories of quivers, and fully work out the cases of the \(A_2\) and \(\widehat{A_1}\) quivers.
+  We study in detail the geometry of the resulting compactification for the 2-Calabi--Yau categories of quivers, and fully work out the cases of the \(A_2\) and \(\widehat{A_1}\) quivers.
   To do so, we carefully examine the dynamics of Harder--Narasimhan multiplicities under auto-equivalences of the category.
   We introduce a finite automaton to study this dynamics and employ it in our analysis of the \(A_{2}\) and \(\widehat{A_1}\) categories.
   #+end_abstract
 
 We take seriously the idea that the stability manifold is like the Teichmüller space.
 This suggests fascinating new ways to study stability conditions.  The Thurston compactification is one of them!
+
+This paper contains many results beyond the headlines.  We have an appendix that discusses when an arbitrary filtration of an object can be straightened out to the HN filtration.  We also have some technology (automata) to encode the "piecewise-linear" nature of categorical group actions.  This piecewise linearity also features prominently in [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6]["A sphere of spherical objects]]".
 
 * Ramification divisors of general projections                        :paper:
 :PROPERTIES:
@@ -226,6 +228,8 @@ This suggests fascinating new ways to study stability conditions.  The Thurston 
 We study the ramification divisors of projections of a smooth projective variety onto a linear subspace of the same dimension. We prove that the ramification divisors vary in a maximal dimensional family for a large class of varieties. Going further, we study the map that associates to a linear projection its ramification divisor. We show that this map is dominant for most (but not all!) varieties of minimal degree, using (linked) limit linear series of higher rank. We find the degree of this map in some cases, extending the classical appearance of Catalan numbers in the geometry of rational normal curves, and give a geometric explanation of its fibers in terms of torsion points of naturally occurring elliptic curves in the case of the Veronese surface and the quartic rational surface scroll.
 #+end_abstract
 
+The most intriguing part of this project is what lies beyond!  We discover a delightful array of enumerative questions.  The answers to the first line in this array are the famous Catalan numbers.  This is the dimension one case.  There is a whole world of higher dimensions whose answers are completely unknown (barring a handful of exceptions).  In small cases, we can find the answers using a computer.  Curiously, various slices of the answer array uniquely match certain known combinatorial sequences on [[https://oeis.org/][OEIS]].  We hope there is an overarching pattern that connects all of them!  
+
 * Anticanonical tropical cubic del Pezzos contain exactly 27 lines       :preprint:
 :PROPERTIES:
 :with:     [[mariacueto:][María Angélica Cueto]]
@@ -235,8 +239,10 @@ We study the ramification divisors of projections of a smooth projective variety
 :ID:       931c8753-71af-4498-89fe-5823ae74d1e9
 :END:
 #+begin_abstract
-The classical statement of Cayley-Salmon that there are 27 lines on every smooth cubic surface in P^3 fails to hold under tropicalization: a tropical cubic surface in TP^3 often contains infinitely many tropical lines. Under mild genericity assumptions, we show that when embedded using the Eckardt triangles in the anticanonical system, tropical cubic del Pezzo surfaces contain exactly 27 tropical lines. In the non-generic case, which we identify explicitly, we find up to 27 extra lines, no multiple of which lifts to a curve on the cubic surface. We realize the moduli space of stable anticanonical tropical cubics as a four-dimensional fan in R^40 with an action of the Weyl group W(E_6). In the absence of Eckardt points, we show the combinatorial types of these tropical surfaces are determined by the boundary arrangement of 27 metric trees corresponding to the tropicalization of the classical 27 lines on the smooth algebraic cubic surfaces. Tropical convexity and the combinatorics of the root system E_6 play a central role in our analysis.
+The classical statement of Cayley-Salmon that there are 27 lines on every smooth cubic surface in \(\mathbf{P}^3\) fails to hold under tropicalization: a tropical cubic surface in \(T\mathbf{P}^3\) often contains infinitely many tropical lines. Under mild genericity assumptions, we show that when embedded using the Eckardt triangles in the anticanonical system, tropical cubic del Pezzo surfaces contain exactly 27 tropical lines. In the non-generic case, which we identify explicitly, we find up to 27 extra lines, no multiple of which lifts to a curve on the cubic surface. We realize the moduli space of stable anticanonical tropical cubics as a four-dimensional fan in \(\mathbf{R}^40\) with an action of the Weyl group \(W(E_6)\). In the absence of Eckardt points, we show the combinatorial types of these tropical surfaces are determined by the boundary arrangement of 27 metric trees corresponding to the tropicalization of the classical 27 lines on the smooth algebraic cubic surfaces. Tropical convexity and the combinatorics of the root system \(E_6\) play a central role in our analysis.
 #+end_abstract
+
+The tropical geometry here is mostly thanks to María.  The key point is that embedding a cubic surface in its anti-canonical linear series \(\mathbf{P}^3\) does not necessarily lead to a nice tropicalization.  Roughly speaking, this is because the tropicalization is sensitive to the basis, and there is no canonical basis of the anti-canonical series.  However, there is a canonical spanning set of the anti-canonical series, corresponding to the 45 anti-canonical triangles.  It turns out that the degenarte but more canonical embedding into \(\mathbf{P}^{45}\) has a much better behaved tropicalization.
 
 * Covers of stacky curves and limits of plane quintics                :paper:
 :PROPERTIES:
