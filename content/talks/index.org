@@ -9,7 +9,7 @@
 
 #+begin_abstract
   In a pencil of plane cubics, how many times do we see a
-given j invariant?  Among the hyperplane slices of a cubic threefold,
+given \(j\) invariant?  Among the hyperplane slices of a cubic threefold,
 how many times does a given cubic surface appear?  These counting
 problems, and many others, admit beautiful solutions using equivariant
 geometry. I will explain this method and the plethora of other
