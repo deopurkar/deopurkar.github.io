@@ -54,6 +54,7 @@ This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant cl
 :when:     2025
 :type:     Workshop
 :ID:       d42b079c-e0b1-466e-b128-c51e5addabdb
+:links: [[file:2025-Creswick.org][notes]]
 :end:
 
 #+begin_abstract
@@ -146,7 +147,10 @@ recommended!
 :when:     2024
 :type:     workshop
 :ID:       7658a59d-72ee-45ee-a5ca-c002fa285e32
+:links:    [[file:2024-Oberwolfach.pdf][extended abstract]]
 :end:
+
+This was a talk based on [[id:7ee039fe-461d-41bb-8a73-116bc7f196e0][A Thurston compactification of the space of stability conditions]] and [[id:8c1b044d-82a9-4cbc-986e-a07f93dc93d1][Spherical objects and stability conditions on 2-Calabi--Yau quiver categories]].
 
 * How to count using equivariant cohomology                            :talk:
 :properties:
@@ -157,9 +161,7 @@ recommended!
 :ID:       be005987-7704-463e-a9eb-9f4b21b088f5
 :end:
 
-** References
-- [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]]
-
+This was a talk based on [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]].  
 
 * How to count using equivariant cohomology                            :talk:
 :properties:
@@ -170,9 +172,7 @@ recommended!
 :ID:       aade0389-a29c-48e8-a3c1-ca32b9f6e864
 :end:
 
-** References                                                          
-- [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]]
-
+This was a talk based on [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]].
 
 * Stability conditions, metrics, and compactifications                 :talk:
 :properties:
@@ -181,8 +181,10 @@ recommended!
 :when:     2024
 :type:     seminar
 :ID:       a96b3cc1-a39c-46fd-b4f5-a1d225a3a732
+:links:    [[file:2024-Edinburgh.org][notes]]
 :end:
 
+This was a talk based on [[id:7ee039fe-461d-41bb-8a73-116bc7f196e0][A Thurston compactification of the space of stability conditions]]. 
 
 * Stability conditions, metrics, and compactifications (lecture series) :talk:
 :properties:
@@ -191,7 +193,10 @@ recommended!
 :when:     2023
 :type:     series
 :ID:       0be3113e-3a2b-46c2-a4a8-281747fa26bc
+:links:    [[file:2023-Haifa.org][notes]]
 :end:
+
+This mini course consisted of 3 lectures of 1.5 hours each.  This was based on [[id:7ee039fe-461d-41bb-8a73-116bc7f196e0][A Thurston compactification of the space of stability conditions]] and ideas surrounding it.
 
 * Braids, automata, and the PL-sphere                                  :talk:
 :properties:
@@ -200,7 +205,10 @@ recommended!
 :where:    Canberra, Australia
 :when:     2023
 :ID:       b5064898-9699-4e07-ad07-729aa9c12d53
+:links:    [[file:2023-05-05-ANU.pdf][notes]]
 :end:
+
+This talk is based on the ideas [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sphere of spherical objects]].  You see that it took us a couple of years to finish writing the paper!
 
 * Carpentry, geometry, and category theory                             :talk:
 :properties:
