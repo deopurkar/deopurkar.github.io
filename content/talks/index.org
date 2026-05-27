@@ -16,6 +16,8 @@ geometry. I will explain this method and the plethora of other
 questions that it opens up.
 #+end_abstract
 
+This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant classes of orbits in GL(2)-representations]] and [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]]. 
+
 * How to count using equivariant cohomology                            :talk:
 :properties:
 :venue:  Geometric and category-theoretic approaches to conformal field theory, Banff International Research Institute/Chennai Mathematical Institute
@@ -41,6 +43,9 @@ surfaces.  This is based on joint work with Anand Patel, Dennis Tseng,
 and Oliver Li.
 #+end_abstract
 
+This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant classes of orbits in GL(2)-representations]] and [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]]. 
+
+
 * A Thurston compactification of the space of stability conditions     :talk:
 :properties:
 :venue:  Teichmuller theory and flat structures, MATRIX
@@ -62,6 +67,8 @@ the general case.  Based on joint work with Asilata Bapat and Tony
 Licata.
 #+end_abstract
 
+This talk was based on [[id:7ee039fe-461d-41bb-8a73-116bc7f196e0][A Thurston compactification of the space of stability conditions]].
+
 * The enumerative geometry of orbit closures                           :talk:
 :properties:
 :venue:  Pure mathematics seminar, University of Melbourne
@@ -80,6 +87,9 @@ and the intricate geometry that seems to govern the answers.  Based on
 joint work with Anand Patel and Dennis Tseng.
 #+end_abstract
 
+This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant classes of orbits in GL(2)-representations]] and [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]]. 
+
+
 * How twisty is that orbit?                                            :talk:
 :properties:
 :venue:  Computations and applications of commutative algebra and algebraic geometry, NZMS-AustMS-AMS
@@ -92,6 +102,8 @@ joint work with Anand Patel and Dennis Tseng.
 Fix a polynomial $P$. How complicated is the set of all polynomials obtained from $P$ by changes of coordinates? This question, and many others, generalise as follows: given a representation an algebraic group, how complicated is the orbit of a given element? I will describe some answers, featuring toric varieties, Newton polyhedra, and stacks. 
 #+end_abstract
 
+This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant classes of orbits in GL(2)-representations]] and [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]]. 
+
 * The work of Maryam Mirzakhani                                        :talk:
 :properties:
 :venue:  Women in maths day, Australian National University
@@ -99,8 +111,10 @@ Fix a polynomial $P$. How complicated is the set of all polynomials obtained fro
 :when:     2024
 :type:     expository
 :ID:       53fe8ada-0bc4-439b-9763-84cbb137727b
+:links:    [[id:e5dcac8c-b6ff-4e38-919b-c90d821d4187][notes]]
 :end:
 
+This was an expository talk explaining the work of Maryam Mirzakhani on the asymptotics of the number of geodesics on a hyperbolic surface. 
 
 * Papercraft                                                           :talk:
 :properties:
@@ -109,7 +123,19 @@ Fix a polynomial $P$. How complicated is the set of all polynomials obtained fro
 :when:     2024
 :type:     expository
 :ID:       cabeb946-def4-40fa-952d-e84395084692
+:links: [[file:2024-09-25-zoom-board.pdf][online board]]
 :end:
+
+This talk was based on Paul Seidel's [[https://www.ams.org/open-math-notes/files/course-material/OMN-202102-111288-1-Course_notes-v2.pdf][Lectures on geometry and topology in the plane]], Lecture 1 on cutting/regluing polygons.  The talk was on zoom.
+
+#+begin_abstract
+My origami directions call for a square, but I have an
+A4-sized rectangle.  But I also have scissors!  Can I cut the
+rectangle and reglue the pieces to get a square?  More generally, when
+can I cut a shape A and reglue it to make another shape B?  Come to
+the talk and find the answer.  Scissors, tape, and paper optional, but
+recommended!
+#+end_abstract
 
 * The geometry of stability conditions                                 :talk:
 :properties:
