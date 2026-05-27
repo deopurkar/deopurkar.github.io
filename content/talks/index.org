@@ -5,6 +5,7 @@
 :when:     2026
 :type:     Workshop
 :ID:       5630e24b-c38d-4ee2-95d0-f053d3aca22b
+:links: [[file:2026-02-Sydney.pdf][notes]]
 :end:
 
 #+begin_abstract
@@ -97,6 +98,7 @@ This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant cl
 :when:     2024
 :type:     workshop
 :ID:       a3913140-9313-4e54-ad0d-eaeab6cdc8ab
+:links:    [[file:2024-12-AustMS.pdf][slides]]
 :end:
 #+begin_abstract
 Fix a polynomial $P$. How complicated is the set of all polynomials obtained from $P$ by changes of coordinates? This question, and many others, generalise as follows: given a representation an algebraic group, how complicated is the orbit of a given element? I will describe some answers, featuring toric varieties, Newton polyhedra, and stacks. 
@@ -109,7 +111,7 @@ This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant cl
 :venue:  Women in maths day, Australian National University
 :where:    Canberra, Australia
 :when:     2024
-:type:     expository
+:comments:     expository
 :ID:       53fe8ada-0bc4-439b-9763-84cbb137727b
 :links:    [[id:e5dcac8c-b6ff-4e38-919b-c90d821d4187][notes]]
 :end:
@@ -121,7 +123,7 @@ This was an expository talk explaining the work of Maryam Mirzakhani on the asym
 :venue:     ANU Mathematics Extension Program
 :where:    Canberra, Australia
 :when:     2024
-:type:     expository
+:comments:     expository
 :ID:       cabeb946-def4-40fa-952d-e84395084692
 :links: [[file:2024-09-25-zoom-board.pdf][online board]]
 :end:
@@ -214,7 +216,7 @@ recommended!
 :venue:     ANU Mathematics Extension Program
 :where:    Canberra, Australia
 :when:     2022
-:type:     expository
+:comments:     expository
 :ID:       73b5521a-6738-40bd-b4d0-481f79f50bce
 :end:
 
@@ -246,7 +248,7 @@ recommended!
 :venue:      Braids in Symplectic and Algebraic Geometry, ICERM, Brown University
 :where:    Providence, Rhode Island
 :when:     2022
-:type:     expository
+:comments:     expository
 :ID:       d56cfe9b-e442-45de-b323-12ec02a5858c
 :end:
 
@@ -292,9 +294,9 @@ recommended!
 :venue:      Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana
 :where:    Pune, India
 :when:     2022
-:type:     expository
+:comments:     expository
 :links:      file:Fermat2022.pdf
-:comment: expository
+:comments: expository
 :ID:       aa9aba31-dd50-4cda-9859-d3623b6f163f
 :end:
 
@@ -304,9 +306,8 @@ recommended!
 :venue:      Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana
 :where:    Pune, India
 :when:     2021
-:type:     expository
+:comments:     expository
 :links:      file:Belyi2021.pdf
-:comment: expository
 :ID:       e19269e4-2c30-4e4d-8671-3e7f0b7cb3e8
 :end:
 
@@ -316,9 +317,8 @@ recommended!
 :venue:     ANU Mathematics Extension Program
 :where:    Canberra, Australia
 :when:     2021
-:type:     expository
+:comments:     expository
 :links:      file:ecc2021/ecc.html
-:comment: expository
 :ID:       0ae10d06-c9f2-4972-a24e-f4e71f093f5f
 :end:
 
@@ -406,7 +406,7 @@ recommended!
 :venue:      Workshop on triangulated categories in geometry and representation theory, University of Sydney
 :where:    Sydney, Australia
 :when:     2019
-:comment:  part of a series with Asilata Bapat and Anthony Licata
+:comments:  part of a series with Asilata Bapat and Anthony Licata
 :type:     workshop
 :links:      file:StabSydney2019.pdf
 :ID:       3d28850f-c692-4d5f-9019-4c4bb705d293
@@ -433,8 +433,7 @@ recommended!
 :venue:      Women in mathematics day, Australian National University
 :where:    Canberra, Australia
 :when:     2019
-:type:     expository
-:comment:  expository
+:comments:  expository
 :links:      file:WIM2019.pdf
 :ID:       e4669741-7262-4984-8a4b-23d33483bcc6
 :end:
@@ -467,8 +466,7 @@ recommended!
 :venue:     Australian National University
 :where:    Canberra, Australia
 :when:     2018
-:type:     expository
-:comment:  expository
+:comments:  expository
 :links:      file:FMColloquium2018.pdf
 :ID:       c66380b2-8eca-4313-8360-16b28533e3fe
 :end:
@@ -490,7 +488,7 @@ recommended!
 :venue: Tata Institute of Fundamental Research
 :where:    Mumbai, India
 :when:     2018
-:type:     expository
+:comments:     expository
 :links:      file:tifr2018.pdf
 :ID:       5b14bbaa-5b4d-4170-81d8-46ffc0b65716
 :end:
@@ -572,7 +570,7 @@ recommended!
 :venue: Canada/USA Mathcamp
 :where:    Tacoma, WA
 :when:     2017
-:type:     expository
+:comments:     expository
 :ID:       6cfb0fb2-2619-4a02-95d1-5728f3c28bfe
 :end:
 
@@ -747,7 +745,7 @@ recommended!
 :when:     2015
 :venue: Classical Algebraic Geometry, Mathematisches Forschungsinstitut Oberwolfach
 :where:    Oberwolfach, Germany
-:comment:  mini talk
+:comments:  mini talk
 :ID:       ab829dfb-bb59-446f-b01c-edeb97ecbc44
 :end:
 ** References                                                          
