@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       002e6919-5253-4a3e-bc15-6c86ffd4b5fc
+:END:
 #+title: Algebra 3 (Algebraic geometry)
 #+options: *:t
 

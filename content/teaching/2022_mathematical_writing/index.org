@@ -1,4 +1,7 @@
 # Created 2023-01-31 Tue 14:06
+:PROPERTIES:
+:ID:       140c6f8d-abc0-4763-aead-b2834a41f665
+:END:
 #+title: The language of mathematics, 2022 Semester 1
 #+author: Anand Deopurkar
 The aim of this course is to develop written and oral communication skills in mathematics.

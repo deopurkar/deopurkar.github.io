@@ -1,4 +1,7 @@
 # Created 2021-11-20 Sat 22:36
+:PROPERTIES:
+:ID:       d86f42ff-f826-4c2a-9e1f-b85a7934e6c0
+:END:
 #+OPTIONS: toc:nil
 #+OPTIONS: tex:t ':t -:t
 #+TITLE: Advanced topics in algebra: Algebraic geometry

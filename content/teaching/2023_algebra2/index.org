@@ -1,4 +1,7 @@
 # Created 2025-04-11 Fri 16:12
+:PROPERTIES:
+:ID:       9c4d6293-281c-4a83-9b3e-bfb363114a1f
+:END:
 #+options: toc:nil ':t tags:nil broken-links:nil prop:nil
 #+title: 2023 Algebra 2
 #+author: Anand Deopurkar

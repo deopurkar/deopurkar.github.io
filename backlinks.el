@@ -1,4 +1,34 @@
-(defun scan-file-for-id (id file)
+(defun pretty-print-backlink (pom &optional contextf)
+  (when-let* ((id (org-entry-get pom "ID" 'inherit))
+	      (newpom (org-id-find id 'marker))
+	      (title (or (org-entry-get newpom "nav-title")
+			 (org-entry-get newpom "ITEM")
+			 (cadar (org-collect-keywords '("title"))))))
+    (let* ((tags (org-get-tags newpom)) 
+	   (context (if contextf
+			(funcall contextf)
+		      "")))
+      
+	(when (member "talk" tags)
+	  (setq title
+		(concat title
+			" (talk, "
+			(or (org-entry-get newpom "venue")
+			    (org-entry-get newpom "where"))
+			")")))
+	
+	(format "[[id:%s][%s]]%s%s"
+		id
+	      title
+	      (if (> (length context) 0)
+		  (format ", %s" context)
+		"")
+	      (if-let*
+		  ((links (org-entry-get newpom "links")))
+		  (format " (%s)" links)
+		"")))))
+
+(defun scan-file-for-id (id file &optional filter context)
   (with-temp-buffer 
     (org-mode)
     (insert-file-contents file)
@@ -8,57 +38,36 @@
 	(while
 	    (search-forward
 	     (format "[[id:%s" id)
-	 nil
-	 t)
-	  (cl-pushnew 
-	   (pretty-print-backlink (point))
-	   links
-	   :test 'equal
-	   )))
-      links)))
+	     nil
+	     t)
+	  (when (or (not filter)
+		    (funcall filter))
+	    (cl-pushnew 
+	     (pretty-print-backlink (point) context)
+	     links
+	     :test 'equal
+	     )))
+	links))))
 
-(defun pretty-print-backlink (pom)
-  (when-let* ((id (org-entry-get pom "ID" 'inherit))
-	      (newpom (org-id-find id 'marker))
-	      (title (or (org-entry-get newpom "nav-title")
-			 (org-entry-get newpom "ITEM")
-			 (cadar (org-collect-keywords '("title"))))))
-    (let* ((tags (org-get-tags newpom)) 
-	   (context (string-join tags ", ")))
-    
-      (when (member "talk" tags)
-	(setq context
-	      (concat context ", "
-		      (or (org-entry-get newpom "venue")
-			  (org-entry-get newpom "where")))))
-
-      (format "[[id:%s][%s%s]]%s"
-	      id
-	      title
-	      (if (> (length context) 0)
-		  (format " (%s)" context)
-		"")
-	      (if-let*
-		  ((links (org-entry-get newpom "links")))
-		  (format " (%s)" links)
-		"")))))
+(defun scan-dir-for-id (id dir &optional filter context)
+  (apply
+   #'append 
+   (mapcar (lambda (file)
+	     (scan-file-for-id id file filter context))
+	   (directory-files-recursively
+	    dir
+	    (rx string-start
+		(not ".")
+		(zero-or-more anything)
+		".org"
+		string-end))))
+  )
 
 (defun add-backlinks-from (directory)
   (when-let*
       ((no-skip (not (org-entry-get (point) "skip-backlinks")))
        (id (org-entry-get (point) "ID"))
-       (backlinks 
-	(apply
-	 #'append 
-	 (mapcar (lambda (file)
-		   (scan-file-for-id id file))
-		 (directory-files-recursively
-		  directory
-		  (rx string-start
-		      (not ".")
-		      (zero-or-more anything)
-		      ".org"
-		      string-end)))))
+       (backlinks (scan-dir-for-id id directory)) 
        (level (or (org-current-level) 0)))
     (save-excursion
       (let ((original (point)))

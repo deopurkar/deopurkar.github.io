@@ -1,4 +1,7 @@
 # Created 2026-02-24 Tue 16:59
+:PROPERTIES:
+:ID:       6d38a9f2-2aef-4ad5-848f-fcf0443b096d
+:END:
 #+options: toc:1 ':t tags:nil prop:nil ":t
 #+title: Games, graphs, and machines
 #+subtitle: {{{COURSENUM}}}, {{{SEMESTER}}}

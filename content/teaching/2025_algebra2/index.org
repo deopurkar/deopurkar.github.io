@@ -1,4 +1,7 @@
 # Created 2025-07-23 Wed 21:59
+:PROPERTIES:
+:ID:       8da0831f-565c-4a15-b356-7604a5ac0c1b
+:END:
 #+options: broken-links:nil toc:1 ':t ":t prop:nil
 #+title: 2025 Algebra 2
 #+author: Anand Deopurkar

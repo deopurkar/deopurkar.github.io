@@ -1,4 +1,7 @@
 # Created 2025-04-05 Sat 13:19
+:PROPERTIES:
+:ID:       8dcd2746-9f3c-45eb-9041-c1b62f855e6d
+:END:
 #+options: toc:nil ':t tags:nil broken-links:nil prop:nil
 #+PROPERTY: header-args :eval never-export
 #+title: 2024 Algebra 2

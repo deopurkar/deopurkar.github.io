@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       c0b9ba79-93e6-41cf-909e-efd0be13a8de
+:END:
 #+title: Math 8820 (Algebraic curves), Fall 2017
 
 The goal of the class is to learn the theory of complex algebraic curves or Riemann surfaces.

@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       bf031ad4-94a5-42bd-8606-70e9cf0aec5f
+:END:
 #+title: Foundations of algebraic geometry, aka schemes 2020
 #+HTML_HEAD_EXTRA: <script type="text/javascript" src="/js/collapsibility.js"></script>
 

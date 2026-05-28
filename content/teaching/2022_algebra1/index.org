@@ -1,4 +1,7 @@
 # Created 2022-12-13 Tue 14:17
+:PROPERTIES:
+:ID:       e61cc576-b305-4296-b50b-0bc8a5f8aab2
+:END:
 #+title: Advanced Algebra 1, 2022 Semester 1
 #+author: Anand Deopurkar
 * Course contacts

@@ -1,4 +1,7 @@
 # Created 2025-04-03 Thu 16:56
+:PROPERTIES:
+:ID:       d4cff607-a97d-4665-a57e-246aa8d6b8a5
+:END:
 #+title: Differential forms in algebraic topology
 #+author: Anand Deopurkar
 

@@ -28,13 +28,14 @@ This phenomenon is very much related to our construction in the [[id:7ee039fe-46
 
 The key question is---how general is this phenomenon?  We expect something similar for 2-CY categories of more general graphs.  But should we expect something even beyond?   
 
-* The arithmetic and geometry of branched coverings: theorems of Belyi and Darmon--Granville :expository:paper:
+* The arithmetic and geometry of branched coverings: theorems of Belyi and Darmon--Granville :expository:preprint:highlight:
 :PROPERTIES:
 :where: Pre-print
 :when:     2025
 :links: [[file:./arithmetic_covers.pdf][pdf]]
 :ID:       9efcc78f-db58-4c06-a73a-405566487ca4
 :comments: expository
+:labels: [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
 :END:
 
 This is an exposition of two talks I gave (online) at the /Year long Trimester Programme on Triangle Group, Belyi Uniformisation and Modularity/ at the Bhaskaracharya Pratishthana in Pune (India).  
@@ -377,22 +378,24 @@ We describe in detail the birational geometry of the spaces of triple covers of 
 The sequence culminates in a Fano variety in the case of even $g$, which we describe explicitly, and a variety fibered over $\P^1$ with Fano fibers in the case of odd $g$.
 #+end_abstract
 
-* An introduction to intersection homology                 :expository:paper:
+* An introduction to intersection homology       :expository:paper:highlight:
 :properties:
 :where:  Minor thesis (Harvard)
 :when:     2010
 :links: [[file:./anandrd_minor_thesis.pdf][pdf]]
 :ID:       0f97be8d-e4d3-4515-bf1f-981c9e8380a0
+:labels:    [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
 :end:
 
 This is the minor thesis I wrote as a PhD student at Harvard.  It is an exposition of Intersection Homology following Goresky and MacPherson with  appendices on homological algebra and sheaf theory. 
 
 * Normalization of algebraic varieties                     :expository:paper:
 :properties:
-:where:  MIT Undergruate Journal of Mathematics
+:where:  MIT Undergraduate Journal of Mathematics
 :when:     2008
 :links: [[file:./anandrd_ug_thesis.pdf][pdf]]
 :ID:       97f6df09-0591-49b7-97d0-e79b606af653
+:labels:    [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
 :end:
 
 #+begin_abstract

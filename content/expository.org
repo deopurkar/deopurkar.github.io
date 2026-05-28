@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       05f9493f-833e-4f64-a2b5-321a11c91a3b
+:skip-backlinks: t
+:END:
+#+title: Expository writing and talks
+#+description: Read about Anand Deopurkar's expository writing and talks.
+#+keywords: Anand Deopurkar, mathematics, ANU, MSI
+
+#+begin_src elisp :exports results :results value raw drawer
+  (concat " - "
+  	(string-join 
+  	 (scan-dir-for-id "05f9493f-833e-4f64-a2b5-321a11c91a3b" ;expository.org
+  			  project-root-directory
+  			  nil
+  			  (lambda ()
+  			    (when (or
+  				   (member "preprint" (org-get-tags (point)))
+  				   (member "paper" (org-get-tags (point))))
+  			      (concat "/" (org-entry-get (point) "where") "/"))))
+  	 "\n - "))
+#+end_src
+
+#+RESULTS:
+:results:
+ - [[id:97f6df09-0591-49b7-97d0-e79b606af653][Normalization of algebraic varieties]], /MIT Undergraduate Journal of Mathematics/ ([[file:./anandrd_ug_thesis.pdf][pdf]])
+ - [[id:0f97be8d-e4d3-4515-bf1f-981c9e8380a0][An introduction to intersection homology]], /Minor thesis (Harvard)/ ([[file:./anandrd_minor_thesis.pdf][pdf]])
+ - [[id:9efcc78f-db58-4c06-a73a-405566487ca4][The arithmetic and geometry of branched coverings: theorems of Belyi and Darmon--Granville]], /Pre-print/ ([[file:./arithmetic_covers.pdf][pdf]])
+ - [[id:6cfb0fb2-2619-4a02-95d1-5728f3c28bfe][How to count using topology (talk, Canada/USA Mathcamp)]]
+ - [[id:5b14bbaa-5b4d-4170-81d8-46ffc0b65716][How to count using (co)homology (talk, Tata Institute of Fundamental Research)]] ([[file:2018-tifr.pdf][notes]])
+ - [[id:c66380b2-8eca-4313-8360-16b28533e3fe][The work of Caucher Birkar (talk, Australian National University)]] ([[file:2018-FMColloquium.pdf][notes]])
+ - [[id:e4669741-7262-4984-8a4b-23d33483bcc6][The work of Claire Voisin (talk, Women in mathematics day, Australian National University)]] ([[file:2019-WIM.pdf][notes]])
+ - [[id:0ae10d06-c9f2-4972-a24e-f4e71f093f5f][Error correcting codes (talk, ANU Mathematics Extension Program)]] (file:2021-ecc/ecc.html)
+ - [[id:e19269e4-2c30-4e4d-8671-3e7f0b7cb3e8][Algebraic curves and Belyi's theorem (talk, Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana)]] ([[file:2021-Belyi.pdf][notes]])
+ - [[id:aa9aba31-dd50-4cda-9859-d3623b6f163f][The geometry of Fermat-like equations (talk, Trimester program on triangle groups, Belyi uniformization, and modularity, Bhaskaracharya Pratishthana)]] ([[file:2022-Fermat.pdf][notes]])
+ - [[id:d56cfe9b-e442-45de-b323-12ec02a5858c][Braids and monodromy in algebraic geometry (talk, Braids in Symplectic and Algebraic Geometry, ICERM, Brown University)]]
+ - [[id:73b5521a-6738-40bd-b4d0-481f79f50bce][Error correcting codes (talk, ANU Mathematics Extension Program)]] ([[id:648707cc-d8ae-4d0a-8cf7-53fef49db34b][slides]])
+ - [[id:cabeb946-def4-40fa-952d-e84395084692][Papercraft (talk, ANU Mathematics Extension Program)]] ([[file:2024-09-25-zoom-board.pdf][online board]])
+ - [[id:53fe8ada-0bc4-439b-9763-84cbb137727b][The work of Maryam Mirzakhani (talk, Australian National University)]] ([[id:e5dcac8c-b6ff-4e38-919b-c90d821d4187][notes]])
+ - [[id:d990bcc9-227c-4e82-9e93-512139e14f45][Home]]
+:end:

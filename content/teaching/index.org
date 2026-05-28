@@ -1,0 +1,248 @@
+#+title: Anand Deopurkar | Teaching
+#+DESCRIPTION: Courses taught by of Anand Deopurkar, a mathematician specialising in algebraic geometry at the Australian National University.  Read about my papers and preprints, including abstracts.
+#+KEYWORDS: Course, Teaching, Anand Deopurkar, ANU, MSI
+#+options: H:1 num:0 toc:nil
+
+Below is a roughly reverse chronological list of the courses I have taught with links to course websites and sometimes with other commentary. 
+
+* Games, graphs, and machines 
+:PROPERTIES:
+:where: Australian National University
+:when:     2025
+:links: [[id:6d38a9f2-2aef-4ad5-848f-fcf0443b096d][course page]]
+:ID:       2a953d2a-e23a-4c6b-a289-d7eabf2c5372
+:END:
+
+* Fields and Galois theory (Algebra 2)
+:PROPERTIES:
+:where: Australian National University
+:when:     2025
+:links: [[id:8da0831f-565c-4a15-b356-7604a5ac0c1b][course page]]
+:ID:       61a488d3-6299-41db-8d8f-22a52c218168
+:END:
+
+* Games, graphs, and machines 
+:PROPERTIES:
+:where: Australian National University
+:when:     2024
+:links: [[id:fadfe4f2-a922-43dd-aba5-1ff6decb91bf][course page]]
+:ID:       5e654789-28b9-42a5-a670-40443b50f67e
+:END:
+
+* Differential forms in algebraic topology 
+:PROPERTIES:
+:where: Australian National University
+:when:     2024
+:comments: Reading course based on R. Bott and L. Tu's book
+:links: [[id:d4cff607-a97d-4665-a57e-246aa8d6b8a5][course page]]
+:ID:       ff0be012-9844-46a2-b477-6c93891795b0
+:END:
+
+* Fields and Galois theory (Algebra 2)
+:properties:
+:where: Australian National University
+:when:     2024
+:links: [[id:8dcd2746-9f3c-45eb-9041-c1b62f855e6d][course page]]
+:ID:       63b0bcaf-ef9b-44aa-a7c4-e14a8d5acb86
+:end:
+
+* Fields and Galois theory (Algebra 2)
+:properties:
+:where: Australian National University
+:when:     2023
+:links: [[id:9c4d6293-281c-4a83-9b3e-bfb363114a1f][course page]]
+:ID:       bd3ac43e-343e-4a97-8d11-98ff04bc7951
+:end:
+
+* Groups and rings (Algebra 1)                                                             
+:properties:
+:where: Australian National University
+:when:     2022
+:ID:       758f10f4-87b2-4f06-bf29-4ff996b8ad98
+:links: [[id:e61cc576-b305-4296-b50b-0bc8a5f8aab2][course page]]
+:end:
+
+* Mathematical writing                                            
+:properties:
+:where: Australian National University
+:when:     2022
+:links: [[id:140c6f8d-abc0-4763-aead-b2834a41f665][course page]]
+:ID:       3e570a8d-7ffa-4b1c-b8ac-c2077e6e894c
+:end:
+
+* Algebraic Geometry (Algebra 3)                                         
+:properties:
+:where: Australian National University
+:when:     2021
+:links: [[id:d86f42ff-f826-4c2a-9e1f-b85a7934e6c0][course page]] 
+:ID:       1680737a-9d54-448d-8951-a0fe1ae16016
+:end:
+
+* Foundations of Algebraic Geometry: Schemes                             
+:properties:
+:where: Australian National University
+:when:     2020
+:links: [[id:bf031ad4-94a5-42bd-8606-70e9cf0aec5f][course page]]
+:ID:       22f29317-d339-4e49-b46a-17a34e0b6091
+:end:
+
+* Algebraic Geometry (Algebra 3)                                         
+:properties:
+:where: Australian National University
+:when:     2019
+:links: [[id:002e6919-5253-4a3e-bc15-6c86ffd4b5fc][course page]]
+:ID:       3965100b-6648-46fb-a60a-75472f5f6361
+:end:
+
+* Elliptic curves and modular forms
+:properties:
+:where: Australian National University
+:when:     2018
+:comments: Reading course based on N. Koblitz's book
+:ID:       22179c29-cba8-4c10-80f9-b8a5fff7ab3b
+:end:
+
+* Computational Polynomial Algebra
+:properties:
+:where: Australian National University
+:when:     2018
+:comments: with Markus Hegland
+:ID:       f7cb4d66-9f1d-4aba-a4a3-9e243c681516
+:end:
+
+* Algebraic curves 
+:properties:
+:where: Australian National University
+:when:     2018
+:comments: Reading course based on R. Miranda's book
+:links: [[id:e7d9e1d1-6dec-4d0a-acfe-087d10ba2836][course page]]
+:ID:       09d2ce6c-c212-44ce-bff6-7bda65a5a0a3
+:end:
+
+* Precalculus
+:properties:
+:where: University of Georgia
+:when:     2017
+:ID:       4b65408e-d971-4ce5-ab90-eec53be5c3be
+:end:
+
+* Algebraic curves                                                       
+:properties:
+:where: University of Georgia
+:when:     2017
+:links: [[id:c0b9ba79-93e6-41cf-909e-efd0be13a8de][course page]]
+:ID:       2a240d8e-a930-4e2c-a160-d39ff51e7447
+:end:
+
+* Calculus
+:properties:
+:where: University of Georgia
+:when:     2017
+:ID:       00887702-519f-4a09-9a3c-586e23fdfc9a
+:end:
+
+* Calculus  
+:properties:
+:where: University of Georgia
+:when:     2016
+:ID:       bee7a66e-df29-475c-aa5b-c820fbea24fa
+:end:
+
+* Analysis and optimization
+:properties:
+:where: Columbia University
+:when:     2016
+:links:     [[file:2016_analysis_and_optimization/][course page]]
+:ID:       0d50d94e-d988-49a0-9b46-4088497dd0a2
+:end:
+
+* Young tableaux in algebra and geometry          
+:properties:
+:where: Columbia University
+:when:     2015
+:links: [[file:2015_young_tableaux/][course page]]
+:ID:       6b8e011c-0df8-46e7-9674-48d1dcea50f5
+:end:
+
+* Calculus                                                               
+:properties:
+:where: Columbia University
+:when:     2015
+:links: [[file:2015_calculus1/][course page]]
+:ID:       3f9ad86b-bc33-41b9-ad36-a85b69718621
+:end:
+
+* Moduli of curves                                                       
+:properties:
+:where: Columbia University
+:when:     2014
+:links: [[file:2014_moduli_of_curves/][course page]]
+:ID:       ecfad00a-6580-4202-a4b6-b7cee3169314
+:end:
+
+* Calculus
+:properties:
+:where: Columbia University
+:when:     2014
+:links: [[file:2014_calculus1/][course page]]
+:ID:       c5428ec9-721f-4840-b609-c6b8c452c247
+:end:
+
+* Fields and Galois theory (Algebra 2)
+:properties:
+:where: Columbia University
+:when:     2014
+:links: [[file:2014_algebra2/][course page]]
+:ID:       b7b9cbc1-782a-4290-9f4d-94a6347bda4e
+:end:
+
+* Groups and rings (Algebra 1)                                   
+:properties:
+:where: Columbia University
+:when:     2013
+:links: [[file:2013_algebra1/][course page]]
+:ID:       3dd36d64-5428-434c-936c-9444137f6ea1
+:end:
+
+* Calculus
+:properties:
+:where: Columbia University
+:when:     2013
+:links: [[file:2013_calculus3/][course page]]
+:ID:       599347a7-9498-4278-a35d-c3e9d2ac1aba
+:end:
+
+* Calculus 
+:properties:
+:where: Columbia University
+:when:     2012
+:ID:       1c4f57b2-b234-4af5-bc6d-44f20e2e410d
+:end:
+
+* Linear algebra
+:properties:
+:where: Harvard University
+:when:     2012
+:ID:       09a978c0-973b-483c-b5b2-aec90f9f2047
+:end:
+
+* Algebraic curves (teaching assistant)
+:properties:
+:where: Harvard University
+:when:     2011
+:ID:       9226ef37-a97a-41d3-b327-ca34865dac69
+:end:
+
+* Calculus 
+:properties:
+:where: Harvard University
+:when:     2010
+:ID:       152bccf1-feaa-4faa-ad49-e5b15caad9f4
+:end:
+
+* Calculus 
+:properties:
+:where: Harvard University
+:when:     2009
+:ID:       d2715281-c494-4b97-a610-e75133df43a5
+:end:

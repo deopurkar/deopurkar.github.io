@@ -1,30 +1,5 @@
 #+title: Backlinks code
 #+property: header-args :tangle backlinks.el
-Scan a file for an id and return a list of back references.
-#+begin_src elisp
-  (defun scan-file-for-id (id file)
-    (with-temp-buffer 
-      (org-mode)
-      (insert-file-contents file)
-      (unless (org-entry-get (point) "skip-in-backlinks")
-        (setq links nil)
-        (save-excursion
-  	(while
-  	    (search-forward
-  	     (format "[[id:%s" id)
-  	 nil
-  	 t)
-  	  (cl-pushnew 
-  	   (pretty-print-backlink (point))
-  	   links
-  	   :test 'equal
-  	   )))
-        links)))
-#+end_src
-
-#+RESULTS:
-: scan-file-for-id
-
 A pretty printer.
 #+begin_src elisp
   (defun pretty-print-backlink (pom)
@@ -33,21 +8,17 @@ A pretty printer.
   	      (title (or (org-entry-get newpom "nav-title")
   			 (org-entry-get newpom "ITEM")
   			 (cadar (org-collect-keywords '("title"))))))
-      (let* ((tags (org-get-tags newpom)) 
-  	   (context (string-join tags ", ")))
-      
+      (let* ((tags (org-get-tags newpom))) 
         (when (member "talk" tags)
-  	(setq context
-  	      (concat context ", "
+  	(setq title
+  	      (concat title
+  		      " (talk, "
   		      (or (org-entry-get newpom "venue")
-  			  (org-entry-get newpom "where")))))
-
-        (format "[[id:%s][%s%s]]%s"
+  			  (org-entry-get newpom "where"))
+  		      ")")))
+        (format "[[id:%s][%s]]%s"
   	      id
   	      title
-  	      (if (> (length context) 0)
-  		  (format " (%s)" context)
-  		"")
   	      (if-let*
   		  ((links (org-entry-get newpom "links")))
   		  (format " (%s)" links)
@@ -57,24 +28,61 @@ A pretty printer.
 #+RESULTS:
 : pretty-print-backlink
 
+
+Scan a file for an id and return a list of back references.
+#+begin_src elisp
+  (defun scan-file-for-id (id file &optional pp-function)
+    (with-temp-buffer 
+      (org-mode)
+      (insert-file-contents file)
+      (unless (org-entry-get (point) "skip-in-backlinks")
+        (setq links nil)
+        (save-excursion
+  	(while
+  	    (search-forward
+  	     (format "[[id:%s" id)
+  	     nil
+  	     t)
+  	  (cl-pushnew 
+  	   (funcall
+  	    (or pp-function pretty-print-backlink)
+  	    (point))
+  	   links
+  	   :test 'equal
+  	   )))
+        links)))
+#+end_src
+
+#+RESULTS:
+: scan-file-for-id
+
+#+begin_src elisp
+  (defun scan-dir-for-id (id dir &optional pp-function)
+    (apply
+     #'append 
+     (mapcar (lambda (file)
+  	     (scan-file-for-id id file pp-function))
+  	   (directory-files-recursively
+  	    dir
+  	    (rx string-start
+  		(not ".")
+  		(zero-or-more anything)
+  		".org"
+  		string-end))))
+    )
+#+end_src
+
+#+RESULTS:
+: scan-dir-for-id
+
+
 Add backlinks from the directory as a new heading at the end of the buffer.
 #+begin_src elisp
   (defun add-backlinks-from (directory)
     (when-let*
         ((no-skip (not (org-entry-get (point) "skip-backlinks")))
          (id (org-entry-get (point) "ID"))
-         (backlinks 
-  	(apply
-  	 #'append 
-  	 (mapcar (lambda (file)
-  		   (scan-file-for-id id file))
-  		 (directory-files-recursively
-  		  directory
-  		  (rx string-start
-  		      (not ".")
-  		      (zero-or-more anything)
-  		      ".org"
-  		      string-end)))))
+         (backlinks (scan-dir-for-id id directory)) 
          (level (or (org-current-level) 0)))
       (save-excursion
         (let ((original (point)))

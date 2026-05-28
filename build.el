@@ -4,11 +4,15 @@
 (load-file "properties.el")
 (load-file "backlinks.el")
 
-
 (defvar links-in-cv t
   "Should links be included while processing cv.org")
 
-(defvar project-root-directory (expand-file-name "./content/"))  
+(defvar project-root-directory (expand-file-name "./content/"))
+
+(org-id-update-id-locations 
+ (directory-files-recursively
+  project-root-directory
+  "\.org$"))
 
 (setq org-publish-project-alist
       '(("website-org"
