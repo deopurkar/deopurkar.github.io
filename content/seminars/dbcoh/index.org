@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       37dcbcd5-30ec-489c-bb01-a7b09cde3a17
+:END:
 #+title: Reading Seminar on Fourier Mukai Transforms in Algebraic Geometry
 #+date: 2021 Semester 1
 

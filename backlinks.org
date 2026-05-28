@@ -16,6 +16,11 @@ A pretty printer.
   		      (or (org-entry-get newpom "venue")
   			  (org-entry-get newpom "where"))
   		      ")")))
+        (when (member "course" tags)
+  	(setq title
+  	      (concat title
+  		      ", "
+  		      (org-entry-get newpom "when"))))
         (format "[[id:%s][%s]]%s"
   	      id
   	      title
@@ -45,7 +50,7 @@ Scan a file for an id and return a list of back references.
   	     t)
   	  (cl-pushnew 
   	   (funcall
-  	    (or pp-function pretty-print-backlink)
+  	    (or pp-function 'pretty-print-backlink)
   	    (point))
   	   links
   	   :test 'equal
@@ -87,8 +92,9 @@ Add backlinks from the directory as a new heading at the end of the buffer.
       (save-excursion
         (let ((original (point)))
   	(org-forward-heading-same-level 1)
-  	(if (equal (point) original)
-  	    (goto-char (point-max))))
+  	(when (or (equal (point) original)
+  		  (= level 0))
+  	  (goto-char (point-max))))
         (insert "\n")
         (previous-line)
         (insert (make-string (+ 1 level) ?\*)) 

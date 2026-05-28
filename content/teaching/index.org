@@ -1,11 +1,15 @@
+:PROPERTIES:
+:ID:       cbb16489-0d75-4466-bf36-240257da8f58
+:END:
 #+title: Anand Deopurkar | Teaching
 #+DESCRIPTION: Courses taught by of Anand Deopurkar, a mathematician specialising in algebraic geometry at the Australian National University.  Read about my papers and preprints, including abstracts.
 #+KEYWORDS: Course, Teaching, Anand Deopurkar, ANU, MSI
 #+options: H:1 num:0 toc:nil
+#+filetags: course
 
 Below is a roughly reverse chronological list of the courses I have taught with links to course websites and sometimes with other commentary. 
 
-* Games, graphs, and machines 
+* Games, graphs, and machines                                     :highlight:
 :PROPERTIES:
 :where: Australian National University
 :when:     2025
@@ -13,7 +17,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :ID:       2a953d2a-e23a-4c6b-a289-d7eabf2c5372
 :END:
 
-* Fields and Galois theory (Algebra 2)
+* Fields and Galois theory (Algebra 2)                            :highlight:
 :PROPERTIES:
 :where: Australian National University
 :when:     2025
@@ -29,7 +33,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :ID:       5e654789-28b9-42a5-a670-40443b50f67e
 :END:
 
-* Differential forms in algebraic topology 
+* Differential forms in algebraic topology                        :highlight:
 :PROPERTIES:
 :where: Australian National University
 :when:     2024
@@ -54,7 +58,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :ID:       bd3ac43e-343e-4a97-8d11-98ff04bc7951
 :end:
 
-* Groups and rings (Algebra 1)                                                             
+* Groups and rings (Algebra 1)                                    :highlight:
 :properties:
 :where: Australian National University
 :when:     2022
@@ -62,7 +66,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :links: [[id:e61cc576-b305-4296-b50b-0bc8a5f8aab2][course page]]
 :end:
 
-* Mathematical writing                                            
+* Mathematical writing                                            :highlight:
 :properties:
 :where: Australian National University
 :when:     2022
@@ -70,7 +74,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :ID:       3e570a8d-7ffa-4b1c-b8ac-c2077e6e894c
 :end:
 
-* Algebraic Geometry (Algebra 3)                                         
+* Algebraic Geometry (Algebra 3)                                  :highlight:
 :properties:
 :where: Australian National University
 :when:     2021
@@ -78,7 +82,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :ID:       1680737a-9d54-448d-8951-a0fe1ae16016
 :end:
 
-* Foundations of Algebraic Geometry: Schemes                             
+* Foundations of Algebraic Geometry: Schemes                      :highlight:
 :properties:
 :where: Australian National University
 :when:     2020
@@ -110,7 +114,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :ID:       f7cb4d66-9f1d-4aba-a4a3-9e243c681516
 :end:
 
-* Algebraic curves 
+* Algebraic curves
 :properties:
 :where: Australian National University
 :when:     2018
@@ -126,7 +130,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :ID:       4b65408e-d971-4ce5-ab90-eec53be5c3be
 :end:
 
-* Algebraic curves                                                       
+* Algebraic curves                                                :highlight:
 :properties:
 :where: University of Georgia
 :when:     2017
@@ -156,7 +160,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :ID:       0d50d94e-d988-49a0-9b46-4088497dd0a2
 :end:
 
-* Young tableaux in algebra and geometry          
+* Young tableaux in algebra and geometry                          :highlight:
 :properties:
 :where: Columbia University
 :when:     2015
@@ -172,7 +176,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :ID:       3f9ad86b-bc33-41b9-ad36-a85b69718621
 :end:
 
-* Moduli of curves                                                       
+* Moduli of curves                                                :highlight:
 :properties:
 :where: Columbia University
 :when:     2014

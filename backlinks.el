@@ -1,34 +1,31 @@
-(defun pretty-print-backlink (pom &optional contextf)
+(defun pretty-print-backlink (pom)
   (when-let* ((id (org-entry-get pom "ID" 'inherit))
 	      (newpom (org-id-find id 'marker))
 	      (title (or (org-entry-get newpom "nav-title")
 			 (org-entry-get newpom "ITEM")
 			 (cadar (org-collect-keywords '("title"))))))
-    (let* ((tags (org-get-tags newpom)) 
-	   (context (if contextf
-			(funcall contextf)
-		      "")))
-      
-	(when (member "talk" tags)
-	  (setq title
-		(concat title
-			" (talk, "
-			(or (org-entry-get newpom "venue")
-			    (org-entry-get newpom "where"))
-			")")))
-	
-	(format "[[id:%s][%s]]%s%s"
-		id
+    (let* ((tags (org-get-tags newpom))) 
+      (when (member "talk" tags)
+	(setq title
+	      (concat title
+		      " (talk, "
+		      (or (org-entry-get newpom "venue")
+			  (org-entry-get newpom "where"))
+		      ")")))
+      (when (member "course" tags)
+	(setq title
+	      (concat title
+		      ", "
+		      (org-entry-get newpom "when"))))
+      (format "[[id:%s][%s]]%s"
+	      id
 	      title
-	      (if (> (length context) 0)
-		  (format ", %s" context)
-		"")
 	      (if-let*
 		  ((links (org-entry-get newpom "links")))
 		  (format " (%s)" links)
 		"")))))
 
-(defun scan-file-for-id (id file &optional filter context)
+(defun scan-file-for-id (id file &optional pp-function)
   (with-temp-buffer 
     (org-mode)
     (insert-file-contents file)
@@ -40,20 +37,20 @@
 	     (format "[[id:%s" id)
 	     nil
 	     t)
-	  (when (or (not filter)
-		    (funcall filter))
-	    (cl-pushnew 
-	     (pretty-print-backlink (point) context)
-	     links
-	     :test 'equal
-	     )))
-	links))))
+	  (cl-pushnew 
+	   (funcall
+	    (or pp-function 'pretty-print-backlink)
+	    (point))
+	   links
+	   :test 'equal
+	   )))
+      links)))
 
-(defun scan-dir-for-id (id dir &optional filter context)
+(defun scan-dir-for-id (id dir &optional pp-function)
   (apply
    #'append 
    (mapcar (lambda (file)
-	     (scan-file-for-id id file filter context))
+	     (scan-file-for-id id file pp-function))
 	   (directory-files-recursively
 	    dir
 	    (rx string-start
@@ -72,8 +69,9 @@
     (save-excursion
       (let ((original (point)))
 	(org-forward-heading-same-level 1)
-	(if (equal (point) original)
-	    (goto-char (point-max))))
+	(when (or (equal (point) original)
+		  (= level 0))
+	  (goto-char (point-max))))
       (insert "\n")
       (previous-line)
       (insert (make-string (+ 1 level) ?\*)) 

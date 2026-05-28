@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       cf1faa8e-1f6c-4959-92e8-d06827646698
+:END:
 #+title: Mixed Hodge Modules Learning Seminar
 #+options: *:t
 
