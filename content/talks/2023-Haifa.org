@@ -1,4 +1,7 @@
 # Created 2026-05-27 Wed 20:09
+:PROPERTIES:
+:ID:       75106f4c-f358-4630-b982-2cbaec4cda10
+:END:
 #+options: ':t
 #+title: Stability conditions, metrics, and compactifications
 #+author: Anand Deopurkar

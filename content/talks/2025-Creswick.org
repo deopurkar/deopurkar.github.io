@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       9ad7fb07-194d-485d-bfbb-6eef16e1add4
+:END:
 #+title: A Thurston compactification of the space of stability conditions
 #+LATEX_HEADER_EXTRA: \usepackage{fullpage}
 #+options: ':t ":t

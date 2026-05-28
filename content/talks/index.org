@@ -54,7 +54,7 @@ This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant cl
 :when:     2025
 :type:     Workshop
 :ID:       d42b079c-e0b1-466e-b128-c51e5addabdb
-:links: [[file:2025-Creswick.org][notes]]
+:links: [[id:9ad7fb07-194d-485d-bfbb-6eef16e1add4][notes]]
 :end:
 
 #+begin_abstract
@@ -181,7 +181,7 @@ This was a talk based on [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal 
 :when:     2024
 :type:     seminar
 :ID:       a96b3cc1-a39c-46fd-b4f5-a1d225a3a732
-:links:    [[file:2024-Edinburgh.org][notes]]
+:links:    [[id:0575067f-9400-4257-9677-d78bec82f59e][notes]]
 :end:
 
 This was a talk based on [[id:7ee039fe-461d-41bb-8a73-116bc7f196e0][A Thurston compactification of the space of stability conditions]]. 
@@ -193,7 +193,7 @@ This was a talk based on [[id:7ee039fe-461d-41bb-8a73-116bc7f196e0][A Thurston c
 :when:     2023
 :type:     series
 :ID:       0be3113e-3a2b-46c2-a4a8-281747fa26bc
-:links:    [[file:2023-Haifa.org][notes]]
+:links:   [[id:75106f4c-f358-4630-b982-2cbaec4cda10][notes]]
 :end:
 
 This mini course consisted of 3 lectures of 1.5 hours each.  This was based on [[id:7ee039fe-461d-41bb-8a73-116bc7f196e0][A Thurston compactification of the space of stability conditions]] and ideas surrounding it.
@@ -217,7 +217,10 @@ This talk is based on the ideas [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sph
 :where:    Chennai, India
 :when:     2022
 :ID:       690f32f2-8492-49ae-87a7-11d9d6465e13
+:links:    [[id:141efcde-1e52-47f5-b7e2-cea28ee0dcd0][notes]]
 :end:
+This talk was based on an idea to contract stability manifolds for certain categories using techniques from rigidity theory.  We have still not finished writing up all the details.   
+
 
 *  Error correcting codes                                              :talk:
 :properties:
@@ -226,6 +229,7 @@ This talk is based on the ideas [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sph
 :when:     2022
 :comments:     expository
 :ID:       73b5521a-6738-40bd-b4d0-481f79f50bce
+:links: [[id:648707cc-d8ae-4d0a-8cf7-53fef49db34b][slides]]
 :end:
 
 * How to count using equivariant cohomology                            :talk:
@@ -237,8 +241,7 @@ This talk is based on the ideas [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sph
 :ID:       0ea1d0f0-8ce8-40b2-98f0-6d811620ddd6
 :end:
 
-** References                                                          
-- [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]]
+This was  based on [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]]
 
 
 *  Combinatorics and dynamics of Harder-Narasimhan filtrations         :talk:
@@ -248,7 +251,10 @@ This talk is based on the ideas [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sph
 :when:     2022
 :type:     seminar 
 :ID:       e3ca51e8-dc0a-494f-8778-af99cb3557d4
+:links:    [[file:2022-Tsinghua.pdf][slides]]
 :end:
+
+This was based on [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sphere of spherical objects]].
 
 
 *  Braids and monodromy in algebraic geometry                          :talk:
@@ -259,6 +265,7 @@ This talk is based on the ideas [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sph
 :comments:     expository
 :ID:       d56cfe9b-e442-45de-b323-12ec02a5858c
 :end:
+This was an expository pre-talk for the workshop /Braids in symplectic and algebraic Geometry/ at ICERM.
 
 
 * How to count using equivariant cohomology                            :talk:
@@ -271,9 +278,7 @@ This talk is based on the ideas [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sph
 :ID:       33b0c188-4659-48cd-b0c6-bdb652c4a1c8
 :end:
 
-** References                                                          
-- [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]]
-
+This was  based on [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]]
 
 * Apparent boundaries of projective varieties                          :talk:
 :PROPERTIES:
@@ -284,8 +289,7 @@ This talk is based on the ideas [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sph
 :ID:       d15d311e-f06f-458d-b7f5-90c27c6d5451
 :END:
 
-** Reference                                                           
-- [[id:82e9302f-6674-41b8-97cd-6733ac7edf89][Ramification divisors of general projections]]
+This was based on [[id:82e9302f-6674-41b8-97cd-6733ac7edf89][Ramification divisors of general projections]].
 
 * The geometry and combinatorics of Harder--Narasimhan filtrations     :talk:
 :properties:
@@ -296,6 +300,8 @@ This talk is based on the ideas [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sph
 :type:     conference
 :ID:       79f50459-44a2-48d5-b78d-b1a35ef9a728
 :end:
+
+This was based on the future paper [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sphere of spherical objects]].
 
 * The geometry of Fermat-like equations                                :talk:
 :properties:
@@ -308,6 +314,9 @@ This talk is based on the ideas [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sph
 :ID:       aa9aba31-dd50-4cda-9859-d3623b6f163f
 :end:
 
+This is the second talk I gave this trimester program.  I explained the argument by Darmon and Granville that "hyperbolic" Fermat-like equations(\(A x^l + B y^m = C z^n\) where \(1/l + 1/m + 1/p < 1\)) have only finitely many integral solutions.  The theorem and the proof is an orbifold version of Faltings's theorem that hyperbolic curves have only finitely many rational points.  
+
+Also see the [[id:9efcc78f-db58-4c06-a73a-405566487ca4][expository article]] I wrote accompanying the talks. 
 
 * Algebraic curves and Belyi's theorem                                 :talk:
 :properties:
@@ -319,6 +328,9 @@ This talk is based on the ideas [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sph
 :ID:       e19269e4-2c30-4e4d-8671-3e7f0b7cb3e8
 :end:
 
+This is the first talk I gave in this trimester program.  I explain the statement and proof of Belyi's famous theorem.
+
+Also see the [[id:9efcc78f-db58-4c06-a73a-405566487ca4][expository article]] I wrote accompanying the talks.
 
 * Error correcting codes                                               :talk:
 :properties:

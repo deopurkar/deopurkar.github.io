@@ -1,10 +1,11 @@
-#+REVEAL_THEME: moon
+:PROPERTIES:
+:ID:       648707cc-d8ae-4d0a-8cf7-53fef49db34b
+:END:
 #+TITLE: Error correcting codes
 #+SUBTITLE: How to talk across a noisy room?
 #+AUTHOR: Anand Deopurkar
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
-#+REVEAL_TRANS: fade
 
 * Noisy communication channels
 ** Is this working?
@@ -12,21 +13,21 @@
    :UNNUMBERED: t
    :END:
   #+ATTR_HTML: :width 600px
-  [[file:isthisworking.png][file:~/website/talks/extension/isthisworking.png]]
+  [[file:isthisworking.png]]
 
 ** Am I muted?  
    :PROPERTIES:
    :UNNUMBERED: t
    :END:
   #+ATTR_HTML: :width 600px
-  [[file:muted.png][file:~/website/talks/extension/muted.png]]
+  [[file:muted.png]]
 ** Can you hear me through space?
    :PROPERTIES:
    :UNNUMBERED: t
    :END:
    #+ATTR_HTML: :width 600px
    #+ATTR_ORG: :width 600
-   [[file:rover.jpg][file:~/website/talks/extension/rover.jpg]]
+   [[file:rover.jpg]]
 
 ** Can you hear me through the atmosphere?
    :PROPERTIES:
@@ -34,7 +35,7 @@
    :END:
    #+ATTR_HTML: :width 600px
    #+ATTR_ORG: :width 600
-[[file:satellite.jpg][file:~/website/talks/extension/satellite.jpg]]
+   [[file:satellite.jpg]]
 
 * Errors are inevitable
   #+ATTR_HTML: :width 600px
@@ -44,7 +45,7 @@
   #+REVEAL: split:t
   #+ATTR_HTML: :width 600px
   #+ATTR_ORG: :width 600
-  [[file:monkeywords.svg][file:~/website/talks/extension/monkeywords.svg]]
+  [[file:monkeywords.svg]]
 
   #+REVEAL: split:t
   #+ATTR_HTML: :width 600px

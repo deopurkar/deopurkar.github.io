@@ -1,7 +1,6 @@
 :PROPERTIES:
 :ID:       e5dcac8c-b6ff-4e38-919b-c90d821d4187
 :END:
-#+options: broken-links:ignore
 #+title: The work of Maryam Mirzakhani
 #+author: Anand Deopurkar
 #+filetags: talk

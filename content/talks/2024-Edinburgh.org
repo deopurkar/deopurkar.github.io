@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       0575067f-9400-4257-9677-d78bec82f59e
+:END:
 #+Title: Stability conditions, metrics, and compactification
 #+author: Anand Deopurkar
 
