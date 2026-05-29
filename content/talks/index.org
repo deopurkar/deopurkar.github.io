@@ -344,7 +344,7 @@ Also see the [[id:9efcc78f-db58-4c06-a73a-405566487ca4][expository article]] I w
 :where:    Canberra, Australia
 :when:     2021
 :comments:     expository
-:links:      file:2021-ecc/ecc.html
+:links:      [[id:648707cc-d8ae-4d0a-8cf7-53fef49db34b][slides]]
 :ID:       0ae10d06-c9f2-4972-a24e-f4e71f093f5f
 :labels:   [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
 :end:
