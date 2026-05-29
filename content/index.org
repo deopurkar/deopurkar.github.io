@@ -122,7 +122,7 @@ If you are thinking of doing a PhD with me, please read this [[id:1a667b02-c72c-
 :end:
 
 * Expository 
-Here are some of my [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository articles and talks]].    
+Here are some of my [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository articles and talks (follow this link for the full list)]].    
 
 #+begin_src elisp :exports results :results value raw drawer
   (string-join
@@ -159,7 +159,7 @@ Here are some of my [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository articl
 
 
 * Teaching
-Here are some of [[id:cbb16489-0d75-4466-bf36-240257da8f58][the courses I have taught]].
+Here are some of [[id:cbb16489-0d75-4466-bf36-240257da8f58][the courses I have taught (follow this link for the full list)]].
 #+begin_src emacs-lisp :exports results :results value raw drawer
   (concat " - "
   	(string-join
@@ -211,7 +211,7 @@ Here are some of [[id:cbb16489-0d75-4466-bf36-240257da8f58][the courses I have t
  - [[id:cf1faa8e-1f6c-4959-92e8-d06827646698][Mixed hodge modules]]: UGA, 2017
  - [[file:seminars/seminar16/][Stable rationality]]: Columbia, 2016
 
-- Does course engagement correlate with final scores?  I did a bit of data science based on a course in 2024;  [[file:teaching/2024ggm/engagement/][see the results]].
+- Does course engagement correlate with final scores?  I did a bit of data science based on a course in 2024;  [[id:24bd1a3a-45fd-4268-81d2-52093e9dd8c8][see the results]].
 
 - I am an advocate of [[wiki:Free_software][free software]] and a user of [[wiki:Emacs][emacs]].
   I occasionally contribute to [[https://list.orgmode.org/?q=deopurkar&r][the development of org mode]].

@@ -1,3 +1,14 @@
+:PROPERTIES:
+:ID:       8155d3f9-3d52-4914-89cb-16eae35166f5
+:END:
+#+setupfile:../#setup.org
+#+title: Anand Deopurkar | Talks
+#+DESCRIPTION: Talks by Anand Deopurkar, a mathematician specialising in algebraic geometry at the Australian National University.  Read about my papers and preprints, including abstracts.
+#+KEYWORDS: Talks, presentations, Anand Deopurkar, ANU, MSI
+#+options: H:1 num:0 toc:nil
+
+Below is a roughly reverse chronological list of my papers and pre-prints, together with abstracts, links to notes or slides, and other commentary.
+
 * Be wise, equivariantise!                                             :talk:
 :properties:
 :venue:  Workshop in algebraic geometry, University of Sydney

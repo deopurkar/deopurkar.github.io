@@ -1,15 +1,6 @@
-
-# Table of Contents
-
-1.  [The content](#orge646e4b)
-2.  [Building](#org19b1407)
-3.  [Building on Github](#orgf2c2605)
-
 This repository contains code that generates my personal website.
 The code and design of the website is thanks to [Asilata Bapat](https://asilata.org).
 
-
-<a id="orge646e4b"></a>
 
 # The content
 
@@ -17,8 +8,6 @@ The content for the website goes in the `content/` directory.
 It is written as a collection of inter-linked org files.
 An internal directory structure is supported.
 
-
-<a id="org19b1407"></a>
 
 # Building
 
@@ -32,6 +21,30 @@ Right now, the building happens locally, but eventually, the it should happen on
     (require 'ox-publish)
     (require 'subr-x)
 
+We want to make sure that org files are opened in org mode.
+
+    (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+
+The files properties.el and backlinks.el (tangled from org) add the functionality to automatically add a well-formatted properties block and backlinks.
+
+    (load-file "properties.el")
+    (load-file "backlinks.el")
+
+The variable `links-in-cv` used above controls whether links should be included in the cv.
+
+    (defvar links-in-cv t
+      "Should links be included while processing cv.org")
+
+The variable `project-root-directory` sets up the root directory of the website.  This is used for backlinks search.
+The backlinks also need an up-to-date id database.
+
+     (defvar project-root-directory (expand-file-name "./content/"))
+    
+    (org-id-update-id-locations 
+     (directory-files-recursively
+      project-root-directory
+      "\.org$"))
+
 Next I set the options for `org-publish-project-alist`, as documented [here](help:org-publish-project-alist).
 Currently I have the following projects.
 
@@ -41,80 +54,78 @@ Currently I have the following projects.
 -   **`pdfcv`:** creates a pdf cv
 
     (setq org-publish-project-alist
-          '(("website-org"
-             :base-directory "./content"  ;; This is where our files live
-             :base-extension "org" ;; Publish only from org files
-             :publishing-directory "./docs" ;; This is where the published files go
-             :recursive t 
-             :exclude "\#.*"   ;; Files beginning with \# are not processed.
-             :publishing-function org-html-publish-to-html
-             :section-numbers nil
-             :with-broken-links mark
-             :with-toc nil
-             :with-title t
-             :with-author t
-             :with-special-strings t
-             :with-smart-quotes t
-             :with-emphasize t
-             :with-drawers ("results")
-             :html-head-include-default-style nil
-             :html-head-include-scripts nil 
-             :html-head "<link rel=\"stylesheet\" href=\"/css/main.css\"></link><link href=\"https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i\" rel=\"stylesheet\"></link>"
+        '(("website-org"
+             :author "Anand Deopurkar"
+             :email "anand.deopurkar@anu.edu.au"
+           :base-directory "./content"  ;; This is where our files live
+           :base-extension "org" ;; Publish only from org files
+           :publishing-directory "./docs" ;; This is where the published files go
+           :recursive t 
+           :exclude "\#.*"   ;; Files beginning with \# are not processed.
+           :publishing-function org-html-publish-to-html
+           :section-numbers nil
+           :with-broken-links nil
+           :with-toc nil
+             :with-tags nil
+           :with-title t
+           :with-author t
+           :with-special-strings t
+           :with-smart-quotes t
+           :with-emphasize t
+             :with-email t 
+           :with-drawers ("results")
+             :html-prefer-user-labels t
+           :html-head-include-default-style nil
+           :html-head-include-scripts nil 
+           :html-head "<link rel=\"stylesheet\" href=\"/css/main.css\"><script src=\"/js/collapsibility.js\"></script>"
+           :html-postamble t
              :html-preamble nil
-             :html-postamble-format (("en" "Created by %c.  Last modified: %C.  <a href=\"https://github.com/deopurkar.github.io\">Source</a>"))
-             :html-postamble t
-             :auto-sitemap nil
+             :html-postamble-format
+             (("en" "Created by <a href=\"mailto:anand.deopurkar@anu.edu.au\">%a</a> using %c.  <a href=\"https://github.com/deopurkar/deopurkar.github.io\">Last modified</a>: %C."))
+             :preparation-function (lambda (b)
+                                     (setq org-export-before-parsing-functions
+                                           '(my/pp-properties-hook my/add-backlinks-hook)
+                                           links-in-cv
+                                           t))
+            :completion-function (lambda (b)
+                                   (setq org-export-before-parsing-functions
+                                         nil)))
+          ("pdfcv"
+           :base-directory "./content"
+           :exclude ".*"
+           :include ["cv.org"]
+           :publishing-directory "./docs"
+           :publishing-function org-latex-publish-to-pdf
+             :preparation-function (lambda (b) (setq links-in-cv nil))
+           )
+          ("website-static"
+           :base-directory "./content"
+           :base-extension ".*"
+           :exclude "\#.*\\|.*\.org"
+           :publishing-directory "./docs"
+           :recursive t
+           :publishing-function org-publish-attachment
              )
-            ("pdfcv"
-             :base-directory "./content"
-             :exclude ".*"
-             :include ["cv.org"]
-             :publishing-directory "./docs"
-             :publishing-function org-latex-publish-to-pdf
-             :preparation-function do-not-include-links
-             )
-            ("website-static"
-             :base-directory "./content"
-             :base-extension ".*"
-             :exclude "\#.*\\|.*\.org"
-             :publishing-directory "./docs"
-             :recursive t
-             :publishing-function org-publish-attachment)
-            ("styling"
-             :base-directory "./content/#styling"
-             :base-extension "css\\|js"
-             :publishing-directory "./docs"
-             :recursive t
-             :preparation-function my/execute-files
-             :publishing-function org-publish-attachment)
-            ))
-
-The variable `cv-include-links` used above controls whether links should be included in the cv.
-
-    (defvar cv-include-links t
-      "Should links be included while processing cv.org")
-    (defun do-not-include-links (propslist)
-      (setq cv-include-links nil))
-
-The following function executes all the org files from the base directory.
-
-    (defun my/execute-files (proplist)
-      (let ((files
-             (directory-files-recursively
-              (plist-get proplist ':base-directory)
-              ".*org$")))  
-        (mapcar (lambda (file)
-                  (with-current-buffer (find-file file)
-                    (org-babel-execute-buffer)
-                    ))
-                files)))
+          ("styling"
+           :base-directory "./content/#styling"
+           :base-extension "css\\|js\\|txt"
+           :publishing-directory "./docs"
+           :recursive t
+           :publishing-function org-publish-attachment)
+          ))
 
 Now publish!  
 
-    (setq org-confirm-babel-evaluate nil)
-    (setq make-backup-files nil)
-    (org-publish-all t)
-    (message "Build complete!")
+    (let ((org-confirm-babel-evaluate nil)
+        (make-backup-files nil)
+        (noninteractive t))
+    (message "Starting now")
+    (org-babel-do-load-languages
+     'org-babel-load-languages
+     '((shell . t)))
+    (message (emacs-version))
+    (org-publish-all 'force)
+    (message "Done!"))
 
 We also create a shell script to run the above lisp file.
 
@@ -130,8 +141,6 @@ and a shell script to build and commit.
     git commit -a -m "Auto-build"
     git push
 
-
-<a id="orgf2c2605"></a>
 
 # Building on Github
 
