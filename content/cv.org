@@ -109,7 +109,7 @@
   (strip-links-from-string
    (string-join
     (collate-from-string-pairs
-     (org-map-entries 'pretty-print-paper "-preprint-expository-thesis" '("papers/index.org")))
+     (org-map-entries 'pretty-print-paper "-preprint-expository-thesis" '("papers.org")))
     "\n"))
 #+end_src
 
@@ -164,7 +164,7 @@
   (strip-links-from-string
    (string-join
     (collate-from-string-pairs
-     (org-map-entries 'pretty-print-paper "+preprint" '("papers/index.org"))) "\n"))
+     (org-map-entries 'pretty-print-paper "+preprint" '("papers.org"))) "\n"))
 #+end_src
 
 #+RESULTS:
@@ -192,7 +192,7 @@
   (strip-links-from-string
    (string-join
     (collate-from-string-pairs
-     (org-map-entries 'pretty-print-paper "+paper+expository" '("papers/index.org"))) "\n"))
+     (org-map-entries 'pretty-print-paper "+paper+expository" '("papers.org"))) "\n"))
 #+end_src
 
 #+RESULTS:
@@ -290,7 +290,7 @@
   (strip-links-from-string
    (string-join
     (collate-from-string-pairs
-     (org-map-entries 'pretty-print-talk "LEVEL=1" '("talks/index.org")))
+     (org-map-entries 'pretty-print-talk "LEVEL=1" '("talks.org")))
     "\n"))
 #+end_src
 

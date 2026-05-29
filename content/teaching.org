@@ -156,7 +156,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :properties:
 :where: Columbia University
 :when:     2016
-:links:     [[file:2016_analysis_and_optimization/][course page]]
+:links:     [[file:teaching/2016_analysis_and_optimization/][course page]]
 :ID:       0d50d94e-d988-49a0-9b46-4088497dd0a2
 :end:
 
@@ -164,7 +164,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :properties:
 :where: Columbia University
 :when:     2015
-:links: [[file:2015_young_tableaux/][course page]]
+:links: [[file:teaching/2015_young_tableaux/][course page]]
 :ID:       6b8e011c-0df8-46e7-9674-48d1dcea50f5
 :end:
 
@@ -172,7 +172,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :properties:
 :where: Columbia University
 :when:     2015
-:links: [[file:2015_calculus1/][course page]]
+:links: [[file:teaching/2015_calculus1/][course page]]
 :ID:       3f9ad86b-bc33-41b9-ad36-a85b69718621
 :end:
 
@@ -180,7 +180,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :properties:
 :where: Columbia University
 :when:     2014
-:links: [[file:2014_moduli_of_curves/][course page]]
+:links: [[file:teaching/2014_moduli_of_curves/][course page]]
 :ID:       ecfad00a-6580-4202-a4b6-b7cee3169314
 :end:
 
@@ -188,7 +188,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :properties:
 :where: Columbia University
 :when:     2014
-:links: [[file:2014_calculus1/][course page]]
+:links: [[file:teaching/2014_calculus1/][course page]]
 :ID:       c5428ec9-721f-4840-b609-c6b8c452c247
 :end:
 
@@ -196,7 +196,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :properties:
 :where: Columbia University
 :when:     2014
-:links: [[file:2014_algebra2/][course page]]
+:links: [[file:teaching/2014_algebra2/][course page]]
 :ID:       b7b9cbc1-782a-4290-9f4d-94a6347bda4e
 :end:
 
@@ -204,7 +204,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :properties:
 :where: Columbia University
 :when:     2013
-:links: [[file:2013_algebra1/][course page]]
+:links: [[file:teaching/2013_algebra1/][course page]]
 :ID:       3dd36d64-5428-434c-936c-9444137f6ea1
 :end:
 
@@ -212,7 +212,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :properties:
 :where: Columbia University
 :when:     2013
-:links: [[file:2013_calculus3/][course page]]
+:links: [[file:teaching/2013_calculus3/][course page]]
 :ID:       599347a7-9498-4278-a35d-c3e9d2ac1aba
 :end:
 

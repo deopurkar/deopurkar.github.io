@@ -17,13 +17,10 @@
 	      (concat title
 		      ", "
 		      (org-entry-get newpom "when"))))
-      (format "[[id:%s][%s]]%s"
+      (format "[[id:%s][%s]]"
 	      id
 	      title
-	      (if-let*
-		  ((links (org-entry-get newpom "links")))
-		  (format " (%s)" links)
-		"")))))
+	      ))))
 
 (defun scan-file-for-id (id file &optional pp-function)
   (with-temp-buffer 

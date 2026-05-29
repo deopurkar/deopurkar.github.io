@@ -230,7 +230,7 @@
 
 * More questions
 
-  #+ATTR_REVEAL: :frag (appear appear)
+#+ATTR_REVEAL: :frag (appear appear)
   1. Are there other finite fields, besides \(\mathbb F_p\)?
   2. Can we do better than Reed-Solomon?
 
@@ -238,8 +238,8 @@
 
 * Plumbing :noexport:
   #+begin_src elisp :exports none :results none
-  (use-package htmlize :straight t)
-  (use-package ox-reveal :straight (:type git :host github :repo "yjwen/org-reveal"))
-  (require 'ox-reveal)
-  (setq org-image-actual-width nil)
-#+end_src
+  ;(use-package htmlize :straight t)
+  ;(use-package ox-reveal :straight (:type git :host github :repo "yjwen/org-reveal"))
+  ;(require 'ox-reveal)
+  ;(setq org-image-actual-width nil)
+  #+end_src
