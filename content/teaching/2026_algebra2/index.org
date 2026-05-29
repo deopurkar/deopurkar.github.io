@@ -372,10 +372,10 @@ Please submit your solution to one of the following problems.
 The midterm exam will be in class in week 7 on Wednesday.  It will cover everything we have done in weeks 1--6.  To prepare, make sure you can do all the homework questions, the workshop questions, and the questions that accompany the reading.  In addition, [[file:midterm_practice.pdf][here are some more practice questions]].  Here is [[file:2023-midterm.pdf][the midterm exam from a couple of years ago.]]  A good way to use it is as a mock exam---take it without referring to any notes or the book in 2 hours and see how you do.
 ** References and resources
 *** On writing mathematics
-1. [[file:conrad.pdf][Keith Conrad]]
-2. [[file:houston.pdf][Kevin Houston]]
-3. [[file:kleiman.pdf][Steve Kleiman]]
-4. [[file:poonen.pdf][Bjorn Poonen]]
+1. [[file:Conrad.pdf][Keith Conrad]]
+2. [[file:Houston.pdf][Kevin Houston]]
+3. [[file:Kleiman.pdf][Steve Kleiman]]
+4. [[file:Poonen.pdf][Bjorn Poonen]]
 * Course information
 - Contacts :: 
   - Lecturer and convener :: 

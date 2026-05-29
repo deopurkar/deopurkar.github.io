@@ -1699,8 +1699,6 @@ Then we have a map
 \[ F[\alpha]/F \to K/F\]
 given by \(\alpha \mapsto \beta\).
 
-#+downloaded: screenshot @ 2023-04-26 09:46:58
-[[file:assets/Splitting_fields/2023-04-26_09-46-58_screenshot.png]]
 The proof is then complete.
 
 Caution: The extension \(K/K_2\) is not necessarily \(K_2[x]/f(x)\), because \(f(x) \in K_2[x]\) need not be irreducible.  It will be \(K_2[x]/g(x)\) where \(g(x)\) is an irreducible factor of \(f(x)\).  

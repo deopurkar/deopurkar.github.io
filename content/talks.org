@@ -16,7 +16,7 @@ Below is a roughly reverse chronological list of my papers and pre-prints, toget
 :when:     2026
 :type:     Workshop
 :ID:       5630e24b-c38d-4ee2-95d0-f053d3aca22b
-:links: [[file:talks/2026-02-Sydney.pdf][notes]]
+:links: [[file:talks/2026-02-sydney.pdf][notes]]
 :end:
 
 #+begin_abstract
@@ -110,7 +110,7 @@ This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant cl
 :when:     2024
 :type:     workshop
 :ID:       a3913140-9313-4e54-ad0d-eaeab6cdc8ab
-:links:    [[file:talks/2024--12-AustMS.pdf][slides]]
+:links:    [[file:talks/2024-12-AustMS.pdf][slides]]
 :end:
 #+begin_abstract
 Fix a polynomial $P$. How complicated is the set of all polynomials obtained from $P$ by changes of coordinates? This question, and many others, generalise as follows: given a representation an algebraic group, how complicated is the orbit of a given element? I will describe some answers, featuring toric varieties, Newton polyhedra, and stacks. 
@@ -160,7 +160,7 @@ recommended!
 :when:     2024
 :type:     workshop
 :ID:       7658a59d-72ee-45ee-a5ca-c002fa285e32
-:links:    [[file:talks/2024--Oberwolfach.pdf][extended abstract]]
+:links:    [[file:talks/2024-Oberwolfach.pdf][extended abstract]]
 :end:
 
 This was a talk based on [[id:7ee039fe-461d-41bb-8a73-116bc7f196e0][A Thurston compactification of the space of stability conditions]] and [[id:8c1b044d-82a9-4cbc-986e-a07f93dc93d1][Spherical objects and stability conditions on 2-Calabi--Yau quiver categories]].
@@ -218,7 +218,7 @@ This mini course consisted of 3 lectures of 1.5 hours each.  This was based on [
 :where:    Canberra, Australia
 :when:     2023
 :ID:       b5064898-9699-4e07-ad07-729aa9c12d53
-:links:    [[file:talks/2023--05-05-ANU.pdf][notes]]
+:links:    [[file:talks/2023-05-05-ANU.pdf][notes]]
 :end:
 
 This talk is based on the ideas [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sphere of spherical objects]].  You see that it took us a couple of years to finish writing the paper!
@@ -265,7 +265,7 @@ This was  based on [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formul
 :when:     2022
 :type:     seminar 
 :ID:       e3ca51e8-dc0a-494f-8778-af99cb3557d4
-:links:    [[file:talks/2022--Tsinghua.pdf][slides]]
+:links:    [[file:talks/2022-Tsinghua.pdf][slides]]
 :end:
 
 This was based on [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sphere of spherical objects]].

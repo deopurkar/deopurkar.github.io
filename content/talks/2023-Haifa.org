@@ -503,12 +503,6 @@ More precisely, if \(a\) is semi-stable for \(\tau\), then
 \[ \lim_{n \to \infty} \sigma_{a}^{n} \tau = [\mathrm{homBar}(a)].\]
 *** A sketch of the proof
 - Recall the proof from geometry: dehn twist in \(a\) increases the length of a curve \(c\) by roughly \((c \cap a) \cdot \ell(a)\):
-
-#+downloaded: screenshot @ 2023-07-13 09:18:22
-[[file:assets/The_Thurston_compactification/2023-07-13_09-18-22_screenshot.png]] 
-
-
-
 - Sketch the proof.
 
 In homological algebra, the proof follows the same idea.
@@ -532,8 +526,6 @@ In fact, \(x\) just remains a shift of \(a\) after twisting, and after dividing 
 - All spherical objects are in one braid orbit.
 - All stability conditions are in the braid orbit of a standard stability condition.
 - Draw the final picture for the A2 compactification.
-  #+downloaded: screenshot @ 2023-07-13 09:29:29
-  [[file:assets/The_Thurston_compactification/2023-07-13_09-29-29_screenshot.png]]
 
 - Raise the question -- what are the irrational points on the boundary?
 *** What is involved in obtaining this picture?
@@ -541,9 +533,6 @@ In fact, \(x\) just remains a shift of \(a\) after twisting, and after dividing 
 - Thanks to the braid group, it suffices to understand how the HN filtration evolves when we apply a braid.
 - The situation is not linear!
 - But the situation is piecewise linear.  Explain the automaton.
-
-#+downloaded: screenshot @ 2023-06-30 10:52:50
-[[file:assets/The_Thurston_compactification/2023-06-30_10-52-50_screenshot.png]]
 \(\gamma = \sigma_2\sigma_1 = \sigma_{X}\sigma_2 = \sigma_1\sigma_{X}\).
 ** Summary of the talks
 - Important to understand the global geometry of Stab.
