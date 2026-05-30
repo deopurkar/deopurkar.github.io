@@ -12,7 +12,8 @@
 
 (defvar project-root-directory (expand-file-name "./content/"))
 
-(shell-command (concat "touch " org-id-locations-file))
+(unless (file-exists-p user-emacs-directory)
+  (mkdir user-emacs-directory))
 
 (org-id-update-id-locations 
  (directory-files-recursively
