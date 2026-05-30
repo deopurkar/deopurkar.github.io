@@ -12,7 +12,7 @@
 
 (defvar project-root-directory (expand-file-name "./content/"))
 
-(require 'org-id)
+(shell-command (concat "touch " org-id-locations-file))
 
 (org-id-update-id-locations 
  (directory-files-recursively
