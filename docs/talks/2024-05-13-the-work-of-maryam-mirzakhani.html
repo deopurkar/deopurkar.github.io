@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-30 Sat 17:05 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The work of Maryam Mirzakhani</title>
+<meta name="author" content="Anand Deopurkar" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="/css/main.css"><script src="/js/collapsibility.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">The work of Maryam Mirzakhani</h1>
+<div class="properties" id="orgc6bebb1">
+
+</div>
+
+<p>
+(Notes for the talk at the Women in Math day on 13 May 2024).
+</p>
+
+<p>
+I am going to describe Mirzakhani&rsquo;s work on the geometry of surfaces.
+</p>
+<div id="outline-container-orgd04e85b" class="outline-2">
+<h2 id="orgd04e85b">Classification of surfaces by genus</h2>
+</div>
+<div id="outline-container-orgea2c2dd" class="outline-2">
+<h2 id="orgea2c2dd">The trichotomy: metric of positive curvature, 0 curvature, negative curvature.</h2>
+</div>
+<div id="outline-container-orge4c0106" class="outline-2">
+<h2 id="orge4c0106">Counting simple geodesics</h2>
+<div class="outline-text-2" id="text-orge4c0106">
+</div>
+<div id="outline-container-org0fdeb48" class="outline-3">
+<h3 id="org0fdeb48">Sphere</h3>
+<div class="outline-text-3" id="text-org0fdeb48">
+<p>
+Only one simple geodesic, up to homotopy.
+</p>
+</div>
+</div>
+<div id="outline-container-orgde5b36a" class="outline-3">
+<h3 id="orgde5b36a">Torus</h3>
+<div class="outline-text-3" id="text-orgde5b36a">
+<p>
+Number of simple geodesics of length at most \(L\) = The number of integral points \((p,q)\) in a circle of radius \(L\) with \(\gcd(p,q) = 1\).
+</p>
+
+<p>
+Grows roughly as \(L^2\).
+</p>
+</div>
+</div>
+<div id="outline-container-org667a77a" class="outline-3">
+<h3 id="org667a77a">Higher genus</h3>
+<div class="outline-text-3" id="text-org667a77a">
+<p>
+<b><b>Theorem (Mirzakhani)</b></b>  Fix a surface \(S\) of genus \(g\) with a metric of constant negative curvature \(-1\) (hyperbolic metric).  Then the number of simple geodesics of length \(L\) on \(S\) is asympototic to \(L^{6g-6}\).  
+</p>
+
+<p>
+<b><b>Remark</b></b> The limit of the ratio (the asympototic constant) depends on the metric.
+</p>
+
+<p>
+<b><b>Remark</b></b> If you remove the adjective simple, that is, allow crossings, then the counting problem had been solved before.  Then the number is asymptotic to \(e^L/L\).  So, a negligible portion of geodesics are closed geodesics.
+</p>
+</div>
+</div>
+<div id="outline-container-org4a78f2b" class="outline-3">
+<h3 id="org4a78f2b">Ideas in the proof</h3>
+<div class="outline-text-3" id="text-org4a78f2b">
+<p>
+Mirzakhani&rsquo;s insight is that the counting problem in higher genus is very similar to the counting problem in genus 1, if you interpret it correctly.
+</p>
+
+<p>
+To do so, observe that integral points \((p,q)\) with \(\gcd(p,q) = 1\) lie in the \(\operatorname{SL}_2(\mathbf{Z})\) orbit of one such point, say \((1,0)\).
+</p>
+
+<p>
+The same is true in higher genus.
+The group \(\operatorname{SL}_2(\mathbf{Z})\) needs to be replaced by the mapping class group \(\operatorname{Mod}(S)\) that, roughly speaking, captures the ways of breaking \(S\) and assembling it back.
+It is known that up to \(\operatorname{Mod}(S)\) action, there are only finitely many geodesics.
+So, we may fix a representative \(\gamma\), and count how many of its \(\operatorname{Mod}(S)\)-translates have length at most \(L\).
+</p>
+
+<p>
+Next, for the torus, we interpreted a geodesics as points of \(\mathbf{R}^2\), and ultimately, used the area in \(\mathbf{R}^2\) to estimate their number.
+Similarly, geodesics in \(S\) can be interpreted as points in a space \(\operatorname{LM}(S)\), called the space of measured laminations on \(S\).
+It is a manifold of dimension \(6g-6\), and has a measure.
+It also has an integral structure, so it makes sense to talk about integral points in \(\operatorname{LM}(S)\)
+The problem of counting geodesics of length atmost \(L\) is then equivalent to counting integral points in \(\operatorname{LM}(S)\) in a ball of radius \(L\) , and since \(\operatorname{LM}(S)\) has dimension \(6g-6\), the count is proportional to \(L^{6g-6}\).
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org96e6cd0" class="outline-2">
+<h2 id="org96e6cd0">Connections</h2>
+<div class="outline-text-2" id="text-org96e6cd0">
+<p>
+The space \(\operatorname{LM}(S)\) is closely connected to other spaces of fundamental importance.
+In particular, it is closely related to \(M_g\), the moduli space of algebraic curves of genus \(g\), a space that is very dear to me.
+Mirzakhani&rsquo;s work shows that geodesic counting is related to the volumes of the moduli spaces \(M_g\).
+Witten had conjectured that these volumes were conjectured to satisfy complicated recurrence relations.
+Mirzakhani&rsquo;s geodesic counting gives a new proof this conjecture.
+</p>
+
+<p>
+Although the volumes of \(M_g\) have a non-algebraic definition, it is equal to a quantities defined in purely algebraic terms using intersection theory in algebraic geometry.
+Mirzakhani&rsquo;s work gives a new perspective on these intersection numbers.
+</p>
+
+<p>
+What is extraordinary in her work is how she bridges an array of different fields: topology, dynamics, algebraic and differential geometry, among others.
+</p>
+</div>
+</div>
+<div id="outline-container-orgbe920dc" class="outline-2">
+<h2 id="orgbe920dc">References</h2>
+<div class="outline-text-2" id="text-orgbe920dc">
+<ul class="org-ul">
+<li>The work of Maryam Mirzakhany by Curtis McMullen
+<a href="https://people.math.harvard.edu/~ctm/papers/home/text/papers/icm14/icm14.pdf">https://people.math.harvard.edu/~ctm/papers/home/text/papers/icm14/icm14.pdf</a></li>
+<li>Growth of the number of simple closed geodesics on hyperbolic surfaces by Maryam Mirzakhani, Annals of Mathematics, 2008.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4ac61a3" class="outline-2">
+<h2 id="org4ac61a3">What links here?</h2>
+<div class="outline-text-2" id="text-org4ac61a3">
+<ul class="org-ul">
+<li><a href="../expository.html#ID-05f9493f-833e-4f64-a2b5-321a11c91a3b">Expository writing and talks</a></li>
+<li><a href="../index.html#ID-d990bcc9-227c-4e82-9e93-512139e14f45">Home</a></li>
+<li><a href="../talks.html#ID-53fe8ada-0bc4-439b-9763-84cbb137727b">The work of Maryam Mirzakhani (talk, Australian National University)</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+Created by <a href="mailto:anand.deopurkar@anu.edu.au">Anand Deopurkar</a> using <a href="https://www.gnu.org/software/emacs/">Emacs</a> 30.2 (<a href="https://orgmode.org">Org</a> mode 9.7.11).  <a href="https://github.com/deopurkar/deopurkar.github.io">Last modified</a>: 2026-05-30 Sat 14:05.
+</div>
+</body>
+</html>

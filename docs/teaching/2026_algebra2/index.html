@@ -1,0 +1,2353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-30 Sat 17:05 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2026 Algebra 2</title>
+<meta name="author" content="Anand Deopurkar" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="/css/main.css"><script src="/js/collapsibility.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">2026 Algebra 2</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org59a77e1">Algebra 2</a></li>
+<li><a href="#orgd0d0bc7">Course information</a></li>
+<li><a href="#orgf42512f">A review of rings</a></li>
+<li><a href="#org700046c">Assignments</a></li>
+<li><a href="#org6cae457">Workshops</a></li>
+<li><a href="#orge5259fb">Discussions/announcements</a></li>
+<li><a href="#org1101d2b">Mini projects</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org59a77e1" class="outline-2">
+<h2 id="org59a77e1">Algebra 2</h2>
+<div class="outline-text-2" id="text-org59a77e1">
+<p>
+<a href="#orgd0d0bc7">The general course information is here.</a>  Below is a week-by-week rundown of the course.  
+</p>
+</div>
+<div id="outline-container-org90f9af0" class="outline-3">
+<h3 id="org90f9af0">Week 9</h3>
+<div class="outline-text-3" id="text-org90f9af0">
+<dl class="org-dl">
+<dt>Homework (due 8 May)</dt><dd>Please submit your solution to one of the following problems.
+
+<ol class="org-ol">
+<li>Exercise 16.3.2 (b) and (c)</li>
+
+<li><p>
+Let \(\alpha_1, \alpha_2, \alpha_3, \alpha_4\) be the four complex roots of the irreducible polynomial
+\(x^4-4x+2 \in \mathbf{Q}[x]\).
+Find the minimal polynomial of \(\alpha_1\alpha_2+\alpha_3\alpha_4\) over \(\mathbf{Q}\).
+</p>
+
+<p>
+For this problem, you may need to rewrite symmetric functions in terms of elementary symmetric functions.  Feel free to use a computer to do this.  In your write-up, you may assert the resulting equality and say that you found it using a computer.
+</p></li>
+
+<li><p>
+Let \(F \subset K\) be a finite extension of fields.  Prove that there exists a finite extension \(K \subset L\) such that \(F \subset L\) is a splitting field (of some polynomial in \(F[x]\)).  (Slogan: every finite extension can be enlarged to a splitting field.)
+</p>
+
+<p>
+For simplicity, you may assume that the characteristic is zero.  But the statement is true in all characteristics.
+</p>
+
+<p>
+Do not assume that \(F\) and \(K\) are subfields of the complex numbers!
+</p></li>
+</ol></dd>
+
+<dt>Workshop</dt><dd><a href="workshops/workshop08.pdf">Workshop 8</a></dd>
+
+<dt>Reading (to be done by 11 May)</dt><dd>16.6, 16.7</dd>
+<dt>Tips</dt><dd><p>
+This section contains the statements of the major theorems of Galois theory.
+Your first goal should be to understand these statements.
+</p>
+
+<p>
+Take an example: \(F = \mathbf{Q}\) and \(K = \mathbf{Q}[2^{1/3}, \zeta_3]\).
+</p>
+<ol class="org-ol">
+<li>Prove that this a Galois extension.  Can you prove it in different ways?</li>
+<li>What does Lemma 16.6.2 say for this extension?</li>
+<li>What does Lemma 16.6.3 say for this extension?</li>
+<li>Are the proerties in Theorem 16.6.4 evident here?  Are some less evident than others?</li>
+<li>Can you explain the action mentioned in Theorem 16.6.6 in this example?</li>
+<li>Can you write down the correspondence asserted in Theorem 16.7.1 in this example?</li>
+<li>Do you see Theorem 16.7.5 in this example?</li>
+</ol>
+
+<p>
+The proofs in this section are by combining proposition/lemmas that have already appeared.
+There is nothing that is significantly new.
+Try to work out the proofs yourselves as much as possible.
+</p></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org2a19dfa" class="outline-3">
+<h3 id="org2a19dfa">Week 10</h3>
+<div class="outline-text-3" id="text-org2a19dfa">
+<dl class="org-dl">
+<dt>Homework (due 15 May)</dt><dd><p>
+Please submit your solution to one of the following problems.  In each problem, you may assume the results of the previous ones.
+</p>
+
+<p>
+Let \(p\) be a prime number and let \(\zeta = e^{2\pi i /p}\).
+</p>
+
+<ol class="org-ol">
+<li>Let \(F = \mathbf{Q}[\zeta]\).
+Let \(K\) be the splitting field of \(x^p-2\) over \(F\).
+Describe all elements of \(\operatorname{Aut}(K/F)\).
+Describe a group isomorphism  \(\mathbf{Z}/p \mathbf{Z} \to \operatorname{Aut}(K/F)\).</li>
+
+<li>Let \(K\) be the splitting field of \(x^p-2\) over \(\mathbf{Q}\).
+Let \(G\) be the group of invertible upper triangular matrices of the form
+\[ \begin{pmatrix} 1 & b \\ & c\end{pmatrix},\]
+where \(b,c \in \mathbf{Z}/p \mathbf{Z}\) and \(c \neq 0\).
+Construct an isomorphism \(G \to \operatorname{Aut}_{\mathbf{Q}}(K)\).
+What is the pre-image of \(\operatorname{Aut}_F(K)\) under this isomorphism?</li>
+
+<li>For each \(j \in \mathbf{Z}/ p \mathbf{Z}\), we have the intermediate subfield \(\mathbf{Q} \subset \mathbf{Q}(2^{1/p} \zeta^j) \subset K\).
+Describe the corresponding subgroup of \(G\) in terms of matrices.</li>
+
+<li>(Challenge)
+Prove the following two (equivalent) statements.
+<ol class="org-ol">
+<li>\(G\) has exactly \(p\) subgroups of index \(p\).</li>
+<li>\(K\) has exactly \(p\) subfields of degree \(p\) over \(\mathbf{Q}\).</li>
+</ol></li>
+</ol></dd>
+<dt>Workshop</dt><dd><a href="workshops/workshop09.pdf">Workshop 9</a></dd>
+<dt>Reading (to be done by 18 May)</dt><dd>16.8, 16.9, 16.10</dd>
+<dt>Tips for reading</dt><dd>There are no major results here.
+Everything is a further illustration of the main theorem of Galois theory.
+But it is no less important&#x2014;it helps us understand and appreciate the main theorem.
+
+<ul class="org-ul">
+<li>[Theorem 16.8.5] Try to prove the theorem yourself.</li>
+<li>[Examples 16.9.2] I find these more confusing than illuminating.
+Feel free to skip them.</li>
+<li>[Proposition 16.9.5/6] If you understood the cubic, then there is nothing new here.</li>
+<li>[Proposition 16.9.8] Again, the proof of this is not much harder than that of Proposition 16.9.5/6.
+But this proposition is usable only we can write down the resolvent cubic.
+This is possible, in principle, because the coefficients of the resolvent cubic are symmetric expressions in the roots of the original quartic.
+You can try to find it yourself or ask the internet.</li>
+<li>[Proposition 16.10.2] We have seen examples of this in class already, so hopefully there is nothing surprising here.
+It is worth going through a moderately complicated example.
+Try reading the \(p = 17\) example in Artin or work out a smaller example by yourself.</li>
+<li>[Theorem 16.10.12] Proving this in general is optional.  Do it if you find it enjoyable.  Otherwise, feel free to give it a pass.</li>
+</ul></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org862b657" class="outline-3">
+<h3 id="org862b657">Previous weeks</h3>
+<div class="outline-text-3" id="text-org862b657">
+</div>
+<div id="outline-container-org91c2a94" class="outline-4">
+<h4 id="org91c2a94">Week 8</h4>
+<div class="outline-text-4" id="text-org91c2a94">
+<dl class="org-dl">
+<dt>Workshop</dt><dd><a href="workshops/workshop07.pdf">Workshop 7</a> (<a href="workshops/Workshop_7_solutions.pdf">solutions thanks to Seetha</a>)</dd>
+
+<dt>Homework (due 1 May)</dt><dd>Please submit your solution to one of the following problems.
+In your solution to a problem, you may use the result of the previous problems.
+
+<ol class="org-ol">
+<li>Let \(p\) be a prime number.
+Find the degree of the field extension \(\mathbf{Q} \subset \mathbf{Q}[\zeta_p, 2^{1/p}]\).</li>
+
+<li>Prove that we have an isomorphism
+\[ \mathbf{Q}[x,y]/(x^{p-1} + \dots + 1, y^p-2) \to \mathbf{Q}[\zeta_p, 2^{1/p}] \]
+that sends \(x\) to \(\zeta_p\) and \(y\) to \(2^{1/p}\).</li>
+
+<li>Let \(K = \mathbf{Q}[\zeta_p, 2^{1/p}]\).
+Using the presentation of \(K\) above, describe all elements of \(\operatorname{Aut}_{\mathbf{Q}}(K)\).</li>
+
+<li>(Do not submit this one) What kind of group is \(G = \operatorname{Aut}_{\mathbf{Q}}(K)\)?  Try various compositions and convince yourselves that it is not abelian.  What is the subgroup of automorphisms that fix \(2^{1/p}\)?  What is the subgroup of automorphisms that fix \(\zeta_p\)?</li>
+</ol></dd>
+
+<dt>Reading (to be done by 4 May)</dt><dd>16.4, 16.5</dd>
+
+<dt>Questions to think about</dt><dd><ol class="org-ol">
+<li>Give examples and non-examples of Galois extensions of \(\mathbf{Q}\).</li>
+<li>[Lemma 16.4.2] Try proving this by yourself.  We have seen all the ingredients.</li>
+<li>[Theorem 16.4.2] Remember that all fields in this section onwards are of characteristic 0.
+Where in the proof of Theorem 16.5.2 did we use the characteristic 0 assumption?</li>
+<li>Let \(K = \mathbf{C}(t)\) and let \(H = \mathbf{Z}/2 \mathbf{Z}\) act on \(K\) so that the generator sends \(t\) to \(-t\).  What is \(K^{H}\)?  What is the minimal polynomial of \(t\) over \(K^{H}\)?</li>
+<li>[Example 16.5.5] What if you drop \(\tau\) and only consider the action by \(\sigma\).
+Then we have an action of \(H = \mathbf{Z}/4 \mathbf{Z}\) (very similar to the previous problem).
+What is the fixed field?</li>
+</ol></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orge91033d" class="outline-4">
+<h4 id="orge91033d">Week 7</h4>
+<div class="outline-text-4" id="text-orge91033d">
+<dl class="org-dl">
+<dt>Reading (to be done by 29 April)</dt><dd>16.1, 16.2, 16.3</dd>
+<dt>Questions to think about</dt><dd><ol class="org-ol">
+<li>[Definition of symmetric polynomials]
+<ul class="org-ul">
+<li>Construct some symmetric polynomials in \(\mathbf{Z}[x,y]\) and some non-symmetric ones.</li>
+<li>In \(\mathbf{Z}[x,y,z]\), construct a polynomial
+<ul class="org-ul">
+<li>whose orbit has size 2 under \(S_3\)</li>
+<li>whose orbit has size 3 under \(S_3\)</li>
+</ul></li>
+</ul></li>
+<li>[Symmetric functions theorem] Write \(x^3+y^3\) as a polynomial in \(x+y\) and \(xy\).</li>
+<li>[Symmetric functions theorem]
+This is how we will use this theorem most often.
+Let \(\alpha, \beta\) be two roots of \(x^2 + x + 3\).
+Find the value of \(\alpha^3 + \beta^3\) (without using a computer; use the previous exercise).</li>
+<li>[The discriminant]
+Search online for an expression of the discriminant of higher degree polynomials in terms of their coefficients.</li>
+<li>[Splitting theorem]
+Is \(\mathbf{Q} \subset \mathbf{Q}[2^{1/3}]\) a splitting field (of some polynomial)?  Why/why not?
+If not, construct a splitting field that contains \(\mathbf{Q}[2^{1/3}]\).</li>
+</ol></dd>
+<dt>Workshop</dt><dd><a href="workshops/workshop06.pdf">Workshop 6</a> (<a href="workshops/workshop06_solutions.pdf">solutions thanks to Seetha</a>)</dd>
+<dt>Homework (due 24 April)</dt><dd>Please submit your solution to one of the following problems.
+
+<ol class="org-ol">
+<li>Exercise 15.10.1.  Recall that an algebraic number in \(\mathbf{C}\) is one that is algebraic over \(\mathbf{Q}\).</li>
+
+<li><p>
+Exercise 15.M.3.  For simplicity, feel free to assume that \(F \subset K \subset \mathbf{C}\).
+</p>
+
+<p>
+Let us make this question a bit more precise.
+What are the possible degrees of the irreducible factors of \(f\) in \(K[x]\)?
+That is, for each \(d \in \{1,\cdots, 6\}\), determine whether \(d\) is possible as a degree of an irreducible factor of \(f \in K[x]\).
+If you say that a degree \(d\) is possible, please give an example of an \(F\), a \(K\), and an \(f\) such that \(f \in K[x]\) has an irreducible factor of degree \(d\).
+If you say that a degree \(d\) is not possible, please explain why.
+</p>
+
+<p>
+We can ask for a refinement of this question (but you do not have to do this).
+The factorisation of \(f \in K[x]\) gives a partition of 6.
+For example, if \(f\) factors into two linear factors and two quadratic factors, we have the partition \(6 = 1 + 1 + 2 + 2\).
+What are the possible partitions of 6?
+</p></li>
+</ol></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org875a81f" class="outline-4">
+<h4 id="org875a81f">Week 6</h4>
+<div class="outline-text-4" id="text-org875a81f">
+<dl class="org-dl">
+<dt>Workshop</dt><dd><a href="workshops/workshop05.pdf">Workshop 5</a> (<a href="workshops/workshop05_solutions.pdf">solutions thanks to Seetha</a>)</dd>
+<dt>Homework (due 7 Apr)</dt><dd></dd>
+</dl>
+<p>
+Please submit your solution to one of the following problems.
+</p>
+
+<ol class="org-ol">
+<li>Let \(m,n\) be integers. 
+Choose complex square roots \(\sqrt m\) and \(\sqrt n\) of \(m\) and \(n\), respectively.
+Consider the unique ring homomorphism \(\phi \colon \mathbf{Q}[x,y]/(x^2-m, y^2-n) \to \mathbf{Q}[\sqrt m, \sqrt n]\) that sends \(x\) to \(\sqrt m\) and \(y\) to \(\sqrt n\).
+For which \(m\) and \(n\) is \(\phi\) an isomorphism?</li>
+
+<li>Determine the number of irreducible polynomials of degree \(6\) over \(\mathbf{F}_p\).
+(As a warm-up, you may want to do degrees \(2\), \(3\), \(5\), and \(4\)).</li>
+
+<li>Exercise 15.7.8.</li>
+</ol>
+
+<p>
+<a href="#org74d5efa">The solution sketches are here.</a>   
+</p>
+</div>
+</div>
+<div id="outline-container-org48bdc56" class="outline-4">
+<h4 id="org48bdc56">Week 5</h4>
+<div class="outline-text-4" id="text-org48bdc56">
+<dl class="org-dl">
+<dt>Workshop</dt><dd><a href="workshops/workshop04.pdf">Workshop 4</a> (<a href="workshops/workshop04_solutions.pdf">solutions thanks to Seetha</a>)</dd>
+<dt>Homework (due 27 Mar)</dt><dd><p>
+Please submit your solution to one of the following problems.
+</p>
+<ol class="org-ol">
+<li>Exercise 15.3.5</li>
+<li>For a complex number \(z\), we use \(\sqrt {z}\) to denote one of the two square roots of \(z\) (will not matter which one). 
+Given \(m, n \in \mathbf{Q}\), when is there an isomorphism of fields \(\mathbf{Q}[\sqrt m] \to \mathbf{Q}[\sqrt n]\)?
+If there is one isomorphism, are the any others?  How many?</li>
+<li>Exercise 15.3.2.</li>
+</ol>
+
+<p>
+<a href="#orgeea3efc">The solution sketches are here.</a>     
+</p></dd>
+<dt>Reading (to be done by 30 Mar)</dt><dd>15.8, 15.10</dd>
+<dt>Questions to think about</dt><dd><ol class="org-ol">
+<li>[Proof of 15.8.1]
+Recall why the roots of an irreducible polynomial are distinct in characteristic 0?
+Can you construct an example where this fails in positive characteristic?</li>
+<li>[Proof of 15.8.1]
+For which values of \(c\) is \(\sqrt 2 + c \sqrt 3\) a primitive element of \(\mathbf{Q}[\sqrt 2, \sqrt 3]\)?</li>
+<li><p>
+[Theorem 15.10.1]
+What does the fundamental theorem of algebra say about the maximal ideals of \(\mathbf{C}[x]\)?
+</p>
+
+<p>
+There is a generalisation of the fundamental theorem of algebra to multivariate polynomial rings, called Hilbert&rsquo;s Nullstellensatz.
+It says that every maximal ideal of \(\mathbf{C}[x_1,\dots, x_n]\) is of the form \((x_1-a_1, \cdots, x_n-a_n)\) for some \(a_1, \dots, a_n \in \mathbf{C}\).
+</p></li>
+</ol></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org969c4b0" class="outline-4">
+<h4 id="org969c4b0">Week 4</h4>
+<div class="outline-text-4" id="text-org969c4b0">
+<dl class="org-dl">
+<dt>Homework (due 20 Mar)</dt><dd><p>
+Please submit your solution to one of the following problems.
+</p>
+<ol class="org-ol">
+<li>(Adapted from  Exercise 12.5.9)
+Let \(\omega = e^{2\pi i /3} \in \mathbf{C}\) and \(R = \mathbf{Z}[\omega] \subset \mathbf{C}\).
+Let \(p \in \mathbf{Z}\) be a prime number.
+Prove that the following are equivalent:
+<ol class="org-ol">
+<li>\(p\) is a prime element of \(R\),</li>
+<li>\((p)\) is a maximal ideal of \(R\),</li>
+<li>the polynomial \(x^2+x+1\) has no zeros in \(\mathbf{Z}/p \mathbf{Z}\).</li>
+</ol></li>
+
+<li>Exercise 15.2.1</li>
+
+<li>Exercise 15.2.3</li>
+</ol>
+
+<p>
+<a href="#org1c571b0">The solution sketches are here.</a>
+</p></dd>
+
+<dt>Workshop</dt><dd><a href="workshops/workshop03.pdf">Workshop 3</a> (<a href="workshops/workshop03_solutions.pdf">solutions</a> thanks to Seetha)</dd>
+
+<dt>Reading (to be done by 23 Mar)</dt><dd>15.6, 15.7</dd>
+
+<dt>Questions to think about</dt><dd><ol class="org-ol">
+<li>[Lemma 15.6.2] What happens if \(f\) is reducible?</li>
+<li>[Proposition 15.6.4]
+Is the following stronger analogue of (e) true: if \(f(x)\) and \(g(x)\) have a common root in \(K\), then they have a common root in \(F\)?</li>
+<li>[Theorem 15.7.3]
+Make a diagram of fields of order \(3^n\) for \(n = 1, ..., 12\).
+In the diagram, draw a dot for every field and an arrow for every inclusion.</li>
+<li>[Theorem 15.7.3]
+Construct a field of order \(\mathbf{F}_{125}\).</li>
+<li>[Equation 15.7.8 and Lemma 15.7.11]
+Can you write the 16 elements of \(\mathbf{F}_{16}\) explicitly as in Equation 15.7.8 and describe how addition and multiplication works?
+In your list, what are the elements that satisfy \(x^4 = x\)?
+Do you see that they form a subfield of order 4?</li>
+</ol></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org127ace7" class="outline-4">
+<h4 id="org127ace7">Week 3</h4>
+<div class="outline-text-4" id="text-org127ace7">
+<dl class="org-dl">
+<dt>Workshop</dt><dd><a href="workshops/workshop02.pdf">Workshop 2</a></dd>
+<dt>Homework (due 13 Mar)</dt><dd><p>
+Please submit your solution to one of the following problems.
+</p>
+<ol class="org-ol">
+<li>Exercise 12.3.1</li>
+<li>Try to prove or disprove the general statement: The kernel of any homomorphism \(\mathbf{Z}[x] \to \mathbf{C}\) is a principal ideal.</li>
+<li>Exercise 12.4.9</li>
+<li>Exercise 12.4.15</li>
+</ol>
+
+<p>
+<a href="#orgb7c5c44">The solution sketches are here.</a>     
+</p></dd>
+<dt>Reading (to be done by 17 Mar)</dt><dd>15.3, 15.4, 15.5</dd>
+<dt>Questions to think about</dt><dd><ol class="org-ol">
+<li>[Definition of degree]
+Write a basis of \(\mathbf{Q}[2^{1/3}]\) as a \(\mathbf{Q}\)-vector space.</li>
+<li>[Proposition 15.3.3]
+Where does the proof fail in characteristic 2?</li>
+<li>[Corollary 15.3.8]
+Consider \(K = \mathbf{Q}[\sqrt 2, \sqrt 3]\).
+What can you say about its degree over \(\mathbf{Q}\)?
+What will you need to prove to prove that its degree over \(\mathbf{Q}\) is 4?</li>
+<li>[Examples 15.4.1, 15.4.4]
+Convince yourselves that \(\mathbf{Q}[\sqrt 2 + \sqrt 3] = \mathbf{Q}[\sqrt 2, \sqrt 3]\).</li>
+<li>[Lemma 15.4.2]
+Are the \(d_1d_2\) monomials \(\alpha^i\beta^j\) always linearly independent?
+Construct an example where they are not.</li>
+<li>[Lemma 15.5.8]
+&ldquo;This polynomial is irreducible over \(\mathbf{Q}\) because it has no integer root.&rdquo;
+Unpack this.</li>
+</ol></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orga73a108" class="outline-4">
+<h4 id="orga73a108">Week 2</h4>
+<div class="outline-text-4" id="text-orga73a108">
+<dl class="org-dl">
+<dt>Workshop</dt><dd></dd>
+<dt>Homework (due 6 Mar)</dt><dd><p>
+Please submit your solution to one of the following problems.
+</p>
+<ol class="org-ol">
+<li>Exercise 12.2.4</li>
+<li>Exercise 12.2.6 (clearly state the size function)</li>
+<li>Division with remainder allows us to generalise Euclid&rsquo;s algorithm to find the gcd.
+Use it to find the gcd of \(3+i\) and \(5\) in \(\mathbf{Z}[i]\).</li>
+</ol>
+
+<p>
+<a href="#orgd643a76">The solution sketches are here.</a>   
+</p></dd>
+
+<dt>Reading (to be done by 10 Mar)</dt><dd>12.5, 15.1, 15.2</dd>
+
+<dt>Questions to think about</dt><dd><ol class="org-ol">
+<li>[Theorem 12.5.2]
+Write down Gauss primes of absolute value up to 5.</li>
+
+<li>[Diagram 12.5.4]
+Spend time really understanding this diagram.
+Convince yourself that this is just the last isomorphism stated in the Correspondence Theorem (Theorem 11.4.3), sometimes called the &ldquo;third isomorphism theorem&rdquo; for quotients.</li>
+
+<li>[Diagram 12.5.4]
+What can you say about the ring \(\overline R\) for \(p = 3\)? For \(p = 5\)?</li>
+
+<li>[Section 15.1]
+Convince yourself that \(\mathbf{Z}[i]/3\) is a finite field.
+How many elements does it have?
+What is the multiplicative inverse of 2? Of \(1+i\)?</li>
+
+<li>[Proposition 15.2.3]
+What is the minimal polynomial of \(\sqrt 2\) over \(\mathbf{Q}\)?</li>
+
+<li>[Proposition 15.2.3]
+Let \(\alpha = e^{i\pi/4}\).
+What is the minimal polynomial of \(\alpha\) over \(\mathbf{Q}\)? Over \(\mathbf{Q}[i]\)?</li>
+
+<li><p>
+[Proposition 15.2.6]
+</p>
+<ol class="org-ol">
+<li>What is &ldquo;the canonical map \(F[x]/(f) \to F[\alpha]\)&rdquo;?</li>
+<li>Is \(\mathbf{Q}[\pi] = \mathbf{Q}(\pi)\)?</li>
+<li>How does the analogue of Proposition 15.2.6 work with more variables?</li>
+</ol>
+<p>
+For example, what is the kernel of the map
+\[ \mathbf{Q}[x,y,z] \to \mathbf{Q}[\sqrt 2, \sqrt 3, \sqrt 6]\]
+that sends \(x\) to \(\sqrt 2\) and \(y\) to \(\sqrt 3\) and \(z\) to \(\sqrt 6\)?
+</p></li>
+
+<li>[Propositions 15.2.8]
+<ol class="org-ol">
+<li>Is there an isomorphism from \(\mathbf{Q}[\sqrt 2]\) to \(\mathbf{Q}[1 + \sqrt 2]\)?</li>
+<li>Write down two extensions of \(\mathbf{Q}\) of degree 2 that are not isomorphic.
+How do you know they are not isomorphic?</li>
+</ol></li>
+</ol></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org317bf1b" class="outline-4">
+<h4 id="org317bf1b">Week 1</h4>
+<div class="outline-text-4" id="text-org317bf1b">
+<dl class="org-dl">
+<dt>Reading (to be done by 2 Mar)</dt><dd>12.2 continued, 12.3, 12.4 (skip the subsection &ldquo;Estimating the coefficients&rdquo;)</dd>
+<dt>Questions to think about</dt><dd><ol class="org-ol">
+<li>[Proposition 12.2.9] Using this proposition, find the maximal ideals of \(\mathbf{Z}\)? \(\mathbf{Q}[x]\).</li>
+
+<li>[Lemma 12.2.10] Last time, you found another \(\mathbf{Z}[\sqrt{-d}]\) for which unique factorisation fails. In this ring, find an irreducible element that is not prime.</li>
+
+<li>[Proposition 12.2.13] Given an example of an integral domain that contains an infinite strictly increasing chain of principal ideals.</li>
+
+<li>[Theorem 12.2.17] Find the gcd of \(x\) and \(y\) in \(\mathbf{Q}[x,y]\).
+Can it be written as a linear combination of \(x\) and \(y\)?</li>
+
+<li>[Theorem 12.2.17] Given \(f, g\), how do we actually find \(d\), \(r\), and \(s\)?
+Where does this process go wrong in \(\mathbf{Z}[x]\)?</li>
+
+<li>[Just before Proposition 12.2.19]  Why does \(\mathbf{R}[x]\) not have irreducible polynomials of degree \(> 2\)?</li>
+
+<li>[Eq 12.3.1]
+<ol class="org-ol">
+<li>Convince yourself that \(\psi_p\) is a ring homomorphism (what do you need to check)?</li>
+<li>Review the definition of the kernel.</li>
+<li>True or false: we have an isomorphism \(\mathbf{Z}[x]/(p) \to \mathbf{F}_p[x]\)?</li>
+</ol></li>
+
+<li>[Theorem 12.3.6] Find a counter-example to (a) if \(f_0\) is not primitive.
+What can you say about the converse (b)?</li>
+
+<li>[Theorem 12.3.8] Let \(f(x) \in \mathbf{Z}[x]\).
+How does the prime factorisation of \(f(x)\) in \(\mathbf{Z}[x]\) compare with the prime factorisation of \(f(x)\) in \(\mathbf{Q}[x]\)?</li>
+
+<li>[Theorem 12.3.10] How does 12.3.10 follow from what we have done?</li>
+
+<li>[Eq 12.4.4]
+Find the irreducible polynomials of small degrees in \(\mathbf{F}_3[x]\) (until you get bored).
+Use them to write a few irreducible polynomials of small degree in \(\mathbf{Z}[x]\).
+Are these polynomials also irreducible in \(\mathbf{Q}[x]\)?</li>
+
+<li>[Theorem 12.4.9] Is \(x^{n-1}+ \cdots + 1\) irreducible also for composite \(n\)?
+Do some experiments on a computer.</li>
+</ol></dd>
+</dl>
+</div>
+<ul class="org-ul">
+<li><a id="orgb2f0248"></a>Week 0<br />
+<div class="outline-text-5" id="text-orgb2f0248">
+<dl class="org-dl">
+<dt>Reading (to be done by 25 Feb)</dt><dd><a href="#orgf42512f">A review of rings</a>, <i>Artin</i> 12.1 and 12.2, up to 12.2.8</dd>
+<dt>Questions to think about</dt><dd><ol class="org-ol">
+<li>[Section 12.1] Although Artin says that the proofs will be reviewed later &ldquo;in a more general setting,&rdquo; can you supply them in this setting?</li>
+
+<li>[Section 12.2] Prove the equivalence of the statements in Eq 12.2.1 and Eq 12.2.2.</li>
+
+<li>[Eq 12.2.3] How do you see that \(2, 3, 1 + \sqrt{-5}, 1-\sqrt{-5}\) cannot be factored further in \(\mathbf{Z}[\sqrt{-5}]\)?</li>
+
+<li>[Eq 12.2.3] Find one more example of a ring of the form \(\mathbf{Z}[\sqrt{-d}]\) where unique factorisation fails.</li>
+
+<li>[Proposition 12.2.5] Explain why there could be &ldquo;as many as 4 choices&rdquo; for division with remainder in \(\mathbf{Z}[i]\).</li>
+
+<li>[Proposition 12.2.8]  Does this proposition say that there always exists a \(d\) such that \(\langle d \rangle = \langle a, b\rangle\)? 
+Find an example of \(a\) and \(b\) in \(\mathbf{Z}[\sqrt{-5}]\) for which there is no such \(d\).  How do you know that there is no such \(d\)?</li>
+
+<li>[Proposition 12.2.8] Let \(R\) be an integral domain and \(a, b \in R\).
+True or false?
+<ol class="org-ol">
+<li>If the ideal \((a,b)\) is principal and generated by \(d\), then \(d\) is the gcd of \(a\) and \(b\).</li>
+<li>If \(d\) is the gcd of \(a\) and \(b\), then the ideal \((a,b)\) is principal and generated by \(d\).</li>
+</ol></li>
+</ol></dd>
+</dl>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgebe7128" class="outline-3">
+<h3 id="orgebe7128">Midsemester exam</h3>
+<div class="outline-text-3" id="text-orgebe7128">
+<p>
+The midterm exam will be in class in week 7 on Wednesday.  It will cover everything we have done in weeks 1&#x2013;6.  To prepare, make sure you can do all the homework questions, the workshop questions, and the questions that accompany the reading.  In addition, <a href="midterm_practice.pdf">here are some more practice questions</a>.  Here is <a href="2023-midterm.pdf">the midterm exam from a couple of years ago.</a>  A good way to use it is as a mock exam&#x2014;take it without referring to any notes or the book in 2 hours and see how you do.
+</p>
+</div>
+</div>
+<div id="outline-container-orge349def" class="outline-3">
+<h3 id="orge349def">References and resources</h3>
+<div class="outline-text-3" id="text-orge349def">
+</div>
+<div id="outline-container-orgcba8d9b" class="outline-4">
+<h4 id="orgcba8d9b">On writing mathematics</h4>
+<div class="outline-text-4" id="text-orgcba8d9b">
+<ol class="org-ol">
+<li><a href="Conrad.pdf">Keith Conrad</a></li>
+<li><a href="Houston.pdf">Kevin Houston</a></li>
+<li><a href="Kleiman.pdf">Steve Kleiman</a></li>
+<li><a href="Poonen.pdf">Bjorn Poonen</a></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd0d0bc7" class="outline-2">
+<h2 id="orgd0d0bc7">Course information</h2>
+<div class="outline-text-2" id="text-orgd0d0bc7">
+<dl class="org-dl">
+<dt>Contacts</dt><dd><dl class="org-dl">
+<dt>Lecturer and convener</dt><dd>Anand Deopurkar &lt;anand.deopurkar@anu.edu.au&gt;<br />
+Office hours: Wednesday 2pm to 3:30pm in Hanna Neumann 4.56</dd>
+
+<dt>Demonstrator</dt><dd>Seethalakshmi Kayanattath &lt;seethalakshmi.kayanattath@anu.edu.au&gt;<br />
+Office hours: Tuesdays 3pm to 3:3pm in Marie Ray 3.02 and Wednesdays 1pm to 1:30pm in Hanna Neumann 1.57</dd>
+
+<dt>Class representatives</dt><dd>Xinheng Gong &lt;u8298388@anu.edu.au&gt;</dd>
+</dl></dd>
+
+<dt>Textbook</dt><dd><i>Algebra</i> (2nd edition) by Michael Artin (Chapters 12, 15, 16).</dd>
+
+<dt>Assessment</dt><dd><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Final exam</td>
+<td class="org-right">40</td>
+</tr>
+
+<tr>
+<td class="org-left">Midterm exam</td>
+<td class="org-right">30</td>
+</tr>
+
+<tr>
+<td class="org-left">In-class quizzes</td>
+<td class="org-right">20</td>
+</tr>
+
+<tr>
+<td class="org-left">Reflective check-ins</td>
+<td class="org-right">5</td>
+</tr>
+
+<tr>
+<td class="org-left">Homework</td>
+<td class="org-right">5</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The MATH6215 students will, in addition, do a mini-project and give a short oral presentation.  It will count for 5% of the marks; the quizzes will count 5% less.
+</p></dd>
+
+<dt>Weekly workload</dt><dd><dl class="org-dl">
+<dt>Reading</dt><dd>I will assign roughly 10 pages to read from Artin.  I expect you to read actively&#x2013;by constantly asking questions, working out examples, and trying to foresee.  I will give some questions to think about while you read; doing so will help you read more actively.</dd>
+<dt>Reflective check-in</dt><dd>By noon on Monday, you will do a reflective check-in on canvas.  It will consist of one question: What part of the reading you found most difficult?  As long as you submit a response, you will get credit (no right or wrong answers).</dd>
+<dt>Lectorials and workshops</dt><dd>The lectorials on Monday and Wednesday and the workshop on Tuesday will be about the assigned reading from the week before.  We will focus on the parts that you found the most difficult.</dd>
+<dt>Homework</dt><dd><p>
+There is no other way of learning mathematics than by doing it.  The weekly homework is your chance to do the maths.  It is <i>essential</i> that you do the homework.  By Friday, you will write-up and submit <i>one homework problem</i> of your choice.  As long as your submission reflects a reasonable effort, you will get full credit (<i>even if your submission has mistakes</i>).  We will grade it and return it to you with feedback.
+</p>
+
+<p>
+In the past, a good way to emphasise the importance of homework was to ask for you to submit your solutions, and have the submissions count for a significant percentage of the final marks.  With easy availability of solutions on the internet and the rise of synthetic text generators, it has become easy to produce solutions without solving the problems.  So marking submissions has lost its main purpose.
+</p>
+
+<p>
+Homework also serves as a vehicle for feedback.  This is still the case.
+I encourage you to write up and submit the problem you are most unsure about&#x2014;the problem on which feedback will be the most useful.  As long as you submit a solution in good faith, you receive full credit; it does not have to be perfect.
+</p>
+
+<p>
+Despite having no explicit benefit in terms of marks, solving the homework problems will be directly beneficial for the quizzes (in the immediate future); for the exams (in the intermediate future); and for your learning (in the long run).
+</p></dd>
+
+<dt>Quizzes</dt><dd>The quizzes will be in-class on Monday (at the beginning of the class) starting in week 3.  Out of 10 quizzes, I will only count the top 5.  In exceptional cases (if you have an unavoidable conflict on Monday), I will excuse you from the quizzes and re-distribute the 20% marks to the exams.</dd>
+</dl></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgf42512f" class="outline-2">
+<h2 id="orgf42512f">A review of rings</h2>
+<div class="outline-text-2" id="text-orgf42512f">
+</div>
+<div id="outline-container-org5ee3c49" class="outline-3">
+<h3 id="org5ee3c49">The ring of integers</h3>
+<div class="outline-text-3" id="text-org5ee3c49">
+<p>
+Let \(R\) be a ring (always assumed to be associative, commutative, and with a multiplicative identity).
+</p>
+
+<p>
+Remember that ring homomorphisms are required to send the additive identity to the additive identity and the multiplicative identity to the multiplicative identity.
+As a result, there is a unique ring homomorphism \(\mathbf{Z} \to R\); call it \(i\).
+Using this unique homomorphism, we can interpret every integer as an element of \(R\).
+For example, by \(2 \in R\), we mean the image of \(2\) under the homomorphism \(i\).
+Caution: it may happen that two distinct integers represent the same element in \(R\).
+</p>
+</div>
+<div id="outline-container-orge880bbb" class="outline-4">
+<h4 id="orge880bbb">Questions</h4>
+<div class="outline-text-4" id="text-orge880bbb">
+<ol class="org-ol">
+<li>Find rings \(R\) such that the homomorphism \(\mathbf{Z} \to R\) is
+<ul class="org-ul">
+<li>surjective</li>
+<li>injective</li>
+<li>injective but not surjective</li>
+<li>surjective but not injective</li>
+<li>neither surjective nor injective</li>
+</ul></li>
+
+<li>In cases where the homomorphism is not injective, what is the kernel?</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd9b4db7" class="outline-3">
+<h3 id="orgd9b4db7">Ideals and quotient rings</h3>
+<div class="outline-text-3" id="text-orgd9b4db7">
+<p>
+An ideal \(I \subset R\) is a subset that is closed under addition and multiplication by elements of \(R\).
+That is, if \(a, b \in I\) then \(a+b \in I\) and if \(a \in I\) then \(ra \in I\) for all \(r \in R\).
+Given a ring homomorphism \(\phi \colon R \to S\), the kernel of \(\phi\) is an ideal.
+</p>
+
+<p>
+Given elements \(a_1, \dots, a_n \in R\), the notation \(\langle a_1, \dots, a_n \rangle\) represents the smallest ideal of \(R\) that contains \(a_1, \dots, a_n\).  This is the set of elements of \(R\) that can be expressed as
+\[ r_1a_1 + \cdots + r_na_n\]
+for some \(r_1, \dots, r_n \in R\).
+The simplest case of this construction is \(n = 1\).
+In this case, the ideal \(\langle a \rangle\) is called a <i>principal ideal</i>.
+</p>
+
+<p>
+Given an ideal \(I \subset R\), we can form a new ring \(R/I\) together with a ring homomorphism \(R \to R/I\).
+To do so, we consider the equivalence relation on \(R\) given by \(a \sim b\) if \(a-b \in I\).
+The elements of \(R/I\) are the equivalence classes under this relation; we call them equivalence classes &ldquo;modulo \(I\)&rdquo;.
+The homomorphism \(R \to R/I\) sends an element to its equivalence class.
+</p>
+</div>
+<div id="outline-container-org8d7791d" class="outline-4">
+<h4 id="org8d7791d">Questions</h4>
+<div class="outline-text-4" id="text-org8d7791d">
+<ol class="org-ol">
+<li>Let \(R\) be the ring of continuous \(\mathbf{R}\)-valued functions on \(\mathbf{R}\).
+Give examples of a few ideals of \(R\).</li>
+
+<li>Recall the definition of a <i>prime ideal</i> and a <i>maximal ideal</i>.
+Which of your examples are prime ideals? 
+Which are maximal?</li>
+
+<li>Let \(I \subset R\) be the subset of functions \(f\) such that \(f(0) = 0\).
+Is \(I\) an ideal?  Is it a prime ideal?  Is it a maximal ideal?  Is it a principal ideal?</li>
+
+<li>What are the units in \(R\)?</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org955f1a8" class="outline-3">
+<h3 id="org955f1a8">Polynomial rings</h3>
+<div class="outline-text-3" id="text-org955f1a8">
+<p>
+Let \(R\) be a ring and \(x\) a symbol.
+The <i>polynomial ring \(R[x]\)</i> is the set of symbolic expressions
+\[ r_0 + r_1 x + \cdots + r_n x^n,\]
+where \(r_i \in R\) and \(r_n \neq 0\).
+The \(r_i\) are called the <i>coefficients</i> of the expression and the \(n\) is called the <i>degree</i>.
+We add the symbolic expressions coefficient-wise and multiply them by the usual rule.
+We have an injective ring homomorphism \(R \to R[x]\) given by \(r \mapsto r\), considered as a polynomial of degree 0.
+Via this homomorphism, we often think of \(R\) as a subring of \(R[x]\).
+</p>
+
+<p>
+<b>Key property of the polynomial ring</b>: Let \(\phi \colon R \to S\) be a ring homomorphism, and let \(s \in S\) be any element.  Then the rule
+\[ r_0 + \cdots + r_n x^n \mapsto \phi(r_0) + \cdots + \phi(r_n) s^n\]
+defines a homomorphism \(R[x] \to S\).
+This homomorphism sends \(x\) to \(s\), and is the only homomorphism that agrees with \(\phi\) on \(R \subset R[x]\) and sends \(x\) to \(s\).
+</p>
+
+<p>
+The construction above with one symbol \(x\) can also be done with more than one symbols, leading to multivariable polynomial rings like \(R[x,y]\), \(R[x,y,z]\), and so on.
+</p>
+</div>
+<div id="outline-container-org64c30bd" class="outline-4">
+<h4 id="org64c30bd">Questions</h4>
+<div class="outline-text-4" id="text-org64c30bd">
+<ol class="org-ol">
+<li>How many ring homomorphisms are there from \(\mathbf{Z}[x]\) to \(\mathbf{Z}/3 \mathbf{Z}\)?</li>
+<li>Choose one of the homomorphisms and find its kernel.</li>
+<li>True or false: if \(R\) is an integral domain, then \(R[x]\) is also an integral domain.</li>
+<li>Is \(R[x]\) ever a field?</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org700046c" class="outline-2">
+<h2 id="org700046c">Assignments</h2>
+<div class="outline-text-2" id="text-org700046c">
+</div>
+<div id="outline-container-orgd643a76" class="outline-3">
+<h3 id="orgd643a76">Assignment 1</h3>
+<div class="outline-text-3" id="text-orgd643a76">
+<p>
+Please submit your solution to one of the following problems.
+</p>
+
+<ol class="org-ol">
+<li>Exercise 12.2.4</li>
+<li>Exercise 12.2.6 (clearly state the size function)</li>
+<li>Division with remainder allows us to generalise Euclid&rsquo;s algorithm to find the gcd.
+Use it to find the gcd of \(3+i\) and \(5\) in \(\mathbf{Z}[i]\).</li>
+</ol>
+</div>
+<div id="outline-container-org8d294c5" class="outline-4">
+<h4 id="org8d294c5">Solution sketches</h4>
+<div class="outline-text-4" id="text-org8d294c5">
+<ol class="org-ol">
+<li><p>
+It is generally advised to avoid proof by contradiction (see <a href="https://cohn.mit.edu/contradiction/">https://cohn.mit.edu/contradiction/</a>), so let us do that.
+</p>
+
+<p>
+We prove that given a finite set \(S\) of monic irreducible polynomials in \(F[x]\), there exists a monic irreducible polynomial \(p(x)\) that is not in \(S\).  Then it follows that the set of monic irreducible polynomials is infinite.
+</p>
+
+<p>
+If \(S\) is empty, take \(p(x) = x\).  [Many of you forgot this edge case.]
+</p>
+
+<p>
+Otherwise, write \(S = \{p_1(x),\dots, p_n(x)\}\).
+Let \(f(x) = p_1(x) \cdots p_n(x) + 1\).
+Then \(f(x)\) is of positive degree and monic.
+Since \(f(x)\) is of positive degree, it is not a unit.
+So it has a monic irreducible factor , say \(p(x)\).
+None of the \(p_i(x)\) divide \(f(x)\), so \(p(x)\) is different from the \(p_i(x)\).
+</p>
+
+<p>
+There are a few facts here that we are using about the polynomial ring that may not be true in general, and which can make this argument fail.
+For example, we need that \(f(x)\) is not a unit (for which we use the degree).
+We also use that every non-unit has an irreducible factor. 
+For one variable polynomials, there are many ways to see this; but this fact is not always true.
+</p></li>
+
+<li>For both, the size function is the complex norm squared. 
+You have to check that this is integer valued by an explicit calculation.
+Having done this, the key point is that every complex number is at a distance of \(< 1\) from at least one of the points in our ring.
+[Ideally, you should be able to prove this rigorously, but if you draw a picture and clearly state what you are using about the picture, I am willing to grant it.]   
+Then, given \(a,b \in R\) with \(b \neq 0\), we let \(q \in R\) be a point such that \(|q-a/b| < 1\) and \(r = a-bq\).</li>
+
+<li><p>
+In any ring \(R\), we have the equality of ideals \(\langle a,b \rangle = \langle a-bq,b\rangle\) for any \(q \in R\) (do you see why?).
+</p>
+
+<p>
+Suppose \(R\) is a Euclidean domain with a size function \(\sigma\).
+Let \(I = \langle a, b \rangle\).
+Suppose \(b \neq 0\) and \(\sigma(a) \geq \sigma(b)\), we choose \(q\) such that either \(a-bq = 0\) or \(\sigma(a-bq) < \sigma(b)\).  If the former holds, then \(b\) generates \(I\), and hence is our gcd.  If the latter holds, we continue the process with \((b,a-bq)\) in place of \((a,b)\).  The process must terminate because the size of the second argument strictly decreases at each stage.
+</p>
+
+<p>
+Executing the procedure above for \(\mathbf{Z}[i]\) with \(\sigma(a+ib) = a^2+b^2\) gives
+\[ \langle 5, 3+i \rangle = \langle 3+i, 2-i \rangle = \langle 2-i \rangle.\]
+ So \(2-i\) is a gcd.
+</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb7c5c44" class="outline-3">
+<h3 id="orgb7c5c44">Assignment 2</h3>
+<div class="outline-text-3" id="text-orgb7c5c44">
+<p>
+Please submit your solution to one of the following problems.
+</p>
+<ol class="org-ol">
+<li>Exercise 12.3.1</li>
+<li>Try to prove or disprove the general statement: The kernel of any homomorphism \(\mathbf{Z}[x] \to \mathbf{C}\) is a principal ideal.</li>
+<li>Exercise 12.4.9</li>
+<li>Exercise 12.4.15</li>
+</ol>
+</div>
+<div id="outline-container-org6d56774" class="outline-4">
+<h4 id="org6d56774">Solution sketches</h4>
+<div class="outline-text-4" id="text-org6d56774">
+<ol class="org-ol">
+<li>The key is to find a primitive irreducible polynomial in \(\mathbf{Z}[x]\) satisfied by \(\alpha\).  This polynomial generates the kernel (see below).</li>
+
+<li><p>
+Suppose \(\phi \colon \mathbf{Z}[x] \to \mathbf{C}\) sends \(x\) to \(\alpha\).
+Extend \(\phi\) to a homomorphism \(\widetilde \phi \colon \mathbf{Q}[x] \to \mathbf{C}\) that sends \(\mathbf{Q} \to \mathbf{C}\) as usual and that sends \(x\) to \(\alpha\).
+Concretely, \(\widetilde \phi\) sends \(f(x) \in \mathbf{Q}[x]\) to \(f(\alpha)\).
+</p>
+
+<p>
+Since \(\mathbf{Q}[x]\) is a PID, \(\ker \widetilde \phi\) is principal. 
+Let \(f(x)\) be a generator.
+If \(f(x) = 0\), then \(\ker \phi = 0\), which is principal.
+Otherwise, choose \(f(x) \in \mathbf{Z}[x]\) to be primitive.
+</p>
+
+<p>
+We claim that \(\ker\phi = \langle f \rangle\).
+Since \(f \in \ker \phi\), we have \((f) \subset \ker \phi\).
+For the reverse equality, suppose \(g \in \ker \phi\).
+Then \(g \in \ker \widetilde \phi\), and so \(g = f h\) for some \(h \in \mathbf{Q}[x]\).
+Since \(f\) is primitive, Gauss&rsquo;s lemma implies that \(h \in \mathbf{Z}[x]\).
+So \(g \in (f)\).
+</p>
+
+<p>
+The key point here is that we could extend the homomorphism from \(\mathbf{Z}[x]\) to \(\mathbf{Q}[x]\) and use \(\mathbf{Q}[x]\) as an intermediary.  In some cases, this may not be possible (for example, if the target is \(\mathbf{F}_p\) instead of \(\mathbf{C}\)).
+</p></li>
+
+<li>This question is a direct application of Eisenstein&rsquo;s criterion.</li>
+
+<li>Suppose \(f = g h\) is a factorisation of \(f\) in \(\mathbf{Z}[x]\) with non-constant \(g\) and \(h\).
+<ol class="org-ol">
+<li>If \(\overline f\) is a constant, then both \(\overline g\) and \(\overline h\) must be constant. 
+So all their terms except the constant term, are divisible by \(p\).</li>
+<li>If \(\overline f = x^n + b x^{n-1}\), where \(n = \deg f\) and \(b \neq 0 \in \mathbf{F}_p\), then \(\overline g = x^k\) and \(\overline h = x^{n-k}(x+b)\), up to constant multiples, for some \(k \in \{1, \cdots, n\}\).
+That is, except for one, all the terms of \(g\) must be divisible by \(p\), and likewise, except for two consecutive terms, all the terms of \(h\) must be divisible by \(p\).</li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org1c571b0" class="outline-3">
+<h3 id="org1c571b0">Assignment 3</h3>
+<div class="outline-text-3" id="text-org1c571b0">
+<p>
+Please submit your solution to one of the following problems.
+</p>
+
+<ol class="org-ol">
+<li>(Adapted from  Exercise 12.5.9)
+Let \(\omega = e^{2\pi i /3} \in \mathbf{C}\) and \(R = \mathbf{Z}[\omega] \subset \mathbf{C}\).
+Let \(p \in \mathbf{Z}\) be a prime number.
+Prove that the following are equivalent:
+<ol class="org-ol">
+<li>\(p\) is a prime element of \(R\),</li>
+<li>\((p)\) is a maximal ideal of \(R\),</li>
+<li>the polynomial \(x^2+x+1\) has no zeros in \(\mathbf{Z}/p \mathbf{Z}\).</li>
+</ol></li>
+
+<li>Exercise 15.2.1</li>
+
+<li>Exercise 15.2.3</li>
+</ol>
+</div>
+<div id="outline-container-org5116677" class="outline-4">
+<h4 id="org5116677">Solution sketches</h4>
+<div class="outline-text-4" id="text-org5116677">
+<ol class="org-ol">
+<li><p>
+Many of you used that since \(R\) is a PID, \(p\) is prime if and only if \(p\) is irreducible, and \(p\) is irreducible if and only if \((p)\) is maximal.
+This is correct, but the conclusion actually holds more generally than just \(\mathbf{Z}[\omega]\) (for example, also for \(\mathbf{Z}[\sqrt{-5}]\), so I will also give the general argument.
+</p>
+
+<p>
+The first key point is that we have a surjection \(\mathbf{Z}[x] \to \mathbf{Z}[\omega]\) that sends \(x\) to \(\omega\).
+The polynomial \(x^2+x+1\) is in the kernel.
+We claim that this polynomial generates the kernel.
+Let \(f(x) \in \mathbf{Z}[x]\) be in the kernel.  Then \(f(\omega) = 0\).
+Consider the homomorphism \(\mathbf{Q}[x] \to \mathbf{Q}[\omega]\) that sends \(x\) to \(\omega\).
+Since \(x^2+x+1 \in \mathbf{Q}[x]\) is irreducible, it generates the kernel of this homomorphism.
+As a result, \(f(x) = (x^2+x+1)g(x)\) for some \(g(x) \in \mathbf{Q}[x]\).
+Gauss&rsquo;s lemma implies that \(g(x) \in \mathbf{Z}[x]\).
+</p>
+
+<p>
+You cannot say &ldquo;minimal polynomial&rdquo; and deduce that \((x^2+x+1)\) is the kernel in \(\mathbf{Z}[x]\).  The notion of minimal polynomial is only defined over a field, not over \(\mathbf{Z}\).
+</p>
+
+<p>
+By the first isomorphism theorem, we have an isomorphism \(\mathbf{Z}[x]/(x^2+x+1) \to \mathbf{Z}[\omega]\).
+Then, \((p) \subset \mathbf{Z}[x]/(x^2+x+1)\) is prime if and only if \(\mathbf{Z}[x]/(x^2+x+1,p)\) is an integral domain and it is maximal if and only if \(\mathbf{Z}[x]/(x^2+x+1,p)\) is a field.  But \(\mathbf{Z}[x]/(x^2+x+1,p) = \mathbf{F}_p[x]/(x^2+x+1)\) is an integral domain if and only if it is a field and that is if and only if \(x^2+x+1 \subset \mathbf{F}_p[x]\) is irreducible.
+Finally, since \(x^2+x+1\) has degree 2, it is irreducible if and only if it has no linear factors, which is if and only if it has no roots in \(\mathbf{F}_p\).
+</p></li>
+
+<li><p>
+The question is equivalent to: In \(\mathbf{Q}[x]/(x^3-3x+4)\), why does \(x^2+x+1\) have a multiplicative inverse, and how does on find it?
+</p>
+
+<p>
+One way is to simply write
+\[ (a + b x + cx^2) \cdot (1 + x + x^2) = 1 \pmod {x^3-3x+4},\]
+and solve the resulting linear equations.
+This certainly does it, but it does not explain why a solution must exist.
+</p>
+
+<p>
+Alternatively, note that \(\gcd(x^2+x+1, x^3-3x+4) = 1\) in \(\mathbf{Q}[x]\).
+So the ideal generated by \(x^2+x+1\) and \(x^3-3x+4\) is \((1)\).
+As a result, we can write
+\[ 1 = (x^2+x+1) a(x) + (x^3-3x+4)b(x).\]
+Then \(a(x)\) is the inverse of \(x^2+x+1\) modulo \(x^3-3x+4\).
+</p>
+
+<p>
+One way to to find the \(a(x)\) and \(b(x)\) in practise is to run Euclid&rsquo;s algorithm to find the gcd and back-substitute.  If someone knows a better way, please let us know!
+</p></li>
+
+<li><p>
+Since \(2^{1/3}\) and \(2^{1/3}\omega\) have the same minimal polynomial over \(\mathbf{Q}\), namely \(x^3-2\), we have an isomorphism
+\[ \phi \colon \mathbf{Q}[2^{1/3}\omega] \to \mathbf{Q}[2^{1/3}]\]
+that sends \(2^{1/3}\omega\) to \(2^{1/3}\).
+</p>
+
+<p>
+Applying \(\phi\) to a solution of \(\sum x_i^2 = -1\) in \(\mathbf{Q}[2^{1/3}\omega]\) gives a solution of the same equation in \(\mathbf{Q}[2^{1/3}]\).
+But the latter is a subfield of \(\mathbf{R}\), and since a sum of squares cannot be negative, we cannot have a solution.
+</p>
+
+<p>
+The key point here is that \(\mathbf{Q}[2^{1/3}\omega]\) and \(\mathbf{Q}[2^{1/3}]\) are isomorphic.
+So, as far as algebraic properties are concerned, there cannot be a difference between them. 
+But there may be &ldquo;extra-algebraic&rdquo; properties that may be present in one case but not the other (like positivity), and we may be able to use them to deduce algebraic consequences.
+</p>
+
+<p>
+When I was learning this material, my study group considered invoking any extra-algebraic arguments as cheating.  But now I think that&rsquo;s foolish.  I am a firm believer in the unity of mathematics!
+</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeea3efc" class="outline-3">
+<h3 id="orgeea3efc">Assignment 4</h3>
+<div class="outline-text-3" id="text-orgeea3efc">
+<p>
+Please submit your solution to one of the following problems.
+</p>
+<ol class="org-ol">
+<li>Exercise 15.3.5</li>
+<li>For a complex number \(z\), we use \(\sqrt {z}\) to denote one of the two square roots of \(z\) (will not matter which one). 
+Given \(m, n \in \mathbf{Q}\), when is there an isomorphism of fields \(\mathbf{Q}[\sqrt m] \to \mathbf{Q}[\sqrt n]\)?
+If there is one isomorphism, are the any others?  How many?</li>
+<li>Exercise 15.3.2.</li>
+</ol>
+</div>
+<div id="outline-container-orgb7e4e34" class="outline-4">
+<h4 id="orgb7e4e34">Solution sketches</h4>
+<div class="outline-text-4" id="text-orgb7e4e34">
+<ol class="org-ol">
+<li><p>
+We prove that \(f(x) = x^4+3x+3\) is irreducible over \(\mathbf{Q}[2^{1/3}]\).
+Let \(\alpha \in \mathbf{C}\) be a root of \(f(x)\).
+By Eisenstein&rsquo;s criterion for the prime \(p = 3\), we see that \(f(x)\) is irreducible in \(\mathbf{Q}[x]\).
+So the degree of \(\alpha\) over \(\mathbf{Q}\) is \(4\).
+</p>
+
+<p>
+Consider the extension \(\mathbf{Q} \subset \mathbf{Q}[2^{1/3}, \alpha]\); let its degree by \(d\).
+Since the degree of \(2^{1/3}\) over \(\mathbf{Q}\) is 3, we see that 3 divides \(d\).
+Since the degree of \(\alpha\) over \(\mathbf{Q}\) is 4, we see that 4 divides \(d\).
+So \(12\) divides \(d\), and hence \(d \geq 12\).
+</p>
+
+<p>
+Consider the chain
+\[ \mathbf{Q} \subset \mathbf{Q}[2^{1/3}] \subset \mathbf{Q}[2^{1/3},\alpha].\]
+It follows that the last extension has degree at least 4.
+But \(\alpha\) satisfies the degree 4 polynomial \(f(x) \in \mathbf{Q}[2^{1/3}[x]\).
+So \(f(x)\) must be irreducible in \(\mathbf{Q}[2^{1/3}[x]\).
+</p></li>
+
+<li><p>
+Let us do the case where neither \(\sqrt m\) or \(\sqrt n\) are rational.
+Suppose there is a homomorphism \(\mathbf{Q}[\sqrt m] \to \mathbf{Q}[\sqrt n]\).
+It is easy to check that it must be the identity on \(\mathbf{Q}\).
+Suppose it sends \(\sqrt m\) to \(a + b \sqrt n\), where \(a,b \in \mathbf{Q}\).
+Then \((a+b\sqrt n)^2 = m\).
+By a simple calculation, we conclude that \(a = 0\), and hence \(m = b^2n\).
+</p>
+
+<p>
+Conversely, suppose \(m = b^2n\).
+We claim that there is an isomorphism \(\mathbf{Q}[\sqrt m] \to \mathbf{Q}[\sqrt n]\) that is the identity on \(\mathbf{Q}\) and sends \(\sqrt m\) to \(b \sqrt n\).
+(This needs justification.  You can&rsquo;t decide to send the generators to any elements you want and claim that this defines a homomorphism/isomorphism.)
+There are two ways to justify this.
+One is to recall that there is an isomorphism \(\mathbf{Q}[\alpha] \to \mathbf{Q}[\beta]\) sending \(\alpha\) to \(\beta\) if and only if \(\alpha\) and \(\beta\) have the same minimal polynomial.
+Apply this to \(\alpha = \sqrt m\) and \(\beta = \pm b \sqrt n\).
+Another is to observe that we have an isomorphism \(\mathbf{Q}[x]/(x^2-m) \to \mathbf{Q}[\sqrt m]\) that sends \(x\) to \(\sqrt m\).
+To define a homomorphism \(\mathbf{Q}[x]/(x^2-m) \to \mathbf{Q}[\sqrt n]\), we may choose to send \(x\) to any root of \(x^2-m\) in \(\mathbf{Q}[\sqrt n]\).
+The two roots are \(\pm b \sqrt n\).
+</p></li>
+
+<li><p>
+If \(n\) is prime, then \(x^{n-1}+ \dots + 1\) is the irreducible polynomial of \(\zeta_n\).
+So \(\deg \zeta_n = n-1\).
+So the only \(\zeta_n\) of degree at most 3 and \(n\) prime are for \(n = 2, 3\).
+</p>
+
+<p>
+If \(p\) is a prime factor of \(n\), then \(\zeta_p = \zeta_n^{n/p}\).
+So \(\mathbf{Q}(\zeta_p) \subset \mathbf{Q}(\zeta_n)\).
+It follows that \(p = 2, 3\).
+</p>
+
+<p>
+So the only possible \(n\) are of the form \(2^k 3^l\).
+</p>
+
+<p>
+Now, you argue that \(\deg \zeta_8 = 4\).
+So \(8\) cannot be a factor of \(n\).
+And \(\deg \zeta_9 \geq 6\), so \(9\) cannot be a factor of \(n\).
+(Neither claim is obvious).
+This leaves \(n = 4, 6, 12\).
+The first two actually do give numbers of degree \(2\).
+For the last, we have \(\zeta_4 = i \in \mathbf{Q}(\zeta_{12})\) and \(\zeta_3 = -1/2 + \sqrt 3/2 i \in \mathbf{Q}(\zeta_{12})\), which gives \(\sqrt 3 \in \mathbf{Q}(\zeta_{12})\).
+Therefore, \(\mathbf{Q}[i,\sqrt 3] \subset \mathbf{Q}[\zeta_{12}]\), which implies that \(\zeta_{12}\) has degree at least 4.
+</p>
+
+<p>
+So the only \(n\) are \(\{1,2,3,4,6\}\).
+</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org74d5efa" class="outline-3">
+<h3 id="org74d5efa">Assignment 5</h3>
+<div class="outline-text-3" id="text-org74d5efa">
+<p>
+Please submit your solution to one of the following problems.
+</p>
+
+<ol class="org-ol">
+<li>Let \(m,n\) be integers. 
+Choose complex square roots \(\sqrt m\) and \(\sqrt n\) of \(m\) and \(n\), respectively.
+Consider the unique ring homomorphism \(\phi \colon \mathbf{Q}[x,y]/(x^2-m, y^2-n) \to \mathbf{Q}[\sqrt m, \sqrt n]\) that sends \(x\) to \(\sqrt m\) and \(y\) to \(\sqrt n\).
+For which \(m\) and \(n\) is \(\phi\) an isomorphism?</li>
+
+<li>Determine the number of irreducible polynomials of degree \(6\) over \(\mathbf{F}_p\).
+(As a warm-up, you may want to do degrees \(2\), \(3\), \(5\), and \(4\)).</li>
+
+<li>Exercise 15.7.8.</li>
+</ol>
+</div>
+<div id="outline-container-orgaa992ae" class="outline-4">
+<h4 id="orgaa992ae">Solution sketches</h4>
+<div class="outline-text-4" id="text-orgaa992ae">
+<ol class="org-ol">
+<li>It is easy to see that the map is surjective.  When is it an isomorphism?  An efficient way to determine this is when the domain and codomain have the same dimension as a vector space over \(\mathbf{Q}\).  The domain has dimension 4 (do you see why).  The codomain has dimension 4 precisely when it is a degree 4 extension of \(\mathbf{Q}\).  This happens when \(m\) is not a square, \(n\) is not a square, and \(m/n\) is not a square in \(\mathbf{Q}\).</li>
+
+<li>Count the number of degree 6 elements in a field of size \(p^6\) and divide by 6.  You have to exclude elements of degree 2, 3, and 1.
+The answer comes out to \((p^6-p^3-p^2+p)/6\).</li>
+
+<li><p>
+We first find a homomorphism \(K \to L\).  Any homomorphism must be an isomorphism (do you see why).
+To find a homomorphism, we replace the domain by a presentation \(\mathbf{F}_2[x]/(f(x)) \cong K\).
+</p>
+
+<p>
+A homomorphism \(\mathbf{F}_2[x]/(f(x))\) is determined by the image of \(x\), which must be a root of \(f(x)\) in \(L\).
+Conversely, any element of \(L\) that is a root of \(f(x)\) gives a homomorphism \(\mathbf{F}_2[x]/(f(x)) \to L\) that sends \(x\) to that root.
+</p>
+
+<p>
+Since \(f(x) \in \mathbf{F}_2[x]\) is a cubic and \(L\) is a degree 3 extension of \(\mathbf{F}_2\), it has precisely 3 roots in \(L\).
+So there must be 3 homomorphisms.
+I don&rsquo;t know any other way of finding a root other than trial and error.
+The element \(\beta + 1\) turns out to be one root.
+Once we have one root, we can find the others by applying the Frobenius: \(\beta+1 \leadsto \beta^2+1 \leadsto \beta^4+1\).
+(Applying the Frobenius once more gives \(\beta^8+1 = \beta+1\); back to the original.)
+</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org6ee2cdd" class="outline-3">
+<h3 id="org6ee2cdd">Assignment 6</h3>
+<div class="outline-text-3" id="text-org6ee2cdd">
+<p>
+Please submit your solution to one of the following problems.
+</p>
+
+<ol class="org-ol">
+<li>Exercise 15.10.1.  Recall that an algebraic number in \(\mathbf{C}\) is one that is algebraic over \(\mathbf{Q}\).</li>
+
+<li><p>
+Exercise 15.M.3.  For simplicity, feel free to assume that \(F \subset K \subset \mathbf{C}\).
+</p>
+
+<p>
+Let us make this question a bit more precise.
+What are the possible degrees of the irreducible factors of \(f\) in \(K[x]\)?
+That is, for each \(d \in \{1,\cdots, 6\}\), determine whether \(d\) is possible as a degree of an irreducible factor of \(f \in K[x]\).
+If you say that a degree \(d\) is possible, please give an example of an \(F\), a \(K\), and an \(f\) such that \(f \in K[x]\) has an irreducible factor of degree \(d\).
+If you say that a degree \(d\) is not possible, please explain why.
+</p>
+
+<p>
+We can ask for a refinement of this question (but you do not have to do this).
+The factorisation of \(f \in K[x]\) gives a partition of 6.
+For example, if \(f\) factors into two linear factors and two quadratic factors, we have the partition \(6 = 1 + 1 + 2 + 2\).
+What are the possible partitions of 6?
+</p></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org470b31a" class="outline-3">
+<h3 id="org470b31a">Assignment 7</h3>
+<div class="outline-text-3" id="text-org470b31a">
+<p>
+Please submit your solution to one of the following problems.
+In your solution to each problem, you may use the result of the previous problems.
+</p>
+
+<ol class="org-ol">
+<li>Let \(p\) be a prime number.
+Find the degree of the field extension \(\mathbf{Q} \subset \mathbf{Q}[\zeta_p, 2^{1/p}]\).</li>
+
+<li>Prove that we have an isomorphism
+\[ \mathbf{Q}[x,y]/(x^{p-1} + \dots + 1, y^p-2) \to \mathbf{Q}[\zeta_p, 2^{1/p}] \]
+that sends \(x\) to \(\zeta_p\) and \(y\) to \(2^{1/p}\).</li>
+
+<li>Let \(K = \mathbf{Q}[\zeta_p, 2^{1/p}]\).
+Using the presentation of \(K\) above, describe all elements of \(\operatorname{Aut}_{\mathbf{Q}}(K)\).</li>
+
+<li>(Do not submit this one) What kind of group is \(G = \operatorname{Aut}_{\mathbf{Q}}(K)\)?  Try various compositions and convince yourselves that it is not abelian.  What is the subgroup of automorphisms that fix \(2^{1/p}\)?  What is the subgroup of automorphisms that fix \(\zeta_p\)?</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org8d69f04" class="outline-3">
+<h3 id="org8d69f04">Assignment 8</h3>
+<div class="outline-text-3" id="text-org8d69f04">
+<p>
+Please submit your solution to one of the following problems.
+</p>
+
+<ol class="org-ol">
+<li>Exercise 16.3.2 (b) and (c)</li>
+
+<li><p>
+Let \(\alpha_1, \alpha_2, \alpha_3, \alpha_4\) be the four complex roots of the irreducible polynomial
+\(x^4-4x+2 \in \mathbf{Q}[x]\).
+Find the minimal polynomial of \(\alpha_1\alpha_2+\alpha_3\alpha_4\) over \(\mathbf{Q}\).
+</p>
+
+<p>
+For this problem, you may need to rewrite symmetric functions in terms of elementary symmetric functions.  Feel free to use a computer to do this.  In your write-up, you may assert the resulting equality and say that you found it using a computer.
+</p></li>
+
+<li><p>
+Let \(F \subset K\) be a finite extension of fields.  Prove that there exists a finite extension \(K \subset L\) such that \(F \subset L\) is a splitting field (of some polynomial in \(F[x]\)).  (Slogan: every finite extension can be enlarged to a splitting field.)
+</p>
+
+<p>
+For simplicity, you may assume that the characteristic is zero.  But the statement is true in all characteristics.
+</p>
+
+<p>
+Do not assume that \(F\) and \(K\) are subfields of the complex numbers!
+</p></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgefa33d0" class="outline-3">
+<h3 id="orgefa33d0">Assignment 9</h3>
+<div class="outline-text-3" id="text-orgefa33d0">
+<p>
+Please submit your solution to one of the following problems.
+In each problem, you may assume the results of the previous ones.
+</p>
+
+<p>
+Let \(p\) be a prime number and let \(\zeta = e^{2\pi i /p}\).
+</p>
+
+<ol class="org-ol">
+<li>Let \(F = \mathbf{Q}[\zeta]\).
+Let \(K\) be the splitting field of \(x^p-2\) over \(F\).
+Describe all elements of \(\operatorname{Aut}(K/F)\).
+Describe a group isomorphism  \(\mathbf{Z}/p \mathbf{Z} \to \operatorname{Aut}(K/F)\).</li>
+
+<li>Let \(K\) be the splitting field of \(x^p-2\) over \(\mathbf{Q}\).
+Let \(G\) be the group of invertible upper triangular matrices of the form
+\[ \begin{pmatrix} 1 & b \\ & c\end{pmatrix},\]
+where \(b,c \in \mathbf{Z}/p \mathbf{Z}\) and \(c \neq 0\).
+Construct an isomorphism \(G \to \operatorname{Aut}_{\mathbf{Q}}(K)\).
+What is the pre-image of \(\operatorname{Aut}_F(K)\) under this isomorphism?</li>
+
+<li>For each \(j \in \mathbf{Z}/ p \mathbf{Z}\), we have the intermediate subfield \(\mathbf{Q} \subset \mathbf{Q}(2^{1/p} \zeta^j) \subset K\).
+Describe the corresponding subgroup of \(G\) in terms of matrices.</li>
+
+<li>(Challenge)
+Prove the following two (equivalent) statements.
+<ol class="org-ol">
+<li>\(G\) has exactly \(p\) subgroups of index \(p\).</li>
+<li>\(K\) has exactly \(p\) subfields of degree \(p\) over \(\mathbf{Q}\).</li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgd70663e" class="outline-3">
+<h3 id="orgd70663e">Assignment 10</h3>
+<div class="outline-text-3" id="text-orgd70663e">
+<p>
+Please submit your solution to one of the following problems.
+</p>
+
+<p>
+TBA.
+</p>
+</div>
+</div>
+<div id="outline-container-org67d9a32" class="outline-3">
+<h3 id="org67d9a32">Assignment 11</h3>
+<div class="outline-text-3" id="text-org67d9a32">
+<p>
+Please submit your solution to one of the following problems.
+</p>
+
+<p>
+TBA.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org6cae457" class="outline-2">
+<h2 id="org6cae457">Workshops</h2>
+<div class="outline-text-2" id="text-org6cae457">
+</div>
+<div id="outline-container-org1056761" class="outline-4">
+<h4 id="org1056761">Workshop 1</h4>
+<div class="outline-text-4" id="text-org1056761">
+</div>
+<ul class="org-ul">
+<li><a id="org10f7896"></a>Warm-up<br />
+<div class="outline-text-5" id="text-org10f7896">
+<ol class="org-ol">
+<li>Recall the definitions of:
+<ul class="org-ul">
+<li>an irreducible element,</li>
+<li>a prime element,</li>
+<li>a gcd of two elements \(a\) and \(b\).</li>
+</ul></li>
+<li>Give an example of an irreducible element in a ring \(R\) that is not prime.</li>
+<li>If \(d\) generates the ideal \(\langle a,b \rangle\), must \(d\) be a gcd of \(a\) and \(b\)?
+Is the converse true?</li>
+<li>What are the prime ideals of \(\mathbf{Z}\)?</li>
+<li>Give an example of a UFD that is not a PID.</li>
+<li>Construct a ring homomorphism \(\mathbf{Z}[x] \to \mathbf{Z}/p \mathbf{Z}[y]\) that sends \(x\) to \(y\).
+How many such homomorphisms are there?
+What do you have to check that the map you defined is a homomorphism?
+How do you prove that there are no more?</li>
+</ol>
+</div>
+</li>
+<li><a id="org1d1f07b"></a>Factorisation in exotic number rings<br />
+<div class="outline-text-5" id="text-org1d1f07b">
+<p>
+Let \(\omega = e^{2\pi i /3}\) and set \(R = \mathbf{Z}[\omega]\).
+This is the subset of \(\mathbf{C}\) consisting of numbers of the form \(a + b \omega\), where \(a, b \in \mathbf{Z}\).
+The elements of \(R\) are sometimes called <i>Eisenstein integers</i>.
+</p>
+
+<ol class="org-ol">
+<li>Check that \(R\) is a sub-ring of \(\mathbf{C}\).</li>
+
+<li>What are the units of \(\mathbf{Z}[\omega]\)?</li>
+
+<li>Factor \(3\) into irreducibles in \(\mathbf{Z}[\omega]\).
+If you have time, also factor \(7\).
+How do you know that your factors are irreducible?</li>
+
+<li>Since \(\mathbf{Z}[\sqrt{-5}]\) is not a UFD, there must exist an irreducible element that is not prime.
+Find one.</li>
+
+<li>We have seen that  \(\mathbf{Z}[\sqrt{-5}]\) is not a UFD.
+This means that it cannot be a PID.
+Find an ideal that is not principal.</li>
+</ol>
+</div>
+</li>
+<li><a id="orgdd2ae62"></a>Ideals in polynomial rings<br />
+<div class="outline-text-5" id="text-orgdd2ae62">
+<ol class="org-ol">
+<li>Let \(\mathbf{Q}[x] \to \mathbf{C}\) be the unique homomorphism that sends \(x\) to \(\sqrt 2\).
+Why is there a unique homomorphism like this?
+What is its kernel?</li>
+
+<li>Let \(\mathbf{Q}[x] \to \mathbf{C}\) be the unique homomorphism that sends \(x\) to \(1/2\).
+What is its kernel?</li>
+
+<li>In both questions above, replace \(\mathbf{Q}[x]\) by \(\mathbf{Z}[x]\).
+Must the kernel be principal?  Can you find it in these examples?</li>
+</ol>
+</div>
+</li>
+<li><a id="org28225ab"></a>Factorisation of polynomials<br />
+<div class="outline-text-5" id="text-org28225ab">
+<p>
+Do this only if you have time.  It uses ideas from the readings this week. 
+</p>
+
+<ol class="org-ol">
+<li>Find the cubic irreducible polynomials in \(\mathbf{F}_2[x]\).
+Use them to write down cubic irreducible polynomials in \(\mathbf{Z}[x]\).</li>
+
+<li>Factor \(x^4+2x^3-x^2+2x-1\) in \(\mathbf{F}_2[x]\) and \(\mathbf{F}_3[x]\).
+What does the factorisation imply about the factorisation in \(\mathbf{Z}[x]\).</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org60432ee" class="outline-4">
+<h4 id="org60432ee">Workshop 2</h4>
+<div class="outline-text-4" id="text-org60432ee">
+<p>
+You must be able to justify (prove) every claim you make, no matter how &ldquo;trivial&rdquo; it seems.  If you cannot justify it, please ask me or your demonstrator.  If you can justify it but are not satisfied with the proof (too long, too messy, or something else), please ask.  It is possible that there is a better way, and you will benefit from knowing it.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="orgf365519"></a>Warm-up<br />
+<div class="outline-text-5" id="text-orgf365519">
+<ol class="org-ol">
+<li>True or false?
+<ol class="org-ol">
+<li>The element \(x\) is a prime element of \(\mathbf{Q}[x,y]\).</li>
+<li>The element \(x\) is an irreducible element of \(\mathbf{Q}[x,y]\).</li>
+<li>The element \(2x+1\) is a prime element of \(\mathbf{Z}[x]\).</li>
+<li>The element \(2x+1\) is an irreducible element of \(\mathbf{Z}[x]\).</li>
+</ol></li>
+
+<li>Recall the definitions of ring homomorphism, kernel, image, and the first isomorphism theorem.</li>
+
+<li>Let \(R = \mathbf{Z}/p \mathbf{Z}\).
+Show that the polynomial \(x^p-x\) evaluates to zero for all \(x \in R\).
+Is \(x^p-x = 0\) in \(R[x]\)?</li>
+</ol>
+</div>
+</li>
+<li><a id="orgc60f821"></a>Irreducibility<br />
+<div class="outline-text-5" id="text-orgc60f821">
+<ol class="org-ol">
+<li>Consider \(z - xy \in \mathbf{C}[x,y,z]\).
+Show that it is irreducible in two ways: 
+<ol class="org-ol">
+<li>Identify the quotient \(\mathbf{C}[x,y,z]/(z-xy)\) and conclude that \(z-xy\) is prime.</li>
+<li>Show that it is primitive as an element of \(\mathbf{C}[x,y] [z]\) and irreducible in \(\mathbf{C}(x,y)[z]\).</li>
+</ol></li>
+
+<li>Suppose \(f(x) \in \mathbf{Z}[x]\) is irreducible.
+Does this imply that \(f(x) \in \mathbf{Q}[x]\) is also irreducible?
+Is the converse true?</li>
+
+<li>Suppose \(f(x) \in \mathbf{Z}[x]\) is irreducible.
+Does this imply that the image of \(f(x)\) in \(\mathbf{Z}/p \mathbf{Z} [x]\) is also irreducible?
+Is the converse true?
+(Be careful!)</li>
+
+<li>(Carried over from last week)
+Factor \(x^4+2x^3-x^2+2x-1\) in \(\mathbf{F}_2[x]\) and \(\mathbf{F}_3[x]\).
+What does the factorisation imply about the factorisation in \(\mathbf{Z}[x]\)?
+In \(\mathbf{Q}[x]\)?</li>
+
+<li><p>
+Fill in the gaps in the following argument.
+</p>
+
+<p>
+\noindent
+<b>Theorem</b>. The polynomial \(f(x,y) = y^2-x^3 \in \mathbf{C}[x,y]\) is irreducible.
+</p>
+
+<p>
+\noindent
+<i>Proof</i>. It suffices to show that \(f(x,y) \in \mathbf{C}(x)[y]\) is irreducible (why?).
+We may make a change of variables and show that \(g(x,y) = f(x,xy) \in \mathbf{C}(x)[y]\) is irreducible (why?).
+Showing \(g(x,y) = x^2(y^2-x)\) is irreducible in \(\mathbf{C}(x)[y]\) is equivalent to showing \(h(x,y) = y^2-x\) is irreducible in \(\mathbf{C}(x)[y]\) (why?), and this is in turn equivalent to showing that \(y^2-x\) is irreducible in \(\mathbf{C}[x,y]\) (why?).
+But \(y^2-x\) is prime and hence irreducible in \(\mathbf{C}[x,y]\) (why?).
+</p></li>
+
+<li>Generalise the argument above to prove that if \(\gcd(m,n) = 1\), then \(y^m-x^n \in \mathbf{C}[x,y]\) is irreducible.</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org5d58cff" class="outline-4">
+<h4 id="org5d58cff">Workshop 3</h4>
+<div class="outline-text-4" id="text-org5d58cff">
+<p>
+You must be able to justify (prove) every claim you make, no matter how &ldquo;trivial&rdquo; it seems.  If you cannot justify it, please ask me or your demonstrator.  If you can justify it but are not satisfied with the proof (too long, too messy, or something else), please ask.  It is possible that there is a better way, and you will benefit from knowing it.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org25a4494"></a>Warm-up<br />
+<div class="outline-text-5" id="text-org25a4494">
+<ol class="org-ol">
+<li>Is \(\mathbf{Z}[i]/(11)\) an integral domain? A field?</li>
+<li>Find primes \(p \in \mathbf{Z}\) which do and do not remain primes in \(\mathbf{Z}[\sqrt 2]\).</li>
+<li>Let \(F \subset K\) be fields and \(\alpha \in K\). 
+Recall the definition of the irreducible polynomial (also called <i>minimal polynomial</i>) of \(\alpha\) over \(F\).
+Given any \(f(x) \in F[x] \) such that \(f(\alpha) = 0\), how will you find the minimal polynomial?</li>
+</ol>
+</div>
+</li>
+<li><a id="orgeeac6a7"></a>Field extensions and irreducible polynomials<br />
+<div class="outline-text-5" id="text-orgeeac6a7">
+<ol class="org-ol">
+<li>Let \(F = \mathbf{Q}[2^{1/6}]\).
+<ol class="org-ol">
+<li>Find the kernel of the map \(\mathbf{Q}[x] \to F\) that sends \(x\) to \(2^{1/6}\).</li>
+<li>What is the irreducible (= minimal) polynomial of \(2^{1/6}\) over \(\mathbf{Q}\)?</li>
+<li>Write a basis of \(F\) as a \(\mathbf{Q}\)-vector space.</li>
+</ol></li>
+
+<li>Let \(L = \mathbf{Q}[\sqrt 2]\) and \(F = \mathbf{Q}[2^{1/6}]\) as above.
+<ol class="org-ol">
+<li>Find the kernel of the map \(\mathbf{L}[x] \to F\) that sends \(x\) to \(2^{1/6}\).</li>
+<li>What is the irreducible (= minimal) polynomial of \(2^{1/6}\) over \(L\)?</li>
+<li>Write a basis of \(F\) as an \(L\)-vector space.</li>
+</ol></li>
+
+<li>Let \(\zeta = e^{2\pi i / 6}\).
+Let \(L = \mathbf{Q}[2^{1/6}\zeta]\) and \(F  = \mathbf{Q}[2^{1/6}]\) as above.
+We consider both as subfields of \(\mathbf{C}\).
+<ol class="org-ol">
+<li>Is \(F = L\)?</li>
+<li>Is there an isomorphism \(F \to L\)?  Are there multiple isomorphisms?  How many?</li>
+<li>Observe that \(K = \mathbf{Q}[\sqrt 2]\) is contained in both \(F\) and \(L\).
+How many isomorphisms \(F \to L\) are \(K\)-isomorphisms?</li>
+<li>Find the degrees of \(F\) over \(\mathbf{Q}\); of \(L\) over \(\mathbf{Q}\); of \(F\) over \(K\); and of \(L\) over \(K\).</li>
+</ol></li>
+
+<li>Let \(\alpha, \beta \in \mathbf{C}\) be algebraic over \(\mathbf{Q}\).
+Consider the map \(\mathbf{Q}[x,y] \to \mathbf{C}\) that sends \(x \to \alpha\) and \(y \to \beta\).
+Let \(I \subset \mathbf{Q}[x,y]\) be the kernel of this map.
+
+<ol class="org-ol">
+<li>Let \(f(x) \in \mathbf{Q}[x]\) be the irreducible polynomial of \(\alpha\).
+Show that \(f(x) \in I\).
+Similarly, for the irreducible polynomial \(g(y) \in \mathbf{Q}[y]\), we have \(g(y) \in I\).
+Conclude that \(I\) cannot be principal.</li>
+
+<li>Is \(I\) generated by \(f(x)\) and \(g(y)\)?
+Find examples where it is not.</li>
+</ol></li>
+
+<li>Let \(F \subset K\) be fields and let \(\alpha \in K\) be algebraic over \(F\) with irreducible polynomial \(f(x) \in F[x]\).
+Find a bijection between the following two sets:
+<ol class="org-ol">
+<li>\(F\)-homomorphisms \(F[\alpha] \to K\) (ring homomorphisms that restrict to the identity on \(F\))</li>
+<li>solutions to \(f(x) = 0\) in \(K\).</li>
+</ol></li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgb76a455" class="outline-4">
+<h4 id="orgb76a455">Workshop 4</h4>
+<div class="outline-text-4" id="text-orgb76a455">
+</div>
+<ul class="org-ul">
+<li><a id="orgff6e697"></a>Warm-up<br />
+<div class="outline-text-5" id="text-orgff6e697">
+<ol class="org-ol">
+<li>Recall the notion of the degree of a field extension.</li>
+<li>What are the degrees of the following extensions: \(\mathbf{R} \subset \mathbf{C}\); \(\mathbf{Q} \subset \mathbf{Q}[\zeta_5]\).</li>
+<li>In each case, write a basis of the bigger field as a vector space over the smaller field.</li>
+<li>Let \(F\) and \(K\) be fields and let \(\phi \colon F \to K\) be a ring homomorphism.  
+Prove that \(\phi\) must be injective.
+(It is a requirement that in a field, we have \(0 \neq 1\).)</li>
+</ol>
+</div>
+</li>
+<li><a id="orgdebe5ec"></a>Degree of a field extension<br />
+<div class="outline-text-5" id="text-orgdebe5ec">
+<ol class="org-ol">
+<li>Let \(\gamma = \sqrt 2 + \sqrt 3\).
+Prove that \(\mathbf{Q}[\gamma] = \mathbf{Q}[\sqrt 2, \sqrt 3]\).
+Call this field \(K\).</li>
+
+<li>Prove that \(1, \gamma, \gamma^2, \gamma^3\) and \(1, \sqrt 2, \sqrt 3, \sqrt 6\) are both bases of \(K\) as a \(\mathbf{Q}\)-vector space.
+Write down the change-of-basis matrix.</li>
+
+<li><p>
+Suppose \(\alpha, \beta \in \mathbf{C}\) have degrees \(m\) and \(n\) over \(\mathbf{Q}\).
+Is the degree of the field extension \(\mathbf{Q} \subset \mathbf{Q}[\alpha,\beta]\)
+</p>
+<ol class="org-ol">
+<li>&#x2026; equal to \(mn\)?</li>
+<li>&#x2026; divisor of \(mn\)?</li>
+<li>&#x2026; less than or equal to \(mn\)?</li>
+</ol>
+
+<p>
+<i>Hint</i>: Consider the example \(\alpha = 2^{1/3}\) and \(\beta = 2^{1/3} e^{2\pi i /3}\).
+</p></li>
+
+<li><p>
+Let \(\alpha = 2^{1/3}\) and \(\beta = 2^{1/3}e^{2\pi i/3}\).
+Consider the map \(\phi \colon \mathbf{Q}[x,y] \to \mathbf{Q}[\alpha,\beta]\) that sends \(x\) to \(\alpha\) and \(y\) to \(\beta\).
+Find the kernel of the map.
+</p>
+
+<p>
+\noindent
+<i>Hint</i>: First find the degree of \(\mathbf{Q}[\alpha,\beta]\) over \(\mathbf{Q}\).
+</p></li>
+</ol>
+</div>
+</li>
+<li><a id="org6f80388"></a>Ruler and compass constructions<br />
+<div class="outline-text-5" id="text-org6f80388">
+<p>
+Let us prove that an angle whose cosine and sine are transcendental cannot be trisected.
+</p>
+
+<ol class="org-ol">
+<li>Let \(\theta\) be a real number.
+Prove that \(\cos \theta\) is transcendental over \(\mathbf{Q}\) if and only if \(\sin(\theta)\) is transcendental over \(\mathbf{Q}\).</li>
+
+<li><p>
+Let \(\theta\) be an angle such that \(\cos \theta\) is transcendental over \(\mathbf{Q}\).
+Suppose we are given the points \((0,0), (0,1),\) and \((\cos(\theta), \sin(\theta))\) in the plane.
+Prove that it is impossible to construct \((\cos(\theta/3), \sin(\theta/3))\) using only ruler and compass.
+</p>
+
+<p>
+\noindent
+<i>Hints</i>:  Let \(F \subset \mathbf{C}\) be the field \(\mathbf{Q}(\cos(\theta))\).  Construct an isomorphism \(\mathbf{Q}(t) \to F\) (the first one is the field of rational functions in one variable \(t\)).  Prove that the field extension \(F \subset \mathbf{Q}(\cos(\theta/3))\) has degree 3 by explicitly constructing the minimal polynomial for \(\cos(\theta/3)\) over \(F\).  Carefully justify why the polynomial you found is irreducible.
+</p></li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgf2a227c" class="outline-4">
+<h4 id="orgf2a227c">Workshop 5</h4>
+<div class="outline-text-4" id="text-orgf2a227c">
+</div>
+<ul class="org-ul">
+<li><a id="orgc8d353c"></a>Warm-up with finite fields<br />
+<div class="outline-text-5" id="text-orgc8d353c">
+<p>
+Let \(K\) be a finite field of size \(q = 7^{12}\).
+</p>
+
+<ol class="org-ol">
+<li>What is the characteristic of \(K\)? What is the degree of the extension \(\mathbf{F}_p \subset K\)?</li>
+<li><p>
+Suppose \(K\) contains a subfield \(F\) of size \(7^m\). 
+Prove that \(m\) must divide 12.
+</p>
+
+<p>
+<i>Hint</i>: Consider the extension \(F \subset K\).
+</p></li>
+
+<li>Conversely, suppose \(m\) divides \(12\).
+Does \(K\) have a subfield of size \(7^m\)?
+How many?
+How do we find them?</li>
+
+<li><p>
+How many elements of \(K\) have degree 12 over \(\mathbf{F}_p\)?
+</p>
+
+<p>
+This is a bit tricky.  Warm-up by looking at fields of smaller size like \(7^2, 7^3, 7^4,\) and \(7^6\).
+</p></li>
+</ol>
+</div>
+</li>
+<li><a id="org82ad3e7"></a>Finite fields and bit strings<br />
+<div class="outline-text-5" id="text-org82ad3e7">
+<p>
+Let \(F = \mathbf{F}_2[a]/(a^4+a+1)\).
+Note that \(1, a, a^2, a^3\) is a basis of \(F\) as an \(\mathbf{F}_2\) vector space.
+So we can represent every element of \(F\) uniquely as \(b_0 + b_1 a + b_2 a^2 + b_3 a^3\), where \(b_0,\dots, b_3 \in \mathbf{F}_2\).
+</p>
+
+<ol class="org-ol">
+<li>We abbreviate \(b_0 + b_1 a + b_2 a^2 + b_3 a^3\) by the bit-string \(b_0b_1b_2b_3\).
+Then the elements of \(F\) are represented by the 16 strings \(0000,0001,0010,\dots, 1111\).
+Explain the addition law of \(F\) in terms of bit-strings.</li>
+<li>Describe multiplication by \(a\) in terms of bit-strings.</li>
+<li>Sometimes, instead of writing the 4 bit-strings, people write the integer they represent in binary notation, for exmaple, writing &ldquo;14&rdquo; for the bit-string &ldquo;1110&rdquo;.
+Then the elements of \(F\) become the more familiar symbols \(0, \cdots, 15\) (for example, \(a^3 + a^2 + a\) will be &ldquo;14&rdquo;).
+<ol class="org-ol">
+<li>Show that this representation conflicts with our convention that the integer symbol \(n\) represents the image of \(n\) under the unique homomorphism from \(\mathbf{Z}\).</li>
+<li>Show that this representation respects neither the addition nor the multiplication law.</li>
+</ol></li>
+</ol>
+</div>
+</li>
+<li><a id="org03da480"></a>The Frobenius<br />
+<div class="outline-text-5" id="text-org03da480">
+<ol class="org-ol">
+<li>Let \(R\) be any ring of characteristic \(p\).
+Prove that the map \(R \to R\) that raises every element to the \(p\)-th power is a ring homomorphism.
+This homomorphism is called the Frobenius homomorphism.
+On \(\mathbf{F}_p\), what does the Frobenius do?</li>
+
+<li>Let \(K\) be a finite field of size \(p^r\).
+Prove that \(\alpha \in K\) lies in \(\mathbf{F}_p \subset K\) if and only if
+\( \operatorname{Frob}(\alpha) = \alpha\).</li>
+
+<li>With \(K\) as above, prove that \(\operatorname{Frob}\) applied \(r\) times is the identity on \(K\) and \(r\) is the smallest with this property.</li>
+
+<li><p>
+With \(K\) as above,  prove that \(\alpha\) and \(\operatorname{Frob}(\alpha)\) have the same minimal polynomial over \(\mathbf{F}_p\).
+</p>
+
+<p>
+In fact, let \(\{\alpha_1, \alpha_2, \dots, \alpha_n\}\) be the orbit of the Frobenius applied to \(\alpha\) (the set of elements that we get if we repeatedly apply \(\operatorname{Frob}\) to \(\alpha\); this set will have at most \(r\) elements, but possibly fewer; in fact, its size will be a factor of \(r\)).
+Show that the minimal polynomial of \(\alpha\) over \(\mathbf{F}_p\) is
+\[ (x-\alpha_1) \cdots (x-\alpha_n).\]
+</p></li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org80c12de" class="outline-4">
+<h4 id="org80c12de">Workshop 6</h4>
+<div class="outline-text-4" id="text-org80c12de">
+</div>
+<ul class="org-ul">
+<li><a id="org847983c"></a>Review<br />
+<div class="outline-text-5" id="text-org847983c">
+<p>
+Here is a brief list of the main concepts we have seen so far.
+If you have any questions about any of them, please ask each other or your demonstrator.
+</p>
+
+<dl class="org-dl">
+<dt>Factorisation</dt><dd><ol class="org-ol">
+<li>Euclidean domains, principal ideal domains, unique factorisation domains.</li>
+<li>Prime and irreducible elements</li>
+<li>Factorisation in \(\mathbf{Z}[x]\) versus \(\mathbf{Q}[x]\), or more generally \(R[x]\) and \((\operatorname{frac} R) [x]\).</li>
+<li>Examples of \(\mathbf{Z}[i]\) and \(\mathbf{Z}[\omega]\).</li>
+</ol></dd>
+<dt>Fields</dt><dd><ol class="org-ol">
+<li>Algebraic and transcendental elements; the irreducible/minimal polynomial.</li>
+<li>Degree of a field extension; multiplicativity; application to constructions.</li>
+<li>Constructing extensions by formally adjoining roots.</li>
+<li>Finite fields: existence, uniqueness, containments, isomorphisms, Frobenius.</li>
+<li>The primitive element theorem.</li>
+</ol></dd>
+</dl>
+</div>
+</li>
+<li><a id="org99a07a1"></a>Field automorphisms<br />
+<div class="outline-text-5" id="text-org99a07a1">
+<p>
+Let \(\alpha_1, \dots, \alpha_4 \in \mathbf{C}\) be the roots of \(x^4-2 = 0\).
+Let \(K = \mathbf{Q}[\alpha_1, \dots, \alpha_4]\).
+</p>
+
+<ol class="org-ol">
+<li>Prove that any \(\mathbf{Q}\)-automorphism of \(K\) must permute \(\{\alpha_1, \dots, \alpha_4\}\).</li>
+<li>Conclude that we have an injective map \(\operatorname{Aut}_{\mathbf{Q}}(K) \to S_4\).</li>
+<li>What is the image of this map?  That is, which permutations of the roots arise from automorphisms of the field?
+We will defer this question, but let us first observe that the answer is closely tied to <i>polynomial relations among the roots</i>.
+Suppose
+\[\alpha_1 = 2^{1/4}, \quad \alpha_2 = 2^{1/4} i, \quad \alpha_3 = -2^{1/4}, \quad \alpha_4 = -2^{1/4}i.\]
+Observe that we have the relation \(\alpha_1 + \alpha_3 = 0\) but not the relation \(\alpha_1 + \alpha_{4} = 0\).
+Conclude that the permutation \((34)\) cannot be in the image.</li>
+
+<li>Observe that \(K = \mathbf{Q}[2^{1/4},i]\) and we have a \(\mathbf{Q}\)-isomorphism \(\mathbf{Q}[x,y]/(x^4-2,y^2+1) \to K\) that sends \(x\) to \(2^{1/4}\) and \(y\) to \(i\).
+Use this presentation to enumerate all \(\mathbf{Q}\)-isomorphisms \(K \to K\).</li>
+
+<li>Now that you know the elements of \(\operatorname{Aut}_{\mathbf{Q}}(K)\), describe the image of \(\operatorname{Aut}_{\mathbf{Q}}(K) \to S_4\).</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org4431f64" class="outline-4">
+<h4 id="org4431f64">Workshop 7</h4>
+<div class="outline-text-4" id="text-org4431f64">
+</div>
+<ul class="org-ul">
+<li><a id="org53a4d6c"></a>Symmetric polynomials<br />
+<div class="outline-text-5" id="text-org53a4d6c">
+<ol class="org-ol">
+<li>Write the following polynomials in terms of elementary symmetric polynomials: \(x^2 + y^2\), \(x^3+y^3\), and \(x^2+y^2+z^2\).</li>
+
+<li><p>
+Most computer algebra systems have in-build algorithms to rewrite symmetric polynomials in terms of elementary symmetric polynomials.
+For example, the following <code>sage</code> code 
+</p>
+<div class="org-src-container">
+<pre class="src src-sage">S.&lt;x,y,z&gt; = PolynomialRing(QQ, 3)
+E = SymmetricFunctions(QQ).elementary()
+E.from_polynomial((x*y-z)*(x*z-y)*(y*z-x))  #Modify for your polynomial.
+</pre>
+</div>
+<p>
+outputs
+</p>
+<pre class="example">
+e[2, 2] - e[3] - 2*e[3, 1] - e[3, 1, 1] + 2*e[3, 2] + e[3, 3] +
+2*e[4] + e[4, 1] - 2*e[4, 2] - 5*e[5] + 2*e[5, 1] - 2*e[6]
+</pre></li>
+</ol>
+
+
+<p>
+Explanation of notation:
+</p>
+<ul class="org-ul">
+<li>\(e[i]\) is the \(i\)-th elementary symmetric polynomial \(e_i\).</li>
+<li>\(e[i,j]\) is \(e_i \cdot e_j\), and so on.</li>
+<li>Since we only have 3 variables, \(e_{4}\) and above are zero.
+So, the expression <code>sage</code> gave reduces to
+\[e_2^2 - e_3 - 2 e_3e_1 + e_3e_1^2 +  2 e_3e_2 + e_3^2.\]</li>
+</ul>
+
+<ol class="org-ol">
+<li>Try the code above with other symmetric polynomials.
+You can evaluate <code>sage</code> code online at  <a href="https://sagecell.sagemath.org/">https://sagecell.sagemath.org/</a>.</li>
+</ol>
+</div>
+</li>
+<li><a id="org1f30cac"></a>Splitting fields<br />
+<div class="outline-text-5" id="text-org1f30cac">
+<ol class="org-ol">
+<li>Let \(F \subset K\) be a field extension and \(f(x) \in F[x]\) a polynomial.
+When is \(K\) called a &ldquo;splitting field&rdquo; of \(f(x)\)?</li>
+
+<li>The following extensions are splitting fields for some \(f(x)\).
+Give an example of such an \(f(x)\) (there may be more than one).
+<ol class="org-ol">
+<li>\(\mathbf{Q} \subset \mathbf{Q}[\sqrt 2]\)</li>
+
+<li>\(\mathbf{Q} \subset \mathbf{Q}[\sqrt 2, \sqrt 3]\)</li>
+
+<li>\(\mathbf{C}(t^n) \subset \mathbf{C}(t)\)</li>
+
+<li>\(F_3 \subset \mathbf{Z}[i]/3\)</li>
+</ol></li>
+
+<li>Let \(f(x)\) be the minimal polynomial of \(\sqrt 2 + \sqrt 3\).
+Is \(\mathbf{Q} \subset \mathbf{Q}[\sqrt 2, \sqrt 3]\) a splitting field for \(f(x)\)?</li>
+</ol>
+</div>
+</li>
+<li><a id="org226af6a"></a>Evaluating expressions in terms of roots<br />
+<div class="outline-text-5" id="text-org226af6a">
+<p>
+Suppose \(f(x) = x^3+2x-2\) and let \(\alpha_1,\alpha_2,\alpha_3 \in \mathbf{C}\) be the roots of \(f(x)\).
+</p>
+
+<ol class="org-ol">
+<li>We can evaluate a symmetric expression in \(\alpha_i\) by re-writing it in terms of the coefficients.
+For example, evaluate
+\[ (\alpha_1+\alpha_2-\alpha_3)(\alpha_1+\alpha_3-\alpha_2)(\alpha_2+\alpha_3-\alpha_1).\]</li>
+
+<li>How do we evaluate asymmetric expressions?
+We cannot, exactly, but we can pin them down up to a finite ambiguity.
+For example, consider \(\alpha = \alpha_1\alpha_2-\alpha_3\).
+The \(S_3\) orbit of the expression \(x_1x_2-x_3\) contains 2 other expressions: \(x_1x_3-x_2\) and \(x_2x_3-x_1\).
+Let \(\beta = \alpha_1\alpha_3 - \alpha_2\) and \(\gamma = \alpha_2\alpha_3-\alpha_1\).
+
+<ol class="org-ol">
+<li>Prove that \((x-\alpha)(x-\beta)(x-\gamma)\) has coefficients in \(\mathbf{Q}\).</li>
+<li>Find these coefficients.  You have then narrowed down \(\alpha\) to 3 possible values, namely the roots of this polynomial.
+To do this, you will have to rewrite symmetric polynomials in terms of elementary symmetric polynomials.
+Do this using the <code>sage</code> code above.</li>
+</ol></li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgb913e72" class="outline-4">
+<h4 id="orgb913e72">Workshop 8</h4>
+<div class="outline-text-4" id="text-orgb913e72">
+<p>
+The goal of the workshop is to see the main theorem of Galois theory in action in a moderately complicated example.
+</p>
+
+<p>
+Let \(K = \mathbf{Q}[3^{1/4},i]\).
+This is the splitting field of \(x^4-3\), and has the presentation
+\[ \mathbf{Q}[x,y]/(x^4-3, y^2+1) \to K,\]
+where the map above sends \(x\) to \(3^{1/4}\) and \(y\) to \(i\).
+You should be able to prove these facts, but for now please proceed assuming them.
+</p>
+
+<ol class="org-ol">
+<li>Use the presentation above to find \(\operatorname{Aut}(K/ \mathbf{Q})\).</li>
+<li>Find an isomorphism from the dihedral group \(D_4\) to \(\operatorname{Aut}(K / \mathbf{Q})\).</li>
+<li>Write the subgroup diagram for \(D_4\): a vertex for each subgroup and an arrow for each inclusion.</li>
+<li>For each group in the subgroup diagram, find the fixed field.</li>
+</ol>
+
+<p>
+The main theorem of Galois theory says that these are all the fields containing \(\mathbf{Q}\) and contained in \(K\).
+</p>
+</div>
+</div>
+<div id="outline-container-orgf0c3c34" class="outline-4">
+<h4 id="orgf0c3c34">Workshop 9</h4>
+<div class="outline-text-4" id="text-orgf0c3c34">
+<p>
+The goal of this workshop is to use Galois theory to settle the question of ruler/compass constructions.
+We say that \(x \in \mathbf{C}\) is <i>constructible</i> if it lies in a tower of quadratic extensions.
+That is, if there exist fields
+\[ \mathbf{Q} \subset K_1 \subset K_2 \subset \cdots \subset K_n,\]
+where each \(K_i \subset K_{i+1}\) is a degree 2 extension and \(\alpha \in K_n\).
+Let us prove the following.
+</p>
+
+<p>
+\bigskip
+</p>
+
+<p>
+\noindent
+<b>Theorem</b>. A number \(x \in \mathbf{C}\) is constructible if and only if its Galois group (= the Galois group of the splitting field of its minimal polynomial) has order \(2^m\) for some \(m\).
+</p>
+
+<p>
+\bigskip
+</p>
+
+<p>
+Let us prove the if part.
+Suppose \(z\) is constructible.
+It is enough to construct a Galois extension (= splitting field) that contains \(z\) and whose degree over \(\mathbf{Q}\) is a power of 2.
+</p>
+
+<ol class="org-ol">
+<li>Suppose \(z = \sqrt {2 + \sqrt 3}\).
+Construct a Galois extension (= splitting field) that contains \(z\) and whose degree over \(\mathbf{Q}\) is a power of 2.</li>
+<li>Do the same for \(\sqrt{2 + \sqrt {3 + \sqrt 5}}\).</li>
+<li>Try to formalise the pattern you see.
+This is a bit tricky.  
+One clean way is to prove the following by induction: there exists field \(K'_i\) containing \(K_i\) such that (a) \(K'_i/ \mathbf{Q}\) is Galois and (b) the degree of \(K'_i / \mathbf{Q}\) is a power of 2.</li>
+</ol>
+
+
+<p>
+Let us now try the converse.
+Suppose \(z\) lies in a Galois extension of degree \(2^{m}\) over \(\mathbf{Q}\).
+Let \(G\) be the Galois group.
+</p>
+
+<ol class="org-ol">
+<li>Here is a fact from group theory: a group of order \(2^m\) has a subgroup of order \(2^{m-1}\).  Use it to produce a chain of subgroups of size \(1,2,\cdots, 2^m\).</li>
+<li>Apply the main theorem of Galois theory.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orge5259fb" class="outline-2">
+<h2 id="orge5259fb">Discussions/announcements</h2>
+<div class="outline-text-2" id="text-orge5259fb">
+</div>
+<div id="outline-container-org6436599" class="outline-3">
+<h3 id="org6436599">Welcome to Algebra 2!</h3>
+<div class="outline-text-3" id="text-org6436599">
+<p>
+Welcome to algebra 2!  
+</p>
+
+<p>
+I will introduce the course today, and then we will dive in.  The reading is section 12.1 and the beginning of 12.2 from Artin, and <a href="#orgf42512f">a short note about rings</a> that I wrote (if you need a refresher).
+</p>
+
+<p>
+Because this is the first week, a few things are different.  
+</p>
+
+<p>
+I do not expect you to have done the reading by today (from next week, I do expect you to have done the reading by Monday).  The check-in for this week is due on Wednesday (from next week, it will be due on Monday).  I hope you will get a chance to at least skim through the reading by Wednesday.
+</p>
+
+<p>
+There is no quiz today (quizzes will start in week 3); no workshops (start in week 2); no homework for Friday (starts in week 2).
+</p>
+
+<p>
+See you in class!
+</p>
+</div>
+</div>
+<div id="outline-container-org5f40bb8" class="outline-3">
+<h3 id="org5f40bb8">Week 3 in Algebra 2</h3>
+<div class="outline-text-3" id="text-org5f40bb8">
+<p>
+This week, we will discuss factorisation in the ring of Gaussian integers and then move to fields and field extensions.
+</p>
+
+<p>
+In parallel, you will read about the degree of a field extension, its connection with the minimal polynomial, and applications to ruler and compass constructions (Artin 15.3, 15.4, 15.5).  We will talk about this in class next week.
+</p>
+
+<p>
+We will also have our first quiz at the beginning of the lecture on Wednesday.  Workshops will happen as scheduled on Tuesday and Wednesday.
+</p>
+
+<p>
+See you in class!
+</p>
+</div>
+</div>
+<div id="outline-container-orgfb6cd68" class="outline-3">
+<h3 id="orgfb6cd68">Week 4 in Algebra 2</h3>
+<div class="outline-text-3" id="text-orgfb6cd68">
+<p>
+We will talk about field extensions, their degrees, and applications to ruler and compass constructions.  
+</p>
+
+<p>
+In parallel, you will read how to construct field extensions synthetically, without access to an ambient field like \(\mathbf{C}\), and use this knowledge to construct exotic finite fields. 
+</p>
+
+<p>
+We will have an in-class quiz at the beginning of Monday&rsquo;s class based on the ideas in the second assignment.
+</p>
+
+<p>
+See you in class!
+</p>
+</div>
+</div>
+<div id="outline-container-org738939b" class="outline-3">
+<h3 id="org738939b">Week 5 in Algebra 2</h3>
+<div class="outline-text-3" id="text-org738939b">
+<p>
+This week, we will construct all finite fields and learn (pretty much) everything there is to learn about them.  In your readings, you will read about the primitive element theorem and the fundamental theorem of algebra.
+</p>
+
+<p>
+We will have an in-class quiz at the beginning of Monday&rsquo;s class based on the ideas in the third assignment.
+</p>
+
+<p>
+See you in class!
+</p>
+</div>
+</div>
+<div id="outline-container-org1d71c45" class="outline-3">
+<h3 id="org1d71c45">Week 6 in Algebra 2</h3>
+<div class="outline-text-3" id="text-org1d71c45">
+<p>
+This week, we will talk about the primitive element theorem and the fundamental theorem of algebra.
+</p>
+
+<p>
+As usual, we will have an in-class quiz at the beginning of Monday&rsquo;s class based on the ideas in the fourth assignment.
+</p>
+
+<p>
+See you in class!
+</p>
+</div>
+</div>
+<div id="outline-container-orgd46a13e" class="outline-3">
+<h3 id="orgd46a13e">Week 7 in Algebra 2</h3>
+<div class="outline-text-3" id="text-orgd46a13e">
+<p>
+There is no reading to do for this week.  On Monday, I will give an overview of Galois theory.  You may want to watch the video titled &ldquo;Overview of Galois theory&rdquo; in the <a href="https://login.echo360.org">class recordings.</a> (Use your anu id u&#x2026;&#x2026;@anu.edu.au to log in).
+</p>
+
+<p>
+Despite the midterm on Wednesday, we will have a quiz on Monday based on the ideas in the fifth assignment.
+</p>
+
+<p>
+See you in class!
+</p>
+</div>
+</div>
+<div id="outline-container-org8683c53" class="outline-3">
+<h3 id="org8683c53">Week 8 in Algebra 2</h3>
+<div class="outline-text-3" id="text-org8683c53">
+<p>
+We don&rsquo;t have class today (Monday) because of ANZAC day.  The quiz and the check-in are postponed to Wednesday. 
+</p>
+
+<p>
+This week reading was on symmetric functions and splitting fields, which is what we will talk about in class on Wednesday.
+Next week&rsquo;s reading will be about automorphisms and fixed fields.
+</p>
+
+<p>
+See you in class!
+</p>
+</div>
+</div>
+<div id="outline-container-orgc5ee6df" class="outline-3">
+<h3 id="orgc5ee6df">Week 9 in Algebra 2</h3>
+<div class="outline-text-3" id="text-orgc5ee6df">
+<p>
+In class, we will talk about automorphism groups of field extension and fixed fields.  The reading is about the main theorem of Galois theory.  
+</p>
+
+<p>
+With the main theorem, we will have the tools to know precisely the intermediate extensions for any given field extension.  The next goal is to characterise the extensions that arise from adjoining n-th roots (this is called &ldquo;Kummer theory&rdquo;).  We will use this knowledge to exhibit extensions that cannot arise as a tower of n-th root extensions.    
+</p>
+
+<p>
+As usual, we have a quiz on Monday based on the most recent submitted homework.
+</p>
+
+<p>
+See you in class!
+</p>
+</div>
+</div>
+<div id="outline-container-orgdb0e5ab" class="outline-3">
+<h3 id="orgdb0e5ab">Week 10 in Algebra 2</h3>
+<div class="outline-text-3" id="text-orgdb0e5ab">
+<p>
+This week, we will see the main theorem of Galois theory in its full glory (with lots of examples). 
+</p>
+
+<p>
+The next week has applications of the main theory to cubics and quartics.  Then, we will do Kummer theory and prove that a quintic is not solvable by radicals.  
+</p>
+
+<p>
+A topic I would like to squeeze in is the n-th roots of unity where n is not a prime.  This is not in the book, but I felt like you all really liked the fact that this extension had degree phi(n).        
+</p>
+
+<p>
+As usual, we have a quiz on Monday based on the most recent submitted homework.
+</p>
+
+<p>
+See you in class!
+</p>
+</div>
+</div>
+<div id="outline-container-org470504b" class="outline-3">
+<h3 id="org470504b">No class on Monday; Quiz on Wednesday; HW due tomorrow</h3>
+<div class="outline-text-3" id="text-org470504b">
+<p>
+Homework 1 is due tomorrow on canvas.  Remember that you only have to submit one problem and it is only for feedback.
+</p>
+
+<p>
+We don&rsquo;t have class on Monday because of Canberra day.  So our first quiz will have to be on Wednesday.  It will be 10 minutes long at the beginning of class.
+</p>
+
+<p>
+Have a good long weekend!
+</p>
+</div>
+</div>
+<div id="outline-container-org7fffeb9" class="outline-3">
+<h3 id="org7fffeb9">Exam and office hours today</h3>
+<div class="outline-text-3" id="text-org7fffeb9">
+<p>
+Good luck for the exam today.  Please arrive in time &#x2014; we will start at 3:35 sharp and end at 5:00.
+</p>
+
+<p>
+Unfortunately, I can&rsquo;t come in to work today.  My colleague Tanisha will administer the exam.
+</p>
+
+<p>
+If you have any last minute questions, I will hold office hours by zoom from 1:30pm to 3:00pm.  Here are the details:
+</p>
+
+<p>
+URL: <a href="https://anu.zoom.us/j/85129975712?pwd=EDhxn9J1KIuaqgSAbwDx4SXTuzxRBX.1">https://anu.zoom.us/j/85129975712?pwd=EDhxn9J1KIuaqgSAbwDx4SXTuzxRBX.1</a>
+Meeting id: 85129975712
+Password: frobenius    
+</p>
+</div>
+</div>
+<div id="outline-container-orge89eb60" class="outline-3">
+<h3 id="orge89eb60">Course representative</h3>
+<div class="outline-text-3" id="text-orge89eb60">
+<p>
+We need a course representative.  Please volunteer (by sending me an email).  You know you want to!
+</p>
+</div>
+</div>
+<div id="outline-container-orgee1c397" class="outline-3">
+<h3 id="orgee1c397">Recording for 25 March</h3>
+<div class="outline-text-3" id="text-orgee1c397">
+<p>
+I am sorry that the video was not captured on 25 March.  As an alternative, I have uploaded a previous year&rsquo;s recording that covers the same topic.  
+</p>
+</div>
+</div>
+<div id="outline-container-orgcdf8860" class="outline-3">
+<h3 id="orgcdf8860">Clarification of Proposition 15.2.8</h3>
+<div class="outline-text-3" id="text-orgcdf8860">
+<p>
+Artin&rsquo;s Proposition 15.2.8 is easy to misread; so here is some clarification.
+</p>
+
+<p>
+Let \(F \subset K\) be fields (think of \(\mathbf{Q} \subset \mathbf{C}\) as a concrete example).
+Let \(\alpha, \beta \in K\) be two elements algebraic over \(F\). 
+We can ask three questions:
+</p>
+
+<ol class="org-ol">
+<li>Is \(F[\alpha] = F[\beta]\)? (Literal equality).</li>
+<li>Is there an \(F\)-isomorphism \(F[\alpha] \to F[\beta]\)? (An \(F\)-isomorphism is an isomorphism that is the identity when restricted to \(F\)).</li>
+<li>Is there an \(F\)-isomorphism \(F[\alpha] \to F[\beta]\) that sends \(\alpha\) to \(\beta\).</li>
+</ol>
+
+<p>
+Proposition 15.2.8 addresses the third question.  
+The answer is &ldquo;Yes&rdquo; if and only if \(\alpha\) and \(\beta\) have the same irreducible polynomial over \(F\).
+</p>
+
+<p>
+Here is what we can say about the first two questions. 
+</p>
+
+<ol class="org-ol">
+<li>We have \(F[\alpha] = F[\beta]\) if and only if \(\alpha \in F[\beta]\) and \(\beta \in F[\alpha]\).  Whether this is case, however, can be difficult to determine.  For example, it is not obvious whether \(\mathbf{Q}[\sqrt 2 + \sqrt 3] = \mathbf{Q}[\sqrt 2 - \sqrt 3]\).  What do you think?</li>
+
+<li><p>
+If \(F[\alpha] = F[\beta]\), then certainly there is an \(F\)-isomorphism \(F[\alpha] \to F[\beta]\), namely the identity isomorphism.  But if \(\alpha \neq \beta\), then the identity will not take \(\alpha\) to \(\beta\).
+</p>
+
+<p>
+Even if \(F[\alpha] \neq F[\beta]\), there can be still be an \(F\)-isomorphism \(F[\alpha] \to F[\beta]\).  For example, we have an isomorphism \(\mathbf{Q}[2^{1/3}] \to \mathbf{Q}[2^{1/3}\omega]\) that sends \(2^{1/3}\) to \(2^{1/3}\omega\).
+This kind of isomorphism&#x2014;one that sends \(\alpha\) to \(\beta\)&#x2014;exists if and only if \(\alpha\) and \(\beta\) have the same irreducible polynomial.
+</p>
+
+<p>
+Still in the case \(F[\alpha] \neq F[\beta]\), there can be an \(F\)-isomorphism \(F[\alpha] \to F[\beta]\) that does not take \(\alpha\) to \(\beta\).  It can be difficult to determine whether such an isomorphism exists.  But if it does, then the image of \(\alpha\) in \(F[\beta]\) will necessarily have the same irreducible polynomial as \(\alpha\).
+</p></li>
+</ol>
+
+<p>
+There is a separate question: is there an isomorphism \(F[\alpha] \to F[\beta]\) that does not necessarily act as the identity on \(F\)?  There can be, but it takes some effort to construct examples.  Indeed, if \(F = \mathbf{Q}\), then any isomorphism \(\mathbf{Q}[\alpha] \to \mathbf{Q}[\beta]\) will have to act as the identity on \(\mathbf{Q}\) (do you see why?).  So such examples only exist where the base field \(F\) is different from \(\mathbf{Q}\).
+</p>
+</div>
+</div>
+<div id="outline-container-orga55af61" class="outline-3">
+<h3 id="orga55af61">Assignment 1 &ldquo;marked&rdquo;; Assignment 2 due today</h3>
+<div class="outline-text-3" id="text-orga55af61">
+<p>
+I just finished &ldquo;marking&rdquo; assignment 1.  Some of my comments are about general principles of mathematical writing.  I have uploaded four articles about writing mathematics and linked them from the course homepage (scroll all the way down, under &ldquo;References and resources&rdquo;).  Some of my comments refer to these articles.  For example, if I wrote &ldquo;See [Poonen, item 27]&rdquo;, I would like you to look at item number 27 in Poonen&rsquo;s article about mathematical writing.
+</p>
+
+<p>
+Also, I have posted <a href="#orgd643a76">solution sketches</a>. 
+</p>
+</div>
+</div>
+<div id="outline-container-org772d971" class="outline-3">
+<h3 id="org772d971">Mid-semester examination</h3>
+<div class="outline-text-3" id="text-org772d971">
+<p>
+The mid-semester exam will be in-class on Wednesday in Week 7 (22 April).  It will cover everything that we have seen until week 6.  I will upload practice questions/exams shortly.
+</p>
+
+<p>
+We will use the entire hour and half for the exam.  So we will start at 3:30 sharp and end at 5:00.  
+</p>
+</div>
+</div>
+<div id="outline-container-orgda82451" class="outline-3">
+<h3 id="orgda82451">Office hours in teaching break</h3>
+<div class="outline-text-3" id="text-orgda82451">
+<p>
+Instead of the regular office hours, this week I will have office hours on Thursday (16 April) 1pm-3pm.  If you want to meet at some other time, please feel free to email me and we can set a time. 
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org1101d2b" class="outline-2">
+<h2 id="org1101d2b">Mini projects</h2>
+<div class="outline-text-2" id="text-org1101d2b">
+<p>
+Choose one of the topics below and write a 2-5 page article on it.  Please submit your write-up latest by the Friday of Week 12 (29 May) by email.  After your submission, we will schedule a short presentation (10 minutes, followed by 5-10 minutes for questions).  You will present the topic to me and one of my colleagues.  
+</p>
+
+<p>
+Your project will be judged on
+</p>
+<ol class="org-ol">
+<li>the quality of your writing (correctness, clarity, and readibility)</li>
+<li>your understanding as demonstrated in the writing and presentation.</li>
+</ol>
+
+<p>
+You may use any sources as reference, but you must cite them appropriately.  Every source that you use must be accessible to others.  So a published paper, a website, or a book is fine.  Conversation with a text generator (like ChatGPT) or another person is not a valid source.  You are free to get help from other people or use a text generator, but everything you submit must be written by yourself in your own words.  You should also be prepared to present it to others and answer questions about it.  You should also acknowledge all the sources of help in your write-up.
+</p>
+
+<p>
+I am happy to talk about the project at any time.  Send me an email and we will set up a time.    
+</p>
+</div>
+<div id="outline-container-org9ff0203" class="outline-3">
+<h3 id="org9ff0203">Possible topics</h3>
+<div class="outline-text-3" id="text-org9ff0203">
+<ol class="org-ol">
+<li>Let \(G = \operatorname{Aut}_{\mathbf{C}}(\mathbf{C}(t))\).
+It turns out that \(G\) is isomorphic to the group of \(2 \times 2\) complex valued matrices, modulo scaling.  The matrix \(\begin{pmatrix} a& b \\ c & d \end{pmatrix}\) corresponds to the isomorphism
+\[ t \mapsto \frac{a + bt}{c + dt}.\]
+Describe all finite subgroups of \(G\).</li>
+
+<li>Let \(G \subset \operatorname{Aut}_{\mathbf{C}}(\mathbf{C}(t))\) be a finite group.
+Let \(t_1, \dots, t_n\) be the orbit of \(t\).
+Let \(e_1, \dots, e_n\) be the elementary symmetric polynomials in \(t_1, \dots, t_n\).
+Prove that \(\mathbf{C}(e_1, \dots, e_n) \subset \mathbf{C}(t)\) is the fixed field of \(G\).
+Illustrate with some examples.</li>
+
+<li>Let \(\ell\) be a prime number.
+What is the degree of the splitting field of \(x^{\ell}-1\) over \(\mathbf{F}_p\) for other primes \(p\)?
+Do some experiments to find an answer.
+If possible, formulate a conjecture, prove it or find it in the literature.</li>
+
+<li>Fix a positive integer \(n\).
+Make the following statement precise: &ldquo;most polynomials of degree \(n\) in \(\mathbf{Q}[x]\) have Galois group \(S_n\).&rdquo;
+Give experimental evidence to support or refute it.</li>
+
+<li>Look up the &ldquo;Kronecker&#x2013;Weber theorem&rdquo;. 
+Explain its statement and illustrate it with some examples.</li>
+
+<li>Find out what is the &ldquo;inverse Galois problem&rdquo;.
+Explain some partial results.</li>
+
+<li>If you have other ideas, please feel free!  But first talk to me.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+Created by <a href="mailto:anand.deopurkar@anu.edu.au">Anand Deopurkar</a> using <a href="https://www.gnu.org/software/emacs/">Emacs</a> 30.2 (<a href="https://orgmode.org">Org</a> mode 9.7.11).  <a href="https://github.com/deopurkar/deopurkar.github.io">Last modified</a>: 2026-05-30 Sat 14:05.
+</div>
+</body>
+</html>

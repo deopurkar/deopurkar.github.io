@@ -1,0 +1,150 @@
+\documentclass{article}
+% Another popular document class is amsart. It gives a more compact layout.
+
+% We will tell LaTeX to load several packages which provide additional useful functionality.
+
+% If you need some typesetting functionality in LaTeX, the first course of action should be to search for a package that provides that functionality, and use it. For example, googling "LaTeX Young tableaux" tells us that there are two packages that provide the tools to draw Young tableaux, "youngtab" and "ytableau". I like "ytableau" more.
+
+\usepackage{
+  amsmath,  % Contains many useful mathematical typesetting tools.
+  amssymb,  % Contains many useful mathematical symbols.
+  amsthm,   % Contains tools for theorem-like environments
+  tikz,     % A versatile tool to draw diagrams
+  fullpage, % More reasonable margins
+  ytableau, % To draw young tableaux.
+  thmtools, % Lets us define theorem-like environments easily.
+  hyperref, % Better references.
+  cite,     % Better citations.
+  url       % URL handling
+}
+
+% Useful theorem definitions
+\declaretheorem{theorem}
+\declaretheorem[sibling=theorem]{proposition} % sibling=theorem means that proposition will use the same counter as theorem.
+\declaretheorem[sibling=theorem]{conjecture}
+\declaretheorem[sibling=theorem]{lemma}
+\declaretheorem[sibling=theorem, style=definition]{definition}
+\declaretheorem[sibling=theorem, style=remark]{remark}
+
+% You may like to define abbreviations for common notation. But keep this to a minimum.
+\newcommand{\Z}{\mathbb Z} %The integers
+\newcommand{\Q}{\mathbb Q} %The rationals
+\newcommand{\R}{\mathbb R} %The reals
+\newcommand{\C}{\mathbb C} %The complex numbers
+\newcommand{\N}{\mathbb N} %The natural numbers
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is where the content starts.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Title of your paper}
+\author{Your name}
+
+\begin{document}
+\maketitle
+
+% The section names are only for example. Use your own.
+% LaTeX also provides \subsection and \subsubsection but that may be unnecessary in a short document.
+
+\section{Introduction}
+\label{sec:intro}
+Introduce the main result discussed in your paper.
+Discuss history or related work.
+Discuss applications or other motivation.
+State the main theorem.
+% In LaTeX, everything in [ ] is "optional." In the following, we have given an (optional) name to our theorem.
+\begin{theorem}[Fermat's Last Theorem]
+  \label{thm:bigfermat}
+  Let $n \geq 3$ be a positive integer.
+  The equation
+  \[ x^n + y^n = z^n\]
+  has no solution where $x$, $y$, and $z$ are positive integers.
+\end{theorem}
+
+\section{Sketch of the proof}
+% You can use \autoref to refer to anything you have \label ed.
+% Use \cite for bibliographic citations
+The proof of \autoref{thm:bigfermat} uses the following theorem of Wiles \cite{wiles} and Taylor--Wiles \cite{taylor-wiles}.
+\begin{theorem}[Modularity theorem]
+  Every semistable elliptic curve defined over $\Q$ is modular.
+\end{theorem}
+\begin{proof}
+  The proof is too long to fit here.
+  % You can give (optional) precise information in your citations.
+  See \cite[Theorem 0.4]{wiles}.
+\end{proof}
+
+Using the modularity theorem, the proof of \autoref{thm:bigfermat} goes as follows.
+% An optional argument to proof customizes the "Proof" label.
+\begin{proof}[Proof of \autoref{thm:bigfermat}]
+  % Bad! Do not do this!
+  We leave the proof as an exercise for the reader.
+\end{proof}
+
+\section{Young tableaux in \LaTeX}
+Here is a Young tableau.
+\[  \ytableaushort{1122,23,4,4} \]
+Here is another way to write a tableau.
+This time, it is a skew tableau.
+\[
+\begin{ytableau}
+  \none & \none & 1 & 2 \\
+  \none & 1 & 2\\
+  1 & 2\\
+  2
+\end{ytableau}
+\]
+Here is a Young diagram.
+\[
+\ydiagram{4,2,1}
+\]
+For more on drawing tableaux, see \cite{reich}.
+
+\section{Other \LaTeX\ miscelleny}
+Numbered lists are made using `enumerate.'
+\begin{enumerate}
+\item Item 1
+\item Item 2
+\item Et cetera.
+\end{enumerate}
+
+Unnnumbered lists are made using `itemize.'
+\begin{itemize}
+\item Item 1
+\item Item 2
+\item Et cetera
+\end{itemize}
+
+%Note how the open and close quotes are written.
+
+A valuable tool to figure out how to write a particular mathematical symbol in \LaTeX\ is ``Deteixfy'' (\url{http://detexify.kirelabs.org/classify.html}).
+It allows you to draw a symbol by hand and gives the corresponding \LaTeX\ command(s).
+It will also mention if you need to load any additional package to use that command (in which case, you will need to add a \verb|\usepackage| command in the preamble.)
+
+\section{Further questions}
+Discuss further questions.
+This discussion can also go at the end of the introduction.
+If you have any further questions about \LaTeX, Google is your friend (and so am I).
+
+% A bibliography can be created manually as follows.
+\begin{thebibliography}{9}
+  % The required second argument is the length of the longest label.
+
+  % Each bibliography entry is a \bibitem
+  % The first argument is the citation key (what we use when we cite the item) and the rest is the actual citation.
+
+  % Choose a consistent style for writing citations.
+\bibitem{wiles}
+  A. Wiles. \emph{Modular elliptic curves and Fermat's Last Theorem}. Annals of Math. \textbf{141} (1995), 443--551.
+  
+\bibitem{taylor-wiles}
+  R. Taylor, A. Wiles. \emph{Ring theoretic properties of certain Hecke algebras}. Annals of Math. \textbf{141} (1995), 553--572.
+  
+\bibitem{reich}
+  R. Reich. \emph{The \texttt{ytableau} package}. \url{https://www.ctan.org/pkg/ytableau}.
+\end{thebibliography}
+
+% An alternative and more sophisticated way is to use the bibliography management system bibtex.
+% See http://www.math.uiuc.edu/~hildebr/tex/bibliographies.html for details.
+
+\end{document}
