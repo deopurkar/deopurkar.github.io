@@ -15,6 +15,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
     }
 
+    // The target headline is never collapsed.
+    var headlines = document.querySelectorAll(":target");
+    for (var i = 0; i < headlines.length; i++) {
+	if (headlines[i].classList.contains("collapsed")){
+            headlines[i].classList.remove("collapsed");
+	    headlines[i].classList.add("collapsible");
+	}
+    }
+
     var headlines = document.querySelectorAll(".collapsible");
     for (var i = 0; i < headlines.length; i++) {
         addCollapsiblility(headlines[i], true);
