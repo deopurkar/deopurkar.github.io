@@ -27,8 +27,6 @@ CV: [[file:cv.html][html]] [[file:cv.pdf][pdf]]
 I am a mathematician working in algebraic geometry and related areas.
 I study the interplay between systems of algebraic equations and the geometric shapes they describe.
 
-#+TOC: headlines:1
-
 #+end_intro
 
 * now 
