@@ -45,12 +45,17 @@ The variable ~links-in-cv~ used above controls whether links should be included 
 The variable ~project-root-directory~ sets up the root directory of the website.  This is used for backlinks search.
 The backlinks also need an up-to-date id database.
 #+begin_src elisp
-   (defvar project-root-directory (expand-file-name "./content/"))
+  (defvar project-root-directory (expand-file-name "./content/"))
 
-  (org-id-update-id-locations 
-   (directory-files-recursively
-    project-root-directory
-    "\.org$"))
+  (unless (file-exists-p user-emacs-directory)
+    (mkdir user-emacs-directory))
+
+  (setq org-html-prefer-user-labels t)
+
+    (org-id-update-id-locations 
+     (directory-files-recursively
+      project-root-directory
+      "\.org$"))
 #+end_src
 
 Next I set the options for ~org-publish-project-alist~, as documented [[help:org-publish-project-alist][here]].

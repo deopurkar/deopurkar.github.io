@@ -133,8 +133,11 @@ Here are some from [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][the list of my exp
   		     (let ((tags (org-get-tags pom)))
   		       (when (member "highlight" tags)
   			 (format
-  			  "- %s%s"
+  			  "- %s%s%s"
   			  (pretty-print-backlink pom)
+  			  (if (org-entry-get pom "links")
+  			      (concat " (" (org-entry-get pom "links") ")")
+  			    "")
   			  (if
   			      (or
   			       (member "preprint" (org-get-tags pom))
@@ -147,12 +150,12 @@ Here are some from [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][the list of my exp
 
 #+RESULTS:
 :results:
-- [[id:0f97be8d-e4d3-4515-bf1f-981c9e8380a0][An introduction to intersection homology]] ([[file:./anandrd_minor_thesis.pdf][pdf]])
+- [[id:0f97be8d-e4d3-4515-bf1f-981c9e8380a0][An introduction to intersection homology]] ([[file:papers/anandrd_minor_thesis.pdf][pdf]])
   /Minor thesis (Harvard)/
-- [[id:9efcc78f-db58-4c06-a73a-405566487ca4][The arithmetic and geometry of branched coverings: theorems of Belyi and Darmon--Granville]] ([[file:./arithmetic_covers.pdf][pdf]])
+- [[id:9efcc78f-db58-4c06-a73a-405566487ca4][The arithmetic and geometry of branched coverings: theorems of Belyi and Darmon--Granville]] ([[file:papers/arithmetic_covers.pdf][pdf]])
   /Pre-print/
-- [[id:5b14bbaa-5b4d-4170-81d8-46ffc0b65716][How to count using (co)homology (talk, Tata Institute of Fundamental Research)]] ([[file:2018-tifr.pdf][notes]])
-- [[id:c66380b2-8eca-4313-8360-16b28533e3fe][The work of Caucher Birkar (talk, Australian National University)]] ([[file:2018-FMColloquium.pdf][notes]])
+- [[id:5b14bbaa-5b4d-4170-81d8-46ffc0b65716][How to count using (co)homology (talk, Tata Institute of Fundamental Research)]] ([[file:talks/2018-tifr.pdf][notes]])
+- [[id:c66380b2-8eca-4313-8360-16b28533e3fe][The work of Caucher Birkar (talk, Australian National University)]] ([[file:talks/2018-FMColloquium.pdf][notes]])
 - [[id:53fe8ada-0bc4-439b-9763-84cbb137727b][The work of Maryam Mirzakhani (talk, Australian National University)]] ([[id:e5dcac8c-b6ff-4e38-919b-c90d821d4187][notes]])
 :end:
 
@@ -160,16 +163,20 @@ Here are some from [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][the list of my exp
 * Teaching
 Here are some from [[id:cbb16489-0d75-4466-bf36-240257da8f58][the list of courses I have taught]].
 #+begin_src emacs-lisp :exports results :results value raw drawer
-  (concat " - "
-  	(string-join
-  	 (remove nil
-  		 (org-map-entries
-  		  (lambda ()
-  		    (when (member "highlight" (org-get-tags))
-  		      (pretty-print-backlink (point))))
-  		  "level=1"
-  		  '("teaching.org")))
-  	 "\n - "))
+  (string-join
+   (remove nil
+  	 (org-map-entries
+  	  (lambda ()
+  	    (when (member "highlight" (org-get-tags))
+  	      (format " - %s%s"
+  		      (pretty-print-backlink (point))
+  	      (if (org-entry-get (point) "links")
+  		  (concat " (" (org-entry-get (point) "links") ")")
+  		"")
+  	      )))
+  	  "level=1"
+  	  '("teaching.org")))
+   "\n")
 #+end_src
 #+RESULTS:
 :results:
@@ -181,8 +188,8 @@ Here are some from [[id:cbb16489-0d75-4466-bf36-240257da8f58][the list of course
  - [[id:1680737a-9d54-448d-8951-a0fe1ae16016][Algebraic Geometry (Algebra 3), 2021]] ([[id:d86f42ff-f826-4c2a-9e1f-b85a7934e6c0][course page]])
  - [[id:22f29317-d339-4e49-b46a-17a34e0b6091][Foundations of Algebraic Geometry: Schemes, 2020]] ([[id:bf031ad4-94a5-42bd-8606-70e9cf0aec5f][course page]])
  - [[id:2a240d8e-a930-4e2c-a160-d39ff51e7447][Algebraic curves, 2017]] ([[id:c0b9ba79-93e6-41cf-909e-efd0be13a8de][course page]])
- - [[id:6b8e011c-0df8-46e7-9674-48d1dcea50f5][Young tableaux in algebra and geometry, 2015]] ([[file:2015_young_tableaux/][course page]])
- - [[id:ecfad00a-6580-4202-a4b6-b7cee3169314][Moduli of curves, 2014]] ([[file:2014_moduli_of_curves/][course page]])
+ - [[id:6b8e011c-0df8-46e7-9674-48d1dcea50f5][Young tableaux in algebra and geometry, 2015]] ([[file:teaching/2015_young_tableaux/][course page]])
+ - [[id:ecfad00a-6580-4202-a4b6-b7cee3169314][Moduli of curves, 2014]] ([[file:teaching/2014_moduli_of_curves/][course page]])
 :end:
 
 * Odds and ends
