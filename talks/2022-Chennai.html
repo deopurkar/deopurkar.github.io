@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-30 Sat 01:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Carpentry, geometry, and category theory</title>
+<meta name="author" content="Anand Deopurkar" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="/css/main.css"><script src="/js/collapsibility.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Carpentry, geometry, and category theory</h1>
+<div class="properties" id="org7b398ee">
+
+</div>
+
+<p>
+(Notes for the talk at CMI in 2022).
+</p>
+
+<div id="outline-container-orgd81e0bc" class="outline-2">
+<h2 id="orgd81e0bc">Carpentry</h2>
+<div class="outline-text-2" id="text-orgd81e0bc">
+</div>
+<div id="outline-container-orgcefd3f4" class="outline-3">
+<h3 id="orgcefd3f4">The carpenter&rsquo;s rule problem</h3>
+<div class="outline-text-3" id="text-orgcefd3f4">
+</div>
+<div id="outline-container-orgce85c87" class="outline-4">
+<h4 id="orgce85c87">Definition of carpenter&rsquo;s rule</h4>
+<div class="outline-text-4" id="text-orgce85c87">
+<p>
+A chain \(C\) with edges of specified length.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org39cd9f7" class="outline-4">
+<h4 id="org39cd9f7">The carpenter&rsquo;s rule problem</h4>
+<div class="outline-text-4" id="text-org39cd9f7">
+<p>
+Can a planar embedding of \(C\) be deformed to be linear?
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd1dfaa1" class="outline-4">
+<h4 id="orgd1dfaa1">Generalisations</h4>
+<div class="outline-text-4" id="text-orgd1dfaa1">
+<ol class="org-ol">
+<li>Consider embeddings in \(\mathbf{R}^{n}\) for \(n = 2, 3, 4, \dots\).</li>
+<li>Consider metric graphs \(G\) other than a chain.</li>
+</ol>
+</div>
+
+<ul class="org-ul">
+<li><a id="org6928f06"></a>Results<br />
+<div class="outline-text-5" id="text-org6928f06">
+<ol class="org-ol">
+<li>Chains can be straightened in \(\mathbf{R^n}\) for \(n \geq 4\) (, ).</li>
+<li>There exist locked graphs in \(\mathbf{R}^2\).</li>
+<li>There exist locked chains in \(\mathbf{R}^3\).</li>
+<li>Chains can be straightened in \(\mathbf{R}^2\) (, a, , a)</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org54c089d" class="outline-3">
+<h3 id="org54c089d">Pointed pseudo-triangulations</h3>
+<div class="outline-text-3" id="text-org54c089d">
+</div>
+<div id="outline-container-org1b60a41" class="outline-4">
+<h4 id="org1b60a41">Definition</h4>
+<div class="outline-text-4" id="text-org1b60a41">
+<p>
+Given a collection of \(n\) points in general position, a ppt is a maximal collection of edges such that
+</p>
+<ol class="org-ol">
+<li>No two edges cross.</li>
+<li>At every vertex, all incident edges lie in a half-plane.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgd6e857d" class="outline-4">
+<h4 id="orgd6e857d">Properties</h4>
+<div class="outline-text-4" id="text-orgd6e857d">
+<ol class="org-ol">
+<li>Each region is a pseudo-triangle.</li>
+<li>There are \(2n-3\) edges.</li>
+<li>Each edge is uniquely flippable.  The flip graph is connected.</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-org09b96bf" class="outline-4">
+<h4 id="org09b96bf">Chains and motions</h4>
+<div class="outline-text-4" id="text-org09b96bf">
+<ol class="org-ol">
+<li>A ppt is minimally rigid.</li>
+<li>A ppt minus an external edge has one direction of freedom.
+Furthermore, along one of the two rays, the motion is expansive.</li>
+<li>A polygonal chain lies on a ppt minus an external edge.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org6d25a13" class="outline-4">
+<h4 id="org6d25a13">Expansive motions solve the Carpenter&rsquo;s rule problem</h4>
+<div class="outline-text-4" id="text-org6d25a13">
+<p>
+Start with a chain \(C\).
+Complete it to a ppt minus an external edge. 
+Move in the unique expansive direction.  Expansivity guarrantees that the configuration remains non-crossing.
+Eventually the chain unfolds.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgecc254d" class="outline-2">
+<h2 id="orgecc254d">Geometry</h2>
+<div class="outline-text-2" id="text-orgecc254d">
+</div>
+<div id="outline-container-org427ce1a" class="outline-3">
+<h3 id="org427ce1a">The configuration space is a \(K(\pi, 1)\)</h3>
+<div class="outline-text-3" id="text-org427ce1a">
+<p>
+(, a, , a, , a) 
+</p>
+
+<p>
+New proof that exhibits an explicit contraction of the universal cover.
+</p>
+
+<p>
+Consider \(\widetilde {\operatorname{Conf}_n}\), the space of \(n\) ordered points along with an \(n\)-chain up to isotopy.
+Then \(\widetilde {\operatorname{Conf}_n} \to \operatorname{Conf}_{n}\) is a covering map.
+Given a point of \(\widetilde {\operatorname{Conf}_{n}}\), the support of the chain lies on a ppt*.
+Move in an expansive direction.
+Eventually, the chain will unfold, giving a deformation retraction of \(\widetilde {\operatorname{Conf}_{n}}\) to a subspace where the chain is linear.
+It is easy to see directly that the latter is contractible.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6aee6ed" class="outline-2">
+<h2 id="org6aee6ed">Category theory</h2>
+<div class="outline-text-2" id="text-org6aee6ed">
+</div>
+<div id="outline-container-orgfc34239" class="outline-3">
+<h3 id="orgfc34239">The stability manifold</h3>
+<div class="outline-text-3" id="text-orgfc34239">
+<p>
+The space \(\operatorname{Conf}_n\) arises in a seemingly unrelated setting.
+To every triangulated category \(C\), we can associate a manifold \(\operatorname{Stab} C\).
+This manifold is a parameter space for Bridgeland stability conditions on \(C\) (, a).
+For every \(n\), there is a particular category \(C_n\) of interest in algebraic geometry, symplectic geometry, and representation theory such that we have an isomorphism
+\[ \operatorname{Stab} C_n = \widetilde{\operatorname{Conf}}_n.\]
+We deduce that \(\operatorname{Stab} C_n\) is contractible.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1aa009e" class="outline-3">
+<h3 id="org1aa009e">Categorical representations</h3>
+<div class="outline-text-3" id="text-org1aa009e">
+<p>
+Why do we care about categories like \(C_n\) and their stability manifolds?
+There is a class of groups \(G\) called Artin-Tits Braid groups that are quite poorly understood.
+One of the reasons that they are poorly understood is that we do not know any good linear representations of \(G\).
+In fact, it is unknown whether \(G\) has any faithful finite dimensional representations!
+</p>
+
+<p>
+Although it is hard to construct a vector space \(V\) on which \(G\) acts, it is much more natural to construct categories \(C\) on which \(G\) acts.
+Contractibility of \(\operatorname{Stab} C\) implies that this action is faithful.
+As a result, we can deduce many of the consequences of having a faithful linear representation.
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org9dc3e0f" class="outline-2">
+<h2 id="org9dc3e0f">What links here?</h2>
+<div class="outline-text-2" id="text-org9dc3e0f">
+<ul class="org-ul">
+<li><a href="../talks.html#ID-690f32f2-8492-49ae-87a7-11d9d6465e13">Carpentry, geometry, and category theory (talk, Chennai Mathematical Institute)</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+Created by <a href="mailto:anand.deopurkar@anu.edu.au">Anand Deopurkar</a> using <a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.3 (<a href="https://orgmode.org">Org</a> mode 9.6.15).  <a href="https://github.com/deopurkar/deopurkar.github.io">Last modified</a>: 2026-05-30 Sat 01:13.
+</div>
+</body>
+</html>

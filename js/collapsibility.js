@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+    
     // We make all h2 and h3 collapsible/collapsed by default.
 
     defcollapse = "collapsible"
     if (document.documentElement.clientWidth < 720){
-      defcollapse = "collapsed";
+	defcollapse = "collapsed";
     }
-
+    
     var headlines = document.querySelectorAll(".outline-2 h2, .outline-2 h3");
     for (var i = 0; i < headlines.length; i++){
-      if (!(headlines[i].classList.contains("collapsed") ||
-  	   headlines[i].classList.contains("collapsible"))){
-  	  headlines[i].classList.add(defcollapse);
-      }
+	if (!(headlines[i].classList.contains("collapsed") ||
+	     headlines[i].classList.contains("collapsible"))){
+	    headlines[i].classList.add(defcollapse);
+	}
     }
 
     var headlines = document.querySelectorAll(".collapsible");
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         addCollapsiblility(headlines[i], true);
     }
 
-
+    
     var collapsedHeadlines = document.querySelectorAll(".collapsed");
     for (var i = 0; i < collapsedHeadlines.length; i++) {
         addCollapsiblility(collapsedHeadlines[i], false);
