@@ -12,6 +12,8 @@
 
 (defvar project-root-directory (expand-file-name "./content/"))
 
+(require 'org-id)
+
 (org-id-update-id-locations 
  (directory-files-recursively
   project-root-directory
