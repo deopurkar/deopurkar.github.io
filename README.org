@@ -45,7 +45,7 @@ The variable ~links-in-cv~ used above controls whether links should be included 
 The variable ~project-root-directory~ sets up the root directory of the website.  This is used for backlinks search.
 The backlinks also need an up-to-date id database.
 #+begin_src elisp
-  (defvar project-root-directory (expand-file-name "./content/"))
+     (defvar project-root-directory (expand-file-name "./content/"))
 
   (unless (file-exists-p user-emacs-directory)
     (mkdir user-emacs-directory))
@@ -158,8 +158,10 @@ and a shell script to build and commit.
   git push
 #+end_src
 
-* Building on Github
-/This is working, but missing some fringe functionality./
+* COMMENT Building on Github
+/This is working, but missing some functionality./
+The emacs version in ubuntu repos is old.  Perhaps for this reason, but ~org-html-prefer-user-labels~ is not being respected, leading to lots of broken links.
+
 Once we have set up the tools to build the website locally, we can now use them to build the site automatically on Github.
 Put the following code in ~.github/workflows/build.yml~.
 Inspired by [[https://duncan.codes/posts/2019-09-03-migrating-from-jekyll-to-org/][this post]] and [[https://systemcrafters.net/publishing-websites-with-org-mode/automated-site-publishing/][this post]].
