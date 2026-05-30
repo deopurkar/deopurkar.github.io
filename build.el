@@ -33,15 +33,15 @@
        :section-numbers nil
        :with-broken-links nil
        :with-toc nil
-	 :with-tags nil
+       :with-tags nil
        :with-title t
        :with-author t
        :with-special-strings t
        :with-smart-quotes t
        :with-emphasize t
-	 :with-email t 
+       :with-email t 
        :with-drawers ("results")
-	 :html-prefer-user-labels t
+       :html-prefer-user-labels t
        :html-head-include-default-style nil
        :html-head-include-scripts nil 
        :html-head "<link rel=\"stylesheet\" href=\"/css/main.css\"><script src=\"/js/collapsibility.js\"></script>"
@@ -53,7 +53,10 @@
 				 (setq org-export-before-parsing-functions
 				       '(my/pp-properties-hook my/add-backlinks-hook)
 				       links-in-cv
-				       t))
+				       t
+				       org-html-prefer-user-labels
+				       t
+				       ))
 	:completion-function (lambda (b)
 			       (setq org-export-before-parsing-functions
 				     nil)))
