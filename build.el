@@ -15,6 +15,8 @@
 (unless (file-exists-p user-emacs-directory)
   (mkdir user-emacs-directory))
 
+(setq org-html-prefer-user-labels t)
+
 (org-id-update-id-locations 
  (directory-files-recursively
   project-root-directory
