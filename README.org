@@ -153,6 +153,7 @@ and a shell script to build and commit.
   git checkout "main"
   git pull
   emacs -Q --script build.el
+  rm -rf "/tmp/docs"
   mv "docs" "/tmp/"
   git add .
   git commit

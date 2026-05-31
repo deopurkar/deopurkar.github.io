@@ -3,7 +3,8 @@ cd "$HOME/website"
 git checkout "main"
 git pull
 emacs -Q --script build.el
-mv "docs" "/tmp/docs"
+rm -rf "/tmp/docs"
+mv "docs" "/tmp/"
 git add .
 git commit
 git push
