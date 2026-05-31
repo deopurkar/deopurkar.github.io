@@ -1,4 +1,4 @@
-(defvar properties-to-pp '("when" "where"  "venue" "with" "comments" "links" "labels"))
+(defvar properties-to-pp '("when" "where"  "venue" "with" "comments" "links"))
 
 (defun pp-properties ()
   (goto-char (point-min))

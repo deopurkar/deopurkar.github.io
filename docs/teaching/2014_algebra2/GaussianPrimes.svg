@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Handcrafted SVG -->
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width ="450"
+   height="450"
+   viewBox="-11.5 -11.5 23 23"
+>
+
+<title>Gaussian Primes in the complex Plane</title>
+
+<desc>
+	Gaussian Primes in the complex Plane.
+	Either p is a natural Prime and p = 3 mod 4
+	or p = a+ib where N(p) = a^2 + b^2 is a natural Prime.
+</desc>
+
+<defs>
+	<style type="text/css">
+	     .background { stroke:none; fill:white; fill-opacity:0.5; }
+	     .grid  { stroke:#888; stroke-width:0.03; }
+		 .axe   { stroke:#0b2; stroke-width:0.06; }
+		 .dot   { fill:black; stroke:none; }
+	</style>
+
+	<!-- Pattern used to make Grid -->
+	<path id="grid" d="M -12 0 h 24" class="grid" />
+
+	<circle id="prime" r="0.16" class="dot"/>
+
+</defs>
+
+
+<!-- Grid and a bit of Background (to ensure Contrast) -->
+<rect x="-11.5" y="-11.5" width="23" height="23" class="background" />
+
+<!-- Grid -->
+<!-- Unfortunately, declaring fill-Pattern does not work as expected.
+     There are rounding Errors so that the Grid would not coincide
+     exactly with the Points. So we go the hard Way... -->
+<g id="grid-y">
+	<use xlink:href="#grid" y="1" />
+	<use xlink:href="#grid" y="2" />
+	<use xlink:href="#grid" y="3" />
+	<use xlink:href="#grid" y="4" />
+	<use xlink:href="#grid" y="5" />
+	<use xlink:href="#grid" y="6" />
+	<use xlink:href="#grid" y="7" />
+	<use xlink:href="#grid" y="8" />
+	<use xlink:href="#grid" y="9" />
+	<use xlink:href="#grid" y="10" />
+	<use xlink:href="#grid" y="11" />
+</g>
+<use xlink:href="#grid-y" transform="rotate(90)"  />
+<use xlink:href="#grid-y" transform="rotate(180)" />
+<use xlink:href="#grid-y" transform="rotate(-90)" />
+
+<!-- Axes -->
+<path id="axe" d="M -12,0 L 12,0" class="axe" />
+<use xlink:href="#axe" transform="rotate(90)" />
+
+<g id="primes1">
+	<!-- Natural Primes with 0 < p <= 11 and p = 3 mod 4 -->
+	<!-- Verzweigte Primes -->
+	<g id="primes-n">
+		<use xlink:href="#prime" x="3" />
+		<use xlink:href="#prime" x="7" />
+		<use xlink:href="#prime" x="11" />
+		<use xlink:href="#prime" x="1" y="1"/>
+	</g>
+
+	<!-- Complex Primes with 0 < Re < Im <= 11 -->
+	<!-- Re^2 + Im^2 = prime, prime = 1 mod 4 and p not verzweigt -->
+	<g id="primes-v">
+
+		<use xlink:href="#prime" x="1" y="2"/>
+		<use xlink:href="#prime" x="1" y="4"/>
+		<use xlink:href="#prime" x="1" y="6"/>
+		<use xlink:href="#prime" x="1" y="10"/>
+
+		<use xlink:href="#prime" x="2" y="3"/>
+		<use xlink:href="#prime" x="2" y="5"/>
+		<use xlink:href="#prime" x="2" y="7"/>
+
+		<use xlink:href="#prime" x="3" y="8"/>
+		<use xlink:href="#prime" x="3" y="10"/>
+
+		<use xlink:href="#prime" x="4" y="5"/>
+		<use xlink:href="#prime" x="4" y="9"/>
+		<use xlink:href="#prime" x="4" y="11"/>
+
+		<use xlink:href="#prime" x="5" y="6"/>
+		<use xlink:href="#prime" x="5" y="8"/>
+
+		<use xlink:href="#prime" x="6" y="11"/>
+
+		<use xlink:href="#prime" x="7" y="8"/>
+		<use xlink:href="#prime" x="7" y="10"/>
+
+		<use xlink:href="#prime" x="9" y="10"/>
+	</g>
+
+	<!-- Copy Primes with 0 < Re and Re > Im -->
+	<use id="p2" xlink:href="#primes-v" transform="scale(-1 1)" />
+</g>
+
+<!-- Copy Primes by multiplying with Units i, -1 and -i -->
+<use xlink:href="#primes1" transform="rotate(90)" />
+<use xlink:href="#primes1" transform="rotate(180)" />
+<use xlink:href="#primes1" transform="rotate(-90)" />
+
+</svg>

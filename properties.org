@@ -3,7 +3,7 @@ Format property blocks nicely.
 
 We will export these properties.
 #+begin_src elisp
-  (defvar properties-to-pp '("when" "where"  "venue" "with" "comments" "links" "labels"))
+  (defvar properties-to-pp '("when" "where"  "venue" "with" "comments" "links"))
 #+end_src
 
 #+RESULTS:
