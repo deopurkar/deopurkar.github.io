@@ -148,7 +148,8 @@ We also create a shell script to run the above lisp file.
 #+end_src
 
 and a shell script to build and commit.
-#+begin_src elisp :tangle "build-and-commit.sh" :shebang "#!/bin/bash"
+#+begin_src shell :tangle "build-and-commit.sh" :shebang "#!/bin/bash"
+  export EDITOR=emacsclient
   cd "$HOME/website"
   git checkout "main"
   git pull

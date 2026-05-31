@@ -1,4 +1,5 @@
 #!/bin/bash
+export EDITOR=emacsclient
 cd "$HOME/website"
 git checkout "main"
 git pull
