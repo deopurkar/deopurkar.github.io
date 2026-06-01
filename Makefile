@@ -11,6 +11,7 @@ commit:
 	git checkout main
 	git add .
 	git commit
+	touch commit
 
 deploy: commit build
 	TMP=`mktemp -d -p /tmp/`;\
