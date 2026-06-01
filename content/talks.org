@@ -302,6 +302,7 @@ This was  based on [[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formul
 :where:    Providence, Rhode Island
 :when:     2022
 :ID:       d15d311e-f06f-458d-b7f5-90c27c6d5451
+:links:    [[file:talks/2022-Brown.pdf][notes]]
 :END:
 
 This was based on [[id:82e9302f-6674-41b8-97cd-6733ac7edf89][Ramification divisors of general projections]].
