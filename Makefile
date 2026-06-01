@@ -11,9 +11,14 @@ commit:
 	git add .
 	git commit
 
+<<<<<<< Updated upstream
 deploy: commit build
 	TMP=`mktemp -d -p /tmp/`;\
 	mv docs $TMP;\
+=======
+deploy: build
+	git stash;\
+>>>>>>> Stashed changes
 	git checkout gh-pages;\
 	git pull;\
 	rsync $TMP ./ -avzP;\
