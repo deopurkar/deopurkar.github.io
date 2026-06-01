@@ -7,11 +7,6 @@ build:
 	emacs -Q --script build.el
 	touch build
 
-commit:
-	git checkout main;\
-	git add .;\
-	git commit
-
 deploy: build
 	git stash;\
 	git checkout gh-pages;\
