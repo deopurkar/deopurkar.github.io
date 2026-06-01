@@ -154,6 +154,7 @@ We also create a makefile to run the above script and deploy.
   	touch build
 
   commit:
+  	git checkout main
   	git add .
   	git commit
 
@@ -165,6 +166,7 @@ We also create a makefile to run the above script and deploy.
   	rsync $TMP ./ -avzP;\
   	rm -rf $TMP;\
   	git commit -a -m "Manual build";\
-  	git push
+  	git push;\
+  	git checkout main
 #+end_src
 

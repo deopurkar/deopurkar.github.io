@@ -8,6 +8,7 @@ build:
 	touch build
 
 commit:
+	git checkout main
 	git add .
 	git commit
 
@@ -19,4 +20,5 @@ deploy: commit build
 	rsync $TMP ./ -avzP;\
 	rm -rf $TMP;\
 	git commit -a -m "Manual build";\
-	git push
+	git push;\
+	git checkout main
