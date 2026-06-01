@@ -163,6 +163,5 @@ We also create a makefile to run the above script and deploy.
   	git commit -a -m "Manual build";\
   	git push;\
   	git checkout main;\
-  	git stash pop
 #+end_src
 

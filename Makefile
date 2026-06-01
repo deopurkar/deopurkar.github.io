@@ -4,7 +4,7 @@ clean:
 	rm -rf docs
 
 build: 
-	emacs -Q --script build.el
+	emacs -Q --script build.el;\
 	touch build
 
 deploy: build
@@ -17,4 +17,3 @@ deploy: build
 	git commit -a -m "Manual build";\
 	git push;\
 	git checkout main;\
-	git stash pop
