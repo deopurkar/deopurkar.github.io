@@ -18,8 +18,9 @@ deploy: commit build
 	mv docs $TMP;\
 	git checkout gh-pages;\
 	git pull;\
-	rsync $TMP ./ -avzP;\
-	rm -rf $TMP;\
+	rsync TMP ./ -avzP;\
+	rm -rf TMP;\
 	git commit -a -m "Manual build";\
 	git push;\
-	git checkout main
+	git checkout main;\
+	git stash pop
