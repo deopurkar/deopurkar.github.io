@@ -150,7 +150,7 @@ We also create a makefile to run the above script and deploy.
   	rm -rf docs
 
   build: 
-  	emacs -Q --script build.el
+  	emacs -Q --script build.el;\
   	touch build
 
   deploy: build
