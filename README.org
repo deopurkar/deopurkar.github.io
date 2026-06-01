@@ -142,69 +142,29 @@ Now publish!
   (message "Done!"))
 #+end_src
 
-We also create a shell script to run the above lisp file.
-#+begin_src shell :tangle "build.sh" :shebang "#!/bin/bash"
-  emacs -Q --script build.el
-#+end_src
+We also create a makefile to run the above script and deploy.
+#+begin_src makefile :tangle Makefile
+  all: commit build deploy
 
-and a shell script to build and commit.
-#+begin_src shell :tangle "build-and-commit.sh" :shebang "#!/bin/bash"
-  export EDITOR=emacsclient
-  cd "$HOME/website"
-  git checkout "main"
-  git pull
-  emacs -Q --script build.el
-  rm -rf "/tmp/docs"
-  mv "docs" "/tmp/"
-  git add .
-  git commit
-  git push
-  git checkout "gh-pages"
-  git pull
-  rsync "/tmp/docs/" "./" -avzP
-  git add .
-  git commit
-  git push
-  git checkout "main"
-#+end_src
+  clean:
+  	rm -rf docs
 
+  build: 
+  	emacs -Q --script build.el
+  	touch build
 
+  commit:
+  	git add .
+  	git commit
 
-* COMMENT Building on Github
-/This is working, but missing some functionality./
-The emacs version in ubuntu repos is old.  Perhaps for this reason, but ~org-html-prefer-user-labels~ is not being respected, leading to lots of broken links.
-
-Once we have set up the tools to build the website locally, we can now use them to build the site automatically on Github.
-Put the following code in ~.github/workflows/build.yml~.
-Inspired by [[https://duncan.codes/posts/2019-09-03-migrating-from-jekyll-to-org/][this post]] and [[https://systemcrafters.net/publishing-websites-with-org-mode/automated-site-publishing/][this post]].
-#+begin_src yaml :tangle ".github/workflows/publish.yml" :mkdirp yes :eval no
-name: Publish
-
-on:
- push:
-  branches:
-   - main
-
-jobs:
- publish:
-  runs-on: ubuntu-latest
-  steps:
-   - name: Check out
-     uses: actions/checkout@v6
-
-   - name: Install Emacs
-     run: sudo apt install emacs-nox --yes
-     
-   - name: Install latex
-     run: sudo apt install texlive texlive-latex-extra texlive-plain-generic texlive-fonts-extra texlive-fonts-recommended --yes
-
-   - name: Build the site
-     run: ./build.sh
-
-   - name: Publish generated content to GitHub Pages
-     uses: JamesIves/github-pages-deploy-action@v4
-     with:
-      branch: gh-pages
-      folder: docs
+  deploy: build
+  	TMP=`mktemp -d -p /tmp/`\
+  	mv docs $TMP\
+  	git checkout gh-pages\
+  	git pull\
+  	rsync $TMP ./ -avzP\
+  	rm -rf $TMP
+  	git commit -a -m "Manual build"
+  	git push
 #+end_src
 
