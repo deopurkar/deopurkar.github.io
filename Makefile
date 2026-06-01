@@ -14,12 +14,12 @@ commit:
 	touch commit
 
 deploy: commit build
-	TMP=`mktemp -d -p /tmp/`;\
-	mv docs $TMP;\
+	git stash;\
 	git checkout gh-pages;\
+	git stash pop;\
 	git pull;\
-	rsync TMP ./ -avzP;\
-	rm -rf TMP;\
+	rsync docs/ ./ -avzP;\
+	rm -rf /docs;\
 	git commit -a -m "Manual build";\
 	git push;\
 	git checkout main;\
