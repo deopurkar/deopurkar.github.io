@@ -1,0 +1,170 @@
+#+title: README
+#+author: Anand Deopurkar
+#+property: header-args :results silent :tangle "build.el"
+#+startup: noptag contents
+
+This repository contains code that generates my personal website.
+The code and design of the website is thanks to [[https://asilata.org][Asilata Bapat]].
+
+* The content
+The content for the website goes in the ~content/~ directory.
+It is written as a collection of inter-linked org files.
+An internal directory structure is supported.
+
+* Building 
+We begin by creating an elisp file to build the webpage, as explained in [[https://systemcrafters.net/publishing-websites-with-org-mode/building-the-site/][this post]].
+I will tangle the following snippets of elisp code to a file called ~build.el~.
+
+I will first initialise some libraries and use [[https://orgmode.org/manual/Publishing.html][ox-publish]] to publish the website.
+Right now, the building happens locally, but eventually, the it should happen on github.
+
+#+begin_src elisp
+  (message (emacs-version))
+  (require 'ox-publish)
+  (require 'subr-x)
+#+end_src
+
+We want to make sure that org files are opened in org mode.
+#+begin_src elisp 
+  (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+#+end_src
+
+The files properties.el and backlinks.el (tangled from org) add the functionality to automatically add a well-formatted properties block and backlinks.
+
+#+begin_src elisp 
+  (load-file "properties.el")
+  (load-file "backlinks.el")
+#+end_src
+
+The variable ~links-in-cv~ used above controls whether links should be included in the cv.
+#+begin_src elisp
+  (defvar links-in-cv t
+    "Should links be included while processing cv.org")
+#+end_src
+
+The variable ~project-root-directory~ sets up the root directory of the website.  This is used for backlinks search.
+The backlinks also need an up-to-date id database.
+#+begin_src elisp
+     (defvar project-root-directory (expand-file-name "./content/"))
+
+  (unless (file-exists-p user-emacs-directory)
+    (mkdir user-emacs-directory))
+
+  (setq org-html-prefer-user-labels t)
+
+    (org-id-update-id-locations 
+     (directory-files-recursively
+      project-root-directory
+      "\.org$"))
+#+end_src
+
+Next I set the options for ~org-publish-project-alist~, as documented [[help:org-publish-project-alist][here]].
+Currently I have the following projects.
+- ~website-org~ :: generates all the content from org-mode files.
+- ~website-static~ :: copies over all other files. 
+- ~styling~ :: tangles and copies over all the files in the [[file:contents/styling][styling]] directory.
+- ~pdfcv~ :: creates a pdf cv
+  
+#+begin_src elisp
+  (setq org-publish-project-alist
+      '(("website-org"
+	 :author "Anand Deopurkar"
+	 :email "anand.deopurkar@anu.edu.au"
+         :base-directory "./content"  ;; This is where our files live
+         :base-extension "org" ;; Publish only from org files
+         :publishing-directory "./docs" ;; This is where the published files go
+         :recursive t 
+         :exclude "\#.*"   ;; Files beginning with \# are not processed.
+         :publishing-function org-html-publish-to-html
+         :section-numbers nil
+         :with-broken-links nil
+         :with-toc nil
+	 :with-tags nil
+         :with-title t
+         :with-author t
+         :with-special-strings t
+         :with-smart-quotes t
+         :with-emphasize t
+	 :with-email t 
+         :with-drawers ("results")
+	 :html-prefer-user-labels t
+         :html-head-include-default-style nil
+         :html-head-include-scripts nil 
+         :html-head "<link rel=\"stylesheet\" href=\"/css/main.css\"><script src=\"/js/collapsibility.js\"></script>"
+         :html-postamble t
+	 :html-preamble nil
+	 :html-postamble-format
+	 (("en" "Created by <a href=\"mailto:anand.deopurkar@anu.edu.au\">%a</a> using %c.  <a href=\"https://github.com/deopurkar/deopurkar.github.io\">Last modified</a>: %C."))
+	 :preparation-function (lambda (b)
+				 (setq org-export-before-parsing-functions
+				       '(my/pp-properties-hook my/add-backlinks-hook)
+				       links-in-cv
+				       t))
+	:completion-function (lambda (b)
+			       (setq org-export-before-parsing-functions
+				     nil)))
+        ("pdfcv"
+         :base-directory "./content"
+         :exclude ".*"
+         :include ["cv.org"]
+         :publishing-directory "./docs"
+         :publishing-function org-latex-publish-to-pdf
+	 :preparation-function (lambda (b) (setq links-in-cv nil))
+         )
+        ("website-static"
+         :base-directory "./content"
+         :base-extension ".*"
+         :exclude "\#.*\\|.*\.org"
+         :publishing-directory "./docs"
+         :recursive t
+         :publishing-function org-publish-attachment
+	 )
+        ("styling"
+         :base-directory "./content/#styling"
+         :base-extension "css\\|js\\|txt"
+         :publishing-directory "./docs"
+         :recursive t
+         :publishing-function org-publish-attachment)
+        ))
+#+end_src
+
+Now publish!  
+#+begin_src elisp
+  (let ((org-confirm-babel-evaluate nil)
+      (make-backup-files nil)
+      (noninteractive t))
+  (message "Starting now")
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((shell . t)))
+  (message (emacs-version))
+  (org-publish-all 'force)
+  (message "Done!"))
+#+end_src
+
+We also create a makefile to run the above script and deploy.
+#+begin_src makefile :tangle Makefile
+  all: commit build deploy
+
+  clean:
+  	rm -rf docs
+
+  build: 
+  	emacs -Q --script build.el
+  	touch build
+
+  commit:
+  	git add .
+  	git commit
+
+  deploy: commit build
+  	TMP=`mktemp -d -p /tmp/`;\
+  	mv docs $TMP;\
+  	git checkout gh-pages;\
+  	git pull;\
+  	rsync $TMP ./ -avzP;\
+  	rm -rf $TMP;\
+  	git commit -a -m "Manual build";\
+  	git push
+#+end_src
+
