@@ -2,6 +2,7 @@ all: commit build deploy
 
 clean:
 	rm -rf docs
+	rm build
 
 build: 
 	emacs -Q --script build.el;\

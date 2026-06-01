@@ -148,6 +148,7 @@ We also create a makefile to run the above script and deploy.
 
   clean:
   	rm -rf docs
+  	rm build
 
   build: 
   	emacs -Q --script build.el;\

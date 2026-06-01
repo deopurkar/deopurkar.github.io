@@ -234,6 +234,19 @@ We study the ramification divisors of projections of a smooth projective variety
 
 The most intriguing part of this project is what lies beyond!  We discover a delightful array of enumerative questions.  The answers to the first line in this array are the famous Catalan numbers.  This is the dimension one case.  There is a whole world of higher dimensions whose answers are completely unknown (barring a handful of exceptions).  In small cases, we can find the answers using a computer.  Curiously, various slices of the answer array uniquely match certain known combinatorial sequences on [[https://oeis.org/][OEIS]].  We hope there is an overarching pattern that connects all of them!  
 
+For surface scrolls, Anand Patel's most recent computation reveals the following.
+Let us write the scroll \(F_{a,b}\) by its degree \(d = a+b\) and eccentricity \(e = \lfloor (a-b)/2 \rfloor\) (this is 0 for the generic scrolls and increases as the scrolls get more special).  
+
+| e\d | 2 | 3 | 4 | 5 |  6 |  7 |   8 |    9 |    10 |    11 |     12 |      13 |       14 |
+|-----+---+---+---+---+----+----+-----+------+-------+-------+--------+---------+----------|
+|   0 | 1 | 1 | 2 | 6 | 22 | 92 | 422 | 2074 | 10754 | 58202 | 326240 | 1882960 | 11140560 |
+|   1 |   |   | 1 | 1 | 17 | 43 | 380 | 1444 | 10292 | 48764 | 215129 |         |          |
+|   2 |   |   |   |   |  1 |  1 | 100 |  220 |  5012 | 16094 |        |         |          |
+|   3 |   |   |   |   |    |    |   1 |    1 |   467 |       |        |         |          |
+
+
+
+
 * Anticanonical tropical cubic del Pezzos contain exactly 27 lines       :preprint:
 :PROPERTIES:
 :with:     [[mariacueto:][María Angélica Cueto]]
