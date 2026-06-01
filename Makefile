@@ -12,11 +12,11 @@ commit:
 	git commit
 
 deploy: build
-	TMP=`mktemp -d -p /tmp/`\
-	mv docs $TMP\
-	git checkout gh-pages\
-	git pull\
-	rsync $TMP ./ -avzP\
-	rm -rf $TMP
-	git commit -a -m "Manual build"
+	TMP=`mktemp -d -p /tmp/`;\
+	mv docs $TMP;\
+	git checkout gh-pages;\
+	git pull;\
+	rsync $TMP ./ -avzP;\
+	rm -rf $TMP;\
+	git commit -a -m "Manual build";\
 	git push
