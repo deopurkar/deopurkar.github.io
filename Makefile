@@ -11,7 +11,7 @@ commit:
 	git add .
 	git commit
 
-deploy: build
+deploy: commit build
 	TMP=`mktemp -d -p /tmp/`;\
 	mv docs $TMP;\
 	git checkout gh-pages;\
