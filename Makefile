@@ -8,12 +8,11 @@ build:
 	touch build
 
 commit:
-	git checkout main
-	git add .
+	git checkout main;\
+	git add .;\
 	git commit
-	touch commit
 
-deploy: commit build
+deploy: build
 	git stash;\
 	git checkout gh-pages;\
 	git stash pop;\

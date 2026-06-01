@@ -154,12 +154,11 @@ We also create a makefile to run the above script and deploy.
   	touch build
 
   commit:
-  	git checkout main
-  	git add .
+  	git checkout main;\
+  	git add .;\
   	git commit
-  	touch commit
 
-  deploy: commit build
+  deploy: build
   	git stash;\
   	git checkout gh-pages;\
   	git stash pop;\
