@@ -64,7 +64,8 @@ td {
 
 figure {
   padding: 0em;
-  margin: 0em; }
+  margin-left: auto;
+  margin-right: auto; }
 
 #mypicture {
   border-color: #b5736b;
