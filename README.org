@@ -152,7 +152,6 @@ We also create a makefile to run the above script and deploy.
 
   build: 
   	emacs -Q --script build.el;\
-  	touch build
 
   deploy: build
   	git stash;\

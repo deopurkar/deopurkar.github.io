@@ -6,7 +6,6 @@ clean:
 
 build: 
 	emacs -Q --script build.el;\
-	touch build
 
 deploy: build
 	git stash;\
