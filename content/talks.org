@@ -9,6 +9,31 @@
 
 Below is a roughly reverse chronological list of my papers and pre-prints, together with abstracts, links to notes or slides, and other commentary.
 
+* The enumerative geometry of projection and ramification :talk:
+:properties:
+:venue:  University of New South Wales
+:where:    Sydney, Australia
+:when:     2026-06-02
+:type:     Seminar
+:links: [[file:talks/2026-06-02-UNSW.pdf][notes]]
+:ID:       a8e0a34d-8c7f-401c-8787-7d14ac4b8a0b
+:end:
+#+begin_abstract
+A rational function of degree n in one variable has (2n-2) critical
+points.  Given (2n-2) points, the number of rational functions that
+have those as critical points turns out to be the n-th Catalan number.
+I will explain a higher-dimensional generalisation of this phenomenon
+and the myriad of questions that it opens up.
+#+end_abstract
+
+This was based on the paper [[id:82e9302f-6674-41b8-97cd-6733ac7edf89][Ramification divisors of general projections]].  I started thinking about it again because Anand P. found many new numerical answers to the projection-ramification enumerative question.
+
+I had taken a prop to the talk but ended up not showing it because I was running low on time.  So here it is:
+
+[[file:assets/The_enumerative_geometry_of_projection_and_ramification/2026-06-03_23-30-02_screenshot.png]]
+
+The skin of the grapefruit is a quadric surface in 3-space.  You can see its projection on a 2-dimensional space.  The ramification divisor is a great circle, which is a section of \(K_X+3H\), which in this case is \(O(1)\).
+
 * Be wise, equivariantise!                                             :talk:
 :properties:
 :venue:  Workshop in algebraic geometry, University of Sydney
