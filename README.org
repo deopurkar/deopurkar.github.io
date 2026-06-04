@@ -144,7 +144,7 @@ Now publish!
 
 We also create a makefile to run the above script and deploy.
 #+begin_src makefile :tangle Makefile
-  all: build deploy
+  all: deploy
 
   clean:
   	rm -rf docs
@@ -153,8 +153,9 @@ We also create a makefile to run the above script and deploy.
   build: 
   	emacs -Q --script build.el;\
 
-  deploy: build
-  	git stash;\
+  deploy: build 
+  	git stash push;\
+  	git stash push -u -- docs;\
   	git checkout gh-pages;\
   	git pull;\
   	git stash pop;\

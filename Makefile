@@ -1,4 +1,4 @@
-all: build deploy
+all: deploy
 
 clean:
 	rm -rf docs
@@ -7,8 +7,9 @@ clean:
 build: 
 	emacs -Q --script build.el;\
 
-deploy: build
-	git stash;\
+deploy: build 
+	git stash push;\
+	git stash push -u -- docs;\
 	git checkout gh-pages;\
 	git pull;\
 	git stash pop;\
