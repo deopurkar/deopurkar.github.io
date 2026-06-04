@@ -157,6 +157,7 @@ We also create a makefile to run the above script and deploy.
   	git stash;\
   	git checkout gh-pages;\
   	git pull;\
+  	git stash pop;\
   	rsync docs/ ./ -avzP;\
   	rm -rf docs;\
   	git commit -a -m "Manual build";\

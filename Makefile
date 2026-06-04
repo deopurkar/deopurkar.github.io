@@ -1,4 +1,4 @@
-all: commit build deploy
+all: build deploy
 
 clean:
 	rm -rf docs
@@ -11,6 +11,7 @@ deploy: build
 	git stash;\
 	git checkout gh-pages;\
 	git pull;\
+	git stash pop;\
 	rsync docs/ ./ -avzP;\
 	rm -rf docs;\
 	git commit -a -m "Manual build";\
