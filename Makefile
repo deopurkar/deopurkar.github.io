@@ -1,4 +1,4 @@
-all: commit build deploy
+all: build deploy
 
 clean:
 	rm -rf docs
