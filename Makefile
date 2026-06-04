@@ -13,6 +13,7 @@ deploy: build
 	git checkout gh-pages;\
 	git stash pop;\
 	git pull;\
+	git stash pop;\
 	rsync docs/ ./ -avzP;\
 	rm -rf docs;\
 	git commit -a -m "Manual build";\
