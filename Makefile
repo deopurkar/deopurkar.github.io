@@ -15,6 +15,7 @@ deploy: build
 	git stash pop;\
 	rsync docs/ ./ -avzP;\
 	rm -rf docs;\
+	git add .;\
 	git commit -a -m "Manual build";\
 	git push;\
 	git checkout main;\
