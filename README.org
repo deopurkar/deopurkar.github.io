@@ -144,7 +144,7 @@ Now publish!
 
 We also create a makefile to run the above script and deploy.
 #+begin_src makefile :tangle Makefile
-  all: commit build deploy
+  all: build deploy
 
   clean:
   	rm -rf docs
