@@ -1,0 +1,212 @@
+:PROPERTIES:
+:ID:       2c782b3b-758e-42ba-8c0a-d827cfb50f14
+:labels: [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
+:END:
+#+title: How to think about the Galois group
+#+property: header-args :eval never-export
+#+filetags: expository
+#+options: H:4
+(I wrote this for my students in [[id:d0fccab1-f7d2-415d-83bf-847772c6112c][2026 Algebra 2]]). 
+
+For simplicity, let us assume that all fields in our discussion are subfields of the complex numbers.
+
+Let \(F\) be a field and \(f(x) \in F[x]\) a polynomial.
+Let \(\alpha_1, \dots, \alpha_n \in \mathbf{C}\) be the roots of the polynomial; assume they are distinct.
+As usual, let \(K = F(\alpha_1,\dots,\alpha_n) \subset \mathbf{C}\) be the splitting field of \(f(x)\), and let
+\[ G = \operatorname{Aut}_F(K).\]
+Every element of \(G\) permutes \(\{\alpha_1, \dots, \alpha_n\}\).
+Mapping the element to the corresponding permutation gives an injective homomorphism
+\[ G \to S_n.\]
+This gives us a concrete way to think about the Galois group.
+
+#+begin_quote
+The Galois group consists of those permutations of the roots that arise from an automorphism of the splitting field.
+#+end_quote
+
+Why don't all permutations come from automorphisms?  If not all do, then which ones do?  And why do the others do not?
+
+Let us look at some examples.
+
+* Example
+
+Let \(F = \mathbf{Q}\) and \(f(x) = x^4-10x^2+1\).
+Its roots are
+\[\alpha_1 = \sqrt 2 + \sqrt 3, \quad \alpha_2 = \sqrt 2 - \sqrt 3, \quad \alpha_3 = -\sqrt 2 + \sqrt 3, \quad \alpha_4 = -\sqrt 2 - \sqrt 3.\]
+Observe that
+\[ \alpha_1 + \alpha_4 = 0 \text{ and } \alpha_2 + \alpha_3 = 0.\]
+Any automorphism of the splitting field must respect these relations.
+For example, the permutation \((12)\) cannot arise from an automorphism---it sends \(\alpha_1+\alpha_4\) (equal to 0) to \(\alpha_2+\alpha_4\) (not equal to 0).
+We can similarly rule out the permutation \((1234)\)---it sends \(\alpha_1+\alpha_4\) (equal to 0) to \(\alpha_2 + \alpha_1\) (not equal to 0).
+This gives us some indication for why certain permutations cannot arise from automorphisms.
+
+#+begin_quote
+A permutation cannot arise from an automorphism if it does not respect a relation among the roots.
+#+end_quote
+ 
+* Example
+Let us take another example.
+Again, let \(F = \mathbf{Q}\) and take \(f(x) = x^4-4x^2+2\).
+Its Galois group is cyclic of order 4:
+ 
+#+begin_src sage :exports both 
+   f = QQ[x](x^4-4*x^2+2)
+   f.galois_group().gens()
+#+end_src
+
+ #+RESULTS:
+ : ((1,2,3,4),)
+
+In particular, the 3-cycle \((123)\) does not arise from a permutation.  Can we find a relation among the roots that it violates?  The roots of \(f\) are \(\pm \sqrt{2 \pm \sqrt 2}\).  If we let \(\alpha = \sqrt{2+\sqrt2}\) and \(\beta = \sqrt{2-\sqrt2}\) then we get \(\alpha^2\beta^2 = 2\).  In fact, observe that for every root \(\alpha\) there is a unique root \(\beta\) such that \(\alpha^2\beta^2 = 2\).  This tells us that \((123)\) cannot arise as a permutation.  If we take \(\alpha\) to be the 4th root, which is fixed by \((123)\), then \(\beta\) will be one of the first three, which are all moved by \((123)\).  So the relation \(\alpha^2\beta^2 = 2\) will break after applying \((123)\).
+
+* The main result
+For more complicated examples, it is not always possible to write down the roots explicitly.  
+But the principle still holds.
+
+#+begin_quote
+A permutation of roots lies in the Galois group if and only if it respects all relations among the roots.
+#+end_quote
+
+A /relation/ among the roots \(\alpha_1, \dots, \alpha_n\) is any polynomial \(r(x_1, \dots,x_n) \in F[x_1,\dots,x_n]\) such that
+\[ r(\alpha_1, \dots, \alpha_n) = 0.\]
+We say that a permutation \(p\) /respects the relation \(r\)/ if we also have
+\[ r(\alpha_{p_1}, \dots, \alpha_{p_n}) = 0.\]
+
+I like the simplicity of the above characterisation of the Galois group.  It does not need any of the modern algebraic machinery.  You only need to know about polynomials and permutations, not groups, rings, fields, let alone field extensions and splitting fields!  This is not to say that these modern notions are not useful.  Working with the Galois groups will be very difficult without them!
+    
+
+** Theorem
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+A permutation lies in the Galois group if and only if it respects every relation among the roots.
+*** Proof
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+If a permutation does not respect a relation, then it cannot arise from an automorphism.
+We need to prove the converse: if a permutation respects all relations, then it arises from an automorphism.
+
+Consider the homomorphism
+\[ \phi \colon F[x_1,\dots,x_n] \to K\]
+that acts as the identity on \(F\) and sends \(x_i\) to \(\alpha_i\).
+Then \(\phi\) is surjective and its kernel \(I\) contains exactly the relations among the roots.
+By the first isomorphism theorem, we have an \(F\)-isomorphism
+\[ i \colon F[x_1,\dots,x_n]/I \to K\]
+that sends \(x_i\) to \(\alpha_i\).
+
+Suppose a permutation \(p\) respects all the relations.
+Consider the homomorphism \(F[x_1,\dots,x_n] \to K\) that sends \(x_i\) to \(\alpha_{p_i}\).
+Since \(p\) respects all relations, for every \(r(x_1, \dots, x_n) \in I\), we have \[r(\alpha_{p_1}, \dots, \alpha_{p_n}) = 0.\]
+So the homomorphism above sends \(I\) to \(0\), and therefore induces a homomorphism
+\[ \phi \colon F[x_1,\dots,x_n]/I \to K.\]
+Now \(\phi \circ i^{-1} \colon  K \to K\) is the \(F\)-isomorphism that sends \(\alpha_i\) to \(\alpha_{p_i}\).
+
+
+* Final example 
+Take \(F = \mathbf{Q}\) and \(f(x) = x^5-5x+12\).  This has a small Galois group, which means that there will be relations among the roots that are not respected by many permutations.
+#+begin_src sage :exports both
+  f = QQ[x](x^5-5*x+12)
+  f.galois_group().order()
+#+end_src
+
+#+RESULTS:
+: 10
+
+Unfortunately, we cannot write down the roots by hand, but with a computer, we can find the roots in a splitting field.
+#+begin_src sage :exports both
+  K = f.splitting_field(var('t')) # t is the name sage will give to a generator of K.
+  K
+#+end_src
+
+#+RESULTS:
+: Number Field in t with defining polynomial x^10 + 10*x^8 - 60*x^7 + 85*x^6 - 204*x^5 + 2200*x^4 - 7320*x^3 + 11020*x^2 - 9120*x + 6304
+
+This is not so useful.  But we can ask sage to find the roots of \(f\) in \(K\).
+#+begin_src sage :exports both
+  alpha = f.roots(K)
+  alpha
+#+end_src
+
+#+RESULTS:
+#+begin_example
+[(119/342900*t^9 + 101/342900*t^8 + 1423/342900*t^7 - 5087/342900*t^6 + 329/11430*t^5 - 1843/57150*t^4 + 125599/171450*t^3 - 345383/171450*t^2 + 187936/85725*t - 10744/17145,
+  1),
+ (59/171450*t^9 + 1153/1371600*t^8 + 1331/342900*t^7 - 20161/1371600*t^6 - 1123/45720*t^5 - 7417/114300*t^4 + 229861/342900*t^3 - 238727/342900*t^2 - 75973/85725*t - 5483/17145,
+  1),
+ (47/1371600*t^9 - 133/1371600*t^8 + 179/274320*t^7 - 2483/1371600*t^6 + 83/6350*t^5 - 4079/228600*t^4 + 5456/85725*t^3 - 1591/3429*t^2 + 336557/171450*t - 100391/85725,
+  1),
+ (-143/457200*t^9 - 179/457200*t^8 - 533/152400*t^7 + 397/30480*t^6 - 449/28575*t^5 + 3293/228600*t^4 - 12743/19050*t^3 + 29537/19050*t^2 - 14051/11430*t - 15557/28575,
+  1),
+ (-283/685800*t^9 - 887/1371600*t^8 - 3557/685800*t^7 + 25127/1371600*t^6 - 361/228600*t^5 + 958/9525*t^4 - 273509/342900*t^3 + 556927/342900*t^2 - 174859/85725*t + 228197/85725,
+  1)]
+#+end_example
+
+Perfect!  Now we want the relations among the roots.  As in the proof of the main theorem, we find these as the kernel of a homomorphism from the polynomial ring.
+#+begin_src sage :exports both 
+  S = PolynomialRing(QQ, 5, names="x")
+  phi = S.hom([a[0] for a in alpha], K) #The roots command returns pairs (root, multiplicity);
+                                        #we only want the root.
+  I = phi.kernel()
+  I
+#+end_src
+
+#+RESULTS:
+: Ideal (x0 + x1 + x2 + x3 + x4, x2*x4 + 2*x1 + x2 + x4 - 1, x1*x4 + x3*x4 + x4^2 - x1 - x3 - x4 + 2, x2*x3 - 2*x1 - x2 - x3 - 2*x4 - 1, x1*x3 + x1 + x3 + 2*x4 - 1, x2^2 + x3^2 + x3*x4 + x4^2 + x2 + 1, x1^2 + x1*x2 - x3*x4 - x4^2 - x2 + x3, x4^3 - 2*x1*x2 + 2*x3^2 + 2*x3*x4 + 2*x4^2 + 2*x2 - 2*x3 - x4, x3^2*x4 + x3*x4^2 - x3^2 - x3*x4 - x4^2 + 2*x3 + 2*x4 + 1, x3^3 + 2*x1*x2 + x3 + 2) of Multivariate Polynomial Ring in x0, x1, x2, x3, x4 over Rational Field
+
+Ugly!  But the point is that there are lots of non-symmetric relations.
+We can now explicitly find the permutations that preserve all relations.
+
+#+begin_src sage :exports both
+  X = S.gens()
+  def preserves_relations(perm):
+      return all([r(perm(X)) in I for r in I.gens()]) # Suffices to check the generators.
+
+  G = [g for g in SymmetricGroup(5) if preserves_relations(g)]
+  G
+#+end_src
+
+#+RESULTS:
+#+begin_example
+[(),
+ (1,4,5,2,3),
+ (1,3,2,5,4),
+ (1,5,3,4,2),
+ (1,5)(2,3),
+ (1,2)(4,5),
+ (1,2,4,3,5),
+ (1,3)(2,4),
+ (1,4)(3,5),
+ (2,5)(3,4)]
+#+end_example
+
+There is our Galois group of order 10.
+
+# Contrast this with the example of \(f(x) = x^4+4x+1\), whose Galois group is all of \(S_4\).
+# #+begin_src sage :exports both
+#   f = QQ[x](x^4+4*x+1)
+#   f.galois_group().order()
+# #+end_src
+
+# #+RESULTS:
+# : 24
+
+# In this case, the only relations among the roots will be the symmetric relations.
+# So preserving them does not put any constraints on the permutation.
+
+# #+begin_src sage :exports both
+#   K = f.splitting_field(var('t'))
+#   alpha = f.roots(K)
+# #+end_src
+
+# #+RESULTS:
+
+# #+begin_src sage :exports both
+#   S = PolynomialRing(QQ, 4, names="y")
+#   phi = S.hom([a[0] for a in alpha], K)
+#   phi.kernel()
+# #+end_src
+
+# #+RESULTS:
+# : Ideal (y0 + y1 + y2 + y3, y1^2 + y1*y2 + y2^2 + y1*y3 + y2*y3 + y3^2, y2^3 + y2^2*y3 + y2*y3^2 + y3^3 + 4, y3^4 + 4*y3 + 1) of Multivariate Polynomial Ring in y0, y1, y2, y3 over Rational Field
+
+# (I tried the same with a degree 5 polynomial, but =sage= choked.  This shows that although the presentation of the splitting field in the proof of the main theorem is conceptually enlightening, computationally it can be onerous.)

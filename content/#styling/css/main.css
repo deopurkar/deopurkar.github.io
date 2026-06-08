@@ -15,9 +15,9 @@ body {
   margin-left: auto;
   margin-right: auto; }
   body ::-moz-selection {
-    background-color: #b5736b; }
+    background-color: #ebe9e4; }
   body ::-selection {
-    background-color: #b5736b; }
+    background-color: #ebe9e4; }
   body a:hover {
     color: #b5736b; }
 
@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
   display: inline-block;
   line-height: 1.5em; }
 
-h1, h2 {
+h1, h2, h3, h4 {
   border-bottom: 0.15em solid #b5736b; }
 
 h3, h4 {
@@ -67,7 +67,7 @@ figure {
   margin: 0em; }
 
 #mypicture {
-  border-color: #b5736b;
+  border-color: #ebe9e4;
   width: 18em;
   margin-left: auto;
   margin-right: auto; }
@@ -81,13 +81,17 @@ figure {
   margin-left: auto;
   margin-right: auto; }
 
-.abstract {
+.abstract, blockquote {
   border-left: 0.5em solid #b5736b;
   padding-left: 0.5em; }
 
 .abstract > p:first-of-type::before {
   content: "Abstract.";
   font-weight: bold; }
+
+pre {
+  white-space: pre-wrap;
+  background-color: #ebe9e4; }
 
 #table-of-contents {
   padding-right: 1em;
@@ -108,7 +112,7 @@ figure {
     text-decoration: none; }
 
 footer {
-  color: #b5736b;
+  color: #303821;
   border-top: 1px solid #b5736b;
   font-size: 80%;
   margin-top: 2em;

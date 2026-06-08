@@ -1,6 +1,6 @@
 //autumn 
 $canvas: #fcfaf5;
-$canvas-pop: #b5736b;
+$canvas-pop: #ebe9e4;
 $writing: #303821;
 $writing-pop: #b5736b;
 
@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    column-rule: 1px solid $canvas-pop;
+    column-rule: 1px solid $writing-pop;
     background-color: $canvas;
     ::-moz-selection {
         background-color: $canvas-pop;
@@ -39,7 +39,7 @@ h1, h2, h3, h4 {
     display: inline-block;
     line-height: 1.5em;
 }
-h1, h2{
+h1, h2, h3, h4{
     border-bottom: 0.15em solid $writing-pop;
 }
 h3, h4{
@@ -101,14 +101,19 @@ figure {
     margin-right: auto;
 }
 
-.abstract {
-    border-left: 0.5em solid $canvas-pop;;
+.abstract, blockquote {
+    border-left: 0.5em solid $writing-pop;
     padding-left:0.5em;
 }
 
 .abstract > p:first-of-type::before {
     content: "Abstract.";
     font-weight: bold;
+}
+
+pre {
+    white-space: pre-wrap;
+    background-color: $canvas-pop;
 }
 
 #table-of-contents {
@@ -135,8 +140,8 @@ figure {
 }
 
 footer {
-    color: $canvas-pop;
-    border-top: 1px solid $canvas-pop;
+    color: $writing;
+    border-top: 1px solid $writing-pop;
     font-size: 80%;
     margin-top:2em;
     padding-top:0.3em;
@@ -151,7 +156,7 @@ footer {
 }
 
 #postamble {
-    border-top: 1px solid $canvas-pop;
+    border-top: 1px solid $writing-pop;
     font-size: 80%;
     margin-top: 1em;
     text-align: right;

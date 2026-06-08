@@ -24,8 +24,8 @@
 
 (defun scan-file-for-id (id file &optional pp-function)
   (with-temp-buffer 
-    (org-mode)
     (insert-file-contents file)
+    (org-mode)
     (unless (org-entry-get (point) "skip-in-backlinks")
       (setq links nil)
       (save-excursion

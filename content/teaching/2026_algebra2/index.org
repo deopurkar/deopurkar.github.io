@@ -1,4 +1,7 @@
 # Created 2026-05-08 Fri 12:01
+:PROPERTIES:
+:ID:       d0fccab1-f7d2-415d-83bf-847772c6112c
+:END:
 #+options: broken-links:warn toc:1 ':t ":t num:0
 #+title: 2026 Algebra 2
 #+author: Anand Deopurkar

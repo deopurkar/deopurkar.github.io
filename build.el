@@ -1,6 +1,7 @@
 (message (emacs-version))
 (require 'ox-publish)
 (require 'subr-x)
+(use-package htmlize :straight t)
 
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 
