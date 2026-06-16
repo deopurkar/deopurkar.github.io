@@ -14,7 +14,7 @@ Below is a roughly reverse chronological list of my papers and pre-prints, toget
 :venue:  University of New South Wales
 :where:    Sydney, Australia
 :when:     2026-06-02
-:type:     Seminar
+:type:     seminar
 :links: [[file:talks/2026-06-02-UNSW.pdf][notes]]
 :ID:       a8e0a34d-8c7f-401c-8787-7d14ac4b8a0b
 :end:
@@ -39,7 +39,7 @@ The skin of the grapefruit is a quadric surface in 3-space.  You can see its pro
 :venue:  Workshop in algebraic geometry, University of Sydney
 :where:    Sydney, Australia
 :when:     2026
-:type:     Workshop
+:type:     workshop
 :ID:       5630e24b-c38d-4ee2-95d0-f053d3aca22b
 :links: [[file:talks/2026-02-sydney.pdf][notes]]
 :end:
@@ -60,7 +60,7 @@ This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant cl
 :venue:  Geometric and category-theoretic approaches to conformal field theory, Banff International Research Institute/Chennai Mathematical Institute
 :where:    Chennai, India
 :when:     2026
-:type:     Workshop
+:type:     workshop
 :ID:       916e3090-c8e6-4747-8b07-6d1434a7babd
 :end:
 
@@ -88,7 +88,7 @@ This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant cl
 :venue:  Teichmuller theory and flat structures, MATRIX
 :where:    Creswick, Australia
 :when:     2025
-:type:     Workshop
+:type:     workshop
 :ID:       d42b079c-e0b1-466e-b128-c51e5addabdb
 :links: [[id:9ad7fb07-194d-485d-bfbb-6eef16e1add4][notes]]
 :end:
@@ -152,6 +152,7 @@ This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant cl
 :ID:       53fe8ada-0bc4-439b-9763-84cbb137727b
 :links:    [[id:e5dcac8c-b6ff-4e38-919b-c90d821d4187][notes]]
 :labels:   [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
+:type:     expository
 :end:
 
 This was an expository talk explaining the work of Maryam Mirzakhani on the occasion of /Women in Maths Day/.  I explained her work on the asymptotics of the number of geodesics on a hyperbolic surface to a general mathematical audience.
@@ -165,6 +166,7 @@ This was an expository talk explaining the work of Maryam Mirzakhani on the occa
 :ID:       cabeb946-def4-40fa-952d-e84395084692
 :links: [[file:talks/2024-09-25-zoom-board.pdf][online board]]
 :labels:   [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
+:type:     expository
 :end:
 
 This talk was based on Paul Seidel's [[https://www.ams.org/open-math-notes/files/course-material/OMN-202102-111288-1-Course_notes-v2.pdf][Lectures on geometry and topology in the plane]], Lecture 1 on cutting/regluing polygons.  The talk was on zoom.
@@ -269,6 +271,7 @@ This talk was based on an idea to contract stability manifolds for certain categ
 :ID:       73b5521a-6738-40bd-b4d0-481f79f50bce
 :links: [[id:648707cc-d8ae-4d0a-8cf7-53fef49db34b][slides]]
 :labels:   [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
+:type:     expository
 :end:
 
 * How to count using equivariant cohomology                            :talk:
@@ -304,6 +307,7 @@ This was based on [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sphere of spheric
 :comments:     expository
 :ID:       d56cfe9b-e442-45de-b323-12ec02a5858c
 :labels:   [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
+:type:     expository
 :end:
 This was an expository pre-talk for the workshop /Braids in symplectic and algebraic Geometry/ at ICERM.
 
@@ -351,9 +355,9 @@ This was based on the future paper [[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A 
 :when:     2022
 :comments:     expository
 :links:      [[file:talks/2022-Fermat.pdf][notes]]
-:comments: expository
 :ID:       aa9aba31-dd50-4cda-9859-d3623b6f163f
 :labels:   [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
+:type:     expository
 :end:
 
 This is the second talk I gave this trimester program.  I explained the argument by Darmon and Granville that "hyperbolic" Fermat-like equations(\(A x^l + B y^m = C z^n\) where \(1/l + 1/m + 1/p < 1\)) have only finitely many integral solutions.  The theorem and the proof is an orbifold version of Faltings's theorem that hyperbolic curves have only finitely many rational points.  
@@ -369,6 +373,7 @@ Also see the [[id:9efcc78f-db58-4c06-a73a-405566487ca4][expository article]] I w
 :links:      [[file:talks/2021-Belyi.pdf][notes]]
 :ID:       e19269e4-2c30-4e4d-8671-3e7f0b7cb3e8
 :labels:   [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
+:type:     expository
 :end:
 
 This is the first talk I gave in this trimester program.  I explain the statement and proof of Belyi's famous theorem.
@@ -384,6 +389,7 @@ Also see the [[id:9efcc78f-db58-4c06-a73a-405566487ca4][expository article]] I w
 :links:      [[id:648707cc-d8ae-4d0a-8cf7-53fef49db34b][slides]]
 :ID:       0ae10d06-c9f2-4972-a24e-f4e71f093f5f
 :labels:   [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
+:type:     expository
 :end:
 
 * A Thurston compactification of the space of stability conditions     :talk:
@@ -501,6 +507,7 @@ This talk was based on
 :links:      [[file:talks/2019-WIM.pdf][notes]]
 :ID:       e4669741-7262-4984-8a4b-23d33483bcc6
 :labels:   [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
+:type:     expository
 :end:
 
 * Geometry of Hurwitz spaces                                           :talk:
@@ -535,6 +542,7 @@ This talk was based on
 :links:      [[file:talks/2018-FMColloquium.pdf][notes]]
 :ID:       c66380b2-8eca-4313-8360-16b28533e3fe
 :labels:   [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
+:type:     expository
 :end:
 This was an expository talk in the Fields Medal Colloquium in our department.  We explained the work of a fields medallist to a general mathematical audience.   
 
@@ -559,6 +567,7 @@ This talk was based on
 :links:      [[file:talks/2018-tifr.pdf][notes]]
 :ID:       5b14bbaa-5b4d-4170-81d8-46ffc0b65716
 :labels:   [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
+:type:     expository
 :end:
 This was an expository talk for undergraduate students.  Through examples, I explained how to use the cup product in cohomology (more precisely, its dual, the intersection product on homology) to solve some counting problems.  This was inspired by a similar talk by Rahul Pandharipande that I heard when I was an undergraduate. 
 
@@ -643,6 +652,7 @@ This talk was based on
 :comments:     expository
 :ID:       6cfb0fb2-2619-4a02-95d1-5728f3c28bfe
 :labels:   [[id:05f9493f-833e-4f64-a2b5-321a11c91a3b][expository]]
+:type:     expository
 :end:
 
 *  Quivers and their representations                                   :talk:
