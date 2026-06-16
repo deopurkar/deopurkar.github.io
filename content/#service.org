@@ -11,6 +11,11 @@
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
+* Served on the Problem Selection Committee for the Simon--Marais Competition
+:PROPERTIES:
+:when:     2025
+:END:
+
 * Served on the PhD thesis committee of Snehinh Sen 
 :properties:
 :when: 2025

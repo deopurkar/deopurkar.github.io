@@ -531,7 +531,7 @@
           (where (org-entry-get nil "where")))
       (cons
        (or year "Ongoing")
-       (format "%s%s%s"
+       (format "%s%s%s."
        title
        (if with
            (format " %s" with)
@@ -549,50 +549,52 @@
 
 #+RESULTS:
 :results:
-- Ongoing :: Refereed for Journal of the European Mathematical Society, Journal of Differential Geometry, Journal of Algebraic Geometry, Annales Scientifiques de l'École Normale Supérieure, Mathematische Annalen, Algebra and Number Theory, Journal für die reine und angewandte Mathematik, manuscripta mathematica, Advances in Geometry, Mathematical Research Letters, European Journal of Mathematics, Journal de l'École polytechnique — Mathématiques, Experimental mathematics
+- Ongoing :: Refereed for Journal of the European Mathematical Society, Journal of Differential Geometry, Journal of Algebraic Geometry, Annales Scientifiques de l'École Normale Supérieure, Mathematische Annalen, Algebra and Number Theory, Journal für die reine und angewandte Mathematik, manuscripta mathematica, Advances in Geometry, Mathematical Research Letters, European Journal of Mathematics, Journal de l'École polytechnique — Mathématiques, Experimental mathematics.
 
-             Reviewed for Mathematical Reviews, American Mathematical Society
-- 2021 onwards :: Convener for the Masters program, Mathematical Sciences Institute, Australian National University
-- 2025 :: Served on the PhD thesis committee of Snehinh Sen, Mathematical Sciences Institute, Australian National University
+             Reviewed for Mathematical Reviews, American Mathematical Society.
+- 2021 onwards :: Convener for the Masters program, Mathematical Sciences Institute, Australian National University.
+- 2025 :: Served on the Problem Selection Committee for the Simon--Marais Competition.
 
-          Served on the PhD thesis committee of Alexander Lai De Oliveira, Mathematical Sciences Institute, Australian National University
+          Served on the PhD thesis committee of Snehinh Sen, Mathematical Sciences Institute, Australian National University.
 
-          Served on the PhD thesis committee of Seethalakshmi Kayanattath, Mathematical Sciences Institute, Australian National University
+          Served on the PhD thesis committee of Alexander Lai De Oliveira, Mathematical Sciences Institute, Australian National University.
 
-          Served on the PhD thesis committee of Lucas Allen, Mathematical Sciences Institute, Australian National University
+          Served on the PhD thesis committee of Seethalakshmi Kayanattath, Mathematical Sciences Institute, Australian National University.
 
-          Headed the selection committee for the /Future research talent fellowship/, Australian National University
+          Served on the PhD thesis committee of Lucas Allen, Mathematical Sciences Institute, Australian National University.
 
-          Served on the PhD thesis committee of Kabeer Manali Rahul, Australian National University
-- 2024 :: Co-organised the session /Computations and applications of commutative algebra and algebraic geometry/ at the joint /NZMS-AustMS-AMS/ meeting John Cobb, Sione Ma'u, and Hal Schenk, University of Auckland
-- 2022 :: Co-organised the workshop /Braids in Symplectic and Algebraic Geometry/ Inanc Baykur, Benson Farb, Anthony Licata, and Ailsa Keating, Institute for Computational and Experimental Research in Mathematics (ICERM), Brown University
-- 2021 :: Served on the award committee for the /BH Neumann prize/ for the best student talk, AustMS meeting
-- 2020 :: Served on the PhD thesis committee of Abhishek Bharadwaj, Mathematical Sciences Institute, Australian National University
+          Headed the selection committee for the /Future research talent fellowship/, Australian National University.
 
-          Served on the MPhil thesis committee of Ivan Zelich, Mathematical Sciences Institute, Australian National University
-- 2019 :: Served on the selection committee for the /Future research talent fellowship/, Mathematical Sciences Institute, Australian National University
+          Served on the PhD thesis committee of Kabeer Manali Rahul, Australian National University.
+- 2024 :: Co-organised the session /Computations and applications of commutative algebra and algebraic geometry/ at the joint /NZMS-AustMS-AMS/ meeting John Cobb, Sione Ma'u, and Hal Schenk, University of Auckland.
+- 2022 :: Co-organised the workshop /Braids in Symplectic and Algebraic Geometry/ Inanc Baykur, Benson Farb, Anthony Licata, and Ailsa Keating, Institute for Computational and Experimental Research in Mathematics (ICERM), Brown University.
+- 2021 :: Served on the award committee for the /BH Neumann prize/ for the best student talk, AustMS meeting.
+- 2020 :: Served on the PhD thesis committee of Abhishek Bharadwaj, Mathematical Sciences Institute, Australian National University.
 
-          Served on the director search committee, Mathematical Sciences Institute, Australian National University
+          Served on the MPhil thesis committee of Ivan Zelich, Mathematical Sciences Institute, Australian National University.
+- 2019 :: Served on the selection committee for the /Future research talent fellowship/, Mathematical Sciences Institute, Australian National University.
 
-          Served on the formal liaison committee, Mathematical Sciences Institute, Australian National University
-- 2018 :: Served on the PhD thesis committee of Edmund Heng, Mathematical Sciences Institute, Australian National University
+          Served on the director search committee, Mathematical Sciences Institute, Australian National University.
 
-          Served on the award committee for the /BH Neumann prize/ for the best student talk, AustMS meeting
+          Served on the formal liaison committee, Mathematical Sciences Institute, Australian National University.
+- 2018 :: Served on the PhD thesis committee of Edmund Heng, Mathematical Sciences Institute, Australian National University.
 
-          Co-organised the workshop /Polynomial Algebraic Developments in Optimisation and Computation/ Markus Hegland
+          Served on the award committee for the /BH Neumann prize/ for the best student talk, AustMS meeting.
 
-          Conducted training sessions in algebraic geometry at the /D21 Workshop/, Australian Signals Directorate
-- 2017 :: Co-organised the workshop /Stability and moduli spaces/ Maksym Fedorchuk, Ian Morrison, Xiaowei Wang, American Institute of Matheatics, Palo Alto, California
-- 2016 :: Co-organised the /Summer workshop in algebraic geometry/ Angela Gibney, Nicola Tarasca, University of Georgia, Athens, Georgia
+          Co-organised the workshop /Polynomial Algebraic Developments in Optimisation and Computation/ Markus Hegland.
 
-          Organised the /Fairly informal reading seminar and tea (FIRST)/, University of Georgia, Athens, Georgia
+          Conducted training sessions in algebraic geometry at the /D21 Workshop/, Australian Signals Directorate.
+- 2017 :: Co-organised the workshop /Stability and moduli spaces/ Maksym Fedorchuk, Ian Morrison, Xiaowei Wang, American Institute of Matheatics, Palo Alto, California.
+- 2016 :: Co-organised the /Summer workshop in algebraic geometry/ Angela Gibney, Nicola Tarasca, University of Georgia, Athens, Georgia.
 
-          Co-organised the graduate student algebraic geometry seminar Johan de Jong, Columbia University
-- 2015 :: Conducted preparation sessions for the Putnam competition, Columbia University
-- 2014 :: Lectured in the /Workshop on birational geometry and stability of moduli stacks and spaces of curves/, Vietnam Institute for Advanced Studies in Mathematics, Hanoi, Vietnam
-- 2016 :: Served on the PhD thesis committee of Natasha Potashnik, Columbia University, New York City, New York
-- 2013 :: Served on the PhD thesis committee of Zachary Maddock, Columbia University, New York City, New York
-- 2014 :: Served on the PhD thesis committee of Xuanyu Pan, Columbia University, New York City, New York
-- 2013 :: Co-organised the poster session at the /Algebraic geometry north-eastern series (AGNES)/ conference Anand Patel, Boston College
-- 2011, 2010 :: Organised the student algebraic geometry seminar, Harvard/MIT
+          Organised the /Fairly informal reading seminar and tea (FIRST)/, University of Georgia, Athens, Georgia.
+
+          Co-organised the graduate student algebraic geometry seminar Johan de Jong, Columbia University.
+- 2015 :: Conducted preparation sessions for the Putnam competition, Columbia University.
+- 2014 :: Lectured in the /Workshop on birational geometry and stability of moduli stacks and spaces of curves/, Vietnam Institute for Advanced Studies in Mathematics, Hanoi, Vietnam.
+- 2016 :: Served on the PhD thesis committee of Natasha Potashnik, Columbia University, New York City, New York.
+- 2013 :: Served on the PhD thesis committee of Zachary Maddock, Columbia University, New York City, New York.
+- 2014 :: Served on the PhD thesis committee of Xuanyu Pan, Columbia University, New York City, New York.
+- 2013 :: Co-organised the poster session at the /Algebraic geometry north-eastern series (AGNES)/ conference Anand Patel, Boston College.
+- 2011, 2010 :: Organised the student algebraic geometry seminar, Harvard/MIT.
 :end:
