@@ -246,7 +246,6 @@ Let us write the scroll \(F_{a,b}\) by its degree \(d = a+b\) and eccentricity \
 
 
 
-
 * Anticanonical tropical cubic del Pezzos contain exactly 27 lines       :preprint:
 :PROPERTIES:
 :with:     [[mariacueto:][María Angélica Cueto]]
