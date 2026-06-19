@@ -1,4 +1,4 @@
-* Refereed for Journal of the European Mathematical Society, Journal of Differential Geometry, Journal of Algebraic Geometry, Annales Scientifiques de l'École Normale Supérieure, Mathematische Annalen, Algebra and Number Theory, Journal für die reine und angewandte Mathematik, manuscripta mathematica, Advances in Geometry, Mathematical Research Letters, European Journal of Mathematics, Journal de l'École polytechnique — Mathématiques, Experimental mathematics
+* Refereed for Inventiones Mathematicae, Journal of the European Mathematical Society, Journal of Differential Geometry, Journal of Algebraic Geometry, Annales Scientifiques de l'École Normale Supérieure, Mathematische Annalen, Algebra and Number Theory, Journal für die reine und angewandte Mathematik, manuscripta mathematica, Advances in Geometry, Mathematical Research Letters, European Journal of Mathematics, Journal de l'École polytechnique — Mathématiques, Experimental mathematics
 
 * Reviewed for Mathematical Reviews
 :properties:
@@ -10,6 +10,11 @@
 :when: 2021 onwards
 :where: Mathematical Sciences Institute, Australian National University
 :end:
+
+* Served on the Problem Selection Committee for the Simon--Marais Competition
+:PROPERTIES:
+:when:     2025
+:END:
 
 * Served on the PhD thesis committee of Snehinh Sen 
 :properties:

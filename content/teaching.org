@@ -74,6 +74,42 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :ID:       3e570a8d-7ffa-4b1c-b8ac-c2077e6e894c
 :end:
 
+* Seminar on derived categories 
+:properties:
+:where: Australian National University
+:when:     2021
+:ID:       4f6ebf74-63fb-42da-bedd-984ce59a669e
+:links: [[id:37dcbcd5-30ec-489c-bb01-a7b09cde3a17][webpage]]
+:end:
+
+** About the seminar
+
+We plan to collaboratively read the book "Fourier-Mukai Transforms in
+Algebraic Geometry" by Daniel Huybrechts, and if time permits,
+something more. We will meet on Fridays from 1pm to 2:30pm in the MSI
+board room (2nd floor).
+
+** Format of the seminar
+
+The seminar has a slightly unusual format. There will be no talks. We
+assign ourselves some reading for the week, and we meet for about 1:30
+hours once a week to discuss the reading.
+
+This week's reading (to be done by Friday, March 5) is: Chapter 3,
+Section 3.1, and whatever is necessary from Chapter 1 and Chapter 2.
+
+** Collaborative whiteboard
+
+To keep the discussions meaningful, I am asking the participants to
+note down any questions, comments, requests, insights, frustrations
+... whatever... on a collaborative (virtual) whiteboard here:
+https://www.mathdown.net/?doc=I7X3CpuNsKa#DbCoh. These notes are
+anonymous, so no one will know if you asked a stupid question. Before
+the meeting, I'll take the week's harvest and use it as the basis for
+discussion. So, in some week, if we end up with 6 questions and a
+joke, we'll hear the joke, and then we'll collectively try to answer
+the 6 questions.
+
 * Algebraic Geometry (Algebra 3)                                  :highlight:
 :properties:
 :where: Australian National University
@@ -89,6 +125,19 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :links: [[id:bf031ad4-94a5-42bd-8606-70e9cf0aec5f][course page]]
 :ID:       22f29317-d339-4e49-b46a-17a34e0b6091
 :end:
+
+* Seminar on Hodge theory
+:properties:
+:where: Australian National University
+:when:     2019
+:ID:       7ec3cecb-0b39-4dac-bafc-8964f7cdded3
+:end:
+
+Here is the abstract.
+
+#+begin_abstract
+Over 3 weeks, we will review classical notions of Hodge structures and how they arise in complex algebraic geometry. We will then try to understand the construction of Hodge structures from categories of representations (by Geordie Williamson and Ben Elias) and combinatorial geometry (by Peter McMullen, Karim Adiprasito, June Huh, and Eric Katz).
+#+end_abstract
 
 * Algebraic Geometry (Algebra 3)                                         
 :properties:

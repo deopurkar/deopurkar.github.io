@@ -184,7 +184,7 @@ The origin of the idea is that a cover is a map to \(BS_d\).  We know that maps 
 * Stable log surfaces, admissible covers, and canonical curves of genus 4 :paper:
 :PROPERTIES:
 :with:     [[changho:][Changho Han]]
-:where:  Transactions of the Americal Mathematical Society
+:where:  Transactions of the American Mathematical Society
 :when:     2021
 :links: [[file:papers/TrigonalKSBA.pdf][pdf]],[[https://arxiv.org/abs/1807.08413/][ arxiv]], [[https://www.ams.org/journals/tran/2021-374-01/S0002-9947-2020-08225-7/?active=current][journal]]
 :ID:       f7400180-00b7-4b54-a902-8941b3bd3823
@@ -246,7 +246,6 @@ Let us write the scroll \(F_{a,b}\) by its degree \(d = a+b\) and eccentricity \
 
 
 
-
 * Anticanonical tropical cubic del Pezzos contain exactly 27 lines       :preprint:
 :PROPERTIES:
 :with:     [[mariacueto:][María Angélica Cueto]]
@@ -263,7 +262,7 @@ The tropical geometry here is mostly thanks to María.  The key point is that em
 
 * Covers of stacky curves and limits of plane quintics                :paper:
 :PROPERTIES:
-:where:  Transactions of the Americal Mathematical Society
+:where:  Transactions of the American Mathematical Society
 :when:     2019
 :links: [[file:papers/StackyAdmissibleCovers.pdf][pdf]], [[http://arxiv.org/abs/1507.03252/][arxiv]], [[https://www.ams.org/journals/tran/2019-371-01/S0002-9947-2018-07301-9/home.html][journal]]
 :ID:       1d0dda32-8233-4fd8-8303-a6d7e16dc0cc
