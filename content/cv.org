@@ -213,7 +213,7 @@
     	       "%Y"
     	       (date-to-time
     		(org-entry-get nil "when"))))
-            (level (org-entry-get nil "level"))
+            (level (org-entry-get nil "what"))
             (coadvisors (org-entry-get nil "with"))
             (comment (org-entry-get nil "comments")))
         (cons year
@@ -236,29 +236,47 @@
 
 #+RESULTS:
 :results:
-- 2026 :: Liam Murray, Honours (with [[sveta:][Sveta Makarova]]).
-- ---- :: Frey Boulton, Honours.
-- ---- :: James Porteous, Masters.
+- 2026 :: Liam Murray, Honours (with Sveta Makarova).
+
+          Frey Boulton, Honours.
+
+          James Porteous, Masters.
 - 2025 :: Jialu Wang, Masters.
+
+          Shriyaa Srivastava, Future Research Talent Fellow.
+
+          Roshini Santhanaraman, Future Research Talent Fellow.
 - 2024 :: Luke Doherty, Honours.
-- ---- :: Charlotte Sherratt, Honours.
+
+          Charlotte Sherratt, Honours (Winner of the /University Medal/).
 - 2023 :: Benedict Bawagan, Honours.
-- ---- :: Leyao Zha, Honours.
-- ---- :: Charles McIntosh, Honours.
-- ---- :: Alex Huang, Summer Research Scholar (with Noah White).
-- ---- :: Charlotte Sherratt, Summer Research Scholar (with Noah White).
-- ---- :: Thomas Whitley, Summer Research Scholar (with Noah White).
-- ---- :: Jia En Toh, Summer Research Scholar (with Noah White).
+
+          Leyao Zha, Honours.
+
+          Charles McIntosh, Honours.
+
+          Alex Huang, Summer Research Scholar (with Noah White).
+
+          Charlotte Sherratt, Summer Research Scholar (with Noah White).
+
+          Thomas Whitley, Summer Research Scholar (with Noah White).
+
+          Jia En Toh, Summer Research Scholar (with Noah White).
 - 2022 :: Oliver Bradley, Honours.
 - 2021 :: Zongpu Zhang, Honours.
 - 2020 :: Ben Leedom, Honours.
 - 2019 :: Diclehan Erdal, Masters.
-- ---- :: Adwait Sengar, Masters (with Uri Onn).
-- ---- :: Dhruva Kelkar, Future Research Scholar.
-- ---- :: Sridhar Venkatesh, Future Research Scholar.
-- 2018 :: Sean Carroll, Summer Research Scholar (with Asilata Bapat).
-- ---- :: Kyle Broder, Honours (with Alex Isaev).
-- ---- :: Likun Yao, Honours (with Amnon Neeman).
+
+          Adwait Sengar, Masters (with Uri Onn).
+
+          Dhruva Kelkar, Future Research Talent Fellow.
+
+          Sridhar Venkatesh, Future Research Talent Fellow.
+- 2018 :: Sean Carroll, Summer Research Talent Fellow (with Asilata Bapat).
+
+          Kyle Broder, Honours (with Alex Isaev).
+
+          Likun Yao, Honours (with Amnon Neeman).
 :end:
 
 * Talks and presentations
