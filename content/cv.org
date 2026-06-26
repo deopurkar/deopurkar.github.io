@@ -115,45 +115,45 @@
 
 #+RESULTS:
 :results:
-- 2026 :: /The Thurston compactification of the stability manifold of a generic analytic K3 surface/.\\
+- 2026 :: /[[id:991da63b-3869-43c6-ae34-3cfb65a88e1e][The Thurston compactification of the stability manifold of a generic analytic K3 surface]]/.\\
           Mathematical Research Letters (accepted).
 
-          /Equivariant classes of orbits in GL(2)-representations/.\\
+          /[[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant classes of orbits in GL(2)-representations]]/.\\
           Selecta Mathematica (accepted).
-- 2024 :: /Orbits of linear series on the projective line/.\\
-          International Mathematics Research Notices (with Anand Patel).
+- 2024 :: /[[id:e4f6d1ab-1a2b-4def-bbbd-092960a347f1][Orbits of linear series on the projective line]]/.\\
+          International Mathematics Research Notices (with [[anandpatel:][Anand Patel]]).
 
-          /A universal formula for counting cubic surfaces/.\\
-          Algebraic Geometry (to appear) (with Anand Patel, Dennis Tseng).
-- 2022 :: /Spherical objects and stability conditions on 2-Calabi--Yau quiver categories/.\\
-          Mathematische Zeitschrift (with Asilata Bapat, Anthony Licata).
+          /[[id:aa908035-6504-4bd7-8a1d-aecf14f07383][A universal formula for counting cubic surfaces]]/.\\
+          Algebraic Geometry (to appear) (with [[anandpatel:][Anand Patel]], [[dennistseng:][Dennis Tseng]]).
+- 2022 :: /[[id:8c1b044d-82a9-4cbc-986e-a07f93dc93d1][Spherical objects and stability conditions on 2-Calabi--Yau quiver categories]]/.\\
+          Mathematische Zeitschrift (with [[asilata:][Asilata Bapat]], [[tony:][Anthony Licata]]).
 
-          /Vector bundles and finite covers/.\\
-          Forum of Mathematics, Sigma (with Anand Patel).
-- 2021 :: /Stable log surfaces, admissible covers, and canonical curves of genus 4/.\\
-          Transactions of the Americal Mathematical Society (with Changho Han).
-- 2020 :: /Ramification divisors of general projections/.\\
-          Documenta Mathematica (with Eduard Duryev, Anand Patel).
-- 2019 :: /Covers of stacky curves and limits of plane quintics/.\\
-          Transactions of the Americal Mathematical Society.
-- 2018 :: /Syzygy divisors on Hurwitz spaces/.\\
-          Contemporary Mathematics (with Anand Patel).
+          /[[id:4b773769-0ca6-42a8-a8e6-309dd23ffa5c][Vector bundles and finite covers]]/.\\
+          Forum of Mathematics, Sigma (with [[anandpatel:][Anand Patel]]).
+- 2021 :: /[[id:f7400180-00b7-4b54-a902-8941b3bd3823][Stable log surfaces, admissible covers, and canonical curves of genus 4]]/.\\
+          Transactions of the American Mathematical Society (with [[changho:][Changho Han]]).
+- 2020 :: /[[id:82e9302f-6674-41b8-97cd-6733ac7edf89][Ramification divisors of general projections]]/.\\
+          Documenta Mathematica (with [[eduardduryev:][Eduard Duryev]], [[anandpatel:][Anand Patel]]).
+- 2019 :: /[[id:1d0dda32-8233-4fd8-8303-a6d7e16dc0cc][Covers of stacky curves and limits of plane quintics]]/.\\
+          Transactions of the American Mathematical Society.
+- 2018 :: /[[id:e4a32e17-c28b-45a2-bfb1-8622e151af99][Syzygy divisors on Hurwitz spaces]]/.\\
+          Contemporary Mathematics (with [[anandpatel:][Anand Patel]]).
 
-          /The canonical syzygy conjecture for ribbons/.\\
+          /[[id:c399a596-99cb-41bc-945b-a2846c40757e][The canonical syzygy conjecture for ribbons]]/.\\
           Mathematische Zeitschrift.
-- 2016 :: /Toward GIT stability of syzygies of canonical curves/.\\
-          Algebraic Geometry (with Maksym Fedorchuk, David Swinarski).
-- 2015 :: /The Picard rank conjecture for the Hurwitz spaces of degree up to five/.\\
-          Algebra & Number Theory (with Anand Patel).
-- 2014 :: /Groebner techniques for ribbons/.\\
-          Albanian Journal of Mathematics (with Maksym Fedorchuk, David Swinarski).
+- 2016 :: /[[id:800287ce-183c-42d7-ad07-0f73202dc7c3][Toward GIT stability of syzygies of canonical curves]]/.\\
+          Algebraic Geometry (with [[maksym:][Maksym Fedorchuk]], [[davidswinarski:][David Swinarski]]).
+- 2015 :: /[[id:e0e0aebf-32c6-4041-95d5-16574e6c0513][The Picard rank conjecture for the Hurwitz spaces of degree up to five]]/.\\
+          Algebra & Number Theory (with [[anandpatel:][Anand Patel]]).
+- 2014 :: /[[id:b355cfa4-8d4b-4110-93f7-f85699fe3e36][Groebner techniques for ribbons]]/.\\
+          Albanian Journal of Mathematics (with [[maksym:][Maksym Fedorchuk]], [[davidswinarski:][David Swinarski]]).
 
-          /Compactifications of Hurwitz spaces/.\\
+          /[[id:504645b5-633e-42dd-9727-2c83fd1bb8d3][Compactifications of Hurwitz spaces]]/.\\
           International Mathematics Research Notices.
-- 2013 :: /Sharp slope bounds for sweeping families of trigonal curves/.\\
-          Mathematical Research Letters (with Anand Patel).
+- 2013 :: /[[id:75d3ebc0-1174-40e1-9ec5-a949bad877de][Sharp slope bounds for sweeping families of trigonal curves]]/.\\
+          Mathematical Research Letters (with [[anandpatel:][Anand Patel]]).
 
-          /Modular compactifications of the space of marked trigonal curves/.\\
+          /[[id:833f39b4-0d38-4903-8356-aac9fc2b16d0][Modular compactifications of the space of marked trigonal curves]]/.\\
           Advances in Mathematics.
 :end:
 
@@ -162,27 +162,27 @@
   (strip-links-from-string
    (string-join
     (collate-from-string-pairs
-     (org-map-entries 'pretty-print-paper "+preprint" '("papers.org"))) "\n"))
+     (org-map-entries 'pretty-print-paper "+preprint-expository" '("papers.org"))) "\n"))
 #+end_src
 
 #+RESULTS:
 :results:
-- 2025 :: /A sphere of spherical objects/.\\
-          Pre-print (with Asilata Bapat, Anthony Licata).
-- 2024 :: /Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism/.\\
-          Pre-print (with Valery Alexeev, Changho Han).
+- 2025 :: /[[id:1245acba-aa78-4ab6-ad92-fb1c2c46b5c6][A sphere of spherical objects]]/.\\
+          Pre-print (with [[asilata:][Asilata Bapat]], [[tony:][Anthony Licata]]).
+- 2024 :: /[[id:fe485808-abd5-47a3-8989-33302bddd1f1][Compactifications of moduli spaces of K3 surfaces with a higher-order nonsymplectic automorphism]]/.\\
+          Pre-print (with [[valery:][Valery Alexeev]], [[changho:][Changho Han]]).
 
-          /Syzygies of canonical ribbons on higher genus curves/.\\
-          Pre-print (with Jayan Mukherjee).
+          /[[id:c6c78ad7-7a03-4b03-95d8-ab4cd5450fb8][Syzygies of canonical ribbons on higher genus curves]]/.\\
+          Pre-print (with [[jayan:][Jayan Mukherjee]]).
 
-          /Counting 3-uple Veronese surfaces/.\\
-          Pre-print (with Anand Patel).
-- 2020 :: /A Thurston compactification of the space of stability conditions/.\\
-          Pre-print (with Asilata Bapat, Anthony Licata).
-- 2019 :: /Anticanonical tropical cubic del Pezzos contain exactly 27 lines/.\\
-          Pre-print (with María Angélica Cueto).
-- 2013 :: /Class of the Hodge eigenbundle using orbifold Riemann-Roch/.\\
-          Pre-print, appendix to /Cyclic covering morphisms on \(\overline M_{0,n}\)/ by Maksym Fedorchuk.
+          /[[id:83eab6f9-e798-499b-bff5-cdea76b092c8][Counting 3-uple Veronese surfaces]]/.\\
+          Pre-print (with [[anandpatel:][Anand Patel]]).
+- 2020 :: /[[id:7ee039fe-461d-41bb-8a73-116bc7f196e0][A Thurston compactification of the space of stability conditions]]/.\\
+          Pre-print (with [[asilata:][Asilata Bapat]], [[tony:][Anthony Licata]]).
+- 2019 :: /[[id:931c8753-71af-4498-89fe-5823ae74d1e9][Anticanonical tropical cubic del Pezzos contain exactly 27 lines]]/.\\
+          Pre-print (with [[mariacueto:][María Angélica Cueto]]).
+- 2013 :: /[[id:3b6a466e-3eef-4ba3-9515-07dcf2a34e83][Class of the Hodge eigenbundle using orbifold Riemann-Roch]]/.\\
+          Pre-print, appendix to [[https://drive.google.com/file/d/1wq-Fh3DiqODc51t-J0phIexVF7B4lxsY/view][/Cyclic covering morphisms on \(\overline M_{0,n}\)/]] by [[https://www2.bc.edu/maksym-fedorchuk/][Maksym Fedorchuk]].
 :end:
 
 ** Expository
@@ -190,17 +190,17 @@
   (strip-links-from-string
    (string-join
     (collate-from-string-pairs
-     (org-map-entries 'pretty-print-paper "+paper+expository" '("papers.org"))) "\n"))
+     (org-map-entries 'pretty-print-paper "+paper+expository|preprint+expository" '("papers.org"))) "\n"))
 #+end_src
 
 #+RESULTS:
 :results:
 - 2025 :: /[[id:9efcc78f-db58-4c06-a73a-405566487ca4][The arithmetic and geometry of branched coverings: theorems of Belyi and Darmon--Granville]]/.\\
-          Pre-print.
+          Pre-print (expository).
 - 2010 :: /[[id:0f97be8d-e4d3-4515-bf1f-981c9e8380a0][An introduction to intersection homology]]/.\\
           Minor thesis (Harvard).
 - 2008 :: /[[id:97f6df09-0591-49b7-97d0-e79b606af653][Normalization of algebraic varieties]]/.\\
-          MIT Undergruate Journal of Mathematics.
+          MIT Undergraduate Journal of Mathematics.
 :end:
 
 * Supervision
@@ -213,7 +213,7 @@
     	       "%Y"
     	       (date-to-time
     		(org-entry-get nil "when"))))
-            (level (org-entry-get nil "level"))
+            (level (org-entry-get nil "what"))
             (coadvisors (org-entry-get nil "with"))
             (comment (org-entry-get nil "comments")))
         (cons year
@@ -236,29 +236,47 @@
 
 #+RESULTS:
 :results:
-- 2026 :: Liam Murray, Honours (with [[sveta:][Sveta Makarova]]).
-- ---- :: Frey Boulton, Honours.
-- ---- :: James Porteous, Masters.
+- 2026 :: Liam Murray, Honours (with Sveta Makarova).
+
+          Frey Boulton, Honours.
+
+          James Porteous, Masters.
 - 2025 :: Jialu Wang, Masters.
+
+          Shriyaa Srivastava, Future Research Talent Fellow.
+
+          Roshini Santhanaraman, Future Research Talent Fellow.
 - 2024 :: Luke Doherty, Honours.
-- ---- :: Charlotte Sherratt, Honours.
+
+          Charlotte Sherratt, Honours (Winner of the /University Medal/).
 - 2023 :: Benedict Bawagan, Honours.
-- ---- :: Leyao Zha, Honours.
-- ---- :: Charles McIntosh, Honours.
-- ---- :: Alex Huang, Summer Research Scholar (with Noah White).
-- ---- :: Charlotte Sherratt, Summer Research Scholar (with Noah White).
-- ---- :: Thomas Whitley, Summer Research Scholar (with Noah White).
-- ---- :: Jia En Toh, Summer Research Scholar (with Noah White).
+
+          Leyao Zha, Honours.
+
+          Charles McIntosh, Honours.
+
+          Alex Huang, Summer Research Scholar (with Noah White).
+
+          Charlotte Sherratt, Summer Research Scholar (with Noah White).
+
+          Thomas Whitley, Summer Research Scholar (with Noah White).
+
+          Jia En Toh, Summer Research Scholar (with Noah White).
 - 2022 :: Oliver Bradley, Honours.
 - 2021 :: Zongpu Zhang, Honours.
 - 2020 :: Ben Leedom, Honours.
 - 2019 :: Diclehan Erdal, Masters.
-- ---- :: Adwait Sengar, Masters (with Uri Onn).
-- ---- :: Dhruva Kelkar, Future Research Scholar.
-- ---- :: Sridhar Venkatesh, Future Research Scholar.
-- 2018 :: Sean Carroll, Summer Research Scholar (with Asilata Bapat).
-- ---- :: Kyle Broder, Honours (with Alex Isaev).
-- ---- :: Likun Yao, Honours (with Amnon Neeman).
+
+          Adwait Sengar, Masters (with Uri Onn).
+
+          Dhruva Kelkar, Future Research Talent Fellow.
+
+          Sridhar Venkatesh, Future Research Talent Fellow.
+- 2018 :: Sean Carroll, Summer Research Talent Fellow (with Asilata Bapat).
+
+          Kyle Broder, Honours (with Alex Isaev).
+
+          Likun Yao, Honours (with Amnon Neeman).
 :end:
 
 * Talks and presentations

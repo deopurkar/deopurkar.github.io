@@ -1,7 +1,7 @@
 * Liam Murray
 :PROPERTIES:
 :when:     2026
-:level: Honours
+:what: Honours
 :where: Mathematical Sciences Institute, Australian National University
 :with: [[sveta:][Sveta Makarova]]
 :END:
@@ -9,63 +9,78 @@
 * Frey Boulton
 :PROPERTIES:
 :when:     2026
-:level: Honours
+:what: Honours
 :where: Mathematical Sciences Institute, Australian National University
 :END:
 
 * James Porteous
 :PROPERTIES:
 :when:     2026
-:level: Masters
+:what: Masters
 :where: Mathematical Sciences Institute, Australian National University
 :END:
 
 * Jialu Wang
 :PROPERTIES:
 :when:     2025
-:level: Masters
+:what: Masters
+:where: Mathematical Sciences Institute, Australian National University
+:END:
+
+* Shriyaa Srivastava
+:PROPERTIES:
+:when:     2025
+:what: Future Research Talent Fellow
+:where: Mathematical Sciences Institute, Australian National University
+:END:
+
+* Roshini Santhanaraman
+:PROPERTIES:
+:when:     2025
+:what: Future Research Talent Fellow
 :where: Mathematical Sciences Institute, Australian National University
 :END:
 
 * Luke Doherty
 :PROPERTIES:
 :when:     2024
-:level: Honours
+:what: Honours
 :where: Mathematical Sciences Institute, Australian National University
 :END:
 
 * Charlotte Sherratt
 :PROPERTIES:
 :when:     2024
-:level: Honours
+:what: Honours
 :where: Mathematical Sciences Institute, Australian National University
+:comments:  Winner of the /University Medal/
 :END:
 
 * Benedict Bawagan
 :properties:
 :when:     2023
-:level:    Honours
+:what:    Honours
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
 * Leyao Zha
 :properties:
 :when:     2023
-:level:    Honours
+:what:    Honours
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
 * Charles McIntosh
 :properties:
 :when:     2023
-:level:    Honours
+:what:    Honours
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
 * Alex Huang
 :properties:
 :when:     2023
-:level:    Summer Research Scholar
+:what:    Summer Research Scholar
 :where: Mathematical Sciences Institute, Australian National University
 :with:     Noah White
 :end:
@@ -73,7 +88,7 @@
 * Charlotte Sherratt
 :properties:
 :when:     2023
-:level:    Summer Research Scholar
+:what:    Summer Research Scholar
 :where: Mathematical Sciences Institute, Australian National University
 :with:     Noah White
 :end:
@@ -81,7 +96,7 @@
 * Thomas Whitley
 :properties:
 :when:     2023
-:level:    Summer Research Scholar
+:what:    Summer Research Scholar
 :where: Mathematical Sciences Institute, Australian National University
 :with:     Noah White
 :end:
@@ -89,7 +104,7 @@
 * Jia En Toh
 :properties:
 :when:     2023
-:level:    Summer Research Scholar
+:what:    Summer Research Scholar
 :where: Mathematical Sciences Institute, Australian National University
 :with:     Noah White
 :end:
@@ -97,35 +112,35 @@
 * Oliver Bradley
 :properties:
 :when:     2022
-:level:    Honours
+:what:    Honours
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
 *  Zongpu Zhang
 :properties:
 :when:     2021
-:level:    Honours
+:what:    Honours
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
 *  Ben Leedom
 :properties:
 :when:     2020
-:level:    Honours
+:what:    Honours
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
 *  Diclehan Erdal
 :properties:
 :when:     2019
-:level:    Masters
+:what:    Masters
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
 *  Adwait Sengar
 :properties:
 :when:     2019
-:level:    Masters
+:what:    Masters
 :with:     Uri Onn
 :where: Mathematical Sciences Institute, Australian National University
 :end:
@@ -133,21 +148,21 @@
 *  Dhruva Kelkar
 :properties:
 :when:     2019
-:level:    Future Research Scholar
+:what:    Future Research Talent Fellow
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
 *  Sridhar Venkatesh
 :properties:
 :when:     2019
-:level:    Future Research Scholar
+:what:    Future Research Talent Fellow
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
 *  Sean Carroll
 :properties:
 :when:     2018
-:level:    Summer Research Scholar
+:what:    Summer Research Talent Fellow
 :where: Mathematical Sciences Institute, Australian National University
 :with:     Asilata Bapat
 :end:
@@ -155,7 +170,7 @@
 *  Kyle Broder
 :properties:
 :when:     2018
-:level:    Honours
+:what:    Honours
 :where: Mathematical Sciences Institute, Australian National University
 :with:     Alex Isaev
 :end:
@@ -163,7 +178,7 @@
 *  Likun Yao
 :properties:
 :when:     2018
-:level:    Honours
+:what:    Honours
 :where: Mathematical Sciences Institute, Australian National University
 :with:     Amnon Neeman
 :end:
