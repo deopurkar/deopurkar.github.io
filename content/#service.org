@@ -11,32 +11,38 @@
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
+* Served as an external PhD thesis examiner    
+:properties:
+:when: 2026
+:where: University of Melbourne
+:end:
+
 * Served on the Problem Selection Committee for the Simon--Marais Competition
 :PROPERTIES:
 :when:     2025
 :END:
 
-* Served on the PhD thesis committee of Snehinh Sen 
+* Served on the PhD supervisory panel of Snehinh Sen 
 :properties:
 :when: 2025
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
-* Served on the PhD thesis committee of Alexander Lai De Oliveira 
-:properties:
-:when: 2025
-:where: Mathematical Sciences Institute, Australian National University
-:end:
-
-
-* Served on the PhD thesis committee of Seethalakshmi Kayanattath 
+* Served on the PhD supervisory panel of Alexander Lai De Oliveira 
 :properties:
 :when: 2025
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
 
-* Served on the PhD thesis committee of Lucas Allen
+* Served on the PhD supervisory panel of Seethalakshmi Kayanattath 
+:properties:
+:when: 2025
+:where: Mathematical Sciences Institute, Australian National University
+:end:
+
+
+* Served on the PhD supervisory panel of Lucas Allen
 :properties:
 :when: 2025
 :where: Mathematical Sciences Institute, Australian National University
@@ -48,7 +54,7 @@
 :where: Australian National University
 :end:
 
-* Served on the PhD thesis committee of Kabeer Manali Rahul
+* Served on the PhD supervisory panel of Kabeer Manali Rahul
 :properties:
 :when: 2025
 :where: Australian National University
@@ -74,13 +80,13 @@
   :where: AustMS meeting
 :end:
 
-* Served on the PhD thesis committee of Abhishek Bharadwaj
+* Served on the PhD supervisory panel of Abhishek Bharadwaj
 :properties:
 :when: 2020
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
-* Served on the MPhil thesis committee of Ivan Zelich
+* Served on the MPhil supervisory panel of Ivan Zelich
 :properties:
 :when: 2020
 :where: Mathematical Sciences Institute, Australian National University
@@ -103,7 +109,7 @@
   :where: Mathematical Sciences Institute, Australian National University
 :end:
 
-* Served on the PhD thesis committee of Edmund Heng
+* Served on the PhD supervisory panel of Edmund Heng
 :properties:
 :when: 2018
 :where: Mathematical Sciences Institute, Australian National University
@@ -167,19 +173,19 @@
 :when: 2014
 :end:
 
-*  Served on the PhD thesis committee of Natasha Potashnik
+*  Served on the PhD thesis examination panel of Natasha Potashnik
 :properties:
 :when: 2016
 :where: Columbia University, New York City, New York
 :end:
 
-*  Served on the PhD thesis committee of Zachary Maddock
+*  Served on the PhD thesis examination panel of Zachary Maddock
 :properties:
 :when: 2013
 :where: Columbia University, New York City, New York
 :end:
 
-*  Served on the PhD thesis committee of Xuanyu Pan
+*  Served on the PhD thesis examination panel of Xuanyu Pan
 :properties:
 :when: 2014
 :where: Columbia University, New York City, New York
