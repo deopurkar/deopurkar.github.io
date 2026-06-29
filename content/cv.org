@@ -1,7 +1,7 @@
 :PROPERTIES:
 :skip-in-backlinks:   t
 :END:
-#+TITLE: Anand Deopurkar | CV
+#+TITLE: Anand Deopurkar | Curriculum Vitae
 #+AUTHOR: [[mailto:anand.deopurkar@anu.edu.au][~anand.deopurkar@anu.edu.au~]] \(\quad\) [[https://www.ananddeopurkar.org][~ananddeopurkar.org~]]
 #+DESCRIPTION: Curriculum vitae of Anand Deopurkar, a mathematician specialising in algebraic geometry at the Australian National University.  Read about my academic history, publications, supervision, students, talks, teaching, and service activities. 
 #+KEYWORDS: Curriculum vitae, CV, Anand Deopurkar, ANU, MSI

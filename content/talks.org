@@ -145,7 +145,7 @@ This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant cl
 
 * The work of Maryam Mirzakhani                              :talk:highlight:
 :properties:
-:venue:  Australian National University
+:venue:  Women in mathematics day, Australian National University
 :where:    Canberra, Australia
 :when:     2024
 :comments:     expository, 
@@ -535,7 +535,7 @@ This talk was based on
 
 * The work of Caucher Birkar                      :expository:talk:highlight:
 :properties:
-:venue:     Australian National University
+:venue:     Fields medal colloquium, Australian National University
 :where:    Canberra, Australia
 :when:     2018
 :comments:  expository
