@@ -11,6 +11,12 @@
 :where: Mathematical Sciences Institute, Australian National University
 :end:
 
+* Served on the selection committee for an Associate Lecturer (Level A) position
+:PROPERTIES:
+:when: 2026
+:where: Research School of Chemistry, Australian National University
+:END:
+
 * Served as an external PhD thesis examiner    
 :properties:
 :when: 2026
