@@ -130,7 +130,7 @@ This talk was based on [[id:b1ba9384-4b6a-47b1-888c-61cc0c828493][Equivariant cl
 
 * How twisty is that orbit?                                            :talk:
 :properties:
-:venue:  Computations and applications of commutative algebra and algebraic geometry, NZMS-AustMS-AMS
+:venue:  Computations and applications of commutative algebra and algebraic geometry, AMS-AustMS-NZMS joint meeting
 :where:    Auckland, New Zealand
 :when:     2024
 :type:     workshop

@@ -60,7 +60,7 @@
 :where: Australian National University
 :end:
 
-* Co-organised the session /Computations and applications of commutative algebra and algebraic geometry/ at the joint /NZMS-AustMS-AMS/ meeting
+* Co-organised the session /Computations and applications of commutative algebra and algebraic geometry/ at the joint /AMS-AustMS-NZMS/ meeting
 :PROPERTIES:
 :when:     2024
 :where: University of Auckland
