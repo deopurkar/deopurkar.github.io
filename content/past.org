@@ -59,6 +59,13 @@
 :ARCHIVE_OLPATH: now/Upcoming travel
 :ARCHIVE_CATEGORY: index
 :END:
+**** In 2026 S1, I taught /Algebra 2 (Fields and Galois Theory)/.  
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-08-07 Fri 16:30
+:ARCHIVE_FILE: ~/website/content/index.org
+:ARCHIVE_OLPATH: now
+:ARCHIVE_CATEGORY: index
+:END:
 
 * 2025
 :PROPERTIES:
