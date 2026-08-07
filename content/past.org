@@ -50,6 +50,16 @@
 :ARCHIVE_OLPATH: now
 :ARCHIVE_CATEGORY: index
 :END:
+** 2026-08 August
+*** 2026-08-07 Friday
+**** Went to Melbourne for a the workshop [[https://algemel.github.io/][Algebraic Geometry in Melbourne]] that I am organising with [[jackhall:][Jack Hall]] and [[norbury:][Paul Norbury]].
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-08-07 Fri 16:27
+:ARCHIVE_FILE: ~/website/content/index.org
+:ARCHIVE_OLPATH: now/Upcoming travel
+:ARCHIVE_CATEGORY: index
+:END:
+
 * 2025
 :PROPERTIES:
 :HTML_HEADLINE_CLASS: collapsible
