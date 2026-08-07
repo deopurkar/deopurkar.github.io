@@ -13,7 +13,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :PROPERTIES:
 :where: Australian National University
 :when:     2026
-:ID:       2a953d2a-e23a-4c6b-a289-d7eabf2c5372
+:ID:       31d3f610-d03f-4e77-98fa-9c6298e96182
 :END:
 
 * Games, graphs, and machines                                     
@@ -28,7 +28,7 @@ Below is a roughly reverse chronological list of the courses I have taught with 
 :where: Australian National University
 :when:     2025
 :links: [[id:6d38a9f2-2aef-4ad5-848f-fcf0443b096d][course page]]
-:ID:       31d3f610-d03f-4e77-98fa-9c6298e96182
+:ID:       2a953d2a-e23a-4c6b-a289-d7eabf2c5372
 :END:
 
 * Fields and Galois theory (Algebra 2)                            :highlight:
