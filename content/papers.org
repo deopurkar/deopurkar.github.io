@@ -119,9 +119,9 @@ Although the basic idea behind the computation is simple, the details are quite 
 
 * Equivariant classes of orbits in GL(2)-representations              :paper:
 :PROPERTIES:
-:where:  Selecta Mathematica (accepted)
+:where:  Selecta Mathematica
 :when:     2026
-:links: [[file:papers/gl2orbits.pdf][pdf]], [[https://arxiv.org/abs/2405.09849][arxiv]], [[https://github.com/deopurkar/equivariant-classes-of-gl2-orbits/][repository]]
+:links: [[file:papers/gl2orbits.pdf][pdf]], [[https://arxiv.org/abs/2405.09849][arxiv]], [[https://github.com/deopurkar/equivariant-classes-of-gl2-orbits/][repository]], [[https://rdcu.be/AsYZNMApSdwa][journal]]
 :ID:       b1ba9384-4b6a-47b1-888c-61cc0c828493
 :END:
 #+begin_abstract
@@ -149,7 +149,7 @@ What's fun here is finding a class on the equivariant Grassmannian, instead of t
 * A universal formula for counting cubic surfaces                     :paper:
 :PROPERTIES:
 :with:     [[anandpatel:][Anand Patel]], [[dennistseng:][Dennis Tseng]]
-:where:  Algebraic Geometry (to appear)
+:where:  Algebraic Geometry
 :when:     2024
 :links: [[file:papers/countingcubics.pdf][pdf]], [[https://arxiv.org/abs/2109.12672][arxiv]]
 :ID:       aa908035-6504-4bd7-8a1d-aecf14f07383
