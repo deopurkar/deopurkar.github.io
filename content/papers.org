@@ -9,7 +9,7 @@
 
 Below is a roughly reverse chronological list of my papers and pre-prints, together with abstracts and sometimes other commentary. 
 
-* The Hasse norm principle for A_4-quartic extensions of global function fields 
+* The Hasse norm principle for A_4-quartic extensions of global function fields :preprint:
 :PROPERTIES:
 :where:    Pre-print
 :with:  [[rachel:][Rachel Newton]], [[vaidehee:][Vaidehee Thatte]], [[rosa:][Rosa Winter]]
