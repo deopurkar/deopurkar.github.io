@@ -34,8 +34,8 @@ I study the interplay between systems of algebraic equations and the geometric s
 :ARCHIVE: past.org::datetree/
 :END:
 If you are thinking of doing a PhD with me, please read this [[id:1a667b02-c72c-4225-acbc-d5064ab2f748][page for prospective PhD students]].
+** [[rachel:][Rachel Newton]], [[vaidehee:][Vaidehee Thatte]], [[rosa:][Rosa Winters]], and I finished writing our paper on the [[id:8ead606a-7de5-496b-a870-3caaf53ddadf][Hasse norm principle for \(A_4\)-quartic extensions of global function fields]].
 ** With [[asilata][Asilata Bapat]] and [[tony][Tony Licata]], I am studying [[wiki:Bridgeland_stability_condition][Bridgeland stability conditions]] on some triangulated categories.
-** With [[rachel:][Rachel Newton]], [[vaidehee:][Vaidehee Thatte]], and [[rosa:][Rosa Winters]], I am exploring arithmetic ramifications of the geometry of certain [[wiki:Hurwitz_scheme][Hurwitz spaces]].
 ** [[oliver:][Oliver Li]] and I are working on the equivariant enumerative geometry of plane curves.  
 ** [[jayan:][Jayan Mukherjee]] and I are trying to understand non-reduced double structures on curves (ribbons) and surfaces (carpets).
 ** [[anandpatel:][Anand Patel]] and I threw every tool we knew at a cool enumerative problem ([[https://arxiv.org/abs/2411.14232][counting 3-uple Veronese surfaces]]) whose answer comes out to \(4246\).  *UPDATE* [[timduff:][Timothy Duff]] successfully verified this numerically!  

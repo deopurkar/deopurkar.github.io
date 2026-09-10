@@ -9,6 +9,21 @@
 
 Below is a roughly reverse chronological list of my papers and pre-prints, together with abstracts and sometimes other commentary. 
 
+* The Hasse norm principle for A_4-quartic extensions of global function fields 
+:PROPERTIES:
+:where:    Pre-print
+:with:  [[rachel:][Rachel Newton]], [[vaidehee:][Vaidehee Thatte]], [[rosa:][Rosa Winter]]
+:when:     2025
+:links:    [[file:papers/ARRV.pdf][pdf]], [[https://arxiv.org/abs/2609.02444][arxiv]]
+:ID:       8ead606a-7de5-496b-a870-3caaf53ddadf
+:END:
+#+begin_abstract
+For a finite extension of global fields \(K/k\), the norm map \(N_{K/k}: K^{\times} \rightarrow k^{\times}\) extends to a map on idèle groups. The Hasse norm principle holds if every element of \(k^\times\) that is a norm everywhere locally is also a norm globally. 
+In this paper, we study the statistics of the Hasse norm principle in a setting that is out of reach in the number field context, namely that of \(A_4\)-quartic extensions. 
+We show that failures of the Hasse norm principle are generally rare for \(A_4\)-quartic extensions of global function fields \(\mathbb{F}_q(t)\).
+We achieve this by introducing a decorated Hurwitz space parametrising the failures of the Hasse norm principle and then using the Chebotarev density theorem to estimate their frequency.
+#+end_abstract
+
 * A sphere of spherical objects :preprint:
 :PROPERTIES:
 :where:    Pre-print
